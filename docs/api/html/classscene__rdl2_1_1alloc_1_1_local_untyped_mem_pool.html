@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: scene_rdl2::alloc::LocalUntypedMemPool&lt; BLOCK_TYPE &gt; Class Template Reference</title>
+<title>OpenMoonrayTEST #4: scene_rdl2::alloc::LocalUntypedMemPool&lt; BLOCK_TYPE &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -100,8 +100,6 @@ $(document).ready(function(){initNavTree('classscene__rdl2_1_1alloc_1_1_local_un
   <div class="headertitle"><div class="title">scene_rdl2::alloc::LocalUntypedMemPool&lt; BLOCK_TYPE &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for scene_rdl2::alloc::LocalUntypedMemPool&lt; BLOCK_TYPE &gt;:</div>
 <div class="dyncontent">
@@ -119,1202 +117,107 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9d878bafaf23e70f74840db8e3dd3127"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad">BLOCKS_ALLOCATED</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530">CASE_A_ALLOCS</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6">CASE_B_ALLOCS</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a">CASE_C_ALLOCS</a>
+<tr class="memitem:a9d878bafaf23e70f74840db8e3dd3127"><td class="memItemLeft" align="right" valign="top"><a id="a9d878bafaf23e70f74840db8e3dd3127" name="a9d878bafaf23e70f74840db8e3dd3127"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>BLOCKS_ALLOCATED</b>
+, <b>CASE_A_ALLOCS</b>
+, <b>CASE_B_ALLOCS</b>
+, <b>CASE_C_ALLOCS</b>
 , <br />
-&#160;&#160;<a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83">FREE_CALLS</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84">PROCESS_PENDING_FREE_LIST</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138">RETURNED_EMPTY_BLOCKS</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254">FAILED_BLOCK_ALLOCS</a>
+&#160;&#160;<b>FREE_CALLS</b>
+, <b>PROCESS_PENDING_FREE_LIST</b>
+, <b>RETURNED_EMPTY_BLOCKS</b>
+, <b>FAILED_BLOCK_ALLOCS</b>
 , <br />
-&#160;&#160;<a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772">FAILED_ENTRY_ALLOCS</a>
-, <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ad88d67790c0fe5a35c5996e5e2daa346">NUM_COUNTERS</a>
+&#160;&#160;<b>FAILED_ENTRY_ALLOCS</b>
+, <b>NUM_COUNTERS</b>
 <br />
  }</td></tr>
 <tr class="separator:a9d878bafaf23e70f74840db8e3dd3127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c5e177fd4eb072b56d4b16d723951b"><td class="memItemLeft" align="right" valign="top">typedef BLOCK_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a></td></tr>
+<tr class="memitem:a31c5e177fd4eb072b56d4b16d723951b"><td class="memItemLeft" align="right" valign="top"><a id="a31c5e177fd4eb072b56d4b16d723951b" name="a31c5e177fd4eb072b56d4b16d723951b"></a>
+typedef BLOCK_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>BlockType</b></td></tr>
 <tr class="separator:a31c5e177fd4eb072b56d4b16d723951b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a199a6429ca1d28ebb18f7ef7ac9ebe20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a199a6429ca1d28ebb18f7ef7ac9ebe20">LocalUntypedMemPool</a> ()</td></tr>
-<tr class="separator:a199a6429ca1d28ebb18f7ef7ac9ebe20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ce778481e5b6271b971397d126b6d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a74ce778481e5b6271b971397d126b6d1">~LocalUntypedMemPool</a> ()</td></tr>
-<tr class="separator:a74ce778481e5b6271b971397d126b6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10955f1150dd3b6cac5c03cbf592f07b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a10955f1150dd3b6cac5c03cbf592f07b">init</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> &gt; *blockManager)</td></tr>
+<tr class="memitem:a10955f1150dd3b6cac5c03cbf592f07b"><td class="memItemLeft" align="right" valign="top"><a id="a10955f1150dd3b6cac5c03cbf592f07b" name="a10955f1150dd3b6cac5c03cbf592f07b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; BlockType &gt; *blockManager)</td></tr>
 <tr class="separator:a10955f1150dd3b6cac5c03cbf592f07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2f932268a95cd29a0f06f44e00c0df1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac2f932268a95cd29a0f06f44e00c0df1">cleanUp</a> ()</td></tr>
+<tr class="memitem:ac2f932268a95cd29a0f06f44e00c0df1"><td class="memItemLeft" align="right" valign="top"><a id="ac2f932268a95cd29a0f06f44e00c0df1" name="ac2f932268a95cd29a0f06f44e00c0df1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanUp</b> ()</td></tr>
 <tr class="separator:ac2f932268a95cd29a0f06f44e00c0df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab87afcf054ba06f4f2a0bd2df0130183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab87afcf054ba06f4f2a0bd2df0130183">fullReset</a> ()</td></tr>
+<tr class="memitem:ab87afcf054ba06f4f2a0bd2df0130183"><td class="memItemLeft" align="right" valign="top"><a id="ab87afcf054ba06f4f2a0bd2df0130183" name="ab87afcf054ba06f4f2a0bd2df0130183"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fullReset</b> ()</td></tr>
 <tr class="separator:ab87afcf054ba06f4f2a0bd2df0130183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fbb21c20ac743fa3e41e7852906bcbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4fbb21c20ac743fa3e41e7852906bcbd">fastReset</a> ()</td></tr>
+<tr class="memitem:a4fbb21c20ac743fa3e41e7852906bcbd"><td class="memItemLeft" align="right" valign="top"><a id="a4fbb21c20ac743fa3e41e7852906bcbd" name="a4fbb21c20ac743fa3e41e7852906bcbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fastReset</b> ()</td></tr>
 <tr class="separator:a4fbb21c20ac743fa3e41e7852906bcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a170c610931a29c10de0776c8a2c186a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a170c610931a29c10de0776c8a2c186a6">untypedAllocList</a> (unsigned numEntries, void **entries)</td></tr>
+<tr class="memitem:a170c610931a29c10de0776c8a2c186a6"><td class="memItemLeft" align="right" valign="top"><a id="a170c610931a29c10de0776c8a2c186a6" name="a170c610931a29c10de0776c8a2c186a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>untypedAllocList</b> (unsigned numEntries, void **entries)</td></tr>
 <tr class="separator:a170c610931a29c10de0776c8a2c186a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca0a0c7f6307a30f725f35b1214f6c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#adca0a0c7f6307a30f725f35b1214f6c4">untypedFreeList</a> (unsigned numEntries, void **entries)</td></tr>
+<tr class="memitem:adca0a0c7f6307a30f725f35b1214f6c4"><td class="memItemLeft" align="right" valign="top"><a id="adca0a0c7f6307a30f725f35b1214f6c4" name="adca0a0c7f6307a30f725f35b1214f6c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>untypedFreeList</b> (unsigned numEntries, void **entries)</td></tr>
 <tr class="separator:adca0a0c7f6307a30f725f35b1214f6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02ece6b53502ab706faa84ecb2721434"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a02ece6b53502ab706faa84ecb2721434">resetStats</a> ()</td></tr>
+<tr class="memitem:a02ece6b53502ab706faa84ecb2721434"><td class="memItemLeft" align="right" valign="top"><a id="a02ece6b53502ab706faa84ecb2721434" name="a02ece6b53502ab706faa84ecb2721434"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetStats</b> ()</td></tr>
 <tr class="separator:a02ece6b53502ab706faa84ecb2721434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab37870c5a56a56d786ddeea8d7712b19"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html">Stats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab37870c5a56a56d786ddeea8d7712b19">getStats</a> () const</td></tr>
+<tr class="memitem:ab37870c5a56a56d786ddeea8d7712b19"><td class="memItemLeft" align="right" valign="top"><a id="ab37870c5a56a56d786ddeea8d7712b19" name="ab37870c5a56a56d786ddeea8d7712b19"></a>
+const <a class="el" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html">Stats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b> () const</td></tr>
 <tr class="separator:ab37870c5a56a56d786ddeea8d7712b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ffa05f85c751fe0be8ddb2b0f9a3d69"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a5ffa05f85c751fe0be8ddb2b0f9a3d69">getMemBlockManager</a> () const</td></tr>
+<tr class="memitem:a5ffa05f85c751fe0be8ddb2b0f9a3d69"><td class="memItemLeft" align="right" valign="top"><a id="a5ffa05f85c751fe0be8ddb2b0f9a3d69" name="a5ffa05f85c751fe0be8ddb2b0f9a3d69"></a>
+const <a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; BlockType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>getMemBlockManager</b> () const</td></tr>
 <tr class="separator:a5ffa05f85c751fe0be8ddb2b0f9a3d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b3ba7633b883fad14230462266f50d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#aa4b3ba7633b883fad14230462266f50d">getNumEntriesAllocated</a> () const</td></tr>
+<tr class="memitem:aa4b3ba7633b883fad14230462266f50d"><td class="memItemLeft" align="right" valign="top"><a id="aa4b3ba7633b883fad14230462266f50d" name="aa4b3ba7633b883fad14230462266f50d"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>getNumEntriesAllocated</b> () const</td></tr>
 <tr class="separator:aa4b3ba7633b883fad14230462266f50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a644589afdcaece0f4eeb99e72ae9694d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a644589afdcaece0f4eeb99e72ae9694d">isValid</a> () const</td></tr>
+<tr class="memitem:a644589afdcaece0f4eeb99e72ae9694d"><td class="memItemLeft" align="right" valign="top"><a id="a644589afdcaece0f4eeb99e72ae9694d" name="a644589afdcaece0f4eeb99e72ae9694d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> () const</td></tr>
 <tr class="separator:a644589afdcaece0f4eeb99e72ae9694d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d07244c15a5a5a681ec7b253930e54e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a8d07244c15a5a5a681ec7b253930e54e">verifyNoOutstandingAllocs</a> ()</td></tr>
+<tr class="memitem:a8d07244c15a5a5a681ec7b253930e54e"><td class="memItemLeft" align="right" valign="top"><a id="a8d07244c15a5a5a681ec7b253930e54e" name="a8d07244c15a5a5a681ec7b253930e54e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>verifyNoOutstandingAllocs</b> ()</td></tr>
 <tr class="separator:a8d07244c15a5a5a681ec7b253930e54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16533cf3394908baf7f31e5c9e3e5d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">ADD_TO_COUNTER</a> (unsigned counter, unsigned count)</td></tr>
+<tr class="memitem:ac16533cf3394908baf7f31e5c9e3e5d8"><td class="memItemLeft" align="right" valign="top"><a id="ac16533cf3394908baf7f31e5c9e3e5d8" name="ac16533cf3394908baf7f31e5c9e3e5d8"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>ADD_TO_COUNTER</b> (unsigned counter, unsigned count)</td></tr>
 <tr class="separator:ac16533cf3394908baf7f31e5c9e3e5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b61bb986aaeb220aedc8730f5168227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">INC_COUNTER</a> (unsigned counter)</td></tr>
+<tr class="memitem:a4b61bb986aaeb220aedc8730f5168227"><td class="memItemLeft" align="right" valign="top"><a id="a4b61bb986aaeb220aedc8730f5168227" name="a4b61bb986aaeb220aedc8730f5168227"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>INC_COUNTER</b> (unsigned counter)</td></tr>
 <tr class="separator:a4b61bb986aaeb220aedc8730f5168227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a924a759c69a2641efd28d5153ce1290a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a924a759c69a2641efd28d5153ce1290a">cycleToNextBlock</a> ()</td></tr>
+<tr class="memitem:a924a759c69a2641efd28d5153ce1290a"><td class="memItemLeft" align="right" valign="top"><a id="a924a759c69a2641efd28d5153ce1290a" name="a924a759c69a2641efd28d5153ce1290a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cycleToNextBlock</b> ()</td></tr>
 <tr class="separator:a924a759c69a2641efd28d5153ce1290a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5ffbe3e6cca9493776ca81d7671b35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#afe5ffbe3e6cca9493776ca81d7671b35">returnEmptyBlock</a> ()</td></tr>
+<tr class="memitem:afe5ffbe3e6cca9493776ca81d7671b35"><td class="memItemLeft" align="right" valign="top"><a id="afe5ffbe3e6cca9493776ca81d7671b35" name="afe5ffbe3e6cca9493776ca81d7671b35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>returnEmptyBlock</b> ()</td></tr>
 <tr class="separator:afe5ffbe3e6cca9493776ca81d7671b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab107bf32164c281ed910dd43daa2322e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab107bf32164c281ed910dd43daa2322e">isBlockListValid</a> () const</td></tr>
+<tr class="memitem:ab107bf32164c281ed910dd43daa2322e"><td class="memItemLeft" align="right" valign="top"><a id="ab107bf32164c281ed910dd43daa2322e" name="ab107bf32164c281ed910dd43daa2322e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBlockListValid</b> () const</td></tr>
 <tr class="separator:ab107bf32164c281ed910dd43daa2322e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a12a8eeee7d489ce0e5cbb4fae0295d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a></td></tr>
+<tr class="memitem:a12a8eeee7d489ce0e5cbb4fae0295d72"><td class="memItemLeft" align="right" valign="top"><a id="a12a8eeee7d489ce0e5cbb4fae0295d72" name="a12a8eeee7d489ce0e5cbb4fae0295d72"></a>
+<a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; BlockType &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>mBlockManager</b></td></tr>
 <tr class="separator:a12a8eeee7d489ce0e5cbb4fae0295d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a481ddfebf5b0a33ba4da1b9e72f2ea2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a></td></tr>
+<tr class="memitem:a481ddfebf5b0a33ba4da1b9e72f2ea2a"><td class="memItemLeft" align="right" valign="top"><a id="a481ddfebf5b0a33ba4da1b9e72f2ea2a" name="a481ddfebf5b0a33ba4da1b9e72f2ea2a"></a>
+BlockType *&#160;</td><td class="memItemRight" valign="bottom"><b>mActiveBlock</b></td></tr>
 <tr class="separator:a481ddfebf5b0a33ba4da1b9e72f2ea2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20e50c1e08f244bef5b34356352ae45"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a></td></tr>
+<tr class="memitem:ad20e50c1e08f244bef5b34356352ae45"><td class="memItemLeft" align="right" valign="top"><a id="ad20e50c1e08f244bef5b34356352ae45" name="ad20e50c1e08f244bef5b34356352ae45"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>mNumReserved</b></td></tr>
 <tr class="separator:ad20e50c1e08f244bef5b34356352ae45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08bdd329ca422c33dd6fc7dd6b4ed18a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a></td></tr>
+<tr class="memitem:a08bdd329ca422c33dd6fc7dd6b4ed18a"><td class="memItemLeft" align="right" valign="top"><a id="a08bdd329ca422c33dd6fc7dd6b4ed18a" name="a08bdd329ca422c33dd6fc7dd6b4ed18a"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>mNumAllocated</b></td></tr>
 <tr class="separator:a08bdd329ca422c33dd6fc7dd6b4ed18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a421ef0879e31f9334eabc57f047dfde0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html">Stats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a421ef0879e31f9334eabc57f047dfde0">mStats</a></td></tr>
+<tr class="memitem:a421ef0879e31f9334eabc57f047dfde0"><td class="memItemLeft" align="right" valign="top"><a id="a421ef0879e31f9334eabc57f047dfde0" name="a421ef0879e31f9334eabc57f047dfde0"></a>
+<a class="el" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html">Stats</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mStats</b></td></tr>
 <tr class="separator:a421ef0879e31f9334eabc57f047dfde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename BLOCK_TYPE&gt;<br />
-class scene_rdl2::alloc::LocalUntypedMemPool&lt; BLOCK_TYPE &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00785">785</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a31c5e177fd4eb072b56d4b16d723951b" name="a31c5e177fd4eb072b56d4b16d723951b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31c5e177fd4eb072b56d4b16d723951b">&#9670;&#160;</a></span>BlockType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef BLOCK_TYPE <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::BlockType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00788">788</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a9d878bafaf23e70f74840db8e3dd3127" name="a9d878bafaf23e70f74840db8e3dd3127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d878bafaf23e70f74840db8e3dd3127">&#9670;&#160;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad" name="a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad"></a>BLOCKS_ALLOCATED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530" name="a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530"></a>CASE_A_ALLOCS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6" name="a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6"></a>CASE_B_ALLOCS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a" name="a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a"></a>CASE_C_ALLOCS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83" name="a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83"></a>FREE_CALLS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84" name="a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84"></a>PROCESS_PENDING_FREE_LIST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138" name="a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138"></a>RETURNED_EMPTY_BLOCKS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254" name="a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254"></a>FAILED_BLOCK_ALLOCS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772" name="a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772"></a>FAILED_ENTRY_ALLOCS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9d878bafaf23e70f74840db8e3dd3127ad88d67790c0fe5a35c5996e5e2daa346" name="a9d878bafaf23e70f74840db8e3dd3127ad88d67790c0fe5a35c5996e5e2daa346"></a>NUM_COUNTERS&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00990">990</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  991</span>    {</div>
-<div class="line"><span class="lineno">  992</span>        <span class="comment">// MemBlock requests made to MemBlockManager.</span></div>
-<div class="line"><span class="lineno">  993</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad">BLOCKS_ALLOCATED</a>,</div>
-<div class="line"><span class="lineno">  994</span> </div>
-<div class="line"><span class="lineno">  995</span>        <span class="comment">// The number of allocations made using the fast path. This higher this</span></div>
-<div class="line"><span class="lineno">  996</span>        <span class="comment">// count, the better.</span></div>
-<div class="line"><span class="lineno">  997</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530">CASE_A_ALLOCS</a>,</div>
-<div class="line"><span class="lineno">  998</span> </div>
-<div class="line"><span class="lineno">  999</span>        <span class="comment">// The number of allocations made as a result of a call to MemBlock::processPendingFreeList.</span></div>
-<div class="line"><span class="lineno"> 1000</span>        <span class="comment">// This also equals the number of times MemBlock::processPendingFreeList returned true.</span></div>
-<div class="line"><span class="lineno"> 1001</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6">CASE_B_ALLOCS</a>,</div>
-<div class="line"><span class="lineno"> 1002</span> </div>
-<div class="line"><span class="lineno"> 1003</span>        <span class="comment">// The number of allocations which required us to allocate a brand new block.</span></div>
-<div class="line"><span class="lineno"> 1004</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a">CASE_C_ALLOCS</a>,</div>
-<div class="line"><span class="lineno"> 1005</span> </div>
-<div class="line"><span class="lineno"> 1006</span>        <span class="comment">// All the frees which have been processed. When there are no outstanding memory</span></div>
-<div class="line"><span class="lineno"> 1007</span>        <span class="comment">// allocations, this number should equal (CASE_A_ALLOCS + CASE_B_ALLOCS + CASE_C_ALLOCS).</span></div>
-<div class="line"><span class="lineno"> 1008</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83">FREE_CALLS</a>,</div>
-<div class="line"><span class="lineno"> 1009</span> </div>
-<div class="line"><span class="lineno"> 1010</span>        <span class="comment">// The number of times we&#39;ve had to call MemBlock::processPendingFreeList to</span></div>
-<div class="line"><span class="lineno"> 1011</span>        <span class="comment">// try and free up more memory. Less calls are better.</span></div>
-<div class="line"><span class="lineno"> 1012</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84">PROCESS_PENDING_FREE_LIST</a>,</div>
-<div class="line"><span class="lineno"> 1013</span> </div>
-<div class="line"><span class="lineno"> 1014</span>        <span class="comment">// The number of empty blocks we were able to return to the MemBlockManager so</span></div>
-<div class="line"><span class="lineno"> 1015</span>        <span class="comment">// that other threads could use the memory.</span></div>
-<div class="line"><span class="lineno"> 1016</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138">RETURNED_EMPTY_BLOCKS</a>,</div>
-<div class="line"><span class="lineno"> 1017</span> </div>
-<div class="line"><span class="lineno"> 1018</span>        <span class="comment">// This happens if we are completely out of local memory after pending frees</span></div>
-<div class="line"><span class="lineno"> 1019</span>        <span class="comment">// have been processed and there are no available blocks in the block manager.</span></div>
-<div class="line"><span class="lineno"> 1020</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254">FAILED_BLOCK_ALLOCS</a>,</div>
-<div class="line"><span class="lineno"> 1021</span> </div>
-<div class="line"><span class="lineno"> 1022</span>        <span class="comment">// The is the total number of entries which we&#39;ve failed to allocate.</span></div>
-<div class="line"><span class="lineno"> 1023</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772">FAILED_ENTRY_ALLOCS</a>,</div>
-<div class="line"><span class="lineno"> 1024</span> </div>
-<div class="line"><span class="lineno"> 1025</span>        <a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ad88d67790c0fe5a35c5996e5e2daa346">NUM_COUNTERS</a>,</div>
-<div class="line"><span class="lineno"> 1026</span>    };</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138">scene_rdl2::alloc::LocalUntypedMemPool::RETURNED_EMPTY_BLOCKS</a></div><div class="ttdeci">@ RETURNED_EMPTY_BLOCKS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01016">MemPool.h:1016</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83">scene_rdl2::alloc::LocalUntypedMemPool::FREE_CALLS</a></div><div class="ttdeci">@ FREE_CALLS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01008">MemPool.h:1008</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254">scene_rdl2::alloc::LocalUntypedMemPool::FAILED_BLOCK_ALLOCS</a></div><div class="ttdeci">@ FAILED_BLOCK_ALLOCS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01020">MemPool.h:1020</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84">scene_rdl2::alloc::LocalUntypedMemPool::PROCESS_PENDING_FREE_LIST</a></div><div class="ttdeci">@ PROCESS_PENDING_FREE_LIST</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01012">MemPool.h:1012</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6">scene_rdl2::alloc::LocalUntypedMemPool::CASE_B_ALLOCS</a></div><div class="ttdeci">@ CASE_B_ALLOCS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01001">MemPool.h:1001</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530">scene_rdl2::alloc::LocalUntypedMemPool::CASE_A_ALLOCS</a></div><div class="ttdeci">@ CASE_A_ALLOCS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00997">MemPool.h:997</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127ad88d67790c0fe5a35c5996e5e2daa346"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ad88d67790c0fe5a35c5996e5e2daa346">scene_rdl2::alloc::LocalUntypedMemPool::NUM_COUNTERS</a></div><div class="ttdeci">@ NUM_COUNTERS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01025">MemPool.h:1025</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772">scene_rdl2::alloc::LocalUntypedMemPool::FAILED_ENTRY_ALLOCS</a></div><div class="ttdeci">@ FAILED_ENTRY_ALLOCS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01023">MemPool.h:1023</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad">scene_rdl2::alloc::LocalUntypedMemPool::BLOCKS_ALLOCATED</a></div><div class="ttdeci">@ BLOCKS_ALLOCATED</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00993">MemPool.h:993</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a">scene_rdl2::alloc::LocalUntypedMemPool::CASE_C_ALLOCS</a></div><div class="ttdeci">@ CASE_C_ALLOCS</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01004">MemPool.h:1004</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a199a6429ca1d28ebb18f7ef7ac9ebe20" name="a199a6429ca1d28ebb18f7ef7ac9ebe20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199a6429ca1d28ebb18f7ef7ac9ebe20">&#9670;&#160;</a></span>LocalUntypedMemPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::LocalUntypedMemPool </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00790">790</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  790</span>                          :</div>
-<div class="line"><span class="lineno">  791</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>(<span class="keyword">nullptr</span>),</div>
-<div class="line"><span class="lineno">  792</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>(<span class="keyword">nullptr</span>),</div>
-<div class="line"><span class="lineno">  793</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a>(0),</div>
-<div class="line"><span class="lineno">  794</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a>(0)</div>
-<div class="line"><span class="lineno">  795</span>    {</div>
-<div class="line"><span class="lineno">  796</span>    }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a08bdd329ca422c33dd6fc7dd6b4ed18a"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">scene_rdl2::alloc::LocalUntypedMemPool::mNumAllocated</a></div><div class="ttdeci">unsigned mNumAllocated</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01216">MemPool.h:1216</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a12a8eeee7d489ce0e5cbb4fae0295d72"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">scene_rdl2::alloc::LocalUntypedMemPool::mBlockManager</a></div><div class="ttdeci">MemBlockManager&lt; BlockType &gt; * mBlockManager</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01204">MemPool.h:1204</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a481ddfebf5b0a33ba4da1b9e72f2ea2a"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">scene_rdl2::alloc::LocalUntypedMemPool::mActiveBlock</a></div><div class="ttdeci">BlockType * mActiveBlock</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01208">MemPool.h:1208</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_ad20e50c1e08f244bef5b34356352ae45"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">scene_rdl2::alloc::LocalUntypedMemPool::mNumReserved</a></div><div class="ttdeci">unsigned mNumReserved</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01212">MemPool.h:1212</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a74ce778481e5b6271b971397d126b6d1" name="a74ce778481e5b6271b971397d126b6d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74ce778481e5b6271b971397d126b6d1">&#9670;&#160;</a></span>~LocalUntypedMemPool()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::~<a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">LocalUntypedMemPool</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00798">798</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  799</span>    {</div>
-<div class="line"><span class="lineno">  800</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac2f932268a95cd29a0f06f44e00c0df1">cleanUp</a>();</div>
-<div class="line"><span class="lineno">  801</span>    }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_ac2f932268a95cd29a0f06f44e00c0df1"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac2f932268a95cd29a0f06f44e00c0df1">scene_rdl2::alloc::LocalUntypedMemPool::cleanUp</a></div><div class="ttdeci">void cleanUp()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00810">MemPool.h:810</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac16533cf3394908baf7f31e5c9e3e5d8" name="ac16533cf3394908baf7f31e5c9e3e5d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac16533cf3394908baf7f31e5c9e3e5d8">&#9670;&#160;</a></span>ADD_TO_COUNTER()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::ADD_TO_COUNTER </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>counter</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01140">1140</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1140</span>{ <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a421ef0879e31f9334eabc57f047dfde0">mStats</a>.<a class="code hl_variable" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html#a7d743a7b2fd3ad24899571006a01cf6c">mCounters</a>[counter] += count; }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a421ef0879e31f9334eabc57f047dfde0"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a421ef0879e31f9334eabc57f047dfde0">scene_rdl2::alloc::LocalUntypedMemPool::mStats</a></div><div class="ttdeci">Stats mStats</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01218">MemPool.h:1218</a></div></div>
-<div class="ttc" id="astructscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats_html_a7d743a7b2fd3ad24899571006a01cf6c"><div class="ttname"><a href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html#a7d743a7b2fd3ad24899571006a01cf6c">scene_rdl2::alloc::LocalUntypedMemPool::Stats::mCounters</a></div><div class="ttdeci">size_t mCounters[NUM_COUNTERS]</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01073">MemPool.h:1073</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac2f932268a95cd29a0f06f44e00c0df1" name="ac2f932268a95cd29a0f06f44e00c0df1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f932268a95cd29a0f06f44e00c0df1">&#9670;&#160;</a></span>cleanUp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::cleanUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00810">810</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  811</span>    {</div>
-<div class="line"><span class="lineno">  812</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a> &amp;&amp; <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>) {</div>
-<div class="line"><span class="lineno">  813</span>            <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *block = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno">  814</span>            <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  815</span>                <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *next = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)block-&gt;mNext;</div>
-<div class="line"><span class="lineno">  816</span>                <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a29e5a6ab8327bc5e8c4aee9c4ec4fa75">freeBlock</a>(block);</div>
-<div class="line"><span class="lineno">  817</span>                block = next;</div>
-<div class="line"><span class="lineno">  818</span>            } <span class="keywordflow">while</span> (block != <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno">  819</span>        }</div>
-<div class="line"><span class="lineno">  820</span> </div>
-<div class="line"><span class="lineno">  821</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  822</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  823</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a> = 0;</div>
-<div class="line"><span class="lineno">  824</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> = 0;</div>
-<div class="line"><span class="lineno">  825</span>    }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a31c5e177fd4eb072b56d4b16d723951b"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">scene_rdl2::alloc::LocalUntypedMemPool::BlockType</a></div><div class="ttdeci">BLOCK_TYPE BlockType</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00788">MemPool.h:788</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_mem_block_manager_html_a29e5a6ab8327bc5e8c4aee9c4ec4fa75"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a29e5a6ab8327bc5e8c4aee9c4ec4fa75">scene_rdl2::alloc::MemBlockManager::freeBlock</a></div><div class="ttdeci">void freeBlock(BlockType *block)</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00651">MemPool.h:651</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a924a759c69a2641efd28d5153ce1290a" name="a924a759c69a2641efd28d5153ce1290a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a924a759c69a2641efd28d5153ce1290a">&#9670;&#160;</a></span>cycleToNextBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::cycleToNextBlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01148">1148</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1149</span>    {</div>
-<div class="line"><span class="lineno"> 1150</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;mNext;</div>
-<div class="line"><span class="lineno"> 1151</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4fbb21c20ac743fa3e41e7852906bcbd" name="a4fbb21c20ac743fa3e41e7852906bcbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fbb21c20ac743fa3e41e7852906bcbd">&#9670;&#160;</a></span>fastReset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::fastReset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00844">844</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  845</span>    {</div>
-<div class="line"><span class="lineno">  846</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a02ece6b53502ab706faa84ecb2721434">resetStats</a>();</div>
-<div class="line"><span class="lineno">  847</span> </div>
-<div class="line"><span class="lineno">  848</span>        <span class="comment">// Give back all blocks we have taken so far.</span></div>
-<div class="line"><span class="lineno">  849</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>) {</div>
-<div class="line"><span class="lineno">  850</span> </div>
-<div class="line"><span class="lineno">  851</span>            <span class="comment">// Always allocate a single initial block.</span></div>
-<div class="line"><span class="lineno">  852</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">INC_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad">BLOCKS_ALLOCATED</a>);</div>
-<div class="line"><span class="lineno">  853</span>            <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a43c86c505ae1cf57acbb66cc45469e33">allocateBlock</a>();</div>
-<div class="line"><span class="lineno">  854</span> </div>
-<div class="line"><span class="lineno">  855</span>            <span class="comment">// If this fails, we need to allocate more blocks at startup.</span></div>
-<div class="line"><span class="lineno">  856</span>            <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> &amp;&amp; <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;isEmpty());</div>
-<div class="line"><span class="lineno">  857</span> </div>
-<div class="line"><span class="lineno">  858</span>            <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a> = BlockType::getNumEntries();</div>
-<div class="line"><span class="lineno">  859</span>            <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> = 0;</div>
-<div class="line"><span class="lineno">  860</span> </div>
-<div class="line"><span class="lineno">  861</span>            <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab107bf32164c281ed910dd43daa2322e">isBlockListValid</a>());</div>
-<div class="line"><span class="lineno">  862</span>        }</div>
-<div class="line"><span class="lineno">  863</span>    }</div>
-<div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a02ece6b53502ab706faa84ecb2721434"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a02ece6b53502ab706faa84ecb2721434">scene_rdl2::alloc::LocalUntypedMemPool::resetStats</a></div><div class="ttdeci">void resetStats()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01076">MemPool.h:1076</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a4b61bb986aaeb220aedc8730f5168227"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">scene_rdl2::alloc::LocalUntypedMemPool::INC_COUNTER</a></div><div class="ttdeci">finline void INC_COUNTER(unsigned counter)</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01141">MemPool.h:1141</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_ab107bf32164c281ed910dd43daa2322e"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab107bf32164c281ed910dd43daa2322e">scene_rdl2::alloc::LocalUntypedMemPool::isBlockListValid</a></div><div class="ttdeci">bool isBlockListValid() const</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01176">MemPool.h:1176</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_mem_block_manager_html_a43c86c505ae1cf57acbb66cc45469e33"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a43c86c505ae1cf57acbb66cc45469e33">scene_rdl2::alloc::MemBlockManager::allocateBlock</a></div><div class="ttdeci">BlockType * allocateBlock()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00634">MemPool.h:634</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab87afcf054ba06f4f2a0bd2df0130183" name="ab87afcf054ba06f4f2a0bd2df0130183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab87afcf054ba06f4f2a0bd2df0130183">&#9670;&#160;</a></span>fullReset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::fullReset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00828">828</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  829</span>    {</div>
-<div class="line"><span class="lineno">  830</span>        <span class="comment">// Give back all blocks we have taken so far.</span></div>
-<div class="line"><span class="lineno">  831</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a> &amp;&amp; <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>) {</div>
-<div class="line"><span class="lineno">  832</span>            <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *block = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno">  833</span>            <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  834</span>                <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *next = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)block-&gt;mNext;</div>
-<div class="line"><span class="lineno">  835</span>                <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a29e5a6ab8327bc5e8c4aee9c4ec4fa75">freeBlock</a>(block);</div>
-<div class="line"><span class="lineno">  836</span>                block = next;</div>
-<div class="line"><span class="lineno">  837</span>            } <span class="keywordflow">while</span> (block != <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno">  838</span>        }</div>
-<div class="line"><span class="lineno">  839</span> </div>
-<div class="line"><span class="lineno">  840</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4fbb21c20ac743fa3e41e7852906bcbd">fastReset</a>();</div>
-<div class="line"><span class="lineno">  841</span>    }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a4fbb21c20ac743fa3e41e7852906bcbd"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4fbb21c20ac743fa3e41e7852906bcbd">scene_rdl2::alloc::LocalUntypedMemPool::fastReset</a></div><div class="ttdeci">void fastReset()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00844">MemPool.h:844</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5ffa05f85c751fe0be8ddb2b0f9a3d69" name="a5ffa05f85c751fe0be8ddb2b0f9a3d69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ffa05f85c751fe0be8ddb2b0f9a3d69">&#9670;&#160;</a></span>getMemBlockManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> &gt; * <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::getMemBlockManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01086">1086</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1087</span>    {</div>
-<div class="line"><span class="lineno"> 1088</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>;</div>
-<div class="line"><span class="lineno"> 1089</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa4b3ba7633b883fad14230462266f50d" name="aa4b3ba7633b883fad14230462266f50d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4b3ba7633b883fad14230462266f50d">&#9670;&#160;</a></span>getNumEntriesAllocated()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::getNumEntriesAllocated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01094">1094</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1095</span>    {</div>
-<div class="line"><span class="lineno"> 1096</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a>;</div>
-<div class="line"><span class="lineno"> 1097</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab37870c5a56a56d786ddeea8d7712b19" name="ab37870c5a56a56d786ddeea8d7712b19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab37870c5a56a56d786ddeea8d7712b19">&#9670;&#160;</a></span>getStats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html">Stats</a> &amp; <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::getStats </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01081">1081</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1082</span>    {</div>
-<div class="line"><span class="lineno"> 1083</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a421ef0879e31f9334eabc57f047dfde0">mStats</a>;</div>
-<div class="line"><span class="lineno"> 1084</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4b61bb986aaeb220aedc8730f5168227" name="a4b61bb986aaeb220aedc8730f5168227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b61bb986aaeb220aedc8730f5168227">&#9670;&#160;</a></span>INC_COUNTER()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::INC_COUNTER </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>counter</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01141">1141</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1141</span>{ ++<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a421ef0879e31f9334eabc57f047dfde0">mStats</a>.<a class="code hl_variable" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html#a7d743a7b2fd3ad24899571006a01cf6c">mCounters</a>[counter]; }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a10955f1150dd3b6cac5c03cbf592f07b" name="a10955f1150dd3b6cac5c03cbf592f07b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10955f1150dd3b6cac5c03cbf592f07b">&#9670;&#160;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt; <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> &gt; *&#160;</td>
-          <td class="paramname"><em>blockManager</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00803">803</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  804</span>    {</div>
-<div class="line"><span class="lineno">  805</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac2f932268a95cd29a0f06f44e00c0df1">cleanUp</a>();</div>
-<div class="line"><span class="lineno">  806</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a> = <a class="code hl_define" href="_platform_8h.html#acf927ff672f054dc9d6f73573a38f800">MNRY_VERIFY</a>(blockManager);</div>
-<div class="line"><span class="lineno">  807</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab87afcf054ba06f4f2a0bd2df0130183">fullReset</a>();</div>
-<div class="line"><span class="lineno">  808</span>    }</div>
-<div class="ttc" id="a_platform_8h_html_acf927ff672f054dc9d6f73573a38f800"><div class="ttname"><a href="_platform_8h.html#acf927ff672f054dc9d6f73573a38f800">MNRY_VERIFY</a></div><div class="ttdeci">#define MNRY_VERIFY(exp)</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00475">Platform.h:475</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_ab87afcf054ba06f4f2a0bd2df0130183"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab87afcf054ba06f4f2a0bd2df0130183">scene_rdl2::alloc::LocalUntypedMemPool::fullReset</a></div><div class="ttdeci">void fullReset()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00828">MemPool.h:828</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab107bf32164c281ed910dd43daa2322e" name="ab107bf32164c281ed910dd43daa2322e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab107bf32164c281ed910dd43daa2322e">&#9670;&#160;</a></span>isBlockListValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::isBlockListValid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01176">1176</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1177</span>    {</div>
-<div class="line"><span class="lineno"> 1178</span>        <span class="comment">// We assume there is always at least a single block allocated.</span></div>
-<div class="line"><span class="lineno"> 1179</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno"> 1180</span> </div>
-<div class="line"><span class="lineno"> 1181</span>        <span class="keywordtype">unsigned</span> numForward = 0;</div>
-<div class="line"><span class="lineno"> 1182</span>        LinkedListNode *node = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno"> 1183</span> </div>
-<div class="line"><span class="lineno"> 1184</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno"> 1185</span>            ++numForward;</div>
-<div class="line"><span class="lineno"> 1186</span>            node = node-&gt;mNext;</div>
-<div class="line"><span class="lineno"> 1187</span>        } <span class="keywordflow">while</span> (node != <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno"> 1188</span> </div>
-<div class="line"><span class="lineno"> 1189</span>        <span class="keywordtype">unsigned</span> numBackward = 0;</div>
-<div class="line"><span class="lineno"> 1190</span>        node = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno"> 1191</span> </div>
-<div class="line"><span class="lineno"> 1192</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno"> 1193</span>            ++numBackward;</div>
-<div class="line"><span class="lineno"> 1194</span>            node = node-&gt;mPrev;</div>
-<div class="line"><span class="lineno"> 1195</span>        } <span class="keywordflow">while</span> (node != <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno"> 1196</span> </div>
-<div class="line"><span class="lineno"> 1197</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(numForward == numBackward);</div>
-<div class="line"><span class="lineno"> 1198</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(numForward * BlockType::getNumEntries() == <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a>);</div>
-<div class="line"><span class="lineno"> 1199</span> </div>
-<div class="line"><span class="lineno"> 1200</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno"> 1201</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a644589afdcaece0f4eeb99e72ae9694d" name="a644589afdcaece0f4eeb99e72ae9694d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a644589afdcaece0f4eeb99e72ae9694d">&#9670;&#160;</a></span>isValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::isValid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01099">1099</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1100</span>    {</div>
-<div class="line"><span class="lineno"> 1101</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>);</div>
-<div class="line"><span class="lineno"> 1102</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab107bf32164c281ed910dd43daa2322e">isBlockListValid</a>());</div>
-<div class="line"><span class="lineno"> 1103</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> &lt;= <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a>);</div>
-<div class="line"><span class="lineno"> 1104</span> </div>
-<div class="line"><span class="lineno"> 1105</span>        <span class="comment">// Check the the number of entries we think we&#39;ve allocated is consistent with how</span></div>
-<div class="line"><span class="lineno"> 1106</span>        <span class="comment">// many entries the block list thinks it&#39;s allocated.</span></div>
-<div class="line"><span class="lineno"> 1107</span>        <span class="keywordtype">unsigned</span> numEntries = 0;</div>
-<div class="line"><span class="lineno"> 1108</span> </div>
-<div class="line"><span class="lineno"> 1109</span>        <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *block = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno"> 1110</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno"> 1111</span>            numEntries += block-&gt;getNumUsedEntries();</div>
-<div class="line"><span class="lineno"> 1112</span>            block = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)block-&gt;mNext;</div>
-<div class="line"><span class="lineno"> 1113</span> </div>
-<div class="line"><span class="lineno"> 1114</span>        } <span class="keywordflow">while</span> (block != <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno"> 1115</span> </div>
-<div class="line"><span class="lineno"> 1116</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(numEntries == <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a>);</div>
-<div class="line"><span class="lineno"> 1117</span> </div>
-<div class="line"><span class="lineno"> 1118</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno"> 1119</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a02ece6b53502ab706faa84ecb2721434" name="a02ece6b53502ab706faa84ecb2721434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02ece6b53502ab706faa84ecb2721434">&#9670;&#160;</a></span>resetStats()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::resetStats </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01076">1076</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1077</span>    {</div>
-<div class="line"><span class="lineno"> 1078</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a421ef0879e31f9334eabc57f047dfde0">mStats</a>.<a class="code hl_function" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html#a11d30bdef471542951734d40db14b30b">reset</a>();</div>
-<div class="line"><span class="lineno"> 1079</span>    }</div>
-<div class="ttc" id="astructscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats_html_a11d30bdef471542951734d40db14b30b"><div class="ttname"><a href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html#a11d30bdef471542951734d40db14b30b">scene_rdl2::alloc::LocalUntypedMemPool::Stats::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01032">MemPool.h:1032</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afe5ffbe3e6cca9493776ca81d7671b35" name="afe5ffbe3e6cca9493776ca81d7671b35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe5ffbe3e6cca9493776ca81d7671b35">&#9670;&#160;</a></span>returnEmptyBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::returnEmptyBlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01155">1155</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1156</span>    {</div>
-<div class="line"><span class="lineno"> 1157</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">INC_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a264e4b6c10d82644436aa5233c069138">RETURNED_EMPTY_BLOCKS</a>);</div>
-<div class="line"><span class="lineno"> 1158</span> </div>
-<div class="line"><span class="lineno"> 1159</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;isEmpty());</div>
-<div class="line"><span class="lineno"> 1160</span> </div>
-<div class="line"><span class="lineno"> 1161</span>        <span class="comment">// Assert that we&#39;re not the only block left.</span></div>
-<div class="line"><span class="lineno"> 1162</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(!<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;isAlone());</div>
-<div class="line"><span class="lineno"> 1163</span> </div>
-<div class="line"><span class="lineno"> 1164</span>        <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *freeBlock = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno"> 1165</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;mNext;</div>
-<div class="line"><span class="lineno"> 1166</span> </div>
-<div class="line"><span class="lineno"> 1167</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a29e5a6ab8327bc5e8c4aee9c4ec4fa75">freeBlock</a>(freeBlock);</div>
-<div class="line"><span class="lineno"> 1168</span> </div>
-<div class="line"><span class="lineno"> 1169</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a> &gt;= BlockType::getNumEntries());</div>
-<div class="line"><span class="lineno"> 1170</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a> -= BlockType::getNumEntries();</div>
-<div class="line"><span class="lineno"> 1171</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a> &gt;= <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a>);</div>
-<div class="line"><span class="lineno"> 1172</span> </div>
-<div class="line"><span class="lineno"> 1173</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ab107bf32164c281ed910dd43daa2322e">isBlockListValid</a>());</div>
-<div class="line"><span class="lineno"> 1174</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a170c610931a29c10de0776c8a2c186a6" name="a170c610931a29c10de0776c8a2c186a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a170c610931a29c10de0776c8a2c186a6">&#9670;&#160;</a></span>untypedAllocList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::untypedAllocList </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>numEntries</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>entries</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00869">869</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  870</span>    {</div>
-<div class="line"><span class="lineno">  871</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a644589afdcaece0f4eeb99e72ae9694d">isValid</a>());</div>
-<div class="line"><span class="lineno">  872</span> </div>
-<div class="line"><span class="lineno">  873</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;isValid());</div>
-<div class="line"><span class="lineno">  874</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#ac95b9b92c4aa980af737f581d59ff56c">isValidBlockAddress</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>));</div>
-<div class="line"><span class="lineno">  875</span> </div>
-<div class="line"><span class="lineno">  876</span>        <span class="keywordtype">unsigned</span> remainingAllocs = numEntries;</div>
-<div class="line"><span class="lineno">  877</span>        <span class="keywordtype">void</span> **baseEntry = entries;</div>
-<div class="line"><span class="lineno">  878</span> </div>
-<div class="line"><span class="lineno">  879</span>        <span class="comment">//</span></div>
-<div class="line"><span class="lineno">  880</span>        <span class="comment">// Case A (best) : Try and trivially allocate from the current block.</span></div>
-<div class="line"><span class="lineno">  881</span>        <span class="comment">//</span></div>
-<div class="line"><span class="lineno">  882</span> </div>
-<div class="line"><span class="lineno">  883</span>        <span class="keywordtype">unsigned</span> numAllocated = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;allocList(remainingAllocs, entries);</div>
-<div class="line"><span class="lineno">  884</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">ADD_TO_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127acd2ea14d203d40736da0168270288530">CASE_A_ALLOCS</a>, numAllocated);</div>
-<div class="line"><span class="lineno">  885</span> </div>
-<div class="line"><span class="lineno">  886</span>        remainingAllocs -= numAllocated;</div>
-<div class="line"><span class="lineno">  887</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> += numAllocated;</div>
-<div class="line"><span class="lineno">  888</span> </div>
-<div class="line"><span class="lineno">  889</span>        <span class="keywordflow">if</span> (remainingAllocs == 0) {</div>
-<div class="line"><span class="lineno">  890</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  891</span>        }</div>
-<div class="line"><span class="lineno">  892</span> </div>
-<div class="line"><span class="lineno">  893</span>        entries = &amp;entries[numAllocated];   <span class="comment">// entries += numAllocated;</span></div>
-<div class="line"><span class="lineno">  894</span> </div>
-<div class="line"><span class="lineno">  895</span>        <span class="comment">// Don&#39;t cycle beyond (num blocks - 1) for any given allocation. This ensures that all</span></div>
-<div class="line"><span class="lineno">  896</span>        <span class="comment">// blocks will get their pending free lists flushed equally.</span></div>
-<div class="line"><span class="lineno">  897</span>        <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *endBlock = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;mPrev;</div>
-<div class="line"><span class="lineno">  898</span> </div>
-<div class="line"><span class="lineno">  899</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a924a759c69a2641efd28d5153ce1290a">cycleToNextBlock</a>();</div>
-<div class="line"><span class="lineno">  900</span> </div>
-<div class="line"><span class="lineno">  901</span>        <span class="comment">//</span></div>
-<div class="line"><span class="lineno">  902</span>        <span class="comment">// Case B (worse) : Cycle through remaining blocks and try and allocate from them.</span></div>
-<div class="line"><span class="lineno">  903</span>        <span class="comment">//</span></div>
-<div class="line"><span class="lineno">  904</span> </div>
-<div class="line"><span class="lineno">  905</span>        <span class="keywordflow">while</span> (<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> != endBlock) {</div>
-<div class="line"><span class="lineno">  906</span> </div>
-<div class="line"><span class="lineno">  907</span>            <span class="comment">// Process pending frees from this new block.</span></div>
-<div class="line"><span class="lineno">  908</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">INC_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a4774f27117c4710c0f1318ca4f69dc84">PROCESS_PENDING_FREE_LIST</a>);</div>
-<div class="line"><span class="lineno">  909</span>            <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> -= <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;processPendingFreeList();</div>
-<div class="line"><span class="lineno">  910</span>            <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> &lt;= <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a>);   <span class="comment">// Assert we haven&#39;t underflowed beyond 0.</span></div>
-<div class="line"><span class="lineno">  911</span> </div>
-<div class="line"><span class="lineno">  912</span>            <span class="comment">// Give back completely free blocks to the parent block manager *if* it&#39;s</span></div>
-<div class="line"><span class="lineno">  913</span>            <span class="comment">// not the only block remaining in the list.</span></div>
-<div class="line"><span class="lineno">  914</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;isEmpty() &amp;&amp; !<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;isAlone()) {</div>
-<div class="line"><span class="lineno">  915</span>                <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#afe5ffbe3e6cca9493776ca81d7671b35">returnEmptyBlock</a>();</div>
-<div class="line"><span class="lineno">  916</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  917</span>            }</div>
-<div class="line"><span class="lineno">  918</span> </div>
-<div class="line"><span class="lineno">  919</span>            numAllocated = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>-&gt;allocList(remainingAllocs, entries);</div>
-<div class="line"><span class="lineno">  920</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">ADD_TO_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127ab0e1a3da63ead3ab61ac05c8715141b6">CASE_B_ALLOCS</a>, numAllocated);</div>
-<div class="line"><span class="lineno">  921</span> </div>
-<div class="line"><span class="lineno">  922</span>            remainingAllocs -= numAllocated;</div>
-<div class="line"><span class="lineno">  923</span>            <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> += numAllocated;</div>
-<div class="line"><span class="lineno">  924</span> </div>
-<div class="line"><span class="lineno">  925</span>            <span class="keywordflow">if</span> (remainingAllocs == 0) {</div>
-<div class="line"><span class="lineno">  926</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  927</span>            }</div>
-<div class="line"><span class="lineno">  928</span> </div>
-<div class="line"><span class="lineno">  929</span>            entries = &amp;entries[numAllocated]; <span class="comment">// entries += numAllocated;</span></div>
-<div class="line"><span class="lineno">  930</span> </div>
-<div class="line"><span class="lineno">  931</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a924a759c69a2641efd28d5153ce1290a">cycleToNextBlock</a>();</div>
-<div class="line"><span class="lineno">  932</span>        }</div>
-<div class="line"><span class="lineno">  933</span> </div>
-<div class="line"><span class="lineno">  934</span>        <span class="comment">//</span></div>
-<div class="line"><span class="lineno">  935</span>        <span class="comment">// Case C (worst) : Satisfy all remaining allocations by grabbing brand new empty blocks.</span></div>
-<div class="line"><span class="lineno">  936</span>        <span class="comment">//</span></div>
-<div class="line"><span class="lineno">  937</span> </div>
-<div class="line"><span class="lineno">  938</span>        <span class="keywordflow">while</span> (remainingAllocs) {</div>
-<div class="line"><span class="lineno">  939</span> </div>
-<div class="line"><span class="lineno">  940</span>            <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *freshBlock = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a43c86c505ae1cf57acbb66cc45469e33">allocateBlock</a>();</div>
-<div class="line"><span class="lineno">  941</span> </div>
-<div class="line"><span class="lineno">  942</span>            <span class="keywordflow">if</span> (__builtin_expect((freshBlock != <span class="keyword">nullptr</span>), 1)) {</div>
-<div class="line"><span class="lineno">  943</span> </div>
-<div class="line"><span class="lineno">  944</span>                <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">INC_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127af7c239eefb156be8ace637ad1049e1ad">BLOCKS_ALLOCATED</a>);</div>
-<div class="line"><span class="lineno">  945</span> </div>
-<div class="line"><span class="lineno">  946</span>                <span class="comment">// Insert into head of block list so it becomes the new active block.</span></div>
-<div class="line"><span class="lineno">  947</span>                freshBlock-&gt;appendSelfAfter(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno">  948</span>                <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a> = freshBlock;</div>
-<div class="line"><span class="lineno">  949</span> </div>
-<div class="line"><span class="lineno">  950</span>                numAllocated = freshBlock-&gt;allocList(remainingAllocs, entries);</div>
-<div class="line"><span class="lineno">  951</span>                <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">ADD_TO_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127aff75b94fd775851fed44714dac36031a">CASE_C_ALLOCS</a>, numAllocated);</div>
-<div class="line"><span class="lineno">  952</span> </div>
-<div class="line"><span class="lineno">  953</span>                remainingAllocs -= numAllocated;</div>
-<div class="line"><span class="lineno">  954</span>                <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ad20e50c1e08f244bef5b34356352ae45">mNumReserved</a> += BlockType::getNumEntries();</div>
-<div class="line"><span class="lineno">  955</span>                <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> += numAllocated;</div>
-<div class="line"><span class="lineno">  956</span>                entries = &amp;entries[numAllocated]; <span class="comment">// entries += numAllocated;</span></div>
-<div class="line"><span class="lineno">  957</span> </div>
-<div class="line"><span class="lineno">  958</span>                <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  959</span>            }</div>
-<div class="line"><span class="lineno">  960</span> </div>
-<div class="line"><span class="lineno">  961</span>            <span class="comment">// We&#39;re completely out of memory!</span></div>
-<div class="line"><span class="lineno">  962</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a4b61bb986aaeb220aedc8730f5168227">INC_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a424f3f59f3309e69d8e34063a96d7254">FAILED_BLOCK_ALLOCS</a>);</div>
-<div class="line"><span class="lineno">  963</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">ADD_TO_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127adb7fe0cca47c8580bcf764a6dc2a5772">FAILED_ENTRY_ALLOCS</a>, remainingAllocs);</div>
-<div class="line"><span class="lineno">  964</span> </div>
-<div class="line"><span class="lineno">  965</span>            <span class="comment">// Free all the entries we&#39;ve just allocated to avoid leaking memory.</span></div>
-<div class="line"><span class="lineno">  966</span>            <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(remainingAllocs &amp;&amp; numEntries &gt;= remainingAllocs);</div>
-<div class="line"><span class="lineno">  967</span>            <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#adca0a0c7f6307a30f725f35b1214f6c4">untypedFreeList</a>(numEntries - remainingAllocs, baseEntry);</div>
-<div class="line"><span class="lineno">  968</span> </div>
-<div class="line"><span class="lineno">  969</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  970</span>        }</div>
-<div class="line"><span class="lineno">  971</span> </div>
-<div class="line"><span class="lineno">  972</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a644589afdcaece0f4eeb99e72ae9694d">isValid</a>());</div>
-<div class="line"><span class="lineno">  973</span> </div>
-<div class="line"><span class="lineno">  974</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  975</span>    }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a644589afdcaece0f4eeb99e72ae9694d"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a644589afdcaece0f4eeb99e72ae9694d">scene_rdl2::alloc::LocalUntypedMemPool::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01099">MemPool.h:1099</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_a924a759c69a2641efd28d5153ce1290a"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a924a759c69a2641efd28d5153ce1290a">scene_rdl2::alloc::LocalUntypedMemPool::cycleToNextBlock</a></div><div class="ttdeci">void cycleToNextBlock()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01148">MemPool.h:1148</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_ac16533cf3394908baf7f31e5c9e3e5d8"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">scene_rdl2::alloc::LocalUntypedMemPool::ADD_TO_COUNTER</a></div><div class="ttdeci">finline void ADD_TO_COUNTER(unsigned counter, unsigned count)</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01140">MemPool.h:1140</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_adca0a0c7f6307a30f725f35b1214f6c4"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#adca0a0c7f6307a30f725f35b1214f6c4">scene_rdl2::alloc::LocalUntypedMemPool::untypedFreeList</a></div><div class="ttdeci">void untypedFreeList(unsigned numEntries, void **entries)</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00979">MemPool.h:979</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_html_afe5ffbe3e6cca9493776ca81d7671b35"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#afe5ffbe3e6cca9493776ca81d7671b35">scene_rdl2::alloc::LocalUntypedMemPool::returnEmptyBlock</a></div><div class="ttdeci">void returnEmptyBlock()</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l01155">MemPool.h:1155</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_mem_block_manager_html_ac95b9b92c4aa980af737f581d59ff56c"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#ac95b9b92c4aa980af737f581d59ff56c">scene_rdl2::alloc::MemBlockManager::isValidBlockAddress</a></div><div class="ttdeci">bool isValidBlockAddress(const BlockType *block) const</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00731">MemPool.h:731</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adca0a0c7f6307a30f725f35b1214f6c4" name="adca0a0c7f6307a30f725f35b1214f6c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adca0a0c7f6307a30f725f35b1214f6c4">&#9670;&#160;</a></span>untypedFreeList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::untypedFreeList </td>
-          <td>(</td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>numEntries</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **&#160;</td>
-          <td class="paramname"><em>entries</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l00979">979</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  980</span>    {</div>
-<div class="line"><span class="lineno">  981</span>        <a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#ac16533cf3394908baf7f31e5c9e3e5d8">ADD_TO_COUNTER</a>(<a class="code hl_enumvalue" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a9d878bafaf23e70f74840db8e3dd3127a333435d2d33da894c897bc82b00e2b83">FREE_CALLS</a>, numEntries);</div>
-<div class="line"><span class="lineno">  982</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a12a8eeee7d489ce0e5cbb4fae0295d72">mBlockManager</a>-&gt;<a class="code hl_function" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a323dc57a19ae58b9affb80fb7eb02063">freeList</a>(numEntries, entries);</div>
-<div class="line"><span class="lineno">  983</span>    }</div>
-<div class="ttc" id="aclassscene__rdl2_1_1alloc_1_1_mem_block_manager_html_a323dc57a19ae58b9affb80fb7eb02063"><div class="ttname"><a href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html#a323dc57a19ae58b9affb80fb7eb02063">scene_rdl2::alloc::MemBlockManager::freeList</a></div><div class="ttdeci">void freeList(unsigned numEntries, void **entries)</div><div class="ttdef"><b>Definition:</b> <a href="_mem_pool_8h_source.html#l00669">MemPool.h:669</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8d07244c15a5a5a681ec7b253930e54e" name="a8d07244c15a5a5a681ec7b253930e54e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d07244c15a5a5a681ec7b253930e54e">&#9670;&#160;</a></span>verifyNoOutstandingAllocs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::verifyNoOutstandingAllocs </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01123">1123</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno"> 1124</span>    {</div>
-<div class="line"><span class="lineno"> 1125</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno"> 1126</span> </div>
-<div class="line"><span class="lineno"> 1127</span>        <a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *activeBlock = <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>;</div>
-<div class="line"><span class="lineno"> 1128</span>        <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno"> 1129</span>            activeBlock-&gt;processPendingFreeList();</div>
-<div class="line"><span class="lineno"> 1130</span>            <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(activeBlock-&gt;isEmpty());</div>
-<div class="line"><span class="lineno"> 1131</span>            activeBlock = (<a class="code hl_typedef" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a> *)activeBlock-&gt;mNext;</div>
-<div class="line"><span class="lineno"> 1132</span>        } <span class="keywordflow">while</span> (activeBlock != <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a481ddfebf5b0a33ba4da1b9e72f2ea2a">mActiveBlock</a>);</div>
-<div class="line"><span class="lineno"> 1133</span> </div>
-<div class="line"><span class="lineno"> 1134</span>        <a class="code hl_variable" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a08bdd329ca422c33dd6fc7dd6b4ed18a">mNumAllocated</a> = 0;</div>
-<div class="line"><span class="lineno"> 1135</span> </div>
-<div class="line"><span class="lineno"> 1136</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno"> 1137</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a481ddfebf5b0a33ba4da1b9e72f2ea2a" name="a481ddfebf5b0a33ba4da1b9e72f2ea2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a481ddfebf5b0a33ba4da1b9e72f2ea2a">&#9670;&#160;</a></span>mActiveBlock</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a>* <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::mActiveBlock</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01208">1208</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-
-</div>
-</div>
-<a id="a12a8eeee7d489ce0e5cbb4fae0295d72" name="a12a8eeee7d489ce0e5cbb4fae0295d72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12a8eeee7d489ce0e5cbb4fae0295d72">&#9670;&#160;</a></span>mBlockManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classscene__rdl2_1_1alloc_1_1_mem_block_manager.html">MemBlockManager</a>&lt;<a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html#a31c5e177fd4eb072b56d4b16d723951b">BlockType</a>&gt;* <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::mBlockManager</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01204">1204</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-
-</div>
-</div>
-<a id="a08bdd329ca422c33dd6fc7dd6b4ed18a" name="a08bdd329ca422c33dd6fc7dd6b4ed18a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08bdd329ca422c33dd6fc7dd6b4ed18a">&#9670;&#160;</a></span>mNumAllocated</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::mNumAllocated</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01216">1216</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-
-</div>
-</div>
-<a id="ad20e50c1e08f244bef5b34356352ae45" name="ad20e50c1e08f244bef5b34356352ae45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20e50c1e08f244bef5b34356352ae45">&#9670;&#160;</a></span>mNumReserved</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::mNumReserved</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01212">1212</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-
-</div>
-</div>
-<a id="a421ef0879e31f9334eabc57f047dfde0" name="a421ef0879e31f9334eabc57f047dfde0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a421ef0879e31f9334eabc57f047dfde0">&#9670;&#160;</a></span>mStats</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BLOCK_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html">Stats</a> <a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">scene_rdl2::alloc::LocalUntypedMemPool</a>&lt; BLOCK_TYPE &gt;::mStats</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mem_pool_8h_source.html#l01218">1218</a> of file <a class="el" href="_mem_pool_8h_source.html">MemPool.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/render/util/<a class="el" href="_mem_pool_8h_source.html">MemPool.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacescene__rdl2.html">scene_rdl2</a></li><li class="navelem"><a class="el" href="namespacescene__rdl2_1_1alloc.html">alloc</a></li><li class="navelem"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">LocalUntypedMemPool</a></li>
+    <li class="navelem"><a class="el" href="namespacescene__rdl2.html">scene_rdl2</a></li><li class="navelem"><b>alloc</b></li><li class="navelem"><a class="el" href="classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html">LocalUntypedMemPool</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt; Class Template Reference</title>
+<title>OpenMoonrayTEST #4: StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -94,860 +94,80 @@ $(document).ready(function(){initNavTree('class_static_hyper_grid_3_01_t_01_5_00
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3fb7bb4a763fb75c1d7ce3dd9d9b978f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions-1u, IncomingRange &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a3fb7bb4a763fb75c1d7ce3dd9d9b978f">value_type</a></td></tr>
+<tr class="memitem:a3fb7bb4a763fb75c1d7ce3dd9d9b978f"><td class="memItemLeft" align="right" valign="top"><a id="a3fb7bb4a763fb75c1d7ce3dd9d9b978f" name="a3fb7bb4a763fb75c1d7ce3dd9d9b978f"></a>
+typedef <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions-1u, IncomingRange &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></td></tr>
 <tr class="separator:a3fb7bb4a763fb75c1d7ce3dd9d9b978f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76ee21a0dd76f70cdd8eda1faa21b8c1"><td class="memItemLeft" align="right" valign="top">typedef unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a></td></tr>
+<tr class="memitem:a76ee21a0dd76f70cdd8eda1faa21b8c1"><td class="memItemLeft" align="right" valign="top"><a id="a76ee21a0dd76f70cdd8eda1faa21b8c1" name="a76ee21a0dd76f70cdd8eda1faa21b8c1"></a>
+typedef unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b></td></tr>
 <tr class="separator:a76ee21a0dd76f70cdd8eda1faa21b8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06f062791d25667bbf66f7bf18b08af6"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a06f062791d25667bbf66f7bf18b08af6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a06f062791d25667bbf66f7bf18b08af6">ResultReturnType</a> = typename std::enable_if_t&lt; <a class="el" href="structis__search__result.html">is_search_result</a>&lt; decltype(std::declval&lt; F &gt;()(std::declval&lt; T * &gt;()))&gt;::value, <a class="el" href="_static_hyper_grid_8h.html#ace90311450283e15573c72a63f675e87">SearchResult</a> &gt;</td></tr>
+<tr class="memitem:a06f062791d25667bbf66f7bf18b08af6"><td class="memTemplParams" colspan="2"><a id="a06f062791d25667bbf66f7bf18b08af6" name="a06f062791d25667bbf66f7bf18b08af6"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a06f062791d25667bbf66f7bf18b08af6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ResultReturnType</b> = typename std::enable_if_t&lt; <a class="el" href="structis__search__result.html">is_search_result</a>&lt; decltype(std::declval&lt; F &gt;()(std::declval&lt; T * &gt;()))&gt;::value, SearchResult &gt;</td></tr>
 <tr class="separator:a06f062791d25667bbf66f7bf18b08af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a356c470ff23d50c66db22a146361d463"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a356c470ff23d50c66db22a146361d463"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a356c470ff23d50c66db22a146361d463">VoidReturnType</a> = typename std::enable_if_t&lt;!<a class="el" href="structis__search__result.html">is_search_result</a>&lt; decltype(std::declval&lt; F &gt;()(std::declval&lt; T * &gt;()))&gt;::value, void &gt;</td></tr>
+<tr class="memitem:a356c470ff23d50c66db22a146361d463"><td class="memTemplParams" colspan="2"><a id="a356c470ff23d50c66db22a146361d463" name="a356c470ff23d50c66db22a146361d463"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a356c470ff23d50c66db22a146361d463"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>VoidReturnType</b> = typename std::enable_if_t&lt;!<a class="el" href="structis__search__result.html">is_search_result</a>&lt; decltype(std::declval&lt; F &gt;()(std::declval&lt; T * &gt;()))&gt;::value, void &gt;</td></tr>
 <tr class="separator:a356c470ff23d50c66db22a146361d463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05225750eabcaf08b9a76d6b1ba27e3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a05225750eabcaf08b9a76d6b1ba27e3c">StaticHyperGrid</a> ()</td></tr>
-<tr class="separator:a05225750eabcaf08b9a76d6b1ba27e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3076fb4a2996c087e031626ed107cb78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a3076fb4a2996c087e031626ed107cb78">StaticHyperGrid</a> (<a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">order</a>)</td></tr>
+<tr class="memitem:a3076fb4a2996c087e031626ed107cb78"><td class="memItemLeft" align="right" valign="top"><a id="a3076fb4a2996c087e031626ed107cb78" name="a3076fb4a2996c087e031626ed107cb78"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StaticHyperGrid</b> (size_type order)</td></tr>
 <tr class="separator:a3076fb4a2996c087e031626ed107cb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c1b0312055e54eb9eeeef85081d120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a27c1b0312055e54eb9eeeef85081d120">left</a> (<a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:a27c1b0312055e54eb9eeeef85081d120"><td class="memItemLeft" align="right" valign="top"><a id="a27c1b0312055e54eb9eeeef85081d120" name="a27c1b0312055e54eb9eeeef85081d120"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>left</b> (size_type x) const noexcept</td></tr>
 <tr class="separator:a27c1b0312055e54eb9eeeef85081d120"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e18749897bb9f17c726b53ac03af33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ac5e18749897bb9f17c726b53ac03af33">center</a> (<a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:ac5e18749897bb9f17c726b53ac03af33"><td class="memItemLeft" align="right" valign="top"><a id="ac5e18749897bb9f17c726b53ac03af33" name="ac5e18749897bb9f17c726b53ac03af33"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>center</b> (size_type x) const noexcept</td></tr>
 <tr class="separator:ac5e18749897bb9f17c726b53ac03af33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae523f50bd5a83736a851b1f096b05a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ae523f50bd5a83736a851b1f096b05a97">right</a> (<a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:ae523f50bd5a83736a851b1f096b05a97"><td class="memItemLeft" align="right" valign="top"><a id="ae523f50bd5a83736a851b1f096b05a97" name="ae523f50bd5a83736a851b1f096b05a97"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>right</b> (size_type x) const noexcept</td></tr>
 <tr class="separator:ae523f50bd5a83736a851b1f096b05a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aef5ca03ec8c562804f6689a97890cb"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a0aef5ca03ec8c562804f6689a97890cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a06f062791d25667bbf66f7bf18b08af6">ResultReturnType</a>&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a0aef5ca03ec8c562804f6689a97890cb">visitNeighbors</a> (F &amp;&amp;f, const T *p) const</td></tr>
+<tr class="memitem:a0aef5ca03ec8c562804f6689a97890cb"><td class="memTemplParams" colspan="2"><a id="a0aef5ca03ec8c562804f6689a97890cb" name="a0aef5ca03ec8c562804f6689a97890cb"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a0aef5ca03ec8c562804f6689a97890cb"><td class="memTemplItemLeft" align="right" valign="top">ResultReturnType&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>visitNeighbors</b> (F &amp;&amp;f, const T *p) const</td></tr>
 <tr class="separator:a0aef5ca03ec8c562804f6689a97890cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac804edc24da2de6396d683d84f912f0"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:aac804edc24da2de6396d683d84f912f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a356c470ff23d50c66db22a146361d463">VoidReturnType</a>&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#aac804edc24da2de6396d683d84f912f0">visitNeighbors</a> (F &amp;&amp;f, const T *p) const</td></tr>
+<tr class="memitem:aac804edc24da2de6396d683d84f912f0"><td class="memTemplParams" colspan="2"><a id="aac804edc24da2de6396d683d84f912f0" name="aac804edc24da2de6396d683d84f912f0"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:aac804edc24da2de6396d683d84f912f0"><td class="memTemplItemLeft" align="right" valign="top">VoidReturnType&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>visitNeighbors</b> (F &amp;&amp;f, const T *p) const</td></tr>
 <tr class="separator:aac804edc24da2de6396d683d84f912f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f5054a6dc658ec8fb689d96baaf3f5"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:ad7f5054a6dc658ec8fb689d96baaf3f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a06f062791d25667bbf66f7bf18b08af6">ResultReturnType</a>&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ad7f5054a6dc658ec8fb689d96baaf3f5">visitAll</a> (F &amp;&amp;f) const</td></tr>
+<tr class="memitem:ad7f5054a6dc658ec8fb689d96baaf3f5"><td class="memTemplParams" colspan="2"><a id="ad7f5054a6dc658ec8fb689d96baaf3f5" name="ad7f5054a6dc658ec8fb689d96baaf3f5"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ad7f5054a6dc658ec8fb689d96baaf3f5"><td class="memTemplItemLeft" align="right" valign="top">ResultReturnType&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>visitAll</b> (F &amp;&amp;f) const</td></tr>
 <tr class="separator:ad7f5054a6dc658ec8fb689d96baaf3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c5f749f5e1be08edc2fa65068ceabf3"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a3c5f749f5e1be08edc2fa65068ceabf3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a356c470ff23d50c66db22a146361d463">VoidReturnType</a>&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a3c5f749f5e1be08edc2fa65068ceabf3">visitAll</a> (F &amp;&amp;f) const</td></tr>
+<tr class="memitem:a3c5f749f5e1be08edc2fa65068ceabf3"><td class="memTemplParams" colspan="2"><a id="a3c5f749f5e1be08edc2fa65068ceabf3" name="a3c5f749f5e1be08edc2fa65068ceabf3"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a3c5f749f5e1be08edc2fa65068ceabf3"><td class="memTemplItemLeft" align="right" valign="top">VoidReturnType&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>visitAll</b> (F &amp;&amp;f) const</td></tr>
 <tr class="separator:a3c5f749f5e1be08edc2fa65068ceabf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7565afff514a91f1340d1eb7aac98ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ad7565afff514a91f1340d1eb7aac98ab">add</a> (const T *const t)</td></tr>
+<tr class="memitem:ad7565afff514a91f1340d1eb7aac98ab"><td class="memItemLeft" align="right" valign="top"><a id="ad7565afff514a91f1340d1eb7aac98ab" name="ad7565afff514a91f1340d1eb7aac98ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const T *const t)</td></tr>
 <tr class="separator:ad7565afff514a91f1340d1eb7aac98ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28942ed64e2d3e0f2423d19b1ed3ad8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a28942ed64e2d3e0f2423d19b1ed3ad8f">add</a> (T *t)</td></tr>
+<tr class="memitem:a28942ed64e2d3e0f2423d19b1ed3ad8f"><td class="memItemLeft" align="right" valign="top"><a id="a28942ed64e2d3e0f2423d19b1ed3ad8f" name="a28942ed64e2d3e0f2423d19b1ed3ad8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (T *t)</td></tr>
 <tr class="separator:a28942ed64e2d3e0f2423d19b1ed3ad8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2065330de2657ce406263fc488ea73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a0a2065330de2657ce406263fc488ea73">remove</a> (const T *t)</td></tr>
+<tr class="memitem:a0a2065330de2657ce406263fc488ea73"><td class="memItemLeft" align="right" valign="top"><a id="a0a2065330de2657ce406263fc488ea73" name="a0a2065330de2657ce406263fc488ea73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (const T *t)</td></tr>
 <tr class="separator:a0a2065330de2657ce406263fc488ea73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f588e377082a7044a2dd4f958f66d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">order</a> () const noexcept</td></tr>
+<tr class="memitem:a07f588e377082a7044a2dd4f958f66d0"><td class="memItemLeft" align="right" valign="top"><a id="a07f588e377082a7044a2dd4f958f66d0" name="a07f588e377082a7044a2dd4f958f66d0"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>order</b> () const noexcept</td></tr>
 <tr class="separator:a07f588e377082a7044a2dd4f958f66d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb79aba8b981544083606b56c1047f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#acbb79aba8b981544083606b56c1047f2">swap</a> (<a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a> &amp;other) noexcept</td></tr>
+<tr class="memitem:acbb79aba8b981544083606b56c1047f2"><td class="memItemLeft" align="right" valign="top"><a id="acbb79aba8b981544083606b56c1047f2" name="acbb79aba8b981544083606b56c1047f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a> &amp;other) noexcept</td></tr>
 <tr class="separator:acbb79aba8b981544083606b56c1047f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afdadf93d245f2e184fc960b57fba9856"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#afdadf93d245f2e184fc960b57fba9856">StaticHyperGrid&lt; T *, Dimensions+1, IncomingRange &gt;</a></td></tr>
+<tr class="memitem:afdadf93d245f2e184fc960b57fba9856"><td class="memItemLeft" align="right" valign="top"><a id="afdadf93d245f2e184fc960b57fba9856" name="afdadf93d245f2e184fc960b57fba9856"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>StaticHyperGrid&lt; T *, Dimensions+1, IncomingRange &gt;</b></td></tr>
 <tr class="separator:afdadf93d245f2e184fc960b57fba9856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a58c5f5af49070208dc0ccac5bf4da540"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a3fb7bb4a763fb75c1d7ce3dd9d9b978f">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a58c5f5af49070208dc0ccac5bf4da540">ContainerType</a></td></tr>
-<tr class="separator:a58c5f5af49070208dc0ccac5bf4da540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a6078632ade7092e55c008db52866d5b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a6078632ade7092e55c008db52866d5b8">offset</a> (const T &amp;p) const noexcept</td></tr>
-<tr class="separator:a6078632ade7092e55c008db52866d5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a9379750f47d634fb1ac5647bb2140f8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a></td></tr>
-<tr class="separator:a9379750f47d634fb1ac5647bb2140f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04da1a04dab4053e8e4e73148cc9dd26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a58c5f5af49070208dc0ccac5bf4da540">ContainerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a></td></tr>
-<tr class="separator:a04da1a04dab4053e8e4e73148cc9dd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, unsigned Dimensions, typename IncomingRange&gt;<br />
-class StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00428">428</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a58c5f5af49070208dc0ccac5bf4da540" name="a58c5f5af49070208dc0ccac5bf4da540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c5f5af49070208dc0ccac5bf4da540">&#9670;&#160;</a></span>ContainerType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a3fb7bb4a763fb75c1d7ce3dd9d9b978f">value_type</a>&gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::ContainerType</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00580">580</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<a id="a06f062791d25667bbf66f7bf18b08af6" name="a06f062791d25667bbf66f7bf18b08af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06f062791d25667bbf66f7bf18b08af6">&#9670;&#160;</a></span>ResultReturnType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::ResultReturnType =  typename std::enable_if_t&lt;<a class="el" href="structis__search__result.html">is_search_result</a>&lt;decltype(std::declval&lt;F&gt;()(std::declval&lt;T*&gt;()))&gt;::value, <a class="el" href="_static_hyper_grid_8h.html#ace90311450283e15573c72a63f675e87">SearchResult</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00440">440</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<a id="a76ee21a0dd76f70cdd8eda1faa21b8c1" name="a76ee21a0dd76f70cdd8eda1faa21b8c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76ee21a0dd76f70cdd8eda1faa21b8c1">&#9670;&#160;</a></span>size_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::size_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00434">434</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<a id="a3fb7bb4a763fb75c1d7ce3dd9d9b978f" name="a3fb7bb4a763fb75c1d7ce3dd9d9b978f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb7bb4a763fb75c1d7ce3dd9d9b978f">&#9670;&#160;</a></span>value_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt;T*, Dimensions-1u, IncomingRange&gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::value_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00433">433</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<a id="a356c470ff23d50c66db22a146361d463" name="a356c470ff23d50c66db22a146361d463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a356c470ff23d50c66db22a146361d463">&#9670;&#160;</a></span>VoidReturnType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::VoidReturnType =  typename std::enable_if_t&lt;!<a class="el" href="structis__search__result.html">is_search_result</a>&lt;decltype(std::declval&lt;F&gt;()(std::declval&lt;T*&gt;()))&gt;::value, void&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00443">443</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a05225750eabcaf08b9a76d6b1ba27e3c" name="a05225750eabcaf08b9a76d6b1ba27e3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05225750eabcaf08b9a76d6b1ba27e3c">&#9670;&#160;</a></span>StaticHyperGrid() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;<a class="el" href="class_static_hyper_grid.html">::StaticHyperGrid</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00445">445</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  446</span>    : <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a>(1)</div>
-<div class="line"><span class="lineno">  447</span>    , <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>(1)</div>
-<div class="line"><span class="lineno">  448</span>    {</div>
-<div class="line"><span class="lineno">  449</span>    }</div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_a04da1a04dab4053e8e4e73148cc9dd26"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::mData</a></div><div class="ttdeci">ContainerType mData</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00583">StaticHyperGrid.h:583</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_a9379750f47d634fb1ac5647bb2140f8c"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::mOrder</a></div><div class="ttdeci">size_type mOrder</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00582">StaticHyperGrid.h:582</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3076fb4a2996c087e031626ed107cb78" name="a3076fb4a2996c087e031626ed107cb78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3076fb4a2996c087e031626ed107cb78">&#9670;&#160;</a></span>StaticHyperGrid() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;<a class="el" href="class_static_hyper_grid.html">::StaticHyperGrid</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td>
-          <td class="paramname"><em>order</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00451">451</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  452</span>    : <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a>(<a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">order</a>)</div>
-<div class="line"><span class="lineno">  453</span>    , <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>()</div>
-<div class="line"><span class="lineno">  454</span>    {</div>
-<div class="line"><span class="lineno">  455</span>        <span class="comment">// Initialize sub-trees with the same order.</span></div>
-<div class="line"><span class="lineno">  456</span>        <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>.reserve(<a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">order</a>);</div>
-<div class="line"><span class="lineno">  457</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> i = 0; i &lt; <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">order</a>; ++i) {</div>
-<div class="line"><span class="lineno">  458</span>            <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>.emplace_back(<a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">order</a>);</div>
-<div class="line"><span class="lineno">  459</span>        }</div>
-<div class="line"><span class="lineno">  460</span>    }</div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_a07f588e377082a7044a2dd4f958f66d0"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a07f588e377082a7044a2dd4f958f66d0">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::order</a></div><div class="ttdeci">size_type order() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00560">StaticHyperGrid.h:560</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_a76ee21a0dd76f70cdd8eda1faa21b8c1"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::size_type</a></div><div class="ttdeci">unsigned size_type</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00434">StaticHyperGrid.h:434</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad7565afff514a91f1340d1eb7aac98ab" name="ad7565afff514a91f1340d1eb7aac98ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7565afff514a91f1340d1eb7aac98ab">&#9670;&#160;</a></span>add() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::add </td>
-          <td>(</td>
-          <td class="paramtype">const T *const&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00533">533</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  534</span>    {</div>
-<div class="line"><span class="lineno">  535</span>        assert(t);</div>
-<div class="line"><span class="lineno">  536</span>        <span class="comment">// Find cell</span></div>
-<div class="line"><span class="lineno">  537</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>(*t);</div>
-<div class="line"><span class="lineno">  538</span>        assert(idx &lt; <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>.size());</div>
-<div class="line"><span class="lineno">  539</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>[idx].add(t);</div>
-<div class="line"><span class="lineno">  540</span>    }</div>
-<div class="ttc" id="aimmintrin__emu_8h_html_a28b2522712ac6b9451f5228ea919848f"><div class="ttname"><a href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a></div><div class="ttdeci">__emu__m256d float double __m128 __m128 int offset</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00590">immintrin_emu.h:590</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a28942ed64e2d3e0f2423d19b1ed3ad8f" name="a28942ed64e2d3e0f2423d19b1ed3ad8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28942ed64e2d3e0f2423d19b1ed3ad8f">&#9670;&#160;</a></span>add() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::add </td>
-          <td>(</td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00542">542</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  543</span>    {</div>
-<div class="line"><span class="lineno">  544</span>        assert(t);</div>
-<div class="line"><span class="lineno">  545</span>        <span class="comment">// Find cell</span></div>
-<div class="line"><span class="lineno">  546</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>(*t);</div>
-<div class="line"><span class="lineno">  547</span>        assert(idx &lt; <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>.size());</div>
-<div class="line"><span class="lineno">  548</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>[idx].add(t);</div>
-<div class="line"><span class="lineno">  549</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac5e18749897bb9f17c726b53ac03af33" name="ac5e18749897bb9f17c726b53ac03af33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5e18749897bb9f17c726b53ac03af33">&#9670;&#160;</a></span>center()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::center </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00467">467</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  468</span>    {</div>
-<div class="line"><span class="lineno">  469</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
-<div class="line"><span class="lineno">  470</span>    }</div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a27c1b0312055e54eb9eeeef85081d120" name="a27c1b0312055e54eb9eeeef85081d120"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c1b0312055e54eb9eeeef85081d120">&#9670;&#160;</a></span>left()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::left </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00462">462</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  463</span>    {</div>
-<div class="line"><span class="lineno">  464</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> == 0) ? <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a> - 1u : <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> - 1u;</div>
-<div class="line"><span class="lineno">  465</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6078632ade7092e55c008db52866d5b8" name="a6078632ade7092e55c008db52866d5b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6078632ade7092e55c008db52866d5b8">&#9670;&#160;</a></span>offset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::offset </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00573">573</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  574</span>    {</div>
-<div class="line"><span class="lineno">  575</span>        assert(p[Dimensions-1u] &gt;= IncomingRange::min);</div>
-<div class="line"><span class="lineno">  576</span>        assert(p[Dimensions-1u] &lt;  IncomingRange::max);</div>
-<div class="line"><span class="lineno">  577</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a><span class="keyword">&gt;</span>(RangeScale::scale&lt;float, IncomingRange&gt;(p[Dimensions-1u], 0, <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a>));</div>
-<div class="line"><span class="lineno">  578</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a07f588e377082a7044a2dd4f958f66d0" name="a07f588e377082a7044a2dd4f958f66d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f588e377082a7044a2dd4f958f66d0">&#9670;&#160;</a></span>order()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::order </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00560">560</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  561</span>    {</div>
-<div class="line"><span class="lineno">  562</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a>;</div>
-<div class="line"><span class="lineno">  563</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0a2065330de2657ce406263fc488ea73" name="a0a2065330de2657ce406263fc488ea73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2065330de2657ce406263fc488ea73">&#9670;&#160;</a></span>remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::remove </td>
-          <td>(</td>
-          <td class="paramtype">const T *&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00551">551</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  552</span>    {</div>
-<div class="line"><span class="lineno">  553</span>        assert(t);</div>
-<div class="line"><span class="lineno">  554</span>        <span class="comment">// Find cell</span></div>
-<div class="line"><span class="lineno">  555</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>(*t);</div>
-<div class="line"><span class="lineno">  556</span>        assert(idx &lt; <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>.size());</div>
-<div class="line"><span class="lineno">  557</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>[idx].remove(t);</div>
-<div class="line"><span class="lineno">  558</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae523f50bd5a83736a851b1f096b05a97" name="ae523f50bd5a83736a851b1f096b05a97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae523f50bd5a83736a851b1f096b05a97">&#9670;&#160;</a></span>right()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::right </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a>&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00472">472</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  473</span>    {</div>
-<div class="line"><span class="lineno">  474</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> == <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a> - 1u) ? 0u : <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> + 1u;</div>
-<div class="line"><span class="lineno">  475</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="acbb79aba8b981544083606b56c1047f2" name="acbb79aba8b981544083606b56c1047f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb79aba8b981544083606b56c1047f2">&#9670;&#160;</a></span>swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::swap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00565">565</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  566</span>    {</div>
-<div class="line"><span class="lineno">  567</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a>; <span class="comment">// Allow adl</span></div>
-<div class="line"><span class="lineno">  568</span>        <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#acbb79aba8b981544083606b56c1047f2">swap</a>(<a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a>, other.<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>);</div>
-<div class="line"><span class="lineno">  569</span>        <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#acbb79aba8b981544083606b56c1047f2">swap</a>(<a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>, other.<a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>);</div>
-<div class="line"><span class="lineno">  570</span>    }</div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_acbb79aba8b981544083606b56c1047f2"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#acbb79aba8b981544083606b56c1047f2">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::swap</a></div><div class="ttdeci">void swap(StaticHyperGrid &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00565">StaticHyperGrid.h:565</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_html_a3d243de6345a9e91a57f64a907ae3061"><div class="ttname"><a href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">StaticHyperGrid::mOrder</a></div><div class="ttdeci">size_type mOrder</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00259">StaticHyperGrid.h:259</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_html_ab6d2402d70a290f04de093042ef451de"><div class="ttname"><a href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">StaticHyperGrid::mData</a></div><div class="ttdeci">ContainerType mData</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00260">StaticHyperGrid.h:260</a></div></div>
-<div class="ttc" id="anamespacestd_html_a7ffc9a83d505624d453906655627414d"><div class="ttname"><a href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a></div><div class="ttdeci">void swap(StaticVector&lt; T, N &gt; &amp;a, StaticVector&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00552">StaticVector.h:552</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad7f5054a6dc658ec8fb689d96baaf3f5" name="ad7f5054a6dc658ec8fb689d96baaf3f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f5054a6dc658ec8fb689d96baaf3f5">&#9670;&#160;</a></span>visitAll() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a06f062791d25667bbf66f7bf18b08af6">ResultReturnType</a>&lt; F &gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::visitAll </td>
-          <td>(</td>
-          <td class="paramtype">F &amp;&amp;&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00515">515</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  516</span>    {</div>
-<div class="line"><span class="lineno">  517</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; n : <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>) {</div>
-<div class="line"><span class="lineno">  518</span>            <span class="keywordflow">if</span> (n.visitAll(std::forward&lt;F&gt;(f)) == SearchResult::TERMINATED_EARLY) {</div>
-<div class="line"><span class="lineno">  519</span>                <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
-<div class="line"><span class="lineno">  520</span>            }</div>
-<div class="line"><span class="lineno">  521</span>        }</div>
-<div class="line"><span class="lineno">  522</span>        <span class="keywordflow">return</span> SearchResult::SEARCH_COMPLETE;</div>
-<div class="line"><span class="lineno">  523</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3c5f749f5e1be08edc2fa65068ceabf3" name="a3c5f749f5e1be08edc2fa65068ceabf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c5f749f5e1be08edc2fa65068ceabf3">&#9670;&#160;</a></span>visitAll() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a356c470ff23d50c66db22a146361d463">VoidReturnType</a>&lt; F &gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::visitAll </td>
-          <td>(</td>
-          <td class="paramtype">F &amp;&amp;&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00526">526</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  527</span>    {</div>
-<div class="line"><span class="lineno">  528</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; n : <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>) {</div>
-<div class="line"><span class="lineno">  529</span>            n.visitAll(std::forward&lt;F&gt;(f));</div>
-<div class="line"><span class="lineno">  530</span>        }</div>
-<div class="line"><span class="lineno">  531</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0aef5ca03ec8c562804f6689a97890cb" name="a0aef5ca03ec8c562804f6689a97890cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aef5ca03ec8c562804f6689a97890cb">&#9670;&#160;</a></span>visitNeighbors() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a06f062791d25667bbf66f7bf18b08af6">ResultReturnType</a>&lt; F &gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::visitNeighbors </td>
-          <td>(</td>
-          <td class="paramtype">F &amp;&amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00478">478</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  479</span>    {</div>
-<div class="line"><span class="lineno">  480</span>        assert(p);</div>
-<div class="line"><span class="lineno">  481</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a> &lt;= 3) {</div>
-<div class="line"><span class="lineno">  482</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ad7f5054a6dc658ec8fb689d96baaf3f5">visitAll</a>(std::forward&lt;F&gt;(f));</div>
-<div class="line"><span class="lineno">  483</span>        }</div>
-<div class="line"><span class="lineno">  484</span> </div>
-<div class="line"><span class="lineno">  485</span>        <span class="comment">// Find cell</span></div>
-<div class="line"><span class="lineno">  486</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> cell = <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>(*p);</div>
-<div class="line"><span class="lineno">  487</span>        <span class="keyword">const</span> std::array&lt;size_type, 3&gt; vals = { { <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a27c1b0312055e54eb9eeeef85081d120">left</a>(cell), <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ac5e18749897bb9f17c726b53ac03af33">center</a>(cell), <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ae523f50bd5a83736a851b1f096b05a97">right</a>(cell) } };</div>
-<div class="line"><span class="lineno">  488</span> </div>
-<div class="line"><span class="lineno">  489</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> current : vals) {</div>
-<div class="line"><span class="lineno">  490</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>[current].<a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a0aef5ca03ec8c562804f6689a97890cb">visitNeighbors</a>(std::forward&lt;F&gt;(f), p) == SearchResult::TERMINATED_EARLY) {</div>
-<div class="line"><span class="lineno">  491</span>                <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
-<div class="line"><span class="lineno">  492</span>            }</div>
-<div class="line"><span class="lineno">  493</span>        }</div>
-<div class="line"><span class="lineno">  494</span>        <span class="keywordflow">return</span> SearchResult::SEARCH_COMPLETE;</div>
-<div class="line"><span class="lineno">  495</span>    }</div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_a0aef5ca03ec8c562804f6689a97890cb"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a0aef5ca03ec8c562804f6689a97890cb">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::visitNeighbors</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitNeighbors(F &amp;&amp;f, const T *p) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00478">StaticHyperGrid.h:478</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_a27c1b0312055e54eb9eeeef85081d120"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a27c1b0312055e54eb9eeeef85081d120">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::left</a></div><div class="ttdeci">size_type left(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00462">StaticHyperGrid.h:462</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_ac5e18749897bb9f17c726b53ac03af33"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ac5e18749897bb9f17c726b53ac03af33">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::center</a></div><div class="ttdeci">size_type center(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00467">StaticHyperGrid.h:467</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_ad7f5054a6dc658ec8fb689d96baaf3f5"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ad7f5054a6dc658ec8fb689d96baaf3f5">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::visitAll</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitAll(F &amp;&amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00515">StaticHyperGrid.h:515</a></div></div>
-<div class="ttc" id="aclass_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4_html_ae523f50bd5a83736a851b1f096b05a97"><div class="ttname"><a href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ae523f50bd5a83736a851b1f096b05a97">StaticHyperGrid&lt; T *, Dimensions, IncomingRange &gt;::right</a></div><div class="ttdeci">size_type right(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00472">StaticHyperGrid.h:472</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aac804edc24da2de6396d683d84f912f0" name="aac804edc24da2de6396d683d84f912f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac804edc24da2de6396d683d84f912f0">&#9670;&#160;</a></span>visitNeighbors() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a356c470ff23d50c66db22a146361d463">VoidReturnType</a>&lt; F &gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::visitNeighbors </td>
-          <td>(</td>
-          <td class="paramtype">F &amp;&amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00498">498</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  499</span>    {</div>
-<div class="line"><span class="lineno">  500</span>        assert(p);</div>
-<div class="line"><span class="lineno">  501</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a9379750f47d634fb1ac5647bb2140f8c">mOrder</a> &lt;= 3) {</div>
-<div class="line"><span class="lineno">  502</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ad7f5054a6dc658ec8fb689d96baaf3f5">visitAll</a>(std::forward&lt;F&gt;(f));</div>
-<div class="line"><span class="lineno">  503</span>        }</div>
-<div class="line"><span class="lineno">  504</span> </div>
-<div class="line"><span class="lineno">  505</span>        <span class="comment">// Find cell</span></div>
-<div class="line"><span class="lineno">  506</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> cell = <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>(*p);</div>
-<div class="line"><span class="lineno">  507</span>        <span class="keyword">const</span> std::array&lt;size_type, 3&gt; vals = { { <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a27c1b0312055e54eb9eeeef85081d120">left</a>(cell), <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ac5e18749897bb9f17c726b53ac03af33">center</a>(cell), <a class="code hl_function" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#ae523f50bd5a83736a851b1f096b05a97">right</a>(cell) } };</div>
-<div class="line"><span class="lineno">  508</span> </div>
-<div class="line"><span class="lineno">  509</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> current : vals) {</div>
-<div class="line"><span class="lineno">  510</span>            <a class="code hl_variable" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a04da1a04dab4053e8e4e73148cc9dd26">mData</a>[current].visitNeighbors(std::forward&lt;F&gt;(f), p);</div>
-<div class="line"><span class="lineno">  511</span>        }</div>
-<div class="line"><span class="lineno">  512</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a04da1a04dab4053e8e4e73148cc9dd26" name="a04da1a04dab4053e8e4e73148cc9dd26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04da1a04dab4053e8e4e73148cc9dd26">&#9670;&#160;</a></span>mData</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a58c5f5af49070208dc0ccac5bf4da540">ContainerType</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::mData</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00583">583</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<a id="a9379750f47d634fb1ac5647bb2140f8c" name="a9379750f47d634fb1ac5647bb2140f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9379750f47d634fb1ac5647bb2140f8c">&#9670;&#160;</a></span>mOrder</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html#a76ee21a0dd76f70cdd8eda1faa21b8c1">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;::mOrder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00582">582</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<a id="afdadf93d245f2e184fc960b57fba9856" name="afdadf93d245f2e184fc960b57fba9856"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdadf93d245f2e184fc960b57fba9856">&#9670;&#160;</a></span>StaticHyperGrid&lt; T *, Dimensions+1, IncomingRange &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , unsigned Dimensions, typename IncomingRange &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">friend <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T *, Dimensions, IncomingRange &gt;<a class="el" href="class_static_hyper_grid.html">::StaticHyperGrid</a>&lt; T *, Dimensions+1, IncomingRange &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00431">431</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/cmd/point_generation_cmd/<a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

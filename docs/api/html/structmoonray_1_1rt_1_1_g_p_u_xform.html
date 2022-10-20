@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: moonray::rt::GPUXform Struct Reference</title>
+<title>OpenMoonrayTEST #4: moonray::rt::GPUXform Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -98,307 +98,37 @@ $(document).ready(function(){initNavTree('structmoonray_1_1rt_1_1_g_p_u_xform.ht
   <div class="headertitle"><div class="title">moonray::rt::GPUXform Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa360431794f866f3d5de793aaa8f053f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#aa360431794f866f3d5de793aaa8f053f">GPUXform</a> ()=default</td></tr>
-<tr class="separator:aa360431794f866f3d5de793aaa8f053f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973618566f76b38fc894f42b5d4438de"><td class="memItemLeft" align="right" valign="top">__host__ __device__ float3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a973618566f76b38fc894f42b5d4438de">transformVector</a> (const float3 &amp;v) const</td></tr>
+<tr class="memitem:a973618566f76b38fc894f42b5d4438de"><td class="memItemLeft" align="right" valign="top"><a id="a973618566f76b38fc894f42b5d4438de" name="a973618566f76b38fc894f42b5d4438de"></a>
+__host__ __device__ float3&#160;</td><td class="memItemRight" valign="bottom"><b>transformVector</b> (const float3 &amp;v) const</td></tr>
 <tr class="separator:a973618566f76b38fc894f42b5d4438de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69d85ee2925ef149a4e281eb4184a71"><td class="memItemLeft" align="right" valign="top">__host__ __device__ float3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a> (const float3 &amp;p) const</td></tr>
+<tr class="memitem:ae69d85ee2925ef149a4e281eb4184a71"><td class="memItemLeft" align="right" valign="top"><a id="ae69d85ee2925ef149a4e281eb4184a71" name="ae69d85ee2925ef149a4e281eb4184a71"></a>
+__host__ __device__ float3&#160;</td><td class="memItemRight" valign="bottom"><b>transformPoint</b> (const float3 &amp;p) const</td></tr>
 <tr class="separator:ae69d85ee2925ef149a4e281eb4184a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad271043ebe1b3fccc6865212afdbf85c"><td class="memItemLeft" align="right" valign="top">__host__ __device__ OptixAabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ad271043ebe1b3fccc6865212afdbf85c">transformAabb</a> (const OptixAabb &amp;bb) const</td></tr>
+<tr class="memitem:ad271043ebe1b3fccc6865212afdbf85c"><td class="memItemLeft" align="right" valign="top"><a id="ad271043ebe1b3fccc6865212afdbf85c" name="ad271043ebe1b3fccc6865212afdbf85c"></a>
+__host__ __device__ OptixAabb&#160;</td><td class="memItemRight" valign="bottom"><b>transformAabb</b> (const OptixAabb &amp;bb) const</td></tr>
 <tr class="separator:ad271043ebe1b3fccc6865212afdbf85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a545916fe3c783a2bde6249fbba48d52f"><td class="memItemLeft" align="right" valign="top">__host__ __device__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a545916fe3c783a2bde6249fbba48d52f">toOptixTransform</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[12]) const</td></tr>
+<tr class="memitem:a545916fe3c783a2bde6249fbba48d52f"><td class="memItemLeft" align="right" valign="top"><a id="a545916fe3c783a2bde6249fbba48d52f" name="a545916fe3c783a2bde6249fbba48d52f"></a>
+__host__ __device__ void&#160;</td><td class="memItemRight" valign="bottom"><b>toOptixTransform</b> (float transform[12]) const</td></tr>
 <tr class="separator:a545916fe3c783a2bde6249fbba48d52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a918feffd82903e96f0701ab0a8b08aa5"><td class="memItemLeft" align="right" valign="top">__host__ static __device__ <a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html">GPUXform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a918feffd82903e96f0701ab0a8b08aa5">identityXform</a> ()</td></tr>
+<tr class="memitem:a918feffd82903e96f0701ab0a8b08aa5"><td class="memItemLeft" align="right" valign="top"><a id="a918feffd82903e96f0701ab0a8b08aa5" name="a918feffd82903e96f0701ab0a8b08aa5"></a>
+__host__ static __device__ <a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html">GPUXform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>identityXform</b> ()</td></tr>
 <tr class="separator:a918feffd82903e96f0701ab0a8b08aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56044223aef8104367c7e77777e6a841"><td class="memItemLeft" align="right" valign="top">__host__ static __device__ <a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html">GPUXform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a56044223aef8104367c7e77777e6a841">rotateToZAxisXform</a> (const float3 &amp;dir)</td></tr>
+<tr class="memitem:a56044223aef8104367c7e77777e6a841"><td class="memItemLeft" align="right" valign="top"><a id="a56044223aef8104367c7e77777e6a841" name="a56044223aef8104367c7e77777e6a841"></a>
+__host__ static __device__ <a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html">GPUXform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rotateToZAxisXform</b> (const float3 &amp;dir)</td></tr>
 <tr class="separator:a56044223aef8104367c7e77777e6a841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a5da45f436892e99854751b1612a75bcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a> [3][4]</td></tr>
+<tr class="memitem:a5da45f436892e99854751b1612a75bcc"><td class="memItemLeft" align="right" valign="top"><a id="a5da45f436892e99854751b1612a75bcc" name="a5da45f436892e99854751b1612a75bcc"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m</b> [3][4]</td></tr>
 <tr class="separator:a5da45f436892e99854751b1612a75bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00350">350</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa360431794f866f3d5de793aaa8f053f" name="aa360431794f866f3d5de793aaa8f053f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa360431794f866f3d5de793aaa8f053f">&#9670;&#160;</a></span>GPUXform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">moonray::rt::GPUXform::GPUXform </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a918feffd82903e96f0701ab0a8b08aa5" name="a918feffd82903e96f0701ab0a8b08aa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a918feffd82903e96f0701ab0a8b08aa5">&#9670;&#160;</a></span>identityXform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">__host__ static __device__ <a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html">GPUXform</a> moonray::rt::GPUXform::identityXform </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00355">355</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  356</span>    {</div>
-<div class="line"><span class="lineno">  357</span>        <span class="keywordflow">return</span> {1.f, 0.f, 0.f, 0.f,</div>
-<div class="line"><span class="lineno">  358</span>                0.f, 1.f, 0.f, 0.f,</div>
-<div class="line"><span class="lineno">  359</span>                0.f, 0.f, 1.f, 0.f};</div>
-<div class="line"><span class="lineno">  360</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a56044223aef8104367c7e77777e6a841" name="a56044223aef8104367c7e77777e6a841"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56044223aef8104367c7e77777e6a841">&#9670;&#160;</a></span>rotateToZAxisXform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">__host__ static __device__ <a class="el" href="structmoonray_1_1rt_1_1_g_p_u_xform.html">GPUXform</a> moonray::rt::GPUXform::rotateToZAxisXform </td>
-          <td>(</td>
-          <td class="paramtype">const float3 &amp;&#160;</td>
-          <td class="paramname"><em>dir</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00363">363</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  364</span>    {</div>
-<div class="line"><span class="lineno">  365</span>        <span class="comment">// transform to space where dir.z is the +Z axis</span></div>
-<div class="line"><span class="lineno">  366</span>        float3 vz = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a3401cfa71faa336560e3034893ea8cdb">normalize</a>(dir);</div>
-<div class="line"><span class="lineno">  367</span>        float3 vx, vy;</div>
-<div class="line"><span class="lineno">  368</span>        <a class="code hl_function" href="_g_p_u_math_8h.html#af7f757ec3c5951b518953a432311c359">makeCoordSystem</a>(vz, &amp;vx, &amp;vy);</div>
-<div class="line"><span class="lineno">  369</span>        <span class="comment">// form the matrix:</span></div>
-<div class="line"><span class="lineno">  370</span>        <span class="comment">// [ vx.x, vy.x, vz.x, 0 ]</span></div>
-<div class="line"><span class="lineno">  371</span>        <span class="comment">// [ vx.y, vy.y, vz.y, 0 ]</span></div>
-<div class="line"><span class="lineno">  372</span>        <span class="comment">// [ vx.z, vy.z, vz.z, 0 ]</span></div>
-<div class="line"><span class="lineno">  373</span>        <span class="comment">// take the transpose to invert it</span></div>
-<div class="line"><span class="lineno">  374</span>        <span class="keywordflow">return</span> {vx.x, vx.y, vx.z, 0.f,</div>
-<div class="line"><span class="lineno">  375</span>                vy.x, vy.y, vy.z, 0.f,</div>
-<div class="line"><span class="lineno">  376</span>                vz.x, vz.y, vz.z, 0.f};</div>
-<div class="line"><span class="lineno">  377</span>    }</div>
-<div class="ttc" id="a_g_p_u_math_8h_html_af7f757ec3c5951b518953a432311c359"><div class="ttname"><a href="_g_p_u_math_8h.html#af7f757ec3c5951b518953a432311c359">makeCoordSystem</a></div><div class="ttdeci">__host__ __device__ void makeCoordSystem(const float3 &amp;v1, float3 *v2, float3 *v3)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00171">GPUMath.h:171</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a3401cfa71faa336560e3034893ea8cdb"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a3401cfa71faa336560e3034893ea8cdb">scene_rdl2::math::normalize</a></div><div class="ttdeci">__forceinline QuaternionT&lt; T &gt; normalize(const QuaternionT&lt; T &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="_quaternion_8h_source.html#l00097">Quaternion.h:97</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a545916fe3c783a2bde6249fbba48d52f" name="a545916fe3c783a2bde6249fbba48d52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a545916fe3c783a2bde6249fbba48d52f">&#9670;&#160;</a></span>toOptixTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">__host__ __device__ void moonray::rt::GPUXform::toOptixTransform </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
-          <td class="paramname"><em>transform</em>[12]</td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00414">414</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  415</span>    {</div>
-<div class="line"><span class="lineno">  416</span>        <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[0] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][0]; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[1] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][1];  <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[2] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][2];  <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[3] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][3];</div>
-<div class="line"><span class="lineno">  417</span>        <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[4] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][0]; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[5] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][1];  <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[6] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][2];  <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[7] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][3];</div>
-<div class="line"><span class="lineno">  418</span>        <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[8] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][0]; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[9] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][1]; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[10] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][2]; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">transform</a>[11] = <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][3];</div>
-<div class="line"><span class="lineno">  419</span>    }</div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_ab0b214340af331a180d249053a71bb79"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#ab0b214340af331a180d249053a71bb79">scene_rdl2::math::transform</a></div><div class="ttdeci">__forceinline VectorT transform(const Mat3&lt; VectorT &gt; &amp;m, const VectorT &amp;v)</div><div class="ttdoc">post-multiply transform</div><div class="ttdef"><b>Definition:</b> <a href="_mat3_8h_source.html#l00386">Mat3.h:386</a></div></div>
-<div class="ttc" id="astructmoonray_1_1rt_1_1_g_p_u_xform_html_a5da45f436892e99854751b1612a75bcc"><div class="ttname"><a href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">moonray::rt::GPUXform::m</a></div><div class="ttdeci">float m[3][4]</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00421">GPUMath.h:421</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad271043ebe1b3fccc6865212afdbf85c" name="ad271043ebe1b3fccc6865212afdbf85c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad271043ebe1b3fccc6865212afdbf85c">&#9670;&#160;</a></span>transformAabb()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">__host__ __device__ OptixAabb moonray::rt::GPUXform::transformAabb </td>
-          <td>(</td>
-          <td class="paramtype">const OptixAabb &amp;&#160;</td>
-          <td class="paramname"><em>bb</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00396">396</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  397</span>    {</div>
-<div class="line"><span class="lineno">  398</span>        <span class="comment">// TODO: Not the most efficient way to do this, but the easiest</span></div>
-<div class="line"><span class="lineno">  399</span>        <span class="comment">// see Graphics Gems pg 548 for a faster way.  This slow way is what we do in</span></div>
-<div class="line"><span class="lineno">  400</span>        <span class="comment">// CPU-side math::transformBounds()...</span></div>
-<div class="line"><span class="lineno">  401</span>        OptixAabb result = <a class="code hl_function" href="_g_p_u_math_8h.html#a5f7970132612e4be61c13a005d84b127">emptyAabb</a>();</div>
-<div class="line"><span class="lineno">  402</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.minX, bb.minY, bb.minZ}));</div>
-<div class="line"><span class="lineno">  403</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.minX, bb.minY, bb.maxZ}));</div>
-<div class="line"><span class="lineno">  404</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.minX, bb.maxY, bb.minZ}));</div>
-<div class="line"><span class="lineno">  405</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.minX, bb.maxY, bb.maxZ}));</div>
-<div class="line"><span class="lineno">  406</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.maxX, bb.minY, bb.minZ}));</div>
-<div class="line"><span class="lineno">  407</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.maxX, bb.minY, bb.maxZ}));</div>
-<div class="line"><span class="lineno">  408</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.maxX, bb.maxY, bb.minZ}));</div>
-<div class="line"><span class="lineno">  409</span>        result = <a class="code hl_function" href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a>(result, <a class="code hl_function" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">transformPoint</a>({bb.maxX, bb.maxY, bb.maxZ}));</div>
-<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  411</span>    }</div>
-<div class="ttc" id="a_g_p_u_math_8h_html_a5f7970132612e4be61c13a005d84b127"><div class="ttname"><a href="_g_p_u_math_8h.html#a5f7970132612e4be61c13a005d84b127">emptyAabb</a></div><div class="ttdeci">__host__ __device__ OptixAabb emptyAabb()</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00239">GPUMath.h:239</a></div></div>
-<div class="ttc" id="a_g_p_u_math_8h_html_ac8e7c48048a8355547417072f44dc618"><div class="ttname"><a href="_g_p_u_math_8h.html#ac8e7c48048a8355547417072f44dc618">expandAabb</a></div><div class="ttdeci">__host__ __device__ OptixAabb expandAabb(const OptixAabb &amp;bb, const float3 &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00245">GPUMath.h:245</a></div></div>
-<div class="ttc" id="astructmoonray_1_1rt_1_1_g_p_u_xform_html_ae69d85ee2925ef149a4e281eb4184a71"><div class="ttname"><a href="structmoonray_1_1rt_1_1_g_p_u_xform.html#ae69d85ee2925ef149a4e281eb4184a71">moonray::rt::GPUXform::transformPoint</a></div><div class="ttdeci">__host__ __device__ float3 transformPoint(const float3 &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00388">GPUMath.h:388</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae69d85ee2925ef149a4e281eb4184a71" name="ae69d85ee2925ef149a4e281eb4184a71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69d85ee2925ef149a4e281eb4184a71">&#9670;&#160;</a></span>transformPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">__host__ __device__ float3 moonray::rt::GPUXform::transformPoint </td>
-          <td>(</td>
-          <td class="paramtype">const float3 &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00388">388</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  389</span>    {</div>
-<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">return</span> {<a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][0] * p.x + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][1] * p.y + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][2] * p.z + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][3],</div>
-<div class="line"><span class="lineno">  391</span>                <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][0] * p.x + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][1] * p.y + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][2] * p.z + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][3],</div>
-<div class="line"><span class="lineno">  392</span>                <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][0] * p.x + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][1] * p.y + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][2] * p.z + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][3]};</div>
-<div class="line"><span class="lineno">  393</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a973618566f76b38fc894f42b5d4438de" name="a973618566f76b38fc894f42b5d4438de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a973618566f76b38fc894f42b5d4438de">&#9670;&#160;</a></span>transformVector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">__host__ __device__ float3 moonray::rt::GPUXform::transformVector </td>
-          <td>(</td>
-          <td class="paramtype">const float3 &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00380">380</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  381</span>    {</div>
-<div class="line"><span class="lineno">  382</span>        <span class="keywordflow">return</span> {<a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][0] * v.x + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][1] * v.y + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[0][2] * v.z,</div>
-<div class="line"><span class="lineno">  383</span>                <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][0] * v.x + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][1] * v.y + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[1][2] * v.z,</div>
-<div class="line"><span class="lineno">  384</span>                <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][0] * v.x + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][1] * v.y + <a class="code hl_variable" href="structmoonray_1_1rt_1_1_g_p_u_xform.html#a5da45f436892e99854751b1612a75bcc">m</a>[2][2] * v.z};</div>
-<div class="line"><span class="lineno">  385</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5da45f436892e99854751b1612a75bcc" name="a5da45f436892e99854751b1612a75bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da45f436892e99854751b1612a75bcc">&#9670;&#160;</a></span>m</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::rt::GPUXform::m[3][4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_math_8h_source.html#l00421">421</a> of file <a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/rt/gpu/<a class="el" href="_g_p_u_math_8h_source.html">GPUMath.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

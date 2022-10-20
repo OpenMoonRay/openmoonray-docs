@@ -1,6 +1,5 @@
 var _eval_shader_8cc =
 [
-    [ "SHADING_BRACKET_TIMING_ENABLED", "_eval_shader_8cc.html#a08329f12b6655115adc1244515165429", null ],
     [ "displace", "_eval_shader_8cc.html#a27a695e3cda6789e0c6e2fe907e91e03", null ],
     [ "presence", "_eval_shader_8cc.html#a4815cc2ae7e188b0dffcd0a11c0a7add", null ],
     [ "presence", "_eval_shader_8cc.html#ad4854d830e2734d8c8ef520014cfc81d", null ],

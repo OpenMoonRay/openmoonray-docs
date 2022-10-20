@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/VdbVolume.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/VdbVolume.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('lib_2rendering_2geom_2prim_2_vdb_volum
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">VdbVolume.cc File Reference</div></div>
@@ -101,7 +100,7 @@ $(document).ready(function(){initNavTree('lib_2rendering_2geom_2prim_2_vdb_volum
 <code>#include &lt;<a class="el" href="_volume_sample_info_8h_source.html">rendering/geom/prim/VolumeSampleInfo.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_transition_8h_source.html">rendering/geom/prim/VolumeTransition.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_attribute_key_8h_source.html">rendering/bvh/shading/AttributeKey.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_root_shader_8h_source.html">rendering/bvh/shading/RootShader.h</a>&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/RootShader.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="bvh_2shading_2_state_8h_source.html">rendering/bvh/shading/State.h</a>&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/logging/logging.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/stdmemory.h&gt;</code><br />
@@ -118,34 +117,22 @@ $(document).ready(function(){initNavTree('lib_2rendering_2geom_2prim_2_vdb_volum
 <code>#include &lt;tbb/blocked_range.h&gt;</code><br />
 <code>#include &lt;tbb/enumerable_thread_specific.h&gt;</code><br />
 <code>#include &lt;tbb/parallel_for.h&gt;</code><br />
-</div>
-<p><a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_d_d_a_intersector.html">moonray::geom::internal::DDAIntersector</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html">moonray::geom</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">moonray::geom::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ace8c672f37bfdf4df48286e5262fb14f"><td class="memItemLeft" align="right" valign="top">const openvdb::GridBase::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ace8c672f37bfdf4df48286e5262fb14f">moonray::geom::internal::findNthGridByName</a> (const openvdb::GridPtrVec &amp;grids, const std::string &amp;name)</td></tr>
+<tr class="memitem:ace8c672f37bfdf4df48286e5262fb14f"><td class="memItemLeft" align="right" valign="top"><a id="ace8c672f37bfdf4df48286e5262fb14f" name="ace8c672f37bfdf4df48286e5262fb14f"></a>
+const openvdb::GridBase::Ptr&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::findNthGridByName</b> (const openvdb::GridPtrVec &amp;grids, const std::string &amp;name)</td></tr>
 <tr class="separator:ace8c672f37bfdf4df48286e5262fb14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Mark Matthews </dd>
 <dd>
 Wayne Huang </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html">VdbVolume.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

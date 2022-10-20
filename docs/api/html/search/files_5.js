@@ -1,32 +1,4 @@
 var searchData=
 [
-  ['edgedetect_2ecc_0',['EdgeDetect.cc',['../_edge_detect_8cc.html',1,'']]],
-  ['edgedetect_2eh_1',['EdgeDetect.h',['../_edge_detect_8h.html',1,'']]],
-  ['ellipticalfalloff_2ecc_2',['EllipticalFalloff.cc',['../_elliptical_falloff_8cc.html',1,'']]],
-  ['ellipticalfalloff_2eh_3',['EllipticalFalloff.h',['../_elliptical_falloff_8h.html',1,'']]],
-  ['ellipticalfalloff_2ehh_4',['EllipticalFalloff.hh',['../_elliptical_falloff_8hh.html',1,'']]],
-  ['embreeaccelerator_2ecc_5',['EmbreeAccelerator.cc',['../_embree_accelerator_8cc.html',1,'']]],
-  ['embreeaccelerator_2eh_6',['EmbreeAccelerator.h',['../_embree_accelerator_8h.html',1,'']]],
-  ['emissiondistribution_2ecc_7',['EmissionDistribution.cc',['../_emission_distribution_8cc.html',1,'']]],
-  ['emissiondistribution_2eh_8',['EmissionDistribution.h',['../_emission_distribution_8h.html',1,'']]],
-  ['emissiveregion_2eh_9',['EmissiveRegion.h',['../_emissive_region_8h.html',1,'']]],
-  ['envlight_2ecc_10',['EnvLight.cc',['../dso_2light_2_env_light_2_env_light_8cc.html',1,'(Global Namespace)'],['../lib_2rendering_2pbr_2light_2_env_light_8cc.html',1,'(Global Namespace)']]],
-  ['envlight_2eh_11',['EnvLight.h',['../_env_light_8h.html',1,'']]],
-  ['envmap_2ecc_12',['EnvMap.cc',['../_env_map_8cc.html',1,'']]],
-  ['envmap_2eh_13',['EnvMap.h',['../_env_map_8h.html',1,'']]],
-  ['error_2ecc_14',['Error.cc',['../_error_8cc.html',1,'']]],
-  ['error_2eh_15',['Error.h',['../_error_8h.html',1,'']]],
-  ['evalattribute_2ecc_16',['EvalAttribute.cc',['../_eval_attribute_8cc.html',1,'']]],
-  ['evalattribute_2eh_17',['EvalAttribute.h',['../_eval_attribute_8h.html',1,'']]],
-  ['evalshader_2ecc_18',['EvalShader.cc',['../_eval_shader_8cc.html',1,'']]],
-  ['evalshader_2eh_19',['EvalShader.h',['../_eval_shader_8h.html',1,'']]],
-  ['event_2eh_20',['Event.h',['../_event_8h.html',1,'']]],
-  ['event_2ehh_21',['Event.hh',['../_event_8hh.html',1,'']]],
-  ['exampleobject_2ecc_22',['ExampleObject.cc',['../_example_object_8cc.html',1,'']]],
-  ['exceptions_2eh_23',['exceptions.h',['../exceptions_8h.html',1,'']]],
-  ['executionmode_2eh_24',['ExecutionMode.h',['../_execution_mode_8h.html',1,'']]],
-  ['exrutils_2ecc_25',['ExrUtils.cc',['../_exr_utils_8cc.html',1,'']]],
-  ['exrutils_2eh_26',['ExrUtils.h',['../_exr_utils_8h.html',1,'']]],
-  ['extensiveobject_2ecc_27',['ExtensiveObject.cc',['../_extensive_object_8cc.html',1,'']]],
-  ['extraaovmap_2ecc_28',['ExtraAovMap.cc',['../_extra_aov_map_8cc.html',1,'']]]
+  ['fresnel_2eh_0',['Fresnel.h',['../_fresnel_8h.html',1,'']]]
 ];

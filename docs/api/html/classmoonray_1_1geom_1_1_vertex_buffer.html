@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: moonray::geom::VertexBuffer&lt; T, Traits, Allocator &gt; Class Template Reference</title>
+<title>OpenMoonrayTEST #4: moonray::geom::VertexBuffer&lt; T, Traits, Allocator &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_vertex_buffer
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1geom_1_1_vertex_buffer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::VertexBuffer&lt; T, Traits, Allocator &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -112,750 +111,93 @@ Inheritance diagram for moonray::geom::VertexBuffer&lt; T, Traits, Allocator &gt
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6725a24114d67f7abd51a365469123b6"><td class="memItemLeft" align="right" valign="top">typedef Traits&lt; T, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a6725a24114d67f7abd51a365469123b6">traits_type</a></td></tr>
+<tr class="memitem:a6725a24114d67f7abd51a365469123b6"><td class="memItemLeft" align="right" valign="top"><a id="a6725a24114d67f7abd51a365469123b6" name="a6725a24114d67f7abd51a365469123b6"></a>
+typedef Traits&lt; T, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>traits_type</b></td></tr>
 <tr class="separator:a6725a24114d67f7abd51a365469123b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaefe099ef2b7f48b6fa274a8f0001987"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aaefe099ef2b7f48b6fa274a8f0001987">value_type</a> = typename traits_type::value_type</td></tr>
+<tr class="memitem:aaefe099ef2b7f48b6fa274a8f0001987"><td class="memItemLeft" align="right" valign="top"><a id="aaefe099ef2b7f48b6fa274a8f0001987" name="aaefe099ef2b7f48b6fa274a8f0001987"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename traits_type::value_type</td></tr>
 <tr class="separator:aaefe099ef2b7f48b6fa274a8f0001987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedcb93da1db98f2522a192126ffd2825"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a> = typename traits_type::allocator_type</td></tr>
+<tr class="memitem:aedcb93da1db98f2522a192126ffd2825"><td class="memItemLeft" align="right" valign="top"><a id="aedcb93da1db98f2522a192126ffd2825" name="aedcb93da1db98f2522a192126ffd2825"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b> = typename traits_type::allocator_type</td></tr>
 <tr class="separator:aedcb93da1db98f2522a192126ffd2825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53c8f5a0be774b0bb7a0126a899f103"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> = typename traits_type::size_type</td></tr>
+<tr class="memitem:ae53c8f5a0be774b0bb7a0126a899f103"><td class="memItemLeft" align="right" valign="top"><a id="ae53c8f5a0be774b0bb7a0126a899f103" name="ae53c8f5a0be774b0bb7a0126a899f103"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = typename traits_type::size_type</td></tr>
 <tr class="separator:ae53c8f5a0be774b0bb7a0126a899f103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a293f77d1b788c2cd4785aa67bc7ba864"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a293f77d1b788c2cd4785aa67bc7ba864">difference_type</a> = typename traits_type::difference_type</td></tr>
+<tr class="memitem:a293f77d1b788c2cd4785aa67bc7ba864"><td class="memItemLeft" align="right" valign="top"><a id="a293f77d1b788c2cd4785aa67bc7ba864" name="a293f77d1b788c2cd4785aa67bc7ba864"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = typename traits_type::difference_type</td></tr>
 <tr class="separator:a293f77d1b788c2cd4785aa67bc7ba864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae0a15e278ffd8ee095bbf0b6b7c422"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aeae0a15e278ffd8ee095bbf0b6b7c422">reference</a> = typename traits_type::reference</td></tr>
+<tr class="memitem:aeae0a15e278ffd8ee095bbf0b6b7c422"><td class="memItemLeft" align="right" valign="top"><a id="aeae0a15e278ffd8ee095bbf0b6b7c422" name="aeae0a15e278ffd8ee095bbf0b6b7c422"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = typename traits_type::reference</td></tr>
 <tr class="separator:aeae0a15e278ffd8ee095bbf0b6b7c422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724b909584576247dd34e522b0c975da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a> = typename traits_type::const_reference</td></tr>
+<tr class="memitem:a724b909584576247dd34e522b0c975da"><td class="memItemLeft" align="right" valign="top"><a id="a724b909584576247dd34e522b0c975da" name="a724b909584576247dd34e522b0c975da"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = typename traits_type::const_reference</td></tr>
 <tr class="separator:a724b909584576247dd34e522b0c975da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7653174ea309996382dd95fa1dd92c14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a7653174ea309996382dd95fa1dd92c14">pointer</a> = typename traits_type::pointer</td></tr>
+<tr class="memitem:a7653174ea309996382dd95fa1dd92c14"><td class="memItemLeft" align="right" valign="top"><a id="a7653174ea309996382dd95fa1dd92c14" name="a7653174ea309996382dd95fa1dd92c14"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = typename traits_type::pointer</td></tr>
 <tr class="separator:a7653174ea309996382dd95fa1dd92c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba82142a920610d421eb66656ef58893"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aba82142a920610d421eb66656ef58893">const_pointer</a> = typename traits_type::const_pointer</td></tr>
+<tr class="memitem:aba82142a920610d421eb66656ef58893"><td class="memItemLeft" align="right" valign="top"><a id="aba82142a920610d421eb66656ef58893" name="aba82142a920610d421eb66656ef58893"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_pointer</b> = typename traits_type::const_pointer</td></tr>
 <tr class="separator:aba82142a920610d421eb66656ef58893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8f774763c7e6f856fea69a59ceca1e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac8f774763c7e6f856fea69a59ceca1e7">VertexBuffer</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a> alloc=<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>())</td></tr>
-<tr class="memdesc:ac8f774763c7e6f856fea69a59ceca1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> for a single time sample.  <a href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac8f774763c7e6f856fea69a59ceca1e7">More...</a><br /></td></tr>
+<tr class="memitem:ac8f774763c7e6f856fea69a59ceca1e7"><td class="memItemLeft" align="right" valign="top"><a id="ac8f774763c7e6f856fea69a59ceca1e7" name="ac8f774763c7e6f856fea69a59ceca1e7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexBuffer</b> (allocator_type alloc=allocator_type())</td></tr>
+<tr class="memdesc:ac8f774763c7e6f856fea69a59ceca1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> for a single time sample. <br /></td></tr>
 <tr class="separator:ac8f774763c7e6f856fea69a59ceca1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8ed976cfc9e779c05204b1e941f767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aca8ed976cfc9e779c05204b1e941f767">VertexBuffer</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> n, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> timeSteps=1, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a> alloc=<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>())</td></tr>
-<tr class="memdesc:aca8ed976cfc9e779c05204b1e941f767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with n default elements.  <a href="classmoonray_1_1geom_1_1_vertex_buffer.html#aca8ed976cfc9e779c05204b1e941f767">More...</a><br /></td></tr>
+<tr class="memitem:aca8ed976cfc9e779c05204b1e941f767"><td class="memItemLeft" align="right" valign="top"><a id="aca8ed976cfc9e779c05204b1e941f767" name="aca8ed976cfc9e779c05204b1e941f767"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexBuffer</b> (size_type n, size_type timeSteps=1, allocator_type alloc=allocator_type())</td></tr>
+<tr class="memdesc:aca8ed976cfc9e779c05204b1e941f767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with n default elements. <br /></td></tr>
 <tr class="separator:aca8ed976cfc9e779c05204b1e941f767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac125485d6deebf4d3e2c3821c11f486c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac125485d6deebf4d3e2c3821c11f486c">VertexBuffer</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> n, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a> value, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> timeSteps=1, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a> alloc=<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>())</td></tr>
-<tr class="memdesc:ac125485d6deebf4d3e2c3821c11f486c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with n element initialized to value.  <a href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac125485d6deebf4d3e2c3821c11f486c">More...</a><br /></td></tr>
+<tr class="memitem:ac125485d6deebf4d3e2c3821c11f486c"><td class="memItemLeft" align="right" valign="top"><a id="ac125485d6deebf4d3e2c3821c11f486c" name="ac125485d6deebf4d3e2c3821c11f486c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexBuffer</b> (size_type n, const_reference value, size_type timeSteps=1, allocator_type alloc=allocator_type())</td></tr>
+<tr class="memdesc:ac125485d6deebf4d3e2c3821c11f486c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with n element initialized to value. <br /></td></tr>
 <tr class="separator:ac125485d6deebf4d3e2c3821c11f486c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5b9ffd1935094fe5875ac88314484b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a6a5b9ffd1935094fe5875ac88314484b">VertexBuffer</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="memitem:a6a5b9ffd1935094fe5875ac88314484b"><td class="memItemLeft" align="right" valign="top"><a id="a6a5b9ffd1935094fe5875ac88314484b" name="a6a5b9ffd1935094fe5875ac88314484b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexBuffer</b> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&amp;) noexcept=default</td></tr>
 <tr class="separator:a6a5b9ffd1935094fe5875ac88314484b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d042b59602eab14d31793868ae5279"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a92d042b59602eab14d31793868ae5279">operator=</a> (const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;)=delete</td></tr>
+<tr class="memitem:a92d042b59602eab14d31793868ae5279"><td class="memItemLeft" align="right" valign="top"><a id="a92d042b59602eab14d31793868ae5279" name="a92d042b59602eab14d31793868ae5279"></a>
+<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;)=delete</td></tr>
 <tr class="separator:a92d042b59602eab14d31793868ae5279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a0359f7f36cc4a6ce0c5b18f0d2d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#af5a0359f7f36cc4a6ce0c5b18f0d2d77">operator=</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&amp;other) noexcept(noexcept(std::declval&lt; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &gt;().traits_type::operator=(std::move(other))))</td></tr>
+<tr class="memitem:af5a0359f7f36cc4a6ce0c5b18f0d2d77"><td class="memItemLeft" align="right" valign="top"><a id="af5a0359f7f36cc4a6ce0c5b18f0d2d77" name="af5a0359f7f36cc4a6ce0c5b18f0d2d77"></a>
+<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&amp;other) noexcept(noexcept(std::declval&lt; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &gt;().traits_type::operator=(std::move(other))))</td></tr>
 <tr class="separator:af5a0359f7f36cc4a6ce0c5b18f0d2d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46a11a792d45ceb8d851acec26eb93e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a46a11a792d45ceb8d851acec26eb93e5">copy</a> () const</td></tr>
+<tr class="memitem:a46a11a792d45ceb8d851acec26eb93e5"><td class="memItemLeft" align="right" valign="top"><a id="a46a11a792d45ceb8d851acec26eb93e5" name="a46a11a792d45ceb8d851acec26eb93e5"></a>
+<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> () const</td></tr>
 <tr class="separator:a46a11a792d45ceb8d851acec26eb93e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b62005724ce1fe7a4e34d21c860d744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aeae0a15e278ffd8ee095bbf0b6b7c422">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a4b62005724ce1fe7a4e34d21c860d744">operator()</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> pos, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> time=0)</td></tr>
+<tr class="memitem:a4b62005724ce1fe7a4e34d21c860d744"><td class="memItemLeft" align="right" valign="top"><a id="a4b62005724ce1fe7a4e34d21c860d744" name="a4b62005724ce1fe7a4e34d21c860d744"></a>
+reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (size_type pos, size_type time=0)</td></tr>
 <tr class="separator:a4b62005724ce1fe7a4e34d21c860d744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcaee17eb60cd60b0ccb0b5145e02835"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#adcaee17eb60cd60b0ccb0b5145e02835">operator()</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> pos, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> time=0) const</td></tr>
+<tr class="memitem:adcaee17eb60cd60b0ccb0b5145e02835"><td class="memItemLeft" align="right" valign="top"><a id="adcaee17eb60cd60b0ccb0b5145e02835" name="adcaee17eb60cd60b0ccb0b5145e02835"></a>
+const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (size_type pos, size_type time=0) const</td></tr>
 <tr class="separator:adcaee17eb60cd60b0ccb0b5145e02835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6497e4fab0d524b13889c251c2bd8fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ab6497e4fab0d524b13889c251c2bd8fa">resize</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> n)</td></tr>
+<tr class="memitem:ab6497e4fab0d524b13889c251c2bd8fa"><td class="memItemLeft" align="right" valign="top"><a id="ab6497e4fab0d524b13889c251c2bd8fa" name="ab6497e4fab0d524b13889c251c2bd8fa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type n)</td></tr>
 <tr class="separator:ab6497e4fab0d524b13889c251c2bd8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc81a2a32ee6c8257c379b20f531b89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a7cc81a2a32ee6c8257c379b20f531b89">resize</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> n, <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a> value)</td></tr>
+<tr class="memitem:a7cc81a2a32ee6c8257c379b20f531b89"><td class="memItemLeft" align="right" valign="top"><a id="a7cc81a2a32ee6c8257c379b20f531b89" name="a7cc81a2a32ee6c8257c379b20f531b89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_type n, const_reference value)</td></tr>
 <tr class="separator:a7cc81a2a32ee6c8257c379b20f531b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d50b51dea30b5138b853871d945403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae8d50b51dea30b5138b853871d945403">push_back</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a> u)</td></tr>
+<tr class="memitem:ae8d50b51dea30b5138b853871d945403"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae8d50b51dea30b5138b853871d945403">push_back</a> (const_reference u)</td></tr>
 <tr class="separator:ae8d50b51dea30b5138b853871d945403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1e12895f8bd1a044e03916351460ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#abf1e12895f8bd1a044e03916351460ea">push_back</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aaefe099ef2b7f48b6fa274a8f0001987">value_type</a> &amp;&amp;u)</td></tr>
+<tr class="memitem:abf1e12895f8bd1a044e03916351460ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#abf1e12895f8bd1a044e03916351460ea">push_back</a> (value_type &amp;&amp;u)</td></tr>
 <tr class="separator:abf1e12895f8bd1a044e03916351460ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9297ae1bad58563cd5740380f10ecd91"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:a9297ae1bad58563cd5740380f10ecd91"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a9297ae1bad58563cd5740380f10ecd91">push_back</a> (const U &amp;u)</td></tr>
 <tr class="separator:a9297ae1bad58563cd5740380f10ecd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa96486e140a2d3d4c336db8801da4dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#afa96486e140a2d3d4c336db8801da4dd">append</a> (const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;other)</td></tr>
+<tr class="memitem:afa96486e140a2d3d4c336db8801da4dd"><td class="memItemLeft" align="right" valign="top"><a id="afa96486e140a2d3d4c336db8801da4dd" name="afa96486e140a2d3d4c336db8801da4dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;other)</td></tr>
 <tr class="separator:afa96486e140a2d3d4c336db8801da4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba700f114fd32783b8bbb650c92d3b41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aba700f114fd32783b8bbb650c92d3b41">append</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&amp;other)</td></tr>
+<tr class="memitem:aba700f114fd32783b8bbb650c92d3b41"><td class="memItemLeft" align="right" valign="top"><a id="aba700f114fd32783b8bbb650c92d3b41" name="aba700f114fd32783b8bbb650c92d3b41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&amp;other)</td></tr>
 <tr class="separator:aba700f114fd32783b8bbb650c92d3b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c75b262f8bc1af20801b4ba97d0162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a37c75b262f8bc1af20801b4ba97d0162">swap</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;other) noexcept(noexcept(std::declval&lt; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &gt;().traits_type::swap(other)))</td></tr>
+<tr class="memitem:a37c75b262f8bc1af20801b4ba97d0162"><td class="memItemLeft" align="right" valign="top"><a id="a37c75b262f8bc1af20801b4ba97d0162" name="a37c75b262f8bc1af20801b4ba97d0162"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;other) noexcept(noexcept(std::declval&lt; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &gt;().traits_type::swap(other)))</td></tr>
 <tr class="separator:a37c75b262f8bc1af20801b4ba97d0162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7cf07d14b3b49ce8a0091935ae4bd0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a7cf07d14b3b49ce8a0091935ae4bd0c9">VertexBuffer</a> (const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp;other)</td></tr>
-<tr class="separator:a7cf07d14b3b49ce8a0091935ae4bd0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0407092f02b032fde7c61f09face293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a> (<a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a> nelements)</td></tr>
-<tr class="separator:ac0407092f02b032fde7c61f09face293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, template&lt; typename, typename &gt; class Traits, typename Allocator = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt;<br />
 class moonray::geom::VertexBuffer&lt; T, Traits, Allocator &gt;</div><p >Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden to the user. The only difference between layouts in the public API are the data calls. </p>
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00028">28</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aedcb93da1db98f2522a192126ffd2825" name="aedcb93da1db98f2522a192126ffd2825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedcb93da1db98f2522a192126ffd2825">&#9670;&#160;</a></span>allocator_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::allocator_type =  typename traits_type::allocator_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00059">59</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="aba82142a920610d421eb66656ef58893" name="aba82142a920610d421eb66656ef58893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba82142a920610d421eb66656ef58893">&#9670;&#160;</a></span>const_pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::const_pointer =  typename traits_type::const_pointer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00065">65</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a724b909584576247dd34e522b0c975da" name="a724b909584576247dd34e522b0c975da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724b909584576247dd34e522b0c975da">&#9670;&#160;</a></span>const_reference</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::const_reference =  typename traits_type::const_reference</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00063">63</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a293f77d1b788c2cd4785aa67bc7ba864" name="a293f77d1b788c2cd4785aa67bc7ba864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a293f77d1b788c2cd4785aa67bc7ba864">&#9670;&#160;</a></span>difference_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::difference_type =  typename traits_type::difference_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00061">61</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a7653174ea309996382dd95fa1dd92c14" name="a7653174ea309996382dd95fa1dd92c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7653174ea309996382dd95fa1dd92c14">&#9670;&#160;</a></span>pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::pointer =  typename traits_type::pointer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00064">64</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="aeae0a15e278ffd8ee095bbf0b6b7c422" name="aeae0a15e278ffd8ee095bbf0b6b7c422"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae0a15e278ffd8ee095bbf0b6b7c422">&#9670;&#160;</a></span>reference</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::reference =  typename traits_type::reference</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00062">62</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="ae53c8f5a0be774b0bb7a0126a899f103" name="ae53c8f5a0be774b0bb7a0126a899f103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53c8f5a0be774b0bb7a0126a899f103">&#9670;&#160;</a></span>size_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::size_type =  typename traits_type::size_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00060">60</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a6725a24114d67f7abd51a365469123b6" name="a6725a24114d67f7abd51a365469123b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6725a24114d67f7abd51a365469123b6">&#9670;&#160;</a></span>traits_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef Traits&lt;T, Allocator&gt; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::traits_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00031">31</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="aaefe099ef2b7f48b6fa274a8f0001987" name="aaefe099ef2b7f48b6fa274a8f0001987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaefe099ef2b7f48b6fa274a8f0001987">&#9670;&#160;</a></span>value_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::value_type =  typename traits_type::value_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00058">58</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac8f774763c7e6f856fea69a59ceca1e7" name="ac8f774763c7e6f856fea69a59ceca1e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8f774763c7e6f856fea69a59ceca1e7">&#9670;&#160;</a></span>VertexBuffer() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::VertexBuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>()</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct an empty <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> for a single time sample. </p>
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00068">68</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>                                                                   :</div>
-<div class="line"><span class="lineno">   69</span>        Traits&lt;T, Allocator&gt;(1, alloc)</div>
-<div class="line"><span class="lineno">   70</span>    {</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aca8ed976cfc9e779c05204b1e941f767" name="aca8ed976cfc9e779c05204b1e941f767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca8ed976cfc9e779c05204b1e941f767">&#9670;&#160;</a></span>VertexBuffer() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::VertexBuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>timeSteps</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with n default elements. </p>
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00074">74</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                                   :</div>
-<div class="line"><span class="lineno">   77</span>        Traits&lt;T, Allocator&gt;(n, timeSteps, alloc)</div>
-<div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac125485d6deebf4d3e2c3821c11f486c" name="ac125485d6deebf4d3e2c3821c11f486c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac125485d6deebf4d3e2c3821c11f486c">&#9670;&#160;</a></span>VertexBuffer() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::VertexBuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a>&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>timeSteps</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aedcb93da1db98f2522a192126ffd2825">allocator_type</a>()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with n element initialized to value. </p>
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00082">82</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                                   :</div>
-<div class="line"><span class="lineno">   86</span>        Traits&lt;T, Allocator&gt;(n, value, timeSteps, alloc)</div>
-<div class="line"><span class="lineno">   87</span>    {</div>
-<div class="line"><span class="lineno">   88</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6a5b9ffd1935094fe5875ac88314484b" name="a6a5b9ffd1935094fe5875ac88314484b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a5b9ffd1935094fe5875ac88314484b">&#9670;&#160;</a></span>VertexBuffer() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::VertexBuffer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7cf07d14b3b49ce8a0091935ae4bd0c9" name="a7cf07d14b3b49ce8a0091935ae4bd0c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cf07d14b3b49ce8a0091935ae4bd0c9">&#9670;&#160;</a></span>VertexBuffer() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::VertexBuffer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00200">200</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  200</span>                                            :</div>
-<div class="line"><span class="lineno">  201</span>        Traits&lt;T, Allocator&gt;(other)</div>
-<div class="line"><span class="lineno">  202</span>    {</div>
-<div class="line"><span class="lineno">  203</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="afa96486e140a2d3d4c336db8801da4dd" name="afa96486e140a2d3d4c336db8801da4dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa96486e140a2d3d4c336db8801da4dd">&#9670;&#160;</a></span>append() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00178">178</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  179</span>    {</div>
-<div class="line"><span class="lineno">  180</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(other.size());</div>
-<div class="line"><span class="lineno">  181</span>        traits_type::append(other);</div>
-<div class="line"><span class="lineno">  182</span>    }</div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1_vertex_buffer_html_ac0407092f02b032fde7c61f09face293"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">moonray::geom::VertexBuffer::ensure_capacity</a></div><div class="ttdeci">void ensure_capacity(size_type nelements)</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_buffer_8h_source.html#l00205">VertexBuffer.h:205</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aba700f114fd32783b8bbb650c92d3b41" name="aba700f114fd32783b8bbb650c92d3b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba700f114fd32783b8bbb650c92d3b41">&#9670;&#160;</a></span>append() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::append </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00185">185</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  186</span>    {</div>
-<div class="line"><span class="lineno">  187</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(other.size());</div>
-<div class="line"><span class="lineno">  188</span>        traits_type::append(std::move(other));</div>
-<div class="line"><span class="lineno">  189</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a46a11a792d45ceb8d851acec26eb93e5" name="a46a11a792d45ceb8d851acec26eb93e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46a11a792d45ceb8d851acec26eb93e5">&#9670;&#160;</a></span>copy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::copy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00103">103</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
-<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac8f774763c7e6f856fea69a59ceca1e7">VertexBuffer</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  106</span>    }</div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1_vertex_buffer_html_ac8f774763c7e6f856fea69a59ceca1e7"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac8f774763c7e6f856fea69a59ceca1e7">moonray::geom::VertexBuffer::VertexBuffer</a></div><div class="ttdeci">VertexBuffer(allocator_type alloc=allocator_type())</div><div class="ttdoc">Construct an empty VertexBuffer for a single time sample.</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_buffer_8h_source.html#l00068">VertexBuffer.h:68</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac0407092f02b032fde7c61f09face293" name="ac0407092f02b032fde7c61f09face293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0407092f02b032fde7c61f09face293">&#9670;&#160;</a></span>ensure_capacity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::ensure_capacity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>nelements</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00205">205</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  206</span>    {</div>
-<div class="line"><span class="lineno">  207</span>        <span class="keyword">auto</span> <a class="code hl_function" href="namespaceispc__dso.html#ad49b483161a90c7f687a53ec3e3a4089">cap</a> = capacity();</div>
-<div class="line"><span class="lineno">  208</span>        <span class="keyword">auto</span> sz = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>();</div>
-<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">if</span> (sz + nelements &gt; cap) {</div>
-<div class="line"><span class="lineno">  210</span>            <span class="comment">// This has to be at least 2 for our integer math recurrence</span></div>
-<div class="line"><span class="lineno">  211</span>            <span class="comment">// relation to work, but we&#39;ll start out at four, as a VertexBuffer</span></div>
-<div class="line"><span class="lineno">  212</span>            <span class="comment">// will probably always hold at least three, and a good chance at</span></div>
-<div class="line"><span class="lineno">  213</span>            <span class="comment">// four.</span></div>
-<div class="line"><span class="lineno">  214</span>            <a class="code hl_function" href="namespaceispc__dso.html#ad49b483161a90c7f687a53ec3e3a4089">cap</a> = std::max&lt;decltype(cap)&gt;(cap, 4);</div>
-<div class="line"><span class="lineno">  215</span>            <span class="keywordflow">while</span> (sz + nelements &gt; cap) {</div>
-<div class="line"><span class="lineno">  216</span>                <a class="code hl_function" href="namespaceispc__dso.html#ad49b483161a90c7f687a53ec3e3a4089">cap</a> = <a class="code hl_function" href="namespaceispc__dso.html#ad49b483161a90c7f687a53ec3e3a4089">cap</a> * 3 / 2;</div>
-<div class="line"><span class="lineno">  217</span>            }</div>
-<div class="line"><span class="lineno">  218</span>            traits_type::reserve(cap);</div>
-<div class="line"><span class="lineno">  219</span>        }</div>
-<div class="line"><span class="lineno">  220</span>    }</div>
-<div class="ttc" id="anamespaceispc__dso_html_ad49b483161a90c7f687a53ec3e3a4089"><div class="ttname"><a href="namespaceispc__dso.html#ad49b483161a90c7f687a53ec3e3a4089">ispc_dso.cap</a></div><div class="ttdeci">def cap(name)</div><div class="ttdef"><b>Definition:</b> <a href="ispc__dso_8py_source.html#l00074">ispc_dso.py:74</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a5277a7946ff4d740ccf0c9651ffbaff5"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">scene_rdl2::math::size</a></div><div class="ttdeci">__forceinline const T size(const BBox&lt; T &gt; &amp;box)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00105">BBox.h:105</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4b62005724ce1fe7a4e34d21c860d744" name="a4b62005724ce1fe7a4e34d21c860d744"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b62005724ce1fe7a4e34d21c860d744">&#9670;&#160;</a></span>operator()() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aeae0a15e278ffd8ee095bbf0b6b7c422">reference</a> <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>time</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00108">108</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
-<div class="line"><span class="lineno">  110</span>        <span class="keyword">auto</span> p = this-&gt;getAddress(time, pos);</div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> *p;</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="adcaee17eb60cd60b0ccb0b5145e02835" name="adcaee17eb60cd60b0ccb0b5145e02835"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcaee17eb60cd60b0ccb0b5145e02835">&#9670;&#160;</a></span>operator()() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a> <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>time</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00114">114</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  115</span>    {</div>
-<div class="line"><span class="lineno">  116</span>        <span class="keyword">auto</span> p = this-&gt;getAddress(time, pos);</div>
-<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> *p;</div>
-<div class="line"><span class="lineno">  118</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a92d042b59602eab14d31793868ae5279" name="a92d042b59602eab14d31793868ae5279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92d042b59602eab14d31793868ae5279">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af5a0359f7f36cc4a6ce0c5b18f0d2d77" name="af5a0359f7f36cc4a6ce0c5b18f0d2d77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5a0359f7f36cc4a6ce0c5b18f0d2d77">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a> &amp; <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00093">93</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
-<div class="line"><span class="lineno">   96</span>        traits_type::operator=(std::move(other));</div>
-<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><span class="lineno">   98</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9297ae1bad58563cd5740380f10ecd91" name="a9297ae1bad58563cd5740380f10ecd91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9297ae1bad58563cd5740380f10ecd91">&#9670;&#160;</a></span>push_back() <span class="overload">[1/3]</span></h2>
 
@@ -885,12 +227,6 @@ template&lt;typename U &gt; </div>
 </div><div class="memdoc">
 <p >This version of push_back assumes that u has array access semantics, i.e. operator[] is defined for u. Time samples are accessed through u's operator[] for each of the time samples in the <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00171">171</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>    {</div>
-<div class="line"><span class="lineno">  173</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(1);</div>
-<div class="line"><span class="lineno">  174</span>        traits_type::push_back(u);</div>
-<div class="line"><span class="lineno">  175</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ae8d50b51dea30b5138b853871d945403" name="ae8d50b51dea30b5138b853871d945403"></a>
@@ -907,7 +243,7 @@ template&lt;typename T , template&lt; typename, typename &gt; class Traits, type
         <tr>
           <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::push_back </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a>&#160;</td>
+          <td class="paramtype">const_reference&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
@@ -920,13 +256,6 @@ template&lt;typename T , template&lt; typename, typename &gt; class Traits, type
 </div><div class="memdoc">
 <p >This version of push_back is only to be used with a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with a single time sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00149">149</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  150</span>    {</div>
-<div class="line"><span class="lineno">  151</span>        assert(get_time_steps() == 1);</div>
-<div class="line"><span class="lineno">  152</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(1);</div>
-<div class="line"><span class="lineno">  153</span>        traits_type::push_back(u);</div>
-<div class="line"><span class="lineno">  154</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="abf1e12895f8bd1a044e03916351460ea" name="abf1e12895f8bd1a044e03916351460ea"></a>
@@ -943,7 +272,7 @@ template&lt;typename T , template&lt; typename, typename &gt; class Traits, type
         <tr>
           <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::push_back </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aaefe099ef2b7f48b6fa274a8f0001987">value_type</a> &amp;&amp;&#160;</td>
+          <td class="paramtype">value_type &amp;&amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
@@ -956,148 +285,14 @@ template&lt;typename T , template&lt; typename, typename &gt; class Traits, type
 </div><div class="memdoc">
 <p >This version of push_back is only to be used with a <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> with a single time sample. </p>
 
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00159">159</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>    {</div>
-<div class="line"><span class="lineno">  161</span>        assert(get_time_steps() == 1);</div>
-<div class="line"><span class="lineno">  162</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(1);</div>
-<div class="line"><span class="lineno">  163</span>        traits_type::push_back(std::move(u));</div>
-<div class="line"><span class="lineno">  164</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
-<a id="ab6497e4fab0d524b13889c251c2bd8fa" name="ab6497e4fab0d524b13889c251c2bd8fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6497e4fab0d524b13889c251c2bd8fa">&#9670;&#160;</a></span>resize() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::resize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00121">121</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>    {</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> (n &gt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>()) {</div>
-<div class="line"><span class="lineno">  124</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(n);</div>
-<div class="line"><span class="lineno">  125</span>            <span class="comment">// Just add n - size() values</span></div>
-<div class="line"><span class="lineno">  126</span>            traits_type::append(n - <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>(), <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_vertex_buffer.html#aaefe099ef2b7f48b6fa274a8f0001987">value_type</a>());</div>
-<div class="line"><span class="lineno">  127</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>()) {</div>
-<div class="line"><span class="lineno">  128</span>            <span class="comment">// Destroy last size() - n values.</span></div>
-<div class="line"><span class="lineno">  129</span>            traits_type::destroy_last(<a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>() - n);</div>
-<div class="line"><span class="lineno">  130</span>        } <span class="comment">// else if (n == size) do nothing.</span></div>
-<div class="line"><span class="lineno">  131</span>    }</div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1_vertex_buffer_html_aaefe099ef2b7f48b6fa274a8f0001987"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vertex_buffer.html#aaefe099ef2b7f48b6fa274a8f0001987">moonray::geom::VertexBuffer::value_type</a></div><div class="ttdeci">typename traits_type::value_type value_type</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_buffer_8h_source.html#l00058">VertexBuffer.h:58</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a7cc81a2a32ee6c8257c379b20f531b89" name="a7cc81a2a32ee6c8257c379b20f531b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc81a2a32ee6c8257c379b20f531b89">&#9670;&#160;</a></span>resize() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::resize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ae53c8f5a0be774b0bb7a0126a899f103">size_type</a>&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html#a724b909584576247dd34e522b0c975da">const_reference</a>&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00134">134</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>    {</div>
-<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">if</span> (n &gt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>()) {</div>
-<div class="line"><span class="lineno">  137</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1_vertex_buffer.html#ac0407092f02b032fde7c61f09face293">ensure_capacity</a>(n);</div>
-<div class="line"><span class="lineno">  138</span>            <span class="comment">// Just add n - size() values</span></div>
-<div class="line"><span class="lineno">  139</span>            traits_type::append(n - <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>(), value);</div>
-<div class="line"><span class="lineno">  140</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>()) {</div>
-<div class="line"><span class="lineno">  141</span>            <span class="comment">// Destroy last size() - n values.</span></div>
-<div class="line"><span class="lineno">  142</span>            traits_type::destroy_last(<a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>() - n);</div>
-<div class="line"><span class="lineno">  143</span>        } <span class="comment">// else if (n == size) do nothing.</span></div>
-<div class="line"><span class="lineno">  144</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a37c75b262f8bc1af20801b4ba97d0162" name="a37c75b262f8bc1af20801b4ba97d0162"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c75b262f8bc1af20801b4ba97d0162">&#9670;&#160;</a></span>swap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , template&lt; typename, typename &gt; class Traits, typename Allocator  = scene_rdl2::alloc::AlignedAllocator&lt;T, SIMD_MEMORY_ALIGNMENT&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer</a>&lt; T, Traits, Allocator &gt;::swap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a>&lt; T, Traits, Allocator &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_vertex_buffer_8h_source.html#l00191">191</a> of file <a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  192</span>    {</div>
-<div class="line"><span class="lineno">  193</span>        traits_type::swap(other);</div>
-<div class="line"><span class="lineno">  194</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/<a class="el" href="_vertex_buffer_8h_source.html">VertexBuffer.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a></li>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><b>geom</b></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">VertexBuffer</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: moonray::pbr::GenerateRandomPointImpl&lt; Sample2D &gt; Struct Reference</title>
+<title>OpenMoonrayTEST #4: moonray::pbr::GenerateRandomPointImpl&lt; Sample2D &gt; Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -96,64 +96,20 @@ $(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_generate_rand
   <div class="headertitle"><div class="title">moonray::pbr::GenerateRandomPointImpl&lt; Sample2D &gt; Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_sample_8h_source.html">Sample.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a65212f2ba931272ac75fca2dfb44bb0b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a> &gt; </td></tr>
-<tr class="memitem:a65212f2ba931272ac75fca2dfb44bb0b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structmoonray_1_1pbr_1_1_sample2_d.html">Sample2D</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_sample2_d_01_4.html#a65212f2ba931272ac75fca2dfb44bb0b">apply</a> (<a class="el" href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a> &amp;rng)</td></tr>
+<tr class="memitem:a65212f2ba931272ac75fca2dfb44bb0b"><td class="memTemplParams" colspan="2"><a id="a65212f2ba931272ac75fca2dfb44bb0b" name="a65212f2ba931272ac75fca2dfb44bb0b"></a>
+template&lt;typename RNG &gt; </td></tr>
+<tr class="memitem:a65212f2ba931272ac75fca2dfb44bb0b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="structmoonray_1_1pbr_1_1_sample2_d.html">Sample2D</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>apply</b> (RNG &amp;rng)</td></tr>
 <tr class="separator:a65212f2ba931272ac75fca2dfb44bb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_sample_8h_source.html#l00147">147</a> of file <a class="el" href="_sample_8h_source.html">Sample.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a65212f2ba931272ac75fca2dfb44bb0b" name="a65212f2ba931272ac75fca2dfb44bb0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65212f2ba931272ac75fca2dfb44bb0b">&#9670;&#160;</a></span>apply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename <a class="el" href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="structmoonray_1_1pbr_1_1_sample2_d.html">Sample2D</a> <a class="el" href="structmoonray_1_1pbr_1_1_generate_random_point_impl.html">moonray::pbr::GenerateRandomPointImpl</a>&lt; <a class="el" href="structmoonray_1_1pbr_1_1_sample2_d.html">Sample2D</a> &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a> &amp;&#160;</td>
-          <td class="paramname"><em>rng</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_sample_8h_source.html#l00150">150</a> of file <a class="el" href="_sample_8h_source.html">Sample.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  151</span>    {</div>
-<div class="line"><span class="lineno">  152</span>        Sample2D s;</div>
-<div class="line"><span class="lineno">  153</span>        s.u = rng();</div>
-<div class="line"><span class="lineno">  154</span>        s.v = rng();</div>
-<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">return</span> s;</div>
-<div class="line"><span class="lineno">  156</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/sampler/<a class="el" href="_sample_8h_source.html">Sample.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_sample2_d_01_4.html">GenerateRandomPointImpl&lt; Sample2D &gt;</a></li>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><b>pbr</b></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_sample2_d_01_4.html">GenerateRandomPointImpl&lt; Sample2D &gt;</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

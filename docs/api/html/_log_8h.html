@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/Log.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/Log.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -105,19 +105,55 @@ $(document).ready(function(){initNavTree('_log_8h.html',''); initResizable(); })
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a23997fadc0d76ba69f46153b3e9a691b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a23997fadc0d76ba69f46153b3e9a691b">moonray::shading::logEvent</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *shader, const shading::TLState *tls, <a class="el" href="namespacescene__rdl2_1_1logging.html#ae76c8e0ebe84e20bd0bcec9c9b07efb7">scene_rdl2::logging::LogEvent</a> event)</td></tr>
+<tr class="memitem:a23997fadc0d76ba69f46153b3e9a691b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_log_8cc.html#a23997fadc0d76ba69f46153b3e9a691b">moonray::shading::logEvent</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *shader, const shading::TLState *tls, scene_rdl2::logging::LogEvent event)</td></tr>
 <tr class="separator:a23997fadc0d76ba69f46153b3e9a691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >$Id$ </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a23997fadc0d76ba69f46153b3e9a691b" name="a23997fadc0d76ba69f46153b3e9a691b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23997fadc0d76ba69f46153b3e9a691b">&#9670;&#160;</a></span>logEvent()</h2>
 
-<p class="definition">Definition in file <a class="el" href="_log_8h_source.html">Log.h</a>.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::shading::logEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *&#160;</td>
+          <td class="paramname"><em>shader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scene_rdl2::logging::LogEvent&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Convenience function to allow for fast local (in the thread-local sense) logging from within a Shader.</p>
+<p >Sample usage:</p>
+<p >In constructor/update: LogEvent mBadValueError = mLogEventRegistry.createEvent(logging::ERROR_LEVEL, "Bad value");</p>
+<p >In sample/shade: shading::localLog(me, tls, mBadValueError)</p>
+<p >See lib/scene_rdl2/render/logging/logging.h for more details </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

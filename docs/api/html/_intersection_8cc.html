@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/Intersection.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/Intersection.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,38 +97,35 @@ $(document).ready(function(){initNavTree('_intersection_8cc.html',''); initResiz
   <div class="headertitle"><div class="title">Intersection.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_intersection_8h_source.html">Intersection.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_ray_8h_source.html">rendering/mcrt_common/Ray.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_thread_local_state_8h_source.html">rendering/mcrt_common/ThreadLocalState.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;Intersection.h&quot;</code><br />
+<code>#include &lt;rendering/mcrt_common/Ray.h&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/ThreadLocalState.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/platform/HybridVaryingData.h&gt;</code><br />
-</div>
-<p><a href="_intersection_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceispc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html">ispc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab064729ded3ccc227de4131e0b6043e5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html#ab064729ded3ccc227de4131e0b6043e5">ispc::Intersection_hvdValidation</a> (bool)</td></tr>
+<tr class="memitem:ab064729ded3ccc227de4131e0b6043e5"><td class="memItemLeft" align="right" valign="top"><a id="ab064729ded3ccc227de4131e0b6043e5" name="ab064729ded3ccc227de4131e0b6043e5"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ispc::Intersection_hvdValidation</b> (bool)</td></tr>
 <tr class="separator:ab064729ded3ccc227de4131e0b6043e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4ebf5913b54d30b289c4b7bd72db39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#aac4ebf5913b54d30b289c4b7bd72db39">moonray::shading::HVD_VALIDATOR</a> (Intersection)</td></tr>
+<tr class="memitem:aac4ebf5913b54d30b289c4b7bd72db39"><td class="memItemLeft" align="right" valign="top"><a id="aac4ebf5913b54d30b289c4b7bd72db39" name="aac4ebf5913b54d30b289c4b7bd72db39"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::HVD_VALIDATOR</b> (Intersection)</td></tr>
 <tr class="separator:aac4ebf5913b54d30b289c4b7bd72db39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a0d5b960fedcd85f9ff120b9968ba0314"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a0d5b960fedcd85f9ff120b9968ba0314">moonray::shading::sIntersectionEpsilon</a> = 1e-5f</td></tr>
+<tr class="memitem:a0d5b960fedcd85f9ff120b9968ba0314"><td class="memItemLeft" align="right" valign="top"><a id="a0d5b960fedcd85f9ff120b9968ba0314" name="a0d5b960fedcd85f9ff120b9968ba0314"></a>
+constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::sIntersectionEpsilon</b> = 1e-5f</td></tr>
 <tr class="separator:a0d5b960fedcd85f9ff120b9968ba0314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_intersection_8cc_source.html">Intersection.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegrator.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegrator.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -98,31 +98,31 @@ $(document).ready(function(){initNavTree('_path_integrator_8cc.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_path_integrator_8h_source.html">PathIntegrator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_path_integrator_util_8h_source.html">PathIntegratorUtil.h</a>&quot;</code><br />
+<code>#include &quot;PathIntegratorUtil.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bsdf_sampler_8h_source.html">BsdfSampler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_light_set_sampler_8h_source.html">LightSetSampler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_volume_transmittance_8h_source.html">VolumeTransmittance.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2camera_2_camera_8h_source.html">rendering/pbr/camera/Camera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_aov_8h_source.html">rendering/pbr/core/Aov.h</a>&gt;</code><br />
+<code>#include &quot;VolumeTransmittance.h&quot;</code><br />
+<code>#include &lt;rendering/pbr/camera/Camera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/Aov.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2core_2_constants_8h_source.html">rendering/pbr/core/Constants.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_cryptomatte_8h_source.html">rendering/pbr/core/Cryptomatte.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_debug_ray_8h_source.html">rendering/pbr/core/DebugRay.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_deep_buffer_8h_source.html">rendering/pbr/core/DeepBuffer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_state_8h_source.html">rendering/pbr/core/RayState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/Cryptomatte.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/DebugRay.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/DeepBuffer.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/RayState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_scene_8h_source.html">rendering/pbr/core/Scene.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2pbr_2core_2util_8h_source.html">rendering/pbr/core/Util.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2light_2_light_8h_source.html">rendering/pbr/light/Light.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intersection_init_8h_source.html">rendering/geom/IntersectionInit.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/Util.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/Light.h&gt;</code><br />
+<code>#include &lt;rendering/geom/IntersectionInit.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_b_v_h_user_data_8h_source.html">rendering/geom/prim/BVHUserData.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_8h_source.html">rendering/mcrt_common/Ray.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_thread_local_state_8h_source.html">rendering/mcrt_common/ThreadLocalState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rt_8h_source.html">rendering/rt/rt.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_embree_accelerator_8h_source.html">rendering/rt/EmbreeAccelerator.h</a>&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/Ray.h&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/ThreadLocalState.h&gt;</code><br />
+<code>#include &lt;rendering/rt/rt.h&gt;</code><br />
+<code>#include &lt;rendering/rt/EmbreeAccelerator.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_attribute_key_8h_source.html">rendering/bvh/shading/AttributeKey.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_shading_t_l_state_8h_source.html">rendering/bvh/shading/ShadingTLState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/ShadingTLState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_thread_local_object_state_8h_source.html">rendering/bvh/shading/ThreadLocalObjectState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_bsdf_builder_8h_source.html">rendering/shading/BsdfBuilder.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2shading_2_material_8h_source.html">rendering/shading/Material.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/BsdfBuilder.h&gt;</code><br />
+<code>#include &lt;rendering/shading/Material.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_aov_labels_8h_source.html">rendering/shading/AovLabels.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_8h_source.html">rendering/shading/bsdf/Bsdf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_slice_8h_source.html">rendering/shading/bsdf/BsdfSlice.h</a>&gt;</code><br />
@@ -130,60 +130,35 @@ $(document).ready(function(){initNavTree('_path_integrator_8cc.html',''); initRe
 <code>#include &lt;<a class="el" href="_eval_shader_8h_source.html">rendering/shading/EvalShader.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2shading_2_geometry_8h_source.html">rendering/shading/Geometry.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_shadingv_8h_source.html">rendering/shading/ispc/Shadingv.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ticker_8h_source.html">common/time/Ticker.h</a>&gt;</code><br />
+<code>#include &lt;common/time/Ticker.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Constants.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/SceneContext.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/Material.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/VisibilityFlags.h&gt;</code><br />
 <code>#include &lt;limits.h&gt;</code><br />
-</div>
-<p><a href="_path_integrator_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceispc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html">ispc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a08329f12b6655115adc1244515165429"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_path_integrator_8cc.html#a08329f12b6655115adc1244515165429">SHADING_BRACKET_TIMING_ENABLED</a></td></tr>
-<tr class="separator:a08329f12b6655115adc1244515165429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a82fa070b4c1f4453b554f0a2fd8d95a1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html#a82fa070b4c1f4453b554f0a2fd8d95a1">ispc::PathIntegrator_hudValidation</a> (bool)</td></tr>
+<tr class="memitem:a82fa070b4c1f4453b554f0a2fd8d95a1"><td class="memItemLeft" align="right" valign="top"><a id="a82fa070b4c1f4453b554f0a2fd8d95a1" name="a82fa070b4c1f4453b554f0a2fd8d95a1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>ispc::PathIntegrator_hudValidation</b> (bool)</td></tr>
 <tr class="separator:a82fa070b4c1f4453b554f0a2fd8d95a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8771c2b2a7955b7d0f9da749a9263899"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html#a8771c2b2a7955b7d0f9da749a9263899">ispc::PathIntegrator_integrateBundled</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_path_integrator.html">moonray::pbr::PathIntegrator</a> *integrator, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::pbr::TLState</a> *pbrTls, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *shadingTls, unsigned numEntries, <a class="el" href="structmoonray_1_1pbr_1_1_ray_statev.html">moonray::pbr::RayStatev</a> *rayStates, const <a class="el" href="structmoonray_1_1shading_1_1_intersectionv.html">moonray::shading::Intersectionv</a> *isects, const moonray::shading::Bsdfv *bsdfs, const <a class="el" href="classmoonray_1_1pbr_1_1_light_set.html">moonray::pbr::LightSet</a> *lightList)</td></tr>
+<tr class="memitem:a8771c2b2a7955b7d0f9da749a9263899"><td class="memItemLeft" align="right" valign="top"><a id="a8771c2b2a7955b7d0f9da749a9263899" name="a8771c2b2a7955b7d0f9da749a9263899"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ispc::PathIntegrator_integrateBundled</b> (const <a class="el" href="classmoonray_1_1pbr_1_1_path_integrator.html">moonray::pbr::PathIntegrator</a> *integrator, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::pbr::TLState</a> *pbrTls, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *shadingTls, unsigned numEntries, <a class="el" href="structmoonray_1_1pbr_1_1_ray_statev.html">moonray::pbr::RayStatev</a> *rayStates, const <a class="el" href="structmoonray_1_1shading_1_1_intersectionv.html">moonray::shading::Intersectionv</a> *isects, const moonray::shading::Bsdfv *bsdfs, const <a class="el" href="classmoonray_1_1pbr_1_1_light_set.html">moonray::pbr::LightSet</a> *lightList)</td></tr>
 <tr class="separator:a8771c2b2a7955b7d0f9da749a9263899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dc79196f5ef509af2c3bb9743074f7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a9dc79196f5ef509af2c3bb9743074f7c">moonray::pbr::shadeMaterial</a> (mcrt_common::ThreadLocalState *tls, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *mat, const shading::Intersection &amp;intersection, shading::Bsdf *bsdf)</td></tr>
-<tr class="separator:a9dc79196f5ef509af2c3bb9743074f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a8f1c7fb2b18f2a0b12a330eb8786a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a27a8f1c7fb2b18f2a0b12a330eb8786a">moonray::pbr::HUD_VALIDATOR</a> (PathIntegrator)</td></tr>
+<tr class="memitem:a27a8f1c7fb2b18f2a0b12a330eb8786a"><td class="memItemLeft" align="right" valign="top"><a id="a27a8f1c7fb2b18f2a0b12a330eb8786a" name="a27a8f1c7fb2b18f2a0b12a330eb8786a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::HUD_VALIDATOR</b> (PathIntegrator)</td></tr>
 <tr class="separator:a27a8f1c7fb2b18f2a0b12a330eb8786a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_path_integrator_8cc_source.html">PathIntegrator.cc</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a08329f12b6655115adc1244515165429" name="a08329f12b6655115adc1244515165429"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08329f12b6655115adc1244515165429">&#9670;&#160;</a></span>SHADING_BRACKET_TIMING_ENABLED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SHADING_BRACKET_TIMING_ENABLED</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: af_detail Namespace Reference</title>
+<title>OpenMoonrayTEST #4: af_detail Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -104,53 +104,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8826eb0a30b44446fa657cbacf1c6fd7"><td class="memItemLeft" align="right" valign="top">constexpr std::memory_order&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceaf__detail.html#a8826eb0a30b44446fa657cbacf1c6fd7">compare_exchange_duo</a> (std::memory_order in) noexcept</td></tr>
+<tr class="memitem:a8826eb0a30b44446fa657cbacf1c6fd7"><td class="memItemLeft" align="right" valign="top"><a id="a8826eb0a30b44446fa657cbacf1c6fd7" name="a8826eb0a30b44446fa657cbacf1c6fd7"></a>
+constexpr std::memory_order&#160;</td><td class="memItemRight" valign="bottom"><b>compare_exchange_duo</b> (std::memory_order in) noexcept</td></tr>
 <tr class="separator:a8826eb0a30b44446fa657cbacf1c6fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Keith Jeffery </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a8826eb0a30b44446fa657cbacf1c6fd7" name="a8826eb0a30b44446fa657cbacf1c6fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8826eb0a30b44446fa657cbacf1c6fd7">&#9670;&#160;</a></span>compare_exchange_duo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::memory_order af_detail::compare_exchange_duo </td>
-          <td>(</td>
-          <td class="paramtype">std::memory_order&#160;</td>
-          <td class="paramname"><em>in</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_atomic_float_8h_source.html#l00039">39</a> of file <a class="el" href="_atomic_float_8h_source.html">AtomicFloat.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keyword">constexpr</span> <span class="keywordtype">int</span> mapping[6] = {</div>
-<div class="line"><span class="lineno">   42</span>            <span class="comment">/* std::memory_order_relaxed -&gt; */</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::memory_order_relaxed),</div>
-<div class="line"><span class="lineno">   43</span>            <span class="comment">/* std::memory_order_consume -&gt; */</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::memory_order_consume),</div>
-<div class="line"><span class="lineno">   44</span>            <span class="comment">/* std::memory_order_acquire -&gt; */</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::memory_order_acquire),</div>
-<div class="line"><span class="lineno">   45</span>            <span class="comment">/* std::memory_order_release -&gt; */</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::memory_order_relaxed),</div>
-<div class="line"><span class="lineno">   46</span>            <span class="comment">/* std::memory_order_acq_rel -&gt; */</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::memory_order_acquire),</div>
-<div class="line"><span class="lineno">   47</span>            <span class="comment">/* std::memory_order_seq_cst -&gt; */</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::memory_order_seq_cst)</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    };</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::memory_order<span class="keyword">&gt;</span>(mapping[<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(in)]);</div>
-<div class="line"><span class="lineno">   51</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

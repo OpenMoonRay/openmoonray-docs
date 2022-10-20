@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/ispc/bsdf/cook_torrance/energy_conservation/TransmissionAlbedo.inl File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/ispc/bsdf/cook_torrance/energy_conservation/TransmissionAlbedo.inl File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -96,112 +96,31 @@ $(document).ready(function(){initNavTree('_transmission_albedo_8inl.html',''); i
   <div class="headertitle"><div class="title">TransmissionAlbedo.inl File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><a href="_transmission_albedo_8inl_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a076912543697dbe4c46b79e8e44ad2fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transmission_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>&#160;&#160;&#160;33u</td></tr>
+<tr class="memitem:a076912543697dbe4c46b79e8e44ad2fb"><td class="memItemLeft" align="right" valign="top"><a id="a076912543697dbe4c46b79e8e44ad2fb" name="a076912543697dbe4c46b79e8e44ad2fb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMP</b>&#160;&#160;&#160;33u</td></tr>
 <tr class="separator:a076912543697dbe4c46b79e8e44ad2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7371208810a57f9110e8051bc8cf721c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transmission_albedo_8inl.html#a7371208810a57f9110e8051bc8cf721c">TransmissionAlbedo_E</a> [<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td></tr>
+<tr class="memitem:a7371208810a57f9110e8051bc8cf721c"><td class="memItemLeft" align="right" valign="top"><a id="a7371208810a57f9110e8051bc8cf721c" name="a7371208810a57f9110e8051bc8cf721c"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>TransmissionAlbedo_E</b> [COMP *COMP *COMP]</td></tr>
 <tr class="separator:a7371208810a57f9110e8051bc8cf721c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4a70d9c11bb25cd7ff66dad3fd2c19"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transmission_albedo_8inl.html#aff4a70d9c11bb25cd7ff66dad3fd2c19">TransmissionAlbedo_OneMinusEavg</a> [<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td></tr>
+<tr class="memitem:aff4a70d9c11bb25cd7ff66dad3fd2c19"><td class="memItemLeft" align="right" valign="top"><a id="aff4a70d9c11bb25cd7ff66dad3fd2c19" name="aff4a70d9c11bb25cd7ff66dad3fd2c19"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>TransmissionAlbedo_OneMinusEavg</b> [COMP *COMP]</td></tr>
 <tr class="separator:aff4a70d9c11bb25cd7ff66dad3fd2c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0128ccfa05baa7e8926e1361b2df89b0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transmission_albedo_8inl.html#a0128ccfa05baa7e8926e1361b2df89b0">TransmissionAlbedo_EExit</a> [<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td></tr>
+<tr class="memitem:a0128ccfa05baa7e8926e1361b2df89b0"><td class="memItemLeft" align="right" valign="top"><a id="a0128ccfa05baa7e8926e1361b2df89b0" name="a0128ccfa05baa7e8926e1361b2df89b0"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>TransmissionAlbedo_EExit</b> [COMP *COMP *COMP]</td></tr>
 <tr class="separator:a0128ccfa05baa7e8926e1361b2df89b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac390a3bee3a0e417551583cda7cd11ad"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transmission_albedo_8inl.html#ac390a3bee3a0e417551583cda7cd11ad">TransmissionAlbedo_OneMinusEavgExit</a> [<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td></tr>
+<tr class="memitem:ac390a3bee3a0e417551583cda7cd11ad"><td class="memItemLeft" align="right" valign="top"><a id="ac390a3bee3a0e417551583cda7cd11ad" name="ac390a3bee3a0e417551583cda7cd11ad"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>TransmissionAlbedo_OneMinusEavgExit</b> [COMP *COMP]</td></tr>
 <tr class="separator:ac390a3bee3a0e417551583cda7cd11ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Priyamvad Deshmukh $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_transmission_albedo_8inl_source.html">TransmissionAlbedo.inl</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a076912543697dbe4c46b79e8e44ad2fb" name="a076912543697dbe4c46b79e8e44ad2fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a076912543697dbe4c46b79e8e44ad2fb">&#9670;&#160;</a></span>COMP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COMP&#160;&#160;&#160;33u</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8inl_source.html#l00028">28</a> of file <a class="el" href="_transmission_albedo_8inl_source.html">TransmissionAlbedo.inl</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a7371208810a57f9110e8051bc8cf721c" name="a7371208810a57f9110e8051bc8cf721c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7371208810a57f9110e8051bc8cf721c">&#9670;&#160;</a></span>TransmissionAlbedo_E</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> TransmissionAlbedo_E[<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8inl_source.html#l00037">37</a> of file <a class="el" href="_transmission_albedo_8inl_source.html">TransmissionAlbedo.inl</a>.</p>
-
-</div>
-</div>
-<a id="a0128ccfa05baa7e8926e1361b2df89b0" name="a0128ccfa05baa7e8926e1361b2df89b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0128ccfa05baa7e8926e1361b2df89b0">&#9670;&#160;</a></span>TransmissionAlbedo_EExit</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> TransmissionAlbedo_EExit[<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8inl_source.html#l00122">122</a> of file <a class="el" href="_transmission_albedo_8inl_source.html">TransmissionAlbedo.inl</a>.</p>
-
-</div>
-</div>
-<a id="aff4a70d9c11bb25cd7ff66dad3fd2c19" name="aff4a70d9c11bb25cd7ff66dad3fd2c19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff4a70d9c11bb25cd7ff66dad3fd2c19">&#9670;&#160;</a></span>TransmissionAlbedo_OneMinusEavg</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> TransmissionAlbedo_OneMinusEavg[<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8inl_source.html#l00079">79</a> of file <a class="el" href="_transmission_albedo_8inl_source.html">TransmissionAlbedo.inl</a>.</p>
-
-</div>
-</div>
-<a id="ac390a3bee3a0e417551583cda7cd11ad" name="ac390a3bee3a0e417551583cda7cd11ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac390a3bee3a0e417551583cda7cd11ad">&#9670;&#160;</a></span>TransmissionAlbedo_OneMinusEavgExit</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> TransmissionAlbedo_OneMinusEavgExit[<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a> *<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">COMP</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8inl_source.html#l00164">164</a> of file <a class="el" href="_transmission_albedo_8inl_source.html">TransmissionAlbedo.inl</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

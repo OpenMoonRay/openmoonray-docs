@@ -1,6 +1,5 @@
 var classmoonray_1_1geom_1_1_primitive_visitor =
 [
-    [ "~PrimitiveVisitor", "classmoonray_1_1geom_1_1_primitive_visitor.html#ac6c1e6a0b59ce18b2c65dbcbb8754478", null ],
     [ "visitBox", "classmoonray_1_1geom_1_1_primitive_visitor.html#a5f9489fe06c68a3ec0ab402671100529", null ],
     [ "visitCurves", "classmoonray_1_1geom_1_1_primitive_visitor.html#aee13240be9152f1abacaae6613ce7b3f", null ],
     [ "visitInstance", "classmoonray_1_1geom_1_1_primitive_visitor.html#a3d853ab4e4b3b457f64dba2b1ffbcb4d", null ],

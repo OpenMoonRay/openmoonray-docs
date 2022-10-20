@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/Api.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/Api.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('_api_8h.html',''); initResizable(); })
 <code>#include &lt;<a class="el" href="_subdivision_mesh_8h_source.html">rendering/geom/SubdivisionMesh.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_vdb_volume_8h_source.html">rendering/geom/VdbVolume.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_transformed_primitive_8h_source.html">rendering/geom/TransformedPrimitive.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_xform_8h_source.html">rendering/bvh/shading/Xform.h</a>&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/Xform.h&gt;</code><br />
 </div>
 <p><a href="_api_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -121,97 +121,901 @@ $(document).ready(function(){initNavTree('_api_8h.html',''); initResizable(); })
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacescene__rdl2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2.html">scene_rdl2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2.html">scene_rdl2::rdl2</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html">moonray::geom</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aeff13bf32e880bf3b7d22dc67b35f069"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069">moonray::geom::PrimitiveType</a> { <br />
-&#160;&#160;<a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069ae657cce1913c857166b0475f18668ef5">moonray::geom::BOX</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069ab09e7191334b009f4549433248470205">moonray::geom::CURVES</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a76425f17a58d9249cadacc9a27771a80">moonray::geom::INSTANCE</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a70b71cabeeaf8c2bf473c896d5442ddb">moonray::geom::POINTS</a>
+<tr class="memitem:aeff13bf32e880bf3b7d22dc67b35f069"><td class="memItemLeft" align="right" valign="top"><a id="aeff13bf32e880bf3b7d22dc67b35f069" name="aeff13bf32e880bf3b7d22dc67b35f069"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PrimitiveType</b> { <br />
+&#160;&#160;<b>BOX</b>
+, <b>CURVES</b>
+, <b>INSTANCE</b>
+, <b>POINTS</b>
 , <br />
-&#160;&#160;<a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a89d8fdf241b5780a922f286f315f5a31">moonray::geom::POLYGON_MESH</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a37bc0b63421103befa5d6d58456287fd">moonray::geom::PRIMITIVE_GROUP</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a6f7cea7381e843e2ee0338b4a92b0d43">moonray::geom::SPHERE</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a8e16d511598e8cbac2847ae43ff254a9">moonray::geom::SUBDIVISION_MESH</a>
+&#160;&#160;<b>POLYGON_MESH</b>
+, <b>PRIMITIVE_GROUP</b>
+, <b>SPHERE</b>
+, <b>SUBDIVISION_MESH</b>
 , <br />
-&#160;&#160;<a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a803a2fc1638b74b66220299785b9b8be">moonray::geom::TRANSFORMED_PRIMITIVE</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a10bcb2c42b3b42c380e6e5f65411decb">moonray::geom::VDB_VOLUME</a>
-, <a class="el" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a696b031073e74bf2cb98e5ef201d4aa3">moonray::geom::UNKNOWN</a>
+&#160;&#160;<b>TRANSFORMED_PRIMITIVE</b>
+, <b>VDB_VOLUME</b>
+, <b>UNKNOWN</b>
 <br />
  }</td></tr>
 <tr class="separator:aeff13bf32e880bf3b7d22dc67b35f069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa6328f7011f0e8c15051b1bbc8e198d0"><td class="memItemLeft" align="right" valign="top">PrimitiveType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#aa6328f7011f0e8c15051b1bbc8e198d0">moonray::geom::getPrimitiveType</a> (const Primitive &amp;p)</td></tr>
-<tr class="memdesc:aa6328f7011f0e8c15051b1bbc8e198d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function that query the PrimitiveType of specified <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>  <a href="namespacemoonray_1_1geom.html#aa6328f7011f0e8c15051b1bbc8e198d0">More...</a><br /></td></tr>
+<tr class="memitem:aa6328f7011f0e8c15051b1bbc8e198d0"><td class="memItemLeft" align="right" valign="top">PrimitiveType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#aa6328f7011f0e8c15051b1bbc8e198d0">moonray::geom::getPrimitiveType</a> (const Primitive &amp;p)</td></tr>
+<tr class="memdesc:aa6328f7011f0e8c15051b1bbc8e198d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function that query the PrimitiveType of specified <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>  <a href="_api_8cc.html#aa6328f7011f0e8c15051b1bbc8e198d0">More...</a><br /></td></tr>
 <tr class="separator:aa6328f7011f0e8c15051b1bbc8e198d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad37f60dd325131a09efaf4d35543ae03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> shading::XformSamples&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#ad37f60dd325131a09efaf4d35543ae03">moonray::geom::computePrim2Render</a> (const State &amp;state, const shading::XformSamples &amp;parent2render)</td></tr>
-<tr class="memdesc:ad37f60dd325131a09efaf4d35543ae03"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function that concatenate primitive to render space transform samples  <a href="namespacemoonray_1_1geom.html#ad37f60dd325131a09efaf4d35543ae03">More...</a><br /></td></tr>
+<tr class="memitem:ad37f60dd325131a09efaf4d35543ae03"><td class="memItemLeft" align="right" valign="top">finline shading::XformSamples&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8h.html#ad37f60dd325131a09efaf4d35543ae03">moonray::geom::computePrim2Render</a> (const State &amp;state, const shading::XformSamples &amp;parent2render)</td></tr>
+<tr class="memdesc:ad37f60dd325131a09efaf4d35543ae03"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function that concatenate primitive to render space transform samples  <a href="_api_8h.html#ad37f60dd325131a09efaf4d35543ae03">More...</a><br /></td></tr>
 <tr class="separator:ad37f60dd325131a09efaf4d35543ae03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7055366476bf0667f97770c153337c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> shading::XformSamples&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#afd7055366476bf0667f97770c153337c">moonray::geom::concatenate</a> (const shading::XformSamples &amp;xformA, const shading::XformSamples &amp;xformB)</td></tr>
-<tr class="memdesc:afd7055366476bf0667f97770c153337c"><td class="mdescLeft">&#160;</td><td class="mdescRight">helpter function that concatenate two <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>  <a href="namespacemoonray_1_1geom.html#afd7055366476bf0667f97770c153337c">More...</a><br /></td></tr>
+<tr class="memitem:afd7055366476bf0667f97770c153337c"><td class="memItemLeft" align="right" valign="top">finline shading::XformSamples&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8h.html#afd7055366476bf0667f97770c153337c">moonray::geom::concatenate</a> (const shading::XformSamples &amp;xformA, const shading::XformSamples &amp;xformB)</td></tr>
+<tr class="memdesc:afd7055366476bf0667f97770c153337c"><td class="mdescLeft">&#160;</td><td class="mdescRight">helpter function that concatenate two shading::XformSamples  <a href="_api_8h.html#afd7055366476bf0667f97770c153337c">More...</a><br /></td></tr>
 <tr class="separator:afd7055366476bf0667f97770c153337c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c3f7ed89b825514ef41f7e77be611e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Curves &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a31c3f7ed89b825514ef41f7e77be611e">moonray::geom::createCurves</a> (Curves::Type type, Curves::SubType subtype, int tessellationRate, Curves::CurvesVertexCount &amp;&amp;curvesVertexCount, Curves::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
-<tr class="memdesc:a31c3f7ed89b825514ef41f7e77be611e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive  <a href="namespacemoonray_1_1geom.html#a31c3f7ed89b825514ef41f7e77be611e">More...</a><br /></td></tr>
+<tr class="memitem:a31c3f7ed89b825514ef41f7e77be611e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Curves &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a31c3f7ed89b825514ef41f7e77be611e">moonray::geom::createCurves</a> (Curves::Type type, Curves::SubType subtype, int tessellationRate, Curves::CurvesVertexCount &amp;&amp;curvesVertexCount, Curves::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
+<tr class="memdesc:a31c3f7ed89b825514ef41f7e77be611e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive  <a href="_api_8cc.html#a31c3f7ed89b825514ef41f7e77be611e">More...</a><br /></td></tr>
 <tr class="separator:a31c3f7ed89b825514ef41f7e77be611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a3b16666293e671e3372e2eed3f473"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Points &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#aa1a3b16666293e671e3372e2eed3f473">moonray::geom::createPoints</a> (Points::VertexBuffer &amp;&amp;position, Points::RadiusBuffer &amp;&amp;radius, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
-<tr class="memdesc:aa1a3b16666293e671e3372e2eed3f473"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_points.html" title="Primitive that composed by a set of points that is intended to be used for particles effects.">Points</a> primitive  <a href="namespacemoonray_1_1geom.html#aa1a3b16666293e671e3372e2eed3f473">More...</a><br /></td></tr>
+<tr class="memitem:aa1a3b16666293e671e3372e2eed3f473"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Points &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#aa1a3b16666293e671e3372e2eed3f473">moonray::geom::createPoints</a> (Points::VertexBuffer &amp;&amp;position, Points::RadiusBuffer &amp;&amp;radius, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
+<tr class="memdesc:aa1a3b16666293e671e3372e2eed3f473"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_points.html" title="Primitive that composed by a set of points that is intended to be used for particles effects.">Points</a> primitive  <a href="_api_8cc.html#aa1a3b16666293e671e3372e2eed3f473">More...</a><br /></td></tr>
 <tr class="separator:aa1a3b16666293e671e3372e2eed3f473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33998ca6d20fb8eb6dcffddfcb492306"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; PolygonMesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a33998ca6d20fb8eb6dcffddfcb492306">moonray::geom::createPolygonMesh</a> (PolygonMesh::FaceVertexCount &amp;&amp;faceVertexCount, PolygonMesh::IndexBuffer &amp;&amp;indices, PolygonMesh::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
-<tr class="memdesc:a33998ca6d20fb8eb6dcffddfcb492306"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html" title="Primitive that composed by a set of polygons.">PolygonMesh</a> primitive  <a href="namespacemoonray_1_1geom.html#a33998ca6d20fb8eb6dcffddfcb492306">More...</a><br /></td></tr>
+<tr class="memitem:a33998ca6d20fb8eb6dcffddfcb492306"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; PolygonMesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a33998ca6d20fb8eb6dcffddfcb492306">moonray::geom::createPolygonMesh</a> (PolygonMesh::FaceVertexCount &amp;&amp;faceVertexCount, PolygonMesh::IndexBuffer &amp;&amp;indices, PolygonMesh::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
+<tr class="memdesc:a33998ca6d20fb8eb6dcffddfcb492306"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html" title="Primitive that composed by a set of polygons.">PolygonMesh</a> primitive  <a href="_api_8cc.html#a33998ca6d20fb8eb6dcffddfcb492306">More...</a><br /></td></tr>
 <tr class="separator:a33998ca6d20fb8eb6dcffddfcb492306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96e2d2e5b141212f15a7356248d35237"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="dso_2volume_2_vdb_2_vdb_volume_8cc.html#a41594d49026b63ff25330629cb36fd8f">VdbVolume</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a96e2d2e5b141212f15a7356248d35237">moonray::geom::createVdbVolume</a> (const VdbVolume::VdbInitData &amp;vdbInitData, const MotionBlurParams &amp;motionBlurParams, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</td></tr>
+<tr class="memitem:a96e2d2e5b141212f15a7356248d35237"><td class="memItemLeft" align="right" valign="top"><a id="a96e2d2e5b141212f15a7356248d35237" name="a96e2d2e5b141212f15a7356248d35237"></a>
+std::unique_ptr&lt; VdbVolume &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::createVdbVolume</b> (const VdbVolume::VdbInitData &amp;vdbInitData, const MotionBlurParams &amp;motionBlurParams, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</td></tr>
 <tr class="separator:a96e2d2e5b141212f15a7356248d35237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3691409951bd29b140bc59cfb33200d8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; PrimitiveGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a3691409951bd29b140bc59cfb33200d8">moonray::geom::createPrimitiveGroup</a> ()</td></tr>
-<tr class="memdesc:a3691409951bd29b140bc59cfb33200d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">PrimitiveGroup</a> that can hold multiple primitives  <a href="namespacemoonray_1_1geom.html#a3691409951bd29b140bc59cfb33200d8">More...</a><br /></td></tr>
+<tr class="memitem:a3691409951bd29b140bc59cfb33200d8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; PrimitiveGroup &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a3691409951bd29b140bc59cfb33200d8">moonray::geom::createPrimitiveGroup</a> ()</td></tr>
+<tr class="memdesc:a3691409951bd29b140bc59cfb33200d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">PrimitiveGroup</a> that can hold multiple primitives  <a href="_api_8cc.html#a3691409951bd29b140bc59cfb33200d8">More...</a><br /></td></tr>
 <tr class="separator:a3691409951bd29b140bc59cfb33200d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a272b38177b7d5f7849b99cf1041e77"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Sphere &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a3a272b38177b7d5f7849b99cf1041e77">moonray::geom::createSphere</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> radius, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
-<tr class="memdesc:a3a272b38177b7d5f7849b99cf1041e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_sphere.html" title="quadric sphere">Sphere</a> primitive  <a href="namespacemoonray_1_1geom.html#a3a272b38177b7d5f7849b99cf1041e77">More...</a><br /></td></tr>
+<tr class="memitem:a3a272b38177b7d5f7849b99cf1041e77"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Sphere &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a3a272b38177b7d5f7849b99cf1041e77">moonray::geom::createSphere</a> (float radius, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
+<tr class="memdesc:a3a272b38177b7d5f7849b99cf1041e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_sphere.html" title="quadric sphere">Sphere</a> primitive  <a href="_api_8cc.html#a3a272b38177b7d5f7849b99cf1041e77">More...</a><br /></td></tr>
 <tr class="separator:a3a272b38177b7d5f7849b99cf1041e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4e744e8ec8f7cd1b3fc519a02b1fdb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Box &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#acd4e744e8ec8f7cd1b3fc519a02b1fdb">moonray::geom::createBox</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> width, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> height, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
-<tr class="memdesc:acd4e744e8ec8f7cd1b3fc519a02b1fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_box.html" title="quadric Box">Box</a> primitive  <a href="namespacemoonray_1_1geom.html#acd4e744e8ec8f7cd1b3fc519a02b1fdb">More...</a><br /></td></tr>
+<tr class="memitem:acd4e744e8ec8f7cd1b3fc519a02b1fdb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Box &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#acd4e744e8ec8f7cd1b3fc519a02b1fdb">moonray::geom::createBox</a> (float length, float width, float height, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
+<tr class="memdesc:acd4e744e8ec8f7cd1b3fc519a02b1fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_box.html" title="quadric Box">Box</a> primitive  <a href="_api_8cc.html#acd4e744e8ec8f7cd1b3fc519a02b1fdb">More...</a><br /></td></tr>
 <tr class="separator:acd4e744e8ec8f7cd1b3fc519a02b1fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95b85c4b4c7ae7b1542ed2b9167d0d5c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; SubdivisionMesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c">moonray::geom::createSubdivisionMesh</a> (SubdivisionMesh::Scheme scheme, SubdivisionMesh::FaceVertexCount &amp;&amp;faceVertexCount, SubdivisionMesh::IndexBuffer &amp;&amp;indices, SubdivisionMesh::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
-<tr class="memdesc:a95b85c4b4c7ae7b1542ed2b9167d0d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_subdivision_mesh.html" title="Subdivision surface primitive defined by an input mesh, a subdivision scheme and additional subdivisi...">SubdivisionMesh</a> primitive  <a href="namespacemoonray_1_1geom.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c">More...</a><br /></td></tr>
+<tr class="memitem:a95b85c4b4c7ae7b1542ed2b9167d0d5c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; SubdivisionMesh &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c">moonray::geom::createSubdivisionMesh</a> (SubdivisionMesh::Scheme scheme, SubdivisionMesh::FaceVertexCount &amp;&amp;faceVertexCount, SubdivisionMesh::IndexBuffer &amp;&amp;indices, SubdivisionMesh::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable(), bool validateGeometry=false, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *rdlGeometry=nullptr)</td></tr>
+<tr class="memdesc:a95b85c4b4c7ae7b1542ed2b9167d0d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_subdivision_mesh.html" title="Subdivision surface primitive defined by an input mesh, a subdivision scheme and additional subdivisi...">SubdivisionMesh</a> primitive  <a href="_api_8cc.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c">More...</a><br /></td></tr>
 <tr class="separator:a95b85c4b4c7ae7b1542ed2b9167d0d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43ff3e3efb6aabddaf5977840a65475"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Instance &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">moonray::geom::createInstance</a> (const Mat43 &amp;xform, std::shared_ptr&lt; SharedPrimitive &gt; reference, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
-<tr class="memdesc:af43ff3e3efb6aabddaf5977840a65475"><td class="mdescLeft">&#160;</td><td class="mdescRight">create an <a class="el" href="classmoonray_1_1geom_1_1_instance.html" title="Primitive that contains a transform and a reference to shared primitive, which can be used for render...">Instance</a> with a transform and a referenced <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>  <a href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">More...</a><br /></td></tr>
+<tr class="memitem:af43ff3e3efb6aabddaf5977840a65475"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Instance &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#af43ff3e3efb6aabddaf5977840a65475">moonray::geom::createInstance</a> (const Mat43 &amp;xform, std::shared_ptr&lt; SharedPrimitive &gt; reference, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
+<tr class="memdesc:af43ff3e3efb6aabddaf5977840a65475"><td class="mdescLeft">&#160;</td><td class="mdescRight">create an <a class="el" href="classmoonray_1_1geom_1_1_instance.html" title="Primitive that contains a transform and a reference to shared primitive, which can be used for render...">Instance</a> with a transform and a referenced <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>  <a href="_api_8cc.html#af43ff3e3efb6aabddaf5977840a65475">More...</a><br /></td></tr>
 <tr class="separator:af43ff3e3efb6aabddaf5977840a65475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102492f5855c03073238f1ef13a5a96e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Instance &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a102492f5855c03073238f1ef13a5a96e">moonray::geom::createInstance</a> (const shading::XformSamples &amp;xform, std::shared_ptr&lt; SharedPrimitive &gt; reference, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
-<tr class="memdesc:a102492f5855c03073238f1ef13a5a96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create an <a class="el" href="classmoonray_1_1geom_1_1_instance.html" title="Primitive that contains a transform and a reference to shared primitive, which can be used for render...">Instance</a> with a transform and a referenced <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>  <a href="namespacemoonray_1_1geom.html#a102492f5855c03073238f1ef13a5a96e">More...</a><br /></td></tr>
+<tr class="memitem:a102492f5855c03073238f1ef13a5a96e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Instance &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a102492f5855c03073238f1ef13a5a96e">moonray::geom::createInstance</a> (const shading::XformSamples &amp;xform, std::shared_ptr&lt; SharedPrimitive &gt; reference, shading::PrimitiveAttributeTable &amp;&amp;attributeTable=shading::PrimitiveAttributeTable())</td></tr>
+<tr class="memdesc:a102492f5855c03073238f1ef13a5a96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create an <a class="el" href="classmoonray_1_1geom_1_1_instance.html" title="Primitive that contains a transform and a reference to shared primitive, which can be used for render...">Instance</a> with a transform and a referenced <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>  <a href="_api_8cc.html#a102492f5855c03073238f1ef13a5a96e">More...</a><br /></td></tr>
 <tr class="separator:a102492f5855c03073238f1ef13a5a96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17b37f60198612f9d940fd6e9fab148e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; SharedPrimitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a17b37f60198612f9d940fd6e9fab148e">moonray::geom::createSharedPrimitive</a> (std::unique_ptr&lt; Primitive &gt; primitive)</td></tr>
-<tr class="memdesc:a17b37f60198612f9d940fd6e9fab148e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> for instancing usage  <a href="namespacemoonray_1_1geom.html#a17b37f60198612f9d940fd6e9fab148e">More...</a><br /></td></tr>
+<tr class="memitem:a17b37f60198612f9d940fd6e9fab148e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; SharedPrimitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a17b37f60198612f9d940fd6e9fab148e">moonray::geom::createSharedPrimitive</a> (std::unique_ptr&lt; Primitive &gt; primitive)</td></tr>
+<tr class="memdesc:a17b37f60198612f9d940fd6e9fab148e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> for instancing usage  <a href="_api_8cc.html#a17b37f60198612f9d940fd6e9fab148e">More...</a><br /></td></tr>
 <tr class="separator:a17b37f60198612f9d940fd6e9fab148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b237d02cfcd695b43cc86bff73d429"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; TransformedPrimitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#ae0b237d02cfcd695b43cc86bff73d429">moonray::geom::createTransformedPrimitive</a> (const Mat43 &amp;xform, std::unique_ptr&lt; Primitive &gt; primitive)</td></tr>
-<tr class="memdesc:ae0b237d02cfcd695b43cc86bff73d429"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html" title="Primitive that contains a transform and a primitive, which serves similar purpose of pivot point in M...">TransformedPrimitive</a>  <a href="namespacemoonray_1_1geom.html#ae0b237d02cfcd695b43cc86bff73d429">More...</a><br /></td></tr>
+<tr class="memitem:ae0b237d02cfcd695b43cc86bff73d429"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; TransformedPrimitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#ae0b237d02cfcd695b43cc86bff73d429">moonray::geom::createTransformedPrimitive</a> (const Mat43 &amp;xform, std::unique_ptr&lt; Primitive &gt; primitive)</td></tr>
+<tr class="memdesc:ae0b237d02cfcd695b43cc86bff73d429"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html" title="Primitive that contains a transform and a primitive, which serves similar purpose of pivot point in M...">TransformedPrimitive</a>  <a href="_api_8cc.html#ae0b237d02cfcd695b43cc86bff73d429">More...</a><br /></td></tr>
 <tr class="separator:ae0b237d02cfcd695b43cc86bff73d429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb37a6d64bd734b41fe6670554231610"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; TransformedPrimitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#abb37a6d64bd734b41fe6670554231610">moonray::geom::createTransformedPrimitive</a> (const shading::XformSamples &amp;xform, std::unique_ptr&lt; Primitive &gt; primitive)</td></tr>
-<tr class="memdesc:abb37a6d64bd734b41fe6670554231610"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html" title="Primitive that contains a transform and a primitive, which serves similar purpose of pivot point in M...">TransformedPrimitive</a>  <a href="namespacemoonray_1_1geom.html#abb37a6d64bd734b41fe6670554231610">More...</a><br /></td></tr>
+<tr class="memitem:abb37a6d64bd734b41fe6670554231610"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; TransformedPrimitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#abb37a6d64bd734b41fe6670554231610">moonray::geom::createTransformedPrimitive</a> (const shading::XformSamples &amp;xform, std::unique_ptr&lt; Primitive &gt; primitive)</td></tr>
+<tr class="memdesc:abb37a6d64bd734b41fe6670554231610"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a <a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html" title="Primitive that contains a transform and a primitive, which serves similar purpose of pivot point in M...">TransformedPrimitive</a>  <a href="_api_8cc.html#abb37a6d64bd734b41fe6670554231610">More...</a><br /></td></tr>
 <tr class="separator:abb37a6d64bd734b41fe6670554231610"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaebac535b9d513d16d9376043a57030b"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; Primitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#aaebac535b9d513d16d9376043a57030b">moonray::geom::convertForMotionBlur</a> (const ProceduralContext &amp;context, std::unique_ptr&lt; Primitive &gt; p, bool useRotationMotionBlur)</td></tr>
+<tr class="memitem:aaebac535b9d513d16d9376043a57030b"><td class="memItemLeft" align="right" valign="top"><a id="aaebac535b9d513d16d9376043a57030b" name="aaebac535b9d513d16d9376043a57030b"></a>
+std::unique_ptr&lt; Primitive &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::convertForMotionBlur</b> (const ProceduralContext &amp;context, std::unique_ptr&lt; Primitive &gt; p, bool useRotationMotionBlur)</td></tr>
 <tr class="separator:aaebac535b9d513d16d9376043a57030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394192fde2bcb46ddcac2a4a65fd5ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a394192fde2bcb46ddcac2a4a65fd5ea2">moonray::geom::removeUnassignedFaces</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_layer.html">scene_rdl2::rdl2::Layer</a> *layer, LayerAssignmentId &amp;layerAssignmentId, std::vector&lt; Primitive::IndexType &gt; &amp;faceToPart, std::vector&lt; Primitive::size_type &gt; &amp;faceVertexCount, std::vector&lt; Primitive::IndexType &gt; &amp;indices, shading::PrimitiveAttributeTable *primitiveAttributeTable=nullptr)</td></tr>
-<tr class="memdesc:a394192fde2bcb46ddcac2a4a65fd5ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">an util method removes unassigned face/facevarying data  <a href="namespacemoonray_1_1geom.html#a394192fde2bcb46ddcac2a4a65fd5ea2">More...</a><br /></td></tr>
+<tr class="memitem:a394192fde2bcb46ddcac2a4a65fd5ea2"><td class="memItemLeft" align="right" valign="top"><a id="a394192fde2bcb46ddcac2a4a65fd5ea2" name="a394192fde2bcb46ddcac2a4a65fd5ea2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::removeUnassignedFaces</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_layer.html">scene_rdl2::rdl2::Layer</a> *layer, LayerAssignmentId &amp;layerAssignmentId, std::vector&lt; Primitive::IndexType &gt; &amp;faceToPart, std::vector&lt; Primitive::size_type &gt; &amp;faceVertexCount, std::vector&lt; Primitive::IndexType &gt; &amp;indices, shading::PrimitiveAttributeTable *primitiveAttributeTable=nullptr)</td></tr>
+<tr class="memdesc:a394192fde2bcb46ddcac2a4a65fd5ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">an util method removes unassigned face/facevarying data <br /></td></tr>
 <tr class="separator:a394192fde2bcb46ddcac2a4a65fd5ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2b7f8f471f41d78afd2ec3a566e6e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#a2c2b7f8f471f41d78afd2ec3a566e6e7">moonray::geom::getAssignmentId</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_layer.html">scene_rdl2::rdl2::Layer</a> *layer, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *geometry, const std::string &amp;partName, int &amp;assignmentId)</td></tr>
-<tr class="memdesc:a2c2b7f8f471f41d78afd2ec3a566e6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">an util function to query assignment id from layer  <a href="namespacemoonray_1_1geom.html#a2c2b7f8f471f41d78afd2ec3a566e6e7">More...</a><br /></td></tr>
+<tr class="memitem:a2c2b7f8f471f41d78afd2ec3a566e6e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_api_8cc.html#a2c2b7f8f471f41d78afd2ec3a566e6e7">moonray::geom::getAssignmentId</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_layer.html">scene_rdl2::rdl2::Layer</a> *layer, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *geometry, const std::string &amp;partName, int &amp;assignmentId)</td></tr>
+<tr class="memdesc:a2c2b7f8f471f41d78afd2ec3a566e6e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">an util function to query assignment id from layer  <a href="_api_8cc.html#a2c2b7f8f471f41d78afd2ec3a566e6e7">More...</a><br /></td></tr>
 <tr class="separator:a2c2b7f8f471f41d78afd2ec3a566e6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >File containing geometry API for Primitive creation and some helpers. </p>
 <dl class="section author"><dt>Author</dt><dd>Wayne Huang </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ad37f60dd325131a09efaf4d35543ae03" name="ad37f60dd325131a09efaf4d35543ae03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37f60dd325131a09efaf4d35543ae03">&#9670;&#160;</a></span>computePrim2Render()</h2>
 
-<p class="definition">Definition in file <a class="el" href="_api_8h_source.html">Api.h</a>.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline shading::XformSamples moonray::geom::computePrim2Render </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shading::XformSamples &amp;&#160;</td>
+          <td class="paramname"><em>parent2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>helper function that concatenate primitive to render space transform samples </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>State object for current Procedural </td></tr>
+    <tr><td class="paramname">parent2render</td><td>transform from parent space to render space that is passed in to each Procedural::generate/update call </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>primitive to render space transform </dd></dl>
+
+</div>
+</div>
+<a id="afd7055366476bf0667f97770c153337c" name="afd7055366476bf0667f97770c153337c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7055366476bf0667f97770c153337c">&#9670;&#160;</a></span>concatenate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline shading::XformSamples moonray::geom::concatenate </td>
+          <td>(</td>
+          <td class="paramtype">const shading::XformSamples &amp;&#160;</td>
+          <td class="paramname"><em>xformA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shading::XformSamples &amp;&#160;</td>
+          <td class="paramname"><em>xformB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>helpter function that concatenate two shading::XformSamples </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xformA</td><td>shading::XformSamples </td></tr>
+    <tr><td class="paramname">xformB</td><td>shading::XformSamples </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if both xformA and xformB contains more than one xform sample and the number of sample doesn't match </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>shading::XformSamples that is the concatenation of xformA and xformB </dd></dl>
+
+</div>
+</div>
+<a id="acd4e744e8ec8f7cd1b3fc519a02b1fdb" name="acd4e744e8ec8f7cd1b3fc519a02b1fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4e744e8ec8f7cd1b3fc519a02b1fdb">&#9670;&#160;</a></span>createBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; Box &gt; moonray::geom::createBox </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>layerAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a Box primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>box length </td></tr>
+    <tr><td class="paramname">width</td><td>box width </td></tr>
+    <tr><td class="paramname">height</td><td>box height </td></tr>
+    <tr><td class="paramname">layerAssignmentId</td><td>assignment id that marks a unique combination of geometry/partName/material/lightSet in layer. </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (per face id, per vertex uv...etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if the input primitive attributes are not valid. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created Box primitive </dd></dl>
+
+</div>
+</div>
+<a id="a31c3f7ed89b825514ef41f7e77be611e" name="a31c3f7ed89b825514ef41f7e77be611e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c3f7ed89b825514ef41f7e77be611e">&#9670;&#160;</a></span>createCurves()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; Curves &gt; moonray::geom::createCurves </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8">Curves::Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Curves::SubType&#160;</td>
+          <td class="paramname"><em>subtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tessellationRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Curves::CurvesVertexCount &amp;&amp;&#160;</td>
+          <td class="paramname"><em>curvesVertexCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">Curves::VertexBuffer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>layerAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>validateGeometry</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *&#160;</td>
+          <td class="paramname"><em>rdlGeometry</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a Curves primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>the type of Curves to create </td></tr>
+    <tr><td class="paramname">subtype</td><td>the subtype of Curves to create </td></tr>
+    <tr><td class="paramname">tessellationRate</td><td>the tessellation rate for the curve segments </td></tr>
+    <tr><td class="paramname">curvesVertexCount</td><td>vector to specify the curve control vertex count. The size of the vector is the number of curves in created primitive. Each entry of curveVertexCount is the control vertex count of that curve. </td></tr>
+    <tr><td class="paramname">vertices</td><td>VertexBuffer that contains the curves control points </td></tr>
+    <tr><td class="paramname">layerAssignmentId</td><td>id that marks a unique combination of geometry/partName/material/lightSet in layer </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (per face id, per vertex uv...etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if the input vertices or primitive attributes are not valid. Util Curves::checkPrimitiveData can be used to verify whether input curves data is valid </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created Curves primitive </dd></dl>
+
+</div>
+</div>
+<a id="af43ff3e3efb6aabddaf5977840a65475" name="af43ff3e3efb6aabddaf5977840a65475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43ff3e3efb6aabddaf5977840a65475">&#9670;&#160;</a></span>createInstance() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; Instance &gt; moonray::geom::createInstance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscene__rdl2_1_1math_1_1_xform_t.html">Mat43</a> &amp;&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> &gt;&#160;</td>
+          <td class="paramname"><em>reference</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create an Instance with a transform and a referenced Primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xform</td><td>matrix that specify the local transform of instance </td></tr>
+    <tr><td class="paramname">reference</td><td>the SharedPrimitive this instance referenced to </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (Instance only supports constant rate attributes) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created Instance primitive </dd></dl>
+
+</div>
+</div>
+<a id="a102492f5855c03073238f1ef13a5a96e" name="a102492f5855c03073238f1ef13a5a96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102492f5855c03073238f1ef13a5a96e">&#9670;&#160;</a></span>createInstance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; Instance &gt; moonray::geom::createInstance </td>
+          <td>(</td>
+          <td class="paramtype">const shading::XformSamples &amp;&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> &gt;&#160;</td>
+          <td class="paramname"><em>reference</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create an Instance with a transform and a referenced Primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xform</td><td>shading::XformSamples that specify the local transform of instance </td></tr>
+    <tr><td class="paramname">reference</td><td>the SharedPrimitive this instance referenced to </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (Instance only supports constant rate attributes) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created Instance primitive </dd></dl>
+
+</div>
+</div>
+<a id="aa1a3b16666293e671e3372e2eed3f473" name="aa1a3b16666293e671e3372e2eed3f473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a3b16666293e671e3372e2eed3f473">&#9670;&#160;</a></span>createPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; Points &gt; moonray::geom::createPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">Points::VertexBuffer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Points::RadiusBuffer &amp;&amp;&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>layerAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>validateGeometry</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *&#160;</td>
+          <td class="paramname"><em>rdlGeometry</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a Points primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>VertexBuffer that contains the 3d coordinate of each point </td></tr>
+    <tr><td class="paramname">radius</td><td>RadiusBuffer that contains the radius of each point </td></tr>
+    <tr><td class="paramname">layerAssignmentId</td><td>id that marks a unique combination of geometry/partName/material/lightSet in layer </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (per face id, per vertex uv...etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if the input position or primitive attributes are not valid or the size of position and radius don't match. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created Points primitive </dd></dl>
+
+</div>
+</div>
+<a id="a33998ca6d20fb8eb6dcffddfcb492306" name="a33998ca6d20fb8eb6dcffddfcb492306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33998ca6d20fb8eb6dcffddfcb492306">&#9670;&#160;</a></span>createPolygonMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; PolygonMesh &gt; moonray::geom::createPolygonMesh </td>
+          <td>(</td>
+          <td class="paramtype">PolygonMesh::FaceVertexCount &amp;&amp;&#160;</td>
+          <td class="paramname"><em>faceVertexCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PolygonMesh::IndexBuffer &amp;&amp;&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">PolygonMesh::VertexBuffer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>layerAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>validateGeometry</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *&#160;</td>
+          <td class="paramname"><em>rdlGeometry</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a PolygonMesh primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">faceVertexCount</td><td>vector to specify the face vertex count. The size of the vector is the number of faces in created primitive. Each entry of faceVertexCount is the vertex count of that face. </td></tr>
+    <tr><td class="paramname">indices</td><td>vector of vertex index describe the topology of polygonmesh The size of the vector is the sum of all entry values in faceVertexCount </td></tr>
+    <tr><td class="paramname">vertices</td><td>VertexBuffer that contains the vertices of polygon mesh </td></tr>
+    <tr><td class="paramname">layerAssignmentId</td><td>assignment id that marks a unique combination of geometry/partName/material/lightSet in layer. </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (per face id, per vertex uv...etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if the input vertices or primitive attributes are not valid. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created PolygonMesh primitive </dd></dl>
+
+</div>
+</div>
+<a id="a3691409951bd29b140bc59cfb33200d8" name="a3691409951bd29b140bc59cfb33200d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3691409951bd29b140bc59cfb33200d8">&#9670;&#160;</a></span>createPrimitiveGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; PrimitiveGroup &gt; moonray::geom::createPrimitiveGroup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a PrimitiveGroup that can hold multiple primitives </p>
+<dl class="section return"><dt>Returns</dt><dd>an unique pointer points to the created PrimitiveGroup </dd></dl>
+
+</div>
+</div>
+<a id="a17b37f60198612f9d940fd6e9fab148e" name="a17b37f60198612f9d940fd6e9fab148e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17b37f60198612f9d940fd6e9fab148e">&#9670;&#160;</a></span>createSharedPrimitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; SharedPrimitive &gt; moonray::geom::createSharedPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a> &gt;&#160;</td>
+          <td class="paramname"><em>primitive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a SharedPrimitive for instancing usage </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primitive</td><td>the primitive to be shared/referenced by Instance </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a shared pointer points to the SharedPrimitive which can be referenced by Instance </dd></dl>
+
+</div>
+</div>
+<a id="a3a272b38177b7d5f7849b99cf1041e77" name="a3a272b38177b7d5f7849b99cf1041e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a272b38177b7d5f7849b99cf1041e77">&#9670;&#160;</a></span>createSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; Sphere &gt; moonray::geom::createSphere </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>layerAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a Sphere primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">radius</td><td>sphere radius </td></tr>
+    <tr><td class="paramname">layerAssignmentId</td><td>assignment id that marks a unique combination of geometry/partName/material/lightSet in layer. </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (per face id, per vertex uv...etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if the input primitive attributes are not valid. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created Sphere primitive </dd></dl>
+
+</div>
+</div>
+<a id="a95b85c4b4c7ae7b1542ed2b9167d0d5c" name="a95b85c4b4c7ae7b1542ed2b9167d0d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b85c4b4c7ae7b1542ed2b9167d0d5c">&#9670;&#160;</a></span>createSubdivisionMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; SubdivisionMesh &gt; moonray::geom::createSubdivisionMesh </td>
+          <td>(</td>
+          <td class="paramtype">SubdivisionMesh::Scheme&#160;</td>
+          <td class="paramname"><em>scheme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SubdivisionMesh::FaceVertexCount &amp;&amp;&#160;</td>
+          <td class="paramname"><em>faceVertexCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SubdivisionMesh::IndexBuffer &amp;&amp;&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html">SubdivisionMesh::VertexBuffer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>vertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>layerAssignmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>attributeTable</em> = <code><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>validateGeometry</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *&#160;</td>
+          <td class="paramname"><em>rdlGeometry</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a SubdivisionMesh primitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scheme</td><td>the subdivision scheme (bilinear, catmull clark...) </td></tr>
+    <tr><td class="paramname">faceVertexCount</td><td>vector to specify the face vertex count. The size of the vector is the number of faces in created primitive. Each entry of faceVertexCount is the vertex count of that face. </td></tr>
+    <tr><td class="paramname">indices</td><td>vector of vertex index describe the topology of control mesh. The size of the vector is the sum of all entry values in faceVertexCount </td></tr>
+    <tr><td class="paramname">vertices</td><td>VertexBuffer that contains the vertices of control mesh </td></tr>
+    <tr><td class="paramname">layerAssignmentId</td><td>assignment id that marks a unique combination of geometry/partName/material/lightSet in layer. </td></tr>
+    <tr><td class="paramname">attributeTable</td><td>a lookup table that can be used to attach arbitrary primitive attribute (per face id, per vertex uv...etc) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">AssertionError</td><td>if the input vertices or primitive attributes are not valid. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created SubdivisionMesh primitive </dd></dl>
+
+</div>
+</div>
+<a id="ae0b237d02cfcd695b43cc86bff73d429" name="ae0b237d02cfcd695b43cc86bff73d429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0b237d02cfcd695b43cc86bff73d429">&#9670;&#160;</a></span>createTransformedPrimitive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; TransformedPrimitive &gt; moonray::geom::createTransformedPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscene__rdl2_1_1math_1_1_xform_t.html">Mat43</a> &amp;&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a> &gt;&#160;</td>
+          <td class="paramname"><em>primitive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a TransformedPrimitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xform</td><td>matrix that specify the local transform of held primitive </td></tr>
+    <tr><td class="paramname">primitive</td><td>the primitive to be held </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created TransformedPrimitive </dd></dl>
+
+</div>
+</div>
+<a id="abb37a6d64bd734b41fe6670554231610" name="abb37a6d64bd734b41fe6670554231610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb37a6d64bd734b41fe6670554231610">&#9670;&#160;</a></span>createTransformedPrimitive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; TransformedPrimitive &gt; moonray::geom::createTransformedPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const shading::XformSamples &amp;&#160;</td>
+          <td class="paramname"><em>xform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a> &gt;&#160;</td>
+          <td class="paramname"><em>primitive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a TransformedPrimitive </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xform</td><td>shading::XformSamples that specify the local transform of held primitive </td></tr>
+    <tr><td class="paramname">primitive</td><td>the primitive to be held </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a unique pointer points to the created TransformedPrimitive </dd></dl>
+
+</div>
+</div>
+<a id="a2c2b7f8f471f41d78afd2ec3a566e6e7" name="a2c2b7f8f471f41d78afd2ec3a566e6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2b7f8f471f41d78afd2ec3a566e6e7">&#9670;&#160;</a></span>getAssignmentId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::geom::getAssignmentId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_layer.html">scene_rdl2::rdl2::Layer</a> *&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_geometry.html">scene_rdl2::rdl2::Geometry</a> *&#160;</td>
+          <td class="paramname"><em>geometry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>partName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>assignmentId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>an util function to query assignment id from layer </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>rdl2 Layer to query </td></tr>
+    <tr><td class="paramname">geometry</td><td>rdl2 Geometry to query </td></tr>
+    <tr><td class="paramname">partName</td><td>string part name of the geometry to query </td></tr>
+    <tr><td class="paramname">assignmentId</td><td>the assignment id for specified layer/geometry/partName combination </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the assignment id is valid (exist and map to non null shaders) </dd></dl>
+
+</div>
+</div>
+<a id="aa6328f7011f0e8c15051b1bbc8e198d0" name="aa6328f7011f0e8c15051b1bbc8e198d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6328f7011f0e8c15051b1bbc8e198d0">&#9670;&#160;</a></span>getPrimitiveType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PrimitiveType moonray::geom::getPrimitiveType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>helper function that query the PrimitiveType of specified Primitive </p>
+<dl class="section return"><dt>Returns</dt><dd>PrimitiveType of specified Primitive </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

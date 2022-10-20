@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/cmd/brdf_cmd/brdf_cylinder_extract/EdgeDetect.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/cmd/brdf_cmd/brdf_cylinder_extract/EdgeDetect.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,14 +93,14 @@ $(document).ready(function(){initNavTree('_edge_detect_8h_source.html',''); init
   <div class="headertitle"><div class="title">EdgeDetect.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_edge_detect_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_image_8h.html">Image.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Image.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;scene_rdl2/common/math/Vec2.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -117,17 +117,17 @@ $(document).ready(function(){initNavTree('_edge_detect_8h_source.html',''); init
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// We detect top and bottom edges above the given threshold, scanning outwards</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// vertically from the center of the image. Edges are in image space</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_edge_detect_8h.html#a622e932aedf8f24a6473e12cef3265c3">   25</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_edge_detect_8h.html#a622e932aedf8f24a6473e12cef3265c3">detectEdgeSamples</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_image.html">Image</a> &amp;image, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax, <span class="keywordtype">float</span> threshold,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> detectEdgeSamples(<span class="keyword">const</span> <a class="code hl_class" href="class_image.html">Image</a> &amp;image, <span class="keywordtype">int</span> xMin, <span class="keywordtype">int</span> xMax, <span class="keywordtype">float</span> threshold,</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        std::vector&lt;scene_rdl2::math::Vec2f&gt; &amp;topEdgeSamples,</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        std::vector&lt;scene_rdl2::math::Vec2f&gt; &amp;bottomEdgeSamples);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_edge_detect_8h.html#a80b46479332729f18f9d2a5760f72d40">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_edge_detect_8h.html#a80b46479332729f18f9d2a5760f72d40">drawEdgeSamples</a>(<span class="keyword">const</span> std::vector&lt;scene_rdl2::math::Vec2f&gt; &amp;edgeSamples,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> drawEdgeSamples(<span class="keyword">const</span> std::vector&lt;scene_rdl2::math::Vec2f&gt; &amp;edgeSamples,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_class" href="class_image.html">Image</a> &amp;image);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// Returns the parameters of the edge equation y = a * x + b in image coordinates</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_edge_detect_8h.html#a93c80302e80d47a46b8a5301fdec9636">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_edge_detect_8h.html#a93c80302e80d47a46b8a5301fdec9636">fitEdge</a>(<span class="keyword">const</span> std::vector&lt;scene_rdl2::math::Vec2f&gt; &amp;edgeSamples, <span class="keywordtype">float</span> &amp;<a class="code hl_variable" href="immintrin__emu_8h.html#a8a1a0a26c50cc4becfc754bb68d1dc6b">a</a>, <span class="keywordtype">float</span> &amp;<a class="code hl_variable" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> fitEdge(<span class="keyword">const</span> std::vector&lt;scene_rdl2::math::Vec2f&gt; &amp;edgeSamples, <span class="keywordtype">float</span> &amp;a, <span class="keywordtype">float</span> &amp;b);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="_edge_detect_8h.html#ab019076922c77920ab73f223884406a6">drawEdge</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a8a1a0a26c50cc4becfc754bb68d1dc6b">a</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a>, <a class="code hl_class" href="class_image.html">Image</a> &amp;image);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> drawEdge(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b, <a class="code hl_class" href="class_image.html">Image</a> &amp;image);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//---------------------------------------------------------------------------</span></div>
@@ -135,20 +135,13 @@ $(document).ready(function(){initNavTree('_edge_detect_8h_source.html',''); init
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="a_edge_detect_8h_html_a622e932aedf8f24a6473e12cef3265c3"><div class="ttname"><a href="_edge_detect_8h.html#a622e932aedf8f24a6473e12cef3265c3">detectEdgeSamples</a></div><div class="ttdeci">void detectEdgeSamples(const Image &amp;image, int xMin, int xMax, float threshold, std::vector&lt; scene_rdl2::math::Vec2f &gt; &amp;topEdgeSamples, std::vector&lt; scene_rdl2::math::Vec2f &gt; &amp;bottomEdgeSamples)</div></div>
-<div class="ttc" id="a_edge_detect_8h_html_a80b46479332729f18f9d2a5760f72d40"><div class="ttname"><a href="_edge_detect_8h.html#a80b46479332729f18f9d2a5760f72d40">drawEdgeSamples</a></div><div class="ttdeci">void drawEdgeSamples(const std::vector&lt; scene_rdl2::math::Vec2f &gt; &amp;edgeSamples, Image &amp;image)</div></div>
-<div class="ttc" id="a_edge_detect_8h_html_a93c80302e80d47a46b8a5301fdec9636"><div class="ttname"><a href="_edge_detect_8h.html#a93c80302e80d47a46b8a5301fdec9636">fitEdge</a></div><div class="ttdeci">void fitEdge(const std::vector&lt; scene_rdl2::math::Vec2f &gt; &amp;edgeSamples, float &amp;a, float &amp;b)</div></div>
-<div class="ttc" id="a_edge_detect_8h_html_ab019076922c77920ab73f223884406a6"><div class="ttname"><a href="_edge_detect_8h.html#ab019076922c77920ab73f223884406a6">drawEdge</a></div><div class="ttdeci">void drawEdge(float a, float b, Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="_edge_detect_8cc_source.html#l00127">EdgeDetect.cc:127</a></div></div>
-<div class="ttc" id="a_image_8h_html"><div class="ttname"><a href="_image_8h.html">Image.h</a></div></div>
-<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00020">Image.h:20</a></div></div>
-<div class="ttc" id="aimmintrin__emu_8h_html_a8a1a0a26c50cc4becfc754bb68d1dc6b"><div class="ttname"><a href="immintrin__emu_8h.html#a8a1a0a26c50cc4becfc754bb68d1dc6b">a</a></div><div class="ttdeci">return a</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00590">immintrin_emu.h:590</a></div></div>
-<div class="ttc" id="aimmintrin__emu_8h_html_ab5fe720200eed3b8fca39c153696c5d2"><div class="ttname"><a href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a></div><div class="ttdeci">__emu__m256d float double __m128 __m128 b</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00590">immintrin_emu.h:590</a></div></div>
+<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> Image.h:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_a108a91209c29a3f27ca887fa1a44706.html">cmd</a></li><li class="navelem"><a class="el" href="dir_8c624338899d9cfb2e44fbd83dc5aa98.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_30dc418c8dd15f4e878bc3d48c0fd1ae.html">brdf_cylinder_extract</a></li><li class="navelem"><a class="el" href="_edge_detect_8h.html">EdgeDetect.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_a108a91209c29a3f27ca887fa1a44706.html">cmd</a></li><li class="navelem"><a class="el" href="dir_8c624338899d9cfb2e44fbd83dc5aa98.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_30dc418c8dd15f4e878bc3d48c0fd1ae.html">brdf_cylinder_extract</a></li><li class="navelem"><b>EdgeDetect.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

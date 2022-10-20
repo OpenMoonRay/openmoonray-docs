@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: moonray::shading::MultiLayerBssrdf Class Reference</title>
+<title>OpenMoonrayTEST #4: moonray::shading::MultiLayerBssrdf Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,11 +91,7 @@ $(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_multi_laye
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::MultiLayerBssrdf Class Reference</div></div>
 </div><!--header-->
@@ -115,280 +111,139 @@ Inheritance diagram for moonray::shading::MultiLayerBssrdf:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ac422a789f070b9f4966563daec5d3146"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146">Property</a> { <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a72235cc78838b734bb6289ec83612aad">PROPERTY_NONE</a> = 0
-, <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204">PROPERTY_COLOR</a> = 1 &lt;&lt; 0
-, <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b">PROPERTY_RADIUS</a> = 1 &lt;&lt; 1
-, <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a591f1e837a92818b9cbd3239a35ea9ce">PROPERTY_PBR_VALIDITY</a> = 1 &lt;&lt; 2
- }</td></tr>
-<tr class="separator:ac422a789f070b9f4966563daec5d3146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad63f31bff1b6576ab78b829049eb291d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ad63f31bff1b6576ab78b829049eb291d">MultiLayerBssrdf</a> (const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;N)</td></tr>
+<tr class="memitem:ad63f31bff1b6576ab78b829049eb291d"><td class="memItemLeft" align="right" valign="top"><a id="ad63f31bff1b6576ab78b829049eb291d" name="ad63f31bff1b6576ab78b829049eb291d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MultiLayerBssrdf</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;N)</td></tr>
 <tr class="separator:ad63f31bff1b6576ab78b829049eb291d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04682e202885a257228c08fdfc15567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ab04682e202885a257228c08fdfc15567">~MultiLayerBssrdf</a> ()</td></tr>
-<tr class="separator:ab04682e202885a257228c08fdfc15567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ce154acf06c13233007c44abcf0a4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a94ce154acf06c13233007c44abcf0a4b">addBssrdf</a> (<a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a> *nBssrdf, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> nweight)</td></tr>
+<tr class="memitem:a94ce154acf06c13233007c44abcf0a4b"><td class="memItemLeft" align="right" valign="top"><a id="a94ce154acf06c13233007c44abcf0a4b" name="a94ce154acf06c13233007c44abcf0a4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addBssrdf</b> (<a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a> *nBssrdf, float nweight)</td></tr>
 <tr class="separator:a94ce154acf06c13233007c44abcf0a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff88d60755163d01311a6eafe180c84e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#aff88d60755163d01311a6eafe180c84e">finalize</a> ()</td></tr>
+<tr class="memitem:aff88d60755163d01311a6eafe180c84e"><td class="memItemLeft" align="right" valign="top"><a id="aff88d60755163d01311a6eafe180c84e" name="aff88d60755163d01311a6eafe180c84e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>finalize</b> ()</td></tr>
 <tr class="separator:aff88d60755163d01311a6eafe180c84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a7f8b220f75c3ef09df8697e7d4981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a24a7f8b220f75c3ef09df8697e7d4981">eval</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r, bool global=false) const override</td></tr>
+<tr class="memitem:a24a7f8b220f75c3ef09df8697e7d4981"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a24a7f8b220f75c3ef09df8697e7d4981">eval</a> (float r, bool global=false) const override</td></tr>
 <tr class="memdesc:a24a7f8b220f75c3ef09df8697e7d4981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling API:  <a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a24a7f8b220f75c3ef09df8697e7d4981">More...</a><br /></td></tr>
 <tr class="separator:a24a7f8b220f75c3ef09df8697e7d4981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e594513fcc989eda2871605a10975ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a9e594513fcc989eda2871605a10975ac">sampleLocal</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r1, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r2, <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;dPi, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;r) const override</td></tr>
+<tr class="memitem:a9e594513fcc989eda2871605a10975ac"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a9e594513fcc989eda2871605a10975ac">sampleLocal</a> (float r1, float r2, <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;dPi, float &amp;r) const override</td></tr>
 <tr class="separator:a9e594513fcc989eda2871605a10975ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8fff175724a9dddeb0178458a5e944"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a0a8fff175724a9dddeb0178458a5e944">pdfLocal</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r) const override</td></tr>
+<tr class="memitem:a0a8fff175724a9dddeb0178458a5e944"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a0a8fff175724a9dddeb0178458a5e944">pdfLocal</a> (float r) const override</td></tr>
 <tr class="memdesc:a0a8fff175724a9dddeb0178458a5e944"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is only needed for unit-testing and verify that the pdf integrates to 1.  <a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a0a8fff175724a9dddeb0178458a5e944">More...</a><br /></td></tr>
 <tr class="separator:a0a8fff175724a9dddeb0178458a5e944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf8205123f2069194da1af563e11196"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#abdf8205123f2069194da1af563e11196">diffuseReflectance</a> () const override</td></tr>
 <tr class="separator:abdf8205123f2069194da1af563e11196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4b7c782b783458d96130aaa17d583c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ad4b7c782b783458d96130aaa17d583c2">getProperty</a> (<a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146">Property</a> property, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *dest) const override</td></tr>
+<tr class="memitem:ad4b7c782b783458d96130aaa17d583c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ad4b7c782b783458d96130aaa17d583c2">getProperty</a> (Property property, float *dest) const override</td></tr>
 <tr class="separator:ad4b7c782b783458d96130aaa17d583c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11885391dc4dc6c8210cca178aa23002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a11885391dc4dc6c8210cca178aa23002">show</a> (std::ostream &amp;os, const std::string &amp;indent) const override</td></tr>
 <tr class="separator:a11885391dc4dc6c8210cca178aa23002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30aa2f4e82ed2dcbf358aa0443fec918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a30aa2f4e82ed2dcbf358aa0443fec918">setScale</a> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;<a class="el" href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a>)</td></tr>
-<tr class="memdesc:a30aa2f4e82ed2dcbf358aa0443fec918"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bssrdf can be scaled by a color.  <a href="classmoonray_1_1shading_1_1_bssrdf.html#a30aa2f4e82ed2dcbf358aa0443fec918">More...</a><br /></td></tr>
-<tr class="separator:a30aa2f4e82ed2dcbf358aa0443fec918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a561afaec07ac4ee1f6592f1d4c14b6eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a561afaec07ac4ee1f6592f1d4c14b6eb">getScale</a> () const</td></tr>
-<tr class="separator:a561afaec07ac4ee1f6592f1d4c14b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a000b1cc87a2716b5650cca71d5fab171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a000b1cc87a2716b5650cca71d5fab171">setTraceSet</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *traceSet)</td></tr>
-<tr class="separator:a000b1cc87a2716b5650cca71d5fab171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3490b04fa3f2ef4763595888c28f2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#aa3490b04fa3f2ef4763595888c28f2ff">getTraceSet</a> () const</td></tr>
-<tr class="separator:aa3490b04fa3f2ef4763595888c28f2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d11baab3a14f285aeac4f8219c25491"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a9d11baab3a14f285aeac4f8219c25491">getMaterial</a> () const</td></tr>
-<tr class="separator:a9d11baab3a14f285aeac4f8219c25491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99b547a8a30a621ee7ac78a1ff71406"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescene__rdl2_1_1rdl2.html#a41a6336b3fcafcde7ca8ba5512cc41c7">scene_rdl2::rdl2::EvalNormalFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#aa99b547a8a30a621ee7ac78a1ff71406">getEvalNormalFunc</a> () const</td></tr>
-<tr class="separator:aa99b547a8a30a621ee7ac78a1ff71406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b7d8e1d82b049a1eda130c3d64169c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a7b7d8e1d82b049a1eda130c3d64169c7">setTransmissionFresnel</a> (<a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *fresnel)</td></tr>
-<tr class="separator:a7b7d8e1d82b049a1eda130c3d64169c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d97d0323e12ec8d196dfc85e4a7345a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a8d97d0323e12ec8d196dfc85e4a7345a">getTransmissionFresnel</a> () const</td></tr>
-<tr class="separator:a8d97d0323e12ec8d196dfc85e4a7345a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c7c9d21ee030204254ba38661b13321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a1c7c9d21ee030204254ba38661b13321">sampleGlobal</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r1, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r2, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> cosThetaMax, <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;ws) const</td></tr>
-<tr class="separator:a1c7c9d21ee030204254ba38661b13321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abebb15edb830db2931039db9fe095e8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#abebb15edb830db2931039db9fe095e8b">getMaxRadius</a> () const</td></tr>
-<tr class="separator:abebb15edb830db2931039db9fe095e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3097fa42ed4d934ca1ee97bea302a55"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac3097fa42ed4d934ca1ee97bea302a55">getFrame</a> () const</td></tr>
-<tr class="separator:ac3097fa42ed4d934ca1ee97bea302a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a64229b8d67df66affddc034eaea3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a8a64229b8d67df66affddc034eaea3d2">setLabel</a> (int label)</td></tr>
-<tr class="memdesc:a8a64229b8d67df66affddc034eaea3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A label can be set on a bssrdf.  <a href="classmoonray_1_1shading_1_1_bssrdf.html#a8a64229b8d67df66affddc034eaea3d2">More...</a><br /></td></tr>
-<tr class="separator:a8a64229b8d67df66affddc034eaea3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84798d7272ee44c48e5f307cce84273a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a84798d7272ee44c48e5f307cce84273a">getLabel</a> () const</td></tr>
-<tr class="separator:a84798d7272ee44c48e5f307cce84273a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f390cc3bbc3fa4a8551ee6e91e1b46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#aa5f390cc3bbc3fa4a8551ee6e91e1b46">hasProperty</a> (<a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146">Property</a> property) const</td></tr>
-<tr class="separator:aa5f390cc3bbc3fa4a8551ee6e91e1b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66e337a8e7933f83c118ee1059c72034"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a66e337a8e7933f83c118ee1059c72034">getPropertyFlags</a> () const</td></tr>
-<tr class="separator:a66e337a8e7933f83c118ee1059c72034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmoonray_1_1shading_1_1_bssrdf')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">moonray::shading::Bssrdf</a></td></tr>
+<tr class="memitem:ac03fc53d464247c0a5ca8d2134b5af43 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="ac03fc53d464247c0a5ca8d2134b5af43" name="ac03fc53d464247c0a5ca8d2134b5af43"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Bssrdf</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;N, int32_t propertyFlags, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const scene_rdl2::rdl2::EvalNormalFunc evalNormalFn)</td></tr>
+<tr class="separator:ac03fc53d464247c0a5ca8d2134b5af43 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0915df79b2f52b4070ee7bef80bd9d inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="aad0915df79b2f52b4070ee7bef80bd9d" name="aad0915df79b2f52b4070ee7bef80bd9d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Bssrdf</b> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const Bssrdfv &amp;bssrdfv, int lane)</td></tr>
+<tr class="separator:aad0915df79b2f52b4070ee7bef80bd9d inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30aa2f4e82ed2dcbf358aa0443fec918 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a30aa2f4e82ed2dcbf358aa0443fec918" name="a30aa2f4e82ed2dcbf358aa0443fec918"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;scale)</td></tr>
+<tr class="memdesc:a30aa2f4e82ed2dcbf358aa0443fec918 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bssrdf can be scaled by a color. <br /></td></tr>
+<tr class="separator:a30aa2f4e82ed2dcbf358aa0443fec918 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561afaec07ac4ee1f6592f1d4c14b6eb inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a561afaec07ac4ee1f6592f1d4c14b6eb" name="a561afaec07ac4ee1f6592f1d4c14b6eb"></a>
+finline <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getScale</b> () const</td></tr>
+<tr class="separator:a561afaec07ac4ee1f6592f1d4c14b6eb inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000b1cc87a2716b5650cca71d5fab171 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a000b1cc87a2716b5650cca71d5fab171" name="a000b1cc87a2716b5650cca71d5fab171"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>setTraceSet</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *traceSet)</td></tr>
+<tr class="separator:a000b1cc87a2716b5650cca71d5fab171 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3490b04fa3f2ef4763595888c28f2ff inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="aa3490b04fa3f2ef4763595888c28f2ff" name="aa3490b04fa3f2ef4763595888c28f2ff"></a>
+finline const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTraceSet</b> () const</td></tr>
+<tr class="separator:aa3490b04fa3f2ef4763595888c28f2ff inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d11baab3a14f285aeac4f8219c25491 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a9d11baab3a14f285aeac4f8219c25491" name="a9d11baab3a14f285aeac4f8219c25491"></a>
+const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMaterial</b> () const</td></tr>
+<tr class="separator:a9d11baab3a14f285aeac4f8219c25491 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99b547a8a30a621ee7ac78a1ff71406 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="aa99b547a8a30a621ee7ac78a1ff71406" name="aa99b547a8a30a621ee7ac78a1ff71406"></a>
+scene_rdl2::rdl2::EvalNormalFunc&#160;</td><td class="memItemRight" valign="bottom"><b>getEvalNormalFunc</b> () const</td></tr>
+<tr class="separator:aa99b547a8a30a621ee7ac78a1ff71406 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7d8e1d82b049a1eda130c3d64169c7 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a7b7d8e1d82b049a1eda130c3d64169c7">setTransmissionFresnel</a> (<a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *fresnel)</td></tr>
+<tr class="separator:a7b7d8e1d82b049a1eda130c3d64169c7 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d97d0323e12ec8d196dfc85e4a7345a inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a8d97d0323e12ec8d196dfc85e4a7345a" name="a8d97d0323e12ec8d196dfc85e4a7345a"></a>
+finline <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTransmissionFresnel</b> () const</td></tr>
+<tr class="separator:a8d97d0323e12ec8d196dfc85e4a7345a inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2874aabf594cd9b1d638307b524740 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a5b2874aabf594cd9b1d638307b524740">eval</a> (float r, bool global=false) const =0</td></tr>
+<tr class="memdesc:a5b2874aabf594cd9b1d638307b524740 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sampling API:  <a href="classmoonray_1_1shading_1_1_bssrdf.html#a5b2874aabf594cd9b1d638307b524740">More...</a><br /></td></tr>
+<tr class="separator:a5b2874aabf594cd9b1d638307b524740 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce7da52c1c3b214f0940e60bd028b75 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a9ce7da52c1c3b214f0940e60bd028b75">sampleLocal</a> (float r1, float r2, <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;dPi, float &amp;r) const =0</td></tr>
+<tr class="separator:a9ce7da52c1c3b214f0940e60bd028b75 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cead5ae5993add919eed6b22b1d89ff inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">pdfLocal</a> (float r) const =0</td></tr>
+<tr class="memdesc:a7cead5ae5993add919eed6b22b1d89ff inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is only needed for unit-testing and verify that the pdf integrates to 1.  <a href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">More...</a><br /></td></tr>
+<tr class="separator:a7cead5ae5993add919eed6b22b1d89ff inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75315f053ae53a4e1406691dc735669 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ae75315f053ae53a4e1406691dc735669">diffuseReflectance</a> () const =0</td></tr>
+<tr class="separator:ae75315f053ae53a4e1406691dc735669 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c7c9d21ee030204254ba38661b13321 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a1c7c9d21ee030204254ba38661b13321">sampleGlobal</a> (float r1, float r2, float cosThetaMax, <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;ws) const</td></tr>
+<tr class="separator:a1c7c9d21ee030204254ba38661b13321 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebb15edb830db2931039db9fe095e8b inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#abebb15edb830db2931039db9fe095e8b">getMaxRadius</a> () const</td></tr>
+<tr class="separator:abebb15edb830db2931039db9fe095e8b inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3097fa42ed4d934ca1ee97bea302a55 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="ac3097fa42ed4d934ca1ee97bea302a55" name="ac3097fa42ed4d934ca1ee97bea302a55"></a>
+const <a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getFrame</b> () const</td></tr>
+<tr class="separator:ac3097fa42ed4d934ca1ee97bea302a55 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a64229b8d67df66affddc034eaea3d2 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a8a64229b8d67df66affddc034eaea3d2" name="a8a64229b8d67df66affddc034eaea3d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLabel</b> (int label)</td></tr>
+<tr class="memdesc:a8a64229b8d67df66affddc034eaea3d2 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A label can be set on a bssrdf. <br /></td></tr>
+<tr class="separator:a8a64229b8d67df66affddc034eaea3d2 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84798d7272ee44c48e5f307cce84273a inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a84798d7272ee44c48e5f307cce84273a" name="a84798d7272ee44c48e5f307cce84273a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getLabel</b> () const</td></tr>
+<tr class="separator:a84798d7272ee44c48e5f307cce84273a inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f390cc3bbc3fa4a8551ee6e91e1b46 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#aa5f390cc3bbc3fa4a8551ee6e91e1b46">hasProperty</a> (Property property) const</td></tr>
+<tr class="separator:aa5f390cc3bbc3fa4a8551ee6e91e1b46 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e337a8e7933f83c118ee1059c72034 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a66e337a8e7933f83c118ee1059c72034" name="a66e337a8e7933f83c118ee1059c72034"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getPropertyFlags</b> () const</td></tr>
+<tr class="separator:a66e337a8e7933f83c118ee1059c72034 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4f4cad64dd9aa6e677982e2dc40986 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="abf4f4cad64dd9aa6e677982e2dc40986" name="abf4f4cad64dd9aa6e677982e2dc40986"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>getProperty</b> (Property property, float *dest) const</td></tr>
+<tr class="separator:abf4f4cad64dd9aa6e677982e2dc40986 inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f008b6b9a9b91d80944c8af65dc2eb inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a95f008b6b9a9b91d80944c8af65dc2eb" name="a95f008b6b9a9b91d80944c8af65dc2eb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> (std::ostream &amp;os, const std::string &amp;indent) const =0</td></tr>
+<tr class="separator:a95f008b6b9a9b91d80944c8af65dc2eb inherit pub_methods_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a1f668e951a016e069af84212499a0770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a1f668e951a016e069af84212499a0770">mFresnel</a></td></tr>
-<tr class="separator:a1f668e951a016e069af84212499a0770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8d46bb87378a4457a146fe8df5f978"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a2d8d46bb87378a4457a146fe8df5f978">mFrame</a></td></tr>
-<tr class="separator:a2d8d46bb87378a4457a146fe8df5f978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0749e36b3f419d632b616d865150414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac0749e36b3f419d632b616d865150414">mScale</a></td></tr>
-<tr class="separator:ac0749e36b3f419d632b616d865150414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc332edc97c48c7996db6eae87af1ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#adcc332edc97c48c7996db6eae87af1ee">mMaxRadius</a></td></tr>
-<tr class="separator:adcc332edc97c48c7996db6eae87af1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aad631cf87a9e18f6fa17c473e8d728"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a1aad631cf87a9e18f6fa17c473e8d728">mLabel</a></td></tr>
-<tr class="separator:a1aad631cf87a9e18f6fa17c473e8d728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53bb24549991403640d6661ff66243f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ae53bb24549991403640d6661ff66243f">mPropertyFlags</a></td></tr>
-<tr class="separator:ae53bb24549991403640d6661ff66243f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14320390b1e3dbaae627a6e52c3a513d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a14320390b1e3dbaae627a6e52c3a513d">mBssrdfTraceSet</a></td></tr>
-<tr class="separator:a14320390b1e3dbaae627a6e52c3a513d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9649b1e7646a80047a3d8cb8d88aed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a7c9649b1e7646a80047a3d8cb8d88aed">mMaterial</a></td></tr>
-<tr class="separator:a7c9649b1e7646a80047a3d8cb8d88aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca1a753ad4455ca6edf76473e5856a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescene__rdl2_1_1rdl2.html#a41a6336b3fcafcde7ca8ba5512cc41c7">scene_rdl2::rdl2::EvalNormalFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#aaca1a753ad4455ca6edf76473e5856a4">mEvalNormalFunc</a></td></tr>
-<tr class="separator:aaca1a753ad4455ca6edf76473e5856a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1f8822c519ab4907bbf3574b1973796c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a1f8822c519ab4907bbf3574b1973796c">MultiLayerBssrdf</a> (const <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a> &amp;other)=delete</td></tr>
-<tr class="separator:a1f8822c519ab4907bbf3574b1973796c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dbb95d447f3676064619667ba2ab63c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a9dbb95d447f3676064619667ba2ab63c">operator=</a> (const <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a> &amp;other)=delete</td></tr>
-<tr class="separator:a9dbb95d447f3676064619667ba2ab63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ec5d30451f33639892bf6746f7eb16"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ab0ec5d30451f33639892bf6746f7eb16">selectIndex</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r) const</td></tr>
-<tr class="separator:ab0ec5d30451f33639892bf6746f7eb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:afae0ddcff9f1f4c9d8d1a1de1104c941"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a> [<a class="el" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a>]</td></tr>
-<tr class="separator:afae0ddcff9f1f4c9d8d1a1de1104c941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10842b30dbae4a41aabd5f216bc67c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a> [<a class="el" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a>]</td></tr>
-<tr class="separator:ae10842b30dbae4a41aabd5f216bc67c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b157ac28124b9c5834eb97bfa0f043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a> [<a class="el" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a>]</td></tr>
-<tr class="separator:a27b157ac28124b9c5834eb97bfa0f043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027f0bef7c8d0449f19e8a5eafdeccca"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a></td></tr>
-<tr class="separator:a027f0bef7c8d0449f19e8a5eafdeccca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classmoonray_1_1shading_1_1_bssrdf"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1shading_1_1_bssrdf')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">moonray::shading::Bssrdf</a></td></tr>
+<tr class="memitem:ac422a789f070b9f4966563daec5d3146 inherit pub_types_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="ac422a789f070b9f4966563daec5d3146" name="ac422a789f070b9f4966563daec5d3146"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Property</b> { <b>PROPERTY_NONE</b> = 0
+, <b>PROPERTY_COLOR</b> = 1 &lt;&lt; 0
+, <b>PROPERTY_RADIUS</b> = 1 &lt;&lt; 1
+, <b>PROPERTY_PBR_VALIDITY</b> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="separator:ac422a789f070b9f4966563daec5d3146 inherit pub_types_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1shading_1_1_bssrdf')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">moonray::shading::Bssrdf</a></td></tr>
+<tr class="memitem:a1f668e951a016e069af84212499a0770 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a1f668e951a016e069af84212499a0770" name="a1f668e951a016e069af84212499a0770"></a>
+<a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mFresnel</b></td></tr>
+<tr class="separator:a1f668e951a016e069af84212499a0770 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8d46bb87378a4457a146fe8df5f978 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a2d8d46bb87378a4457a146fe8df5f978" name="a2d8d46bb87378a4457a146fe8df5f978"></a>
+<a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mFrame</b></td></tr>
+<tr class="separator:a2d8d46bb87378a4457a146fe8df5f978 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0749e36b3f419d632b616d865150414 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="ac0749e36b3f419d632b616d865150414" name="ac0749e36b3f419d632b616d865150414"></a>
+<a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mScale</b></td></tr>
+<tr class="separator:ac0749e36b3f419d632b616d865150414 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc332edc97c48c7996db6eae87af1ee inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="adcc332edc97c48c7996db6eae87af1ee" name="adcc332edc97c48c7996db6eae87af1ee"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>mMaxRadius</b></td></tr>
+<tr class="separator:adcc332edc97c48c7996db6eae87af1ee inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aad631cf87a9e18f6fa17c473e8d728 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a1aad631cf87a9e18f6fa17c473e8d728" name="a1aad631cf87a9e18f6fa17c473e8d728"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mLabel</b></td></tr>
+<tr class="separator:a1aad631cf87a9e18f6fa17c473e8d728 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53bb24549991403640d6661ff66243f inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="ae53bb24549991403640d6661ff66243f" name="ae53bb24549991403640d6661ff66243f"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>mPropertyFlags</b></td></tr>
+<tr class="separator:ae53bb24549991403640d6661ff66243f inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14320390b1e3dbaae627a6e52c3a513d inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a14320390b1e3dbaae627a6e52c3a513d" name="a14320390b1e3dbaae627a6e52c3a513d"></a>
+const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mBssrdfTraceSet</b></td></tr>
+<tr class="separator:a14320390b1e3dbaae627a6e52c3a513d inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9649b1e7646a80047a3d8cb8d88aed inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="a7c9649b1e7646a80047a3d8cb8d88aed" name="a7c9649b1e7646a80047a3d8cb8d88aed"></a>
+const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mMaterial</b></td></tr>
+<tr class="separator:a7c9649b1e7646a80047a3d8cb8d88aed inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca1a753ad4455ca6edf76473e5856a4 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memItemLeft" align="right" valign="top"><a id="aaca1a753ad4455ca6edf76473e5856a4" name="aaca1a753ad4455ca6edf76473e5856a4"></a>
+scene_rdl2::rdl2::EvalNormalFunc&#160;</td><td class="memItemRight" valign="bottom"><b>mEvalNormalFunc</b></td></tr>
+<tr class="separator:aaca1a753ad4455ca6edf76473e5856a4 inherit pro_attribs_classmoonray_1_1shading_1_1_bssrdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Derived class to implement MultiLayer Diffusion <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html" title="Base class to implement a Bssrdf with importance sampling.">Bssrdf</a> with weighted importance sampling. </p>
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8h_source.html#l00028">28</a> of file <a class="el" href="_multi_layer_8h_source.html">MultiLayer.h</a>.</p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ac422a789f070b9f4966563daec5d3146" name="ac422a789f070b9f4966563daec5d3146"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac422a789f070b9f4966563daec5d3146">&#9670;&#160;</a></span>Property</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146">moonray::shading::Bssrdf::Property</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac422a789f070b9f4966563daec5d3146a72235cc78838b734bb6289ec83612aad" name="ac422a789f070b9f4966563daec5d3146a72235cc78838b734bb6289ec83612aad"></a>PROPERTY_NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204" name="ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204"></a>PROPERTY_COLOR&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b" name="ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b"></a>PROPERTY_RADIUS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac422a789f070b9f4966563daec5d3146a591f1e837a92818b9cbd3239a35ea9ce" name="ac422a789f070b9f4966563daec5d3146a591f1e837a92818b9cbd3239a35ea9ce"></a>PROPERTY_PBR_VALIDITY&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00050">50</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>                  {</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a72235cc78838b734bb6289ec83612aad">PROPERTY_NONE</a>         = 0,</div>
-<div class="line"><span class="lineno">   52</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204">PROPERTY_COLOR</a>        = 1 &lt;&lt; 0,</div>
-<div class="line"><span class="lineno">   53</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b">PROPERTY_RADIUS</a>       = 1 &lt;&lt; 1,</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a591f1e837a92818b9cbd3239a35ea9ce">PROPERTY_PBR_VALIDITY</a> = 1 &lt;&lt; 2</div>
-<div class="line"><span class="lineno">   55</span>    };</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204">moonray::shading::Bssrdf::PROPERTY_COLOR</a></div><div class="ttdeci">@ PROPERTY_COLOR</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00052">Bssrdf.h:52</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ac422a789f070b9f4966563daec5d3146a591f1e837a92818b9cbd3239a35ea9ce"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a591f1e837a92818b9cbd3239a35ea9ce">moonray::shading::Bssrdf::PROPERTY_PBR_VALIDITY</a></div><div class="ttdeci">@ PROPERTY_PBR_VALIDITY</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00055">Bssrdf.h:54</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ac422a789f070b9f4966563daec5d3146a72235cc78838b734bb6289ec83612aad"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a72235cc78838b734bb6289ec83612aad">moonray::shading::Bssrdf::PROPERTY_NONE</a></div><div class="ttdeci">@ PROPERTY_NONE</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00051">Bssrdf.h:51</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b">moonray::shading::Bssrdf::PROPERTY_RADIUS</a></div><div class="ttdeci">@ PROPERTY_RADIUS</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00053">Bssrdf.h:53</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad63f31bff1b6576ab78b829049eb291d" name="ad63f31bff1b6576ab78b829049eb291d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad63f31bff1b6576ab78b829049eb291d">&#9670;&#160;</a></span>MultiLayerBssrdf() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">moonray::shading::MultiLayerBssrdf::MultiLayerBssrdf </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;&#160;</td>
-          <td class="paramname"><em>N</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00023">23</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>    : <a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#ac03fc53d464247c0a5ca8d2134b5af43">Bssrdf</a>(N, <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204">PROPERTY_COLOR</a>|<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b">PROPERTY_RADIUS</a>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>(), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>(),</div>
-<div class="line"><span class="lineno">   25</span>      <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>(), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>(0)</div>
-<div class="line"><span class="lineno">   26</span>{</div>
-<div class="line"><span class="lineno">   27</span>    memset(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>));</div>
-<div class="line"><span class="lineno">   28</span>    memset(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>));</div>
-<div class="line"><span class="lineno">   29</span>    memset(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>));</div>
-<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a> = 0;</div>
-<div class="line"><span class="lineno">   31</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ac03fc53d464247c0a5ca8d2134b5af43"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ac03fc53d464247c0a5ca8d2134b5af43">moonray::shading::Bssrdf::Bssrdf</a></div><div class="ttdeci">Bssrdf(const scene_rdl2::math::Vec3f &amp;N, int32_t propertyFlags, const scene_rdl2::rdl2::Material *material, const scene_rdl2::rdl2::EvalNormalFunc evalNormalFn)</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8cc_source.html#l00025">Bssrdf.cc:25</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_multi_layer_bssrdf_html_a027f0bef7c8d0449f19e8a5eafdeccca"><div class="ttname"><a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">moonray::shading::MultiLayerBssrdf::mLobeCount</a></div><div class="ttdeci">unsigned int mLobeCount</div><div class="ttdef"><b>Definition:</b> <a href="_multi_layer_8h_source.html#l00062">MultiLayer.h:62</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_multi_layer_bssrdf_html_a27b157ac28124b9c5834eb97bfa0f043"><div class="ttname"><a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">moonray::shading::MultiLayerBssrdf::mCdfs</a></div><div class="ttdeci">float mCdfs[BSSRDF_MAX_LOBES]</div><div class="ttdef"><b>Definition:</b> <a href="_multi_layer_8h_source.html#l00061">MultiLayer.h:61</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_multi_layer_bssrdf_html_ae10842b30dbae4a41aabd5f216bc67c8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">moonray::shading::MultiLayerBssrdf::mWeights</a></div><div class="ttdeci">float mWeights[BSSRDF_MAX_LOBES]</div><div class="ttdef"><b>Definition:</b> <a href="_multi_layer_8h_source.html#l00060">MultiLayer.h:60</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_multi_layer_bssrdf_html_afae0ddcff9f1f4c9d8d1a1de1104c941"><div class="ttname"><a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">moonray::shading::MultiLayerBssrdf::mBssrdfs</a></div><div class="ttdeci">Bssrdf * mBssrdfs[BSSRDF_MAX_LOBES]</div><div class="ttdef"><b>Definition:</b> <a href="_multi_layer_8h_source.html#l00059">MultiLayer.h:59</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab04682e202885a257228c08fdfc15567" name="ab04682e202885a257228c08fdfc15567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab04682e202885a257228c08fdfc15567">&#9670;&#160;</a></span>~MultiLayerBssrdf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">moonray::shading::MultiLayerBssrdf::~MultiLayerBssrdf </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00033">33</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
-<div class="line"><span class="lineno">   35</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1f8822c519ab4907bbf3574b1973796c" name="a1f8822c519ab4907bbf3574b1973796c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f8822c519ab4907bbf3574b1973796c">&#9670;&#160;</a></span>MultiLayerBssrdf() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">moonray::shading::MultiLayerBssrdf::MultiLayerBssrdf </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a94ce154acf06c13233007c44abcf0a4b" name="a94ce154acf06c13233007c44abcf0a4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94ce154acf06c13233007c44abcf0a4b">&#9670;&#160;</a></span>addBssrdf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void moonray::shading::MultiLayerBssrdf::addBssrdf </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a> *&#160;</td>
-          <td class="paramname"><em>nBssrdf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
-          <td class="paramname"><em>nweight</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00051">51</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
-<div class="line"><span class="lineno">   53</span>    <span class="comment">//max layers allowed is 8</span></div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (w &gt; 0 &amp;&amp; <a class="code hl_variable" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a> != NULL &amp;&amp; (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a> &lt; <a class="code hl_define" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a> - 1)) {</div>
-<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>] = <a class="code hl_variable" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a>;</div>
-<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>] = w;</div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>++;</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-<div class="line"><span class="lineno">   59</span>}</div>
-<div class="ttc" id="a_multi_layer_8h_html_a8dd5b5ac62b4079fafd10ed9aff98245"><div class="ttname"><a href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a></div><div class="ttdeci">#define BSSRDF_MAX_LOBES</div><div class="ttdef"><b>Definition:</b> <a href="_multi_layer_8h_source.html#l00016">MultiLayer.h:16</a></div></div>
-<div class="ttc" id="aimmintrin__emu_8h_html_ab5fe720200eed3b8fca39c153696c5d2"><div class="ttname"><a href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a></div><div class="ttdeci">__emu__m256d float double __m128 __m128 b</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00590">immintrin_emu.h:590</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abdf8205123f2069194da1af563e11196" name="abdf8205123f2069194da1af563e11196"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdf8205123f2069194da1af563e11196">&#9670;&#160;</a></span>diffuseReflectance()</h2>
 
@@ -415,19 +270,6 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ae75315f053ae53a4e1406691dc735669">moonray::shading::Bssrdf</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00142">142</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  143</span>{</div>
-<div class="line"><span class="lineno">  144</span>    <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a> dR = <a class="code hl_variable" href="namespacescene__rdl2_1_1math.html#aa68b2c371faa905da550fc62072d461e">scene_rdl2::math::sBlack</a>;</div>
-<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; ++i) {</div>
-<div class="line"><span class="lineno">  146</span>        <span class="keywordtype">float</span> ci = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[i];</div>
-<div class="line"><span class="lineno">  147</span>        dR += ci * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[i]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#ae75315f053ae53a4e1406691dc735669">diffuseReflectance</a>();</div>
-<div class="line"><span class="lineno">  148</span>    }</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> dR;</div>
-<div class="line"><span class="lineno">  150</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ae75315f053ae53a4e1406691dc735669"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ae75315f053ae53a4e1406691dc735669">moonray::shading::Bssrdf::diffuseReflectance</a></div><div class="ttdeci">virtual scene_rdl2::math::Color diffuseReflectance() const =0</div></div>
-<div class="ttc" id="anamespaceispc_html_a03763f6969b47cdce2092f8b178cf840"><div class="ttname"><a href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">ispc::Color</a></div><div class="ttdeci">Col3f Color</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00041">Color.h:41</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_aa68b2c371faa905da550fc62072d461e"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#aa68b2c371faa905da550fc62072d461e">scene_rdl2::math::sBlack</a></div><div class="ttdeci">static const Color sBlack</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00310">Color.h:310</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a24a7f8b220f75c3ef09df8697e7d4981" name="a24a7f8b220f75c3ef09df8697e7d4981"></a>
@@ -442,7 +284,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">Color</a> moonray::shading::MultiLayerBssrdf::eval </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
@@ -465,205 +307,10 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sampling API: </p>
-<p >This function returns Rd(r), the diffuse reflectance The radius r should be in render space The global flag tells the bssrdf whether this is for local scattering or global scattering. Important note: it is the responsibility of the integrator to query <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a561afaec07ac4ee1f6592f1d4c14b6eb">getScale()</a> and <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a8d97d0323e12ec8d196dfc85e4a7345a">getTransmissionFresnel()</a> and to apply it accordingly. Unlike for <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a>, the result of <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a24a7f8b220f75c3ef09df8697e7d4981" title="Sampling API:">eval()</a> does NOT contain any scale nor fresnel term. </p>
+<p >This function returns Rd(r), the diffuse reflectance The radius r should be in render space The global flag tells the bssrdf whether this is for local scattering or global scattering. Important note: it is the responsibility of the integrator to query getScale() and getTransmissionFresnel() and to apply it accordingly. Unlike for <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a>, the result of <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a24a7f8b220f75c3ef09df8697e7d4981" title="Sampling API:">eval()</a> does NOT contain any scale nor fresnel term. </p>
 
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a5b2874aabf594cd9b1d638307b524740">moonray::shading::Bssrdf</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00040">40</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
-<div class="line"><span class="lineno">   42</span>    <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a> rd(0);</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t = 0; t &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; ++t) {</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a> trd = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[t]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a5b2874aabf594cd9b1d638307b524740">eval</a>(r) * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[t];</div>
-<div class="line"><span class="lineno">   45</span>        rd += trd;</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> rd;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a5b2874aabf594cd9b1d638307b524740"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a5b2874aabf594cd9b1d638307b524740">moonray::shading::Bssrdf::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(float r, bool global=false) const =0</div><div class="ttdoc">Sampling API:</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aff88d60755163d01311a6eafe180c84e" name="aff88d60755163d01311a6eafe180c84e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff88d60755163d01311a6eafe180c84e">&#9670;&#160;</a></span>finalize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void moonray::shading::MultiLayerBssrdf::finalize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00062">62</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordtype">float</span> sum = 0;</div>
-<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#adcc332edc97c48c7996db6eae87af1ee">mMaxRadius</a> = 0;</div>
-<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; i++) {</div>
-<div class="line"><span class="lineno">   67</span>        sum += <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[i];</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[i]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#abebb15edb830db2931039db9fe095e8b">getMaxRadius</a>() &gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#adcc332edc97c48c7996db6eae87af1ee">mMaxRadius</a>) <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#adcc332edc97c48c7996db6eae87af1ee">mMaxRadius</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[i]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#abebb15edb830db2931039db9fe095e8b">getMaxRadius</a>();</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (sum &gt; 0) {</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordtype">float</span> norm = 1.0f/sum;</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordtype">float</span> cdf = 0;</div>
-<div class="line"><span class="lineno">   73</span>        <span class="comment">//mCdfs = new float[mWeights.size()];</span></div>
-<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; i++) {</div>
-<div class="line"><span class="lineno">   75</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[i] *= norm;</div>
-<div class="line"><span class="lineno">   76</span>            cdf += <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[i];</div>
-<div class="line"><span class="lineno">   77</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>[i] = cdf;</div>
-<div class="line"><span class="lineno">   78</span>        } </div>
-<div class="line"><span class="lineno">   79</span>    }</div>
-<div class="line"><span class="lineno">   80</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_abebb15edb830db2931039db9fe095e8b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#abebb15edb830db2931039db9fe095e8b">moonray::shading::Bssrdf::getMaxRadius</a></div><div class="ttdeci">float getMaxRadius() const</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00124">Bssrdf.h:124</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_adcc332edc97c48c7996db6eae87af1ee"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#adcc332edc97c48c7996db6eae87af1ee">moonray::shading::Bssrdf::mMaxRadius</a></div><div class="ttdeci">float mMaxRadius</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00155">Bssrdf.h:155</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa99b547a8a30a621ee7ac78a1ff71406" name="aa99b547a8a30a621ee7ac78a1ff71406"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa99b547a8a30a621ee7ac78a1ff71406">&#9670;&#160;</a></span>getEvalNormalFunc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacescene__rdl2_1_1rdl2.html#a41a6336b3fcafcde7ca8ba5512cc41c7">scene_rdl2::rdl2::EvalNormalFunc</a> moonray::shading::Bssrdf::getEvalNormalFunc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00076">76</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#aaca1a753ad4455ca6edf76473e5856a4">mEvalNormalFunc</a>; }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_aaca1a753ad4455ca6edf76473e5856a4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#aaca1a753ad4455ca6edf76473e5856a4">moonray::shading::Bssrdf::mEvalNormalFunc</a></div><div class="ttdeci">scene_rdl2::rdl2::EvalNormalFunc mEvalNormalFunc</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00161">Bssrdf.h:161</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac3097fa42ed4d934ca1ee97bea302a55" name="ac3097fa42ed4d934ca1ee97bea302a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3097fa42ed4d934ca1ee97bea302a55">&#9670;&#160;</a></span>getFrame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a> &amp; moonray::shading::Bssrdf::getFrame </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00126">126</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a2d8d46bb87378a4457a146fe8df5f978">mFrame</a>; }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a2d8d46bb87378a4457a146fe8df5f978"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a2d8d46bb87378a4457a146fe8df5f978">moonray::shading::Bssrdf::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00152">Bssrdf.h:152</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a84798d7272ee44c48e5f307cce84273a" name="a84798d7272ee44c48e5f307cce84273a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84798d7272ee44c48e5f307cce84273a">&#9670;&#160;</a></span>getLabel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::shading::Bssrdf::getLabel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00130">130</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a1aad631cf87a9e18f6fa17c473e8d728">mLabel</a>; }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a1aad631cf87a9e18f6fa17c473e8d728"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a1aad631cf87a9e18f6fa17c473e8d728">moonray::shading::Bssrdf::mLabel</a></div><div class="ttdeci">int mLabel</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00156">Bssrdf.h:156</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9d11baab3a14f285aeac4f8219c25491" name="a9d11baab3a14f285aeac4f8219c25491"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d11baab3a14f285aeac4f8219c25491">&#9670;&#160;</a></span>getMaterial()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> * moonray::shading::Bssrdf::getMaterial </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00073">73</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a7c9649b1e7646a80047a3d8cb8d88aed">mMaterial</a>; }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a7c9649b1e7646a80047a3d8cb8d88aed"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a7c9649b1e7646a80047a3d8cb8d88aed">moonray::shading::Bssrdf::mMaterial</a></div><div class="ttdeci">const scene_rdl2::rdl2::Material * mMaterial</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00160">Bssrdf.h:160</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="abebb15edb830db2931039db9fe095e8b" name="abebb15edb830db2931039db9fe095e8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abebb15edb830db2931039db9fe095e8b">&#9670;&#160;</a></span>getMaxRadius()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::Bssrdf::getMaxRadius </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >This is the maximum radius the integrator should use to integrate subsurface scattering. Beyond this radius, the function Rd(d) is negligibly small. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00124">124</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  124</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#adcc332edc97c48c7996db6eae87af1ee">mMaxRadius</a>;  }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ad4b7c782b783458d96130aaa17d583c2" name="ad4b7c782b783458d96130aaa17d583c2"></a>
@@ -678,13 +325,13 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool moonray::shading::MultiLayerBssrdf::getProperty </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146">Property</a>&#160;</td>
+          <td class="paramtype">Property&#160;</td>
           <td class="paramname"><em>property</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *&#160;</td>
+          <td class="paramtype">float *&#160;</td>
           <td class="paramname"><em>dest</em>&#160;</td>
         </tr>
         <tr>
@@ -700,205 +347,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#abf4f4cad64dd9aa6e677982e2dc40986">moonray::shading::Bssrdf</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00181">181</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>{</div>
-<div class="line"><span class="lineno">  183</span>    <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a> values(0.0f);</div>
-<div class="line"><span class="lineno">  184</span>    <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a> totalValues(0.0f);</div>
-<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">bool</span> handled = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  186</span> </div>
-<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">switch</span> (property)</div>
-<div class="line"><span class="lineno">  188</span>    {</div>
-<div class="line"><span class="lineno">  189</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146a1329888cacdccf817b8494a1a2473204">PROPERTY_COLOR</a>:</div>
-<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146ab91c6d43f93afa95ebe60447dfae9b0b">PROPERTY_RADIUS</a>:</div>
-<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t = 0; t &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; ++t) {</div>
-<div class="line"><span class="lineno">  192</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[t]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#abf4f4cad64dd9aa6e677982e2dc40986">getProperty</a>(property, (<span class="keywordtype">float</span>*) &amp;values); </div>
-<div class="line"><span class="lineno">  193</span>            totalValues += <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[t] * values; </div>
-<div class="line"><span class="lineno">  194</span>        }</div>
-<div class="line"><span class="lineno">  195</span>        dest[0] = totalValues[0];</div>
-<div class="line"><span class="lineno">  196</span>        dest[1] = totalValues[1];</div>
-<div class="line"><span class="lineno">  197</span>        dest[2] = totalValues[2];</div>
-<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  200</span>        handled = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#abf4f4cad64dd9aa6e677982e2dc40986">Bssrdf::getProperty</a>(property, dest);</div>
-<div class="line"><span class="lineno">  201</span>    }</div>
-<div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">return</span> handled;</div>
-<div class="line"><span class="lineno">  204</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_abf4f4cad64dd9aa6e677982e2dc40986"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#abf4f4cad64dd9aa6e677982e2dc40986">moonray::shading::Bssrdf::getProperty</a></div><div class="ttdeci">virtual bool getProperty(Property property, float *dest) const</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8cc_source.html#l00073">Bssrdf.cc:73</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a66e337a8e7933f83c118ee1059c72034" name="a66e337a8e7933f83c118ee1059c72034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66e337a8e7933f83c118ee1059c72034">&#9670;&#160;</a></span>getPropertyFlags()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t moonray::shading::Bssrdf::getPropertyFlags </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00136">136</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  136</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#ae53bb24549991403640d6661ff66243f">mPropertyFlags</a>; }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ae53bb24549991403640d6661ff66243f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ae53bb24549991403640d6661ff66243f">moonray::shading::Bssrdf::mPropertyFlags</a></div><div class="ttdeci">int32_t mPropertyFlags</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00157">Bssrdf.h:157</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a561afaec07ac4ee1f6592f1d4c14b6eb" name="a561afaec07ac4ee1f6592f1d4c14b6eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a561afaec07ac4ee1f6592f1d4c14b6eb">&#9670;&#160;</a></span>getScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> moonray::shading::Bssrdf::getScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00066">66</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   66</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#ac0749e36b3f419d632b616d865150414">mScale</a>;  }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_ac0749e36b3f419d632b616d865150414"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#ac0749e36b3f419d632b616d865150414">moonray::shading::Bssrdf::mScale</a></div><div class="ttdeci">scene_rdl2::math::Color mScale</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00153">Bssrdf.h:153</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa3490b04fa3f2ef4763595888c28f2ff" name="aa3490b04fa3f2ef4763595888c28f2ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3490b04fa3f2ef4763595888c28f2ff">&#9670;&#160;</a></span>getTraceSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> * moonray::shading::Bssrdf::getTraceSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00070">70</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a14320390b1e3dbaae627a6e52c3a513d">mBssrdfTraceSet</a>; }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a14320390b1e3dbaae627a6e52c3a513d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a14320390b1e3dbaae627a6e52c3a513d">moonray::shading::Bssrdf::mBssrdfTraceSet</a></div><div class="ttdeci">const scene_rdl2::rdl2::TraceSet * mBssrdfTraceSet</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00159">Bssrdf.h:159</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8d97d0323e12ec8d196dfc85e4a7345a" name="a8d97d0323e12ec8d196dfc85e4a7345a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d97d0323e12ec8d196dfc85e4a7345a">&#9670;&#160;</a></span>getTransmissionFresnel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> * moonray::shading::Bssrdf::getTransmissionFresnel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00082">82</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a1f668e951a016e069af84212499a0770">mFresnel</a>;  }</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a1f668e951a016e069af84212499a0770"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a1f668e951a016e069af84212499a0770">moonray::shading::Bssrdf::mFresnel</a></div><div class="ttdeci">Fresnel * mFresnel</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00151">Bssrdf.h:151</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa5f390cc3bbc3fa4a8551ee6e91e1b46" name="aa5f390cc3bbc3fa4a8551ee6e91e1b46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5f390cc3bbc3fa4a8551ee6e91e1b46">&#9670;&#160;</a></span>hasProperty()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool moonray::shading::Bssrdf::hasProperty </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ac422a789f070b9f4966563daec5d3146">Property</a>&#160;</td>
-          <td class="paramname"><em>property</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >bssrdfs can have certain properties (e.g. Color) this API is used to query if a bssrdf has a particular property and to evaluate that property value </p>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00135">135</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#ae53bb24549991403640d6661ff66243f">mPropertyFlags</a> &amp; property; }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9dbb95d447f3676064619667ba2ab63c" name="a9dbb95d447f3676064619667ba2ab63c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dbb95d447f3676064619667ba2ab63c">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a> &amp; moonray::shading::MultiLayerBssrdf::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">moonray::shading::Bssrdf</a>.</p>
 
 </div>
 </div>
@@ -912,9 +361,9 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::MultiLayerBssrdf::pdfLocal </td>
+          <td class="memname">float moonray::shading::MultiLayerBssrdf::pdfLocal </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>r</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -930,83 +379,6 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">moonray::shading::Bssrdf</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00124">124</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
-<div class="line"><span class="lineno">  126</span>    <span class="comment">// We compute the estimator with MIS, under Veach&#39;s one-sample model.</span></div>
-<div class="line"><span class="lineno">  127</span>    <span class="comment">// See paper: &quot;Optimally combining sampling techniques for MC rendering&quot;</span></div>
-<div class="line"><span class="lineno">  128</span>    <span class="comment">// Here we use estimator (16) and therefore: pdf = ci * pi / wi</span></div>
-<div class="line"><span class="lineno">  129</span>    <span class="comment">// With the balance heuristic it amounts to the weighted average of the</span></div>
-<div class="line"><span class="lineno">  130</span>    <span class="comment">// pdf for each channel: pdf = sum(ci * pi)</span></div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordtype">float</span> pdf = 0.0f;</div>
-<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; ++i) {</div>
-<div class="line"><span class="lineno">  133</span>        <span class="keywordtype">float</span> ci = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[i];</div>
-<div class="line"><span class="lineno">  134</span>        pdf += ci * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[i]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">pdfLocal</a>(r);</div>
-<div class="line"><span class="lineno">  135</span>    }</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">return</span> pdf;</div>
-<div class="line"><span class="lineno">  137</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a7cead5ae5993add919eed6b22b1d89ff"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">moonray::shading::Bssrdf::pdfLocal</a></div><div class="ttdeci">virtual float pdfLocal(float r) const =0</div><div class="ttdoc">This is only needed for unit-testing and verify that the pdf integrates to 1.</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1c7c9d21ee030204254ba38661b13321" name="a1c7c9d21ee030204254ba38661b13321"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c7c9d21ee030204254ba38661b13321">&#9670;&#160;</a></span>sampleGlobal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::Bssrdf::sampleGlobal </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
-          <td class="paramname"><em>r1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
-          <td class="paramname"><em>r2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
-          <td class="paramname"><em>cosThetaMax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;&#160;</td>
-          <td class="paramname"><em>ws</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p ><a class="el" href="struct_sample.html">Sample</a> a direction going into the sub-surface, to go search for global scattering, through a thin layer. It's up to the caller to trace through the volume to find the back-side of the thin layer (Pi, r) and apply the <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html" title="Base class to implement a Bssrdf with importance sampling.">Bssrdf</a> accordingly. We return the pdf of sampling the direction ws with respect to the solid angle measure. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8cc_source.html#l00062">62</a> of file <a class="el" href="_bssrdf_8cc_source.html">Bssrdf.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{</div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// Sample direction within a spherical cap below the surface</span></div>
-<div class="line"><span class="lineno">   65</span>    ws = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a65150764c98af0ba16a6f700e13a3a5d">sampleLocalSphericalCapUniform</a>(r1, r2, cosThetaMax);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">float</span> pdf = 1.0f / (<a class="code hl_variable" href="namespacescene__rdl2_1_1math.html#a32b7713aacb9f3ba68f49e28798960e2">sTwoPi</a> * (1.0f - cosThetaMax));</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> pdf;</div>
-<div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1shading_html_a65150764c98af0ba16a6f700e13a3a5d"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a65150764c98af0ba16a6f700e13a3a5d">moonray::shading::sampleLocalSphericalCapUniform</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleLocalSphericalCapUniform(float r1, float r2, float cosThetaMax)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00516">Util.h:516</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a32b7713aacb9f3ba68f49e28798960e2"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a32b7713aacb9f3ba68f49e28798960e2">scene_rdl2::math::sTwoPi</a></div><div class="ttdeci">static constexpr float sTwoPi</div><div class="ttdef"><b>Definition:</b> <a href="scene__rdl2-main_2lib_2common_2math_2_constants_8h_source.html#l00199">Constants.h:199</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a9e594513fcc989eda2871605a10975ac" name="a9e594513fcc989eda2871605a10975ac"></a>
@@ -1019,27 +391,27 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::MultiLayerBssrdf::sampleLocal </td>
+          <td class="memname">float moonray::shading::MultiLayerBssrdf::sampleLocal </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>r1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>r2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>dPi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;&#160;</td>
+          <td class="paramtype">float &amp;&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -1054,198 +426,10 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p ><a class="el" href="struct_sample.html">Sample</a> a position around the origin, in the tangent plane as defined by N. We also return the distance r from the origin for the sampled position. It's up to the integrator to re-project the sampled points onto the surface. We return the pdf of sampling dPi with respect to surface area measure (this is sTwoPi * r away from the radial pdf of sampling r). </p>
+<p >Sample a position around the origin, in the tangent plane as defined by N. We also return the distance r from the origin for the sampled position. It's up to the integrator to re-project the sampled points onto the surface. We return the pdf of sampling dPi with respect to surface area measure (this is sTwoPi * r away from the radial pdf of sampling r). </p>
 
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a9ce7da52c1c3b214f0940e60bd028b75">moonray::shading::Bssrdf</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00102">102</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a> == 0) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> layerIndex = <a class="code hl_function" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ab0ec5d30451f33639892bf6746f7eb16">selectIndex</a>(r1);</div>
-<div class="line"><span class="lineno">  107</span>    <span class="keywordtype">float</span> curCdf = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[layerIndex];</div>
-<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (layerIndex == 0) {</div>
-<div class="line"><span class="lineno">  109</span>        r1 = r1/curCdf;</div>
-<div class="line"><span class="lineno">  110</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  111</span>        r1 = (r1-<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>[layerIndex-1])/curCdf;</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordtype">float</span> childPdf =  <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[layerIndex]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a9ce7da52c1c3b214f0940e60bd028b75">sampleLocal</a>(r1, r2, dPi, r);</div>
-<div class="line"><span class="lineno">  114</span>    <span class="keywordtype">float</span> totalPdf =  childPdf * curCdf;</div>
-<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>; i++) {</div>
-<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">if</span> (i != layerIndex) {</div>
-<div class="line"><span class="lineno">  117</span>            totalPdf += <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ae10842b30dbae4a41aabd5f216bc67c8">mWeights</a>[i] * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#afae0ddcff9f1f4c9d8d1a1de1104c941">mBssrdfs</a>[i]-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">pdfLocal</a>(r);</div>
-<div class="line"><span class="lineno">  118</span>        }</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> totalPdf;</div>
-<div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a9ce7da52c1c3b214f0940e60bd028b75"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a9ce7da52c1c3b214f0940e60bd028b75">moonray::shading::Bssrdf::sampleLocal</a></div><div class="ttdeci">virtual float sampleLocal(float r1, float r2, scene_rdl2::math::Vec3f &amp;dPi, float &amp;r) const =0</div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_multi_layer_bssrdf_html_ab0ec5d30451f33639892bf6746f7eb16"><div class="ttname"><a href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#ab0ec5d30451f33639892bf6746f7eb16">moonray::shading::MultiLayerBssrdf::selectIndex</a></div><div class="ttdeci">unsigned int selectIndex(float r) const</div><div class="ttdef"><b>Definition:</b> <a href="_multi_layer_8cc_source.html#l00083">MultiLayer.cc:83</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab0ec5d30451f33639892bf6746f7eb16" name="ab0ec5d30451f33639892bf6746f7eb16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0ec5d30451f33639892bf6746f7eb16">&#9670;&#160;</a></span>selectIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int moonray::shading::MultiLayerBssrdf::selectIndex </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00083">83</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>) {</div>
-<div class="line"><span class="lineno">   86</span>    <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">case</span> 2:</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> r1 &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>[0] ? 0 : 1;</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">case</span> 3:</div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> (r1 &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>[0]  ?  0  :</div>
-<div class="line"><span class="lineno">   92</span>               (r1 &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>[1]  ?  1  :  2));</div>
-<div class="line"><span class="lineno">   93</span>    }     </div>
-<div class="line"><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> *ptr = std::upper_bound(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a> + <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a>, r1);</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> layerIndex = ptr - <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a27b157ac28124b9c5834eb97bfa0f043">mCdfs</a>;</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span>  <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">max</a>(layerIndex, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#a027f0bef7c8d0449f19e8a5eafdeccca">mLobeCount</a> - 1);</div>
-<div class="line"><span class="lineno">   97</span>}</div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a564409890eff3a37c8edc00b64159607"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a></div><div class="ttdeci">__forceinline const Color max(const Color &amp;a, const Color &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00215">Color.h:215</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8a64229b8d67df66affddc034eaea3d2" name="a8a64229b8d67df66affddc034eaea3d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a64229b8d67df66affddc034eaea3d2">&#9670;&#160;</a></span>setLabel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void moonray::shading::Bssrdf::setLabel </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>label</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A label can be set on a bssrdf. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00129">129</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a1aad631cf87a9e18f6fa17c473e8d728">mLabel</a> = label; }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a30aa2f4e82ed2dcbf358aa0443fec918" name="a30aa2f4e82ed2dcbf358aa0443fec918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30aa2f4e82ed2dcbf358aa0443fec918">&#9670;&#160;</a></span>setScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void moonray::shading::Bssrdf::setScale </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>scale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A bssrdf can be scaled by a color. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00065">65</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   65</span>{  <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#ac0749e36b3f419d632b616d865150414">mScale</a> = <a class="code hl_variable" href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a>;  }</div>
-<div class="ttc" id="atest__math___mat3_8cc_html_a31ef5e142c340c1a1d6a80bddb511484"><div class="ttname"><a href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a></div><div class="ttdeci">const std::vector&lt; M &gt; const std::vector&lt; M &gt; &amp; scale</div><div class="ttdef"><b>Definition:</b> <a href="test__math___mat3_8cc_source.html#l00065">test_math_Mat3.cc:65</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a000b1cc87a2716b5650cca71d5fab171" name="a000b1cc87a2716b5650cca71d5fab171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a000b1cc87a2716b5650cca71d5fab171">&#9670;&#160;</a></span>setTraceSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void moonray::shading::Bssrdf::setTraceSet </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a> *&#160;</td>
-          <td class="paramname"><em>traceSet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00069">69</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a14320390b1e3dbaae627a6e52c3a513d">mBssrdfTraceSet</a> = traceSet; }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a7b7d8e1d82b049a1eda130c3d64169c7" name="a7b7d8e1d82b049a1eda130c3d64169c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b7d8e1d82b049a1eda130c3d64169c7">&#9670;&#160;</a></span>setTransmissionFresnel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void moonray::shading::Bssrdf::setTransmissionFresnel </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *&#160;</td>
-          <td class="paramname"><em>fresnel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >The bssrdf takes ownership of the <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html" title="Base class defining the Fresnel reflectance interface.">Fresnel</a> object. This fresnel object is a transmission fresnel, so make sure to wrap your actual fresnel closure in a OneMinus*Fresnel adapter. </p>
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00081">81</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{  <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a1f668e951a016e069af84212499a0770">mFresnel</a> = fresnel;  }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a11885391dc4dc6c8210cca178aa23002" name="a11885391dc4dc6c8210cca178aa23002"></a>
@@ -1282,346 +466,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#a95f008b6b9a9b91d80944c8af65dc2eb">moonray::shading::Bssrdf</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8cc_source.html#l00207">207</a> of file <a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  208</span>{</div>
-<div class="line"><span class="lineno">  209</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a>&amp; <a class="code hl_variable" href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a> = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a561afaec07ac4ee1f6592f1d4c14b6eb">getScale</a>();</div>
-<div class="line"><span class="lineno">  210</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[MultiLayerBssrdf]\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  211</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
-<div class="line"><span class="lineno">  212</span>        &lt;&lt; <a class="code hl_variable" href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a>.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a>.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="test__math___mat3_8cc.html#a31ef5e142c340c1a1d6a80bddb511484">scale</a>.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a1f668e951a016e069af84212499a0770">mFresnel</a>) {</div>
-<div class="line"><span class="lineno">  214</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bssrdf.html#a1f668e951a016e069af84212499a0770">mFresnel</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_fresnel.html#ace1645bdbdacaf45aaaeb3bc788b54e1">show</a>(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
-<div class="line"><span class="lineno">  215</span>    }</div>
-<div class="line"><span class="lineno">  216</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a561afaec07ac4ee1f6592f1d4c14b6eb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a561afaec07ac4ee1f6592f1d4c14b6eb">moonray::shading::Bssrdf::getScale</a></div><div class="ttdeci">finline scene_rdl2::math::Color getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00066">Bssrdf.h:66</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_ace1645bdbdacaf45aaaeb3bc788b54e1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#ace1645bdbdacaf45aaaeb3bc788b54e1">moonray::shading::Fresnel::show</a></div><div class="ttdeci">virtual void show(std::ostream &amp;os, const std::string &amp;indent) const =0</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="afae0ddcff9f1f4c9d8d1a1de1104c941" name="afae0ddcff9f1f4c9d8d1a1de1104c941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afae0ddcff9f1f4c9d8d1a1de1104c941">&#9670;&#160;</a></span>mBssrdfs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a>* moonray::shading::MultiLayerBssrdf::mBssrdfs[<a class="el" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8h_source.html#l00059">59</a> of file <a class="el" href="_multi_layer_8h_source.html">MultiLayer.h</a>.</p>
+<p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">moonray::shading::Bssrdf</a>.</p>
 
 </div>
 </div>
-<a id="a14320390b1e3dbaae627a6e52c3a513d" name="a14320390b1e3dbaae627a6e52c3a513d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14320390b1e3dbaae627a6e52c3a513d">&#9670;&#160;</a></span>mBssrdfTraceSet</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_trace_set.html">scene_rdl2::rdl2::TraceSet</a>* moonray::shading::Bssrdf::mBssrdfTraceSet</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00159">159</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="a27b157ac28124b9c5834eb97bfa0f043" name="a27b157ac28124b9c5834eb97bfa0f043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27b157ac28124b9c5834eb97bfa0f043">&#9670;&#160;</a></span>mCdfs</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::MultiLayerBssrdf::mCdfs[<a class="el" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8h_source.html#l00061">61</a> of file <a class="el" href="_multi_layer_8h_source.html">MultiLayer.h</a>.</p>
-
-</div>
-</div>
-<a id="aaca1a753ad4455ca6edf76473e5856a4" name="aaca1a753ad4455ca6edf76473e5856a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaca1a753ad4455ca6edf76473e5856a4">&#9670;&#160;</a></span>mEvalNormalFunc</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacescene__rdl2_1_1rdl2.html#a41a6336b3fcafcde7ca8ba5512cc41c7">scene_rdl2::rdl2::EvalNormalFunc</a> moonray::shading::Bssrdf::mEvalNormalFunc</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00161">161</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="a2d8d46bb87378a4457a146fe8df5f978" name="a2d8d46bb87378a4457a146fe8df5f978"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d8d46bb87378a4457a146fe8df5f978">&#9670;&#160;</a></span>mFrame</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a> moonray::shading::Bssrdf::mFrame</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00152">152</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="a1f668e951a016e069af84212499a0770" name="a1f668e951a016e069af84212499a0770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f668e951a016e069af84212499a0770">&#9670;&#160;</a></span>mFresnel</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a>* moonray::shading::Bssrdf::mFresnel</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00151">151</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="a1aad631cf87a9e18f6fa17c473e8d728" name="a1aad631cf87a9e18f6fa17c473e8d728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1aad631cf87a9e18f6fa17c473e8d728">&#9670;&#160;</a></span>mLabel</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::shading::Bssrdf::mLabel</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00156">156</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="a027f0bef7c8d0449f19e8a5eafdeccca" name="a027f0bef7c8d0449f19e8a5eafdeccca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a027f0bef7c8d0449f19e8a5eafdeccca">&#9670;&#160;</a></span>mLobeCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int moonray::shading::MultiLayerBssrdf::mLobeCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8h_source.html#l00062">62</a> of file <a class="el" href="_multi_layer_8h_source.html">MultiLayer.h</a>.</p>
-
-</div>
-</div>
-<a id="a7c9649b1e7646a80047a3d8cb8d88aed" name="a7c9649b1e7646a80047a3d8cb8d88aed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c9649b1e7646a80047a3d8cb8d88aed">&#9670;&#160;</a></span>mMaterial</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a>* moonray::shading::Bssrdf::mMaterial</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00160">160</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="adcc332edc97c48c7996db6eae87af1ee" name="adcc332edc97c48c7996db6eae87af1ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc332edc97c48c7996db6eae87af1ee">&#9670;&#160;</a></span>mMaxRadius</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::Bssrdf::mMaxRadius</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00155">155</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="ae53bb24549991403640d6661ff66243f" name="ae53bb24549991403640d6661ff66243f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae53bb24549991403640d6661ff66243f">&#9670;&#160;</a></span>mPropertyFlags</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t moonray::shading::Bssrdf::mPropertyFlags</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00157">157</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="ac0749e36b3f419d632b616d865150414" name="ac0749e36b3f419d632b616d865150414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0749e36b3f419d632b616d865150414">&#9670;&#160;</a></span>mScale</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> moonray::shading::Bssrdf::mScale</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bssrdf_8h_source.html#l00153">153</a> of file <a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>.</p>
-
-</div>
-</div>
-<a id="ae10842b30dbae4a41aabd5f216bc67c8" name="ae10842b30dbae4a41aabd5f216bc67c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae10842b30dbae4a41aabd5f216bc67c8">&#9670;&#160;</a></span>mWeights</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> moonray::shading::MultiLayerBssrdf::mWeights[<a class="el" href="_multi_layer_8h.html#a8dd5b5ac62b4079fafd10ed9aff98245">BSSRDF_MAX_LOBES</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_multi_layer_8h_source.html#l00060">60</a> of file <a class="el" href="_multi_layer_8h_source.html">MultiLayer.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bssrdf/<a class="el" href="_multi_layer_8h_source.html">MultiLayer.h</a></li>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bssrdf/<a class="el" href="_multi_layer_8cc_source.html">MultiLayer.cc</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a></li>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><b>shading</b></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html">MultiLayerBssrdf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

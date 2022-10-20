@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/Macros.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/Macros.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,15 +93,12 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
   <div class="headertitle"><div class="title">Macros.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Bob Somers</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">///</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">///</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef __INTEL_COMPILER</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#if defined(__GNUC__)</span></div>
@@ -111,19 +108,19 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Macro for marking symbols which should be exported from RDL2 DSOs.</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_macros_8h.html#a42e4214559859f1e27cc1f149dbbca9b">   19</a></span><span class="preprocessor">#define RDL2_DSO_EXPORT __attribute__((visibility(&quot;default&quot;</span>)))</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define RDL2_DSO_EXPORT __attribute__((visibility(&quot;default&quot;</span>)))</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Marks the start of a block of SceneClass attribute declarations in an RDL2</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// DSO.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_macros_8h.html#a8a07201e33c45d11ca34763e8dc7b0fe">   23</a></span><span class="preprocessor">#define RDL2_DSO_ATTR_DECLARE \</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define RDL2_DSO_ATTR_DECLARE \</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">    namespace {</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_macros_8h.html#a75caa5fb33a675e9ded9e064670d518c">   25</a></span><span class="preprocessor">#define RDL2_DSO_ATTR_DECLARE_NS(ns) \</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define RDL2_DSO_ATTR_DECLARE_NS(ns) \</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">    namespace ns {</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Marks the end of a block of SceneClass attribute declarations and the start</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// of a block of attribute definitions, including their name, default value,</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// etc.</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_macros_8h.html#a8b5ca7ee8bc9f6618338974575d05802">   31</a></span><span class="preprocessor">#define RDL2_DSO_ATTR_DEFINE(parent_class)                           \</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define RDL2_DSO_ATTR_DEFINE(parent_class)                           \</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    }                                                                \</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">    extern &quot;C&quot;</span>                                                       \</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    RDL2_DSO_EXPORT                                                  \</div>
@@ -135,13 +132,13 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        __pragma(warning(disable:1711)) <span class="comment">// #1711 is writing to a static var.</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// Marks the end of a block of SceneClass attribute definitions in an RDL2 DSO.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_macros_8h.html#a31eb69efb51f92b9e7a6d530ac77a26b">   43</a></span><span class="preprocessor">#define RDL2_DSO_ATTR_END               \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#define RDL2_DSO_ATTR_END               \</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">        __pragma(warning(pop)) \</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">        return rdl2_dso_interface;      \</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">    }</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Marks the start of SceneObject derived class in an RDL2 DSO.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="_macros_8h.html#a34941d6000bb47d5e018c77e1762c7eb">   49</a></span><span class="preprocessor">#define RDL2_DSO_CLASS_BEGIN(class_name, parent_name) \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#define RDL2_DSO_CLASS_BEGIN(class_name, parent_name) \</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    namespace { \</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">    class class_name : public parent_name \</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">    { \</span></div>
@@ -150,7 +147,7 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">    private:</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Marks the end of a SceneObject derived class in an RDL2 DSO.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="_macros_8h.html#a87adb3e7439d0784e0ff483901c072ca">   58</a></span><span class="preprocessor">#define RDL2_DSO_CLASS_END(class_name)                            \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#define RDL2_DSO_CLASS_END(class_name)                            \</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">    };                                                            \</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">    }                                                             \</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">    extern &quot;C&quot;</span>                                                    \</div>
@@ -171,7 +168,7 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// Optional macro that expands to an empty constructor for a SceneObject</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// derived class in an RDL2 DSO. Useful since many DSOs have empty constructors.</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="_macros_8h.html#a54892a49a15493ddb790c99e5a6b7773">   79</a></span><span class="preprocessor">#define RDL2_DSO_DEFAULT_CTOR(class_name)                                    \</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define RDL2_DSO_DEFAULT_CTOR(class_name)                                    \</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">    class_name(const scene_rdl2::rdl2::SceneClass&amp; sc, const std::string&amp; name) : \</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">        Parent(sc, name)                                                     \</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">    {                                                                        \</span></div>
@@ -215,7 +212,7 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#define DECLARE_HANDLE(name) struct name##ISPC { int64 unused; }; \</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">                             typedef name##ISPC name;</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">  123</a></span><span class="preprocessor">#define DECLARE_HANDLE(name) struct name##ISPC { int64 unused; };</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#define DECLARE_HANDLE(name) struct name##ISPC { int64 unused; };</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
@@ -223,7 +220,7 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">// can create enum values that aren&#39;t explicitly enumerated, but the client</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// interface remains type safe and can still test for the existence of each</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// flag in the usual way.</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="_macros_8h.html#a0b066827439d7508cb9d56b40b106544">  131</a></span><span class="preprocessor">#define RDL2_DEFINE_BITFLAG_OPERATORS(bitflag_type)                                  \</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#define RDL2_DEFINE_BITFLAG_OPERATORS(bitflag_type)                                  \</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">    finline bitflag_type operator~(bitflag_type a)                                   \</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">    {                                                                                \</span></div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">        return static_cast&lt;bitflag_type&gt;(~static_cast&lt;int&gt;(a));                      \</span></div>
@@ -264,12 +261,12 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">//------Shadow Falloff Macros-------------------------------------------------------------</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="_macros_8h.html#a219752e41e4706f77d908f8c2a4ab57a">  172</a></span><span class="preprocessor">#define DECLARE_ATTR_KEYS_CLEAR_RADIUS                                                      \</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="preprocessor">#define DECLARE_ATTR_KEYS_CLEAR_RADIUS                                                      \</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;     attrClearRadius;                                    \</span></div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;     attrClearRadiusFalloffDistance;                     \</span></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;       attrClearRadiusInterpolation;                       \</span></div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor"></span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="_macros_8h.html#af4375e8d90b12a9f2ad95da0d2f0239e">  177</a></span><span class="preprocessor">#define DECLARE_ATTRS_CLEAR_RADIUS                                                                                                          \</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#define DECLARE_ATTRS_CLEAR_RADIUS                                                                                                          \</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">    attrClearRadius                = sceneClass.declareAttribute&lt;rdl2::Float&gt;(&quot;clear_radius&quot;</span>, 0.f);                                         \</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    attrClearRadiusFalloffDistance = sceneClass.declareAttribute&lt;rdl2::Float&gt;(&quot;clear_radius_falloff_distance&quot;, 0.f);                        \</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    attrClearRadiusInterpolation   = sceneClass.declareAttribute&lt;rdl2::Int&gt;  (&quot;clear_radius_interpolation_type&quot;, 0, scene_rdl2::rdl2::FLAGS_ENUMERABLE);\</div>
@@ -288,22 +285,22 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    sceneClass.setEnumValue(attrClearRadiusInterpolation, 2, &quot;exponential_down&quot;);           \</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    sceneClass.setEnumValue(attrClearRadiusInterpolation, 3, &quot;smoothstep&quot;);                 \</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="_macros_8h.html#aff9a787bda36d7b7e9ae1d8bd1b0249b">  196</a></span><span class="preprocessor">#define SET_ATTR_GRP_CLEAR_RADIUS                                                           \</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#define SET_ATTR_GRP_CLEAR_RADIUS                                                           \</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">    sceneClass.setGroup(&quot;Properties&quot;</span>, attrClearRadius);                                     \</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    sceneClass.setGroup(&quot;Properties&quot;, attrClearRadiusFalloffDistance);                      \</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    sceneClass.setGroup(&quot;Properties&quot;, attrClearRadiusInterpolation);                        \</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="_macros_8h.html#ab07117340d3052c599c0c9691f49814a">  201</a></span><span class="preprocessor">#define INIT_ATTR_KEYS_CLEAR_RADIUS                                                                                  \</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#define INIT_ATTR_KEYS_CLEAR_RADIUS                                                                                  \</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">    sClearRadiusKey                = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(&quot;clear_radius&quot;</span>);                    \</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    sClearRadiusFalloffDistanceKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(&quot;clear_radius_falloff_distance&quot;);   \</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    sClearRadiusInterpolationKey   = sc.getAttributeKey&lt;scene_rdl2::rdl2::Int&gt;  (&quot;clear_radius_interpolation_type&quot;); \</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="_macros_8h.html#a5a4364712f5d56852addd6d4988ad1c7">  206</a></span><span class="preprocessor">#define UPDATE_ATTRS_CLEAR_RADIUS                                                                                           \</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#define UPDATE_ATTRS_CLEAR_RADIUS                                                                                           \</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">    mClearRadius                = scene_rdl2::math::max(mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(sClearRadiusKey), 0.f);                 \</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">    mClearRadiusFalloffDistance = scene_rdl2::math::max(mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(sClearRadiusFalloffDistanceKey), 0.f);  \</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">    mClearRadiusInterpolation   = mRdlLight-&gt;get&lt;rdl2::Int&gt;(sClearRadiusInterpolationKey);                                  \</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor"></span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="_macros_8h.html#ab912150a3deb8b800f2470d5016a0cb4">  211</a></span><span class="preprocessor">#define DECLARE_ATTR_SKEYS_CLEAR_RADIUS                                                                                 \</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#define DECLARE_ATTR_SKEYS_CLEAR_RADIUS                                                                                 \</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">    static scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;  sClearRadiusKey;                                                            \</span></div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">    static scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;  sClearRadiusFalloffDistanceKey;                                             \</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">    static scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;    sClearRadiusInterpolationKey;                                               \</span></div>
@@ -318,7 +315,7 @@ $(document).ready(function(){initNavTree('_macros_8h_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><a class="el" href="_macros_8h.html">Macros.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><b>Macros.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

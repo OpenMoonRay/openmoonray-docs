@@ -1,6 +1,5 @@
 var classmoonray_1_1geom_1_1_procedural_context =
 [
-    [ "~ProceduralContext", "classmoonray_1_1geom_1_1_procedural_context.html#a86abc7ad15add997a2ccff0c66e37150", null ],
     [ "getCurrentFrame", "classmoonray_1_1geom_1_1_procedural_context.html#a64a81591835246400d86a701fb32afa1", null ],
     [ "getMotionBlurDelta", "classmoonray_1_1geom_1_1_procedural_context.html#a1a5d828a2cc6004123c8023ecb9809f0", null ],
     [ "getMotionBlurParams", "classmoonray_1_1geom_1_1_procedural_context.html#af90b146263094bc7f6a818b971766070", null ],

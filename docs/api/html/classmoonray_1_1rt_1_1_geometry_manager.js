@@ -1,42 +1,8 @@
 var classmoonray_1_1rt_1_1_geometry_manager =
 [
-    [ "ChangeFlagAtomic", "classmoonray_1_1rt_1_1_geometry_manager.html#aec393f4f33cc28c918184e50a20ce1ea", null ],
-    [ "RenderPrepCancelCallBack", "classmoonray_1_1rt_1_1_geometry_manager.html#a3bbe908c44deb1dd87828ca3d905d61c", null ],
-    [ "RenderPrepStatsCallBack", "classmoonray_1_1rt_1_1_geometry_manager.html#a4ef86d30bba25372083c54b4ae779f25", null ],
-    [ "TbbSetOfGeometrySet", "classmoonray_1_1rt_1_1_geometry_manager.html#a7f701b13b8554ea8c5a94bbd0472c778", null ],
-    [ "VertexBufferArray", "classmoonray_1_1rt_1_1_geometry_manager.html#ac302172d3d1d96f4db0f5329bccf45de", null ],
-    [ "GM_RESULT", "classmoonray_1_1rt_1_1_geometry_manager.html#a7ce3ea96e63ae7b3fc88698bbcfaac3e", [
-      [ "CANCELED", "classmoonray_1_1rt_1_1_geometry_manager.html#a7ce3ea96e63ae7b3fc88698bbcfaac3ead4539bffb6062bdcbd7e7cc1b1228926", null ],
-      [ "FINISHED", "classmoonray_1_1rt_1_1_geometry_manager.html#a7ce3ea96e63ae7b3fc88698bbcfaac3ea2c616b2713e2e0aed04b4c4752c88133", null ]
-    ] ],
     [ "GeometryManager", "classmoonray_1_1rt_1_1_geometry_manager.html#a3f619ec1737c8cb4c7ab58eddfe31f74", null ],
-    [ "~GeometryManager", "classmoonray_1_1rt_1_1_geometry_manager.html#ae5b344ba70049c414fb79d98fd098be8", null ],
-    [ "bakeGeometry", "classmoonray_1_1rt_1_1_geometry_manager.html#afe9f41df0bcd7cef2c2ab3e12510d515", null ],
-    [ "compareAndSwapFlag", "classmoonray_1_1rt_1_1_geometry_manager.html#acd4a65d3c28626574a7e99689dfd4e79", null ],
     [ "finalizeChanges", "classmoonray_1_1rt_1_1_geometry_manager.html#a2715d2372fbb39d92c7fd835d2d7836a", null ],
-    [ "getEmbreeAccelerator", "classmoonray_1_1rt_1_1_geometry_manager.html#a0d8261401baa73365e0f2903b0d23ae6", null ],
-    [ "getEmissiveRegions", "classmoonray_1_1rt_1_1_geometry_manager.html#a361bf1cea296c22d83b90f0fb341a376", null ],
-    [ "getGeometryManagerExecTracker", "classmoonray_1_1rt_1_1_geometry_manager.html#a6ab9d26420518a77eee78f7c833e87b4", null ],
-    [ "getGPUAccelerator", "classmoonray_1_1rt_1_1_geometry_manager.html#aa8ed562169c675815447c15e22396367", null ],
-    [ "getStatistics", "classmoonray_1_1rt_1_1_geometry_manager.html#ad957fac80e107472705d289f2d4864da", null ],
-    [ "getVolumeAssignmentTable", "classmoonray_1_1rt_1_1_geometry_manager.html#ae99ba1d00160f8d19f411d42102b2516", null ],
-    [ "isGPUEnabled", "classmoonray_1_1rt_1_1_geometry_manager.html#acc815858d6558b25c90a9559d58b1e80", null ],
     [ "isValid", "classmoonray_1_1rt_1_1_geometry_manager.html#a22592e416ddf76df0ae31013bcaaefc7", null ],
     [ "loadGeometries", "classmoonray_1_1rt_1_1_geometry_manager.html#a962fad61d4ce42b094578431eb182569", null ],
-    [ "resetStatistics", "classmoonray_1_1rt_1_1_geometry_manager.html#acd7dfbd5ee4b261e89458ec694f7af1e", null ],
-    [ "setChangeFlag", "classmoonray_1_1rt_1_1_geometry_manager.html#a350581764fe079fd6b3120e4d295a7e4", null ],
-    [ "setStageIdAndCallBackFinalizeChange", "classmoonray_1_1rt_1_1_geometry_manager.html#ac5cf95a3ee8ba979494977d054c8f5ce", null ],
-    [ "setStageIdAndCallBackLoadGeometries", "classmoonray_1_1rt_1_1_geometry_manager.html#a0218b843f8b22ff67f0ab1e464ab406b", null ],
-    [ "tessellate", "classmoonray_1_1rt_1_1_geometry_manager.html#ad0df8908a8f53e4676a630141c1c3f91", null ],
-    [ "updateAccelerator", "classmoonray_1_1rt_1_1_geometry_manager.html#ad5bdaa562dce9c8a75fc144d60f3e7af", null ],
-    [ "updateGeometryData", "classmoonray_1_1rt_1_1_geometry_manager.html#a295bcb7584caf94e3d77f99c80ada06a", null ],
-    [ "updateGPUAccelerator", "classmoonray_1_1rt_1_1_geometry_manager.html#aa3257ccdc4ea637fe4cdc07c9f649ccc", null ],
-    [ "updateShadowLinkings", "classmoonray_1_1rt_1_1_geometry_manager.html#a5a6c461c8c356a5db2f413b87cdb3f79", null ],
-    [ "mChangeStatus", "classmoonray_1_1rt_1_1_geometry_manager.html#aaaa93f1b94d491134569ceaaeed49e21", null ],
-    [ "mDeformedGeometrySets", "classmoonray_1_1rt_1_1_geometry_manager.html#a5415d4cf708ad99308ceda41d8b28ac7", null ],
-    [ "mEmbreeAccelerator", "classmoonray_1_1rt_1_1_geometry_manager.html#a8f013ad5b21eef10a882ee2816712dcd", null ],
-    [ "mGPUAccelerator", "classmoonray_1_1rt_1_1_geometry_manager.html#a2e0f0aad1833e01b07df8c4ad8fce713", null ],
-    [ "mOptions", "classmoonray_1_1rt_1_1_geometry_manager.html#a062b2098436b692f57509094a35f4fc8", null ],
-    [ "mSceneContext", "classmoonray_1_1rt_1_1_geometry_manager.html#ae79c526b146d99781e6daeba1853ed5a", null ],
-    [ "mVolumeAssignmentTable", "classmoonray_1_1rt_1_1_geometry_manager.html#a849ec5997156533a4bc53e52207a511f", null ]
+    [ "updateGeometryData", "classmoonray_1_1rt_1_1_geometry_manager.html#a295bcb7584caf94e3d77f99c80ada06a", null ]
 ];

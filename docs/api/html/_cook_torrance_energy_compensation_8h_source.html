@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/cook_torrance/energy_compensation/CookTorranceEnergyCompensation.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/cook_torrance/energy_compensation/CookTorranceEnergyCompensation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -96,12 +96,7 @@ $(document).ready(function(){initNavTree('_cook_torrance_energy_compensation_8h_
 <a href="_cook_torrance_energy_compensation_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2019-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file CookTorranceEnergyCompensation.h</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Priyamvad Deshmukh</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * This file is used to compensate for energy loss from</span></div>
@@ -132,24 +127,24 @@ $(document).ready(function(){initNavTree('_cook_torrance_energy_compensation_8h_
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// Energy Compensation</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#a0f8e8696974f70fae42cd1558cba3fd2">eval</a>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> eval(</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            ispc::MicrofacetDistribution type,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> cosNO,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> cosNI,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordtype">float</span> inputRoughness,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">const</span> <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&amp; favg,</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordtype">bool</span> includeCosineTerm);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ab25aaf48fa15e3cc3ccb0459dcca1d78">sample</a>(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> sample(</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            ispc::MicrofacetDistribution type,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">const</span> <a class="code hl_class" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a>&amp; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a400a1f5a95d96cd2c7431b72fc14e8d2">frame</a>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">const</span> <a class="code hl_class" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a>&amp; frame,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordtype">float</span> r1, <span class="keywordtype">float</span> r2,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keywordtype">float</span> roughness,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_class" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a>&amp; wi);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ae1ec4e5c5f58e7e8450b481f2bbdb0ab">pdf</a>(</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> pdf(</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            ispc::MicrofacetDistribution type,</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">float</span> cosNI,</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordtype">float</span> roughness);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#af24abc0731312f50d513f3db33ecb223">weight</a>(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> weight(</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordtype">float</span> roughness);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
@@ -161,15 +156,10 @@ $(document).ready(function(){initNavTree('_cook_torrance_energy_compensation_8h_
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// TM and (c) 2019-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html">moonray::shading::CookTorranceEnergyCompensation</a></div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8h_source.html#l00035">CookTorranceEnergyCompensation.h:36</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_a0f8e8696974f70fae42cd1558cba3fd2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#a0f8e8696974f70fae42cd1558cba3fd2">moonray::shading::CookTorranceEnergyCompensation::eval</a></div><div class="ttdeci">static scene_rdl2::math::Color eval(ispc::MicrofacetDistribution type, const float cosNO, const float cosNI, float inputRoughness, const scene_rdl2::math::Color &amp;favg, bool includeCosineTerm)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00039">CookTorranceEnergyCompensation.cc:39</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_ab25aaf48fa15e3cc3ccb0459dcca1d78"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ab25aaf48fa15e3cc3ccb0459dcca1d78">moonray::shading::CookTorranceEnergyCompensation::sample</a></div><div class="ttdeci">static void sample(ispc::MicrofacetDistribution type, const scene_rdl2::math::ReferenceFrame &amp;frame, float r1, float r2, float roughness, scene_rdl2::math::Vec3f &amp;wi)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00076">CookTorranceEnergyCompensation.cc:76</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_ae1ec4e5c5f58e7e8450b481f2bbdb0ab"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ae1ec4e5c5f58e7e8450b481f2bbdb0ab">moonray::shading::CookTorranceEnergyCompensation::pdf</a></div><div class="ttdeci">static float pdf(ispc::MicrofacetDistribution type, float cosNI, float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00106">CookTorranceEnergyCompensation.cc:106</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_af24abc0731312f50d513f3db33ecb223"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#af24abc0731312f50d513f3db33ecb223">moonray::shading::CookTorranceEnergyCompensation::weight</a></div><div class="ttdeci">static float weight(float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00123">CookTorranceEnergyCompensation.cc:123</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1math_1_1_reference_frame_html"><div class="ttname"><a href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a></div><div class="ttdoc">This class handles the transformation of directions from any global space (typically render space) to...</div><div class="ttdef"><b>Definition:</b> <a href="_reference_frame_8h_source.html#l00038">ReferenceFrame.h:39</a></div></div>
-<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a400a1f5a95d96cd2c7431b72fc14e8d2"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a400a1f5a95d96cd2c7431b72fc14e8d2">scene_rdl2::math::frame</a></div><div class="ttdeci">__forceinline Mat3&lt; T &gt; frame(const T &amp;N)</div><div class="ttdef"><b>Definition:</b> <a href="_mat3_8h_source.html#l00259">Mat3.h:259</a></div></div>
-<div class="ttc" id="astructscene__rdl2_1_1math_1_1_color_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a></div><div class="ttdoc">RGB Color Class.</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00139">Color.h:140</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html">moonray::shading::CookTorranceEnergyCompensation</a></div><div class="ttdef"><b>Definition:</b> CookTorranceEnergyCompensation.h:36</div></div>
+<div class="ttc" id="aclassscene__rdl2_1_1math_1_1_reference_frame_html"><div class="ttname"><a href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a></div><div class="ttdoc">This class handles the transformation of directions from any global space (typically render space) to...</div><div class="ttdef"><b>Definition:</b> ReferenceFrame.h:39</div></div>
+<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> moonray.cc:19</div></div>
+<div class="ttc" id="astructscene__rdl2_1_1math_1_1_color_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a></div><div class="ttdoc">RGB Color Class.</div><div class="ttdef"><b>Definition:</b> Color.h:140</div></div>
 <div class="ttc" id="astructscene__rdl2_1_1math_1_1_vec3_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3&lt; float &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

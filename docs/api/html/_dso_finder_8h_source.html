@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/DsoFinder.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/DsoFinder.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,16 +93,15 @@ $(document).ready(function(){initNavTree('_dso_finder_8h_source.html',''); initR
   <div class="headertitle"><div class="title">DsoFinder.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_dso_finder_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Jerome Ko</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_scene_variables_8h.html">SceneVariables.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;SceneVariables.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
@@ -117,13 +116,13 @@ $(document).ready(function(){initNavTree('_dso_finder_8h_source.html',''); initR
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// 2 - Checks PATH for location of raas_render, and builds the path to rdl2dso based on it</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// Called from SceneVariables in order to set the default value of &quot;dso path&quot;. Should not be</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// called from general code to try and get the dso path. Use SceneContext::getDsoPath() instead.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#a7d27b0fb86d5d93dda635bb456b9b854">find</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> std::string find();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// Parses argv for the --dso_path or -d parameter, and prepends this to the guessed dso path from find().</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#af3a8d19f400adacefc9ca8b8c3c10619">parseDsoPath</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> std::string parseDsoPath(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#a45f61ba8443f662c159f68ec29993ac1">guessDsoPath</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> std::string guessDsoPath();</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
@@ -132,18 +131,14 @@ $(document).ready(function(){initNavTree('_dso_finder_8h_source.html',''); initR
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// TM and (c) 2015-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="a_scene_variables_8h_html"><div class="ttname"><a href="_scene_variables_8h.html">SceneVariables.h</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html">scene_rdl2::rdl2::DsoFinder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dso_finder_8h_source.html#l00017">DsoFinder.h:17</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html_a45f61ba8443f662c159f68ec29993ac1"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#a45f61ba8443f662c159f68ec29993ac1">scene_rdl2::rdl2::DsoFinder::guessDsoPath</a></div><div class="ttdeci">static std::string guessDsoPath()</div><div class="ttdef"><b>Definition:</b> <a href="_dso_finder_8cc_source.html#l00033">DsoFinder.cc:33</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html_a7d27b0fb86d5d93dda635bb456b9b854"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#a7d27b0fb86d5d93dda635bb456b9b854">scene_rdl2::rdl2::DsoFinder::find</a></div><div class="ttdeci">static std::string find()</div><div class="ttdef"><b>Definition:</b> <a href="_dso_finder_8cc_source.html#l00086">DsoFinder.cc:86</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html_af3a8d19f400adacefc9ca8b8c3c10619"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#af3a8d19f400adacefc9ca8b8c3c10619">scene_rdl2::rdl2::DsoFinder::parseDsoPath</a></div><div class="ttdeci">static std::string parseDsoPath(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_dso_finder_8cc_source.html#l00104">DsoFinder.cc:104</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
+<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html">scene_rdl2::rdl2::DsoFinder</a></div><div class="ttdef"><b>Definition:</b> DsoFinder.h:17</div></div>
+<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> McrtRtDispatchComputation.cc:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><a class="el" href="_dso_finder_8h.html">DsoFinder.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><b>DsoFinder.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

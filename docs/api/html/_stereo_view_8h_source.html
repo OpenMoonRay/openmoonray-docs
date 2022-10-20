@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/camera/StereoView.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/camera/StereoView.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,34 +93,29 @@ $(document).ready(function(){initNavTree('_stereo_view_8h_source.html',''); init
   <div class="headertitle"><div class="title">StereoView.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_stereo_view_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2018 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// Stereo view attribute of the camera</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77">    9</a></span><span class="comment"></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77">StereoView</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">enum class</span> StereoView</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_enumvalue" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77ac397289ee45877be0cd49811fe245b4e">CENTER</a> = 0,    <span class="comment">///&lt; Render from center eye (stereo is off).</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_enumvalue" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77a684d325a7303f52e64011467ff5c5758">LEFT</a>,          <span class="comment">///&lt; Render from left eye.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_enumvalue" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77a21507b40c80068eda19865706fdc2403">RIGHT</a>,         <span class="comment">///&lt; Render from right eye.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    CENTER = 0,    </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    LEFT,          </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    RIGHT,         </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// TM and (c) 2018 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="a_stereo_view_8h_html_a48f27f953d2313dbdc599ddf379e8c77"><div class="ttname"><a href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77">StereoView</a></div><div class="ttdeci">StereoView</div><div class="ttdoc">Stereo view attribute of the camera.</div><div class="ttdef"><b>Definition:</b> <a href="_stereo_view_8h_source.html#l00009">StereoView.h:10</a></div></div>
-<div class="ttc" id="a_stereo_view_8h_html_a48f27f953d2313dbdc599ddf379e8c77a21507b40c80068eda19865706fdc2403"><div class="ttname"><a href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77a21507b40c80068eda19865706fdc2403">StereoView::RIGHT</a></div><div class="ttdeci">@ RIGHT</div><div class="ttdoc">Render from right eye.</div></div>
-<div class="ttc" id="a_stereo_view_8h_html_a48f27f953d2313dbdc599ddf379e8c77a684d325a7303f52e64011467ff5c5758"><div class="ttname"><a href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77a684d325a7303f52e64011467ff5c5758">StereoView::LEFT</a></div><div class="ttdeci">@ LEFT</div><div class="ttdoc">Render from left eye.</div></div>
-<div class="ttc" id="a_stereo_view_8h_html_a48f27f953d2313dbdc599ddf379e8c77ac397289ee45877be0cd49811fe245b4e"><div class="ttname"><a href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77ac397289ee45877be0cd49811fe245b4e">StereoView::CENTER</a></div><div class="ttdeci">@ CENTER</div><div class="ttdoc">Render from center eye (stereo is off).</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_1baa063aa8b2a36fe6b5318d1cb38099.html">rendering</a></li><li class="navelem"><a class="el" href="dir_8c75c31d310b339fa1b633378be7da6a.html">pbr</a></li><li class="navelem"><a class="el" href="dir_c1acd234209fcf534d1e060aab13c685.html">camera</a></li><li class="navelem"><a class="el" href="_stereo_view_8h.html">StereoView.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_1baa063aa8b2a36fe6b5318d1cb38099.html">rendering</a></li><li class="navelem"><a class="el" href="dir_8c75c31d310b339fa1b633378be7da6a.html">pbr</a></li><li class="navelem"><a class="el" href="dir_c1acd234209fcf534d1e060aab13c685.html">camera</a></li><li class="navelem"><b>StereoView.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

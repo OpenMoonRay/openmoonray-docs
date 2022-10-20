@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/render/util/type_traits.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/render/util/type_traits.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
   <div class="headertitle"><div class="title">type_traits.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="type__traits_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -103,22 +103,22 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefauxstd.html">fauxstd</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedetail.html">detail</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Use SFINAE to determine whether a type has a member &quot;is_always_equal.&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1has__is__always__equal.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfauxstd_1_1detail_1_1has__is__always__equal.html">has_is_always_equal</a></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a7bc2da61e89cc190bb5bec739d88d64b">   17</a></span>    <span class="keyword">typedef</span> <span class="keywordtype">char</span> <a class="code hl_typedef" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a7bc2da61e89cc190bb5bec739d88d64b">Yes</a>[1];</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ae32e9e1605f6cb57375a7756054e8ac2">   18</a></span>    <span class="keyword">typedef</span> <span class="keywordtype">char</span> <a class="code hl_typedef" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ae32e9e1605f6cb57375a7756054e8ac2">No</a>[2];</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">typedef</span> <span class="keywordtype">char</span> Yes[1];</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">typedef</span> <span class="keywordtype">char</span> No[2];</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ab031966aaba3f235e6e6b0249aec4274">   21</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a7bc2da61e89cc190bb5bec739d88d64b">Yes</a>&amp; <a class="code hl_function" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ab031966aaba3f235e6e6b0249aec4274">check</a>(<span class="keyword">typename</span> U::is_always_equal*);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">static</span> Yes&amp; check(<span class="keyword">typename</span> U::is_always_equal*);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ac3179c84c63f52c2eca15c80bafc47b7">   24</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ae32e9e1605f6cb57375a7756054e8ac2">No</a>&amp; <a class="code hl_function" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ac3179c84c63f52c2eca15c80bafc47b7">check</a>(...);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">static</span> No&amp; check(...);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a24f1a8bfad40da3b5a0addf32bebe91a">   26</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a24f1a8bfad40da3b5a0addf32bebe91a">value</a> = <span class="keyword">sizeof</span>(check&lt;T&gt;(<span class="keyword">nullptr</span>)) == <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a7bc2da61e89cc190bb5bec739d88d64b">Yes</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">sizeof</span>(check&lt;T&gt;(<span class="keyword">nullptr</span>)) == <span class="keyword">sizeof</span>(Yes);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// If has_iae is true, the type has a member &quot;is_always_equal.&quot;</span></div>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01true_01_4.html">   35</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html">is_always_equal_helper_dispatched</a>&lt;T, true&gt;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01true_01_4.html#a20109a03f431cbe7092ac8e49cec534a">   37</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = T::is_always_equal::value;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = T::is_always_equal::value;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// If the class does not have a member &quot;is_always_equal,&quot; we defer to is_empty</span></div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01false_01_4.html">   43</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html">is_always_equal_helper_dispatched</a>&lt;T, false&gt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01false_01_4.html#a12b383a3466b75ec9357ac33b535abff">   45</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = std::is_empty&lt;T&gt;::value;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = std::is_empty&lt;T&gt;::value;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Determine if we have a member &quot;is_always_equal,&quot; and dispatch our</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// decision based on that.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structfauxstd_1_1detail_1_1is__always__equal__helper.html#a9a53bca886ff9631caa6333488c67e5f">   53</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="structfauxstd_1_1detail_1_1is__always__equal__helper.html#a9a53bca886ff9631caa6333488c67e5f">value</a> = <a class="code hl_struct" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html">is_always_equal_helper_dispatched&lt;T, has_is_always_equal&lt;T&gt;::value</a>&gt;<a class="code hl_variable" href="structfauxstd_1_1detail_1_1is__always__equal__helper.html#a9a53bca886ff9631caa6333488c67e5f">::value</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <a class="code hl_struct" href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html">is_always_equal_helper_dispatched&lt;T, has_is_always_equal&lt;T&gt;::value</a>&gt;::value;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>...&gt;</div>
@@ -194,26 +194,19 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// TM and (c) 2015-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00026">Array.h:26</a></div></div>
-<div class="ttc" id="anamespacefauxstd_html"><div class="ttname"><a href="namespacefauxstd.html">fauxstd</a></div><div class="ttdef"><b>Definition:</b> <a href="integer__sequence_8h_source.html#l00010">integer_sequence.h:10</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1_and_3_4_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1_and_3_4.html">fauxstd::detail::And&lt;&gt;</a></div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00060">type_traits.h:61</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1_and_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1_and.html">fauxstd::detail::And</a></div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00057">type_traits.h:57</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html">fauxstd::detail::has_is_always_equal</a></div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00015">type_traits.h:16</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html_a24f1a8bfad40da3b5a0addf32bebe91a"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a24f1a8bfad40da3b5a0addf32bebe91a">fauxstd::detail::has_is_always_equal::value</a></div><div class="ttdeci">static const bool value</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00026">type_traits.h:26</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html_a7bc2da61e89cc190bb5bec739d88d64b"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html#a7bc2da61e89cc190bb5bec739d88d64b">fauxstd::detail::has_is_always_equal::Yes</a></div><div class="ttdeci">char Yes[1]</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00017">type_traits.h:17</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html_ab031966aaba3f235e6e6b0249aec4274"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ab031966aaba3f235e6e6b0249aec4274">fauxstd::detail::has_is_always_equal::check</a></div><div class="ttdeci">static Yes &amp; check(typename U::is_always_equal *)</div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html_ac3179c84c63f52c2eca15c80bafc47b7"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ac3179c84c63f52c2eca15c80bafc47b7">fauxstd::detail::has_is_always_equal::check</a></div><div class="ttdeci">static No &amp; check(...)</div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html_ae32e9e1605f6cb57375a7756054e8ac2"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html#ae32e9e1605f6cb57375a7756054e8ac2">fauxstd::detail::has_is_always_equal::No</a></div><div class="ttdeci">char No[2]</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00018">type_traits.h:18</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html">fauxstd::detail::is_always_equal_helper_dispatched</a></div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00031">type_traits.h:31</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1is__always__equal__helper_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1is__always__equal__helper.html">fauxstd::detail::is_always_equal_helper</a></div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00049">type_traits.h:50</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1detail_1_1is__always__equal__helper_html_a9a53bca886ff9631caa6333488c67e5f"><div class="ttname"><a href="structfauxstd_1_1detail_1_1is__always__equal__helper.html#a9a53bca886ff9631caa6333488c67e5f">fauxstd::detail::is_always_equal_helper::value</a></div><div class="ttdeci">static const bool value</div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00053">type_traits.h:53</a></div></div>
-<div class="ttc" id="astructfauxstd_1_1is__always__equal_html"><div class="ttname"><a href="structfauxstd_1_1is__always__equal.html">fauxstd::is_always_equal</a></div><div class="ttdef"><b>Definition:</b> <a href="type__traits_8h_source.html#l00092">type_traits.h:94</a></div></div>
+<div class="ttc" id="anamespacefauxstd_html"><div class="ttname"><a href="namespacefauxstd.html">fauxstd</a></div><div class="ttdef"><b>Definition:</b> integer_sequence.h:10</div></div>
+<div class="ttc" id="astructfauxstd_1_1detail_1_1_and_3_4_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1_and_3_4.html">fauxstd::detail::And&lt;&gt;</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:61</div></div>
+<div class="ttc" id="astructfauxstd_1_1detail_1_1_and_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1_and.html">fauxstd::detail::And</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:57</div></div>
+<div class="ttc" id="astructfauxstd_1_1detail_1_1has__is__always__equal_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1has__is__always__equal.html">fauxstd::detail::has_is_always_equal</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:16</div></div>
+<div class="ttc" id="astructfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html">fauxstd::detail::is_always_equal_helper_dispatched</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:31</div></div>
+<div class="ttc" id="astructfauxstd_1_1detail_1_1is__always__equal__helper_html"><div class="ttname"><a href="structfauxstd_1_1detail_1_1is__always__equal__helper.html">fauxstd::detail::is_always_equal_helper</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:50</div></div>
+<div class="ttc" id="astructfauxstd_1_1is__always__equal_html"><div class="ttname"><a href="structfauxstd_1_1is__always__equal.html">fauxstd::is_always_equal</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:94</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_54592004fde66bbc4b780960e14d69c6.html">render</a></li><li class="navelem"><a class="el" href="dir_16afeb4fe301969e2c5af3f2d782aad0.html">util</a></li><li class="navelem"><a class="el" href="type__traits_8h.html">type_traits.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_54592004fde66bbc4b780960e14d69c6.html">render</a></li><li class="navelem"><a class="el" href="dir_16afeb4fe301969e2c5af3f2d782aad0.html">util</a></li><li class="navelem"><b>type_traits.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

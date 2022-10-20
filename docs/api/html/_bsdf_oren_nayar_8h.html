@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/BsdfOrenNayar.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/BsdfOrenNayar.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -100,8 +100,8 @@ $(document).ready(function(){initNavTree('_bsdf_oren_nayar_8h.html',''); initRes
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bsdf_slice_8h_source.html">BsdfSlice.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_validity_8h_source.html">rendering/shading/PbrValidity.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/PbrValidity.h&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;rendering/shading/ispc/bsdf/BsdfOrenNayar_ispc_stubs.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Color.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/ReferenceFrame.h&gt;</code><br />
@@ -120,61 +120,25 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad33ace00f852e6d30d9b09ca9cffb8cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bsdf_oren_nayar_8h.html#ad33ace00f852e6d30d9b09ca9cffb8cd">OREN_NAYAR_PBR_VALIDITY_MIN</a>&#160;&#160;&#160;0.031896</td></tr>
+<tr class="memitem:ad33ace00f852e6d30d9b09ca9cffb8cd"><td class="memItemLeft" align="right" valign="top"><a id="ad33ace00f852e6d30d9b09ca9cffb8cd" name="ad33ace00f852e6d30d9b09ca9cffb8cd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OREN_NAYAR_PBR_VALIDITY_MIN</b>&#160;&#160;&#160;0.031896</td></tr>
 <tr class="separator:ad33ace00f852e6d30d9b09ca9cffb8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb1d9aee982ee92dc008ff03cff7539"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bsdf_oren_nayar_8h.html#adbb1d9aee982ee92dc008ff03cff7539">OREN_NAYAR_PBR_VALIDITY_MAX</a>&#160;&#160;&#160;0.871367</td></tr>
+<tr class="memitem:adbb1d9aee982ee92dc008ff03cff7539"><td class="memItemLeft" align="right" valign="top"><a id="adbb1d9aee982ee92dc008ff03cff7539" name="adbb1d9aee982ee92dc008ff03cff7539"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OREN_NAYAR_PBR_VALIDITY_MAX</b>&#160;&#160;&#160;0.871367</td></tr>
 <tr class="separator:adbb1d9aee982ee92dc008ff03cff7539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a48bd527f263b96f3faee24732439c6bc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a48bd527f263b96f3faee24732439c6bc">moonray::shading::getOrenNayarIntensity</a> (const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;n, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;v, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;l, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="immintrin__emu_8h.html#a8a1a0a26c50cc4becfc754bb68d1dc6b">a</a>, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a>)</td></tr>
-<tr class="separator:a48bd527f263b96f3faee24732439c6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae304bcb7202af433e29b70f70574975"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#aae304bcb7202af433e29b70f70574975">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (OrenNayarBsdfLobe, OrenNayarBsdfLobev)</td></tr>
+<tr class="memitem:aae304bcb7202af433e29b70f70574975"><td class="memItemLeft" align="right" valign="top"><a id="aae304bcb7202af433e29b70f70574975" name="aae304bcb7202af433e29b70f70574975"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (OrenNayarBsdfLobe, OrenNayarBsdfLobev)</td></tr>
 <tr class="separator:aae304bcb7202af433e29b70f70574975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Scott Cegielski $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_bsdf_oren_nayar_8h_source.html">BsdfOrenNayar.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adbb1d9aee982ee92dc008ff03cff7539" name="adbb1d9aee982ee92dc008ff03cff7539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbb1d9aee982ee92dc008ff03cff7539">&#9670;&#160;</a></span>OREN_NAYAR_PBR_VALIDITY_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OREN_NAYAR_PBR_VALIDITY_MAX&#160;&#160;&#160;0.871367</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bsdf_oren_nayar_8h_source.html#l00031">31</a> of file <a class="el" href="_bsdf_oren_nayar_8h_source.html">BsdfOrenNayar.h</a>.</p>
-
-</div>
-</div>
-<a id="ad33ace00f852e6d30d9b09ca9cffb8cd" name="ad33ace00f852e6d30d9b09ca9cffb8cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad33ace00f852e6d30d9b09ca9cffb8cd">&#9670;&#160;</a></span>OREN_NAYAR_PBR_VALIDITY_MIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OREN_NAYAR_PBR_VALIDITY_MIN&#160;&#160;&#160;0.031896</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bsdf_oren_nayar_8h_source.html#l00030">30</a> of file <a class="el" href="_bsdf_oren_nayar_8h_source.html">BsdfOrenNayar.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

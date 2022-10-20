@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/BsdfLambert.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/BsdfLambert.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -100,8 +100,8 @@ $(document).ready(function(){initNavTree('_bsdf_lambert_8h.html',''); initResiza
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bsdf_slice_8h_source.html">BsdfSlice.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_validity_8h_source.html">rendering/shading/PbrValidity.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/PbrValidity.h&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;rendering/shading/ispc/bsdf/BsdfLambert_ispc_stubs.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Color.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/ReferenceFrame.h&gt;</code><br />
@@ -120,59 +120,25 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6242872c5ea844fe5db5ee20542fbf01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bsdf_lambert_8h.html#a6242872c5ea844fe5db5ee20542fbf01">LAMBERT_PBR_VALIDITY_MIN</a>&#160;&#160;&#160;0.031896</td></tr>
+<tr class="memitem:a6242872c5ea844fe5db5ee20542fbf01"><td class="memItemLeft" align="right" valign="top"><a id="a6242872c5ea844fe5db5ee20542fbf01" name="a6242872c5ea844fe5db5ee20542fbf01"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAMBERT_PBR_VALIDITY_MIN</b>&#160;&#160;&#160;0.031896</td></tr>
 <tr class="separator:a6242872c5ea844fe5db5ee20542fbf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80265cfab1b31ab369f9c1cf885c7800"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_bsdf_lambert_8h.html#a80265cfab1b31ab369f9c1cf885c7800">LAMBERT_PBR_VALIDITY_MAX</a>&#160;&#160;&#160;0.871367</td></tr>
+<tr class="memitem:a80265cfab1b31ab369f9c1cf885c7800"><td class="memItemLeft" align="right" valign="top"><a id="a80265cfab1b31ab369f9c1cf885c7800" name="a80265cfab1b31ab369f9c1cf885c7800"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LAMBERT_PBR_VALIDITY_MAX</b>&#160;&#160;&#160;0.871367</td></tr>
 <tr class="separator:a80265cfab1b31ab369f9c1cf885c7800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a652d2333127184d5754b5c1960b06ec1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a652d2333127184d5754b5c1960b06ec1">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (LambertBsdfLobe, LambertBsdfLobev)</td></tr>
+<tr class="memitem:a652d2333127184d5754b5c1960b06ec1"><td class="memItemLeft" align="right" valign="top"><a id="a652d2333127184d5754b5c1960b06ec1" name="a652d2333127184d5754b5c1960b06ec1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (LambertBsdfLobe, LambertBsdfLobev)</td></tr>
 <tr class="separator:a652d2333127184d5754b5c1960b06ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_bsdf_lambert_8h_source.html">BsdfLambert.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a80265cfab1b31ab369f9c1cf885c7800" name="a80265cfab1b31ab369f9c1cf885c7800"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80265cfab1b31ab369f9c1cf885c7800">&#9670;&#160;</a></span>LAMBERT_PBR_VALIDITY_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LAMBERT_PBR_VALIDITY_MAX&#160;&#160;&#160;0.871367</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bsdf_lambert_8h_source.html#l00031">31</a> of file <a class="el" href="_bsdf_lambert_8h_source.html">BsdfLambert.h</a>.</p>
-
-</div>
-</div>
-<a id="a6242872c5ea844fe5db5ee20542fbf01" name="a6242872c5ea844fe5db5ee20542fbf01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6242872c5ea844fe5db5ee20542fbf01">&#9670;&#160;</a></span>LAMBERT_PBR_VALIDITY_MIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LAMBERT_PBR_VALIDITY_MIN&#160;&#160;&#160;0.031896</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_bsdf_lambert_8h_source.html#l00030">30</a> of file <a class="el" href="_bsdf_lambert_8h_source.html">BsdfLambert.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

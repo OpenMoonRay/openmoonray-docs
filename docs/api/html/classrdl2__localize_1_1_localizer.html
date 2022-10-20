@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: rdl2_localize::Localizer Class Reference</title>
+<title>OpenMoonrayTEST #4: rdl2_localize::Localizer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classrdl2__localize_1_1_localizer.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classrdl2__localize_1_1_localizer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">rdl2_localize::Localizer Class Reference</div></div>
 </div><!--header-->
@@ -106,22 +105,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9175bc0b54a46f1d4e2c76dca3f4298d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae16069a990488d0f432e76e133abb37c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdl2__localize_1_1_localizer.html#ae16069a990488d0f432e76e133abb37c">localize</a> (const std::string &amp;inFile, const std::string &amp;outFile)</td></tr>
 <tr class="separator:ae16069a990488d0f432e76e133abb37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a8d0e0337671ba2a030305d8408819302"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdl2__localize_1_1_localizer.html#a8d0e0337671ba2a030305d8408819302">mForceOverwrite</a></td></tr>
-<tr class="separator:a8d0e0337671ba2a030305d8408819302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40753a205b2250cbc5b72528ce35a9d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdl2__localize_1_1_localizer.html#a40753a205b2250cbc5b72528ce35a9d5">mRelativePaths</a></td></tr>
-<tr class="separator:a40753a205b2250cbc5b72528ce35a9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53235042e0a23768922734cbf74adbab"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdl2__localize_1_1_localizer.html#a53235042e0a23768922734cbf74adbab">mDsoPath</a></td></tr>
-<tr class="separator:a53235042e0a23768922734cbf74adbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >By "localize" we mean "copy all the external assets that a scene references
 to a single location". Essentially we are isolating a scene such that all its asset data and the RDL data lives in the same directory. (Unfortunately this will not help your scene speak new languages. Bummer!)</p>
 <p >A localizer can localize RDL2 input files, writing the localized result to the given output file. Multiple files can be localized with the same localizer, though configurable options are fixed at construction time. </p>
-
-<p class="definition">Definition at line <a class="el" href="_localizer_8h_source.html#l00028">28</a> of file <a class="el" href="_localizer_8h_source.html">Localizer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9175bc0b54a46f1d4e2c76dca3f4298d" name="a9175bc0b54a46f1d4e2c76dca3f4298d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9175bc0b54a46f1d4e2c76dca3f4298d">&#9670;&#160;</a></span>Localizer()</h2>
@@ -156,17 +144,6 @@ to a single location". Essentially we are isolating a scene such that all its as
 </div><div class="memdoc">
 <p >Create a new localizer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_localizer_8cc_source.html#l00033">33</a> of file <a class="el" href="_localizer_8cc_source.html">Localizer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                                                :</div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a8d0e0337671ba2a030305d8408819302">mForceOverwrite</a>(forceOverwrite),</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a40753a205b2250cbc5b72528ce35a9d5">mRelativePaths</a>(relativePaths),</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a53235042e0a23768922734cbf74adbab">mDsoPath</a>(dsoPath)</div>
-<div class="line"><span class="lineno">   37</span>{</div>
-<div class="line"><span class="lineno">   38</span>}</div>
-<div class="ttc" id="aclassrdl2__localize_1_1_localizer_html_a40753a205b2250cbc5b72528ce35a9d5"><div class="ttname"><a href="classrdl2__localize_1_1_localizer.html#a40753a205b2250cbc5b72528ce35a9d5">rdl2_localize::Localizer::mRelativePaths</a></div><div class="ttdeci">bool mRelativePaths</div><div class="ttdef"><b>Definition:</b> <a href="_localizer_8h_source.html#l00049">Localizer.h:49</a></div></div>
-<div class="ttc" id="aclassrdl2__localize_1_1_localizer_html_a53235042e0a23768922734cbf74adbab"><div class="ttname"><a href="classrdl2__localize_1_1_localizer.html#a53235042e0a23768922734cbf74adbab">rdl2_localize::Localizer::mDsoPath</a></div><div class="ttdeci">std::string &amp; mDsoPath</div><div class="ttdef"><b>Definition:</b> <a href="_localizer_8h_source.html#l00052">Localizer.h:52</a></div></div>
-<div class="ttc" id="aclassrdl2__localize_1_1_localizer_html_a8d0e0337671ba2a030305d8408819302"><div class="ttname"><a href="classrdl2__localize_1_1_localizer.html#a8d0e0337671ba2a030305d8408819302">rdl2_localize::Localizer::mForceOverwrite</a></div><div class="ttdeci">bool mForceOverwrite</div><div class="ttdef"><b>Definition:</b> <a href="_localizer_8h_source.html#l00045">Localizer.h:45</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -197,228 +174,8 @@ to a single location". Essentially we are isolating a scene such that all its as
 </div><div class="memdoc">
 <p >Localize the given RDL2 input file, copying all its dependent assets into the same directory as the output file. The output file is written with any localized attribute data updated to reflect the new file path. </p>
 
-<p class="definition">Definition at line <a class="el" href="_localizer_8cc_source.html#l00041">41</a> of file <a class="el" href="_localizer_8cc_source.html">Localizer.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
-<div class="line"><span class="lineno">   43</span>    <span class="comment">// Write test the output file.</span></div>
-<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aca2b60667aefdd43de582ad1ed6cec0a">util::writeTest</a>(outFile, <span class="keyword">true</span>)) {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classscene__rdl2_1_1except_1_1_io_error.html">except::IoError</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aafa0fd4f50d2837fe8f29be9c27ea2b7">util::buildString</a>(<span class="stringliteral">&quot;Can&#39;t write output file &#39;&quot;</span>,</div>
-<div class="line"><span class="lineno">   46</span>                outFile, <span class="stringliteral">&quot;&#39;.&quot;</span>));</div>
-<div class="line"><span class="lineno">   47</span>    }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// Load the input file.</span></div>
-<div class="line"><span class="lineno">   50</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">rdl2::SceneContext</a> context;</div>
-<div class="line"><span class="lineno">   51</span>    context.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a61e8490e1951a1260be6a92166609290">setProxyModeEnabled</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a53235042e0a23768922734cbf74adbab">mDsoPath</a>.empty()) { <span class="comment">// Override dso path from command line</span></div>
-<div class="line"><span class="lineno">   53</span>        context.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(<a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a53235042e0a23768922734cbf74adbab">mDsoPath</a>);   </div>
-<div class="line"><span class="lineno">   54</span>    }</div>
-<div class="line"><span class="lineno">   55</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2.html#a51d50085f471a74fb11dbf7ee4215fd6">rdl2::readSceneFromFile</a>(inFile, context);</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>    <span class="comment">// Construct the source prefix based on the the path prefix of the input</span></div>
-<div class="line"><span class="lineno">   58</span>    <span class="comment">// RDL file.</span></div>
-<div class="line"><span class="lineno">   59</span>    <span class="keyword">auto</span> srcPrefix = <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#ae538c1dc986ff5658f436895134fce47">util::simplifyPath</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#a68c0d8aa1dced15f271662f6380ed268">util::absolutePath</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#ac025c8710aaff32b535f034373d9d3de">util::splitPath</a>(inFile).first));</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    <span class="comment">// The asset files should derive their destination paths from the output</span></div>
-<div class="line"><span class="lineno">   62</span>    <span class="comment">// file.</span></div>
-<div class="line"><span class="lineno">   63</span>    <span class="keyword">auto</span> destPrefix = <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#ae538c1dc986ff5658f436895134fce47">util::simplifyPath</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#a68c0d8aa1dced15f271662f6380ed268">util::absolutePath</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#ac025c8710aaff32b535f034373d9d3de">util::splitPath</a>(outFile).first));</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (!destPrefix.empty()) {</div>
-<div class="line"><span class="lineno">   65</span>        destPrefix += <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><span class="lineno">   66</span>    }</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    <span class="comment">// Compute the list of motion sample numbers directly from the SceneVars.</span></div>
-<div class="line"><span class="lineno">   69</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; sceneVars = context.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a3716eb257588ff7e8abdba08dde9d2d9">getSceneVariables</a>();</div>
-<div class="line"><span class="lineno">   70</span>    <span class="keyword">auto</span> motionSampleNums = <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2.html#a2637db5bdbe7bff88fb3952890429316">rdl2::uniqueSampleNumberRange</a>(sceneVars);</div>
-<div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// Scan the SceneClasses for localizable (filename) attributes.</span></div>
-<div class="line"><span class="lineno">   73</span>    LocalizableAttributes localAttrs(context);</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="comment">// Walk all the SceneObjects and build the path tree based on which</span></div>
-<div class="line"><span class="lineno">   76</span>    <span class="comment">// attributes are localizable (just filenames, for now).</span></div>
-<div class="line"><span class="lineno">   77</span>    PathTree pathTree;</div>
-<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> objIter = context.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#ad9818551bf185d82cb538eafbfb8ef23">beginSceneObject</a>(); objIter != context.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a01b783f41987bd74f90dab480bc73fa3">endSceneObject</a>(); ++objIter) {</div>
-<div class="line"><span class="lineno">   79</span>        <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_object.html">rdl2::SceneObject</a>&amp; obj = *objIter-&gt;second;</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keyword">auto</span> range = localAttrs.getLocalizableAttributes(obj.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#adbe9c38b6d15f6ebb2aec69bd1f0d9cf">getSceneClass</a>());</div>
-<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> attrIter = range.first; attrIter != range.second; ++attrIter) {</div>
-<div class="line"><span class="lineno">   82</span>            <span class="keyword">const</span> <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_attribute.html">rdl2::Attribute</a>&amp; attr = *attrIter-&gt;second;</div>
-<div class="line"><span class="lineno">   83</span>            std::string attrValue = obj.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#aaf59f47db496737c55d3428cd3dfb040">get</a>&lt;<a class="code hl_typedef" href="namespacescene__rdl2_1_1rdl2.html#ab5edef3a04e25ebcdfd1751b96ca2049">rdl2::String</a>&gt;(attr.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_attribute.html#ae6fb491eb052d8785fa0c4c20a7cbc5f">getName</a>());</div>
-<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">if</span> (attrValue.empty()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   85</span>            pathTree.insert(attrValue, &amp;obj, &amp;attr);</div>
-<div class="line"><span class="lineno">   86</span>        }</div>
-<div class="line"><span class="lineno">   87</span>    }</div>
-<div class="line"><span class="lineno">   88</span> </div>
-<div class="line"><span class="lineno">   89</span>    <span class="comment">// Expand any # characters into full paths based on the motion sample</span></div>
-<div class="line"><span class="lineno">   90</span>    <span class="comment">// numbers.</span></div>
-<div class="line"><span class="lineno">   91</span>    pathTree.expandPaths(motionSampleNums);</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <span class="comment">// Trim the file path prefix to remove shared leading directories.</span></div>
-<div class="line"><span class="lineno">   94</span>    <span class="keyword">auto</span> trimmedPrefix = pathTree.trimPrefix();</div>
-<div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   96</span>    <span class="comment">// Generate the list of files that need to be copied.</span></div>
-<div class="line"><span class="lineno">   97</span>    <span class="keyword">auto</span> fileCopies = pathTree.getFileCopies(srcPrefix, destPrefix, trimmedPrefix);</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    <span class="comment">// Generate the list of attribute updates that need to be done.</span></div>
-<div class="line"><span class="lineno">  100</span>    <span class="keyword">auto</span> attrUpdates = pathTree.getAttrUpdates(destPrefix, <a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a40753a205b2250cbc5b72528ce35a9d5">mRelativePaths</a>);</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="comment">// Unless we&#39;re force overwriting destination files, make sure that none</span></div>
-<div class="line"><span class="lineno">  103</span>    <span class="comment">// of them exist.</span></div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classrdl2__localize_1_1_localizer.html#a8d0e0337671ba2a030305d8408819302">mForceOverwrite</a>) {</div>
-<div class="line"><span class="lineno">  105</span>        <span class="comment">// The output RDL2 file.</span></div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">if</span> (access(outFile.c_str(), F_OK) == 0) {</div>
-<div class="line"><span class="lineno">  107</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="classscene__rdl2_1_1except_1_1_io_error.html">except::IoError</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aafa0fd4f50d2837fe8f29be9c27ea2b7">util::buildString</a>(<span class="stringliteral">&quot;Destination file &#39;&quot;</span>,</div>
-<div class="line"><span class="lineno">  108</span>                    outFile, <span class="stringliteral">&quot;&#39; already exists. Use --force to overwrite.&quot;</span>));</div>
-<div class="line"><span class="lineno">  109</span>        }</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>        <span class="comment">// The asset files we&#39;re going to copy.</span></div>
-<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fileCopy : fileCopies) {</div>
-<div class="line"><span class="lineno">  113</span>            <span class="keywordflow">if</span> (access(fileCopy.mDestPath.c_str(), F_OK) == 0) {</div>
-<div class="line"><span class="lineno">  114</span>                <span class="keywordflow">throw</span> <a class="code hl_class" href="classscene__rdl2_1_1except_1_1_io_error.html">except::IoError</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aafa0fd4f50d2837fe8f29be9c27ea2b7">util::buildString</a>(<span class="stringliteral">&quot;Destination file &#39;&quot;</span>,</div>
-<div class="line"><span class="lineno">  115</span>                        fileCopy.mDestPath, <span class="stringliteral">&quot;&#39; already exists. (Copying from &#39;&quot;</span>,</div>
-<div class="line"><span class="lineno">  116</span>                        fileCopy.mSrcPath, <span class="stringliteral">&quot;&#39;.) Use --force to overwrite.&quot;</span>));</div>
-<div class="line"><span class="lineno">  117</span>            }</div>
-<div class="line"><span class="lineno">  118</span>        }</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>    <span class="comment">// Write test all the files we&#39;re going to copy.</span></div>
-<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fileCopy : fileCopies) {</div>
-<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aca2b60667aefdd43de582ad1ed6cec0a">util::writeTest</a>(fileCopy.mDestPath, <span class="keyword">true</span>)) {</div>
-<div class="line"><span class="lineno">  124</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="classscene__rdl2_1_1except_1_1_io_error.html">except::IoError</a>(<a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aafa0fd4f50d2837fe8f29be9c27ea2b7">util::buildString</a>(<span class="stringliteral">&quot;Can&#39;t write file &#39;&quot;</span>,</div>
-<div class="line"><span class="lineno">  125</span>                    fileCopy.mDestPath, <span class="stringliteral">&quot;&#39;.&quot;</span>));</div>
-<div class="line"><span class="lineno">  126</span>        }</div>
-<div class="line"><span class="lineno">  127</span>    }</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>    <span class="comment">// Copy the assets. We know the directory exists and is writable because</span></div>
-<div class="line"><span class="lineno">  130</span>    <span class="comment">// we did a util::writeTest() at the very beginning of this function.</span></div>
-<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; fileCopy : fileCopies) {</div>
-<div class="line"><span class="lineno">  132</span>        <span class="comment">// copyFile will throw if the source file doesn&#39;t exist, in which case</span></div>
-<div class="line"><span class="lineno">  133</span>        <span class="comment">// we print out the missing file and continue.</span></div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  135</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Copying &quot;</span> &lt;&lt; fileCopy.mSrcPath &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><span class="lineno">  136</span>                         <span class="stringliteral">&quot;     to &quot;</span> &lt;&lt; fileCopy.mDestPath &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  137</span>            <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#ae0d0da8306584abd32b0ba9c9e874d34">util::copyFile</a>(fileCopy.mSrcPath, fileCopy.mDestPath);</div>
-<div class="line"><span class="lineno">  138</span>        }</div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classscene__rdl2_1_1except_1_1_io_error.html">except::IoError</a> &amp;e) {</div>
-<div class="line"><span class="lineno">  140</span>            std::cerr &lt;&lt; e.what() &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  141</span>        }</div>
-<div class="line"><span class="lineno">  142</span>    }</div>
-<div class="line"><span class="lineno">  143</span> </div>
-<div class="line"><span class="lineno">  144</span>    <span class="comment">// Update the attribute values.</span></div>
-<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> : attrUpdates) {</div>
-<div class="line"><span class="lineno">  146</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Updating &quot;</span> &lt;&lt; <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mSceneObject-&gt;getName() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><span class="lineno">  147</span>                     <span class="stringliteral">&quot;    attr &quot;</span> &lt;&lt; <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mAttribute-&gt;getName() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><span class="lineno">  148</span>                     <span class="stringliteral">&quot;      to &quot;</span> &lt;&lt; <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mValue &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  149</span>        {</div>
-<div class="line"><span class="lineno">  150</span>            <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_object_1_1_update_guard.html">rdl2::SceneObject::UpdateGuard</a> guard(<a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mSceneObject);</div>
-<div class="line"><span class="lineno">  151</span>            <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mSceneObject-&gt;set(<a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mAttribute-&gt;getName(), <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>.mValue);</div>
-<div class="line"><span class="lineno">  152</span>        }</div>
-<div class="line"><span class="lineno">  153</span>    }</div>
-<div class="line"><span class="lineno">  154</span> </div>
-<div class="line"><span class="lineno">  155</span>    <span class="comment">// Write the localized output file.</span></div>
-<div class="line"><span class="lineno">  156</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Writing &quot;</span> &lt;&lt; outFile &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  157</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2.html#a72e385c6a85b6a4c547435081d19a2f7">rdl2::writeSceneToFile</a>(context, outFile);</div>
-<div class="line"><span class="lineno">  158</span>}</div>
-<div class="ttc" id="a_combine_displacement_8cc_html_acd36d7881ea8503d5c5824e7a5ad6c7e"><div class="ttname"><a href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a></div><div class="ttdeci">virtual void update()</div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1except_1_1_io_error_html"><div class="ttname"><a href="classscene__rdl2_1_1except_1_1_io_error.html">scene_rdl2::except::IoError</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8h_source.html#l00025">exceptions.h:26</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_attribute_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_attribute.html">scene_rdl2::rdl2::Attribute</a></div><div class="ttdef"><b>Definition:</b> <a href="_attribute_8h_source.html#l00059">Attribute.h:60</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_attribute_html_ae6fb491eb052d8785fa0c4c20a7cbc5f"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_attribute.html#ae6fb491eb052d8785fa0c4c20a7cbc5f">scene_rdl2::rdl2::Attribute::getName</a></div><div class="ttdeci">finline const std::string &amp; getName() const</div><div class="ttdoc">Retrieves the name of the attribute.</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_8h_source.html#l00286">Attribute.h:286</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00058">SceneContext.h:59</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a01b783f41987bd74f90dab480bc73fa3"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a01b783f41987bd74f90dab480bc73fa3">scene_rdl2::rdl2::SceneContext::endSceneObject</a></div><div class="ttdeci">finline SceneObjectConstIterator endSceneObject() const</div><div class="ttdoc">Returns an end iterator to the SceneObjects.</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00497">SceneContext.h:497</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a3716eb257588ff7e8abdba08dde9d2d9"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a3716eb257588ff7e8abdba08dde9d2d9">scene_rdl2::rdl2::SceneContext::getSceneVariables</a></div><div class="ttdeci">finline const SceneVariables &amp; getSceneVariables() const</div><div class="ttdoc">Retrieves the SceneVariables object.</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00453">SceneContext.h:453</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a61e8490e1951a1260be6a92166609290"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a61e8490e1951a1260be6a92166609290">scene_rdl2::rdl2::SceneContext::setProxyModeEnabled</a></div><div class="ttdeci">finline void setProxyModeEnabled(bool enabled)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00447">SceneContext.h:447</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_abdf667823af6bf872e38f200b072f09b"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">scene_rdl2::rdl2::SceneContext::setDsoPath</a></div><div class="ttdeci">finline void setDsoPath(const std::string &amp;dsoPath)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00435">SceneContext.h:435</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_ad9818551bf185d82cb538eafbfb8ef23"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#ad9818551bf185d82cb538eafbfb8ef23">scene_rdl2::rdl2::SceneContext::beginSceneObject</a></div><div class="ttdeci">finline SceneObjectConstIterator beginSceneObject() const</div><div class="ttdoc">Returns a begin iterator to the SceneObjects.</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00491">SceneContext.h:491</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_1_1_update_guard_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object_1_1_update_guard.html">scene_rdl2::rdl2::SceneObject::UpdateGuard</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l00095">SceneObject.h:96</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html">scene_rdl2::rdl2::SceneObject</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l00082">SceneObject.h:83</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_aaf59f47db496737c55d3428cd3dfb040"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#aaf59f47db496737c55d3428cd3dfb040">scene_rdl2::rdl2::SceneObject::get</a></div><div class="ttdeci">finline const T &amp; get(AttributeKey&lt; T &gt; key) const</div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_adbe9c38b6d15f6ebb2aec69bd1f0d9cf"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#adbe9c38b6d15f6ebb2aec69bd1f0d9cf">scene_rdl2::rdl2::SceneObject::getSceneClass</a></div><div class="ttdeci">finline const SceneClass &amp; getSceneClass() const</div><div class="ttdoc">Retrieves a the SceneClass to which this SceneObject belongs.</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l01073">SceneObject.h:1073</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_a2637db5bdbe7bff88fb3952890429316"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#a2637db5bdbe7bff88fb3952890429316">scene_rdl2::rdl2::uniqueSampleNumberRange</a></div><div class="ttdeci">FloatVector uniqueSampleNumberRange(const SceneVariables &amp;sceneVars)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8cc_source.html#l00159">Utils.cc:159</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_a51d50085f471a74fb11dbf7ee4215fd6"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#a51d50085f471a74fb11dbf7ee4215fd6">scene_rdl2::rdl2::readSceneFromFile</a></div><div class="ttdeci">void readSceneFromFile(const std::string &amp;filePath, SceneContext &amp;context)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8cc_source.html#l00038">Utils.cc:38</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_a72e385c6a85b6a4c547435081d19a2f7"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#a72e385c6a85b6a4c547435081d19a2f7">scene_rdl2::rdl2::writeSceneToFile</a></div><div class="ttdeci">void writeSceneToFile(const SceneContext &amp;context, const std::string &amp;filePath, bool deltaEncoding, bool skipDefaults, size_t elemsPerLine)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8cc_source.html#l00062">Utils.cc:62</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_ab5edef3a04e25ebcdfd1751b96ca2049"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#ab5edef3a04e25ebcdfd1751b96ca2049">scene_rdl2::rdl2::String</a></div><div class="ttdeci">std::string String</div><div class="ttdef"><b>Definition:</b> <a href="scene__rdl2-main_2lib_2scene_2rdl2_2_types_8h_source.html#l00116">Types.h:116</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_a68c0d8aa1dced15f271662f6380ed268"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#a68c0d8aa1dced15f271662f6380ed268">scene_rdl2::util::absolutePath</a></div><div class="ttdeci">std::string absolutePath(const std::string &amp;filePath, std::string relativeToPath)</div><div class="ttdef"><b>Definition:</b> <a href="_files_8cc_source.html#l00205">Files.cc:205</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_aafa0fd4f50d2837fe8f29be9c27ea2b7"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#aafa0fd4f50d2837fe8f29be9c27ea2b7">scene_rdl2::util::buildString</a></div><div class="ttdeci">std::string buildString(const T &amp;... value)</div><div class="ttdef"><b>Definition:</b> <a href="_strings_8h_source.html#l00053">Strings.h:53</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_ac025c8710aaff32b535f034373d9d3de"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#ac025c8710aaff32b535f034373d9d3de">scene_rdl2::util::splitPath</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; splitPath(const std::string &amp;filePath)</div><div class="ttdef"><b>Definition:</b> <a href="_files_8cc_source.html#l00046">Files.cc:46</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_aca2b60667aefdd43de582ad1ed6cec0a"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#aca2b60667aefdd43de582ad1ed6cec0a">scene_rdl2::util::writeTest</a></div><div class="ttdeci">bool writeTest(const std::string &amp;filePath, bool createDirectories)</div><div class="ttdef"><b>Definition:</b> <a href="_files_8cc_source.html#l00085">Files.cc:85</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_ae0d0da8306584abd32b0ba9c9e874d34"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#ae0d0da8306584abd32b0ba9c9e874d34">scene_rdl2::util::copyFile</a></div><div class="ttdeci">void copyFile(const std::string &amp;src, const std::string &amp;dst)</div><div class="ttdef"><b>Definition:</b> <a href="_files_8cc_source.html#l00159">Files.cc:159</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_ae538c1dc986ff5658f436895134fce47"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#ae538c1dc986ff5658f436895134fce47">scene_rdl2::util::simplifyPath</a></div><div class="ttdeci">std::string simplifyPath(const std::string &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="_files_8cc_source.html#l00234">Files.cc:234</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a53235042e0a23768922734cbf74adbab" name="a53235042e0a23768922734cbf74adbab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53235042e0a23768922734cbf74adbab">&#9670;&#160;</a></span>mDsoPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string&amp; rdl2_localize::Localizer::mDsoPath</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_localizer_8h_source.html#l00052">52</a> of file <a class="el" href="_localizer_8h_source.html">Localizer.h</a>.</p>
-
-</div>
-</div>
-<a id="a8d0e0337671ba2a030305d8408819302" name="a8d0e0337671ba2a030305d8408819302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d0e0337671ba2a030305d8408819302">&#9670;&#160;</a></span>mForceOverwrite</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rdl2_localize::Localizer::mForceOverwrite</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_localizer_8h_source.html#l00045">45</a> of file <a class="el" href="_localizer_8h_source.html">Localizer.h</a>.</p>
-
-</div>
-</div>
-<a id="a40753a205b2250cbc5b72528ce35a9d5" name="a40753a205b2250cbc5b72528ce35a9d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40753a205b2250cbc5b72528ce35a9d5">&#9670;&#160;</a></span>mRelativePaths</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rdl2_localize::Localizer::mRelativePaths</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_localizer_8h_source.html#l00049">49</a> of file <a class="el" href="_localizer_8h_source.html">Localizer.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/cmd/rdl2_cmd/rdl2_localize/<a class="el" href="_localizer_8h_source.html">Localizer.h</a></li>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/cmd/rdl2_cmd/rdl2_localize/<a class="el" href="_localizer_8cc_source.html">Localizer.cc</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

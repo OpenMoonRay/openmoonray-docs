@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/unittest/TestBsdfCommon.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/unittest/TestBsdfCommon.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -98,42 +98,28 @@ $(document).ready(function(){initNavTree('_test_bsdf_common_8cc.html',''); initR
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_test_bsdf_common_8h_source.html">TestBsdfCommon.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_test_util_8h_source.html">TestUtil.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_ring_buffer_8h_source.html">common/mcrt_util/RingBuffer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_thread_local_state_8h_source.html">rendering/mcrt_common/ThreadLocalState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_t_l_state_8h_source.html">rendering/pbr/core/PbrTLState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;common/mcrt_util/RingBuffer.h&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/ThreadLocalState.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/PbrTLState.h&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_slice_8h_source.html">rendering/shading/bsdf/BsdfSlice.h</a>&gt;</code><br />
 <code>#include &lt;tbb/tbb.h&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-</div>
-<p><a href="_test_bsdf_common_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad73efe508ba70b16fc2516603ce9bfae"><td class="memTemplParams" colspan="2">template&lt;typename Aggregate , typename Task , typename Result , typename... ProducerArgs&gt; </td></tr>
-<tr class="memitem:ad73efe508ba70b16fc2516603ce9bfae"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">moonray::pbr::runTest</a> (const TestBsdfSettings &amp;test, int sampleCount, ProducerArgs &amp;&amp;... args)</td></tr>
-<tr class="separator:ad73efe508ba70b16fc2516603ce9bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e687ff5ebc88afc5472cba374c6786"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a97e687ff5ebc88afc5472cba374c6786">moonray::pbr::testConsistency</a> (const TestBsdfSettings &amp;test, int sampleCount)</td></tr>
-<tr class="separator:a97e687ff5ebc88afc5472cba374c6786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066d4679e046bf605ccc5a8ba9b486a8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a066d4679e046bf605ccc5a8ba9b486a8">moonray::pbr::testPdfIntegral</a> (const TestBsdfSettings &amp;test, const Vec3f &amp;wo, int sampleCount, bool doAssert=false)</td></tr>
-<tr class="separator:a066d4679e046bf605ccc5a8ba9b486a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9290f101bb98b26d26106ea70d7197b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ae9290f101bb98b26d26106ea70d7197b">moonray::pbr::testEvalIntegral</a> (const TestBsdfSettings &amp;test, const Vec3f &amp;wo, int sampleCount, bool doAssert=false)</td></tr>
-<tr class="separator:ae9290f101bb98b26d26106ea70d7197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0d9678b6d7a964fbf3344c37aa46c1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#af0d9678b6d7a964fbf3344c37aa46c1d">moonray::pbr::runBsdfTest</a> (const TestBsdfSettings &amp;test, int viewAnglesTheta, int viewAnglesPhy, int sampleCount)</td></tr>
+<tr class="memitem:af0d9678b6d7a964fbf3344c37aa46c1d"><td class="memItemLeft" align="right" valign="top"><a id="af0d9678b6d7a964fbf3344c37aa46c1d" name="af0d9678b6d7a964fbf3344c37aa46c1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::runBsdfTest</b> (const TestBsdfSettings &amp;test, int viewAnglesTheta, int viewAnglesPhy, int sampleCount)</td></tr>
 <tr class="separator:af0d9678b6d7a964fbf3344c37aa46c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_test_bsdf_common_8cc_source.html">TestBsdfCommon.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/common/mcrt_util/unittest/test_wait.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/common/mcrt_util/unittest/test_wait.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('test__wait_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">test_wait.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="test__wait_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -105,32 +105,26 @@ $(document).ready(function(){initNavTree('test__wait_8h_source.html',''); initRe
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_test_wait.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_test_wait.html">TestWait</a>: <span class="keyword">public</span> CppUnit::TestCase</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_test_wait.html#abd314c1bd8814f15f1b7d46f3fc28718">   13</a></span>    <a class="code hl_function" href="class_test_wait.html#abd314c1bd8814f15f1b7d46f3fc28718">CPPUNIT_TEST_SUITE</a>(<a class="code hl_class" href="class_test_wait.html">TestWait</a>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_test_wait.html#a4127a21a00370dcc7814f21726726d1c">   14</a></span>    <a class="code hl_function" href="class_test_wait.html#a4127a21a00370dcc7814f21726726d1c">CPPUNIT_TEST</a>(<a class="code hl_function" href="class_test_wait.html#a60c2967a2d70dc0c11d770be9618cf91">testNotifyOne</a>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_test_wait.html#a1c9a13e779a33dd392e563afb202d10c">   15</a></span>    <a class="code hl_function" href="class_test_wait.html#a1c9a13e779a33dd392e563afb202d10c">CPPUNIT_TEST</a>(<a class="code hl_function" href="class_test_wait.html#aa9691de6d148e088783c6e137036927f">testNotifyAll</a>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_test_wait.html#a2584a7a2e92ab73efeff9407a50b791a">   16</a></span>    <a class="code hl_function" href="class_test_wait.html#a2584a7a2e92ab73efeff9407a50b791a">CPPUNIT_TEST_SUITE_END</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    CPPUNIT_TEST_SUITE(<a class="code hl_class" href="class_test_wait.html">TestWait</a>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    CPPUNIT_TEST(testNotifyOne);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    CPPUNIT_TEST(testNotifyAll);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    CPPUNIT_TEST_SUITE_END();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_test_wait.html#a60c2967a2d70dc0c11d770be9618cf91">testNotifyOne</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_test_wait.html#aa9691de6d148e088783c6e137036927f">testNotifyAll</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> testNotifyOne();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> testNotifyAll();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// TM and (c) 2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="aclass_test_wait_html"><div class="ttname"><a href="class_test_wait.html">TestWait</a></div><div class="ttdef"><b>Definition:</b> <a href="test__wait_8h_source.html#l00010">test_wait.h:11</a></div></div>
-<div class="ttc" id="aclass_test_wait_html_a1c9a13e779a33dd392e563afb202d10c"><div class="ttname"><a href="class_test_wait.html#a1c9a13e779a33dd392e563afb202d10c">TestWait::CPPUNIT_TEST</a></div><div class="ttdeci">CPPUNIT_TEST(testNotifyAll)</div></div>
-<div class="ttc" id="aclass_test_wait_html_a2584a7a2e92ab73efeff9407a50b791a"><div class="ttname"><a href="class_test_wait.html#a2584a7a2e92ab73efeff9407a50b791a">TestWait::CPPUNIT_TEST_SUITE_END</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE_END()</div></div>
-<div class="ttc" id="aclass_test_wait_html_a4127a21a00370dcc7814f21726726d1c"><div class="ttname"><a href="class_test_wait.html#a4127a21a00370dcc7814f21726726d1c">TestWait::CPPUNIT_TEST</a></div><div class="ttdeci">CPPUNIT_TEST(testNotifyOne)</div></div>
-<div class="ttc" id="aclass_test_wait_html_a60c2967a2d70dc0c11d770be9618cf91"><div class="ttname"><a href="class_test_wait.html#a60c2967a2d70dc0c11d770be9618cf91">TestWait::testNotifyOne</a></div><div class="ttdeci">void testNotifyOne()</div><div class="ttdef"><b>Definition:</b> <a href="test__wait_8cc_source.html#l00565">test_wait.cc:565</a></div></div>
-<div class="ttc" id="aclass_test_wait_html_aa9691de6d148e088783c6e137036927f"><div class="ttname"><a href="class_test_wait.html#aa9691de6d148e088783c6e137036927f">TestWait::testNotifyAll</a></div><div class="ttdeci">void testNotifyAll()</div><div class="ttdef"><b>Definition:</b> <a href="test__wait_8cc_source.html#l00576">test_wait.cc:576</a></div></div>
-<div class="ttc" id="aclass_test_wait_html_abd314c1bd8814f15f1b7d46f3fc28718"><div class="ttname"><a href="class_test_wait.html#abd314c1bd8814f15f1b7d46f3fc28718">TestWait::CPPUNIT_TEST_SUITE</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE(TestWait)</div></div>
+<div class="ttc" id="aclass_test_wait_html"><div class="ttname"><a href="class_test_wait.html">TestWait</a></div><div class="ttdef"><b>Definition:</b> test_wait.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_6ba13bed146c39e06880cd7377d9eb9b.html">common</a></li><li class="navelem"><a class="el" href="dir_07aba0a944efd075554be8015f0f5502.html">mcrt_util</a></li><li class="navelem"><a class="el" href="dir_d7ea7cd02fd0d700132f4be1ae9e18a8.html">unittest</a></li><li class="navelem"><a class="el" href="test__wait_8h.html">test_wait.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_6ba13bed146c39e06880cd7377d9eb9b.html">common</a></li><li class="navelem"><a class="el" href="dir_07aba0a944efd075554be8015f0f5502.html">mcrt_util</a></li><li class="navelem"><a class="el" href="dir_d7ea7cd02fd0d700132f4be1ae9e18a8.html">unittest</a></li><li class="navelem"><b>test_wait.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/deepfile/DcxDeepPixel.cpp File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/deepfile/DcxDeepPixel.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -99,530 +99,47 @@ $(document).ready(function(){initNavTree('_dcx_deep_pixel_8cpp.html',''); initRe
 <div class="textblock"><code>#include &quot;<a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
-</div>
-<p><a href="_dcx_deep_pixel_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a585e16ae84cc03d41536f204ca9b7da5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a585e16ae84cc03d41536f204ca9b7da5">DCX_USE_LARGEST_COVERAGE_Z</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a585e16ae84cc03d41536f204ca9b7da5"><td class="memItemLeft" align="right" valign="top"><a id="a585e16ae84cc03d41536f204ca9b7da5" name="a585e16ae84cc03d41536f204ca9b7da5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DCX_USE_LARGEST_COVERAGE_Z</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a585e16ae84cc03d41536f204ca9b7da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e948f26183c0362060e02f435b7ca8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a6e948f26183c0362060e02f435b7ca8b">SEGMENT_SAMPLE_STEPS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:a6e948f26183c0362060e02f435b7ca8b"><td class="memItemLeft" align="right" valign="top"><a id="a6e948f26183c0362060e02f435b7ca8b" name="a6e948f26183c0362060e02f435b7ca8b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SEGMENT_SAMPLE_STEPS</b>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a6e948f26183c0362060e02f435b7ca8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e46f584d24cd4202dcbc7b75cea94a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a9e46f584d24cd4202dcbc7b75cea94a4">MAX_ABSORBANCE</a>&#160;&#160;&#160;12.0</td></tr>
+<tr class="memitem:a9e46f584d24cd4202dcbc7b75cea94a4"><td class="memItemLeft" align="right" valign="top"><a id="a9e46f584d24cd4202dcbc7b75cea94a4" name="a9e46f584d24cd4202dcbc7b75cea94a4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ABSORBANCE</b>&#160;&#160;&#160;12.0</td></tr>
 <tr class="separator:a9e46f584d24cd4202dcbc7b75cea94a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abfd34d007fcc7b368eccd9231cd7c93f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:abfd34d007fcc7b368eccd9231cd7c93f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#abfd34d007fcc7b368eccd9231cd7c93f">CLAMP</a> (T v)</td></tr>
+<tr class="memitem:abfd34d007fcc7b368eccd9231cd7c93f"><td class="memTemplParams" colspan="2"><a id="abfd34d007fcc7b368eccd9231cd7c93f" name="abfd34d007fcc7b368eccd9231cd7c93f"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:abfd34d007fcc7b368eccd9231cd7c93f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CLAMP</b> (T v)</td></tr>
 <tr class="separator:abfd34d007fcc7b368eccd9231cd7c93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2924f77eada5a2125eb3b3b3a999de7f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a2924f77eada5a2125eb3b3b3a999de7f">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;mask)</td></tr>
+<tr class="memitem:a2924f77eada5a2125eb3b3b3a999de7f"><td class="memItemLeft" align="right" valign="top"><a id="a2924f77eada5a2125eb3b3b3a999de7f" name="a2924f77eada5a2125eb3b3b3a999de7f"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;mask)</td></tr>
 <tr class="separator:a2924f77eada5a2125eb3b3b3a999de7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2f05f7cbdd1073f99acee113537528"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#aae2f05f7cbdd1073f99acee113537528">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;flags)</td></tr>
+<tr class="memitem:aae2f05f7cbdd1073f99acee113537528"><td class="memItemLeft" align="right" valign="top"><a id="aae2f05f7cbdd1073f99acee113537528" name="aae2f05f7cbdd1073f99acee113537528"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;flags)</td></tr>
 <tr class="separator:aae2f05f7cbdd1073f99acee113537528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60c0cf6a8a77685e42b35b2b5b8aace3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a60c0cf6a8a77685e42b35b2b5b8aace3">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="struct_deep_metadata.html">DeepMetadata</a> &amp;metadata)</td></tr>
+<tr class="memitem:a60c0cf6a8a77685e42b35b2b5b8aace3"><td class="memItemLeft" align="right" valign="top"><a id="a60c0cf6a8a77685e42b35b2b5b8aace3" name="a60c0cf6a8a77685e42b35b2b5b8aace3"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="struct_deep_metadata.html">DeepMetadata</a> &amp;metadata)</td></tr>
 <tr class="separator:a60c0cf6a8a77685e42b35b2b5b8aace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5760853a74619c434c6b66eb73e51ba5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a5760853a74619c434c6b66eb73e51ba5">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="class_deep_segment.html">DeepSegment</a> &amp;ds)</td></tr>
+<tr class="memitem:a5760853a74619c434c6b66eb73e51ba5"><td class="memItemLeft" align="right" valign="top"><a id="a5760853a74619c434c6b66eb73e51ba5" name="a5760853a74619c434c6b66eb73e51ba5"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="class_deep_segment.html">DeepSegment</a> &amp;ds)</td></tr>
 <tr class="separator:a5760853a74619c434c6b66eb73e51ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e59d2b713d9376ced5ed04d40704a7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#ac7e59d2b713d9376ced5ed04d40704a7">operator&lt;&lt;</a> (std::ostream &amp;os, <a class="el" href="class_deep_pixel.html">DeepPixel</a> &amp;dp)</td></tr>
+<tr class="memitem:ac7e59d2b713d9376ced5ed04d40704a7"><td class="memItemLeft" align="right" valign="top"><a id="ac7e59d2b713d9376ced5ed04d40704a7" name="ac7e59d2b713d9376ced5ed04d40704a7"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, <a class="el" href="class_deep_pixel.html">DeepPixel</a> &amp;dp)</td></tr>
 <tr class="separator:ac7e59d2b713d9376ced5ed04d40704a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9251ecf6e4c04641de70c008fcca124e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a9251ecf6e4c04641de70c008fcca124e">findSurfaceMatch</a> (OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;dp, const std::vector&lt; int &gt; &amp;segment_indices, const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;match_spmask, const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;match_flags, int match_spbin_count)</td></tr>
+<tr class="memitem:a9251ecf6e4c04641de70c008fcca124e"><td class="memItemLeft" align="right" valign="top"><a id="a9251ecf6e4c04641de70c008fcca124e" name="a9251ecf6e4c04641de70c008fcca124e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>findSurfaceMatch</b> (OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;dp, const std::vector&lt; int &gt; &amp;segment_indices, const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;match_spmask, const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;match_flags, int match_spbin_count)</td></tr>
 <tr class="separator:a9251ecf6e4c04641de70c008fcca124e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2ce134291a1bc9ad84533cfb6dc48e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_deep_pixel_8cpp.html#a3d2ce134291a1bc9ad84533cfb6dc48e">findBestMatch2</a> (OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;dp, const std::vector&lt; int &gt; &amp;segment_indices, const <a class="el" href="_dcx_pixel_8h.html#afda04248afad1f4da5730d3124d96e55">Pixelf</a> &amp;color, const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;compare_channels, const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;match_spmask, const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;match_flags, int match_spbin_count, const <a class="el" href="struct_deep_pixel_1_1_combine_context.html">DeepPixel::CombineContext</a> &amp;combine_ctx)</td></tr>
+<tr class="memitem:a3d2ce134291a1bc9ad84533cfb6dc48e"><td class="memItemLeft" align="right" valign="top"><a id="a3d2ce134291a1bc9ad84533cfb6dc48e" name="a3d2ce134291a1bc9ad84533cfb6dc48e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>findBestMatch2</b> (OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;dp, const std::vector&lt; int &gt; &amp;segment_indices, const <a class="el" href="class_pixel.html">Pixelf</a> &amp;color, const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;compare_channels, const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;match_spmask, const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;match_flags, int match_spbin_count, const <a class="el" href="struct_deep_pixel_1_1_combine_context.html">DeepPixel::CombineContext</a> &amp;combine_ctx)</td></tr>
 <tr class="separator:a3d2ce134291a1bc9ad84533cfb6dc48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a585e16ae84cc03d41536f204ca9b7da5" name="a585e16ae84cc03d41536f204ca9b7da5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a585e16ae84cc03d41536f204ca9b7da5">&#9670;&#160;</a></span>DCX_USE_LARGEST_COVERAGE_Z</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DCX_USE_LARGEST_COVERAGE_Z&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00045">45</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a9e46f584d24cd4202dcbc7b75cea94a4" name="a9e46f584d24cd4202dcbc7b75cea94a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e46f584d24cd4202dcbc7b75cea94a4">&#9670;&#160;</a></span>MAX_ABSORBANCE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_ABSORBANCE&#160;&#160;&#160;12.0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00078">78</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6e948f26183c0362060e02f435b7ca8b" name="a6e948f26183c0362060e02f435b7ca8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e948f26183c0362060e02f435b7ca8b">&#9670;&#160;</a></span>SEGMENT_SAMPLE_STEPS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SEGMENT_SAMPLE_STEPS&#160;&#160;&#160;5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00071">71</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="abfd34d007fcc7b368eccd9231cd7c93f" name="abfd34d007fcc7b368eccd9231cd7c93f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfd34d007fcc7b368eccd9231cd7c93f">&#9670;&#160;</a></span>CLAMP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T CLAMP </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00083">83</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> std::max((T)0, std::min((T)1, v));</div>
-<div class="line"><span class="lineno">   86</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a3d2ce134291a1bc9ad84533cfb6dc48e" name="a3d2ce134291a1bc9ad84533cfb6dc48e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d2ce134291a1bc9ad84533cfb6dc48e">&#9670;&#160;</a></span>findBestMatch2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int findBestMatch2 </td>
-          <td>(</td>
-          <td class="paramtype">OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;&#160;</td>
-          <td class="paramname"><em>dp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>segment_indices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="_dcx_pixel_8h.html#afda04248afad1f4da5730d3124d96e55">Pixelf</a> &amp;&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;&#160;</td>
-          <td class="paramname"><em>compare_channels</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;&#160;</td>
-          <td class="paramname"><em>match_spmask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;&#160;</td>
-          <td class="paramname"><em>match_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>match_spbin_count</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_deep_pixel_1_1_combine_context.html">DeepPixel::CombineContext</a> &amp;&#160;</td>
-          <td class="paramname"><em>combine_ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00771">771</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  779</span>{</div>
-<div class="line"><span class="lineno">  780</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> compare = compare_channels;</div>
-<div class="line"><span class="lineno">  781</span>    compare &amp;= dp.channels();</div>
-<div class="line"><span class="lineno">  782</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nZMatches = segment_indices.<a class="code hl_function" href="class_channel_set.html#af93840d96f2d24204f41b8b2aba34a7a">size</a>();</div>
-<div class="line"><span class="lineno">  783</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nZMatches; ++i)</div>
-<div class="line"><span class="lineno">  784</span>    {</div>
-<div class="line"><span class="lineno">  785</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> index = segment_indices[i];</div>
-<div class="line"><span class="lineno">  786</span>        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= (<span class="keywordtype">int</span>)dp.size())</div>
-<div class="line"><span class="lineno">  787</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  788</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_deep_segment.html">DeepSegment</a>&amp; segment = dp.getSegment(index);</div>
-<div class="line"><span class="lineno">  789</span>        <span class="comment">// Compare flags and partial-counts:</span></div>
-<div class="line"><span class="lineno">  790</span>        <span class="keywordflow">if</span> (segment.<a class="code hl_function" href="class_deep_segment.html#a67e2bf3d8c7dbfd23efc973c40699d26">flags</a>() != match_flags ||</div>
-<div class="line"><span class="lineno">  791</span>            (match_spbin_count &gt;= 0 &amp;&amp; (<span class="keywordtype">int</span>)segment.<a class="code hl_function" href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">getSpCoverageCount</a>() != match_spbin_count))</div>
-<div class="line"><span class="lineno">  792</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  793</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (match_spmask!=<a class="code hl_variable" href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a> &amp;&amp; !(match_spmask &amp; segment.<a class="code hl_function" href="class_deep_segment.html#adcda9f820682d7ff8e43c472364530e0">spMask</a>()))</div>
-<div class="line"><span class="lineno">  794</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  795</span>        <span class="comment">// Compare color channels:</span></div>
-<div class="line"><span class="lineno">  796</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_pixel.html">Pixelf</a>&amp; ap = dp.getSegmentPixel(segment);</div>
-<div class="line"><span class="lineno">  797</span>        <span class="keywordtype">bool</span> cmatched = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  798</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, compare) {</div>
-<div class="line"><span class="lineno">  799</span>            <span class="keywordflow">if</span> (fabsf(ap[z] - color[z]) &gt; combine_ctx.<a class="code hl_variable" href="struct_deep_pixel_1_1_combine_context.html#a826916bd41e50a6202b0ca610e108be9">color_threshold</a>) {</div>
-<div class="line"><span class="lineno">  800</span>                cmatched = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  801</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  802</span>            }</div>
-<div class="line"><span class="lineno">  803</span>        }</div>
-<div class="line"><span class="lineno">  804</span>        <span class="keywordflow">if</span> (cmatched)</div>
-<div class="line"><span class="lineno">  805</span>            <span class="keywordflow">return</span> segment_indices[i];</div>
-<div class="line"><span class="lineno">  806</span>    }</div>
-<div class="line"><span class="lineno">  807</span> </div>
-<div class="line"><span class="lineno">  808</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">  809</span>}</div>
-<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
-<div class="ttc" id="aclass_channel_set_html"><div class="ttname"><a href="class_channel_set.html">ChannelSet</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00135">DcxChannelSet.h:136</a></div></div>
-<div class="ttc" id="aclass_channel_set_html_af93840d96f2d24204f41b8b2aba34a7a"><div class="ttname"><a href="class_channel_set.html#af93840d96f2d24204f41b8b2aba34a7a">ChannelSet::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00400">DcxChannelSet.h:400</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html"><div class="ttname"><a href="class_deep_segment.html">DeepSegment</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00219">DcxDeepPixel.h:220</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html_a67e2bf3d8c7dbfd23efc973c40699d26"><div class="ttname"><a href="class_deep_segment.html#a67e2bf3d8c7dbfd23efc973c40699d26">DeepSegment::flags</a></div><div class="ttdeci">const DeepFlags &amp; flags() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01181">DcxDeepPixel.h:1181</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html_a97073fb6eef97c03e3bd167083e646fc"><div class="ttname"><a href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">DeepSegment::getSpCoverageCount</a></div><div class="ttdeci">uint32_t getSpCoverageCount() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01193">DcxDeepPixel.h:1193</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html_adcda9f820682d7ff8e43c472364530e0"><div class="ttname"><a href="class_deep_segment.html#adcda9f820682d7ff8e43c472364530e0">DeepSegment::spMask</a></div><div class="ttdeci">SpMask8 &amp; spMask()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01198">DcxDeepPixel.h:1198</a></div></div>
-<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00093">DcxPixel.h:94</a></div></div>
-<div class="ttc" id="aclass_sp_mask8_html_a924e8546055332433e1f9b445629c34f"><div class="ttname"><a href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a></div><div class="ttdeci">static const SpMask8 fullCoverage</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00122">DcxSpMask.h:122</a></div></div>
-<div class="ttc" id="astruct_deep_pixel_1_1_combine_context_html_a826916bd41e50a6202b0ca610e108be9"><div class="ttname"><a href="struct_deep_pixel_1_1_combine_context.html#a826916bd41e50a6202b0ca610e108be9">DeepPixel::CombineContext::color_threshold</a></div><div class="ttdeci">float color_threshold</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00595">DcxDeepPixel.h:595</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a9251ecf6e4c04641de70c008fcca124e" name="a9251ecf6e4c04641de70c008fcca124e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9251ecf6e4c04641de70c008fcca124e">&#9670;&#160;</a></span>findSurfaceMatch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int findSurfaceMatch </td>
-          <td>(</td>
-          <td class="paramtype">OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;&#160;</td>
-          <td class="paramname"><em>dp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>segment_indices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;&#160;</td>
-          <td class="paramname"><em>match_spmask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;&#160;</td>
-          <td class="paramname"><em>match_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>match_spbin_count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00744">744</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  749</span>{</div>
-<div class="line"><span class="lineno">  750</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nZMatches = segment_indices.size();</div>
-<div class="line"><span class="lineno">  751</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nZMatches; ++i)</div>
-<div class="line"><span class="lineno">  752</span>    {</div>
-<div class="line"><span class="lineno">  753</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> index = segment_indices[i];</div>
-<div class="line"><span class="lineno">  754</span>        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= (<span class="keywordtype">int</span>)dp.size())</div>
-<div class="line"><span class="lineno">  755</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  756</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_deep_segment.html">DeepSegment</a>&amp; segment = dp.getSegment(index);</div>
-<div class="line"><span class="lineno">  757</span>        <span class="comment">// Compare flags and partial-counts:</span></div>
-<div class="line"><span class="lineno">  758</span>        <span class="keywordflow">if</span> (segment.<a class="code hl_function" href="class_deep_segment.html#a67e2bf3d8c7dbfd23efc973c40699d26">flags</a>() != match_flags ||</div>
-<div class="line"><span class="lineno">  759</span>            (match_spbin_count &gt;= 0 &amp;&amp; (<span class="keywordtype">int</span>)segment.<a class="code hl_function" href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">getSpCoverageCount</a>() != match_spbin_count))</div>
-<div class="line"><span class="lineno">  760</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  761</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (match_spmask!=<a class="code hl_variable" href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a> &amp;&amp; !(match_spmask &amp; segment.<a class="code hl_function" href="class_deep_segment.html#adcda9f820682d7ff8e43c472364530e0">spMask</a>()))</div>
-<div class="line"><span class="lineno">  762</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  763</span>        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)i;</div>
-<div class="line"><span class="lineno">  764</span>    }</div>
-<div class="line"><span class="lineno">  765</span> </div>
-<div class="line"><span class="lineno">  766</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">  767</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aae2f05f7cbdd1073f99acee113537528" name="aae2f05f7cbdd1073f99acee113537528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae2f05f7cbdd1073f99acee113537528">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_deep_flags.html">DeepFlags</a> &amp;&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00114">114</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
-<div class="line"><span class="lineno">  118</span>    os &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keyword">const</span> std::ios_base::fmtflags osflags = os.flags();</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> fill = os.fill();</div>
-<div class="line"><span class="lineno">  121</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> w = (int)os.width();</div>
-<div class="line"><span class="lineno">  122</span>    os.fill(<span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><span class="lineno">  123</span>    os.width(16);</div>
-<div class="line"><span class="lineno">  124</span>    os &lt;&lt; std::hex &lt;&lt; flags.<a class="code hl_variable" href="class_deep_flags.html#a1ecfce1024cb641a49ac1976024496fe">bits</a>;</div>
-<div class="line"><span class="lineno">  125</span>    os.flags(osflags);</div>
-<div class="line"><span class="lineno">  126</span>    os.fill(fill);</div>
-<div class="line"><span class="lineno">  127</span>    os.width(w);</div>
-<div class="line"><span class="lineno">  128</span> </div>
-<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">return</span> os;</div>
-<div class="line"><span class="lineno">  130</span>}</div>
-<div class="ttc" id="aclass_deep_flags_html_a1ecfce1024cb641a49ac1976024496fe"><div class="ttname"><a href="class_deep_flags.html#a1ecfce1024cb641a49ac1976024496fe">DeepFlags::bits</a></div><div class="ttdeci">uint32_t bits</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_flags_8h_source.html#l00289">DcxDeepFlags.h:289</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a60c0cf6a8a77685e42b35b2b5b8aace3" name="a60c0cf6a8a77685e42b35b2b5b8aace3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60c0cf6a8a77685e42b35b2b5b8aace3">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_deep_metadata.html">DeepMetadata</a> &amp;&#160;</td>
-          <td class="paramname"><em>metadata</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00230">230</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  233</span>{</div>
-<div class="line"><span class="lineno">  234</span>    os &lt;&lt; <span class="stringliteral">&quot;[flags=&quot;</span> &lt;&lt; metadata.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>;</div>
-<div class="line"><span class="lineno">  235</span>    os &lt;&lt; <span class="stringliteral">&quot;, spCvg=&quot;</span> &lt;&lt; metadata.<a class="code hl_function" href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">getSpCoverageWeight</a>();</div>
-<div class="line"><span class="lineno">  236</span>    os &lt;&lt; <span class="stringliteral">&quot;, spMask=&quot;</span> &lt;&lt; std::hex &lt;&lt; metadata.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &lt;&lt; std::dec &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">return</span> os;</div>
-<div class="line"><span class="lineno">  238</span>}</div>
-<div class="ttc" id="astruct_deep_metadata_html_a0cd20f00760afdf3c078b88270c47b86"><div class="ttname"><a href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">DeepMetadata::getSpCoverageWeight</a></div><div class="ttdeci">float getSpCoverageWeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01142">DcxDeepPixel.h:1142</a></div></div>
-<div class="ttc" id="astruct_deep_metadata_html_a631d684087012d692f09e94ba0d1b5da"><div class="ttname"><a href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">DeepMetadata::spmask</a></div><div class="ttdeci">SpMask8 spmask</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00108">DcxDeepPixel.h:108</a></div></div>
-<div class="ttc" id="astruct_deep_metadata_html_a71748026ce682d1e52099d6de5545494"><div class="ttname"><a href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">DeepMetadata::flags</a></div><div class="ttdeci">DeepFlags flags</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00109">DcxDeepPixel.h:109</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5760853a74619c434c6b66eb73e51ba5" name="a5760853a74619c434c6b66eb73e51ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5760853a74619c434c6b66eb73e51ba5">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_deep_segment.html">DeepSegment</a> &amp;&#160;</td>
-          <td class="paramname"><em>ds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00246">246</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
-<div class="line"><span class="lineno">  250</span>    os &lt;&lt; <span class="stringliteral">&quot;[Zf=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt;&lt; <span class="stringliteral">&quot;, Zb=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> &lt;&lt; <span class="stringliteral">&quot;, flags=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>;</div>
-<div class="line"><span class="lineno">  251</span>    os &lt;&lt; <span class="stringliteral">&quot;, spCvg=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">getSpCoverageWeight</a>();</div>
-<div class="line"><span class="lineno">  252</span>    os &lt;&lt; <span class="stringliteral">&quot;, spMask=&quot;</span> &lt;&lt; std::hex &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &lt;&lt; std::dec &lt;&lt; <span class="stringliteral">&quot;, coverage=&quot;</span> &lt;&lt; ds.<a class="code hl_function" href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">getCoverage</a>() &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">return</span> os;</div>
-<div class="line"><span class="lineno">  254</span>}</div>
-<div class="ttc" id="aclass_deep_segment_html_a2d54a2b8eef54c3055daed2bfb8d4cad"><div class="ttname"><a href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">DeepSegment::Zb</a></div><div class="ttdeci">float Zb</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00250">DcxDeepPixel.h:250</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html_a68a7fee464e31b18b2be6d788bd1bdfb"><div class="ttname"><a href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">DeepSegment::Zf</a></div><div class="ttdeci">float Zf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00250">DcxDeepPixel.h:250</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html_a6eee4b9680ce58ee5dbbb57dbf74d4d2"><div class="ttname"><a href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">DeepSegment::metadata</a></div><div class="ttdeci">DeepMetadata metadata</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00252">DcxDeepPixel.h:252</a></div></div>
-<div class="ttc" id="aclass_deep_segment_html_a78aaff5e5229c7b410d8cea566607bff"><div class="ttname"><a href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">DeepSegment::getCoverage</a></div><div class="ttdeci">float getCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01211">DcxDeepPixel.h:1211</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2924f77eada5a2125eb3b3b3a999de7f" name="a2924f77eada5a2125eb3b3b3a999de7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2924f77eada5a2125eb3b3b3a999de7f">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_sp_mask8.html">SpMask8</a> &amp;&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00094">94</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
-<div class="line"><span class="lineno">   98</span>    os &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> std::ios_base::fmtflags flags = os.flags();</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> fill = os.fill();</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> w = (int)os.width();</div>
-<div class="line"><span class="lineno">  102</span>    os.fill(<span class="charliteral">&#39;0&#39;</span>);</div>
-<div class="line"><span class="lineno">  103</span>    os.width(16);</div>
-<div class="line"><span class="lineno">  104</span>    os &lt;&lt; std::hex &lt;&lt; mask.<a class="code hl_function" href="class_sp_mask8.html#a0e999c7004c3fb1de71fb1ac7b536fe9">value</a>();</div>
-<div class="line"><span class="lineno">  105</span>    os.flags(flags);</div>
-<div class="line"><span class="lineno">  106</span>    os.fill(fill);</div>
-<div class="line"><span class="lineno">  107</span>    os.width(w);</div>
-<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> os;</div>
-<div class="line"><span class="lineno">  109</span>}</div>
-<div class="ttc" id="aclass_sp_mask8_html_a0e999c7004c3fb1de71fb1ac7b536fe9"><div class="ttname"><a href="class_sp_mask8.html#a0e999c7004c3fb1de71fb1ac7b536fe9">SpMask8::value</a></div><div class="ttdeci">uint64_t value() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00329">DcxSpMask.h:329</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac7e59d2b713d9376ced5ed04d40704a7" name="ac7e59d2b713d9376ced5ed04d40704a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7e59d2b713d9376ced5ed04d40704a7">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_deep_pixel.html">DeepPixel</a> &amp;&#160;</td>
-          <td class="paramname"><em>dp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00260">260</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
-<div class="line"><span class="lineno">  264</span>    dp.<a class="code hl_function" href="class_deep_pixel.html#ac55b5139ecd644d3a963b5f7d575e8a0">sort</a>(<span class="keyword">true</span><span class="comment">/*force*/</span>); <span class="comment">// Get global info up to date</span></div>
-<div class="line"><span class="lineno">  265</span>    os &lt;&lt; <span class="stringliteral">&quot;{&quot;</span>;</div>
-<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">if</span> (dp.<a class="code hl_function" href="class_deep_pixel.html#a29cc8fb6c9269abe5f7b39d75f971ad7">size</a>() &gt; 0)</div>
-<div class="line"><span class="lineno">  267</span>    {</div>
-<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">for</span> (uint32_t i=0; i &lt; dp.<a class="code hl_function" href="class_deep_pixel.html#a29cc8fb6c9269abe5f7b39d75f971ad7">size</a>(); ++i)</div>
-<div class="line"><span class="lineno">  269</span>        {</div>
-<div class="line"><span class="lineno">  270</span>            <span class="keywordflow">if</span> (i &gt; 0)</div>
-<div class="line"><span class="lineno">  271</span>                os &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><span class="lineno">  272</span>            os &lt;&lt; dp[i].Zf &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; dp[i].Zb &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
-<div class="line"><span class="lineno">  273</span>            <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, dp.<a class="code hl_function" href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">channels</a>())</div>
-<div class="line"><span class="lineno">  274</span>                os &lt;&lt; &quot; &quot; &lt;&lt; dp.getChannel(i, z);</div>
-<div class="line"><span class="lineno">  275</span>            os &lt;&lt; &quot; ]&quot;;</div>
-<div class="line"><span class="lineno">  276</span>        }</div>
-<div class="line"><span class="lineno">  277</span>    }</div>
-<div class="line"><span class="lineno">  278</span>    os &lt;&lt; &quot;}&quot;;</div>
-<div class="line"><span class="lineno">  279</span>    return os;</div>
-<div class="line"><span class="lineno">  280</span>}</div>
-<div class="ttc" id="aclass_deep_pixel_html_a24e3f7f5370d8a86a7757043104a52c5"><div class="ttname"><a href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">DeepPixel::channels</a></div><div class="ttdeci">const ChannelSet &amp; channels() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01326">DcxDeepPixel.h:1326</a></div></div>
-<div class="ttc" id="aclass_deep_pixel_html_a29cc8fb6c9269abe5f7b39d75f971ad7"><div class="ttname"><a href="class_deep_pixel.html#a29cc8fb6c9269abe5f7b39d75f971ad7">DeepPixel::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01355">DcxDeepPixel.h:1355</a></div></div>
-<div class="ttc" id="aclass_deep_pixel_html_ac55b5139ecd644d3a963b5f7d575e8a0"><div class="ttname"><a href="class_deep_pixel.html#ac55b5139ecd644d3a963b5f7d575e8a0">DeepPixel::sort</a></div><div class="ttdeci">void sort(bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8cpp_source.html#l00486">DcxDeepPixel.cpp:486</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

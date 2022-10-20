@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegratorVolume.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegratorVolume.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,66 +91,46 @@ $(document).ready(function(){initNavTree('_path_integrator_volume_8cc.html','');
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">PathIntegratorVolume.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_path_integrator_8h_source.html">PathIntegrator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_path_integrator_util_8h_source.html">PathIntegratorUtil.h</a>&quot;</code><br />
+<code>#include &quot;PathIntegratorUtil.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_volume_properties_8h_source.html">VolumeProperties.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_volume_scatter_event_sampler_8h_source.html">VolumeScatterEventSampler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_volume_scattering_sampler_8h_source.html">VolumeScatteringSampler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_volume_transmittance_8h_source.html">VolumeTransmittance.h</a>&quot;</code><br />
+<code>#include &quot;VolumeTransmittance.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_volume_emission_bsdf_sampler_8h_source.html">VolumeEmissionBsdfSampler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_volume_emission_light_sampler_8h_source.html">VolumeEmissionLightSampler.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2core_2_constants_8h_source.html">rendering/pbr/core/Constants.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_deep_buffer_8h_source.html">rendering/pbr/core/DeepBuffer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_t_l_state_8h_source.html">rendering/pbr/core/PbrTLState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_state_8h_source.html">rendering/pbr/core/RayState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/DeepBuffer.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/PbrTLState.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/RayState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_scene_8h_source.html">rendering/pbr/core/Scene.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2pbr_2core_2util_8h_source.html">rendering/pbr/core/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/Util.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_phase_8h_source.html">rendering/pbr/core/VolumePhase.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_geom_t_l_state_8h_source.html">rendering/geom/prim/GeomTLState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/prim/GeomTLState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="prim_2_primitive_8h_source.html">rendering/geom/prim/Primitive.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_regions_8h_source.html">rendering/geom/prim/VolumeRegions.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_assignment_table_8h_source.html">rendering/geom/prim/VolumeAssignmentTable.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_embree_accelerator_8h_source.html">rendering/rt/EmbreeAccelerator.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_attribute_table_8h_source.html">rendering/bvh/shading/AttributeTable.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intersection_8h_source.html">rendering/bvh/shading/Intersection.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_shading_t_l_state_8h_source.html">rendering/bvh/shading/ShadingTLState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/rt/EmbreeAccelerator.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/AttributeTable.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/Intersection.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/ShadingTLState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_8h_source.html">rendering/shading/bsdf/Bsdf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdfv_8h_source.html">rendering/shading/bsdf/Bsdfv.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Constants.h&gt;</code><br />
-</div>
-<p><a href="_path_integrator_volume_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a1471a3f68a936b5e3c3f638d1b973a5e"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a1471a3f68a936b5e3c3f638d1b973a5e">moonray::pbr::estimateStepCountSubinterval</a> (const geom::internal::VolumeRegions &amp;volumeRegions, int *volumeIds, const std::vector&lt; geom::internal::VolumeSampleInfo &gt; &amp;volumeSampleInfo, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> t0, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> t1, int depth, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> invVolumeQuality)</td></tr>
-<tr class="separator:a1471a3f68a936b5e3c3f638d1b973a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b55269afbb66b29d57024d7b4197fa"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a70b55269afbb66b29d57024d7b4197fa">moonray::pbr::estimateStepCount</a> (const mcrt_common::Ray &amp;ray, size_t intervalCount, const geom::internal::VolumeTransition *intervals, int *volumeIds, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> invVolumeQuality, const geom::internal::VolumeRayState &amp;volumeRayState, size_t maxSteps)</td></tr>
-<tr class="separator:a70b55269afbb66b29d57024d7b4197fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab831e41695fbaca6462f91824326e479"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ab831e41695fbaca6462f91824326e479">moonray::pbr::collectVolumeIntervals</a> (pbr::TLState *pbrTls, const mcrt_common::Ray &amp;ray, int rayMask, const void *light=nullptr, bool estimateInScatter=false)</td></tr>
-<tr class="separator:ab831e41695fbaca6462f91824326e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad795fb3d83e40732edfe178269442327"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ad795fb3d83e40732edfe178269442327">moonray::pbr::evalVolumeShaders</a> (pbr::TLState *pbrTls, int volumeRegionsCount, int *volumeIds, VolumeOverlapMode overlapMode, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> rndVar, const std::vector&lt; geom::internal::VolumeSampleInfo &gt; &amp;volumeSampleInfo, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> t, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> time, bool enableCutouts, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *sigmaT, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *sigmaS, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *sigmaTh, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *sigmaSh, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *surfaceOpacityThreshold, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *g, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *<a class="el" href="_base_volume_8cc.html#ae3e05ca1637de3d5c141ac432e835099">emission</a>, int *volumeIdSampled)</td></tr>
-<tr class="separator:ad795fb3d83e40732edfe178269442327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2576b83ac8272b62898284bd9351c0a0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a2576b83ac8272b62898284bd9351c0a0">moonray::pbr::evalSigmaT</a> (pbr::TLState *pbrTls, int volumeRegionsCount, int *volumeIds, VolumeOverlapMode overlapMode, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> rndVar, const std::vector&lt; geom::internal::VolumeSampleInfo &gt; &amp;volumeSampleInfo, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> t, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> time, const Light *light)</td></tr>
-<tr class="separator:a2576b83ac8272b62898284bd9351c0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Wayne Huang </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_path_integrator_volume_8cc_source.html">PathIntegratorVolume.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
