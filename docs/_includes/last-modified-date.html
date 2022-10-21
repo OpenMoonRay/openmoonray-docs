@@ -1,9 +1,7 @@
-{% assign relative_path = relative_url %}
-
+Page <a target="_blank" href="{{ "/blob/main/docs" | append: page.path | site.github.repository_url }}">last modified</a> on: 
 {% if page.last-modified-date %}
-  Page <a target="_blank" href="{{ site.github.repository_url }}{{ "blob/main/docs" }}/{{ page.path }}">last modified</a> on: {{ page.last-modified-date | date: '%-d %B %Y' }}
+  {{ page.last-modified-date | date: '%-d %B %Y' }}
 {% else %}
-  Page <a target="_blank" href="{{ site.github.repository_url }}{{ "blob/main/docs" }}/{{ page.path }}">last modified</a> on: 25 December 2022
+  25 December 2022
 {% endif %}
-
 
