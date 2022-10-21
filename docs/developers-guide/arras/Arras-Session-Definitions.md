@@ -38,7 +38,7 @@ Inside each computation block are parameters pertaining to that computation. Som
         "dso": "libmcrt_computation_progmcrt_dispatch.so",...
     },
     "render": {
-		"dso": "libmcrt_computation_progmcrt.so",
+        "dso": "libmcrt_computation_progmcrt.so",
         "arrayExpand": 4, ...
     },
     "merge": { 
@@ -46,7 +46,7 @@ Inside each computation block are parameters pertaining to that computation. Som
     }
 ```
 
-The dsos shown here are part of the Moonray release. Another general parameter is entry, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
+The dsos shown here are part of the Moonray release. Another general parameter is `entry`, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
 
 ```json
     "dispatch": { 
@@ -73,18 +73,18 @@ Each of the computations also needs to know the number of render computations in
         "numMachines":"$arrayNumber.render",...
     },
     "render": {
-		...
+        ...
         "arrayExpand": 4,
-		"numMachines": "$arrayNumber",
-		"machineId": "$arrayIndex, ...
+        "numMachines": "$arrayNumber",
+        "machineId": "$arrayIndex, ...
     },
     "merge": { 
-		...
+        ...
         "numMachines":"$arrayNumber.render",...
     }
 ```
 
-The name of these parameters is a bit misleading since, strictly speaking, they refer to the number of render computations rather than the number of machines used. In practice, the session is usually set up so that each render computation is placed on a different machine, since there is no advantage in splitting the cores on one machine between two or more different computations.
+The name of these parameters is a bit misleading since, strictly speaking, they refer to the number of render computations rather than the number of machines used. In practice, the session is usually set up so that each render computation is placed on a different machine, since there is no advantage in splitting the cores on one machine between two or more different render computations.
 
 The Moonray render computations have a number of other optional parameters, but these are not described in detail here.
 
@@ -94,7 +94,7 @@ Another section in each computation block is used by the Coordinator service to 
 
 ```json
 "render": {
-		...
+        ...
         "requirements": {
             "resources": {
                 "maxCores": "*",
@@ -117,11 +117,11 @@ It is currently quite difficult to predict the total amount of RAM that will be 
 Another part of the requirements section describes the software environment required to run the computations. 
 
 ```json
-	"render": {
-		...
+    "render": {
+        ...
         "requirements": {
             "computationAPI": "4.x",
-			"packaging_system": "current-environment",...
+            "packaging_system": "current-environment",...
         }
     }
 ```
@@ -138,7 +138,7 @@ The client wants to receive all messages sent by the merge computation:
 
 ```json
     "(client)": {
-	    ...,
+        ...,
         "messages": {
             "merge": "*"
         }
@@ -148,56 +148,57 @@ The client wants to receive all messages sent by the merge computation:
 Dispatch receives `RDLMessage`s containing scene data and forwards them to the render computations. It also handles `GenericMessage` for debugging support and `JSONMessage` to support picking:
 
 ```json
-	"dispatch": {
-		...,
+    "dispatch": {
+        ...,
         "messages": {
-                	"(client)": {
-                    	"accept": [
-                        	"RDLMessage",
-                        	"GenericMessage",
-                        	"JSONMessage"
-                        ]
-                	}
+            "(client)": {
+                "accept": [
+                    "RDLMessage",
+                    "GenericMessage",
+                    "JSONMessage"
+                ]
+            }
+        }
 }
 ```
 
-In the `(client)` message section, "*" is shorthand for "accept": [ "*" ]. The messages section can also contain an "ignore" list, but this is never used in practice.
+In the `(client)` message section, "\*" is shorthand for "accept": [ "\*" ]. The messages section can also contain an "ignore" list, but this is never used in practice.
 
 ```json
-	"render": { 
+    "render": { 
         ...,
         "messages": {
-                	"(client)": {
-                    	"accept": [
-                        	"GenericMessage",
-                        	"ViewportMessage"
-                    	]
-                	},
-                	"dispatch": "*",
-            }
+            "(client)": {
+                "accept": [
+                    "GenericMessage",
+                    "ViewportMessage"
+                ]
+            },
+            "dispatch": "*",
+        }
 }
 ```
 
 `GenericMessage` is used for debugging. `ViewportMessage`s are sent by the client to modify the render viewport : all of the render computations receive these.
 
 ```json
-	"merge": {
-		...,
+    "merge": {
+        ...,
         "messages": {
-                	"(client)": {
-                    	"accept": [
-                        	"ViewportMessage",
-                        	"GenericMessage"
-                    	]
+                    "(client)": {
+                        "accept": [
+                            "ViewportMessage",
+                            "GenericMessage"
+                        ]
                     },
-                	"render": {
-                    	"accept": [
-                        	"PartialFrame",
-                        	"ProgressiveFrame",
-                        	"GenericMessage",
-                        	"JSONMessage"
-                    	]
-                	},
+                    "render": {
+                        "accept": [
+                            "PartialFrame",
+                            "ProgressiveFrame",
+                            "GenericMessage",
+                            "JSONMessage"
+                        ]
+                    },
         }
 }
 ```
@@ -210,32 +211,32 @@ Credit messages are sent by the client to limit the rate at which render and mer
 Computations that receive credit messages need the parameter `initialCredit` set, and `CreditUpdate` added to their messages. Credit messages travel in the reverse direction to the rendered frames : in a multi-machine render, the client sends credit messages to merge and merge sends credit messages to the render computations.
 
 ```json
-	"merge" : {
-		...,
-		"sendCredit": true
-		"initialCredit": 2,
-		"messages": {
-			"(client)": {
-                    	"accept": [
-                        	"ViewportMessage",
-                       		"CreditUpdate"
-                    	]
-                	},
-...
-}
-},
-"render" : {
-	...,
-	"initialCredit":2,
-	"messages": {
-		...,
-		"merge": {
-			"accept": [
-				"CreditUpdate"
-			]
-		}
-	}
-}
+    "merge" : {
+        ...,
+        "sendCredit": true
+        "initialCredit": 2,
+        "messages": {
+            "(client)": {
+                "accept": [
+                    "ViewportMessage",
+                    "CreditUpdate"
+                ]
+            },
+            ...
+        }
+    },
+    "render" : {
+        ...,
+        "initialCredit":2,
+        "messages": {
+            ...,
+            "merge": {
+                "accept": [
+                    "CreditUpdate"
+                ]
+            }
+        }
+    }
 ```
 
 `initialCredit` = 2 means that these computations will only allow 2 render frame messages to be in the pipeline and not yet received and processed. The client code is responsible for explicitly sending a `CreditUpdate` message when it has received and processed each frame.
@@ -251,40 +252,40 @@ Session definitions files have the extension ".sessiondef"
 
 ```json
 {
-   	"name": "single_credit",
-    	"computations": {
-        	"(client)": {
-            	"messages": {
-                		"render": "*"
-            	}
-        	},
-        	"render": {
-            	"dso": "libmcrt_computation_progmcrt.so",
-            	"entry": "yes",
-            	"fps": 1,
-                  "initialCredit": 2,
-            	"requirements": {
-                		"computationAPI": "4.x",
-               		"packaging_system":"current-environment",
-                		"resources": {
-                    		"maxCores": "*",
-                    		"minCores": 1.0,
-                    		"memoryMB": 16384.0
-                		}
-            	},
-           		"messages": {
-                		"(client)": {
-                    		"accept": [
-                        		"RDLMessage",
-                        		"GenericMessage",
-                        		"ViewportMessage",
-                       			"JSONMessage",
-                        		"CreditUpdate"
-             			]
-                		}
-            	}
-        	}
-    	}
+       "name": "single_credit",
+    "computations": {
+        "(client)": {
+            "messages": {
+                "render": "*"
+            }
+        },
+        "render": {
+            "dso": "libmcrt_computation_progmcrt.so",
+            "entry": "yes",
+            "fps": 1,
+            "initialCredit": 2,
+            "requirements": {
+                "computationAPI": "4.x",
+                   "packaging_system":"current-environment",
+                "resources": {
+                    "maxCores": "*",
+                    "minCores": 1.0,
+                    "memoryMB": 16384.0
+                }
+            },
+               "messages": {
+                "(client)": {
+                    "accept": [
+                        "RDLMessage",
+                        "GenericMessage",
+                        "ViewportMessage",
+                           "JSONMessage",
+                        "CreditUpdate"
+                     ]
+                }
+            }
+        }
+    }
 }
 ```
 
@@ -292,91 +293,90 @@ Session definitions files have the extension ".sessiondef"
 
 ```json
 {
-    	"name": "multi_credit",
-    	"computations": {
-        	"(client)": {
-            	"messages": {
-                		"merge": "*"
-            	}
-        	},
-        	"dispatch": {
-			"dso": "libmcrt_computation_progmcrt_dispatch.so",
-            	"entry": "yes",
-                  "fps": 1,
-"numMachines": "$arrayNumber.render",
-            	"requirements": {
-                		"computationAPI": "4.x",
-				"packaging_system":"current-environment",
-                  },
-            	"messages": {
-                		"(client)": {
-                    		"accept": [
-                        		"RDLMessage",
-                        		"GenericMessage",
-                        	      "JSONMessage"                    ]
-]           
-     				}
-               	}
-  	},
-        	"render": {
-            	"arrayExpand": 4,
-            	"dso": "libmcrt_computation_progmcrt.so",
-            	"fps": 1,
-                  "machineId": "$arrayIndex",
-            	"numMachines": "$arrayNumber",
-                  "initialCredit": 2,
-            	"requirements": {
-                		"computationAPI": "4.x",
-				"packaging_system":"current-environment",
-                		"resources": {
-                    		"maxCores": "*",
-                    		"minCores": 1.0,
-                    		"memoryMB": 16384
-                		}
-            	},
-            	"messages": {
-                		"(client)": {
-                    		"accept": [
-                        		"GenericMessage",
-                        		"ViewportMessage"
-                    		]
-                		},
-                		"merge": {
-                    		"accept": [
-                        		"CreditUpdate"
-                    		]
-                		},
-                		"dispatch": "*"
-            	}
-        	},
-        	"merge": {
-            	"dso": "libmcrt_computation_progmcrt_merge.so",
-            	"fps": 1,
-                  "initialCredit": 2,
-            	"sendCredit": true,
-			"numMachines": "$arrayNumber.render",
-            	"requirements": {
-                		"computationAPI": "4.x",
-				"packaging_system":"current-environment"
-},
-            	"messages": {
-                		"(client)": {
-                    		"accept": [
-                        		"ViewportMessage",
-                        		"CreditUpdate"
-                    		]
-                		},
-                		"render": {
-                    		"accept": [
-                        		"PartialFrame",
-                        		"ProgressiveFrame",
-                        		"GenericMessage",
-                        		"JSONMessage"
-                    		]
-                		}  
-            	}
-          	}
-    	}
+    "name": "multi_credit",
+    "computations": {
+        "(client)": {
+            "messages": {
+                "merge": "*"
+            }
+        },
+        "dispatch": {
+            "dso": "libmcrt_computation_progmcrt_dispatch.so",
+            "entry": "yes",
+            "fps": 1,
+            "numMachines": "$arrayNumber.render",
+            "requirements": {
+                "computationAPI": "4.x",
+                "packaging_system":"current-environment",
+            },
+            "messages": {
+                "(client)": {
+                    "accept": [
+                        "RDLMessage",
+                        "GenericMessage",
+                        "JSONMessage"                    ]
+                    ]           
+                 }
+            }
+          },
+        "render": {
+            "arrayExpand": 4,
+            "dso": "libmcrt_computation_progmcrt.so",
+            "fps": 1,
+            "machineId": "$arrayIndex",
+            "numMachines": "$arrayNumber",
+            "initialCredit": 2,
+            "requirements": {
+                "computationAPI": "4.x",
+                "packaging_system":"current-environment",
+                "resources": {
+                    "maxCores": "*",
+                    "minCores": 1.0,
+                    "memoryMB": 16384
+                }
+            },
+            "messages": {
+                "(client)": {
+                    "accept": [
+                        "GenericMessage",
+                        "ViewportMessage"
+                    ]
+                },
+                "merge": {
+                    "accept": [
+                        "CreditUpdate"
+                    ]
+                },
+                "dispatch": "*"
+            }
+        },
+        "merge": {
+            "dso": "libmcrt_computation_progmcrt_merge.so",
+            "fps": 1,
+            "initialCredit": 2,
+            "sendCredit": true,
+            "numMachines": "$arrayNumber.render",
+            "requirements": {
+                "computationAPI": "4.x",
+                "packaging_system":"current-environment"
+            },
+            "messages": {
+                "(client)": {
+                    "accept": [
+                        "ViewportMessage",
+                        "CreditUpdate"
+                    ]
+                },
+                "render": {
+                    "accept": [
+                        "PartialFrame",
+                        "ProgressiveFrame",
+                        "GenericMessage",
+                        "JSONMessage"
+                    ]
+                }  
+            }
+        }
+    }
 }
 ```
-
