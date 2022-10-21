@@ -2,10 +2,10 @@
 ---
 Beta
 
-[Arras Intro](/openmoonray-docs/beta/arras-intro)  
-[Dependencies](/openmoonray-docs/beta/dependencies)  
-[Distributed Arras](/openmoonray-docs/beta/distributed-arras)  
-[Release Contents](/openmoonray-docs/beta/release-contents)  
-[Scene Formats](/openmoonray-docs/beta/scene-formats)  
-[Source Contents](/openmoonray-docs/beta/source-contents)  
 
+[Arras Intro]({{ 'beta/arras-intro' | relative_url }})  
+[Dependencies]({{ 'beta/dependencies' | relative_url }})  
+[Distributed Arras]({{ 'beta/distributed-arras' | relative_url }})  
+[Release Contents]({{ 'beta/release-contents' | relative_url }})  
+[Scene Formats]({{ 'beta/scene-formats' | relative_url }})  
+[Source Contents]({{ 'beta/source-contents' | relative_url }})  
