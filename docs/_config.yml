@@ -1,9 +1,9 @@
 logo: /assets/images/logo.png
 description: Documentation
 theme: jekyll-theme-minimal
-baseurl: /manhattan
+baseurl: /docs
 url: http://dreamworksanimation.github.io/
-BASE_PATH : http://dreamworksanimation.github.io/manhattan
+BASE_PATH : http://dreamworksanimation.github.io/docs
 collections_dir: /
 
 collections:
