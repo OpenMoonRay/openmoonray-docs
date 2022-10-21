@@ -2,7 +2,7 @@
 ---
 Examples
 
-[Adaptive Sampling](/manhattan/examples/adaptive-sampling)  
+[Adaptive Sampling](/openmoonray-docs/examples/adaptive-sampling)  
 [Adding Precomputed Samples Points to MoonRay](adding-precomputed-samples-points-to-MoonRay)  
 [Amorphous Volume](amorphous-volume)  
 [Bake Camera](bake-camera)  
