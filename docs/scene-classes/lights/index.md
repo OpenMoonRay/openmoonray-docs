@@ -9,14 +9,14 @@ maths: 1
 Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. (Note that it is possible to assign an emissive material to a geometry object as another way to illuminate a scene. However, we are not referring to that kind of setup when we talk about lights.)
 
 There are 8 types of light supported in MoonRay:
-* [CylinderLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/CylinderLight)
-* [DiskLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/DiskLight)
-* [DistantLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/DistantLight)
-* [EnvLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/EnvLight)
-* [MeshLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/MeshLight)
-* [RectLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/RectLight)
-* [SphereLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/SphereLight)
-* [SpotLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/SpotLight)
+* [CylinderLight](/openmoonray-docs/scene-classes/lights/CylinderLight)
+* [DiskLight](/openmoonray-docs/scene-classes/lights/DiskLight)
+* [DistantLight](/openmoonray-docs/scene-classes/lights/DistantLight)
+* [EnvLight](/openmoonray-docs/scene-classes/lights/EnvLight)
+* [MeshLight](/openmoonray-docs/scene-classes/lights/MeshLight)
+* [RectLight](/openmoonray-docs/scene-classes/lights/RectLight)
+* [SphereLight](/openmoonray-docs/scene-classes/lights/SphereLight)
+* [SpotLight](/openmoonray-docs/scene-classes/lights/SpotLight)
 
 Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordinates (for instance, a SphereLight is positioned by setting its *center* attribute).
 
