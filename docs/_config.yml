@@ -1,9 +1,10 @@
 logo: /assets/images/logo.png
 description: Documentation
 theme: jekyll-theme-minimal
-baseurl: /docs
+baseurl: /openmoonray-docs
 url: http://dreamworksanimation.github.io/
-BASE_PATH : http://dreamworksanimation.github.io/docs
+BASE_PATH : http://dreamworksanimation.github.io/openmoonray-docs
+
 collections_dir: /
 
 collections:
