@@ -22,8 +22,11 @@ toc:
     path: /overview/
     subitems:
       - item: Community
+        path: /overview/community
       - item: What's included
+        path: /overview/whats-included
       - item: Beginner's Guide
+        path: /overview/beginners-guide
   - item: Scene Classes
     path: /scene-classes
     subitems:
@@ -418,9 +421,19 @@ toc:
         path: /hydra/Plugin
       - item: HdMoonray Render Settings
         path: /hydra/RenderSettings
-  - item: Arras
   - item: Developer's Guide
     path: /developers-guide
+    subitems:
+      - item: The scene_rdl2 Library
+        path: /developers-guide/scene_rdl2-library
+      - item: Arras Overview
+        path: /developers-guide/arras/Arras-overview
+      - item: Sesssion Definitions
+        path: /developers-guide/arras/Arras-Session-Definitions
+      - item: Client API
+        path: /developers-guide/arras/Arras-Client-API
+      - item: Doxygen Reference
+        path: /api/html
   - item: Release Notes
   - item: Examples
     path: /examples/
