@@ -1,7 +1,7 @@
 ---
 ---
-Beta
 
+Beta 
 
 [Arras Intro]({{ 'beta/arras-intro' | relative_url }})  
 [Dependencies]({{ 'beta/dependencies' | relative_url }})  
