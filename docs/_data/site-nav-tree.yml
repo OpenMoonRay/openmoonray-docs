@@ -415,8 +415,6 @@ toc:
   - item: Hydra
     path: /hydra
     subitems:
-      - item: Overview
-        path: /hydra/Overview
       - item: HdMoonray Plugin
         path: /hydra/Plugin
       - item: HdMoonray Render Settings
