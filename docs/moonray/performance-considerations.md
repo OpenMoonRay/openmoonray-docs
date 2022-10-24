@@ -19,8 +19,8 @@ title: Performance Considerations
 This page documents how to get the best performance out of Moonray
 
 ## Tiled textures
-Using tiled textures can greatly improve rendering performance.  The Open Image IO utility `maketx` can be used to convert common file formats to the .tx format which is optimal. 
+Moonray requires the use of tiled textures which greatly improves rendering performance.  The Open Image IO utility `maketx` can be used to convert common file formats to the .tx format which is optimal. 
 
-## adaptive_error tesselation
+## Adaptive error tesselation
 The `adaptive_error` setting on geometry is off by default (set to 0) resulting in uniform tessellation.   Depending on the `mesh_resolution` setting, the geometry may be overtessellated for it's distance from the camera.   Turning `adaptive_error` on sets the maximum allowable difference in pixels for subdivison mesh adaptive tessellation.  Each final tessellated edge won't be longer than n pixels if adaptive error is set to n.  Adaptive tessellation is not supported for instances.
 
