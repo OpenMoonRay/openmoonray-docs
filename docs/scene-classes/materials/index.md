@@ -22,7 +22,7 @@ Each material automatically creates the appropriate BSDFs and Fresnel models acc
 
 
 <!-- Reference info here -->
-## [Dwa family of materials](DwaFamilyOfMaterials)
+## [Dwa family of materials](dwa)
 >The Dwa family of materials (prefixed with **Dwa**) is a suite of materials that are compatible and can be layered and combined in various ways. 
 
 ### Layering
