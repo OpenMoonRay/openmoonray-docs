@@ -412,6 +412,8 @@ toc:
         path: /moonray/cmd-line-options
       - item: Execution modes
         path: /moonray/execution-modes
+      - item: Performance Considerations
+        path: /moonray/performance-considerations
   - item: Hydra
     path: /hydra
     subitems:
