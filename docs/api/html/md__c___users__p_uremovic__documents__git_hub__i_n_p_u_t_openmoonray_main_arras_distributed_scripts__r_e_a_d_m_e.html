@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #4: OpenMoonrayTEST #4</title>
+<title>OpenMoonrayTEST #4: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_openmoonray_main_arras_distributed_scripts__r_e_a_d_m_e.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -90,17 +90,15 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">OpenMoonrayTEST #4 </div></div>
+  <div class="headertitle"><div class="title">README </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_C__Users_PUremovic_Documents_GitHub_INPUT_api_index"></a> Doxygen is a commonly used code documentation tool (for languages including C++, C# and Java) that also supports the use of Markdown. In addition to the standard Markdown syntax, there are a number of Doxygen-specific elements.</p>
-<p >The primary features are the use of tags for references, and the @page, @section, @subsection and @anchor elements that these can reference.</p>
-<p >&lt;name&gt; ["text"]</p>
-<p >This element creates a link (ie. reference) to a named section, subsection, page or anchor that has been defined elsewhere in the documentation. (see Doxygen reference)</p>
-<p >The first parameter (name) should match the name of the section, subsection, page or anchor that you wish to link to.</p>
-<p >The second optional parameter ("text") should be encapsulated in double quotes, and will define what the reference link will appear as on the page. If not used, the link will appear as the title used in the reference.</p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<div class="textblock"><p >These scripts can be used to test distributed Arras on a single machine.</p>
+<p >In a shell, run the script 'run_minicoord' from a release. This should start minicoord running and leave you with an interactive python prompt In another shell (on the same machine) run 'run_node'. This should start a new arras4_node process, which will register with minicoord. In a third shell run 'run_arras_render &lt;rdlafilepath&gt;'. This should start arras_render using minicoord and the node to render the file.</p>
+<p >You should be able to start multiple nodes to test multi-node rendering. To test across multiple machines, use the same method as the scripts, but replace 'localhost' in run_node with the minicoord host name</p>
+<p >run_minicoord uses Rez to enable the requests and tornado third-party packages. If do not have rez or these packages, the script will need changes. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

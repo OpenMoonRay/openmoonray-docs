@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #4: OpenMoonrayTEST #4</title>
+<title>OpenMoonrayTEST #4: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_openmoonray_main_moonray_hydra__r_e_a_d_m_e.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -90,17 +90,30 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">OpenMoonrayTEST #4 </div></div>
+  <div class="headertitle"><div class="title">README </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_C__Users_PUremovic_Documents_GitHub_INPUT_api_index"></a> Doxygen is a commonly used code documentation tool (for languages including C++, C# and Java) that also supports the use of Markdown. In addition to the standard Markdown syntax, there are a number of Doxygen-specific elements.</p>
-<p >The primary features are the use of tags for references, and the @page, @section, @subsection and @anchor elements that these can reference.</p>
-<p >&lt;name&gt; ["text"]</p>
-<p >This element creates a link (ie. reference) to a named section, subsection, page or anchor that has been defined elsewhere in the documentation. (see Doxygen reference)</p>
-<p >The first parameter (name) should match the name of the section, subsection, page or anchor that you wish to link to.</p>
-<p >The second optional parameter ("text") should be encapsulated in double quotes, and will define what the reference link will appear as on the page. If not used, the link will appear as the title used in the reference.</p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<div class="textblock"><p >To use the moonray hydra plugin, you need to generate JSON descriptions for all the shaders. These are required to register the shaders as nodes with Ndr.</p>
+<div class="fragment"><div class="line">rel_root=&lt;release root dir&gt;</div>
+<div class="line">export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy</div>
+<div class="line">${rel_root}/bin/rdl2_json_exporter --out ${rel_root}/shader_json/ --sparse</div>
+</div><!-- fragment --><p >(Note the trailing slash on the output directory name)</p>
+<p >To use the plugin, you must be in an environment setup to use usd, and set a number of additional environment variables:</p>
+<div class="fragment"><div class="line"># tells the Ndr plugins where to find the shader descriptions</div>
+<div class="line">export MOONRAY_CLASS_PATH=${rel_root}/shader_json</div>
+<div class="line"># tells Moonray where to find shader dsos</div>
+<div class="line">export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy:${rel_rool}/rdl2dso</div>
+<div class="line"># tells Arras where to find the session definition files</div>
+<div class="line">export ARRAS_SESSION_PATH=${rel_root}/sessions/hdMoonray</div>
+<div class="line"># adds the Arras runtime execComp to the path</div>
+<div class="line">export PATH=${rel_root}/bin:${PATH}</div>
+<div class="line"># adds the pxr plugins to the plugin path </div>
+<div class="line">export PXR_PLUGINPATH_NAME=${rel_root}/plugin/usd:${PXR_PLUGINPATH_NAME}</div>
+</div><!-- fragment --><p> When using the DWA USD build, you need to set PXR_PLUGIN_PATH in place of PXR_PLUGINPATH_NAME. There may also be problems with the DWA build of Python3 embedded into USD : you may need to set $PYTHONHOME and $PYTHONPATH</p>
+<p >You can test the setup by rendering a USD scene with hd_render:</p>
+<div class="fragment"><div class="line">${rel_root}/bin/hd_render -in &lt;usd_file&gt; -out &lt;exr_file&gt;</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
