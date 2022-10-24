@@ -419,6 +419,8 @@ toc:
         path: /hydra/Plugin
       - item: HdMoonray Render Settings
         path: /hydra/RenderSettings
+      - item: hd_render Command
+        path: /hydra/hd_render
   - item: Developer's Guide
     path: /developers-guide
     subitems:
