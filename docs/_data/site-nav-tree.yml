@@ -423,6 +423,8 @@ toc:
         path: /hydra/RenderSettings
       - item: hd_render Command
         path: /hydra/hd_render
+  - item: Render Profile Viewer
+    path: /render-profile-viewer
   - item: Developer's Guide
     path: /developers-guide
     subitems:
