@@ -25,6 +25,31 @@
 var NAVTREE =
 [
   [ "OpenMoonrayTEST #4", "index.html", [
+    [ "README", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_cmd_point_generation_cmd__r_e_a_d_m_e.html", null ],
+    [ "Navigation in moonray_gui", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_cmd__r_e_a_d_m_e.html", [
+      [ "Controls common to both modes", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_cmd__r_e_a_d_m_e.html#autotoc_md0", null ],
+      [ "Orbit mode", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_cmd__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Freecam mode", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_cmd__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Command line options for moonray/moonray_gui", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_cmd__r_e_a_d_m_e.html#autotoc_md3", null ]
+    ] ],
+    [ "RdlMeshGeometry Procedural", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html", [
+      [ "Attributes", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "Usage", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "Triangle", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md6", null ],
+        [ "Triangle in Motion", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md7", null ],
+        [ "Square", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md8", null ]
+      ] ],
+      [ "Examples", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md9", null ]
+    ] ],
+    [ "README", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_lib_rendering__r_e_a_d_m_e.html", null ],
+    [ "moonray", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main__r_e_a_d_m_e.html", null ],
+    [ "Arras distributed", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_openmoonray_main_arras_distributed__r_e_a_d_m_e.html", null ],
+    [ "README", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_openmoonray_main_arras_distributed_scripts__r_e_a_d_m_e.html", null ],
+    [ "arras", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_openmoonray_main_arras__r_e_a_d_m_e.html", null ],
+    [ "README", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_openmoonray_main_moonray_hydra__r_e_a_d_m_e.html", null ],
+    [ "Python Bindings for scene_rdl2", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_scene_rdl2_main_mod_python_py_scene_rdl2__r_e_a_d_m_e.html", [
+      [ "Usage", "md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_scene_rdl2_main_mod_python_py_scene_rdl2__r_e_a_d_m_e.html#autotoc_md13", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -70,9 +95,9 @@ var NAVTREEINDEX =
 "classscene__rdl2_1_1rdl2_1_1_layer.html#a9339bfc6d846b2ebfa2461880e4b0257",
 "classscene__rdl2_1_1rdl2_1_1_scene_object_1_1_extension.html",
 "dir_28597d7401579fcad661c10a0fb8eb4c.html",
-"moonray-main_2lib_2rendering_2bvh_2shading_2_xform_8h_source.html",
-"structmoonray_1_1pbr_1_1_frame_state.html",
-"structsimd_1_1avxb.html"
+"md__c___users__p_uremovic__documents__git_hub__i_n_p_u_t_moonray_main_dso_geometry__rdl_mesh__r_e_a_d_m_e.html#autotoc_md6",
+"structmoonray_1_1pbr_1_1_bundled_radiancev.html",
+"structscene__rdl2_1_1math_1_1_xform_t.html#a361d28c00ed18f241ec3a91cd85e1c60"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

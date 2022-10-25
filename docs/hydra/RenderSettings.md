@@ -136,3 +136,30 @@ It is very useful to set these before the first render. In Houdini and Maya this
 **Environment Variable:** $HDMOONRAY_DISABLE_LIGHTING=1
 
 **Description:** When this is on, all geometry is treated as double-sided, and to get single sided set int primvars:moonray:side_type = 1. When this is off standard USD behavior is used, where everything is single-sided unless bool doubleSided = true. 
+
+## Denoising
+**Type:** Bool
+
+**Default:** False
+
+**Environment Variable:** $HDMOONRAY_ENABLE_DENOISE=1
+
+**Description:** Enables the Optix denoiser which will denoise the rendered image.   Denoising does not currently work with debug mode.
+
+## Denoise : Albedo Guiding
+**Type:** Bool
+
+**Default:** False
+
+**Environment Variable:** $HDMOONRAY_DENOISE_ALBEDO_GUIDING=0
+
+**Description:** When Optix denoising is enabled this uses the albedo to guide it.
+
+## Denoise : Normal Guiding
+**Type:** Bool
+
+**Default:** False
+
+**Environment Variable:** $HDMOONRAY_DENOISE_NORMAL_GUIDING=0
+
+**Description:** When Optix denoising is enabled this uses the normal to guide it.

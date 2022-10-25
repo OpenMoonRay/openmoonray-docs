@@ -42,8 +42,8 @@ If the requested object doesn't exist, `getObject` will throw `except::KeyError`
 ```C++
 for (auto iter = context.beginSceneObject(); 
            iter != context.endSceneObject(); ++iter) {
-       	SceneObject* sceneObj =  iter->second;
-       	...
+           SceneObject* sceneObj =  iter->second;
+           ...
 }
 ```
 
@@ -51,7 +51,7 @@ To add a new `SceneObject` to the `SceneContext`, use:
 
 ```C++
 SceneObject* createSceneObject(const std::string& className, 
-             	               const std::string& objectName);
+                                const std::string& objectName);
 ```
 
 Classes are discussed in the next section. If an object with the class and name you specify already exists, this function will simply return it. If an object with the same name but different class exists, *scene_rdl2* will throw an exception.
@@ -200,8 +200,8 @@ For built-in types like `Node` and `Camera`, `SceneObject` provides a fast dynam
 
 ```C++
 if (an_object->isA<Camera>()) {
- 	Camera* a_camera = an_object->asA<Camera>();
-	a_camera->setNear(0.001);
+     Camera* a_camera = an_object->asA<Camera>();
+    a_camera->setNear(0.001);
 }
 ```
 
@@ -213,28 +213,28 @@ This is the full hierarchy defined in *scene_rdl2*:
 SceneObject
 DisplayFilter
 GeometrySet
-	ShadowReceiverSet
+    ShadowReceiverSet
 LightFilter
 LightFilterSet
 LightSet
-	ShadowSet
+    ShadowSet
 Metadata
 Node
-	Camera
-	EnvMap
-	Geometry
-	Joint
-	Light
+    Camera
+    EnvMap
+    Geometry
+    Joint
+    Light
 RenderOutput
 SceneVariables
 Shader
-	Map
-	NormalMap
-	RootShader
-		Displacement
-		Material
+    Map
+    NormalMap
+    RootShader
+        Displacement
+        Material
 TraceSet
-	Layer
+    Layer
 UserData
 ```
 
@@ -245,8 +245,8 @@ Attributes with type `TYPE_SCENE_OBJECT`, `TYPE_SCENE_OBJECT_VECTOR` or `TYPE_SC
 Attributes defined with one of these types can specify an "interface set' restricting the type of objects that they can refer to. `SceneObjectInterface` is an int acting as a bitset, with these values:
 
 ```
-INTERFACE_GENERIC		        INTERFACE_GEOMETRYSET
-INTERFACE_LAYER  		        INTERFACE_LIGHTSET 
+INTERFACE_GENERIC                INTERFACE_GEOMETRYSET
+INTERFACE_LAYER                  INTERFACE_LIGHTSET 
 INTERFACE_NODE                  INTERFACE_CAMERA
 INTERFACE_ENVMAP                INTERFACE_GEOMETRY 
 INTERFACE_LIGHT                 INTERFACE_SHADER

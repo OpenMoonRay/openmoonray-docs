@@ -34,12 +34,12 @@ int main(int argc, char* argv[])
 {
         theSdk.reset(new arras4::sdk::SDK);
         theSdk->setSyncSend();
-    	theSdk->setMessageHandler(&messageHandler);
-    	theSdk->setStatusHandler(&statusHandler);
-    	theSdk->setExceptionCallback(&exceptionCallback);
+        theSdk->setMessageHandler(&messageHandler);
+        theSdk->setStatusHandler(&statusHandler);
+        theSdk->setExceptionCallback(&exceptionCallback);
  
-    	theFbReceiver.reset(new mcrt_dataio::ClientReceiverFb);
-	...
+        theFbReceiver.reset(new mcrt_dataio::ClientReceiverFb);
+    ...
 ```
 
 `setSyncSend()` causes the `SDK` `sendMessage` function to block until the message has been sent. Using `setAsyncSend()` instead would make `sendMessage` queue the message for sending on a background thread and return immediately, which may be more appropriate in a GUI application.
@@ -54,11 +54,11 @@ A set of session options
 ```C++
         arras4::client::SessionDefinition session_def = 
 arras4::client::SessionDefinition::load(SESSION_NAME);
-    	if (NUM_MACHINES > 1) {
-        session_def["render"]["arrayExpand"] = NUM_MACHINES;
-    	}
-    	std::string url(COORDINATOR_URL);
-    	arras4::client::SessionOptions options;
+        if (NUM_MACHINES > 1) {
+            session_def["render"]["arrayExpand"] = NUM_MACHINES;
+        }
+        std::string url(COORDINATOR_URL);
+        arras4::client::SessionOptions options;
 ```
 
 Session definitions are described in detail elsewhere. This code loads a JSON template from a file and then modifies the number of render computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
@@ -69,15 +69,15 @@ COORDINATOR_URL is hard-coded to "arras:local" at the start of the code, which w
 
 ```C++
         std::string sessionId;
-    	try {
-        	sessionId = theSdk->createSession(session_def, url, options);
-    	} catch (const arras4::sdk::SDKException& e) {
-        	std::cerr << e.what() << std::endl;
-    	}
-    	if (sessionId.empty()) {
-        	std::cerr << "Session creation failed" << std::endl;
-        	return -1;
-    	}
+        try {
+            sessionId = theSdk->createSession(session_def, url, options);
+        } catch (const arras4::sdk::SDKException& e) {
+            std::cerr << e.what() << std::endl;
+        }
+        if (sessionId.empty()) {
+            std::cerr << "Session creation failed" << std::endl;
+            return -1;
+        }
 ```
 
 If session creation fails, `createSession` will throw an exception. The most likely cause of failure is that the Coordinator cannot find machines to satisfy the requests in the session definition. Creation will also fail if the Coordinator URL is incorrect or if, in local mode, more than one computation is requested.
@@ -88,10 +88,10 @@ When the client code establishes a connection to the session, startup of the req
 
 ```C++
         bool ready = theSdk->waitForEngineReady(30);
-    	if (!ready) {
-        	std::cerr << "Session startup timed out" << std::endl;
-        	return -1;
-    	}
+        if (!ready) {
+            std::cerr << "Session startup timed out" << std::endl;
+            return -1;
+        }
 ```
 
 `waitForEngineReady(30)` blocks for up to 30 seconds waiting for startup to complete. You can also use the non-blocking function `isEngineReady()` if it is more appropriate. The best timeout value can depend on the speed of the network and whether you are running in local or distributed mode. A failed startup generally means that one of more of the machines assigned to the session is not functioning correctly.
@@ -100,17 +100,17 @@ For this example, we are loading the scene from an RDLA file using the `scene_rd
 
 ```C++
         scene_rdl2::rdl2::SceneContext scene;
-    	scene.setProxyModeEnabled(true);
-    	scene_rdl2::rdl2::readSceneFromFile(SCENE_FILE, scene);
+        scene.setProxyModeEnabled(true);
+        scene_rdl2::rdl2::readSceneFromFile(SCENE_FILE, scene);
 ```
 
 To start the session rendering, we need to send it an `RDLMessage` with the scene contents. `BinaryWriter` encodes the `SceneContext` as RDLB and places it in a message:
 
 ```C++
         mcrt::RDLMessage::Ptr rdlMsg = std::make_shared<mcrt::RDLMessage>();
-    	scene_rdl2::rdl2::BinaryWriter writer(scene);
-    	writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);
-   	    theSdk->sendMessage(rdlMsg);
+        scene_rdl2::rdl2::BinaryWriter writer(scene);
+        writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);
+           theSdk->sendMessage(rdlMsg);
         scene.commitAllChanges();
 ```
 
@@ -122,11 +122,11 @@ If the scene changes, we can send updates into the session. Calling `setDeltaEnc
         sleep(10);
 
         scene_rdl2::rdl2::readSceneFromFile(SCENE_DELTA_FILE, scene);
-    	writer.setDeltaEncoding(true);
-    	writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);    
-    	rdlMsg->mForceReload = false;
-    	theSdk->sendMessage(rdlMsg);
-    	scene.commitAllChanges();
+        writer.setDeltaEncoding(true);
+        writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);    
+        rdlMsg->mForceReload = false;
+        theSdk->sendMessage(rdlMsg);
+        scene.commitAllChanges();
 ```
 
 Setting `rdlMsg->mForceReload` to false causes the render computations to apply this message on top of the existing scene. To begin afresh with a new scene, we would send a message with `mForceReload = true`.
@@ -136,11 +136,11 @@ The final step in the main function is to wait 10 seconds and then terminate the
 ```C++
         sleep(10);
 
-    	theSdk->shutdownSession();
-    	if (!theSdk->waitForDisconnect(30)) {
-      	std::cerr << "Session failed to disconnect on request" << std::endl;
-        	theSdk->disconnect();
-    	}
+        theSdk->shutdownSession();
+        if (!theSdk->waitForDisconnect(30)) {
+        std::cerr << "Session failed to disconnect on request" << std::endl;
+            theSdk->disconnect();
+        }
 ```
 
 `shutdownSession()` is the polite way to terminate a session : Arras will send back a status message with information about the session and then disconnect from the client remotely. If something goes wrong with shutdown -- generally because one or more of the computations has become unresponsive and won't shut itself down cleanly --- the `waitForDisconnect(30)` function will timeout after 30 seconds. Then the client code calls `disconnect()`, which closes the connection from the client end.

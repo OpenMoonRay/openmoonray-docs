@@ -18,7 +18,7 @@ title: HdMoonray Plugin
 # HdMoonray Hydra Plugin
 HdMoonray is a Hydra render delegate plugin for the Moonray renderer.
 
-The plugin has been tested with Houdini and usdview. The HdMoonray project includes a commandline program, hd_render, that performs Hydra renders from a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for hd_render.
+The plugin has been tested with Houdini and usdview
 
 ## Supported Features
 HdMoonray has not been tested with non-USD applications, although it contains only a small amount of code that is in any way specific to USD. We generally describe the functionality of the plugin in terms of USD and USD prims, since this is more accessible to most readers than the internal Hydra types.
