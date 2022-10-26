@@ -1,3 +1,13 @@
+---
+title: Arras Client API
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
 # Arras Client API
 
 Applications can use the Arras Client API to integrate interactive Moonray rendering. The client API itself is not specific to Moonray : Moonray clients need to use the additional libraries in mcrt_messages and mcrt_dataio for the Moonray specific parts. The client code does not link directly to the main Moonray renderer libraries, or to the Moonray Arras computations in mcrt_computation : these are loaded automatically by the Arras system. 
