@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #4: moonray::pbr::Scene Class Reference</title>
+<title>OpenMoonrayTEST: moonray::pbr::Scene Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #4
+   <div id="projectname">OpenMoonrayTEST<span id="projectnumber">&#160;v0.5</span>
    </div>
+   <div id="projectbrief">API Reference</div>
   </td>
  </tr>
  </tbody>
@@ -219,7 +220,7 @@ static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <li>the lights in the scene (for now we only support a single layer lightmask)</li>
 <li>the camera</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md11"></a>
 COORDINATE SYSTEMS IN USE:</h2>
 <ul>
 <li>Render space (R) is the coordinate system in which we generate geometry, build our intersection acceleration structure (BVH), trace rays, execute integrators, Bsdf and Bssrdf closures, lights, shading system, shaders. Basically everything that happens during rendering happens in render space. It's usually a space that's more convenient or less likely to have floating point precision issues than world space. Currently, render space is defined to be the same as camera space when we first begin rendering (at shutter-open / t=0 in case the camera transform is animated). However, the camera may move between frames in an interactive application, so we must divorce camera space from render space to avoid rebuilding the BVH (among other things) whenever the camera moves.</li>

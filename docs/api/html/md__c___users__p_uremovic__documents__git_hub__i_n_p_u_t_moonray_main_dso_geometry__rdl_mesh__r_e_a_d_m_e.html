@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #4: RdlMeshGeometry Procedural</title>
+<title>OpenMoonrayTEST: RdlMeshGeometry Procedural</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #4
+   <div id="projectname">OpenMoonrayTEST<span id="projectnumber">&#160;v0.5</span>
    </div>
+   <div id="projectbrief">API Reference</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +95,7 @@ $(document).ready(function(){initNavTree('md__c___users__p_uremovic__documents__
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >RdlMeshGeometry is a procedural that pretends to be a primitive in order to allow Polymesh and Subd geometry to be created and stored directly in the RDL2 scene.</p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Attributes</h1>
 <p >The procedural has the following attributes:</p>
 <ul>
@@ -117,9 +118,9 @@ Attributes</h1>
 <li><b>subd corner indices</b> (IntVector): Indices corresponding to vertices with assigned sharpness</li>
 <li><b>subd corner sharpnesses</b> (FloatVector): Sharpness values for corner vertices</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Usage</h1>
-<h2><a class="anchor" id="autotoc_md6"></a>
+<h2><a class="anchor" id="autotoc_md7"></a>
 Triangle</h2>
 <p ><img src="http://mydw.anim.dreamworks.com/download/attachments/375912387/triangle.jpg" alt="triangle" class="inline"/></p>
 <p >A simple triangle looks like this:</p>
@@ -133,7 +134,7 @@ Triangle</h2>
 <div class="fragment"><div class="line">Layer(&quot;rndr&quot;) {</div>
 <div class="line">    {RdlMeshGeometry(&quot;triangle&quot;), &quot;mesh_part&quot;, BaseMaterial(&quot;base&quot;), LightSet(&quot;all&quot;)},</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
 Triangle in Motion</h2>
 <p ><img src="http://mydw.anim.dreamworks.com/download/attachments/375912387/triangle_mb.jpg" alt="triangle_mb" class="inline"/></p>
 <p >Motion blur can be created using the <b>vertex list mb</b> attribute:</p>
@@ -155,7 +156,7 @@ Triangle in Motion</h2>
 <div class="line">    [&quot;is subd&quot;] = false,</div>
 <div class="line">    [&quot;static&quot;] = false,</div>
 <div class="line">}</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
 Square</h2>
 <p ><img src="http://mydw.anim.dreamworks.com/download/attachments/375912387/square.jpg" alt="square" class="inline"/></p>
 <p >More complex meshes can be created by adding additional vertices to the vertex list, and extending the <b>vertices by index</b> and <b>face vertex count</b> lists to describe the mesh using the additional vertices. Here I've built a square out of three triangles:</p>
@@ -165,7 +166,7 @@ Square</h2>
 <div class="line">    [&quot;face vertex count&quot;] = {3, 3, 3},</div>
 <div class="line">    [&quot;is subd&quot;] = false,</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
 Examples</h1>
 <p >In addition to the usage samples above, there's several more example rdla files here:</p>
 <p ><code>/work/rd/raas/rdlmesh</code></p>

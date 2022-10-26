@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #4: Navigation in moonray_gui</title>
+<title>OpenMoonrayTEST: Navigation in moonray_gui</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #4
+   <div id="projectname">OpenMoonrayTEST<span id="projectnumber">&#160;v0.5</span>
    </div>
+   <div id="projectbrief">API Reference</div>
   </td>
  </tr>
  </tbody>
@@ -94,7 +95,7 @@ $(document).ready(function(){initNavTree('md__c___users__p_uremovic__documents__
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p >moonray_gui will pop up a graphical window which will allow you to navigate scene in real-time. There are two supported modes of navigation, which are described below. The default mode of navigation is orbit, but that may be overridden on the command line by specifying -freecam, or by using the O key to toggle between modes at run-time.</p>
-<h1><a class="anchor" id="autotoc_md0"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 Controls common to both modes</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -148,7 +149,7 @@ Controls common to both modes</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">&gt;   </td><td class="markdownTableBodyNone">Display next render output   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Orbit mode</h1>
 <p >This mode is modeled on the current camera behavior in Torch. The mouse does nothing by default unless you hold down the ALT key.</p>
 <table class="markdownTable">
@@ -163,10 +164,10 @@ Orbit mode</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Ctrl + LMB   </td><td class="markdownTableBodyNone">Refocus orbit pivot to point under the mouse cursor   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Freecam mode</h1>
 <p >This mode is modeled around the WASD scheme common in first person shooters. The mouse control differs from the orbit mode in that LMB rotates the camera around the current camera position, rather than that of some world space location. The result is that it feels like how you would look around in a typical FPS game. Used in conjunction with the translation keys, this allow you to "fly" around the scene.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Command line options for moonray/moonray_gui</h1>
 <p >you can use -h flag to display the command line options </p><div class="fragment"><div class="line">$&gt; moonray_gui -h</div>
 <div class="line">$&gt; moonray -h</div>
