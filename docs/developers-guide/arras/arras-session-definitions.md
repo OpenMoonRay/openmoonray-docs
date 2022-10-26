@@ -6,7 +6,7 @@ title: Arras Session Definitions
 
 Arras clients use a ***session definition*** when creating a new session, to describe the computations that should be created. This is an example session:
 
-![Arras Session Diagram](../images/arras-session-diagram.png)
+![Arras Session Diagram](../../assets/images/developers-guide/arras/arras-session-diagram.png)
 
 The definition for this session is essentially a JSON document describing this diagram. In outline, it looks like this:
 

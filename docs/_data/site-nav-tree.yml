@@ -414,13 +414,22 @@ toc:
         path: /moonray/execution-modes
       - item: Performance Considerations
         path: /moonray/performance-considerations
+      - item: How-To Guides
+        path: /moonray/how-to-guides/
+        subitems:
+          - item: Baking Textures
+            path: /moonray/how-to-guides/baking-textures
   - item: Hydra
     path: /hydra
     subitems:
+      - item: HdMoonray Features
+        path: /hydra/hdmoonray-features
       - item: HdMoonray Plugin
-        path: /hydra/Plugin
+        path: /hydra/plugin
+      - item: HdMoonray Setup
+        path: /hydra/hdmoonray-setup
       - item: HdMoonray Render Settings
-        path: /hydra/RenderSettings
+        path: /hydra/render-settings
       - item: hd_render Command
         path: /hydra/hd_render
   - item: Tools
@@ -434,11 +443,11 @@ toc:
       - item: The scene_rdl2 Library
         path: /developers-guide/scene_rdl2-library
       - item: Arras Overview
-        path: /developers-guide/arras/Arras-overview
-      - item: Sesssion Definitions
-        path: /developers-guide/arras/Arras-Session-Definitions
+        path: /developers-guide/arras/arras-overview
+      - item: Session Definitions
+        path: /developers-guide/arras/arras-session-definitions
       - item: Client API
-        path: /developers-guide/arras/Arras-Client-API
+        path: /developers-guide/arras/arras-client-api
       - item: Doxygen Reference
         path: /api/html
   - item: Release Notes
