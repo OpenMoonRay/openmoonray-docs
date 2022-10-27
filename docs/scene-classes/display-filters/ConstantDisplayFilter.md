@@ -37,7 +37,7 @@ title: ConstantDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ConstantDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: ConstantDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fill color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilterattributes.color.images.
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: ConstantDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>

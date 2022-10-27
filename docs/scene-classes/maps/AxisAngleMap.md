@@ -37,7 +37,7 @@ title: AxisAngleMap
       default: 0.0
       <p class="scene-class-comments">the angle of rotation in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMapattributes.angle.images.
+          images=site.data.scene-classes.maps.AxisAngleMap.attributes.angle.images.
           path=image_path
       %}
     </p>
@@ -48,7 +48,7 @@ title: AxisAngleMap
           | object = 4
       <p class="scene-class-comments">the space of the axis to rotate about</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMapattributes.axis_space.images.
+          images=site.data.scene-classes.maps.AxisAngleMap.attributes.axis_space.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: AxisAngleMap
           | object = 4
       <p class="scene-class-comments">the space to transform from</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMapattributes.input_space.images.
+          images=site.data.scene-classes.maps.AxisAngleMap.attributes.input_space.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: AxisAngleMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">input vector to be rotated</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMapattributes.input_vector.images.
+          images=site.data.scene-classes.maps.AxisAngleMap.attributes.input_vector.images.
           path=image_path
       %}
     </p>
@@ -86,7 +86,7 @@ title: AxisAngleMap
           | object = 4
       <p class="scene-class-comments">the space to transform the resulting vector to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMapattributes.output_space.images.
+          images=site.data.scene-classes.maps.AxisAngleMap.attributes.output_space.images.
           path=image_path
       %}
     </p>
@@ -96,7 +96,7 @@ title: AxisAngleMap
       default: [ 0, 1, 0 ]
       <p class="scene-class-comments">axis to be rotated around</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMapattributes.rotation_axis.images.
+          images=site.data.scene-classes.maps.AxisAngleMap.attributes.rotation_axis.images.
           path=image_path
       %}
     </p>

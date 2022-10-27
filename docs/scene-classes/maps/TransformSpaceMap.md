@@ -37,7 +37,7 @@ title: TransformSpaceMap
       default: None
       <p class="scene-class-comments">an alternate camera to use when transforming to/from 'camera' space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.camera.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.camera.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: TransformSpaceMap
       default: True
       <p class="scene-class-comments">When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.concatenate_instance_level_transforms.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.concatenate_instance_level_transforms.images.
           path=image_path
       %}
     </p>
@@ -68,7 +68,7 @@ title: TransformSpaceMap
           | instance level 4 = 11
       <p class="scene-class-comments">the space to transform from</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.from_space.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.from_space.images.
           path=image_path
       %}
     </p>
@@ -78,7 +78,7 @@ title: TransformSpaceMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input value to transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.input.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -90,7 +90,7 @@ title: TransformSpaceMap
           | normal = 2
       <p class="scene-class-comments">the type of input value provided</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.input_type.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.input_type.images.
           path=image_path
       %}
     </p>
@@ -100,7 +100,7 @@ title: TransformSpaceMap
       default: None
       <p class="scene-class-comments">an alternate object to use when transforming to/from 'object' space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.object.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.object.images.
           path=image_path
       %}
     </p>
@@ -121,7 +121,7 @@ title: TransformSpaceMap
           | instance object transform = 11
       <p class="scene-class-comments">the space to transform to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.to_space.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.to_space.images.
           path=image_path
       %}
     </p>
@@ -131,7 +131,7 @@ title: TransformSpaceMap
       default: False
       <p class="scene-class-comments">used to apply non-uniform scaling to projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.use_custom_window_coordinates.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.use_custom_window_coordinates.images.
           path=image_path
       %}
     </p>
@@ -141,7 +141,7 @@ title: TransformSpaceMap
       default: 1.0
       <p class="scene-class-comments">maximum projected x coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.window_x_max.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_max.images.
           path=image_path
       %}
     </p>
@@ -151,7 +151,7 @@ title: TransformSpaceMap
       default: -1.0
       <p class="scene-class-comments">minimum projected x coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.window_x_min.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_min.images.
           path=image_path
       %}
     </p>
@@ -161,7 +161,7 @@ title: TransformSpaceMap
       default: 1.0
       <p class="scene-class-comments">maximum projected y coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.window_y_max.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_max.images.
           path=image_path
       %}
     </p>
@@ -171,7 +171,7 @@ title: TransformSpaceMap
       default: -1.0
       <p class="scene-class-comments">minimum projected y coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMapattributes.window_y_min.images.
+          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_min.images.
           path=image_path
       %}
     </p>

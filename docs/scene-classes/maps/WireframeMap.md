@@ -37,7 +37,7 @@ title: WireframeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMapattributes.fill_color.images.
+          images=site.data.scene-classes.maps.WireframeMap.attributes.fill_color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: WireframeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMapattributes.line_color.images.
+          images=site.data.scene-classes.maps.WireframeMap.attributes.line_color.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: WireframeMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMapattributes.line_width.images.
+          images=site.data.scene-classes.maps.WireframeMap.attributes.line_width.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: WireframeMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMapattributes.raster.images.
+          images=site.data.scene-classes.maps.WireframeMap.attributes.raster.images.
           path=image_path
       %}
     </p>

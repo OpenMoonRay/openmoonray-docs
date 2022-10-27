@@ -37,7 +37,7 @@ title: SwitchNormalMap
       default: 0.0
       <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.choice.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.choice.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input0.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input0.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input1.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input1.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input10.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input10.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input11.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input11.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input12.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input12.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input13.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input13.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input14.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input14.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input15.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input15.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input16.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input16.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input17.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input17.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input18.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input18.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input19.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input19.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input2.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input2.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input20.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input20.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input21.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input21.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input22.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input22.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input23.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input23.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input24.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input24.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input25.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input25.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input26.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input26.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input27.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input27.images.
           path=image_path
       %}
     </p>
@@ -257,7 +257,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input28.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input28.images.
           path=image_path
       %}
     </p>
@@ -267,7 +267,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input29.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input29.images.
           path=image_path
       %}
     </p>
@@ -277,7 +277,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input3.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input3.images.
           path=image_path
       %}
     </p>
@@ -287,7 +287,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input30.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input30.images.
           path=image_path
       %}
     </p>
@@ -297,7 +297,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input31.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input31.images.
           path=image_path
       %}
     </p>
@@ -307,7 +307,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input32.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input32.images.
           path=image_path
       %}
     </p>
@@ -317,7 +317,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input33.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input33.images.
           path=image_path
       %}
     </p>
@@ -327,7 +327,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input34.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input34.images.
           path=image_path
       %}
     </p>
@@ -337,7 +337,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input35.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input35.images.
           path=image_path
       %}
     </p>
@@ -347,7 +347,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input36.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input36.images.
           path=image_path
       %}
     </p>
@@ -357,7 +357,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input37.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input37.images.
           path=image_path
       %}
     </p>
@@ -367,7 +367,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input38.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input38.images.
           path=image_path
       %}
     </p>
@@ -377,7 +377,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input39.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input39.images.
           path=image_path
       %}
     </p>
@@ -387,7 +387,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input4.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input4.images.
           path=image_path
       %}
     </p>
@@ -397,7 +397,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input40.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input40.images.
           path=image_path
       %}
     </p>
@@ -407,7 +407,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input41.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input41.images.
           path=image_path
       %}
     </p>
@@ -417,7 +417,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input42.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input42.images.
           path=image_path
       %}
     </p>
@@ -427,7 +427,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input43.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input43.images.
           path=image_path
       %}
     </p>
@@ -437,7 +437,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input44.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input44.images.
           path=image_path
       %}
     </p>
@@ -447,7 +447,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input45.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input45.images.
           path=image_path
       %}
     </p>
@@ -457,7 +457,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input46.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input46.images.
           path=image_path
       %}
     </p>
@@ -467,7 +467,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input47.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input47.images.
           path=image_path
       %}
     </p>
@@ -477,7 +477,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input48.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input48.images.
           path=image_path
       %}
     </p>
@@ -487,7 +487,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input49.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input49.images.
           path=image_path
       %}
     </p>
@@ -497,7 +497,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input5.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input5.images.
           path=image_path
       %}
     </p>
@@ -507,7 +507,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input50.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input50.images.
           path=image_path
       %}
     </p>
@@ -517,7 +517,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input51.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input51.images.
           path=image_path
       %}
     </p>
@@ -527,7 +527,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input52.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input52.images.
           path=image_path
       %}
     </p>
@@ -537,7 +537,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input53.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input53.images.
           path=image_path
       %}
     </p>
@@ -547,7 +547,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input54.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input54.images.
           path=image_path
       %}
     </p>
@@ -557,7 +557,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input55.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input55.images.
           path=image_path
       %}
     </p>
@@ -567,7 +567,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input56.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input56.images.
           path=image_path
       %}
     </p>
@@ -577,7 +577,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input57.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input57.images.
           path=image_path
       %}
     </p>
@@ -587,7 +587,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input58.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input58.images.
           path=image_path
       %}
     </p>
@@ -597,7 +597,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input59.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input59.images.
           path=image_path
       %}
     </p>
@@ -607,7 +607,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input6.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input6.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input60.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input60.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input61.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input61.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input62.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input62.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input63.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input63.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input7.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input7.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input8.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input8.images.
           path=image_path
       %}
     </p>
@@ -677,7 +677,7 @@ title: SwitchNormalMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.SwitchNormalMapattributes.input9.images.
+          images=site.data.scene-classes.normal-maps.SwitchNormalMap.attributes.input9.images.
           path=image_path
       %}
     </p>

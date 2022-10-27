@@ -37,7 +37,7 @@ title: ColorCorrectHsvMap
       default: False
       <p class="scene-class-comments">clamps output to [0,1] range</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.clamp.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectHsvMap
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (360 rolls over back to 0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.hue_shift.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.hue_shift.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectHsvMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">input color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.input.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectHsvMap
       default: True
       <p class="scene-class-comments">all attributes on/off</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.on.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.on.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectHsvMap
       default: 0.0
       <p class="scene-class-comments">modifies the contrast of the input's saturation (-1, 1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.saturation_contrast.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.saturation_contrast.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectHsvMap
       default: 1.0
       <p class="scene-class-comments">multiplies the saturation of the input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.saturation_factor.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.saturation_factor.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectHsvMap
       default: 0.0
       <p class="scene-class-comments">shifts the saturation of the input (-1, 1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.saturation_shift.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.saturation_shift.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ColorCorrectHsvMap
       default: 0.0
       <p class="scene-class-comments">modifies the contrast of the input's value (-1, 1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.value_contrast.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.value_contrast.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: ColorCorrectHsvMap
       default: 1.0
       <p class="scene-class-comments">multiplies the value of the input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.value_factor.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.value_factor.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: ColorCorrectHsvMap
       default: 0.0
       <p class="scene-class-comments">shifts the value of the input (-1, 1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHsvMapattributes.value_shift.images.
+          images=site.data.scene-classes.maps.ColorCorrectHsvMap.attributes.value_shift.images.
           path=image_path
       %}
     </p>

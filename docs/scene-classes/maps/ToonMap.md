@@ -37,7 +37,7 @@ title: ToonMap
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">Creases are sharp edges like corners in the geometry.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.crease_color.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.crease_color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ToonMap
       default: 1.0
       <p class="scene-class-comments">This attribute controls the thickness of creases.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.crease_scale.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.crease_scale.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ToonMap
       default: 45.0
       <p class="scene-class-comments">This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.crease_threshold.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.crease_threshold.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ToonMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.fill_color.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.fill_color.images.
           path=image_path
       %}
     </p>
@@ -79,7 +79,7 @@ title: ToonMap
           | both = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.mode.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.mode.images.
           path=image_path
       %}
     </p>
@@ -89,7 +89,7 @@ title: ToonMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Outlines are silhouettes of the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.outline_color.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.outline_color.images.
           path=image_path
       %}
     </p>
@@ -99,7 +99,7 @@ title: ToonMap
       default: 1.0
       <p class="scene-class-comments">This attribute controls the thickness of outlines.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.outline_scale.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.outline_scale.images.
           path=image_path
       %}
     </p>
@@ -109,7 +109,7 @@ title: ToonMap
       default: 0.0
       <p class="scene-class-comments">In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMapattributes.outline_threshold.images.
+          images=site.data.scene-classes.maps.ToonMap.attributes.outline_threshold.images.
           path=image_path
       %}
     </p>

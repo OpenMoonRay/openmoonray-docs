@@ -42,7 +42,7 @@ title: ProjectSphericalMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.TRS_order.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.TRS_order.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: ProjectSphericalMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.projection_matrix.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.projection_matrix.images.
           path=image_path
       %}
     </p>
@@ -64,7 +64,7 @@ title: ProjectSphericalMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.projection_mode.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.projection_mode.images.
           path=image_path
       %}
     </p>
@@ -74,7 +74,7 @@ title: ProjectSphericalMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.projector.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.projector.images.
           path=image_path
       %}
     </p>
@@ -84,7 +84,7 @@ title: ProjectSphericalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.rotate.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.rotate.images.
           path=image_path
       %}
     </p>
@@ -99,7 +99,7 @@ title: ProjectSphericalMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.rotation_order.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.rotation_order.images.
           path=image_path
       %}
     </p>
@@ -109,7 +109,7 @@ title: ProjectSphericalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.scale.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -119,7 +119,7 @@ title: ProjectSphericalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.translate.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.translate.images.
           path=image_path
       %}
     </p>
@@ -129,7 +129,7 @@ title: ProjectSphericalMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectSphericalMapattributes.use_reference_space.images.
+          images=site.data.scene-classes.maps.ProjectSphericalMap.attributes.use_reference_space.images.
           path=image_path
       %}
     </p>

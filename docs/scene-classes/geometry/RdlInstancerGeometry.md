@@ -37,7 +37,7 @@ title: RdlInstancerGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.disable_indices.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.disable_indices.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RdlInstancerGeometry
       default: 0.0
       <p class="scene-class-comments">Evaluate geometry at specified frame (relative) instead of SceneVariables frame.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.evaluation_frame.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.evaluation_frame.images.
           path=image_path
       %}
     </p>
@@ -61,7 +61,7 @@ title: RdlInstancerGeometry
           | instance level 4 = 4
       <p class="scene-class-comments">Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.instance_level.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.instance_level.images.
           path=image_path
       %}
     </p>
@@ -71,7 +71,7 @@ title: RdlInstancerGeometry
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.label.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: RdlInstancerGeometry
           | xform list = 2
       <p class="scene-class-comments">Specify the source of xforms/refIndices for instancing. If set to "xform attributes", taking data from attributes "positions", "orientations", "scales", "velocities" and "refIndices". If set to "xform list", taking data from "xform list", "velocities" and "refIndices". </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.method.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.method.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: RdlInstancerGeometry
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.node_xform.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.node_xform.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-comments">A list of quaternions that represent the per-instance orientation. The length should be either 0 or consistent with "positions".</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.orientations.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.orientations.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-comments">A list of vec3 that represent the per-instance position.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.positions.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.positions.images.
           path=image_path
       %}
     </p>
@@ -122,7 +122,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.primitive_attributes.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.primitive_attributes.images.
           path=image_path
       %}
     </p>
@@ -132,7 +132,7 @@ title: RdlInstancerGeometry
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.ray_epsilon.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.ray_epsilon.images.
           path=image_path
       %}
     </p>
@@ -142,7 +142,7 @@ title: RdlInstancerGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">A list of index values to specify entry of "reference" per instance. The length should be either 0 or consistent with "positions"|"xform_list". The index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.ref_indices.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.ref_indices.images.
           path=image_path
       %}
     </p>
@@ -152,7 +152,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.references.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.references.images.
           path=image_path
       %}
     </p>
@@ -162,7 +162,7 @@ title: RdlInstancerGeometry
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.reverse_normals.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.reverse_normals.images.
           path=image_path
       %}
     </p>
@@ -172,7 +172,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-comments">A list of vec3 that represet the per-instance velocity(motion blur). The length should be either 0 or consistent with "positions".</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.scales.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.scales.images.
           path=image_path
       %}
     </p>
@@ -182,7 +182,7 @@ title: RdlInstancerGeometry
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.shadow_exclusion_mappings.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.shadow_exclusion_mappings.images.
           path=image_path
       %}
     </p>
@@ -192,7 +192,7 @@ title: RdlInstancerGeometry
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.shadow_ray_epsilon.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.shadow_ray_epsilon.images.
           path=image_path
       %}
     </p>
@@ -202,7 +202,7 @@ title: RdlInstancerGeometry
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.shadow_receiver_label.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.shadow_receiver_label.images.
           path=image_path
       %}
     </p>
@@ -214,7 +214,7 @@ title: RdlInstancerGeometry
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.side_type.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.side_type.images.
           path=image_path
       %}
     </p>
@@ -224,7 +224,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.static.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.static.images.
           path=image_path
       %}
     </p>
@@ -234,7 +234,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.use_reference_attributes.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.use_reference_attributes.images.
           path=image_path
       %}
     </p>
@@ -244,7 +244,7 @@ title: RdlInstancerGeometry
       default: False
       <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.use_reference_xforms.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.use_reference_xforms.images.
           path=image_path
       %}
     </p>
@@ -254,7 +254,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.velocities.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.velocities.images.
           path=image_path
       %}
     </p>
@@ -264,7 +264,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_diffuse_reflection.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_diffuse_reflection.images.
           path=image_path
       %}
     </p>
@@ -274,7 +274,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_diffuse_transmission.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_diffuse_transmission.images.
           path=image_path
       %}
     </p>
@@ -284,7 +284,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_glossy_reflection.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_glossy_reflection.images.
           path=image_path
       %}
     </p>
@@ -294,7 +294,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_glossy_transmission.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_glossy_transmission.images.
           path=image_path
       %}
     </p>
@@ -304,7 +304,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_in_camera.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_in_camera.images.
           path=image_path
       %}
     </p>
@@ -314,7 +314,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_mirror_reflection.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_mirror_reflection.images.
           path=image_path
       %}
     </p>
@@ -324,7 +324,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_mirror_transmission.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_mirror_transmission.images.
           path=image_path
       %}
     </p>
@@ -334,7 +334,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_shadow.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_shadow.images.
           path=image_path
       %}
     </p>
@@ -344,7 +344,7 @@ title: RdlInstancerGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.visible_volume.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.visible_volume.images.
           path=image_path
       %}
     </p>
@@ -354,7 +354,7 @@ title: RdlInstancerGeometry
       default: []
       <p class="scene-class-comments">A list of xforms that represent the per-instance xform.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlInstancerGeometryattributes.xform_list.images.
+          images=site.data.scene-classes.geometry.RdlInstancerGeometry.attributes.xform_list.images.
           path=image_path
       %}
     </p>

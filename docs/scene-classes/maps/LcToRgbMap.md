@@ -37,7 +37,7 @@ title: LcToRgbMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LcToRgbMapattributes.input_color.images.
+          images=site.data.scene-classes.maps.LcToRgbMap.attributes.input_color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: LcToRgbMap
       default: [ 100, 0, 0 ]
       <p class="scene-class-comments">Target color for remapping, in LAB colorspace</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LcToRgbMapattributes.target_color.images.
+          images=site.data.scene-classes.maps.LcToRgbMap.attributes.target_color.images.
           path=image_path
       %}
     </p>

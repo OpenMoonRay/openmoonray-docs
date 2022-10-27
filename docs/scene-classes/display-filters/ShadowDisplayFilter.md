@@ -37,7 +37,7 @@ title: ShadowDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ShadowDisplayFilterattributes.density.images.
+          images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.density.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ShadowDisplayFilter
       default: None
       <p class="scene-class-comments">Image Buffer representing the occluded image</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ShadowDisplayFilterattributes.occluded.images.
+          images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.occluded.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ShadowDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color of the shadow</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ShadowDisplayFilterattributes.shadow_color.images.
+          images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.shadow_color.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ShadowDisplayFilter
       default: None
       <p class="scene-class-comments">Image Buffer representing the unoccluded image</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ShadowDisplayFilterattributes.unoccluded.images.
+          images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.unoccluded.images.
           path=image_path
       %}
     </p>

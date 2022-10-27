@@ -37,7 +37,7 @@ title: Joint
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.joint.Jointattributes.node_xform.images.
+          images=site.data.scene-classes.joint.Joint.attributes.node_xform.images.
           path=image_path
       %}
     </p>

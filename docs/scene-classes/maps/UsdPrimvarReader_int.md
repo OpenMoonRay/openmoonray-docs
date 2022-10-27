@@ -37,7 +37,7 @@ title: UsdPrimvarReader_int
       default: 0
       <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_intattributes.fallback.images.
+          images=site.data.scene-classes.maps.UsdPrimvarReader_int.attributes.fallback.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UsdPrimvarReader_int
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_intattributes.varname.images.
+          images=site.data.scene-classes.maps.UsdPrimvarReader_int.attributes.varname.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UsdPrimvarReader_int
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_intattributes.warn_when_unavailable.images.
+          images=site.data.scene-classes.maps.UsdPrimvarReader_int.attributes.warn_when_unavailable.images.
           path=image_path
       %}
     </p>

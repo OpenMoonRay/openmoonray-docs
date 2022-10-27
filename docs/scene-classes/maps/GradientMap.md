@@ -37,7 +37,7 @@ title: GradientMap
       default: False
       <p class="scene-class-comments">Color A blends into Color B and then back into Color A from the start to the end point</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.symmetric.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.symmetric.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: GradientMap
       default: 0.5
       <p class="scene-class-comments">Shifts the center of the symmetric falloff</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.symmetric_center.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.symmetric_center.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: GradientMap
       default: 0.5
       <p class="scene-class-comments">Compresses the blending towards the start or end color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.falloff_bias.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.falloff_bias.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: GradientMap
       default: 1.0
       <p class="scene-class-comments">Shifts where the falloff ends</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.falloff_end.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.falloff_end.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: GradientMap
       default: 1.0
       <p class="scene-class-comments">Adjust the intensity of the end color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.falloff_end_intensity.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.falloff_end_intensity.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: GradientMap
       default: 1.0
       <p class="scene-class-comments">Adjusts rate of blending</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.falloff_exponent.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.falloff_exponent.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: GradientMap
       default: 0.0
       <p class="scene-class-comments">Shifts where the falloff starts</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.falloff_start.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.falloff_start.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: GradientMap
           | ease out = 5
       <p class="scene-class-comments">Falloff blend mode</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.falloff_type.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.falloff_type.images.
           path=image_path
       %}
     </p>
@@ -132,7 +132,7 @@ title: GradientMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Start color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.color_A.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.color_A.images.
           path=image_path
       %}
     </p>
@@ -142,7 +142,7 @@ title: GradientMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">End color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.color_B.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.color_B.images.
           path=image_path
       %}
     </p>
@@ -152,7 +152,7 @@ title: GradientMap
       default: [ 0, 1, 0 ]
       <p class="scene-class-comments">End position in the chosen space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.end.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.end.images.
           path=image_path
       %}
     </p>
@@ -162,7 +162,7 @@ title: GradientMap
       default: None
       <p class="scene-class-comments">Use the provided object's transformation space (only used if object space is also specified)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.object.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.object.images.
           path=image_path
       %}
     </p>
@@ -178,7 +178,7 @@ title: GradientMap
           | texture = 6
       <p class="scene-class-comments">The transformation space in which to perform the blending</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.space.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.space.images.
           path=image_path
       %}
     </p>
@@ -188,7 +188,7 @@ title: GradientMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Start position in the chosen space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.GradientMapattributes.start.images.
+          images=site.data.scene-classes.maps.GradientMap.attributes.start.images.
           path=image_path
       %}
     </p>

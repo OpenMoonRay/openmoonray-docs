@@ -37,7 +37,7 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMapattributes.input_A.images.
+          images=site.data.scene-classes.maps.LayerMap.attributes.input_A.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMapattributes.input_B.images.
+          images=site.data.scene-classes.maps.LayerMap.attributes.input_B.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: LayerMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMapattributes.mask.images.
+          images=site.data.scene-classes.maps.LayerMap.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: LayerMap
           | exclusion = 15
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMapattributes.mode.images.
+          images=site.data.scene-classes.maps.LayerMap.attributes.mode.images.
           path=image_path
       %}
     </p>

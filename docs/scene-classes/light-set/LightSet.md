@@ -37,7 +37,7 @@ title: LightSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-set.LightSetattributes.lights.images.
+          images=site.data.scene-classes.light-set.LightSet.attributes.lights.images.
           path=image_path
       %}
     </p>

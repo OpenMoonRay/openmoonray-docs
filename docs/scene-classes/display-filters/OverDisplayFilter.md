@@ -37,7 +37,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">alpha for over operation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilterattributes.alpha.images.
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput on bottom</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilterattributes.input_bottom.images.
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_bottom.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput on top</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilterattributes.input_top.images.
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_top.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: OverDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of alpha</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilterattributes.invert_alpha.images.
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: OverDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>

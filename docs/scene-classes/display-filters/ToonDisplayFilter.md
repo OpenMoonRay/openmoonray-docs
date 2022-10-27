@@ -37,7 +37,7 @@ title: ToonDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Adds an ambient light to the cel shading</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.ambient.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.ambient.images.
           path=image_path
       %}
     </p>
@@ -50,7 +50,7 @@ title: ToonDisplayFilter
           | Laplacian of Gaussian = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.edge_detector.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.edge_detector.images.
           path=image_path
       %}
     </p>
@@ -60,7 +60,7 @@ title: ToonDisplayFilter
       default: 0.00999999977648
       <p class="scene-class-comments">The threshold for the depth-based ink outline</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.ink_depth_threshold.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.ink_depth_threshold.images.
           path=image_path
       %}
     </p>
@@ -70,7 +70,7 @@ title: ToonDisplayFilter
       default: 0.00999999977648
       <p class="scene-class-comments">Increase for a more pronounced normal-based ink outline</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.ink_normal_scale.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.ink_normal_scale.images.
           path=image_path
       %}
     </p>
@@ -80,7 +80,7 @@ title: ToonDisplayFilter
       default: 0.00999999977648
       <p class="scene-class-comments">The threshold for the normal-based ink outline</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.ink_normal_threshold.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.ink_normal_threshold.images.
           path=image_path
       %}
     </p>
@@ -90,7 +90,7 @@ title: ToonDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput that represents diffuse albedo material aov</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.input_albedo.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_albedo.images.
           path=image_path
       %}
     </p>
@@ -100,7 +100,7 @@ title: ToonDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput with 'depth' result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.input_depth.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_depth.images.
           path=image_path
       %}
     </p>
@@ -110,7 +110,7 @@ title: ToonDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput that represents diffuse reflection LPE</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.input_diffuse.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_diffuse.images.
           path=image_path
       %}
     </p>
@@ -120,7 +120,7 @@ title: ToonDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput that represents glossy reflection LPE</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.input_glossy.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_glossy.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: ToonDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput with 'normal' result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.input_normal.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -140,7 +140,7 @@ title: ToonDisplayFilter
       default: 2
       <p class="scene-class-comments">Sets number of toon cels in diffuse shading</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ToonDisplayFilterattributes.num_cels.images.
+          images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.num_cels.images.
           path=image_path
       %}
     </p>

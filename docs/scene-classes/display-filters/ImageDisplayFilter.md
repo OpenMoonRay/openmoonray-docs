@@ -37,7 +37,7 @@ title: ImageDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ImageDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ImageDisplayFilter
           | no_scale = 5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilterattributes.display_type.images.
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ImageDisplayFilter
       default: 
       <p class="scene-class-comments">file path to the .exr we want to fit to the plane</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilterattributes.image_path.images.
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ImageDisplayFilter
       default: None
       <p class="scene-class-comments">Input buffer</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ImageDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>

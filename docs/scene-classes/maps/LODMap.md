@@ -37,7 +37,7 @@ title: LODMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">value output when feature_width/camera_distance is more than or equal to stop</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LODMapattributes.far_value.images.
+          images=site.data.scene-classes.maps.LODMap.attributes.far_value.images.
           path=image_path
       %}
     </p>
@@ -48,7 +48,7 @@ title: LODMap
           | camera distance = 1
       <p class="scene-class-comments">Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LODMapattributes.mode.images.
+          images=site.data.scene-classes.maps.LODMap.attributes.mode.images.
           path=image_path
       %}
     </p>
@@ -58,7 +58,7 @@ title: LODMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">value output when feature_width/camera_distance is less than or equal to start</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LODMapattributes.near_value.images.
+          images=site.data.scene-classes.maps.LODMap.attributes.near_value.images.
           path=image_path
       %}
     </p>
@@ -68,7 +68,7 @@ title: LODMap
       default: 0.00999999977648
       <p class="scene-class-comments">feature_width/camera_distance at which to start blending near_value-&gt;far_value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LODMapattributes.start.images.
+          images=site.data.scene-classes.maps.LODMap.attributes.start.images.
           path=image_path
       %}
     </p>
@@ -78,7 +78,7 @@ title: LODMap
       default: 0.10000000149
       <p class="scene-class-comments">feature_width/camera_distance at which to stop blending near_value-&gt;far_value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LODMapattributes.stop.images.
+          images=site.data.scene-classes.maps.LODMap.attributes.stop.images.
           path=image_path
       %}
     </p>

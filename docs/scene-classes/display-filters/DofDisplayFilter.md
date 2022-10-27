@@ -37,7 +37,7 @@ title: DofDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: DofDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: DofDisplayFilter
       default: 8.0
       <p class="scene-class-comments">aperture in millimeters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.aperture.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.aperture.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">the 'depth' result RenderOutput to sample z depth values from</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.depth.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.depth.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: DofDisplayFilter
       default: 30.0
       <p class="scene-class-comments">focal length in millimeters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.focal_length.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focal_length.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: DofDisplayFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.focus_distance.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focus_distance.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput to apply depth of field</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -122,7 +122,7 @@ title: DofDisplayFilter
       default: True
       <p class="scene-class-comments">read dof attributes from active scene camera</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DofDisplayFilterattributes.use_camera_attributes.images.
+          images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.use_camera_attributes.images.
           path=image_path
       %}
     </p>

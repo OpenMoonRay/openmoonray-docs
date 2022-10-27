@@ -37,7 +37,7 @@ title: RemapDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RemapDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: RemapDisplayFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the maximum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.clamp_max_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.clamp_max_RGB.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: RemapDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the minimum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.clamp_min_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.clamp_min_RGB.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: RemapDisplayFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input value that will be remapped to the 'output max' value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.input_max_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.input_max_RGB.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: RemapDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the input value that will be remapped to the 'output min' value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.input_min_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.input_min_RGB.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: RemapDisplayFilter
       default: [ 0.5, 0.5, 0.5 ]
       <p class="scene-class-comments">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.midpoint_bias_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.midpoint_bias_RGB.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: RemapDisplayFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the value that 'input max' is remapped to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.output_max_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.output_max_RGB.images.
           path=image_path
       %}
     </p>
@@ -122,7 +122,7 @@ title: RemapDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the value that 'input min' is remapped to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.output_min_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.output_min_RGB.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: RemapDisplayFilter
       default: True
       <p class="scene-class-comments">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.clamp.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: RemapDisplayFilter
       default: True
       <p class="scene-class-comments">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.clamp_RGB.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.clamp_RGB.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: RemapDisplayFilter
       default: 1.0
       <p class="scene-class-comments">the maximum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.clamp_max.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.clamp_max.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: RemapDisplayFilter
       default: 0.0
       <p class="scene-class-comments">the minimum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.clamp_min.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.clamp_min.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: RemapDisplayFilter
       default: None
       <p class="scene-class-comments">Input buffer</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: RemapDisplayFilter
       default: 1.0
       <p class="scene-class-comments">the input value that will be remapped to the 'output max' value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.input_max.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.input_max.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: RemapDisplayFilter
       default: 0.0
       <p class="scene-class-comments">the input value that will be remapped to the 'output min' value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.input_min.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.input_min.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: RemapDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: RemapDisplayFilter
       default: 0.5
       <p class="scene-class-comments">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.midpoint_bias.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.midpoint_bias.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: RemapDisplayFilter
       default: 1.0
       <p class="scene-class-comments">the value that 'input max' is remapped to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.output_max.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.output_max.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: RemapDisplayFilter
       default: 0.0
       <p class="scene-class-comments">the value that 'input min' is remapped to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.output_min.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.output_min.images.
           path=image_path
       %}
     </p>
@@ -248,7 +248,7 @@ title: RemapDisplayFilter
           | RGB = 1
       <p class="scene-class-comments">Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RemapDisplayFilterattributes.remap_method.images.
+          images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.remap_method.images.
           path=image_path
       %}
     </p>

@@ -37,7 +37,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.fast_geometry_update.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.fast_geometry_update.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SceneVariables
       default: 4000
       <p class="scene-class-comments">size is in Mb and this is the maximum cache size</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.texture_cache_size.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.texture_cache_size.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: SceneVariables
       default: 24000
       <p class="scene-class-comments">maximum number of simultaneous open file handles</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.texture_file_handles.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.texture_file_handles.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: SceneVariables
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.camera.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.camera.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: SceneVariables
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.layer.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.layer.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_active.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_active.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-comments">Define checkpoint file write operation execution mode.Checkpoint file write is executed as background thread and run parallel with MCRT threads (= true:default). Or stop all MCRT threads and checkpoint file write is exclusively executed (= false).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_bg_write.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_bg_write.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: SceneVariables
       default: 15.0
       <p class="scene-class-comments">Length of time, in minutes, between checkpoint file writes. Time should be equal or bigger than 0.1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_interval.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_interval.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-comments">Specify max number of internal ImageWriteCache total which defines total number of write backlog under background thread write mode. You have to specify 1 or bigger number. Background thread write mode is suspended and processed serially when internal ImageWriteCache reaches this checkpoint_max_bgcache number. Bigger max value can support background write more robustly even if checkpoint write interval is pretty short. However it requires more runtime memory. 2 is best for most of the cases.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_max_bgcache.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-comments">Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by SIGINT. This value is fraction. If this value is ZERO or negative, no extra snapshot action is executed and no checkpoint file is generated when SIGINT is received.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_max_snapshot_overhead.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.images.
           path=image_path
       %}
     </p>
@@ -148,7 +148,7 @@ title: SceneVariables
           | quality = 1
       <p class="scene-class-comments">Select checkpoint computation internal logic based on the time interval or quality steps</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_mode.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_mode.images.
           path=image_path
       %}
     </p>
@@ -158,7 +158,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-comments">Checkpoint file overwrite/non-overwirte control options, If checkpoint_overwrite=true, all latest checkpoint file is overwritten to previous checkpoint file output and we only have latest checkpoint file on disk. if checkpoint_overwrite=false, checkpoint files name is modified and extend with tile based sampling total number and all checkpoint files are write out by different name. As result we can keep all checkpoint files.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_overwrite.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_overwrite.images.
           path=image_path
       %}
     </p>
@@ -168,7 +168,7 @@ title: SceneVariables
       default: 
       <p class="scene-class-comments">Define post checkpoint lua script name. This script is loaded into renderer just after every checkpoint file write completion then executed simultaneously with MCRT threads. Renderer sets some lua global variables and lua script can access them. See details in rendering-wiki checkpoint/resume page. If empty, post checkpoint script execution is disabled.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_post_script.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_post_script.images.
           path=image_path
       %}
     </p>
@@ -178,7 +178,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-comments">Steps of quality, internal sampling iteration count, between checkpoint file writes. Value should be equal or bigger than 1. Uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. If you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... Adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. Recommended number is 1~3 range. You can use more than 4 but bigger number always require longer rendering time. If you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_quality_steps.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.images.
           path=image_path
       %}
     </p>
@@ -188,7 +188,7 @@ title: SceneVariables
       default: 0
       <p class="scene-class-comments">When total pixel sample count exceeds this value at every pixel (If you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. Disabled sample cap feature when set to 0.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_sample_cap.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.images.
           path=image_path
       %}
     </p>
@@ -198,7 +198,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-comments">Interval of time in minutes, about snapshot refreshment regarding interruption by SIGINT. Unit is minute. If this value is ZERO or negative, checkpoint_max_snapshot_overhead parameter is used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_snapshot_interval.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.images.
           path=image_path
       %}
     </p>
@@ -208,7 +208,7 @@ title: SceneVariables
       default: 1
       <p class="scene-class-comments">Specify samples per pixel (SPP) number. Checkpoint file is created when all pixel's SPP are same or bigger than this number. Until then, checkpoint file is not created.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_start_sample.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_start_sample.images.
           path=image_path
       %}
     </p>
@@ -218,7 +218,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-comments">When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. Disabled time cap feature when set to 0.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_time_cap.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_time_cap.images.
           path=image_path
       %}
     </p>
@@ -228,7 +228,7 @@ title: SceneVariables
       default: 0
       <p class="scene-class-comments">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable.If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_total_files.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_total_files.images.
           path=image_path
       %}
     </p>
@@ -243,7 +243,7 @@ title: SceneVariables
       default: -1
       <p class="scene-class-comments">Specify port number for debug console. If you set -1 (=default), all debug console functionalities are disabled. If you set 0 or positive port number, debug console functionalities are enabled. If enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. If you set 0, the kernel finds the available port for you and displays the port number to the cerr. Otherwise you have to set the available port number yourself.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.debug_console.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.debug_console.images.
           path=image_path
       %}
     </p>
@@ -253,7 +253,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.debug_pixel.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.debug_pixel.images.
           path=image_path
       %}
     </p>
@@ -263,7 +263,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.debug_rays_depth_range.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.debug_rays_depth_range.images.
           path=image_path
       %}
     </p>
@@ -273,7 +273,7 @@ title: SceneVariables
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.debug_rays_file.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.debug_rays_file.images.
           path=image_path
       %}
     </p>
@@ -283,7 +283,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.debug_rays_primary_range.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.debug_rays_primary_range.images.
           path=image_path
       %}
     </p>
@@ -293,7 +293,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-comments">Checks geometry for bad data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.validate_geometry.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.validate_geometry.images.
           path=image_path
       %}
     </p>
@@ -308,7 +308,7 @@ title: SceneVariables
       default: 45.0
       <p class="scene-class-comments">Maximum curvature (in degrees) of the deep surface within a pixel before it is split</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_curvature_tolerance.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_curvature_tolerance.images.
           path=image_path
       %}
     </p>
@@ -319,7 +319,7 @@ title: SceneVariables
           | opendcx2.0 = 1 (default)
       <p class="scene-class-comments">Deep image format: openexr2.0: vanilla OpenEXR deep, opendcx2.0: DCX abuffer mask encoding</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_format.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_format.images.
           path=image_path
       %}
     </p>
@@ -329,7 +329,7 @@ title: SceneVariables
       default: []
       <p class="scene-class-comments">Names of primitive attributes containing deep IDs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_id_attribute_names.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_id_attribute_names.images.
           path=image_path
       %}
     </p>
@@ -339,7 +339,7 @@ title: SceneVariables
       default: 0.10000000149
       <p class="scene-class-comments">Minimum distance between deep layers</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_layer_bias.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_layer_bias.images.
           path=image_path
       %}
     </p>
@@ -349,7 +349,7 @@ title: SceneVariables
       default: 1
       <p class="scene-class-comments">Maximum number of depth layers to output</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_max_layers.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_max_layers.images.
           path=image_path
       %}
     </p>
@@ -359,7 +359,7 @@ title: SceneVariables
       default: 10
       <p class="scene-class-comments">Volume opacity compression resolution.  Lower values gives higher compression.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_vol_compression_res.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_vol_compression_res.images.
           path=image_path
       %}
     </p>
@@ -369,7 +369,7 @@ title: SceneVariables
       default: 2.0
       <p class="scene-class-comments">Maximum range of the deep surface's Z values within a pixel before it is split</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.deep_z_tolerance.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_z_tolerance.images.
           path=image_path
       %}
     </p>
@@ -384,7 +384,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.interactive_mode.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.interactive_mode.images.
           path=image_path
       %}
     </p>
@@ -394,7 +394,7 @@ title: SceneVariables
       default: -1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.machine_id.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.machine_id.images.
           path=image_path
       %}
     </p>
@@ -404,7 +404,7 @@ title: SceneVariables
       default: -1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.num_machines.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.num_machines.images.
           path=image_path
       %}
     </p>
@@ -414,7 +414,7 @@ title: SceneVariables
       default: scene.exr
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.output_file.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.output_file.images.
           path=image_path
       %}
     </p>
@@ -424,7 +424,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.progressive_shading.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.progressive_shading.images.
           path=image_path
       %}
     </p>
@@ -435,7 +435,7 @@ title: SceneVariables
           | multiplex pixel = 1 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.task_distribution_type.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.task_distribution_type.images.
           path=image_path
       %}
     </p>
@@ -445,7 +445,7 @@ title: SceneVariables
       default: 0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.threads.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.threads.images.
           path=image_path
       %}
     </p>
@@ -455,7 +455,7 @@ title: SceneVariables
       default: 
       <p class="scene-class-comments">Define temporary directory name for temporary file generation. Use $TMPDIR environment variable value if this variable is empty.If $TMPDIR is also empty, use /tmp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.tmp_dir.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.tmp_dir.images.
           path=image_path
       %}
     </p>
@@ -472,7 +472,7 @@ title: SceneVariables
           | quadratic b-spline = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.pixel_filter.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_filter.images.
           path=image_path
       %}
     </p>
@@ -482,7 +482,7 @@ title: SceneVariables
       default: 3.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.pixel_filter_width.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_filter_width.images.
           path=image_path
       %}
     </p>
@@ -492,7 +492,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.texture_blur.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.texture_blur.images.
           path=image_path
       %}
     </p>
@@ -507,7 +507,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-comments">clamp material roughness along paths to some extent (set value to [0..1]), to prevent fireflies from indirect caustics. Warning: Using this technique is biased</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.roughness_clamping_factor.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.roughness_clamping_factor.images.
           path=image_path
       %}
     </p>
@@ -517,7 +517,7 @@ title: SceneVariables
       default: 1
       <p class="scene-class-comments">clamp sample values only after given non-specular depth</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.sample_clamping_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sample_clamping_depth.images.
           path=image_path
       %}
     </p>
@@ -527,7 +527,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-comments">clamp sample values to a maximum (disabled if 0.0). Warning: Using this technique is biased</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.sample_clamping_value.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sample_clamping_value.images.
           path=image_path
       %}
     </p>
@@ -542,7 +542,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.frame.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.frame.images.
           path=image_path
       %}
     </p>
@@ -552,7 +552,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_frame.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_frame.images.
           path=image_path
       %}
     </p>
@@ -562,7 +562,7 @@ title: SceneVariables
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.min_frame.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.min_frame.images.
           path=image_path
       %}
     </p>
@@ -577,7 +577,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_displacement.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_displacement.images.
           path=image_path
       %}
     </p>
@@ -587,7 +587,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_dof.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_dof.images.
           path=image_path
       %}
     </p>
@@ -597,7 +597,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_max_geometry_resolution.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_max_geometry_resolution.images.
           path=image_path
       %}
     </p>
@@ -607,7 +607,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_motion_blur.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_motion_blur.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_presence_shadows.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_presence_shadows.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_shadowing.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_shadowing.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.enable_subsurface_scattering.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.enable_subsurface_scattering.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.lights_visible_in_camera.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.lights_visible_in_camera.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: SceneVariables
       default: 2147483647
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_geometry_resolution.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_geometry_resolution.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-comments">turns on/off propagation for ray visibility masks</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.propagate_visibility_bounce_type.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.propagate_visibility_bounce_type.images.
           path=image_path
       %}
     </p>
@@ -681,7 +681,7 @@ title: SceneVariables
           | On (Cosine Compensation Alternative = 4
       <p class="scene-class-comments">Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.shadow_terminator_fix.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.shadow_terminator_fix.images.
           path=image_path
       %}
     </p>
@@ -696,7 +696,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Window of the camera aperture. Overrides image width / height. Order: xmin ymin xmax ymax, with origin at left bottom.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.aperture_window.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.aperture_window.images.
           path=image_path
       %}
     </p>
@@ -706,7 +706,7 @@ title: SceneVariables
       default: 1080
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.image_height.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.image_height.images.
           path=image_path
       %}
     </p>
@@ -716,7 +716,7 @@ title: SceneVariables
       default: 1920
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.image_width.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.image_width.images.
           path=image_path
       %}
     </p>
@@ -726,7 +726,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Window that is rendered. Overrides image width / height (and overrides aperture window override). Order: xmin ymin xmax ymax, with origin at left bottom.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.region_window.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.region_window.images.
           path=image_path
       %}
     </p>
@@ -736,7 +736,7 @@ title: SceneVariables
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.res.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.res.images.
           path=image_path
       %}
     </p>
@@ -746,7 +746,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Subviewport of region window. Coordinate (0,0) maps to left, bottom of region window</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.sub_viewport.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sub_viewport.images.
           path=image_path
       %}
     </p>
@@ -761,7 +761,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.athena_debug.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.athena_debug.images.
           path=image_path
       %}
     </p>
@@ -771,7 +771,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.debug.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.debug.images.
           path=image_path
       %}
     </p>
@@ -781,7 +781,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.error.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.error.images.
           path=image_path
       %}
     </p>
@@ -791,7 +791,7 @@ title: SceneVariables
       default: [ 1, 0, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.fatal_color.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.fatal_color.images.
           path=image_path
       %}
     </p>
@@ -801,7 +801,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.info.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.info.images.
           path=image_path
       %}
     </p>
@@ -811,7 +811,7 @@ title: SceneVariables
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.stats_file.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.stats_file.images.
           path=image_path
       %}
     </p>
@@ -821,7 +821,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.warning.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.warning.images.
           path=image_path
       %}
     </p>
@@ -836,7 +836,7 @@ title: SceneVariables
       default: None
       <p class="scene-class-comments">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.exr_header_attributes.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.exr_header_attributes.images.
           path=image_path
       %}
     </p>
@@ -851,7 +851,7 @@ title: SceneVariables
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">frame-relative time offsets for motion sampling</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.motion_steps.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.motion_steps.images.
           path=image_path
       %}
     </p>
@@ -861,7 +861,7 @@ title: SceneVariables
       default: 0.00999999977648
       <p class="scene-class-comments">(in meters): one unit in world space = 'scene scale' meters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.scene_scale.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.scene_scale.images.
           path=image_path
       %}
     </p>
@@ -876,7 +876,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-comments">Turn on path guiding to handle difficult light transport problems (e.g. caustics) at the cost of increased memory</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.path_guide_enable.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.path_guide_enable.images.
           path=image_path
       %}
     </p>
@@ -891,7 +891,7 @@ title: SceneVariables
       default: 
       <p class="scene-class-comments">Define on-resume lua script name. This script is loaded into the renderer just after renderPrep execution under resume render mode then executed. This script is not executed if non-resume render mode even if you set script name.Renderer sets some lua global variables and lua script can access them. We can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. See details in rendering-wiki checkpoint/resume page. If empty, on-resume script execution is disabled.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.on_resume_script.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.on_resume_script.images.
           path=image_path
       %}
     </p>
@@ -901,7 +901,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-comments">make aov output as resumable for resume render</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.resumable_output.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.resumable_output.images.
           path=image_path
       %}
     </p>
@@ -911,7 +911,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-comments">resuming render process</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.resume_render.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.resume_render.images.
           path=image_path
       %}
     </p>
@@ -928,7 +928,7 @@ title: SceneVariables
           | one-lobe = 2
       <p class="scene-class-comments">Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.bsdf_sampler_strategy.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.bsdf_sampler_strategy.images.
           path=image_path
       %}
     </p>
@@ -938,7 +938,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.bsdf_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.bsdf_samples.images.
           path=image_path
       %}
     </p>
@@ -948,7 +948,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.bssrdf_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.bssrdf_samples.images.
           path=image_path
       %}
     </p>
@@ -958,7 +958,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-comments">Forces all hair materials to sample each hair BSDF lobe independently. This will enable the LPE label syntax for 'hair R', 'hair TT', 'hair TRT' and 'hair TRRT ' but will result in slower rendering</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.disable_optimized_hair_sampling.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.disable_optimized_hair_sampling.images.
           path=image_path
       %}
     </p>
@@ -968,7 +968,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.light_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.light_samples.images.
           path=image_path
       %}
     </p>
@@ -978,7 +978,7 @@ title: SceneVariables
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.lock_frame_noise.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.lock_frame_noise.images.
           path=image_path
       %}
     </p>
@@ -988,7 +988,7 @@ title: SceneVariables
       default: 5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_depth.images.
           path=image_path
       %}
     </p>
@@ -998,7 +998,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_diffuse_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_diffuse_depth.images.
           path=image_path
       %}
     </p>
@@ -1008,7 +1008,7 @@ title: SceneVariables
       default: 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_glossy_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_glossy_depth.images.
           path=image_path
       %}
     </p>
@@ -1018,7 +1018,7 @@ title: SceneVariables
       default: 5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_hair_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_hair_depth.images.
           path=image_path
       %}
     </p>
@@ -1028,7 +1028,7 @@ title: SceneVariables
       default: 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_mirror_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_mirror_depth.images.
           path=image_path
       %}
     </p>
@@ -1038,7 +1038,7 @@ title: SceneVariables
       default: 16
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_presence_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_presence_depth.images.
           path=image_path
       %}
     </p>
@@ -1048,7 +1048,7 @@ title: SceneVariables
       default: 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_subsurface_per_path.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_subsurface_per_path.images.
           path=image_path
       %}
     </p>
@@ -1058,7 +1058,7 @@ title: SceneVariables
       default: 8
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.pixel_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_samples.images.
           path=image_path
       %}
     </p>
@@ -1068,7 +1068,7 @@ title: SceneVariables
       default: 0.999000012875
       <p class="scene-class-comments">Defines at which point the accumulated presence can be considered as opaque, skipping generation of presence continuation rays.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.presence_threshold.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.presence_threshold.images.
           path=image_path
       %}
     </p>
@@ -1078,7 +1078,7 @@ title: SceneVariables
       default: 0.0375000014901
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.russian_roulette_threshold.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.russian_roulette_threshold.images.
           path=image_path
       %}
     </p>
@@ -1088,7 +1088,7 @@ title: SceneVariables
       default: 1.0
       <p class="scene-class-comments">Defines at which point the accumulated opacity can be considered as opaque, skipping generation of new transparency rays.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.transparency_threshold.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.transparency_threshold.images.
           path=image_path
       %}
     </p>
@@ -1103,7 +1103,7 @@ title: SceneVariables
       default: 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_volume_depth.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_volume_depth.images.
           path=image_path
       %}
     </p>
@@ -1113,7 +1113,7 @@ title: SceneVariables
       default: 0.649999976158
       <p class="scene-class-comments">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_attenuation_factor.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_attenuation_factor.images.
           path=image_path
       %}
     </p>
@@ -1123,7 +1123,7 @@ title: SceneVariables
       default: 0.649999976158
       <p class="scene-class-comments">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_contribution_factor.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_contribution_factor.images.
           path=image_path
       %}
     </p>
@@ -1133,7 +1133,7 @@ title: SceneVariables
       default: 4
       <p class="scene-class-comments">Sample number along the ray when computing volume scattering radiance towards the eye. Set to 0 to turn off volume lighting completely.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_illumination_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_illumination_samples.images.
           path=image_path
       %}
     </p>
@@ -1143,7 +1143,7 @@ title: SceneVariables
       default: 0.995000004768
       <p class="scene-class-comments">As a ray travels through volume regions, it will accumulate the amount of opacity. When the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_opacity_threshold.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_opacity_threshold.images.
           path=image_path
       %}
     </p>
@@ -1155,7 +1155,7 @@ title: SceneVariables
           | rnd = 2
       <p class="scene-class-comments">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;Warning: light linking does not work correctly in sum mode.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_overlap_mode.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_overlap_mode.images.
           path=image_path
       %}
     </p>
@@ -1165,7 +1165,7 @@ title: SceneVariables
       default: 0.5
       <p class="scene-class-comments">Controls how phase function(anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_phase_attenuation_factor.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_phase_attenuation_factor.images.
           path=image_path
       %}
     </p>
@@ -1175,7 +1175,7 @@ title: SceneVariables
       default: 0.5
       <p class="scene-class-comments">Controls the overall quality of volume rendering. The higher number gives better volume shape detail and more accurate scattering integration result.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_quality.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_quality.images.
           path=image_path
       %}
     </p>
@@ -1185,7 +1185,7 @@ title: SceneVariables
       default: 1.0
       <p class="scene-class-comments">Controls the quality of volume shadow (transmittance). The higher number gives more accurate volume shadow.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.volume_shadow_quality.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_shadow_quality.images.
           path=image_path
       %}
     </p>
@@ -1207,7 +1207,7 @@ title: SceneVariables
           | spiral rect = 7
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.batch_tile_order.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.batch_tile_order.images.
           path=image_path
       %}
     </p>
@@ -1224,7 +1224,7 @@ title: SceneVariables
           | spiral rect = 7
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.checkpoint_tile_order.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_tile_order.images.
           path=image_path
       %}
     </p>
@@ -1234,7 +1234,7 @@ title: SceneVariables
       default: 24.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.fps.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.fps.images.
           path=image_path
       %}
     </p>
@@ -1244,7 +1244,7 @@ title: SceneVariables
       default: 4096
       <p class="scene-class-comments">When adaptive sampling is turned on, this represents the max number of samples we can throw at a pixel. It's best to err on the high side since adaptive sampling will cull out samples where they're not needed based on the target adaptive error, in which case we should rarely hit the max samples value.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.max_adaptive_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.max_adaptive_samples.images.
           path=image_path
       %}
     </p>
@@ -1254,7 +1254,7 @@ title: SceneVariables
       default: 16
       <p class="scene-class-comments">When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. This manifests itself as square 8x8 artifacts in the final image. The higher this value, the less the chance of this happening.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.min_adaptive_samples.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.min_adaptive_samples.images.
           path=image_path
       %}
     </p>
@@ -1271,7 +1271,7 @@ title: SceneVariables
           | spiral rect = 7
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.progressive_tile_order.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.progressive_tile_order.images.
           path=image_path
       %}
     </p>
@@ -1282,7 +1282,7 @@ title: SceneVariables
           | adaptive = 2
       <p class="scene-class-comments">Controls which sampling scheme to use, defaults to uniform sampling.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.sampling_mode.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sampling_mode.images.
           path=image_path
       %}
     </p>
@@ -1292,7 +1292,7 @@ title: SceneVariables
       default: 10.0
       <p class="scene-class-comments">When adaptive sampling is turned on, this represents the desired quality of the output images. Lower values will give higher quality but take longer to render. Higher values will give lower quality but render quicker.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.target_adaptive_error.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.target_adaptive_error.images.
           path=image_path
       %}
     </p>
@@ -1302,7 +1302,7 @@ title: SceneVariables
       default: True
       <p class="scene-class-comments">Selection of image file write uses two stage output logic or not. Two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. This solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. Temporary file directory is defined by tmp_dir scene_variable.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.scene-variables.SceneVariablesattributes.two_stage_output.images.
+          images=site.data.scene-classes.scene-variables.SceneVariables.attributes.two_stage_output.images.
           path=image_path
       %}
     </p>

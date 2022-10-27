@@ -37,7 +37,7 @@ title: ColorCorrectTMIMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.TMI.images.
+          images=site.data.scene-classes.maps.ColorCorrectTMIMap.attributes.TMI.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectTMIMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.input.images.
+          images=site.data.scene-classes.maps.ColorCorrectTMIMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectTMIMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.mix.images.
+          images=site.data.scene-classes.maps.ColorCorrectTMIMap.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectTMIMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.on.images.
+          images=site.data.scene-classes.maps.ColorCorrectTMIMap.attributes.on.images.
           path=image_path
       %}
     </p>

@@ -37,7 +37,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMapattributes.B.images.
+          images=site.data.scene-classes.maps.FloatToRgbMap.attributes.B.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMapattributes.G.images.
+          images=site.data.scene-classes.maps.FloatToRgbMap.attributes.G.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMapattributes.R.images.
+          images=site.data.scene-classes.maps.FloatToRgbMap.attributes.R.images.
           path=image_path
       %}
     </p>

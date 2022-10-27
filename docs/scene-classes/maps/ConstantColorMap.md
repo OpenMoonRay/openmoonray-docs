@@ -37,7 +37,7 @@ title: ConstantColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">constant color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ConstantColorMapattributes.color_value.images.
+          images=site.data.scene-classes.maps.ConstantColorMap.attributes.color_value.images.
           path=image_path
       %}
     </p>

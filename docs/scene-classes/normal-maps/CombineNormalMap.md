@@ -37,7 +37,7 @@ title: CombineNormalMap
       default: None
       <p class="scene-class-comments">First normal map to combine; usually a base map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.CombineNormalMapattributes.input_1.images.
+          images=site.data.scene-classes.normal-maps.CombineNormalMap.attributes.input_1.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: CombineNormalMap
       default: None
       <p class="scene-class-comments">Second normal map to combine; usually a base map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.CombineNormalMapattributes.input_2.images.
+          images=site.data.scene-classes.normal-maps.CombineNormalMap.attributes.input_2.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: CombineNormalMap
       default: 1.0
       <p class="scene-class-comments">Amount of normal map 1 to blend in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.CombineNormalMapattributes.normal_map_1_dial.images.
+          images=site.data.scene-classes.normal-maps.CombineNormalMap.attributes.normal_map_1_dial.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: CombineNormalMap
       default: 1.0
       <p class="scene-class-comments">Amount of normal map 2 to blend in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.CombineNormalMapattributes.normal_map_2_dial.images.
+          images=site.data.scene-classes.normal-maps.CombineNormalMap.attributes.normal_map_2_dial.images.
           path=image_path
       %}
     </p>

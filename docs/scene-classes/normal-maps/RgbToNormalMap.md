@@ -37,7 +37,7 @@ title: RgbToNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert to a normal map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RgbToNormalMapattributes.input.images.
+          images=site.data.scene-classes.normal-maps.RgbToNormalMap.attributes.input.images.
           path=image_path
       %}
     </p>

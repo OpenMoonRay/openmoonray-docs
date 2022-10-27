@@ -37,7 +37,7 @@ title: RgbToLabMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToLabMapattributes.input_color.images.
+          images=site.data.scene-classes.maps.RgbToLabMap.attributes.input_color.images.
           path=image_path
       %}
     </p>

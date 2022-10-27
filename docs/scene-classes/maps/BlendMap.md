@@ -37,7 +37,7 @@ title: BlendMap
       default: 0.5
       <p class="scene-class-comments">The amount to blend between color A (0) and color B (1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMapattributes.blend_amount.images.
+          images=site.data.scene-classes.maps.BlendMap.attributes.blend_amount.images.
           path=image_path
       %}
     </p>
@@ -48,7 +48,7 @@ title: BlendMap
           | cubic = 1
       <p class="scene-class-comments">The type of blending algorithm</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMapattributes.blend_type.images.
+          images=site.data.scene-classes.maps.BlendMap.attributes.blend_type.images.
           path=image_path
       %}
     </p>
@@ -58,7 +58,7 @@ title: BlendMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color you get if blend amount is 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMapattributes.color_A.images.
+          images=site.data.scene-classes.maps.BlendMap.attributes.color_A.images.
           path=image_path
       %}
     </p>
@@ -68,7 +68,7 @@ title: BlendMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color you get if blend amount is 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMapattributes.color_B.images.
+          images=site.data.scene-classes.maps.BlendMap.attributes.color_B.images.
           path=image_path
       %}
     </p>
@@ -78,7 +78,7 @@ title: BlendMap
       default: 1.0
       <p class="scene-class-comments">If the blend amount is greater than this amount, it will choose color B (1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMapattributes.threshold_max.images.
+          images=site.data.scene-classes.maps.BlendMap.attributes.threshold_max.images.
           path=image_path
       %}
     </p>
@@ -88,7 +88,7 @@ title: BlendMap
       default: 0.0
       <p class="scene-class-comments">If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMapattributes.threshold_min.images.
+          images=site.data.scene-classes.maps.BlendMap.attributes.threshold_min.images.
           path=image_path
       %}
     </p>

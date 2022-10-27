@@ -37,7 +37,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for bool type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.bool_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.bool_key.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">bool type user data values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.bool_values.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.bool_values.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for color type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.color_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.color_key.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">color type user data values for motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.color_values_0.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.color_values_0.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">color type user data values for motion step 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.color_values_1.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.color_values_1.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for float type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.float_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.float_key.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: UserData
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">float type user data values for motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.float_values_0.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.float_values_0.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: UserData
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">float type user data values for motion step 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.float_values_1.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.float_values_1.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for integer type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.int_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.int_key.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: UserData
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">integer type user data values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.int_values.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.int_values.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for mat4f type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.mat4f_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.mat4f_key.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">mat4f type user data values for motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.mat4f_values_0.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.mat4f_values_0.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">mat4f type user data values for motion step 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.mat4f_values_1.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.mat4f_values_1.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for string type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.string_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.string_key.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">string type user data values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.string_values.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.string_values.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for vec2f type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.vec2f_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.vec2f_key.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">vec2f type user data values for motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.vec2f_values_0.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.vec2f_values_0.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">vec2f type user data values for motion step 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.vec2f_values_1.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.vec2f_values_1.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: UserData
       default: 
       <p class="scene-class-comments">key name for vec3f type user data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.vec3f_key.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.vec3f_key.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">vec3f type user data values for motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.vec3f_values_0.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.vec3f_values_0.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: UserData
       default: []
       <p class="scene-class-comments">vec3f type user data values for motion step 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.user-data.UserDataattributes.vec3f_values_1.images.
+          images=site.data.scene-classes.user-data.UserData.attributes.vec3f_values_1.images.
           path=image_path
       %}
     </p>

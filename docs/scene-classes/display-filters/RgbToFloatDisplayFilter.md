@@ -37,7 +37,7 @@ title: RgbToFloatDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RgbToFloatDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: RgbToFloatDisplayFilter
       default: None
       <p class="scene-class-comments">image buffer</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: RgbToFloatDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -89,7 +89,7 @@ title: RgbToFloatDisplayFilter
           | luminance = 7
       <p class="scene-class-comments">specify the method to convert RGB Color to float</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.mode.images.
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.attributes.mode.images.
           path=image_path
       %}
     </p>

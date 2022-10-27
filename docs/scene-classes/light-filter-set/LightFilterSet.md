@@ -37,7 +37,7 @@ title: LightFilterSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filter-set.LightFilterSetattributes.lightfilters.images.
+          images=site.data.scene-classes.light-filter-set.LightFilterSet.attributes.lightfilters.images.
           path=image_path
       %}
     </p>

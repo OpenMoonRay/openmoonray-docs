@@ -37,7 +37,7 @@ title: RdlCurveGeometry
       default: 4
       <p class="scene-class-comments">Number of segments to split curve spans into</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.tessellation_rate.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.tessellation_rate.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">Optionally declare vertex accelerations for quadratic motion interpolation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.accleration_list.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.accleration_list.images.
           path=image_path
       %}
     </p>
@@ -63,7 +63,7 @@ title: RdlCurveGeometry
           | round = 1
       <p class="scene-class-comments">Curve subtype is ray facing or round</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.curve_subtype.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curve_subtype.images.
           path=image_path
       %}
     </p>
@@ -75,7 +75,7 @@ title: RdlCurveGeometry
           | bspline = 2
       <p class="scene-class-comments">Curve interpolation type is linear, bezier, or bspline</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.curve_type.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curve_type.images.
           path=image_path
       %}
     </p>
@@ -85,7 +85,7 @@ title: RdlCurveGeometry
       default: 10
       <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.curved_motion_blur_sample_count.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curved_motion_blur_sample_count.images.
           path=image_path
       %}
     </p>
@@ -95,7 +95,7 @@ title: RdlCurveGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of vertices per curve</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.curves_vertex_count.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curves_vertex_count.images.
           path=image_path
       %}
     </p>
@@ -105,7 +105,7 @@ title: RdlCurveGeometry
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.label.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -120,7 +120,7 @@ title: RdlCurveGeometry
           | hermite = 4
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.motion_blur_type.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.motion_blur_type.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: RdlCurveGeometry
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.node_xform.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.node_xform.images.
           path=image_path
       %}
     </p>
@@ -140,7 +140,7 @@ title: RdlCurveGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of part indices. </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.part_indices.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.part_indices.images.
           path=image_path
       %}
     </p>
@@ -150,7 +150,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.part_list.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.part_list.images.
           path=image_path
       %}
     </p>
@@ -162,7 +162,7 @@ title: RdlCurveGeometry
           | both motion steps = 2 (default)
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.primitive_attribute_frame.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attribute_frame.images.
           path=image_path
       %}
     </p>
@@ -172,7 +172,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.primitive_attributes.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attributes.images.
           path=image_path
       %}
     </p>
@@ -182,7 +182,7 @@ title: RdlCurveGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Stores all radii</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.radius_list.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.radius_list.images.
           path=image_path
       %}
     </p>
@@ -192,7 +192,7 @@ title: RdlCurveGeometry
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.ray_epsilon.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.ray_epsilon.images.
           path=image_path
       %}
     </p>
@@ -202,7 +202,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.references.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.references.images.
           path=image_path
       %}
     </p>
@@ -212,7 +212,7 @@ title: RdlCurveGeometry
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.reverse_normals.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.reverse_normals.images.
           path=image_path
       %}
     </p>
@@ -222,7 +222,7 @@ title: RdlCurveGeometry
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.shadow_exclusion_mappings.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.images.
           path=image_path
       %}
     </p>
@@ -232,7 +232,7 @@ title: RdlCurveGeometry
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.shadow_ray_epsilon.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.images.
           path=image_path
       %}
     </p>
@@ -242,7 +242,7 @@ title: RdlCurveGeometry
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.shadow_receiver_label.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.images.
           path=image_path
       %}
     </p>
@@ -254,7 +254,7 @@ title: RdlCurveGeometry
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.side_type.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.side_type.images.
           path=image_path
       %}
     </p>
@@ -264,7 +264,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.static.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.static.images.
           path=image_path
       %}
     </p>
@@ -274,7 +274,7 @@ title: RdlCurveGeometry
       default: False
       <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.use_rotation_motion_blur.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.images.
           path=image_path
       %}
     </p>
@@ -284,7 +284,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">If the curves are using UVs, store them per-curve in this list</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.uv_list.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.uv_list.images.
           path=image_path
       %}
     </p>
@@ -294,7 +294,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">Optionally declare vertex velocities instead of a second motion step'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.velocity_list_0.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_list_0.images.
           path=image_path
       %}
     </p>
@@ -304,7 +304,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.velocity_list_1.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_list_1.images.
           path=image_path
       %}
     </p>
@@ -314,7 +314,7 @@ title: RdlCurveGeometry
       default: 1.0
       <p class="scene-class-comments">Adjust magnitude of velocity-based motion blur</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.velocity_scale.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_scale.images.
           path=image_path
       %}
     </p>
@@ -324,7 +324,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">Stores all vertices used by the points at motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.vertex_list_0.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.vertex_list_0.images.
           path=image_path
       %}
     </p>
@@ -334,7 +334,7 @@ title: RdlCurveGeometry
       default: []
       <p class="scene-class-comments">If the curves are in motion, the second motion step is stored in this attribute</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.vertex_list_1.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.vertex_list_1.images.
           path=image_path
       %}
     </p>
@@ -344,7 +344,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_diffuse_reflection.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_diffuse_reflection.images.
           path=image_path
       %}
     </p>
@@ -354,7 +354,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_diffuse_transmission.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_diffuse_transmission.images.
           path=image_path
       %}
     </p>
@@ -364,7 +364,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_glossy_reflection.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_glossy_reflection.images.
           path=image_path
       %}
     </p>
@@ -374,7 +374,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_glossy_transmission.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_glossy_transmission.images.
           path=image_path
       %}
     </p>
@@ -384,7 +384,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_in_camera.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_in_camera.images.
           path=image_path
       %}
     </p>
@@ -394,7 +394,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_mirror_reflection.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_mirror_reflection.images.
           path=image_path
       %}
     </p>
@@ -404,7 +404,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_mirror_transmission.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_mirror_transmission.images.
           path=image_path
       %}
     </p>
@@ -414,7 +414,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_shadow.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_shadow.images.
           path=image_path
       %}
     </p>
@@ -424,7 +424,7 @@ title: RdlCurveGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlCurveGeometryattributes.visible_volume.images.
+          images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_volume.images.
           path=image_path
       %}
     </p>

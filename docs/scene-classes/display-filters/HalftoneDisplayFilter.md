@@ -37,7 +37,7 @@ title: HalftoneDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: HalftoneDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: HalftoneDisplayFilter
       default: 1.0
       <p class="scene-class-comments">The width in pixels of the antialiasing</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.filter_width.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.filter_width.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: HalftoneDisplayFilter
       default: False
       <p class="scene-class-comments">Ignore color information, render as grayscale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.grayscale.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.grayscale.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: HalftoneDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput to be represented in halftone</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: HalftoneDisplayFilter
       default: False
       <p class="scene-class-comments">Whether the dots should be black (normal) or white/color (inverted)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.invert.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.invert.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: HalftoneDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: HalftoneDisplayFilter
       default: 5
       <p class="scene-class-comments">The size in pixels of the halftone dots</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.HalftoneDisplayFilterattributes.size.images.
+          images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.size.images.
           path=image_path
       %}
     </p>

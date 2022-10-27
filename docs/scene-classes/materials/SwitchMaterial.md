@@ -37,7 +37,7 @@ title: SwitchMaterial
       default: 0
       <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.choice.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.choice.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.extra_aovs.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: SwitchMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.label.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material0.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material0.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material1.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material1.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material10.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material10.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material11.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material11.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material12.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material12.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material13.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material13.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material14.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material14.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material15.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material15.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material16.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material16.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material17.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material17.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material18.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material18.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material19.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material19.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material2.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material2.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material20.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material20.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material21.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material21.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material22.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material22.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material23.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material23.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material24.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material24.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material25.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material25.images.
           path=image_path
       %}
     </p>
@@ -257,7 +257,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material26.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material26.images.
           path=image_path
       %}
     </p>
@@ -267,7 +267,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material27.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material27.images.
           path=image_path
       %}
     </p>
@@ -277,7 +277,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material28.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material28.images.
           path=image_path
       %}
     </p>
@@ -287,7 +287,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material29.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material29.images.
           path=image_path
       %}
     </p>
@@ -297,7 +297,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material3.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material3.images.
           path=image_path
       %}
     </p>
@@ -307,7 +307,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material30.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material30.images.
           path=image_path
       %}
     </p>
@@ -317,7 +317,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material31.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material31.images.
           path=image_path
       %}
     </p>
@@ -327,7 +327,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material32.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material32.images.
           path=image_path
       %}
     </p>
@@ -337,7 +337,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material33.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material33.images.
           path=image_path
       %}
     </p>
@@ -347,7 +347,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material34.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material34.images.
           path=image_path
       %}
     </p>
@@ -357,7 +357,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material35.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material35.images.
           path=image_path
       %}
     </p>
@@ -367,7 +367,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material36.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material36.images.
           path=image_path
       %}
     </p>
@@ -377,7 +377,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material37.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material37.images.
           path=image_path
       %}
     </p>
@@ -387,7 +387,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material38.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material38.images.
           path=image_path
       %}
     </p>
@@ -397,7 +397,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material39.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material39.images.
           path=image_path
       %}
     </p>
@@ -407,7 +407,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material4.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material4.images.
           path=image_path
       %}
     </p>
@@ -417,7 +417,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material40.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material40.images.
           path=image_path
       %}
     </p>
@@ -427,7 +427,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material41.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material41.images.
           path=image_path
       %}
     </p>
@@ -437,7 +437,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material42.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material42.images.
           path=image_path
       %}
     </p>
@@ -447,7 +447,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material43.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material43.images.
           path=image_path
       %}
     </p>
@@ -457,7 +457,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material44.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material44.images.
           path=image_path
       %}
     </p>
@@ -467,7 +467,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material45.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material45.images.
           path=image_path
       %}
     </p>
@@ -477,7 +477,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material46.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material46.images.
           path=image_path
       %}
     </p>
@@ -487,7 +487,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material47.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material47.images.
           path=image_path
       %}
     </p>
@@ -497,7 +497,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material48.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material48.images.
           path=image_path
       %}
     </p>
@@ -507,7 +507,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material49.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material49.images.
           path=image_path
       %}
     </p>
@@ -517,7 +517,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material5.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material5.images.
           path=image_path
       %}
     </p>
@@ -527,7 +527,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material50.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material50.images.
           path=image_path
       %}
     </p>
@@ -537,7 +537,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material51.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material51.images.
           path=image_path
       %}
     </p>
@@ -547,7 +547,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material52.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material52.images.
           path=image_path
       %}
     </p>
@@ -557,7 +557,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material53.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material53.images.
           path=image_path
       %}
     </p>
@@ -567,7 +567,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material54.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material54.images.
           path=image_path
       %}
     </p>
@@ -577,7 +577,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material55.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material55.images.
           path=image_path
       %}
     </p>
@@ -587,7 +587,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material56.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material56.images.
           path=image_path
       %}
     </p>
@@ -597,7 +597,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material57.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material57.images.
           path=image_path
       %}
     </p>
@@ -607,7 +607,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material58.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material58.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material59.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material59.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material6.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material6.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material60.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material60.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material61.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material61.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material62.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material62.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material63.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material63.images.
           path=image_path
       %}
     </p>
@@ -677,7 +677,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material7.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material7.images.
           path=image_path
       %}
     </p>
@@ -687,7 +687,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material8.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material8.images.
           path=image_path
       %}
     </p>
@@ -697,7 +697,7 @@ title: SwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.material9.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.material9.images.
           path=image_path
       %}
     </p>
@@ -707,7 +707,7 @@ title: SwitchMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.SwitchMaterialattributes.priority.images.
+          images=site.data.scene-classes.materials.SwitchMaterial.attributes.priority.images.
           path=image_path
       %}
     </p>

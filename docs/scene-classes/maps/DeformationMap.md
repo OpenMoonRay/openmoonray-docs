@@ -40,7 +40,7 @@ title: DeformationMap
           | deformation_avg = 3 (default)
       <p class="scene-class-comments">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DeformationMapattributes.output_mode.images.
+          images=site.data.scene-classes.maps.DeformationMap.attributes.output_mode.images.
           path=image_path
       %}
     </p>
@@ -50,7 +50,7 @@ title: DeformationMap
       default: False
       <p class="scene-class-comments">If derivatives are missing or zero output the warning color erroring out</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DeformationMapattributes.use_warning_color.images.
+          images=site.data.scene-classes.maps.DeformationMap.attributes.use_warning_color.images.
           path=image_path
       %}
     </p>
@@ -60,7 +60,7 @@ title: DeformationMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Warning color to output when derivatives are missing or zero</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DeformationMapattributes.warning_color.images.
+          images=site.data.scene-classes.maps.DeformationMap.attributes.warning_color.images.
           path=image_path
       %}
     </p>

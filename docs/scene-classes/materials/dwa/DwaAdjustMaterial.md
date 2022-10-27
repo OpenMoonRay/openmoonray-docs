@@ -37,7 +37,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">use color adjustment attrs: color_hue_shift, color_saturation, color_gain</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.adjust_color.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.adjust_color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">use presence adjustment attrs: presence_set, presence_set_blend, presence_mult</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.adjust_presence.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.adjust_presence.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">use roughness adjustment attrs: roughness_set, roughness_set_blend, roughness_mult, roughness_remap_{in/out}_{min/max}</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.adjust_roughness.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.adjust_roughness.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">use specular adjustment attrs: specular_set, specular_set_blend, specular_mult</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.adjust_specular.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.adjust_specular.images.
           path=image_path
       %}
     </p>
@@ -84,7 +84,7 @@ title: DwaAdjustMaterial
           | force off = 2
       <p class="scene-class-comments">allows you to keep or set casts caustics attribute</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.casts_caustics.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.casts_caustics.images.
           path=image_path
       %}
     </p>
@@ -94,7 +94,7 @@ title: DwaAdjustMaterial
       default: False
       <p class="scene-class-comments">when checked, turn off clearcoat from input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.disable_clearcoat.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.disable_clearcoat.images.
           path=image_path
       %}
     </p>
@@ -104,7 +104,7 @@ title: DwaAdjustMaterial
       default: False
       <p class="scene-class-comments">when checked, turn off all diffuse from input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.disable_diffuse.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.disable_diffuse.images.
           path=image_path
       %}
     </p>
@@ -114,7 +114,7 @@ title: DwaAdjustMaterial
       default: False
       <p class="scene-class-comments">when checked, turn off all specular from input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.disable_specular.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.disable_specular.images.
           path=image_path
       %}
     </p>
@@ -126,7 +126,7 @@ title: DwaAdjustMaterial
           | force off = 2
       <p class="scene-class-comments">allows you to keep or set thin geometry attribute</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.thin_geometry.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.thin_geometry.images.
           path=image_path
       %}
     </p>
@@ -141,7 +141,7 @@ title: DwaAdjustMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">emissive map to add to material's emission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.emission.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.emission.images.
           path=image_path
       %}
     </p>
@@ -153,7 +153,7 @@ title: DwaAdjustMaterial
           | unmasked = 2
       <p class="scene-class-comments">how to handle emission input. masked uses mix input, unmasked is mix = 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.emission_mode.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.emission_mode.images.
           path=image_path
       %}
     </p>
@@ -163,7 +163,7 @@ title: DwaAdjustMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.extra_aovs.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -173,7 +173,7 @@ title: DwaAdjustMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.input_material.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.input_material.images.
           path=image_path
       %}
     </p>
@@ -183,7 +183,7 @@ title: DwaAdjustMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.label.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -193,7 +193,7 @@ title: DwaAdjustMaterial
       default: 1.0
       <p class="scene-class-comments">weight of adjustments applied to the material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.mix.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -203,7 +203,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">Enable/disable all adjustments</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.on.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.on.images.
           path=image_path
       %}
     </p>
@@ -213,7 +213,7 @@ title: DwaAdjustMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterialattributes.priority.images.
+          images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.priority.images.
           path=image_path
       %}
     </p>

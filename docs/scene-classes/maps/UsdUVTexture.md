@@ -37,7 +37,7 @@ title: UsdUVTexture
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.bias.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.bias.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UsdUVTexture
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Fallback value used when texture can not be read.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.fallback.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.fallback.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UsdUVTexture
       default: 
       <p class="scene-class-comments">Path to the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.file.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.file.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: UsdUVTexture
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.scale.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -79,7 +79,7 @@ title: UsdUVTexture
           | auto = 2 (default)
       <p class="scene-class-comments">Flag indicating the color space in which the source texture is encoded.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.sourceColorSpace.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.sourceColorSpace.images.
           path=image_path
       %}
     </p>
@@ -89,7 +89,7 @@ title: UsdUVTexture
       default: [ 1, 1 ]
       <p class="scene-class-comments">Texture coordinate to use to fetch this texture.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.st.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.st.images.
           path=image_path
       %}
     </p>
@@ -99,7 +99,7 @@ title: UsdUVTexture
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.udim_files.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.udim_files.images.
           path=image_path
       %}
     </p>
@@ -109,7 +109,7 @@ title: UsdUVTexture
       default: 10
       <p class="scene-class-comments">udim maximum v value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.udim_max_v.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.udim_max_v.images.
           path=image_path
       %}
     </p>
@@ -119,7 +119,7 @@ title: UsdUVTexture
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.udim_values.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.udim_values.images.
           path=image_path
       %}
     </p>
@@ -133,7 +133,7 @@ title: UsdUVTexture
           | useMetadata = 4 (default)
       <p class="scene-class-comments">Wrap mode when reading this texture.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.wrapS.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.wrapS.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: UsdUVTexture
           | useMetadata = 4 (default)
       <p class="scene-class-comments">Wrap mode when reading this texture.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdUVTextureattributes.wrapT.images.
+          images=site.data.scene-classes.maps.UsdUVTexture.attributes.wrapT.images.
           path=image_path
       %}
     </p>

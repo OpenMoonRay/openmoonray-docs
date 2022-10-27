@@ -37,7 +37,7 @@ title: DirectionalMap
       default: 0.5
       <p class="scene-class-comments">controls the rate at which the effect increases as the shading normal approaches the prime direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.bias.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.bias.images.
           path=image_path
       %}
     </p>
@@ -48,7 +48,7 @@ title: DirectionalMap
           | absolute = 1
       <p class="scene-class-comments">determines how surfaces facing opposite the prime direction are handled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.clamping_behavior.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.clamping_behavior.images.
           path=image_path
       %}
     </p>
@@ -59,7 +59,7 @@ title: DirectionalMap
           | linear = 1
       <p class="scene-class-comments">determines how the effect falls off as the difference angle increases</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.falloff_type.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.falloff_type.images.
           path=image_path
       %}
     </p>
@@ -69,7 +69,7 @@ title: DirectionalMap
       default: 0.550000011921
       <p class="scene-class-comments">the value at which the effect is considered 100% on</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.smoothstep_end.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.smoothstep_end.images.
           path=image_path
       %}
     </p>
@@ -79,7 +79,7 @@ title: DirectionalMap
       default: 0.449999988079
       <p class="scene-class-comments">the value at which the effect is considered 100% off</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.smoothstep_start.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.smoothstep_start.images.
           path=image_path
       %}
     </p>
@@ -89,7 +89,7 @@ title: DirectionalMap
       default: False
       <p class="scene-class-comments">apply smoothstep function to result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.use_smoothstep.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.use_smoothstep.images.
           path=image_path
       %}
     </p>
@@ -104,7 +104,7 @@ title: DirectionalMap
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal when bound. The binding multiplier is ignored</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.input_normal.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -114,7 +114,7 @@ title: DirectionalMap
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.input_normal_dial.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -129,7 +129,7 @@ title: DirectionalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the color of the effect when the difference angle is greatest</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.color_a.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.color_a.images.
           path=image_path
       %}
     </p>
@@ -139,7 +139,7 @@ title: DirectionalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the color of the effect when the difference angle is smallest</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.color_b.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.color_b.images.
           path=image_path
       %}
     </p>
@@ -149,7 +149,7 @@ title: DirectionalMap
       default: [ 0, 1, 0 ]
       <p class="scene-class-comments">specifies a custom direction in world space as the prime direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.custom_direction.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.custom_direction.images.
           path=image_path
       %}
     </p>
@@ -159,7 +159,7 @@ title: DirectionalMap
       default: None
       <p class="scene-class-comments">the object to use when 'prime direction' is set to 'axis of object' or 'look-at object'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.object.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.object.images.
           path=image_path
       %}
     </p>
@@ -174,7 +174,7 @@ title: DirectionalMap
           | -Z axis = 5
       <p class="scene-class-comments">which axis to use when 'prime direction' is set to 'axis of object'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.object_axis.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.object_axis.images.
           path=image_path
       %}
     </p>
@@ -185,7 +185,7 @@ title: DirectionalMap
           | parallel = 1
       <p class="scene-class-comments">determines which directions are given color A and which are given color B. Switching this effectively swaps the colors</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.polarity.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.polarity.images.
           path=image_path
       %}
     </p>
@@ -198,7 +198,7 @@ title: DirectionalMap
           | look-at object = 3
       <p class="scene-class-comments">which source is used for the prime direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.prime_direction.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.prime_direction.images.
           path=image_path
       %}
     </p>
@@ -208,7 +208,7 @@ title: DirectionalMap
       default: False
       <p class="scene-class-comments">use reference space position and normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMapattributes.use_reference_space.images.
+          images=site.data.scene-classes.maps.DirectionalMap.attributes.use_reference_space.images.
           path=image_path
       %}
     </p>

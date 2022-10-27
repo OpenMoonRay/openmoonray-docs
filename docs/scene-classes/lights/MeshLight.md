@@ -37,7 +37,7 @@ title: MeshLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.contrast.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: MeshLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.gain.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.gain.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: MeshLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.gamma.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: MeshLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.offset.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.offset.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: MeshLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.saturation.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: MeshLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color temperature using Nuke-like T/M/E settings</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.temperature.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.temperature.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: MeshLight
       default: 
       <p class="scene-class-comments">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: MeshLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">RGB value used when a texture lookup occurs outside the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_border_color.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_border_color.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: MeshLight
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales in (u,v)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_coverage.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_coverage.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: MeshLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in u, false =&gt; repeat in u</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_mirror_u.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_mirror_u.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: MeshLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in v, false =&gt; repeat in v</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_mirror_v.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_mirror_v.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: MeshLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in u over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_reps_u.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_reps_u.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: MeshLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in v over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_reps_v.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_reps_v.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: MeshLight
       default: 0.0
       <p class="scene-class-comments">Clockwise rotation angle in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_rotation.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_rotation.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: MeshLight
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_translation.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_translation.images.
           path=image_path
       %}
     </p>
@@ -192,7 +192,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">apply scene scale variable when normalized</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.apply_scene_scale.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.apply_scene_scale.images.
           path=image_path
       %}
     </p>
@@ -202,7 +202,7 @@ title: MeshLight
       default: 0.0
       <p class="scene-class-comments">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.clear_radius.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.clear_radius.images.
           path=image_path
       %}
     </p>
@@ -212,7 +212,7 @@ title: MeshLight
       default: 0.0
       <p class="scene-class-comments">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.clear_radius_falloff_distance.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.clear_radius_falloff_distance.images.
           path=image_path
       %}
     </p>
@@ -225,7 +225,7 @@ title: MeshLight
           | smoothstep = 3
       <p class="scene-class-comments">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.clear_radius_interpolation_type.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.clear_radius_interpolation_type.images.
           path=image_path
       %}
     </p>
@@ -235,7 +235,7 @@ title: MeshLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.color.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.color.images.
           path=image_path
       %}
     </p>
@@ -245,7 +245,7 @@ title: MeshLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.exposure.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.exposure.images.
           path=image_path
       %}
     </p>
@@ -255,7 +255,7 @@ title: MeshLight
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.geometry.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.geometry.images.
           path=image_path
       %}
     </p>
@@ -265,7 +265,7 @@ title: MeshLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.intensity.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.intensity.images.
           path=image_path
       %}
     </p>
@@ -275,7 +275,7 @@ title: MeshLight
       default: 
       <p class="scene-class-comments">label used in light aov expressions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.label.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -285,7 +285,7 @@ title: MeshLight
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.map_shader.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.map_shader.images.
           path=image_path
       %}
     </p>
@@ -295,7 +295,7 @@ title: MeshLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.max_shadow_distance.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.max_shadow_distance.images.
           path=image_path
       %}
     </p>
@@ -305,7 +305,7 @@ title: MeshLight
       default: False
       <p class="scene-class-comments">Does light motion affect motion-blur?</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.mb.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.mb.images.
           path=image_path
       %}
     </p>
@@ -315,7 +315,7 @@ title: MeshLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.normalized.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.normalized.images.
           path=image_path
       %}
     </p>
@@ -325,7 +325,7 @@ title: MeshLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.on.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.on.images.
           path=image_path
       %}
     </p>
@@ -335,7 +335,7 @@ title: MeshLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.parts.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.parts.images.
           path=image_path
       %}
     </p>
@@ -347,7 +347,7 @@ title: MeshLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.presence_shadows.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.presence_shadows.images.
           path=image_path
       %}
     </p>
@@ -357,7 +357,7 @@ title: MeshLight
       default: False
       <p class="scene-class-comments">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.ray_termination.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.ray_termination.images.
           path=image_path
       %}
     </p>
@@ -370,7 +370,7 @@ title: MeshLight
           | bilinear with nearest mip = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.texture_filter.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.texture_filter.images.
           path=image_path
       %}
     </p>
@@ -382,7 +382,7 @@ title: MeshLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_in_camera.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_in_camera.images.
           path=image_path
       %}
     </p>
@@ -397,7 +397,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_diffuse_reflection.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_diffuse_reflection.images.
           path=image_path
       %}
     </p>
@@ -407,7 +407,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_diffuse_transmission.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_diffuse_transmission.images.
           path=image_path
       %}
     </p>
@@ -417,7 +417,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_glossy_reflection.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_glossy_reflection.images.
           path=image_path
       %}
     </p>
@@ -427,7 +427,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_glossy_transmission.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_glossy_transmission.images.
           path=image_path
       %}
     </p>
@@ -437,7 +437,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_mirror_reflection.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_mirror_reflection.images.
           path=image_path
       %}
     </p>
@@ -447,7 +447,7 @@ title: MeshLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.visible_mirror_transmission.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.visible_mirror_transmission.images.
           path=image_path
       %}
     </p>
@@ -462,7 +462,7 @@ title: MeshLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.light_filters.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.light_filters.images.
           path=image_path
       %}
     </p>
@@ -472,7 +472,7 @@ title: MeshLight
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.MeshLightattributes.node_xform.images.
+          images=site.data.scene-classes.lights.MeshLight.attributes.node_xform.images.
           path=image_path
       %}
     </p>

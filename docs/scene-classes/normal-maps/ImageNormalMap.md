@@ -37,7 +37,7 @@ title: ImageNormalMap
       default: [ 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.offset.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.offset.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ImageNormalMap
       default: 0.0
       <p class="scene-class-comments">Rotation in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.rotation_angle.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.rotation_angle.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ImageNormalMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">UV coordinate around which to rotate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.rotation_center.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.rotation_center.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ImageNormalMap
       default: [ 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.scale.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ImageNormalMap
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.udim_files.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.udim_files.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ImageNormalMap
       default: 10
       <p class="scene-class-comments">udim maximum v value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.udim_max_v.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.udim_max_v.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ImageNormalMap
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.udim_values.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.udim_values.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: ImageNormalMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.default_value.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.default_value.images.
           path=image_path
       %}
     </p>
@@ -122,7 +122,7 @@ title: ImageNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.input_texture_coordinates.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.input_texture_coordinates.images.
           path=image_path
       %}
     </p>
@@ -133,7 +133,7 @@ title: ImageNormalMap
           | [-1,1] = 1
       <p class="scene-class-comments">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.normal_encoding.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.normal_encoding.images.
           path=image_path
       %}
     </p>
@@ -143,7 +143,7 @@ title: ImageNormalMap
       default: 
       <p class="scene-class-comments">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.tangent_space_normal_texture.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.tangent_space_normal_texture.images.
           path=image_path
       %}
     </p>
@@ -154,7 +154,7 @@ title: ImageNormalMap
           | input texture coordinates = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.texture_coordinates.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.texture_coordinates.images.
           path=image_path
       %}
     </p>
@@ -164,7 +164,7 @@ title: ImageNormalMap
       default: False
       <p class="scene-class-comments">Uses the 'default_value' for missing udims and does not report error</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.use_default_value_when_missing.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.use_default_value_when_missing.images.
           path=image_path
       %}
     </p>
@@ -174,7 +174,7 @@ title: ImageNormalMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMapattributes.wrap_around.images.
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.wrap_around.images.
           path=image_path
       %}
     </p>

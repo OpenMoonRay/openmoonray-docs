@@ -37,7 +37,7 @@ title: ClampDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ClampDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.ClampDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ClampDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ClampDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.ClampDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: ClampDisplayFilter
       default: None
       <p class="scene-class-comments">Image buffer to clamp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ClampDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.ClampDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: ClampDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ClampDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.ClampDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: ClampDisplayFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">max color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ClampDisplayFilterattributes.max.images.
+          images=site.data.scene-classes.display-filters.ClampDisplayFilter.attributes.max.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: ClampDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">min color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ClampDisplayFilterattributes.min.images.
+          images=site.data.scene-classes.display-filters.ClampDisplayFilter.attributes.min.images.
           path=image_path
       %}
     </p>

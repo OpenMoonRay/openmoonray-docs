@@ -37,7 +37,7 @@ title: RgbToHsvDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RgbToHsvDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: RgbToHsvDisplayFilter
       default: None
       <p class="scene-class-comments">image buffer</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilterattributes.input.images.
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: RgbToHsvDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>
@@ -83,7 +83,7 @@ title: RgbToHsvDisplayFilter
           | hsv_to_rgb = 1
       <p class="scene-class-comments">specify whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilterattributes.mode.images.
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.attributes.mode.images.
           path=image_path
       %}
     </p>

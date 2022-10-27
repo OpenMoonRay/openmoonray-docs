@@ -37,7 +37,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.camera_ray_material.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.camera_ray_material.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RaySwitchMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.cutout_camera_rays.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.cutout_camera_rays.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.default_material.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.default_material.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.extra_aovs.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.indirect_diffuse_ray_material.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.indirect_glossy_ray_material.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.indirect_mirror_ray_material.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: RaySwitchMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.label.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: RaySwitchMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterialattributes.priority.images.
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.priority.images.
           path=image_path
       %}
     </p>

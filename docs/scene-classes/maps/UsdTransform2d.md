@@ -37,7 +37,7 @@ title: UsdTransform2d
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2dattributes.in.images.
+          images=site.data.scene-classes.maps.UsdTransform2d.attributes.in.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UsdTransform2d
       default: 0.0
       <p class="scene-class-comments">Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2dattributes.rotation.images.
+          images=site.data.scene-classes.maps.UsdTransform2d.attributes.rotation.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UsdTransform2d
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scale around the origin to be applied to all components of the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2dattributes.scale.images.
+          images=site.data.scene-classes.maps.UsdTransform2d.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: UsdTransform2d
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translation to be applied to all components of the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2dattributes.translation.images.
+          images=site.data.scene-classes.maps.UsdTransform2d.attributes.translation.images.
           path=image_path
       %}
     </p>

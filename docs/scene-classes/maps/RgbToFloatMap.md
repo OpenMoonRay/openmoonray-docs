@@ -37,7 +37,7 @@ title: RgbToFloatMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToFloatMapattributes.input.images.
+          images=site.data.scene-classes.maps.RgbToFloatMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -54,7 +54,7 @@ title: RgbToFloatMap
           | luminance = 7
       <p class="scene-class-comments">specify the method to convert RGB Color to float</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToFloatMapattributes.mode.images.
+          images=site.data.scene-classes.maps.RgbToFloatMap.attributes.mode.images.
           path=image_path
       %}
     </p>

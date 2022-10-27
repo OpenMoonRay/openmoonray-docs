@@ -37,7 +37,7 @@ title: CombineLightFilter
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilterattributes.light_filters.images.
+          images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.images.
           path=image_path
       %}
     </p>
@@ -51,7 +51,7 @@ title: CombineLightFilter
           | subtract = 4
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilterattributes.mode.images.
+          images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.images.
           path=image_path
       %}
     </p>
@@ -61,7 +61,7 @@ title: CombineLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilterattributes.on.images.
+          images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.images.
           path=image_path
       %}
     </p>

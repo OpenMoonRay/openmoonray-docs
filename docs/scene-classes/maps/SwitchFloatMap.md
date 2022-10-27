@@ -37,7 +37,7 @@ title: SwitchFloatMap
       default: 0.0
       <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.choice.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.choice.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input0.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input0.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input1.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input1.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input10.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input10.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input11.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input11.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input12.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input12.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input13.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input13.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input14.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input14.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input15.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input15.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input16.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input16.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input17.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input17.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input18.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input18.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input19.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input19.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input2.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input2.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input20.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input20.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input21.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input21.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input22.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input22.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input23.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input23.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input24.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input24.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input25.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input25.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input26.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input26.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input27.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input27.images.
           path=image_path
       %}
     </p>
@@ -257,7 +257,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input28.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input28.images.
           path=image_path
       %}
     </p>
@@ -267,7 +267,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input29.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input29.images.
           path=image_path
       %}
     </p>
@@ -277,7 +277,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input3.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input3.images.
           path=image_path
       %}
     </p>
@@ -287,7 +287,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input30.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input30.images.
           path=image_path
       %}
     </p>
@@ -297,7 +297,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input31.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input31.images.
           path=image_path
       %}
     </p>
@@ -307,7 +307,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input32.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input32.images.
           path=image_path
       %}
     </p>
@@ -317,7 +317,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input33.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input33.images.
           path=image_path
       %}
     </p>
@@ -327,7 +327,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input34.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input34.images.
           path=image_path
       %}
     </p>
@@ -337,7 +337,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input35.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input35.images.
           path=image_path
       %}
     </p>
@@ -347,7 +347,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input36.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input36.images.
           path=image_path
       %}
     </p>
@@ -357,7 +357,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input37.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input37.images.
           path=image_path
       %}
     </p>
@@ -367,7 +367,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input38.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input38.images.
           path=image_path
       %}
     </p>
@@ -377,7 +377,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input39.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input39.images.
           path=image_path
       %}
     </p>
@@ -387,7 +387,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input4.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input4.images.
           path=image_path
       %}
     </p>
@@ -397,7 +397,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input40.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input40.images.
           path=image_path
       %}
     </p>
@@ -407,7 +407,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input41.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input41.images.
           path=image_path
       %}
     </p>
@@ -417,7 +417,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input42.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input42.images.
           path=image_path
       %}
     </p>
@@ -427,7 +427,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input43.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input43.images.
           path=image_path
       %}
     </p>
@@ -437,7 +437,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input44.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input44.images.
           path=image_path
       %}
     </p>
@@ -447,7 +447,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input45.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input45.images.
           path=image_path
       %}
     </p>
@@ -457,7 +457,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input46.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input46.images.
           path=image_path
       %}
     </p>
@@ -467,7 +467,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input47.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input47.images.
           path=image_path
       %}
     </p>
@@ -477,7 +477,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input48.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input48.images.
           path=image_path
       %}
     </p>
@@ -487,7 +487,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input49.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input49.images.
           path=image_path
       %}
     </p>
@@ -497,7 +497,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input5.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input5.images.
           path=image_path
       %}
     </p>
@@ -507,7 +507,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input50.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input50.images.
           path=image_path
       %}
     </p>
@@ -517,7 +517,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input51.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input51.images.
           path=image_path
       %}
     </p>
@@ -527,7 +527,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input52.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input52.images.
           path=image_path
       %}
     </p>
@@ -537,7 +537,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input53.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input53.images.
           path=image_path
       %}
     </p>
@@ -547,7 +547,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input54.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input54.images.
           path=image_path
       %}
     </p>
@@ -557,7 +557,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input55.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input55.images.
           path=image_path
       %}
     </p>
@@ -567,7 +567,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input56.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input56.images.
           path=image_path
       %}
     </p>
@@ -577,7 +577,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input57.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input57.images.
           path=image_path
       %}
     </p>
@@ -587,7 +587,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input58.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input58.images.
           path=image_path
       %}
     </p>
@@ -597,7 +597,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input59.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input59.images.
           path=image_path
       %}
     </p>
@@ -607,7 +607,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input6.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input6.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input60.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input60.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input61.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input61.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input62.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input62.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input63.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input63.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input7.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input7.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input8.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input8.images.
           path=image_path
       %}
     </p>
@@ -677,7 +677,7 @@ title: SwitchFloatMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchFloatMapattributes.input9.images.
+          images=site.data.scene-classes.maps.SwitchFloatMap.attributes.input9.images.
           path=image_path
       %}
     </p>

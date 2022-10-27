@@ -37,7 +37,7 @@ title: ClampMap
       default: True
       <p class="scene-class-comments">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMapattributes.clamp.images.
+          images=site.data.scene-classes.maps.ClampMap.attributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ClampMap
       default: 1.0
       <p class="scene-class-comments">the maximum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMapattributes.clamp_max.images.
+          images=site.data.scene-classes.maps.ClampMap.attributes.clamp_max.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ClampMap
       default: 0.0
       <p class="scene-class-comments">the minimum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMapattributes.clamp_min.images.
+          images=site.data.scene-classes.maps.ClampMap.attributes.clamp_min.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ClampMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input values to be remapped</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMapattributes.input.images.
+          images=site.data.scene-classes.maps.ClampMap.attributes.input.images.
           path=image_path
       %}
     </p>

@@ -38,7 +38,7 @@ title: DebugMap
           | render = 1
       <p class="scene-class-comments">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.input_normal_space.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.input_normal_space.images.
           path=image_path
       %}
     </p>
@@ -53,7 +53,7 @@ title: DebugMap
       default: surface_st
       <p class="scene-class-comments">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.primitive_attribute_name.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.primitive_attribute_name.images.
           path=image_path
       %}
     </p>
@@ -66,7 +66,7 @@ title: DebugMap
           | rgb = 3
       <p class="scene-class-comments">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.primitive_attribute_type.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.primitive_attribute_type.images.
           path=image_path
       %}
     </p>
@@ -81,7 +81,7 @@ title: DebugMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.checkerboard.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.checkerboard.images.
           path=image_path
       %}
     </p>
@@ -91,7 +91,7 @@ title: DebugMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.input_normal.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -101,7 +101,7 @@ title: DebugMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.input_normal_dial.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: DebugMap
           | primitive attribute = 6
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMapattributes.map_type.images.
+          images=site.data.scene-classes.maps.DebugMap.attributes.map_type.images.
           path=image_path
       %}
     </p>

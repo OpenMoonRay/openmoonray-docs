@@ -37,7 +37,7 @@ title: ColorCorrectContrastMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.contrast.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectContrastMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.contrast_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.contrast_b.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectContrastMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.contrast_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.contrast_g.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectContrastMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.contrast_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.contrast_r.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectContrastMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.input.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectContrastMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.mix.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectContrastMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.on.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.on.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ColorCorrectContrastMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for contrast</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectContrastMapattributes.use_per_channel_contrast.images.
+          images=site.data.scene-classes.maps.ColorCorrectContrastMap.attributes.use_per_channel_contrast.images.
           path=image_path
       %}
     </p>

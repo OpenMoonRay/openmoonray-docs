@@ -39,7 +39,7 @@ title: DwaMixMaterial
           | HSL = 2
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.blend_color_space.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.blend_color_space.images.
           path=image_path
       %}
     </p>
@@ -51,7 +51,7 @@ title: DwaMixMaterial
           | random walk = 2
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_bssrdf.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_bssrdf.images.
           path=image_path
       %}
     </p>
@@ -61,7 +61,7 @@ title: DwaMixMaterial
       default: True
       <p class="scene-class-comments">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_clearcoat_use_bending.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_clearcoat_use_bending.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: DwaMixMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_outer_specular_model.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_outer_specular_model.images.
           path=image_path
       %}
     </p>
@@ -83,7 +83,7 @@ title: DwaMixMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">If child materials disagree on the type of specular model, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_specular_model.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_specular_model.images.
           path=image_path
       %}
     </p>
@@ -93,7 +93,7 @@ title: DwaMixMaterial
       default: True
       <p class="scene-class-comments">If child materials disagree on the type of thin geometry, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_thin_geometry.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_thin_geometry.images.
           path=image_path
       %}
     </p>
@@ -105,7 +105,7 @@ title: DwaMixMaterial
           | Toon = 2
       <p class="scene-class-comments">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_toon_specular_model.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_toon_specular_model.images.
           path=image_path
       %}
     </p>
@@ -115,7 +115,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. The DwaLayerMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.sss_trace_set.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.sss_trace_set.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: DwaMixMaterial
       default: 0.5
       <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_LOD_quality.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_LOD_quality.images.
           path=image_path
       %}
     </p>
@@ -145,7 +145,7 @@ title: DwaMixMaterial
           | radius = 5
       <p class="scene-class-comments">developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_debug_mode.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_debug_mode.images.
           path=image_path
       %}
     </p>
@@ -156,7 +156,7 @@ title: DwaMixMaterial
           | additive = 1
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_layering_mode.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_layering_mode.images.
           path=image_path
       %}
     </p>
@@ -166,7 +166,7 @@ title: DwaMixMaterial
       default: 0.5
       <p class="scene-class-comments">randomness of flake orientation.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_randomness.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_randomness.images.
           path=image_path
       %}
     </p>
@@ -176,7 +176,7 @@ title: DwaMixMaterial
       default: 0
       <p class="scene-class-comments">The seed for the glitter random number generator.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_seed.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_seed.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: DwaMixMaterial
           | reference = 5 (default)
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_space.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_space.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: DwaMixMaterial
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_style_A_frequency.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_style_A_frequency.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: DwaMixMaterial
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_style_B_frequency.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_style_B_frequency.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: DwaMixMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_texture_A.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_texture_A.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: DwaMixMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.fallback_glitter_texture_B.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.fallback_glitter_texture_B.images.
           path=image_path
       %}
     </p>
@@ -242,7 +242,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.extra_aovs.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -252,7 +252,7 @@ title: DwaMixMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.label.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -262,7 +262,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material0.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material0.images.
           path=image_path
       %}
     </p>
@@ -272,7 +272,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material1.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material1.images.
           path=image_path
       %}
     </p>
@@ -282,7 +282,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material10.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material10.images.
           path=image_path
       %}
     </p>
@@ -292,7 +292,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material11.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material11.images.
           path=image_path
       %}
     </p>
@@ -302,7 +302,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material12.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material12.images.
           path=image_path
       %}
     </p>
@@ -312,7 +312,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material13.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material13.images.
           path=image_path
       %}
     </p>
@@ -322,7 +322,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material14.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material14.images.
           path=image_path
       %}
     </p>
@@ -332,7 +332,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material15.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material15.images.
           path=image_path
       %}
     </p>
@@ -342,7 +342,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material16.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material16.images.
           path=image_path
       %}
     </p>
@@ -352,7 +352,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material17.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material17.images.
           path=image_path
       %}
     </p>
@@ -362,7 +362,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material18.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material18.images.
           path=image_path
       %}
     </p>
@@ -372,7 +372,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material19.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material19.images.
           path=image_path
       %}
     </p>
@@ -382,7 +382,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material2.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material2.images.
           path=image_path
       %}
     </p>
@@ -392,7 +392,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material20.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material20.images.
           path=image_path
       %}
     </p>
@@ -402,7 +402,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material21.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material21.images.
           path=image_path
       %}
     </p>
@@ -412,7 +412,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material22.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material22.images.
           path=image_path
       %}
     </p>
@@ -422,7 +422,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material23.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material23.images.
           path=image_path
       %}
     </p>
@@ -432,7 +432,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material24.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material24.images.
           path=image_path
       %}
     </p>
@@ -442,7 +442,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material25.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material25.images.
           path=image_path
       %}
     </p>
@@ -452,7 +452,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material26.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material26.images.
           path=image_path
       %}
     </p>
@@ -462,7 +462,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material27.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material27.images.
           path=image_path
       %}
     </p>
@@ -472,7 +472,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material28.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material28.images.
           path=image_path
       %}
     </p>
@@ -482,7 +482,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material29.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material29.images.
           path=image_path
       %}
     </p>
@@ -492,7 +492,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material3.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material3.images.
           path=image_path
       %}
     </p>
@@ -502,7 +502,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material30.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material30.images.
           path=image_path
       %}
     </p>
@@ -512,7 +512,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material31.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material31.images.
           path=image_path
       %}
     </p>
@@ -522,7 +522,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material32.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material32.images.
           path=image_path
       %}
     </p>
@@ -532,7 +532,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material33.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material33.images.
           path=image_path
       %}
     </p>
@@ -542,7 +542,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material34.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material34.images.
           path=image_path
       %}
     </p>
@@ -552,7 +552,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material35.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material35.images.
           path=image_path
       %}
     </p>
@@ -562,7 +562,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material36.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material36.images.
           path=image_path
       %}
     </p>
@@ -572,7 +572,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material37.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material37.images.
           path=image_path
       %}
     </p>
@@ -582,7 +582,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material38.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material38.images.
           path=image_path
       %}
     </p>
@@ -592,7 +592,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material39.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material39.images.
           path=image_path
       %}
     </p>
@@ -602,7 +602,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material4.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material4.images.
           path=image_path
       %}
     </p>
@@ -612,7 +612,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material40.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material40.images.
           path=image_path
       %}
     </p>
@@ -622,7 +622,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material41.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material41.images.
           path=image_path
       %}
     </p>
@@ -632,7 +632,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material42.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material42.images.
           path=image_path
       %}
     </p>
@@ -642,7 +642,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material43.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material43.images.
           path=image_path
       %}
     </p>
@@ -652,7 +652,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material44.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material44.images.
           path=image_path
       %}
     </p>
@@ -662,7 +662,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material45.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material45.images.
           path=image_path
       %}
     </p>
@@ -672,7 +672,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material46.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material46.images.
           path=image_path
       %}
     </p>
@@ -682,7 +682,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material47.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material47.images.
           path=image_path
       %}
     </p>
@@ -692,7 +692,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material48.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material48.images.
           path=image_path
       %}
     </p>
@@ -702,7 +702,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material49.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material49.images.
           path=image_path
       %}
     </p>
@@ -712,7 +712,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material5.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material5.images.
           path=image_path
       %}
     </p>
@@ -722,7 +722,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material50.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material50.images.
           path=image_path
       %}
     </p>
@@ -732,7 +732,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material51.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material51.images.
           path=image_path
       %}
     </p>
@@ -742,7 +742,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material52.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material52.images.
           path=image_path
       %}
     </p>
@@ -752,7 +752,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material53.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material53.images.
           path=image_path
       %}
     </p>
@@ -762,7 +762,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material54.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material54.images.
           path=image_path
       %}
     </p>
@@ -772,7 +772,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material55.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material55.images.
           path=image_path
       %}
     </p>
@@ -782,7 +782,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material56.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material56.images.
           path=image_path
       %}
     </p>
@@ -792,7 +792,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material57.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material57.images.
           path=image_path
       %}
     </p>
@@ -802,7 +802,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material58.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material58.images.
           path=image_path
       %}
     </p>
@@ -812,7 +812,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material59.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material59.images.
           path=image_path
       %}
     </p>
@@ -822,7 +822,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material6.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material6.images.
           path=image_path
       %}
     </p>
@@ -832,7 +832,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material60.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material60.images.
           path=image_path
       %}
     </p>
@@ -842,7 +842,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material61.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material61.images.
           path=image_path
       %}
     </p>
@@ -852,7 +852,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material62.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material62.images.
           path=image_path
       %}
     </p>
@@ -862,7 +862,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material63.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material63.images.
           path=image_path
       %}
     </p>
@@ -872,7 +872,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material7.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material7.images.
           path=image_path
       %}
     </p>
@@ -882,7 +882,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material8.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material8.images.
           path=image_path
       %}
     </p>
@@ -892,7 +892,7 @@ title: DwaMixMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.material9.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.material9.images.
           path=image_path
       %}
     </p>
@@ -902,7 +902,7 @@ title: DwaMixMaterial
       default: 0.0
       <p class="scene-class-comments">Which of the 64 inputs (0 to 63) to use. Fractional values will mix the two materials the value lies between</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.mix.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -915,7 +915,7 @@ title: DwaMixMaterial
           | smooth = 3
       <p class="scene-class-comments">Adjusts rate of transition from one material to the next based on mix value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.mix_interpolation.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.mix_interpolation.images.
           path=image_path
       %}
     </p>
@@ -925,7 +925,7 @@ title: DwaMixMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.priority.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.priority.images.
           path=image_path
       %}
     </p>
@@ -935,7 +935,7 @@ title: DwaMixMaterial
       default: True
       <p class="scene-class-comments">When enabled, multiplies mix value by number of inputs used. Inputs should start at 0 with no gaps</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMixMaterialattributes.remap_mix_to_inputs.images.
+          images=site.data.scene-classes.materials.dwa.DwaMixMaterial.attributes.remap_mix_to_inputs.images.
           path=image_path
       %}
     </p>

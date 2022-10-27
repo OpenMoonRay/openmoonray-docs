@@ -37,7 +37,7 @@ title: RandomNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RandomNormalMapattributes.input.images.
+          images=site.data.scene-classes.normal-maps.RandomNormalMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RandomNormalMap
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RandomNormalMapattributes.seed.images.
+          images=site.data.scene-classes.normal-maps.RandomNormalMap.attributes.seed.images.
           path=image_path
       %}
     </p>

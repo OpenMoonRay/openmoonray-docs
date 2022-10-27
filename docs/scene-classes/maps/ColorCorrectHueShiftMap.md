@@ -37,7 +37,7 @@ title: ColorCorrectHueShiftMap
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (spectrum range is 0-1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHueShiftMapattributes.hue_shift.images.
+          images=site.data.scene-classes.maps.ColorCorrectHueShiftMap.attributes.hue_shift.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectHueShiftMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHueShiftMapattributes.input.images.
+          images=site.data.scene-classes.maps.ColorCorrectHueShiftMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectHueShiftMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHueShiftMapattributes.mix.images.
+          images=site.data.scene-classes.maps.ColorCorrectHueShiftMap.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectHueShiftMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectHueShiftMapattributes.on.images.
+          images=site.data.scene-classes.maps.ColorCorrectHueShiftMap.attributes.on.images.
           path=image_path
       %}
     </p>

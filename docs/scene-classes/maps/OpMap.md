@@ -37,7 +37,7 @@ title: OpMap
       default: False
       <p class="scene-class-comments">if on, the result is clamped to 0 - 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMapattributes.clamp.images.
+          images=site.data.scene-classes.maps.OpMap.attributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: OpMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the first operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMapattributes.op1.images.
+          images=site.data.scene-classes.maps.OpMap.attributes.op1.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: OpMap
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMapattributes.op1_factor.images.
+          images=site.data.scene-classes.maps.OpMap.attributes.op1_factor.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: OpMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the second operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMapattributes.op2.images.
+          images=site.data.scene-classes.maps.OpMap.attributes.op2.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: OpMap
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op2</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMapattributes.op2_factor.images.
+          images=site.data.scene-classes.maps.OpMap.attributes.op2_factor.images.
           path=image_path
       %}
     </p>
@@ -125,7 +125,7 @@ title: OpMap
           | bitwise_or = 38
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMapattributes.operation.images.
+          images=site.data.scene-classes.maps.OpMap.attributes.operation.images.
           path=image_path
       %}
     </p>

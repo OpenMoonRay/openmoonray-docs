@@ -37,7 +37,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.contrast_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.contrast_b.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.contrast_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.contrast_g.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.contrast_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.contrast_r.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">multiplies the blue channel by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gain_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gain_b.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">multiplies the green channel by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gain_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gain_g.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">multiplies the red channel by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gain_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gain_r.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">raises the blue channel to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gamma_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gamma_b.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">raises the green channel to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gamma_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gamma_g.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">raises the red channel to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gamma_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gamma_r.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the blue channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.offset_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.offset_b.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the green channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.offset_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.offset_g.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the red channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.offset_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.offset_r.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">desaturates the blue channel input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.saturation_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.saturation_b.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">desaturates the green channel input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.saturation_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.saturation_g.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">desaturates the red channel input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.saturation_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.saturation_r.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: ColorCorrectMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for contrast</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.use_per_channel_contrast.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.use_per_channel_contrast.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: ColorCorrectMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for gain and offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.use_per_channel_gain_offset.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.use_per_channel_gain_offset.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: ColorCorrectMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for gamma</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.use_per_channel_gamma.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.use_per_channel_gamma.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: ColorCorrectMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.use_per_channel_saturation.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.use_per_channel_saturation.images.
           path=image_path
       %}
     </p>
@@ -232,7 +232,7 @@ title: ColorCorrectMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.TMI.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.TMI.images.
           path=image_path
       %}
     </p>
@@ -242,7 +242,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables the TMI parameters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.TMI_enabled.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.TMI_enabled.images.
           path=image_path
       %}
     </p>
@@ -252,7 +252,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables/disables clamping of the output values.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.clamp.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -262,7 +262,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">the maximum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.clamp_max.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.clamp_max.images.
           path=image_path
       %}
     </p>
@@ -272,7 +272,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">the minimum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.clamp_min.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.clamp_min.images.
           path=image_path
       %}
     </p>
@@ -282,7 +282,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.contrast.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -292,7 +292,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables the contrast parameter</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.contrast_enabled.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.contrast_enabled.images.
           path=image_path
       %}
     </p>
@@ -302,7 +302,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">multiplies the input channels by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gain.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gain.images.
           path=image_path
       %}
     </p>
@@ -312,7 +312,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables the gain and offset parameters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gain_offset_enabled.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gain_offset_enabled.images.
           path=image_path
       %}
     </p>
@@ -322,7 +322,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">raises the input to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gamma.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -332,7 +332,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables the gamma parameter</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.gamma_enabled.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.gamma_enabled.images.
           path=image_path
       %}
     </p>
@@ -342,7 +342,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (spectrum range is 0-1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.hue_shift.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.hue_shift.images.
           path=image_path
       %}
     </p>
@@ -352,7 +352,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables the hue_shift parameter</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.hue_shift_enabled.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.hue_shift_enabled.images.
           path=image_path
       %}
     </p>
@@ -362,7 +362,7 @@ title: ColorCorrectMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.input.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -372,7 +372,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.mix.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -382,7 +382,7 @@ title: ColorCorrectMap
       default: 0.0
       <p class="scene-class-comments">adds the specified values to the input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.offset.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.offset.images.
           path=image_path
       %}
     </p>
@@ -392,7 +392,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.on.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.on.images.
           path=image_path
       %}
     </p>
@@ -402,7 +402,7 @@ title: ColorCorrectMap
       default: 1.0
       <p class="scene-class-comments">desaturates the input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.saturation.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -412,7 +412,7 @@ title: ColorCorrectMap
       default: True
       <p class="scene-class-comments">enables the saturation parameter</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectMapattributes.saturation_enabled.images.
+          images=site.data.scene-classes.maps.ColorCorrectMap.attributes.saturation_enabled.images.
           path=image_path
       %}
     </p>

@@ -37,7 +37,7 @@ title: IntensityLightFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.color.images.
+          images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: IntensityLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.exposure.images.
+          images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.exposure.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: IntensityLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.intensity.images.
+          images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.intensity.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: IntensityLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.invert.images.
+          images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.invert.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: IntensityLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.on.images.
+          images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.on.images.
           path=image_path
       %}
     </p>

@@ -37,7 +37,7 @@ title: BlendDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.invert_mask.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: BlendDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.mix.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: BlendDisplayFilter
       default: 0.5
       <p class="scene-class-comments">float determining amount of blend</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.blendAmt.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.blendAmt.images.
           path=image_path
       %}
     </p>
@@ -73,7 +73,7 @@ title: BlendDisplayFilter
           | cubic = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.blendType.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.blendType.images.
           path=image_path
       %}
     </p>
@@ -83,7 +83,7 @@ title: BlendDisplayFilter
       default: None
       <p class="scene-class-comments">first operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.input1.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.input1.images.
           path=image_path
       %}
     </p>
@@ -93,7 +93,7 @@ title: BlendDisplayFilter
       default: None
       <p class="scene-class-comments">second operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.input2.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.input2.images.
           path=image_path
       %}
     </p>
@@ -103,7 +103,7 @@ title: BlendDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.BlendDisplayFilterattributes.mask.images.
+          images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.mask.images.
           path=image_path
       %}
     </p>

@@ -42,7 +42,7 @@ title: ProjectPlanarMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.TRS_order.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.TRS_order.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: ProjectPlanarMap
       default: False
       <p class="scene-class-comments">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.black_outside_projection.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.black_outside_projection.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: ProjectPlanarMap
       default: True
       <p class="scene-class-comments">Toggles whether projections appear on back faces relative to projector</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.project_on_back_faces.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.project_on_back_faces.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: ProjectPlanarMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.projection_matrix.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.projection_matrix.images.
           path=image_path
       %}
     </p>
@@ -84,7 +84,7 @@ title: ProjectPlanarMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.projection_mode.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.projection_mode.images.
           path=image_path
       %}
     </p>
@@ -94,7 +94,7 @@ title: ProjectPlanarMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.projector.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.projector.images.
           path=image_path
       %}
     </p>
@@ -104,7 +104,7 @@ title: ProjectPlanarMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.rotate.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.rotate.images.
           path=image_path
       %}
     </p>
@@ -119,7 +119,7 @@ title: ProjectPlanarMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.rotation_order.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.rotation_order.images.
           path=image_path
       %}
     </p>
@@ -129,7 +129,7 @@ title: ProjectPlanarMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.scale.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -139,7 +139,7 @@ title: ProjectPlanarMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.translate.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.translate.images.
           path=image_path
       %}
     </p>
@@ -149,7 +149,7 @@ title: ProjectPlanarMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectPlanarMapattributes.use_reference_space.images.
+          images=site.data.scene-classes.maps.ProjectPlanarMap.attributes.use_reference_space.images.
           path=image_path
       %}
     </p>

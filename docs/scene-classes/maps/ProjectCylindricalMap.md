@@ -42,7 +42,7 @@ title: ProjectCylindricalMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.TRS_order.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.TRS_order.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.black_outside_projection.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.black_outside_projection.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">enables projection on surfaces with inward facing normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.project_on_inward_surfaces.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">enables projection on surfaces with outward facing normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.project_on_outward_surfaces.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: ProjectCylindricalMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.projection_matrix.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_matrix.images.
           path=image_path
       %}
     </p>
@@ -94,7 +94,7 @@ title: ProjectCylindricalMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.projection_mode.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_mode.images.
           path=image_path
       %}
     </p>
@@ -104,7 +104,7 @@ title: ProjectCylindricalMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.projector.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projector.images.
           path=image_path
       %}
     </p>
@@ -114,7 +114,7 @@ title: ProjectCylindricalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.rotate.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotate.images.
           path=image_path
       %}
     </p>
@@ -129,7 +129,7 @@ title: ProjectCylindricalMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.rotation_order.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotation_order.images.
           path=image_path
       %}
     </p>
@@ -139,7 +139,7 @@ title: ProjectCylindricalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.scale.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -149,7 +149,7 @@ title: ProjectCylindricalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.translate.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.translate.images.
           path=image_path
       %}
     </p>
@@ -159,7 +159,7 @@ title: ProjectCylindricalMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCylindricalMapattributes.use_reference_space.images.
+          images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.use_reference_space.images.
           path=image_path
       %}
     </p>

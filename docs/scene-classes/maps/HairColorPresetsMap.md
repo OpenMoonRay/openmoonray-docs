@@ -51,7 +51,7 @@ title: HairColorPresetsMap
           | chestnut brown = 14
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.HairColorPresetsMapattributes.color.images.
+          images=site.data.scene-classes.maps.HairColorPresetsMap.attributes.color.images.
           path=image_path
       %}
     </p>

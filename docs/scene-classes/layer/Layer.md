@@ -37,7 +37,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.displacements.images.
+          images=site.data.scene-classes.layer.Layer.attributes.displacements.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: Layer
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.geometries.images.
+          images=site.data.scene-classes.layer.Layer.attributes.geometries.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.lightfiltersets.images.
+          images=site.data.scene-classes.layer.Layer.attributes.lightfiltersets.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.lightsets.images.
+          images=site.data.scene-classes.layer.Layer.attributes.lightsets.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.parts.images.
+          images=site.data.scene-classes.layer.Layer.attributes.parts.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.shadowreceiversets.images.
+          images=site.data.scene-classes.layer.Layer.attributes.shadowreceiversets.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.shadowsets.images.
+          images=site.data.scene-classes.layer.Layer.attributes.shadowsets.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.surface_shaders.images.
+          images=site.data.scene-classes.layer.Layer.attributes.surface_shaders.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: Layer
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layerattributes.volume_shaders.images.
+          images=site.data.scene-classes.layer.Layer.attributes.volume_shaders.images.
           path=image_path
       %}
     </p>

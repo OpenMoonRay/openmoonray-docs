@@ -37,7 +37,7 @@ title: ColorCorrectSaturationMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.input.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.input.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.mix.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.mix.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectSaturationMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.on.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.on.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">desaturates the input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.saturation.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">desaturates the blue channel input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.saturation_b.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.saturation_b.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">desaturates the green channel input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.saturation_g.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.saturation_g.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">desaturates the red channel input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.saturation_r.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.saturation_r.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ColorCorrectSaturationMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectSaturationMapattributes.use_per_channel_saturation.images.
+          images=site.data.scene-classes.maps.ColorCorrectSaturationMap.attributes.use_per_channel_saturation.images.
           path=image_path
       %}
     </p>

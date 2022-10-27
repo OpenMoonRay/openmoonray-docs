@@ -37,7 +37,7 @@ title: NoiseMap
       default: 0.0
       <p class="scene-class-comments">If use 4D noise is on, this is the value for the 4th dimension</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.time.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.time.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: NoiseMap
       default: False
       <p class="scene-class-comments">If on, 4-dimensional noise is used instead of 3-dimensional</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.use_4D_noise.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.use_4D_noise.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: NoiseMap
       default: 0.5
       <p class="scene-class-comments">Bias the noise towards 0 or 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.bias.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.bias.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: NoiseMap
       default: 0.5
       <p class="scene-class-comments">Apply gain to the noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.gain.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.gain.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: NoiseMap
       default: False
       <p class="scene-class-comments">Invert the final pattern</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.invert.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.invert.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: NoiseMap
       default: [ 0, 1 ]
       <p class="scene-class-comments">min/max values between which the smoothstep will interpolate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.smoothstep.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.smoothstep.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: NoiseMap
       default: False
       <p class="scene-class-comments">Put the noise value through a smoothstep function defined by min/max</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.use_smoothstep.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.use_smoothstep.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: NoiseMap
       default: 0.0
       <p class="scene-class-comments">Rate of advection for flow noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.flow_advection_rate.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.flow_advection_rate.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: NoiseMap
       default: 0.0
       <p class="scene-class-comments">Angle of rotation for flow noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.flow_angle.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.flow_angle.images.
           path=image_path
       %}
     </p>
@@ -142,7 +142,7 @@ title: NoiseMap
       default: None
       <p class="scene-class-comments">camera used to define camera and screen space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.camera.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.camera.images.
           path=image_path
       %}
     </p>
@@ -152,7 +152,7 @@ title: NoiseMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.input_texture_coordinates.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.input_texture_coordinates.images.
           path=image_path
       %}
     </p>
@@ -162,7 +162,7 @@ title: NoiseMap
       default: None
       <p class="scene-class-comments">Directly connect object to use that object's space.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.object_space.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.object_space.images.
           path=image_path
       %}
     </p>
@@ -181,7 +181,7 @@ title: NoiseMap
           | hair_closest_surface_uv = 9
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.space.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.space.images.
           path=image_path
       %}
     </p>
@@ -196,7 +196,7 @@ title: NoiseMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotates the noise in space based on the specified rotation order</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.rotation.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.rotation.images.
           path=image_path
       %}
     </p>
@@ -211,7 +211,7 @@ title: NoiseMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply the euler rotations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.rotation_order.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.rotation_order.images.
           path=image_path
       %}
     </p>
@@ -221,7 +221,7 @@ title: NoiseMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Vector to scale the noise non-proportionally</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.scale.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.scale.images.
           path=image_path
       %}
     </p>
@@ -236,7 +236,7 @@ title: NoiseMap
           | trs = 5
       <p class="scene-class-comments">Order in which to apply the translation, rotation, and frequency</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.transformation_order.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.transformation_order.images.
           path=image_path
       %}
     </p>
@@ -246,7 +246,7 @@ title: NoiseMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Translation of the noise in space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.translation.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.translation.images.
           path=image_path
       %}
     </p>
@@ -261,7 +261,7 @@ title: NoiseMap
       default: 1.0
       <p class="scene-class-comments">Intensity of the noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.amplitude.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.amplitude.images.
           path=image_path
       %}
     </p>
@@ -271,7 +271,7 @@ title: NoiseMap
       default: False
       <p class="scene-class-comments">Outputs RGB noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.color.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.color.images.
           path=image_path
       %}
     </p>
@@ -281,7 +281,7 @@ title: NoiseMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">The color value at 0 noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.color_A.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.color_A.images.
           path=image_path
       %}
     </p>
@@ -291,7 +291,7 @@ title: NoiseMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color value at 1 noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.color_B.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.color_B.images.
           path=image_path
       %}
     </p>
@@ -301,7 +301,7 @@ title: NoiseMap
       default: 0.0
       <p class="scene-class-comments">Warp input coordinate space with single noise level before looking up noise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.distortion.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.distortion.images.
           path=image_path
       %}
     </p>
@@ -312,7 +312,7 @@ title: NoiseMap
           | perlin simplex = 1
       <p class="scene-class-comments">Type of noise to use for distortion.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.distortion_noise_type.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.distortion_noise_type.images.
           path=image_path
       %}
     </p>
@@ -322,7 +322,7 @@ title: NoiseMap
       default: 1.0
       <p class="scene-class-comments">Scalar multiplier for the frequency vector</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.frequency_multiplier.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.frequency_multiplier.images.
           path=image_path
       %}
     </p>
@@ -332,7 +332,7 @@ title: NoiseMap
       default: 2.0
       <p class="scene-class-comments">Multiplier on the noise frequency per level</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.lacunarity.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.lacunarity.images.
           path=image_path
       %}
     </p>
@@ -342,7 +342,7 @@ title: NoiseMap
       default: 1.0
       <p class="scene-class-comments">Number of octaves of noise to add together for the final result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.max_level.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.max_level.images.
           path=image_path
       %}
     </p>
@@ -353,7 +353,7 @@ title: NoiseMap
           | perlin simplex = 1
       <p class="scene-class-comments">Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.noise_type.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.noise_type.images.
           path=image_path
       %}
     </p>
@@ -363,7 +363,7 @@ title: NoiseMap
       default: 0.5
       <p class="scene-class-comments">Multiplier on the noise amplitude per level</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.persistence.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.persistence.images.
           path=image_path
       %}
     </p>
@@ -373,7 +373,7 @@ title: NoiseMap
       default: 0
       <p class="scene-class-comments">The seed for the random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NoiseMapattributes.seed.images.
+          images=site.data.scene-classes.maps.NoiseMap.attributes.seed.images.
           path=image_path
       %}
     </p>

@@ -37,7 +37,7 @@ title: AxfMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.input_normal_dial.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: AxfMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">bind the 'Normal' texture here, the multiplier is ignored. The state's normal is used when no texture is bound.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.normal.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.normal.images.
           path=image_path
       %}
     </p>
@@ -58,7 +58,7 @@ title: AxfMaterial
           | render = 1
       <p class="scene-class-comments">Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.normal_space.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.images.
           path=image_path
       %}
     </p>
@@ -73,7 +73,7 @@ title: AxfMaterial
       default: 1.0
       <p class="scene-class-comments">bind the 'Alpha' texture here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.alpha.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.images.
           path=image_path
       %}
     </p>
@@ -83,7 +83,7 @@ title: AxfMaterial
       default: 0.0
       <p class="scene-class-comments">bind the 'AnisoRotation' texture here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.aniso_rotation.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.images.
           path=image_path
       %}
     </p>
@@ -93,7 +93,7 @@ title: AxfMaterial
       default: False
       <p class="scene-class-comments">allows continuation of caustic light paths</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.casts_caustics.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.images.
           path=image_path
       %}
     </p>
@@ -103,7 +103,7 @@ title: AxfMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the 'DiffuseColor' texture here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.diffuse_color.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.images.
           path=image_path
       %}
     </p>
@@ -113,7 +113,7 @@ title: AxfMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.extra_aovs.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -123,7 +123,7 @@ title: AxfMaterial
       default: 1.0
       <p class="scene-class-comments">bind the 'Fresnel' texture here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.fresnel.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.images.
           path=image_path
       %}
     </p>
@@ -133,7 +133,7 @@ title: AxfMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.label.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.label.images.
           path=image_path
       %}
     </p>
@@ -143,7 +143,7 @@ title: AxfMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.priority.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.priority.images.
           path=image_path
       %}
     </p>
@@ -153,7 +153,7 @@ title: AxfMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the 'SpecularColor' texture here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.specular_color.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.images.
           path=image_path
       %}
     </p>
@@ -163,7 +163,7 @@ title: AxfMaterial
       default: [ 1, 1 ]
       <p class="scene-class-comments">bind the 'SpecularLobe' texture here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterialattributes.specular_lobe.images.
+          images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.images.
           path=image_path
       %}
     </p>

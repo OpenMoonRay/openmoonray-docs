@@ -37,7 +37,7 @@ title: TransformNormalMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">input normal in either tangent or render space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMapattributes.input_normal.images.
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.attributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: TransformNormalMap
       default: True
       <p class="scene-class-comments">decode the input normal if it's in tangent space [0,1] -&gt; [-1,1]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMapattributes.decode_input_normal.images.
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.attributes.decode_input_normal.images.
           path=image_path
       %}
     </p>
@@ -63,7 +63,7 @@ title: TransformNormalMap
           | render to tangent = 1
       <p class="scene-class-comments">transform to apply to the normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMapattributes.transform.images.
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.attributes.transform.images.
           path=image_path
       %}
     </p>

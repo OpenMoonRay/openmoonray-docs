@@ -37,7 +37,7 @@ title: ShadowReceiverSet
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSetattributes.complement.images.
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: ShadowReceiverSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSetattributes.geometries.images.
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images.
           path=image_path
       %}
     </p>

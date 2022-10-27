@@ -37,7 +37,7 @@ title: DecayLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.falloff_far.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.falloff_far.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: DecayLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.falloff_near.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.falloff_near.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.far_end.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.far_end.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.far_start.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.far_start.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.near_end.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.near_end.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.near_start.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.near_start.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: DecayLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilterattributes.on.images.
+          images=site.data.scene-classes.light-filters.DecayLightFilter.attributes.on.images.
           path=image_path
       %}
     </p>

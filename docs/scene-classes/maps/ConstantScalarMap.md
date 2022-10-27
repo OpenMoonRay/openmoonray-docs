@@ -37,7 +37,7 @@ title: ConstantScalarMap
       default: 1.0
       <p class="scene-class-comments">constant scalar value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ConstantScalarMapattributes.scalar_value.images.
+          images=site.data.scene-classes.maps.ConstantScalarMap.attributes.scalar_value.images.
           path=image_path
       %}
     </p>

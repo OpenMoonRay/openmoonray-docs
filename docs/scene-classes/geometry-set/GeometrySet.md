@@ -37,7 +37,7 @@ title: GeometrySet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry-set.GeometrySetattributes.geometries.images.
+          images=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.images.
           path=image_path
       %}
     </p>

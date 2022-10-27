@@ -37,7 +37,7 @@ title: SwitchColorMap
       default: 0.0
       <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.choice.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.choice.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input0.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input0.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input1.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input1.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input10.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input10.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input11.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input11.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input12.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input12.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input13.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input13.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input14.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input14.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input15.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input15.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input16.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input16.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input17.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input17.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input18.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input18.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input19.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input19.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input2.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input2.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input20.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input20.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input21.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input21.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input22.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input22.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input23.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input23.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input24.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input24.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input25.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input25.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input26.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input26.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input27.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input27.images.
           path=image_path
       %}
     </p>
@@ -257,7 +257,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input28.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input28.images.
           path=image_path
       %}
     </p>
@@ -267,7 +267,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input29.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input29.images.
           path=image_path
       %}
     </p>
@@ -277,7 +277,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input3.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input3.images.
           path=image_path
       %}
     </p>
@@ -287,7 +287,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input30.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input30.images.
           path=image_path
       %}
     </p>
@@ -297,7 +297,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input31.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input31.images.
           path=image_path
       %}
     </p>
@@ -307,7 +307,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input32.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input32.images.
           path=image_path
       %}
     </p>
@@ -317,7 +317,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input33.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input33.images.
           path=image_path
       %}
     </p>
@@ -327,7 +327,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input34.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input34.images.
           path=image_path
       %}
     </p>
@@ -337,7 +337,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input35.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input35.images.
           path=image_path
       %}
     </p>
@@ -347,7 +347,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input36.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input36.images.
           path=image_path
       %}
     </p>
@@ -357,7 +357,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input37.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input37.images.
           path=image_path
       %}
     </p>
@@ -367,7 +367,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input38.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input38.images.
           path=image_path
       %}
     </p>
@@ -377,7 +377,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input39.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input39.images.
           path=image_path
       %}
     </p>
@@ -387,7 +387,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input4.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input4.images.
           path=image_path
       %}
     </p>
@@ -397,7 +397,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input40.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input40.images.
           path=image_path
       %}
     </p>
@@ -407,7 +407,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input41.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input41.images.
           path=image_path
       %}
     </p>
@@ -417,7 +417,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input42.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input42.images.
           path=image_path
       %}
     </p>
@@ -427,7 +427,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input43.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input43.images.
           path=image_path
       %}
     </p>
@@ -437,7 +437,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input44.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input44.images.
           path=image_path
       %}
     </p>
@@ -447,7 +447,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input45.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input45.images.
           path=image_path
       %}
     </p>
@@ -457,7 +457,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input46.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input46.images.
           path=image_path
       %}
     </p>
@@ -467,7 +467,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input47.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input47.images.
           path=image_path
       %}
     </p>
@@ -477,7 +477,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input48.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input48.images.
           path=image_path
       %}
     </p>
@@ -487,7 +487,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input49.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input49.images.
           path=image_path
       %}
     </p>
@@ -497,7 +497,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input5.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input5.images.
           path=image_path
       %}
     </p>
@@ -507,7 +507,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input50.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input50.images.
           path=image_path
       %}
     </p>
@@ -517,7 +517,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input51.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input51.images.
           path=image_path
       %}
     </p>
@@ -527,7 +527,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input52.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input52.images.
           path=image_path
       %}
     </p>
@@ -537,7 +537,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input53.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input53.images.
           path=image_path
       %}
     </p>
@@ -547,7 +547,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input54.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input54.images.
           path=image_path
       %}
     </p>
@@ -557,7 +557,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input55.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input55.images.
           path=image_path
       %}
     </p>
@@ -567,7 +567,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input56.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input56.images.
           path=image_path
       %}
     </p>
@@ -577,7 +577,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input57.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input57.images.
           path=image_path
       %}
     </p>
@@ -587,7 +587,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input58.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input58.images.
           path=image_path
       %}
     </p>
@@ -597,7 +597,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input59.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input59.images.
           path=image_path
       %}
     </p>
@@ -607,7 +607,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input6.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input6.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input60.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input60.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input61.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input61.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input62.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input62.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input63.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input63.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input7.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input7.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input8.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input8.images.
           path=image_path
       %}
     </p>
@@ -677,7 +677,7 @@ title: SwitchColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.SwitchColorMapattributes.input9.images.
+          images=site.data.scene-classes.maps.SwitchColorMap.attributes.input9.images.
           path=image_path
       %}
     </p>

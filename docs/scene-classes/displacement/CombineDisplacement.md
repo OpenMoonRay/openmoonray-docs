@@ -37,7 +37,7 @@ title: CombineDisplacement
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacementattributes.bound_padding.images.
+          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.bound_padding.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: CombineDisplacement
       default: None
       <p class="scene-class-comments">Displacement object 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacementattributes.input_1.images.
+          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_1.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: CombineDisplacement
       default: None
       <p class="scene-class-comments">Displacement object 2</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacementattributes.input_2.images.
+          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_2.images.
           path=image_path
       %}
     </p>
@@ -69,7 +69,7 @@ title: CombineDisplacement
           | min magnitude = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacementattributes.operation.images.
+          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.operation.images.
           path=image_path
       %}
     </p>
@@ -79,7 +79,7 @@ title: CombineDisplacement
       default: 1.0
       <p class="scene-class-comments">Scale of input 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacementattributes.scale_1.images.
+          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_1.images.
           path=image_path
       %}
     </p>
@@ -89,7 +89,7 @@ title: CombineDisplacement
       default: 1.0
       <p class="scene-class-comments">Scale of input 2</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacementattributes.scale_2.images.
+          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_2.images.
           path=image_path
       %}
     </p>

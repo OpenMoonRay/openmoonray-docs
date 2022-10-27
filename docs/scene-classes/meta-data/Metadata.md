@@ -37,7 +37,7 @@ title: Metadata
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadataattributes.name.images.
+          images=site.data.scene-classes.meta-data.Metadata.attributes.name.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: Metadata
       default: []
       <p class="scene-class-comments">Allowed types for exr headers:<br>&emsp;&emsp;&emsp;* box2i<br>&emsp;&emsp;&emsp;* box2f<br>&emsp;&emsp;&emsp;* chromaticities<br>&emsp;&emsp;&emsp;* double<br>&emsp;&emsp;&emsp;* float<br>&emsp;&emsp;&emsp;* int<br>&emsp;&emsp;&emsp;* m33f<br>&emsp;&emsp;&emsp;* m44f<br>&emsp;&emsp;&emsp;* string<br>&emsp;&emsp;&emsp;* v2i<br>&emsp;&emsp;&emsp;* v2f<br>&emsp;&emsp;&emsp;* v3i<br>&emsp;&emsp;&emsp;* v3f</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadataattributes.type.images.
+          images=site.data.scene-classes.meta-data.Metadata.attributes.type.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: Metadata
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadataattributes.value.images.
+          images=site.data.scene-classes.meta-data.Metadata.attributes.value.images.
           path=image_path
       %}
     </p>

@@ -37,7 +37,7 @@ title: TraceSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSetattributes.geometries.images.
+          images=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: TraceSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSetattributes.parts.images.
+          images=site.data.scene-classes.trace-set.TraceSet.attributes.parts.images.
           path=image_path
       %}
     </p>

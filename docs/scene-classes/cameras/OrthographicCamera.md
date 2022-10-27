@@ -37,7 +37,7 @@ title: OrthographicCamera
       default: False
       <p class="scene-class-comments">Enable Bokeh. Requires DOF to be enabled.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.bokeh.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.bokeh.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Angle of iris rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.bokeh_angle.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.bokeh_angle.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: OrthographicCamera
       default: 
       <p class="scene-class-comments">Path to image file to be used for the iris</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.bokeh_image.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.bokeh_image.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: OrthographicCamera
       default: 0
       <p class="scene-class-comments">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.bokeh_sides.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.bokeh_sides.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Distance from the origin of Bokeh shape</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.bokeh_weight_location.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.bokeh_weight_location.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Controls the strength of weights as samples approach the weight location</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.bokeh_weight_strength.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.bokeh_weight_strength.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: OrthographicCamera
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.dof.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.dof.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: OrthographicCamera
       default: 8.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.dof_aperture.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.dof_aperture.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.dof_focus_distance.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.dof_focus_distance.images.
           path=image_path
       %}
     </p>
@@ -132,7 +132,7 @@ title: OrthographicCamera
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.far.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.far.images.
           path=image_path
       %}
     </p>
@@ -142,7 +142,7 @@ title: OrthographicCamera
       default: 24.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.film_width_aperture.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.film_width_aperture.images.
           path=image_path
       %}
     </p>
@@ -152,7 +152,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.horizontal_film_offset.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.horizontal_film_offset.images.
           path=image_path
       %}
     </p>
@@ -162,7 +162,7 @@ title: OrthographicCamera
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.near.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.near.images.
           path=image_path
       %}
     </p>
@@ -172,7 +172,7 @@ title: OrthographicCamera
       default: 1.0
       <p class="scene-class-comments">ratio of pixel size y / x</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.pixel_aspect_ratio.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.pixel_aspect_ratio.images.
           path=image_path
       %}
     </p>
@@ -182,7 +182,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.vertical_film_offset.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.vertical_film_offset.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.mb_shutter_bias.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.mb_shutter_bias.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: OrthographicCamera
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.mb_shutter_close.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.mb_shutter_close.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: OrthographicCamera
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.mb_shutter_open.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.mb_shutter_open.images.
           path=image_path
       %}
     </p>
@@ -232,7 +232,7 @@ title: OrthographicCamera
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.pixel_sample_map.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.pixel_sample_map.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: OrthographicCamera
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.OrthographicCameraattributes.node_xform.images.
+          images=site.data.scene-classes.cameras.OrthographicCamera.attributes.node_xform.images.
           path=image_path
       %}
     </p>
