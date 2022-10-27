@@ -8,13 +8,26 @@ title: ProjectCameraMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectCameraMap
+{%assign image_path=site.data.scene-classes.maps.ProjectCameraMap.image_path%}
+{%if site.data.scene-classes.maps.ProjectCameraMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ProjectCameraMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.ProjectCameraMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ProjectCameraMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ProjectCameraMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ProjectCameraMap
       default: False
       <p class="scene-class-comments">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.black_outside_projection
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.black_outside_projection.images.
+          path=image_path
       %}
     </p>
     <h3>project_on_back_faces</h3>
@@ -34,8 +47,8 @@ title: ProjectCameraMap
       default: False
       <p class="scene-class-comments">Toggles whether camera projections appear on back faces.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.project_on_back_faces
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.project_on_back_faces.images.
+          path=image_path
       %}
     </p>
     <h3>projector</h3>
@@ -44,8 +57,8 @@ title: ProjectCameraMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.projector
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.projector.images.
+          path=image_path
       %}
     </p>
     <h3>use_custom_window_coordinates</h3>
@@ -54,8 +67,8 @@ title: ProjectCameraMap
       default: False
       <p class="scene-class-comments">used to apply non-uniform scaling to projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.use_custom_window_coordinates
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.use_custom_window_coordinates.images.
+          path=image_path
       %}
     </p>
     <h3>use_reference_space</h3>
@@ -64,8 +77,8 @@ title: ProjectCameraMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.use_reference_space
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.use_reference_space.images.
+          path=image_path
       %}
     </p>
     <h3>window_x_max</h3>
@@ -74,8 +87,8 @@ title: ProjectCameraMap
       default: 1.0
       <p class="scene-class-comments">maximum projected x coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.window_x_max
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.window_x_max.images.
+          path=image_path
       %}
     </p>
     <h3>window_x_min</h3>
@@ -84,8 +97,8 @@ title: ProjectCameraMap
       default: -1.0
       <p class="scene-class-comments">minimum projected x coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.window_x_min
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.window_x_min.images.
+          path=image_path
       %}
     </p>
     <h3>window_y_max</h3>
@@ -94,8 +107,8 @@ title: ProjectCameraMap
       default: 1.0
       <p class="scene-class-comments">maximum projected y coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.window_y_max
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.window_y_max.images.
+          path=image_path
       %}
     </p>
     <h3>window_y_min</h3>
@@ -104,8 +117,8 @@ title: ProjectCameraMap
       default: -1.0
       <p class="scene-class-comments">minimum projected y coordinate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap.window_y_min
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap.attributes.window_y_min.images.
+          path=image_path
       %}
     </p>
   </p>

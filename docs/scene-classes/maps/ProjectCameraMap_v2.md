@@ -8,13 +8,26 @@ title: ProjectCameraMap_v2
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectCameraMap_v2
+{%assign image_path=site.data.scene-classes.maps.ProjectCameraMap_v2.image_path%}
+{%if site.data.scene-classes.maps.ProjectCameraMap_v2.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ProjectCameraMap_v2.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.ProjectCameraMap_v2.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ProjectCameraMap_v2.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ProjectCameraMap_v2.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ProjectCameraMap_v2
       default: False
       <p class="scene-class-comments">When enabled, the alpha channel is returned instead of RGB</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.alpha_only
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.alpha_only.images.
+          path=image_path
       %}
     </p>
     <h3>aspect_ratio_source</h3>
@@ -35,8 +48,8 @@ title: ProjectCameraMap_v2
           | custom = 1
       <p class="scene-class-comments">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.aspect_ratio_source
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.aspect_ratio_source.images.
+          path=image_path
       %}
     </p>
     <h3>black_outside_projection</h3>
@@ -45,8 +58,8 @@ title: ProjectCameraMap_v2
       default: True
       <p class="scene-class-comments">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.black_outside_projection
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.black_outside_projection.images.
+          path=image_path
       %}
     </p>
     <h3>custom_aspect_ratio</h3>
@@ -55,8 +68,8 @@ title: ProjectCameraMap_v2
       default: 1.0
       <p class="scene-class-comments">a custom aspect ratio for the projected texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.custom_aspect_ratio
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.custom_aspect_ratio.images.
+          path=image_path
       %}
     </p>
     <h3>gamma</h3>
@@ -67,8 +80,8 @@ title: ProjectCameraMap_v2
           | auto = 2 (default)
       <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.gamma
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.gamma.images.
+          path=image_path
       %}
     </p>
     <h3>project_on_back_faces</h3>
@@ -77,8 +90,8 @@ title: ProjectCameraMap_v2
       default: False
       <p class="scene-class-comments">Toggles whether camera projections appear on back faces.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.project_on_back_faces
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.project_on_back_faces.images.
+          path=image_path
       %}
     </p>
     <h3>projector</h3>
@@ -87,8 +100,8 @@ title: ProjectCameraMap_v2
       default: None
       <p class="scene-class-comments">the camera to project from</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.projector
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.projector.images.
+          path=image_path
       %}
     </p>
     <h3>texture</h3>
@@ -97,8 +110,8 @@ title: ProjectCameraMap_v2
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.texture.images.
+          path=image_path
       %}
     </p>
     <h3>unpremultiply</h3>
@@ -107,8 +120,8 @@ title: ProjectCameraMap_v2
       default: False
       <p class="scene-class-comments">When enabled, the rgb channels are divided by the alpha channel (where non-zero)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.unpremultiply
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.unpremultiply.images.
+          path=image_path
       %}
     </p>
     <h3>use_reference_space</h3>
@@ -117,8 +130,8 @@ title: ProjectCameraMap_v2
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectCameraMap_v2.use_reference_space
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectCameraMap_v2.attributes.use_reference_space.images.
+          path=image_path
       %}
     </p>
   </p>

@@ -8,13 +8,26 @@ title: RgbToLabMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToLabMap
+{%assign image_path=site.data.scene-classes.maps.RgbToLabMap.image_path%}
+{%if site.data.scene-classes.maps.RgbToLabMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.RgbToLabMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.RgbToLabMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.RgbToLabMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.RgbToLabMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: RgbToLabMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToLabMap.input_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.RgbToLabMap.attributes.input_color.images.
+          path=image_path
       %}
     </p>
   </p>

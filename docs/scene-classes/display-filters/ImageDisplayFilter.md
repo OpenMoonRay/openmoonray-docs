@@ -8,13 +8,26 @@ title: ImageDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ImageDisplayFilter
+{%assign image_path=site.data.scene-classes.display-filters.ImageDisplayFilter.image_path%}
+{%if site.data.scene-classes.display-filters.ImageDisplayFilter.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.display-filters.ImageDisplayFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.display-filters.ImageDisplayFilter.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.display-filters.ImageDisplayFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.display-filters.ImageDisplayFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ImageDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilter.invert_mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.images.
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -34,8 +47,8 @@ title: ImageDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilter.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -54,8 +67,8 @@ title: ImageDisplayFilter
           | no_scale = 5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilter.display_type
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.images.
+          path=image_path
       %}
     </p>
     <h3>image_path</h3>
@@ -64,8 +77,8 @@ title: ImageDisplayFilter
       default: 
       <p class="scene-class-comments">file path to the .exr we want to fit to the plane</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilter.image_path
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.images.
+          path=image_path
       %}
     </p>
     <h3>input</h3>
@@ -74,8 +87,8 @@ title: ImageDisplayFilter
       default: None
       <p class="scene-class-comments">Input buffer</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilter.input
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.images.
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -84,8 +97,8 @@ title: ImageDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ImageDisplayFilter.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.images.
+          path=image_path
       %}
     </p>
   </p>

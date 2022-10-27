@@ -8,13 +8,26 @@ title: Metadata
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Metadata
+{%assign image_path=site.data.scene-classes.meta-data.Metadata.image_path%}
+{%if site.data.scene-classes.meta-data.Metadata.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.meta-data.Metadata.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.meta-data.Metadata.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.meta-data.Metadata.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.meta-data.Metadata.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: Metadata
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadata.name
-          image_dir=image_dir
+          images=site.data.scene-classes.meta-data.Metadata.attributes.name.images.
+          path=image_path
       %}
     </p>
     <h3>type</h3>
@@ -34,8 +47,8 @@ title: Metadata
       default: []
       <p class="scene-class-comments">Allowed types for exr headers:<br>&emsp;&emsp;&emsp;* box2i<br>&emsp;&emsp;&emsp;* box2f<br>&emsp;&emsp;&emsp;* chromaticities<br>&emsp;&emsp;&emsp;* double<br>&emsp;&emsp;&emsp;* float<br>&emsp;&emsp;&emsp;* int<br>&emsp;&emsp;&emsp;* m33f<br>&emsp;&emsp;&emsp;* m44f<br>&emsp;&emsp;&emsp;* string<br>&emsp;&emsp;&emsp;* v2i<br>&emsp;&emsp;&emsp;* v2f<br>&emsp;&emsp;&emsp;* v3i<br>&emsp;&emsp;&emsp;* v3f</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadata.type
-          image_dir=image_dir
+          images=site.data.scene-classes.meta-data.Metadata.attributes.type.images.
+          path=image_path
       %}
     </p>
     <h3>value</h3>
@@ -44,8 +57,8 @@ title: Metadata
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadata.value
-          image_dir=image_dir
+          images=site.data.scene-classes.meta-data.Metadata.attributes.value.images.
+          path=image_path
       %}
     </p>
   </p>

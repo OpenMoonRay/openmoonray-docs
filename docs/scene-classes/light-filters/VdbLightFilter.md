@@ -8,13 +8,26 @@ title: VdbLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # VdbLightFilter
+{%assign image_path=site.data.scene-classes.light-filters.VdbLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.VdbLightFilter.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.light-filters.VdbLightFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.light-filters.VdbLightFilter.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.light-filters.VdbLightFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.light-filters.VdbLightFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Properties attributes</summary>
   <p>
@@ -25,8 +38,8 @@ title: VdbLightFilter
           | circular = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.blur_type
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_type.images.
+          path=image_path
       %}
     </p>
     <h3>blur_value</h3>
@@ -35,8 +48,8 @@ title: VdbLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.blur_value
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_value.images.
+          path=image_path
       %}
     </p>
     <h3>color_tint</h3>
@@ -45,8 +58,8 @@ title: VdbLightFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.color_tint
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.color_tint.images.
+          path=image_path
       %}
     </p>
     <h3>density_grid_name</h3>
@@ -55,8 +68,8 @@ title: VdbLightFilter
       default: 
       <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_grid_name
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_grid_name.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_input_max</h3>
@@ -65,8 +78,8 @@ title: VdbLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_input_max
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_max.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_input_min</h3>
@@ -75,8 +88,8 @@ title: VdbLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_input_min
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_min.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_inputs</h3>
@@ -85,8 +98,8 @@ title: VdbLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_inputs
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_inputs.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_interpolation_types</h3>
@@ -95,8 +108,8 @@ title: VdbLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_interpolation_types
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_output_max</h3>
@@ -105,8 +118,8 @@ title: VdbLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_output_max
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_max.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_output_min</h3>
@@ -115,8 +128,8 @@ title: VdbLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_output_min
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_min.images.
+          path=image_path
       %}
     </p>
     <h3>density_remap_outputs</h3>
@@ -125,8 +138,8 @@ title: VdbLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_remap_outputs
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_outputs.images.
+          path=image_path
       %}
     </p>
     <h3>density_rescale_enable</h3>
@@ -135,8 +148,8 @@ title: VdbLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.density_rescale_enable
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_rescale_enable.images.
+          path=image_path
       %}
     </p>
     <h3>invert_density</h3>
@@ -145,8 +158,8 @@ title: VdbLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.invert_density
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.invert_density.images.
+          path=image_path
       %}
     </p>
     <h3>vdb_interpolation_type</h3>
@@ -157,8 +170,8 @@ title: VdbLightFilter
           | quadratic = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.vdb_interpolation_type
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_interpolation_type.images.
+          path=image_path
       %}
     </p>
     <h3>vdb_map</h3>
@@ -167,8 +180,8 @@ title: VdbLightFilter
       default: 
       <p class="scene-class-comments">Supply the path to the vdb</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.vdb_map
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_map.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -182,8 +195,8 @@ title: VdbLightFilter
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.node_xform.images.
+          path=image_path
       %}
     </p>
     <h3>on</h3>
@@ -192,8 +205,8 @@ title: VdbLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.VdbLightFilter.on
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.on.images.
+          path=image_path
       %}
     </p>
   </p>

@@ -8,13 +8,26 @@ title: BlendMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BlendMap
+{%assign image_path=site.data.scene-classes.maps.BlendMap.image_path%}
+{%if site.data.scene-classes.maps.BlendMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.BlendMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.BlendMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.BlendMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.BlendMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: BlendMap
       default: 0.5
       <p class="scene-class-comments">The amount to blend between color A (0) and color B (1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMap.blend_amount
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.BlendMap.attributes.blend_amount.images.
+          path=image_path
       %}
     </p>
     <h3>blend_type</h3>
@@ -35,8 +48,8 @@ title: BlendMap
           | cubic = 1
       <p class="scene-class-comments">The type of blending algorithm</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMap.blend_type
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.BlendMap.attributes.blend_type.images.
+          path=image_path
       %}
     </p>
     <h3>color_A</h3>
@@ -45,8 +58,8 @@ title: BlendMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color you get if blend amount is 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMap.color_A
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.BlendMap.attributes.color_A.images.
+          path=image_path
       %}
     </p>
     <h3>color_B</h3>
@@ -55,8 +68,8 @@ title: BlendMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color you get if blend amount is 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMap.color_B
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.BlendMap.attributes.color_B.images.
+          path=image_path
       %}
     </p>
     <h3>threshold_max</h3>
@@ -65,8 +78,8 @@ title: BlendMap
       default: 1.0
       <p class="scene-class-comments">If the blend amount is greater than this amount, it will choose color B (1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMap.threshold_max
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.BlendMap.attributes.threshold_max.images.
+          path=image_path
       %}
     </p>
     <h3>threshold_min</h3>
@@ -75,8 +88,8 @@ title: BlendMap
       default: 0.0
       <p class="scene-class-comments">If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.BlendMap.threshold_min
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.BlendMap.attributes.threshold_min.images.
+          path=image_path
       %}
     </p>
   </p>

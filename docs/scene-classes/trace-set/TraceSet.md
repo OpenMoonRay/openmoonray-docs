@@ -8,13 +8,26 @@ title: TraceSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TraceSet
+{%assign image_path=site.data.scene-classes.trace-set.TraceSet.image_path%}
+{%if site.data.scene-classes.trace-set.TraceSet.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.trace-set.TraceSet.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.trace-set.TraceSet.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.trace-set.TraceSet.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.trace-set.TraceSet.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: TraceSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSet.geometries
-          image_dir=image_dir
+          images=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.images.
+          path=image_path
       %}
     </p>
     <h3>parts</h3>
@@ -34,8 +47,8 @@ title: TraceSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSet.parts
-          image_dir=image_dir
+          images=site.data.scene-classes.trace-set.TraceSet.attributes.parts.images.
+          path=image_path
       %}
     </p>
   </p>

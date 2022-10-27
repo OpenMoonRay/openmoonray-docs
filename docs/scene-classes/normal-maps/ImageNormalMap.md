@@ -8,13 +8,26 @@ title: ImageNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ImageNormalMap
+{%assign image_path=site.data.scene-classes.normal-maps.ImageNormalMap.image_path%}
+{%if site.data.scene-classes.normal-maps.ImageNormalMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.normal-maps.ImageNormalMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.normal-maps.ImageNormalMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.normal-maps.ImageNormalMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.normal-maps.ImageNormalMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>UVs attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ImageNormalMap
       default: [ 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.offset
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.offset.images.
+          path=image_path
       %}
     </p>
     <h3>rotation_angle</h3>
@@ -34,8 +47,8 @@ title: ImageNormalMap
       default: 0.0
       <p class="scene-class-comments">Rotation in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.rotation_angle
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.rotation_angle.images.
+          path=image_path
       %}
     </p>
     <h3>rotation_center</h3>
@@ -44,8 +57,8 @@ title: ImageNormalMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">UV coordinate around which to rotate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>scale</h3>
@@ -54,8 +67,8 @@ title: ImageNormalMap
       default: [ 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.scale
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.scale.images.
+          path=image_path
       %}
     </p>
     <h3>udim_files</h3>
@@ -64,8 +77,8 @@ title: ImageNormalMap
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.udim_files
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.udim_files.images.
+          path=image_path
       %}
     </p>
     <h3>udim_max_v</h3>
@@ -74,8 +87,8 @@ title: ImageNormalMap
       default: 10
       <p class="scene-class-comments">udim maximum v value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.udim_max_v
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.udim_max_v.images.
+          path=image_path
       %}
     </p>
     <h3>udim_values</h3>
@@ -84,8 +97,8 @@ title: ImageNormalMap
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.udim_values
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.udim_values.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -99,8 +112,8 @@ title: ImageNormalMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.default_value
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.default_value.images.
+          path=image_path
       %}
     </p>
     <h3>input_texture_coordinates</h3>
@@ -109,8 +122,8 @@ title: ImageNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.input_texture_coordinates
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.input_texture_coordinates.images.
+          path=image_path
       %}
     </p>
     <h3>normal_encoding</h3>
@@ -120,8 +133,8 @@ title: ImageNormalMap
           | [-1,1] = 1
       <p class="scene-class-comments">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.normal_encoding
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.normal_encoding.images.
+          path=image_path
       %}
     </p>
     <h3>tangent_space_normal_texture</h3>
@@ -130,8 +143,8 @@ title: ImageNormalMap
       default: 
       <p class="scene-class-comments">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.tangent_space_normal_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.tangent_space_normal_texture.images.
+          path=image_path
       %}
     </p>
     <h3>texture_coordinates</h3>
@@ -141,8 +154,8 @@ title: ImageNormalMap
           | input texture coordinates = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.texture_coordinates
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.texture_coordinates.images.
+          path=image_path
       %}
     </p>
     <h3>use_default_value_when_missing</h3>
@@ -151,8 +164,8 @@ title: ImageNormalMap
       default: False
       <p class="scene-class-comments">Uses the 'default_value' for missing udims and does not report error</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.use_default_value_when_missing
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.use_default_value_when_missing.images.
+          path=image_path
       %}
     </p>
     <h3>wrap_around</h3>
@@ -161,8 +174,8 @@ title: ImageNormalMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ImageNormalMap.wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.ImageNormalMap.attributes.wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>

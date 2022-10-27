@@ -8,13 +8,26 @@ title: ShadowReceiverSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ShadowReceiverSet
+{%assign image_path=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.image_path%}
+{%if site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Properties attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ShadowReceiverSet
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.complement
-          image_dir=image_dir
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -39,8 +52,8 @@ title: ShadowReceiverSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.geometries
-          image_dir=image_dir
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images.
+          path=image_path
       %}
     </p>
   </p>

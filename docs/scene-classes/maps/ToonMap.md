@@ -8,13 +8,26 @@ title: ToonMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ToonMap
+{%assign image_path=site.data.scene-classes.maps.ToonMap.image_path%}
+{%if site.data.scene-classes.maps.ToonMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ToonMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.ToonMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ToonMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ToonMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ToonMap
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">Creases are sharp edges like corners in the geometry.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.crease_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.crease_color.images.
+          path=image_path
       %}
     </p>
     <h3>crease_scale</h3>
@@ -34,8 +47,8 @@ title: ToonMap
       default: 1.0
       <p class="scene-class-comments">This attribute controls the thickness of creases.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.crease_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.crease_scale.images.
+          path=image_path
       %}
     </p>
     <h3>crease_threshold</h3>
@@ -44,8 +57,8 @@ title: ToonMap
       default: 45.0
       <p class="scene-class-comments">This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.crease_threshold
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.crease_threshold.images.
+          path=image_path
       %}
     </p>
     <h3>fill_color</h3>
@@ -54,8 +67,8 @@ title: ToonMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.fill_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.fill_color.images.
+          path=image_path
       %}
     </p>
     <h3>mode</h3>
@@ -66,8 +79,8 @@ title: ToonMap
           | both = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.mode
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.mode.images.
+          path=image_path
       %}
     </p>
     <h3>outline_color</h3>
@@ -76,8 +89,8 @@ title: ToonMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Outlines are silhouettes of the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.outline_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.outline_color.images.
+          path=image_path
       %}
     </p>
     <h3>outline_scale</h3>
@@ -86,8 +99,8 @@ title: ToonMap
       default: 1.0
       <p class="scene-class-comments">This attribute controls the thickness of outlines.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.outline_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.outline_scale.images.
+          path=image_path
       %}
     </p>
     <h3>outline_threshold</h3>
@@ -96,8 +109,8 @@ title: ToonMap
       default: 0.0
       <p class="scene-class-comments">In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ToonMap.outline_threshold
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ToonMap.attributes.outline_threshold.images.
+          path=image_path
       %}
     </p>
   </p>

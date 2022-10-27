@@ -8,13 +8,26 @@ title: ProjectTriplanarMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectTriplanarMap
+{%assign image_path=site.data.scene-classes.maps.ProjectTriplanarMap.image_path%}
+{%if site.data.scene-classes.maps.ProjectTriplanarMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ProjectTriplanarMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.ProjectTriplanarMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ProjectTriplanarMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ProjectTriplanarMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Negative X Modifiers attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_invert_s
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_s.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_invert_t</h3>
@@ -34,8 +47,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_invert_t
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_t.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_offset</h3>
@@ -44,8 +57,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_offset.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_rotation</h3>
@@ -54,8 +67,8 @@ title: ProjectTriplanarMap
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_rotation_center</h3>
@@ -64,8 +77,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_scale</h3>
@@ -74,8 +87,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_scale.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_swap_st</h3>
@@ -84,8 +97,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_swap_st
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_wrap_around</h3>
@@ -94,8 +107,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -109,8 +122,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_invert_s
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_s.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_invert_t</h3>
@@ -119,8 +132,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_invert_t
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_t.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_offset</h3>
@@ -129,8 +142,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_offset.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_rotation</h3>
@@ -139,8 +152,8 @@ title: ProjectTriplanarMap
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_rotation_center</h3>
@@ -149,8 +162,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_scale</h3>
@@ -159,8 +172,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_scale.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_swap_st</h3>
@@ -169,8 +182,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_swap_st
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_wrap_around</h3>
@@ -179,8 +192,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -194,8 +207,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_invert_s
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_s.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_invert_t</h3>
@@ -204,8 +217,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_invert_t
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_t.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_offset</h3>
@@ -214,8 +227,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_offset.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_rotation</h3>
@@ -224,8 +237,8 @@ title: ProjectTriplanarMap
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_rotation_center</h3>
@@ -234,8 +247,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_scale</h3>
@@ -244,8 +257,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_scale.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_swap_st</h3>
@@ -254,8 +267,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_swap_st
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_wrap_around</h3>
@@ -264,8 +277,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -279,8 +292,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_invert_s
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_s.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_invert_t</h3>
@@ -289,8 +302,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_invert_t
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_t.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_offset</h3>
@@ -299,8 +312,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_offset.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_rotation</h3>
@@ -309,8 +322,8 @@ title: ProjectTriplanarMap
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_rotation_center</h3>
@@ -319,8 +332,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_scale</h3>
@@ -329,8 +342,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_scale.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_swap_st</h3>
@@ -339,8 +352,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_swap_st
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_wrap_around</h3>
@@ -349,8 +362,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -364,8 +377,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_invert_s
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_s.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_invert_t</h3>
@@ -374,8 +387,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_invert_t
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_t.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_offset</h3>
@@ -384,8 +397,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_offset.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_rotation</h3>
@@ -394,8 +407,8 @@ title: ProjectTriplanarMap
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_rotation_center</h3>
@@ -404,8 +417,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_scale</h3>
@@ -414,8 +427,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_scale.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_swap_st</h3>
@@ -424,8 +437,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_swap_st
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_wrap_around</h3>
@@ -434,8 +447,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -449,8 +462,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_invert_s
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_s.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_invert_t</h3>
@@ -459,8 +472,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_invert_t
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_t.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_offset</h3>
@@ -469,8 +482,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_offset.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_rotation</h3>
@@ -479,8 +492,8 @@ title: ProjectTriplanarMap
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_rotation_center</h3>
@@ -489,8 +502,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_scale</h3>
@@ -499,8 +512,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_scale.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_swap_st</h3>
@@ -509,8 +522,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_swap_st
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_wrap_around</h3>
@@ -519,8 +532,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_wrap_around
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_wrap_around.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -539,8 +552,8 @@ title: ProjectTriplanarMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.TRS_order
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.TRS_order.images.
+          path=image_path
       %}
     </p>
     <h3>debug_mode</h3>
@@ -551,8 +564,8 @@ title: ProjectTriplanarMap
           | dTdx/dTdy = 2
       <p class="scene-class-comments">for testing</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.debug_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.debug_mode.images.
+          path=image_path
       %}
     </p>
     <h3>gamma</h3>
@@ -563,8 +576,8 @@ title: ProjectTriplanarMap
           | auto = 2 (default)
       <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.gamma
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.gamma.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_active</h3>
@@ -573,8 +586,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_active
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_active.images.
+          path=image_path
       %}
     </p>
     <h3>negative_x_texture</h3>
@@ -583,8 +596,8 @@ title: ProjectTriplanarMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_x_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_texture.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_active</h3>
@@ -593,8 +606,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_active
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_active.images.
+          path=image_path
       %}
     </p>
     <h3>negative_y_texture</h3>
@@ -603,8 +616,8 @@ title: ProjectTriplanarMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_y_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_texture.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_active</h3>
@@ -613,8 +626,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_active
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_active.images.
+          path=image_path
       %}
     </p>
     <h3>negative_z_texture</h3>
@@ -623,8 +636,8 @@ title: ProjectTriplanarMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.negative_z_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_texture.images.
+          path=image_path
       %}
     </p>
     <h3>number_of_textures</h3>
@@ -635,8 +648,8 @@ title: ProjectTriplanarMap
           | six = 6
       <p class="scene-class-comments">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.number_of_textures
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.number_of_textures.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_active</h3>
@@ -645,8 +658,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_active
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_active.images.
+          path=image_path
       %}
     </p>
     <h3>positive_x_texture</h3>
@@ -655,8 +668,8 @@ title: ProjectTriplanarMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_x_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_texture.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_active</h3>
@@ -665,8 +678,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_active
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_active.images.
+          path=image_path
       %}
     </p>
     <h3>positive_y_texture</h3>
@@ -675,8 +688,8 @@ title: ProjectTriplanarMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_y_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_texture.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_active</h3>
@@ -685,8 +698,8 @@ title: ProjectTriplanarMap
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_active
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_active.images.
+          path=image_path
       %}
     </p>
     <h3>positive_z_texture</h3>
@@ -695,8 +708,8 @@ title: ProjectTriplanarMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.positive_z_texture
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_texture.images.
+          path=image_path
       %}
     </p>
     <h3>projection_matrix</h3>
@@ -705,8 +718,8 @@ title: ProjectTriplanarMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.projection_matrix
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_matrix.images.
+          path=image_path
       %}
     </p>
     <h3>projection_mode</h3>
@@ -717,8 +730,8 @@ title: ProjectTriplanarMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.projection_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_mode.images.
+          path=image_path
       %}
     </p>
     <h3>projector</h3>
@@ -727,8 +740,8 @@ title: ProjectTriplanarMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.projector
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projector.images.
+          path=image_path
       %}
     </p>
     <h3>random_seed</h3>
@@ -737,8 +750,8 @@ title: ProjectTriplanarMap
       default: 8241
       <p class="scene-class-comments">Seed for randomizing orientation, offset, and flip</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.random_seed
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.random_seed.images.
+          path=image_path
       %}
     </p>
     <h3>randomize_flip</h3>
@@ -747,8 +760,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Rnd flipping in S or T for each active texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.randomize_flip
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_flip.images.
+          path=image_path
       %}
     </p>
     <h3>randomize_offset</h3>
@@ -757,8 +770,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Rnd offset in S or T for each active texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.randomize_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_offset.images.
+          path=image_path
       %}
     </p>
     <h3>randomize_rotation</h3>
@@ -767,8 +780,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Rnd 2d rotation of each active texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.randomize_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>rotate</h3>
@@ -777,8 +790,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.rotate
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotate.images.
+          path=image_path
       %}
     </p>
     <h3>rotation_order</h3>
@@ -792,8 +805,8 @@ title: ProjectTriplanarMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.rotation_order
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotation_order.images.
+          path=image_path
       %}
     </p>
     <h3>scale</h3>
@@ -802,8 +815,8 @@ title: ProjectTriplanarMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.scale.images.
+          path=image_path
       %}
     </p>
     <h3>transition_width</h3>
@@ -812,8 +825,8 @@ title: ProjectTriplanarMap
       default: 0.5
       <p class="scene-class-comments">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.transition_width
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.transition_width.images.
+          path=image_path
       %}
     </p>
     <h3>translate</h3>
@@ -822,8 +835,8 @@ title: ProjectTriplanarMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.translate
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.translate.images.
+          path=image_path
       %}
     </p>
     <h3>use_reference_space</h3>
@@ -832,8 +845,8 @@ title: ProjectTriplanarMap
       default: False
       <p class="scene-class-comments">Project onto reference positions ('ref_P') and normals ('ref_N')</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.use_reference_space
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.use_reference_space.images.
+          path=image_path
       %}
     </p>
   </p>
