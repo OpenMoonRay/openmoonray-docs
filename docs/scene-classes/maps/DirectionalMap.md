@@ -9,12 +9,24 @@ title: DirectionalMap
 ---
 # DirectionalMap
 ---
-{%assign image_dir=site.data.scene-classes.maps.DirectionalMap.image_dir%}
-<div class="scene-class">
+{%assign image_path=site.data.scene-classes.maps.DirectionalMap.images.path%}
+{% if site.data.scene-classes.maps.DirectionalMap.images.gallery -%}
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.DirectionalMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.DirectionalMap.images.gallery
+    path=image_path
 %}
+{% endif %}
+---
+{% if site.data.scene-classes.maps.DirectionalMap.links -%}
+## See Also  
+{% for link in site.data.scene-classes.maps.DirectionalMap.links %}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  {% endfor %}
+{% endif %}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Adjustment attributes</summary>
   <p>
@@ -24,8 +36,8 @@ title: DirectionalMap
       default: 0.5
       <p class="scene-class-comments">controls the rate at which the effect increases as the shading normal approaches the prime direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DirectionalMap.bias
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DirectionalMap.images.attributes.bias
+          path=image_path
       %}
     </p>
     <h3>clamping_behavior</h3>

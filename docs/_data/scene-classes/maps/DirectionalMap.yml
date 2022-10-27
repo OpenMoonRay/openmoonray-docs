@@ -25,4 +25,36 @@ prime_direction:
   - prime_source_3.jpg
 use_smoothstep:
   - smoothstep_wedge.gif
-
+links:
+  - text: Baking Textures
+    path: /moonray/how-to-guides/baking-textures
+  - text: Baking More Textures!
+    path: /moonray/how-to-guides/baking-textures
+images:
+  path: assets/images/scene-classes/maps/DirectionalMap
+  gallery:
+    - scene1.jpg
+    - scene2.jpg
+    - scene3.jpg
+  attributes:
+    bias:
+      - bias_wedge.gif
+    clamping_behavior:
+      - clamping_0.jpg
+      - clamping_1.jpg
+    falloff_type:
+      - falloff_cosine.jpg
+      - falloff_linear.jpg
+      - falloff_plot.png
+    input_normal:
+      - normal_mapping_0.jpg
+    polarity:
+      - polarity_parallel.jpg
+      - polarity_perpendicular.jpg
+    prime_direction:
+      - prime_source_0.jpg
+      - prime_source_1.jpg
+      - prime_source_2.jpg
+      - prime_source_3.jpg
+    use_smoothstep:
+      - smoothstep_wedge.gif
