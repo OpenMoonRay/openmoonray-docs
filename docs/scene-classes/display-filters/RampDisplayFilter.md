@@ -8,12 +8,12 @@ title: RampDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RampDisplayFilter
-{%assign image_path=site.data.scene-classes.display-filters.RampDisplayFilter.images.path%}
-{%if site.data.scene-classes.display-filters.RampDisplayFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.display-filters.RampDisplayFilter.image_path%}
+{%if site.data.scene-classes.display-filters.RampDisplayFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.RampDisplayFilter.images.gallery
+    images=site.data.scene-classes.display-filters.RampDisplayFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RampDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.invert_mask
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RampDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.mix
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: RampDisplayFilter
       default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.colors
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.colors.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: RampDisplayFilter
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.interpolations
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.interpolations.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: RampDisplayFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Color ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.positions
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.positions.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: RampDisplayFilter
       default: None
       <p class="scene-class-comments">input to the input ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.input
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.input.images.
           path=image_path
       %}
     </p>
@@ -115,7 +115,7 @@ title: RampDisplayFilter
           | input_ramp = 8
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.ramp_type
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.ramp_type.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: RampDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.images.attributes.mask
+          images=site.data.scene-classes.display-filters.RampDisplayFilterattributes.mask.images.
           path=image_path
       %}
     </p>

@@ -8,12 +8,12 @@ title: UsdPrimvarReader_vector
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_vector
-{%assign image_path=site.data.scene-classes.maps.UsdPrimvarReader_vector.images.path%}
-{%if site.data.scene-classes.maps.UsdPrimvarReader_vector.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.UsdPrimvarReader_vector.image_path%}
+{%if site.data.scene-classes.maps.UsdPrimvarReader_vector.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.UsdPrimvarReader_vector.images.gallery
+    images=site.data.scene-classes.maps.UsdPrimvarReader_vector.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: UsdPrimvarReader_vector
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_vector.images.attributes.fallback
+          images=site.data.scene-classes.maps.UsdPrimvarReader_vectorattributes.fallback.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UsdPrimvarReader_vector
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_vector.images.attributes.varname
+          images=site.data.scene-classes.maps.UsdPrimvarReader_vectorattributes.varname.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UsdPrimvarReader_vector
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_vector.images.attributes.warn_when_unavailable
+          images=site.data.scene-classes.maps.UsdPrimvarReader_vectorattributes.warn_when_unavailable.images.
           path=image_path
       %}
     </p>

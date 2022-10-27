@@ -8,12 +8,12 @@ title: RgbToFloatDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToFloatDisplayFilter
-{%assign image_path=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.path%}
-{%if site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.image_path%}
+{%if site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.gallery
+    images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RgbToFloatDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.attributes.invert_mask
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RgbToFloatDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.attributes.mix
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: RgbToFloatDisplayFilter
       default: None
       <p class="scene-class-comments">image buffer</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.attributes.input
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.input.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: RgbToFloatDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.attributes.mask
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.mask.images.
           path=image_path
       %}
     </p>
@@ -89,7 +89,7 @@ title: RgbToFloatDisplayFilter
           | luminance = 7
       <p class="scene-class-comments">specify the method to convert RGB Color to float</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilter.images.attributes.mode
+          images=site.data.scene-classes.display-filters.RgbToFloatDisplayFilterattributes.mode.images.
           path=image_path
       %}
     </p>

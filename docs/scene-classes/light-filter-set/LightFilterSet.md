@@ -8,12 +8,12 @@ title: LightFilterSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LightFilterSet
-{%assign image_path=site.data.scene-classes.light-filter-set.LightFilterSet.images.path%}
-{%if site.data.scene-classes.light-filter-set.LightFilterSet.images.gallery-%}
+{%assign image_path=site.data.scene-classes.light-filter-set.LightFilterSet.image_path%}
+{%if site.data.scene-classes.light-filter-set.LightFilterSet.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-filter-set.LightFilterSet.images.gallery
+    images=site.data.scene-classes.light-filter-set.LightFilterSet.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: LightFilterSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filter-set.LightFilterSet.images.attributes.lightfilters
+          images=site.data.scene-classes.light-filter-set.LightFilterSetattributes.lightfilters.images.
           path=image_path
       %}
     </p>

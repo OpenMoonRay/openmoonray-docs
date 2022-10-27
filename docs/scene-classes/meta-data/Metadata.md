@@ -8,12 +8,12 @@ title: Metadata
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Metadata
-{%assign image_path=site.data.scene-classes.meta-data.Metadata.images.path%}
-{%if site.data.scene-classes.meta-data.Metadata.images.gallery-%}
+{%assign image_path=site.data.scene-classes.meta-data.Metadata.image_path%}
+{%if site.data.scene-classes.meta-data.Metadata.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.meta-data.Metadata.images.gallery
+    images=site.data.scene-classes.meta-data.Metadata.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: Metadata
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadata.images.attributes.name
+          images=site.data.scene-classes.meta-data.Metadataattributes.name.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: Metadata
       default: []
       <p class="scene-class-comments">Allowed types for exr headers:<br>&emsp;&emsp;&emsp;* box2i<br>&emsp;&emsp;&emsp;* box2f<br>&emsp;&emsp;&emsp;* chromaticities<br>&emsp;&emsp;&emsp;* double<br>&emsp;&emsp;&emsp;* float<br>&emsp;&emsp;&emsp;* int<br>&emsp;&emsp;&emsp;* m33f<br>&emsp;&emsp;&emsp;* m44f<br>&emsp;&emsp;&emsp;* string<br>&emsp;&emsp;&emsp;* v2i<br>&emsp;&emsp;&emsp;* v2f<br>&emsp;&emsp;&emsp;* v3i<br>&emsp;&emsp;&emsp;* v3f</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadata.images.attributes.type
+          images=site.data.scene-classes.meta-data.Metadataattributes.type.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: Metadata
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.meta-data.Metadata.images.attributes.value
+          images=site.data.scene-classes.meta-data.Metadataattributes.value.images.
           path=image_path
       %}
     </p>

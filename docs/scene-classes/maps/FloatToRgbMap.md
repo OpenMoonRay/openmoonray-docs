@@ -8,12 +8,12 @@ title: FloatToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # FloatToRgbMap
-{%assign image_path=site.data.scene-classes.maps.FloatToRgbMap.images.path%}
-{%if site.data.scene-classes.maps.FloatToRgbMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.FloatToRgbMap.image_path%}
+{%if site.data.scene-classes.maps.FloatToRgbMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.FloatToRgbMap.images.gallery
+    images=site.data.scene-classes.maps.FloatToRgbMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMap.images.attributes.B
+          images=site.data.scene-classes.maps.FloatToRgbMapattributes.B.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMap.images.attributes.G
+          images=site.data.scene-classes.maps.FloatToRgbMapattributes.G.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMap.images.attributes.R
+          images=site.data.scene-classes.maps.FloatToRgbMapattributes.R.images.
           path=image_path
       %}
     </p>

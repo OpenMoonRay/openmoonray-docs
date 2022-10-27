@@ -8,12 +8,12 @@ title: WireframeMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # WireframeMap
-{%assign image_path=site.data.scene-classes.maps.WireframeMap.images.path%}
-{%if site.data.scene-classes.maps.WireframeMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.WireframeMap.image_path%}
+{%if site.data.scene-classes.maps.WireframeMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.WireframeMap.images.gallery
+    images=site.data.scene-classes.maps.WireframeMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: WireframeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMap.images.attributes.fill_color
+          images=site.data.scene-classes.maps.WireframeMapattributes.fill_color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: WireframeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMap.images.attributes.line_color
+          images=site.data.scene-classes.maps.WireframeMapattributes.line_color.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: WireframeMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMap.images.attributes.line_width
+          images=site.data.scene-classes.maps.WireframeMapattributes.line_width.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: WireframeMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.WireframeMap.images.attributes.raster
+          images=site.data.scene-classes.maps.WireframeMapattributes.raster.images.
           path=image_path
       %}
     </p>

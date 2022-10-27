@@ -8,12 +8,12 @@ title: GlitterFlakeMaterial_v2
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # GlitterFlakeMaterial_v2
-{%assign image_path=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.path%}
-{%if site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.gallery-%}
+{%assign image_path=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.image_path%}
+{%if site.data.scene-classes.materials.GlitterFlakeMaterial_v2.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.gallery
+    images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: GlitterFlakeMaterial_v2
       default: True
       <p class="scene-class-comments">use an approximation to shade glitter for non-mirror secondary rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.approximate_glitter_for_secondary_rays
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.approximate_glitter_for_secondary_rays.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: GlitterFlakeMaterial_v2
           | radius = 5
       <p class="scene-class-comments">developer debug visualization modes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.debug_mode
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.debug_mode.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.5
       <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.dense_glitter_LOD_quality
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.dense_glitter_LOD_quality.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">use this to control where glitter appears</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.glitter_mask
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.glitter_mask.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: GlitterFlakeMaterial_v2
       default: False
       <p class="scene-class-comments">makes flake size independent of flake density</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.decouple_flake_size
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.decouple_flake_size.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.0
       <p class="scene-class-comments">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_color_hue_variation
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_color_hue_variation.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.0
       <p class="scene-class-comments">introduce saturation variation in flake color centered at the base flake color's saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_color_saturation_variation
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_color_saturation_variation.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.0
       <p class="scene-class-comments">introduce value variation in flake color centered at the base flake color's value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_color_value_variation
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_color_value_variation.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_density
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_density.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">Controls how much the flakes are randomly offset from a regular grid</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_jitter
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_jitter.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.15000000596
       <p class="scene-class-comments">randomly orient each texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_orientation_randomness
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_orientation_randomness.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.5
       <p class="scene-class-comments">randomness of flake orientation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_randomness
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_randomness.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: GlitterFlakeMaterial_v2
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_texture_1
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_texture_1.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.5
       <p class="scene-class-comments">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_texture_1_frequency
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_texture_1_frequency.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: GlitterFlakeMaterial_v2
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_texture_2
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_texture_2.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.5
       <p class="scene-class-comments">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_texture_2_frequency
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_texture_2_frequency.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: GlitterFlakeMaterial_v2
       default: False
       <p class="scene-class-comments">use textured glitter flakes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.use_flake_textures
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.use_flake_textures.images.
           path=image_path
       %}
     </p>
@@ -222,7 +222,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.presence
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.presence.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: GlitterFlakeMaterial_v2
       default: True
       <p class="scene-class-comments">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.compensate_reference_space_deformation
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.compensate_reference_space_deformation.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: GlitterFlakeMaterial_v2
       default: 0
       <p class="scene-class-comments">The seed for the random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.seed
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.seed.images.
           path=image_path
       %}
     </p>
@@ -258,7 +258,7 @@ title: GlitterFlakeMaterial_v2
           | reference = 5 (default)
       <p class="scene-class-comments">The space to calculate the noise in, defaults to reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.space
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.space.images.
           path=image_path
       %}
     </p>
@@ -273,7 +273,7 @@ title: GlitterFlakeMaterial_v2
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_color_A
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_color_A.images.
           path=image_path
       %}
     </p>
@@ -283,7 +283,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.140000000596
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_roughness_A
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_roughness_A.images.
           path=image_path
       %}
     </p>
@@ -293,7 +293,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_size_A
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_size_A.images.
           path=image_path
       %}
     </p>
@@ -303,7 +303,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_style_A_frequency
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_style_A_frequency.images.
           path=image_path
       %}
     </p>
@@ -318,7 +318,7 @@ title: GlitterFlakeMaterial_v2
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_color_B
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_color_B.images.
           path=image_path
       %}
     </p>
@@ -328,7 +328,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.140000000596
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_roughness_B
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_roughness_B.images.
           path=image_path
       %}
     </p>
@@ -338,7 +338,7 @@ title: GlitterFlakeMaterial_v2
       default: 1.0
       <p class="scene-class-comments">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_size_B
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_size_B.images.
           path=image_path
       %}
     </p>
@@ -348,7 +348,7 @@ title: GlitterFlakeMaterial_v2
       default: 0.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.flake_style_B_frequency
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.flake_style_B_frequency.images.
           path=image_path
       %}
     </p>
@@ -364,7 +364,7 @@ title: GlitterFlakeMaterial_v2
           | additive = 1
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.layering_mode
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.layering_mode.images.
           path=image_path
       %}
     </p>
@@ -374,7 +374,7 @@ title: GlitterFlakeMaterial_v2
       default: None
       <p class="scene-class-comments">material that fills the gaps between glitter flakes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.under_material
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.under_material.images.
           path=image_path
       %}
     </p>
@@ -389,7 +389,7 @@ title: GlitterFlakeMaterial_v2
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.extra_aovs
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -399,7 +399,7 @@ title: GlitterFlakeMaterial_v2
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.label
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.label.images.
           path=image_path
       %}
     </p>
@@ -409,7 +409,7 @@ title: GlitterFlakeMaterial_v2
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2.images.attributes.priority
+          images=site.data.scene-classes.materials.GlitterFlakeMaterial_v2attributes.priority.images.
           path=image_path
       %}
     </p>

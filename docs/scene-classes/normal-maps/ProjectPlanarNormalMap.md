@@ -8,12 +8,12 @@ title: ProjectPlanarNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectPlanarNormalMap
-{%assign image_path=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.path%}
-{%if site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.image_path%}
+{%if site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.gallery
+    images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -42,7 +42,7 @@ title: ProjectPlanarNormalMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.TRS_order
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.TRS_order.images.
           path=image_path
       %}
     </p>
@@ -53,7 +53,7 @@ title: ProjectPlanarNormalMap
           | [-1,1] = 1
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.normal_encoding
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.normal_encoding.images.
           path=image_path
       %}
     </p>
@@ -63,7 +63,7 @@ title: ProjectPlanarNormalMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.projection_matrix
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.projection_matrix.images.
           path=image_path
       %}
     </p>
@@ -75,7 +75,7 @@ title: ProjectPlanarNormalMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.projection_mode
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.projection_mode.images.
           path=image_path
       %}
     </p>
@@ -85,7 +85,7 @@ title: ProjectPlanarNormalMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.projector
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.projector.images.
           path=image_path
       %}
     </p>
@@ -95,7 +95,7 @@ title: ProjectPlanarNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.rotate
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.rotate.images.
           path=image_path
       %}
     </p>
@@ -110,7 +110,7 @@ title: ProjectPlanarNormalMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.rotation_order
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.rotation_order.images.
           path=image_path
       %}
     </p>
@@ -120,7 +120,7 @@ title: ProjectPlanarNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.scale
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.scale.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: ProjectPlanarNormalMap
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.texture
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.texture.images.
           path=image_path
       %}
     </p>
@@ -140,7 +140,7 @@ title: ProjectPlanarNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.translate
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.translate.images.
           path=image_path
       %}
     </p>
@@ -150,7 +150,7 @@ title: ProjectPlanarNormalMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.use_reference_space
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.use_reference_space.images.
           path=image_path
       %}
     </p>
@@ -160,7 +160,7 @@ title: ProjectPlanarNormalMap
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.images.attributes.wrap_around
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMapattributes.wrap_around.images.
           path=image_path
       %}
     </p>

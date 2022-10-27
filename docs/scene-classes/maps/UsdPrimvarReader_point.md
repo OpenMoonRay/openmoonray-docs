@@ -8,12 +8,12 @@ title: UsdPrimvarReader_point
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_point
-{%assign image_path=site.data.scene-classes.maps.UsdPrimvarReader_point.images.path%}
-{%if site.data.scene-classes.maps.UsdPrimvarReader_point.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.UsdPrimvarReader_point.image_path%}
+{%if site.data.scene-classes.maps.UsdPrimvarReader_point.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.UsdPrimvarReader_point.images.gallery
+    images=site.data.scene-classes.maps.UsdPrimvarReader_point.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: UsdPrimvarReader_point
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_point.images.attributes.fallback
+          images=site.data.scene-classes.maps.UsdPrimvarReader_pointattributes.fallback.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UsdPrimvarReader_point
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_point.images.attributes.varname
+          images=site.data.scene-classes.maps.UsdPrimvarReader_pointattributes.varname.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UsdPrimvarReader_point
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_point.images.attributes.warn_when_unavailable
+          images=site.data.scene-classes.maps.UsdPrimvarReader_pointattributes.warn_when_unavailable.images.
           path=image_path
       %}
     </p>

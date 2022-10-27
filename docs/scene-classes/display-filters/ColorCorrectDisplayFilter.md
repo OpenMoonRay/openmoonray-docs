@@ -8,12 +8,12 @@ title: ColorCorrectDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectDisplayFilter
-{%assign image_path=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.path%}
-{%if site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.image_path%}
+{%if site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.gallery
+    images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ColorCorrectDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.invert_mask
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.mix
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: ColorCorrectDisplayFilter
       default: 0.0
       <p class="scene-class-comments">Decrease contrast below 0.0 and increase contrast above 0.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.contrast
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: ColorCorrectDisplayFilter
       default: 0.0
       <p class="scene-class-comments">Adjusts the exposure, in fstops</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.exposure
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.exposure.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: ColorCorrectDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Adjusts gamma of input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.gamma
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: ColorCorrectDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput to color correct</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.input
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.input.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: ColorCorrectDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.mask
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.mask.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: ColorCorrectDisplayFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Multiplies input using specified color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.multiply
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.multiply.images.
           path=image_path
       %}
     </p>
@@ -122,7 +122,7 @@ title: ColorCorrectDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Add offset color to input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.offset
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.offset.images.
           path=image_path
       %}
     </p>
@@ -132,7 +132,7 @@ title: ColorCorrectDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Desaturates input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.images.attributes.saturation
+          images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilterattributes.saturation.images.
           path=image_path
       %}
     </p>

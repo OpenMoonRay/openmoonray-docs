@@ -8,12 +8,12 @@ title: DiskLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DiskLight
-{%assign image_path=site.data.scene-classes.lights.DiskLight.images.path%}
-{%if site.data.scene-classes.lights.DiskLight.images.gallery-%}
+{%assign image_path=site.data.scene-classes.lights.DiskLight.image_path%}
+{%if site.data.scene-classes.lights.DiskLight.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.lights.DiskLight.images.gallery
+    images=site.data.scene-classes.lights.DiskLight.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: DiskLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.contrast
+          images=site.data.scene-classes.lights.DiskLightattributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: DiskLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.gain
+          images=site.data.scene-classes.lights.DiskLightattributes.gain.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: DiskLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.gamma
+          images=site.data.scene-classes.lights.DiskLightattributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: DiskLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.offset
+          images=site.data.scene-classes.lights.DiskLightattributes.offset.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: DiskLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.saturation
+          images=site.data.scene-classes.lights.DiskLightattributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: DiskLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color temperature using Nuke-like T/M/E settings</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.temperature
+          images=site.data.scene-classes.lights.DiskLightattributes.temperature.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: DiskLight
       default: 
       <p class="scene-class-comments">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture
+          images=site.data.scene-classes.lights.DiskLightattributes.texture.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: DiskLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">RGB value used when a texture lookup occurs outside the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_border_color
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_border_color.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: DiskLight
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales in (u,v)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_coverage
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_coverage.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: DiskLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in u, false =&gt; repeat in u</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_mirror_u
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_mirror_u.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: DiskLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in v, false =&gt; repeat in v</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_mirror_v
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_mirror_v.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: DiskLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in u over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_reps_u
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_reps_u.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: DiskLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in v over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_reps_v
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_reps_v.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: DiskLight
       default: 0.0
       <p class="scene-class-comments">Clockwise rotation angle in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_rotation
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_rotation.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: DiskLight
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_translation
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_translation.images.
           path=image_path
       %}
     </p>
@@ -192,7 +192,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">apply scene scale variable when normalized</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.apply_scene_scale
+          images=site.data.scene-classes.lights.DiskLightattributes.apply_scene_scale.images.
           path=image_path
       %}
     </p>
@@ -202,7 +202,7 @@ title: DiskLight
       default: 0.0
       <p class="scene-class-comments">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.clear_radius
+          images=site.data.scene-classes.lights.DiskLightattributes.clear_radius.images.
           path=image_path
       %}
     </p>
@@ -212,7 +212,7 @@ title: DiskLight
       default: 0.0
       <p class="scene-class-comments">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.clear_radius_falloff_distance
+          images=site.data.scene-classes.lights.DiskLightattributes.clear_radius_falloff_distance.images.
           path=image_path
       %}
     </p>
@@ -225,7 +225,7 @@ title: DiskLight
           | smoothstep = 3
       <p class="scene-class-comments">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.clear_radius_interpolation_type
+          images=site.data.scene-classes.lights.DiskLightattributes.clear_radius_interpolation_type.images.
           path=image_path
       %}
     </p>
@@ -235,7 +235,7 @@ title: DiskLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.color
+          images=site.data.scene-classes.lights.DiskLightattributes.color.images.
           path=image_path
       %}
     </p>
@@ -245,7 +245,7 @@ title: DiskLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.exposure
+          images=site.data.scene-classes.lights.DiskLightattributes.exposure.images.
           path=image_path
       %}
     </p>
@@ -255,7 +255,7 @@ title: DiskLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.intensity
+          images=site.data.scene-classes.lights.DiskLightattributes.intensity.images.
           path=image_path
       %}
     </p>
@@ -265,7 +265,7 @@ title: DiskLight
       default: 
       <p class="scene-class-comments">label used in light aov expressions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.label
+          images=site.data.scene-classes.lights.DiskLightattributes.label.images.
           path=image_path
       %}
     </p>
@@ -275,7 +275,7 @@ title: DiskLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.max_shadow_distance
+          images=site.data.scene-classes.lights.DiskLightattributes.max_shadow_distance.images.
           path=image_path
       %}
     </p>
@@ -285,7 +285,7 @@ title: DiskLight
       default: False
       <p class="scene-class-comments">Does light motion affect motion-blur?</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.mb
+          images=site.data.scene-classes.lights.DiskLightattributes.mb.images.
           path=image_path
       %}
     </p>
@@ -295,7 +295,7 @@ title: DiskLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.normalized
+          images=site.data.scene-classes.lights.DiskLightattributes.normalized.images.
           path=image_path
       %}
     </p>
@@ -305,7 +305,7 @@ title: DiskLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.on
+          images=site.data.scene-classes.lights.DiskLightattributes.on.images.
           path=image_path
       %}
     </p>
@@ -317,7 +317,7 @@ title: DiskLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.presence_shadows
+          images=site.data.scene-classes.lights.DiskLightattributes.presence_shadows.images.
           path=image_path
       %}
     </p>
@@ -327,7 +327,7 @@ title: DiskLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.radius
+          images=site.data.scene-classes.lights.DiskLightattributes.radius.images.
           path=image_path
       %}
     </p>
@@ -337,7 +337,7 @@ title: DiskLight
       default: False
       <p class="scene-class-comments">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.ray_termination
+          images=site.data.scene-classes.lights.DiskLightattributes.ray_termination.images.
           path=image_path
       %}
     </p>
@@ -349,7 +349,7 @@ title: DiskLight
           | 2-sided = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.sidedness
+          images=site.data.scene-classes.lights.DiskLightattributes.sidedness.images.
           path=image_path
       %}
     </p>
@@ -359,7 +359,7 @@ title: DiskLight
       default: 1.0
       <p class="scene-class-comments">directionality of light emission. 1 is completely diffuse hemisphere. 0 is parallel to normal of light.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.spread
+          images=site.data.scene-classes.lights.DiskLightattributes.spread.images.
           path=image_path
       %}
     </p>
@@ -372,7 +372,7 @@ title: DiskLight
           | bilinear with nearest mip = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.texture_filter
+          images=site.data.scene-classes.lights.DiskLightattributes.texture_filter.images.
           path=image_path
       %}
     </p>
@@ -384,7 +384,7 @@ title: DiskLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_in_camera
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_in_camera.images.
           path=image_path
       %}
     </p>
@@ -399,7 +399,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_diffuse_reflection
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_diffuse_reflection.images.
           path=image_path
       %}
     </p>
@@ -409,7 +409,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_diffuse_transmission
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_diffuse_transmission.images.
           path=image_path
       %}
     </p>
@@ -419,7 +419,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_glossy_reflection
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_glossy_reflection.images.
           path=image_path
       %}
     </p>
@@ -429,7 +429,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_glossy_transmission
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_glossy_transmission.images.
           path=image_path
       %}
     </p>
@@ -439,7 +439,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_mirror_reflection
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_mirror_reflection.images.
           path=image_path
       %}
     </p>
@@ -449,7 +449,7 @@ title: DiskLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.visible_mirror_transmission
+          images=site.data.scene-classes.lights.DiskLightattributes.visible_mirror_transmission.images.
           path=image_path
       %}
     </p>
@@ -464,7 +464,7 @@ title: DiskLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.light_filters
+          images=site.data.scene-classes.lights.DiskLightattributes.light_filters.images.
           path=image_path
       %}
     </p>
@@ -474,7 +474,7 @@ title: DiskLight
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DiskLight.images.attributes.node_xform
+          images=site.data.scene-classes.lights.DiskLightattributes.node_xform.images.
           path=image_path
       %}
     </p>

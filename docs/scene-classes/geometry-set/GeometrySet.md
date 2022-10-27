@@ -8,12 +8,12 @@ title: GeometrySet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # GeometrySet
-{%assign image_path=site.data.scene-classes.geometry-set.GeometrySet.images.path%}
-{%if site.data.scene-classes.geometry-set.GeometrySet.images.gallery-%}
+{%assign image_path=site.data.scene-classes.geometry-set.GeometrySet.image_path%}
+{%if site.data.scene-classes.geometry-set.GeometrySet.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.geometry-set.GeometrySet.images.gallery
+    images=site.data.scene-classes.geometry-set.GeometrySet.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: GeometrySet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry-set.GeometrySet.images.attributes.geometries
+          images=site.data.scene-classes.geometry-set.GeometrySetattributes.geometries.images.
           path=image_path
       %}
     </p>

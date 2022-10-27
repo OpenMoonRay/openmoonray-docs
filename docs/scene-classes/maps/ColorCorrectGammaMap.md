@@ -8,12 +8,12 @@ title: ColorCorrectGammaMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectGammaMap
-{%assign image_path=site.data.scene-classes.maps.ColorCorrectGammaMap.images.path%}
-{%if site.data.scene-classes.maps.ColorCorrectGammaMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ColorCorrectGammaMap.image_path%}
+{%if site.data.scene-classes.maps.ColorCorrectGammaMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.gallery
+    images=site.data.scene-classes.maps.ColorCorrectGammaMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ColorCorrectGammaMap
       default: 1.0
       <p class="scene-class-comments">raises the input to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.gamma
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectGammaMap
       default: 1.0
       <p class="scene-class-comments">raises the blue channel to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.gamma_b
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.gamma_b.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectGammaMap
       default: 1.0
       <p class="scene-class-comments">raises the green channel to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.gamma_g
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.gamma_g.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectGammaMap
       default: 1.0
       <p class="scene-class-comments">raises the red channel to the specified exponents</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.gamma_r
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.gamma_r.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectGammaMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.input
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectGammaMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.mix
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectGammaMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.on
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.on.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ColorCorrectGammaMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for gamma</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGammaMap.images.attributes.use_per_channel_gamma
+          images=site.data.scene-classes.maps.ColorCorrectGammaMapattributes.use_per_channel_gamma.images.
           path=image_path
       %}
     </p>

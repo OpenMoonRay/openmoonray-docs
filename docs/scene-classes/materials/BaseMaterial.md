@@ -8,12 +8,12 @@ title: BaseMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BaseMaterial
-{%assign image_path=site.data.scene-classes.materials.BaseMaterial.images.path%}
-{%if site.data.scene-classes.materials.BaseMaterial.images.gallery-%}
+{%assign image_path=site.data.scene-classes.materials.BaseMaterial.image_path%}
+{%if site.data.scene-classes.materials.BaseMaterial.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.BaseMaterial.images.gallery
+    images=site.data.scene-classes.materials.BaseMaterial.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.diffuse
+          images=site.data.scene-classes.materials.BaseMaterialattributes.diffuse.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.diffuse_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.diffuse_color.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.diffuse_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.diffuse_factor.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.directional_diffuse
+          images=site.data.scene-classes.materials.BaseMaterialattributes.directional_diffuse.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.directional_diffuse_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.directional_diffuse_color.images.
           path=image_path
       %}
     </p>
@@ -92,7 +92,7 @@ title: BaseMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.directional_diffuse_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.directional_diffuse_factor.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: BaseMaterial
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.directional_diffuse_roughness
+          images=site.data.scene-classes.materials.BaseMaterialattributes.directional_diffuse_roughness.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.emission
+          images=site.data.scene-classes.materials.BaseMaterialattributes.emission.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.emission_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.emission_color.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: BaseMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.emission_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.emission_factor.images.
           path=image_path
       %}
     </p>
@@ -152,7 +152,7 @@ title: BaseMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence.images.
           path=image_path
       %}
     </p>
@@ -162,7 +162,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-comments">Iridescence effect at 0 degree viewing angle</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_at_0_incidence
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_at_0_incidence.images.
           path=image_path
       %}
     </p>
@@ -172,7 +172,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-comments">Tightens or broadens the distribution of colors</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_exponent
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_exponent.images.
           path=image_path
       %}
     </p>
@@ -182,7 +182,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-comments">overall multiplier on effect of iridescence</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_factor.images.
           path=image_path
       %}
     </p>
@@ -192,7 +192,7 @@ title: BaseMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_flip_hue_direction
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_flip_hue_direction.images.
           path=image_path
       %}
     </p>
@@ -202,7 +202,7 @@ title: BaseMaterial
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">First color to interpolate from around the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_primary_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_primary_color.images.
           path=image_path
       %}
     </p>
@@ -212,7 +212,7 @@ title: BaseMaterial
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">Second color to interpolate to around the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_secondary_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_secondary_color.images.
           path=image_path
       %}
     </p>
@@ -222,7 +222,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-comments">Controls how much the color spectrum is repeated</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.iridescence_thickness
+          images=site.data.scene-classes.materials.BaseMaterialattributes.iridescence_thickness.images.
           path=image_path
       %}
     </p>
@@ -238,7 +238,7 @@ title: BaseMaterial
           | render = 1
       <p class="scene-class-comments">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.input_normal_space
+          images=site.data.scene-classes.materials.BaseMaterialattributes.input_normal_space.images.
           path=image_path
       %}
     </p>
@@ -253,7 +253,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.opacity
+          images=site.data.scene-classes.materials.BaseMaterialattributes.opacity.images.
           path=image_path
       %}
     </p>
@@ -263,7 +263,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.opacity_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.opacity_factor.images.
           path=image_path
       %}
     </p>
@@ -278,7 +278,7 @@ title: BaseMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.retroreflectivity
+          images=site.data.scene-classes.materials.BaseMaterialattributes.retroreflectivity.images.
           path=image_path
       %}
     </p>
@@ -288,7 +288,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.specular
+          images=site.data.scene-classes.materials.BaseMaterialattributes.specular.images.
           path=image_path
       %}
     </p>
@@ -298,7 +298,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.specular_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.specular_color.images.
           path=image_path
       %}
     </p>
@@ -308,7 +308,7 @@ title: BaseMaterial
       default: 0.10000000149
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.specular_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.specular_factor.images.
           path=image_path
       %}
     </p>
@@ -318,7 +318,7 @@ title: BaseMaterial
       default: 0.300000011921
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.specular_roughness
+          images=site.data.scene-classes.materials.BaseMaterialattributes.specular_roughness.images.
           path=image_path
       %}
     </p>
@@ -333,7 +333,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucency
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucency.images.
           path=image_path
       %}
     </p>
@@ -343,7 +343,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucency_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucency_color.images.
           path=image_path
       %}
     </p>
@@ -353,7 +353,7 @@ title: BaseMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucency_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucency_factor.images.
           path=image_path
       %}
     </p>
@@ -363,7 +363,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucency_falloff
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucency_falloff.images.
           path=image_path
       %}
     </p>
@@ -373,7 +373,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucency_radius
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucency_radius.images.
           path=image_path
       %}
     </p>
@@ -388,7 +388,7 @@ title: BaseMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucent_diffuse
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucent_diffuse.images.
           path=image_path
       %}
     </p>
@@ -398,7 +398,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucent_diffuse_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucent_diffuse_color.images.
           path=image_path
       %}
     </p>
@@ -408,7 +408,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.translucent_diffuse_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.translucent_diffuse_factor.images.
           path=image_path
       %}
     </p>
@@ -423,7 +423,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.transmission
+          images=site.data.scene-classes.materials.BaseMaterialattributes.transmission.images.
           path=image_path
       %}
     </p>
@@ -433,7 +433,7 @@ title: BaseMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.transmission_color
+          images=site.data.scene-classes.materials.BaseMaterialattributes.transmission_color.images.
           path=image_path
       %}
     </p>
@@ -443,7 +443,7 @@ title: BaseMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.transmission_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.transmission_factor.images.
           path=image_path
       %}
     </p>
@@ -458,7 +458,7 @@ title: BaseMaterial
       default: [ 1, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.anisotropic_direction
+          images=site.data.scene-classes.materials.BaseMaterialattributes.anisotropic_direction.images.
           path=image_path
       %}
     </p>
@@ -468,7 +468,7 @@ title: BaseMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.anisotropy
+          images=site.data.scene-classes.materials.BaseMaterialattributes.anisotropy.images.
           path=image_path
       %}
     </p>
@@ -478,7 +478,7 @@ title: BaseMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.casts_caustics
+          images=site.data.scene-classes.materials.BaseMaterialattributes.casts_caustics.images.
           path=image_path
       %}
     </p>
@@ -488,7 +488,7 @@ title: BaseMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.extra_aovs
+          images=site.data.scene-classes.materials.BaseMaterialattributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -498,7 +498,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.fresnel_factor
+          images=site.data.scene-classes.materials.BaseMaterialattributes.fresnel_factor.images.
           path=image_path
       %}
     </p>
@@ -508,7 +508,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-comments">affects transmission and translucency</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.index_of_refraction
+          images=site.data.scene-classes.materials.BaseMaterialattributes.index_of_refraction.images.
           path=image_path
       %}
     </p>
@@ -518,7 +518,7 @@ title: BaseMaterial
       default: [ 0, 0, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.input_normal
+          images=site.data.scene-classes.materials.BaseMaterialattributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -528,7 +528,7 @@ title: BaseMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.input_normal_dial
+          images=site.data.scene-classes.materials.BaseMaterialattributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -538,7 +538,7 @@ title: BaseMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.label
+          images=site.data.scene-classes.materials.BaseMaterialattributes.label.images.
           path=image_path
       %}
     </p>
@@ -548,7 +548,7 @@ title: BaseMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.priority
+          images=site.data.scene-classes.materials.BaseMaterialattributes.priority.images.
           path=image_path
       %}
     </p>
@@ -558,7 +558,7 @@ title: BaseMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.BaseMaterial.images.attributes.use_fresnel
+          images=site.data.scene-classes.materials.BaseMaterialattributes.use_fresnel.images.
           path=image_path
       %}
     </p>

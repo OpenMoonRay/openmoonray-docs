@@ -8,12 +8,12 @@ title: SphericalCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SphericalCamera
-{%assign image_path=site.data.scene-classes.cameras.SphericalCamera.images.path%}
-{%if site.data.scene-classes.cameras.SphericalCamera.images.gallery-%}
+{%assign image_path=site.data.scene-classes.cameras.SphericalCamera.image_path%}
+{%if site.data.scene-classes.cameras.SphericalCamera.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.cameras.SphericalCamera.images.gallery
+    images=site.data.scene-classes.cameras.SphericalCamera.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: SphericalCamera
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.far
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.far.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SphericalCamera
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.near
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.near.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: SphericalCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.mb_shutter_bias
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.mb_shutter_bias.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: SphericalCamera
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.mb_shutter_close
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.mb_shutter_close.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: SphericalCamera
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.mb_shutter_open
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.mb_shutter_open.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SphericalCamera
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.pixel_sample_map
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.pixel_sample_map.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: SphericalCamera
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.SphericalCamera.images.attributes.node_xform
+          images=site.data.scene-classes.cameras.SphericalCameraattributes.node_xform.images.
           path=image_path
       %}
     </p>

@@ -8,12 +8,12 @@ title: DistantLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DistantLight
-{%assign image_path=site.data.scene-classes.lights.DistantLight.images.path%}
-{%if site.data.scene-classes.lights.DistantLight.images.gallery-%}
+{%assign image_path=site.data.scene-classes.lights.DistantLight.image_path%}
+{%if site.data.scene-classes.lights.DistantLight.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.lights.DistantLight.images.gallery
+    images=site.data.scene-classes.lights.DistantLight.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: DistantLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.contrast
+          images=site.data.scene-classes.lights.DistantLightattributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: DistantLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.gain
+          images=site.data.scene-classes.lights.DistantLightattributes.gain.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: DistantLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.gamma
+          images=site.data.scene-classes.lights.DistantLightattributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: DistantLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.offset
+          images=site.data.scene-classes.lights.DistantLightattributes.offset.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: DistantLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.saturation
+          images=site.data.scene-classes.lights.DistantLightattributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: DistantLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color temperature using Nuke-like T/M/E settings</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.temperature
+          images=site.data.scene-classes.lights.DistantLightattributes.temperature.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: DistantLight
       default: 
       <p class="scene-class-comments">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture
+          images=site.data.scene-classes.lights.DistantLightattributes.texture.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: DistantLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">RGB value used when a texture lookup occurs outside the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_border_color
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_border_color.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: DistantLight
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales in (u,v)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_coverage
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_coverage.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: DistantLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in u, false =&gt; repeat in u</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_mirror_u
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_mirror_u.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: DistantLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in v, false =&gt; repeat in v</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_mirror_v
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_mirror_v.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: DistantLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in u over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_reps_u
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_reps_u.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: DistantLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in v over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_reps_v
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_reps_v.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: DistantLight
       default: 0.0
       <p class="scene-class-comments">Clockwise rotation angle in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_rotation
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_rotation.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: DistantLight
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_translation
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_translation.images.
           path=image_path
       %}
     </p>
@@ -192,7 +192,7 @@ title: DistantLight
       default: 0.52999997139
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.angular_extent
+          images=site.data.scene-classes.lights.DistantLightattributes.angular_extent.images.
           path=image_path
       %}
     </p>
@@ -202,7 +202,7 @@ title: DistantLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.color
+          images=site.data.scene-classes.lights.DistantLightattributes.color.images.
           path=image_path
       %}
     </p>
@@ -212,7 +212,7 @@ title: DistantLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.exposure
+          images=site.data.scene-classes.lights.DistantLightattributes.exposure.images.
           path=image_path
       %}
     </p>
@@ -222,7 +222,7 @@ title: DistantLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.intensity
+          images=site.data.scene-classes.lights.DistantLightattributes.intensity.images.
           path=image_path
       %}
     </p>
@@ -232,7 +232,7 @@ title: DistantLight
       default: 
       <p class="scene-class-comments">label used in light aov expressions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.label
+          images=site.data.scene-classes.lights.DistantLightattributes.label.images.
           path=image_path
       %}
     </p>
@@ -242,7 +242,7 @@ title: DistantLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.max_shadow_distance
+          images=site.data.scene-classes.lights.DistantLightattributes.max_shadow_distance.images.
           path=image_path
       %}
     </p>
@@ -252,7 +252,7 @@ title: DistantLight
       default: False
       <p class="scene-class-comments">Does light motion affect motion-blur?</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.mb
+          images=site.data.scene-classes.lights.DistantLightattributes.mb.images.
           path=image_path
       %}
     </p>
@@ -262,7 +262,7 @@ title: DistantLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.normalized
+          images=site.data.scene-classes.lights.DistantLightattributes.normalized.images.
           path=image_path
       %}
     </p>
@@ -272,7 +272,7 @@ title: DistantLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.on
+          images=site.data.scene-classes.lights.DistantLightattributes.on.images.
           path=image_path
       %}
     </p>
@@ -284,7 +284,7 @@ title: DistantLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.presence_shadows
+          images=site.data.scene-classes.lights.DistantLightattributes.presence_shadows.images.
           path=image_path
       %}
     </p>
@@ -294,7 +294,7 @@ title: DistantLight
       default: False
       <p class="scene-class-comments">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.ray_termination
+          images=site.data.scene-classes.lights.DistantLightattributes.ray_termination.images.
           path=image_path
       %}
     </p>
@@ -307,7 +307,7 @@ title: DistantLight
           | bilinear with nearest mip = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.texture_filter
+          images=site.data.scene-classes.lights.DistantLightattributes.texture_filter.images.
           path=image_path
       %}
     </p>
@@ -319,7 +319,7 @@ title: DistantLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_in_camera
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_in_camera.images.
           path=image_path
       %}
     </p>
@@ -334,7 +334,7 @@ title: DistantLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_diffuse_reflection
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_diffuse_reflection.images.
           path=image_path
       %}
     </p>
@@ -344,7 +344,7 @@ title: DistantLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_diffuse_transmission
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_diffuse_transmission.images.
           path=image_path
       %}
     </p>
@@ -354,7 +354,7 @@ title: DistantLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_glossy_reflection
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_glossy_reflection.images.
           path=image_path
       %}
     </p>
@@ -364,7 +364,7 @@ title: DistantLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_glossy_transmission
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_glossy_transmission.images.
           path=image_path
       %}
     </p>
@@ -374,7 +374,7 @@ title: DistantLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_mirror_reflection
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_mirror_reflection.images.
           path=image_path
       %}
     </p>
@@ -384,7 +384,7 @@ title: DistantLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.visible_mirror_transmission
+          images=site.data.scene-classes.lights.DistantLightattributes.visible_mirror_transmission.images.
           path=image_path
       %}
     </p>
@@ -399,7 +399,7 @@ title: DistantLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.light_filters
+          images=site.data.scene-classes.lights.DistantLightattributes.light_filters.images.
           path=image_path
       %}
     </p>
@@ -409,7 +409,7 @@ title: DistantLight
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.DistantLight.images.attributes.node_xform
+          images=site.data.scene-classes.lights.DistantLightattributes.node_xform.images.
           path=image_path
       %}
     </p>

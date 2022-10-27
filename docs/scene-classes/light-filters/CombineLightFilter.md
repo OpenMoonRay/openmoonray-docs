@@ -8,12 +8,12 @@ title: CombineLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CombineLightFilter
-{%assign image_path=site.data.scene-classes.light-filters.CombineLightFilter.images.path%}
-{%if site.data.scene-classes.light-filters.CombineLightFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.light-filters.CombineLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.CombineLightFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-filters.CombineLightFilter.images.gallery
+    images=site.data.scene-classes.light-filters.CombineLightFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: CombineLightFilter
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilter.images.attributes.light_filters
+          images=site.data.scene-classes.light-filters.CombineLightFilterattributes.light_filters.images.
           path=image_path
       %}
     </p>
@@ -51,7 +51,7 @@ title: CombineLightFilter
           | subtract = 4
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilter.images.attributes.mode
+          images=site.data.scene-classes.light-filters.CombineLightFilterattributes.mode.images.
           path=image_path
       %}
     </p>
@@ -61,7 +61,7 @@ title: CombineLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilter.images.attributes.on
+          images=site.data.scene-classes.light-filters.CombineLightFilterattributes.on.images.
           path=image_path
       %}
     </p>

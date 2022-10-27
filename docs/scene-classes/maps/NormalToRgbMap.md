@@ -8,12 +8,12 @@ title: NormalToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NormalToRgbMap
-{%assign image_path=site.data.scene-classes.maps.NormalToRgbMap.images.path%}
-{%if site.data.scene-classes.maps.NormalToRgbMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.NormalToRgbMap.image_path%}
+{%if site.data.scene-classes.maps.NormalToRgbMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.NormalToRgbMap.images.gallery
+    images=site.data.scene-classes.maps.NormalToRgbMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: NormalToRgbMap
       default: None
       <p class="scene-class-comments">Input normal map to convert to a color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.NormalToRgbMap.images.attributes.input
+          images=site.data.scene-classes.maps.NormalToRgbMapattributes.input.images.
           path=image_path
       %}
     </p>

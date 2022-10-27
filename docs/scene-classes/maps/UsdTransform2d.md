@@ -8,12 +8,12 @@ title: UsdTransform2d
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdTransform2d
-{%assign image_path=site.data.scene-classes.maps.UsdTransform2d.images.path%}
-{%if site.data.scene-classes.maps.UsdTransform2d.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.UsdTransform2d.image_path%}
+{%if site.data.scene-classes.maps.UsdTransform2d.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.UsdTransform2d.images.gallery
+    images=site.data.scene-classes.maps.UsdTransform2d.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: UsdTransform2d
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2d.images.attributes.in
+          images=site.data.scene-classes.maps.UsdTransform2dattributes.in.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: UsdTransform2d
       default: 0.0
       <p class="scene-class-comments">Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2d.images.attributes.rotation
+          images=site.data.scene-classes.maps.UsdTransform2dattributes.rotation.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: UsdTransform2d
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scale around the origin to be applied to all components of the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2d.images.attributes.scale
+          images=site.data.scene-classes.maps.UsdTransform2dattributes.scale.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: UsdTransform2d
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translation to be applied to all components of the data.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdTransform2d.images.attributes.translation
+          images=site.data.scene-classes.maps.UsdTransform2dattributes.translation.images.
           path=image_path
       %}
     </p>

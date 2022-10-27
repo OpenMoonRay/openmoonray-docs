@@ -8,12 +8,12 @@ title: CurvatureMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CurvatureMap
-{%assign image_path=site.data.scene-classes.maps.CurvatureMap.images.path%}
-{%if site.data.scene-classes.maps.CurvatureMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.CurvatureMap.image_path%}
+{%if site.data.scene-classes.maps.CurvatureMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.CurvatureMap.images.gallery
+    images=site.data.scene-classes.maps.CurvatureMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: CurvatureMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CurvatureMap.images.attributes.invert
+          images=site.data.scene-classes.maps.CurvatureMapattributes.invert.images.
           path=image_path
       %}
     </p>
@@ -50,7 +50,7 @@ title: CurvatureMap
           | all = 3 (default)
       <p class="scene-class-comments">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CurvatureMap.images.attributes.mode
+          images=site.data.scene-classes.maps.CurvatureMapattributes.mode.images.
           path=image_path
       %}
     </p>
@@ -60,7 +60,7 @@ title: CurvatureMap
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CurvatureMap.images.attributes.power
+          images=site.data.scene-classes.maps.CurvatureMapattributes.power.images.
           path=image_path
       %}
     </p>
@@ -70,7 +70,7 @@ title: CurvatureMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CurvatureMap.images.attributes.scale
+          images=site.data.scene-classes.maps.CurvatureMapattributes.scale.images.
           path=image_path
       %}
     </p>

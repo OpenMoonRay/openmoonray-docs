@@ -8,12 +8,12 @@ title: CheckerboardMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CheckerboardMap
-{%assign image_path=site.data.scene-classes.maps.CheckerboardMap.images.path%}
-{%if site.data.scene-classes.maps.CheckerboardMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.CheckerboardMap.image_path%}
+{%if site.data.scene-classes.maps.CheckerboardMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.CheckerboardMap.images.gallery
+    images=site.data.scene-classes.maps.CheckerboardMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: CheckerboardMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CheckerboardMap.images.attributes.color_A
+          images=site.data.scene-classes.maps.CheckerboardMapattributes.color_A.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: CheckerboardMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CheckerboardMap.images.attributes.color_B
+          images=site.data.scene-classes.maps.CheckerboardMapattributes.color_B.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: CheckerboardMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">bind a shader that outputs UV coordinates (such as a projection shader) here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CheckerboardMap.images.attributes.input_texture_coordinates
+          images=site.data.scene-classes.maps.CheckerboardMapattributes.input_texture_coordinates.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: CheckerboardMap
       default: 8
       <p class="scene-class-comments">number of checkerboard squares in the U direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CheckerboardMap.images.attributes.num_u_tiles
+          images=site.data.scene-classes.maps.CheckerboardMapattributes.num_u_tiles.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: CheckerboardMap
       default: 8
       <p class="scene-class-comments">number of checkerboard squares in the V direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CheckerboardMap.images.attributes.num_v_tiles
+          images=site.data.scene-classes.maps.CheckerboardMapattributes.num_v_tiles.images.
           path=image_path
       %}
     </p>
@@ -88,7 +88,7 @@ title: CheckerboardMap
           | input texture coordinates = 1
       <p class="scene-class-comments">switches between the model's uv coordinates or the input texture coordinates</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.CheckerboardMap.images.attributes.texture_coordinates
+          images=site.data.scene-classes.maps.CheckerboardMapattributes.texture_coordinates.images.
           path=image_path
       %}
     </p>

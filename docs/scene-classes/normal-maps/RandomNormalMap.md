@@ -8,12 +8,12 @@ title: RandomNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RandomNormalMap
-{%assign image_path=site.data.scene-classes.normal-maps.RandomNormalMap.images.path%}
-{%if site.data.scene-classes.normal-maps.RandomNormalMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.normal-maps.RandomNormalMap.image_path%}
+{%if site.data.scene-classes.normal-maps.RandomNormalMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.normal-maps.RandomNormalMap.images.gallery
+    images=site.data.scene-classes.normal-maps.RandomNormalMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RandomNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RandomNormalMap.images.attributes.input
+          images=site.data.scene-classes.normal-maps.RandomNormalMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RandomNormalMap
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RandomNormalMap.images.attributes.seed
+          images=site.data.scene-classes.normal-maps.RandomNormalMapattributes.seed.images.
           path=image_path
       %}
     </p>

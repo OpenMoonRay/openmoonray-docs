@@ -8,12 +8,12 @@ title: ColorCorrectNukeMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectNukeMap
-{%assign image_path=site.data.scene-classes.maps.ColorCorrectNukeMap.images.path%}
-{%if site.data.scene-classes.maps.ColorCorrectNukeMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ColorCorrectNukeMap.image_path%}
+{%if site.data.scene-classes.maps.ColorCorrectNukeMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.gallery
+    images=site.data.scene-classes.maps.ColorCorrectNukeMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ColorCorrectNukeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.TMI
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.TMI.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.TMI_control_enabled
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.TMI_control_enabled.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.contrast
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.contrast_enabled
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.contrast_enabled.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gain
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.gain.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gain_offset_enabled
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.gain_offset_enabled.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gamma
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.gamma.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gamma_enabled
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.gamma_enabled.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.input
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: ColorCorrectNukeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.offset
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.offset.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.saturation
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.saturation_enabled
+          images=site.data.scene-classes.maps.ColorCorrectNukeMapattributes.saturation_enabled.images.
           path=image_path
       %}
     </p>

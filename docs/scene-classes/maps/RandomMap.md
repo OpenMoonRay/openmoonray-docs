@@ -8,12 +8,12 @@ title: RandomMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RandomMap
-{%assign image_path=site.data.scene-classes.maps.RandomMap.images.path%}
-{%if site.data.scene-classes.maps.RandomMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.RandomMap.image_path%}
+{%if site.data.scene-classes.maps.RandomMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.RandomMap.images.gallery
+    images=site.data.scene-classes.maps.RandomMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RandomMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RandomMap.images.attributes.input
+          images=site.data.scene-classes.maps.RandomMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RandomMap
       default: True
       <p class="scene-class-comments">outputs the same color for all three channels</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RandomMap.images.attributes.monochrome
+          images=site.data.scene-classes.maps.RandomMapattributes.monochrome.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: RandomMap
       default: 1.0
       <p class="scene-class-comments">the maximum output random value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RandomMap.images.attributes.output_max
+          images=site.data.scene-classes.maps.RandomMapattributes.output_max.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: RandomMap
       default: 0.0
       <p class="scene-class-comments">the minimum output random value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RandomMap.images.attributes.output_min
+          images=site.data.scene-classes.maps.RandomMapattributes.output_min.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: RandomMap
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RandomMap.images.attributes.seed
+          images=site.data.scene-classes.maps.RandomMapattributes.seed.images.
           path=image_path
       %}
     </p>

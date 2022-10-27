@@ -8,12 +8,12 @@ title: MacroFlakeMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # MacroFlakeMaterial
-{%assign image_path=site.data.scene-classes.materials.MacroFlakeMaterial.images.path%}
-{%if site.data.scene-classes.materials.MacroFlakeMaterial.images.gallery-%}
+{%assign image_path=site.data.scene-classes.materials.MacroFlakeMaterial.image_path%}
+{%if site.data.scene-classes.materials.MacroFlakeMaterial.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.MacroFlakeMaterial.images.gallery
+    images=site.data.scene-classes.materials.MacroFlakeMaterial.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: MacroFlakeMaterial
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.input_normal
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: MacroFlakeMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.input_normal_dial
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: MacroFlakeMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the overall reflection color, defines Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.metallic_color
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.metallic_color.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: MacroFlakeMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the reflection color at grazing angles, defines Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.metallic_edge_color
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.metallic_edge_color.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: MacroFlakeMaterial
       default: 0.5
       <p class="scene-class-comments">the roughness of the surface (currently only affects reflection)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.roughness
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.roughness.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: MacroFlakeMaterial
       default: None
       <p class="scene-class-comments">background material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.background_material
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.background_material.images.
           path=image_path
       %}
     </p>
@@ -108,7 +108,7 @@ title: MacroFlakeMaterial
           | add = 1 (default)
       <p class="scene-class-comments">Whether to block the diffuse lobe where the mask is applied</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.diffuse_mode
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.diffuse_mode.images.
           path=image_path
       %}
     </p>
@@ -118,7 +118,7 @@ title: MacroFlakeMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.extra_aovs
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -129,7 +129,7 @@ title: MacroFlakeMaterial
           | add = 1
       <p class="scene-class-comments">Whether to block the fuzz lobe where the mask is applied</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.fuzz_mode
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.fuzz_mode.images.
           path=image_path
       %}
     </p>
@@ -139,7 +139,7 @@ title: MacroFlakeMaterial
       default: False
       <p class="scene-class-comments">When true, lobe does not block background material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.is_additive
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.is_additive.images.
           path=image_path
       %}
     </p>
@@ -149,7 +149,7 @@ title: MacroFlakeMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.label
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.label.images.
           path=image_path
       %}
     </p>
@@ -159,7 +159,7 @@ title: MacroFlakeMaterial
       default: 1.0
       <p class="scene-class-comments">foreground (metal) material weight</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.mask
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.mask.images.
           path=image_path
       %}
     </p>
@@ -169,7 +169,7 @@ title: MacroFlakeMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.priority
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.priority.images.
           path=image_path
       %}
     </p>
@@ -180,7 +180,7 @@ title: MacroFlakeMaterial
           | add = 1 (default)
       <p class="scene-class-comments">Whether to block the underlying specular lobe where the mask is applied</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MacroFlakeMaterial.images.attributes.specular_background_mode
+          images=site.data.scene-classes.materials.MacroFlakeMaterialattributes.specular_background_mode.images.
           path=image_path
       %}
     </p>

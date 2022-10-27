@@ -8,12 +8,12 @@ title: ExtraAovMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ExtraAovMap
-{%assign image_path=site.data.scene-classes.maps.ExtraAovMap.images.path%}
-{%if site.data.scene-classes.maps.ExtraAovMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ExtraAovMap.image_path%}
+{%if site.data.scene-classes.maps.ExtraAovMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ExtraAovMap.images.gallery
+    images=site.data.scene-classes.maps.ExtraAovMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ExtraAovMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bind the root of a map shader network that you want evaluated as an extra aov</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ExtraAovMap.images.attributes.color
+          images=site.data.scene-classes.maps.ExtraAovMapattributes.color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ExtraAovMap
       default: 
       <p class="scene-class-comments">Sets the LPE label that is used for the extra aov</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ExtraAovMap.images.attributes.label
+          images=site.data.scene-classes.maps.ExtraAovMapattributes.label.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ExtraAovMap
       default: False
       <p class="scene-class-comments">If true, accumulate this aov when scattering off the surface as an indirect ray (after the LPE scatter transition event, after path throughput multiplication), rather than when the surface is first intersected.  The purpose of this setting is to efficiently capture information from all rays that leave a surface that could potentially intersect and trigger aov evaluation on other surfaces.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ExtraAovMap.images.attributes.post_scatter
+          images=site.data.scene-classes.maps.ExtraAovMapattributes.post_scatter.images.
           path=image_path
       %}
     </p>

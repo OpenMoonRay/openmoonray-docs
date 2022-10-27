@@ -8,12 +8,12 @@ title: BarnDoorLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BarnDoorLightFilter
-{%assign image_path=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.path%}
-{%if site.data.scene-classes.light-filters.BarnDoorLightFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.light-filters.BarnDoorLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.BarnDoorLightFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.gallery
+    images=site.data.scene-classes.light-filters.BarnDoorLightFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: BarnDoorLightFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color within the Barn Door lit region. For each color channel, 0=full shadow, 1=no shadow</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.color
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">fades the filter effect. 0=no effect (like having no filter), 1=full effect</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.density
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.density.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">size of transition zone from the rounded box to the outside, as a proportion of width (or height, whichever is smaller)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.edge
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.edge.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">scale factor for bottom edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.edge_scale_bottom
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.edge_scale_bottom.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">scale factor for left edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.edge_scale_left
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.edge_scale_left.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">scale factor for right edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.edge_scale_right
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.edge_scale_right.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">scale factor for top edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.edge_scale_top
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.edge_scale_top.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: BarnDoorLightFilter
       default: False
       <p class="scene-class-comments">swap application of filter from inside the Barn Door to outside</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.invert
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.invert.images.
           path=image_path
       %}
     </p>
@@ -118,7 +118,7 @@ title: BarnDoorLightFilter
           | physical = 1
       <p class="scene-class-comments">analytical mode allows light to shading points that project to the flap opening.physical mode allows light whose direction goes through the flap opening.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.mode
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.mode.images.
           path=image_path
       %}
     </p>
@@ -128,7 +128,7 @@ title: BarnDoorLightFilter
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">transform of the filter</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.node_xform
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.node_xform.images.
           path=image_path
       %}
     </p>
@@ -138,7 +138,7 @@ title: BarnDoorLightFilter
       default: 0.5
       <p class="scene-class-comments">distance from the BarnDoorLightFilter that the pre_barn_mode control takes effect</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.pre_barn_distance
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.pre_barn_distance.images.
           path=image_path
       %}
     </p>
@@ -150,7 +150,7 @@ title: BarnDoorLightFilter
           | default = 2 (default)
       <p class="scene-class-comments">force region before the pre_barn_distance to be fully filtered (black), not filtered at all (white), or treated the same as elsewhere (default)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.pre_barn_mode
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.pre_barn_mode.images.
           path=image_path
       %}
     </p>
@@ -160,7 +160,7 @@ title: BarnDoorLightFilter
       default: 30.0
       <p class="scene-class-comments">distance of the flap opening from the projector origin. Ignored for orthographic projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.projector_focal_distance
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.projector_focal_distance.images.
           path=image_path
       %}
     </p>
@@ -170,7 +170,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">height of the frustum at distance 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.projector_height
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.projector_height.images.
           path=image_path
       %}
     </p>
@@ -181,7 +181,7 @@ title: BarnDoorLightFilter
           | orthographic = 1
       <p class="scene-class-comments">projection type used to map points to the flap opening. perspective has a focal point, while orthographic does not.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.projector_type
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.projector_type.images.
           path=image_path
       %}
     </p>
@@ -191,7 +191,7 @@ title: BarnDoorLightFilter
       default: 1.0
       <p class="scene-class-comments">width of the frustum at distance 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.projector_width
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.projector_width.images.
           path=image_path
       %}
     </p>
@@ -201,7 +201,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">radius by which to convert the base box shape into a rounded box, as a proportion of half the width (or height, whichever is smaller)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.radius
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.radius.images.
           path=image_path
       %}
     </p>
@@ -211,7 +211,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">angle to rotate the Barn Door counter-clockwise as seen from the light, in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.rotation
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.rotation.images.
           path=image_path
       %}
     </p>
@@ -221,7 +221,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">additional size on bottom edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.size_bottom
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.size_bottom.images.
           path=image_path
       %}
     </p>
@@ -231,7 +231,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">additional size on left edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.size_left
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.size_left.images.
           path=image_path
       %}
     </p>
@@ -241,7 +241,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">additional size on right edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.size_right
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.size_right.images.
           path=image_path
       %}
     </p>
@@ -251,7 +251,7 @@ title: BarnDoorLightFilter
       default: 0.0
       <p class="scene-class-comments">additional size on top edge</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.size_top
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.size_top.images.
           path=image_path
       %}
     </p>
@@ -261,7 +261,7 @@ title: BarnDoorLightFilter
       default: True
       <p class="scene-class-comments">attach to the light (in the -Z direction) and ignore node_xform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.use_light_xform
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.use_light_xform.images.
           path=image_path
       %}
     </p>
@@ -276,7 +276,7 @@ title: BarnDoorLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.BarnDoorLightFilter.images.attributes.on
+          images=site.data.scene-classes.light-filters.BarnDoorLightFilterattributes.on.images.
           path=image_path
       %}
     </p>

@@ -8,12 +8,12 @@ title: CookieLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CookieLightFilter
-{%assign image_path=site.data.scene-classes.light-filters.CookieLightFilter.images.path%}
-{%if site.data.scene-classes.light-filters.CookieLightFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.light-filters.CookieLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.CookieLightFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-filters.CookieLightFilter.images.gallery
+    images=site.data.scene-classes.light-filters.CookieLightFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: CookieLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_far_distance
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_far_distance.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_far_value
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_far_value.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_mid_value
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_mid_value.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: CookieLightFilter
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_midpoint
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_midpoint.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_near_distance
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_near_distance.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_near_value
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_near_value.images.
           path=image_path
       %}
     </p>
@@ -98,7 +98,7 @@ title: CookieLightFilter
           | circular = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.blur_type
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.blur_type.images.
           path=image_path
       %}
     </p>
@@ -108,7 +108,7 @@ title: CookieLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.density
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.density.images.
           path=image_path
       %}
     </p>
@@ -118,7 +118,7 @@ title: CookieLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.invert
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.invert.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: CookieLightFilter
           | default = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.outside_projection
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.outside_projection.images.
           path=image_path
       %}
     </p>
@@ -140,7 +140,7 @@ title: CookieLightFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.projector
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.projector.images.
           path=image_path
       %}
     </p>
@@ -150,7 +150,7 @@ title: CookieLightFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.texture_map
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.texture_map.images.
           path=image_path
       %}
     </p>
@@ -165,7 +165,7 @@ title: CookieLightFilter
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.node_xform
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.node_xform.images.
           path=image_path
       %}
     </p>
@@ -175,7 +175,7 @@ title: CookieLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.on
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.on.images.
           path=image_path
       %}
     </p>
@@ -185,7 +185,7 @@ title: CookieLightFilter
       default: 24.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.projector_film_width_aperture
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.projector_film_width_aperture.images.
           path=image_path
       %}
     </p>
@@ -195,7 +195,7 @@ title: CookieLightFilter
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.projector_focal
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.projector_focal.images.
           path=image_path
       %}
     </p>
@@ -205,7 +205,7 @@ title: CookieLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.projector_pixel_aspect_ratio
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.projector_pixel_aspect_ratio.images.
           path=image_path
       %}
     </p>
@@ -216,7 +216,7 @@ title: CookieLightFilter
           | orthographic = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CookieLightFilter.images.attributes.projector_type
+          images=site.data.scene-classes.light-filters.CookieLightFilterattributes.projector_type.images.
           path=image_path
       %}
     </p>

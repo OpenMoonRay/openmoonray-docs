@@ -8,12 +8,12 @@ title: OpMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OpMap
-{%assign image_path=site.data.scene-classes.maps.OpMap.images.path%}
-{%if site.data.scene-classes.maps.OpMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.OpMap.image_path%}
+{%if site.data.scene-classes.maps.OpMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.OpMap.images.gallery
+    images=site.data.scene-classes.maps.OpMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: OpMap
       default: False
       <p class="scene-class-comments">if on, the result is clamped to 0 - 1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.images.attributes.clamp
+          images=site.data.scene-classes.maps.OpMapattributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: OpMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the first operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.images.attributes.op1
+          images=site.data.scene-classes.maps.OpMapattributes.op1.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: OpMap
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op1</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.images.attributes.op1_factor
+          images=site.data.scene-classes.maps.OpMapattributes.op1_factor.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: OpMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the second operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.images.attributes.op2
+          images=site.data.scene-classes.maps.OpMapattributes.op2.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: OpMap
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op2</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.images.attributes.op2_factor
+          images=site.data.scene-classes.maps.OpMapattributes.op2_factor.images.
           path=image_path
       %}
     </p>
@@ -125,7 +125,7 @@ title: OpMap
           | bitwise_or = 38
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.images.attributes.operation
+          images=site.data.scene-classes.maps.OpMapattributes.operation.images.
           path=image_path
       %}
     </p>

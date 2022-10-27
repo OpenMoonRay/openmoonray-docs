@@ -8,12 +8,12 @@ title: LightSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LightSet
-{%assign image_path=site.data.scene-classes.light-set.LightSet.images.path%}
-{%if site.data.scene-classes.light-set.LightSet.images.gallery-%}
+{%assign image_path=site.data.scene-classes.light-set.LightSet.image_path%}
+{%if site.data.scene-classes.light-set.LightSet.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-set.LightSet.images.gallery
+    images=site.data.scene-classes.light-set.LightSet.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: LightSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-set.LightSet.images.attributes.lights
+          images=site.data.scene-classes.light-set.LightSetattributes.lights.images.
           path=image_path
       %}
     </p>

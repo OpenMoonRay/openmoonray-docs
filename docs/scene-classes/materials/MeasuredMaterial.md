@@ -8,12 +8,12 @@ title: MeasuredMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # MeasuredMaterial
-{%assign image_path=site.data.scene-classes.materials.MeasuredMaterial.images.path%}
-{%if site.data.scene-classes.materials.MeasuredMaterial.images.gallery-%}
+{%assign image_path=site.data.scene-classes.materials.MeasuredMaterial.image_path%}
+{%if site.data.scene-classes.materials.MeasuredMaterial.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.MeasuredMaterial.images.gallery
+    images=site.data.scene-classes.materials.MeasuredMaterial.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: MeasuredMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.diffuse
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.diffuse.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: MeasuredMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.diffuse_color
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.diffuse_color.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: MeasuredMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.diffuse_factor
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.diffuse_factor.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: MeasuredMaterial
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.diffuse_filename
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.diffuse_filename.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: MeasuredMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.diffuse_hue_shift
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.diffuse_hue_shift.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: MeasuredMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.diffuse_saturation
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.diffuse_saturation.images.
           path=image_path
       %}
     </p>
@@ -102,7 +102,7 @@ title: MeasuredMaterial
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.specular
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.specular.images.
           path=image_path
       %}
     </p>
@@ -112,7 +112,7 @@ title: MeasuredMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.specular_color
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.specular_color.images.
           path=image_path
       %}
     </p>
@@ -122,7 +122,7 @@ title: MeasuredMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.specular_factor
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.specular_factor.images.
           path=image_path
       %}
     </p>
@@ -132,7 +132,7 @@ title: MeasuredMaterial
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.specular_filename
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.specular_filename.images.
           path=image_path
       %}
     </p>
@@ -142,7 +142,7 @@ title: MeasuredMaterial
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.specular_hue_shift
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.specular_hue_shift.images.
           path=image_path
       %}
     </p>
@@ -152,7 +152,7 @@ title: MeasuredMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.specular_saturation
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.specular_saturation.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: MeasuredMaterial
       default: [ 1, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.anisotropic_direction
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.anisotropic_direction.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: MeasuredMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.casts_caustics
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.casts_caustics.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: MeasuredMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.extra_aovs
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: MeasuredMaterial
       default: [ 0, 0, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.input_normal
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: MeasuredMaterial
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.input_normal_dial
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: MeasuredMaterial
       default: 0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.input_normal_space
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.input_normal_space.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: MeasuredMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.label
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.label.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: MeasuredMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.MeasuredMaterial.images.attributes.priority
+          images=site.data.scene-classes.materials.MeasuredMaterialattributes.priority.images.
           path=image_path
       %}
     </p>

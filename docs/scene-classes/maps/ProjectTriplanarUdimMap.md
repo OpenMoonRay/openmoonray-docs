@@ -8,12 +8,12 @@ title: ProjectTriplanarUdimMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectTriplanarUdimMap
-{%assign image_path=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.path%}
-{%if site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ProjectTriplanarUdimMap.image_path%}
+{%if site.data.scene-classes.maps.ProjectTriplanarUdimMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.gallery
+    images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -42,7 +42,7 @@ title: ProjectTriplanarUdimMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.TRS_order
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.TRS_order.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: ProjectTriplanarUdimMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.projection_matrix
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.projection_matrix.images.
           path=image_path
       %}
     </p>
@@ -64,7 +64,7 @@ title: ProjectTriplanarUdimMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.projection_mode
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.projection_mode.images.
           path=image_path
       %}
     </p>
@@ -74,7 +74,7 @@ title: ProjectTriplanarUdimMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.projector
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.projector.images.
           path=image_path
       %}
     </p>
@@ -84,7 +84,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.rotate
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.rotate.images.
           path=image_path
       %}
     </p>
@@ -99,7 +99,7 @@ title: ProjectTriplanarUdimMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.rotation_order
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.rotation_order.images.
           path=image_path
       %}
     </p>
@@ -109,7 +109,7 @@ title: ProjectTriplanarUdimMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.scale
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.scale.images.
           path=image_path
       %}
     </p>
@@ -119,7 +119,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.translate
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.translate.images.
           path=image_path
       %}
     </p>
@@ -129,7 +129,7 @@ title: ProjectTriplanarUdimMap
       default: False
       <p class="scene-class-comments">use correct uv orientation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.use_correct_uv
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.use_correct_uv.images.
           path=image_path
       %}
     </p>
@@ -139,7 +139,7 @@ title: ProjectTriplanarUdimMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.use_reference_space
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.use_reference_space.images.
           path=image_path
       %}
     </p>
@@ -149,7 +149,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset for x projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.x_offset
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.x_offset.images.
           path=image_path
       %}
     </p>
@@ -159,7 +159,7 @@ title: ProjectTriplanarUdimMap
       default: 0.0
       <p class="scene-class-comments">2D rotation for x projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.x_rotation
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.x_rotation.images.
           path=image_path
       %}
     </p>
@@ -169,7 +169,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">2D rotation center for x projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.x_rotation_center
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.x_rotation_center.images.
           path=image_path
       %}
     </p>
@@ -179,7 +179,7 @@ title: ProjectTriplanarUdimMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale for x projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.x_scale
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.x_scale.images.
           path=image_path
       %}
     </p>
@@ -189,7 +189,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset for y projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.y_offset
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.y_offset.images.
           path=image_path
       %}
     </p>
@@ -199,7 +199,7 @@ title: ProjectTriplanarUdimMap
       default: 0.0
       <p class="scene-class-comments">2D rotation for y projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.y_rotation
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.y_rotation.images.
           path=image_path
       %}
     </p>
@@ -209,7 +209,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">2D rotation center for y projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.y_rotation_center
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.y_rotation_center.images.
           path=image_path
       %}
     </p>
@@ -219,7 +219,7 @@ title: ProjectTriplanarUdimMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale for y projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.y_scale
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.y_scale.images.
           path=image_path
       %}
     </p>
@@ -229,7 +229,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset for z projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.z_offset
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.z_offset.images.
           path=image_path
       %}
     </p>
@@ -239,7 +239,7 @@ title: ProjectTriplanarUdimMap
       default: 0.0
       <p class="scene-class-comments">2D rotation for z projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.z_rotation
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.z_rotation.images.
           path=image_path
       %}
     </p>
@@ -249,7 +249,7 @@ title: ProjectTriplanarUdimMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">2D rotation center for z projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.z_rotation_center
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.z_rotation_center.images.
           path=image_path
       %}
     </p>
@@ -259,7 +259,7 @@ title: ProjectTriplanarUdimMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale for z projected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.images.attributes.z_scale
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMapattributes.z_scale.images.
           path=image_path
       %}
     </p>

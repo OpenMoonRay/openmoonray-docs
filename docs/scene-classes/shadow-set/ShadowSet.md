@@ -8,12 +8,12 @@ title: ShadowSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ShadowSet
-{%assign image_path=site.data.scene-classes.shadow-set.ShadowSet.images.path%}
-{%if site.data.scene-classes.shadow-set.ShadowSet.images.gallery-%}
+{%assign image_path=site.data.scene-classes.shadow-set.ShadowSet.image_path%}
+{%if site.data.scene-classes.shadow-set.ShadowSet.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.shadow-set.ShadowSet.images.gallery
+    images=site.data.scene-classes.shadow-set.ShadowSet.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ShadowSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-set.ShadowSet.images.attributes.lights
+          images=site.data.scene-classes.shadow-set.ShadowSetattributes.lights.images.
           path=image_path
       %}
     </p>

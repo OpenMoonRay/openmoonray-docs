@@ -8,12 +8,12 @@ title: RgbToFloatMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToFloatMap
-{%assign image_path=site.data.scene-classes.maps.RgbToFloatMap.images.path%}
-{%if site.data.scene-classes.maps.RgbToFloatMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.RgbToFloatMap.image_path%}
+{%if site.data.scene-classes.maps.RgbToFloatMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.RgbToFloatMap.images.gallery
+    images=site.data.scene-classes.maps.RgbToFloatMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RgbToFloatMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToFloatMap.images.attributes.input
+          images=site.data.scene-classes.maps.RgbToFloatMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -54,7 +54,7 @@ title: RgbToFloatMap
           | luminance = 7
       <p class="scene-class-comments">specify the method to convert RGB Color to float</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToFloatMap.images.attributes.mode
+          images=site.data.scene-classes.maps.RgbToFloatMapattributes.mode.images.
           path=image_path
       %}
     </p>

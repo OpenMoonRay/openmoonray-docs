@@ -8,12 +8,12 @@ title: RgbToHsvMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToHsvMap
-{%assign image_path=site.data.scene-classes.maps.RgbToHsvMap.images.path%}
-{%if site.data.scene-classes.maps.RgbToHsvMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.RgbToHsvMap.image_path%}
+{%if site.data.scene-classes.maps.RgbToHsvMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.RgbToHsvMap.images.gallery
+    images=site.data.scene-classes.maps.RgbToHsvMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RgbToHsvMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToHsvMap.images.attributes.input
+          images=site.data.scene-classes.maps.RgbToHsvMapattributes.input.images.
           path=image_path
       %}
     </p>

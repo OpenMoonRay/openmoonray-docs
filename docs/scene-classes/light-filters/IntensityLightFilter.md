@@ -8,12 +8,12 @@ title: IntensityLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # IntensityLightFilter
-{%assign image_path=site.data.scene-classes.light-filters.IntensityLightFilter.images.path%}
-{%if site.data.scene-classes.light-filters.IntensityLightFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.light-filters.IntensityLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.IntensityLightFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-filters.IntensityLightFilter.images.gallery
+    images=site.data.scene-classes.light-filters.IntensityLightFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: IntensityLightFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilter.images.attributes.color
+          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: IntensityLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilter.images.attributes.exposure
+          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.exposure.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: IntensityLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilter.images.attributes.intensity
+          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.intensity.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: IntensityLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilter.images.attributes.invert
+          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.invert.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: IntensityLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.IntensityLightFilter.images.attributes.on
+          images=site.data.scene-classes.light-filters.IntensityLightFilterattributes.on.images.
           path=image_path
       %}
     </p>

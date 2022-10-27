@@ -8,12 +8,12 @@ title: ColorCorrectTMIMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectTMIMap
-{%assign image_path=site.data.scene-classes.maps.ColorCorrectTMIMap.images.path%}
-{%if site.data.scene-classes.maps.ColorCorrectTMIMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ColorCorrectTMIMap.image_path%}
+{%if site.data.scene-classes.maps.ColorCorrectTMIMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectTMIMap.images.gallery
+    images=site.data.scene-classes.maps.ColorCorrectTMIMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ColorCorrectTMIMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMap.images.attributes.TMI
+          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.TMI.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectTMIMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMap.images.attributes.input
+          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectTMIMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMap.images.attributes.mix
+          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectTMIMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectTMIMap.images.attributes.on
+          images=site.data.scene-classes.maps.ColorCorrectTMIMapattributes.on.images.
           path=image_path
       %}
     </p>

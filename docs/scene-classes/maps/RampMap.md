@@ -8,12 +8,12 @@ title: RampMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RampMap
-{%assign image_path=site.data.scene-classes.maps.RampMap.images.path%}
-{%if site.data.scene-classes.maps.RampMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.RampMap.image_path%}
+{%if site.data.scene-classes.maps.RampMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.RampMap.images.gallery
+    images=site.data.scene-classes.maps.RampMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RampMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Bind custom UV coordinates</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.input_texture_coordinates
+          images=site.data.scene-classes.maps.RampMapattributes.input_texture_coordinates.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: RampMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">Number of times to repeat the ramp pattern</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.uv_repeat
+          images=site.data.scene-classes.maps.RampMapattributes.uv_repeat.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: RampMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">Creates waves which perturb the ramp pattern</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.uv_wave
+          images=site.data.scene-classes.maps.RampMapattributes.uv_wave.images.
           path=image_path
       %}
     </p>
@@ -68,7 +68,7 @@ title: RampMap
           | clamp = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.wrap_type
+          images=site.data.scene-classes.maps.RampMapattributes.wrap_type.images.
           path=image_path
       %}
     </p>
@@ -83,7 +83,7 @@ title: RampMap
       default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.colors
+          images=site.data.scene-classes.maps.RampMapattributes.colors.images.
           path=image_path
       %}
     </p>
@@ -93,7 +93,7 @@ title: RampMap
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.interpolations
+          images=site.data.scene-classes.maps.RampMapattributes.interpolations.images.
           path=image_path
       %}
     </p>
@@ -103,7 +103,7 @@ title: RampMap
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Color ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.positions
+          images=site.data.scene-classes.maps.RampMapattributes.positions.images.
           path=image_path
       %}
     </p>
@@ -118,7 +118,7 @@ title: RampMap
       default: None
       <p class="scene-class-comments">Camera used to define camera and screen space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.camera
+          images=site.data.scene-classes.maps.RampMapattributes.camera.images.
           path=image_path
       %}
     </p>
@@ -130,7 +130,7 @@ title: RampMap
           | hsl = 2
       <p class="scene-class-comments">Color space to perform interpolation in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.color_space
+          images=site.data.scene-classes.maps.RampMapattributes.color_space.images.
           path=image_path
       %}
     </p>
@@ -140,7 +140,7 @@ title: RampMap
       default: 1.0
       <p class="scene-class-comments">Input signal for ramp, used when ramp type is set to input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.input
+          images=site.data.scene-classes.maps.RampMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -150,7 +150,7 @@ title: RampMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.object
+          images=site.data.scene-classes.maps.RampMapattributes.object.images.
           path=image_path
       %}
     </p>
@@ -168,7 +168,7 @@ title: RampMap
           | input = 8
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.ramp_type
+          images=site.data.scene-classes.maps.RampMapattributes.ramp_type.images.
           path=image_path
       %}
     </p>
@@ -184,7 +184,7 @@ title: RampMap
           | texture = 6
       <p class="scene-class-comments">Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.space
+          images=site.data.scene-classes.maps.RampMapattributes.space.images.
           path=image_path
       %}
     </p>
@@ -200,7 +200,7 @@ title: RampMap
           | input texture coordinates = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RampMap.images.attributes.texture_coordinates
+          images=site.data.scene-classes.maps.RampMapattributes.texture_coordinates.images.
           path=image_path
       %}
     </p>

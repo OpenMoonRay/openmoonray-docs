@@ -8,12 +8,12 @@ title: NormalDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NormalDisplacement
-{%assign image_path=site.data.scene-classes.displacement.NormalDisplacement.images.path%}
-{%if site.data.scene-classes.displacement.NormalDisplacement.images.gallery-%}
+{%assign image_path=site.data.scene-classes.displacement.NormalDisplacement.image_path%}
+{%if site.data.scene-classes.displacement.NormalDisplacement.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.displacement.NormalDisplacement.images.gallery
+    images=site.data.scene-classes.displacement.NormalDisplacement.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: NormalDisplacement
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.NormalDisplacement.images.attributes.bound_padding
+          images=site.data.scene-classes.displacement.NormalDisplacementattributes.bound_padding.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: NormalDisplacement
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.NormalDisplacement.images.attributes.height
+          images=site.data.scene-classes.displacement.NormalDisplacementattributes.height.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: NormalDisplacement
       default: 1.0
       <p class="scene-class-comments">Multiply the computed (post zero-value) height with this factor.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.NormalDisplacement.images.attributes.height_multiplier
+          images=site.data.scene-classes.displacement.NormalDisplacementattributes.height_multiplier.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: NormalDisplacement
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.NormalDisplacement.images.attributes.zero_value
+          images=site.data.scene-classes.displacement.NormalDisplacementattributes.zero_value.images.
           path=image_path
       %}
     </p>

@@ -8,12 +8,12 @@ title: TraceSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TraceSet
-{%assign image_path=site.data.scene-classes.trace-set.TraceSet.images.path%}
-{%if site.data.scene-classes.trace-set.TraceSet.images.gallery-%}
+{%assign image_path=site.data.scene-classes.trace-set.TraceSet.image_path%}
+{%if site.data.scene-classes.trace-set.TraceSet.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.trace-set.TraceSet.images.gallery
+    images=site.data.scene-classes.trace-set.TraceSet.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: TraceSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSet.images.attributes.geometries
+          images=site.data.scene-classes.trace-set.TraceSetattributes.geometries.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: TraceSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSet.images.attributes.parts
+          images=site.data.scene-classes.trace-set.TraceSetattributes.parts.images.
           path=image_path
       %}
     </p>

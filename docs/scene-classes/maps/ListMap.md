@@ -8,12 +8,12 @@ title: ListMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ListMap
-{%assign image_path=site.data.scene-classes.maps.ListMap.images.path%}
-{%if site.data.scene-classes.maps.ListMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ListMap.image_path%}
+{%if site.data.scene-classes.maps.ListMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ListMap.images.gallery
+    images=site.data.scene-classes.maps.ListMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map0
+          images=site.data.scene-classes.maps.ListMapattributes.map0.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map1
+          images=site.data.scene-classes.maps.ListMapattributes.map1.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map10
+          images=site.data.scene-classes.maps.ListMapattributes.map10.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map11
+          images=site.data.scene-classes.maps.ListMapattributes.map11.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map12
+          images=site.data.scene-classes.maps.ListMapattributes.map12.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map13
+          images=site.data.scene-classes.maps.ListMapattributes.map13.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map14
+          images=site.data.scene-classes.maps.ListMapattributes.map14.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map15
+          images=site.data.scene-classes.maps.ListMapattributes.map15.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map16
+          images=site.data.scene-classes.maps.ListMapattributes.map16.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map17
+          images=site.data.scene-classes.maps.ListMapattributes.map17.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map18
+          images=site.data.scene-classes.maps.ListMapattributes.map18.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map19
+          images=site.data.scene-classes.maps.ListMapattributes.map19.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map2
+          images=site.data.scene-classes.maps.ListMapattributes.map2.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map3
+          images=site.data.scene-classes.maps.ListMapattributes.map3.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map4
+          images=site.data.scene-classes.maps.ListMapattributes.map4.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map5
+          images=site.data.scene-classes.maps.ListMapattributes.map5.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map6
+          images=site.data.scene-classes.maps.ListMapattributes.map6.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map7
+          images=site.data.scene-classes.maps.ListMapattributes.map7.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map8
+          images=site.data.scene-classes.maps.ListMapattributes.map8.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.images.attributes.map9
+          images=site.data.scene-classes.maps.ListMapattributes.map9.images.
           path=image_path
       %}
     </p>

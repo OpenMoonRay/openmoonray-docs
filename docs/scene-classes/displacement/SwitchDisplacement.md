@@ -8,12 +8,12 @@ title: SwitchDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SwitchDisplacement
-{%assign image_path=site.data.scene-classes.displacement.SwitchDisplacement.images.path%}
-{%if site.data.scene-classes.displacement.SwitchDisplacement.images.gallery-%}
+{%assign image_path=site.data.scene-classes.displacement.SwitchDisplacement.image_path%}
+{%if site.data.scene-classes.displacement.SwitchDisplacement.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.displacement.SwitchDisplacement.images.gallery
+    images=site.data.scene-classes.displacement.SwitchDisplacement.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: SwitchDisplacement
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.bound_padding
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.bound_padding.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: SwitchDisplacement
       default: 0.0
       <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.choice
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.choice.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement0
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement0.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement1
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement1.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement10
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement10.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement11
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement11.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement12
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement12.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement13
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement13.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement14
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement14.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement15
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement15.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement16
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement16.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement17
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement17.images.
           path=image_path
       %}
     </p>
@@ -157,7 +157,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement18
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement18.images.
           path=image_path
       %}
     </p>
@@ -167,7 +167,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement19
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement19.images.
           path=image_path
       %}
     </p>
@@ -177,7 +177,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement2
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement2.images.
           path=image_path
       %}
     </p>
@@ -187,7 +187,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement20
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement20.images.
           path=image_path
       %}
     </p>
@@ -197,7 +197,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement21
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement21.images.
           path=image_path
       %}
     </p>
@@ -207,7 +207,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement22
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement22.images.
           path=image_path
       %}
     </p>
@@ -217,7 +217,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement23
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement23.images.
           path=image_path
       %}
     </p>
@@ -227,7 +227,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement24
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement24.images.
           path=image_path
       %}
     </p>
@@ -237,7 +237,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement25
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement25.images.
           path=image_path
       %}
     </p>
@@ -247,7 +247,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement26
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement26.images.
           path=image_path
       %}
     </p>
@@ -257,7 +257,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement27
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement27.images.
           path=image_path
       %}
     </p>
@@ -267,7 +267,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement28
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement28.images.
           path=image_path
       %}
     </p>
@@ -277,7 +277,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement29
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement29.images.
           path=image_path
       %}
     </p>
@@ -287,7 +287,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement3
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement3.images.
           path=image_path
       %}
     </p>
@@ -297,7 +297,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement30
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement30.images.
           path=image_path
       %}
     </p>
@@ -307,7 +307,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement31
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement31.images.
           path=image_path
       %}
     </p>
@@ -317,7 +317,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement32
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement32.images.
           path=image_path
       %}
     </p>
@@ -327,7 +327,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement33
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement33.images.
           path=image_path
       %}
     </p>
@@ -337,7 +337,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement34
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement34.images.
           path=image_path
       %}
     </p>
@@ -347,7 +347,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement35
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement35.images.
           path=image_path
       %}
     </p>
@@ -357,7 +357,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement36
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement36.images.
           path=image_path
       %}
     </p>
@@ -367,7 +367,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement37
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement37.images.
           path=image_path
       %}
     </p>
@@ -377,7 +377,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement38
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement38.images.
           path=image_path
       %}
     </p>
@@ -387,7 +387,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement39
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement39.images.
           path=image_path
       %}
     </p>
@@ -397,7 +397,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement4
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement4.images.
           path=image_path
       %}
     </p>
@@ -407,7 +407,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement40
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement40.images.
           path=image_path
       %}
     </p>
@@ -417,7 +417,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement41
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement41.images.
           path=image_path
       %}
     </p>
@@ -427,7 +427,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement42
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement42.images.
           path=image_path
       %}
     </p>
@@ -437,7 +437,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement43
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement43.images.
           path=image_path
       %}
     </p>
@@ -447,7 +447,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement44
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement44.images.
           path=image_path
       %}
     </p>
@@ -457,7 +457,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement45
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement45.images.
           path=image_path
       %}
     </p>
@@ -467,7 +467,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement46
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement46.images.
           path=image_path
       %}
     </p>
@@ -477,7 +477,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement47
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement47.images.
           path=image_path
       %}
     </p>
@@ -487,7 +487,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement48
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement48.images.
           path=image_path
       %}
     </p>
@@ -497,7 +497,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement49
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement49.images.
           path=image_path
       %}
     </p>
@@ -507,7 +507,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement5
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement5.images.
           path=image_path
       %}
     </p>
@@ -517,7 +517,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement50
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement50.images.
           path=image_path
       %}
     </p>
@@ -527,7 +527,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement51
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement51.images.
           path=image_path
       %}
     </p>
@@ -537,7 +537,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement52
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement52.images.
           path=image_path
       %}
     </p>
@@ -547,7 +547,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement53
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement53.images.
           path=image_path
       %}
     </p>
@@ -557,7 +557,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement54
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement54.images.
           path=image_path
       %}
     </p>
@@ -567,7 +567,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement55
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement55.images.
           path=image_path
       %}
     </p>
@@ -577,7 +577,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement56
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement56.images.
           path=image_path
       %}
     </p>
@@ -587,7 +587,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement57
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement57.images.
           path=image_path
       %}
     </p>
@@ -597,7 +597,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement58
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement58.images.
           path=image_path
       %}
     </p>
@@ -607,7 +607,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement59
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement59.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement6
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement6.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement60
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement60.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement61
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement61.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement62
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement62.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement63
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement63.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement7
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement7.images.
           path=image_path
       %}
     </p>
@@ -677,7 +677,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement8
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement8.images.
           path=image_path
       %}
     </p>
@@ -687,7 +687,7 @@ title: SwitchDisplacement
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.SwitchDisplacement.images.attributes.displacement9
+          images=site.data.scene-classes.displacement.SwitchDisplacementattributes.displacement9.images.
           path=image_path
       %}
     </p>

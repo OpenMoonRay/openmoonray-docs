@@ -8,12 +8,12 @@ title: VectorDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # VectorDisplacement
-{%assign image_path=site.data.scene-classes.displacement.VectorDisplacement.images.path%}
-{%if site.data.scene-classes.displacement.VectorDisplacement.images.gallery-%}
+{%assign image_path=site.data.scene-classes.displacement.VectorDisplacement.image_path%}
+{%if site.data.scene-classes.displacement.VectorDisplacement.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.displacement.VectorDisplacement.images.gallery
+    images=site.data.scene-classes.displacement.VectorDisplacement.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: VectorDisplacement
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.images.attributes.bound_padding
+          images=site.data.scene-classes.displacement.VectorDisplacementattributes.bound_padding.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: VectorDisplacement
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.images.attributes.factor
+          images=site.data.scene-classes.displacement.VectorDisplacementattributes.factor.images.
           path=image_path
       %}
     </p>
@@ -58,7 +58,7 @@ title: VectorDisplacement
           | object = 1
       <p class="scene-class-comments">The space that the map bound to the vector parameter is in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.images.attributes.source_space
+          images=site.data.scene-classes.displacement.VectorDisplacementattributes.source_space.images.
           path=image_path
       %}
     </p>
@@ -69,7 +69,7 @@ title: VectorDisplacement
           | tbn = 1
       <p class="scene-class-comments">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.images.attributes.tangent_space_style
+          images=site.data.scene-classes.displacement.VectorDisplacementattributes.tangent_space_style.images.
           path=image_path
       %}
     </p>
@@ -79,7 +79,7 @@ title: VectorDisplacement
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.images.attributes.vector
+          images=site.data.scene-classes.displacement.VectorDisplacementattributes.vector.images.
           path=image_path
       %}
     </p>

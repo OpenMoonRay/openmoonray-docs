@@ -8,12 +8,12 @@ title: ColorCorrectLegacyMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectLegacyMap
-{%assign image_path=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.path%}
-{%if site.data.scene-classes.maps.ColorCorrectLegacyMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ColorCorrectLegacyMap.image_path%}
+{%if site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.gallery
+    images=site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.brightness
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.brightness.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ColorCorrectLegacyMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.clamp
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.contrast
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.contrast.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.hue
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.hue.images.
           path=image_path
       %}
     </p>
@@ -77,7 +77,7 @@ title: ColorCorrectLegacyMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.input
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.input.images.
           path=image_path
       %}
     </p>
@@ -87,7 +87,7 @@ title: ColorCorrectLegacyMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.invert
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.invert.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: ColorCorrectLegacyMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.mask
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.mask.images.
           path=image_path
       %}
     </p>
@@ -114,7 +114,7 @@ title: ColorCorrectLegacyMap
           | blue channel = 7
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.monochrome
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.monochrome.images.
           path=image_path
       %}
     </p>
@@ -124,7 +124,7 @@ title: ColorCorrectLegacyMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.multiplier
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.multiplier.images.
           path=image_path
       %}
     </p>
@@ -134,7 +134,7 @@ title: ColorCorrectLegacyMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.on
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.on.images.
           path=image_path
       %}
     </p>
@@ -144,7 +144,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.images.attributes.saturation
+          images=site.data.scene-classes.maps.ColorCorrectLegacyMapattributes.saturation.images.
           path=image_path
       %}
     </p>

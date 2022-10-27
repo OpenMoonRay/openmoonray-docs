@@ -8,12 +8,12 @@ title: TransformNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TransformNormalMap
-{%assign image_path=site.data.scene-classes.normal-maps.TransformNormalMap.images.path%}
-{%if site.data.scene-classes.normal-maps.TransformNormalMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.normal-maps.TransformNormalMap.image_path%}
+{%if site.data.scene-classes.normal-maps.TransformNormalMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.normal-maps.TransformNormalMap.images.gallery
+    images=site.data.scene-classes.normal-maps.TransformNormalMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: TransformNormalMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">input normal in either tangent or render space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMap.images.attributes.input_normal
+          images=site.data.scene-classes.normal-maps.TransformNormalMapattributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: TransformNormalMap
       default: True
       <p class="scene-class-comments">decode the input normal if it's in tangent space [0,1] -&gt; [-1,1]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMap.images.attributes.decode_input_normal
+          images=site.data.scene-classes.normal-maps.TransformNormalMapattributes.decode_input_normal.images.
           path=image_path
       %}
     </p>
@@ -63,7 +63,7 @@ title: TransformNormalMap
           | render to tangent = 1
       <p class="scene-class-comments">transform to apply to the normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMap.images.attributes.transform
+          images=site.data.scene-classes.normal-maps.TransformNormalMapattributes.transform.images.
           path=image_path
       %}
     </p>

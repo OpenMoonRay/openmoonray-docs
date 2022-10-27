@@ -8,12 +8,12 @@ title: ShadowReceiverSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ShadowReceiverSet
-{%assign image_path=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.images.path%}
-{%if site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.images.gallery-%}
+{%assign image_path=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.image_path%}
+{%if site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.images.gallery
+    images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ShadowReceiverSet
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.images.attributes.complement
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSetattributes.complement.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: ShadowReceiverSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.images.attributes.geometries
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSetattributes.geometries.images.
           path=image_path
       %}
     </p>

@@ -8,12 +8,12 @@ title: ConstantColorMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantColorMap
-{%assign image_path=site.data.scene-classes.maps.ConstantColorMap.images.path%}
-{%if site.data.scene-classes.maps.ConstantColorMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ConstantColorMap.image_path%}
+{%if site.data.scene-classes.maps.ConstantColorMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ConstantColorMap.images.gallery
+    images=site.data.scene-classes.maps.ConstantColorMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ConstantColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">constant color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ConstantColorMap.images.attributes.color_value
+          images=site.data.scene-classes.maps.ConstantColorMapattributes.color_value.images.
           path=image_path
       %}
     </p>

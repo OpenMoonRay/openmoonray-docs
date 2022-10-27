@@ -8,12 +8,12 @@ title: AttributeMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # AttributeMap
-{%assign image_path=site.data.scene-classes.maps.AttributeMap.images.path%}
-{%if site.data.scene-classes.maps.AttributeMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.AttributeMap.image_path%}
+{%if site.data.scene-classes.maps.AttributeMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.AttributeMap.images.gallery
+    images=site.data.scene-classes.maps.AttributeMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: AttributeMap
       default: Cd
       <p class="scene-class-comments">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AttributeMap.images.attributes.primitive_attribute_name
+          images=site.data.scene-classes.maps.AttributeMapattributes.primitive_attribute_name.images.
           path=image_path
       %}
     </p>
@@ -51,7 +51,7 @@ title: AttributeMap
           | int = 4
       <p class="scene-class-comments">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AttributeMap.images.attributes.primitive_attribute_type
+          images=site.data.scene-classes.maps.AttributeMapattributes.primitive_attribute_type.images.
           path=image_path
       %}
     </p>
@@ -66,7 +66,7 @@ title: AttributeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">input color - preferably a connected map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AttributeMap.images.attributes.color
+          images=site.data.scene-classes.maps.AttributeMapattributes.color.images.
           path=image_path
       %}
     </p>
@@ -76,7 +76,7 @@ title: AttributeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">default value to display when the requested attribute is not available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AttributeMap.images.attributes.default_value
+          images=site.data.scene-classes.maps.AttributeMapattributes.default_value.images.
           path=image_path
       %}
     </p>
@@ -103,7 +103,7 @@ title: AttributeMap
           | motionvec = 19
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AttributeMap.images.attributes.map_type
+          images=site.data.scene-classes.maps.AttributeMapattributes.map_type.images.
           path=image_path
       %}
     </p>
@@ -113,7 +113,7 @@ title: AttributeMap
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AttributeMap.images.attributes.warn_when_unavailable
+          images=site.data.scene-classes.maps.AttributeMapattributes.warn_when_unavailable.images.
           path=image_path
       %}
     </p>

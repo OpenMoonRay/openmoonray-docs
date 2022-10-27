@@ -8,12 +8,12 @@ title: ConstantScalarMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantScalarMap
-{%assign image_path=site.data.scene-classes.maps.ConstantScalarMap.images.path%}
-{%if site.data.scene-classes.maps.ConstantScalarMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ConstantScalarMap.image_path%}
+{%if site.data.scene-classes.maps.ConstantScalarMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ConstantScalarMap.images.gallery
+    images=site.data.scene-classes.maps.ConstantScalarMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ConstantScalarMap
       default: 1.0
       <p class="scene-class-comments">constant scalar value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ConstantScalarMap.images.attributes.scalar_value
+          images=site.data.scene-classes.maps.ConstantScalarMapattributes.scalar_value.images.
           path=image_path
       %}
     </p>

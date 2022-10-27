@@ -8,12 +8,12 @@ title: AxisAngleMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # AxisAngleMap
-{%assign image_path=site.data.scene-classes.maps.AxisAngleMap.images.path%}
-{%if site.data.scene-classes.maps.AxisAngleMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.AxisAngleMap.image_path%}
+{%if site.data.scene-classes.maps.AxisAngleMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.AxisAngleMap.images.gallery
+    images=site.data.scene-classes.maps.AxisAngleMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: AxisAngleMap
       default: 0.0
       <p class="scene-class-comments">the angle of rotation in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMap.images.attributes.angle
+          images=site.data.scene-classes.maps.AxisAngleMapattributes.angle.images.
           path=image_path
       %}
     </p>
@@ -48,7 +48,7 @@ title: AxisAngleMap
           | object = 4
       <p class="scene-class-comments">the space of the axis to rotate about</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMap.images.attributes.axis_space
+          images=site.data.scene-classes.maps.AxisAngleMapattributes.axis_space.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: AxisAngleMap
           | object = 4
       <p class="scene-class-comments">the space to transform from</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMap.images.attributes.input_space
+          images=site.data.scene-classes.maps.AxisAngleMapattributes.input_space.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: AxisAngleMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">input vector to be rotated</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMap.images.attributes.input_vector
+          images=site.data.scene-classes.maps.AxisAngleMapattributes.input_vector.images.
           path=image_path
       %}
     </p>
@@ -86,7 +86,7 @@ title: AxisAngleMap
           | object = 4
       <p class="scene-class-comments">the space to transform the resulting vector to</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMap.images.attributes.output_space
+          images=site.data.scene-classes.maps.AxisAngleMapattributes.output_space.images.
           path=image_path
       %}
     </p>
@@ -96,7 +96,7 @@ title: AxisAngleMap
       default: [ 0, 1, 0 ]
       <p class="scene-class-comments">axis to be rotated around</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.AxisAngleMap.images.attributes.rotation_axis
+          images=site.data.scene-classes.maps.AxisAngleMapattributes.rotation_axis.images.
           path=image_path
       %}
     </p>

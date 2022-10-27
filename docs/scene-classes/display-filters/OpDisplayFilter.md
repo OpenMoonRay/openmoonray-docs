@@ -8,12 +8,12 @@ title: OpDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OpDisplayFilter
-{%assign image_path=site.data.scene-classes.display-filters.OpDisplayFilter.images.path%}
-{%if site.data.scene-classes.display-filters.OpDisplayFilter.images.gallery-%}
+{%assign image_path=site.data.scene-classes.display-filters.OpDisplayFilter.image_path%}
+{%if site.data.scene-classes.display-filters.OpDisplayFilter.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.OpDisplayFilter.images.gallery
+    images=site.data.scene-classes.display-filters.OpDisplayFilter.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: OpDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OpDisplayFilter.images.attributes.invert_mask
+          images=site.data.scene-classes.display-filters.OpDisplayFilterattributes.invert_mask.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: OpDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OpDisplayFilter.images.attributes.mix
+          images=site.data.scene-classes.display-filters.OpDisplayFilterattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">first operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OpDisplayFilter.images.attributes.input1
+          images=site.data.scene-classes.display-filters.OpDisplayFilterattributes.input1.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">second operand</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OpDisplayFilter.images.attributes.input2
+          images=site.data.scene-classes.display-filters.OpDisplayFilterattributes.input2.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OpDisplayFilter.images.attributes.mask
+          images=site.data.scene-classes.display-filters.OpDisplayFilterattributes.mask.images.
           path=image_path
       %}
     </p>
@@ -121,7 +121,7 @@ title: OpDisplayFilter
           | not = 29
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OpDisplayFilter.images.attributes.operation
+          images=site.data.scene-classes.display-filters.OpDisplayFilterattributes.operation.images.
           path=image_path
       %}
     </p>

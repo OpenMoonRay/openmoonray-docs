@@ -8,12 +8,12 @@ title: LcToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LcToRgbMap
-{%assign image_path=site.data.scene-classes.maps.LcToRgbMap.images.path%}
-{%if site.data.scene-classes.maps.LcToRgbMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.LcToRgbMap.image_path%}
+{%if site.data.scene-classes.maps.LcToRgbMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.LcToRgbMap.images.gallery
+    images=site.data.scene-classes.maps.LcToRgbMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: LcToRgbMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LcToRgbMap.images.attributes.input_color
+          images=site.data.scene-classes.maps.LcToRgbMapattributes.input_color.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: LcToRgbMap
       default: [ 100, 0, 0 ]
       <p class="scene-class-comments">Target color for remapping, in LAB colorspace</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LcToRgbMap.images.attributes.target_color
+          images=site.data.scene-classes.maps.LcToRgbMapattributes.target_color.images.
           path=image_path
       %}
     </p>

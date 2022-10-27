@@ -8,12 +8,12 @@ title: RgbToLabMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToLabMap
-{%assign image_path=site.data.scene-classes.maps.RgbToLabMap.images.path%}
-{%if site.data.scene-classes.maps.RgbToLabMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.RgbToLabMap.image_path%}
+{%if site.data.scene-classes.maps.RgbToLabMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.RgbToLabMap.images.gallery
+    images=site.data.scene-classes.maps.RgbToLabMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: RgbToLabMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToLabMap.images.attributes.input_color
+          images=site.data.scene-classes.maps.RgbToLabMapattributes.input_color.images.
           path=image_path
       %}
     </p>

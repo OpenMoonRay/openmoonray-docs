@@ -8,12 +8,12 @@ title: ClampMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ClampMap
-{%assign image_path=site.data.scene-classes.maps.ClampMap.images.path%}
-{%if site.data.scene-classes.maps.ClampMap.images.gallery-%}
+{%assign image_path=site.data.scene-classes.maps.ClampMap.image_path%}
+{%if site.data.scene-classes.maps.ClampMap.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ClampMap.images.gallery
+    images=site.data.scene-classes.maps.ClampMap.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: ClampMap
       default: True
       <p class="scene-class-comments">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMap.images.attributes.clamp
+          images=site.data.scene-classes.maps.ClampMapattributes.clamp.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: ClampMap
       default: 1.0
       <p class="scene-class-comments">the maximum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMap.images.attributes.clamp_max
+          images=site.data.scene-classes.maps.ClampMapattributes.clamp_max.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: ClampMap
       default: 0.0
       <p class="scene-class-comments">the minimum value output by this map when 'clamp' is enabled</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMap.images.attributes.clamp_min
+          images=site.data.scene-classes.maps.ClampMapattributes.clamp_min.images.
           path=image_path
       %}
     </p>
@@ -67,7 +67,7 @@ title: ClampMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input values to be remapped</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ClampMap.images.attributes.input
+          images=site.data.scene-classes.maps.ClampMapattributes.input.images.
           path=image_path
       %}
     </p>

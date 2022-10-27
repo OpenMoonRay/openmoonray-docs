@@ -8,12 +8,12 @@ title: HairColorCorrectMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColorCorrectMaterial
-{%assign image_path=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.path%}
-{%if site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.gallery-%}
+{%assign image_path=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.image_path%}
+{%if site.data.scene-classes.materials.hair.HairColorCorrectMaterial.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.gallery
+    images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: HairColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">multiplies the input channels by the specified value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.gain
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.gain.images.
           path=image_path
       %}
     </p>
@@ -47,7 +47,7 @@ title: HairColorCorrectMaterial
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (spectrum range is 0-1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.hue_shift
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.hue_shift.images.
           path=image_path
       %}
     </p>
@@ -57,7 +57,7 @@ title: HairColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">desaturates the input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.saturation
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.saturation.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: HairColorCorrectMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.TMI
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.TMI.images.
           path=image_path
       %}
     </p>
@@ -82,7 +82,7 @@ title: HairColorCorrectMaterial
       default: False
       <p class="scene-class-comments">enables the TMI parameters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.TMI_enabled
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.TMI_enabled.images.
           path=image_path
       %}
     </p>
@@ -97,7 +97,7 @@ title: HairColorCorrectMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.extra_aovs
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -107,7 +107,7 @@ title: HairColorCorrectMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.input_hair_material
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.input_hair_material.images.
           path=image_path
       %}
     </p>
@@ -117,7 +117,7 @@ title: HairColorCorrectMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.label
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.label.images.
           path=image_path
       %}
     </p>
@@ -127,7 +127,7 @@ title: HairColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.mix
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.mix.images.
           path=image_path
       %}
     </p>
@@ -137,7 +137,7 @@ title: HairColorCorrectMaterial
       default: True
       <p class="scene-class-comments">Enable/disable all color corrections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.on
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.on.images.
           path=image_path
       %}
     </p>
@@ -147,7 +147,7 @@ title: HairColorCorrectMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.images.attributes.priority
+          images=site.data.scene-classes.materials.hair.HairColorCorrectMaterialattributes.priority.images.
           path=image_path
       %}
     </p>

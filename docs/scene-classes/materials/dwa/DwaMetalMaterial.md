@@ -8,12 +8,12 @@ title: DwaMetalMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaMetalMaterial
-{%assign image_path=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.path%}
-{%if site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.gallery-%}
+{%assign image_path=site.data.scene-classes.materials.dwa.DwaMetalMaterial.image_path%}
+{%if site.data.scene-classes.materials.dwa.DwaMetalMaterial.gallery-%}
 ---
 ## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.gallery
+    images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.gallery
     path=image_path
 %}
 {%endif%}
@@ -37,7 +37,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">enables/disables specular reflections (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.specular
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.specular.images.
           path=image_path
       %}
     </p>
@@ -52,7 +52,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">enables/disables clearcoat (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat.images.
           path=image_path
       %}
     </p>
@@ -62,7 +62,7 @@ title: DwaMetalMaterial
       default: [ 0.5, 0.5, 0.5 ]
       <p class="scene-class-comments">the attenuation color of the clearcoat when 'cleacoat thickness' &gt; 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_attenuation_color
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_attenuation_color.images.
           path=image_path
       %}
     </p>
@@ -72,7 +72,7 @@ title: DwaMetalMaterial
       default: True
       <p class="scene-class-comments">(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_bending
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_bending.images.
           path=image_path
       %}
     </p>
@@ -83,7 +83,7 @@ title: DwaMetalMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">sets the normalized distribution function for clearcoat.  GGX is currently isotropic only</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_model
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_model.images.
           path=image_path
       %}
     </p>
@@ -93,7 +93,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of infuence of the alternate clearcoat normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_normal_dial
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -103,7 +103,7 @@ title: DwaMetalMaterial
       default: 1.5
       <p class="scene-class-comments">defines the Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_refractive_index
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_refractive_index.images.
           path=image_path
       %}
     </p>
@@ -113,7 +113,7 @@ title: DwaMetalMaterial
       default: 0.10000000149
       <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_roughness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_roughness.images.
           path=image_path
       %}
     </p>
@@ -123,7 +123,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">the thickness of the virtual clearcoat layer. Values &gt; 0 enable absorption</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.clearcoat_thickness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.clearcoat_thickness.images.
           path=image_path
       %}
     </p>
@@ -133,7 +133,7 @@ title: DwaMetalMaterial
       default: None
       <p class="scene-class-comments">specifies an independent shading normal (normal map) for the clearcoat lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.independent_clearcoat_normal
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.independent_clearcoat_normal.images.
           path=image_path
       %}
     </p>
@@ -143,7 +143,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">enables/disables clearcoat</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.show_clearcoat
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.show_clearcoat.images.
           path=image_path
       %}
     </p>
@@ -153,7 +153,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">specifies whether the clearcoat lobe should use an independent normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.use_independent_clearcoat_normal
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.use_independent_clearcoat_normal.images.
           path=image_path
       %}
     </p>
@@ -168,7 +168,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">allows continuation of caustic light paths.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.casts_caustics
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.casts_caustics.images.
           path=image_path
       %}
     </p>
@@ -178,7 +178,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.presence
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.presence.images.
           path=image_path
       %}
     </p>
@@ -188,7 +188,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">enables proper shading of infinitely thin geometry such as paper or leaves.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.thin_geometry
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.thin_geometry.images.
           path=image_path
       %}
     </p>
@@ -203,7 +203,7 @@ title: DwaMetalMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the energy emitted from this material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.emission
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.emission.images.
           path=image_path
       %}
     </p>
@@ -213,7 +213,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">enables/disable emission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.show_emission
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.show_emission.images.
           path=image_path
       %}
     </p>
@@ -228,7 +228,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">fuzz mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.fuzz
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.fuzz.images.
           path=image_path
       %}
     </p>
@@ -238,7 +238,7 @@ title: DwaMetalMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color of the fuzz highlights.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.fuzz_albedo
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.fuzz_albedo.images.
           path=image_path
       %}
     </p>
@@ -248,7 +248,7 @@ title: DwaMetalMaterial
       default: None
       <p class="scene-class-comments">specifies an independent shading normal (normal map) for the fuzz lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.fuzz_normal
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.fuzz_normal.images.
           path=image_path
       %}
     </p>
@@ -258,7 +258,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of infuence of the alternate fuzz normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.fuzz_normal_dial
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.fuzz_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -268,7 +268,7 @@ title: DwaMetalMaterial
       default: 0.25
       <p class="scene-class-comments">Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.fuzz_roughness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.fuzz_roughness.images.
           path=image_path
       %}
     </p>
@@ -278,7 +278,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">Enables/disables fuzz lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.show_fuzz
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.show_fuzz.images.
           path=image_path
       %}
     </p>
@@ -288,7 +288,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.use_absorbing_fuzz_fibers
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.use_absorbing_fuzz_fibers.images.
           path=image_path
       %}
     </p>
@@ -303,7 +303,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">enables/disables glitter model (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter.images.
           path=image_path
       %}
     </p>
@@ -313,7 +313,7 @@ title: DwaMetalMaterial
       default: 0.5
       <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_LOD_quality
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_LOD_quality.images.
           path=image_path
       %}
     </p>
@@ -323,7 +323,7 @@ title: DwaMetalMaterial
       default: True
       <p class="scene-class-comments">use an approximation to shade glitter for non-mirror secondary rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_approximate_for_secondary_rays
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_approximate_for_secondary_rays.images.
           path=image_path
       %}
     </p>
@@ -333,7 +333,7 @@ title: DwaMetalMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_color_A
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_color_A.images.
           path=image_path
       %}
     </p>
@@ -343,7 +343,7 @@ title: DwaMetalMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_color_B
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_color_B.images.
           path=image_path
       %}
     </p>
@@ -353,7 +353,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_color_hue_variation
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_color_hue_variation.images.
           path=image_path
       %}
     </p>
@@ -363,7 +363,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">introduce saturation variation in flake color centered at the base flake color's saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_color_saturation_variation
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_color_saturation_variation.images.
           path=image_path
       %}
     </p>
@@ -373,7 +373,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">introduce value variation in flake color centered at the base flake color's value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_color_value_variation
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_color_value_variation.images.
           path=image_path
       %}
     </p>
@@ -383,7 +383,7 @@ title: DwaMetalMaterial
       default: True
       <p class="scene-class-comments">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_compensate_reference_space_deformation
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_compensate_reference_space_deformation.images.
           path=image_path
       %}
     </p>
@@ -398,7 +398,7 @@ title: DwaMetalMaterial
           | radius = 5
       <p class="scene-class-comments">developer debug visualization modes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_debug_mode
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_debug_mode.images.
           path=image_path
       %}
     </p>
@@ -408,7 +408,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_density
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_density.images.
           path=image_path
       %}
     </p>
@@ -418,7 +418,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">Controls how much the flakes are randomly offset from a regular grid</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_jitter
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_jitter.images.
           path=image_path
       %}
     </p>
@@ -429,7 +429,7 @@ title: DwaMetalMaterial
           | additive = 1
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_layering_mode
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_layering_mode.images.
           path=image_path
       %}
     </p>
@@ -439,7 +439,7 @@ title: DwaMetalMaterial
       default: 0.5
       <p class="scene-class-comments">randomness of flake orientation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_randomness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_randomness.images.
           path=image_path
       %}
     </p>
@@ -449,7 +449,7 @@ title: DwaMetalMaterial
       default: 0.140000000596
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_roughness_A
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_roughness_A.images.
           path=image_path
       %}
     </p>
@@ -459,7 +459,7 @@ title: DwaMetalMaterial
       default: 0.140000000596
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_roughness_B
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_roughness_B.images.
           path=image_path
       %}
     </p>
@@ -469,7 +469,7 @@ title: DwaMetalMaterial
       default: 0
       <p class="scene-class-comments">The seed for the glitter random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_seed
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_seed.images.
           path=image_path
       %}
     </p>
@@ -479,7 +479,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_size_A
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_size_A.images.
           path=image_path
       %}
     </p>
@@ -489,7 +489,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_size_B
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_size_B.images.
           path=image_path
       %}
     </p>
@@ -500,7 +500,7 @@ title: DwaMetalMaterial
           | reference = 5 (default)
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_space
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_space.images.
           path=image_path
       %}
     </p>
@@ -510,7 +510,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_style_A_frequency
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_style_A_frequency.images.
           path=image_path
       %}
     </p>
@@ -520,7 +520,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_style_B_frequency
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_style_B_frequency.images.
           path=image_path
       %}
     </p>
@@ -530,7 +530,7 @@ title: DwaMetalMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_texture_A
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_texture_A.images.
           path=image_path
       %}
     </p>
@@ -540,7 +540,7 @@ title: DwaMetalMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_texture_B
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_texture_B.images.
           path=image_path
       %}
     </p>
@@ -550,7 +550,7 @@ title: DwaMetalMaterial
       default: 0.15000000596
       <p class="scene-class-comments">randomly orient each texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.glitter_texture_orientation_randomness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.glitter_texture_orientation_randomness.images.
           path=image_path
       %}
     </p>
@@ -560,7 +560,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">Enables/disables glitter lobes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.show_glitter
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.show_glitter.images.
           path=image_path
       %}
     </p>
@@ -575,7 +575,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">controls the strength of the iridescence effect</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence.images.
           path=image_path
       %}
     </p>
@@ -586,7 +586,7 @@ title: DwaMetalMaterial
           | clearcoat/moisture specular = 1
       <p class="scene-class-comments">Apply iridescence to primary specular lobe or clearcoat/moisture lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_apply_to
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_apply_to.images.
           path=image_path
       %}
     </p>
@@ -596,7 +596,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">Iridescence effect at 0 degree viewing angle</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_at_0_incidence
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_at_0_incidence.images.
           path=image_path
       %}
     </p>
@@ -606,7 +606,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">Iridescence effect at 90 degree viewing angle</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_at_90_incidence
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_at_90_incidence.images.
           path=image_path
       %}
     </p>
@@ -617,7 +617,7 @@ title: DwaMetalMaterial
           | use ramp = 1
       <p class="scene-class-comments">use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_color_control
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_color_control.images.
           path=image_path
       %}
     </p>
@@ -627,7 +627,7 @@ title: DwaMetalMaterial
       default: [[ 1, 0, 0 ], [ 1, 1, 0 ], [ 0, 1, 0 ], [ 0, 1, 1 ], [ 0, 0, 1 ], [ 1, 0, 1 ], [ 1, 0, 0 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_colors
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_colors.images.
           path=image_path
       %}
     </p>
@@ -637,7 +637,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">Tightens or broadens the distribution of colors</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_exponent
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_exponent.images.
           path=image_path
       %}
     </p>
@@ -647,7 +647,7 @@ title: DwaMetalMaterial
       default: False
       <p class="scene-class-comments">flip interpolation around the hue wheel to counter-clockwise direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_flip_hue_direction
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_flip_hue_direction.images.
           path=image_path
       %}
     </p>
@@ -657,7 +657,7 @@ title: DwaMetalMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_interpolations
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_interpolations.images.
           path=image_path
       %}
     </p>
@@ -667,7 +667,7 @@ title: DwaMetalMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">ramp positions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_positions
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_positions.images.
           path=image_path
       %}
     </p>
@@ -677,7 +677,7 @@ title: DwaMetalMaterial
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">First color to interpolate from around the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_primary_color
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_primary_color.images.
           path=image_path
       %}
     </p>
@@ -688,7 +688,7 @@ title: DwaMetalMaterial
           | HSV = 1
       <p class="scene-class-comments">RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_ramp_interpolation_mode
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_ramp_interpolation_mode.images.
           path=image_path
       %}
     </p>
@@ -698,7 +698,7 @@ title: DwaMetalMaterial
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">Second color to interpolate to around the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_secondary_color
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_secondary_color.images.
           path=image_path
       %}
     </p>
@@ -708,7 +708,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">Controls how much the color spectrum is repeated</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.iridescence_thickness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.iridescence_thickness.images.
           path=image_path
       %}
     </p>
@@ -723,7 +723,7 @@ title: DwaMetalMaterial
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.input_normal
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.input_normal.images.
           path=image_path
       %}
     </p>
@@ -733,7 +733,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.input_normal_dial
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.input_normal_dial.images.
           path=image_path
       %}
     </p>
@@ -748,7 +748,7 @@ title: DwaMetalMaterial
       default: 1.0
       <p class="scene-class-comments">Controls the amount roughness compensation from the normal map AA strategy.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.normal_AA_dial
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.normal_AA_dial.images.
           path=image_path
       %}
     </p>
@@ -759,7 +759,7 @@ title: DwaMetalMaterial
           | toksvig = 1
       <p class="scene-class-comments">Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.normal_AA_strategy
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.normal_AA_strategy.images.
           path=image_path
       %}
     </p>
@@ -774,7 +774,7 @@ title: DwaMetalMaterial
       default: 0.0
       <p class="scene-class-comments">controls the shape of the primary reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.anisotropy
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.anisotropy.images.
           path=image_path
       %}
     </p>
@@ -784,7 +784,7 @@ title: DwaMetalMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the overall reflection color, defines Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.metallic_color
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.metallic_color.images.
           path=image_path
       %}
     </p>
@@ -794,7 +794,7 @@ title: DwaMetalMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the reflection color at grazing angles, defines Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.metallic_edge_color
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.metallic_edge_color.images.
           path=image_path
       %}
     </p>
@@ -804,7 +804,7 @@ title: DwaMetalMaterial
       default: 0.5
       <p class="scene-class-comments">the roughness of the surface (currently only affects reflection)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.roughness
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.roughness.images.
           path=image_path
       %}
     </p>
@@ -814,7 +814,7 @@ title: DwaMetalMaterial
       default: [ 1, 0 ]
       <p class="scene-class-comments">controls the orientation of anistropy</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.shading_tangent
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.shading_tangent.images.
           path=image_path
       %}
     </p>
@@ -824,7 +824,7 @@ title: DwaMetalMaterial
       default: True
       <p class="scene-class-comments">enables/disables specular reflections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.show_specular
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.show_specular.images.
           path=image_path
       %}
     </p>
@@ -835,7 +835,7 @@ title: DwaMetalMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">sets the normalized distribution function for specular.  GGX is currently isotropic only</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.specular_model
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.specular_model.images.
           path=image_path
       %}
     </p>
@@ -850,7 +850,7 @@ title: DwaMetalMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.extra_aovs
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.extra_aovs.images.
           path=image_path
       %}
     </p>
@@ -860,7 +860,7 @@ title: DwaMetalMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.label
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.label.images.
           path=image_path
       %}
     </p>
@@ -870,7 +870,7 @@ title: DwaMetalMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.images.attributes.priority
+          images=site.data.scene-classes.materials.dwa.DwaMetalMaterialattributes.priority.images.
           path=image_path
       %}
     </p>
