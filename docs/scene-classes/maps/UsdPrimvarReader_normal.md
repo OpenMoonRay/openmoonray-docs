@@ -8,13 +8,26 @@ title: UsdPrimvarReader_normal
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_normal
+{%assign image_path=site.data.scene-classes.maps.UsdPrimvarReader_normal.images.path%}
+{%if site.data.scene-classes.maps.UsdPrimvarReader_normal.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.UsdPrimvarReader_normal.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.UsdPrimvarReader_normal.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.UsdPrimvarReader_normal.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.UsdPrimvarReader_normal.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.UsdPrimvarReader_normal.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: UsdPrimvarReader_normal
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_normal.fallback
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UsdPrimvarReader_normal.images.attributes.fallback
+          path=image_path
       %}
     </p>
     <h3>varname</h3>
@@ -34,8 +47,8 @@ title: UsdPrimvarReader_normal
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_normal.varname
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UsdPrimvarReader_normal.images.attributes.varname
+          path=image_path
       %}
     </p>
     <h3>warn_when_unavailable</h3>
@@ -44,8 +57,8 @@ title: UsdPrimvarReader_normal
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UsdPrimvarReader_normal.warn_when_unavailable
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UsdPrimvarReader_normal.images.attributes.warn_when_unavailable
+          path=image_path
       %}
     </p>
   </p>

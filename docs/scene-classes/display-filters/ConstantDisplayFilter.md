@@ -8,13 +8,26 @@ title: ConstantDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantDisplayFilter
+{%assign image_path=site.data.scene-classes.display-filters.ConstantDisplayFilter.images.path%}
+{%if site.data.scene-classes.display-filters.ConstantDisplayFilter.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.display-filters.ConstantDisplayFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.ConstantDisplayFilter.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.display-filters.ConstantDisplayFilter.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.display-filters.ConstantDisplayFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.display-filters.ConstantDisplayFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ConstantDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.invert_mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.images.attributes.invert_mask
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -34,8 +47,8 @@ title: ConstantDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.images.attributes.mix
+          path=image_path
       %}
     </p>
   </p>
@@ -49,8 +62,8 @@ title: ConstantDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fill color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.color
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.images.attributes.color
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -59,8 +72,8 @@ title: ConstantDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.images.attributes.mask
+          path=image_path
       %}
     </p>
   </p>

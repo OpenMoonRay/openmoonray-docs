@@ -8,13 +8,26 @@ title: UsdInstanceGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdInstanceGeometry
+{%assign image_path=site.data.scene-classes.geometry.UsdInstanceGeometry.images.path%}
+{%if site.data.scene-classes.geometry.UsdInstanceGeometry.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.geometry.UsdInstanceGeometry.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.geometry.UsdInstanceGeometry.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.geometry.UsdInstanceGeometry.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.geometry.UsdInstanceGeometry.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: UsdInstanceGeometry
       default: 10
       <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.curved_motion_blur_sample_count
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.curved_motion_blur_sample_count
+          path=image_path
       %}
     </p>
     <h3>disable_indices</h3>
@@ -34,8 +47,8 @@ title: UsdInstanceGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.disable_indices
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.disable_indices
+          path=image_path
       %}
     </p>
     <h3>evaluation_frame</h3>
@@ -44,8 +57,8 @@ title: UsdInstanceGeometry
       default: 1.0
       <p class="scene-class-comments">evaluate geometry at specified frame instead of SceneVariables frame<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.evaluation_frame
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.evaluation_frame
+          path=image_path
       %}
     </p>
     <h3>instance_level</h3>
@@ -58,8 +71,8 @@ title: UsdInstanceGeometry
           | instance level 4 = 4
       <p class="scene-class-comments">Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.instance_level
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.instance_level
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -68,8 +81,8 @@ title: UsdInstanceGeometry
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.label
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.label
+          path=image_path
       %}
     </p>
     <h3>motion_blur_type</h3>
@@ -83,8 +96,8 @@ title: UsdInstanceGeometry
           | hermite = 4
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.motion_blur_type
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.motion_blur_type
+          path=image_path
       %}
     </p>
     <h3>node_xform</h3>
@@ -93,8 +106,8 @@ title: UsdInstanceGeometry
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.node_xform
+          path=image_path
       %}
     </p>
     <h3>point_instancer_path</h3>
@@ -103,8 +116,8 @@ title: UsdInstanceGeometry
       default: 
       <p class="scene-class-comments">The point instancer to load from the USD Stage<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.point_instancer_path
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.point_instancer_path
+          path=image_path
       %}
     </p>
     <h3>primitive_attribute_frame</h3>
@@ -115,8 +128,8 @@ title: UsdInstanceGeometry
           | both motion steps = 2 (default)
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.primitive_attribute_frame
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.primitive_attribute_frame
+          path=image_path
       %}
     </p>
     <h3>primitive_attributes</h3>
@@ -125,8 +138,8 @@ title: UsdInstanceGeometry
       default: []
       <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.primitive_attributes
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.primitive_attributes
+          path=image_path
       %}
     </p>
     <h3>ray_epsilon</h3>
@@ -135,8 +148,8 @@ title: UsdInstanceGeometry
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.ray_epsilon
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.ray_epsilon
+          path=image_path
       %}
     </p>
     <h3>references</h3>
@@ -145,8 +158,8 @@ title: UsdInstanceGeometry
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.references
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.references
+          path=image_path
       %}
     </p>
     <h3>reverse_normals</h3>
@@ -155,8 +168,8 @@ title: UsdInstanceGeometry
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.reverse_normals
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.reverse_normals
+          path=image_path
       %}
     </p>
     <h3>shadow_exclusion_mappings</h3>
@@ -165,8 +178,8 @@ title: UsdInstanceGeometry
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.shadow_exclusion_mappings
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.shadow_exclusion_mappings
+          path=image_path
       %}
     </p>
     <h3>shadow_ray_epsilon</h3>
@@ -175,8 +188,8 @@ title: UsdInstanceGeometry
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.shadow_ray_epsilon
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.shadow_ray_epsilon
+          path=image_path
       %}
     </p>
     <h3>shadow_receiver_label</h3>
@@ -185,8 +198,8 @@ title: UsdInstanceGeometry
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.shadow_receiver_label
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.shadow_receiver_label
+          path=image_path
       %}
     </p>
     <h3>side_type</h3>
@@ -197,8 +210,8 @@ title: UsdInstanceGeometry
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.side_type
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.side_type
+          path=image_path
       %}
     </p>
     <h3>stage</h3>
@@ -207,8 +220,8 @@ title: UsdInstanceGeometry
       default: 
       <p class="scene-class-comments">USD Stage to load<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.stage
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.stage
+          path=image_path
       %}
     </p>
     <h3>static</h3>
@@ -217,8 +230,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.static
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.static
+          path=image_path
       %}
     </p>
     <h3>use_evaluation_frame</h3>
@@ -227,8 +240,8 @@ title: UsdInstanceGeometry
       default: False
       <p class="scene-class-comments">uses "evaluation frame" instead of SceneVariables frame<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.use_evaluation_frame
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.use_evaluation_frame
+          path=image_path
       %}
     </p>
     <h3>use_reference_attributes</h3>
@@ -237,8 +250,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.use_reference_attributes
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.use_reference_attributes
+          path=image_path
       %}
     </p>
     <h3>use_reference_xforms</h3>
@@ -247,8 +260,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.use_reference_xforms
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.use_reference_xforms
+          path=image_path
       %}
     </p>
     <h3>use_rotation_motion_blur</h3>
@@ -257,8 +270,8 @@ title: UsdInstanceGeometry
       default: False
       <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.use_rotation_motion_blur
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.use_rotation_motion_blur
+          path=image_path
       %}
     </p>
     <h3>use_stage_cache</h3>
@@ -267,8 +280,8 @@ title: UsdInstanceGeometry
       default: False
       <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.use_stage_cache
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.use_stage_cache
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_reflection</h3>
@@ -277,8 +290,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_diffuse_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_diffuse_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_transmission</h3>
@@ -287,8 +300,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_diffuse_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_diffuse_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_reflection</h3>
@@ -297,8 +310,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_glossy_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_glossy_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_transmission</h3>
@@ -307,8 +320,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_glossy_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_glossy_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_in_camera</h3>
@@ -317,8 +330,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_in_camera
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_in_camera
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_reflection</h3>
@@ -327,8 +340,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_mirror_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_mirror_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_transmission</h3>
@@ -337,8 +350,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_mirror_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_mirror_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_shadow</h3>
@@ -347,8 +360,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_shadow
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_shadow
+          path=image_path
       %}
     </p>
     <h3>visible_volume</h3>
@@ -357,8 +370,8 @@ title: UsdInstanceGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.UsdInstanceGeometry.visible_volume
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.UsdInstanceGeometry.images.attributes.visible_volume
+          path=image_path
       %}
     </p>
   </p>

@@ -8,13 +8,26 @@ title: DeformationMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DeformationMap
+{%assign image_path=site.data.scene-classes.maps.DeformationMap.images.path%}
+{%if site.data.scene-classes.maps.DeformationMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.DeformationMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.DeformationMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.DeformationMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.DeformationMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.DeformationMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -27,8 +40,8 @@ title: DeformationMap
           | deformation_avg = 3 (default)
       <p class="scene-class-comments">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DeformationMap.output_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DeformationMap.images.attributes.output_mode
+          path=image_path
       %}
     </p>
     <h3>use_warning_color</h3>
@@ -37,8 +50,8 @@ title: DeformationMap
       default: False
       <p class="scene-class-comments">If derivatives are missing or zero output the warning color erroring out</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DeformationMap.use_warning_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DeformationMap.images.attributes.use_warning_color
+          path=image_path
       %}
     </p>
     <h3>warning_color</h3>
@@ -47,8 +60,8 @@ title: DeformationMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Warning color to output when derivatives are missing or zero</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DeformationMap.warning_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DeformationMap.images.attributes.warning_color
+          path=image_path
       %}
     </p>
   </p>

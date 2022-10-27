@@ -8,13 +8,26 @@ title: HairMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairMap
+{%assign image_path=site.data.scene-classes.maps.HairMap.images.path%}
+{%if site.data.scene-classes.maps.HairMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.HairMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.HairMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.HairMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.HairMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.HairMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: HairMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.HairMap.base_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.HairMap.images.attributes.base_color
+          path=image_path
       %}
     </p>
     <h3>bias</h3>
@@ -34,8 +47,8 @@ title: HairMap
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.HairMap.bias
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.HairMap.images.attributes.bias
+          path=image_path
       %}
     </p>
     <h3>column_uv_color</h3>
@@ -44,8 +57,8 @@ title: HairMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.HairMap.column_uv_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.HairMap.images.attributes.column_uv_color
+          path=image_path
       %}
     </p>
     <h3>gain</h3>
@@ -54,8 +67,8 @@ title: HairMap
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.HairMap.gain
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.HairMap.images.attributes.gain
+          path=image_path
       %}
     </p>
     <h3>tip_color</h3>
@@ -64,8 +77,8 @@ title: HairMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.HairMap.tip_color
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.HairMap.images.attributes.tip_color
+          path=image_path
       %}
     </p>
   </p>

@@ -8,13 +8,26 @@ title: TransformNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TransformNormalMap
+{%assign image_path=site.data.scene-classes.normal-maps.TransformNormalMap.images.path%}
+{%if site.data.scene-classes.normal-maps.TransformNormalMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.normal-maps.TransformNormalMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.normal-maps.TransformNormalMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.normal-maps.TransformNormalMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.normal-maps.TransformNormalMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.normal-maps.TransformNormalMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Normal attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: TransformNormalMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">input normal in either tangent or render space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMap.input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.images.attributes.input_normal
+          path=image_path
       %}
     </p>
   </p>
@@ -39,8 +52,8 @@ title: TransformNormalMap
       default: True
       <p class="scene-class-comments">decode the input normal if it's in tangent space [0,1] -&gt; [-1,1]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMap.decode_input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.images.attributes.decode_input_normal
+          path=image_path
       %}
     </p>
     <h3>transform</h3>
@@ -50,8 +63,8 @@ title: TransformNormalMap
           | render to tangent = 1
       <p class="scene-class-comments">transform to apply to the normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.TransformNormalMap.transform
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.images.attributes.transform
+          path=image_path
       %}
     </p>
   </p>

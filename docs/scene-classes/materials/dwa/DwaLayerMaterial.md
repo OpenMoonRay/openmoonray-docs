@@ -8,13 +8,26 @@ title: DwaLayerMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaLayerMaterial
+{%assign image_path=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.path%}
+{%if site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.materials.dwa.DwaLayerMaterial.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.materials.dwa.DwaLayerMaterial.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.materials.dwa.DwaLayerMaterial.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -26,8 +39,8 @@ title: DwaLayerMaterial
           | HSL = 2
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.blend_color_space
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.blend_color_space
+          path=image_path
       %}
     </p>
     <h3>fallback_bssrdf</h3>
@@ -38,8 +51,8 @@ title: DwaLayerMaterial
           | random walk = 2
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_bssrdf
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_bssrdf
+          path=image_path
       %}
     </p>
     <h3>fallback_clearcoat_use_bending</h3>
@@ -48,8 +61,8 @@ title: DwaLayerMaterial
       default: True
       <p class="scene-class-comments">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_clearcoat_use_bending
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_clearcoat_use_bending
+          path=image_path
       %}
     </p>
     <h3>fallback_outer_specular_model</h3>
@@ -59,8 +72,8 @@ title: DwaLayerMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_outer_specular_model
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_outer_specular_model
+          path=image_path
       %}
     </p>
     <h3>fallback_specular_model</h3>
@@ -70,8 +83,8 @@ title: DwaLayerMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">If child materials disagree on the type of specular model, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_specular_model
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_specular_model
+          path=image_path
       %}
     </p>
     <h3>fallback_thin_geometry</h3>
@@ -80,8 +93,8 @@ title: DwaLayerMaterial
       default: True
       <p class="scene-class-comments">If child materials disagree on the type of thin geometry, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_thin_geometry
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_thin_geometry
+          path=image_path
       %}
     </p>
     <h3>fallback_toon_specular_model</h3>
@@ -92,8 +105,8 @@ title: DwaLayerMaterial
           | Toon = 2
       <p class="scene-class-comments">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_toon_specular_model
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_toon_specular_model
+          path=image_path
       %}
     </p>
     <h3>sss_trace_set</h3>
@@ -102,8 +115,8 @@ title: DwaLayerMaterial
       default: None
       <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. The DwaLayerMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.sss_trace_set
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.sss_trace_set
+          path=image_path
       %}
     </p>
   </p>
@@ -117,8 +130,8 @@ title: DwaLayerMaterial
       default: 0.5
       <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_LOD_quality
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_LOD_quality
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_debug_mode</h3>
@@ -132,8 +145,8 @@ title: DwaLayerMaterial
           | radius = 5
       <p class="scene-class-comments">developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_debug_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_debug_mode
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_layering_mode</h3>
@@ -143,8 +156,8 @@ title: DwaLayerMaterial
           | additive = 1
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_layering_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_layering_mode
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_randomness</h3>
@@ -153,8 +166,8 @@ title: DwaLayerMaterial
       default: 0.5
       <p class="scene-class-comments">randomness of flake orientation.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_randomness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_randomness
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_seed</h3>
@@ -163,8 +176,8 @@ title: DwaLayerMaterial
       default: 0
       <p class="scene-class-comments">The seed for the glitter random number generator.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_seed
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_seed
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_space</h3>
@@ -174,8 +187,8 @@ title: DwaLayerMaterial
           | reference = 5 (default)
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_space
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_space
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_style_A_frequency</h3>
@@ -184,8 +197,8 @@ title: DwaLayerMaterial
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_style_A_frequency
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_style_A_frequency
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_style_B_frequency</h3>
@@ -194,8 +207,8 @@ title: DwaLayerMaterial
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_style_B_frequency
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_style_B_frequency
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_texture_A</h3>
@@ -204,8 +217,8 @@ title: DwaLayerMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_texture_A
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_texture_A
+          path=image_path
       %}
     </p>
     <h3>fallback_glitter_texture_B</h3>
@@ -214,8 +227,8 @@ title: DwaLayerMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.fallback_glitter_texture_B
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.fallback_glitter_texture_B
+          path=image_path
       %}
     </p>
   </p>
@@ -229,8 +242,8 @@ title: DwaLayerMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.extra_aovs
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.extra_aovs
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -239,8 +252,8 @@ title: DwaLayerMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.label
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.label
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -249,8 +262,8 @@ title: DwaLayerMaterial
       default: 1.0
       <p class="scene-class-comments">foreground material weight</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.mask
+          path=image_path
       %}
     </p>
     <h3>material_A</h3>
@@ -259,8 +272,8 @@ title: DwaLayerMaterial
       default: None
       <p class="scene-class-comments">foreground material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.material_A
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.material_A
+          path=image_path
       %}
     </p>
     <h3>material_B</h3>
@@ -269,8 +282,8 @@ title: DwaLayerMaterial
       default: None
       <p class="scene-class-comments">background material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.material_B
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.material_B
+          path=image_path
       %}
     </p>
     <h3>priority</h3>
@@ -279,8 +292,8 @@ title: DwaLayerMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.priority
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaLayerMaterial.images.attributes.priority
+          path=image_path
       %}
     </p>
   </p>

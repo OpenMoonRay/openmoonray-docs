@@ -8,13 +8,26 @@ title: RectLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RectLight
+{%assign image_path=site.data.scene-classes.lights.RectLight.images.path%}
+{%if site.data.scene-classes.lights.RectLight.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.lights.RectLight.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.lights.RectLight.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.lights.RectLight.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.lights.RectLight.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.lights.RectLight.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Map attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: RectLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.contrast
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.contrast
+          path=image_path
       %}
     </p>
     <h3>gain</h3>
@@ -34,8 +47,8 @@ title: RectLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.gain
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.gain
+          path=image_path
       %}
     </p>
     <h3>gamma</h3>
@@ -44,8 +57,8 @@ title: RectLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.gamma
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.gamma
+          path=image_path
       %}
     </p>
     <h3>offset</h3>
@@ -54,8 +67,8 @@ title: RectLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.offset
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.offset
+          path=image_path
       %}
     </p>
     <h3>saturation</h3>
@@ -64,8 +77,8 @@ title: RectLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.saturation
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.saturation
+          path=image_path
       %}
     </p>
     <h3>temperature</h3>
@@ -74,8 +87,8 @@ title: RectLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color temperature using Nuke-like T/M/E settings</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.temperature
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.temperature
+          path=image_path
       %}
     </p>
     <h3>texture</h3>
@@ -84,8 +97,8 @@ title: RectLight
       default: 
       <p class="scene-class-comments">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture
+          path=image_path
       %}
     </p>
     <h3>texture_border_color</h3>
@@ -94,8 +107,8 @@ title: RectLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">RGB value used when a texture lookup occurs outside the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_border_color
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_border_color
+          path=image_path
       %}
     </p>
     <h3>texture_coverage</h3>
@@ -104,8 +117,8 @@ title: RectLight
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales in (u,v)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_coverage
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_coverage
+          path=image_path
       %}
     </p>
     <h3>texture_mirror_u</h3>
@@ -114,8 +127,8 @@ title: RectLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in u, false =&gt; repeat in u</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_mirror_u
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_mirror_u
+          path=image_path
       %}
     </p>
     <h3>texture_mirror_v</h3>
@@ -124,8 +137,8 @@ title: RectLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in v, false =&gt; repeat in v</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_mirror_v
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_mirror_v
+          path=image_path
       %}
     </p>
     <h3>texture_reps_u</h3>
@@ -134,8 +147,8 @@ title: RectLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in u over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_reps_u
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_reps_u
+          path=image_path
       %}
     </p>
     <h3>texture_reps_v</h3>
@@ -144,8 +157,8 @@ title: RectLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in v over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_reps_v
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_reps_v
+          path=image_path
       %}
     </p>
     <h3>texture_rotation</h3>
@@ -154,8 +167,8 @@ title: RectLight
       default: 0.0
       <p class="scene-class-comments">Clockwise rotation angle in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_rotation
+          path=image_path
       %}
     </p>
     <h3>texture_translation</h3>
@@ -164,8 +177,8 @@ title: RectLight
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_translation
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_translation
+          path=image_path
       %}
     </p>
   </p>
@@ -179,8 +192,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">apply scene scale variable when normalized</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.apply_scene_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.apply_scene_scale
+          path=image_path
       %}
     </p>
     <h3>clear_radius</h3>
@@ -189,8 +202,8 @@ title: RectLight
       default: 0.0
       <p class="scene-class-comments">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.clear_radius
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.clear_radius
+          path=image_path
       %}
     </p>
     <h3>clear_radius_falloff_distance</h3>
@@ -199,8 +212,8 @@ title: RectLight
       default: 0.0
       <p class="scene-class-comments">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.clear_radius_falloff_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.clear_radius_falloff_distance
+          path=image_path
       %}
     </p>
     <h3>clear_radius_interpolation_type</h3>
@@ -212,8 +225,8 @@ title: RectLight
           | smoothstep = 3
       <p class="scene-class-comments">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.clear_radius_interpolation_type
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.clear_radius_interpolation_type
+          path=image_path
       %}
     </p>
     <h3>color</h3>
@@ -222,8 +235,8 @@ title: RectLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.color
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.color
+          path=image_path
       %}
     </p>
     <h3>exposure</h3>
@@ -232,8 +245,8 @@ title: RectLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.exposure
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.exposure
+          path=image_path
       %}
     </p>
     <h3>height</h3>
@@ -242,8 +255,8 @@ title: RectLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.height
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.height
+          path=image_path
       %}
     </p>
     <h3>intensity</h3>
@@ -252,8 +265,8 @@ title: RectLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.intensity
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.intensity
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -262,8 +275,8 @@ title: RectLight
       default: 
       <p class="scene-class-comments">label used in light aov expressions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.label
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.label
+          path=image_path
       %}
     </p>
     <h3>max_shadow_distance</h3>
@@ -272,8 +285,8 @@ title: RectLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.max_shadow_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.max_shadow_distance
+          path=image_path
       %}
     </p>
     <h3>mb</h3>
@@ -282,8 +295,8 @@ title: RectLight
       default: False
       <p class="scene-class-comments">Does light motion affect motion-blur?</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.mb
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.mb
+          path=image_path
       %}
     </p>
     <h3>normalized</h3>
@@ -292,8 +305,8 @@ title: RectLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.normalized
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.normalized
+          path=image_path
       %}
     </p>
     <h3>on</h3>
@@ -302,8 +315,8 @@ title: RectLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.on
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.on
+          path=image_path
       %}
     </p>
     <h3>presence_shadows</h3>
@@ -314,8 +327,8 @@ title: RectLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.presence_shadows
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.presence_shadows
+          path=image_path
       %}
     </p>
     <h3>ray_termination</h3>
@@ -324,8 +337,8 @@ title: RectLight
       default: False
       <p class="scene-class-comments">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.ray_termination
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.ray_termination
+          path=image_path
       %}
     </p>
     <h3>spread</h3>
@@ -334,8 +347,8 @@ title: RectLight
       default: 1.0
       <p class="scene-class-comments">directionality of light emission. 1 is completely diffuse hemisphere. 0 is parallel to normal of light.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.spread
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.spread
+          path=image_path
       %}
     </p>
     <h3>texture_filter</h3>
@@ -347,8 +360,8 @@ title: RectLight
           | bilinear with nearest mip = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.texture_filter
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.texture_filter
+          path=image_path
       %}
     </p>
     <h3>visible_in_camera</h3>
@@ -359,8 +372,8 @@ title: RectLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_in_camera
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_in_camera
+          path=image_path
       %}
     </p>
     <h3>width</h3>
@@ -369,8 +382,8 @@ title: RectLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.width
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.width
+          path=image_path
       %}
     </p>
   </p>
@@ -384,8 +397,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_diffuse_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_diffuse_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_transmission</h3>
@@ -394,8 +407,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_diffuse_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_diffuse_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_reflection</h3>
@@ -404,8 +417,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_glossy_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_glossy_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_transmission</h3>
@@ -414,8 +427,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_glossy_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_glossy_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_reflection</h3>
@@ -424,8 +437,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_mirror_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_mirror_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_transmission</h3>
@@ -434,8 +447,8 @@ title: RectLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.visible_mirror_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.visible_mirror_transmission
+          path=image_path
       %}
     </p>
   </p>
@@ -449,8 +462,8 @@ title: RectLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.light_filters
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.light_filters
+          path=image_path
       %}
     </p>
     <h3>node_xform</h3>
@@ -459,8 +472,8 @@ title: RectLight
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.node_xform
+          path=image_path
       %}
     </p>
     <h3>sidedness</h3>
@@ -471,8 +484,8 @@ title: RectLight
           | 2-sided = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.RectLight.sidedness
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.RectLight.images.attributes.sidedness
+          path=image_path
       %}
     </p>
   </p>

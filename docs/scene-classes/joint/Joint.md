@@ -8,13 +8,26 @@ title: Joint
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Joint
+{%assign image_path=site.data.scene-classes.joint.Joint.images.path%}
+{%if site.data.scene-classes.joint.Joint.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.joint.Joint.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.joint.Joint.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.joint.Joint.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.joint.Joint.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.joint.Joint.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: Joint
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.joint.Joint.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.joint.Joint.images.attributes.node_xform
+          path=image_path
       %}
     </p>
   </p>

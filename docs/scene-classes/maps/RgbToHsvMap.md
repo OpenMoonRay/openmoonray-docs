@@ -8,13 +8,26 @@ title: RgbToHsvMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToHsvMap
+{%assign image_path=site.data.scene-classes.maps.RgbToHsvMap.images.path%}
+{%if site.data.scene-classes.maps.RgbToHsvMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.RgbToHsvMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.RgbToHsvMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.RgbToHsvMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.RgbToHsvMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.RgbToHsvMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: RgbToHsvMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToHsvMap.input
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.RgbToHsvMap.images.attributes.input
+          path=image_path
       %}
     </p>
   </p>

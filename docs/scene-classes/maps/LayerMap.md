@@ -8,13 +8,26 @@ title: LayerMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LayerMap
+{%assign image_path=site.data.scene-classes.maps.LayerMap.images.path%}
+{%if site.data.scene-classes.maps.LayerMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.LayerMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.LayerMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.LayerMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.LayerMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.LayerMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMap.input_A
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.LayerMap.images.attributes.input_A
+          path=image_path
       %}
     </p>
     <h3>input_B</h3>
@@ -34,8 +47,8 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMap.input_B
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.LayerMap.images.attributes.input_B
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -44,8 +57,8 @@ title: LayerMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMap.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.LayerMap.images.attributes.mask
+          path=image_path
       %}
     </p>
     <h3>mode</h3>
@@ -69,8 +82,8 @@ title: LayerMap
           | exclusion = 15
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.LayerMap.mode
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.LayerMap.images.attributes.mode
+          path=image_path
       %}
     </p>
   </p>

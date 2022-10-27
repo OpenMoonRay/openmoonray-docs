@@ -8,13 +8,26 @@ title: DebugMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DebugMap
+{%assign image_path=site.data.scene-classes.maps.DebugMap.images.path%}
+{%if site.data.scene-classes.maps.DebugMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.DebugMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.DebugMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.DebugMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.DebugMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.DebugMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Normal attributes</summary>
   <p>
@@ -25,8 +38,8 @@ title: DebugMap
           | render = 1
       <p class="scene-class-comments">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.input_normal_space
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.input_normal_space
+          path=image_path
       %}
     </p>
   </p>
@@ -40,8 +53,8 @@ title: DebugMap
       default: surface_st
       <p class="scene-class-comments">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.primitive_attribute_name
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.primitive_attribute_name
+          path=image_path
       %}
     </p>
     <h3>primitive_attribute_type</h3>
@@ -53,8 +66,8 @@ title: DebugMap
           | rgb = 3
       <p class="scene-class-comments">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.primitive_attribute_type
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.primitive_attribute_type
+          path=image_path
       %}
     </p>
   </p>
@@ -68,8 +81,8 @@ title: DebugMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.checkerboard
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.checkerboard
+          path=image_path
       %}
     </p>
     <h3>input_normal</h3>
@@ -78,8 +91,8 @@ title: DebugMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.input_normal
+          path=image_path
       %}
     </p>
     <h3>input_normal_dial</h3>
@@ -88,8 +101,8 @@ title: DebugMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.input_normal_dial
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.input_normal_dial
+          path=image_path
       %}
     </p>
     <h3>map_type</h3>
@@ -104,8 +117,8 @@ title: DebugMap
           | primitive attribute = 6
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.DebugMap.map_type
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.DebugMap.images.attributes.map_type
+          path=image_path
       %}
     </p>
   </p>

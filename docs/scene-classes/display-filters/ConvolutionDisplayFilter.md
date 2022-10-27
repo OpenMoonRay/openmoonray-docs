@@ -8,13 +8,26 @@ title: ConvolutionDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConvolutionDisplayFilter
+{%assign image_path=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.path%}
+{%if site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.display-filters.ConvolutionDisplayFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.display-filters.ConvolutionDisplayFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ConvolutionDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.invert_mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.invert_mask
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -34,8 +47,8 @@ title: ConvolutionDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.mix
+          path=image_path
       %}
     </p>
   </p>
@@ -49,8 +62,8 @@ title: ConvolutionDisplayFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.custom_kernel
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.custom_kernel
+          path=image_path
       %}
     </p>
     <h3>input</h3>
@@ -59,8 +72,8 @@ title: ConvolutionDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput to convolve</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.input
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.input
+          path=image_path
       %}
     </p>
     <h3>kernel_size</h3>
@@ -69,8 +82,8 @@ title: ConvolutionDisplayFilter
       default: 5
       <p class="scene-class-comments">size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.kernel_size
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.kernel_size
+          path=image_path
       %}
     </p>
     <h3>kernel_type</h3>
@@ -81,8 +94,8 @@ title: ConvolutionDisplayFilter
           | custom = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.kernel_type
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.kernel_type
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -91,8 +104,8 @@ title: ConvolutionDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.images.attributes.mask
+          path=image_path
       %}
     </p>
   </p>

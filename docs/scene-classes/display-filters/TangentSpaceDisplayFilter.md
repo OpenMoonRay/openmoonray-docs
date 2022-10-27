@@ -8,13 +8,26 @@ title: TangentSpaceDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TangentSpaceDisplayFilter
+{%assign image_path=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.path%}
+{%if site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: TangentSpaceDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.invert_mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.invert_mask
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -34,8 +47,8 @@ title: TangentSpaceDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.mix
+          path=image_path
       %}
     </p>
   </p>
@@ -49,8 +62,8 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.N
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.N
+          path=image_path
       %}
     </p>
     <h3>dPds</h3>
@@ -59,8 +72,8 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.dPds
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.dPds
+          path=image_path
       %}
     </p>
     <h3>input</h3>
@@ -69,8 +82,8 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">data to transform into tangent space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.input
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.input
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -79,8 +92,8 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.mask
+          path=image_path
       %}
     </p>
     <h3>normal_map_output</h3>
@@ -89,8 +102,8 @@ title: TangentSpaceDisplayFilter
       default: True
       <p class="scene-class-comments">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.normal_map_output
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.images.attributes.normal_map_output
+          path=image_path
       %}
     </p>
   </p>

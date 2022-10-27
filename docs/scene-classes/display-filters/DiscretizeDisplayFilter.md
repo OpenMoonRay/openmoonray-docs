@@ -8,13 +8,26 @@ title: DiscretizeDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DiscretizeDisplayFilter
+{%assign image_path=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.path%}
+{%if site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.display-filters.DiscretizeDisplayFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.display-filters.DiscretizeDisplayFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: DiscretizeDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.invert_mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.attributes.invert_mask
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -34,8 +47,8 @@ title: DiscretizeDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.attributes.mix
+          path=image_path
       %}
     </p>
   </p>
@@ -49,8 +62,8 @@ title: DiscretizeDisplayFilter
       default: None
       <p class="scene-class-comments">Image buffer to discretize</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.input
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.attributes.input
+          path=image_path
       %}
     </p>
     <h3>mask</h3>
@@ -59,8 +72,8 @@ title: DiscretizeDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.mask
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.attributes.mask
+          path=image_path
       %}
     </p>
     <h3>num_bins</h3>
@@ -69,8 +82,8 @@ title: DiscretizeDisplayFilter
       default: 8
       <p class="scene-class-comments">number of discrete color bins</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.num_bins
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.images.attributes.num_bins
+          path=image_path
       %}
     </p>
   </p>

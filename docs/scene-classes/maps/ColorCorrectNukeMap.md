@@ -8,13 +8,26 @@ title: ColorCorrectNukeMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectNukeMap
+{%assign image_path=site.data.scene-classes.maps.ColorCorrectNukeMap.images.path%}
+{%if site.data.scene-classes.maps.ColorCorrectNukeMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ColorCorrectNukeMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectNukeMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ColorCorrectNukeMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ColorCorrectNukeMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ColorCorrectNukeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.TMI
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.TMI
+          path=image_path
       %}
     </p>
     <h3>TMI_control_enabled</h3>
@@ -34,8 +47,8 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.TMI_control_enabled
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.TMI_control_enabled
+          path=image_path
       %}
     </p>
     <h3>contrast</h3>
@@ -44,8 +57,8 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.contrast
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.contrast
+          path=image_path
       %}
     </p>
     <h3>contrast_enabled</h3>
@@ -54,8 +67,8 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.contrast_enabled
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.contrast_enabled
+          path=image_path
       %}
     </p>
     <h3>gain</h3>
@@ -64,8 +77,8 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.gain
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gain
+          path=image_path
       %}
     </p>
     <h3>gain_offset_enabled</h3>
@@ -74,8 +87,8 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.gain_offset_enabled
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gain_offset_enabled
+          path=image_path
       %}
     </p>
     <h3>gamma</h3>
@@ -84,8 +97,8 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.gamma
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gamma
+          path=image_path
       %}
     </p>
     <h3>gamma_enabled</h3>
@@ -94,8 +107,8 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.gamma_enabled
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.gamma_enabled
+          path=image_path
       %}
     </p>
     <h3>input</h3>
@@ -104,8 +117,8 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.input
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.input
+          path=image_path
       %}
     </p>
     <h3>offset</h3>
@@ -114,8 +127,8 @@ title: ColorCorrectNukeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.offset
+          path=image_path
       %}
     </p>
     <h3>saturation</h3>
@@ -124,8 +137,8 @@ title: ColorCorrectNukeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.saturation
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.saturation
+          path=image_path
       %}
     </p>
     <h3>saturation_enabled</h3>
@@ -134,8 +147,8 @@ title: ColorCorrectNukeMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectNukeMap.saturation_enabled
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectNukeMap.images.attributes.saturation_enabled
+          path=image_path
       %}
     </p>
   </p>

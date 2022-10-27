@@ -8,13 +8,26 @@ title: RdlMeshGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RdlMeshGeometry
+{%assign image_path=site.data.scene-classes.geometry.RdlMeshGeometry.images.path%}
+{%if site.data.scene-classes.geometry.RdlMeshGeometry.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.geometry.RdlMeshGeometry.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.geometry.RdlMeshGeometry.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.geometry.RdlMeshGeometry.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.geometry.RdlMeshGeometry.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.geometry.RdlMeshGeometry.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">Optionally declare vertex accelerations for quadratic motion interpolation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.accleration_list
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.accleration_list
+          path=image_path
       %}
     </p>
     <h3>adaptive_error</h3>
@@ -34,8 +47,8 @@ title: RdlMeshGeometry
       default: 0.0
       <p class="scene-class-comments">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.adaptive_error
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.adaptive_error
+          path=image_path
       %}
     </p>
     <h3>curved_motion_blur_sample_count</h3>
@@ -44,8 +57,8 @@ title: RdlMeshGeometry
       default: 10
       <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.curved_motion_blur_sample_count
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.curved_motion_blur_sample_count
+          path=image_path
       %}
     </p>
     <h3>face_vertex_count</h3>
@@ -54,8 +67,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.face_vertex_count
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.face_vertex_count
+          path=image_path
       %}
     </p>
     <h3>is_subd</h3>
@@ -64,8 +77,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.is_subd
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.is_subd
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -74,8 +87,8 @@ title: RdlMeshGeometry
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.label
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.label
+          path=image_path
       %}
     </p>
     <h3>mesh_resolution</h3>
@@ -84,8 +97,8 @@ title: RdlMeshGeometry
       default: 2.0
       <p class="scene-class-comments">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.mesh_resolution
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.mesh_resolution
+          path=image_path
       %}
     </p>
     <h3>motion_blur_type</h3>
@@ -99,8 +112,8 @@ title: RdlMeshGeometry
           | hermite = 4
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.motion_blur_type
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.motion_blur_type
+          path=image_path
       %}
     </p>
     <h3>node_xform</h3>
@@ -109,8 +122,8 @@ title: RdlMeshGeometry
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.node_xform
+          path=image_path
       %}
     </p>
     <h3>normal_list</h3>
@@ -119,8 +132,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments"> If the mesh is using normals, store them per-face-vertex in this list</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.normal_list
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.normal_list
+          path=image_path
       %}
     </p>
     <h3>orientation</h3>
@@ -130,8 +143,8 @@ title: RdlMeshGeometry
           | left-handed = 1
       <p class="scene-class-comments">When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.orientation
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.orientation
+          path=image_path
       %}
     </p>
     <h3>part_face_count_list</h3>
@@ -140,8 +153,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">The number of faces belonging to the part with corresponding index in 'part list'.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.part_face_count_list
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.part_face_count_list
+          path=image_path
       %}
     </p>
     <h3>part_face_indices</h3>
@@ -150,8 +163,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.part_face_indices
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.part_face_indices
+          path=image_path
       %}
     </p>
     <h3>part_list</h3>
@@ -160,8 +173,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.part_list
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.part_list
+          path=image_path
       %}
     </p>
     <h3>primitive_attribute_frame</h3>
@@ -172,8 +185,8 @@ title: RdlMeshGeometry
           | both motion steps = 2 (default)
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.primitive_attribute_frame
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.primitive_attribute_frame
+          path=image_path
       %}
     </p>
     <h3>primitive_attributes</h3>
@@ -182,8 +195,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.primitive_attributes
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.primitive_attributes
+          path=image_path
       %}
     </p>
     <h3>ray_epsilon</h3>
@@ -192,8 +205,8 @@ title: RdlMeshGeometry
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.ray_epsilon
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.ray_epsilon
+          path=image_path
       %}
     </p>
     <h3>references</h3>
@@ -202,8 +215,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.references
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.references
+          path=image_path
       %}
     </p>
     <h3>reverse_normals</h3>
@@ -212,8 +225,8 @@ title: RdlMeshGeometry
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.reverse_normals
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.reverse_normals
+          path=image_path
       %}
     </p>
     <h3>shadow_exclusion_mappings</h3>
@@ -222,8 +235,8 @@ title: RdlMeshGeometry
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.shadow_exclusion_mappings
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.shadow_exclusion_mappings
+          path=image_path
       %}
     </p>
     <h3>shadow_ray_epsilon</h3>
@@ -232,8 +245,8 @@ title: RdlMeshGeometry
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.shadow_ray_epsilon
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.shadow_ray_epsilon
+          path=image_path
       %}
     </p>
     <h3>shadow_receiver_label</h3>
@@ -242,8 +255,8 @@ title: RdlMeshGeometry
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.shadow_receiver_label
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.shadow_receiver_label
+          path=image_path
       %}
     </p>
     <h3>side_type</h3>
@@ -254,8 +267,8 @@ title: RdlMeshGeometry
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.side_type
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.side_type
+          path=image_path
       %}
     </p>
     <h3>smooth_normal</h3>
@@ -264,8 +277,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.smooth_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.smooth_normal
+          path=image_path
       %}
     </p>
     <h3>static</h3>
@@ -274,8 +287,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.static
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.static
+          path=image_path
       %}
     </p>
     <h3>subd_boundary</h3>
@@ -286,8 +299,8 @@ title: RdlMeshGeometry
           | edge and corner = 2 (default)
       <p class="scene-class-comments">Boundary interpolation: Corners, Edges or None</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_boundary
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_boundary
+          path=image_path
       %}
     </p>
     <h3>subd_corner_indices</h3>
@@ -296,8 +309,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">List of indices for each corner vertex with an assigned sharpness.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_corner_indices
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_corner_indices
+          path=image_path
       %}
     </p>
     <h3>subd_corner_sharpnesses</h3>
@@ -306,8 +319,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Sharpness value for each corner vertex.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_corner_sharpnesses
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_corner_sharpnesses
+          path=image_path
       %}
     </p>
     <h3>subd_crease_indices</h3>
@@ -316,8 +329,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">List of vertex index pairs for each crease edge with an assigned sharpness.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_crease_indices
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_crease_indices
+          path=image_path
       %}
     </p>
     <h3>subd_crease_sharpnesses</h3>
@@ -326,8 +339,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Sharpness value for each crease edge.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_crease_sharpnesses
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_crease_sharpnesses
+          path=image_path
       %}
     </p>
     <h3>subd_fvar_linear</h3>
@@ -341,8 +354,8 @@ title: RdlMeshGeometry
           | all = 5
       <p class="scene-class-comments">Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_fvar_linear
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_fvar_linear
+          path=image_path
       %}
     </p>
     <h3>subd_scheme</h3>
@@ -352,8 +365,8 @@ title: RdlMeshGeometry
           | catclark = 1 (default)
       <p class="scene-class-comments">CatClark or Bilinear</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.subd_scheme
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.subd_scheme
+          path=image_path
       %}
     </p>
     <h3>use_rotation_motion_blur</h3>
@@ -362,8 +375,8 @@ title: RdlMeshGeometry
       default: False
       <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.use_rotation_motion_blur
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.use_rotation_motion_blur
+          path=image_path
       %}
     </p>
     <h3>uv_list</h3>
@@ -372,8 +385,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">If the mesh is using UVs, store them per-face-vertex in this list</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.uv_list
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.uv_list
+          path=image_path
       %}
     </p>
     <h3>velocity_list_0</h3>
@@ -382,8 +395,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">Optionally declare vertex velocities instead of a second motion step'</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.velocity_list_0
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.velocity_list_0
+          path=image_path
       %}
     </p>
     <h3>velocity_list_1</h3>
@@ -392,8 +405,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.velocity_list_1
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.velocity_list_1
+          path=image_path
       %}
     </p>
     <h3>velocity_scale</h3>
@@ -402,8 +415,8 @@ title: RdlMeshGeometry
       default: 1.0
       <p class="scene-class-comments">Adjust magnitude of velocity-based motion blur</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.velocity_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.velocity_scale
+          path=image_path
       %}
     </p>
     <h3>vertex_list_0</h3>
@@ -412,8 +425,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">Stores all vertices used by the mesh at motion step 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.vertex_list_0
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.vertex_list_0
+          path=image_path
       %}
     </p>
     <h3>vertex_list_1</h3>
@@ -422,8 +435,8 @@ title: RdlMeshGeometry
       default: []
       <p class="scene-class-comments">If the mesh is in motion, the second motion step is stored in this attribute</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.vertex_list_1
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.vertex_list_1
+          path=image_path
       %}
     </p>
     <h3>vertices_by_index</h3>
@@ -432,8 +445,8 @@ title: RdlMeshGeometry
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of vertex indices used to construct the mesh using the vertex list</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.vertices_by_index
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.vertices_by_index
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_reflection</h3>
@@ -442,8 +455,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_diffuse_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_diffuse_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_transmission</h3>
@@ -452,8 +465,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_diffuse_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_diffuse_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_reflection</h3>
@@ -462,8 +475,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_glossy_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_glossy_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_transmission</h3>
@@ -472,8 +485,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_glossy_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_glossy_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_in_camera</h3>
@@ -482,8 +495,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_in_camera
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_in_camera
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_reflection</h3>
@@ -492,8 +505,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_mirror_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_mirror_reflection
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_transmission</h3>
@@ -502,8 +515,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_mirror_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_mirror_transmission
+          path=image_path
       %}
     </p>
     <h3>visible_shadow</h3>
@@ -512,8 +525,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_shadow
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_shadow
+          path=image_path
       %}
     </p>
     <h3>visible_volume</h3>
@@ -522,8 +535,8 @@ title: RdlMeshGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.RdlMeshGeometry.visible_volume
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.RdlMeshGeometry.images.attributes.visible_volume
+          path=image_path
       %}
     </p>
   </p>

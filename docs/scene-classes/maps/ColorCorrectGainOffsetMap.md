@@ -8,13 +8,26 @@ title: ColorCorrectGainOffsetMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectGainOffsetMap
+{%assign image_path=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.path%}
+{%if site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ColorCorrectGainOffsetMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ColorCorrectGainOffsetMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">multiplies the input channels by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gain
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.gain
+          path=image_path
       %}
     </p>
     <h3>gain_b</h3>
@@ -34,8 +47,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">multiplies the blue channel by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gain_b
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.gain_b
+          path=image_path
       %}
     </p>
     <h3>gain_g</h3>
@@ -44,8 +57,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">multiplies the green channel by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gain_g
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.gain_g
+          path=image_path
       %}
     </p>
     <h3>gain_r</h3>
@@ -54,8 +67,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">multiplies the red channel by the specified values</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gain_r
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.gain_r
+          path=image_path
       %}
     </p>
     <h3>input</h3>
@@ -64,8 +77,8 @@ title: ColorCorrectGainOffsetMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.input
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.input
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -74,8 +87,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.mix
+          path=image_path
       %}
     </p>
     <h3>offset</h3>
@@ -84,8 +97,8 @@ title: ColorCorrectGainOffsetMap
       default: 0.0
       <p class="scene-class-comments">adds the specified values to the input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.offset
+          path=image_path
       %}
     </p>
     <h3>offset_b</h3>
@@ -94,8 +107,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the blue channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.offset_b
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.offset_b
+          path=image_path
       %}
     </p>
     <h3>offset_g</h3>
@@ -104,8 +117,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the green channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.offset_g
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.offset_g
+          path=image_path
       %}
     </p>
     <h3>offset_r</h3>
@@ -114,8 +127,8 @@ title: ColorCorrectGainOffsetMap
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the red channel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.offset_r
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.offset_r
+          path=image_path
       %}
     </p>
     <h3>on</h3>
@@ -124,8 +137,8 @@ title: ColorCorrectGainOffsetMap
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.on
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.on
+          path=image_path
       %}
     </p>
     <h3>use_per_channel_gain_offset</h3>
@@ -134,8 +147,8 @@ title: ColorCorrectGainOffsetMap
       default: False
       <p class="scene-class-comments">enables separate RGB controls for gain and offset</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.use_per_channel_gain_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.images.attributes.use_per_channel_gain_offset
+          path=image_path
       %}
     </p>
   </p>

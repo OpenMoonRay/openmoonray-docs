@@ -8,13 +8,26 @@ title: DistortNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DistortNormalMap
+{%assign image_path=site.data.scene-classes.normal-maps.DistortNormalMap.images.path%}
+{%if site.data.scene-classes.normal-maps.DistortNormalMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.normal-maps.DistortNormalMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.normal-maps.DistortNormalMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.normal-maps.DistortNormalMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.normal-maps.DistortNormalMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.normal-maps.DistortNormalMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Space attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: DistortNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_texture_coordinates
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.input_texture_coordinates
+          path=image_path
       %}
     </p>
     <h3>noise_space</h3>
@@ -40,8 +53,8 @@ title: DistortNormalMap
           | hair_closest_surface_uv = 9
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.noise_space
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.noise_space
+          path=image_path
       %}
     </p>
   </p>
@@ -55,8 +68,8 @@ title: DistortNormalMap
       default: 1.0
       <p class="scene-class-comments">controls amplitude of U distortion</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.amplitude_U
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.amplitude_U
+          path=image_path
       %}
     </p>
     <h3>amplitude_V</h3>
@@ -65,8 +78,8 @@ title: DistortNormalMap
       default: 1.0
       <p class="scene-class-comments">controls amplitude of V distortion</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.amplitude_V
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.amplitude_V
+          path=image_path
       %}
     </p>
     <h3>frequency_U</h3>
@@ -75,8 +88,8 @@ title: DistortNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">controls noise frequency for U distortion</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.frequency_U
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.frequency_U
+          path=image_path
       %}
     </p>
     <h3>frequency_V</h3>
@@ -85,8 +98,8 @@ title: DistortNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">controls noise frequency for V distortion</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.frequency_V
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.frequency_V
+          path=image_path
       %}
     </p>
     <h3>input_U</h3>
@@ -95,8 +108,8 @@ title: DistortNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">input U / tangent for distortion</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_U
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.input_U
+          path=image_path
       %}
     </p>
     <h3>input_V</h3>
@@ -105,8 +118,8 @@ title: DistortNormalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">input V / bitangent for distortion</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_V
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.input_V
+          path=image_path
       %}
     </p>
     <h3>input_normals</h3>
@@ -115,8 +128,8 @@ title: DistortNormalMap
       default: None
       <p class="scene-class-comments">optional input to distort. if not connected, use geom normals</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_normals
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.input_normals
+          path=image_path
       %}
     </p>
     <h3>seed</h3>
@@ -125,8 +138,8 @@ title: DistortNormalMap
       default: 0
       <p class="scene-class-comments">the seed for the noise generation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.seed
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.seed
+          path=image_path
       %}
     </p>
     <h3>use_input_vectors</h3>
@@ -135,8 +148,8 @@ title: DistortNormalMap
       default: False
       <p class="scene-class-comments">when checked, use input_U and V. otherwise use geometry dPds/t</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.DistortNormalMap.use_input_vectors
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.images.attributes.use_input_vectors
+          path=image_path
       %}
     </p>
   </p>

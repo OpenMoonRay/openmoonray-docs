@@ -8,13 +8,26 @@ title: DwaToonMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaToonMaterial
+{%assign image_path=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.path%}
+{%if site.data.scene-classes.materials.dwa.DwaToonMaterial.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.materials.dwa.DwaToonMaterial.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.dwa.DwaToonMaterial.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.materials.dwa.DwaToonMaterial.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.materials.dwa.DwaToonMaterial.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">WARNING: Experimental and must be used with max_depth: 0 and only for non-photoreal looks. Prevents culling of lights so surfaces can be lit purely with respect to the shading normal irrespective of geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.prevent_light_culling
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.prevent_light_culling
+          path=image_path
       %}
     </p>
     <h3>specular</h3>
@@ -34,8 +47,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">enables/disables specular reflections (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.specular
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.specular
+          path=image_path
       %}
     </p>
     <h3>sss_trace_set</h3>
@@ -44,8 +57,8 @@ title: DwaToonMaterial
       default: None
       <p class="scene-class-comments">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.sss_trace_set
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.sss_trace_set
+          path=image_path
       %}
     </p>
   </p>
@@ -59,8 +72,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">enables/disables clearcoat (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat
+          path=image_path
       %}
     </p>
     <h3>clearcoat_attenuation_color</h3>
@@ -69,8 +82,8 @@ title: DwaToonMaterial
       default: [ 0.5, 0.5, 0.5 ]
       <p class="scene-class-comments">the attenuation color of the clearcoat when 'cleacoat thickness' &gt; 0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_attenuation_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_attenuation_color
+          path=image_path
       %}
     </p>
     <h3>clearcoat_bending</h3>
@@ -79,8 +92,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_bending
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_bending
+          path=image_path
       %}
     </p>
     <h3>clearcoat_model</h3>
@@ -90,8 +103,8 @@ title: DwaToonMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">sets the normalized distribution function for clearcoat.  GGX is currently isotropic only</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_model
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_model
+          path=image_path
       %}
     </p>
     <h3>clearcoat_normal_dial</h3>
@@ -100,8 +113,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of infuence of the alternate clearcoat normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_normal_dial
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_normal_dial
+          path=image_path
       %}
     </p>
     <h3>clearcoat_refractive_index</h3>
@@ -110,8 +123,8 @@ title: DwaToonMaterial
       default: 1.5
       <p class="scene-class-comments">defines the Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_refractive_index
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_refractive_index
+          path=image_path
       %}
     </p>
     <h3>clearcoat_roughness</h3>
@@ -120,8 +133,8 @@ title: DwaToonMaterial
       default: 0.10000000149
       <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_roughness
+          path=image_path
       %}
     </p>
     <h3>clearcoat_thickness</h3>
@@ -130,8 +143,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">the thickness of the virtual clearcoat layer. Values &gt; 0 enable absorption</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.clearcoat_thickness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.clearcoat_thickness
+          path=image_path
       %}
     </p>
     <h3>independent_clearcoat_normal</h3>
@@ -140,8 +153,8 @@ title: DwaToonMaterial
       default: None
       <p class="scene-class-comments">specifies an independent shading normal (normal map) for the clearcoat lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.independent_clearcoat_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.independent_clearcoat_normal
+          path=image_path
       %}
     </p>
     <h3>show_clearcoat</h3>
@@ -150,8 +163,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">enables/disables clearcoat</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_clearcoat
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_clearcoat
+          path=image_path
       %}
     </p>
     <h3>use_independent_clearcoat_normal</h3>
@@ -160,8 +173,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">specifies whether the clearcoat lobe should use an independent normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.use_independent_clearcoat_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.use_independent_clearcoat_normal
+          path=image_path
       %}
     </p>
   </p>
@@ -175,8 +188,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">allows continuation of caustic light paths.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.casts_caustics
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.casts_caustics
+          path=image_path
       %}
     </p>
     <h3>presence</h3>
@@ -185,8 +198,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.presence
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.presence
+          path=image_path
       %}
     </p>
     <h3>thin_geometry</h3>
@@ -195,8 +208,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">enables proper shading of infinitely thin geometry such as paper or leaves.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.thin_geometry
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.thin_geometry
+          path=image_path
       %}
     </p>
   </p>
@@ -210,8 +223,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the overall surface color as seen from a distance (ie. diffuse color)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.albedo
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.albedo
+          path=image_path
       %}
     </p>
     <h3>bssrdf</h3>
@@ -222,8 +235,8 @@ title: DwaToonMaterial
           | random walk = 2
       <p class="scene-class-comments">0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.bssrdf
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.bssrdf
+          path=image_path
       %}
     </p>
     <h3>colors</h3>
@@ -232,8 +245,8 @@ title: DwaToonMaterial
       default: [[ 1, 1, 1 ], [ 0.75, 0.75, 0.75 ], [ 0.25, 0.25, 0.25 ], [ 0, 0, 0 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.colors
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.colors
+          path=image_path
       %}
     </p>
     <h3>diffuse_flatness</h3>
@@ -242,8 +255,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Flattens out the diffuse response by bending the normal towards the light direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_flatness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_flatness
+          path=image_path
       %}
     </p>
     <h3>diffuse_flatness_falloff</h3>
@@ -252,8 +265,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Fades out flatness with respect to light direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_flatness_falloff
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_flatness_falloff
+          path=image_path
       %}
     </p>
     <h3>diffuse_model</h3>
@@ -263,8 +276,8 @@ title: DwaToonMaterial
           | ramp = 1
       <p class="scene-class-comments">The method used to render the diffuse response.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_model
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_model
+          path=image_path
       %}
     </p>
     <h3>diffuse_roughness</h3>
@@ -273,8 +286,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_roughness
+          path=image_path
       %}
     </p>
     <h3>diffuse_transmission</h3>
@@ -283,8 +296,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">multiplier on the amount of light that is transmitted through the surface.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_transmission
+          path=image_path
       %}
     </p>
     <h3>diffuse_transmission_blending_behavior</h3>
@@ -294,8 +307,8 @@ title: DwaToonMaterial
           | Monochromatic = 1 (default)
       <p class="scene-class-comments">Controls how diffuse transmission color attenuates diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_transmission_blending_behavior
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_transmission_blending_behavior
+          path=image_path
       %}
     </p>
     <h3>diffuse_transmission_color</h3>
@@ -304,8 +317,8 @@ title: DwaToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the color/amount of light that is transmitted through the surface.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.diffuse_transmission_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.diffuse_transmission_color
+          path=image_path
       %}
     </p>
     <h3>enable_sss_input_normal</h3>
@@ -314,8 +327,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.enable_sss_input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.enable_sss_input_normal
+          path=image_path
       %}
     </p>
     <h3>extend_ramp</h3>
@@ -324,8 +337,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">Extends the last ramp color to unlit portions. IMPORTANT: Only works in conjuction with prevent_light_culling ON and visible_shadows OFF</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.extend_ramp
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.extend_ramp
+          path=image_path
       %}
     </p>
     <h3>interpolations</h3>
@@ -334,8 +347,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.interpolations
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.interpolations
+          path=image_path
       %}
     </p>
     <h3>positions</h3>
@@ -344,8 +357,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.positions
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.positions
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier0</h3>
@@ -354,8 +367,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier0
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier0
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier1</h3>
@@ -364,8 +377,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier1
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier1
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier2</h3>
@@ -374,8 +387,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier2
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier2
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier3</h3>
@@ -384,8 +397,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier3
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier3
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier4</h3>
@@ -394,8 +407,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier4
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier4
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier5</h3>
@@ -404,8 +417,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier5
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier5
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier6</h3>
@@ -414,8 +427,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier6
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier6
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier7</h3>
@@ -424,8 +437,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier7
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier7
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier8</h3>
@@ -434,8 +447,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier8
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier8
+          path=image_path
       %}
     </p>
     <h3>ramp_color_multiplier9</h3>
@@ -444,8 +457,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bindable multiplier on the ramp color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_color_multiplier9
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_color_multiplier9
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset0</h3>
@@ -454,8 +467,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset0
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset0
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset1</h3>
@@ -464,8 +477,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset1
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset1
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset2</h3>
@@ -474,8 +487,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset2
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset2
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset3</h3>
@@ -484,8 +497,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset3
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset3
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset4</h3>
@@ -494,8 +507,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset4
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset4
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset5</h3>
@@ -504,8 +517,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset5
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset5
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset6</h3>
@@ -514,8 +527,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset6
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset6
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset7</h3>
@@ -524,8 +537,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset7
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset7
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset8</h3>
@@ -534,8 +547,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset8
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset8
+          path=image_path
       %}
     </p>
     <h3>ramp_position_offset9</h3>
@@ -544,8 +557,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Bindable offset to the ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.ramp_position_offset9
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.ramp_position_offset9
+          path=image_path
       %}
     </p>
     <h3>resolve_self_intersections</h3>
@@ -554,8 +567,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">tries to resolve self-intersecting geometry automatically by only evaluating 'exiting' intersections for subsurface evaluations</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.resolve_self_intersections
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.resolve_self_intersections
+          path=image_path
       %}
     </p>
     <h3>scattering_color</h3>
@@ -564,8 +577,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the subsurface scattering 'falloff' color</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.scattering_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.scattering_color
+          path=image_path
       %}
     </p>
     <h3>scattering_radius</h3>
@@ -574,8 +587,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">the distance the light scatters beneath the surface. When 0 surface diffuse (lambertian or toon) is used</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.scattering_radius
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.scattering_radius
+          path=image_path
       %}
     </p>
     <h3>show_diffuse</h3>
@@ -584,8 +597,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">enables/disables diffuse reflectance</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_diffuse
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_diffuse
+          path=image_path
       %}
     </p>
     <h3>terminator_shift</h3>
@@ -594,8 +607,8 @@ title: DwaToonMaterial
       default: 0.0500000007451
       <p class="scene-class-comments">Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.terminator_shift
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.terminator_shift
+          path=image_path
       %}
     </p>
   </p>
@@ -609,8 +622,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the energy emitted from this material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.emission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.emission
+          path=image_path
       %}
     </p>
     <h3>show_emission</h3>
@@ -619,8 +632,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">enables/disable emission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_emission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_emission
+          path=image_path
       %}
     </p>
   </p>
@@ -634,8 +647,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">fuzz mask</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.fuzz
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.fuzz
+          path=image_path
       %}
     </p>
     <h3>fuzz_albedo</h3>
@@ -644,8 +657,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color of the fuzz highlights.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.fuzz_albedo
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.fuzz_albedo
+          path=image_path
       %}
     </p>
     <h3>fuzz_normal</h3>
@@ -654,8 +667,8 @@ title: DwaToonMaterial
       default: None
       <p class="scene-class-comments">specifies an independent shading normal (normal map) for the fuzz lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.fuzz_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.fuzz_normal
+          path=image_path
       %}
     </p>
     <h3>fuzz_normal_dial</h3>
@@ -664,8 +677,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of infuence of the alternate fuzz normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.fuzz_normal_dial
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.fuzz_normal_dial
+          path=image_path
       %}
     </p>
     <h3>fuzz_roughness</h3>
@@ -674,8 +687,8 @@ title: DwaToonMaterial
       default: 0.25
       <p class="scene-class-comments">Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.fuzz_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.fuzz_roughness
+          path=image_path
       %}
     </p>
     <h3>show_fuzz</h3>
@@ -684,8 +697,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">Enables/disables fuzz lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_fuzz
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_fuzz
+          path=image_path
       %}
     </p>
     <h3>use_absorbing_fuzz_fibers</h3>
@@ -694,8 +707,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.use_absorbing_fuzz_fibers
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.use_absorbing_fuzz_fibers
+          path=image_path
       %}
     </p>
   </p>
@@ -709,8 +722,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">enables/disables glitter model (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter
+          path=image_path
       %}
     </p>
     <h3>glitter_LOD_quality</h3>
@@ -719,8 +732,8 @@ title: DwaToonMaterial
       default: 0.5
       <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_LOD_quality
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_LOD_quality
+          path=image_path
       %}
     </p>
     <h3>glitter_approximate_for_secondary_rays</h3>
@@ -729,8 +742,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">use an approximation to shade glitter for non-mirror secondary rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_approximate_for_secondary_rays
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_approximate_for_secondary_rays
+          path=image_path
       %}
     </p>
     <h3>glitter_color_A</h3>
@@ -739,8 +752,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_color_A
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_color_A
+          path=image_path
       %}
     </p>
     <h3>glitter_color_B</h3>
@@ -749,8 +762,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_color_B
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_color_B
+          path=image_path
       %}
     </p>
     <h3>glitter_color_hue_variation</h3>
@@ -759,8 +772,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_color_hue_variation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_color_hue_variation
+          path=image_path
       %}
     </p>
     <h3>glitter_color_saturation_variation</h3>
@@ -769,8 +782,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">introduce saturation variation in flake color centered at the base flake color's saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_color_saturation_variation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_color_saturation_variation
+          path=image_path
       %}
     </p>
     <h3>glitter_color_value_variation</h3>
@@ -779,8 +792,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">introduce value variation in flake color centered at the base flake color's value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_color_value_variation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_color_value_variation
+          path=image_path
       %}
     </p>
     <h3>glitter_compensate_reference_space_deformation</h3>
@@ -789,8 +802,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_compensate_reference_space_deformation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_compensate_reference_space_deformation
+          path=image_path
       %}
     </p>
     <h3>glitter_debug_mode</h3>
@@ -804,8 +817,8 @@ title: DwaToonMaterial
           | radius = 5
       <p class="scene-class-comments">developer debug visualization modes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_debug_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_debug_mode
+          path=image_path
       %}
     </p>
     <h3>glitter_density</h3>
@@ -814,8 +827,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_density
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_density
+          path=image_path
       %}
     </p>
     <h3>glitter_jitter</h3>
@@ -824,8 +837,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls how much the flakes are randomly offset from a regular grid</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_jitter
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_jitter
+          path=image_path
       %}
     </p>
     <h3>glitter_layering_mode</h3>
@@ -835,8 +848,8 @@ title: DwaToonMaterial
           | additive = 1
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_layering_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_layering_mode
+          path=image_path
       %}
     </p>
     <h3>glitter_randomness</h3>
@@ -845,8 +858,8 @@ title: DwaToonMaterial
       default: 0.5
       <p class="scene-class-comments">randomness of flake orientation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_randomness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_randomness
+          path=image_path
       %}
     </p>
     <h3>glitter_roughness_A</h3>
@@ -855,8 +868,8 @@ title: DwaToonMaterial
       default: 0.140000000596
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_roughness_A
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_roughness_A
+          path=image_path
       %}
     </p>
     <h3>glitter_roughness_B</h3>
@@ -865,8 +878,8 @@ title: DwaToonMaterial
       default: 0.140000000596
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_roughness_B
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_roughness_B
+          path=image_path
       %}
     </p>
     <h3>glitter_seed</h3>
@@ -875,8 +888,8 @@ title: DwaToonMaterial
       default: 0
       <p class="scene-class-comments">The seed for the glitter random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_seed
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_seed
+          path=image_path
       %}
     </p>
     <h3>glitter_size_A</h3>
@@ -885,8 +898,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_size_A
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_size_A
+          path=image_path
       %}
     </p>
     <h3>glitter_size_B</h3>
@@ -895,8 +908,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_size_B
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_size_B
+          path=image_path
       %}
     </p>
     <h3>glitter_space</h3>
@@ -906,8 +919,8 @@ title: DwaToonMaterial
           | reference = 5 (default)
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_space
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_space
+          path=image_path
       %}
     </p>
     <h3>glitter_style_A_frequency</h3>
@@ -916,8 +929,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_style_A_frequency
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_style_A_frequency
+          path=image_path
       %}
     </p>
     <h3>glitter_style_B_frequency</h3>
@@ -926,8 +939,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_style_B_frequency
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_style_B_frequency
+          path=image_path
       %}
     </p>
     <h3>glitter_texture_A</h3>
@@ -936,8 +949,8 @@ title: DwaToonMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_texture_A
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_texture_A
+          path=image_path
       %}
     </p>
     <h3>glitter_texture_B</h3>
@@ -946,8 +959,8 @@ title: DwaToonMaterial
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_texture_B
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_texture_B
+          path=image_path
       %}
     </p>
     <h3>glitter_texture_orientation_randomness</h3>
@@ -956,8 +969,8 @@ title: DwaToonMaterial
       default: 0.15000000596
       <p class="scene-class-comments">randomly orient each texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.glitter_texture_orientation_randomness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.glitter_texture_orientation_randomness
+          path=image_path
       %}
     </p>
     <h3>show_glitter</h3>
@@ -966,8 +979,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">Enables/disables glitter lobes</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_glitter
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_glitter
+          path=image_path
       %}
     </p>
   </p>
@@ -981,8 +994,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">controls the strength of the iridescence effect</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence
+          path=image_path
       %}
     </p>
     <h3>iridescence_apply_to</h3>
@@ -992,8 +1005,8 @@ title: DwaToonMaterial
           | clearcoat/moisture specular = 1
       <p class="scene-class-comments">Apply iridescence to primary specular lobe or clearcoat/moisture lobe</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_apply_to
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_apply_to
+          path=image_path
       %}
     </p>
     <h3>iridescence_at_0_incidence</h3>
@@ -1002,8 +1015,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">Iridescence effect at 0 degree viewing angle</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_at_0_incidence
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_at_0_incidence
+          path=image_path
       %}
     </p>
     <h3>iridescence_at_90_incidence</h3>
@@ -1012,8 +1025,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">Iridescence effect at 90 degree viewing angle</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_at_90_incidence
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_at_90_incidence
+          path=image_path
       %}
     </p>
     <h3>iridescence_color_control</h3>
@@ -1023,8 +1036,8 @@ title: DwaToonMaterial
           | use ramp = 1
       <p class="scene-class-comments">use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_color_control
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_color_control
+          path=image_path
       %}
     </p>
     <h3>iridescence_colors</h3>
@@ -1033,8 +1046,8 @@ title: DwaToonMaterial
       default: [[ 1, 0, 0 ], [ 1, 1, 0 ], [ 0, 1, 0 ], [ 0, 1, 1 ], [ 0, 0, 1 ], [ 1, 0, 1 ], [ 1, 0, 0 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_colors
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_colors
+          path=image_path
       %}
     </p>
     <h3>iridescence_exponent</h3>
@@ -1043,8 +1056,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">Tightens or broadens the distribution of colors</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_exponent
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_exponent
+          path=image_path
       %}
     </p>
     <h3>iridescence_flip_hue_direction</h3>
@@ -1053,8 +1066,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">flip interpolation around the hue wheel to counter-clockwise direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_flip_hue_direction
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_flip_hue_direction
+          path=image_path
       %}
     </p>
     <h3>iridescence_interpolations</h3>
@@ -1063,8 +1076,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_interpolations
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_interpolations
+          path=image_path
       %}
     </p>
     <h3>iridescence_positions</h3>
@@ -1073,8 +1086,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">ramp positions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_positions
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_positions
+          path=image_path
       %}
     </p>
     <h3>iridescence_primary_color</h3>
@@ -1083,8 +1096,8 @@ title: DwaToonMaterial
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">First color to interpolate from around the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_primary_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_primary_color
+          path=image_path
       %}
     </p>
     <h3>iridescence_ramp_interpolation_mode</h3>
@@ -1094,8 +1107,8 @@ title: DwaToonMaterial
           | HSV = 1
       <p class="scene-class-comments">RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_ramp_interpolation_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_ramp_interpolation_mode
+          path=image_path
       %}
     </p>
     <h3>iridescence_secondary_color</h3>
@@ -1104,8 +1117,8 @@ title: DwaToonMaterial
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">Second color to interpolate to around the hue wheel</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_secondary_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_secondary_color
+          path=image_path
       %}
     </p>
     <h3>iridescence_thickness</h3>
@@ -1114,8 +1127,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls how much the color spectrum is repeated</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.iridescence_thickness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.iridescence_thickness
+          path=image_path
       %}
     </p>
   </p>
@@ -1129,8 +1142,8 @@ title: DwaToonMaterial
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.input_normal
+          path=image_path
       %}
     </p>
     <h3>input_normal_dial</h3>
@@ -1139,8 +1152,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.input_normal_dial
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.input_normal_dial
+          path=image_path
       %}
     </p>
   </p>
@@ -1154,8 +1167,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls the amount roughness compensation from the normal map AA strategy.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.normal_AA_dial
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.normal_AA_dial
+          path=image_path
       %}
     </p>
     <h3>normal_AA_strategy</h3>
@@ -1165,8 +1178,8 @@ title: DwaToonMaterial
           | toksvig = 1
       <p class="scene-class-comments">Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.normal_AA_strategy
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.normal_AA_strategy
+          path=image_path
       %}
     </p>
   </p>
@@ -1180,8 +1193,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">controls the shape of the primary reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.anisotropy
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.anisotropy
+          path=image_path
       %}
     </p>
     <h3>metallic</h3>
@@ -1190,8 +1203,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">enables/disables metallic model (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.metallic
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.metallic
+          path=image_path
       %}
     </p>
     <h3>metallic_color</h3>
@@ -1200,8 +1213,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the overall reflection color, defines Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.metallic_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.metallic_color
+          path=image_path
       %}
     </p>
     <h3>metallic_edge_color</h3>
@@ -1210,8 +1223,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the reflection color at grazing angles, defines Fresnel behavior</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.metallic_edge_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.metallic_edge_color
+          path=image_path
       %}
     </p>
     <h3>refractive_index</h3>
@@ -1220,8 +1233,8 @@ title: DwaToonMaterial
       default: 1.5
       <p class="scene-class-comments">defines the Fresnel behavior (affects only refraction when model is Toon)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.refractive_index
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.refractive_index
+          path=image_path
       %}
     </p>
     <h3>roughness</h3>
@@ -1230,8 +1243,8 @@ title: DwaToonMaterial
       default: 0.5
       <p class="scene-class-comments">the roughness of the surface</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.roughness
+          path=image_path
       %}
     </p>
     <h3>shading_tangent</h3>
@@ -1240,8 +1253,8 @@ title: DwaToonMaterial
       default: [ 1, 0 ]
       <p class="scene-class-comments">controls the orientation of anistropy</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.shading_tangent
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.shading_tangent
+          path=image_path
       %}
     </p>
     <h3>show_specular</h3>
@@ -1250,8 +1263,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">enables/disables specular reflections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_specular
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_specular
+          path=image_path
       %}
     </p>
     <h3>specular_model</h3>
@@ -1262,8 +1275,8 @@ title: DwaToonMaterial
           | Toon = 2
       <p class="scene-class-comments">sets the normalized distribution function for specular.  GGX is currently isotropic only</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.specular_model
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.specular_model
+          path=image_path
       %}
     </p>
     <h3>toon_specular_enable_indirect_reflections</h3>
@@ -1272,8 +1285,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">enables indirect GGX reflections for toon specular model</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_enable_indirect_reflections
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_enable_indirect_reflections
+          path=image_path
       %}
     </p>
     <h3>toon_specular_enable_input_normal</h3>
@@ -1282,8 +1295,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">enables sampling the normal map for toon toon specular</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_enable_input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_enable_input_normal
+          path=image_path
       %}
     </p>
     <h3>toon_specular_indirect_reflections_intensity</h3>
@@ -1292,8 +1305,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">the intensity for the indirect reflections of the toon specular model</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_indirect_reflections_intensity
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_indirect_reflections_intensity
+          path=image_path
       %}
     </p>
     <h3>toon_specular_indirect_reflections_roughness</h3>
@@ -1302,8 +1315,8 @@ title: DwaToonMaterial
       default: 0.5
       <p class="scene-class-comments">the roughness for the indirect reflections of the toon specular model</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_indirect_reflections_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_indirect_reflections_roughness
+          path=image_path
       %}
     </p>
     <h3>toon_specular_input_U</h3>
@@ -1312,8 +1325,8 @@ title: DwaToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">input U / tangent for specular stretch</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_input_U
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_input_U
+          path=image_path
       %}
     </p>
     <h3>toon_specular_input_V</h3>
@@ -1322,8 +1335,8 @@ title: DwaToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">input V / bitangent for specular stretch</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_input_V
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_input_V
+          path=image_path
       %}
     </p>
     <h3>toon_specular_input_normal</h3>
@@ -1332,8 +1345,8 @@ title: DwaToonMaterial
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal for toon toon specular</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_input_normal
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_input_normal
+          path=image_path
       %}
     </p>
     <h3>toon_specular_input_normal_dial</h3>
@@ -1342,8 +1355,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">controls influence of input normal versus hair normal for toon toon specular</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_input_normal_dial
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_input_normal_dial
+          path=image_path
       %}
     </p>
     <h3>toon_specular_intensity</h3>
@@ -1352,8 +1365,8 @@ title: DwaToonMaterial
       default: 1.0
       <p class="scene-class-comments">The overall intensity of the toon specular response</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_intensity
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_intensity
+          path=image_path
       %}
     </p>
     <h3>toon_specular_interpolations</h3>
@@ -1362,8 +1375,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_interpolations
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_interpolations
+          path=image_path
       %}
     </p>
     <h3>toon_specular_positions</h3>
@@ -1372,8 +1385,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_positions
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_positions
+          path=image_path
       %}
     </p>
     <h3>toon_specular_stretch_u</h3>
@@ -1382,8 +1395,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the u direction </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_stretch_u
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_stretch_u
+          path=image_path
       %}
     </p>
     <h3>toon_specular_stretch_v</h3>
@@ -1392,8 +1405,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the v direction </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_stretch_v
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_stretch_v
+          path=image_path
       %}
     </p>
     <h3>toon_specular_tint</h3>
@@ -1402,8 +1415,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_tint
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_tint
+          path=image_path
       %}
     </p>
     <h3>toon_specular_use_input_vectors_for_stretch</h3>
@@ -1412,8 +1425,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">when checked, use input_U and V. otherwise use geometry dPds/t</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_use_input_vectors_for_stretch
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_use_input_vectors_for_stretch
+          path=image_path
       %}
     </p>
     <h3>toon_specular_values</h3>
@@ -1422,8 +1435,8 @@ title: DwaToonMaterial
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">List of colors on the ramp</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.toon_specular_values
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.toon_specular_values
+          path=image_path
       %}
     </p>
   </p>
@@ -1437,8 +1450,8 @@ title: DwaToonMaterial
       default: 34.0
       <p class="scene-class-comments">The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.dispersion_abbe_number
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.dispersion_abbe_number
+          path=image_path
       %}
     </p>
     <h3>independent_transmission_refractive_index</h3>
@@ -1447,8 +1460,8 @@ title: DwaToonMaterial
       default: 1.5
       <p class="scene-class-comments">defines a separate IOR for the bending of light with transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.independent_transmission_refractive_index
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.independent_transmission_refractive_index
+          path=image_path
       %}
     </p>
     <h3>independent_transmission_roughness</h3>
@@ -1457,8 +1470,8 @@ title: DwaToonMaterial
       default: 0.5
       <p class="scene-class-comments">separate roughness for transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.independent_transmission_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.independent_transmission_roughness
+          path=image_path
       %}
     </p>
     <h3>show_transmission</h3>
@@ -1467,8 +1480,8 @@ title: DwaToonMaterial
       default: True
       <p class="scene-class-comments">enables/disables refractive solid model</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.show_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.show_transmission
+          path=image_path
       %}
     </p>
     <h3>transmission</h3>
@@ -1477,8 +1490,8 @@ title: DwaToonMaterial
       default: 0.0
       <p class="scene-class-comments">enables/disables refractive solid model (binary 0|1 for plausibility)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.transmission
+          path=image_path
       %}
     </p>
     <h3>transmission_color</h3>
@@ -1487,8 +1500,8 @@ title: DwaToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the desired color of transmitted light</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.transmission_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.transmission_color
+          path=image_path
       %}
     </p>
     <h3>use_dispersion</h3>
@@ -1497,8 +1510,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">use dispersion effects in transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.use_dispersion
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.use_dispersion
+          path=image_path
       %}
     </p>
     <h3>use_independent_transmission_refractive_index</h3>
@@ -1507,8 +1520,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">use a separate IOR for transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.use_independent_transmission_refractive_index
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.use_independent_transmission_refractive_index
+          path=image_path
       %}
     </p>
     <h3>use_independent_transmission_roughness</h3>
@@ -1517,8 +1530,8 @@ title: DwaToonMaterial
       default: False
       <p class="scene-class-comments">use a separate roughness for transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.use_independent_transmission_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.use_independent_transmission_roughness
+          path=image_path
       %}
     </p>
   </p>
@@ -1532,8 +1545,8 @@ title: DwaToonMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.extra_aovs
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.extra_aovs
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -1542,8 +1555,8 @@ title: DwaToonMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.label
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.label
+          path=image_path
       %}
     </p>
     <h3>priority</h3>
@@ -1552,8 +1565,8 @@ title: DwaToonMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.priority
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaToonMaterial.images.attributes.priority
+          path=image_path
       %}
     </p>
   </p>

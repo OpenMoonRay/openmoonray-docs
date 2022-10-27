@@ -8,13 +8,26 @@ title: RandomNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RandomNormalMap
+{%assign image_path=site.data.scene-classes.normal-maps.RandomNormalMap.images.path%}
+{%if site.data.scene-classes.normal-maps.RandomNormalMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.normal-maps.RandomNormalMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.normal-maps.RandomNormalMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.normal-maps.RandomNormalMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.normal-maps.RandomNormalMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.normal-maps.RandomNormalMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: RandomNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RandomNormalMap.input
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.RandomNormalMap.images.attributes.input
+          path=image_path
       %}
     </p>
     <h3>seed</h3>
@@ -34,8 +47,8 @@ title: RandomNormalMap
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.normal-maps.RandomNormalMap.seed
-          image_dir=image_dir
+          images=site.data.scene-classes.normal-maps.RandomNormalMap.images.attributes.seed
+          path=image_path
       %}
     </p>
   </p>

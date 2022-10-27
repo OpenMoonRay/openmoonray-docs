@@ -8,13 +8,26 @@ title: FloatToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # FloatToRgbMap
+{%assign image_path=site.data.scene-classes.maps.FloatToRgbMap.images.path%}
+{%if site.data.scene-classes.maps.FloatToRgbMap.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.FloatToRgbMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.maps.FloatToRgbMap.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.maps.FloatToRgbMap.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.FloatToRgbMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.FloatToRgbMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMap.B
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.FloatToRgbMap.images.attributes.B
+          path=image_path
       %}
     </p>
     <h3>G</h3>
@@ -34,8 +47,8 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMap.G
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.FloatToRgbMap.images.attributes.G
+          path=image_path
       %}
     </p>
     <h3>R</h3>
@@ -44,8 +57,8 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.FloatToRgbMap.R
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.FloatToRgbMap.images.attributes.R
+          path=image_path
       %}
     </p>
   </p>

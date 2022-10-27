@@ -8,13 +8,26 @@ title: DwaColorCorrectMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaColorCorrectMaterial
+{%assign image_path=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.path%}
+{%if site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Hue/Sat/Gain attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: DwaColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">multiplies the input channels by the specified value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.gain
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.gain
+          path=image_path
       %}
     </p>
     <h3>hue_shift</h3>
@@ -34,8 +47,8 @@ title: DwaColorCorrectMaterial
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (spectrum range is 0-1)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.hue_shift
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.hue_shift
+          path=image_path
       %}
     </p>
     <h3>saturation</h3>
@@ -44,8 +57,8 @@ title: DwaColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">desaturates the input below 1.0 and adds saturation above 1.0</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.saturation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.saturation
+          path=image_path
       %}
     </p>
   </p>
@@ -59,8 +72,8 @@ title: DwaColorCorrectMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.TMI
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.TMI
+          path=image_path
       %}
     </p>
     <h3>TMI_enabled</h3>
@@ -69,8 +82,8 @@ title: DwaColorCorrectMaterial
       default: False
       <p class="scene-class-comments">enables the TMI parameters</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.TMI_enabled
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.TMI_enabled
+          path=image_path
       %}
     </p>
   </p>
@@ -84,8 +97,8 @@ title: DwaColorCorrectMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.extra_aovs
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.extra_aovs
+          path=image_path
       %}
     </p>
     <h3>input_material</h3>
@@ -94,8 +107,8 @@ title: DwaColorCorrectMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.input_material
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.input_material
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -104,8 +117,8 @@ title: DwaColorCorrectMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.label
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.label
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -114,8 +127,8 @@ title: DwaColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.mix
+          path=image_path
       %}
     </p>
     <h3>on</h3>
@@ -124,8 +137,8 @@ title: DwaColorCorrectMaterial
       default: True
       <p class="scene-class-comments">Enable/disable all color corrections</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.on
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.on
+          path=image_path
       %}
     </p>
     <h3>priority</h3>
@@ -134,8 +147,8 @@ title: DwaColorCorrectMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.priority
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.images.attributes.priority
+          path=image_path
       %}
     </p>
   </p>

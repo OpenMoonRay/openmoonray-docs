@@ -8,13 +8,26 @@ title: DecayLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DecayLightFilter
+{%assign image_path=site.data.scene-classes.light-filters.DecayLightFilter.images.path%}
+{%if site.data.scene-classes.light-filters.DecayLightFilter.images.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.light-filters.DecayLightFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
-    images=site.data.scene-classes.light-filters.DecayLightFilter.gallery
-    image_dir=image_dir
+    images=site.data.scene-classes.light-filters.DecayLightFilter.images.gallery
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.light-filters.DecayLightFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.light-filters.DecayLightFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Properties attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: DecayLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.falloff_far
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.falloff_far
+          path=image_path
       %}
     </p>
     <h3>falloff_near</h3>
@@ -34,8 +47,8 @@ title: DecayLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.falloff_near
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.falloff_near
+          path=image_path
       %}
     </p>
     <h3>far_end</h3>
@@ -44,8 +57,8 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.far_end
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.far_end
+          path=image_path
       %}
     </p>
     <h3>far_start</h3>
@@ -54,8 +67,8 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.far_start
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.far_start
+          path=image_path
       %}
     </p>
     <h3>near_end</h3>
@@ -64,8 +77,8 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.near_end
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.near_end
+          path=image_path
       %}
     </p>
     <h3>near_start</h3>
@@ -74,8 +87,8 @@ title: DecayLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.near_start
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.near_start
+          path=image_path
       %}
     </p>
   </p>
@@ -89,8 +102,8 @@ title: DecayLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.DecayLightFilter.on
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.DecayLightFilter.images.attributes.on
+          path=image_path
       %}
     </p>
   </p>
