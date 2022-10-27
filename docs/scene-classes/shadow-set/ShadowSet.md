@@ -21,7 +21,7 @@ title: ShadowSet
 ---
 ## See Also
 {%for link in site.data.scene-classes.shadow-set.ShadowSet.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

@@ -21,7 +21,7 @@ title: HairMaterial_v3
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.hair.HairMaterial_v3.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

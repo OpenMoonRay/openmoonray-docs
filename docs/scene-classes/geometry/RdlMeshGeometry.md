@@ -21,7 +21,7 @@ title: RdlMeshGeometry
 ---
 ## See Also
 {%for link in site.data.scene-classes.geometry.RdlMeshGeometry.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

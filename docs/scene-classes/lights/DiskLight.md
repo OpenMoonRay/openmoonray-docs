@@ -21,7 +21,7 @@ title: DiskLight
 ---
 ## See Also
 {%for link in site.data.scene-classes.lights.DiskLight.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

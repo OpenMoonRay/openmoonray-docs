@@ -21,7 +21,7 @@ title: ClampMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.ClampMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

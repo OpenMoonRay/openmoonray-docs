@@ -21,7 +21,7 @@ title: GeometrySet
 ---
 ## See Also
 {%for link in site.data.scene-classes.geometry-set.GeometrySet.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

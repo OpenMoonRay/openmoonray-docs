@@ -21,7 +21,7 @@ title: DebugMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.DebugMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

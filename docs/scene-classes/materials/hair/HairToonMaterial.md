@@ -21,7 +21,7 @@ title: HairToonMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.hair.HairToonMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

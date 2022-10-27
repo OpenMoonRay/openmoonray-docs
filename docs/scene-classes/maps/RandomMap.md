@@ -21,7 +21,7 @@ title: RandomMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.RandomMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

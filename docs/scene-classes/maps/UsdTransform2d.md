@@ -21,7 +21,7 @@ title: UsdTransform2d
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.UsdTransform2d.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

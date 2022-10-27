@@ -21,7 +21,7 @@ title: OpenVdbMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.OpenVdbMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

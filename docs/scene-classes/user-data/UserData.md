@@ -21,7 +21,7 @@ title: UserData
 ---
 ## See Also
 {%for link in site.data.scene-classes.user-data.UserData.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

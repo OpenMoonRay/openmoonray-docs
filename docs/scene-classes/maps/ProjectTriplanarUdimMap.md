@@ -21,7 +21,7 @@ title: ProjectTriplanarUdimMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.ProjectTriplanarUdimMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

@@ -21,7 +21,7 @@ title: UsdPrimvarReader_float2
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.UsdPrimvarReader_float2.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

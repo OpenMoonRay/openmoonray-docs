@@ -21,7 +21,7 @@ title: DomeMaster3DCamera
 ---
 ## See Also
 {%for link in site.data.scene-classes.cameras.DomeMaster3DCamera.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

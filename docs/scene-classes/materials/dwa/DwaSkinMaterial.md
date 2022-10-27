@@ -21,7 +21,7 @@ title: DwaSkinMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.dwa.DwaSkinMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

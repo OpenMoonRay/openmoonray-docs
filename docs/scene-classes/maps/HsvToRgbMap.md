@@ -21,7 +21,7 @@ title: HsvToRgbMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.HsvToRgbMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

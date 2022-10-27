@@ -21,7 +21,7 @@ title: EnvLight
 ---
 ## See Also
 {%for link in site.data.scene-classes.lights.EnvLight.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

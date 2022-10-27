@@ -21,7 +21,7 @@ title: SwitchNormalMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.normal-maps.SwitchNormalMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

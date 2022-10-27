@@ -21,7 +21,7 @@ title: NormalDisplacement
 ---
 ## See Also
 {%for link in site.data.scene-classes.displacement.NormalDisplacement.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

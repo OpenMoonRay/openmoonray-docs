@@ -21,7 +21,7 @@ title: ColorCorrectHueShiftMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.ColorCorrectHueShiftMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

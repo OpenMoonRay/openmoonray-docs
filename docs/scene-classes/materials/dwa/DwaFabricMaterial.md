@@ -21,7 +21,7 @@ title: DwaFabricMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.dwa.DwaFabricMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

@@ -21,7 +21,7 @@ title: ShadowDisplayFilter
 ---
 ## See Also
 {%for link in site.data.scene-classes.display-filters.ShadowDisplayFilter.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

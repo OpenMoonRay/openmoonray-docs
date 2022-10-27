@@ -21,7 +21,7 @@ title: IntensityLightFilter
 ---
 ## See Also
 {%for link in site.data.scene-classes.light-filters.IntensityLightFilter.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

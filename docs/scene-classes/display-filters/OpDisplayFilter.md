@@ -21,7 +21,7 @@ title: OpDisplayFilter
 ---
 ## See Also
 {%for link in site.data.scene-classes.display-filters.OpDisplayFilter.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

@@ -21,7 +21,7 @@ title: DwaRefractiveMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.dwa.DwaRefractiveMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

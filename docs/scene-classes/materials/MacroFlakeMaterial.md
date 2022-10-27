@@ -21,7 +21,7 @@ title: MacroFlakeMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.MacroFlakeMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

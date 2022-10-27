@@ -21,7 +21,7 @@ title: ColorCorrectGainOffsetMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.ColorCorrectGainOffsetMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

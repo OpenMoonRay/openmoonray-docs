@@ -21,7 +21,7 @@ title: ToonMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.maps.ToonMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

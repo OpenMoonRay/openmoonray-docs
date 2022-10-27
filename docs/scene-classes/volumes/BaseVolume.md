@@ -21,7 +21,7 @@ title: BaseVolume
 ---
 ## See Also
 {%for link in site.data.scene-classes.volumes.BaseVolume.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

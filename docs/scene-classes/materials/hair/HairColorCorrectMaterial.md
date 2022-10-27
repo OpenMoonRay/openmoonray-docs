@@ -21,7 +21,7 @@ title: HairColorCorrectMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.hair.HairColorCorrectMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

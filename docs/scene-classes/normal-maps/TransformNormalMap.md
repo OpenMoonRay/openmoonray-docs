@@ -21,7 +21,7 @@ title: TransformNormalMap
 ---
 ## See Also
 {%for link in site.data.scene-classes.normal-maps.TransformNormalMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

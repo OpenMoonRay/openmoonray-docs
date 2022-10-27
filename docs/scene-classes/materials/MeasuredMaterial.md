@@ -21,7 +21,7 @@ title: MeasuredMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.MeasuredMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---

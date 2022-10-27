@@ -21,7 +21,7 @@ title: DwaMetalMaterial
 ---
 ## See Also
 {%for link in site.data.scene-classes.materials.dwa.DwaMetalMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.path}})  
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
 {%endfor%}
 {%endif%}
 ---
