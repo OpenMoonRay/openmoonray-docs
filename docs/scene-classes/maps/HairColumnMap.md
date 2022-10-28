@@ -8,22 +8,8 @@ title: HairColumnMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColumnMap
-{%assign image_path=site.data.scene-classes.maps.HairColumnMap.image_path%}
-{%if site.data.scene-classes.maps.HairColumnMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.HairColumnMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.HairColumnMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.HairColumnMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.maps.HairColumnMap.gallery data=site.data.scene-classes.maps.HairColumnMap-%}
+{%include see-also.html links=site.data.scene-classes.maps.HairColumnMap.links-%}
 ---
 ## Attribute Reference
 

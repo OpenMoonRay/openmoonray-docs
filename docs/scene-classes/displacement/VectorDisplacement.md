@@ -8,22 +8,8 @@ title: VectorDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # VectorDisplacement
-{%assign image_path=site.data.scene-classes.displacement.VectorDisplacement.image_path%}
-{%if site.data.scene-classes.displacement.VectorDisplacement.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.displacement.VectorDisplacement.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.displacement.VectorDisplacement.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.displacement.VectorDisplacement.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.displacement.VectorDisplacement.gallery data=site.data.scene-classes.displacement.VectorDisplacement-%}
+{%include see-also.html links=site.data.scene-classes.displacement.VectorDisplacement.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: VectorDisplacement
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.attributes.bound_padding.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.displacement.VectorDisplacement.attributes.bound_padding.images data=site.data.scene-classes.displacement.VectorDisplacement-%}
+      {%include see-also.html links=site.data.scene-classes.displacement.VectorDisplacement.attributes.bound_padding.links-%}
     </p>
     <h3>factor</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.attributes.factor.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.displacement.VectorDisplacement.attributes.factor.images data=site.data.scene-classes.displacement.VectorDisplacement-%}
+      {%include see-also.html links=site.data.scene-classes.displacement.VectorDisplacement.attributes.factor.links-%}
     </p>
     <h3>source_space</h3>
     <p class="scene-class-type">
@@ -57,10 +39,8 @@ title: VectorDisplacement
           | tangent = 0 (default)
           | object = 1
       <p class="scene-class-comments">The space that the map bound to the vector parameter is in</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.attributes.source_space.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.displacement.VectorDisplacement.attributes.source_space.images data=site.data.scene-classes.displacement.VectorDisplacement-%}
+      {%include see-also.html links=site.data.scene-classes.displacement.VectorDisplacement.attributes.source_space.links-%}
     </p>
     <h3>tangent_space_style</h3>
     <p class="scene-class-type">
@@ -68,20 +48,16 @@ title: VectorDisplacement
           | tnb = 0 (default)
           | tbn = 1
       <p class="scene-class-comments">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.attributes.tangent_space_style.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.displacement.VectorDisplacement.attributes.tangent_space_style.images data=site.data.scene-classes.displacement.VectorDisplacement-%}
+      {%include see-also.html links=site.data.scene-classes.displacement.VectorDisplacement.attributes.tangent_space_style.links-%}
     </p>
     <h3>vector</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.VectorDisplacement.attributes.vector.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.displacement.VectorDisplacement.attributes.vector.images data=site.data.scene-classes.displacement.VectorDisplacement-%}
+      {%include see-also.html links=site.data.scene-classes.displacement.VectorDisplacement.attributes.vector.links-%}
     </p>
   </p>
 </details>

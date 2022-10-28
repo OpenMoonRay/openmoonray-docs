@@ -8,22 +8,8 @@ title: LightSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LightSet
-{%assign image_path=site.data.scene-classes.light-set.LightSet.image_path%}
-{%if site.data.scene-classes.light-set.LightSet.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.light-set.LightSet.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.light-set.LightSet.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.light-set.LightSet.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.light-set.LightSet.gallery data=site.data.scene-classes.light-set.LightSet-%}
+{%include see-also.html links=site.data.scene-classes.light-set.LightSet.links-%}
 ---
 ## Attribute Reference
 
@@ -36,10 +22,8 @@ title: LightSet
       <b>Light Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.light-set.LightSet.attributes.lights.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.light-set.LightSet.attributes.lights.images data=site.data.scene-classes.light-set.LightSet-%}
+      {%include see-also.html links=site.data.scene-classes.light-set.LightSet.attributes.lights.links-%}
     </p>
   </p>
 </details>

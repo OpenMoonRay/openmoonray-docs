@@ -8,22 +8,8 @@ title: LcToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LcToRgbMap
-{%assign image_path=site.data.scene-classes.maps.LcToRgbMap.image_path%}
-{%if site.data.scene-classes.maps.LcToRgbMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.LcToRgbMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.LcToRgbMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.LcToRgbMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.maps.LcToRgbMap.gallery data=site.data.scene-classes.maps.LcToRgbMap-%}
+{%include see-also.html links=site.data.scene-classes.maps.LcToRgbMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: LcToRgbMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.LcToRgbMap.attributes.input_color.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.LcToRgbMap.attributes.input_color.images data=site.data.scene-classes.maps.LcToRgbMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.LcToRgbMap.attributes.input_color.links-%}
     </p>
     <h3>target_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 100, 0, 0 ]
       <p class="scene-class-comments">Target color for remapping, in LAB colorspace</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.LcToRgbMap.attributes.target_color.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.LcToRgbMap.attributes.target_color.images data=site.data.scene-classes.maps.LcToRgbMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.LcToRgbMap.attributes.target_color.links-%}
     </p>
   </p>
 </details>

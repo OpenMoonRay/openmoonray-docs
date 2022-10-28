@@ -8,22 +8,8 @@ title: RgbToFloatMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToFloatMap
-{%assign image_path=site.data.scene-classes.maps.RgbToFloatMap.image_path%}
-{%if site.data.scene-classes.maps.RgbToFloatMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.RgbToFloatMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.RgbToFloatMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.RgbToFloatMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.maps.RgbToFloatMap.gallery data=site.data.scene-classes.maps.RgbToFloatMap-%}
+{%include see-also.html links=site.data.scene-classes.maps.RgbToFloatMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,10 +22,8 @@ title: RgbToFloatMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToFloatMap.attributes.input.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.RgbToFloatMap.attributes.input.images data=site.data.scene-classes.maps.RgbToFloatMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.RgbToFloatMap.attributes.input.links-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -53,10 +37,8 @@ title: RgbToFloatMap
           | sum = 6
           | luminance = 7
       <p class="scene-class-comments">specify the method to convert RGB Color to float</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.RgbToFloatMap.attributes.mode.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.RgbToFloatMap.attributes.mode.images data=site.data.scene-classes.maps.RgbToFloatMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.RgbToFloatMap.attributes.mode.links-%}
     </p>
   </p>
 </details>

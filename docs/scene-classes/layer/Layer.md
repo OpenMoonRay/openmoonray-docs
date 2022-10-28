@@ -8,22 +8,8 @@ title: Layer
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Layer
-{%assign image_path=site.data.scene-classes.layer.Layer.image_path%}
-{%if site.data.scene-classes.layer.Layer.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.layer.Layer.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.layer.Layer.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.layer.Layer.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.layer.Layer.gallery data=site.data.scene-classes.layer.Layer-%}
+{%include see-also.html links=site.data.scene-classes.layer.Layer.links-%}
 ---
 ## Attribute Reference
 
@@ -36,90 +22,72 @@ title: Layer
       <b>Displacement Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.displacements.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.displacements.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.displacements.links-%}
     </p>
     <h3>geometries</h3>
     <p class="scene-class-type">
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.geometries.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.geometries.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.geometries.links-%}
     </p>
     <h3>lightfiltersets</h3>
     <p class="scene-class-type">
       <b>Lightfilterset Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.lightfiltersets.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.lightfiltersets.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.lightfiltersets.links-%}
     </p>
     <h3>lightsets</h3>
     <p class="scene-class-type">
       <b>Lightset Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.lightsets.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.lightsets.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.lightsets.links-%}
     </p>
     <h3>parts</h3>
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.parts.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.parts.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.parts.links-%}
     </p>
     <h3>shadowreceiversets</h3>
     <p class="scene-class-type">
       <b>134217728 Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.shadowreceiversets.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.shadowreceiversets.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.shadowreceiversets.links-%}
     </p>
     <h3>shadowsets</h3>
     <p class="scene-class-type">
       <b>16777216 Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.shadowsets.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.shadowsets.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.shadowsets.links-%}
     </p>
     <h3>surface_shaders</h3>
     <p class="scene-class-type">
       <b>Material Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.surface_shaders.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.surface_shaders.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.surface_shaders.links-%}
     </p>
     <h3>volume_shaders</h3>
     <p class="scene-class-type">
       <b>Volumeshader Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.layer.Layer.attributes.volume_shaders.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.volume_shaders.images data=site.data.scene-classes.layer.Layer-%}
+      {%include see-also.html links=site.data.scene-classes.layer.Layer.attributes.volume_shaders.links-%}
     </p>
   </p>
 </details>

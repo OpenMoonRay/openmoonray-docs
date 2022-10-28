@@ -8,22 +8,8 @@ title: OpMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OpMap
-{%assign image_path=site.data.scene-classes.maps.OpMap.image_path%}
-{%if site.data.scene-classes.maps.OpMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.OpMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.OpMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.OpMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.maps.OpMap.gallery data=site.data.scene-classes.maps.OpMap-%}
+{%include see-also.html links=site.data.scene-classes.maps.OpMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,50 +22,40 @@ title: OpMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">if on, the result is clamped to 0 - 1</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.attributes.clamp.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.clamp.images data=site.data.scene-classes.maps.OpMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.clamp.links-%}
     </p>
     <h3>op1</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the first operand</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.attributes.op1.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op1.images data=site.data.scene-classes.maps.OpMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op1.links-%}
     </p>
     <h3>op1_factor</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op1</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.attributes.op1_factor.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op1_factor.images data=site.data.scene-classes.maps.OpMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op1_factor.links-%}
     </p>
     <h3>op2</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the second operand</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.attributes.op2.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op2.images data=site.data.scene-classes.maps.OpMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op2.links-%}
     </p>
     <h3>op2_factor</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op2</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.attributes.op2_factor.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op2_factor.images data=site.data.scene-classes.maps.OpMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op2_factor.links-%}
     </p>
     <h3>operation</h3>
     <p class="scene-class-type">
@@ -124,10 +100,8 @@ title: OpMap
           | bitwise_and = 37
           | bitwise_or = 38
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.OpMap.attributes.operation.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.operation.images data=site.data.scene-classes.maps.OpMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.operation.links-%}
     </p>
   </p>
 </details>

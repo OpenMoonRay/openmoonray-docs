@@ -8,22 +8,8 @@ title: ListMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ListMap
-{%assign image_path=site.data.scene-classes.maps.ListMap.image_path%}
-{%if site.data.scene-classes.maps.ListMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.ListMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.ListMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.ListMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.maps.ListMap.gallery data=site.data.scene-classes.maps.ListMap-%}
+{%include see-also.html links=site.data.scene-classes.maps.ListMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,200 +22,160 @@ title: ListMap
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map0.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map0.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map0.links-%}
     </p>
     <h3>map1</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map1.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map1.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map1.links-%}
     </p>
     <h3>map10</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map10.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map10.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map10.links-%}
     </p>
     <h3>map11</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map11.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map11.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map11.links-%}
     </p>
     <h3>map12</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map12.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map12.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map12.links-%}
     </p>
     <h3>map13</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map13.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map13.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map13.links-%}
     </p>
     <h3>map14</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map14.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map14.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map14.links-%}
     </p>
     <h3>map15</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map15.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map15.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map15.links-%}
     </p>
     <h3>map16</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map16.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map16.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map16.links-%}
     </p>
     <h3>map17</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map17.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map17.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map17.links-%}
     </p>
     <h3>map18</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map18.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map18.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map18.links-%}
     </p>
     <h3>map19</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map19.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map19.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map19.links-%}
     </p>
     <h3>map2</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map2.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map2.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map2.links-%}
     </p>
     <h3>map3</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map3.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map3.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map3.links-%}
     </p>
     <h3>map4</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map4.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map4.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map4.links-%}
     </p>
     <h3>map5</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map5.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map5.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map5.links-%}
     </p>
     <h3>map6</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map6.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map6.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map6.links-%}
     </p>
     <h3>map7</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map7.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map7.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map7.links-%}
     </p>
     <h3>map8</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map8.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map8.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map8.links-%}
     </p>
     <h3>map9</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Map object reference</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ListMap.attributes.map9.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map9.images data=site.data.scene-classes.maps.ListMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map9.links-%}
     </p>
   </p>
 </details>

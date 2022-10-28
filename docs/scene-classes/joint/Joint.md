@@ -8,22 +8,8 @@ title: Joint
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Joint
-{%assign image_path=site.data.scene-classes.joint.Joint.image_path%}
-{%if site.data.scene-classes.joint.Joint.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.joint.Joint.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.joint.Joint.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.joint.Joint.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.joint.Joint.gallery data=site.data.scene-classes.joint.Joint-%}
+{%include see-also.html links=site.data.scene-classes.joint.Joint.links-%}
 ---
 ## Attribute Reference
 
@@ -36,10 +22,8 @@ title: Joint
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.joint.Joint.attributes.node_xform.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.joint.Joint.attributes.node_xform.images data=site.data.scene-classes.joint.Joint-%}
+      {%include see-also.html links=site.data.scene-classes.joint.Joint.attributes.node_xform.links-%}
     </p>
   </p>
 </details>

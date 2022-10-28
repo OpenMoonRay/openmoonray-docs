@@ -8,22 +8,8 @@ title: DomeMaster3DCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DomeMaster3DCamera
-{%assign image_path=site.data.scene-classes.cameras.DomeMaster3DCamera.image_path%}
-{%if site.data.scene-classes.cameras.DomeMaster3DCamera.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.cameras.DomeMaster3DCamera.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.cameras.DomeMaster3DCamera.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.cameras.DomeMaster3DCamera.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.gallery data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+{%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: DomeMaster3DCamera
       <b>Float</b>
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.far.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.far.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.far.links-%}
     </p>
     <h3>near</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.links-%}
     </p>
   </p>
 </details>
@@ -61,30 +43,24 @@ title: DomeMaster3DCamera
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_bias.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_bias.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_bias.links-%}
     </p>
     <h3>mb_shutter_close</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_close.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_close.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_close.links-%}
     </p>
     <h3>mb_shutter_open</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_open.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_open.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_open.links-%}
     </p>
   </p>
 </details>
@@ -96,10 +72,8 @@ title: DomeMaster3DCamera
       <b>String</b>
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.pixel_sample_map.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.pixel_sample_map.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.pixel_sample_map.links-%}
     </p>
   </p>
 </details>
@@ -111,40 +85,32 @@ title: DomeMaster3DCamera
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.head_tilt_map.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.head_tilt_map.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.head_tilt_map.links-%}
     </p>
     <h3>interocular_distance_map_file_name</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.interocular_distance_map_file_name.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.interocular_distance_map_file_name.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.interocular_distance_map_file_name.links-%}
     </p>
     <h3>stereo_convergence_distance</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 360.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_convergence_distance.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_convergence_distance.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_convergence_distance.links-%}
     </p>
     <h3>stereo_interocular_distance</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 6.5
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_interocular_distance.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_interocular_distance.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_interocular_distance.links-%}
     </p>
     <h3>stereo_view</h3>
     <p class="scene-class-type">
@@ -153,20 +119,16 @@ title: DomeMaster3DCamera
           | left view = 1
           | right view = 2
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_view.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_view.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_view.links-%}
     </p>
     <h3>zenith_mode</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.zenith_mode.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.zenith_mode.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.zenith_mode.links-%}
     </p>
   </p>
 </details>
@@ -178,50 +140,40 @@ title: DomeMaster3DCamera
       <b>Float</b>
       default: 60.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_horizontal_angle.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_horizontal_angle.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_horizontal_angle.links-%}
     </p>
     <h3>FOV_vertical_angle</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_vertical_angle.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_vertical_angle.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_vertical_angle.links-%}
     </p>
     <h3>flip_ray_x</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_x.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_x.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_x.links-%}
     </p>
     <h3>flip_ray_y</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_y.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_y.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_y.links-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.node_xform.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.node_xform.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.node_xform.links-%}
     </p>
   </p>
 </details>

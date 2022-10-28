@@ -8,22 +8,8 @@ title: GeometrySet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # GeometrySet
-{%assign image_path=site.data.scene-classes.geometry-set.GeometrySet.image_path%}
-{%if site.data.scene-classes.geometry-set.GeometrySet.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.geometry-set.GeometrySet.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.geometry-set.GeometrySet.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.geometry-set.GeometrySet.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.geometry-set.GeometrySet.gallery data=site.data.scene-classes.geometry-set.GeometrySet-%}
+{%include see-also.html links=site.data.scene-classes.geometry-set.GeometrySet.links-%}
 ---
 ## Attribute Reference
 
@@ -36,10 +22,8 @@ title: GeometrySet
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.images data=site.data.scene-classes.geometry-set.GeometrySet-%}
+      {%include see-also.html links=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.links-%}
     </p>
   </p>
 </details>

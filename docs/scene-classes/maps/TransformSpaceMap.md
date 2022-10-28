@@ -8,22 +8,8 @@ title: TransformSpaceMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TransformSpaceMap
-{%assign image_path=site.data.scene-classes.maps.TransformSpaceMap.image_path%}
-{%if site.data.scene-classes.maps.TransformSpaceMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.TransformSpaceMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.TransformSpaceMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.TransformSpaceMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.gallery data=site.data.scene-classes.maps.TransformSpaceMap-%}
+{%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: TransformSpaceMap
       <b>Camera</b>
       default: None
       <p class="scene-class-comments">an alternate camera to use when transforming to/from 'camera' space</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.camera.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.camera.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.camera.links-%}
     </p>
     <h3>concatenate_instance_level_transforms</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.concatenate_instance_level_transforms.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.concatenate_instance_level_transforms.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.concatenate_instance_level_transforms.links-%}
     </p>
     <h3>from_space</h3>
     <p class="scene-class-type">
@@ -67,20 +49,16 @@ title: TransformSpaceMap
           | instance level 3 = 10
           | instance level 4 = 11
       <p class="scene-class-comments">the space to transform from</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.from_space.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.from_space.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.from_space.links-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input value to transform</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.input.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.input.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.input.links-%}
     </p>
     <h3>input_type</h3>
     <p class="scene-class-type">
@@ -89,20 +67,16 @@ title: TransformSpaceMap
           | vector = 1 (default)
           | normal = 2
       <p class="scene-class-comments">the type of input value provided</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.input_type.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.input_type.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.input_type.links-%}
     </p>
     <h3>object</h3>
     <p class="scene-class-type">
       <b>Geometry</b>
       default: None
       <p class="scene-class-comments">an alternate object to use when transforming to/from 'object' space</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.object.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.object.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.object.links-%}
     </p>
     <h3>to_space</h3>
     <p class="scene-class-type">
@@ -120,60 +94,48 @@ title: TransformSpaceMap
           | instance level 4 = 10
           | instance object transform = 11
       <p class="scene-class-comments">the space to transform to</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.to_space.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.to_space.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.to_space.links-%}
     </p>
     <h3>use_custom_window_coordinates</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">used to apply non-uniform scaling to projection</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.use_custom_window_coordinates.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.use_custom_window_coordinates.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.use_custom_window_coordinates.links-%}
     </p>
     <h3>window_x_max</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">maximum projected x coordinate</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_max.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_max.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_max.links-%}
     </p>
     <h3>window_x_min</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -1.0
       <p class="scene-class-comments">minimum projected x coordinate</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_min.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_min.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_x_min.links-%}
     </p>
     <h3>window_y_max</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">maximum projected y coordinate</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_max.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_max.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_max.links-%}
     </p>
     <h3>window_y_min</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -1.0
       <p class="scene-class-comments">minimum projected y coordinate</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_min.images.
-          path=image_path
-      %}
+      {%include image-gallery.html images=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_min.images data=site.data.scene-classes.maps.TransformSpaceMap-%}
+      {%include see-also.html links=site.data.scene-classes.maps.TransformSpaceMap.attributes.window_y_min.links-%}
     </p>
   </p>
 </details>
