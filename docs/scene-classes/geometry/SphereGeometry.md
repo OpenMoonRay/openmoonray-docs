@@ -8,22 +8,8 @@ title: SphereGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SphereGeometry
-{%assign image_path=site.data.scene-classes.geometry.SphereGeometry.image_path%}
-{%if site.data.scene-classes.geometry.SphereGeometry.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.geometry.SphereGeometry.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.geometry.SphereGeometry.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.geometry.SphereGeometry.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.gallery data=site.data.scene-classes.geometry.SphereGeometry-%}
+{%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.links-%}
 ---
 ## Attribute Reference
 
@@ -36,40 +22,32 @@ title: SphereGeometry
       <b>Float</b>
       default: 360.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.phi_max.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.phi_max.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.phi_max.links heading=4-%}
     </p>
     <h3>radius</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.radius.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.radius.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.radius.links heading=4-%}
     </p>
     <h3>zmax</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.zmax.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.zmax.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.zmax.links heading=4-%}
     </p>
     <h3>zmin</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.zmin.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.zmin.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.zmin.links heading=4-%}
     </p>
   </p>
 </details>
@@ -81,80 +59,64 @@ title: SphereGeometry
       <b>String</b>
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.label.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.label.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.label.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.node_xform.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.node_xform.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.node_xform.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.ray_epsilon.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.ray_epsilon.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.ray_epsilon.links heading=4-%}
     </p>
     <h3>references</h3>
     <p class="scene-class-type">
       <b>Geometry Vector</b>
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.references.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.references.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.references.links heading=4-%}
     </p>
     <h3>reverse_normals</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.reverse_normals.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.reverse_normals.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.reverse_normals.links heading=4-%}
     </p>
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_exclusion_mappings.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_exclusion_mappings.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
     </p>
     <h3>shadow_ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_ray_epsilon.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_ray_epsilon.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
     </p>
     <h3>shadow_receiver_label</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_receiver_label.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_receiver_label.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.shadow_receiver_label.links heading=4-%}
     </p>
     <h3>side_type</h3>
     <p class="scene-class-type">
@@ -163,110 +125,88 @@ title: SphereGeometry
           | force single-sided = 1
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.side_type.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.side_type.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.side_type.links heading=4-%}
     </p>
     <h3>static</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.static.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.static.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.static.links heading=4-%}
     </p>
     <h3>visible_diffuse_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_diffuse_reflection.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_diffuse_reflection.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
     </p>
     <h3>visible_diffuse_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_diffuse_transmission.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_diffuse_transmission.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
     </p>
     <h3>visible_glossy_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_glossy_reflection.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_glossy_reflection.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_glossy_reflection.links heading=4-%}
     </p>
     <h3>visible_glossy_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_glossy_transmission.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_glossy_transmission.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_glossy_transmission.links heading=4-%}
     </p>
     <h3>visible_in_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_in_camera.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_in_camera.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_in_camera.links heading=4-%}
     </p>
     <h3>visible_mirror_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_mirror_reflection.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_mirror_reflection.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_mirror_reflection.links heading=4-%}
     </p>
     <h3>visible_mirror_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_mirror_transmission.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_mirror_transmission.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_mirror_transmission.links heading=4-%}
     </p>
     <h3>visible_shadow</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_shadow.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_shadow.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_shadow.links heading=4-%}
     </p>
     <h3>visible_volume</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_volume.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_volume.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.visible_volume.links heading=4-%}
     </p>
   </p>
 </details>

@@ -8,22 +8,8 @@ title: RampDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RampDisplayFilter
-{%assign image_path=site.data.scene-classes.display-filters.RampDisplayFilter.image_path%}
-{%if site.data.scene-classes.display-filters.RampDisplayFilter.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.display-filters.RampDisplayFilter.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.display-filters.RampDisplayFilter.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.display-filters.RampDisplayFilter.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.gallery data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+{%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: RampDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.invert_mask.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.mix.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -61,30 +43,24 @@ title: RampDisplayFilter
       <b>RgbVector</b>
       default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.colors.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.colors.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.colors.links heading=4-%}
     </p>
     <h3>interpolations</h3>
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.interpolations.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.interpolations.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.interpolations.links heading=4-%}
     </p>
     <h3>positions</h3>
     <p class="scene-class-type">
       <b>FloatVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Color ramp</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.positions.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.positions.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.positions.links heading=4-%}
     </p>
   </p>
 </details>
@@ -96,10 +72,8 @@ title: RampDisplayFilter
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">input to the input ramp</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.input.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>ramp_type</h3>
     <p class="scene-class-type">
@@ -114,10 +88,8 @@ title: RampDisplayFilter
           | four_corner_ramp = 7
           | input_ramp = 8
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.ramp_type.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.ramp_type.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.ramp_type.links heading=4-%}
     </p>
   </p>
 </details>
@@ -129,10 +101,8 @@ title: RampDisplayFilter
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.mask.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.RampDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.RampDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>
 </details>

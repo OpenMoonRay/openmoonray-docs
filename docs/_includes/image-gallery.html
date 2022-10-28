@@ -2,7 +2,7 @@
 <div class="image-gallery cf">
 {%- for img in include.images -%}
   <div>
-    <img src="{{site.baseurl}}/{{include.path}}/{{img}}">
+    <img src="{{site.baseurl}}/{{include.data.image_path}}/{{img.image}}" alt="{{img.text}}">
   </div>
 {% endfor %}
 </div><br>
