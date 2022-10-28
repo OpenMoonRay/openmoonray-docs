@@ -1,20 +1,4 @@
 ---
-image_path: /assets/images/scene-classes/maps/DirectionalMap
 links:
   - text: Baking Textures
     url: /moonray/how-to-guides/baking-textures
-gallery:
-  - scene1.jpg
-  - scene2.jpg
-  - scene3.jpg
-attributes:
-  far:
-    images:
-      - bias_wedge.gif
-    links:
-      - text: far1
-        url: /moonray/how-to-guides/baking-textures
-      - text: far2
-        url: /moonray/how-to-guides/baking-textures
-      - text: far2
-        url: /moonray/how-to-guides/baking-textures
