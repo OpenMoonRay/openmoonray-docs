@@ -23,7 +23,7 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.aspect_ratio.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.aspect_ratio.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.aspect_ratio.links heading=4-%}
     </p>
     <h3>focal_plane_distance</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: SpotLight
       default: 10000000000.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.focal_plane_distance.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.focal_plane_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.focal_plane_distance.links heading=4-%}
     </p>
     <h3>inner_cone_angle</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: SpotLight
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.inner_cone_angle.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.inner_cone_angle.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.inner_cone_angle.links heading=4-%}
     </p>
     <h3>lens_radius</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.lens_radius.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.lens_radius.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.lens_radius.links heading=4-%}
     </p>
     <h3>outer_cone_angle</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: SpotLight
       default: 60.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.outer_cone_angle.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.outer_cone_angle.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.outer_cone_angle.links heading=4-%}
     </p>
   </p>
 </details>
@@ -72,7 +72,7 @@ title: SpotLight
           | ease in/out = 4 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.angle_falloff_type.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.angle_falloff_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.angle_falloff_type.links heading=4-%}
     </p>
     <h3>black_level</h3>
     <p class="scene-class-type">
@@ -80,7 +80,7 @@ title: SpotLight
       default: 0.0010000000475
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.black_level.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.black_level.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.black_level.links heading=4-%}
     </p>
   </p>
 </details>
@@ -93,7 +93,7 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.contrast.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.contrast.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.contrast.links heading=4-%}
     </p>
     <h3>gain</h3>
     <p class="scene-class-type">
@@ -101,7 +101,7 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.gain.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.gain.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.gain.links heading=4-%}
     </p>
     <h3>gamma</h3>
     <p class="scene-class-type">
@@ -109,7 +109,7 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.gamma.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.gamma.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.gamma.links heading=4-%}
     </p>
     <h3>offset</h3>
     <p class="scene-class-type">
@@ -117,7 +117,7 @@ title: SpotLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.offset.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.offset.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.offset.links heading=4-%}
     </p>
     <h3>saturation</h3>
     <p class="scene-class-type">
@@ -125,7 +125,7 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.saturation.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.saturation.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.saturation.links heading=4-%}
     </p>
     <h3>temperature</h3>
     <p class="scene-class-type">
@@ -133,7 +133,7 @@ title: SpotLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color temperature using Nuke-like T/M/E settings</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.temperature.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.temperature.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.temperature.links heading=4-%}
     </p>
     <h3>texture</h3>
     <p class="scene-class-type">
@@ -141,7 +141,7 @@ title: SpotLight
       default: 
       <p class="scene-class-comments">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture.links heading=4-%}
     </p>
     <h3>texture_border_color</h3>
     <p class="scene-class-type">
@@ -149,7 +149,7 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">RGB value used when a texture lookup occurs outside the texture</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_border_color.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_border_color.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_border_color.links heading=4-%}
     </p>
     <h3>texture_coverage</h3>
     <p class="scene-class-type">
@@ -157,7 +157,7 @@ title: SpotLight
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales in (u,v)</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_coverage.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_coverage.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_coverage.links heading=4-%}
     </p>
     <h3>texture_mirror_u</h3>
     <p class="scene-class-type">
@@ -165,7 +165,7 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in u, false =&gt; repeat in u</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_u.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_u.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_u.links heading=4-%}
     </p>
     <h3>texture_mirror_v</h3>
     <p class="scene-class-type">
@@ -173,7 +173,7 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in v, false =&gt; repeat in v</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_v.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_v.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_v.links heading=4-%}
     </p>
     <h3>texture_reps_u</h3>
     <p class="scene-class-type">
@@ -181,7 +181,7 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in u over the scaled texture space</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_u.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_u.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_u.links heading=4-%}
     </p>
     <h3>texture_reps_v</h3>
     <p class="scene-class-type">
@@ -189,7 +189,7 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in v over the scaled texture space</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_v.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_v.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_v.links heading=4-%}
     </p>
     <h3>texture_rotation</h3>
     <p class="scene-class-type">
@@ -197,7 +197,7 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-comments">Clockwise rotation angle in degrees</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_rotation.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_rotation.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_rotation.links heading=4-%}
     </p>
     <h3>texture_translation</h3>
     <p class="scene-class-type">
@@ -205,7 +205,7 @@ title: SpotLight
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_translation.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_translation.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_translation.links heading=4-%}
     </p>
   </p>
 </details>
@@ -218,7 +218,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">apply scene scale variable when normalized</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.apply_scene_scale.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.apply_scene_scale.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.apply_scene_scale.links heading=4-%}
     </p>
     <h3>clear_radius</h3>
     <p class="scene-class-type">
@@ -226,7 +226,7 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-comments">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.clear_radius.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.clear_radius.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.clear_radius.links heading=4-%}
     </p>
     <h3>clear_radius_falloff_distance</h3>
     <p class="scene-class-type">
@@ -234,7 +234,7 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-comments">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_falloff_distance.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_falloff_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_falloff_distance.links heading=4-%}
     </p>
     <h3>clear_radius_interpolation_type</h3>
     <p class="scene-class-type">
@@ -245,7 +245,7 @@ title: SpotLight
           | smoothstep = 3
       <p class="scene-class-comments">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_interpolation_type.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_interpolation_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_interpolation_type.links heading=4-%}
     </p>
     <h3>color</h3>
     <p class="scene-class-type">
@@ -253,7 +253,7 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.color.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.color.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.color.links heading=4-%}
     </p>
     <h3>exposure</h3>
     <p class="scene-class-type">
@@ -261,7 +261,7 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.exposure.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.exposure.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.exposure.links heading=4-%}
     </p>
     <h3>intensity</h3>
     <p class="scene-class-type">
@@ -269,7 +269,7 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.intensity.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.intensity.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.intensity.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
@@ -277,7 +277,7 @@ title: SpotLight
       default: 
       <p class="scene-class-comments">label used in light aov expressions</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.label.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.label.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.label.links heading=4-%}
     </p>
     <h3>max_shadow_distance</h3>
     <p class="scene-class-type">
@@ -285,7 +285,7 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.max_shadow_distance.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.max_shadow_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.max_shadow_distance.links heading=4-%}
     </p>
     <h3>mb</h3>
     <p class="scene-class-type">
@@ -293,7 +293,7 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">Does light motion affect motion-blur?</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.mb.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.mb.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.mb.links heading=4-%}
     </p>
     <h3>normalized</h3>
     <p class="scene-class-type">
@@ -301,7 +301,7 @@ title: SpotLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.normalized.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.normalized.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.normalized.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
@@ -309,7 +309,7 @@ title: SpotLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.on.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.on.links heading=4-%}
     </p>
     <h3>presence_shadows</h3>
     <p class="scene-class-type">
@@ -319,7 +319,7 @@ title: SpotLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.presence_shadows.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.presence_shadows.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.presence_shadows.links heading=4-%}
     </p>
     <h3>ray_termination</h3>
     <p class="scene-class-type">
@@ -327,7 +327,7 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.ray_termination.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.ray_termination.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.ray_termination.links heading=4-%}
     </p>
     <h3>texture_filter</h3>
     <p class="scene-class-type">
@@ -338,7 +338,7 @@ title: SpotLight
           | bilinear with nearest mip = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.texture_filter.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_filter.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.texture_filter.links heading=4-%}
     </p>
     <h3>visible_in_camera</h3>
     <p class="scene-class-type">
@@ -348,7 +348,7 @@ title: SpotLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_in_camera.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_in_camera.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_in_camera.links heading=4-%}
     </p>
   </p>
 </details>
@@ -361,7 +361,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse reflection</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_reflection.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_reflection.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_reflection.links heading=4-%}
     </p>
     <h3>visible_diffuse_transmission</h3>
     <p class="scene-class-type">
@@ -369,7 +369,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse transmission</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_transmission.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_transmission.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_transmission.links heading=4-%}
     </p>
     <h3>visible_glossy_reflection</h3>
     <p class="scene-class-type">
@@ -377,7 +377,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy reflection.</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_reflection.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_reflection.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_reflection.links heading=4-%}
     </p>
     <h3>visible_glossy_transmission</h3>
     <p class="scene-class-type">
@@ -385,7 +385,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy transmission (refraction).</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_transmission.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_transmission.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_transmission.links heading=4-%}
     </p>
     <h3>visible_mirror_reflection</h3>
     <p class="scene-class-type">
@@ -393,7 +393,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror reflection.</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_reflection.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_reflection.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_reflection.links heading=4-%}
     </p>
     <h3>visible_mirror_transmission</h3>
     <p class="scene-class-type">
@@ -401,7 +401,7 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror transmission (refraction).</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_transmission.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_transmission.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_transmission.links heading=4-%}
     </p>
   </p>
 </details>
@@ -414,7 +414,7 @@ title: SpotLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.light_filters.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.light_filters.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.light_filters.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
@@ -422,7 +422,7 @@ title: SpotLight
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.lights.SpotLight.attributes.node_xform.images data=site.data.scene-classes.lights.SpotLight-%}
-      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.node_xform.links-%}
+      {%include see-also.html links=site.data.scene-classes.lights.SpotLight.attributes.node_xform.links heading=4-%}
     </p>
   </p>
 </details>

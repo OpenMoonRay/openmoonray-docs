@@ -28,7 +28,7 @@ title: ProjectCylindricalMap
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.TRS_order.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.TRS_order.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.TRS_order.links heading=4-%}
     </p>
     <h3>black_outside_projection</h3>
     <p class="scene-class-type">
@@ -36,7 +36,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.black_outside_projection.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.black_outside_projection.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.black_outside_projection.links heading=4-%}
     </p>
     <h3>project_on_inward_surfaces</h3>
     <p class="scene-class-type">
@@ -44,7 +44,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">enables projection on surfaces with inward facing normals</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.links heading=4-%}
     </p>
     <h3>project_on_outward_surfaces</h3>
     <p class="scene-class-type">
@@ -52,7 +52,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">enables projection on surfaces with outward facing normals</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.links heading=4-%}
     </p>
     <h3>projection_matrix</h3>
     <p class="scene-class-type">
@@ -60,7 +60,7 @@ title: ProjectCylindricalMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_matrix.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_matrix.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_matrix.links heading=4-%}
     </p>
     <h3>projection_mode</h3>
     <p class="scene-class-type">
@@ -70,7 +70,7 @@ title: ProjectCylindricalMap
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_mode.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_mode.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projection_mode.links heading=4-%}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
@@ -78,7 +78,7 @@ title: ProjectCylindricalMap
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projector.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projector.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.projector.links heading=4-%}
     </p>
     <h3>rotate</h3>
     <p class="scene-class-type">
@@ -86,7 +86,7 @@ title: ProjectCylindricalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotate.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotate.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotate.links heading=4-%}
     </p>
     <h3>rotation_order</h3>
     <p class="scene-class-type">
@@ -99,7 +99,7 @@ title: ProjectCylindricalMap
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotation_order.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotation_order.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.rotation_order.links heading=4-%}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
@@ -107,7 +107,7 @@ title: ProjectCylindricalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.scale.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.scale.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.scale.links heading=4-%}
     </p>
     <h3>translate</h3>
     <p class="scene-class-type">
@@ -115,7 +115,7 @@ title: ProjectCylindricalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.translate.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.translate.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.translate.links heading=4-%}
     </p>
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
@@ -123,7 +123,7 @@ title: ProjectCylindricalMap
       default: False
       <p class="scene-class-comments">use reference space</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.use_reference_space.images data=site.data.scene-classes.maps.ProjectCylindricalMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.use_reference_space.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ProjectCylindricalMap.attributes.use_reference_space.links heading=4-%}
     </p>
   </p>
 </details>

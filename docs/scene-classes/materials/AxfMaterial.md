@@ -23,7 +23,7 @@ title: AxfMaterial
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.links heading=4-%}
     </p>
     <h3>normal</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: AxfMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">bind the 'Normal' texture here, the multiplier is ignored. The state's normal is used when no texture is bound.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.normal.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.normal.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.normal.links heading=4-%}
     </p>
     <h3>normal_space</h3>
     <p class="scene-class-type">
@@ -40,7 +40,7 @@ title: AxfMaterial
           | render = 1
       <p class="scene-class-comments">Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.links heading=4-%}
     </p>
   </p>
 </details>
@@ -53,7 +53,7 @@ title: AxfMaterial
       default: 1.0
       <p class="scene-class-comments">bind the 'Alpha' texture here</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.links heading=4-%}
     </p>
     <h3>aniso_rotation</h3>
     <p class="scene-class-type">
@@ -61,7 +61,7 @@ title: AxfMaterial
       default: 0.0
       <p class="scene-class-comments">bind the 'AnisoRotation' texture here</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.links heading=4-%}
     </p>
     <h3>casts_caustics</h3>
     <p class="scene-class-type">
@@ -69,7 +69,7 @@ title: AxfMaterial
       default: False
       <p class="scene-class-comments">allows continuation of caustic light paths</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.links heading=4-%}
     </p>
     <h3>diffuse_color</h3>
     <p class="scene-class-type">
@@ -77,7 +77,7 @@ title: AxfMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the 'DiffuseColor' texture here</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.links heading=4-%}
     </p>
     <h3>extra_aovs</h3>
     <p class="scene-class-type">
@@ -85,7 +85,7 @@ title: AxfMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>fresnel</h3>
     <p class="scene-class-type">
@@ -93,7 +93,7 @@ title: AxfMaterial
       default: 1.0
       <p class="scene-class-comments">bind the 'Fresnel' texture here</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
@@ -101,7 +101,7 @@ title: AxfMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.label.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.label.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
@@ -109,7 +109,7 @@ title: AxfMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.priority.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.priority.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.priority.links heading=4-%}
     </p>
     <h3>specular_color</h3>
     <p class="scene-class-type">
@@ -117,7 +117,7 @@ title: AxfMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the 'SpecularColor' texture here</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.links heading=4-%}
     </p>
     <h3>specular_lobe</h3>
     <p class="scene-class-type">
@@ -125,7 +125,7 @@ title: AxfMaterial
       default: [ 1, 1 ]
       <p class="scene-class-comments">bind the 'SpecularLobe' texture here</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.images data=site.data.scene-classes.materials.AxfMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.links heading=4-%}
     </p>
   </p>
 </details>

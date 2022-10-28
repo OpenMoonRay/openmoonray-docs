@@ -23,7 +23,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.camera_ray_material.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.camera_ray_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.camera_ray_material.links heading=4-%}
     </p>
     <h3>cutout_camera_rays</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: RaySwitchMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.cutout_camera_rays.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.cutout_camera_rays.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.cutout_camera_rays.links heading=4-%}
     </p>
     <h3>default_material</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.default_material.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.default_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.default_material.links heading=4-%}
     </p>
     <h3>extra_aovs</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.extra_aovs.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.extra_aovs.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>indirect_diffuse_ray_material</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.links heading=4-%}
     </p>
     <h3>indirect_glossy_ray_material</h3>
     <p class="scene-class-type">
@@ -63,7 +63,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.links heading=4-%}
     </p>
     <h3>indirect_mirror_ray_material</h3>
     <p class="scene-class-type">
@@ -71,7 +71,7 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
@@ -79,7 +79,7 @@ title: RaySwitchMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.label.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.label.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
@@ -87,7 +87,7 @@ title: RaySwitchMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.priority.images data=site.data.scene-classes.materials.RaySwitchMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.priority.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.RaySwitchMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>
 </details>

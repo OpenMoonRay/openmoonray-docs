@@ -23,7 +23,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map0.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map0.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map0.links heading=4-%}
     </p>
     <h3>map1</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map1.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map1.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map1.links heading=4-%}
     </p>
     <h3>map10</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map10.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map10.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map10.links heading=4-%}
     </p>
     <h3>map11</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map11.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map11.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map11.links heading=4-%}
     </p>
     <h3>map12</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map12.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map12.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map12.links heading=4-%}
     </p>
     <h3>map13</h3>
     <p class="scene-class-type">
@@ -63,7 +63,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map13.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map13.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map13.links heading=4-%}
     </p>
     <h3>map14</h3>
     <p class="scene-class-type">
@@ -71,7 +71,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map14.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map14.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map14.links heading=4-%}
     </p>
     <h3>map15</h3>
     <p class="scene-class-type">
@@ -79,7 +79,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map15.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map15.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map15.links heading=4-%}
     </p>
     <h3>map16</h3>
     <p class="scene-class-type">
@@ -87,7 +87,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map16.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map16.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map16.links heading=4-%}
     </p>
     <h3>map17</h3>
     <p class="scene-class-type">
@@ -95,7 +95,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map17.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map17.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map17.links heading=4-%}
     </p>
     <h3>map18</h3>
     <p class="scene-class-type">
@@ -103,7 +103,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map18.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map18.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map18.links heading=4-%}
     </p>
     <h3>map19</h3>
     <p class="scene-class-type">
@@ -111,7 +111,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map19.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map19.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map19.links heading=4-%}
     </p>
     <h3>map2</h3>
     <p class="scene-class-type">
@@ -119,7 +119,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map2.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map2.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map2.links heading=4-%}
     </p>
     <h3>map3</h3>
     <p class="scene-class-type">
@@ -127,7 +127,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map3.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map3.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map3.links heading=4-%}
     </p>
     <h3>map4</h3>
     <p class="scene-class-type">
@@ -135,7 +135,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map4.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map4.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map4.links heading=4-%}
     </p>
     <h3>map5</h3>
     <p class="scene-class-type">
@@ -143,7 +143,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map5.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map5.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map5.links heading=4-%}
     </p>
     <h3>map6</h3>
     <p class="scene-class-type">
@@ -151,7 +151,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map6.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map6.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map6.links heading=4-%}
     </p>
     <h3>map7</h3>
     <p class="scene-class-type">
@@ -159,7 +159,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map7.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map7.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map7.links heading=4-%}
     </p>
     <h3>map8</h3>
     <p class="scene-class-type">
@@ -167,7 +167,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map8.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map8.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map8.links heading=4-%}
     </p>
     <h3>map9</h3>
     <p class="scene-class-type">
@@ -175,7 +175,7 @@ title: ListMap
       default: None
       <p class="scene-class-comments">Map object reference</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ListMap.attributes.map9.images data=site.data.scene-classes.maps.ListMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map9.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ListMap.attributes.map9.links heading=4-%}
     </p>
   </p>
 </details>

@@ -23,7 +23,7 @@ title: CombineLightFilter
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.links heading=4-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -35,7 +35,7 @@ title: CombineLightFilter
           | subtract = 4
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
@@ -43,7 +43,7 @@ title: CombineLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.links heading=4-%}
     </p>
   </p>
 </details>

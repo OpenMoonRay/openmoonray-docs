@@ -25,7 +25,7 @@ title: HairLayerMaterial
           | HSL = 2
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.blend_color_space.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.blend_color_space.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.blend_color_space.links heading=4-%}
     </p>
     <h3>fallback_bssrdf</h3>
     <p class="scene-class-type">
@@ -34,7 +34,7 @@ title: HairLayerMaterial
           | dipole = 1
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.fallback_bssrdf.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.fallback_bssrdf.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.fallback_bssrdf.links heading=4-%}
     </p>
   </p>
 </details>
@@ -47,7 +47,7 @@ title: HairLayerMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.extra_aovs.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.extra_aovs.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>hair_material_A</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: HairLayerMaterial
       default: None
       <p class="scene-class-comments">foreground hair material</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_A.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_A.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_A.links heading=4-%}
     </p>
     <h3>hair_material_B</h3>
     <p class="scene-class-type">
@@ -63,7 +63,7 @@ title: HairLayerMaterial
       default: None
       <p class="scene-class-comments">background hair material</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_B.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_B.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_B.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
@@ -71,7 +71,7 @@ title: HairLayerMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.label.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.label.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -79,7 +79,7 @@ title: HairLayerMaterial
       default: 1.0
       <p class="scene-class-comments">foreground hair material weight</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.mask.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.mask.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
@@ -87,7 +87,7 @@ title: HairLayerMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.priority.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.priority.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>
 </details>

@@ -23,7 +23,7 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.LayerMap.attributes.input_A.images data=site.data.scene-classes.maps.LayerMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.input_A.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.input_A.links heading=4-%}
     </p>
     <h3>input_B</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.LayerMap.attributes.input_B.images data=site.data.scene-classes.maps.LayerMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.input_B.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.input_B.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: LayerMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.LayerMap.attributes.mask.images data=site.data.scene-classes.maps.LayerMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.mask.links heading=4-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -62,7 +62,7 @@ title: LayerMap
           | exclusion = 15
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.LayerMap.attributes.mode.images data=site.data.scene-classes.maps.LayerMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.mode.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.LayerMap.attributes.mode.links heading=4-%}
     </p>
   </p>
 </details>

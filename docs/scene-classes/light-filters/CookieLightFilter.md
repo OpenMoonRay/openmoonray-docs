@@ -23,7 +23,7 @@ title: CookieLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_far_distance.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_far_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_far_distance.links heading=4-%}
     </p>
     <h3>blur_far_value</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_far_value.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_far_value.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_far_value.links heading=4-%}
     </p>
     <h3>blur_mid_value</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_mid_value.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_mid_value.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_mid_value.links heading=4-%}
     </p>
     <h3>blur_midpoint</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: CookieLightFilter
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_midpoint.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_midpoint.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_midpoint.links heading=4-%}
     </p>
     <h3>blur_near_distance</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_near_distance.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_near_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_near_distance.links heading=4-%}
     </p>
     <h3>blur_near_value</h3>
     <p class="scene-class-type">
@@ -63,7 +63,7 @@ title: CookieLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_near_value.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_near_value.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_near_value.links heading=4-%}
     </p>
     <h3>blur_type</h3>
     <p class="scene-class-type">
@@ -72,7 +72,7 @@ title: CookieLightFilter
           | circular = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_type.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.blur_type.links heading=4-%}
     </p>
     <h3>density</h3>
     <p class="scene-class-type">
@@ -80,7 +80,7 @@ title: CookieLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.density.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.density.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.density.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
@@ -88,7 +88,7 @@ title: CookieLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.invert.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.invert.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.invert.links heading=4-%}
     </p>
     <h3>outside_projection</h3>
     <p class="scene-class-type">
@@ -98,7 +98,7 @@ title: CookieLightFilter
           | default = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.outside_projection.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.outside_projection.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.outside_projection.links heading=4-%}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
@@ -106,7 +106,7 @@ title: CookieLightFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector.links heading=4-%}
     </p>
     <h3>texture_map</h3>
     <p class="scene-class-type">
@@ -114,7 +114,7 @@ title: CookieLightFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.texture_map.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.texture_map.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.texture_map.links heading=4-%}
     </p>
   </p>
 </details>
@@ -127,7 +127,7 @@ title: CookieLightFilter
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.node_xform.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.node_xform.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.node_xform.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
@@ -135,7 +135,7 @@ title: CookieLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.on.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.on.links heading=4-%}
     </p>
     <h3>projector_film_width_aperture</h3>
     <p class="scene-class-type">
@@ -143,7 +143,7 @@ title: CookieLightFilter
       default: 24.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_film_width_aperture.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_film_width_aperture.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_film_width_aperture.links heading=4-%}
     </p>
     <h3>projector_focal</h3>
     <p class="scene-class-type">
@@ -151,7 +151,7 @@ title: CookieLightFilter
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_focal.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_focal.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_focal.links heading=4-%}
     </p>
     <h3>projector_pixel_aspect_ratio</h3>
     <p class="scene-class-type">
@@ -159,7 +159,7 @@ title: CookieLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_pixel_aspect_ratio.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_pixel_aspect_ratio.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_pixel_aspect_ratio.links heading=4-%}
     </p>
     <h3>projector_type</h3>
     <p class="scene-class-type">
@@ -168,7 +168,7 @@ title: CookieLightFilter
           | orthographic = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_type.images data=site.data.scene-classes.light-filters.CookieLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.attributes.projector_type.links heading=4-%}
     </p>
   </p>
 </details>

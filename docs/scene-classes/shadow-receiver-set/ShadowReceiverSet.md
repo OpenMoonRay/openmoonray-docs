@@ -23,7 +23,7 @@ title: ShadowReceiverSet
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.images data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
-      {%include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.links-%}
+      {%include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.links heading=4-%}
     </p>
   </p>
 </details>
@@ -36,7 +36,7 @@ title: ShadowReceiverSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
-      {%include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.links-%}
+      {%include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.links heading=4-%}
     </p>
   </p>
 </details>

@@ -23,7 +23,7 @@ title: DomeMaster3DCamera
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.far.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.far.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.far.links heading=4-%}
     </p>
     <h3>near</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: DomeMaster3DCamera
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.links heading=4-%}
     </p>
   </p>
 </details>
@@ -44,7 +44,7 @@ title: DomeMaster3DCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_bias.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_bias.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_bias.links heading=4-%}
     </p>
     <h3>mb_shutter_close</h3>
     <p class="scene-class-type">
@@ -52,7 +52,7 @@ title: DomeMaster3DCamera
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_close.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_close.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_close.links heading=4-%}
     </p>
     <h3>mb_shutter_open</h3>
     <p class="scene-class-type">
@@ -60,7 +60,7 @@ title: DomeMaster3DCamera
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_open.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_open.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.mb_shutter_open.links heading=4-%}
     </p>
   </p>
 </details>
@@ -73,7 +73,7 @@ title: DomeMaster3DCamera
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.pixel_sample_map.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.pixel_sample_map.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>
   </p>
 </details>
@@ -86,7 +86,7 @@ title: DomeMaster3DCamera
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.head_tilt_map.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.head_tilt_map.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.head_tilt_map.links heading=4-%}
     </p>
     <h3>interocular_distance_map_file_name</h3>
     <p class="scene-class-type">
@@ -94,7 +94,7 @@ title: DomeMaster3DCamera
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.interocular_distance_map_file_name.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.interocular_distance_map_file_name.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.interocular_distance_map_file_name.links heading=4-%}
     </p>
     <h3>stereo_convergence_distance</h3>
     <p class="scene-class-type">
@@ -102,7 +102,7 @@ title: DomeMaster3DCamera
       default: 360.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_convergence_distance.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_convergence_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_convergence_distance.links heading=4-%}
     </p>
     <h3>stereo_interocular_distance</h3>
     <p class="scene-class-type">
@@ -110,7 +110,7 @@ title: DomeMaster3DCamera
       default: 6.5
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_interocular_distance.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_interocular_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_interocular_distance.links heading=4-%}
     </p>
     <h3>stereo_view</h3>
     <p class="scene-class-type">
@@ -120,7 +120,7 @@ title: DomeMaster3DCamera
           | right view = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_view.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_view.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.stereo_view.links heading=4-%}
     </p>
     <h3>zenith_mode</h3>
     <p class="scene-class-type">
@@ -128,7 +128,7 @@ title: DomeMaster3DCamera
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.zenith_mode.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.zenith_mode.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.zenith_mode.links heading=4-%}
     </p>
   </p>
 </details>
@@ -141,7 +141,7 @@ title: DomeMaster3DCamera
       default: 60.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_horizontal_angle.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_horizontal_angle.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_horizontal_angle.links heading=4-%}
     </p>
     <h3>FOV_vertical_angle</h3>
     <p class="scene-class-type">
@@ -149,7 +149,7 @@ title: DomeMaster3DCamera
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_vertical_angle.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_vertical_angle.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.FOV_vertical_angle.links heading=4-%}
     </p>
     <h3>flip_ray_x</h3>
     <p class="scene-class-type">
@@ -157,7 +157,7 @@ title: DomeMaster3DCamera
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_x.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_x.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_x.links heading=4-%}
     </p>
     <h3>flip_ray_y</h3>
     <p class="scene-class-type">
@@ -165,7 +165,7 @@ title: DomeMaster3DCamera
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_y.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_y.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.flip_ray_y.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
@@ -173,7 +173,7 @@ title: DomeMaster3DCamera
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.node_xform.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
-      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.node_xform.links-%}
+      {%include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.node_xform.links heading=4-%}
     </p>
   </p>
 </details>

@@ -23,7 +23,7 @@ title: IntensityLightFilter
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.color.images data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.color.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.color.links heading=4-%}
     </p>
     <h3>exposure</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: IntensityLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.exposure.images data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.exposure.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.exposure.links heading=4-%}
     </p>
     <h3>intensity</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: IntensityLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.intensity.images data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.intensity.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.intensity.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: IntensityLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.invert.images data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.invert.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.invert.links heading=4-%}
     </p>
   </p>
 </details>
@@ -60,7 +60,7 @@ title: IntensityLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.on.images data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.attributes.on.links heading=4-%}
     </p>
   </p>
 </details>

@@ -23,7 +23,7 @@ title: ShadowSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.shadow-set.ShadowSet.attributes.lights.images data=site.data.scene-classes.shadow-set.ShadowSet-%}
-      {%include see-also.html links=site.data.scene-classes.shadow-set.ShadowSet.attributes.lights.links-%}
+      {%include see-also.html links=site.data.scene-classes.shadow-set.ShadowSet.attributes.lights.links heading=4-%}
     </p>
   </p>
 </details>

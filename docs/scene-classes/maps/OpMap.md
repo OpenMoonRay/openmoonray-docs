@@ -23,7 +23,7 @@ title: OpMap
       default: False
       <p class="scene-class-comments">if on, the result is clamped to 0 - 1</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.clamp.images data=site.data.scene-classes.maps.OpMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.clamp.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.clamp.links heading=4-%}
     </p>
     <h3>op1</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: OpMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the first operand</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op1.images data=site.data.scene-classes.maps.OpMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op1.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op1.links heading=4-%}
     </p>
     <h3>op1_factor</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: OpMap
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op1</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op1_factor.images data=site.data.scene-classes.maps.OpMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op1_factor.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op1_factor.links heading=4-%}
     </p>
     <h3>op2</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: OpMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the second operand</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op2.images data=site.data.scene-classes.maps.OpMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op2.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op2.links heading=4-%}
     </p>
     <h3>op2_factor</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: OpMap
       default: 1.0
       <p class="scene-class-comments">a scalar multiplier on op2</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.op2_factor.images data=site.data.scene-classes.maps.OpMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op2_factor.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.op2_factor.links heading=4-%}
     </p>
     <h3>operation</h3>
     <p class="scene-class-type">
@@ -101,7 +101,7 @@ title: OpMap
           | bitwise_or = 38
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.OpMap.attributes.operation.images data=site.data.scene-classes.maps.OpMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.operation.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.OpMap.attributes.operation.links heading=4-%}
     </p>
   </p>
 </details>

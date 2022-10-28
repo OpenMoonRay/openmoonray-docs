@@ -24,7 +24,7 @@ title: VdbLightFilter
           | circular = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_type.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_type.links heading=4-%}
     </p>
     <h3>blur_value</h3>
     <p class="scene-class-type">
@@ -32,7 +32,7 @@ title: VdbLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_value.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_value.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.blur_value.links heading=4-%}
     </p>
     <h3>color_tint</h3>
     <p class="scene-class-type">
@@ -40,7 +40,7 @@ title: VdbLightFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.color_tint.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.color_tint.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.color_tint.links heading=4-%}
     </p>
     <h3>density_grid_name</h3>
     <p class="scene-class-type">
@@ -48,7 +48,7 @@ title: VdbLightFilter
       default: 
       <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_grid_name.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_grid_name.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_grid_name.links heading=4-%}
     </p>
     <h3>density_remap_input_max</h3>
     <p class="scene-class-type">
@@ -56,7 +56,7 @@ title: VdbLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_max.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_max.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_max.links heading=4-%}
     </p>
     <h3>density_remap_input_min</h3>
     <p class="scene-class-type">
@@ -64,7 +64,7 @@ title: VdbLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_min.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_min.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_input_min.links heading=4-%}
     </p>
     <h3>density_remap_inputs</h3>
     <p class="scene-class-type">
@@ -72,7 +72,7 @@ title: VdbLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_inputs.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_inputs.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_inputs.links heading=4-%}
     </p>
     <h3>density_remap_interpolation_types</h3>
     <p class="scene-class-type">
@@ -80,7 +80,7 @@ title: VdbLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.links heading=4-%}
     </p>
     <h3>density_remap_output_max</h3>
     <p class="scene-class-type">
@@ -88,7 +88,7 @@ title: VdbLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_max.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_max.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_max.links heading=4-%}
     </p>
     <h3>density_remap_output_min</h3>
     <p class="scene-class-type">
@@ -96,7 +96,7 @@ title: VdbLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_min.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_min.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_output_min.links heading=4-%}
     </p>
     <h3>density_remap_outputs</h3>
     <p class="scene-class-type">
@@ -104,7 +104,7 @@ title: VdbLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_outputs.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_outputs.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_remap_outputs.links heading=4-%}
     </p>
     <h3>density_rescale_enable</h3>
     <p class="scene-class-type">
@@ -112,7 +112,7 @@ title: VdbLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_rescale_enable.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_rescale_enable.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.density_rescale_enable.links heading=4-%}
     </p>
     <h3>invert_density</h3>
     <p class="scene-class-type">
@@ -120,7 +120,7 @@ title: VdbLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.invert_density.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.invert_density.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.invert_density.links heading=4-%}
     </p>
     <h3>vdb_interpolation_type</h3>
     <p class="scene-class-type">
@@ -130,7 +130,7 @@ title: VdbLightFilter
           | quadratic = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_interpolation_type.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_interpolation_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_interpolation_type.links heading=4-%}
     </p>
     <h3>vdb_map</h3>
     <p class="scene-class-type">
@@ -138,7 +138,7 @@ title: VdbLightFilter
       default: 
       <p class="scene-class-comments">Supply the path to the vdb</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_map.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_map.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.vdb_map.links heading=4-%}
     </p>
   </p>
 </details>
@@ -151,7 +151,7 @@ title: VdbLightFilter
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.node_xform.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.node_xform.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.node_xform.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
@@ -159,7 +159,7 @@ title: VdbLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-filters.VdbLightFilter.attributes.on.images data=site.data.scene-classes.light-filters.VdbLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-filters.VdbLightFilter.attributes.on.links heading=4-%}
     </p>
   </p>
 </details>

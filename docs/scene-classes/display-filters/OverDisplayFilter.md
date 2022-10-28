@@ -23,7 +23,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">alpha for over operation</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.links heading=4-%}
     </p>
     <h3>input_bottom</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput on bottom</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_bottom.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_bottom.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_bottom.links heading=4-%}
     </p>
     <h3>input_top</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput on top</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_top.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_top.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_top.links heading=4-%}
     </p>
     <h3>invert_alpha</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: OverDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of alpha</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: OverDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>

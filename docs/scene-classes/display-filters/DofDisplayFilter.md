@@ -23,7 +23,7 @@ title: DofDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.invert_mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: DofDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mix.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -44,7 +44,7 @@ title: DofDisplayFilter
       default: 8.0
       <p class="scene-class-comments">aperture in millimeters</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.aperture.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.aperture.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.aperture.links heading=4-%}
     </p>
     <h3>depth</h3>
     <p class="scene-class-type">
@@ -52,7 +52,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">the 'depth' result RenderOutput to sample z depth values from</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.depth.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.depth.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.depth.links heading=4-%}
     </p>
     <h3>focal_length</h3>
     <p class="scene-class-type">
@@ -60,7 +60,7 @@ title: DofDisplayFilter
       default: 30.0
       <p class="scene-class-comments">focal length in millimeters</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focal_length.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focal_length.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focal_length.links heading=4-%}
     </p>
     <h3>focus_distance</h3>
     <p class="scene-class-type">
@@ -68,7 +68,7 @@ title: DofDisplayFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focus_distance.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focus_distance.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.focus_distance.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
@@ -76,7 +76,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput to apply depth of field</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.input.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -84,7 +84,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>use_camera_attributes</h3>
     <p class="scene-class-type">
@@ -92,7 +92,7 @@ title: DofDisplayFilter
       default: True
       <p class="scene-class-comments">read dof attributes from active scene camera</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.use_camera_attributes.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.use_camera_attributes.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.use_camera_attributes.links heading=4-%}
     </p>
   </p>
 </details>

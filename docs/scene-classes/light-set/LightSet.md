@@ -23,7 +23,7 @@ title: LightSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.light-set.LightSet.attributes.lights.images data=site.data.scene-classes.light-set.LightSet-%}
-      {%include see-also.html links=site.data.scene-classes.light-set.LightSet.attributes.lights.links-%}
+      {%include see-also.html links=site.data.scene-classes.light-set.LightSet.attributes.lights.links heading=4-%}
     </p>
   </p>
 </details>

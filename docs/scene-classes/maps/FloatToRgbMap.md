@@ -23,7 +23,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.FloatToRgbMap.attributes.B.images data=site.data.scene-classes.maps.FloatToRgbMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.FloatToRgbMap.attributes.B.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.FloatToRgbMap.attributes.B.links heading=4-%}
     </p>
     <h3>G</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.FloatToRgbMap.attributes.G.images data=site.data.scene-classes.maps.FloatToRgbMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.FloatToRgbMap.attributes.G.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.FloatToRgbMap.attributes.G.links heading=4-%}
     </p>
     <h3>R</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: FloatToRgbMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.FloatToRgbMap.attributes.R.images data=site.data.scene-classes.maps.FloatToRgbMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.FloatToRgbMap.attributes.R.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.FloatToRgbMap.attributes.R.links heading=4-%}
     </p>
   </p>
 </details>

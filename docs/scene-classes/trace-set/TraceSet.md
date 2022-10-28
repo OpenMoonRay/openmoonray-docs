@@ -23,7 +23,7 @@ title: TraceSet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.images data=site.data.scene-classes.trace-set.TraceSet-%}
-      {%include see-also.html links=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.links-%}
+      {%include see-also.html links=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.links heading=4-%}
     </p>
     <h3>parts</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: TraceSet
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.trace-set.TraceSet.attributes.parts.images data=site.data.scene-classes.trace-set.TraceSet-%}
-      {%include see-also.html links=site.data.scene-classes.trace-set.TraceSet.attributes.parts.links-%}
+      {%include see-also.html links=site.data.scene-classes.trace-set.TraceSet.attributes.parts.links heading=4-%}
     </p>
   </p>
 </details>

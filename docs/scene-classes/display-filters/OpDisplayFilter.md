@@ -23,7 +23,7 @@ title: OpDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.invert_mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: OpDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mix.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -44,7 +44,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">first operand</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input1.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input1.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input1.links heading=4-%}
     </p>
     <h3>input2</h3>
     <p class="scene-class-type">
@@ -52,7 +52,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">second operand</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input2.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input2.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input2.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -60,7 +60,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>operation</h3>
     <p class="scene-class-type">
@@ -97,7 +97,7 @@ title: OpDisplayFilter
           | not = 29
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.operation.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.operation.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.operation.links heading=4-%}
     </p>
   </p>
 </details>

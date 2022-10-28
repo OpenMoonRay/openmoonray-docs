@@ -23,7 +23,7 @@ title: ImageDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: ImageDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -49,7 +49,7 @@ title: ImageDisplayFilter
           | no_scale = 5
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.links heading=4-%}
     </p>
     <h3>image_path</h3>
     <p class="scene-class-type">
@@ -57,7 +57,7 @@ title: ImageDisplayFilter
       default: 
       <p class="scene-class-comments">file path to the .exr we want to fit to the plane</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
@@ -65,7 +65,7 @@ title: ImageDisplayFilter
       default: None
       <p class="scene-class-comments">Input buffer</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -73,7 +73,7 @@ title: ImageDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>
 </details>

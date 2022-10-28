@@ -23,7 +23,7 @@ title: HsvToRgbMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.HsvToRgbMap.attributes.input.images data=site.data.scene-classes.maps.HsvToRgbMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.HsvToRgbMap.attributes.input.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.HsvToRgbMap.attributes.input.links heading=4-%}
     </p>
   </p>
 </details>

@@ -23,7 +23,7 @@ title: GeometrySet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.images data=site.data.scene-classes.geometry-set.GeometrySet-%}
-      {%include see-also.html links=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.links-%}
+      {%include see-also.html links=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.links heading=4-%}
     </p>
   </p>
 </details>

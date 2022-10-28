@@ -23,7 +23,7 @@ title: HairColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">multiplies the input channels by the specified value</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.gain.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.gain.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.gain.links heading=4-%}
     </p>
     <h3>hue_shift</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: HairColorCorrectMaterial
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (spectrum range is 0-1)</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.hue_shift.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.hue_shift.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.hue_shift.links heading=4-%}
     </p>
     <h3>saturation</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: HairColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">desaturates the input below 1.0 and adds saturation above 1.0</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.saturation.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.saturation.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.saturation.links heading=4-%}
     </p>
   </p>
 </details>
@@ -52,7 +52,7 @@ title: HairColorCorrectMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.TMI.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.TMI.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.TMI.links heading=4-%}
     </p>
     <h3>TMI_enabled</h3>
     <p class="scene-class-type">
@@ -60,7 +60,7 @@ title: HairColorCorrectMaterial
       default: False
       <p class="scene-class-comments">enables the TMI parameters</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.TMI_enabled.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.TMI_enabled.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.TMI_enabled.links heading=4-%}
     </p>
   </p>
 </details>
@@ -73,7 +73,7 @@ title: HairColorCorrectMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.extra_aovs.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.extra_aovs.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>input_hair_material</h3>
     <p class="scene-class-type">
@@ -81,7 +81,7 @@ title: HairColorCorrectMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.input_hair_material.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.input_hair_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.input_hair_material.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
@@ -89,7 +89,7 @@ title: HairColorCorrectMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.label.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.label.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
@@ -97,7 +97,7 @@ title: HairColorCorrectMaterial
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.mix.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.mix.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.mix.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
@@ -105,7 +105,7 @@ title: HairColorCorrectMaterial
       default: True
       <p class="scene-class-comments">Enable/disable all color corrections</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.on.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.on.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
@@ -113,7 +113,7 @@ title: HairColorCorrectMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.priority.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.priority.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>
 </details>

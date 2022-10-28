@@ -23,7 +23,7 @@ title: WireframeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.WireframeMap.attributes.fill_color.images data=site.data.scene-classes.maps.WireframeMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.fill_color.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.fill_color.links heading=4-%}
     </p>
     <h3>line_color</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: WireframeMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.WireframeMap.attributes.line_color.images data=site.data.scene-classes.maps.WireframeMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.line_color.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.line_color.links heading=4-%}
     </p>
     <h3>line_width</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: WireframeMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.WireframeMap.attributes.line_width.images data=site.data.scene-classes.maps.WireframeMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.line_width.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.line_width.links heading=4-%}
     </p>
     <h3>raster</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: WireframeMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.WireframeMap.attributes.raster.images data=site.data.scene-classes.maps.WireframeMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.raster.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.WireframeMap.attributes.raster.links heading=4-%}
     </p>
   </p>
 </details>

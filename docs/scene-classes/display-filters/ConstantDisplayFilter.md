@@ -23,7 +23,7 @@ title: ConstantDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of mask</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: ConstantDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -44,7 +44,7 @@ title: ConstantDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fill color value</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -52,7 +52,7 @@ title: ConstantDisplayFilter
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>
 </details>

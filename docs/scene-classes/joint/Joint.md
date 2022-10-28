@@ -23,7 +23,7 @@ title: Joint
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.joint.Joint.attributes.node_xform.images data=site.data.scene-classes.joint.Joint-%}
-      {%include see-also.html links=site.data.scene-classes.joint.Joint.attributes.node_xform.links-%}
+      {%include see-also.html links=site.data.scene-classes.joint.Joint.attributes.node_xform.links heading=4-%}
     </p>
   </p>
 </details>

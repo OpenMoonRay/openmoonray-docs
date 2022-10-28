@@ -23,7 +23,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.links heading=4-%}
     </p>
     <h3>clamp</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: ColorCorrectLegacyMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.links heading=4-%}
     </p>
     <h3>contrast</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.links heading=4-%}
     </p>
     <h3>hue</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
@@ -55,7 +55,7 @@ title: ColorCorrectLegacyMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
@@ -63,7 +63,7 @@ title: ColorCorrectLegacyMap
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
@@ -71,7 +71,7 @@ title: ColorCorrectLegacyMap
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.links heading=4-%}
     </p>
     <h3>monochrome</h3>
     <p class="scene-class-type">
@@ -86,7 +86,7 @@ title: ColorCorrectLegacyMap
           | blue channel = 7
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.links heading=4-%}
     </p>
     <h3>multiplier</h3>
     <p class="scene-class-type">
@@ -94,7 +94,7 @@ title: ColorCorrectLegacyMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
@@ -102,7 +102,7 @@ title: ColorCorrectLegacyMap
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.links heading=4-%}
     </p>
     <h3>saturation</h3>
     <p class="scene-class-type">
@@ -110,7 +110,7 @@ title: ColorCorrectLegacyMap
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.links heading=4-%}
     </p>
   </p>
 </details>

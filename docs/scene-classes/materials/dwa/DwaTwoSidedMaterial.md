@@ -25,7 +25,7 @@ title: DwaTwoSidedMaterial
           | random walk = 2
       <p class="scene-class-comments">If the two materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_bssrdf.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_bssrdf.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_bssrdf.links heading=4-%}
     </p>
     <h3>fallback_clearcoat_use_bending</h3>
     <p class="scene-class-type">
@@ -33,7 +33,7 @@ title: DwaTwoSidedMaterial
       default: True
       <p class="scene-class-comments">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_clearcoat_use_bending.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_clearcoat_use_bending.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_clearcoat_use_bending.links heading=4-%}
     </p>
     <h3>fallback_outer_specular_model</h3>
     <p class="scene-class-type">
@@ -42,7 +42,7 @@ title: DwaTwoSidedMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_outer_specular_model.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_outer_specular_model.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_outer_specular_model.links heading=4-%}
     </p>
     <h3>fallback_specular_model</h3>
     <p class="scene-class-type">
@@ -51,7 +51,7 @@ title: DwaTwoSidedMaterial
           | GGX = 1 (default)
       <p class="scene-class-comments">If child materials disagree on the type of specular model, this type will be used instead.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_specular_model.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_specular_model.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_specular_model.links heading=4-%}
     </p>
     <h3>fallback_toon_specular_model</h3>
     <p class="scene-class-type">
@@ -61,7 +61,7 @@ title: DwaTwoSidedMaterial
           | Toon = 2
       <p class="scene-class-comments">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_toon_specular_model.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_toon_specular_model.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.fallback_toon_specular_model.links heading=4-%}
     </p>
     <h3>sss_trace_set</h3>
     <p class="scene-class-type">
@@ -69,7 +69,7 @@ title: DwaTwoSidedMaterial
       default: None
       <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. The DwaTwoSidedMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.sss_trace_set.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.sss_trace_set.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.sss_trace_set.links heading=4-%}
     </p>
   </p>
 </details>
@@ -82,7 +82,7 @@ title: DwaTwoSidedMaterial
       default: None
       <p class="scene-class-comments">material to use on back-facing surfaces</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.back_material.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.back_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.back_material.links heading=4-%}
     </p>
     <h3>extra_aovs</h3>
     <p class="scene-class-type">
@@ -90,7 +90,7 @@ title: DwaTwoSidedMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.extra_aovs.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.extra_aovs.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>front_material</h3>
     <p class="scene-class-type">
@@ -98,7 +98,7 @@ title: DwaTwoSidedMaterial
       default: None
       <p class="scene-class-comments">material to use on front-facing surfaces</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.front_material.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.front_material.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.front_material.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
@@ -106,7 +106,7 @@ title: DwaTwoSidedMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.label.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.label.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
@@ -114,7 +114,7 @@ title: DwaTwoSidedMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.priority.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
-      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.priority.links-%}
+      {%include see-also.html links=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>
 </details>

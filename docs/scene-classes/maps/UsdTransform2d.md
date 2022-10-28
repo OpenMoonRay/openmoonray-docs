@@ -23,7 +23,7 @@ title: UsdTransform2d
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.UsdTransform2d.attributes.in.images data=site.data.scene-classes.maps.UsdTransform2d-%}
-      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.in.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.in.links heading=4-%}
     </p>
     <h3>rotation</h3>
     <p class="scene-class-type">
@@ -31,7 +31,7 @@ title: UsdTransform2d
       default: 0.0
       <p class="scene-class-comments">Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.UsdTransform2d.attributes.rotation.images data=site.data.scene-classes.maps.UsdTransform2d-%}
-      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.rotation.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.rotation.links heading=4-%}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
@@ -39,7 +39,7 @@ title: UsdTransform2d
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scale around the origin to be applied to all components of the data.</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.UsdTransform2d.attributes.scale.images data=site.data.scene-classes.maps.UsdTransform2d-%}
-      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.scale.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.scale.links heading=4-%}
     </p>
     <h3>translation</h3>
     <p class="scene-class-type">
@@ -47,7 +47,7 @@ title: UsdTransform2d
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translation to be applied to all components of the data.</p>
       {%include image-gallery.html images=site.data.scene-classes.maps.UsdTransform2d.attributes.translation.images data=site.data.scene-classes.maps.UsdTransform2d-%}
-      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.translation.links-%}
+      {%include see-also.html links=site.data.scene-classes.maps.UsdTransform2d.attributes.translation.links heading=4-%}
     </p>
   </p>
 </details>
