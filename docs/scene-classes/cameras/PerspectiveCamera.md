@@ -8,13 +8,26 @@ title: PerspectiveCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # PerspectiveCamera
+{%assign image_path=site.data.scene-classes.cameras.PerspectiveCamera.image_path%}
+{%if site.data.scene-classes.cameras.PerspectiveCamera.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.cameras.PerspectiveCamera.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.cameras.PerspectiveCamera.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.cameras.PerspectiveCamera.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.cameras.PerspectiveCamera.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Depth of Field attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: PerspectiveCamera
       default: False
       <p class="scene-class-comments">Enable Bokeh. Requires DOF to be enabled.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.bokeh
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.bokeh.images.
+          path=image_path
       %}
     </p>
     <h3>bokeh_angle</h3>
@@ -34,8 +47,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-comments">Angle of iris rotation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.bokeh_angle
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.bokeh_angle.images.
+          path=image_path
       %}
     </p>
     <h3>bokeh_image</h3>
@@ -44,8 +57,8 @@ title: PerspectiveCamera
       default: 
       <p class="scene-class-comments">Path to image file to be used for the iris</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.bokeh_image
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.bokeh_image.images.
+          path=image_path
       %}
     </p>
     <h3>bokeh_sides</h3>
@@ -54,8 +67,8 @@ title: PerspectiveCamera
       default: 0
       <p class="scene-class-comments">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.bokeh_sides
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.bokeh_sides.images.
+          path=image_path
       %}
     </p>
     <h3>bokeh_weight_location</h3>
@@ -64,8 +77,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-comments">Distance from the origin of Bokeh shape</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.bokeh_weight_location
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.bokeh_weight_location.images.
+          path=image_path
       %}
     </p>
     <h3>bokeh_weight_strength</h3>
@@ -74,8 +87,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-comments">Controls the strength of weights as samples approach the weight location</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.bokeh_weight_strength
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.bokeh_weight_strength.images.
+          path=image_path
       %}
     </p>
     <h3>dof</h3>
@@ -84,8 +97,8 @@ title: PerspectiveCamera
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.dof
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.dof.images.
+          path=image_path
       %}
     </p>
     <h3>dof_aperture</h3>
@@ -94,8 +107,8 @@ title: PerspectiveCamera
       default: 8.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.dof_aperture
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.dof_aperture.images.
+          path=image_path
       %}
     </p>
     <h3>dof_focus_distance</h3>
@@ -104,8 +117,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.dof_focus_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.dof_focus_distance.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -119,8 +132,8 @@ title: PerspectiveCamera
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.far
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.far.images.
+          path=image_path
       %}
     </p>
     <h3>film_width_aperture</h3>
@@ -129,8 +142,8 @@ title: PerspectiveCamera
       default: 24.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.film_width_aperture
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.film_width_aperture.images.
+          path=image_path
       %}
     </p>
     <h3>focal</h3>
@@ -139,8 +152,8 @@ title: PerspectiveCamera
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.focal
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.focal.images.
+          path=image_path
       %}
     </p>
     <h3>horizontal_film_offset</h3>
@@ -149,8 +162,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.horizontal_film_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.horizontal_film_offset.images.
+          path=image_path
       %}
     </p>
     <h3>near</h3>
@@ -159,8 +172,8 @@ title: PerspectiveCamera
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.near
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.near.images.
+          path=image_path
       %}
     </p>
     <h3>pixel_aspect_ratio</h3>
@@ -169,8 +182,8 @@ title: PerspectiveCamera
       default: 1.0
       <p class="scene-class-comments">ratio of pixel size y / x</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.pixel_aspect_ratio
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.pixel_aspect_ratio.images.
+          path=image_path
       %}
     </p>
     <h3>vertical_film_offset</h3>
@@ -179,8 +192,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.vertical_film_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.vertical_film_offset.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -194,8 +207,8 @@ title: PerspectiveCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.mb_shutter_bias
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.mb_shutter_bias.images.
+          path=image_path
       %}
     </p>
     <h3>mb_shutter_close</h3>
@@ -204,8 +217,8 @@ title: PerspectiveCamera
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.mb_shutter_close
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.mb_shutter_close.images.
+          path=image_path
       %}
     </p>
     <h3>mb_shutter_open</h3>
@@ -214,8 +227,8 @@ title: PerspectiveCamera
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.mb_shutter_open
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.mb_shutter_open.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -229,8 +242,8 @@ title: PerspectiveCamera
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.pixel_sample_map
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.pixel_sample_map.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -244,8 +257,8 @@ title: PerspectiveCamera
       default: 100.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.stereo_convergence_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.stereo_convergence_distance.images.
+          path=image_path
       %}
     </p>
     <h3>stereo_interocular_distance</h3>
@@ -254,8 +267,8 @@ title: PerspectiveCamera
       default: 6.30000019073
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.stereo_interocular_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.stereo_interocular_distance.images.
+          path=image_path
       %}
     </p>
     <h3>stereo_view</h3>
@@ -266,8 +279,8 @@ title: PerspectiveCamera
           | right view = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.stereo_view
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.stereo_view.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -281,8 +294,8 @@ title: PerspectiveCamera
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.cameras.PerspectiveCamera.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.node_xform.images.
+          path=image_path
       %}
     </p>
   </p>

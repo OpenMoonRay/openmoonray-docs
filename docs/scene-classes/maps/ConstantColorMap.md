@@ -8,13 +8,26 @@ title: ConstantColorMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantColorMap
+{%assign image_path=site.data.scene-classes.maps.ConstantColorMap.image_path%}
+{%if site.data.scene-classes.maps.ConstantColorMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.ConstantColorMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.ConstantColorMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.ConstantColorMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.ConstantColorMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ConstantColorMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">constant color value</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.ConstantColorMap.color_value
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.ConstantColorMap.attributes.color_value.images.
+          path=image_path
       %}
     </p>
   </p>

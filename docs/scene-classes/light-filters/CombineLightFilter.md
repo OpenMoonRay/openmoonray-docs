@@ -8,13 +8,26 @@ title: CombineLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CombineLightFilter
+{%assign image_path=site.data.scene-classes.light-filters.CombineLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.CombineLightFilter.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.light-filters.CombineLightFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.light-filters.CombineLightFilter.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.light-filters.CombineLightFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.light-filters.CombineLightFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: CombineLightFilter
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilter.light_filters
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.images.
+          path=image_path
       %}
     </p>
     <h3>mode</h3>
@@ -38,8 +51,8 @@ title: CombineLightFilter
           | subtract = 4
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilter.mode
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.images.
+          path=image_path
       %}
     </p>
     <h3>on</h3>
@@ -48,8 +61,8 @@ title: CombineLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.CombineLightFilter.on
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.images.
+          path=image_path
       %}
     </p>
   </p>

@@ -8,13 +8,26 @@ title: UVTransformMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UVTransformMap
+{%assign image_path=site.data.scene-classes.maps.UVTransformMap.image_path%}
+{%if site.data.scene-classes.maps.UVTransformMap.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.maps.UVTransformMap.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.maps.UVTransformMap.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.maps.UVTransformMap.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.maps.UVTransformMap.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: UVTransformMap
       default: [ 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UVTransformMap.offset
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UVTransformMap.attributes.offset.images.
+          path=image_path
       %}
     </p>
     <h3>rotation_angle</h3>
@@ -34,8 +47,8 @@ title: UVTransformMap
       default: 0.0
       <p class="scene-class-comments">Rotation in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UVTransformMap.rotation_angle
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UVTransformMap.attributes.rotation_angle.images.
+          path=image_path
       %}
     </p>
     <h3>rotation_axis</h3>
@@ -44,8 +57,8 @@ title: UVTransformMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">Axis in which to rotate (only for 3D spaces)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UVTransformMap.rotation_axis
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UVTransformMap.attributes.rotation_axis.images.
+          path=image_path
       %}
     </p>
     <h3>rotation_center</h3>
@@ -54,8 +67,8 @@ title: UVTransformMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">UV coordinate around which to rotate</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UVTransformMap.rotation_center
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UVTransformMap.attributes.rotation_center.images.
+          path=image_path
       %}
     </p>
     <h3>scale</h3>
@@ -64,8 +77,8 @@ title: UVTransformMap
       default: [ 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UVTransformMap.scale
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UVTransformMap.attributes.scale.images.
+          path=image_path
       %}
     </p>
     <h3>space</h3>
@@ -80,8 +93,8 @@ title: UVTransformMap
           | texture = 6 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.maps.UVTransformMap.space
-          image_dir=image_dir
+          images=site.data.scene-classes.maps.UVTransformMap.attributes.space.images.
+          path=image_path
       %}
     </p>
   </p>

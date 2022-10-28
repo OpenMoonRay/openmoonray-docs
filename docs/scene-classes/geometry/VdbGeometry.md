@@ -8,13 +8,26 @@ title: VdbGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # VdbGeometry
+{%assign image_path=site.data.scene-classes.geometry.VdbGeometry.image_path%}
+{%if site.data.scene-classes.geometry.VdbGeometry.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.geometry.VdbGeometry.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.geometry.VdbGeometry.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.geometry.VdbGeometry.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.geometry.VdbGeometry.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: VdbGeometry
       default: density
       <p class="scene-class-comments">The name of the density grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "density[3]". The index must be in [] brackets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.density_grid
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.density_grid.images.
+          path=image_path
       %}
     </p>
     <h3>emission_grid</h3>
@@ -34,8 +47,8 @@ title: VdbGeometry
       default: temperature
       <p class="scene-class-comments">The name of the emission grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "emission[3]". The index must be in [] brackets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.emission_grid
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.emission_grid.images.
+          path=image_path
       %}
     </p>
     <h3>emission_sample_rate</h3>
@@ -44,8 +57,8 @@ title: VdbGeometry
       default: 1.0
       <p class="scene-class-comments">the relative scale of input emission grid resolution. Lower value has lower memory overhead and faster render time, with the cost of lower fidelity of emission shape and illumination</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.emission_sample_rate
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.emission_sample_rate.images.
+          path=image_path
       %}
     </p>
     <h3>interpolation</h3>
@@ -56,8 +69,8 @@ title: VdbGeometry
           | quadratic = 2
       <p class="scene-class-comments">the voxel interpolation to use when sampling the volume data</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.interpolation
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.interpolation.images.
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -66,8 +79,8 @@ title: VdbGeometry
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.label
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.label.images.
+          path=image_path
       %}
     </p>
     <h3>model</h3>
@@ -76,8 +89,8 @@ title: VdbGeometry
       default: 
       <p class="scene-class-comments">filename that points to a VDB file</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.model
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.model.images.
+          path=image_path
       %}
     </p>
     <h3>node_xform</h3>
@@ -86,8 +99,8 @@ title: VdbGeometry
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.node_xform.images.
+          path=image_path
       %}
     </p>
     <h3>ray_epsilon</h3>
@@ -96,8 +109,8 @@ title: VdbGeometry
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.ray_epsilon
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.ray_epsilon.images.
+          path=image_path
       %}
     </p>
     <h3>references</h3>
@@ -106,8 +119,8 @@ title: VdbGeometry
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.references
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.references.images.
+          path=image_path
       %}
     </p>
     <h3>reverse_normals</h3>
@@ -116,8 +129,8 @@ title: VdbGeometry
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.reverse_normals
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.reverse_normals.images.
+          path=image_path
       %}
     </p>
     <h3>shadow_exclusion_mappings</h3>
@@ -126,8 +139,8 @@ title: VdbGeometry
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.shadow_exclusion_mappings
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.shadow_exclusion_mappings.images.
+          path=image_path
       %}
     </p>
     <h3>shadow_ray_epsilon</h3>
@@ -136,8 +149,8 @@ title: VdbGeometry
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.shadow_ray_epsilon
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.shadow_ray_epsilon.images.
+          path=image_path
       %}
     </p>
     <h3>shadow_receiver_label</h3>
@@ -146,8 +159,8 @@ title: VdbGeometry
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.shadow_receiver_label
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.shadow_receiver_label.images.
+          path=image_path
       %}
     </p>
     <h3>side_type</h3>
@@ -158,8 +171,8 @@ title: VdbGeometry
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.side_type
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.side_type.images.
+          path=image_path
       %}
     </p>
     <h3>static</h3>
@@ -168,8 +181,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.static
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.static.images.
+          path=image_path
       %}
     </p>
     <h3>velocity_grid</h3>
@@ -178,8 +191,8 @@ title: VdbGeometry
       default: v
       <p class="scene-class-comments">the name of vector grid representing the velocity field. Usually named "v" or "vel" in simulation export. If multiple velocity grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "v[3]". The index must be in [] brackets. The index can be different from the index on the "density_grid".</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.velocity_grid
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.velocity_grid.images.
+          path=image_path
       %}
     </p>
     <h3>velocity_sample_rate</h3>
@@ -188,8 +201,8 @@ title: VdbGeometry
       default: 0.20000000298
       <p class="scene-class-comments">the relative scale of input velocity grid resolution. Lower value has lower memory overhead and lower fidelity of motion blur effect, which is sometimes desired for artistic reasons</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.velocity_sample_rate
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.velocity_sample_rate.images.
+          path=image_path
       %}
     </p>
     <h3>velocity_scale</h3>
@@ -198,8 +211,8 @@ title: VdbGeometry
       default: 1.0
       <p class="scene-class-comments">A scale factor for the velocity field. A value of 0 disables motion blur.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.velocity_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.velocity_scale.images.
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_reflection</h3>
@@ -208,8 +221,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_diffuse_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_diffuse_reflection.images.
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_transmission</h3>
@@ -218,8 +231,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_diffuse_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_diffuse_transmission.images.
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_reflection</h3>
@@ -228,8 +241,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_glossy_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_glossy_reflection.images.
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_transmission</h3>
@@ -238,8 +251,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_glossy_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_glossy_transmission.images.
+          path=image_path
       %}
     </p>
     <h3>visible_in_camera</h3>
@@ -248,8 +261,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_in_camera
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_in_camera.images.
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_reflection</h3>
@@ -258,8 +271,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_mirror_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_mirror_reflection.images.
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_transmission</h3>
@@ -268,8 +281,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_mirror_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_mirror_transmission.images.
+          path=image_path
       %}
     </p>
     <h3>visible_shadow</h3>
@@ -278,8 +291,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_shadow
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_shadow.images.
+          path=image_path
       %}
     </p>
     <h3>visible_volume</h3>
@@ -288,8 +301,8 @@ title: VdbGeometry
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.geometry.VdbGeometry.visible_volume
-          image_dir=image_dir
+          images=site.data.scene-classes.geometry.VdbGeometry.attributes.visible_volume.images.
+          path=image_path
       %}
     </p>
   </p>

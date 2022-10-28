@@ -8,13 +8,26 @@ title: OverDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OverDisplayFilter
+{%assign image_path=site.data.scene-classes.display-filters.OverDisplayFilter.image_path%}
+{%if site.data.scene-classes.display-filters.OverDisplayFilter.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.display-filters.OverDisplayFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.display-filters.OverDisplayFilter.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.display-filters.OverDisplayFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.display-filters.OverDisplayFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">alpha for over operation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilter.alpha
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.images.
+          path=image_path
       %}
     </p>
     <h3>input_bottom</h3>
@@ -34,8 +47,8 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput on bottom</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilter.input_bottom
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_bottom.images.
+          path=image_path
       %}
     </p>
     <h3>input_top</h3>
@@ -44,8 +57,8 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">RenderOutput on top</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilter.input_top
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_top.images.
+          path=image_path
       %}
     </p>
     <h3>invert_alpha</h3>
@@ -54,8 +67,8 @@ title: OverDisplayFilter
       default: False
       <p class="scene-class-comments">invert value of alpha</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilter.invert_alpha
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.images.
+          path=image_path
       %}
     </p>
     <h3>mix</h3>
@@ -64,8 +77,8 @@ title: OverDisplayFilter
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.OverDisplayFilter.mix
-          image_dir=image_dir
+          images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.images.
+          path=image_path
       %}
     </p>
   </p>

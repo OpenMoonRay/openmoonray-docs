@@ -8,13 +8,26 @@ title: HairMaterial_v3
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairMaterial_v3
+{%assign image_path=site.data.scene-classes.materials.hair.HairMaterial_v3.image_path%}
+{%if site.data.scene-classes.materials.hair.HairMaterial_v3.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.materials.hair.HairMaterial_v3.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.materials.hair.HairMaterial_v3.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.materials.hair.HairMaterial_v3.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.materials.hair.HairMaterial_v3.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: HairMaterial_v3
       default: True
       <p class="scene-class-comments">show the amount of light scattered after TRT bounce, good for blonde/white hair</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.show_multiple_scattering
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.show_multiple_scattering.images.
+          path=image_path
       %}
     </p>
     <h3>use_optimized_sampling</h3>
@@ -34,8 +47,8 @@ title: HairMaterial_v3
       default: True
       <p class="scene-class-comments">optimized sampling of all the hair lobes, results in 2x-4x speedup on average (disables individual hair lobe AOVs). When false, the look may slightly change if using biased techniques like roughness/sample clamping. </p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.use_optimized_sampling
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.use_optimized_sampling.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -49,8 +62,8 @@ title: HairMaterial_v3
       default: False
       <p class="scene-class-comments">allows continuation of caustic light paths.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.casts_caustics
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.casts_caustics.images.
+          path=image_path
       %}
     </p>
     <h3>presence</h3>
@@ -59,8 +72,8 @@ title: HairMaterial_v3
       default: 1.0
       <p class="scene-class-comments">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.presence
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.presence.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -74,8 +87,8 @@ title: HairMaterial_v3
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the energy emitted from this material</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.emission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.emission.images.
+          path=image_path
       %}
     </p>
     <h3>show_emission</h3>
@@ -84,8 +97,8 @@ title: HairMaterial_v3
       default: False
       <p class="scene-class-comments">enables/disable emission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.show_emission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.show_emission.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -99,8 +112,8 @@ title: HairMaterial_v3
       default: 0.10000000149
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.cuticle_layer_thickness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.cuticle_layer_thickness.images.
+          path=image_path
       %}
     </p>
     <h3>fresnel_type</h3>
@@ -111,8 +124,8 @@ title: HairMaterial_v3
           | layered cuticles = 2
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.fresnel_type
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.fresnel_type.images.
+          path=image_path
       %}
     </p>
     <h3>refractive_index</h3>
@@ -121,8 +134,8 @@ title: HairMaterial_v3
       default: 1.45000004768
       <p class="scene-class-comments">keep this value between [1.3,2.0] for realistic behavior (human hair is around 1.55)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.refractive_index
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.refractive_index.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -136,8 +149,8 @@ title: HairMaterial_v3
       default: -3.0
       <p class="scene-class-comments">offset specular highlight along hair direction (in degrees) [-10,+10], around -3 for human hair</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.primary_specular_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.primary_specular_offset.images.
+          path=image_path
       %}
     </p>
     <h3>primary_specular_roughness</h3>
@@ -146,8 +159,8 @@ title: HairMaterial_v3
       default: 0.5
       <p class="scene-class-comments">roughness of the primary specular highlight, also sets the transmission roughness to 0.5x and secondary specular roughness to 2x by default unless independent roughnesses are being used for both</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.primary_specular_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.primary_specular_roughness.images.
+          path=image_path
       %}
     </p>
     <h3>primary_specular_tint</h3>
@@ -156,8 +169,8 @@ title: HairMaterial_v3
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">tint the primary specular highlight with this color (leave white for physical behavior)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.primary_specular_tint
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.primary_specular_tint.images.
+          path=image_path
       %}
     </p>
     <h3>show_primary_specular</h3>
@@ -166,8 +179,8 @@ title: HairMaterial_v3
       default: True
       <p class="scene-class-comments">show primary specular</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.show_primary_specular
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.show_primary_specular.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -181,8 +194,8 @@ title: HairMaterial_v3
       default: 0.850000023842
       <p class="scene-class-comments">secondary specular glint eccentricity [0.85, 1], values that deviate from 1 make the hair fiber more elliptical and more glinty</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.glint_eccentricity
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.glint_eccentricity.images.
+          path=image_path
       %}
     </p>
     <h3>glint_max_twists</h3>
@@ -191,8 +204,8 @@ title: HairMaterial_v3
       default: 2.5
       <p class="scene-class-comments">the maximum number of twists along the hair's length. More twists means more glints. Each hair strand will be randomly assigned a twist amount between [min twists, max twists]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.glint_max_twists
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.glint_max_twists.images.
+          path=image_path
       %}
     </p>
     <h3>glint_min_twists</h3>
@@ -201,8 +214,8 @@ title: HairMaterial_v3
       default: 1.5
       <p class="scene-class-comments">the minimum number of twists along the hair's length. More twists means more glints. Each hair strand will be randomly assigned a twist amount between [min twists, max twists]</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.glint_min_twists
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.glint_min_twists.images.
+          path=image_path
       %}
     </p>
     <h3>glint_roughness</h3>
@@ -211,8 +224,8 @@ title: HairMaterial_v3
       default: 0.5
       <p class="scene-class-comments">secondary specular glint roughness</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.glint_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.glint_roughness.images.
+          path=image_path
       %}
     </p>
     <h3>glint_saturation</h3>
@@ -221,8 +234,8 @@ title: HairMaterial_v3
       default: 0.5
       <p class="scene-class-comments">secondary specular glint saturation</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.glint_saturation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.glint_saturation.images.
+          path=image_path
       %}
     </p>
     <h3>independent_secondary_specular_roughness</h3>
@@ -231,8 +244,8 @@ title: HairMaterial_v3
       default: 0.40000000596
       <p class="scene-class-comments">secondary specular roughness</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.independent_secondary_specular_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.independent_secondary_specular_roughness.images.
+          path=image_path
       %}
     </p>
     <h3>secondary_specular_offset</h3>
@@ -241,8 +254,8 @@ title: HairMaterial_v3
       default: -4.5
       <p class="scene-class-comments">offset secondary specular highlight along hair direction (in degrees) [-10,+10], around -4.5 for human hair</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.secondary_specular_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.secondary_specular_offset.images.
+          path=image_path
       %}
     </p>
     <h3>secondary_specular_tint</h3>
@@ -251,8 +264,8 @@ title: HairMaterial_v3
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">tint secondary specular with this color (leave white for physical behavior)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.secondary_specular_tint
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.secondary_specular_tint.images.
+          path=image_path
       %}
     </p>
     <h3>show_hair_glint</h3>
@@ -261,8 +274,8 @@ title: HairMaterial_v3
       default: False
       <p class="scene-class-comments">show hair glint</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.show_hair_glint
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.show_hair_glint.images.
+          path=image_path
       %}
     </p>
     <h3>show_secondary_specular</h3>
@@ -271,8 +284,8 @@ title: HairMaterial_v3
       default: True
       <p class="scene-class-comments">show secondary specular</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.show_secondary_specular
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.show_secondary_specular.images.
+          path=image_path
       %}
     </p>
     <h3>use_independent_secondary_specular_roughness</h3>
@@ -281,8 +294,8 @@ title: HairMaterial_v3
       default: False
       <p class="scene-class-comments">when disabled, uses a physically correct value for secondary specular roughness which is linked to the primary specular roughness</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.use_independent_secondary_specular_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.use_independent_secondary_specular_roughness.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -296,8 +309,8 @@ title: HairMaterial_v3
       default: 1.0
       <p class="scene-class-comments">(Non-Physical, Advanced) saturate/desaturate direct transmission highlights.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.direct_transmission_saturation
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.direct_transmission_saturation.images.
+          path=image_path
       %}
     </p>
     <h3>independent_transmission_roughness</h3>
@@ -306,8 +319,8 @@ title: HairMaterial_v3
       default: 0.10000000149
       <p class="scene-class-comments">transmission roughness</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.independent_transmission_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.independent_transmission_roughness.images.
+          path=image_path
       %}
     </p>
     <h3>show_transmission</h3>
@@ -316,8 +329,8 @@ title: HairMaterial_v3
       default: True
       <p class="scene-class-comments">show tranmission specular</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.show_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.show_transmission.images.
+          path=image_path
       %}
     </p>
     <h3>transmission_azimuthal_roughness</h3>
@@ -326,8 +339,8 @@ title: HairMaterial_v3
       default: 1.0
       <p class="scene-class-comments">higher values create a softer look</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.transmission_azimuthal_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.transmission_azimuthal_roughness.images.
+          path=image_path
       %}
     </p>
     <h3>transmission_offset</h3>
@@ -336,8 +349,8 @@ title: HairMaterial_v3
       default: -1.5
       <p class="scene-class-comments">offset transmission highlight along hair direction (in degrees) [-10,+10], around -1.5 for human hair</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.transmission_offset
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.transmission_offset.images.
+          path=image_path
       %}
     </p>
     <h3>transmission_tint</h3>
@@ -346,8 +359,8 @@ title: HairMaterial_v3
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">tint transmission with this color (leave white for physical behavior)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.transmission_tint
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.transmission_tint.images.
+          path=image_path
       %}
     </p>
     <h3>use_independent_transmission_roughness</h3>
@@ -356,8 +369,8 @@ title: HairMaterial_v3
       default: False
       <p class="scene-class-comments">when disabled, uses a physically correct value for Transmission roughness which is linked to the primary specular roughness</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.use_independent_transmission_roughness
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.use_independent_transmission_roughness.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -371,8 +384,8 @@ title: HairMaterial_v3
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.extra_aovs
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.extra_aovs.images.
+          path=image_path
       %}
     </p>
     <h3>hair_color</h3>
@@ -381,8 +394,8 @@ title: HairMaterial_v3
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.hair_color
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.hair_color.images.
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -391,8 +404,8 @@ title: HairMaterial_v3
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.label
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.label.images.
+          path=image_path
       %}
     </p>
     <h3>priority</h3>
@@ -401,8 +414,8 @@ title: HairMaterial_v3
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.hair.HairMaterial_v3.priority
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.hair.HairMaterial_v3.attributes.priority.images.
+          path=image_path
       %}
     </p>
   </p>

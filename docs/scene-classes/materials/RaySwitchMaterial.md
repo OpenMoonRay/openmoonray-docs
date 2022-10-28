@@ -8,13 +8,26 @@ title: RaySwitchMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RaySwitchMaterial
+{%assign image_path=site.data.scene-classes.materials.RaySwitchMaterial.image_path%}
+{%if site.data.scene-classes.materials.RaySwitchMaterial.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.materials.RaySwitchMaterial.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.materials.RaySwitchMaterial.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.materials.RaySwitchMaterial.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.materials.RaySwitchMaterial.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.camera_ray_material
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.camera_ray_material.images.
+          path=image_path
       %}
     </p>
     <h3>cutout_camera_rays</h3>
@@ -34,8 +47,8 @@ title: RaySwitchMaterial
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.cutout_camera_rays
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.cutout_camera_rays.images.
+          path=image_path
       %}
     </p>
     <h3>default_material</h3>
@@ -44,8 +57,8 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.default_material
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.default_material.images.
+          path=image_path
       %}
     </p>
     <h3>extra_aovs</h3>
@@ -54,8 +67,8 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.extra_aovs
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.extra_aovs.images.
+          path=image_path
       %}
     </p>
     <h3>indirect_diffuse_ray_material</h3>
@@ -64,8 +77,8 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.indirect_diffuse_ray_material
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.images.
+          path=image_path
       %}
     </p>
     <h3>indirect_glossy_ray_material</h3>
@@ -74,8 +87,8 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.indirect_glossy_ray_material
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.images.
+          path=image_path
       %}
     </p>
     <h3>indirect_mirror_ray_material</h3>
@@ -84,8 +97,8 @@ title: RaySwitchMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.indirect_mirror_ray_material
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.images.
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -94,8 +107,8 @@ title: RaySwitchMaterial
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.label
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.label.images.
+          path=image_path
       %}
     </p>
     <h3>priority</h3>
@@ -104,8 +117,8 @@ title: RaySwitchMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.materials.RaySwitchMaterial.priority
-          image_dir=image_dir
+          images=site.data.scene-classes.materials.RaySwitchMaterial.attributes.priority.images.
+          path=image_path
       %}
     </p>
   </p>

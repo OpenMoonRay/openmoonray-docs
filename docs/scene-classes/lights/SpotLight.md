@@ -8,13 +8,26 @@ title: SpotLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SpotLight
+{%assign image_path=site.data.scene-classes.lights.SpotLight.image_path%}
+{%if site.data.scene-classes.lights.SpotLight.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.lights.SpotLight.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.lights.SpotLight.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.lights.SpotLight.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.lights.SpotLight.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Cone attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.aspect_ratio
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.aspect_ratio.images.
+          path=image_path
       %}
     </p>
     <h3>focal_plane_distance</h3>
@@ -34,8 +47,8 @@ title: SpotLight
       default: 10000000000.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.focal_plane_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.focal_plane_distance.images.
+          path=image_path
       %}
     </p>
     <h3>inner_cone_angle</h3>
@@ -44,8 +57,8 @@ title: SpotLight
       default: 30.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.inner_cone_angle
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.inner_cone_angle.images.
+          path=image_path
       %}
     </p>
     <h3>lens_radius</h3>
@@ -54,8 +67,8 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.lens_radius
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.lens_radius.images.
+          path=image_path
       %}
     </p>
     <h3>outer_cone_angle</h3>
@@ -64,8 +77,8 @@ title: SpotLight
       default: 60.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.outer_cone_angle
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.outer_cone_angle.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -83,8 +96,8 @@ title: SpotLight
           | ease in/out = 4 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.angle_falloff_type
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.angle_falloff_type.images.
+          path=image_path
       %}
     </p>
     <h3>black_level</h3>
@@ -93,8 +106,8 @@ title: SpotLight
       default: 0.0010000000475
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.black_level
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.black_level.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -108,8 +121,8 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.contrast
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.contrast.images.
+          path=image_path
       %}
     </p>
     <h3>gain</h3>
@@ -118,8 +131,8 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.gain
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.gain.images.
+          path=image_path
       %}
     </p>
     <h3>gamma</h3>
@@ -128,8 +141,8 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.gamma
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.gamma.images.
+          path=image_path
       %}
     </p>
     <h3>offset</h3>
@@ -138,8 +151,8 @@ title: SpotLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.offset
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.offset.images.
+          path=image_path
       %}
     </p>
     <h3>saturation</h3>
@@ -148,8 +161,8 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.saturation
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.saturation.images.
+          path=image_path
       %}
     </p>
     <h3>temperature</h3>
@@ -158,8 +171,8 @@ title: SpotLight
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">color temperature using Nuke-like T/M/E settings</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.temperature
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.temperature.images.
+          path=image_path
       %}
     </p>
     <h3>texture</h3>
@@ -168,8 +181,8 @@ title: SpotLight
       default: 
       <p class="scene-class-comments">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture.images.
+          path=image_path
       %}
     </p>
     <h3>texture_border_color</h3>
@@ -178,8 +191,8 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">RGB value used when a texture lookup occurs outside the texture</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_border_color
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_border_color.images.
+          path=image_path
       %}
     </p>
     <h3>texture_coverage</h3>
@@ -188,8 +201,8 @@ title: SpotLight
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales in (u,v)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_coverage
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_coverage.images.
+          path=image_path
       %}
     </p>
     <h3>texture_mirror_u</h3>
@@ -198,8 +211,8 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in u, false =&gt; repeat in u</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_mirror_u
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_u.images.
+          path=image_path
       %}
     </p>
     <h3>texture_mirror_v</h3>
@@ -208,8 +221,8 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">true =&gt; mirror in v, false =&gt; repeat in v</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_mirror_v
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_mirror_v.images.
+          path=image_path
       %}
     </p>
     <h3>texture_reps_u</h3>
@@ -218,8 +231,8 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in u over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_reps_u
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_u.images.
+          path=image_path
       %}
     </p>
     <h3>texture_reps_v</h3>
@@ -228,8 +241,8 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-comments">Number of times texture repeats in v over the scaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_reps_v
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_reps_v.images.
+          path=image_path
       %}
     </p>
     <h3>texture_rotation</h3>
@@ -238,8 +251,8 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-comments">Clockwise rotation angle in degrees</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_rotation
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_rotation.images.
+          path=image_path
       %}
     </p>
     <h3>texture_translation</h3>
@@ -248,8 +261,8 @@ title: SpotLight
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_translation
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_translation.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -263,8 +276,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">apply scene scale variable when normalized</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.apply_scene_scale
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.apply_scene_scale.images.
+          path=image_path
       %}
     </p>
     <h3>clear_radius</h3>
@@ -273,8 +286,8 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-comments">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.clear_radius
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.clear_radius.images.
+          path=image_path
       %}
     </p>
     <h3>clear_radius_falloff_distance</h3>
@@ -283,8 +296,8 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-comments">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.clear_radius_falloff_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_falloff_distance.images.
+          path=image_path
       %}
     </p>
     <h3>clear_radius_interpolation_type</h3>
@@ -296,8 +309,8 @@ title: SpotLight
           | smoothstep = 3
       <p class="scene-class-comments">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.clear_radius_interpolation_type
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.clear_radius_interpolation_type.images.
+          path=image_path
       %}
     </p>
     <h3>color</h3>
@@ -306,8 +319,8 @@ title: SpotLight
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.color
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.color.images.
+          path=image_path
       %}
     </p>
     <h3>exposure</h3>
@@ -316,8 +329,8 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.exposure
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.exposure.images.
+          path=image_path
       %}
     </p>
     <h3>intensity</h3>
@@ -326,8 +339,8 @@ title: SpotLight
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.intensity
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.intensity.images.
+          path=image_path
       %}
     </p>
     <h3>label</h3>
@@ -336,8 +349,8 @@ title: SpotLight
       default: 
       <p class="scene-class-comments">label used in light aov expressions</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.label
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.label.images.
+          path=image_path
       %}
     </p>
     <h3>max_shadow_distance</h3>
@@ -346,8 +359,8 @@ title: SpotLight
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.max_shadow_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.max_shadow_distance.images.
+          path=image_path
       %}
     </p>
     <h3>mb</h3>
@@ -356,8 +369,8 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">Does light motion affect motion-blur?</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.mb
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.mb.images.
+          path=image_path
       %}
     </p>
     <h3>normalized</h3>
@@ -366,8 +379,8 @@ title: SpotLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.normalized
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.normalized.images.
+          path=image_path
       %}
     </p>
     <h3>on</h3>
@@ -376,8 +389,8 @@ title: SpotLight
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.on
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.on.images.
+          path=image_path
       %}
     </p>
     <h3>presence_shadows</h3>
@@ -388,8 +401,8 @@ title: SpotLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.presence_shadows
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.presence_shadows.images.
+          path=image_path
       %}
     </p>
     <h3>ray_termination</h3>
@@ -398,8 +411,8 @@ title: SpotLight
       default: False
       <p class="scene-class-comments">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.ray_termination
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.ray_termination.images.
+          path=image_path
       %}
     </p>
     <h3>texture_filter</h3>
@@ -411,8 +424,8 @@ title: SpotLight
           | bilinear with nearest mip = 3
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.texture_filter
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.texture_filter.images.
+          path=image_path
       %}
     </p>
     <h3>visible_in_camera</h3>
@@ -423,8 +436,8 @@ title: SpotLight
           | use default = 2 (default)
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_in_camera
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_in_camera.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -438,8 +451,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse reflection</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_diffuse_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_reflection.images.
+          path=image_path
       %}
     </p>
     <h3>visible_diffuse_transmission</h3>
@@ -448,8 +461,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in diffuse transmission</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_diffuse_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_diffuse_transmission.images.
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_reflection</h3>
@@ -458,8 +471,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_glossy_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_reflection.images.
+          path=image_path
       %}
     </p>
     <h3>visible_glossy_transmission</h3>
@@ -468,8 +481,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in glossy transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_glossy_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_glossy_transmission.images.
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_reflection</h3>
@@ -478,8 +491,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror reflection.</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_mirror_reflection
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_reflection.images.
+          path=image_path
       %}
     </p>
     <h3>visible_mirror_transmission</h3>
@@ -488,8 +501,8 @@ title: SpotLight
       default: True
       <p class="scene-class-comments">whether the light is visible in miror transmission (refraction).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.visible_mirror_transmission
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.visible_mirror_transmission.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -503,8 +516,8 @@ title: SpotLight
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.light_filters
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.light_filters.images.
+          path=image_path
       %}
     </p>
     <h3>node_xform</h3>
@@ -513,8 +526,8 @@ title: SpotLight
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.lights.SpotLight.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.lights.SpotLight.attributes.node_xform.images.
+          path=image_path
       %}
     </p>
   </p>

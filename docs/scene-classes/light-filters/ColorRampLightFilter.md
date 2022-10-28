@@ -8,13 +8,26 @@ title: ColorRampLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorRampLightFilter
+{%assign image_path=site.data.scene-classes.light-filters.ColorRampLightFilter.image_path%}
+{%if site.data.scene-classes.light-filters.ColorRampLightFilter.gallery-%}
 ---
-{%assign image_dir=site.data.scene-classes.light-filters.ColorRampLightFilter.image_dir%}
-<div class="scene-class">
+## Gallery
 {% include image-gallery.html
     images=site.data.scene-classes.light-filters.ColorRampLightFilter.gallery
-    image_dir=image_dir
+    path=image_path
 %}
+{%endif%}
+{%if site.data.scene-classes.light-filters.ColorRampLightFilter.links-%}
+---
+## See Also
+{%for link in site.data.scene-classes.light-filters.ColorRampLightFilter.links-%}
+[{{link.text}}]({{site.baseurl}}/{{link.url}})  
+{%endfor%}
+{%endif%}
+---
+## Attribute Reference
+
+<div class="scene-class">
 <details open>
   <summary>Properties attributes</summary>
   <p>
@@ -24,8 +37,8 @@ title: ColorRampLightFilter
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.begin_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.begin_distance.images.
+          path=image_path
       %}
     </p>
     <h3>colors</h3>
@@ -34,8 +47,8 @@ title: ColorRampLightFilter
       default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.colors
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.colors.images.
+          path=image_path
       %}
     </p>
     <h3>density</h3>
@@ -44,8 +57,8 @@ title: ColorRampLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.density
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.density.images.
+          path=image_path
       %}
     </p>
     <h3>distances</h3>
@@ -54,8 +67,8 @@ title: ColorRampLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.distances
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.distances.images.
+          path=image_path
       %}
     </p>
     <h3>end_distance</h3>
@@ -64,8 +77,8 @@ title: ColorRampLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.end_distance
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.end_distance.images.
+          path=image_path
       %}
     </p>
     <h3>intensity</h3>
@@ -74,8 +87,8 @@ title: ColorRampLightFilter
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.intensity
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.intensity.images.
+          path=image_path
       %}
     </p>
     <h3>interpolation_types</h3>
@@ -84,8 +97,8 @@ title: ColorRampLightFilter
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.interpolation_types
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.interpolation_types.images.
+          path=image_path
       %}
     </p>
     <h3>mode</h3>
@@ -95,8 +108,8 @@ title: ColorRampLightFilter
           | directional = 1
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.mode
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.mode.images.
+          path=image_path
       %}
     </p>
     <h3>node_xform</h3>
@@ -105,8 +118,8 @@ title: ColorRampLightFilter
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.node_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.node_xform.images.
+          path=image_path
       %}
     </p>
     <h3>wrap_mode</h3>
@@ -116,8 +129,8 @@ title: ColorRampLightFilter
           | mirror = 1
       <p class="scene-class-comments">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z &gt; 0.  Mirror: f(z) = f(-z).</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.wrap_mode
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.wrap_mode.images.
+          path=image_path
       %}
     </p>
   </p>
@@ -131,8 +144,8 @@ title: ColorRampLightFilter
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.on
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.on.images.
+          path=image_path
       %}
     </p>
     <h3>use_xform</h3>
@@ -141,8 +154,8 @@ title: ColorRampLightFilter
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {% include image-gallery.html
-          images=site.data.scene-classes.light-filters.ColorRampLightFilter.use_xform
-          image_dir=image_dir
+          images=site.data.scene-classes.light-filters.ColorRampLightFilter.attributes.use_xform.images.
+          path=image_path
       %}
     </p>
   </p>
