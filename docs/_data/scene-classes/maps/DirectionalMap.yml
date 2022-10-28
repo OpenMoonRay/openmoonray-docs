@@ -1,35 +1,38 @@
 ---
 image_path: /assets/images/scene-classes/maps/DirectionalMap
 gallery:
-  - scene1.jpg
-  - scene2.jpg
-  - scene3.jpg
+  - image: scene1.jpg
+    text: bar
+  - image: scene2.jpg
+    text: baz
+  - image: scene3.jpg
+    text: foo
 attributes:
   bias:
     images:
-      - bias_wedge.gif
+      - image: bias_wedge.gif
   clamping_behavior:
     images:
-      - clamping_0.jpg
-      - clamping_1.jpg
+      - image: clamping_0.jpg
+      - image: clamping_1.jpg
   falloff_type:
     images:
-      - falloff_cosine.jpg
-      - falloff_linear.jpg
-      - falloff_plot.png
+      - image: falloff_cosine.jpg
+      - image: falloff_linear.jpg
+      - image: falloff_plot.png
   input_normal:
     images:
-      - normal_mapping_0.jpg
+      - image: normal_mapping_0.jpg
   polarity:
     images:
-      - polarity_parallel.jpg
-      - polarity_perpendicular.jpg
+      - image: polarity_parallel.jpg
+      - image: polarity_perpendicular.jpg
   prime_direction:
     images:
-      - prime_source_0.jpg
-      - prime_source_1.jpg
-      - prime_source_2.jpg
-      - prime_source_3.jpg
+      - image: prime_source_0.jpg
+      - image: prime_source_1.jpg
+      - image: prime_source_2.jpg
+      - image: prime_source_3.jpg
   use_smoothstep:
     images:
-      - smoothstep_wedge.gif
+      - image: smoothstep_wedge.gif
