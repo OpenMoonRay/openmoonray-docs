@@ -8,8 +8,8 @@ title: CombineLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CombineLightFilter
-{%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.gallery data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-{%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.links-%}
+{%-include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.gallery data=site.data.scene-classes.light-filters.CombineLightFilter-%}
+{%-include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.links-%}
 ---
 ## Attribute Reference
 
@@ -22,8 +22,8 @@ title: CombineLightFilter
       <b>Object Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.links heading=4-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -34,16 +34,16 @@ title: CombineLightFilter
           | add = 3
           | subtract = 4
       <p class="scene-class-no-doc">No documentation available</p>
-      {%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.mode.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
-      {%include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
-      {%include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.light-filters.CombineLightFilter.attributes.on.links heading=4-%}
     </p>
   </p>
 </details>

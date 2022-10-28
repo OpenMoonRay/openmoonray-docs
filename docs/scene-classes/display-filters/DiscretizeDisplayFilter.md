@@ -8,8 +8,8 @@ title: DiscretizeDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DiscretizeDisplayFilter
-{%include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.gallery data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
-{%include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.links-%}
+{%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.gallery data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
+{%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.links-%}
 ---
 ## Attribute Reference
 
@@ -22,16 +22,16 @@ title: DiscretizeDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
-      {%include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.invert_mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
-      {%include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mix.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -43,24 +43,24 @@ title: DiscretizeDisplayFilter
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">Image buffer to discretize</p>
-      {%include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {%include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>num_bins</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 8
       <p class="scene-class-comments">number of discrete color bins</p>
-      {%include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.num_bins.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
-      {%include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.num_bins.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.num_bins.images data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.attributes.num_bins.links heading=4-%}
     </p>
   </p>
 </details>

@@ -8,8 +8,8 @@ title: ConstantScalarMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantScalarMap
-{%include image-gallery.html images=site.data.scene-classes.maps.ConstantScalarMap.gallery data=site.data.scene-classes.maps.ConstantScalarMap-%}
-{%include see-also.html links=site.data.scene-classes.maps.ConstantScalarMap.links-%}
+{%-include image-gallery.html images=site.data.scene-classes.maps.ConstantScalarMap.gallery data=site.data.scene-classes.maps.ConstantScalarMap-%}
+{%-include see-also.html links=site.data.scene-classes.maps.ConstantScalarMap.links-%}
 ---
 ## Attribute Reference
 
@@ -22,8 +22,8 @@ title: ConstantScalarMap
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">constant scalar value</p>
-      {%include image-gallery.html images=site.data.scene-classes.maps.ConstantScalarMap.attributes.scalar_value.images data=site.data.scene-classes.maps.ConstantScalarMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.ConstantScalarMap.attributes.scalar_value.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ConstantScalarMap.attributes.scalar_value.images data=site.data.scene-classes.maps.ConstantScalarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ConstantScalarMap.attributes.scalar_value.links heading=4-%}
     </p>
   </p>
 </details>

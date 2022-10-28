@@ -8,8 +8,8 @@ title: NormalToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NormalToRgbMap
-{%include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.gallery data=site.data.scene-classes.maps.NormalToRgbMap-%}
-{%include see-also.html links=site.data.scene-classes.maps.NormalToRgbMap.links-%}
+{%-include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.gallery data=site.data.scene-classes.maps.NormalToRgbMap-%}
+{%-include see-also.html links=site.data.scene-classes.maps.NormalToRgbMap.links-%}
 ---
 ## Attribute Reference
 
@@ -22,8 +22,8 @@ title: NormalToRgbMap
       <b>33554432</b>
       default: None
       <p class="scene-class-comments">Input normal map to convert to a color</p>
-      {%include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.images data=site.data.scene-classes.maps.NormalToRgbMap-%}
-      {%include see-also.html links=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.images data=site.data.scene-classes.maps.NormalToRgbMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.links heading=4-%}
     </p>
   </p>
 </details>
