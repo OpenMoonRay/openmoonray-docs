@@ -421,6 +421,8 @@ toc:
             path: /moonray/how-to-guides/baking-textures
           - item: PBR Validity
             path: /moonray/how-to-guides/pbr-validity
+          - item: Point Rendering
+            path: /moonray/how-to-guides/point-rendering
   - item: Hydra
     path: /hydra
     subitems:
