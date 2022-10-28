@@ -419,6 +419,8 @@ toc:
         subitems:
           - item: Baking Textures
             path: /moonray/how-to-guides/baking-textures
+          - item: PBR Validity
+            path: /moonray/how-to-guides/pbr-validity
   - item: Hydra
     path: /hydra
     subitems:
