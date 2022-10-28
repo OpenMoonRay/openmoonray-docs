@@ -24,7 +24,7 @@ Points can also be rendered as a hybrid geometry where intersections are handled
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/point-rendering/points-as-discs.jpg)
 
 ## Texture Mapping
-Texture mapping can be applied by also defining a `uv` Vec3f primitive attribute (z component it not used).  As noted, the length of `dPds` will be used to select the appropriate mipmap is using the [ImageMap]({{site.baseurl}}/scene-classes/map/ImageMap) class. 
+Texture mapping can be applied by also defining a `uv` Vec3f primitive attribute (z component is not used).  As noted, the length of `dPds` will be used to select the appropriate mipmap is using the [ImageMap]({{site.baseurl}}/scene-classes/map/ImageMap) class. 
 
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/point-rendering/texture-uvs.jpg)
 
