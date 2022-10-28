@@ -8,22 +8,8 @@ title: ConstantDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantDisplayFilter
-{%assign image_path=site.data.scene-classes.display-filters.ConstantDisplayFilter.image_path%}
-{%if site.data.scene-classes.display-filters.ConstantDisplayFilter.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.display-filters.ConstantDisplayFilter.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.display-filters.ConstantDisplayFilter.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.display-filters.ConstantDisplayFilter.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.gallery data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
+{%-include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: ConstantDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -61,20 +43,16 @@ title: ConstantDisplayFilter
       <b>Rgb</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fill color value</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.color.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.ConstantDisplayFilter-%}
+      {%-include see-also.html links=site.data.scene-classes.display-filters.ConstantDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>
 </details>

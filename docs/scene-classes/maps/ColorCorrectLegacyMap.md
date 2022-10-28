@@ -8,22 +8,8 @@ title: ColorCorrectLegacyMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectLegacyMap
-{%assign image_path=site.data.scene-classes.maps.ColorCorrectLegacyMap.image_path%}
-{%if site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.ColorCorrectLegacyMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.ColorCorrectLegacyMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+{%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,70 +22,56 @@ title: ColorCorrectLegacyMap
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.links heading=4-%}
     </p>
     <h3>clamp</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.links heading=4-%}
     </p>
     <h3>contrast</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.links heading=4-%}
     </p>
     <h3>hue</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.links heading=4-%}
     </p>
     <h3>monochrome</h3>
     <p class="scene-class-type">
@@ -113,40 +85,32 @@ title: ColorCorrectLegacyMap
           | green channel = 6
           | blue channel = 7
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.links heading=4-%}
     </p>
     <h3>multiplier</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.links heading=4-%}
     </p>
     <h3>saturation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.links heading=4-%}
     </p>
   </p>
 </details>

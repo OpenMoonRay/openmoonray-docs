@@ -8,22 +8,8 @@ title: ProjectTriplanarMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectTriplanarMap
-{%assign image_path=site.data.scene-classes.maps.ProjectTriplanarMap.image_path%}
-{%if site.data.scene-classes.maps.ProjectTriplanarMap.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.maps.ProjectTriplanarMap.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.maps.ProjectTriplanarMap.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.maps.ProjectTriplanarMap.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.gallery data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+{%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.links-%}
 ---
 ## Attribute Reference
 
@@ -36,80 +22,64 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_s.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_s.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_s.links heading=4-%}
     </p>
     <h3>negative_x_invert_t</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_t.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_t.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_invert_t.links heading=4-%}
     </p>
     <h3>negative_x_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_offset.links heading=4-%}
     </p>
     <h3>negative_x_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation.links heading=4-%}
     </p>
     <h3>negative_x_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.links heading=4-%}
     </p>
     <h3>negative_x_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_scale.links heading=4-%}
     </p>
     <h3>negative_x_swap_st</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.links heading=4-%}
     </p>
     <h3>negative_x_wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_wrap_around.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_wrap_around.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_wrap_around.links heading=4-%}
     </p>
   </p>
 </details>
@@ -121,80 +91,64 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_s.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_s.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_s.links heading=4-%}
     </p>
     <h3>negative_y_invert_t</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_t.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_t.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_invert_t.links heading=4-%}
     </p>
     <h3>negative_y_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_offset.links heading=4-%}
     </p>
     <h3>negative_y_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation.links heading=4-%}
     </p>
     <h3>negative_y_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.links heading=4-%}
     </p>
     <h3>negative_y_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_scale.links heading=4-%}
     </p>
     <h3>negative_y_swap_st</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.links heading=4-%}
     </p>
     <h3>negative_y_wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_wrap_around.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_wrap_around.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_wrap_around.links heading=4-%}
     </p>
   </p>
 </details>
@@ -206,80 +160,64 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_s.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_s.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_s.links heading=4-%}
     </p>
     <h3>negative_z_invert_t</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_t.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_t.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_invert_t.links heading=4-%}
     </p>
     <h3>negative_z_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_offset.links heading=4-%}
     </p>
     <h3>negative_z_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation.links heading=4-%}
     </p>
     <h3>negative_z_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.links heading=4-%}
     </p>
     <h3>negative_z_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_scale.links heading=4-%}
     </p>
     <h3>negative_z_swap_st</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.links heading=4-%}
     </p>
     <h3>negative_z_wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_wrap_around.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_wrap_around.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_wrap_around.links heading=4-%}
     </p>
   </p>
 </details>
@@ -291,80 +229,64 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_s.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_s.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_s.links heading=4-%}
     </p>
     <h3>positive_x_invert_t</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_t.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_t.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_invert_t.links heading=4-%}
     </p>
     <h3>positive_x_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_offset.links heading=4-%}
     </p>
     <h3>positive_x_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation.links heading=4-%}
     </p>
     <h3>positive_x_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.links heading=4-%}
     </p>
     <h3>positive_x_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_scale.links heading=4-%}
     </p>
     <h3>positive_x_swap_st</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.links heading=4-%}
     </p>
     <h3>positive_x_wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_wrap_around.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_wrap_around.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_wrap_around.links heading=4-%}
     </p>
   </p>
 </details>
@@ -376,80 +298,64 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_s.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_s.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_s.links heading=4-%}
     </p>
     <h3>positive_y_invert_t</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_t.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_t.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_invert_t.links heading=4-%}
     </p>
     <h3>positive_y_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_offset.links heading=4-%}
     </p>
     <h3>positive_y_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation.links heading=4-%}
     </p>
     <h3>positive_y_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.links heading=4-%}
     </p>
     <h3>positive_y_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_scale.links heading=4-%}
     </p>
     <h3>positive_y_swap_st</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.links heading=4-%}
     </p>
     <h3>positive_y_wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_wrap_around.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_wrap_around.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_wrap_around.links heading=4-%}
     </p>
   </p>
 </details>
@@ -461,80 +367,64 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the s direction (horizontal)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_s.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_s.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_s.links heading=4-%}
     </p>
     <h3>positive_z_invert_t</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Flip in the t direction (vertical)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_t.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_t.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_invert_t.links heading=4-%}
     </p>
     <h3>positive_z_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_offset.links heading=4-%}
     </p>
     <h3>positive_z_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation amount</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation.links heading=4-%}
     </p>
     <h3>positive_z_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D rotation center</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.links heading=4-%}
     </p>
     <h3>positive_z_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_scale.links heading=4-%}
     </p>
     <h3>positive_z_swap_st</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.links heading=4-%}
     </p>
     <h3>positive_z_wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_wrap_around.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_wrap_around.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_wrap_around.links heading=4-%}
     </p>
   </p>
 </details>
@@ -551,10 +441,8 @@ title: ProjectTriplanarMap
           | Trans Scale Rot = 4
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.TRS_order.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.TRS_order.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.TRS_order.links heading=4-%}
     </p>
     <h3>debug_mode</h3>
     <p class="scene-class-type">
@@ -563,10 +451,8 @@ title: ProjectTriplanarMap
           | dSdx/dSdy = 1
           | dTdx/dTdy = 2
       <p class="scene-class-comments">for testing</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.debug_mode.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.debug_mode.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.debug_mode.links heading=4-%}
     </p>
     <h3>gamma</h3>
     <p class="scene-class-type">
@@ -575,70 +461,56 @@ title: ProjectTriplanarMap
           | on = 1
           | auto = 2 (default)
       <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.gamma.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.gamma.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.gamma.links heading=4-%}
     </p>
     <h3>negative_x_active</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_active.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_active.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_active.links heading=4-%}
     </p>
     <h3>negative_x_texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_texture.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_texture.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_x_texture.links heading=4-%}
     </p>
     <h3>negative_y_active</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_active.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_active.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_active.links heading=4-%}
     </p>
     <h3>negative_y_texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_texture.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_texture.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_y_texture.links heading=4-%}
     </p>
     <h3>negative_z_active</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_active.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_active.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_active.links heading=4-%}
     </p>
     <h3>negative_z_texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_texture.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_texture.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.negative_z_texture.links heading=4-%}
     </p>
     <h3>number_of_textures</h3>
     <p class="scene-class-type">
@@ -647,80 +519,64 @@ title: ProjectTriplanarMap
           | three = 3 (default)
           | six = 6
       <p class="scene-class-comments">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.number_of_textures.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.number_of_textures.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.number_of_textures.links heading=4-%}
     </p>
     <h3>positive_x_active</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_active.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_active.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_active.links heading=4-%}
     </p>
     <h3>positive_x_texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_texture.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_texture.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_x_texture.links heading=4-%}
     </p>
     <h3>positive_y_active</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_active.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_active.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_active.links heading=4-%}
     </p>
     <h3>positive_y_texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_texture.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_texture.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_y_texture.links heading=4-%}
     </p>
     <h3>positive_z_active</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_active.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_active.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_active.links heading=4-%}
     </p>
     <h3>positive_z_texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_texture.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_texture.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.positive_z_texture.links heading=4-%}
     </p>
     <h3>projection_matrix</h3>
     <p class="scene-class-type">
       <b>Mat4d</b>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_matrix.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_matrix.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_matrix.links heading=4-%}
     </p>
     <h3>projection_mode</h3>
     <p class="scene-class-type">
@@ -729,70 +585,56 @@ title: ProjectTriplanarMap
           | projection_matrix = 1
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_mode.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_mode.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projection_mode.links heading=4-%}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
       <b>Node</b>
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projector.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projector.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.projector.links heading=4-%}
     </p>
     <h3>random_seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 8241
       <p class="scene-class-comments">Seed for randomizing orientation, offset, and flip</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.random_seed.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.random_seed.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.random_seed.links heading=4-%}
     </p>
     <h3>randomize_flip</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Rnd flipping in S or T for each active texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_flip.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_flip.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_flip.links heading=4-%}
     </p>
     <h3>randomize_offset</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Rnd offset in S or T for each active texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_offset.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_offset.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_offset.links heading=4-%}
     </p>
     <h3>randomize_rotation</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Rnd 2d rotation of each active texture</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_rotation.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.randomize_rotation.links heading=4-%}
     </p>
     <h3>rotate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotate.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotate.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotate.links heading=4-%}
     </p>
     <h3>rotation_order</h3>
     <p class="scene-class-type">
@@ -804,50 +646,40 @@ title: ProjectTriplanarMap
           | zxy = 4
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotation_order.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotation_order.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.rotation_order.links heading=4-%}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.scale.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.scale.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.scale.links heading=4-%}
     </p>
     <h3>transition_width</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.5
       <p class="scene-class-comments">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.transition_width.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.transition_width.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.transition_width.links heading=4-%}
     </p>
     <h3>translate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.translate.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.translate.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.translate.links heading=4-%}
     </p>
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Project onto reference positions ('ref_P') and normals ('ref_N')</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.use_reference_space.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.use_reference_space.images data=site.data.scene-classes.maps.ProjectTriplanarMap-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarMap.attributes.use_reference_space.links heading=4-%}
     </p>
   </p>
 </details>
