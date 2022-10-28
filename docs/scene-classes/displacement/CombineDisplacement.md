@@ -8,22 +8,8 @@ title: CombineDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CombineDisplacement
-{%assign image_path=site.data.scene-classes.displacement.CombineDisplacement.image_path%}
-{%if site.data.scene-classes.displacement.CombineDisplacement.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.displacement.CombineDisplacement.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.displacement.CombineDisplacement.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.displacement.CombineDisplacement.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.gallery data=site.data.scene-classes.displacement.CombineDisplacement-%}
+{%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.links-%}
 ---
 ## Attribute Reference
 
@@ -36,30 +22,24 @@ title: CombineDisplacement
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.bound_padding.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.bound_padding.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
+      {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.bound_padding.links heading=4-%}
     </p>
     <h3>input_1</h3>
     <p class="scene-class-type">
       <b>Displacement</b>
       default: None
       <p class="scene-class-comments">Displacement object 1</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_1.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_1.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
+      {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_1.links heading=4-%}
     </p>
     <h3>input_2</h3>
     <p class="scene-class-type">
       <b>Displacement</b>
       default: None
       <p class="scene-class-comments">Displacement object 2</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_2.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_2.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
+      {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_2.links heading=4-%}
     </p>
     <h3>operation</h3>
     <p class="scene-class-type">
@@ -68,30 +48,24 @@ title: CombineDisplacement
           | max magnitude = 1
           | min magnitude = 2
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.operation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.operation.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
+      {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.operation.links heading=4-%}
     </p>
     <h3>scale_1</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">Scale of input 1</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_1.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_1.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
+      {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_1.links heading=4-%}
     </p>
     <h3>scale_2</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">Scale of input 2</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_2.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_2.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
+      {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.scale_2.links heading=4-%}
     </p>
   </p>
 </details>

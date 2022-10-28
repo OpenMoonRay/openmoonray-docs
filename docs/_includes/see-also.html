@@ -1,0 +1,11 @@
+{% if include.links.size > 0 %}
+{%if include.heading%}{%assign h_size=include.heading%}{%else%}{%assign h_size=2%}{%endif%}
+<div class="see-also">
+<h{{h_size}}>See Also</h{{h_size}}>
+{%- for link in include.links -%}
+  <div>
+    <a href="{{site.baseurl}}/{{link.url}}">{{link.text}}</a>
+  </div>
+{% endfor %}
+</div><br>
+{% endif %}

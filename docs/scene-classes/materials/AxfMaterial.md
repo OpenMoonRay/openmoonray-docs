@@ -8,22 +8,8 @@ title: AxfMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # AxfMaterial
-{%assign image_path=site.data.scene-classes.materials.AxfMaterial.image_path%}
-{%if site.data.scene-classes.materials.AxfMaterial.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.materials.AxfMaterial.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.materials.AxfMaterial.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.materials.AxfMaterial.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.gallery data=site.data.scene-classes.materials.AxfMaterial-%}
+{%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: AxfMaterial
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.input_normal_dial.links heading=4-%}
     </p>
     <h3>normal</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">bind the 'Normal' texture here, the multiplier is ignored. The state's normal is used when no texture is bound.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.normal.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.normal.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.normal.links heading=4-%}
     </p>
     <h3>normal_space</h3>
     <p class="scene-class-type">
@@ -57,10 +39,8 @@ title: AxfMaterial
           | tangent = 0 (default)
           | render = 1
       <p class="scene-class-comments">Specifies what space the normal is given in.  Usually this is tangent space for texture maps and render space for projections</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.normal_space.links heading=4-%}
     </p>
   </p>
 </details>
@@ -72,100 +52,80 @@ title: AxfMaterial
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">bind the 'Alpha' texture here</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.alpha.links heading=4-%}
     </p>
     <h3>aniso_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.0
       <p class="scene-class-comments">bind the 'AnisoRotation' texture here</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.aniso_rotation.links heading=4-%}
     </p>
     <h3>casts_caustics</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">allows continuation of caustic light paths</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.casts_caustics.links heading=4-%}
     </p>
     <h3>diffuse_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the 'DiffuseColor' texture here</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.diffuse_color.links heading=4-%}
     </p>
     <h3>extra_aovs</h3>
     <p class="scene-class-type">
       <b>Map</b>
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>fresnel</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">bind the 'Fresnel' texture here</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.fresnel.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.label.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.label.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.priority.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.priority.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.priority.links heading=4-%}
     </p>
     <h3>specular_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the 'SpecularColor' texture here</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.specular_color.links heading=4-%}
     </p>
     <h3>specular_lobe</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
       default: [ 1, 1 ]
       <p class="scene-class-comments">bind the 'SpecularLobe' texture here</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.images data=site.data.scene-classes.materials.AxfMaterial-%}
+      {%-include see-also.html links=site.data.scene-classes.materials.AxfMaterial.attributes.specular_lobe.links heading=4-%}
     </p>
   </p>
 </details>

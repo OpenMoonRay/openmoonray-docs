@@ -8,22 +8,8 @@ title: TraceSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TraceSet
-{%assign image_path=site.data.scene-classes.trace-set.TraceSet.image_path%}
-{%if site.data.scene-classes.trace-set.TraceSet.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.trace-set.TraceSet.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.trace-set.TraceSet.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.trace-set.TraceSet.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.trace-set.TraceSet.gallery data=site.data.scene-classes.trace-set.TraceSet-%}
+{%-include see-also.html links=site.data.scene-classes.trace-set.TraceSet.links-%}
 ---
 ## Attribute Reference
 
@@ -36,20 +22,16 @@ title: TraceSet
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.images data=site.data.scene-classes.trace-set.TraceSet-%}
+      {%-include see-also.html links=site.data.scene-classes.trace-set.TraceSet.attributes.geometries.links heading=4-%}
     </p>
     <h3>parts</h3>
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.trace-set.TraceSet.attributes.parts.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.trace-set.TraceSet.attributes.parts.images data=site.data.scene-classes.trace-set.TraceSet-%}
+      {%-include see-also.html links=site.data.scene-classes.trace-set.TraceSet.attributes.parts.links heading=4-%}
     </p>
   </p>
 </details>

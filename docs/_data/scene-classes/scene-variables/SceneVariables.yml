@@ -1,0 +1,6 @@
+---
+attributes:
+  path_guide_enable:
+    links:
+      - text: Path Guiding
+        url: /moonray/how-to-guides/path-guiding

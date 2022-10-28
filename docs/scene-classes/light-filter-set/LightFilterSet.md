@@ -8,22 +8,8 @@ title: LightFilterSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LightFilterSet
-{%assign image_path=site.data.scene-classes.light-filter-set.LightFilterSet.image_path%}
-{%if site.data.scene-classes.light-filter-set.LightFilterSet.gallery-%}
----
-## Gallery
-{% include image-gallery.html
-    images=site.data.scene-classes.light-filter-set.LightFilterSet.gallery
-    path=image_path
-%}
-{%endif%}
-{%if site.data.scene-classes.light-filter-set.LightFilterSet.links-%}
----
-## See Also
-{%for link in site.data.scene-classes.light-filter-set.LightFilterSet.links-%}
-[{{link.text}}]({{site.baseurl}}/{{link.url}})  
-{%endfor%}
-{%endif%}
+{%-include image-gallery.html images=site.data.scene-classes.light-filter-set.LightFilterSet.gallery data=site.data.scene-classes.light-filter-set.LightFilterSet-%}
+{%-include see-also.html links=site.data.scene-classes.light-filter-set.LightFilterSet.links-%}
 ---
 ## Attribute Reference
 
@@ -36,10 +22,8 @@ title: LightFilterSet
       <b>Lightfilter Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
-      {% include image-gallery.html
-          images=site.data.scene-classes.light-filter-set.LightFilterSet.attributes.lightfilters.images.
-          path=image_path
-      %}
+      {%-include image-gallery.html images=site.data.scene-classes.light-filter-set.LightFilterSet.attributes.lightfilters.images data=site.data.scene-classes.light-filter-set.LightFilterSet-%}
+      {%-include see-also.html links=site.data.scene-classes.light-filter-set.LightFilterSet.attributes.lightfilters.links heading=4-%}
     </p>
   </p>
 </details>
