@@ -1,18 +1,21 @@
 ---
----
-# RenderOutput
+title: Render Outputs
 
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+# Render Outputs
+## This page needs to be rebuilt
+
+See [RenderOutput](../../scene-classes/render-output)
 ## Introduction
 
 The RenderOutput object is used to specify any output the renderer
-produces.  It has a lot of options.  For the most up to date set of
-options type
-
-rdl2_print RenderOutput
-
- 
-
-In your command shell.  What follows on this page are some simple
+produces.  It has a lot of options.
+What follows on this page are some simple
 examples and links to other, more specific docs.
 
 ### Examples

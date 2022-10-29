@@ -427,6 +427,8 @@ toc:
             path: /moonray/how-to-guides/opencolorio-notes
           - item: PBR Validity
             path: /moonray/how-to-guides/pbr-validity
+          - item: Render Outputs
+            path: /moonray/how-to-guides/render-outputs
   - item: Hydra
     path: /hydra
     subitems:
