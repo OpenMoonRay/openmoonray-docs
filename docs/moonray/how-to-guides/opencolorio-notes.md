@@ -1,6 +1,15 @@
 ---
+title: OpenColorIO in Moonray_gui
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OpenColorIO in Moonray_gui
+## This page needs to be rebuilt
+---
 
 Moonray_gui supports OpenColorIO v2 starting with version (TBD). Users
 may now supply one .ocio config file to specify the transformation from

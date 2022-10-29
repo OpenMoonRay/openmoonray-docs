@@ -1,6 +1,15 @@
 ---
+title: Bokeh
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-## Introduction
+# Bokeh
+## This page needs to be rebuilt
+---
 
 *Bokeh* refers to set of aesthetic qualities of out-of-focus portions of
 an image. Bokeh primarily exists as a consequence of a depth of field,
