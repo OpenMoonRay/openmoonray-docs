@@ -453,6 +453,7 @@ toc:
       - item: Doxygen Reference
         path: /api/html
   - item: Release Notes
+    path: /release-notes
   - item: Examples
     path: /examples/
     subitems:
