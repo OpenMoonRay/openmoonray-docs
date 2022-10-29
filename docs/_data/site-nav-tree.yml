@@ -423,6 +423,8 @@ toc:
             path: /moonray/how-to-guides/baking-textures
           - item: Bokeh
             path: /moonray/how-to-guides/bokeh
+          - item: Extra AOV Workflow and Case Studies
+            path: /moonray/how-to-guides/extra-aovs
           - item: OCIO Notes
             path: /moonray/how-to-guides/opencolorio-notes
           - item: PBR Validity
