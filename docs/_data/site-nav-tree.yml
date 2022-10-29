@@ -417,6 +417,8 @@ toc:
       - item: How-To Guides
         path: /moonray/how-to-guides/
         subitems:
+          - item: Adaptive Sampling
+            path: /moonray/how-to-guides/adaptive-sampling
           - item: Baking Textures
             path: /moonray/how-to-guides/baking-textures
           - item: PBR Validity
@@ -454,33 +456,6 @@ toc:
         path: /api/html
   - item: Release Notes
     path: /release-notes
-  - item: Examples
-    path: /examples/
-    subitems:
-      - item: Why Moonray
-        path: /examples/why-moonray
-      - item: Display Filters
-        path: /examples/display-filters
-      - item: Render Output
-        path: /examples/renderoutput
-      - item: ExtraAov Workflow and Case Studies
-        path: /examples/extra-aov-workflow-and-case-studies
-      - item: Camera
-        path: /examples/camera
-      - item: Adaptive Sampling
-        path: /examples/adaptive-sampling
-      - item: Bokeh
-        path: /examples/bokeh
-      - item: Metadata
-        path: /examples/metadata
-      - item: OpenColorIO in moonray_gui
-        path: /examples/cpencolor-io-in-Moonray-gui
-      - item: Adding Precomputed Samples Points To MoonRay
-        path: /examples/adding-precomputed-samples-points-to-moonray
-      - item: Amorphous Volume
-        path: /examples/amorphous-volume
-      - item: BakeCamera
-        path: /examples/bake-camera
   - item: Legal/Licensing
     path: /license
 
