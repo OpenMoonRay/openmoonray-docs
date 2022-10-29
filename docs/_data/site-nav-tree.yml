@@ -405,7 +405,7 @@ toc:
             path: /scene-classes/volumes/CutoutVolume
           - item: VdbVolume
             path: /scene-classes/volumes/VdbVolume
-  - item: Moonray
+  - item: MoonRay
     path: /moonray
     subitems:
       - item: Cmd-line Options
@@ -417,12 +417,22 @@ toc:
       - item: How-To Guides
         path: /moonray/how-to-guides/
         subitems:
+          - item: Adaptive Sampling
+            path: /moonray/how-to-guides/adaptive-sampling
           - item: Baking Textures
             path: /moonray/how-to-guides/baking-textures
+          - item: Bokeh
+            path: /moonray/how-to-guides/bokeh
+          - item: Extra AOV Workflow and Case Studies
+            path: /moonray/how-to-guides/extra-aovs
+          - item: OCIO Notes
+            path: /moonray/how-to-guides/opencolorio-notes
           - item: PBR Validity
             path: /moonray/how-to-guides/pbr-validity
           - item: Point Rendering
             path: /moonray/how-to-guides/point-rendering
+          - item: Render Outputs
+            path: /moonray/how-to-guides/render-outputs
   - item: Hydra
     path: /hydra
     subitems:
@@ -455,33 +465,7 @@ toc:
       - item: Doxygen Reference
         path: /api/html
   - item: Release Notes
-  - item: Examples
-    path: /examples/
-    subitems:
-      - item: Why Moonray
-        path: /examples/why-moonray
-      - item: Display Filters
-        path: /examples/display-filters
-      - item: Render Output
-        path: /examples/renderoutput
-      - item: ExtraAov Workflow and Case Studies
-        path: /examples/extra-aov-workflow-and-case-studies
-      - item: Camera
-        path: /examples/camera
-      - item: Adaptive Sampling
-        path: /examples/adaptive-sampling
-      - item: Bokeh
-        path: /examples/bokeh
-      - item: Metadata
-        path: /examples/metadata
-      - item: OpenColorIO in moonray_gui
-        path: /examples/cpencolor-io-in-Moonray-gui
-      - item: Adding Precomputed Samples Points To MoonRay
-        path: /examples/adding-precomputed-samples-points-to-moonray
-      - item: Amorphous Volume
-        path: /examples/amorphous-volume
-      - item: BakeCamera
-        path: /examples/bake-camera
+    path: /release-notes
   - item: Legal/Licensing
     path: /license
 
