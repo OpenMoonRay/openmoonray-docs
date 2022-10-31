@@ -456,14 +456,36 @@ toc:
     subitems:
       - item: The scene_rdl2 Library
         path: /developers-guide/scene_rdl2-library
-      - item: Arras Overview
+      - item: Arras
         path: /developers-guide/arras/arras-overview
-      - item: Session Definitions
-        path: /developers-guide/arras/arras-session-definitions
-      - item: Client API
-        path: /developers-guide/arras/arras-client-api
+        subitems:
+        - item: Arras Session Definitions
+          path: /developers-guide/arras/arras-session-definitions
+        - item: Arras Client API
+          path: /developers-guide/arras/arras-client-api
       - item: Doxygen Reference
         path: /api/html
+      - item: Writing Shaders
+        path: /developers-guide/shaders/
+        subitems:
+          - item: Cameras
+            path: /developers-guide/shaders/cameras
+          - item: Displacement
+            path: /developers-guide/shaders/displacement
+          - item: Display Filters
+            path: /developers-guide/shaders/display-filters
+          - item: Geometry Procedurals
+            path: /developers-guide/shaders/geometry-procedurals
+          - item: Lights
+            path: /developers-guide/shaders/lights
+          - item: Light Filters
+            path: /developers-guide/shaders/light-filters
+          - item: Materials
+            path: /developers-guide/shaders/materials
+          - item: Maps
+            path: /developers-guide/shaders/maps
+          - item: Normal Maps
+            path: /developers-guide/shaders/normal-maps
   - item: Release Notes
     path: /release-notes
   - item: Legal/Licensing
