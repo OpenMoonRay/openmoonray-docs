@@ -480,12 +480,14 @@ toc:
             path: /developers-guide/shaders/lights
           - item: Light Filters
             path: /developers-guide/shaders/light-filters
-          - item: Materials
-            path: /developers-guide/shaders/materials
           - item: Maps
             path: /developers-guide/shaders/maps
+          - item: Materials
+            path: /developers-guide/shaders/materials
           - item: Normal Maps
             path: /developers-guide/shaders/normal-maps
+          - item: Volume Shaders
+            path: /developers-guide/shaders/volume-shaders
   - item: Release Notes
     path: /release-notes
   - item: Legal/Licensing
