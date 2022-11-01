@@ -30,7 +30,7 @@ MoonRay accomplishes layering through parameter blending. This means each layera
 
 The key benefit of parameter blending is that it is incredibly fast and efficient. A complex multi-layer material gets resolved to a single new material. The parameters are intelligently blended so layering works even for dissimilar materials.
 
-## [Hair materials](HairMaterials)
+## [Hair materials](hair)
 >Hair materials produce a separate type of BSDF called a BCSDF (bidirectional cylindrical scattering distribution function). A BCSDF models the reflection and transmission of light through a cylindrical fiber rather than a flat plane.
 
 Hair materials are designed solely to be used on curve geometry to render hair, fur, or other fibers. They use an entirely different shading model and as such are not compatible with the Dwa materials. However, they are layerable with each other.
