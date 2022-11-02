@@ -11,7 +11,7 @@ title: Scene Classes
 
 SceneClasses represent the various constructs that describe a scene.
 
-SceneClasses in MoonRay include:
+SceneClasses in MoonRay have several canonical types and include:
 
 [Camera](./cameras/)  
 [Displacement](./displacement/)  

@@ -13,10 +13,10 @@ for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, b
 plug-ins can be authored to extend MoonRay's functionality further.
 
 Once built, Plug-ins are found at run-time using the `RDL2_DSO_PATH` environment variable or via the
-`-rdl_path` command-line argument to the `moonray` or `moonray_gui` executables.
+`-dso_path` command-line argument to the `moonray` or `moonray_gui` executables.
 
-Probably the best way to quickly understand what is required to write a new plugin of a given
-type is to look at the existing plugins of that type.
+Probably the best way to quickly understand what is required to write a new plug-in of a given
+type is to look at the existing plug-ins of that type.
 
 ### Plug-in Types
 MoonRay supports several types of plug-ins. Each plug-in derives
@@ -38,7 +38,7 @@ the installed public header files. This allows them to be built separately from 
 in another repository, for example. For other types, a public API has not yet been created.
 It is still possible to author new plug-ins, but it will be necessary to build them alongside MoonRay.
 
-All plug-in types are authored as C++ classes, but some plugin types include functions that
+All plug-in types are authored as C++ classes, but some plug-in types include functions that
 are written in ISPC.
 
 ### The Class Definition
@@ -127,7 +127,7 @@ attribute declared using JSON:
 ```
 
 ### The Plug-in Interfaces
-Each plug-in type above declares some interface that is specific to that plugin type, and that
+Each plug-in type above declares some interface that is specific to that plug-in type, and that
 must be implemented by the plug-in.
 
 This table shows the type of plug-in, the name of the function(s) that comprise that plug-in type's interface,
@@ -159,7 +159,7 @@ static void sample(const scene_rdl2::rdl2::Map *self,
                    scene_rdl2::math::Color *result);
 ```
 
-`Material` shader plugins implement the `shade()` function declared in `scene_rdl2::rdl2::Material`, which is responsible for configuring a `Bsdf` via the `BsdfBuilder` API.
+`Material` shader plug-ins implement the `shade()` function declared in `scene_rdl2::rdl2::Material`, which is responsible for configuring a `Bsdf` via the `BsdfBuilder` API.
 ```
 static void shade(const scene_rdl2::rdl2::Material* mtl,
                   moonray::shading::TLState *tls,
@@ -178,7 +178,7 @@ See the links below for information specific to each type, and on writing new pl
 [Writing Geometry Procedural Plug-ins](geometry-procedurals)  
 [Writing Light Plug-ins](lights)  
 [Writing LightFilter Plug-ins](light-filters)  
-[Weiting Map Plug-ins](maps)  
+[Writing Map Plug-ins](maps)  
 [Writing Material Plug-ins](materials)  
 [Writing NormalMap Plug-ins](normal-maps)  
 [Writing Volume Shader Plug-ins](volume-shaders)
