@@ -17,8 +17,8 @@ PBR Validity is a feature that aids the artist in validating that materials have
 The PBR validity can be visualized by setting up a RenderOutput with a material AOV syntax that queries the "pbr_validity" property, with the lobe selector specifying the type of material you want to validate. To make it easier to isolate specific material types, the shaders have exposed AOV labels.
 
 **RDLA setup for albedo validity**
-```
-local pbrValAovAlbedo = RenderOutput("/Scene/lighting/pbr_validity_aov_albedo") {
+```lua
+RenderOutput("/Scene/lighting/pbr_validity_aov_albedo") {
     ["result"] = 7,
     ["material aov"] = "'diffuse'.DSS.pbr_validity",
     ["file name"] = "result0.exr",
@@ -28,7 +28,7 @@ local pbrValAovAlbedo = RenderOutput("/Scene/lighting/pbr_validity_aov_albedo") 
 The above block shows an example of selecting and validating diffuse lobes.  Similarly, other lobe types can be selected using common Material AOV syntax. Some examples:
 
 **Material AOV syntax examples for PBR Validity**
-```
+```lua
 ["material aov"] = "'specular'.pbr_validity"
 ["material aov"] = "'clearcoat'.pbr_validity"
 ["material aov"] = "'moisture'.pbr_validity"

@@ -19,7 +19,7 @@ title: hd_render Command
 The HdMoonray project includes a commandline program, hd_render, that performs Hydra renders from a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for hd_render.
 
 ## Usage
-```
+```bash
 hd_render [Flags]
 -h|-help
     Print this message.

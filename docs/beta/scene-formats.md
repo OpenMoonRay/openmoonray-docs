@@ -13,7 +13,7 @@ Moonray uses a proprietary scene description format called RDL2. There are two p
 
 You can use the program `rdl2_convert` to translate between the two formats, for example:
 
-```
+```bash
 rdl2_convert -in scene_binary.rdlb -out scene_text.rdla
 ```
 
@@ -29,30 +29,36 @@ An RDLA file is actually a Lua (https://www.lua.org) script, with some extension
 
 An RDL2 scene is just a set of scene objects : each object having a name, class and attributes. In RDLA, an object is defined like this:
 
-```Lua
-BaseMaterial("/scene/sphere/base") {
-    ["ior"] = 1.0,
-    ["diffuse color"] = Rgb(0.8, 0.8, 0.2)
+```lua
+DwaSolidDielectricMaterial("/scene/sphere/mtl/yellow") {
+    ["refractive_index"] = 1.5,
+    ["albedo"] = Rgb(0.8, 0.8, 0.2)
 }
 ```
 
-`BaseMaterial` is the class of the object, and `/scene/sphere/base` is the name. `ior` and `diffuse color` are attributes supported by the `BaseMaterial` class.
+`DwaSolidDielectricMaterial` is the class of the object, and `/scene/sphere/mtl/yellow` is the name. `refractive_index` and `albedo` are attributes supported by the `DwaSolidDeielectricMaterial` class.
 
-In most cases, classes are implemented as shared library plugins. Moonray searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, Moonray will find the library `BaseMaterial.so` somewhere on the path.
+In most cases, classes are implemented as shared library plugins. Moonray searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, Moonray will find the library `DwaSolidDielectricMaterial.so` somewhere on the path.
 
-`BaseMaterial` has about 50 attributes in total. Attributes that you don't explicitly set take a default value defined by the class.
+`DwaSolidDielectricMaterial` has about 90 attributes in total. Attributes that you don't explicitly set take a default value defined by the class.
 
 You can see the attributes of a class using the `rdl2_print` command:
 
-```
-$ rdl2_print BaseMaterial
-BaseMaterial("Material") {
-    ["anisotropic_direction"] = Vec2f(1, 0),  -- Vec2f, bindable
-        -- label: anisotropic direction
+```bash
+$ rdl2_print DwaSolidDielectricMaterial
+DwaSolidDielectricMaterial("DwaBaseLayerable") {
+    ["albedo"] = Rgb(1, 1, 1),  -- Rgb, bindable
+        -- comment: the overall surface color as seen from a distance (ie. diffuse color)
     ["anisotropy"] = 0,  -- Float, bindable
+        -- comment: controls the shape of the primary reflection
+    ["bssrdf"] = 0,  -- Int, enumerable (normalized diffusion)
+        -- 0 = normalized diffusion
+        -- 1 = dipole
+        -- 2 = random walk
+        -- comment: 0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk
     ["casts_caustics"] = false,  -- Bool
+        -- comment: allows continuation of caustic light paths.
         -- label: casts caustics
-    ["diffuse"] = true,  -- Bool
     ...
 ```
 
@@ -62,7 +68,7 @@ Compound values like `Rgb` are created using a construction function, as shown i
 
 There are some additional functions to construct transform matrices:
 
-```
+```lua
 translate(x, y, z)
 rotate(degrees, axis_x, axis_y, axis_z)
 scale(x, y, z)
@@ -95,7 +101,7 @@ AreaSpotLight("/scene/key") {
     ...
 }
 AreaSpotLight("/scene/fill") {
-	...
+    ...
 }
 LightSet("/scene/lights") {
     AreaSpotLight("/scene/key"),
@@ -110,7 +116,7 @@ key = AreaSpotLight("/scene/key") {
     ...
 }
 fill = AreaSpotLight("/scene/fill") {
-	...
+    ...
 }
 -- Sets the LightSet to contain key and fill.
 lights = LightSet("/scene/lights") {
@@ -130,8 +136,8 @@ The most general form of a layer entry specifies a geometry object, part name, m
 ```lua
 sphere1 = SphereGeometry("/scene/sphere1")
 sphere2 = SphereGeometry("/scene/sphere2")
-sphere1_mat = BaseMaterial("/scene/sphere1/mat")
-sphere2_mat = BaseMaterial("/scene/sphere2/mat")
+sphere1_mat = DwaBaseMaterial("/scene/sphere1/mat")
+sphere2_mat = DwaBaseMaterial("/scene/sphere2/mat")
 lights = LightSet("/scene/lights")
   
 layer = Layer("/scene/layer") {
@@ -148,12 +154,12 @@ In this example, the "part name" component of the layer assignments is set to an
 Some attributes can accept a map binding as well as a value. Maps are 2 or 3 dimensional patterns that are evaluated for each sample. Bindings are created using the `bind` function:
 
 ```lua
-BaseMaterial("/scene/sphere/base") {
-    ["diffuse color"] = bind(CheckerboardMap("/seq/shot/checkermap"), Rgb(0.8, 0.8, 0.2))
+DwaBaseMaterial("/scene/sphere/base") {
+    ["albedo"] = bind(CheckerboardMap("/seq/shot/checkermap"), Rgb(0.8, 0.8, 0.2))
 }
 ```
 
-The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.8)` to obtain the value for `diffuse color`.
+The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.8)` to obtain the value for `albedo`.
 
 Each class implementation can decide how to combine the evaluated map value and the attribute's base value : it is not required that the class multiply one by the other, although that is usually the case.
 
@@ -181,7 +187,7 @@ SceneVariables {
 
 There are just over 100 different scene variables in total. You can list them all using `rdl2_print`:
 
-```
+```bash
 $ rdl2_print SceneVariables
 SceneVariables("SceneObject") {
     ["aperture_window"] = IntVector(-2147483648, -2147483648, -2147483648, -2147483648),  -- IntVector

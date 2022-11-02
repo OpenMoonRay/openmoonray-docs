@@ -50,7 +50,7 @@ and add the boilerplate code common to all plug-in types.  `RDL2_DSO_CLASS_BEGIN
 class name and the plug-in type it derives from.
 
 For example, a Map shader plug-in might contain the following class definition:
-```
+```cpp
 RDL2_DSO_CLASS_BEGIN(CheckerboardMap, rdl2::Map)
 
 public:
@@ -65,6 +65,8 @@ private:
 
 RDL2_DSO_CLASS_END(CheckerboardMap)
 ```
+
+See also: [scene_rdl2 library]({{site.baseurl}}/developers-guide/scene_rdl2-library)
 
 Each plug-in may define a constructor and destructor, and any number of static/public/protected/private member
 functions or variables, including those that implement the specific plug-in Type's interface.
@@ -90,7 +92,7 @@ called `attributes.cc` which is found and included during the build process.
 
 Here's an example of a simple `attributes.cc` file that declares a single bool attribute
 called "do_something":
-```
+```cpp
 #include <scene/rdl2/rdl2.h>
 
 using namespace scene_rdl2;
@@ -152,7 +154,7 @@ for each specific plug-in type for more information.
 |VolumeShader|`albedo() emission() extinct()`|C++|attributes.cc|no|
 
 For example, `Map` shader plug-ins implement the `sample()` function declared in `scene_rdl2::rdl2::Map` which computes a `Color` result.
-```
+```cpp
 static void sample(const scene_rdl2::rdl2::Map *self,
                    moonray::shading::TLState *tls,
                    const moonray::shading::State &state,
@@ -160,7 +162,7 @@ static void sample(const scene_rdl2::rdl2::Map *self,
 ```
 
 `Material` shader plug-ins implement the `shade()` function declared in `scene_rdl2::rdl2::Material`, which is responsible for configuring a `Bsdf` via the `BsdfBuilder` API.
-```
+```cpp
 static void shade(const scene_rdl2::rdl2::Material* mtl,
                   moonray::shading::TLState *tls,
                   const moonray::shading::State &state,

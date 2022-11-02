@@ -21,7 +21,7 @@ The `render_profile_viewer` is a standalone app that graphs and compares statist
 ![Render Profile Viewer](../../assets/images/tools/render-profile-viewer/render_profile_viewer.jpg)
 
 # Usage
-```
+```bash
 render_profile_viewer [-h] [logs [logs ...]]
 ```
 Where logs is either a list of log files or a directory containing log files.
