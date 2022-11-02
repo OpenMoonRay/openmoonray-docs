@@ -8,8 +8,8 @@ box_url: https://dreamworks.box.com/s/yemnny3cq7yducyru0rg94grv7ff6f87
 box_scenes_url: https://dreamworks.app.box.com/folder/170035927320
 
 # strip the .zip extension from the filenames, it is added later when appropriate
-filename_source: openmoonray_source_22Sep
-filename_image: openmoonray_image_22Sep
+filename_source: openmoonray_source_01Nov
+filename_image: openmoonray_image_01Nov
 filename_minicoord: minicoord_20Sep
 
 release_dir: /tmp/openmoonray_release
