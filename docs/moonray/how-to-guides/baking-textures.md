@@ -103,7 +103,7 @@ normal map, you'll most likely want to use "tangent space."
 
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/bake_mesh.png)
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh.png)
-```Lua
+```lua
 -- bake_mesh.rdla
 -- bake the lighting on the planeGeom, from the camera viewpoint
 -- moonray -in bake_mesh.rdla -out bake_mesh.exr
@@ -177,14 +177,13 @@ BakeCamera("/Scene/rendering/camera") {
  ["mode"] = 0 ,-- camera
  ["near"] = .0001,
  ["far"] = 1,
-
 ```
 
 ### Baking along a normal
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/sphere.png)
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/sphere_bake.png)
 
-```Lua
+```lua
 -- Bake a sphere along its normal directions
 -- raas_render -in sphere.rdla -out sphere.exr
 --
@@ -231,7 +230,7 @@ Layer("/Scene/layer")(assignments)
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/sphere_normals.png)
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/sphere_bake2.png)
 
-```Lua
+```lua
 This example is similar to the previous example, except that the surfacing of the sphere contains a normal map. In order to take these normals into account, we can run a pre-pass that generates the normal map and then a second pass that generates a bake map along these normals.
 
 -- sphere_bake_normals.rdla
@@ -399,7 +398,7 @@ Layer("/Scene/layer")(assignments)
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh_udim.png)
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/bake_plane_1001.png)
 
-```Lua
+```lua
 -- bake_plane.rdla
 -- in sh
 -- for udim in 1001 1002 1003 1004 1011 1012 1013 1014 1021 1022 1023 1024 1031 1032 1033 1034

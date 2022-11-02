@@ -60,7 +60,7 @@ There are many other session definitions in the **sessions** directory, but the 
 
 ``--num-mcrt 2`` tells arras_render to start two render processes. The session definition ``mcrt_progressive_n`` specifies that each render process uses all the cores available on a machine, so you can increase this number up to the total number of machines running arras4_node. If the number is too high, you will get a message like this:
 
-```
+```bash
 2022-08-30T15:15:32.849592 E client[9277]:139684743458816: Unable to connect to Arras: Failed to connect to Coordinator: Insufficient resources available to fill this request
 ```
 
