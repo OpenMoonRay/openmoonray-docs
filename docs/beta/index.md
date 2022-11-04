@@ -13,6 +13,7 @@ title: Beta
 [Building](building)  
 [Dependencies](dependencies)  
 [Distributed Arras](distributed-arras)  
+[Hydra Setup](hydra-setup)  
 [Release Contents](release-contents)  
 [Scene Formats](scene-formats)  
 [Source Contents](source-contents)  

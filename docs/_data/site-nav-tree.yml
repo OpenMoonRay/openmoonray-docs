@@ -12,6 +12,8 @@ toc:
           path: /beta/dependencies
         - item: Distributed Arras
           path: /beta/distributed-arras
+        - item: Hydra Setup
+          path: /beta/hydra-setup
         - item: Release Contents
           path: /beta/release-contents
         - item: Scene Formats
