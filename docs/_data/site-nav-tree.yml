@@ -423,12 +423,16 @@ toc:
             path: /moonray/how-to-guides/adaptive-sampling
           - item: Baking Textures
             path: /moonray/how-to-guides/baking-textures
+          - item: Barn Door Light Filter
+            path: /moonray/how-to-guides/barn-door-light-filter
           - item: Bokeh
             path: /moonray/how-to-guides/bokeh
           - item: Extra AOV Workflow and Case Studies
             path: /moonray/how-to-guides/extra-aovs
           - item: OCIO Notes
             path: /moonray/how-to-guides/opencolorio-notes
+          - item: Path Guiding
+            path: /moonray/how-to-guides/path-guiding
           - item: PBR Validity
             path: /moonray/how-to-guides/pbr-validity
           - item: Point Rendering
