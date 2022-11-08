@@ -8,6 +8,7 @@ title: IntensityLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # IntensityLightFilter
+{%-include overview.html data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.light-filters.IntensityLightFilter.gallery data=site.data.scene-classes.light-filters.IntensityLightFilter-%}
 {%-include see-also.html links=site.data.scene-classes.light-filters.IntensityLightFilter.links-%}
 ---

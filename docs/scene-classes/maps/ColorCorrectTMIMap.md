@@ -8,6 +8,7 @@ title: ColorCorrectTMIMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectTMIMap
+{%-include overview.html data=site.data.scene-classes.maps.ColorCorrectTMIMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectTMIMap.gallery data=site.data.scene-classes.maps.ColorCorrectTMIMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectTMIMap.links-%}
 ---

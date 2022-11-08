@@ -8,6 +8,7 @@ title: SphereGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SphereGeometry
+{%-include overview.html data=site.data.scene-classes.geometry.SphereGeometry-%}
 {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.gallery data=site.data.scene-classes.geometry.SphereGeometry-%}
 {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.links-%}
 ---
@@ -54,6 +55,14 @@ title: SphereGeometry
 <details open>
   <summary>General attributes</summary>
   <p>
+    <h3>contains_camera</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.contains_camera.images data=site.data.scene-classes.geometry.SphereGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.contains_camera.links heading=4-%}
+    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>

@@ -37,6 +37,27 @@ title: BakeCamera
   </p>
 </details>
 <details open>
+  <summary>Medium attributes</summary>
+  <p>
+    <h3>medium_geometry</h3>
+    <p class="scene-class-type">
+      <b>Object</b>
+      default: None
+      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
+      {%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.attributes.medium_geometry.images data=site.data.scene-classes.cameras.BakeCamera-%}
+      {%-include see-also.html links=site.data.scene-classes.cameras.BakeCamera.attributes.medium_geometry.links heading=4-%}
+    </p>
+    <h3>medium_material</h3>
+    <p class="scene-class-type">
+      <b>Object</b>
+      default: None
+      <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
+      {%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.attributes.medium_material.images data=site.data.scene-classes.cameras.BakeCamera-%}
+      {%-include see-also.html links=site.data.scene-classes.cameras.BakeCamera.attributes.medium_material.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Motion Blur attributes</summary>
   <p>
     <h3>mb_shutter_bias</h3>

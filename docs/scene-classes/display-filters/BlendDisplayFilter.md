@@ -8,6 +8,7 @@ title: BlendDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BlendDisplayFilter
+{%-include overview.html data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.gallery data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
 {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.links-%}
 ---

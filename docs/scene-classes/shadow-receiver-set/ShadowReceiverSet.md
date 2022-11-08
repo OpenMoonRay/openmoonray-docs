@@ -8,6 +8,7 @@ title: ShadowReceiverSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ShadowReceiverSet
+{%-include overview.html data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
 {%-include image-gallery.html images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
 {%-include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.links-%}
 ---

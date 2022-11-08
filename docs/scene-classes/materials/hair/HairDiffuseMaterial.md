@@ -8,6 +8,7 @@ title: HairDiffuseMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairDiffuseMaterial
+{%-include overview.html data=site.data.scene-classes.materials.hair.HairDiffuseMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairDiffuseMaterial.gallery data=site.data.scene-classes.materials.hair.HairDiffuseMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.hair.HairDiffuseMaterial.links-%}
 ---

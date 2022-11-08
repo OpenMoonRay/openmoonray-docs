@@ -8,6 +8,7 @@ title: DwaColorCorrectMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaColorCorrectMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaColorCorrectMaterial.links-%}
 ---

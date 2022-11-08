@@ -8,6 +8,7 @@ title: RdlMeshGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RdlMeshGeometry
+{%-include overview.html data=site.data.scene-classes.geometry.RdlMeshGeometry-%}
 {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlMeshGeometry.gallery data=site.data.scene-classes.geometry.RdlMeshGeometry-%}
 {%-include see-also.html links=site.data.scene-classes.geometry.RdlMeshGeometry.links-%}
 ---
@@ -32,6 +33,14 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlMeshGeometry.attributes.adaptive_error.images data=site.data.scene-classes.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.scene-classes.geometry.RdlMeshGeometry.attributes.adaptive_error.links heading=4-%}
+    </p>
+    <h3>contains_camera</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlMeshGeometry.attributes.contains_camera.images data=site.data.scene-classes.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.RdlMeshGeometry.attributes.contains_camera.links heading=4-%}
     </p>
     <h3>curved_motion_blur_sample_count</h3>
     <p class="scene-class-type">

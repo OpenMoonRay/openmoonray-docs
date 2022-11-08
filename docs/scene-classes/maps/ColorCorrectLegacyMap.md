@@ -8,6 +8,7 @@ title: ColorCorrectLegacyMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectLegacyMap
+{%-include overview.html data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.links-%}
 ---

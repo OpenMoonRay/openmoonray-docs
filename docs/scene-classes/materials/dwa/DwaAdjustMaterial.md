@@ -8,6 +8,7 @@ title: DwaAdjustMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaAdjustMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaAdjustMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaAdjustMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.links-%}
 ---

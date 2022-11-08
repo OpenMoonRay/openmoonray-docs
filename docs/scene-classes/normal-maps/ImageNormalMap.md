@@ -8,6 +8,7 @@ title: ImageNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ImageNormalMap
+{%-include overview.html data=site.data.scene-classes.normal-maps.ImageNormalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ImageNormalMap.gallery data=site.data.scene-classes.normal-maps.ImageNormalMap-%}
 {%-include see-also.html links=site.data.scene-classes.normal-maps.ImageNormalMap.links-%}
 ---

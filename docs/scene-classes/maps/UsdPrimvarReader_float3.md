@@ -8,6 +8,7 @@ title: UsdPrimvarReader_float3
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_float3
+{%-include overview.html data=site.data.scene-classes.maps.UsdPrimvarReader_float3-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.UsdPrimvarReader_float3.gallery data=site.data.scene-classes.maps.UsdPrimvarReader_float3-%}
 {%-include see-also.html links=site.data.scene-classes.maps.UsdPrimvarReader_float3.links-%}
 ---

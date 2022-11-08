@@ -8,6 +8,7 @@ title: TangentSpaceDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TangentSpaceDisplayFilter
+{%-include overview.html data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.gallery data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
 {%-include see-also.html links=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.links-%}
 ---

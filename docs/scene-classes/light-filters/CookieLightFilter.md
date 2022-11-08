@@ -8,6 +8,7 @@ title: CookieLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CookieLightFilter
+{%-include overview.html data=site.data.scene-classes.light-filters.CookieLightFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.light-filters.CookieLightFilter.gallery data=site.data.scene-classes.light-filters.CookieLightFilter-%}
 {%-include see-also.html links=site.data.scene-classes.light-filters.CookieLightFilter.links-%}
 ---

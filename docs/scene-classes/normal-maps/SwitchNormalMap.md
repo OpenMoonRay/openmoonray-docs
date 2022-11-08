@@ -8,6 +8,7 @@ title: SwitchNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SwitchNormalMap
+{%-include overview.html data=site.data.scene-classes.normal-maps.SwitchNormalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.normal-maps.SwitchNormalMap.gallery data=site.data.scene-classes.normal-maps.SwitchNormalMap-%}
 {%-include see-also.html links=site.data.scene-classes.normal-maps.SwitchNormalMap.links-%}
 ---

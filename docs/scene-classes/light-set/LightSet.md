@@ -8,6 +8,7 @@ title: LightSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LightSet
+{%-include overview.html data=site.data.scene-classes.light-set.LightSet-%}
 {%-include image-gallery.html images=site.data.scene-classes.light-set.LightSet.gallery data=site.data.scene-classes.light-set.LightSet-%}
 {%-include see-also.html links=site.data.scene-classes.light-set.LightSet.links-%}
 ---

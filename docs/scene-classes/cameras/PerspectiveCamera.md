@@ -8,6 +8,7 @@ title: PerspectiveCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # PerspectiveCamera
+{%-include overview.html data=site.data.scene-classes.cameras.PerspectiveCamera-%}
 {%-include image-gallery.html images=site.data.scene-classes.cameras.PerspectiveCamera.gallery data=site.data.scene-classes.cameras.PerspectiveCamera-%}
 {%-include see-also.html links=site.data.scene-classes.cameras.PerspectiveCamera.links-%}
 ---
@@ -149,6 +150,27 @@ title: PerspectiveCamera
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.vertical_film_offset.images data=site.data.scene-classes.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.scene-classes.cameras.PerspectiveCamera.attributes.vertical_film_offset.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Medium attributes</summary>
+  <p>
+    <h3>medium_geometry</h3>
+    <p class="scene-class-type">
+      <b>Object</b>
+      default: None
+      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
+      {%-include image-gallery.html images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.medium_geometry.images data=site.data.scene-classes.cameras.PerspectiveCamera-%}
+      {%-include see-also.html links=site.data.scene-classes.cameras.PerspectiveCamera.attributes.medium_geometry.links heading=4-%}
+    </p>
+    <h3>medium_material</h3>
+    <p class="scene-class-type">
+      <b>Object</b>
+      default: None
+      <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
+      {%-include image-gallery.html images=site.data.scene-classes.cameras.PerspectiveCamera.attributes.medium_material.images data=site.data.scene-classes.cameras.PerspectiveCamera-%}
+      {%-include see-also.html links=site.data.scene-classes.cameras.PerspectiveCamera.attributes.medium_material.links heading=4-%}
     </p>
   </p>
 </details>

@@ -8,6 +8,7 @@ title: DomeMaster3DCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DomeMaster3DCamera
+{%-include overview.html data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
 {%-include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.gallery data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
 {%-include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.links-%}
 ---
@@ -32,6 +33,27 @@ title: DomeMaster3DCamera
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
       {%-include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.near.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Medium attributes</summary>
+  <p>
+    <h3>medium_geometry</h3>
+    <p class="scene-class-type">
+      <b>Object</b>
+      default: None
+      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
+      {%-include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.medium_geometry.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%-include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.medium_geometry.links heading=4-%}
+    </p>
+    <h3>medium_material</h3>
+    <p class="scene-class-type">
+      <b>Object</b>
+      default: None
+      <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
+      {%-include image-gallery.html images=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.medium_material.images data=site.data.scene-classes.cameras.DomeMaster3DCamera-%}
+      {%-include see-also.html links=site.data.scene-classes.cameras.DomeMaster3DCamera.attributes.medium_material.links heading=4-%}
     </p>
   </p>
 </details>

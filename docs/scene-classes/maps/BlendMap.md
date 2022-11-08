@@ -8,6 +8,7 @@ title: BlendMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BlendMap
+{%-include overview.html data=site.data.scene-classes.maps.BlendMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.BlendMap.gallery data=site.data.scene-classes.maps.BlendMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.BlendMap.links-%}
 ---

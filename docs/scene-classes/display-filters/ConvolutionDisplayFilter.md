@@ -8,6 +8,7 @@ title: ConvolutionDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConvolutionDisplayFilter
+{%-include overview.html data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.gallery data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
 {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.links-%}
 ---

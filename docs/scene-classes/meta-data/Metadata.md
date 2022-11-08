@@ -8,6 +8,7 @@ title: Metadata
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Metadata
+{%-include overview.html data=site.data.scene-classes.meta-data.Metadata-%}
 {%-include image-gallery.html images=site.data.scene-classes.meta-data.Metadata.gallery data=site.data.scene-classes.meta-data.Metadata-%}
 {%-include see-also.html links=site.data.scene-classes.meta-data.Metadata.links-%}
 ---
