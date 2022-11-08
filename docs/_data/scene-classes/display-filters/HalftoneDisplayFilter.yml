@@ -1,0 +1,36 @@
+---
+image_path: /assets/images/scene-classes/display-filters/HalftoneDisplayFilter
+gallery:
+  - image: input.png
+    text: Input
+  - image: size_4.png
+    text: size = 4.0
+  - image: size_10.png
+    text: size = 10
+attributes:
+  filter_width:
+    images:
+      - image: filter_width_0.png
+        text: filter_width = 0.0
+      - image: filter_width_4.png
+        text: filter_width = 4.0
+      - image: filter_width_10.png
+        text: filter_width = 10.0
+  grayscale:
+    images:
+      - image: size_4.png
+        text: grayscale = true
+      - image: greyscale_false.png
+        text: grayscale = false
+  invert:
+    images:
+      - image: size_4.png
+        text: invert = false
+      - image: inverted.png
+        text: invert = true
+  size:
+    images:
+      - image: size_4.png
+        text: size = 4.0
+      - image: size_10.png
+        text: size = 10
