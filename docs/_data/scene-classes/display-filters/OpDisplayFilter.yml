@@ -1,0 +1,9 @@
+---
+image_path: /assets/images/scene-classes/display-filters/OpDisplayFilter
+gallery:
+  - image: input1.png
+    text: Input 1
+  - image: input2.png
+    text: Input 2
+  - image: result.png
+    text: operation = add
