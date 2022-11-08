@@ -1,5 +1,5 @@
 ---
-overview_file: BakeCameraOverview.md
+overview: BakeCameraOverview.md
 links:
   - text: Baking Textures
     url: /moonray/how-to-guides/baking-textures
