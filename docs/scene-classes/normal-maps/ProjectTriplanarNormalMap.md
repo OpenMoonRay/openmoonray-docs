@@ -8,6 +8,7 @@ title: ProjectTriplanarNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectTriplanarNormalMap
+{%-include overview.html data=site.data.scene-classes.normal-maps.ProjectTriplanarNormalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectTriplanarNormalMap.gallery data=site.data.scene-classes.normal-maps.ProjectTriplanarNormalMap-%}
 {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectTriplanarNormalMap.links-%}
 ---

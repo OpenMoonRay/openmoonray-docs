@@ -8,6 +8,7 @@ title: ClampDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ClampDisplayFilter
+{%-include overview.html data=site.data.scene-classes.display-filters.ClampDisplayFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.display-filters.ClampDisplayFilter.gallery data=site.data.scene-classes.display-filters.ClampDisplayFilter-%}
 {%-include see-also.html links=site.data.scene-classes.display-filters.ClampDisplayFilter.links-%}
 ---

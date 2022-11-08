@@ -8,6 +8,7 @@ title: HairMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairMap
+{%-include overview.html data=site.data.scene-classes.maps.HairMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.HairMap.gallery data=site.data.scene-classes.maps.HairMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.HairMap.links-%}
 ---

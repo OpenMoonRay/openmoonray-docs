@@ -8,6 +8,7 @@ title: BaseMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BaseMaterial
+{%-include overview.html data=site.data.scene-classes.materials.BaseMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.BaseMaterial.gallery data=site.data.scene-classes.materials.BaseMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.BaseMaterial.links-%}
 ---

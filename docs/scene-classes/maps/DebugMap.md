@@ -8,6 +8,7 @@ title: DebugMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DebugMap
+{%-include overview.html data=site.data.scene-classes.maps.DebugMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.DebugMap.gallery data=site.data.scene-classes.maps.DebugMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.DebugMap.links-%}
 ---

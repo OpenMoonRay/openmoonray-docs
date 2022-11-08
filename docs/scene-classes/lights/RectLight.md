@@ -8,6 +8,7 @@ title: RectLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RectLight
+{%-include overview.html data=site.data.scene-classes.lights.RectLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.RectLight.gallery data=site.data.scene-classes.lights.RectLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.RectLight.links-%}
 ---

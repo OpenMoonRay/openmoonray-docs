@@ -8,6 +8,7 @@ title: ProjectPlanarNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectPlanarNormalMap
+{%-include overview.html data=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.gallery data=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap-%}
 {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.links-%}
 ---

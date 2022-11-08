@@ -8,6 +8,7 @@ title: EnvLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # EnvLight
+{%-include overview.html data=site.data.scene-classes.lights.EnvLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.EnvLight.gallery data=site.data.scene-classes.lights.EnvLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.EnvLight.links-%}
 ---

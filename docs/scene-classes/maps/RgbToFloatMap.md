@@ -8,6 +8,7 @@ title: RgbToFloatMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToFloatMap
+{%-include overview.html data=site.data.scene-classes.maps.RgbToFloatMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.RgbToFloatMap.gallery data=site.data.scene-classes.maps.RgbToFloatMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.RgbToFloatMap.links-%}
 ---

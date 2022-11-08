@@ -8,6 +8,7 @@ title: DwaSolidDielectricMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaSolidDielectricMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaSolidDielectricMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSolidDielectricMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaSolidDielectricMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaSolidDielectricMaterial.links-%}
 ---

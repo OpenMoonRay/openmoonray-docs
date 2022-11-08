@@ -8,6 +8,7 @@ title: DiskLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DiskLight
+{%-include overview.html data=site.data.scene-classes.lights.DiskLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.DiskLight.gallery data=site.data.scene-classes.lights.DiskLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.DiskLight.links-%}
 ---

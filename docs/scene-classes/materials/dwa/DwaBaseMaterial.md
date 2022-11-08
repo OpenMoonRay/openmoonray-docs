@@ -8,6 +8,7 @@ title: DwaBaseMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaBaseMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaBaseMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaBaseMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaBaseMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaBaseMaterial.links-%}
 ---

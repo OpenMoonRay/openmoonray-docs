@@ -8,6 +8,7 @@ title: ShadowDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ShadowDisplayFilter
+{%-include overview.html data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.display-filters.ShadowDisplayFilter.gallery data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}
 {%-include see-also.html links=site.data.scene-classes.display-filters.ShadowDisplayFilter.links-%}
 ---

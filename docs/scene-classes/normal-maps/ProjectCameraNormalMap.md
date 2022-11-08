@@ -8,6 +8,7 @@ title: ProjectCameraNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectCameraNormalMap
+{%-include overview.html data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.gallery data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
 {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.links-%}
 ---

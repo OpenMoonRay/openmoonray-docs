@@ -8,6 +8,7 @@ title: ProjectSphericalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectSphericalMap
+{%-include overview.html data=site.data.scene-classes.maps.ProjectSphericalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectSphericalMap.gallery data=site.data.scene-classes.maps.ProjectSphericalMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.ProjectSphericalMap.links-%}
 ---

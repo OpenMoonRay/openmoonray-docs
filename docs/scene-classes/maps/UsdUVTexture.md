@@ -8,6 +8,7 @@ title: UsdUVTexture
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdUVTexture
+{%-include overview.html data=site.data.scene-classes.maps.UsdUVTexture-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.UsdUVTexture.gallery data=site.data.scene-classes.maps.UsdUVTexture-%}
 {%-include see-also.html links=site.data.scene-classes.maps.UsdUVTexture.links-%}
 ---

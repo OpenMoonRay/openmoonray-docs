@@ -8,6 +8,7 @@ title: MeshLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # MeshLight
+{%-include overview.html data=site.data.scene-classes.lights.MeshLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.MeshLight.gallery data=site.data.scene-classes.lights.MeshLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.MeshLight.links-%}
 ---

@@ -8,7 +8,7 @@ title: Writing Shaders
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Writing Shaders
-This page covers some general information about writing plug-ins (aka. _shaders_, _DSO's_)
+This page covers some general information about writing plug-ins (aka. _shaders_, _DSO's_, procedurals)
 for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, (see [scene-classes]({{site.baseurl}}/scene-classes))
 but additional plug-ins can be authored to extend MoonRay's functionality further.
 
@@ -52,9 +52,9 @@ Most MoonRay plug-ins comprise of several files as follows:
 
 |File|Required|Purpose|
 |----|-------|
-| _\<ClassName\>\<Type\>.cc_ | always | The C++ source file which defines the class and scalar functions |
-| _\<ClassName\>\<Type\>.ispc_ |for some plug-in types | An ISPC source file which implements one or more vector functions |
-| _attributes.cc_ or _\<ClassName\>\<Type\>.json_ | always | A C++ or JSON file (dependending on plug-in type) which defines a list of user-facing attributes |
+| _\<ClassName\>.cc_ | always | The C++ source file which defines the class and scalar functions |
+| _\<ClassName\>.ispc_ |for some plug-in types | An ISPC source file which implements one or more vector functions |
+| _attributes.cc_ or _\<ClassName\>.json_ | always | A C++ or JSON file (dependending on plug-in type) which defines a list of user-facing attributes |
 | _CMakeLists.txt_ | always | Used to build the plug-in with CMake |
 | _SConscript_ | never | Used only for legacy internal DWA builds, not needed for new plug-ins |
 
@@ -74,23 +74,28 @@ be `CheckerboardMap`, and the class for a new Light shader might be called `FooL
 file they might appear as:
 
 ```lua
-CheckerboardMap("/some/name/MyCheckerboard") {
-    ...
+CheckerboardMap("/some/name/checkers_left") {
+    ["num_u_tiles"] = 4,
+    ["num_v_tiles"] = 2,
 }
 
-FooLight("/some/name/MyFoo") {
-    ...
+FooLight("/some/name/foo_17") {
+    ["width"] = 42,
+    ["height"] = 42,
 }
 ```
+
+This is easier to make sense of at a glance than if the classes were simply named `Checkerboard` and `Foo`
+
 ----
 ## The Plug-in's Class Definition
 Each plug-in defines a new C++ class and derives from one of the `scene_rdl2` types above, which are
-all ultimately derived from `scene_rdl2::rdl2::SceneObject`. The class is typically declared in
+all ultimately derived from `scene_rdl2::rdl2::SceneObject`. The class is typically defined in
 the _ClassName.cc_ file.
 
 The `RDL2_DSO_CLASS_BEGIN()` and `RDL2_DSO_CLASS_END()` macros surround the class definition
-(no _class_ keyword needed) and add the boilerplate code common to all plug-in types.
-`RDL2_DSO_CLASS_BEGIN()` takes a class name and the plug-in type it derives from.
+(no _class_ keyword needed) and add boilerplate code common to all plug-in types.
+`RDL2_DSO_CLASS_BEGIN()` takes a class name and the scene_rdl2 type it derives from.
 
 For example, a Map shader plug-in might contain the following class definition:
 
@@ -112,36 +117,52 @@ RDL2_DSO_CLASS_END(CheckerboardMap)
 ```
 
 As with any C++ class, each plug-in may define a constructor and destructor, and any number of static, public,
-protected, private member functions or variables. You'll also add any _overrides_ here for any virtual function
-that is inherited based on a parent class.
+protected, private member functions or variables. You'll also add any _overrides_ here for any virtual functions
+that are inherited from the parent class.
 
 ----
 ## Defining the Plug-in's Attributes
-Plug-ins can declare a list of attributes that will be exposed to users to allow for controlling
-the behavior. For some plug-in types these attributes are declared using C++ in a separate file
-called `attributes.cc` which is found and included during the build process.  For other plug-in
-types the attributes are declared using JSON in a separate .json file.
+A SceneClass is created for each plug-in which holds a list of attributes to allow for users to control its behavior.
+See the [scene_rdl2]({{site.baseurl}}/developers-guide/scene_rdl2-library) page for an overview of SceneClass
+attributes. By convention, these attributes are declared in a file called `attributes.cc` or `<ClassName>.json`, depending
+on the plug-in type.
 
-Here's an example of a simple `attributes.cc` file that declares a single bool attribute
-called "do_something":
+For plug-in types that use JSON to declare their attributes an extra step in the build process reads the JSON and
+automatically generates the `attributes.cc` file.
+
+In either case, the `attributes.cc` file is included at the top of the plug-in's `<ClassName>.cc` file.
+```cpp
+// ClassName.cc
+#include "attributes.cc"
+```
+
+Here's an example of an `attributes.cc` file for a Light shader that declares two `Float` attributes:
 ```cpp
 // attributes.cc
 #include <scene/rdl2/rdl2.h>
 
-using namespace scene_rdl2;
+using namespace arras;
 
 RDL2_DSO_ATTR_DECLARE
-    rdl2::AttributeKey<rdl2::Bool> attrDoSomething;
+
+    rdl2::AttributeKey<rdl2::Float>     attrWidth;
+    rdl2::AttributeKey<rdl2::Float>     attrHeight;
 
 RDL2_DSO_ATTR_DEFINE(rdl2::Light)
-    attrDoSomething =
-        sceneClass.declareAttribute<rdl2::Bool>("do_something", false, {});
-    sceneClass.setMetadata(attrDoSomething, "label", "do somthing");
-    sceneClass.setGroup("Advanced", attrDoSomething);
+
+    attrWidth = sceneClass.declareAttribute<rdl2::Float>("width", 1.0f);
+    attrHeight = sceneClass.declareAttribute<rdl2::Float>("height", 1.0f);
+
+    sceneClass.setMetadata(attrWidth, "comment", "The width of the light");
+    sceneClass.setMetadata(attrHeight, "comment", "The height of the light");
+
+    sceneClass.setGroup("Properties", attrWidth);
+    sceneClass.setGroup("Properties", attrHeight);
+
 RDL2_DSO_ATTR_END
 ```
 
-Here's a simple example of an attribute declared using JSON:
+Here's an example of a JSON file for a Map shader that declares two `Int` attributes:
 
 _CheckerboardMap.json_
 ```json
@@ -155,13 +176,19 @@ _CheckerboardMap.json_
             "type": "Int",
             "default": "8",
             "comment": "number of checkerboard squares in the U direction"
+        },
+        "attrVTiles": {
+            "name": "num_v_tiles",
+            "label": "num v tiles",
+            "type": "Int",
+            "default": "8",
+            "comment": "number of checkerboard squares in the V direction"
         }
     }
 }
 ```
 
-See the source code, [this page]({{site.baseurl}}/developers-guide/scene_rdl2-library),
-or the existing plug-ins for examples of how to declare SceneClass attributes and their metadata.
+The table below shows where the attributes are defined for each plug-in type:
 
 |Type|Attributes file|
 |----|--------------|
@@ -176,23 +203,27 @@ or the existing plug-ins for examples of how to declare SceneClass attributes an
 |NormalMap|\<ClassName\>.json|
 |VolumeShader|attributes.cc|
 
+Refer to the SceneClass source code, the [scene_rdl2]({{site.baseurl}}/developers-guide/scene_rdl2-library) page,
+or the existing plug-ins for more examples of how to declare SceneClass attributes and their metadata.
+
 ----
 ## The SceneObject::update() Function
 Plug-ins typically (but not necessarily) override the `update()` member function inherited from the
-`scene_rdl2::rdl2::SceneObject` base class all plug-in types ultimately derive from.
+`scene_rdl2::rdl2::SceneObject` base class that all plug-in types ultimately derive from.
 
 The main responsibility of the `update()` function is initialization. It is called _before_ the MCRT stage
-and can be used to allocate resources, perform computations, do book-keeping, build look-up tables,
-etc. -- any necessary work that needs to be done when the class in instantiated or a user makes an update
-to one of the attributes during interactive rendering.
+and can be used to allocate resources, perform pre-computations, do book-keeping, build look-up tables,
+etc. -- any necessary initialization work that needs to be done when the class in instantiated or a user makes
+an update to one of the attributes during interactive rendering.
 
 For certain plug-in types and for any particular plug-in of any type, the `update()` function may not be 
 needed. It is an opportunity to perform initialization or re-initialization on scene changes.
 
 ----
 ## The Plug-in Interfaces
-Each plug-in type declares an interface that is specific to that plug-in type, and that
-should be implemented by the plug-in. Some functions are to be implemented in C++, others in ISPC.
+Depending on the plug-in type, each plugin will potentially:
+* override the virtual interface declared by the base class
+* implement static functions prototyped in the base class
 
 This table shows the type of plug-in, the name of the function(s) that comprise that plug-in type's interface
 and the languages involved in writing a plug-in of the given type.
@@ -256,8 +287,6 @@ file can be discovered by the build system:
 # parent directory's CMakeLists.txt
 add_subdirectory(CheckerboardMap)
 ```
-
-Refer to the type-specific documentation below for more details.
 
 ----
 ## Writing New Plug-ins

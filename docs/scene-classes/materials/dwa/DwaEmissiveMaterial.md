@@ -8,6 +8,7 @@ title: DwaEmissiveMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaEmissiveMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaEmissiveMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaEmissiveMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaEmissiveMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaEmissiveMaterial.links-%}
 ---

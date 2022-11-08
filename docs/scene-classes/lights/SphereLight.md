@@ -8,6 +8,7 @@ title: SphereLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SphereLight
+{%-include overview.html data=site.data.scene-classes.lights.SphereLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.SphereLight.gallery data=site.data.scene-classes.lights.SphereLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.SphereLight.links-%}
 ---

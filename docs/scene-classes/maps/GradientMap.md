@@ -8,6 +8,7 @@ title: GradientMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # GradientMap
+{%-include overview.html data=site.data.scene-classes.maps.GradientMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.GradientMap.gallery data=site.data.scene-classes.maps.GradientMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.GradientMap.links-%}
 ---

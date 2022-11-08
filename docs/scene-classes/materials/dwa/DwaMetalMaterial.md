@@ -8,6 +8,7 @@ title: DwaMetalMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaMetalMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaMetalMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaMetalMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaMetalMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaMetalMaterial.links-%}
 ---

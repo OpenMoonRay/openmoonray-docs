@@ -8,6 +8,7 @@ title: BaseVolume
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BaseVolume
+{%-include overview.html data=site.data.scene-classes.volumes.BaseVolume-%}
 {%-include image-gallery.html images=site.data.scene-classes.volumes.BaseVolume.gallery data=site.data.scene-classes.volumes.BaseVolume-%}
 {%-include see-also.html links=site.data.scene-classes.volumes.BaseVolume.links-%}
 ---
@@ -25,11 +26,19 @@ title: BaseVolume
       {%-include image-gallery.html images=site.data.scene-classes.volumes.BaseVolume.attributes.attenuation_color.images data=site.data.scene-classes.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.scene-classes.volumes.BaseVolume.attributes.attenuation_color.links heading=4-%}
     </p>
+    <h3>attenuation_factor</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 1.0
+      <p class="scene-class-comments">An additional factor to scale the attenuation. This attribute behaves identically to attenuation_intensity - it is provided simply as an extra way to control attenuation, typically during lighting. Surfacing should generally avoid setting this.</p>
+      {%-include image-gallery.html images=site.data.scene-classes.volumes.BaseVolume.attributes.attenuation_factor.images data=site.data.scene-classes.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.scene-classes.volumes.BaseVolume.attributes.attenuation_factor.links heading=4-%}
+    </p>
     <h3>attenuation_intensity</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
-      <p class="scene-class-comments">the rate at which the intensity of a ray traversing a volume is lost. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.</p>
+      <p class="scene-class-comments">the rate at which the intensity of a ray traversing a volume is lost. The attenuation (extinction) coefficient is technically the product of attenuation_color, attenuation_intensity, and attenuation_factor</p>
       {%-include image-gallery.html images=site.data.scene-classes.volumes.BaseVolume.attributes.attenuation_intensity.images data=site.data.scene-classes.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.scene-classes.volumes.BaseVolume.attributes.attenuation_intensity.links heading=4-%}
     </p>

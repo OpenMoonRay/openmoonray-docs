@@ -8,6 +8,7 @@ title: BarnDoorLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BarnDoorLightFilter
+{%-include overview.html data=site.data.scene-classes.light-filters.BarnDoorLightFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.light-filters.BarnDoorLightFilter.gallery data=site.data.scene-classes.light-filters.BarnDoorLightFilter-%}
 {%-include see-also.html links=site.data.scene-classes.light-filters.BarnDoorLightFilter.links-%}
 ---

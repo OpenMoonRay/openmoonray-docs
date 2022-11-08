@@ -8,6 +8,7 @@ title: CylinderLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CylinderLight
+{%-include overview.html data=site.data.scene-classes.lights.CylinderLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.CylinderLight.gallery data=site.data.scene-classes.lights.CylinderLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.CylinderLight.links-%}
 ---

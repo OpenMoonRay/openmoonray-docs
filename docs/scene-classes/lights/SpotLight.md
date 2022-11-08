@@ -8,6 +8,7 @@ title: SpotLight
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SpotLight
+{%-include overview.html data=site.data.scene-classes.lights.SpotLight-%}
 {%-include image-gallery.html images=site.data.scene-classes.lights.SpotLight.gallery data=site.data.scene-classes.lights.SpotLight-%}
 {%-include see-also.html links=site.data.scene-classes.lights.SpotLight.links-%}
 ---

@@ -8,6 +8,7 @@ title: CurvatureMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CurvatureMap
+{%-include overview.html data=site.data.scene-classes.maps.CurvatureMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.CurvatureMap.gallery data=site.data.scene-classes.maps.CurvatureMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.CurvatureMap.links-%}
 ---

@@ -8,6 +8,7 @@ title: ColorRampLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorRampLightFilter
+{%-include overview.html data=site.data.scene-classes.light-filters.ColorRampLightFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.light-filters.ColorRampLightFilter.gallery data=site.data.scene-classes.light-filters.ColorRampLightFilter-%}
 {%-include see-also.html links=site.data.scene-classes.light-filters.ColorRampLightFilter.links-%}
 ---
