@@ -1,0 +1,18 @@
+---
+image_path: /assets/images/scene-classes/display-filters/ClampDisplayFilter
+gallery:
+  - image: beauty.png
+    text: Beauty render
+  - image: min_clamp_example.png
+    text: min = Rgb(0.3, 0.1, 0.4)
+  - image: max_clamp_example.png
+    text: max = Rgb(0.3, 0.4, 0.1)
+attributes:
+  max:
+    images:
+      - image: max_clamp_example.png
+        text: max = Rgb(0.3, 0.4, 0.1)
+  min:
+    images:
+      - image: min_clamp_example.png
+        text: min = Rgb(0.3, 0.1, 0.4)

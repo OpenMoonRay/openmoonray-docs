@@ -4,6 +4,7 @@ theme: jekyll-theme-minimal
 baseurl: /openmoonray-docs
 url: http://dreamworksanimation.github.io/
 BASE_PATH : http://dreamworksanimation.github.io/openmoonray-docs
+repository: http://dreamworksanimation.github.io/openmoonray-docs
 
 collections_dir: /
 
