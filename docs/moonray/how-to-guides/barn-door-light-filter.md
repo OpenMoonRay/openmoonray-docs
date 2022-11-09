@@ -17,7 +17,6 @@ This light filter operates by simulating such a portal, called the flap opening,
 
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image4.png)
 
-
 The flap opening can be moved, resized, rotated, rounded, colored, and
 blurred, with varying blur per side. Here is a rough overview of the
 various shaping parameters.
@@ -48,13 +47,12 @@ shadowing.
 There are two projection types, *perspective* and *orthographic*. These are
 mainly useful for analytical mode, shown below. 
 
-| ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image7.png)                | ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image10.png)   | ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image9.png)   |
-|------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------|
-| perspective projection                               | orthographic projection                               | no filter                                            |
+| ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image7.png)       |  ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image10.png)   |  ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image9.png)   |
+|------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
+| perspective projection                          |  orthographic projection                        | no filter                      |
 
 The modes affect the shape of the light beam. In physical mode, the projection type determines how big the
 flap opening is:
 
-- In the *perspective* type, the flap opening size scales with `projector_focal_distance` (roughly maintaining the same solid angle
-/ cone size). 
-- In the *orthogonal* type, the flap opening remains a fixed size. Apart from this, the projection type does not matter.
+- In the *perspective* projection type, the flap opening size scales with `projector_focal_distance` (roughly maintaining the same solid angle / cone size). 
+- In the *orthogonal* projection type, the flap opening remains a fixed size. Apart from this, the projection type does not matter.
