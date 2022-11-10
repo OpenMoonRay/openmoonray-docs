@@ -8,6 +8,7 @@ title: UsdPrimvarReader_point
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_point
+{%-include overview.html data=site.data.scene-classes.maps.UsdPrimvarReader_point-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.UsdPrimvarReader_point.gallery data=site.data.scene-classes.maps.UsdPrimvarReader_point-%}
 {%-include see-also.html links=site.data.scene-classes.maps.UsdPrimvarReader_point.links-%}
 ---

@@ -8,6 +8,7 @@ title: Joint
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Joint
+{%-include overview.html data=site.data.scene-classes.joint.Joint-%}
 {%-include image-gallery.html images=site.data.scene-classes.joint.Joint.gallery data=site.data.scene-classes.joint.Joint-%}
 {%-include see-also.html links=site.data.scene-classes.joint.Joint.links-%}
 ---

@@ -1,0 +1,20 @@
+---
+image_path: /assets/images/scene-classes/display-filters/ImageDisplayFilter
+gallery:
+  - image: beauty.png
+    text: Beauty Render
+  - image: input_img.png
+    text: Input Image
+  - image: stretch_w_alpha_mask.png
+    text: display_type = stretch (with alpha mask)
+attributes:
+  display_type:
+    images:
+      - image: no_scale.png
+        text: display_type = no_scale
+      - image: fit_horizontal.png
+        text: display_type = fit_horizontal
+      - image: fit_vertical.png
+        text: display_type = fit_vertical
+      - image: stretch.png
+        text: display_type = stretch

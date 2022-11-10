@@ -8,6 +8,7 @@ title: RdlCurveGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RdlCurveGeometry
+{%-include overview.html data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
 {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.gallery data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
 {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.links-%}
 ---
@@ -37,6 +38,14 @@ title: RdlCurveGeometry
       <p class="scene-class-comments">Optionally declare vertex accelerations for quadratic motion interpolation</p>
       {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.accleration_list.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.accleration_list.links heading=4-%}
+    </p>
+    <h3>contains_camera</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
+      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.contains_camera.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.contains_camera.links heading=4-%}
     </p>
     <h3>curve_subtype</h3>
     <p class="scene-class-type">

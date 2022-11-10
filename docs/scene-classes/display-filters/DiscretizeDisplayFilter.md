@@ -8,6 +8,7 @@ title: DiscretizeDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DiscretizeDisplayFilter
+{%-include overview.html data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.gallery data=site.data.scene-classes.display-filters.DiscretizeDisplayFilter-%}
 {%-include see-also.html links=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.links-%}
 ---

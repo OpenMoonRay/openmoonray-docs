@@ -8,6 +8,7 @@ title: HairMaterial_v3
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairMaterial_v3
+{%-include overview.html data=site.data.scene-classes.materials.hair.HairMaterial_v3-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairMaterial_v3.gallery data=site.data.scene-classes.materials.hair.HairMaterial_v3-%}
 {%-include see-also.html links=site.data.scene-classes.materials.hair.HairMaterial_v3.links-%}
 ---

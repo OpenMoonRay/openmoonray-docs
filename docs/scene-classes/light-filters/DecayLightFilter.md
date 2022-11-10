@@ -8,6 +8,7 @@ title: DecayLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DecayLightFilter
+{%-include overview.html data=site.data.scene-classes.light-filters.DecayLightFilter-%}
 {%-include image-gallery.html images=site.data.scene-classes.light-filters.DecayLightFilter.gallery data=site.data.scene-classes.light-filters.DecayLightFilter-%}
 {%-include see-also.html links=site.data.scene-classes.light-filters.DecayLightFilter.links-%}
 ---

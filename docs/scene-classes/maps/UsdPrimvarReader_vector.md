@@ -8,6 +8,7 @@ title: UsdPrimvarReader_vector
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_vector
+{%-include overview.html data=site.data.scene-classes.maps.UsdPrimvarReader_vector-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.UsdPrimvarReader_vector.gallery data=site.data.scene-classes.maps.UsdPrimvarReader_vector-%}
 {%-include see-also.html links=site.data.scene-classes.maps.UsdPrimvarReader_vector.links-%}
 ---

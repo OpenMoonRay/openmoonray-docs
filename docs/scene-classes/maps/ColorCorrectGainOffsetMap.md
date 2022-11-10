@@ -8,6 +8,7 @@ title: ColorCorrectGainOffsetMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectGainOffsetMap
+{%-include overview.html data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gallery data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.links-%}
 ---

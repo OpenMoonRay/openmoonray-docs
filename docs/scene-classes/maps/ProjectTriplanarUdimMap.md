@@ -8,6 +8,7 @@ title: ProjectTriplanarUdimMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectTriplanarUdimMap
+{%-include overview.html data=site.data.scene-classes.maps.ProjectTriplanarUdimMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.gallery data=site.data.scene-classes.maps.ProjectTriplanarUdimMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.ProjectTriplanarUdimMap.links-%}
 ---

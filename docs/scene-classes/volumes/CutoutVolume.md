@@ -8,6 +8,7 @@ title: CutoutVolume
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CutoutVolume
+{%-include overview.html data=site.data.scene-classes.volumes.CutoutVolume-%}
 {%-include image-gallery.html images=site.data.scene-classes.volumes.CutoutVolume.gallery data=site.data.scene-classes.volumes.CutoutVolume-%}
 {%-include see-also.html links=site.data.scene-classes.volumes.CutoutVolume.links-%}
 ---

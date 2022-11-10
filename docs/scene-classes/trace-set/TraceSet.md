@@ -8,6 +8,7 @@ title: TraceSet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # TraceSet
+{%-include overview.html data=site.data.scene-classes.trace-set.TraceSet-%}
 {%-include image-gallery.html images=site.data.scene-classes.trace-set.TraceSet.gallery data=site.data.scene-classes.trace-set.TraceSet-%}
 {%-include see-also.html links=site.data.scene-classes.trace-set.TraceSet.links-%}
 ---

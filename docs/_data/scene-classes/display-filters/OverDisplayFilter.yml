@@ -1,0 +1,29 @@
+---
+image_path: /assets/images/scene-classes/display-filters/OverDisplayFilter
+gallery:
+  - image: input_bottom.png
+    text: Input Bottom
+  - image: input_top.png
+    text: Input Top
+  - image: mix.png
+    text: mix = 0.7
+attributes:
+  alpha:
+    images:
+      - image: alpha.png
+  input_bottom:
+    images:
+      - image: input_bottom.png
+  input_top:
+    images:
+      - image: input_top.png
+  invert_alpha:
+    images:
+      - image: invert_alpha_true.png
+        text: invert_alpha = true
+      - image: invert_alpha_false.png
+        text: invert_alpha = false
+  mix:
+    images:
+      - image: mix.png
+        text: mix = 0.7

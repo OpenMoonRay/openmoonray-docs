@@ -8,6 +8,7 @@ title: CheckerboardMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CheckerboardMap
+{%-include overview.html data=site.data.scene-classes.maps.CheckerboardMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.CheckerboardMap.gallery data=site.data.scene-classes.maps.CheckerboardMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.CheckerboardMap.links-%}
 ---

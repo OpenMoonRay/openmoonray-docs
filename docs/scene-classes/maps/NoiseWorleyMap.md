@@ -8,6 +8,7 @@ title: NoiseWorleyMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NoiseWorleyMap
+{%-include overview.html data=site.data.scene-classes.maps.NoiseWorleyMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap.gallery data=site.data.scene-classes.maps.NoiseWorleyMap-%}
 {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap.links-%}
 ---

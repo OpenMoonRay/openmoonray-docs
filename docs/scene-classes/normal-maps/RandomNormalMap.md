@@ -8,6 +8,7 @@ title: RandomNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RandomNormalMap
+{%-include overview.html data=site.data.scene-classes.normal-maps.RandomNormalMap-%}
 {%-include image-gallery.html images=site.data.scene-classes.normal-maps.RandomNormalMap.gallery data=site.data.scene-classes.normal-maps.RandomNormalMap-%}
 {%-include see-also.html links=site.data.scene-classes.normal-maps.RandomNormalMap.links-%}
 ---

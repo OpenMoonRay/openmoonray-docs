@@ -12,10 +12,9 @@ title: Render Outputs
 See also: [RenderOutput](../../scene-classes/render-output)
 ## Introduction
 
-The RenderOutput object is used to specify any output the renderer
-produces.  It has a lot of options.
-What follows on this page are some simple
-examples and links to other, more specific docs.
+The RenderOutput object is used to specify any output the renderer produces.
+It has a lot of options. What follows on this page are some simple examples
+and links to other, more specific docs.
 
 ### Examples
 

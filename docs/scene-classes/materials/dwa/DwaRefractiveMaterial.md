@@ -8,6 +8,7 @@ title: DwaRefractiveMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaRefractiveMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaRefractiveMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaRefractiveMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaRefractiveMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaRefractiveMaterial.links-%}
 ---

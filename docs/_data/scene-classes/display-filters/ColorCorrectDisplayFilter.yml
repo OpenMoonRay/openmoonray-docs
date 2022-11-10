@@ -1,0 +1,35 @@
+---
+image_path: /assets/images/scene-classes/display-filters/ColorCorrectDisplayFilter
+gallery:
+  - image: beauty.png
+    text: Beauty render
+  - image: exposure_example.png
+    text: exposure = 2.0
+  - image: multiply_example.png
+    text: multiply = Rgb(0.1, 0.8, 0.9)
+attributes:
+  contrast:
+    images:
+      - image: contrast_example.png
+        text: contrast = -0.5
+  exposure:
+    images:
+      - image: exposure_example.png
+        text: exposure = 2.0
+  gamma:
+    images:
+      - image: gamma_example.png
+        text: gamma = 0.4
+  multiply: 
+    images:
+      - image: multiply_example.png
+        text: multiply = Rgb(0.1, 0.8, 0.9)
+  offset:
+    images:
+      - image: offset_example.png
+        text: offset = Rgb(0.0, -0.3, 0.1)
+  saturation:
+    images:
+      - image: saturation_example.png
+        text: saturation = 2.0
+  

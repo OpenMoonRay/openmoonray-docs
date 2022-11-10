@@ -8,6 +8,7 @@ title: UsdPrimvarReader_int
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_int
+{%-include overview.html data=site.data.scene-classes.maps.UsdPrimvarReader_int-%}
 {%-include image-gallery.html images=site.data.scene-classes.maps.UsdPrimvarReader_int.gallery data=site.data.scene-classes.maps.UsdPrimvarReader_int-%}
 {%-include see-also.html links=site.data.scene-classes.maps.UsdPrimvarReader_int.links-%}
 ---

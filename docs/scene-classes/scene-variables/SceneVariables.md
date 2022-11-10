@@ -8,6 +8,7 @@ title: SceneVariables
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SceneVariables
+{%-include overview.html data=site.data.scene-classes.scene-variables.SceneVariables-%}
 {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.gallery data=site.data.scene-classes.scene-variables.SceneVariables-%}
 {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.links-%}
 ---
@@ -79,7 +80,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">Define checkpoint file write operation execution mode.Checkpoint file write is executed as background thread and run parallel with MCRT threads (= true:default). Or stop all MCRT threads and checkpoint file write is exclusively executed (= false).</p>
+      <p class="scene-class-comments">If true, the checkpoint file write is written in a background thread that runs in parallel with the MCRT threads. Otherwise, all MCRT threads wait while the checkpoint file is written.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_bg_write.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_bg_write.links heading=4-%}
     </p>
@@ -87,7 +88,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       default: 15.0
-      <p class="scene-class-comments">Length of time, in minutes, between checkpoint file writes. Time should be equal or bigger than 0.1</p>
+      <p class="scene-class-comments">Length of time, in minutes, between checkpoint file writes. Time must be greater or equal to 0.1</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_interval.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_interval.links heading=4-%}
     </p>
@@ -95,7 +96,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b>
       default: 2
-      <p class="scene-class-comments">Specify max number of internal ImageWriteCache total which defines total number of write backlog under background thread write mode. You have to specify 1 or bigger number. Background thread write mode is suspended and processed serially when internal ImageWriteCache reaches this checkpoint_max_bgcache number. Bigger max value can support background write more robustly even if checkpoint write interval is pretty short. However it requires more runtime memory. 2 is best for most of the cases.</p>
+      <p class="scene-class-comments">Specify the maximum number of queued checkpoint images that the checkpoint-writing background thread can handle. The value of checkpoint_max_bgcache must be greater than or equal to 1. Once this number is exceeded, the MCRT threads are suspended while background images are written to create room in the queue. A larger number can robustly support background writing even with short checkpoint intervals at the expense of memory. A value of 2 is best for most cases.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.links heading=4-%}
     </p>
@@ -112,7 +113,7 @@ title: SceneVariables
       <b>Int</b> <i>enum</i>
           | time = 0 (default)
           | quality = 1
-      <p class="scene-class-comments">Select checkpoint computation internal logic based on the time interval or quality steps</p>
+      <p class="scene-class-comments">Select whether checkpoint images are written depending on time elapsed or on quality reached.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_mode.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_mode.links heading=4-%}
     </p>
@@ -120,7 +121,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">Checkpoint file overwrite/non-overwirte control options, If checkpoint_overwrite=true, all latest checkpoint file is overwritten to previous checkpoint file output and we only have latest checkpoint file on disk. if checkpoint_overwrite=false, checkpoint files name is modified and extend with tile based sampling total number and all checkpoint files are write out by different name. As result we can keep all checkpoint files.</p>
+      <p class="scene-class-comments">If true, the last checkpoint file is overwritten when writing out the checkpoint file. If false, the checkpoint filename is appended with the total number of samples, resulting in the retention of all checkpoint files.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_overwrite.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_overwrite.links heading=4-%}
     </p>
@@ -128,7 +129,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>String</b>
       default: 
-      <p class="scene-class-comments">Define post checkpoint lua script name. This script is loaded into renderer just after every checkpoint file write completion then executed simultaneously with MCRT threads. Renderer sets some lua global variables and lua script can access them. See details in rendering-wiki checkpoint/resume page. If empty, post checkpoint script execution is disabled.</p>
+      <p class="scene-class-comments">This defines the file name of a Lua script executed after every checkpoint file has been written, which is run in parallel with the ongoing MCRT threads. See further documentation for MoonRay-provided Lua variables accessible within the script.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_post_script.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_post_script.links heading=4-%}
     </p>
@@ -176,7 +177,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b>
       default: 0
-      <p class="scene-class-comments">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable.If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
+      <p class="scene-class-comments">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable. If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_total_files.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.checkpoint_total_files.links heading=4-%}
     </p>
@@ -251,7 +252,7 @@ title: SceneVariables
       <b>Int</b> <i>enum</i>
           | openexr2.0 = 0
           | opendcx2.0 = 1 (default)
-      <p class="scene-class-comments">Deep image format: openexr2.0: vanilla OpenEXR deep, opendcx2.0: DCX abuffer mask encoding</p>
+      <p class="scene-class-comments">Deep image format:<br>&emsp;&emsp;openexr2.0: vanilla OpenEXR deep<br>&emsp;&emsp;opendcx2.0: DCX abuffer mask encoding</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_format.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.deep_format.links heading=4-%}
     </p>
@@ -328,7 +329,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>String</b>
       default: scene.exr
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This specifies the output path for the beauty image (RGBA). This is independent of the AOV RenderOutputs, which can also write a beauty image.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.output_file.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.output_file.links heading=4-%}
     </p>
@@ -376,7 +377,7 @@ title: SceneVariables
           | box = 0
           | cubic b-spline = 1 (default)
           | quadratic b-spline = 2
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The type of filter used for filter importance sampling. A box filter with a width of 1 is analogous to disabling pixel filtering.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_filter.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_filter.links heading=4-%}
     </p>
@@ -384,7 +385,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       default: 3.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The overall extents, in pixels, of the pixel filter. Larger values will result in softer images.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_filter_width.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_filter_width.links heading=4-%}
     </p>
@@ -405,7 +406,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">clamp material roughness along paths to some extent (set value to [0..1]), to prevent fireflies from indirect caustics. Warning: Using this technique is biased</p>
+      <p class="scene-class-comments">Clamp material roughness along paths. A value of 1 clamps values to the maximum roughness encountered, while lower values temper the clamping value. 0 disables the effect. Using this technique reduces fireflies from indirect caustics but is biased.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.roughness_clamping_factor.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.roughness_clamping_factor.links heading=4-%}
     </p>
@@ -413,15 +414,15 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b>
       default: 1
-      <p class="scene-class-comments">clamp sample values only after given non-specular depth</p>
+      <p class="scene-class-comments">Clamp sample values only after the given non-specular ray depth.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sample_clamping_depth.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.sample_clamping_depth.links heading=4-%}
     </p>
     <h3>sample_clamping_value</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      default: 0.0
-      <p class="scene-class-comments">clamp sample values to a maximum (disabled if 0.0). Warning: Using this technique is biased</p>
+      default: 10.0
+      <p class="scene-class-comments">Clamp sample radiance values to this maximum value (the feature is disabled if the value is 0.0). Using this technique reduces fireflies, but is biased.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sample_clamping_value.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.sample_clamping_value.links heading=4-%}
     </p>
@@ -560,7 +561,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Window of the camera aperture. Overrides image width / height. Order: xmin ymin xmax ymax, with origin at left bottom.</p>
+      <p class="scene-class-comments">The window of the camera aperture. Overrides image_width and image_height. Ordered as xmin, ymin, xmax, and ymax, with origin at the bottom-left.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.aperture_window.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.aperture_window.links heading=4-%}
     </p>
@@ -856,7 +857,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b>
       default: 8
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The square root of the number of primary samples taken for each pixel in uniform sampling mode. For example, a value of 4 will result in 4*4 = 16 uniform pixel samples.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_samples.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.pixel_samples.links heading=4-%}
     </p>
@@ -943,7 +944,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.5
-      <p class="scene-class-comments">Controls how phase function(anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1</p>
+      <p class="scene-class-comments">Controls how phase function (anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_phase_attenuation_factor.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.volume_phase_attenuation_factor.links heading=4-%}
     </p>
@@ -1042,7 +1043,7 @@ title: SceneVariables
       <b>Int</b> <i>enum</i>
           | uniform = 0 (default)
           | adaptive = 2
-      <p class="scene-class-comments">Controls which sampling scheme to use, defaults to uniform sampling.</p>
+      <p class="scene-class-comments">Controls which sampling scheme to use: uniform or adaptive.</p>
       {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.sampling_mode.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.sampling_mode.links heading=4-%}
     </p>

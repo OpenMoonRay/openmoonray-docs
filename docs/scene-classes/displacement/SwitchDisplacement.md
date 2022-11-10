@@ -8,6 +8,7 @@ title: SwitchDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SwitchDisplacement
+{%-include overview.html data=site.data.scene-classes.displacement.SwitchDisplacement-%}
 {%-include image-gallery.html images=site.data.scene-classes.displacement.SwitchDisplacement.gallery data=site.data.scene-classes.displacement.SwitchDisplacement-%}
 {%-include see-also.html links=site.data.scene-classes.displacement.SwitchDisplacement.links-%}
 ---

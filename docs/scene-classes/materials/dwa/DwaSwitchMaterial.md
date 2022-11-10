@@ -8,6 +8,7 @@ title: DwaSwitchMaterial
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DwaSwitchMaterial
+{%-include overview.html data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
 {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.gallery data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
 {%-include see-also.html links=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.links-%}
 ---
