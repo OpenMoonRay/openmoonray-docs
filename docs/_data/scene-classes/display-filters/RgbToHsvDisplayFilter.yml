@@ -1,0 +1,9 @@
+---
+overview: RgbToHsvDisplayFilterOverview.md
+image_path: /assets/images/scene-classes/display-filters/RgbToHsvDisplayFilter
+gallery:
+  - image: input.png
+    text: Input
+  - image: result.png
+    text: Result
+    

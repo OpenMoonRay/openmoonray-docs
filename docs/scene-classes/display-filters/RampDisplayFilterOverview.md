@@ -1,0 +1,1 @@
+The RampDisplayFilter takes in a series of `colors`, `positions`, and `interpolations` to generate a ramp of the specified `ramp_type`. 

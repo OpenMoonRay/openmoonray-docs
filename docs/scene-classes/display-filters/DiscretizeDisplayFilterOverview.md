@@ -1,0 +1,1 @@
+The DiscretizeDisplayFilter bins the r, g, and b values of the `input` buffer separately, into a specified `num_bins`. This feature is probably mostly useful for grayscale images.

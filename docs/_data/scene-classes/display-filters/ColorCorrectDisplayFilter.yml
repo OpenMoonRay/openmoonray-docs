@@ -1,4 +1,5 @@
 ---
+overview: ColorCorrectDisplayFilterOverview.md
 image_path: /assets/images/scene-classes/display-filters/ColorCorrectDisplayFilter
 gallery:
   - image: beauty.png

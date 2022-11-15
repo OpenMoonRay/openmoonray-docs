@@ -1,0 +1,1 @@
+The BlendDisplayFilter blends between two inputs, `input1` and `input2`, given some `blendAmt` and `blendType`.

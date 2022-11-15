@@ -1,0 +1,1 @@
+The RemapDisplayFilter maps the colors of an `input` from a specified range [`input_min`, `input_max`] to a desired output range [`output_min`, `output_max`]. This process can be performed either uniformly (across all color channels) or against each individual RGB channel.

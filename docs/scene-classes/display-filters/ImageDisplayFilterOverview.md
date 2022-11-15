@@ -1,0 +1,1 @@
+The ImageDisplayFilter reads in an image file from a given file path `image_path` and fits the image to the `input`'s render dimensions, scaling or stretching the image according to a specified `display_type`.

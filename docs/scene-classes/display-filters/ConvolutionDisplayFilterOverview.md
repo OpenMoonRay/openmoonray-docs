@@ -1,0 +1,1 @@
+The ConvolutionDisplayFilter convolves a kernel with a specified `kernel_type` and `kernel_size` with an `input` image.

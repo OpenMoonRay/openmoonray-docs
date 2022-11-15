@@ -1,0 +1,10 @@
+---
+overview: ShadowDisplayFilterOverview.md
+image_path: /assets/images/scene-classes/display-filters/ShadowDisplayFilter
+gallery:
+  - image: occluded.png
+    text: Occluded
+  - image: unoccluded.png
+    text: Unoccluded
+  - image: result.png
+    text: density = 0.8<br>shadow_color = green

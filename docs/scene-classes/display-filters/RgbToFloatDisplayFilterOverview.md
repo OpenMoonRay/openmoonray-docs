@@ -1,0 +1,1 @@
+The RgbToFloatDisplayFilter combines the r,g,b channels of an image buffer into a grayscale image buffer. Note that the data format of the output buffer is still RGB, because all output buffers of all DisplayFilters are RGB.

@@ -1,4 +1,5 @@
 ---
+overview: HalftoneDisplayFilterOverview.md
 image_path: /assets/images/scene-classes/display-filters/HalftoneDisplayFilter
 gallery:
   - image: input.png
