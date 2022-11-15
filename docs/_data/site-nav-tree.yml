@@ -409,7 +409,9 @@ toc:
             path: /scene-classes/volumes/VdbVolume
   - item: MoonRay
     path: /moonray
-    subitems:
+    subitems: 
+      - item: Using moonray-gui
+        path: /moonray/moonray_gui
       - item: Cmd-line Options
         path: /moonray/cmd-line-options
       - item: Execution modes
