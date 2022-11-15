@@ -1,0 +1,1 @@
+The DofCorrectDisplayFilter applies a 2D Depth of Field blur on an image buffer.

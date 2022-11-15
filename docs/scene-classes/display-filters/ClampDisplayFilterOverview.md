@@ -1,0 +1,1 @@
+The ClampDisplayFilter clamps the rgb values of an `input` image buffer between `min` and `max`.

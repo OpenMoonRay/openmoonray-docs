@@ -1,0 +1,1 @@
+The HalftoneDisplayFilter adds the effect of halftone dots observed in old printing methods.

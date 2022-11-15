@@ -1,0 +1,1 @@
+The ShadowDisplayFilter takes in an `occluded` aov and an `unoccluded` aov to produce shadows of the specified `density` and `shadow_color`.

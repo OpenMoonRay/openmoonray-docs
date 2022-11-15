@@ -1,0 +1,1 @@
+A ConstantDisplayFilter takes in an RGB `color` and produces a render output of that color. 

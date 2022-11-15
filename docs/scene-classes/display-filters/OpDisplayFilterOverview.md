@@ -1,0 +1,1 @@
+The OpDisplayFilter performs a user-specified `operation` on two input buffers: `input1` and `input2`.

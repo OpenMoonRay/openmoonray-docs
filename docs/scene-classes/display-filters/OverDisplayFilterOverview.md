@@ -1,0 +1,1 @@
+The OverDisplayFilter layers two image buffers, `input_top` and `input_bottom`, where the mask is applied to the top image buffer.

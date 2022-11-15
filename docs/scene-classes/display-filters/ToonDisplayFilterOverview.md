@@ -1,0 +1,1 @@
+The ToonDisplayFilter outlines objects and discretizes the color of an image buffer.
