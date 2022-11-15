@@ -6,7 +6,7 @@ door](https://en.wikipedia.org/wiki/Stage_lighting_accessories#Barn_doors)
 in stage lighting. Typically there are four flaps attached to a light
 that shape the lighting by restricting where the light can shine.
 
-| ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image2.png)        | ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image3.jpeg)            |
+| ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image2.png)        | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image3.jpeg)            |
 |------------------------------------------------------|-------------------------------------------------------|
 | Example photo of a Barn Door (black)                 | Photo of a Barn Door narrowing the light              |
 
@@ -15,18 +15,18 @@ form a rectangular portal that constrains the light.
 
 This light filter operates by simulating such a portal, called the flap opening, shown in gray below:
 
-![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image4.png)
+![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image4.png)
 
 The flap opening can be moved, resized, rotated, rounded, colored, and
 blurred, with varying blur per side. Here is a rough overview of the
 various shaping parameters.
 
-![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image5.png)
+![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image5.png)
 
 The edge expands outwards and there are controls to scale the size of
 each edge.
 
-| ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image6.png)           |
+| ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image6.png)           |
 |------------------------------------------------------|
 | edge size and per-edge scaling animation             |
 
@@ -40,14 +40,16 @@ the light is replaced by the singular position of the Barn Door (a
 single point).  It treats the light as a point light for filter
 shadowing.
 
-| ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image7.png)              | ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image8.png)   | ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image9.png)     |
+| ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image7.png)              | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image8.png)   | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image9.png)     |
+
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | analytical mode                                      | physical mode                                        | no filter                                            |
 
 There are two projection types, *perspective* and *orthographic*. These are
 mainly useful for analytical mode, shown below. 
 
-| ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image7.png)       |  ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image10.png)   |  ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/barn-door-light-filter/image9.png)   |
+| ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image7.png)       |  ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image10.png)   |  ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image9.png)   |
+
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | perspective projection                          |  orthographic projection                        | no filter                      |
 
