@@ -41,6 +41,7 @@ single point).  It treats the light as a point light for filter
 shadowing.
 
 | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image7.png)              | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image8.png)   | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image9.png)     |
+
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | analytical mode                                      | physical mode                                        | no filter                                            |
 
@@ -48,6 +49,7 @@ There are two projection types, *perspective* and *orthographic*. These are
 mainly useful for analytical mode, shown below. 
 
 | ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image7.png)       |  ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image10.png)   |  ![]({{site.baseurl}}/assets/images/scene-classes/light-filters/BarnDoorLightFilter/image9.png)   |
+
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | perspective projection                          |  orthographic projection                        | no filter                      |
 

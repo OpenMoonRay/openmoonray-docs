@@ -7,22 +7,88 @@ title: Performance Considerations
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
-<!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
-
-# <Overview_or_introduction>
-<!-- All topics>
-
-<!-- Concept info here: Explain the background and context of a this subject. --> 
-
 # Performance Considerations
 This page documents how to get the best performance out of Moonray
 
 ## Tiled Textures
-Moonray requires the use of tiled textures which greatly improves rendering performance.  The Open Image IO utility `maketx` should be used to convert common file formats to the optimal .tx format.
+Moonray requires the use of tiled textures which greatly improves rendering performance.  The OpenImageIO utility
+`maketx` or `oiiotool` should be used to convert common file formats to the optimal .tx format.
 
 ## Adaptive Error Tesselation
-The `adaptive_error` setting on geometry is off by default (set to 0) resulting in uniform tessellation.   Depending on the `mesh_resolution` setting, the geometry may be overtessellated for it's distance from the camera.   Turning `adaptive_error` on sets the maximum allowable difference in pixels for subdivison mesh adaptive tessellation.  Each final tessellated edge won't be longer than n pixels if adaptive error is set to n.  Adaptive tessellation is not supported for instances.
+The `adaptive_error` setting on geometry is off by default (set to 0) resulting in uniform tessellation.
+Depending on the `mesh_resolution` setting, the geometry may be overtessellated for it's distance from the camera.
+Turning `adaptive_error` on sets the maximum allowable difference in pixels for subdivison mesh adaptive tessellation.
+Each final tessellated edge won't be longer than n pixels if adaptive error is set to n.  Adaptive tessellation is
+not supported for instances.
 
 ## Texture Cache Size
-The `texture_cache_size` scene variable is set to 4Gb by default.   If the scene being rendered makes use of many and/or large texture maps, this may not be large enough.   The moonray render log (output using the `-info` option) reports both the set texture cache size and also the `main cache miss ratio`.   Even if the reported miss ratio is only a few percent, this can make a big difference in render time.   Increasing the texture_cache_size can be a good way to improve performance in such scenes.
+Setting a proper texture cache size can be very important for MCRT stage efficiency, especially for texture-heavy
+scenes.  The `texture_cache_size` scene variable is set to 4000MB by default.   If the scene being rendered makes
+use of many and/or large texture maps, this may not be large enough.
+
+The moonray render log output (when using the `-info` cmd-line option or SceneVariabels attribute) reports both
+the set texture cache size and also the `main cache miss ratio`.  Even if the reported miss ratio is only a few
+percent, this can make a big difference in render time. Increasing the texture_cache_size can be a good way to
+improve performance in such scenes.
+
+Here's exanple output from the log ( with `-info` enabled):
+
+```bash
+00:00:35    1.2 GB | ---------- OpenImageIO Texture Summary -------------------
+00:00:35    1.2 GB | Total texture I/O time           = 164.71s
+00:00:35    1.2 GB | Total texture MB read            = 371.29 MB
+00:00:36    1.2 GB | texture_cache_size    = 4,000 (3.91 GByte)
+00:00:36    1.2 GB | main cache miss ratio = 0.01%
+```
+
+In this case, texture_cache_size is 3.91GB and the main cache miss rate is 0.01% (i.e. cache miss happens 1 in
+10K lookups).  Here, even though texture cache size is relatively small, texture accessing is quite healthy
+and this texture cache size seems optimal.
+
+The following example is from a texture heavy scene (Animal Logic's ALab) with a small texture cache size.
+
+```bash
+00:41:07    8.4 GB | ---------- OpenImageIO Texture Summary -------------------
+00:41:07    8.4 GB | Total texture I/O time           = 68,276.54s
+00:41:07    8.4 GB | Total texture MB read            = 4.50 TB
+00:41:08    8.4 GB | texture_cache_size    = 4,000 (3.91 GByte)
+00:41:08    8.4 GB | main cache miss ratio = 1.94%
+```
+
+In this case, a cache miss happened around 1.94% of the time. This is a fairly high cache miss rate and will have
+a huge impact on the MCRT performance. Actually, in this example roughly 90% of MCRT time was spent on the texture
+file access in this case.  In this case we also see pretty low CPU utilization.
+
+If we changed the texture cache size from 3.91GB to 40GB, MCRT time is drastically improved.
+The `texture_cache_size` SceneVariables attribute is specified in Mb (40960MB = 40GB).
+
+In this example (also from the ALab scene), the texture_cache_size has been raised to 40GB:
+
+```bash
+00:08:50   42.9 GB | ---------- OpenImageIO Texture Summary -------------------
+00:08:50   42.9 GB | Total texture I/O time           = 812.61s
+00:08:50   42.9 GB | Total texture MB read            = 49.67 GB
+00:08:51   42.9 GB | texture_cache_size    = 40,960 (40.00 GByte)
+00:08:51   42.9 GB | main cache miss ratio = 0.02%
+```
+
+The cache hit-miss rate is down to 0.02% due to the use of a roughly 10x bigger texture cache. The overall rendering
+speed is 4.75x faster in than when the `texture_cache_size` was set to 4000MB.
+
+You should pay attention to the reported texture cache hit-miss rate for the opportunity of optimization. If the miss
+ratio is more than say 1% there might be an opportunity to improve rendering time. The solution is often just to
+increase the `texture_cache_size`.
+
+Its worth mentioning that MoonRay does not allocate the entire texture cache at the beginning of rendering. The texture
+cache is gradually allocated as needed internally. It is usually acceptable to use a large texture cache size even when
+the scene does not use all of it. The process memory is increased up to the texture cache size as needed.
+
+However, some memory resource issues may occur if you set a large texture cache and the scene actually needs all of
+it. The machine may not have enough physical memory. In these cases, the process can cause a lot of memory paging and
+performance can be pretty bad. It is important to control the texture cache size properly by hand to find the right
+balance.
+
+A lower cache miss rate is always better than a larger cache miss rate. However, the cache miss rate value itself is
+also dependent on the OpenImageIO (OIIO) version. For example, a miss rate of 1.94% of OIIO 1.7.7 is roughly the same as
+a miss rate of 4.36% of OIIO 2.3.20. Please keep this in mind, otherwise you might be confused when MoonRay upgrades OIIO versions.
+
