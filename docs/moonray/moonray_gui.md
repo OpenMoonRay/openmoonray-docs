@@ -19,7 +19,7 @@ Orbit is the default mode, but you can override this on the command line by spec
 ## Keyboard shortcuts (common to both modes)
 
 | **Key**      | **Result**                                                                                                                |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------|
+|-----------------|--------------------------------------------------------------------------------------------------------------------------|
 | Alt + LMB + RMB | Roll                                                                                                                      |
 | R               | Reset camera to original start-up world location                                                                          |
 | T               | Print current camera matrix to console                                                                                    |
@@ -74,172 +74,127 @@ translation keys, this allow you to "fly" around the scene.
 
 Use the `-h` flag to display the command line options.
 
+```bash
+$\> moonray_gui -h
+
+Usage: moonray_gui [options]
+Options:
+    -help
+        Print this message.
+
+    -in scene.rdl{a|b}
+        Input RDL scene data. May appear more than once. Processes multiple
+        files in order.
+        Reapplies all files whenever any one changes.
+    -deltas file.rdl{a|b}
+        Updates to apply to RDL scene data. May appear more than once.
+        Applies deltas from a particular file whenever it changes.
+
+    -out scene.exr
+        Output image name and type.
+
+    -threads n
+        Number of threads to use (all by default).
+
+    -size 1920 1080
+        Canonical frame width and height (in pixels).
+
+    -res 1.0
+        Resolution divisor for frame dimensions.
+
+    -exec_mode mode
+        Choose a specific mode of execution. Valid options are:
+        scalar - run in scalar mode (default).
+        vector - always run vectorized regardless if volumes are found.
+        xpu    - run in xpu mode.
+        auto   - attempt to run vectorized but fall back to scalar if volumes are found.
+
+    -sub_viewport l b r t
+    -sub_vp       l b r t
+        Clamp viewport render region.
+
+    -debug_pixel x y
+        Only render this one pixel for debugging. Overrides viewport.
+
+    -dso_path dso/path
+        Prepend to search path for RDL DSOs.
+
+    -texturesystem texsys
+        Choose a specific texture system. Valid options are:
+        sony          - use stock OIIO (slow).
+        dwaproduction - use vectorized texture sampling with lazy loading.
+
+    -camera camera
+        Camera to render from.
+
+    -layer layer
+        Layer to render from.
+
+    -fast_geometry_update
+        Turn on supporting fast geometry update for animation.
+
+    -record_rays .raydb/.mm
+        Save ray database or mm for later debugging.
+
+    -primary_range 0 [0]
+        Start and end range of primary ray(s) to debug. Only active with
+        -record_rays.
+
+    -depth_range 0 [0]
+        Start and end range of ray depths to debug. Only active with
+        -record_rays.
+
+    -rdla_set "var name" "expression"
+        Sets a global variable in the Lua interpreter before any RDLA is
+        executed.
+
+    -scene_var "name" "value"
+        Override a specific scene variable.
+
+    -attr_set "object" "attribute name" "value"
+        Override the value of an attribute on a specific SceneObject.
+
+    -attr_bind "object" "attribute name" "bound object name"
+        Override the binding on an attribute of a specific SceneObject.
+
+    -info
+        Enable verbose progress and statistics logging on stdout.
+
+    -debug
+        Enable debug level logging on stdout.
+
+    -stats filename.csv
+        Enable logging of statistics to a formatted file.
+
+    -athena_tags "TAG1=VALUE1 TAG2=VALUE2 ... TAGN=VALUEN"
+        Provided string will be sent to Athena Log Server and can be used to access stats on this render
+        Intended to be used for storing user specific data of interest such as RATS tests, testmaps, etc
+        TAG and VALUES are entirely up to the user
+
+    -resume_render
+        activate both of resume render and checkpoint render
+
+    -resumable_output
+        Make aov output as resumable for resume render
+
+    -free_cam
+        Use a WASD FPS style camera when in interactive mode (defaults to
+        orbit camera).
+
+    -no_tile_progress
+        Turn off the diagnostic tile outlines rendered on top of the image when in gui mode.
+
+    -apply_crt
+        Apply color render transform. The default LUT is used if no override is specified.
+
+    -snap_path <path>
+        Specify a file path for render snapshots.
+
+    -override_lut
+        Path to a binary file containing a 64*64*64*RGBfloat OpenGL compatible volume texture.
+
+    -debug_console <port>
+        Activate debug console port for telnet connection.
+        (port=0 : auto search available port by kernel. result port shows as stderr message of moonray_gui)
+
 ```
-$\> raas_gui -h
-
-$\> raas_render -h
-
--help  
-Print this message.
-
--in scene.rdl{a\|b}  
-Input RDL scene data. May appear more than once. Processes multiple  
-files in order. Reapplies all files whenever any one changes.  
--deltas file.rdl{a\|b}  
-Updates to apply to RDL scene data. May appear more than once.  
-Applies deltas from a particular file whenever it changes.
-
--out scene.exr  
-Output image name and type.
-
--threads n  
-Number of threads to use (all by default).
-
--size 1920 1080  
-Canonical frame width and height (in pixels).
-
--res 1.0  
-Resolution divisor for frame dimensions.
-
--sub_viewport l b r t  
--sub_vp l b r t  
-Clamp viewport render region.
-
--debug_pixel x y  
-Only render this one pixel for debugging. Overrides viewport.
-
--dso_path dso/path  
-Prepend to search path for RDL DSOs.
-
--texturesystem texsys  
-Choose a specific texture system. Valid options are  
-sony, dwaproduction, or dwarealtime. Default is dwaproduction.
-
--camera camera  
-Camera to render from.
-
--layer layer  
-Layer to render from.
-
--fast_geometry_update  
-Turn on supporting fast geometry update for animation.
-
--record_rays .raydb/.mm  
-Save ray database or mm for later debugging.
-
--primary_range 0 \[0\]  
-Start and end range of primary ray(s) to debug. Only active with  
--record_rays.
-
--depth_range 0 \[0\]  
-Start and end range of ray depths to debug. Only active with  
--record_rays.
-
--rdla_set "var name" "expression"  
-Sets a global variable in the Lua interpreter before any RDLA is  
-executed.
-
--scene_var "name" "value"  
-Override a specific scene variable.
-
--attr_set "object" "attribute name" "value"  
-Override the value of an attribute on a specific SceneObject.
-
--attr_bind "object" "attribute name" "bound object name"  
-Override the binding on an attribute of a specific SceneObject.
-
--info  
-enable verbose progress and statistics logging on stdout.
-
--\[not\]bundled  
-Enable \[disable\] bundled rendering (disabled by default).
-
--ray_streaming  
-Use the ray streaming approach to ray intersections (only applies to
-bundled mode).
-
--stats filename.csv  
-enable logging of statistics to a formatted file.
-
--pam_config ("path"\|"URI"\|"json text") "config name" "config site"  
-Sets the PAM config file, uri, or explicit json text, as well as the
-name and site  
-Ex: -pam_config
-/studio/igo/mstr/general/config/show_services_prod.config igo GLD
-
--pam_sandbox "sandbox URI"  
-Sets the sandbox to use when reading PAM project files. If omitted, no
-sandbox is used
-
--pam_file_page_size kb  
-Specifies the chunk size of all pam file read requests. 0 disables paged
-reads.  
-If a cache host is used, the page size is set by the cache host.  
-Default is 0kb.
-
--pam_file\_\<use\|no\>\_cache  
-Enable or disable explicit caching of pam file reads. Default is off.
-
--pam_file\_\[not\_\]buffered  
-Enable or disable internal pam file buffering. Typically you'll want to
-disable  
-paged reads and caching if enabling this options. Default is on.
-
--pam_file_cache_host hostname  
-Specify the host name of the raas_cached server. Use "" to use an
-embedded cache.  
-Default is ""
-
--pam_file_cache_port port  
-Specify the port of the raas_cached server.  
-Default is 19000.
-
--pam_file_cache_pool_size mb  
-Specify max memory size about in-core pam file read cache by MByte. 0 is
-unlimited.  
-Default is 0MB (=unlimited).
-
--pam_file_cache_vmem_size mb  
-Specify max memory size about out-of-core pam file read cache by MByte.
-0 is disable out-of-core functions  
-Default is 0MB (=disable out-of-core)
-
--pam_file_cache_vmem_core vmcore  
-Specify vmcore filename for out-of-core pam file read cache.  
-Default is "/tmp/blockCache.vmcore"
-
--pam_file_cache_unixdomain_sock_path path  
-Specify unixdomain socket file path for raas_cached connection which
-running on same host.  
-If path starts w/ '@' (e.g., @abc), using abstruct namespace unixdomain
-connection internally.  
-Default is "/tmp/raas_cached.localhost."
-
--athena_tags "TAG1=VALUE1 TAG2=VALUE2 ... TAGN=VALUEN"  
-Provided string will be sent to Athena Log Server and can be used to
-access stats on this render  
-Intended to be used for storing user specific data of interest such as
-RATS tests, testmaps, etc  
-TAG and VALUES are entirely up to the user
-
--free_cam  
-Use a WASD FPS style camera when in interactive mode (defaults to  
-orbit camera).
-
--no_tile_progress  
-Turn off the diagnostic tile outlines rendered on top of the image when
-in gui mode.
-
--apply_crt  
-Apply color render transform. The default LUT is used if no override is
-specified.
-
--override_lut  
-Path to a binary file containing a 64\*64\*64\*RGBfloat OpenGL
-compatible volume texture.
-```
-
-# See Also
-
--   [Using raas_gui &
-    raas_render](file:///C:\pages\viewpage.action%3fpageId=389544976)
