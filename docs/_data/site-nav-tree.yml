@@ -416,6 +416,8 @@ toc:
         path: /moonray/cmd-line-options
       - item: Execution modes
         path: /moonray/execution-modes
+      - item: Motion vectors
+        path: /moonray/motion-vectors
       - item: Performance Considerations
         path: /moonray/performance-considerations
       - item: How-To Guides
