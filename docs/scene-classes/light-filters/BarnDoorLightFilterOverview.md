@@ -1,6 +1,4 @@
 ---
-# BarnDoorLightFilter 
-
 The BarnDoorLightFilter functions like a [barn
 door](https://en.wikipedia.org/wiki/Stage_lighting_accessories#Barn_doors)
 in stage lighting. Typically there are four flaps attached to a light
