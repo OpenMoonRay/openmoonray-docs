@@ -305,10 +305,10 @@ RenderOutput("/output/blue") {
 ## Script
 
 ```bash
-\# render, produce scene.exr  
+# render, produce scene.exr  
 moonray -in scene.rdla  
   
-\# rename motionvec.R,G and unpremult by alpha  
+# rename motionvec.R,G and unpremult by alpha  
 oiiotool scene.exr --ch "R=motionvec.R,G=motionvec.G,B,A" --unpremult -o
 scene.exr
 ```
