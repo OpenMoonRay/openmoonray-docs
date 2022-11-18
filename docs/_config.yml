@@ -1,12 +1,20 @@
-logo: /assets/images/logo.png
+# Custom site.* metadata
+logo: /assets/images/moonray-logo.svg
 description: Documentation
-theme: jekyll-theme-minimal
+
+exclude: [ style-reference ]
+
+collections_dir: .
+
+sass:
+  sourcemap: never
+
 baseurl: /openmoonray-docs
 url: http://dreamworksanimation.github.io/
-BASE_PATH : http://dreamworksanimation.github.io/openmoonray-docs
-repository: http://dreamworksanimation.github.io/openmoonray-docs
+BASE_PATH : http://dreamworksanimation.github.io/openmoonray-docs/
+repository: https://github.com/dreamworksanimation/openmoonray-docs/
 
-collections_dir: /
+permalink: pretty
 
 collections:
 
@@ -25,11 +33,11 @@ collections:
   lights:
     permalink: /:collection/:name
     output: true
-    
+
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "pages" 
+      type: "pages"
     values:
       layout: "default"

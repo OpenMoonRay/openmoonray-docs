@@ -1,0 +1,76 @@
+#main-nav {
+  background: var(--color-main-nav-bg);
+  flex-grow: 1;
+  margin-block-start: var(--size-10);
+  overflow-x: clip;
+  overflow-y: auto;
+  padding-block-end: var(--size-8);
+  padding-block-start: var(--size-5);
+  padding-inline-start: var(--size-3);
+  pointer-events: initial;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out;
+
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: Hsla(var(--color-scrollbar-thumb), 0.8);
+    border-radius: 8px;
+    border: 5px solid var(--color-main-nav-bg);
+  }
+
+  [nav-open] & {
+    transform: translateX(0);
+    box-shadow: 6px 0px 20px 3px Rgb(0 0 0 / 10%);
+  }
+
+  @media screen and (min-width: 64.0625em) {
+    margin-block-start: unset;
+    transform: translateX(0);
+    transition: unset;
+  }
+}
+
+#main-nav sl-tree > sl-tree-item a {
+  color: var(--color-main-nav-link) !important;
+  font-weight: var(--font-weight-light);
+  transition: color 0.5s;
+}
+
+#main-nav sl-tree > sl-tree-item > a {
+  font-weight: var(--font-weight-semibold);
+}
+
+#main-nav sl-tree {
+  --indent-guide-width: 1px;
+  --indent-guide-offset: 4px;
+  --indent-guide-color: var(--color-main-nav-indent-guide);
+}
+
+#main-nav sl-tree-item::part(label) {
+  color: var(--color-main-nav-link);
+}
+
+#main-nav sl-tree-item::part(expand-button) {
+  color: var(--color-main-nav-expand-icon);
+}
+
+#main-nav sl-tree-item[current]::part(item) {
+  background: var(--color-main-nav-selected-bg);
+  border-inline-start-color: var(--indigo-11);
+}
+
+#main-nav sl-tree-item[selected]:not([current])::part(item) {
+  background-color: transparent;
+  border-inline-start-color: transparent;
+}
+
+#main-nav sl-tree-item::part(expand-button) {
+  flex-shrink: 0;
+}
