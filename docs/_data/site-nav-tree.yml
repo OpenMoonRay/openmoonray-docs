@@ -429,6 +429,8 @@ toc:
             path: /moonray/how-to-guides/bokeh
           - item: Extra AOV Workflow and Case Studies
             path: /moonray/how-to-guides/extra-aovs
+          - item: Motion vectors
+            path: /moonray/how-to-guides/motion-vectors
           - item: OCIO Notes
             path: /moonray/how-to-guides/opencolorio-notes
           - item: Path Guiding
