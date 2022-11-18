@@ -75,7 +75,7 @@ Camera("shot_cam") {
 
 # Full Example RDLA
 
-![]({{site.baseurl}}/assets/images/moonray/motion-vectors/image1.png)
+![]({{site.baseurl}}/assets/images/moonray/how-to-guides/motion-vectors/image1.png)
 
 ```lua
 SceneVariables {  
@@ -305,10 +305,10 @@ RenderOutput("/output/blue") {
 ## Script
 
 ```bash
-\# render, produce scene.exr  
+# render, produce scene.exr  
 moonray -in scene.rdla  
   
-\# rename motionvec.R,G and unpremult by alpha  
+# rename motionvec.R,G and unpremult by alpha  
 oiiotool scene.exr --ch "R=motionvec.R,G=motionvec.G,B,A" --unpremult -o
 scene.exr
 ```
