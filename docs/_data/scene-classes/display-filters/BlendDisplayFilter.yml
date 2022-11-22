@@ -1,5 +1,6 @@
 ---
-overview: BlendDisplayFilterOverview.md
+overview: overviews/BlendDisplayFilterOverview.md
+example: examples/BlendDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/BlendDisplayFilter
 gallery:
   - image: blend_filter_input1.png

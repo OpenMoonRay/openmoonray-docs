@@ -392,3 +392,4 @@ title: RectLight
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.lights.RectLight-%}

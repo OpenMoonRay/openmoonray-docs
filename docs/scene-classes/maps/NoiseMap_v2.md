@@ -307,3 +307,4 @@ title: NoiseMap_v2
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.maps.NoiseMap_v2-%}

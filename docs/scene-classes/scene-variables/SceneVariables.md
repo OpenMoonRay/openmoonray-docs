@@ -460,6 +460,14 @@ title: SceneVariables
 <details open>
   <summary>Global Toggles attributes</summary>
   <p>
+    <h3>correct_reflections_in_medium</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Temporary toggle to turn on a bug fix that corrects reflections that occur within a medium.</p>
+      {%-include image-gallery.html images=site.data.scene-classes.scene-variables.SceneVariables.attributes.correct_reflections_in_medium.images data=site.data.scene-classes.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.scene-classes.scene-variables.SceneVariables.attributes.correct_reflections_in_medium.links heading=4-%}
+    </p>
     <h3>enable_displacement</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -1066,3 +1074,4 @@ title: SceneVariables
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.scene-variables.SceneVariables-%}

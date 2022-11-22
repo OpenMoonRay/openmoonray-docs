@@ -1,5 +1,6 @@
 ---
-overview: RampDisplayFilterOverview.md
+overview: overviews/RampDisplayFilterOverview.md
+example: examples/RampDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/RampDisplayFilter
 gallery:
   - image: input_ramp.png

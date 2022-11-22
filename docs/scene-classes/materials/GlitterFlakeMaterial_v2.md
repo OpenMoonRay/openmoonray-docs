@@ -335,3 +335,4 @@ title: GlitterFlakeMaterial_v2
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.materials.GlitterFlakeMaterial_v2-%}

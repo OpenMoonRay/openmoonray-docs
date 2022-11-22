@@ -16,3 +16,4 @@ title: HairColumnMap
 
 <div class="scene-class">
 </div>
+{%-include example.html data=site.data.scene-classes.maps.HairColumnMap-%}
