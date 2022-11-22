@@ -1,0 +1,1 @@
+The TangentSpaceDisplayFilter is a tool used with the baking camera to produce engine-ready normal maps.

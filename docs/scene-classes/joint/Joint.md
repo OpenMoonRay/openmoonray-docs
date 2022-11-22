@@ -29,3 +29,4 @@ title: Joint
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.joint.Joint-%}

@@ -104,3 +104,4 @@ title: ProjectCameraMap_v2
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.maps.ProjectCameraMap_v2-%}

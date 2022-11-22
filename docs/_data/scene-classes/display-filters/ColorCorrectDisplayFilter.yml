@@ -1,5 +1,6 @@
 ---
-overview: ColorCorrectDisplayFilterOverview.md
+overview: overviews/ColorCorrectDisplayFilterOverview.md
+example: examples/ColorCorrectDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/ColorCorrectDisplayFilter
 gallery:
   - image: beauty.png

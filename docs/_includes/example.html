@@ -1,0 +1,7 @@
+{% if include.data %}
+{% if include.data.example %}
+---
+## Example
+{%include_relative {{include.data.example}}%}
+{% endif %}
+{% endif %}

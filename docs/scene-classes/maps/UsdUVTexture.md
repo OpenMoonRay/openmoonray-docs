@@ -42,6 +42,18 @@ title: UsdUVTexture
       {%-include image-gallery.html images=site.data.scene-classes.maps.UsdUVTexture.attributes.file.images data=site.data.scene-classes.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.scene-classes.maps.UsdUVTexture.attributes.file.links heading=4-%}
     </p>
+    <h3>output_mode</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | rgb = 0 (default)
+          | r = 1
+          | g = 2
+          | b = 3
+          | a = 4
+      <p class="scene-class-comments">Controls which channel(s) to output</p>
+      {%-include image-gallery.html images=site.data.scene-classes.maps.UsdUVTexture.attributes.output_mode.images data=site.data.scene-classes.maps.UsdUVTexture-%}
+      {%-include see-also.html links=site.data.scene-classes.maps.UsdUVTexture.attributes.output_mode.links heading=4-%}
+    </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
@@ -119,3 +131,4 @@ title: UsdUVTexture
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.maps.UsdUVTexture-%}

@@ -1,5 +1,6 @@
 ---
-overview: DofDisplayFilterOverview.md
+overview: overviews/DofDisplayFilterOverview.md
+example: examples/DofDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/DofDisplayFilter
 gallery:
   - image: focus_distance_20.png
