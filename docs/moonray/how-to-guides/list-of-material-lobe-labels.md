@@ -17,8 +17,6 @@ title: List of Material Lobe Labels
 
 - [IrisMaterial](#ListofMaterialLobeLabels-IrisMaterial)
 
-- [GlitterFlakeMaterial](#ListofMaterialLobeLabels-GlitterFlakeMa)
-
 ##  Dwa* Materials (such as DwaSolidDielectric, DwaMetal, DwaRefractive, DwaSkin, DwaFabric, DwaVelvet, etc.)
 
 Each _Dwa*_ material may either carry a subset or all of the following lobes. For instance:
@@ -34,6 +32,7 @@ When available, the individual lobes can be accessed via AOVs using the followin
 -   `diffuse`
 -   `specular transmission`
 -   `diffuse transmission`
+-   `glitter` 
 
 ## HairMaterial
 
@@ -69,8 +68,4 @@ are valid only in those cases.
  IrisMaterial has a special *caustic* lobe which can be accessed via the label: `iris caustics`.
 
 
-## GlitterFlakeMaterial
 
-You can isolate glitter using the following label:
-
--   `glitter` 
