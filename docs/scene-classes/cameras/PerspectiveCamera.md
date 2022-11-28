@@ -261,3 +261,4 @@ title: PerspectiveCamera
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.cameras.PerspectiveCamera-%}

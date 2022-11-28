@@ -317,3 +317,4 @@ title: NoiseWorleyMap_v2
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}

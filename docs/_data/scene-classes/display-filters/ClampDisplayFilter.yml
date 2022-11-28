@@ -1,5 +1,6 @@
 ---
-overview: ClampDisplayFilterOverview.md
+overview: overviews/ClampDisplayFilterOverview.md
+example: examples/ClampDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/ClampDisplayFilter
 gallery:
   - image: beauty.png

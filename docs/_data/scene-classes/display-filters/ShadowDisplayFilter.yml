@@ -1,5 +1,6 @@
 ---
-overview: ShadowDisplayFilterOverview.md
+overview: overviews/ShadowDisplayFilterOverview.md
+example: examples/ShadowDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/ShadowDisplayFilter
 gallery:
   - image: occluded.png

@@ -338,3 +338,4 @@ title: HairMaterial_v3
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.materials.hair.HairMaterial_v3-%}

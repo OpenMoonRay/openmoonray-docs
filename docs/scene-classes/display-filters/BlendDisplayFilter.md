@@ -83,3 +83,4 @@ title: BlendDisplayFilter
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}

@@ -1,5 +1,6 @@
 ---
-overview: OpDisplayFilterOverview.md
+overview: overviews/OpDisplayFilterOverview.md
+example: examples/OpDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/OpDisplayFilter
 gallery:
   - image: input1.png

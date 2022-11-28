@@ -1,0 +1,12 @@
+```lua
+local constant = ConstantDisplayFilter("/display/constant") {
+    ["color"] = Rgb(0.5, 1.0, 1.0)
+}
+
+RenderOutput("/output/constant") {
+    ["file_name"] = "result0.exr",
+    ["result"] = "display filter",
+    ["display_filter"] = constant,
+    ["channel_name"] = "constant"
+}
+```

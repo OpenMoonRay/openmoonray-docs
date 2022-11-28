@@ -1,5 +1,6 @@
 ---
-overview: DiscretizeDisplayFilterOverview.md
+overview: overviews/DiscretizeDisplayFilterOverview.md
+example: examples/DiscretizeDisplayFilterExample.md
 image_path: /assets/images/scene-classes/display-filters/DiscretizeDisplayFilter
 gallery:
   - image: input.png

@@ -45,3 +45,4 @@ title: UsdPrimvarReader_vector
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.maps.UsdPrimvarReader_vector-%}

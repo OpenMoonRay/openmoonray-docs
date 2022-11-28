@@ -120,3 +120,4 @@ title: DistortNormalMap
   </p>
 </details>
 </div>
+{%-include example.html data=site.data.scene-classes.normal-maps.DistortNormalMap-%}
