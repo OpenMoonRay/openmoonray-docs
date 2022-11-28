@@ -36,7 +36,7 @@ title: Layer
     </p>
     <h3>lightfiltersets</h3>
     <p class="scene-class-type">
-      <b>Lightfilterset Vector</b>
+      <b>LightFilterSet Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.lightfiltersets.images data=site.data.scene-classes.layer.Layer-%}
@@ -44,7 +44,7 @@ title: Layer
     </p>
     <h3>lightsets</h3>
     <p class="scene-class-type">
-      <b>Lightset Vector</b>
+      <b>LightSet Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.lightsets.images data=site.data.scene-classes.layer.Layer-%}
@@ -60,7 +60,7 @@ title: Layer
     </p>
     <h3>shadowreceiversets</h3>
     <p class="scene-class-type">
-      <b>134217728 Vector</b>
+      <b>ShadowReceiverSet Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.shadowreceiversets.images data=site.data.scene-classes.layer.Layer-%}
@@ -68,7 +68,7 @@ title: Layer
     </p>
     <h3>shadowsets</h3>
     <p class="scene-class-type">
-      <b>16777216 Vector</b>
+      <b>ShadowSet Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.shadowsets.images data=site.data.scene-classes.layer.Layer-%}
@@ -84,7 +84,7 @@ title: Layer
     </p>
     <h3>volume_shaders</h3>
     <p class="scene-class-type">
-      <b>Volumeshader Vector</b>
+      <b>Volume Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.layer.Layer.attributes.volume_shaders.images data=site.data.scene-classes.layer.Layer-%}

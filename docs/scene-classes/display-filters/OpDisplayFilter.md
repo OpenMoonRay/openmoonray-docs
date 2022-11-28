@@ -41,7 +41,7 @@ title: OpDisplayFilter
   <p>
     <h3>input1</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">first operand</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input1.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
@@ -49,7 +49,7 @@ title: OpDisplayFilter
     </p>
     <h3>input2</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">second operand</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.input2.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}
@@ -57,7 +57,7 @@ title: OpDisplayFilter
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OpDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.OpDisplayFilter-%}

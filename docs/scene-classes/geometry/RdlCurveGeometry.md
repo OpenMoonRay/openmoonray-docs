@@ -107,7 +107,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.node_xform.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.node_xform.links heading=4-%}
     </p>
@@ -139,7 +139,7 @@ title: RdlCurveGeometry
     </p>
     <h3>primitive_attributes</h3>
     <p class="scene-class-type">
-      <b>Object Vector</b>
+      <b>SceneObject Vector</b>
       default: []
       <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
       {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attributes.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}

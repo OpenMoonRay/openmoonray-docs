@@ -28,7 +28,7 @@ title: ShadowDisplayFilter
     </p>
     <h3>occluded</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">Image Buffer representing the occluded image</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.occluded.images data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}
@@ -44,7 +44,7 @@ title: ShadowDisplayFilter
     </p>
     <h3>unoccluded</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">Image Buffer representing the unoccluded image</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.unoccluded.images data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}

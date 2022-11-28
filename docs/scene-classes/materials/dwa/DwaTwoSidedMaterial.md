@@ -66,7 +66,7 @@ title: DwaTwoSidedMaterial
     </p>
     <h3>sss_trace_set</h3>
     <p class="scene-class-type">
-      <b>Traceset</b>
+      <b>TraceSet</b>
       default: None
       <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. The DwaTwoSidedMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.sss_trace_set.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
@@ -79,7 +79,7 @@ title: DwaTwoSidedMaterial
   <p>
     <h3>back_material</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-comments">material to use on back-facing surfaces</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.back_material.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}
@@ -95,7 +95,7 @@ title: DwaTwoSidedMaterial
     </p>
     <h3>front_material</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-comments">material to use on front-facing surfaces</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial.attributes.front_material.images data=site.data.scene-classes.materials.dwa.DwaTwoSidedMaterial-%}

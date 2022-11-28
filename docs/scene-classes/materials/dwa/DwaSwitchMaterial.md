@@ -30,7 +30,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>sss_trace_set</h3>
     <p class="scene-class-type">
-      <b>Traceset</b>
+      <b>TraceSet</b>
       default: None
       <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. The DwaSwitchMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.sss_trace_set.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -67,7 +67,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material0</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material0.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -75,7 +75,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material1</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material1.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -83,7 +83,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material10</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material10.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -91,7 +91,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material11</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material11.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -99,7 +99,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material12</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material12.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -107,7 +107,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material13</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material13.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -115,7 +115,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material14</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material14.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -123,7 +123,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material15</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material15.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -131,7 +131,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material16</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material16.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -139,7 +139,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material17</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material17.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -147,7 +147,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material18</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material18.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -155,7 +155,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material19</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material19.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -163,7 +163,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material2</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material2.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -171,7 +171,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material20</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material20.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -179,7 +179,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material21</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material21.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -187,7 +187,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material22</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material22.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -195,7 +195,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material23</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material23.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -203,7 +203,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material24</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material24.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -211,7 +211,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material25</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material25.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -219,7 +219,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material26</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material26.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -227,7 +227,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material27</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material27.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -235,7 +235,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material28</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material28.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -243,7 +243,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material29</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material29.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -251,7 +251,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material3</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material3.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -259,7 +259,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material30</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material30.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -267,7 +267,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material31</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material31.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -275,7 +275,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material32</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material32.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -283,7 +283,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material33</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material33.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -291,7 +291,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material34</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material34.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -299,7 +299,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material35</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material35.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -307,7 +307,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material36</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material36.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -315,7 +315,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material37</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material37.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -323,7 +323,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material38</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material38.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -331,7 +331,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material39</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material39.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -339,7 +339,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material4</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material4.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -347,7 +347,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material40</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material40.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -355,7 +355,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material41</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material41.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -363,7 +363,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material42</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material42.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -371,7 +371,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material43</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material43.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -379,7 +379,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material44</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material44.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -387,7 +387,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material45</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material45.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -395,7 +395,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material46</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material46.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -403,7 +403,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material47</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material47.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -411,7 +411,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material48</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material48.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -419,7 +419,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material49</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material49.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -427,7 +427,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material5</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material5.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -435,7 +435,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material50</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material50.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -443,7 +443,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material51</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material51.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -451,7 +451,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material52</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material52.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -459,7 +459,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material53</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material53.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -467,7 +467,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material54</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material54.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -475,7 +475,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material55</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material55.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -483,7 +483,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material56</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material56.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -491,7 +491,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material57</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material57.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -499,7 +499,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material58</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material58.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -507,7 +507,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material59</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material59.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -515,7 +515,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material6</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material6.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -523,7 +523,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material60</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material60.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -531,7 +531,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material61</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material61.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -539,7 +539,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material62</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material62.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -547,7 +547,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material63</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material63.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -555,7 +555,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material7</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material7.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -563,7 +563,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material8</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material8.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}
@@ -571,7 +571,7 @@ title: DwaSwitchMaterial
     </p>
     <h3>material9</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSwitchMaterial.attributes.material9.images data=site.data.scene-classes.materials.dwa.DwaSwitchMaterial-%}

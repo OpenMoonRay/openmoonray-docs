@@ -75,7 +75,7 @@ title: DirectionalMap
   <p>
     <h3>input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal when bound. The binding multiplier is ignored</p>
       {%-include image-gallery.html images=site.data.scene-classes.maps.DirectionalMap.attributes.input_normal.images data=site.data.scene-classes.maps.DirectionalMap-%}

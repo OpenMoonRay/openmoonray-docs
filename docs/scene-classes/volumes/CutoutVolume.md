@@ -46,7 +46,7 @@ title: CutoutVolume
     </p>
     <h3>indirect_volume</h3>
     <p class="scene-class-type">
-      <b>Volumeshader</b>
+      <b>Volume</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.volumes.CutoutVolume.attributes.indirect_volume.images data=site.data.scene-classes.volumes.CutoutVolume-%}
