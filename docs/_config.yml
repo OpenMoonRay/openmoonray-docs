@@ -33,4 +33,3 @@ defaults:
       type: "pages" 
     values:
       layout: "default"
-      
