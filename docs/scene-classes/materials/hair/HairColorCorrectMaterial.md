@@ -78,7 +78,7 @@ title: HairColorCorrectMaterial
     </p>
     <h3>input_hair_material</h3>
     <p class="scene-class-type">
-      <b>262144</b>
+      <b>DwaBaseHairLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairColorCorrectMaterial.attributes.input_hair_material.images data=site.data.scene-classes.materials.hair.HairColorCorrectMaterial-%}

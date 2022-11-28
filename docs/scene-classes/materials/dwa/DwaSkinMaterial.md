@@ -28,7 +28,7 @@ title: DwaSkinMaterial
     </p>
     <h3>sss_trace_set</h3>
     <p class="scene-class-type">
-      <b>Traceset</b>
+      <b>TraceSet</b>
       default: None
       <p class="scene-class-comments">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSkinMaterial.attributes.sss_trace_set.images data=site.data.scene-classes.materials.dwa.DwaSkinMaterial-%}
@@ -203,7 +203,7 @@ title: DwaSkinMaterial
     </p>
     <h3>fuzz_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an independent shading normal (normal map) for the fuzz lobe</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSkinMaterial.attributes.fuzz_normal.images data=site.data.scene-classes.materials.dwa.DwaSkinMaterial-%}
@@ -588,7 +588,7 @@ title: DwaSkinMaterial
   <p>
     <h3>independent_moisture_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an independent shading normal (normal map) for the Moisture lobe</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSkinMaterial.attributes.independent_moisture_normal.images data=site.data.scene-classes.materials.dwa.DwaSkinMaterial-%}
@@ -658,7 +658,7 @@ title: DwaSkinMaterial
   <p>
     <h3>input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaSkinMaterial.attributes.input_normal.images data=site.data.scene-classes.materials.dwa.DwaSkinMaterial-%}

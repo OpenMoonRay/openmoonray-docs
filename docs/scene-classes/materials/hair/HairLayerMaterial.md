@@ -52,7 +52,7 @@ title: HairLayerMaterial
     </p>
     <h3>hair_material_A</h3>
     <p class="scene-class-type">
-      <b>262144</b>
+      <b>DwaBaseHairLayerable</b>
       default: None
       <p class="scene-class-comments">foreground hair material</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_A.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}
@@ -60,7 +60,7 @@ title: HairLayerMaterial
     </p>
     <h3>hair_material_B</h3>
     <p class="scene-class-type">
-      <b>262144</b>
+      <b>DwaBaseHairLayerable</b>
       default: None
       <p class="scene-class-comments">background hair material</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairLayerMaterial.attributes.hair_material_B.images data=site.data.scene-classes.materials.hair.HairLayerMaterial-%}

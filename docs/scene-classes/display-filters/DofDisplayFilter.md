@@ -49,7 +49,7 @@ title: DofDisplayFilter
     </p>
     <h3>depth</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">the 'depth' result RenderOutput to sample z depth values from</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.depth.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
@@ -73,7 +73,7 @@ title: DofDisplayFilter
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput to apply depth of field</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}
@@ -81,7 +81,7 @@ title: DofDisplayFilter
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.DofDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.DofDisplayFilter-%}

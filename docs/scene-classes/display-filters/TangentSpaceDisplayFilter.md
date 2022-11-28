@@ -41,7 +41,7 @@ title: TangentSpaceDisplayFilter
   <p>
     <h3>N</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.N.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
@@ -49,7 +49,7 @@ title: TangentSpaceDisplayFilter
     </p>
     <h3>dPds</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.dPds.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
@@ -57,7 +57,7 @@ title: TangentSpaceDisplayFilter
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">data to transform into tangent space</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
@@ -65,7 +65,7 @@ title: TangentSpaceDisplayFilter
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
