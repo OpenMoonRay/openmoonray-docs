@@ -4,7 +4,6 @@ gallery:
 attributes:
   input_texture_coordinates:
     images:
-
   uv_repeat:
     images:
       - image: uvrepeat.jpg
