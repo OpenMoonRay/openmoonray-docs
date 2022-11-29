@@ -263,9 +263,9 @@ Session definitions files have the extension ".sessiondef"
 |maxThreads|`int`|all threads of running hosts based on the CPU cores|set the total number of threads.|
 |numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend mcrt computation. The number should be 1 or greater.|
 |partialMergeRefreshInterval|`float`|0.25 (sec)|In order to minimize output data bandwidth, backend merge computation try to merge images by partial small areas and try to cover the entire image area by multiple merge operations. This command set the entire image area cover frequency by second. If you set a small number, client-side image updates smoother but output bandwidth gets bigger and network bandwidth might be a bottleneck in some cases.|
-|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode. We have 2 stages in image generation. coarse pass stage and fine pass stage.|
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
 
-More info on _packTilePrecision_ options:
+More info on _packTilePrecision_ options: We have 2 stages in image generation. coarse pass stage and fine pass stage.
 * _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
 * _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
 * _full32_ : always uses F32 (full 32bit float) for all stages
