@@ -20,7 +20,7 @@ title: CombineLightFilter
   <p>
     <h3>light_filters</h3>
     <p class="scene-class-type">
-      <b>Object Vector</b>
+      <b>SceneObject Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.light-filters.CombineLightFilter.attributes.light_filters.images data=site.data.scene-classes.light-filters.CombineLightFilter-%}

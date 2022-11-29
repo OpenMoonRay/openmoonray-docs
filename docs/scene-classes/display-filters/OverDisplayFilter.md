@@ -20,7 +20,7 @@ title: OverDisplayFilter
   <p>
     <h3>alpha</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">alpha for over operation</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
@@ -28,7 +28,7 @@ title: OverDisplayFilter
     </p>
     <h3>input_bottom</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput on bottom</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_bottom.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
@@ -36,7 +36,7 @@ title: OverDisplayFilter
     </p>
     <h3>input_top</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput on top</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.input_top.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}

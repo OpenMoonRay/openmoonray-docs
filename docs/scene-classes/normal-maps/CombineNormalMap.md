@@ -20,7 +20,7 @@ title: CombineNormalMap
   <p>
     <h3>input_1</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">First normal map to combine; usually a base map</p>
       {%-include image-gallery.html images=site.data.scene-classes.normal-maps.CombineNormalMap.attributes.input_1.images data=site.data.scene-classes.normal-maps.CombineNormalMap-%}
@@ -28,7 +28,7 @@ title: CombineNormalMap
     </p>
     <h3>input_2</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">Second normal map to combine; usually a base map</p>
       {%-include image-gallery.html images=site.data.scene-classes.normal-maps.CombineNormalMap.attributes.input_2.images data=site.data.scene-classes.normal-maps.CombineNormalMap-%}

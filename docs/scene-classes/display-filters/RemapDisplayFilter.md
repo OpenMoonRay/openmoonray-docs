@@ -134,7 +134,7 @@ title: RemapDisplayFilter
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">Input buffer</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.RemapDisplayFilter-%}
@@ -158,7 +158,7 @@ title: RemapDisplayFilter
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.RemapDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.RemapDisplayFilter-%}

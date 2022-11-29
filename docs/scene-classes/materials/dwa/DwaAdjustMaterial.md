@@ -132,7 +132,7 @@ title: DwaAdjustMaterial
     </p>
     <h3>input_material</h3>
     <p class="scene-class-type">
-      <b>Dwabaselayerable</b>
+      <b>DwaBaseLayerable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.dwa.DwaAdjustMaterial.attributes.input_material.images data=site.data.scene-classes.materials.dwa.DwaAdjustMaterial-%}

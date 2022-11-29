@@ -41,7 +41,7 @@ now it will be necessary to build them alongside MoonRay inside the _moonray_ so
 |DisplayFilter|[scene_rdl2::rdl2::DisplayFilter](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/DisplayFilter.h)|yes|
 |Geometry|[scene_rdl2::rdl2::Geometry](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/Geometry.h)|yes|
 |Light|[scene_rdl2::rdl2::Light](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/Light.h)|no|
-|Light Filter|[scene_rdl2::rdl2::LightFilter](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/LightFilter.h)|no|
+|LightFilter|[scene_rdl2::rdl2::LightFilter](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/LightFilter.h)|no|
 |Map|[scene_rdl2::rdl2::Map](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/Map.h)|yes|
 |Material|[scene_rdl2::rdl2::Material](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/Material.h)|yes|
 |NormalMap|[scene_rdl2::rdl2::NormalMap](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/NormalMap.h)|yes|
@@ -124,7 +124,7 @@ The table below shows where the attributes are defined for each plug-in type:
 |DisplayFilter|\<ClassName\>.json|
 |Geometry|attributes.cc|
 |Light|attributes.cc|
-|Light Filter|attributes.cc|
+|LightFilter|attributes.cc|
 |Map|\<ClassName\>.json|
 |Material|\<ClassName\>.json|
 |NormalMap|\<ClassName\>.json|
@@ -433,7 +433,7 @@ or examples for each specific plug-in type for more information.
 |DisplayFilter|`getInputData() DisplayFilterFuncv`|C++ ISPC|
 |Geometry|`createProcedural() destroyProcedural() deformed() resetDeformed()`|C++|
 |Light|`canIlluminate() eval() intersect() sample()`|C++ ISPC|
-|Light Filter|`canIlluminate() eval() sample()`|C++ ISPC|
+|LightFilter|`canIlluminate() eval() sample()`|C++ ISPC|
 |Map|`SampleFunc SampleFuncv`|C++ ISPC|
 |Material|`ShadeFunc Shadefuncv PresenceFunc`|C++ ISPC|
 |NormalMap|`SampleFunc SampleFuncv`|C++ ISPC|

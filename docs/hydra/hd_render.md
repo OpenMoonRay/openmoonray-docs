@@ -7,16 +7,11 @@ title: hd_render Command
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-
-<!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
-
-# <Overview_or_introduction>
-<!-- All topics>
-
-<!-- Concept info here: Explain the background and context of a this subject. --> 
-
 # hd_render Command
-The HdMoonray project includes a commandline program, hd_render, that performs Hydra renders from a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for hd_render.
+The HdMoonray project includes a command-line program, hd_render, that performs Hydra renders from
+a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl
+renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into
+the main application, and we have chosen not to do this for hd_render.
 
 ## Usage
 ```bash
@@ -40,7 +35,7 @@ Optional:
     camera is created that frames the scene geometry.
 
 -sampling_camera <CAMERA_NAME>
-     Use this camera's shutter:open and shutter:close to
+     Use this cameras shutter:open and shutter:close to
      define the motion blur sample steps
 
 -renderer Moonray
