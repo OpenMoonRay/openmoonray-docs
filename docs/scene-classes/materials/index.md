@@ -11,10 +11,6 @@ title: Materials
 <!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
 
 # Materials
-{%-include overview.html data=site.data.scene-classes.materials-%}
-{%-include image-gallery.html images=site.data.scene-classes.materials.gallery data=site.data.scene-classes.materials-%}
-{%-include see-also.html links=site.data.scene-classes.materials.links-%}
-
 ![Materials](../../assets/images/scene-classes/materials/materials.jpg)
 
 <!-- All topics>
