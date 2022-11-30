@@ -252,7 +252,36 @@ Session definitions files have the extension ".sessiondef"
 |attribute|type|default|description|
 |---------|----|-------|-----------|
 |fps|`float`|12.0|set image update FPS|
-|continuous|`bool`|false|dispatch computation sends a snapshot message downstream by user-defined fps interval if the continuous command is set as true. You should use mcrt sessiondef command “frameGating” = true if the continuous command is true. This option is experimental and does not use actively.
+|continuous|`bool`|false|dispatch computation sends a snapshot message downstream by user-defined fps interval if the continuous command is set as true. You should use render sessiondef command “frameGating” = true if the continuous command is true. This option is experimental and does not use actively.
+
+***sessiondef render command options***
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|applicationMode|`string` _motionCapture_|undefined|Set applicationMode and the backend render computation might change internal behavior based on this applicationMode. Currently, we have one keyword “motionCapture” but this is experimental. The default is undefined and this is best for interactive lighting sessions.|
+|dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
+|enableDepthBuffer|`bool`|false|This command allows us to generate pixel center depth value as pixelInfo data independent from AOV buffers. Client can access pixelInfo value by `mcrt_dataio::ClientRecieverFb::getPixelInfo*()` APIs.|
+|execMode|`string` _auto_\|_vector_\|_scalar_\|_xpu_|_scalar_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
+|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surface will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast\_geometry\_update”.|
+|fps|`float`|12.0|Set image update fps.|
+|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. dispatch computation) if this option is true, and receiving an update indicates it’s time to render the next frame. Receiving a snapshot-request indicates it’s time to make another snapshot. Under single-machine configuration, this command is just skipped.  This option is experimental and does not use actively.|
+|initialCredit|`int`|-1|Set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
+|machineId|`int`|-1 (default value does not work. You should always define machindId)|Each backend render computation’s machineId. This machineId should be independent on each backend render computations. Machine id should be start from 0 to the total number of backend render computations - 1.|
+|numMachines|`int`|-1 (default value does not work. You should always define numMachines)|Set the total number of backend render computation. The number should be 1 or bigger.
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
+|scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend render computation reads this scene data just after booted if defined.|
+|renderMode|`string` realtime|"" (empty)|This is an experimental command. If you set realtime renderMode, backend mcrt computation changes internal operation to realtime rendering mode. If you don’t set this command, backend mcrt computation uses “progressive” render mode for single machine computation and uses “timebased checkpoint” mode for multi-machine configuration.|
+
+More info on _packTilePrecision_ options:
+
+We have 2 stages in image generation. coarse pass stage and fine pass stage.
+
+* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
+* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
+* _full32_ : always uses F32 (full 32bit float) for all stages
+* _full16_ : always uses H16 (half 16bit float) for all stages
+
+This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
 
 ***sessiondef merge command options***
 
@@ -261,29 +290,20 @@ Session definitions files have the extension ".sessiondef"
 |fps|`float`|12.0|set merged image update send to client FPS.|
 |initialCredit|`int`|-1|set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
 |maxThreads|`int`|all threads of running hosts based on the CPU cores|set the total number of threads.|
-|numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend mcrt computation. The number should be 1 or greater.|
+|numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend render computation. The number should be 1 or greater.|
 |partialMergeRefreshInterval|`float`|0.25 (sec)|In order to minimize output data bandwidth, backend merge computation try to merge images by partial small areas and try to cover the entire image area by multiple merge operations. This command set the entire image area cover frequency by second. If you set a small number, client-side image updates smoother but output bandwidth gets bigger and network bandwidth might be a bottleneck in some cases.|
-|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode. We have 2 stages in image generation. coarse pass stage and fine pass stage.|
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
 
-More info on _packTilePrecision_ options:
+More info on _packTilePrecision_ options: 
+
+We have 2 stages in image generation. coarse pass stage and fine pass stage.
+
 * _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
 * _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
 * _full32_ : always uses F32 (full 32bit float) for all stages
 * _full16_ : always uses H16 (half 16bit float) for all stages
 
 This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
-
-***sessiondef mcrt command options***
-
-|attribute|type|default|description|
-|---------|----|-------|-----------|
-|applicationMode|string _motionCapture_|undefined|Set applicationMode and the backend mcrt computation might change internal behavior based on this applicationMode. Currently, we have one keyword “motionCapture” but this is experimental. The default is undefined and this is best for interactive lighting sessions.|
-|dsopath|string (path)|""|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
-|enableDepthBuffer|bool|false|This command allows us to generate pixel center depth value as pixelInfo data independent from AOV buffers. Client can access pixelInfo value by `ClientRecieverFb::getPixelInfo*()` APIs.|
-|execMode|string _auto_\|_vector_\|_scalar_\|_xpu_|_scalar_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
-|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surface will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast_geometry_update”.|
-|fps|`float`|12.0|Set image update fps.|
-|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. mcrt dispatch computation) if this option is true, and receiving an update indicates it’s time to render the next frame. Receiving a snapshot-request indicates it’s time to make another snapshot.  single-machine configuration this command is just skipped.  This option is experimental and does not use actively.|
 
 ## Complete session definitions
 
