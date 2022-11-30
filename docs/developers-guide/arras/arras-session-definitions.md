@@ -251,8 +251,8 @@ Session definitions files have the extension ".sessiondef"
 
 |attribute|type|default|description|
 |---------|----|-------|-----------|
+|continuous|`bool`|false|dispatch computation sends a snapshot message downstream by user-defined fps interval if the continuous command is set as true. You should use render sessiondef command “frameGating” = true if the continuous command is true. This option is experimental and does not use actively.|
 |fps|`float`|12.0|set image update FPS|
-|continuous|`bool`|false|dispatch computation sends a snapshot message downstream by user-defined fps interval if the continuous command is set as true. You should use render sessiondef command “frameGating” = true if the continuous command is true. This option is experimental and does not use actively.
 
 ***sessiondef render command options***
 
@@ -269,8 +269,8 @@ Session definitions files have the extension ".sessiondef"
 |machineId|`int`|-1 (default value does not work. You should always define machindId)|Each backend render computation’s machineId. This machineId should be independent on each backend render computations. Machine id should be start from 0 to the total number of backend render computations - 1.|
 |numMachines|`int`|-1 (default value does not work. You should always define numMachines)|Set the total number of backend render computation. The number should be 1 or bigger.
 |packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
-|scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend render computation reads this scene data just after booted if defined.|
 |renderMode|`string` realtime|"" (empty)|This is an experimental command. If you set realtime renderMode, backend mcrt computation changes internal operation to realtime rendering mode. If you don’t set this command, backend mcrt computation uses “progressive” render mode for single machine computation and uses “timebased checkpoint” mode for multi-machine configuration.|
+|scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend render computation reads this scene data just after booted if defined.|
 
 More info on _packTilePrecision_ options:
 
