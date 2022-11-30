@@ -293,6 +293,7 @@ This packTile precision control is a crucial and big impact on the message traff
 |numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend render computation. The number should be 1 or greater.|
 |partialMergeRefreshInterval|`float`|0.25 (sec)|In order to minimize output data bandwidth, backend merge computation try to merge images by partial small areas and try to cover the entire image area by multiple merge operations. This command set the entire image area cover frequency by second. If you set a small number, client-side image updates smoother but output bandwidth gets bigger and network bandwidth might be a bottleneck in some cases.|
 |packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
+|sendCredit|`bool`|false|Need to be set to true if you use  credit messages.|
 
 More info on _packTilePrecision_ options: 
 
