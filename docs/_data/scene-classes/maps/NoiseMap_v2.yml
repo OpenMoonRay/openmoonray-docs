@@ -1,0 +1,72 @@
+---
+image_path: /assets/images/scene-classes/maps/NoiseMap
+gallery:
+attributes:
+  time:
+    images:
+      - image: noise_4D.gif
+        text: Perlin
+      - image: noise_simplex_4D.gif
+        text: Simplex
+  bias:
+    images:
+      - image: noise_bias.gif
+  gain:
+    images:
+      - image: noise_gain.gif
+  flow_advection_rate:
+    images:
+      - image: noise_advection_rate_0_2.gif
+        text: 0.2
+      - image: noise_advection_rate_0_5.gif
+        text: 0.5
+      - image: noise_advection_rate_1.gif
+        text: 1
+  flow_angle:
+    images:
+      - image: noise_flow_angle.gif
+      - image: noise_flow_angle2.gif
+  invert:
+    images:
+      - image: perlin_no_invert.jpg
+      - image: perlin_invert.jpg
+  smoothstep:
+    images:
+      - image: noise_smoothstep_0.gif
+      - image: noise_smoothstep_1.gif
+  rotation:
+    images:
+      - image: noise_rotation.gif
+  scale:
+    images:
+      - image: noise_scale.gif
+  translation:
+    images:
+      - image: noise_translation.gif
+  amplitude:
+    images:
+      - image: noise_amplitude.gif
+  distortion:
+    images:
+      - image: noise_distortion.gif
+  freqency_multiplier:
+    images:
+      - image: noise_frequency_multiplier.gif
+  lacunarity:
+    images:
+      - image: noise_lacunarity.gif
+  max_level:
+    images:
+      - image: noise_max_level.gif
+  noise_type:
+    images:
+      - image: noise.jpg
+        text: Perlin
+      - image: simplex.jpg
+        text: Simplex
+  persistence:
+    images:
+      - image: noise_persistence.gif
+  seed:
+    images:
+      - image: noise_seed.gif
