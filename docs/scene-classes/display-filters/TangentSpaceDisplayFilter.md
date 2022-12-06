@@ -22,7 +22,7 @@ title: TangentSpaceDisplayFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">invert value of mask</p>
+      <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: TangentSpaceDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">blend between output and input</p>
+      <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.mix.links heading=4-%}
     </p>
@@ -59,7 +59,7 @@ title: TangentSpaceDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-comments">data to transform into tangent space</p>
+      <p class="scene-class-comments">RenderOutput to transform into tangent space</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.input.links heading=4-%}
     </p>
@@ -67,7 +67,7 @@ title: TangentSpaceDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.mask.links heading=4-%}
     </p>
@@ -75,7 +75,7 @@ title: TangentSpaceDisplayFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
+      <p class="scene-class-comments">When on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.normal_map_output.images data=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.TangentSpaceDisplayFilter.attributes.normal_map_output.links heading=4-%}
     </p>

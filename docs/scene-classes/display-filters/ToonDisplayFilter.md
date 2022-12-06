@@ -33,7 +33,7 @@ title: ToonDisplayFilter
           | Sobel = 1
           | Laplacian = 2
           | Laplacian of Gaussian = 3
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Type of edge detector to use</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.edge_detector.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.edge_detector.links heading=4-%}
     </p>
