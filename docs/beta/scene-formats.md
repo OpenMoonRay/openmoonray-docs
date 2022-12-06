@@ -1,12 +1,12 @@
 ---
-title: Moonray Scene Formats
+title: MoonRay Scene Formats
 
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-# Moonray Scene Formats
+# MoonRay Scene Formats
 
-Moonray uses a proprietary scene description format called RDL2. There are two primary file formats for RDL2:
+MoonRay uses a proprietary scene description format called RDL2. There are two primary file formats for RDL2:
 
 - RDLA is a readable text format based on the programming language Lua
 - RDLB is a binary format
@@ -38,7 +38,7 @@ DwaSolidDielectricMaterial("/scene/sphere/mtl/yellow") {
 
 `DwaSolidDielectricMaterial` is the class of the object, and `/scene/sphere/mtl/yellow` is the name. `refractive_index` and `albedo` are attributes supported by the `DwaSolidDeielectricMaterial` class.
 
-In most cases, classes are implemented as shared library plugins. Moonray searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, Moonray will find the library `DwaSolidDielectricMaterial.so` somewhere on the path.
+In most cases, classes are implemented as shared library plugins. MoonRay searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, MoonRay will find the library `DwaSolidDielectricMaterial.so` somewhere on the path.
 
 `DwaSolidDielectricMaterial` has about 90 attributes in total. Attributes that you don't explicitly set take a default value defined by the class.
 
@@ -82,7 +82,7 @@ SphereGeometry("/scene/sphere") {
 }
 ```
 
-A few Moonray attributes expect a list of values. These are set using curly braces, like this:
+A few MoonRay attributes expect a list of values. These are set using curly braces, like this:
 
 ```lua
 RampMap("/scene/ramp") {
@@ -206,9 +206,9 @@ SceneVariables("SceneObject") {
 
 ### Scene Structure
 
-RDL2 has no scene hierarchy : each scene object is independent and transforms are always defined in world space. By convention we often use /-separated paths as object names, creating an implicit structure, but this has no effect on Moonray's interpretation of the data. 
+RDL2 has no scene hierarchy : each scene object is independent and transforms are always defined in world space. By convention we often use /-separated paths as object names, creating an implicit structure, but this has no effect on MoonRay's interpretation of the data. 
 
-To be renderable, a scene must contain a layer, camera and geometry set. Moonray will use the first of each that it finds in the scene. The camera and layer to render with can also be specified using scene variables.
+To be renderable, a scene must contain a layer, camera and geometry set. MoonRay will use the first of each that it finds in the scene. The camera and layer to render with can also be specified using scene variables.
 
 To light anything, lights need to be added to a light set and assigned to geometry in the layer.
 

@@ -10,9 +10,9 @@ title: Arras Client API
 
 # Arras Client API
 
-Applications can use the Arras Client API to integrate interactive Moonray rendering. The client API itself is not specific to Moonray : Moonray clients need to use the additional libraries in mcrt_messages and mcrt_dataio for the Moonray specific parts. The client code does not link directly to the main Moonray renderer libraries, or to the Moonray Arras computations in mcrt_computation : these are loaded automatically by the Arras system. 
+Applications can use the Arras Client API to integrate interactive MoonRay rendering. The client API itself is not specific to MoonRay : MoonRay clients need to use the additional libraries in mcrt_messages and mcrt_dataio for the MoonRay specific parts. The client code does not link directly to the main MoonRay renderer libraries, or to the MoonRay Arras computations in mcrt_computation : these are loaded automatically by the Arras system. 
 
-Generally a client will need to link to the scene_rdl2 library, in order to generate scene descriptions in Moonray's native RDLB format. The Moonray computations do not support RDLA format, for performance reasons, although it would not be difficult to add this. The client also needs to be able to load the "proxy" libraries for the scene objects it uses. These proxies contain the attribute descriptions for the objects without the actual rendering code. scene_rdl2 will use the proxies to validate the scene description, and so many possible errors will be detected in the client before transmission to the renderer.
+Generally a client will need to link to the scene_rdl2 library, in order to generate scene descriptions in MoonRay's native RDLB format. The MoonRay computations do not support RDLA format, for performance reasons, although it would not be difficult to add this. The client also needs to be able to load the "proxy" libraries for the scene objects it uses. These proxies contain the attribute descriptions for the objects without the actual rendering code. scene_rdl2 will use the proxies to validate the scene description, and so many possible errors will be detected in the client before transmission to the renderer.
 
 ## Example Client
 
@@ -28,7 +28,7 @@ const std::string SCENE_DELTA_FILE("example_delta.rdla");
 
 The client is configured to use Arras local mode, by specifying "arras:local" as the Coordinator URL. To use distributed mode, this should be changed to the URL of a Coordinator service : the rest of the code remains unchanged.
 
-A client normally needs to translate scene data from some other format into Moonray's native RDLB before sending it to Arras. For this example, we will just load the data from RDLA format files.
+A client normally needs to translate scene data from some other format into MoonRay's native RDLB before sending it to Arras. For this example, we will just load the data from RDLA format files.
 
 The central class in the Arras client API is `SDK`. Each instance of this class represents a single session : to run multiple sessions at the same time, the client would simply create multiple SDK objects. Similarly, an instance of `ClientReceiverFb` is used to decode incoming rendered frames from a single session:
 
@@ -410,6 +410,6 @@ int main(int argc, char* argv[])
 ```
 ## Alternative client configurations
 
-It is possible to move some work from the client into computations : either by extending the existing Moonray computations or adding new ones to the session. For example, you could write a computation to translate from some other scene format to RDLB and place it before the dispatch node, or you could add a computation to translate from ProgressiveFrame format to a regular image or video format. There are a couple of reasons you might want to do this. If both the computations and scene data are in a cloud, then you may want to minimize data transfer between the cloud and client. Rather than loading the scene data into the client, you could send a much smaller "recipe" to construct the scene : the recipe would be evaluated by a computation running in the cloud  to produce the RDLB scene. You might want to add a computation to translate the render results into standard images if, for example, you want the client to run inside a web browser without writing C++ extensions. Of course this could result in a significant increase in data bandwidth from the session back to the client, and would probably not be practical unless the rendered images are relatively small or compressed.
+It is possible to move some work from the client into computations : either by extending the existing MoonRay computations or adding new ones to the session. For example, you could write a computation to translate from some other scene format to RDLB and place it before the dispatch node, or you could add a computation to translate from ProgressiveFrame format to a regular image or video format. There are a couple of reasons you might want to do this. If both the computations and scene data are in a cloud, then you may want to minimize data transfer between the cloud and client. Rather than loading the scene data into the client, you could send a much smaller "recipe" to construct the scene : the recipe would be evaluated by a computation running in the cloud  to produce the RDLB scene. You might want to add a computation to translate the render results into standard images if, for example, you want the client to run inside a web browser without writing C++ extensions. Of course this could result in a significant increase in data bandwidth from the session back to the client, and would probably not be practical unless the rendered images are relatively small or compressed.
 
 

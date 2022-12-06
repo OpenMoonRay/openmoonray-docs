@@ -8,7 +8,7 @@ title: hd_render Command
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # hd_render Command
-The HdMoonray project includes a command-line program, hd_render, that performs Hydra renders from
+The HdMoonRay project includes a command-line program, hd_render, that performs Hydra renders from
 a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl
 renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into
 the main application, and we have chosen not to do this for hd_render.
@@ -38,7 +38,7 @@ Optional:
      Use this cameras shutter:open and shutter:close to
      define the motion blur sample steps
 
--renderer Moonray
+-renderer MoonRay
     Which hydra render delegate plugin to use.
     Use '-renderer' to see a list of available renderers.
 

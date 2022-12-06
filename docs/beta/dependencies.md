@@ -5,9 +5,9 @@ title: Dependencies
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
-# OpenMoonray dependencies
+# OpenMoonRay dependencies
 
-These are the third-party libraries and tools that Moonray and Arras depend on.
+These are the third-party libraries and tools that MoonRay and Arras depend on.
 
 | Name           | Version    |  |
 |----------------|------------|-----------------|
@@ -39,11 +39,11 @@ These are the third-party libraries and tools that Moonray and Arras depend on.
 
 **Microhttpd** and **Curl** are only needed when building or using Arras. Arras also needs **OpenSSL**.
 
-**USD** is only needed for the Moonray Hydra plugins and USD geometry objects
+**USD** is only needed for the MoonRay Hydra plugins and USD geometry objects
 
 **Qt** is only needed by moonray_gui and arras_render.
 
-At this time, Moonray requires the following DWA libraries that are not publically available:
+At this time, MoonRay requires the following DWA libraries that are not publically available:
 
 |||
 |--------------------|---------|

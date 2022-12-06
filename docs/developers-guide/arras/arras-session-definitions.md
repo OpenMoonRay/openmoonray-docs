@@ -46,7 +46,7 @@ Inside each computation block are parameters pertaining to that computation. Som
     }
 ```
 
-The dsos shown here are part of the Moonray release. Another general parameter is `entry`, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
+The dsos shown here are part of the MoonRay release. Another general parameter is `entry`, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
 
 ```json
     "dispatch": { 
@@ -55,7 +55,7 @@ The dsos shown here are part of the Moonray release. Another general parameter i
     },
 ```
 
-One of the parameters specific to the Moonray computations is `fps`, which says how many times per second the session should snapshot the current render progress and send it back to the client. If fps is set too low, then visual feedback to the application user may suffer. In principle, if it is set too high, returning image messages might overload network bandwidth to the client. However, in practice,  the nature of the encoding used for rendered images means that the required bandwidth is roughly the same over a broad range of fps values. fps should be specified for all computations (merge, render and dispatch) in a multi-machine render.
+One of the parameters specific to the MoonRay computations is `fps`, which says how many times per second the session should snapshot the current render progress and send it back to the client. If fps is set too low, then visual feedback to the application user may suffer. In principle, if it is set too high, returning image messages might overload network bandwidth to the client. However, in practice,  the nature of the encoding used for rendered images means that the required bandwidth is roughly the same over a broad range of fps values. fps should be specified for all computations (merge, render and dispatch) in a multi-machine render.
 
 ```json
     "dispatch": { 
@@ -86,7 +86,7 @@ Each of the computations also needs to know the number of render computations in
 
 The name of these parameters is a bit misleading since, strictly speaking, they refer to the number of render computations rather than the number of machines used. In practice, the session is usually set up so that each render computation is placed on a different machine, since there is no advantage in splitting the cores on one machine between two or more different render computations.
 
-The Moonray render computations have a number of other optional parameters, but these are not described in detail here.
+The MoonRay render computations have a number of other optional parameters, but these are not described in detail here.
 
 ## Requirements
 
@@ -110,9 +110,9 @@ We are not providing any resource specifications for the dispatch and merge comp
 
 Coordinator will always allocate all computations with a fixed cores requirement before allocating those with a min/max range. In practice this rule, together with the requirements just discussed, means that each machine can only host one render computation, but the merge and dispatch computations can be placed on any of the render machines.
 
-The number of cores that Coordinator assigns to a render computation determines the number of threads that Moonray will use for rendering. If CPU cores are oversubscribed by the total number of Moonray threads on the machine, then rendering may lose efficiency. For this reason, the total assigned core count is enforced by Arras and by the Moonray computations.
+The number of cores that Coordinator assigns to a render computation determines the number of threads that MoonRay will use for rendering. If CPU cores are oversubscribed by the total number of MoonRay threads on the machine, then rendering may lose efficiency. For this reason, the total assigned core count is enforced by Arras and by the MoonRay computations.
 
-It is currently quite difficult to predict the total amount of RAM that will be used by a render, and there isn't really a useful way to constrain it to be within fixed limits. Although Coordinator will not oversubscribe memory on a machine -- according to the usage listed in the "requirements" section of the session definition -- actual memory usage by Moonray is not, by default, constrained to be within these limits. In other words, the render computation will use as much memory as it needs, regardless of what is listed in the session definition. Therefore it is not critical to set the "memoryMB" value in "requirements" accurately : especially if the CPU core settings prevent multiple render computations on the same machine. The Arras Node implementation is capable of enforcing computation memory constraints, using cgroups, but this is not a mechanism that we have enabled in production use.
+It is currently quite difficult to predict the total amount of RAM that will be used by a render, and there isn't really a useful way to constrain it to be within fixed limits. Although Coordinator will not oversubscribe memory on a machine -- according to the usage listed in the "requirements" section of the session definition -- actual memory usage by MoonRay is not, by default, constrained to be within these limits. In other words, the render computation will use as much memory as it needs, regardless of what is listed in the session definition. Therefore it is not critical to set the "memoryMB" value in "requirements" accurately : especially if the CPU core settings prevent multiple render computations on the same machine. The Arras Node implementation is capable of enforcing computation memory constraints, using cgroups, but this is not a mechanism that we have enabled in production use.
 
 Another part of the requirements section describes the software environment required to run the computations. 
 

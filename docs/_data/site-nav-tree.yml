@@ -446,13 +446,13 @@ toc:
   - item: Hydra
     path: /hydra
     subitems:
-      - item: HdMoonray Features
+      - item: HdMoonRay Features
         path: /hydra/hdmoonray-features
-      - item: HdMoonray Plugin
+      - item: HdMoonRay Plugin
         path: /hydra/plugin
-      - item: HdMoonray Setup
+      - item: HdMoonRay Setup
         path: /hydra/hdmoonray-setup
-      - item: HdMoonray Render Settings
+      - item: HdMoonRay Render Settings
         path: /hydra/render-settings
       - item: hd_render Command
         path: /hydra/hd_render

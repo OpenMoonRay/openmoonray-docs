@@ -73,5 +73,5 @@ Visual cues indicating the type of information.
   ```
 
 * CAPITALIZE file extensions and keyboard keys.
-  >Moonray uses a proprietary scene description format called RDL2. The two primary file formats RDLA (readable text format) and RDLB (binary format).
+  >MoonRay uses a proprietary scene description format called RDL2. The two primary file formats RDLA (readable text format) and RDLB (binary format).
   >Press the ENTER key.

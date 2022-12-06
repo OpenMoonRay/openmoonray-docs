@@ -118,7 +118,7 @@ Launch the container:
 
 The container loads the image and a container shell is created.
 
-### Build and Install OpenMoonray
+### Build and Install OpenMoonRay
 Build from the source and install using the container shell:
 
 ```bash
@@ -167,7 +167,7 @@ moonray_gui -in scene.rdla -in scene.rdlb
 exit
 ```
 
-## Running Using Pre-Built Moonray
+## Running Using Pre-Built MoonRay
 Create a container without overriding the moonray build in the container
 ```bash
 {{ page.filename_image }} [--x11] -v <data directory>
@@ -188,7 +188,7 @@ moonray_gui -in scene.rdla -in scene.rdlb
 exit
 ```
 
-## Running Arras Using Pre-Built Moonray
+## Running Arras Using Pre-Built MoonRay
 **Run the mini-coordinator**
 
 Download the latest mini-coordinator from
@@ -229,7 +229,7 @@ cd <data directory>
 <path>/{{ page.filename_image }} --gpu -v $PWD -w $PWD -- arras_render --current-env --fps 24 -t 3600 --port 8888 --aov-interval 0 --showStats --overlay --exr /tmp/test.exr -s mcrt_progressive_n --num-mcrt ${node_count} --host ${coordinator_hostname} --rdl scene.rdla --rdl scene.rdlb
 ```
 
-## Running Arras Using Your Own Moonray Build
+## Running Arras Using Your Own MoonRay Build
 **Run the mini-coordinator**
 
 Download the mini-coordinator zip located [here](https://dreamworks.box.com/s/yemnny3cq7yducyru0rg94grv7ff6f87)

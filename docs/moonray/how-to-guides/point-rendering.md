@@ -10,7 +10,7 @@ title: Point Rendering
 # Point Rendering
 
 ## Rendering Style
-Points are rendered in Moonray using the [Rdl2PointGeometry]({{site.baseurl}}/scene-classes/geometry/RdlPointGeometry) class.   By default they are rendered as spheres with their radius controlled using the `radius_list` parameter.
+Points are rendered in MoonRay using the [Rdl2PointGeometry]({{site.baseurl}}/scene-classes/geometry/RdlPointGeometry) class.   By default they are rendered as spheres with their radius controlled using the `radius_list` parameter.
 
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/point-rendering/points-as-spheres.jpg)
 

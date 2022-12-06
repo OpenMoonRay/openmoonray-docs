@@ -1,13 +1,13 @@
 ---
 # Path Guiding
 
-_Path guiding_ is Moonray's method for handling difficult light transport
+_Path guiding_ is MoonRay's method for handling difficult light transport
 situations, such as caustics and scenes dominated by _indirect lighting_
 (such as a room lit through a door crack). Other techniques for these
-types of problems (which are not currently implemented in Moonray)
+types of problems (which are not currently implemented in MoonRay)
 include metropolis light transport, VCM, photon mapping, and various
 other bi-directional path tracing techniques. The specific path guiding
-technique in Moonray is based on [Practical Path Guiding for Efficient
+technique in MoonRay is based on [Practical Path Guiding for Efficient
 Light-Transport
 Simulation](http://drz.disneyresearch.com/~jnovak/publications/PathGuide/index.html)
 

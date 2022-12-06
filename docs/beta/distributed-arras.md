@@ -14,7 +14,7 @@ Distributed Arras requires two programs not used in local mode:
 - **Coordinator** is a service that runs once for each "pool" of machines. It is responsible for managing the machines in the pool and allocating work to them.
 - **Node** runs on each individual machine in the pool. Coordinator communicates with each Node process.
 
-The OpenMoonray release contains the Node implementation we use at DWA, called **arras4_node**. The Coordinator we use is a Java service that is tightly coupled to our service infrastructure. We don't think it would be useful to release the DWA Coordinator at this time : instead we provide a Python service called **minicoord**. Minicoord contains most of the same logic as the DWA Coordinator, but is less scalable and robust against network failures.
+The OpenMoonRay release contains the Node implementation we use at DWA, called **arras4_node**. The Coordinator we use is a Java service that is tightly coupled to our service infrastructure. We don't think it would be useful to release the DWA Coordinator at this time : instead we provide a Python service called **minicoord**. Minicoord contains most of the same logic as the DWA Coordinator, but is less scalable and robust against network failures.
 
 ### Coordinator
 
@@ -28,7 +28,7 @@ You should see the status line ``INFO:run:Starting coordinator service on port 8
 
 ### Node
 
-Next you need to run ``arras4_node`` on each pool machine. To start Moonray sessions, arras4_node needs to be able to find and run a Moonray/Arras release. If the release is in **${rel_root}**, then the startup commands would be :
+Next you need to run ``arras4_node`` on each pool machine. To start MoonRay sessions, arras4_node needs to be able to find and run a MoonRay/Arras release. If the release is in **${rel_root}**, then the startup commands would be :
 
 ```bash
 export PATH=${rel_root}/bin:${PATH}
@@ -54,7 +54,7 @@ arras_render --host <coord-host> --port 8888 --rdl rectangle.rdla -s mcrt_progre
 
 This should open a window showing the render of red and green triangles. You can rotate the camera by dragging in the window.
 
-`-s mcrt_progressive_n` tells arras_render to use the session definition file **${rel_root}/sessions/mcrt_progressive_n.sessiondef**. This is a simple, general session definition that can run Moonray on multiple machines, with each render process consuming all remaining cores and memory on the machine. In addition to the moonray computations (named **mcrt_i*N***) there is a process to dispatch the scene (**dispatch**) and a process to merge the results to a single image (**merge**). These each consume 1 core.
+`-s mcrt_progressive_n` tells arras_render to use the session definition file **${rel_root}/sessions/mcrt_progressive_n.sessiondef**. This is a simple, general session definition that can run MoonRay on multiple machines, with each render process consuming all remaining cores and memory on the machine. In addition to the moonray computations (named **mcrt_i*N***) there is a process to dispatch the scene (**dispatch**) and a process to merge the results to a single image (**merge**). These each consume 1 core.
 
 There are many other session definitions in the **sessions** directory, but the majority of them deliberately generate errors for testing purposes.
 
