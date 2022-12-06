@@ -22,7 +22,7 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">invert value of mask</p>
+      <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">blend between output and input</p>
+      <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.mix.links heading=4-%}
     </p>
@@ -43,7 +43,7 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.5
-      <p class="scene-class-comments">float determining amount of blend</p>
+      <p class="scene-class-comments">Float between [0,1] determining amount of blend between input1 and input2</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.blendAmt.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.blendAmt.links heading=4-%}
     </p>
@@ -52,7 +52,7 @@ title: BlendDisplayFilter
       <b>Int</b> <i>enum</i>
           | linear = 0 (default)
           | cubic = 1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Method used to blend between input1 and input2.</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.blendType.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.blendType.links heading=4-%}
     </p>
@@ -60,7 +60,7 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-comments">first operand</p>
+      <p class="scene-class-comments">First RenderOutput to use in the blend operation</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.input1.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.input1.links heading=4-%}
     </p>
@@ -68,7 +68,7 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-comments">second operand</p>
+      <p class="scene-class-comments">Second RenderOutput to use in the blend operation</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.input2.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.input2.links heading=4-%}
     </p>
@@ -76,7 +76,7 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.BlendDisplayFilter.attributes.mask.links heading=4-%}
     </p>

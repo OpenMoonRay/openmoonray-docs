@@ -22,7 +22,7 @@ title: OverDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-comments">alpha for over operation</p>
+      <p class="scene-class-comments">Alpha for over operation</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.alpha.links heading=4-%}
     </p>
@@ -46,7 +46,7 @@ title: OverDisplayFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">invert value of alpha</p>
+      <p class="scene-class-comments">Invert value of alpha</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.invert_alpha.links heading=4-%}
     </p>
@@ -54,7 +54,7 @@ title: OverDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">blend between output and input</p>
+      <p class="scene-class-comments">Blend between input_top and input_bottom, using alpha as a mask.</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.OverDisplayFilter.attributes.mix.links heading=4-%}
     </p>

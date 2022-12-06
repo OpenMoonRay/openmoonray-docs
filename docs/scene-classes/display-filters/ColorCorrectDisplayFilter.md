@@ -22,7 +22,7 @@ title: ColorCorrectDisplayFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">invert value of mask</p>
+      <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: ColorCorrectDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">blend between output and input</p>
+      <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.mix.links heading=4-%}
     </p>
@@ -43,7 +43,7 @@ title: ColorCorrectDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">Decrease contrast below 0.0 and increase contrast above 0.0</p>
+      <p class="scene-class-comments">Negative values decrease contrast, while positive values increase it</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.contrast.images data=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.contrast.links heading=4-%}
     </p>
@@ -75,7 +75,7 @@ title: ColorCorrectDisplayFilter
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.mask.links heading=4-%}
     </p>
@@ -91,7 +91,7 @@ title: ColorCorrectDisplayFilter
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Add offset color to input</p>
+      <p class="scene-class-comments">Adds offset color to input</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.offset.images data=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ColorCorrectDisplayFilter.attributes.offset.links heading=4-%}
     </p>
