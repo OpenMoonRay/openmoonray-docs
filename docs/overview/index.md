@@ -29,3 +29,7 @@ You can build MoonRay yourself, either in a Docker container or directly on a Li
 [Building MoonRay](building-moonray)
 
 ## Using MoonRay
+
+## Developing MoonRay
+
+[Shaders](../developers-guide/shaders/index)

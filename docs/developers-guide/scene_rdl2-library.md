@@ -211,31 +211,31 @@ This is the full hierarchy defined in *scene_rdl2*:
 
 ```
 SceneObject
-DisplayFilter
-GeometrySet
-    ShadowReceiverSet
-LightFilter
-LightFilterSet
-LightSet
-    ShadowSet
-Metadata
-Node
-    Camera
-    EnvMap
-    Geometry
-    Joint
-    Light
-RenderOutput
-SceneVariables
-Shader
-    Map
-    NormalMap
-    RootShader
-        Displacement
-        Material
-TraceSet
-    Layer
-UserData
+    DisplayFilter
+    GeometrySet
+        ShadowReceiverSet
+    LightFilter
+    LightFilterSet
+    LightSet
+        ShadowSet
+    Metadata
+    Node
+        Camera
+        EnvMap
+        Geometry
+        Joint
+        Light
+    RenderOutput
+    SceneVariables
+    Shader
+        Map
+        NormalMap
+        RootShader
+            Displacement
+            Material
+    TraceSet
+        Layer
+    UserData
 ```
 
 ## SceneObject-valued attributes
