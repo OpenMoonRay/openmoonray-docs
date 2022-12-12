@@ -1,6 +1,5 @@
 ---
 image_path: /assets/images/scene-classes/maps/RampMap
-gallery:
 attributes:
   input_texture_coordinates:
     images:

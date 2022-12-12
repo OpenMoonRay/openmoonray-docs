@@ -1,0 +1,9 @@
+---
+image_path: /assets/images/scene-classes/maps/RemapMap
+gallery:
+  - image: RemapCompress.jpg
+    text: changing the range of values
+  - image: RemapBias.jpg
+    text: biasing the range of values
+  - image: RemapAll.jpg
+    text: inverting, changing range, and biasing
