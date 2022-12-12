@@ -1,0 +1,9 @@
+---
+image_path: /assets/images/scene-classes/maps/ProjectCylindricalMap
+attributes:
+  use_reference_space:
+    images:
+      - image: noref.jpg
+        text: default does not match object
+      - image: ref.jpg
+        text: active, matching object without transforming
