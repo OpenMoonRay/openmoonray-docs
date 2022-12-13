@@ -429,10 +429,10 @@ toc:
             path: /moonray/how-to-guides/bokeh
           - item: Extra AOV Workflow and Case Studies
             path: /moonray/how-to-guides/extra-aovs
+          - item: Material AOVs
+            path: /moonray/how-to-guides/material-aovs
           - item: Motion vectors
             path: /moonray/how-to-guides/motion-vectors
-          - item: OCIO Notes
-            path: /moonray/how-to-guides/opencolorio-notes
           - item: Path Guiding
             path: /moonray/how-to-guides/path-guiding
           - item: PBR Validity
@@ -441,16 +441,18 @@ toc:
             path: /moonray/how-to-guides/point-rendering
           - item: Render Outputs
             path: /moonray/how-to-guides/render-outputs
+          - item: Render Inside a Medium
+            path: /moonray/how-to-guides/render-inside-medium
   - item: Hydra
     path: /hydra
     subitems:
-      - item: HdMoonray Features
+      - item: HdMoonRay Features
         path: /hydra/hdmoonray-features
-      - item: HdMoonray Plugin
+      - item: HdMoonRay Plugin
         path: /hydra/plugin
-      - item: HdMoonray Setup
+      - item: HdMoonRay Setup
         path: /hydra/hdmoonray-setup
-      - item: HdMoonray Render Settings
+      - item: HdMoonRay Render Settings
         path: /hydra/render-settings
       - item: hd_render Command
         path: /hydra/hd_render

@@ -20,7 +20,7 @@ title: MacroFlakeMaterial
   <p>
     <h3>input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.MacroFlakeMaterial.attributes.input_normal.images data=site.data.scene-classes.materials.MacroFlakeMaterial-%}

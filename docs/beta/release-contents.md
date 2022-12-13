@@ -6,9 +6,9 @@ title: Release Contents
 ---
 # Release Contents
 
-## Moonray
+## MoonRay
 
-The command line program to run Moonray is `moonray`, in the **bin** directory.
+The command line program to run MoonRay is `moonray`, in the **bin** directory.
 Basic use is as follows:
 
 ```bash
@@ -29,27 +29,27 @@ moonray --help
 
 `moonray_gui` monitors the input scene files while it is running : if a file changes, it automatically reloads the data and restarts the render.
 
-## Moonray Scene Object Plugins
+## MoonRay Scene Object Plugins
 
-Apart from a few built-in classes, Moonray scene objects are implemented as shared libraries (***filename*.so**) that Moonray loads at runtime. These libraries are kept under the **rdl2dso** directory in the release. Make sure the environment variable `RDL2_DSO_PATH` is set to the path of this directory in the release before running Moonray. **rdl2dso.proxy** contains special versions of the plugins that can read and write scene objects from RDLA and RDLB formats, but cannot actually render them. These proxy SO files are used when you want to manipulate scene files without linking to the Moonray renderer itself.
+Apart from a few built-in classes, MoonRay scene objects are implemented as shared libraries (***filename*.so**) that MoonRay loads at runtime. These libraries are kept under the **rdl2dso** directory in the release. Make sure the environment variable `RDL2_DSO_PATH` is set to the path of this directory in the release before running MoonRay. **rdl2dso.proxy** contains special versions of the plugins that can read and write scene objects from RDLA and RDLB formats, but cannot actually render them. These proxy SO files are used when you want to manipulate scene files without linking to the MoonRay renderer itself.
 
-## Moonray Hydra Plugin
+## MoonRay Hydra Plugin
 
-`HdMoonray` is the Moonray plugin to Hydra. It actually consists of several separate plugins:
+`HdMoonRay` is the MoonRay plugin to Hydra. It actually consists of several separate plugins:
  
- - `hdMoonray.so` is the Hydra Render Delegate for Moonray
+ - `hdMoonray.so` is the Hydra Render Delegate for MoonRay
  - `hdMoonrayAdapters.so` contains several *adapter* classes that extend the Hydra USD Scene Delegate with support for Geometry Lights and Light Filters
- - `moonrayShaderDiscovery.so` and `moonrayShaderParser.so` are plugins to the *Shader Definition Registry* (SDR). They enable Hydra to correctly process Moonray shader networks in USD data.
+ - `moonrayShaderDiscovery.so` and `moonrayShaderParser.so` are plugins to the *Shader Definition Registry* (SDR). They enable Hydra to correctly process MoonRay shader networks in USD data.
 
- **Readme.md** in the **hydra** directory of the source tree has some information on how to set up HdMoonray.
+ **Readme.md** in the **hydra** directory of the source tree has some information on how to set up HdMoonRay.
 
- The **houdini** directory contains some configuration files for running HdMoonray inside Houdini.
+ The **houdini** directory contains some configuration files for running HdMoonRay inside Houdini.
 
 `hd_render` is a simple command that renders USD scenes using Hydra.
 
 ## RDL2 Utilities
 
-`RDL2` is the scene format used by Moonray : scene files are either in RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. There are several utilities in the release **bin** directory. Generally these require the environment variable `RDL2_DSO_PATH` to be set to point to the scene object SO files -- at least the proxy versions are needed to read and write RDL2 files.
+`RDL2` is the scene format used by MoonRay : scene files are either in RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. There are several utilities in the release **bin** directory. Generally these require the environment variable `RDL2_DSO_PATH` to be set to point to the scene object SO files -- at least the proxy versions are needed to read and write RDL2 files.
 
 `rdl2_convert` converts between RDLA and RDLB format :
 
@@ -70,7 +70,7 @@ rdl2_convert <inputfile> <outputfile>
 
 ## Arras
 
-Arras clients link with the core Arras libraries in **lib64**. When running in *local mode* (just one Moonray render process running on the same machine as the client), the Arras runtime (`execComp`) and Moonray/Arras library (`libmcrt_computation_progmcrt.so`) are used automatically.
+Arras clients link with the core Arras libraries in **lib64**. When running in *local mode* (just one MoonRay render process running on the same machine as the client), the Arras runtime (`execComp`) and MoonRay/Arras library (`libmcrt_computation_progmcrt.so`) are used automatically.
 
 In distributed mode (multiple render processes running on multiple machines), Arras requires a *node* process (`arras4_node`) to be started on each machine. The Arras *coordinator* service (`minicoord`) runs on a single machine somewhere on the network, managing the individual nodes and sessions.
 

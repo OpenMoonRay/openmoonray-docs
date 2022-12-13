@@ -365,7 +365,7 @@ title: RectLight
   <p>
     <h3>light_filters</h3>
     <p class="scene-class-type">
-      <b>Object Vector</b>
+      <b>SceneObject Vector</b>
       default: []
       <p class="scene-class-comments">Vector of LightFilters associated with the light.</p>
       {%-include image-gallery.html images=site.data.scene-classes.lights.RectLight.attributes.light_filters.images data=site.data.scene-classes.lights.RectLight-%}
@@ -375,7 +375,7 @@ title: RectLight
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.scene-classes.lights.RectLight.attributes.node_xform.images data=site.data.scene-classes.lights.RectLight-%}
       {%-include see-also.html links=site.data.scene-classes.lights.RectLight.attributes.node_xform.links heading=4-%}
     </p>

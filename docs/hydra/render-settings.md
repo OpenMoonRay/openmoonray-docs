@@ -1,5 +1,5 @@
 ---
-title: HdMoonray Render Settings
+title: HdMoonRay Render Settings
 
 # uncomment if you want MathJax formatting available
 # maths: 1
@@ -10,16 +10,18 @@ title: HdMoonray Render Settings
 
 <!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
 
-# <Overview_or_introduction>
+# HdMoonRay Render Settings
+
 <!-- All topics>
 
 <!-- Concept info here: Explain the background and context of a this subject. --> 
 
-# HdMoonray Render Settings
-These may be set to change hdMoonray’s behavior. In usdview choose View/Render Settings. In Houdini the “eye” button in the viewer lower-right brings up a control panel and these are on the first tab. In Maya a control panel is brought up by clicking the empty box to the right of Moonray in the Renderers menu on the viewer.
+This page describes the render settings supported by HdMoonray. The way these are set depends on the host application:
+- In usdview choose View/Render Settings. 
+- In Houdini the “eye” button in the viewer lower-right brings up a control panel and these are on the first tab. 
+- In Maya a control panel is brought up by clicking the empty box to the right of MoonRay in the Renderers menu on the viewer.
 
-It is very useful to set these before the first render. In Houdini and Maya this is possible, you can edit the settings for any renderer, not just the one being used. usdview does not let you change the settings until after you set the renderer, so a number of environment variables are provided, these change the default value so it is in that state before you switch to Moonray. These are shown at the end of each description.
-
+The default value for each option can be changed by setting an environment variable. 
 ## Use Remote Hosts
 **Type:** Bool
 
@@ -27,7 +29,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_HOSTS > 0
 
-**Description:** When this is turned on, hdMoonray will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in developer mode.
+**Description:** When this is turned on, hdMoonRay will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in developer mode.
 
 ## Remote Hosts
 **Type:** Int
@@ -45,7 +47,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** 
 
-**Description:** This option sets the maximum number of image updates per second that Moonray will provide during shading. It doesn't affect the speed of the render, just how often it updates the display with the latest image. Normally you shouldn't need to change this : it might sometimes be useful to turn it lower in order to reduce network traffic when using remote hosts.
+**Description:** This option sets the maximum number of image updates per second that MoonRay will provide during shading. It doesn't affect the speed of the render, just how often it updates the display with the latest image. Normally you shouldn't need to change this : it might sometimes be useful to turn it lower in order to reduce network traffic when using remote hosts.
 
 ## Debug Mode
 **Type:** Bool
@@ -54,7 +56,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_DEBUG_MODE=1 
 
-**Description:** This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading Moonray directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If Moonray asserts or crashes in developer mode, the entire application will exit. | 
+**Description:** This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading MoonRay directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If MoonRay asserts or crashes in developer mode, the entire application will exit. | 
 
 ## Disable Render
 **Type:** Bool
@@ -72,7 +74,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:**
 
-**Description:** This is a toggle switch that has an effect each time you click it (Hydra doesn't support plain buttons in renderer settings : a toggle is the only way to get the same behavior). When you switch it, hdMoonray shuts down the renderer and restarts it from scratch. It also allows you to retry a failed Remote Hosts setup. This option has no effect other than to reload textures in debug mode.
+**Description:** This is a toggle switch that has an effect each time you click it (Hydra doesn't support plain buttons in renderer settings : a toggle is the only way to get the same behavior). When you switch it, hdMoonRay shuts down the renderer and restarts it from scratch. It also allows you to retry a failed Remote Hosts setup. This option has no effect other than to reload textures in debug mode.
 
 ## Reload Textures (toggle)
 **Type:** Bool
@@ -81,7 +83,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:**
 
-**Description:** Switching this forces Moonray to re-read all texture files from disk.
+**Description:** Switching this forces MoonRay to re-read all texture files from disk.
 
 ## Show Debug Messages
 **Type:** Bool
@@ -90,7 +92,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_DEBUG=1 
 
-**Description:** Enables printing of debug messages to the console. Turning this on will display a large number of debugging messages from Moonray and hdMoonray.
+**Description:** Enables printing of debug messages to the console. Turning this on will display a large number of debugging messages from MoonRay and hdMoonRay.
 
 ## Show Info Messages
 **Type:** Bool
@@ -99,7 +101,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_INFO=1 
 
-**Description:** Enables printing of info messages to the console. This shows a smaller set of messages than "Show Debug", but includes the Moonray render summary.
+**Description:** Enables printing of info messages to the console. This shows a smaller set of messages than "Show Debug", but includes the MoonRay render summary.
 
 ## Log Level (1-5)
 **Type:** Int

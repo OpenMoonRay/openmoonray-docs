@@ -20,7 +20,7 @@ title: NormalToRgbMap
   <p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">Input normal map to convert to a color</p>
       {%-include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.images data=site.data.scene-classes.maps.NormalToRgbMap-%}

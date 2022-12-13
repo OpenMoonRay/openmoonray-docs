@@ -28,9 +28,9 @@ title: ShadowDisplayFilter
     </p>
     <h3>occluded</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
-      <p class="scene-class-comments">Image Buffer representing the occluded image</p>
+      <p class="scene-class-comments">RenderOutput containing the occluded image</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.occluded.images data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.occluded.links heading=4-%}
     </p>
@@ -38,15 +38,15 @@ title: ShadowDisplayFilter
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">color of the shadow</p>
+      <p class="scene-class-comments">Color of the shadow</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.shadow_color.images data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.shadow_color.links heading=4-%}
     </p>
     <h3>unoccluded</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
-      <p class="scene-class-comments">Image Buffer representing the unoccluded image</p>
+      <p class="scene-class-comments">RenderOutput containing the unoccluded image</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.unoccluded.images data=site.data.scene-classes.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ShadowDisplayFilter.attributes.unoccluded.links heading=4-%}
     </p>

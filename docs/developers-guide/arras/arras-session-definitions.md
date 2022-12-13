@@ -46,7 +46,7 @@ Inside each computation block are parameters pertaining to that computation. Som
     }
 ```
 
-The dsos shown here are part of the Moonray release. Another general parameter is `entry`, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
+The dsos shown here are part of the MoonRay release. Another general parameter is `entry`, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
 
 ```json
     "dispatch": { 
@@ -55,7 +55,7 @@ The dsos shown here are part of the Moonray release. Another general parameter i
     },
 ```
 
-One of the parameters specific to the Moonray computations is `fps`, which says how many times per second the session should snapshot the current render progress and send it back to the client. If fps is set too low, then visual feedback to the application user may suffer. In principle, if it is set too high, returning image messages might overload network bandwidth to the client. However, in practice,  the nature of the encoding used for rendered images means that the required bandwidth is roughly the same over a broad range of fps values. fps should be specified for all computations (merge, render and dispatch) in a multi-machine render.
+One of the parameters specific to the MoonRay computations is `fps`, which says how many times per second the session should snapshot the current render progress and send it back to the client. If fps is set too low, then visual feedback to the application user may suffer. In principle, if it is set too high, returning image messages might overload network bandwidth to the client. However, in practice,  the nature of the encoding used for rendered images means that the required bandwidth is roughly the same over a broad range of fps values. fps should be specified for all computations (merge, render and dispatch) in a multi-machine render.
 
 ```json
     "dispatch": { 
@@ -86,7 +86,7 @@ Each of the computations also needs to know the number of render computations in
 
 The name of these parameters is a bit misleading since, strictly speaking, they refer to the number of render computations rather than the number of machines used. In practice, the session is usually set up so that each render computation is placed on a different machine, since there is no advantage in splitting the cores on one machine between two or more different render computations.
 
-The Moonray render computations have a number of other optional parameters, but these are not described in detail here.
+The MoonRay render computations have a number of other optional parameters, but these are not described in detail here.
 
 ## Requirements
 
@@ -110,9 +110,9 @@ We are not providing any resource specifications for the dispatch and merge comp
 
 Coordinator will always allocate all computations with a fixed cores requirement before allocating those with a min/max range. In practice this rule, together with the requirements just discussed, means that each machine can only host one render computation, but the merge and dispatch computations can be placed on any of the render machines.
 
-The number of cores that Coordinator assigns to a render computation determines the number of threads that Moonray will use for rendering. If CPU cores are oversubscribed by the total number of Moonray threads on the machine, then rendering may lose efficiency. For this reason, the total assigned core count is enforced by Arras and by the Moonray computations.
+The number of cores that Coordinator assigns to a render computation determines the number of threads that MoonRay will use for rendering. If CPU cores are oversubscribed by the total number of MoonRay threads on the machine, then rendering may lose efficiency. For this reason, the total assigned core count is enforced by Arras and by the MoonRay computations.
 
-It is currently quite difficult to predict the total amount of RAM that will be used by a render, and there isn't really a useful way to constrain it to be within fixed limits. Although Coordinator will not oversubscribe memory on a machine -- according to the usage listed in the "requirements" section of the session definition -- actual memory usage by Moonray is not, by default, constrained to be within these limits. In other words, the render computation will use as much memory as it needs, regardless of what is listed in the session definition. Therefore it is not critical to set the "memoryMB" value in "requirements" accurately : especially if the CPU core settings prevent multiple render computations on the same machine. The Arras Node implementation is capable of enforcing computation memory constraints, using cgroups, but this is not a mechanism that we have enabled in production use.
+It is currently quite difficult to predict the total amount of RAM that will be used by a render, and there isn't really a useful way to constrain it to be within fixed limits. Although Coordinator will not oversubscribe memory on a machine -- according to the usage listed in the "requirements" section of the session definition -- actual memory usage by MoonRay is not, by default, constrained to be within these limits. In other words, the render computation will use as much memory as it needs, regardless of what is listed in the session definition. Therefore it is not critical to set the "memoryMB" value in "requirements" accurately : especially if the CPU core settings prevent multiple render computations on the same machine. The Arras Node implementation is capable of enforcing computation memory constraints, using cgroups, but this is not a mechanism that we have enabled in production use.
 
 Another part of the requirements section describes the software environment required to run the computations. 
 
@@ -245,6 +245,66 @@ Computations that receive credit messages need the parameter `initialCredit` set
 Session definitions are usually written as a JSON template file loaded by the client. After loading, the client modifies any fields in the template that are configurable. The most common modification is to the `arrayExpand` field in a multi-machine render. The client code can obtain information from the user on how many render machines are desired, and place that value in `arrayExpand`. `fps` is another commonly modified field.
 
 Session definitions files have the extension ".sessiondef"
+
+## Command option reference
+***sessiondef dispatch command options***
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|continuous|`bool`|false|dispatch computation sends a snapshot message downstream by user-defined fps interval if the continuous command is set as true. You should use render sessiondef command “frameGating” = true if the continuous command is true. This option is experimental and does not use actively.|
+|fps|`float`|12.0|set image update FPS|
+
+***sessiondef render command options***
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|applicationMode|`string` _motionCapture_|undefined|Set applicationMode and the backend render computation might change internal behavior based on this applicationMode. Currently, we have one keyword “motionCapture” but this is experimental. The default is undefined and this is best for interactive lighting sessions.|
+|dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
+|enableDepthBuffer|`bool`|false|This command allows us to generate pixel center depth value as pixelInfo data independent from AOV buffers. Client can access pixelInfo value by `mcrt_dataio::ClientRecieverFb::getPixelInfo*()` APIs.|
+|execMode|`string` _auto_\|_vector_\|_scalar_\|_xpu_|_scalar_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
+|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surface will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast\_geometry\_update”.|
+|fps|`float`|12.0|Set image update fps.|
+|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. dispatch computation) if this option is true, and receiving an update indicates it’s time to render the next frame. Receiving a snapshot-request indicates it’s time to make another snapshot. Under single-machine configuration, this command is just skipped.  This option is experimental and does not use actively.|
+|initialCredit|`int`|-1|Set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
+|machineId|`int`|-1 (default value does not work. You should always define machindId)|Each backend render computation’s machineId. This machineId should be independent on each backend render computations. Machine id should be start from 0 to the total number of backend render computations - 1.|
+|numMachines|`int`|-1 (default value does not work. You should always define numMachines)|Set the total number of backend render computation. The number should be 1 or bigger.
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
+|renderMode|`string` realtime|"" (empty)|This is an experimental command. If you set realtime renderMode, backend mcrt computation changes internal operation to realtime rendering mode. If you don’t set this command, backend mcrt computation uses “progressive” render mode for single machine computation and uses “timebased checkpoint” mode for multi-machine configuration.|
+|scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend render computation reads this scene data just after booted if defined.|
+
+More info on _packTilePrecision_ options:
+
+We have 2 stages in image generation. coarse pass stage and fine pass stage.
+
+* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
+* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
+* _full32_ : always uses F32 (full 32bit float) for all stages
+* _full16_ : always uses H16 (half 16bit float) for all stages
+
+This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
+
+***sessiondef merge command options***
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|fps|`float`|12.0|set merged image update send to client FPS.|
+|initialCredit|`int`|-1|set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
+|maxThreads|`int`|all threads of running hosts based on the CPU cores|set the total number of threads.|
+|numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend render computation. The number should be 1 or greater.|
+|partialMergeRefreshInterval|`float`|0.25 (sec)|In order to minimize output data bandwidth, backend merge computation try to merge images by partial small areas and try to cover the entire image area by multiple merge operations. This command set the entire image area cover frequency by second. If you set a small number, client-side image updates smoother but output bandwidth gets bigger and network bandwidth might be a bottleneck in some cases.|
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
+|sendCredit|`bool`|false|Need to be set to true if you use  credit messages.|
+
+More info on _packTilePrecision_ options: 
+
+We have 2 stages in image generation. coarse pass stage and fine pass stage.
+
+* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
+* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
+* _full32_ : always uses F32 (full 32bit float) for all stages
+* _full16_ : always uses H16 (half 16bit float) for all stages
+
+This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
 
 ## Complete session definitions
 
@@ -380,3 +440,4 @@ Session definitions files have the extension ".sessiondef"
     }
 }
 ```
+
