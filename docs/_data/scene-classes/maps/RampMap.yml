@@ -1,8 +1,6 @@
 ---
 image_path: /assets/images/scene-classes/maps/RampMap
 attributes:
-  input_texture_coordinates:
-    images:
   uv_repeat:
     images:
       - image: uvrepeat.jpg
@@ -18,8 +16,6 @@ attributes:
         text: Wrap
       - image: clamp.jpg
         text: Clamp
-  colors:
-    images:
   interpolations:
     images:
       - image: interpolation0.jpg
@@ -36,10 +32,6 @@ attributes:
         text: Catmull Rom
       - image: interpolation6.jpg
         text: Monotone Cubic
-  positions:
-    images:
-  camera:
-    images:
   color_space:
     images:
       - image: cspaces0.jpg
@@ -52,8 +44,6 @@ attributes:
     images:
       - image: type8.jpg
         text: Using a noise input for ramp UV
-  object:
-    images:
   ramp_type:
     images:
       - image: type0.jpg
@@ -74,7 +64,3 @@ attributes:
         text: four corner
       - image: type8.jpg
         text: input
-  space:
-    images:
-  texture_coordinates:
-    images:
