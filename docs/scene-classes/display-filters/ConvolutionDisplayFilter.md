@@ -22,7 +22,7 @@ title: ConvolutionDisplayFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">invert value of mask</p>
+      <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: ConvolutionDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">blend between output and input</p>
+      <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.mix.links heading=4-%}
     </p>
@@ -43,13 +43,13 @@ title: ConvolutionDisplayFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      <p class="scene-class-comments">a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
+      <p class="scene-class-comments">A list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7).</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput to convolve</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
@@ -59,7 +59,7 @@ title: ConvolutionDisplayFilter
     <p class="scene-class-type">
       <b>Int</b>
       default: 5
-      <p class="scene-class-comments">size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
+      <p class="scene-class-comments">Size of kernel in pixels. Size must be odd. If using a custom kernel, this attribute is ignored, and the size of the custom kernel is used instead.</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.links heading=4-%}
     </p>
@@ -69,15 +69,15 @@ title: ConvolutionDisplayFilter
           | gaussian = 0 (default)
           | box = 1
           | custom = 2
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Kernel to use for convolution.</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ConvolutionDisplayFilter.attributes.mask.links heading=4-%}
     </p>

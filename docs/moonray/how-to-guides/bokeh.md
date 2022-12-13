@@ -35,9 +35,9 @@ aberration, optical vignetting, and astigmatism that all of
 manufacturing defects of lens that could also be used or manipulated for
 an artistic purpose.
 
-## Moonray
+## MoonRay
 
-In the upcoming release of Moonray, these three modes will be available
+In the upcoming release of MoonRay, these three modes will be available
 for use in a similar fashion. 
 
 ### Custom Shapes
@@ -45,7 +45,7 @@ for use in a similar fashion. 
 ### Disk Mode
 
 Disk mode is the default depth of field response that has been in
-Moonray for as long as depth of field has been in Moonray. The code that
+MoonRay for as long as depth of field has been in MoonRay. The code that
 makes this effect possible has been moved from its previous location
 into a new location with the other modes, but is largely still
 functionally the same. For this mode, enabling Bokeh is optional, but it
@@ -115,7 +115,7 @@ ee | 455
 ------------ | --------
 image   |   image
 
-In Moonray, we are able to achieve this by modifying radiance values by
+In MoonRay, we are able to achieve this by modifying radiance values by
 weighing samples relative to their position. The user will provide a
 location value from 0 to 1, which represents the distance from the
 origin of the shape where the weights will be modified the most, and a
@@ -128,7 +128,7 @@ image   |image   |image
 RDLA    | `Camera() {`<br>`...`<br>`["dof"] = true,`<br>`["dof aperture"] = 3.2,`<br>`["dof focus distance"] = 28.3,`<br>`["bokeh"] = true,`<br>`["bokeh weight location"] = 0.9,`<br>`["bokeh weight strength"] = 0.009,`<br>`...`<br>`}` | `Camera() {`<br>`...`<br>`["dof"] = true,`<br>`["dof aperture"] = 3.2,`<br>`["dof focus distance"] = 28.3,`<br>`["bokeh"] = true,`<br>`["bokeh weight location"] = 0.1,`<br>`["bokeh weight strength"] = 0.009,`<br>`...`<br>`}`
 
 We\'ve received feedback from artists that indicate that they would like
-this feature and others to be supported in Moonray. However, there are
+this feature and others to be supported in MoonRay. However, there are
 some implementation concerns with this effect that would affects the
 potential implementation of other effects. This implementation modifies
 radiance values directly, as they\'re calculated. This works in scalar

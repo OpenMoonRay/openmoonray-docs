@@ -75,7 +75,7 @@ title: SphereGeometry
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.scene-classes.geometry.SphereGeometry.attributes.node_xform.images data=site.data.scene-classes.geometry.SphereGeometry-%}
       {%-include see-also.html links=site.data.scene-classes.geometry.SphereGeometry.attributes.node_xform.links heading=4-%}
     </p>

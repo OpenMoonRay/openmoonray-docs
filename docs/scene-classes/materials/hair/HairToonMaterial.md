@@ -36,7 +36,7 @@ title: HairToonMaterial
     </p>
     <h3>sss_trace_set</h3>
     <p class="scene-class-type">
-      <b>Traceset</b>
+      <b>TraceSet</b>
       default: None
       <p class="scene-class-comments">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairToonMaterial.attributes.sss_trace_set.images data=site.data.scene-classes.materials.hair.HairToonMaterial-%}
@@ -168,7 +168,7 @@ title: HairToonMaterial
     </p>
     <h3>specular_1_input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal for toon specular 1</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairToonMaterial.attributes.specular_1_input_normal.images data=site.data.scene-classes.materials.hair.HairToonMaterial-%}
@@ -326,7 +326,7 @@ title: HairToonMaterial
     </p>
     <h3>specular_2_input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal for toon specular 2</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairToonMaterial.attributes.specular_2_input_normal.images data=site.data.scene-classes.materials.hair.HairToonMaterial-%}
@@ -484,7 +484,7 @@ title: HairToonMaterial
     </p>
     <h3>specular_3_input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal for toon specular 3</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairToonMaterial.attributes.specular_3_input_normal.images data=site.data.scene-classes.materials.hair.HairToonMaterial-%}
@@ -611,7 +611,7 @@ title: HairToonMaterial
     </p>
     <h3>input_normal</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">specifies an alternate shading normal (only for SSS lobe)</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.hair.HairToonMaterial.attributes.input_normal.images data=site.data.scene-classes.materials.hair.HairToonMaterial-%}

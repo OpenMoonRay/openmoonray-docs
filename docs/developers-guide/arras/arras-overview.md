@@ -8,7 +8,7 @@ Arras creates processes that perform work for an application. The individual pro
 
 This is a diagram of a typical multi-machine rendering session:
 
-![Arras Session Diagram](../images/arras-session-diagram.png)
+![Arras Session Diagram]({{site.baseurl}}/assets/images/developers-guide/arras/arras-session-diagram.png)
 
 
 
@@ -42,7 +42,7 @@ The Arras message API is used to define new message types. Each new type must de
 
 ## Computations
 
-Computation processes use an executable called ***execComp***. execComp handles initial startup of the computation, connection to Node (or the client, when using local mode), and serialization/deserialization of messages. The actual work of a computation is performed by a shared library loaded by execComp. These shared libraries are often referred to as the computations. The shared libraries used by Moonray computations are as follows:
+Computation processes use an executable called ***execComp***. execComp handles initial startup of the computation, connection to Node (or the client, when using local mode), and serialization/deserialization of messages. The actual work of a computation is performed by a shared library loaded by execComp. These shared libraries are often referred to as the computations. The shared libraries used by MoonRay computations are as follows:
 
 ```
     render       libmcrt_computation_progmcrt.so
@@ -58,7 +58,7 @@ Arras clients are written using the Arras client API. Message handling using the
 
 When using local mode, the client substitutes "local:" for the Coordinator URL. The client API then emulates Coordinator, allocating a single computation on the local machine.
 
-Arras client code can be written as a standalone application, or as a plugin to a DCC. The Moonray computations expect to receive scene descriptions in RDLB format, so the client code has to translate from the DCC's native format. Rendered images are returned by the session in a compressed format called ProgressiveFrame : Moonray provides a library to decode these into standard image formats.
+Arras client code can be written as a standalone application, or as a plugin to a DCC. The MoonRay computations expect to receive scene descriptions in RDLB format, so the client code has to translate from the DCC's native format. Rendered images are returned by the session in a compressed format called ProgressiveFrame : MoonRay provides a library to decode these into standard image formats.
 
 A client can start and maintain any number of different sessions : each session can render one scene at a time.
 

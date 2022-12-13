@@ -10,7 +10,7 @@ title: Map
 # Adaptive Sampling
 ## This page needs to be rebuilt
 ---
-As of version 4.26, Moonray supports adaptive sampling.
+As of version 4.26, MoonRay supports adaptive sampling.
 
 The goal of this feature is to allow the user to set a desired overall
 noise level instead of the explicitly setting the number of samples per
@@ -204,7 +204,7 @@ The final image may be noisier than desired.
     renderer.
 
 -   Adaptive sampling isn't supported in vector mode. If the -exec_mode
-    option is set to auto, Moonray will automatically fallback to scalar
+    option is set to auto, MoonRay will automatically fallback to scalar
     execution if adaptive sampling is active.
 
  

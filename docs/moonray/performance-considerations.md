@@ -8,10 +8,10 @@ title: Performance Considerations
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Performance Considerations
-This page documents how to get the best performance out of Moonray
+This page documents how to get the best performance out of MoonRay
 
 ## Tiled Textures
-Moonray requires the use of tiled textures which greatly improves rendering performance.  The OpenImageIO utility
+MoonRay requires the use of tiled textures which greatly improves rendering performance.  The OpenImageIO utility
 `maketx` or `oiiotool` should be used to convert common file formats to the optimal .tx format.
 
 ## Adaptive Error Tesselation

@@ -123,7 +123,7 @@ title: RenderOutput
     </p>
     <h3>display_filter</h3>
     <p class="scene-class-type">
-      <b>67108864</b>
+      <b>DisplayFilter</b>
       default: None
       <p class="scene-class-comments">If "result" is "display filter", this attribute refers to a display filter object which is used to compute the output pixel values.</p>
       {%-include image-gallery.html images=site.data.scene-classes.render-output.RenderOutput.attributes.display_filter.images data=site.data.scene-classes.render-output.RenderOutput-%}
@@ -219,7 +219,7 @@ title: RenderOutput
     </p>
     <h3>reference_render_output</h3>
     <p class="scene-class-type">
-      <b>Renderoutput</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.</p>
       {%-include image-gallery.html images=site.data.scene-classes.render-output.RenderOutput.attributes.reference_render_output.images data=site.data.scene-classes.render-output.RenderOutput-%}

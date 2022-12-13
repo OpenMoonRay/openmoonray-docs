@@ -102,7 +102,7 @@ title: UsdPreviewSurface
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
-      <p class="scene-class-comments">Ignored by Moonray</p>
+      <p class="scene-class-comments">Ignored by MoonRay</p>
       {%-include image-gallery.html images=site.data.scene-classes.materials.UsdPreviewSurface.attributes.occlusion.images data=site.data.scene-classes.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.scene-classes.materials.UsdPreviewSurface.attributes.occlusion.links heading=4-%}
     </p>

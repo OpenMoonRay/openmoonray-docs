@@ -8,7 +8,7 @@ title: Baking Textures
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Baking Textures
-Baking in Moonray is accomplished through the use of a BakeCamera camera shader. The BakeCamera,
+Baking in MoonRay is accomplished through the use of a BakeCamera camera shader. The BakeCamera,
 like any other camera shader is responsible for turning sample locations on the image plane into
 primary rays (ray origin and ray direction).
 
@@ -39,7 +39,7 @@ slightly above the surface.
 ![]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/BakeModes.png)
 
 Once the primary ray has been defined, there is nothing left that is specific to baking. All
-features of Moonray rendering are available, including Aovs. There are some features you should
+features of MoonRay rendering are available, including Aovs. There are some features you should
 avoid though. Motion-blur and depth of field are not implemented in the BakeCamera. So turning
 those on could produce undesirable or unexpected results.
 

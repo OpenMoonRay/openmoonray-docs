@@ -33,7 +33,7 @@ title: ToonDisplayFilter
           | Sobel = 1
           | Laplacian = 2
           | Laplacian of Gaussian = 3
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Type of edge detector to use</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.edge_detector.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.edge_detector.links heading=4-%}
     </p>
@@ -63,7 +63,7 @@ title: ToonDisplayFilter
     </p>
     <h3>input_albedo</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput that represents diffuse albedo material aov</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_albedo.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}
@@ -71,7 +71,7 @@ title: ToonDisplayFilter
     </p>
     <h3>input_depth</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput with 'depth' result</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_depth.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}
@@ -79,7 +79,7 @@ title: ToonDisplayFilter
     </p>
     <h3>input_diffuse</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput that represents diffuse reflection LPE</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_diffuse.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}
@@ -87,7 +87,7 @@ title: ToonDisplayFilter
     </p>
     <h3>input_glossy</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput that represents glossy reflection LPE</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_glossy.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}
@@ -95,7 +95,7 @@ title: ToonDisplayFilter
     </p>
     <h3>input_normal</h3>
     <p class="scene-class-type">
-      <b>67141632</b>
+      <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput with 'normal' result</p>
       {%-include image-gallery.html images=site.data.scene-classes.display-filters.ToonDisplayFilter.attributes.input_normal.images data=site.data.scene-classes.display-filters.ToonDisplayFilter-%}

@@ -16,7 +16,7 @@ title: Render Profile Viewer
 <!-- Concept info here: Explain the background and context of a this subject. --> 
 
 # Overview
-The `render_profile_viewer` is a standalone app that graphs and compares statistics read from Moonray render logs.   The logs are written using the `-info` option when rendering.
+The `render_profile_viewer` is a standalone app that graphs and compares statistics read from MoonRay render logs.   The logs are written using the `-info` option when rendering.
 
 ![Render Profile Viewer](../../assets/images/tools/render-profile-viewer/render_profile_viewer.jpg)
 

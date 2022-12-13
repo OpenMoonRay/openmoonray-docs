@@ -95,7 +95,7 @@ title: DistortNormalMap
     </p>
     <h3>input_normals</h3>
     <p class="scene-class-type">
-      <b>33554432</b>
+      <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">optional input to distort. if not connected, use geom normals</p>
       {%-include image-gallery.html images=site.data.scene-classes.normal-maps.DistortNormalMap.attributes.input_normals.images data=site.data.scene-classes.normal-maps.DistortNormalMap-%}

@@ -20,7 +20,7 @@ title: LightFilterSet
   <p>
     <h3>lightfilters</h3>
     <p class="scene-class-type">
-      <b>Lightfilter Vector</b>
+      <b>LightFilter Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.scene-classes.light-filter-set.LightFilterSet.attributes.lightfilters.images data=site.data.scene-classes.light-filter-set.LightFilterSet-%}
