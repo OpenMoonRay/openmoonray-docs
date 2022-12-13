@@ -36,15 +36,15 @@ Notes:
 
 ### Existing Labels
 
-**TODO: update these and/or create new page**
 | Material | Labels |
 | -------- | ------ |
 | BaseMaterial | "diffuse", "specular", "directional diffuse", "translucency", "transmission" |
-| HairMaterial | "hair specular", "hair transmission", "hair directional diffuse", "hair glint" |
-| Dwa*Materials | "fuzz", "outer specular" (clearcoat), "specular", "diffuse", "specular transmission" "diffuse transmission" |
+| HairMaterial | Hair materials only have one lobe which can be accessed via the "hair" label. When `use_optimized_sampling` is OFF, the hair lobes will be split into four individual lobes: "hair R", "hair TT", "hair TRT", "hair TRRT" |
+| Dwa*Materials | each has some subset of the following: "fuzz", "outer specular" (clearcoat), "specular", "diffuse", "specular transmission" "diffuse transmission" |
 | HairDiffuseMaterial | "hair diffuse" |
 | IrisMaterial | "iris caustics" |
 | GlitterFlakeMaterial | "glitter" |
+
 
 ## Examples
 
@@ -62,37 +62,37 @@ RenderOutput("/output") {
 
 **Beauty Render**
 
-![Beauty Render](../../assets/images/moonray/how-to-guides/material-aovs/beauty.png)
+![Beauty Render](../../../assets/images/moonray/how-to-guides/material-aovs/beauty.png)
 
 **DSS.albedo**
 
-![Diffuse Translucent Albedo](../../assets/images/moonray/how-to-guides/material-aovs/dss-albedo.png)
+![Diffuse Translucent Albedo](../../../assets/images/moonray/how-to-guides/material-aovs/dss-albedo.png)
 
 **G.albedo**
 
-![Glossy Albedo](../../assets/images/moonray/how-to-guides/material-aovs/glossy-albedo.png)
+![Glossy Albedo](../../../assets/images/moonray/how-to-guides/material-aovs/glossy-albedo.png)
 
 **M.albedo**
 
-![Mirror Albedo](../../assets/images/moonray/how-to-guides/material-aovs/mirror-albedo.png)
+![Mirror Albedo](../../../assets/images/moonray/how-to-guides/material-aovs/mirror-albedo.png)
 
 **emission**
 
-![Emission](../../assets/images/moonray/how-to-guides/material-aovs/emission.png)
+![Emission](../../../assets/images/moonray/how-to-guides/material-aovs/emission.png)
 
 **GSS.fresnel.factor**
 
-![Glossy and SS Fresnel](../../assets/images/moonray/how-to-guides/material-aovs/gss-fresnel-factor.png)
+![Glossy and SS Fresnel](../../../assets/images/moonray/how-to-guides/material-aovs/gss-fresnel-factor.png)
 
 **DGM.roughness**
 
-![Roughness](../../assets/images/moonray/how-to-guides/material-aovs/dgm-roughness.png)
+![Roughness](../../../assets/images/moonray/how-to-guides/material-aovs/dgm-roughness.png)
 
 **'specular'.albedo**
 
-![Specular Albedo](../../assets/images/moonray/how-to-guides/material-aovs/specular-albedo.png)
+![Specular Albedo](../../../assets/images/moonray/how-to-guides/material-aovs/specular-albedo.png)
 
 **'diffuse translucency'.DSS.albedo**
 
-![Diffuse Translucent Albedo](../../assets/images/moonray/how-to-guides/material-aovs/diffuse-translucency-dss-albedo.png)
+![Diffuse Translucent Albedo](../../../assets/images/moonray/how-to-guides/material-aovs/diffuse-translucency-dss-albedo.png)
 

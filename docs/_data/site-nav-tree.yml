@@ -427,12 +427,6 @@ toc:
             path: /moonray/how-to-guides/baking-textures
           - item: Bokeh
             path: /moonray/how-to-guides/bokeh
-          - item: Extra AOV Workflow and Case Studies
-            path: /moonray/how-to-guides/extra-aovs
-          - item: Material AOVs
-            path: /moonray/how-to-guides/material-aovs
-          - item: Motion vectors
-            path: /moonray/how-to-guides/motion-vectors
           - item: Path Guiding
             path: /moonray/how-to-guides/path-guiding
           - item: PBR Validity
@@ -441,8 +435,21 @@ toc:
             path: /moonray/how-to-guides/point-rendering
           - item: Render Outputs
             path: /moonray/how-to-guides/render-outputs
+            subitems:
+              - item: Cryptomatte
+                path: /moonray/how-to-guides/render-outputs/cryptomatte
+              - item: Extra AOVs
+                path: /moonray/how-to-guides/render-outputs/extra-aovs
+              - item: Material AOVs
+                path: /moonray/how-to-guides/render-outputs/material-aovs
+              - item: Motion vectors
+                path: /moonray/how-to-guides/render-outputs/motion-vectors
+              - item: Variance AOVs
+                path: /moonray/how-to-guides/render-outputs/variance-aovs
+              - item: Visibility AOVs
+                path: /moonray/how-to-guides/render-outputs/visibility-aovs
           - item: Render Inside a Medium
-            path: /moonray/how-to-guides/render-inside-medium
+            path: /moonray/how-to-guides/render-inside-medium          
   - item: Hydra
     path: /hydra
     subitems:
