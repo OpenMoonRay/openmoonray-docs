@@ -30,6 +30,12 @@ You can build MoonRay yourself, either in a Docker container or directly on a Li
 
 ## Using MoonRay
 
+[Moonray GUI application](../moonray/moonray_gui)
+
+[Scene Formats](../developers-guide/scene-formats)
+
 ## Developing MoonRay
+
+[Source Structure](../developers-guide/source-structure)
 
 [Shaders](../developers-guide/shaders/index)

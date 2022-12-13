@@ -8,3 +8,7 @@ title: Cloning the MoonRay source repository
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Cloning the MoonRay source repository
+
+```bash
+git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
+```
