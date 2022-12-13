@@ -3,7 +3,7 @@ Cryptomatte provides a way to isolate specific objects in the scene by ingesting
 
 In MoonRay, a single geometry (or part) covering a pixel will be represented by an `{id, weight}` pair, where the `id` represents some hash value assigned to the geometry by the user, and the `weight` represents the coverage amount. To understand coverage amount, you might consider the case  where you have an object with presence, where there might be multiple geometries contributing to the final value of a pixel. 
 
-These `{id, weight}` pairs will be stored in the R, G and B, A channels of each .exr layer, which means there will be max three exr layers for every cryptomatte RenderOutput: **Cryptomatte00**, **Cryptomatte01**, and **Cryptomatte02**. The `{id, weight}` pairs are sorted by max coverage, so the geometry with the most pixel coverage will always be the first entry. 
+These `{id, weight}` pairs will be stored in the R, G and B, A channels of each .exr layer, and we allow for 6 `{id, weight}` pairs, which means there will be max three exr layers for every cryptomatte RenderOutput: **Cryptomatte00**, **Cryptomatte01**, and **Cryptomatte02**. The `{id, weight}` pairs are sorted by max coverage, so the geometry with the most pixel coverage will always be the first entry. 
 
 ## Examples
 
