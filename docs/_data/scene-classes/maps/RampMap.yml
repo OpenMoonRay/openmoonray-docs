@@ -1,0 +1,66 @@
+---
+image_path: /assets/images/scene-classes/maps/RampMap
+attributes:
+  uv_repeat:
+    images:
+      - image: uvrepeat.jpg
+  uv_wave:
+    images:
+      - image: nouvwave.jpg
+        text: No Wave
+      - image: uvwave.jpg
+        text: With UV Wave
+  wrap_type:
+    images:
+      - image: wrap.jpg
+        text: Wrap
+      - image: clamp.jpg
+        text: Clamp
+  interpolations:
+    images:
+      - image: interpolation0.jpg
+        text: None
+      - image: interpolation1.jpg
+        text: Linear
+      - image: interpolation2.jpg
+        text: Exponential Up
+      - image: interpolation3.jpg
+        text: Exponential Down
+      - image: interpolation4.jpg
+        text: Smooth
+      - image: interpolation5.jpg
+        text: Catmull Rom
+      - image: interpolation6.jpg
+        text: Monotone Cubic
+  color_space:
+    images:
+      - image: cspaces0.jpg
+        text: rgb
+      - image: cspaces1.jpg
+        text: hsv
+      - image: cspaces2.jpg
+        text: hsl
+  input:
+    images:
+      - image: type8.jpg
+        text: Using a noise input for ramp UV
+  ramp_type:
+    images:
+      - image: type0.jpg
+        text: v
+      - image: type1.jpg
+        text: u
+      - image: type2.jpg
+        text: diagonal
+      - image: type3.jpg
+        text: radial
+      - image: type4.jpg
+        text: circular
+      - image: type5.jpg
+        text: box
+      - image: type6.jpg
+        text: uxv
+      - image: type7.jpg
+        text: four corner
+      - image: type8.jpg
+        text: input

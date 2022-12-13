@@ -1,0 +1,88 @@
+---
+image_path: /assets/images/scene-classes/maps/NoiseWorleyMap
+gallery:
+attributes:
+  bias:
+    images:
+      - image: worley_bias.gif
+  gain:
+    images:
+      - image: worley_gain.gif
+  invert:
+    images:
+      - image: worley_invertA.png
+      - image: worley_invertB.png
+  point_size:
+  remap:
+    images:
+      - image: worley_remap.gif
+      - image: worley_remap2.gif
+  smoothstep:
+    images:
+      - image: worley_smoothstep1.gif
+      - image: worley_smoothstep2.gif
+  F1:
+    images:
+      - image: F1_distance.png
+        text: Distance
+      - image: cellid_F1.png
+        text: Cell ID
+  F2:
+    images:
+      - image: F2_distance.png
+        text: Distance
+      - image: cellid_F2.png
+        text: Cell ID
+      - image: F2-F1.png
+        text: Combining positive (F2) and negative (F1) coefficients
+  F3:
+    images:
+      - image: F3_distance.png
+        text: Distance
+      - image: cellid_F3.png
+        text: Cell ID
+  F4:
+    images:
+      - image: F4_distance.png
+  distance_method:
+    images:
+      - image: distance_linear.png
+      - image: distance_linear_squared.png
+      - image: distance_manhattan.png
+      - image: distance_chebyshev.png
+      - image: distance_quadratic.png
+      - image: distance_minkowski.png
+  minkowski_number:
+    images:
+      - image: worley_minkowski_number.gif
+  output_mode:
+    images:
+      - image: output_mode_distance.png
+        text: Distance
+      - image: output_mode_cell_id.png
+        text: Cell ID
+      - image: output_mode_gradient.png
+        text: Gradient
+  rotation:
+    images:
+      - image: worley_rotation.gif
+        text: World Space
+      - image: worley_rotation_obj.gif
+        text: Object Space
+  translation:
+    images:
+      - image: worley_offset.gif
+  color_A:
+    images:
+      - image: worley_colorAB.jpg
+  jitter:
+    images:
+      - image: worley_jitter.gif
+  max_level:
+    images:
+      - image: worley_max_level_distance.gif
+      - image: worley_max_level_cellid.gif
+      - image: worley_max_level_gradient.gif
+  seed:
+    images:
+      - image: worley_seed.gif

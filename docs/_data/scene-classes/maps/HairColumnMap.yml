@@ -1,0 +1,9 @@
+---
+image_path: /assets/images/scene-classes/maps/HairColumnMap
+gallery:
+  - image: color_gradient_stripes_vert_annotated.jpg
+    text: V is root to tip, U is per-hair
+  - image: column_UV_test.jpg
+    text: Assigned to fibers
+  - image: columnUvComparison.jpg
+    text: Example of adding more color detail
