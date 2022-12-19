@@ -51,6 +51,13 @@ Usd specification compliant material
 ### Normals
 
 ### Thin Geometry
+Use thin geometry if you want the behavior of a thin surface, like a bubble or a balloon filled with _air_. This will essentially let light pass through without bending. It correctly handles _IORs_ (index of refraction) when exiting the surface via back-sided polygons.   
+
+Thin geometry is also useful for planar or open surfaces modeled without thickness, eg. a leaf modeled without thickness or windows modeled single-sided.  
+
+When something hits the back-side of a surface, MoonRay treats that ray as if it is coming from the inside of a surface and wants to correctly invert the IORs. When designated as _thin geometry_, MoonRay treats it as if it is hitting a front-facing surface and does not invert IORs and does not bend the ray since any bending will be corrected upon exiting from the infinitely thin surface.   
+
+Note: that `roughness` will have no effect when `thin geometry` is on.
 
 ### [Presence](linkToPresence)
 Sometimes you need to cut out or punch holes in a material so that it is not *present* in that region. For example a leaf on a flat card or a grate with many small holes. To accomplish this the **presence** attribute exists. This is not the same idea as opacity and it is intended to be used in a binary manner, the surface is either *present* or *not present*.
