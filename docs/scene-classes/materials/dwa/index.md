@@ -61,7 +61,7 @@ Each shading component represents the different ways light can interact with a s
 The fuzz component represents a virtual fuzz layer that is applied on top of the underlying material. It mimics a layer of particles or fibers on top of the material than catches lights only around glancing angles. It can be a useful lobe to create velvet, suede or even dust and peach-fuzz effects. This lobe will correctly distribute the remaining non-reflected energy back to the layers underneath. In the Dwa material system it sits on _top_ of all the other lobes.
 
 ### Clearcoat Component
-The clearcoat component represents a virtual clearcoat or varnish layer that is applied on top of the underlying material. It has its own clearcoat refractive index (it is a different material altogether) and also supports absorption when `clearcoat thickness` > 0 and `clearcoat attenuation color` is non-white. The clearcoat component attenuates all other components.
+The clearcoat component represents a virtual clearcoat or varnish layer that is applied on top of the underlying material. It has its own `clearcoat refractive index` (it is a different material altogether) and also supports absorption when `clearcoat thickness` > 0 and `clearcoat attenuation color` is non-white. The clearcoat component attenuates all other components.
 
 ### Specular Component
 The specular component can represent dielectric and/or metallic specular, depending on which material is being used.
@@ -77,6 +77,8 @@ Diffuse and subsurface are a single component. In order to enable subsurface sca
 The transmission component is useful for modeling refractive materials such as glass, clear plastic, water or other liquid, etc. The refractive index and roughness values are shared between the specular and transmission component by default, however, they can be overidden to be independent. 
 
 ## Layering 
-The DwaLayerMaterial supports A over B compositing where the material specified with `material_A` is composited _over_ `material_B` using the `mask` to control the coverage. For effeciency, the material uses _parameter blending_ where, instead of fully evaluating both materials and blending the results, the individual parameters are blended and then the results are used to evaluate the material once. Due to the fact that only one material is actually evaluated there are a handful of parameters that cannot be blended and have to be assigned a single value. In these cases the DwaLayerMaterial provides _fallback attributes_ that can be set if there is a conflict between the child materials.
+The DwaLayerMaterial supports A over B compositing where the material specified with `material_A` is composited _over_ `material_B` using the `mask` to control the coverage. For efficiency, the material uses _parameter blending_ where, instead of fully evaluating both materials and blending the results, the individual parameters are blended and then the results are used to evaluate the material once.  
+
+Due to the fact that only one material is actually evaluated there are a handful of parameters that cannot be blended and have to be assigned a single value. In these cases the DwaLayerMaterial provides _fallback attributes_ that can be set if there is a conflict between the child materials.
 
 
