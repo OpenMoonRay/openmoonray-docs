@@ -468,6 +468,8 @@ toc:
     subitems:
     - item: Render Profile Viewer
       path: /tools/render-profile-viewer
+    - item: Denoiser
+      path: /tools/denoiser
   - item: Developer's Guide
     path: /developers-guide
     subitems:
