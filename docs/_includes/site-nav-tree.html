@@ -1,60 +1,12 @@
-{% if site.data.site-nav-tree %}
-<h3>
-  {{ site.data.site-nav-tree.title }}
-</h3>
-<nav class="site-nav-tree-scroll">
-  <!-- Level 1 -->
-  <ul class="site-nav-tree">
-    {% assign entries1 = site.data.site-nav-tree.toc %}
-    {% for e1 in entries1 %}
-      {% unless e1.subitems %}
-        <li> <!-- leaf node -->
-          {% if e1.path %} <a href="{{ e1.path | relative_url }}">{{ e1.item }}</a> {% else %} {{ e1.item }} {% endif %}
-        </li>
-      {% else %}
-        <li> <!-- parent node -->
-          {% if page.url contains e1.path %} <details open> {% else %} <details closed> {% endif %}
-          {% if e1.path %} <summary><a href="{{ e1.path | relative_url }}">{{ e1.item }}</a></summary> {% else %} <summary>{{ e1.item }}</summary> {% endif %}
-          {% assign entries2 = e1.subitems %} <!-- Level 2 -->
-          {% if entries2 %}
-            {% for e2 in entries2 %}
-              {% unless e2.subitems %}
-                <li> <!-- leaf node -->
-                  {% if e2.path %} <a href="{{ e2.path | relative_url }}">{{ e2.item }}</a> {% else %} {{ e2.item }} {% endif %}
-                </li>
-              {% else %}
-                <li> <!-- parent node -->
-                  {% if page.url contains e2.path %} <details open> {% else %} <details closed> {% endif %}
-                  {% if e2.path %} <summary><a href="{{ e2.path | relative_url }}">{{ e2.item }}</a></summary> {% else %} <summary>{{ e2.item }}</summary> {% endif %}
-                  {% assign entries3 = e2.subitems %} <!-- Level 3 -->
-                  {% for e3 in entries3 %}
-                    {% unless e3.subitems %}
-                      <li> <!-- leaf node -->
-                        {% if e3.path %} <a href="{{ e3.path | relative_url }}">{{ e3.item }}</a> {% else %} {{ e3.item }} {% endif %}
-                      </li>
-                    {% else %}
-                      <li> <!-- parent node -->
-                        {% if page.url contains e3.path %} <details open> {% else %} <details closed> {% endif %}
-                        {% if e3.path %} <summary><a href="{{ e3.path | relative_url }}">{{ e3.item }}</a></summary> {% else %} <summary>{{ e3.item }}</summary> {% endif %}
-                        {% assign entries4 = e3.subitems %} <!-- Level 4 -->
-                        {% for e4 in entries4 %}
-                          <li> <!-- leaf node -->
-                            {% if e4.path %} <a href="{{ e4.path | relative_url }}">{{ e4.item }}</a> {% else %} {{ e4.item }} {% endif %}
-                          </li>
-                        {% endfor %} <!-- entries 3 -->
-                        </details>
-                      </li>
-                    {% endunless %}
-                  {% endfor %}
-                  </details>
-                </li>
-              {% endunless %}
-            {% endfor %} <!-- entries 2 -->
-          {% endif %}
-          </details>
-        </li>
-      {% endunless %}
-    {% endfor %} <!-- entries1 -->
-  </ul>
+<button class="hamburger" type="button">
+  <span class="sr-only">Show main navigation</span>
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<nav id="main-nav">
+  <sl-tree role="list" selection="single">
+    {% assign items = site.data.site-nav-tree %}
+    {% include nav-tree-items.html  %}
+  </sl-tree>
 </nav>
-{% endif %}
