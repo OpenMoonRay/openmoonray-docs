@@ -1,7 +1,7 @@
 ---
 overview: overviews/DofDisplayFilterOverview.md
 example: examples/DofDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/DofDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/DofDisplayFilter
 gallery:
   - image: focus_distance_20.png
     text: focus_distance = 20

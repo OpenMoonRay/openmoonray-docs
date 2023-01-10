@@ -1,7 +1,7 @@
 ---
 overview: overviews/DiscretizeDisplayFilterOverview.md
 example: examples/DiscretizeDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/DiscretizeDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/DiscretizeDisplayFilter
 gallery:
   - image: input.png
     text: Input

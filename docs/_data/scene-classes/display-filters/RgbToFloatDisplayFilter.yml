@@ -1,7 +1,7 @@
 ---
 overview: overviews/RgbToFloatDisplayFilterOverview.md
 example: examples/RgbToFloatDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/RgbToFloatDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/RgbToFloatDisplayFilter
 gallery:
   - image: beauty.png
     text: Input

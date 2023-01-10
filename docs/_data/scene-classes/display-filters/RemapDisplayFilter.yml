@@ -1,7 +1,7 @@
 ---
 overview: overviews/RemapDisplayFilterOverview.md
 example: examples/RemapDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/RemapDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/RemapDisplayFilter
 gallery:
   - image: example1.png
     text: "invert

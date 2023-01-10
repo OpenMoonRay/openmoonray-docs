@@ -1,7 +1,7 @@
 ---
 overview: overviews/OverDisplayFilterOverview.md
 example: examples/OverDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/OverDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/OverDisplayFilter
 gallery:
   - image: input_bottom.png
     text: Input Bottom

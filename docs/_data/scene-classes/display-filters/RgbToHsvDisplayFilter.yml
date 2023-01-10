@@ -1,7 +1,7 @@
 ---
 overview: overviews/RgbToHsvDisplayFilterOverview.md
 example: examples/RgbToHsvDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/RgbToHsvDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/RgbToHsvDisplayFilter
 gallery:
   - image: input.png
     text: Input

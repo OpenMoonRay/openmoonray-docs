@@ -1,7 +1,7 @@
 ---
 overview: overviews/ConvolutionDisplayFilterOverview.md
 example: examples/ConvolutionDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/ConvolutionDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/ConvolutionDisplayFilter
 gallery:
   - image: beauty.png
     text: Beauty render

@@ -1,7 +1,7 @@
 ---
 overview: overviews/HalftoneDisplayFilterOverview.md
 example: examples/HalftoneDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/HalftoneDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/HalftoneDisplayFilter
 gallery:
   - image: input.png
     text: Input
