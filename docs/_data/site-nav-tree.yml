@@ -466,6 +466,8 @@
     subitems:
     - text: Render Profile Viewer
       path: /tools/render-profile-viewer.md
+    - item: Denoiser
+      path: /tools/denoiser.md
   - text: Developer's Guide
     path: developers-guide/index.md
     subitems:
