@@ -1,0 +1,280 @@
+#root {
+  // Fill up the entire viewport
+  block-size: 100%;
+  inline-size: 100%;
+
+  // Allow children to be absolutely-positioned
+  position: relative;
+}
+
+#root > sl-split-panel {
+  // Fill up entire #root rectangle, edge-to-edge
+  position: absolute;
+  inset: 0;
+
+  --divider-width: 2px;
+}
+
+#root[nav-open] > sl-plit-panel {
+  --max: 90%;
+}
+
+#root > sl-split-panel:not(:defined) {
+  // Provide a basic layout for non-js and pre-js scenarios
+  display: flex;
+
+  // Child elements will be scroll containers, and occupy
+  // 100% of the height of sl-split-panel
+  overflow: hidden;
+}
+
+#root > sl-split-panel > *:not(sl-icon) {
+  // Direct children of sl-split-panel, prior to the sl-split-panel
+  // custom element being defined in JS, will occupy 100% of the
+  // height of their parent, and scroll contents vertically.
+  block-size: 100%;
+}
+
+#root > sl-split-panel::part(divider) {
+  background-color: var(--color-split-panel-divider);
+
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0s ease 0s;
+
+  @media screen and (min-width: 64.0625em) {
+    pointer-events: initial;
+    z-index: auto;
+    opacity: 1;
+  }
+}
+
+#root[nav-open] > sl-split-panel::part(divider) {
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#root[nav-open] > sl-split-panel::part(divider) {
+  pointer-events: initial;
+  z-index: 1;
+  opacity: 1;
+}
+
+#root > sl-split-panel::part(start) {
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 0;
+  transition: max-width 0s linear 1s;
+
+  @media screen and (min-width: 64.0625em) {
+    overflow: hidden;
+    z-index: unset;
+    max-width: 100%;
+    transition-delay: 0s;
+  }
+}
+
+#root[nav-open] > sl-split-panel::part(start) {
+  max-width: 100%;
+  transition-delay: 0s;
+}
+
+#root > sl-split-panel:not(:defined) > *[primary] {
+  flex-basis: Max(25%, 200px);
+}
+
+#root > sl-split-panel > :not(*[primary]):not(sl-icon) {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 100%;
+}
+#root > sl-split-panel > sl-icon {
+  position: absolute;
+  border-top-right-radius: var(--sl-border-radius-small);
+  border-bottom-right-radius: var(--sl-border-radius-small);
+  background: var(--color-split-panel-divider);
+  color: white;
+  padding: 0.75rem 0;
+  height: 1.25rem;
+  width: 0.75rem;
+  left: 0px;
+}
+
+main {
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  background-color: var(--color-main-bg);
+  color: var(--color-main-text);
+  inline-size: 100%;
+
+  @media screen and (min-width: 64.0625em) {
+    position: unset;
+    left: unset;
+  }
+}
+
+main > article:first-child {
+  inline-size: 100%;
+  margin-inline: auto;
+  order: 2;
+  // overflow-x: hidden;
+  padding-inline: var(--size-4);
+  margin-block-start: var(--size-5);
+
+  @media screen and (min-width: 64.0625em) {
+    inline-size: clamp(45ch, 100%, 80ch);
+    padding-inline: 2rem;
+    overflow-x: unset;
+    margin-block-start: unset;
+  }
+}
+
+main > article > *:last-child {
+  margin-block-end: var(--size-9);
+}
+
+main menu {
+  inline-size: clamp(45ch, 100%, 80ch);
+  margin: 0 auto;
+  padding-inline: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  block-size: var(--size-10);
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+
+  > * {
+    pointer-events: initial;
+  }
+
+  @media screen and (min-width: 64.0625em) {
+    block-size: 9rem;
+    z-index: unset;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  block-size: calc(100% - var(--size-7)) !important;
+  inline-size: 100%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 0px;
+  transition: width 0s linear 0.2s;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+
+  [nav-open] & {
+    pointer-events: unset;
+    width: 100%;
+    inline-size: 100%;
+    transition-delay: 0s;
+  }
+
+  // :not([nav-open]) {
+  //   transition-delay: 0.2s;
+  // }
+
+  @media screen and (min-width: 64.0625em) {
+    pointer-events: unset;
+    width: unset;
+    inline-size: 100%;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
+  block-size: var(--size-7);
+  z-index: 1;
+  border-block-start: 1px solid var(--color-footer-border);
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  justify-content: center;
+
+  p {
+    margin-block: 0;
+  }
+
+  @media screen and (min-width: 64.0625em) {
+    justify-content: unset;
+  }
+}
+
+#home-link {
+  display: flex;
+  flex-shrink: 0;
+  block-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: var(--size-7);
+  background-color: var(--color-home-link-bg);
+  border-block-end: 3px solid var(--color-home-link-border);
+  inline-size: 100vw;
+  position: absolute;
+  pointer-events: initial;
+
+  @media screen and (min-width: 64.0625em) {
+    block-size: 9rem;
+    transform: translateX(0);
+    position: unset;
+    inline-size: unset;
+  }
+}
+
+#view-on-github {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#moonray-logo {
+  display: block;
+  inline-size: var(--size-13);
+  block-size: 3.75rem;
+
+  @media screen and (min-width: 64.0625em) {
+    block-size: unset;
+    inline-size: var(--size-13);
+  }
+}
+
+#copyright-notice {
+  @media screen and (min-width: 64.0625em) {
+    margin-inline-start: var(--size-7);
+  }
+}
+
+dark-mode-toggle {
+  position: fixed;
+  right: var(--size-3);
+  top: 1.45rem;
+  scale: 0.9;
+
+  &::part(legend) {
+    position: absolute;
+    top: 1000px;
+  }
+
+  @media screen and (min-width: 64.0625em) {
+    position: unset;
+    scale: unset;
+
+    &::part(legend) {
+      position: unset;
+      top: unset;
+    }
+  }
+}

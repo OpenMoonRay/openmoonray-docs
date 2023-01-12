@@ -1,10 +1,14 @@
 {% if include.images.size > 0 %}
-<div class="image-gallery cf">
+<div class="gallery-grid">
 {%- for img in include.images -%}
-  <div>
-    <img src="{{site.baseurl}}/{{include.data.image_path}}/{{img.image}}" alt="{{img.text}}">
-    {% if img.text %}<p><center>{{img.text}}</center></p>{% endif %}
-  </div>
+  <figure>
+    <img src="{{site.baseurl}}/{{include.data.image_path}}/{{img.image}}" alt="{{img.text}}" lightbox>
+    {% if img.text %}
+      <figcaption>
+      {{img.text}}
+      </figcaption>
+    {% endif %}
+  </figure>
 {% endfor %}
-</div><br>
+</div>
 {% endif %}

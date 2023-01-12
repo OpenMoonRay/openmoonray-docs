@@ -1,0 +1,206 @@
+#root {
+  color-scheme: light;
+
+  --color-good: var(--green-7);
+  --color-bad: var(--red-9);
+  --color-info: var(--indigo-8);
+  --color-warn: var(--orange-10);
+  --color-error: var(--color-bad);
+  --color-dim: var(--gray-7);
+  --color-highlight: var(--yellow-2);
+
+  --color-shadow: 100 3% 15%;
+  --shadow-strength: 1%;
+
+  --color-document-bg: whitesmoke;
+  --color-document-text: var(--gray-9);
+  --color-document-selection-bg: var(--indigo-1);
+  --color-document-selection-text: var(--color-document-text);
+  --color-scrollbar-track: white;
+  --color-scrollbar-thumb: 0, 0%, 80%;
+
+  --color-normal-text: var(--color-document-text);
+  --color-text-decoration: currentcolor;
+  --color-strikethrough: var(--black-0);
+  --color-superscript: var(--black-0);
+  --color-subscript: var(--black-0);
+  --color-highlight-text: var(--black-0);
+  --color-h1: var(--color-document-text);
+  --color-h2: var(--sand-7);
+  --color-h3: var(--stone-9);
+  --color-h4: var(--color-document-text);
+  --color-h5: var(--color-document-text);
+  --color-h6: var(--color-document-text);
+
+  --color-link: var(--indigo-11);
+  --color-link-hover: var(--indigo-9);
+  --color-link-active: var(--orange-9);
+  --color-link-visited: #717bb1;
+
+  --color-hr: var(--gray-4);
+
+  // TODO:
+  --color-focus-ring: red;
+
+  // TODO:
+  --color-form-text: var(--gray-10);
+  --color-form-input-bg: white;
+  --color-form-control-bg: var(--gray-2);
+  --color-form-control-border: var(--gray-7);
+  --color-form-control-text: var(--gray-10);
+  --color-form-control-accent: var(--indigo-10);
+
+  --color-figure-bg: white;
+  --color-figure-text: var(--color-document-text);
+
+  --color-disclosure-expand-icon: var(--gray-10);
+
+  --color-header-bg: var(--color-document-bg);
+  --color-header-text: var(--color-document-text);
+
+  --color-main-bg: var(--color-document-bg);
+  --color-main-text: var(--color-document-text);
+
+  --color-footer-bg: var(--sand-1);
+  --color-footer-text: var(--color-document-text);
+  --color-footer-border: var(--indigo-10);
+
+  --color-moonray-logo-text: var(--sand-8);
+  --color-moonray-logo-crescent: var(--indigo-12);
+
+  --color-main-nav-bg: var(--color-document-bg);
+  --color-main-nav-indent-guide: var(--gray-4);
+  --color-main-nav-expand-icon: var(--black-0);
+  --color-main-nav-link: var(--sand-9);
+  --color-main-nav-selected-bg: white;
+  --color-main-nav-selected-marker: var(--indigo-9);
+
+  --color-attr-ref-group-name-bg: var(--sand-1);
+  --color-attr-ref-group-name-text: black;
+  --color-attr-ref-group-border: var(--sand-1);
+  --color-attr-ref-group-border-hover: var(--sand-3);
+  --color-attr-ref-name-text: var(--black-0);
+  --color-attr-ref-name-divider: var(--sand-1);
+  --color-attr-ref-type-bg: white;
+  --color-attr-ref-type-border: var(--sand-3);
+  --color-attr-ref-comment-text: var(--sand-7);
+
+  --color-aside-generic-bg: transparent;
+  --color-aside-generic-text: var(--color-document-text);
+  --color-aside-generic-border: var(--stone-4);
+
+  --color-aside-info-bg: white;
+  --color-aside-info-text: var(--color-normal-text);
+  --color-aside-info-border: var(--color-info);
+
+  --color-aside-warn-bg: var(--orange-0);
+  --color-aside-warn-text: var(--color-normal-text);
+  --color-aside-warn-border: var(--color-warn);
+
+  --color-blockquote-border: var(--black-0);
+  --color-blockquote-bg: var(--black-0);
+  --color-blockquote-text: var(--black-0);
+
+  --color-code-inline-bg: white;
+  --color-code-inline-text: var(--color-document-text);
+  --color-code-inline-border: var(--sand-3);
+
+  --color-gallery-grid-bg: white;
+  --color-gallery-grid-text: var(--color-document-text);
+
+  --color-home-link-bg: var(--color-document-bg);
+  --color-home-link-border: var(--indigo-11);
+
+  --color-hamburger: var(--gray-9);
+  --color-hamburger-hover: var(--indigo-10);
+  --color-hamburger-active: var(--indigo-10);
+
+  --color-github-corner-bg: var(--indigo-12);
+  --color-github-corner-octocat: whitesmoke;
+
+  --color-table-thead-bg: var(--sand-1);
+  --color-table-thead-text: var(--color-document-text);
+  --color-table-border: var(--stone-5);
+  --color-table-cell-filled: var(--black-0);
+
+  --color-section-permalink: var(--indigo-11);
+  --color-section-permalink-hover: var(--indigo-11);
+
+  --color-split-panel-divider: var(--sand-3);
+
+  --scrollthumb-color: var(--gray-7);
+
+  background-color: var(--color-document-bg);
+  color: var(--color-document-text);
+  accent-color: var(--color-form-control-accent);
+  caret-color: var(--color-form-control-accent);
+
+  scrollbar-color: Hsl(var(--color-scrollbar-thumb)) transparent;
+
+  ::selection {
+    background-color: var(--color-document-selection-bg);
+  }
+
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration-color: var(--color-link);
+
+  &:visited,
+  &.link-visited {
+    color: var(--color-link-visited) !important;
+    text-decoration-color: var(--color-link-visited) !important;
+  }
+
+  &.link-unvisited {
+    color: var(--color-link) !important;
+    text-decoration-color: var(--color-link) !important;
+  }
+
+  &:hover,
+  &.link-hover {
+    color: var(--color-link-hover) !important;
+    text-decoration-color: var(--color-link-hover) !important;
+    text-decoration: underline;
+  }
+
+  &:active,
+  &.link-active {
+    color: var(--color-link-active) !important;
+    text-decoration-color: var(--color-link-active) !important;
+    text-decoration: underline;
+  }
+
+  &:where(:not(:hover)) {
+    text-decoration: inherit;
+  }
+}
+
+:focus-visible {
+  outline-color: var(--color-focus-ring);
+}
+
+:where(dialog) {
+  background-color: whitesmoke;
+}
+
+:where(
+    textarea,
+    select,
+    input:not(
+        button,
+        button[type],
+        input[type='button'],
+        input[type='submit'],
+        input[type='reset']
+      )
+  ) {
+  background-color: var(--color-form-input-bg);
+}
+
+:where(hr) {
+  background-color: var(--color-hr);
+}

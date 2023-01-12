@@ -1,0 +1,6 @@
+{
+  // Enables formatting of all .html files
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

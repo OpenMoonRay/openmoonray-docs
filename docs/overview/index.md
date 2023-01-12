@@ -1,20 +1,7 @@
 ---
-title: Overview
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
+title: OpenMoonRay Overview
 ---
 # Overview
-
-The open source release of MoonRay contains the following pieces of technology:
-
-- MoonRay path-tracing renderer
-- Most of the scene object classes (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
-- Hydra plugin for MoonRay: HdMoonRay
-- Arras execution and distribution framework, used to integrate MoonRay into applications
 
 ## Getting MoonRay
 

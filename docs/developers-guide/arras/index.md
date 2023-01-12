@@ -38,7 +38,7 @@ When the client sends new input data into a session, it may continue to receive 
 
 Messages have types : for example "RDLMessage" is the type of messages used to send RDLB format scene descriptions to render computations. Computations normally determine how to handle an incoming message based on its type.
 
-The Arras message API is used to define new message types. Each new type must define serialization and deserialization functions to convert between its in-memory representation and the bytes sent to transmit it over a socket. 
+The Arras message API is used to define new message types. Each new type must define serialization and deserialization functions to convert between its in-memory representation and the bytes sent to transmit it over a socket.
 
 ## Computations
 

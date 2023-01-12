@@ -1,13 +1,13 @@
 ---
+Title:  OpenMoonRay Documentation Home
 ---
-Home
+# MoonRay Documentation Home
 
-[Beta]({{ "/beta/" | absolute_url }}) <br>
-[Overview]({{ "/overview/" | absolute_url }})  <br>
-[Building/Installation]({{ "/installation/" | absolute_url }})  <br>
-[MoonRay]({{ "/moonray/" | absolute_url }})  <br>
-[Arras]({{ "/arras/" | absolute_url }})  <br>
-[Developer's Guide]({{ "/developers-guide/" | absolute_url }})  <br>
-[Release Notes]({{ "/release-notes/" | absolute_url }})  <br>
-[Examples]({{ "/examples/" | absolute_url }})  <br>
-[Legal/Licensing]({{ "/legal-licensing/" | absolute_url }})  <br>
+The open source release of MoonRay contains the following pieces of technology:
+
+- MoonRay path-tracing renderer
+- Most of the scene object classes (materials, geometry, lights, cameras, etc) used at DreamWorks Animation (about 150 in total)
+- Hydra plugin for MoonRay: HdMoonRay
+- Arras execution and distribution framework, used to integrate MoonRay into applications
+
+[Learn more about getting and using MoonRay](./overview/)
