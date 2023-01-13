@@ -1,23 +1,18 @@
----
-title: Building MoonRay in a Docker Container
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
----
 # Building MoonRay in a Docker container
 
-You will need Docker and a copy of the MoonRay source. The instructions assume that the source is in */source/openmoonray*
-
 These instructions should also be available in the *building* subdirectory of the source code.
+
+You will need Docker and a copy of the MoonRay source (see [Cloning the Repo](cloning-the-repo)) The instructions assume that the source is in */source/openmoonray*
+
+NVIDIA Optix headers need to be downloaded manually (from https://developer.nvidia.com/designworks/optix/download), since they require a EULA. The instructions assume that these are in */optix/include*. 
+
+Substitute */source/openmoonray* and */optix* for the actual locations wherever they appear in the instructions.
 
 ---
 ## Step 1. Base requirements
 ---
 
-The base image for building MoonRay in a container is constructed using *Dockerfile* in the *building* directory of the MoonRay source. It contains a number of MoonRay dependencies that are installed using *yum*, the Centos-7 package manager. It also intalls CMake, needed for Step 2.
+The base image for building MoonRay in a container is constructed using *Dockerfile* in the *building* directory of the MoonRay source. It contains a number of MoonRay dependencies that are installed using *yum*, the Centos-7 package manager. It also installs CMake, needed for Step 2.
 
 You can remove the Qt5 packages from the Dockerfile if you do not intend to build the MoonRay GUI programs.
 
@@ -30,12 +25,13 @@ You can remove the Qt5 packages from the Dockerfile if you do not intend to buil
 ## Step 2. Build the remaining dependencies
 ---
 
-The remaining MoonRay dependencies can be built from source and installed using CMake. *CMakeLists.txt* in the *building* directory contains a series of targets that download the sources and build each dependency. 
+Apart from Optix, the remaining MoonRay dependencies can be built from source and installed using CMake. *CMakeLists.txt* in the *building* directory contains a series of targets that download the sources and build each dependency. 
+
 
 Start the base container from step 1.
 
 ```bash
-> docker run -v /source/openmoonray/building:/building:shared  --network=host --rm -it openmoonray_base
+> docker run -v /source/openmoonray/building:/building:shared  -v /optix:/optix:shared --network=host --rm -it openmoonray_base
 ```
 
 Run the CMake external projects build. The targets are set up to build one at a time. The build takes about 20 minutes on my machine.
@@ -46,11 +42,12 @@ Run the CMake external projects build. The targets are set up to build one at a 
 > cmake --build . -- -j 64
 ```
 
-Clean up the build residue, and copy '/building/other' into */installs*.
+Clean up the build residue, and copy the Optix headers into */installs*
 
 ```bash
 > rm -rf /build/*
-> cp -r /building/other/* /installs
+> mkdir /installs/optix
+> cp -r /optix/include /installs/optix
 ```
 
 The dependencies required to build openmoonray are now installed into the container.

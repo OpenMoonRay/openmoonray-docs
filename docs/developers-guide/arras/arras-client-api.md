@@ -39,6 +39,7 @@ std::unique_ptr<arras4::sdk::SDK> theSdk;
 
 The main() function begins by initializing these objects:
 
+**Setup**
 ```C++
 int main(int argc, char* argv[])
 {
@@ -57,9 +58,9 @@ int main(int argc, char* argv[])
 Three callback functions are registered with `theSdk` : these will be discussed later when we look at their implementation.
 
 The next step is to create a new session. This requires three things:
-A session definition
-The URL of a Coordinator where the session will be created
-A set of session options
+- A session definition
+- The URL of a Coordinator where the session will be created
+- A set of session options
 
 ```C++
         arras4::client::SessionDefinition session_def = 
@@ -71,12 +72,13 @@ arras4::client::SessionDefinition::load(SESSION_NAME);
         arras4::client::SessionOptions options;
 ```
 
-Session definitions are described in detail elsewhere. This code loads a JSON template from a file and then modifies the number of render computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
+Session definitions are described in detail [here](arras-session-definitions). This code loads a JSON template from a file and then modifies the number of render computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
 
 COORDINATOR_URL is hard-coded to "arras:local" at the start of the code, which will cause the client library itself to create the session on the local machine, rather than requesting it from a Coordinator service. 
 
-`SessionOptions` contains information about what is being rendered and by whom : production name, shot, asset, team, and so on. It is used by Coordinator for logging and auditing Arras usage. In this case we leave all the fields undefined.
+`SessionOptions` contains information about what is being rendered and by whom : production name, shot, asset, team, and so on. It is used by Coordinator for logging and auditing Arras usage. In this example we will just leave all the fields undefined.
 
+**Session creation**
 ```C++
         std::string sessionId;
         try {
@@ -96,6 +98,7 @@ The session id is a UUID string. It is not directly needed by the client code, b
 
 When the client code establishes a connection to the session, startup of the required processes is generally still in progress. The client has to wait until this is complete before sending the first message:
 
+**Wait for creation to complete**
 ```C++
         bool ready = theSdk->waitForEngineReady(30);
         if (!ready) {
@@ -108,6 +111,7 @@ When the client code establishes a connection to the session, startup of the req
 
 For this example, we are loading the scene from an RDLA file using the `scene_rdl2` library. If the data is being translated from another format, it will generally be placed into a `scene_rdl2::rdl2::SceneContext` object by code.
 
+**Load scene to render**
 ```C++
         scene_rdl2::rdl2::SceneContext scene;
         scene.setProxyModeEnabled(true);
@@ -116,11 +120,12 @@ For this example, we are loading the scene from an RDLA file using the `scene_rd
 
 To start the session rendering, we need to send it an `RDLMessage` with the scene contents. `BinaryWriter` encodes the `SceneContext` as RDLB and places it in a message:
 
+**Send scene to Arras**
 ```C++
         mcrt::RDLMessage::Ptr rdlMsg = std::make_shared<mcrt::RDLMessage>();
         scene_rdl2::rdl2::BinaryWriter writer(scene);
         writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);
-           theSdk->sendMessage(rdlMsg);
+        theSdk->sendMessage(rdlMsg);
         scene.commitAllChanges();
 ```
 
@@ -128,6 +133,7 @@ Because we set the send mode of `theSdk` to Sync, `sendMessage` will return afte
 
 If the scene changes, we can send updates into the session. Calling `setDeltaEncoding(true)` on the `BinaryWriter` causes it to only encode objects and values that have changed since the last call to `SceneContext::commitAllChanges()`. For purposes of illustration, we'll wait 10 seconds, then load a  "delta" file into the context and send an update.
 
+**Update scene and resend**
 ```C++
         sleep(10);
 
@@ -143,6 +149,7 @@ Setting `rdlMsg->mForceReload` to false causes the render computations to apply 
 
 The final step in the main function is to wait 10 seconds and then terminate the session. Obviously, in practice this would happen when the user requests it, or possibly when the render is complete.
 
+**Shutdown session**
 ```C++
         sleep(10);
 
@@ -158,6 +165,7 @@ The final step in the main function is to wait 10 seconds and then terminate the
 
 The message handler function is called from a background thread whenever the client receives an incoming message. It begins by identifying the message type and extracting the content:
 
+**Receive message**
 ```C++
 void messageHandler(const arras4::api::Message& msg)
 {
@@ -167,12 +175,14 @@ void messageHandler(const arras4::api::Message& msg)
   
 ProgressiveFrame messages are sent by the render and merge computations at regular intervals as shading progresses. Each message contains differences from the previous one : `ClientReceiverFb` knows how to accumulate these into an image:
 
+**Decode**
 ```C++
         theFbReceiver->decodeProgressiveFrame(*frameMsg, true, [&]() {});
 ```
 
 If we are using credit messages, an update should be sent back after decoding is complete:
 
+**Credit response**
 ```C++
         mcrt::CreditUpdate::Ptr creditMsg = std::make_shared<mcrt::CreditUpdate>();
         creditMsg->value() = 1;
@@ -181,6 +191,7 @@ If we are using credit messages, an update should be sent back after decoding is
 
 `ClientReceiverFb` can provide render progress as a number between 0 and 1. It also provides a status value, which can be `STARTED`, `RENDERING`, `FINISHED`, `CANCELLED`,  or `ERROR`.
 
+**Show status**
 ```C++
         std::cout << "Render progress " << theFbReceiver->getProgress();      
         bool frameComplete = theFbReceiver->getStatus() == mcrt::BaseFrame::FINISHED;
@@ -188,6 +199,7 @@ If we are using credit messages, an update should be sent back after decoding is
 
 The current image can be fetched from `theFbReceiver` at any point after the first frame is received. In this case, we wait until the frame is complete before extracting the image as Rgb888 data.
 
+**Handle final image**
 ```C++
         if (frameComplete) {
             std::vector<float> rgbaData;

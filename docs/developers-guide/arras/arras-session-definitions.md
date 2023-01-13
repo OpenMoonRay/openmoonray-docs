@@ -8,7 +8,7 @@ Arras clients use a ***session definition*** when creating a new session, to des
 
 ![Arras Session Diagram]({{site.baseurl}}/assets/images/developers-guide/arras/arras-session-diagram.png)
 
-The definition for this session is essentially a JSON document describing this diagram. In outline, it looks like this:
+The definition for this session is essentially a JSON document describing the diagram. In outline, it looks like this:
 
 ```json
 {
@@ -26,7 +26,7 @@ The definition for this session is essentially a JSON document describing this d
 
 `name` is mainly for documentation, and has no effect of the meaning of the definition.
 
-`(client)` is used to specify message connections for the session client, which isn't actually a computation. The names of the remaining computations are arbitrary, as long as they are unique within the session.
+`(client)` is used to specify message connections for the session client, which isn't actually a computation. The names of the remaining computations are arbitrary, as long as they are unique within the session. However, sometimes client applications that load and manipulate session definition files will expect certain names to be used.
 
 Only one entry is needed for the four render computations : the `arrayExpand` field causes Arras to duplicate this computation four times.
 
@@ -35,14 +35,14 @@ Inside each computation block are parameters pertaining to that computation. Som
 ```json
     "(client)": { ... },
     "dispatch": { 
-        "dso": "libmcrt_computation_progmcrt_dispatch.so",...
+        "dso": "libcomputation_progmcrt_dispatch.so",...
     },
     "render": {
-        "dso": "libmcrt_computation_progmcrt.so",
+        "dso": "libcomputation_progmcrt.so",
         "arrayExpand": 4, ...
     },
     "merge": { 
-        "dso": "libmcrt_computation_progmcrt_merge.so",... 
+        "dso": "libcomputation_progmcrt_merge.so",... 
     }
 ```
 
@@ -50,7 +50,7 @@ The dsos shown here are part of the MoonRay release. Another general parameter i
 
 ```json
     "dispatch": { 
-        "dso": "libmcrt_computation_progmcrt_dispatch.so",
+        "dso": "libcomputation_progmcrt_dispatch.so",
         "entry":"yes",...
     },
 ```
@@ -59,7 +59,7 @@ One of the parameters specific to the MoonRay computations is `fps`, which says 
 
 ```json
     "dispatch": { 
-        "dso": "libmcrt_computation_progmcrt_dispatch.so",
+        "dso": "libcomputation_progmcrt_dispatch.so",
         "entry":"yes",
         "fps":1
     },
@@ -86,7 +86,7 @@ Each of the computations also needs to know the number of render computations in
 
 The name of these parameters is a bit misleading since, strictly speaking, they refer to the number of render computations rather than the number of machines used. In practice, the session is usually set up so that each render computation is placed on a different machine, since there is no advantage in splitting the cores on one machine between two or more different render computations.
 
-The MoonRay render computations have a number of other optional parameters, but these are not described in detail here.
+The MoonRay render computations have a number of other optional parameters, listed in full at the end of this document.
 
 ## Requirements
 
@@ -246,66 +246,6 @@ Session definitions are usually written as a JSON template file loaded by the cl
 
 Session definitions files have the extension ".sessiondef"
 
-## Command option reference
-***sessiondef dispatch command options***
-
-|attribute|type|default|description|
-|---------|----|-------|-----------|
-|continuous|`bool`|false|dispatch computation sends a snapshot message downstream by user-defined fps interval if the continuous command is set as true. You should use render sessiondef command “frameGating” = true if the continuous command is true. This option is experimental and does not use actively.|
-|fps|`float`|12.0|set image update FPS|
-
-***sessiondef render command options***
-
-|attribute|type|default|description|
-|---------|----|-------|-----------|
-|applicationMode|`string` _motionCapture_|undefined|Set applicationMode and the backend render computation might change internal behavior based on this applicationMode. Currently, we have one keyword “motionCapture” but this is experimental. The default is undefined and this is best for interactive lighting sessions.|
-|dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
-|enableDepthBuffer|`bool`|false|This command allows us to generate pixel center depth value as pixelInfo data independent from AOV buffers. Client can access pixelInfo value by `mcrt_dataio::ClientRecieverFb::getPixelInfo*()` APIs.|
-|execMode|`string` _auto_\|_vector_\|_scalar_\|_xpu_|_scalar_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
-|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surface will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast\_geometry\_update”.|
-|fps|`float`|12.0|Set image update fps.|
-|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. dispatch computation) if this option is true, and receiving an update indicates it’s time to render the next frame. Receiving a snapshot-request indicates it’s time to make another snapshot. Under single-machine configuration, this command is just skipped.  This option is experimental and does not use actively.|
-|initialCredit|`int`|-1|Set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
-|machineId|`int`|-1 (default value does not work. You should always define machindId)|Each backend render computation’s machineId. This machineId should be independent on each backend render computations. Machine id should be start from 0 to the total number of backend render computations - 1.|
-|numMachines|`int`|-1 (default value does not work. You should always define numMachines)|Set the total number of backend render computation. The number should be 1 or bigger.
-|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
-|renderMode|`string` realtime|"" (empty)|This is an experimental command. If you set realtime renderMode, backend mcrt computation changes internal operation to realtime rendering mode. If you don’t set this command, backend mcrt computation uses “progressive” render mode for single machine computation and uses “timebased checkpoint” mode for multi-machine configuration.|
-|scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend render computation reads this scene data just after booted if defined.|
-
-More info on _packTilePrecision_ options:
-
-We have 2 stages in image generation. coarse pass stage and fine pass stage.
-
-* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
-* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
-* _full32_ : always uses F32 (full 32bit float) for all stages
-* _full16_ : always uses H16 (half 16bit float) for all stages
-
-This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
-
-***sessiondef merge command options***
-
-|attribute|type|default|description|
-|---------|----|-------|-----------|
-|fps|`float`|12.0|set merged image update send to client FPS.|
-|initialCredit|`int`|-1|set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
-|maxThreads|`int`|all threads of running hosts based on the CPU cores|set the total number of threads.|
-|numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend render computation. The number should be 1 or greater.|
-|partialMergeRefreshInterval|`float`|0.25 (sec)|In order to minimize output data bandwidth, backend merge computation try to merge images by partial small areas and try to cover the entire image area by multiple merge operations. This command set the entire image area cover frequency by second. If you set a small number, client-side image updates smoother but output bandwidth gets bigger and network bandwidth might be a bottleneck in some cases.|
-|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
-|sendCredit|`bool`|false|Need to be set to true if you use  credit messages.|
-
-More info on _packTilePrecision_ options: 
-
-We have 2 stages in image generation. coarse pass stage and fine pass stage.
-
-* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
-* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
-* _full32_ : always uses F32 (full 32bit float) for all stages
-* _full16_ : always uses H16 (half 16bit float) for all stages
-
-This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
-
 ## Complete session definitions
 
 ***Single machine render with credit***
@@ -440,4 +380,67 @@ This packTile precision control is a crucial and big impact on the message traff
     }
 }
 ```
+
+## Full list of MoonRay computation options
+
+This is a full list of the options supported by each computation. Many are currently experimental.
+### Dispatch computation
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|continuous|`bool`|false|The dispatch computation sends a snapshot message downstream at the user-defined fps interval if the continuous command is set true. You should use set the render computation option ***frameGating*** to true if the continuous option is set to true. This option is experimental.|
+|fps|`float`|12.0|set image update frames-per-second|
+
+### Render computation
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|applicationMode|`string` _"motionCapture"_|undefined|Affects the behavior of the backend render computation. Currently, we have one possible setting : “motionCapture”, but this is experimental. The default of "undefined" is best for interactive lighting sessions.|
+|dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
+|enableDepthBuffer|`bool`|false|This command generates pixel center depth value as pixelInfo data, independent from AOV buffers. A client can access pixelInfo value using the `mcrt_dataio::ClientRecieverFb::getPixelInfo*()` APIs.|
+|execMode|`string` _"auto"_\|_"vector"_ \|_"scalar"_\|_"xpu"_|_scalar_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
+|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surfaces will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast\_geometry\_update”.|
+|fps|`float`|12.0|Set image update fps.|
+|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. dispatch computation) if this option is true, and receiving an update indicates it’s time to render the next frame. Receiving a snapshot-request indicates it’s time to make another snapshot. Under single-machine configuration, this command is just skipped.  This option is experimental.|
+|initialCredit|`int`|-1|Set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
+|machineId|`int`|-1 (default value does not work. You should always define machineId)|Each backend render computation’s machineId. This machineId should be independent on each backend render computations. Machine id should be start from 0 to the total number of backend render computations - 1.|
+|numMachines|`int`|-1 (default value does not work. You should always define numMachines)|Set the total number of backend render computations. The number should be 1 or bigger.
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|The packTile codec is used in order to transfer image data between computations and clients. This command sets the packTile codec's precision mode (*see below*).|
+|renderMode|`string` _"realtime"_|"" (empty)|This is an experimental command. If you set "realtime" renderMode, the backend mcrt computation changes internal operation to realtime rendering mode. If you don’t set this command, backend mcrt computation uses “progressive” render mode for single machine computation and uses “timebased checkpoint” mode for multi-machine configuration.|
+|scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend render computation reads this scene data just after booting if defined.|
+
+More info on _packTilePrecision_ options:
+
+We have 2 stages of image generation. coarse pass stage and fine pass stage.
+
+* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
+* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
+* _full32_ : always uses F32 (full 32bit float) for all stages
+* _full16_ : always uses H16 (half 16bit float) for all stages
+
+This packTile precision control has a big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
+
+### Merge computation
+
+|attribute|type|default|description|
+|---------|----|-------|-----------|
+|fps|`float`|12.0|set merged image update send to client FPS.|
+|initialCredit|`int`|-1|set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
+|maxThreads|`int`|all threads of running hosts based on the CPU cores|set the total number of threads.|
+|numMachines|`int`|0 (default value does not work. You should always define numMachines)|set the total number of backend render computation. The number should be 1 or greater.|
+|partialMergeRefreshInterval|`float`|0.25 (sec)|In order to minimize output data bandwidth, backend merge computation try to merge images by partial small areas and try to cover the entire image area by multiple merge operations. This command set the entire image area cover frequency by second. If you set a small number, client-side image updates smoother but output bandwidth gets bigger and network bandwidth might be a bottleneck in some cases.|
+|packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|PackTile codec is used in order to transfer image data between computations and clients. This commands set packTile codecs precision mode.|
+|sendCredit|`bool`|false|Need to be set to true if you use  credit messages.|
+
+More info on _packTilePrecision_ options: 
+
+We have 2 stages in image generation. coarse pass stage and fine pass stage.
+
+* _auto32_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage, and uses F32 (full 32bit float) for the fine pass stage.
+* _auto16_ : automatically switches UC8 (8bit int) and H16 (half 16bit float) depending on the data for the coarse pass stage. and uses H16 (half 16bit float) for the fine pass stage.
+* _full32_ : always uses F32 (full 32bit float) for all stages
+* _full16_ : always uses H16 (half 16bit float) for all stages
+
+This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
+
 

@@ -29,7 +29,7 @@ The default value for each option can be changed by setting an environment varia
 
 **Environment Variable:** $HDMOONRAY_HOSTS > 0
 
-**Description:** When this is turned on, hdMoonRay will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in developer mode.
+**Description:** When this is turned on, hdMoonRay will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in debug mode.
 
 ## Remote Hosts
 **Type:** Int
@@ -56,7 +56,7 @@ The default value for each option can be changed by setting an environment varia
 
 **Environment Variable:** $HDMOONRAY_DEBUG_MODE=1 
 
-**Description:** This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading MoonRay directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If MoonRay asserts or crashes in developer mode, the entire application will exit. | 
+**Description:** This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading MoonRay directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If MoonRay asserts or crashes in developer mode, the entire application will exit.
 
 ## Disable Render
 **Type:** Bool
@@ -65,7 +65,7 @@ The default value for each option can be changed by setting an environment varia
 
 **Environment Variable:** $HDMOONRAY_DISABLE=1
 
-**Description:** Disables actual rendering, so that we can measure the performance of Hydra and the construction of the RDL SceneContext separately from the renderer. |
+**Description:** Disables actual rendering, so that we can measure the performance of Hydra and the construction of the RDL SceneContext separately from the renderer.
 
 ## Restart (toggle)
 **Type:** Bool
@@ -119,7 +119,7 @@ The default value for each option can be changed by setting an environment varia
 
 **Environment Variable:** $HDMOONRAY_RDLA_OUTPUT=name
 
-**Description:** Write the SceneContext as rdla. This is done each time rendering is started by any changes. Use “foo.rdla” to write an rdla file, “foo.rdlb” to write an rdlb file, or just “foo” to write both an rdla and rdlb, split so all the heavy binary data is in the rdlb, but the structure can be seen in the rdla.
+**Description:** Write the SceneContext as rdla. The file is written whenever the value of this option changes. Use “foo.rdla” to write an rdla file, “foo.rdlb” to write an rdlb file, or just “foo” to write both an rdla and rdlb, split so all the heavy binary data is in the rdlb, but the structure can be seen in the rdla.
 
 ## Disable Lighting
 **Type:** Bool

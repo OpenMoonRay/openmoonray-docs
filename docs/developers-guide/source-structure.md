@@ -6,7 +6,7 @@ title: MoonRay Source Structure
 ---
 # MoonRay Source Structure
 
-***openmoonray*** is the master repository for the OpenMoonSource. The actual source code is contained in a number of other repositories references as git submodules.
+***openmoonray*** is the master repository for the OpenMoonSource. The actual source code is contained in a number of other repositories referenced as git submodules.
 
 ## Arras
 
@@ -16,11 +16,11 @@ At the top-level, ***arras*** contains repositories relating to the Arras execut
 
 - ***arras/arras_render*** is a Qt5 application that provides an example of MoonRay integration using Arras. It needs the MoonRay libraries to build and run.
 
-- ***arras/distributed** contains additional code needed to use Arras in distributed mode. ***arras4_node*** is a C++ service that runs on every render machine, ***minicoord*** is a Python service manages a pool of render machines.
+- ***arras/distributed*** contains additional code needed to use Arras in distributed mode. ***arras4_node*** is a C++ service that runs on every render machine, ***minicoord*** is a Python service that manages a pool of render machines.
 
 ## MoonRay
 
-The top-level ***moonray*** directory contains the repositories that implement MoonRay and its associated plugins. Most of the code under *moonray* doesn't require Arras to build, but it is needed by the *moonray_arras* libraries and by the Hydra plugin HdMoonRay.
+The top-level ***moonray*** directory contains the repositories that implement MoonRay and its associated plugins. Most of the code under *moonray* doesn't require Arras to build, but it is needed by the *moonray_arras* libraries and by the Hydra plugin *HdMoonRay*.
 
 - ***moonray/scene_rdl2*** is the repository that provides MoonRay's scene representation and a number of utility libraries.
 
