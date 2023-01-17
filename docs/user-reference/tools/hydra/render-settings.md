@@ -10,16 +10,18 @@ title: HdMoonRay Render Settings
 
 <!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
 
-# <Overview_or_introduction>
+# HdMoonRay Render Settings
+
 <!-- All topics>
 
 <!-- Concept info here: Explain the background and context of a this subject. --> 
 
-# HdMoonRay Render Settings
-These may be set to change hdMoonRay’s behavior. In usdview choose View/Render Settings. In Houdini the “eye” button in the viewer lower-right brings up a control panel and these are on the first tab. In Maya a control panel is brought up by clicking the empty box to the right of MoonRay in the Renderers menu on the viewer.
+This page describes the render settings supported by HdMoonray. The way these are set depends on the host application:
+- In usdview choose View/Render Settings. 
+- In Houdini the “eye” button in the viewer lower-right brings up a control panel and these are on the first tab. 
+- In Maya a control panel is brought up by clicking the empty box to the right of MoonRay in the Renderers menu on the viewer.
 
-It is very useful to set these before the first render. In Houdini and Maya this is possible, you can edit the settings for any renderer, not just the one being used. usdview does not let you change the settings until after you set the renderer, so a number of environment variables are provided, these change the default value so it is in that state before you switch to MoonRay. These are shown at the end of each description.
-
+The default value for each option can be changed by setting an environment variable. 
 ## Use Remote Hosts
 **Type:** Bool
 
@@ -27,7 +29,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_HOSTS > 0
 
-**Description:** When this is turned on, hdMoonRay will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in developer mode.
+**Description:** When this is turned on, hdMoonRay will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in debug mode.
 
 ## Remote Hosts
 **Type:** Int
@@ -54,7 +56,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_DEBUG_MODE=1 
 
-**Description:** This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading MoonRay directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If MoonRay asserts or crashes in developer mode, the entire application will exit. | 
+**Description:** This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading MoonRay directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If MoonRay asserts or crashes in developer mode, the entire application will exit.
 
 ## Disable Render
 **Type:** Bool
@@ -63,7 +65,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_DISABLE=1
 
-**Description:** Disables actual rendering, so that we can measure the performance of Hydra and the construction of the RDL SceneContext separately from the renderer. |
+**Description:** Disables actual rendering, so that we can measure the performance of Hydra and the construction of the RDL SceneContext separately from the renderer.
 
 ## Restart (toggle)
 **Type:** Bool
@@ -117,7 +119,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_RDLA_OUTPUT=name
 
-**Description:** Write the SceneContext as rdla. This is done each time rendering is started by any changes. Use “foo.rdla” to write an rdla file, “foo.rdlb” to write an rdlb file, or just “foo” to write both an rdla and rdlb, split so all the heavy binary data is in the rdlb, but the structure can be seen in the rdla.
+**Description:** Write the SceneContext as rdla. The file is written whenever the value of this option changes. Use “foo.rdla” to write an rdla file, “foo.rdlb” to write an rdlb file, or just “foo” to write both an rdla and rdlb, split so all the heavy binary data is in the rdlb, but the structure can be seen in the rdla.
 
 ## Disable Lighting
 **Type:** Bool

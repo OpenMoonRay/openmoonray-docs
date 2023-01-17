@@ -9,25 +9,34 @@ title: Building MoonRay
 ---
 # Building MoonRay
 
-MoonRay builds on Linux using CMake.
-
-The easiest way to build MoonRay is inside a container with all of the dependencies installed. All that is required to do this is Docker itself. The instructions for the current release are in the MoonRay source at *building/ContainerBuild.txt*, and also here:
+The *openmoonray* repository contains instructions for building MoonRay in a Docker container and on a vanilla Centos-7 machine, in the directory */building*. The same instructions are also here:
 
 [Building MoonRay in a Docker container](building-moonray-container)
 
-The files in the *building* source directory also act as a reference for building MoonRay:
+[Building MoonRay on Centos-7](building-moonray-centos-7)
 
-***Dockerfile*** lists the binary packages that need to be installed, both to build MoonRay and the dependencies. The *yum* install lines can be run directly on a Centos-7 machine outside a container.
+Each of these documents follows a fixed procedure, which you can vary as appropriate. The rest of this document is an overview of the build process.
 
-***CMakeLists.txt*** defines a series of ExternalProject targets that download the source, build and install the remaining dependencies. You can use this file as-is directly on a Linux system, removing any libraries that the system already has installed. By default, dependencies are installed to */installs*, but you can change this by editing *CMakeLists.txt*. You can also use the information in the targets to build the dependencies manually.
+MoonRay builds on Linux using CMake. The top-level *CMakeLists.txt* file in the *openmoonray* repository builds all of MoonRay and Arras. You will need to populate all of the submodules that the *openmoonray* references before building (see [Cloning the Repo](cloning-the-repo)). You can set the option **BUILD_QT_APPS** to *NO* to skip build of the GUI applications *moonray_gui* and *arras_render*.
 
-Once the dependencies are installed, MoonRay is built by running CMake at the top level of the source. The location of each dependency can be specified by setting an environment variable, for example 
+The MoonRay build requires CMake 3.23 or newer. The instructions referenced above describe how to get and install this version, since it is newer than that provided by most Linux distributions. At DWA we build MoonRay with GCC-6 and GCC-9 : build instructions generally assume version 9, but you should be able to substitute version 6.
+## Dependencies
 
-```
-JSONCPP_ROOT = /installs
-```
+The main preparation required is to install the third-party libraries and tools that the MoonRay build is dependent on. These are listed in a table [here](moonray-dependencies). However the best reference to use is the files *Dockerfile* and *CMakeLists.txt* in the */building* directory of the openmoonray repository. These will be up-to-date for the source version you have checked out, and contain more detail about build options.
 
-Generally CMake should be able to find libraries installed to their default location (usually */usr/local*) without setting the XXX_ROOT variable. The recommended way to set these variables is using a [CMake Preset](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html). The preset for building in a container, in *CMakePresets.json*, can be used as an example.
+***Dockerfile*** lists a set of binary packages that can be installed on Centos-7 using the package manager *yum*. We haven't tested building MoonRay on other Linux distributions, but these should have similar packages.
+
+***CMakeLists.txt*** is a CMake project that can automatically download the remaining dependencies and build them from source. You can use it directly, or as a reference for the required libraries and their versions. The project doesn't have many configuration options : to change versions or install locations you will have to directly edit *CMakeLists.txt*
+
+By default, the *CMakeLists.txt* dependency project installs dependencies to an alternate location ***/installs***. You can change this to install to the default location (usually */usr/local*), or to a different alternate, by editing the file. You can also comment out any libraries that the machine already has.
+
+## Building
+
+CMake will generally automatically find dependencies installed to their default location. Otherwise, you need to set environment variables telling it where the dependencies are installed. For example, **JSONCPP_ROOT** should be set to the install location for JsonCpp, if it is not */usr/local*.
+
+These environment variables can be set using a [CMake Preset](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html). The file *CMakePresets.json* at the root of the *openmoonray* repo provides presets ***container-release*** and ***container-debug*** for building with dependencies installed by the dependency CMake project. In this preset, most dependencies are specified to be in */installs*, since that is where the dependencies project puts them. You can create new presets using these as a reference, if you have installed to a different location.
+
+Once the correct versions of CMake and GCC are on the current PATH, and a suitable preset exists, the build process is straightforward:
 
 ```bash
 cmake --preset <presetname>

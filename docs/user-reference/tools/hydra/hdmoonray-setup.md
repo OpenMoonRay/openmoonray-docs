@@ -15,7 +15,7 @@ It needs a configured installation of MoonRay to work.
 
 ## Setup
 
-If you are using *hdMoonray* with the Pixar USD scene delegate (*usdImaging*), the MoonRay materials and maps need to be registered with *Sdr* (Shader Description Registry). The additional plugins *moonrayShaderDiscovery.so* and *moonrayShaderParser.so* accomplish this. They require JSON description files for the MoonRay shaders. These files are not created automatically by the MoonRay build system : you have to run the `rdl2_json_exporter` command line program to generate them. This is only required once for a new build/install of MoonRay. USD scene delegate support also includes some adapter classes, in ***hdMoonrayAdapters.so***. These add support for `GeometryLight`s and `LightFilter`s missing in Hydra -- they may not be needed (or function correctly) in more recent version of the scene delegate.
+If you are using *hdMoonray* with the Pixar USD scene delegate (*usdImaging*), the MoonRay materials and maps need to be registered with *Sdr* (Shader Description Registry). The additional plugins *moonrayShaderDiscovery.so* and *moonrayShaderParser.so* accomplish this. They require JSON description files for the MoonRay shaders. These files are not created automatically by the MoonRay build system : you have to run the `rdl2_json_exporter` command line program to generate them. This is only required once for a new build/install of MoonRay. USD scene delegate support also includes some adapter classes, in ***hdMoonrayAdapters.so***. These add support for `GeometryLight`s and `LightFilter`s missing in Hydra -- they may not be needed (or function correctly) in more recent versions of the scene delegate.
 
 If the MoonRay release is in `$REL`, a typical setup looks like this:
 

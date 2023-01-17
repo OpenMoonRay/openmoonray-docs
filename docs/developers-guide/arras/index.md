@@ -38,16 +38,16 @@ When the client sends new input data into a session, it may continue to receive 
 
 Messages have types : for example "RDLMessage" is the type of messages used to send RDLB format scene descriptions to render computations. Computations normally determine how to handle an incoming message based on its type.
 
-The Arras message API is used to define new message types. Each new type must define serialization and deserialization functions to convert between its in-memory representation and the bytes sent to transmit it over a socket. 
+The Arras message API is used to define new message types. Each new type must define serialization and deserialization functions to convert between its in-memory representation and the bytes sent to transmit it over a socket.
 
 ## Computations
 
 Computation processes use an executable called ***execComp***. execComp handles initial startup of the computation, connection to Node (or the client, when using local mode), and serialization/deserialization of messages. The actual work of a computation is performed by a shared library loaded by execComp. These shared libraries are often referred to as the computations. The shared libraries used by MoonRay computations are as follows:
 
 ```
-    render       libmcrt_computation_progmcrt.so
-    dispatch     libmcrt_computation_progmcrt_dispatch.so
-    merge        libmcrt_computation_progmcrt_merge.so
+    render       libcomputation_progmcrt.so
+    dispatch     libcomputation_progmcrt_dispatch.so
+    merge        libcomputation_progmcrt_merge.so
 ```
 
 Computation dsos use the Arras computation API. A dso needs to provide a message handler function, which execComp calls with the deserialized form of each incoming message. The API provides a send function that the computation code calls for outgoing messages. Computation dsos also provide a configure function, that is called with parameters defined in the session definition.

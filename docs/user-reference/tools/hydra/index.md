@@ -10,18 +10,29 @@ title: MoonRay Hydra Delegate
 
 <!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
 
-# <Overview_or_introduction>
-<!-- All topics>
+# MoonRay Hydra Delegate
 
-<!-- Concept info here: Explain the background and context of a this subject. --> 
+***Hydra*** is Pixar's open source interface for live or batch rendering. A Hydra-enabled application should be able to render scenes using any renderer that has a Hydra plugin.
 
-# What is Hydra?
-"An open source framework to transport live scene graph data to renderers"
 
-Hydra allows 3D applications to use Hydra render plugins to render their scene data. Ideally, any Hydra-supporting application can make use of any renderer that has a Hydra plugin, and produce a good result. It is intended to support live rendering – meaning that the rendered image is continually updated as the 3D scene is changed. 
+***HdMoonRay*** is a Hydra plugin (*render delegate*) for MoonRay. You should be able to use it to provide MoonRay rendering in any Hydra-supporting application.
 
-Hydra was originally developed by Pixar for live OpenGL rendering. It is currently being developed and expanded by them to support "final frame rendering". This includes live rendering using a "final frame quality" renderer, like MoonRay or Renderman, and also batch rendering of actual final frames. There are many more things to consider for final frame quality rendering, and their development towards this goal is still in progress.
+HdMoonRay is a shared-library plugin (hdMoonray.so) that doesn't directly provide an interface to end users : the features of HdMoonRay (and other Hydra plugins) will be made available through the interface of the hosting application. 
 
-Both USD and Hydra are developed by Pixar, but Hydra isn't tied directly to the USD scene format : there are non-USD applications that support Hydra render plugins. Pixar provides a library called usd_imaging that does much of the work needed to implement Hydra support on top of a USD scene model.
+The general setup steps needed to use HdMoonRay are described here: 
 
-The Hydra plugin for MoonRay will allow it to be used in Hydra-supporting applications.
+[HdMoonRay Setup](hdmoonray-setup). 
+
+There many be additional steps described in a particular application's documentation.
+
+Hydra render plugins provide a list of *render settings*, which you should be able to access through the user interface of the particular application you are using. The settings applicable to HdMoonRay are described here:
+
+[HdMoonRay Render Settings](render-settings)
+
+HdMoonRay supports almost all of the Hydra features that are applicable to MoonRay. This document gives an overview of what is supported:
+
+[HdMoonRay Features](hdmoonray-features)
+
+Included with HdMoonRay are two command-line applications that apply HdMoonRay to USD data : `hd_render` renders an image from a USD scene, and `hd_usd2rdl` translates a USD scene into MoonRay's native RDL2 format.
+
+[hd_render and hd_usd2rdl](hd_render)
