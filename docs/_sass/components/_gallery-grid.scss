@@ -1,0 +1,34 @@
+.gallery-grid {
+  align-items: stretch;
+  background-color: var(--color-gallery-grid-bg);
+  border: 1px solid var(--color-branch-neutral);
+  color: var(--color-gallery-grid-text);
+  display: grid;
+  grid-gap: var(--size-3);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: var(--size-3);
+  margin-block: var(--size-5);
+}
+
+.gallery-grid figure {
+  background-color: var(--color-gallery-grid-bg);
+  margin: calc(-1 * var(--size-3));
+  padding: var(--size-3);
+  position: relative;
+  transform: scale(1);
+  transition-property: box-shadow, transform;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    z-index: 1;
+    box-shadow: var(--shadow-6);
+    transform: scale(1.1);
+  }
+}
+
+.gallery-grid img {
+  align-self: start;
+  aspect-ratio: 1;
+  cursor: zoom-in;
+  object-fit: contain;
+}

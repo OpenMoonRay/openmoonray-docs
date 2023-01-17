@@ -1,0 +1,37 @@
+figure.with-caption {
+  inline-size: max-content;
+  margin-block: var(--size-5);
+  padding: var(--size-4);
+  background: var(--color-figure-bg);
+  color: var(--color-figure-text);
+}
+
+.wrap-text-right,
+.wrap-text-left {
+  display: block;
+  margin-block: var(--size-5);
+
+  > :first-child {
+    margin-block: 0;
+    inline-size: Min(100%, 23rem);
+    shape-outside: margin-box;
+
+    > img {
+      inline-size: 100%;
+    }
+
+    & + * {
+      margin-block-start: 0;
+    }
+  }
+}
+
+.wrap-text-left > :first-child {
+  float: right;
+  margin: 0 0 var(--size-3) var(--size-5);
+}
+
+.wrap-text-right > :first-child {
+  float: left;
+  margin: 0 var(--size-5) var(--size-3) 0;
+}

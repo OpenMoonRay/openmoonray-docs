@@ -18,7 +18,6 @@ attributes:
   falloff_type:
     images:
       - image: falloff_cosine.jpg
-        text: FooBar!
       - image: falloff_linear.jpg
       - image: falloff_plot.png
   input_normal:

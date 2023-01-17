@@ -1,0 +1,80 @@
+// Screen reader only
+:is(.sr-only) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.hide-for-mobile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+
+  @media screen and (min-width: 64.0625em) {
+    position: unset;
+    width: unset;
+    height: unset;
+    padding: unset;
+    margin: unset;
+    overflow: unset;
+    clip: unset;
+    white-space: unset;
+    border-width: revert;
+  }
+}
+
+.full-width {
+  inline-size: 100% !important;
+}
+
+.width-1\/2 {
+  inline-size: calc(1 / 2 * 100%) !important;
+}
+
+.width-1\/3 {
+  inline-size: calc(1 / 3 * 100%) !important;
+}
+
+.width-1\/4 {
+  inline-size: calc(1 / 4 * 100%);
+}
+
+.full-width,
+.width-1\/2,
+.width-1\/3,
+.width-1\/4 {
+  :where(img, video) {
+    inline-size: 100%;
+  }
+}
+
+// Horizontally center an item
+.center {
+  position: relative !important;
+  left: 50% !important;
+  translate: -50% 0 !important;
+}
+
+// Horizontally center children of an item
+.center-contents {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+
+// Apply the same vertical margins as a paragraph
+.vertical-spacing {
+  margin-block: var(--size-5) !important;
+}

@@ -1,0 +1,11 @@
+---
+image_path: /assets/images/scene-classes/maps/ToonMap
+attributes:
+  mode:
+    images:
+      - image: nadder.jpg
+        text: Outline
+      - image: gargoyle.jpg
+        text: Crease
+      - image: shoe.jpg
+        text: Both

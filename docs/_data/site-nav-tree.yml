@@ -1,508 +1,507 @@
 ---
-toc:
-  - item: Getting Started
+  - text: Getting Started
     path: getting-started
     alwaysOpen: true  # whether menu should always stay open
     subitems:
-      - item: About
+      - text: About
         ref_path: getting-started/about # path only used to figure out whether menu should be open (no index.md)
         subitems:
-          - item: MoonRay
-            path: getting-started/about/moonray
-          - item: Arras
-            path: getting-started/about/arras
-          - item: RDL Scene Format
-            path: getting-started/about/rdl-scene-format
-      - item: What's Included
-        path: getting-started/source-contents 
-      - item: Installation
+          - text: MoonRay
+            path: getting-started/about/moonray.md
+          - text: Arras
+            path: getting-started/about/arras.md
+          - text: RDL Scene Format
+            path: getting-started/about/rdl-scene-format.md
+      - text: What's Included
+        path: getting-started/source-contents.md 
+      - text: Installation
         ref_path: getting-started/installation
         subitems:
-          - item: Building MoonRay
-            path: getting-started/installation/building
-          - item: Dependencies
-            path: getting-started/installation/dependencies   
-  - item: User Reference
+          - text: Building MoonRay
+            path: getting-started/installation/building.md
+          - text: Dependencies
+            path: getting-started/installation/dependencies.md
+  - text: User Reference
     ref_path: user-reference
     alwaysOpen: true
     subitems:
-      - item: MoonRay GUI
-        path: user-reference/moonray-gui
-      - item: Execution Modes
-        path: user-reference/execution-modes
-      - item: Scene Objects
+      - text: MoonRay GUI
+        path: user-reference/moonray-gui.md
+      - text: Execution Modes
+        path: user-reference/execution-modes.md
+      - text: Scene Objects
         ref_path: user-reference/scene-objects
         subitems:
-        - item: Cameras
-          path: user-reference/scene-objects/cameras
+        - text: Cameras
+          path: user-reference/scene-objects/cameras/index.md
           subitems:
-            - item: BakeCamera
-              path: user-reference/scene-objects/cameras/BakeCamera
-            - item: DomeMaster3DCamera
-              path: user-reference/scene-objects/cameras/DomeMaster3DCamera
-            - item: OrthographicCamera
-              path: user-reference/scene-objects/cameras/OrthographicCamera
-            - item: PerspectiveCamera
-              path: user-reference/scene-objects/cameras/PerspectiveCamera
-            - item: SphericalCamera
-              path: user-reference/scene-objects/cameras/SphericalCamera
-        - item: Displacement
-          path: user-reference/scene-objects/displacement
+            - text: BakeCamera
+              path: user-reference/scene-objects/cameras/BakeCamera.md
+            - text: DomeMaster3DCamera
+              path: user-reference/scene-objects/cameras/DomeMaster3DCamera.md
+            - text: OrthographicCamera
+              path: user-reference/scene-objects/cameras/OrthographicCamera.md
+            - text: PerspectiveCamera
+              path: user-reference/scene-objects/cameras/PerspectiveCamera.md
+            - text: SphericalCamera
+              path: user-reference/scene-objects/cameras/SphericalCamera.md
+        - text: Displacement
+          path: user-reference/scene-objects/displacement/index.md
           subitems:
-            - item: CombineDisplacement
-              path: user-reference/scene-objects/displacement/CombineDisplacement
-            - item: NormalDisplacement
-              path: user-reference/scene-objects/displacement/NormalDisplacement
-            - item: SwitchDisplacement
-              path: user-reference/scene-objects/displacement/SwitchDisplacement
-            - item: VectorDisplacement
-              path: user-reference/scene-objects/displacement/VectorDisplacement
-        - item: Display Filters
-          path: user-reference/scene-objects/display-filters
+            - text: CombineDisplacement
+              path: user-reference/scene-objects/displacement/CombineDisplacement.md
+            - text: NormalDisplacement
+              path: user-reference/scene-objects/displacement/NormalDisplacement.md
+            - text: SwitchDisplacement
+              path: user-reference/scene-objects/displacement/SwitchDisplacement.md
+            - text: VectorDisplacement
+              path: user-reference/scene-objects/displacement/VectorDisplacement.md
+        - text: Display Filters
+          path: user-reference/scene-objects/display-filters/index.md
           subitems:
-            - item: BlendDisplayFilter
-              path: user-reference/scene-objects/display-filters/BlendDisplayFilter
-            - item: ClampDisplayFilter
-              path: user-reference/scene-objects/display-filters/ClampDisplayFilter
-            - item: ColorCorrectDisplayFilter
-              path: user-reference/scene-objects/display-filters/ColorCorrectDisplayFilter
-            - item: ConstantDisplayFilter
-              path: user-reference/scene-objects/display-filters/ConstantDisplayFilter
-            - item: ConvolutionDisplayFilter
-              path: user-reference/scene-objects/display-filters/ConvolutionDisplayFilter
-            - item: DiscretizeDisplayFilter
-              path: user-reference/scene-objects/display-filters/DiscretizeDisplayFilter
-            - item: DofDisplayFilter
-              path: user-reference/scene-objects/display-filters/DofDisplayFilter
-            - item: HalftoneDisplayFilter
-              path: user-reference/scene-objects/display-filters/HalftoneDisplayFilter
-            - item: ImageDisplayFilter
-              path: user-reference/scene-objects/display-filters/ImageDisplayFilter
-            - item: OpDisplayFilter
-              path: user-reference/scene-objects/display-filters/OpDisplayFilter
-            - item: OverDisplayFilter
-              path: user-reference/scene-objects/display-filters/OverDisplayFilter
-            - item: RampDisplayFilter
-              path: user-reference/scene-objects/display-filters/RampDisplayFilter
-            - item: RemapDisplayFilter
-              path: user-reference/scene-objects/display-filters/RemapDisplayFilter
-            - item: RgbToFloatDisplayFilter
-              path: user-reference/scene-objects/display-filters/RgbToFloatDisplayFilter
-            - item: RgbToHsvDisplayFilter
-              path: user-reference/scene-objects/display-filters/RgbToHsvDisplayFilter
-            - item: ShadowDisplayFilter
-              path: user-reference/scene-objects/display-filters/ShadowDisplayFilter
-            - item: TangentSpaceDisplayFilter
-              path: user-reference/scene-objects/display-filters/TangentSpaceDisplayFilter
-            - item: ToonDisplayFilter
-              path: user-reference/scene-objects/display-filters/ToonDisplayFilter
-        - item: Geometry
-          path: user-reference/scene-objects/geometry
+            - text: BlendDisplayFilter
+              path: user-reference/scene-objects/display-filters/BlendDisplayFilter.md
+            - text: ClampDisplayFilter
+              path: user-reference/scene-objects/display-filters/ClampDisplayFilter.md
+            - text: ColorCorrectDisplayFilter
+              path: user-reference/scene-objects/display-filters/ColorCorrectDisplayFilter.md
+            - text: ConstantDisplayFilter
+              path: user-reference/scene-objects/display-filters/ConstantDisplayFilter.md
+            - text: ConvolutionDisplayFilter
+              path: user-reference/scene-objects/display-filters/ConvolutionDisplayFilter.md
+            - text: DiscretizeDisplayFilter
+              path: user-reference/scene-objects/display-filters/DiscretizeDisplayFilter.md
+            - text: DofDisplayFilter
+              path: user-reference/scene-objects/display-filters/DofDisplayFilter.md
+            - text: HalftoneDisplayFilter
+              path: user-reference/scene-objects/display-filters/HalftoneDisplayFilter.md
+            - text: ImageDisplayFilter
+              path: user-reference/scene-objects/display-filters/ImageDisplayFilter.md
+            - text: OpDisplayFilter
+              path: user-reference/scene-objects/display-filters/OpDisplayFilter.md
+            - text: OverDisplayFilter
+              path: user-reference/scene-objects/display-filters/OverDisplayFilter.md
+            - text: RampDisplayFilter
+              path: user-reference/scene-objects/display-filters/RampDisplayFilter.md
+            - text: RemapDisplayFilter
+              path: user-reference/scene-objects/display-filters/RemapDisplayFilter.md
+            - text: RgbToFloatDisplayFilter
+              path: user-reference/scene-objects/display-filters/RgbToFloatDisplayFilter.md
+            - text: RgbToHsvDisplayFilter
+              path: user-reference/scene-objects/display-filters/RgbToHsvDisplayFilter.md
+            - text: ShadowDisplayFilter
+              path: user-reference/scene-objects/display-filters/ShadowDisplayFilter.md
+            - text: TangentSpaceDisplayFilter
+              path: user-reference/scene-objects/display-filters/TangentSpaceDisplayFilter.md
+            - text: ToonDisplayFilter
+              path: user-reference/scene-objects/display-filters/ToonDisplayFilter.md
+        - text: Geometry
+          path: user-reference/scene-objects/geometry/index.md
           subitems:
-            - item: BoxGeometry
-              path: user-reference/scene-objects/geometry/BoxGeometry
-            - item: RdlCurveGeometry
-              path: user-reference/scene-objects/geometry/RdlCurveGeometry
-            - item: RdlInstancerGeometry
-              path: user-reference/scene-objects/geometry/RdlInstancerGeometry
-            - item: RdlMeshGeometry
-              path: user-reference/scene-objects/geometry/RdlMeshGeometry
-            - item: RdlPointGeometry
-              path: user-reference/scene-objects/geometry/RdlPointGeometry
-            - item: SphereGeometry
-              path: user-reference/scene-objects/geometry/SphereGeometry
-            - item: UsdGeometry
-              path: user-reference/scene-objects/geometry/UsdGeometry
-            - item: UsdInstanceGeometry
-              path: user-reference/scene-objects/geometry/UsdInstanceGeometry
-            - item: VdbGeometry
-              path: user-reference/scene-objects/geometry/VdbGeometry
-        - item: Joint
-          path: user-reference/scene-objects/joint
-        - item: Materials
-          path: user-reference/scene-objects/materials
+            - text: BoxGeometry
+              path: user-reference/scene-objects/geometry/BoxGeometry.md
+            - text: RdlCurveGeometry
+              path: user-reference/scene-objects/geometry/RdlCurveGeometry.md
+            - text: RdlInstancerGeometry
+              path: user-reference/scene-objects/geometry/RdlInstancerGeometry.md
+            - text: RdlMeshGeometry
+              path: user-reference/scene-objects/geometry/RdlMeshGeometry.md
+            - text: RdlPointGeometry
+              path: user-reference/scene-objects/geometry/RdlPointGeometry.md
+            - text: SphereGeometry
+              path: user-reference/scene-objects/geometry/SphereGeometry.md
+            - text: UsdGeometry
+              path: user-reference/scene-objects/geometry/UsdGeometry.md
+            - text: UsdInstanceGeometry
+              path: user-reference/scene-objects/geometry/UsdInstanceGeometry.md
+            - text: VdbGeometry
+              path: user-reference/scene-objects/geometry/VdbGeometry.md
+        - text: Joint
+          path: user-reference/scene-objects/joint/Joint.md
+        - text: Materials
+          path: user-reference/scene-objects/materials/index.md
           subitems:
-            - item: Dwa Materials
-              path: user-reference/scene-objects/materials/dwa
+            - text: Dwa Materials
+              path: user-reference/scene-objects/materials/dwa/index.md
               subitems:
-                - item: DwaAdjustMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaAdjustMaterial
-                - item: DwaBaseMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaBaseMaterial
-                - item: DwaColorCorrectMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaColorCorrectMaterial
-                - item: DwaEmissiveMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaEmissiveMaterial
-                - item: DwaFabricMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaFabricMaterial
-                - item: DwaLayerMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaLayerMaterial
-                - item: DwaMetalMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaMetalMaterial
-                - item: DwaMixMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaMixMaterial
-                - item: DwaRefractiveMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaRefractiveMaterial
-                - item: DwaSkinMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaSkinMaterial
-                - item: DwaSolidDielectricMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaSolidDielectricMaterial
-                - item: DwaSwitchMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaSwitchMaterial
-                - item: DwaToonMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaToonMaterial
-                - item: DwaTwoSidedMaterial
-                  path: user-reference/scene-objects/materials/dwa/DwaTwoSidedMaterial
-                - item: DwaVelvetMaterial_v2
-                  path: user-reference/scene-objects/materials/dwa/DwaVelvetMaterial_v2
-            - item: Hair Materials
-              path: user-reference/scene-objects/materials/hair
+                - text: DwaAdjustMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaAdjustMaterial.md
+                - text: DwaBaseMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaBaseMaterial.md
+                - text: DwaColorCorrectMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaColorCorrectMaterial.md
+                - text: DwaEmissiveMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaEmissiveMaterial.md
+                - text: DwaFabricMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaFabricMaterial.md
+                - text: DwaLayerMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaLayerMaterial.md
+                - text: DwaMetalMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaMetalMaterial.md
+                - text: DwaMixMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaMixMaterial.md
+                - text: DwaRefractiveMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaRefractiveMaterial.md
+                - text: DwaSkinMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaSkinMaterial.md
+                - text: DwaSolidDielectricMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaSolidDielectricMaterial.md
+                - text: DwaSwitchMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaSwitchMaterial.md
+                - text: DwaToonMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaToonMaterial.md
+                - text: DwaTwoSidedMaterial
+                  path: user-reference/scene-objects/materials/dwa/DwaTwoSidedMaterial.md
+                - text: DwaVelvetMaterial_v2
+                  path: user-reference/scene-objects/materials/dwa/DwaVelvetMaterial_v2.md
+            - text: Hair Materials
+              path: user-reference/scene-objects/materials/hair/index.md
               subitems:
-                - item: HairColorCorrectMaterial
-                  path: user-reference/scene-objects/materials/hair/HairColorCorrectMaterial
-                - item: HairDiffuseMaterial
-                  path: user-reference/scene-objects/materials/hair/HairDiffuseMaterial
-                - item: HairLayerMaterial
-                  path: user-reference/scene-objects/materials/hair/HairLayerMaterial
-                - item: HairMaterial_v3
-                  path: user-reference/scene-objects/materials/hair/HairMaterial_v3
-                - item: HairToonMaterial
-                  path: user-reference/scene-objects/materials/hair/HairToonMaterial
-            - item: RaySwitchMaterial
-              path: user-reference/scene-objects/materials/RaySwitchMaterial
-            - item: SwitchMaterial
-              path: user-reference/scene-objects/materials/SwitchMaterial
-            - item: UsdPreviewSurface
-              path: user-reference/scene-objects/materials/UsdPreviewSurface
-        - item: Maps
-          path: user-reference/scene-objects/maps
+                - text: HairColorCorrectMaterial
+                  path: user-reference/scene-objects/materials/hair/HairColorCorrectMaterial.md
+                - text: HairDiffuseMaterial
+                  path: user-reference/scene-objects/materials/hair/HairDiffuseMaterial.md
+                - text: HairLayerMaterial
+                  path: user-reference/scene-objects/materials/hair/HairLayerMaterial.md
+                - text: HairMaterial_v3
+                  path: user-reference/scene-objects/materials/hair/HairMaterial_v3.md
+                - text: HairToonMaterial
+                  path: user-reference/scene-objects/materials/hair/HairToonMaterial.md
+            - text: RaySwitchMaterial
+              path: user-reference/scene-objects/materials/RaySwitchMaterial.md
+            - text: SwitchMaterial
+              path: user-reference/scene-objects/materials/SwitchMaterial.md
+            - text: UsdPreviewSurface
+              path: user-reference/scene-objects/materials/UsdPreviewSurface.md
+        - text: Maps
+          path: user-reference/scene-objects/maps/index.md
           subitems:
-            - item: AttributeMap
-              path: user-reference/scene-objects/maps/AttributeMap
-            - item: AxisAngleMap
-              path: user-reference/scene-objects/maps/AxisAngleMap
-            - item: BlendMap
-              path: user-reference/scene-objects/maps/BlendMap
-            - item: CheckerboardMap
-              path: user-reference/scene-objects/maps/CheckerboardMap
-            - item: ClampMap
-              path: user-reference/scene-objects/maps/ClampMap
-            - item: ColorCorrectContrastMap
-              path: user-reference/scene-objects/maps/ColorCorrectContrastMap
-            - item: ColorCorrectGainOffsetMap
-              path: user-reference/scene-objects/maps/ColorCorrectGainOffsetMap
-            - item: ColorCorrectGammaMap
-              path: user-reference/scene-objects/maps/ColorCorrectGammaMap
-            - item: ColorCorrectHsvMap
-              path: user-reference/scene-objects/maps/ColorCorrectHsvMap
-            - item: ColorCorrectHueShiftMap
-              path: user-reference/scene-objects/maps/ColorCorrectHueShiftMap
-            - item: ColorCorrectLegacyMap
-              path: user-reference/scene-objects/maps/ColorCorrectLegacyMap
-            - item: ColorCorrectMap
-              path: user-reference/scene-objects/maps/ColorCorrectMap
-            - item: ColorCorrectNukeMap
-              path: user-reference/scene-objects/maps/ColorCorrectNukeMap
-            - item: ColorCorrectSaturationMap
-              path: user-reference/scene-objects/maps/ColorCorrectSaturationMap
-            - item: ColorCorrectTMIMap
-              path: user-reference/scene-objects/maps/ColorCorrectTMIMap
-            - item: ConstantColorMap
-              path: user-reference/scene-objects/maps/ConstantColorMap
-            - item: ConstantScalarMap
-              path: user-reference/scene-objects/maps/ConstantScalarMap
-            - item: CurvatureMap
-              path: user-reference/scene-objects/maps/CurvatureMap
-            - item: DebugMap
-              path: user-reference/scene-objects/maps/DebugMap
-            - item: DeformationMap
-              path: user-reference/scene-objects/maps/DeformationMap
-            - item: DirectionalMap
-              path: user-reference/scene-objects/maps/DirectionalMap
-            - item: ExtraAovMap
-              path: user-reference/scene-objects/maps/ExtraAovMap
-            - item: FloatToRgbMap
-              path: user-reference/scene-objects/maps/FloatToRgbMap
-            - item: GradientMap
-              path: user-reference/scene-objects/maps/GradientMap
-            - item: HairColorPresetsMap
-              path: user-reference/scene-objects/maps/HairColorPresetsMap
-            - item: HairColumnMap
-              path: user-reference/scene-objects/maps/HairColumnMap
-            - item: HairMap
-              path: user-reference/scene-objects/maps/HairMap
-            - item: HsvToRgbMap
-              path: user-reference/scene-objects/maps/HsvToRgbMap
-            - item: ImageMap
-              path: user-reference/scene-objects/maps/ImageMap
-            - item: LayerMap
-              path: user-reference/scene-objects/maps/LayerMap
-            - item: LcToRgbMap
-              path: user-reference/scene-objects/maps/LcToRgbMap
-            - item: ListMap
-              path: user-reference/scene-objects/maps/ListMap
-            - item: LODMap
-              path: user-reference/scene-objects/maps/LODMap
-            - item: NoiseMap
-              path: user-reference/scene-objects/maps/NoiseMap
-            - item: NoiseMap_v2
-              path: user-reference/scene-objects/maps/NoiseMap_v2
-            - item: NoiseWorleyMap
-              path: user-reference/scene-objects/maps/NoiseWorleyMap
-            - item: NoiseWorleyMap_v2
-              path: user-reference/scene-objects/maps/NoiseWorleyMap_v2
-            - item: NormalToRgbMap
-              path: user-reference/scene-objects/maps/NormalToRgbMap
-            - item: OpenVdbMap
-              path: user-reference/scene-objects/maps/OpenVdbMap
-            - item: OpenVdbMap_v2
-              path: user-reference/scene-objects/maps/OpenVdbMap_v2
-            - item: OpMap
-              path: user-reference/scene-objects/maps/OpMap
-            - item: ProjectCameraMap
-              path: user-reference/scene-objects/maps/ProjectCameraMap
-            - item: ProjectCameraMap_v2
-              path: user-reference/scene-objects/maps/ProjectCameraMap_v2
-            - item: ProjectCylindricalMap
-              path: user-reference/scene-objects/maps/ProjectCylindricalMap
-            - item: ProjectPlanarMap
-              path: user-reference/scene-objects/maps/ProjectPlanarMap
-            - item: ProjectSphericalMap
-              path: user-reference/scene-objects/maps/ProjectSphericalMap
-            - item: ProjectTriplanarMap
-              path: user-reference/scene-objects/maps/ProjectTriplanarMap
-            - item: ProjectTriplanarMap_v2
-              path: user-reference/scene-objects/maps/ProjectTriplanarMap_v2
-            - item: ProjectTriplanarUdimMap
-              path: user-reference/scene-objects/maps/ProjectTriplanarUdimMap
-            - item: RampMap
-              path: user-reference/scene-objects/maps/RampMap
-            - item: RandomMap
-              path: user-reference/scene-objects/maps/RandomMap
-            - item: RemapMap
-              path: user-reference/scene-objects/maps/RemapMap
-            - item: RgbToFloatMap
-              path: user-reference/scene-objects/maps/RgbToFloatMap
-            - item: RgbToHsvMap
-              path: user-reference/scene-objects/maps/RgbToHsvMap
-            - item: RgbToLabMap
-              path: user-reference/scene-objects/maps/RgbToLabMap
-            - item: SwitchColorMap
-              path: user-reference/scene-objects/maps/SwitchColorMap
-            - item: SwitchFloatMap
-              path: user-reference/scene-objects/maps/SwitchFloatMap
-            - item: ToonMap
-              path: user-reference/scene-objects/maps/ToonMap
-            - item: TransformSpaceMap
-              path: user-reference/scene-objects/maps/TransformSpaceMap
-            - item: UsdPrimvarReader_float
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_float
-            - item: UsdPrimvarReader_float2
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_float2
-            - item: UsdPrimvarReader_float3
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_float3
-            - item: UsdPrimvarReader_int
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_int
-            - item: UsdPrimvarReader_normal
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_normal
-            - item: UsdPrimvarReader_point
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_point
-            - item: UsdPrimvarReader_vector
-              path: user-reference/scene-objects/maps/UsdPrimvarReader_vector
-            - item: UsdTransform2d
-              path: user-reference/scene-objects/maps/UsdTransform2d
-            - item: UsdUVitemure
-              path: user-reference/scene-objects/maps/UsdUVitemure
-            - item: UVTransformMap
-              path: user-reference/scene-objects/maps/UVTransformMap
-            - item: WireframeMap
-              path: user-reference/scene-objects/maps/WireframeMap
-        - item: Meta Data
-          path: user-reference/scene-objects/meta-data
-        - item: Normal Maps
-          path: user-reference/scene-objects/normal-maps
+            - text: AttributeMap
+              path: user-reference/scene-objects/maps/AttributeMap.md
+            - text: AxisAngleMap
+              path: user-reference/scene-objects/maps/AxisAngleMap.md
+            - text: BlendMap
+              path: user-reference/scene-objects/maps/BlendMap.md
+            - text: CheckerboardMap
+              path: user-reference/scene-objects/maps/CheckerboardMap.md
+            - text: ClampMap
+              path: user-reference/scene-objects/maps/ClampMap.md
+            - text: ColorCorrectContrastMap
+              path: user-reference/scene-objects/maps/ColorCorrectContrastMap.md
+            - text: ColorCorrectGainOffsetMap
+              path: user-reference/scene-objects/maps/ColorCorrectGainOffsetMap.md
+            - text: ColorCorrectGammaMap
+              path: user-reference/scene-objects/maps/ColorCorrectGammaMap.md
+            - text: ColorCorrectHsvMap
+              path: user-reference/scene-objects/maps/ColorCorrectHsvMap.md
+            - text: ColorCorrectHueShiftMap
+              path: user-reference/scene-objects/maps/ColorCorrectHueShiftMap.md
+            - text: ColorCorrectLegacyMap
+              path: user-reference/scene-objects/maps/ColorCorrectLegacyMap.md
+            - text: ColorCorrectMap
+              path: user-reference/scene-objects/maps/ColorCorrectMap.md
+            - text: ColorCorrectNukeMap
+              path: user-reference/scene-objects/maps/ColorCorrectNukeMap.md
+            - text: ColorCorrectSaturationMap
+              path: user-reference/scene-objects/maps/ColorCorrectSaturationMap.md
+            - text: ColorCorrectTMIMap
+              path: user-reference/scene-objects/maps/ColorCorrectTMIMap.md
+            - text: ConstantColorMap
+              path: user-reference/scene-objects/maps/ConstantColorMap.md
+            - text: ConstantScalarMap
+              path: user-reference/scene-objects/maps/ConstantScalarMap.md
+            - text: CurvatureMap
+              path: user-reference/scene-objects/maps/CurvatureMap.md
+            - text: DebugMap
+              path: user-reference/scene-objects/maps/DebugMap.md
+            - text: DeformationMap
+              path: user-reference/scene-objects/maps/DeformationMap.md
+            - text: DirectionalMap
+              path: user-reference/scene-objects/maps/DirectionalMap.md
+            - text: ExtraAovMap
+              path: user-reference/scene-objects/maps/ExtraAovMap.md
+            - text: FloatToRgbMap
+              path: user-reference/scene-objects/maps/FloatToRgbMap.md
+            - text: GradientMap
+              path: user-reference/scene-objects/maps/GradientMap.md
+            - text: HairColorPresetsMap
+              path: user-reference/scene-objects/maps/HairColorPresetsMap.md
+            - text: HairColumnMap
+              path: user-reference/scene-objects/maps/HairColumnMap.md
+            - text: HairMap
+              path: user-reference/scene-objects/maps/HairMap.md
+            - text: HsvToRgbMap
+              path: user-reference/scene-objects/maps/HsvToRgbMap.md
+            - text: ImageMap
+              path: user-reference/scene-objects/maps/ImageMap.md
+            - text: LayerMap
+              path: user-reference/scene-objects/maps/LayerMap.md
+            - text: LcToRgbMap
+              path: user-reference/scene-objects/maps/LcToRgbMap.md
+            - text: ListMap
+              path: user-reference/scene-objects/maps/ListMap.md
+            - text: LODMap
+              path: user-reference/scene-objects/maps/LODMap.md
+            - text: NoiseMap
+              path: user-reference/scene-objects/maps/NoiseMap.md
+            - text: NoiseMap_v2
+              path: user-reference/scene-objects/maps/NoiseMap_v2.md
+            - text: NoiseWorleyMap
+              path: user-reference/scene-objects/maps/NoiseWorleyMap.md
+            - text: NoiseWorleyMap_v2
+              path: user-reference/scene-objects/maps/NoiseWorleyMap_v2.md
+            - text: NormalToRgbMap
+              path: user-reference/scene-objects/maps/NormalToRgbMap.md
+            - text: OpenVdbMap
+              path: user-reference/scene-objects/maps/OpenVdbMap.md
+            - text: OpenVdbMap_v2
+              path: user-reference/scene-objects/maps/OpenVdbMap_v2.md
+            - text: OpMap
+              path: user-reference/scene-objects/maps/OpMap.md
+            - text: ProjectCameraMap
+              path: user-reference/scene-objects/maps/ProjectCameraMap.md
+            - text: ProjectCameraMap_v2
+              path: user-reference/scene-objects/maps/ProjectCameraMap_v2.md
+            - text: ProjectCylindricalMap
+              path: user-reference/scene-objects/maps/ProjectCylindricalMap.md
+            - text: ProjectPlanarMap
+              path: user-reference/scene-objects/maps/ProjectPlanarMap.md
+            - text: ProjectSphericalMap
+              path: user-reference/scene-objects/maps/ProjectSphericalMap.md
+            - text: ProjectTriplanarMap
+              path: user-reference/scene-objects/maps/ProjectTriplanarMap.md
+            - text: ProjectTriplanarMap_v2
+              path: user-reference/scene-objects/maps/ProjectTriplanarMap_v2.md
+            - text: ProjectTriplanarUdimMap
+              path: user-reference/scene-objects/maps/ProjectTriplanarUdimMap.md
+            - text: RampMap
+              path: user-reference/scene-objects/maps/RampMap.md
+            - text: RandomMap
+              path: user-reference/scene-objects/maps/RandomMap.md
+            - text: RemapMap
+              path: user-reference/scene-objects/maps/RemapMap.md
+            - text: RgbToFloatMap
+              path: user-reference/scene-objects/maps/RgbToFloatMap.md
+            - text: RgbToHsvMap
+              path: user-reference/scene-objects/maps/RgbToHsvMap.md
+            - text: RgbToLabMap
+              path: user-reference/scene-objects/maps/RgbToLabMap.md
+            - text: SwitchColorMap
+              path: user-reference/scene-objects/maps/SwitchColorMap.md
+            - text: SwitchFloatMap
+              path: user-reference/scene-objects/maps/SwitchFloatMap.md
+            - text: ToonMap
+              path: user-reference/scene-objects/maps/ToonMap.md
+            - text: TransformSpaceMap
+              path: user-reference/scene-objects/maps/TransformSpaceMap.md
+            - text: UsdPrimvarReader_float
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_float.md
+            - text: UsdPrimvarReader_float2
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_float2.md
+            - text: UsdPrimvarReader_float3
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_float3.md
+            - text: UsdPrimvarReader_int
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_int.md
+            - text: UsdPrimvarReader_normal
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_normal.md
+            - text: UsdPrimvarReader_point
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_point.md
+            - text: UsdPrimvarReader_vector
+              path: user-reference/scene-objects/maps/UsdPrimvarReader_vector.md
+            - text: UsdTransform2d
+              path: user-reference/scene-objects/maps/UsdTransform2d.md
+            - text: UsdUVitemure
+              path: user-reference/scene-objects/maps/UsdUVitemure.md
+            - text: UVTransformMap
+              path: user-reference/scene-objects/maps/UVTransformMap.md
+            - text: WireframeMap
+              path: user-reference/scene-objects/maps/WireframeMap.md
+        - text: Meta Data
+          path: user-reference/scene-objects/meta-data/Metadata.md
+        - text: Normal Maps
+          path: user-reference/scene-objects/normal-maps/index.md
           subitems:
-            - item: CombineNormalMap
-              path: user-reference/scene-objects/normal-maps/CombineNormalMap
-            - item: DistortNormalMap
-              path: user-reference/scene-objects/normal-maps/DistortNormalMap
-            - item: ImageNormalMap
-              path: user-reference/scene-objects/normal-maps/ImageNormalMap
-            - item: ProjectCameraNormalMap
-              path: user-reference/scene-objects/normal-maps/ProjectCameraNormalMap
-            - item: ProjectPlanarNormalMap
-              path: user-reference/scene-objects/normal-maps/ProjectPlanarNormalMap
-            - item: ProjectTriplanarNormalMap
-              path: user-reference/scene-objects/normal-maps/ProjectTriplanarNormalMap
-            - item: ProjectTriplanarNormalMap_v2
-              path: user-reference/scene-objects/normal-maps/ProjectTriplanarNormalMap_v2
-            - item: RandomNormalMap
-              path: user-reference/scene-objects/normal-maps/RandomNormalMap
-            - item: RgbToNormalMap
-              path: user-reference/scene-objects/normal-maps/RgbToNormalMap
-            - item: SwitchNormalMap
-              path: user-reference/scene-objects/normal-maps/SwitchNormalMap
-            - item: TransformNormalMap
-              path: user-reference/scene-objects/normal-maps/TransformNormalMap
-        - item: Layer
-          path: user-reference/scene-objects/layer
-        - item: Lights
-          path: user-reference/scene-objects/lights
+            - text: CombineNormalMap
+              path: user-reference/scene-objects/normal-maps/CombineNormalMap.md
+            - text: DistortNormalMap
+              path: user-reference/scene-objects/normal-maps/DistortNormalMap.md
+            - text: ImageNormalMap
+              path: user-reference/scene-objects/normal-maps/ImageNormalMap.md
+            - text: ProjectCameraNormalMap
+              path: user-reference/scene-objects/normal-maps/ProjectCameraNormalMap.md
+            - text: ProjectPlanarNormalMap
+              path: user-reference/scene-objects/normal-maps/ProjectPlanarNormalMap.md
+            - text: ProjectTriplanarNormalMap
+              path: user-reference/scene-objects/normal-maps/ProjectTriplanarNormalMap.md
+            - text: ProjectTriplanarNormalMap_v2
+              path: user-reference/scene-objects/normal-maps/ProjectTriplanarNormalMap_v2.md
+            - text: RandomNormalMap
+              path: user-reference/scene-objects/normal-maps/RandomNormalMap.md
+            - text: RgbToNormalMap
+              path: user-reference/scene-objects/normal-maps/RgbToNormalMap.md
+            - text: SwitchNormalMap
+              path: user-reference/scene-objects/normal-maps/SwitchNormalMap.md
+            - text: TransformNormalMap
+              path: user-reference/scene-objects/normal-maps/TransformNormalMap.md
+        - text: Layer
+          path: user-reference/scene-objects/layer/Layer.md
+        - text: Lights
+          path: user-reference/scene-objects/lights/index.md
           subitems:
-            - item: CylinderLight
-              path: user-reference/scene-objects/lights/CylinderLight
-            - item: DiskLight
-              path: user-reference/scene-objects/lights/DiskLight
-            - item: DistantLight
-              path: user-reference/scene-objects/lights/DistantLight
-            - item: EnvLight
-              path: user-reference/scene-objects/lights/EnvLight
-            - item: LightSet
-              path: user-reference/scene-objects/lights/LightSet
-            - item: MeshLight
-              path: user-reference/scene-objects/lights/MeshLight
-            - item: RectLight
-              path: user-reference/scene-objects/lights/RectLight
-            - item: SphereLight
-              path: user-reference/scene-objects/lights/SphereLight
-            - item: SpotLight
-              path: user-reference/scene-objects/lights/SpotLight
-        - item: Light Filters
+            - text: CylinderLight
+              path: user-reference/scene-objects/lights/CylinderLight.md
+            - text: DiskLight
+              path: user-reference/scene-objects/lights/DiskLight.md
+            - text: DistantLight
+              path: user-reference/scene-objects/lights/DistantLight.md
+            - text: EnvLight
+              path: user-reference/scene-objects/lights/EnvLight.md
+            - text: LightSet
+              path: user-reference/scene-objects/lights/LightSet.md
+            - text: MeshLight
+              path: user-reference/scene-objects/lights/MeshLight.md
+            - text: RectLight
+              path: user-reference/scene-objects/lights/RectLight.md
+            - text: SphereLight
+              path: user-reference/scene-objects/lights/SphereLight.md
+            - text: SpotLight
+              path: user-reference/scene-objects/lights/SpotLight.md
+        - text: Light Filters
           subitems:
-            - item: BarnDoorLightFilter
-              path: user-reference/scene-objects/light-filters/BarnDoorLightFilter
-            - item: ColorRampLightFilter
-              path: user-reference/scene-objects/light-filters/ColorRampLightFilter
-            - item: CombineLightFilter
-              path: user-reference/scene-objects/light-filters/CombineLightFilter
-            - item: CookieLightFilter
-              path: user-reference/scene-objects/light-filters/CookieLightFilter
-            - item: DecayLightFilter
-              path: user-reference/scene-objects/light-filters/DecayLightFilter
-            - item: IntensityLightFilter
-              path: user-reference/scene-objects/light-filters/IntensityLightFilter
-            # - item: LightFilterSet
-            #   path: scene-objects/light-filters/LightFilterSet
-            - item: RodLightFilter
-              path: scene-objects/light-filters/RodLightFilter
-            - item: VdbLightFilter
-              path: scene-objects/light-filters/VdbLightFilter
-        - item: Render Output
-          path: user-reference/scene-objects/render-output/RenderOutput
-        - item: Scene Variables
-          path: user-reference/scene-objects/scene-variables/SceneVariables
-        - item: Shadow Set
-          path: user-reference/scene-objects/shadow-set/ShadowSet
-        - item: Shadow Receiver Set
-          path: user-reference/scene-objects/shadow-receiver-set/ShadowReceiverSet
-        - item: Trace Set
-          path: user-reference/scene-objects/trace-set/TraceSet
-        - item: User Data
-          path: user-reference/scene-objects/user-data/UserData
-        - item: Volumes
-          path: user-reference/scene-objects/volumes
+            - text: BarnDoorLightFilter
+              path: user-reference/scene-objects/light-filters/BarnDoorLightFilter.md
+            - text: ColorRampLightFilter
+              path: user-reference/scene-objects/light-filters/ColorRampLightFilter.md
+            - text: CombineLightFilter
+              path: user-reference/scene-objects/light-filters/CombineLightFilter.md
+            - text: CookieLightFilter
+              path: user-reference/scene-objects/light-filters/CookieLightFilter.md
+            - text: DecayLightFilter
+              path: user-reference/scene-objects/light-filters/DecayLightFilter.md
+            - text: IntensityLightFilter
+              path: user-reference/scene-objects/light-filters/IntensityLightFilter.md
+            # - text: LightFilterSet
+            #   path: scene-objects/light-filters/LightFilterSet.md
+            - text: RodLightFilter
+              path: scene-objects/light-filters/RodLightFilter.md
+            - text: VdbLightFilter
+              path: scene-objects/light-filters/VdbLightFilter.md
+        - text: Render Output
+          path: user-reference/scene-objects/render-output/RenderOutput/RenderOutput.md
+        - text: Scene Variables
+          path: user-reference/scene-objects/scene-variables/SceneVariables/SceneVariables.md
+        - text: Shadow Set
+          path: user-reference/scene-objects/shadow-set/ShadowSet/ShadowSet.md
+        - text: Shadow Receiver Set
+          path: user-reference/scene-objects/shadow-receiver-set/ShadowReceiverSet/ShadowReceiverSet.md
+        - text: Trace Set
+          path: user-reference/scene-objects/trace-set/TraceSet/TraceSet.md
+        - text: User Data
+          path: user-reference/scene-objects/user-data/UserData/UserData.md
+        - text: Volumes
+          path: user-reference/scene-objects/volumes/index.md
           subitems:
-            - item: BaseVolume
-              path: user-reference/scene-objects/volumes/BaseVolume
-            - item: CutoutVolume
-              path: user-reference/scene-objects/volumes/CutoutVolume
-            - item: VdbVolume
-              path: user-reference/scene-objects/volumes/VdbVolume
-      - item: How-To-Guides
+            - text: BaseVolume
+              path: user-reference/scene-objects/volumes/BaseVolume.md
+            - text: CutoutVolume
+              path: user-reference/scene-objects/volumes/CutoutVolume.md
+            - text: VdbVolume
+              path: user-reference/scene-objects/volumes/VdbVolume.md
+      - text: How-To-Guides
         ref_path: user-reference/how-to-guides
         subitems:
-          - item: Adaptive Sampling
+          - text: Adaptive Sampling
             path: /user-reference/how-to-guides/adaptive-sampling
-          - item: Baking Textures
+          - text: Baking Textures
             path: /user-reference/how-to-guides/baking-textures
-          - item: Bokeh
+          - text: Bokeh
             path: /user-reference/how-to-guides/bokeh
-          - item: Path Guiding
+          - text: Path Guiding
             path: /user-reference/how-to-guides/path-guiding
-          - item: PBR Validity
+          - text: PBR Validity
             path: /user-reference/how-to-guides/pbr-validity
-          - item: Point Rendering
+          - text: Point Rendering
             path: /user-reference/how-to-guides/point-rendering    
-          - item: Render Outputs
+          - text: Render Outputs
             path: user-reference/how-to-guides/render-outputs
             subitems:
-              - item: Cryptomatte
+              - text: Cryptomatte
                 path: /user-reference/how-to-guides/render-outputs/cryptomatte
-              - item: Extra AOVs
+              - text: Extra AOVs
                 path: /user-reference/how-to-guides/render-outputs/extra-aovs
-              - item: Material AOVs
+              - text: Material AOVs
                 path: /user-reference/how-to-guides/render-outputs/material-aovs
-              - item: Motion vectors
+              - text: Motion vectors
                 path: /user-reference/how-to-guides/render-outputs/motion-vectors
-              - item: Variance AOVs
+              - text: Variance AOVs
                 path: /user-reference/how-to-guides/render-outputs/variance-aovs
-              - item: Visibility AOVs
+              - text: Visibility AOVs
                 path: /user-reference/how-to-guides/render-outputs/visibility-aovs
-          - item: Render Inside a Medium
+          - text: Render Inside a Medium
             path: /user-reference/how-to-guides/render-inside-medium
-      - item: Tools
+      - text: Tools
         ref_path: user-reference/tools
         subitems:
-          - item: Hydra Delegate
+          - text: Hydra Delegate
             path: user-reference/tools/hydra
             subitems:
-              - item: HdMoonRay Features
+              - text: HdMoonRay Features
                 path: user-reference/tools/hydra/hdmoonray-features
-              - item: HdMoonRay Plugin
+              - text: HdMoonRay Plugin
                 path: user-reference/tools/hydra/plugin
-              - item: HdMoonRay Setup
+              - text: HdMoonRay Setup
                 path: user-reference/tools/hydra/hdmoonray-setup
-              - item: HdMoonRay Render Settings
+              - text: HdMoonRay Render Settings
                 path: user-reference/tools/hydra/render-settings
-              - item: hd_render Command
+              - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render
-          - item: Render Profile Viewer
+          - text: Render Profile Viewer
             path: user-reference/tools/render-profile-viewer
-  - item: Developer's Guide
+  - text: Developer's Guide
     ref_path: developers-guide
     alwaysOpen: true
     subitems:
-      - item: Doxygen Reference
+      - text: Doxygen Reference
         path: api/html/index.html
-      - item: Writing Shaders
+      - text: Writing Shaders
         path: developers-guide/shaders
         subitems:
-          - item: Cameras
+          - text: Cameras
             path: developers-guide/shaders/cameras
-          - item: Displacement
+          - text: Displacement
             path: developers-guide/shaders/displacement
-          - item: Display Filters
+          - text: Display Filters
             path: developers-guide/shaders/display-filters
-          - item: Geometry Procedurals
+          - text: Geometry Procedurals
             path: developers-guide/shaders/geometry-procedurals
-          - item: Lights
+          - text: Lights
             path: developers-guide/shaders/lights
-          - item: Light Filters
+          - text: Light Filters
             path: developers-guide/shaders/light-filters
-          - item: Maps
+          - text: Maps
             path: developers-guide/shaders/maps
-          - item: Materials
+          - text: Materials
             path: developers-guide/shaders/materials
-          - item: Normal Maps
+          - text: Normal Maps
             path: developers-guide/shaders/normal-maps
-          - item: Volume Shaders
+          - text: Volume Shaders
             path: developers-guide/shaders/volume-shaders
-      - item: Scene RDL2 Library
+      - text: Scene RDL2 Library
         path: developers-guide/scene_rdl2-library
-      - item: Arras
+      - text: Arras
         path: developers-guide/arras
         subitems:
-          - item: Distributed Arras
+          - text: Distributed Arras
             path: developers-guide/arras/distributed-arras
-          - item: Arras Session Definitions
+          - text: Arras Session Definitions
             path: developers-guide/arras/arras-session-definitions
-          - item: Arras Client API
+          - text: Arras Client API
             path: developers-guide/arras/arras-client-api
-      - item: Maximizing Performance
+      - text: Maximizing Performance
         path: developers-guide/performance
-      - item: Contributions
+      - text: Contributions
         path: developers-guide/contributions   
-  - item: Release Notes
+  - text: Release Notes
     path: release-notes
-  - item: Legal/Licensing
+  - text: Legal/Licensing
     path: license
