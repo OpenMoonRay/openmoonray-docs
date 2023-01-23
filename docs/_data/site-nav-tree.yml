@@ -445,8 +445,6 @@
             subitems:
               - text: HdMoonRay Features
                 path: user-reference/tools/hydra/hdmoonray-features
-              - text: HdMoonRay Plugin
-                path: user-reference/tools/hydra/plugin
               - text: HdMoonRay Setup
                 path: user-reference/tools/hydra/hdmoonray-setup
               - text: HdMoonRay Render Settings
