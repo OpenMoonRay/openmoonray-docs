@@ -1,4 +1,5 @@
 ---
+overview: overviews/HairColumnMapOverview.md
 image_path: /assets/images/scene-classes/maps/HairColumnMap
 gallery:
   - image: color_gradient_stripes_vert_annotated.jpg
