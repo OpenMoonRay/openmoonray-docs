@@ -1,6 +1,3 @@
 ---
 overview: overviews/BakeCameraOverview.md
 example: examples/BakeCameraExample.md
-links:
-  - text: Baking Textures
-    url: /moonray/how-to-guides/baking-textures
