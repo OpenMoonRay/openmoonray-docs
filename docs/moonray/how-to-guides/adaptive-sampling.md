@@ -31,7 +31,24 @@ Uniform sampling above, adaptive sampling below
 
 <img src="media/image2.png" style="width:4.875in;height:2.02083in" />
 
+## RDL Parameters
+
+To enable adaptive sampling, the RDL sampling mode must be set:
+
+uniform [0]
+: Render with a fixed number of samples per pixel: the square of the RDL _pixel_samples_ attribute.
+
+adaptive [2]
+: Render with adaptive sampling. The _pixel_samples_ RDL attribute is ignored.
+
 Here is a description of the attributes related to adaptive sampling.
+
+
+
+| Attribute Name       | Description                                                                                                                                                                                                                                                                          |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| sampling_mode        | [uniform or adaptive](#RDL-Parameters)                                                                                                                                                                                                                                               |
+| min_adaptive_samples | This is the minimum number of samples taken per pixel. A value too small may result in areas that are prematurely deemed converged. A value too large will waste time rendering where it is not necessary. To find good values for your particular scene, refer to the output value  |
 
 <table>
 <colgroup>
