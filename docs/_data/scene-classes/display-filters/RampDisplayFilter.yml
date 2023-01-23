@@ -1,7 +1,7 @@
 ---
 overview: overviews/RampDisplayFilterOverview.md
 example: examples/RampDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/RampDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/RampDisplayFilter
 gallery:
   - image: input_ramp.png
     text: input_ramp<br>no interpolation

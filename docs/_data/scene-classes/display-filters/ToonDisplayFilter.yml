@@ -1,7 +1,7 @@
 ---
 overview: overviews/ToonDisplayFilterOverview.md
 example: examples/ToonDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/ToonDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/ToonDisplayFilter
 gallery:
   - image: num_cels_2.png
 attributes:

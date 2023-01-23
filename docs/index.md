@@ -10,4 +10,4 @@ The open source release of MoonRay contains the following pieces of technology:
 - Hydra plugin for MoonRay: HdMoonRay
 - Arras execution and distribution framework, used to integrate MoonRay into applications
 
-[Learn more about getting and using MoonRay](./overview/)
+[Learn more about getting and using MoonRay](./getting-started/)

@@ -1,7 +1,7 @@
 ---
 overview: overviews/ImageDisplayFilterOverview.md
 example: examples/ImageDisplayFilterExample.md
-image_path: /assets/images/scene-classes/display-filters/ImageDisplayFilter
+image_path: /assets/images/user-reference/scene-classes/display-filters/ImageDisplayFilter
 gallery:
   - image: beauty.png
     text: Beauty Render
