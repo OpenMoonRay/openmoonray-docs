@@ -1,10 +1,9 @@
 ---
   - text: Getting Started
     path: getting-started
-    alwaysOpen: true  # whether menu should always stay open
     subitems:
       - text: About
-        ref_path: getting-started/about # path only used to figure out whether menu should be open (no index.md)
+        path: getting-started/about
         subitems:
           - text: MoonRay
             path: getting-started/about/moonray.md
@@ -15,22 +14,21 @@
       - text: What's Included
         path: getting-started/source-contents.md 
       - text: Installation
-        ref_path: getting-started/installation
+        path: getting-started/installation
         subitems:
           - text: Building MoonRay
             path: getting-started/installation/building.md
           - text: Dependencies
             path: getting-started/installation/dependencies.md
   - text: User Reference
-    ref_path: user-reference
-    alwaysOpen: true
+    path: user-reference
     subitems:
       - text: MoonRay GUI
         path: user-reference/moonray-gui.md
       - text: Execution Modes
         path: user-reference/execution-modes.md
       - text: Scene Objects
-        ref_path: user-reference/scene-objects
+        path: user-reference/scene-objects
         subitems:
         - text: Cameras
           path: user-reference/scene-objects/cameras/index.md
@@ -408,7 +406,7 @@
             - text: VdbVolume
               path: user-reference/scene-objects/volumes/VdbVolume.md
       - text: How-To-Guides
-        ref_path: user-reference/how-to-guides
+        path: user-reference/how-to-guides
         subitems:
           - text: Adaptive Sampling
             path: /user-reference/how-to-guides/adaptive-sampling
@@ -440,7 +438,7 @@
           - text: Render Inside a Medium
             path: /user-reference/how-to-guides/render-inside-medium
       - text: Tools
-        ref_path: user-reference/tools
+        path: user-reference/tools
         subitems:
           - text: Hydra Delegate
             path: user-reference/tools/hydra
@@ -458,8 +456,7 @@
           - text: Render Profile Viewer
             path: user-reference/tools/render-profile-viewer
   - text: Developer's Guide
-    ref_path: developers-guide
-    alwaysOpen: true
+    path: developers-guide
     subitems:
       - text: Doxygen Reference
         path: api/html/index.html
