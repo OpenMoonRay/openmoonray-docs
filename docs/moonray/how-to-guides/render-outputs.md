@@ -7,16 +7,61 @@ title: Render Outputs
 # format is YYYY-MM-DD 00:00:00 +0000
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
-# Render Outputs
+# Render Outputs Guide
 
-See also: [RenderOutput](../../scene-classes/render-output)
+See also: [RenderOutput Attribute Reference](../../../scene-classes/render-output)
 ## Introduction
 
 The RenderOutput object is used to specify any output the renderer produces.
-It has a lot of options. What follows on this page are some simple examples
-and links to other, more specific docs.
 
-### Examples
+## Setup
+Generally, when setting up a RenderOutput object, you want to specify at least two attributes: the *`result`*, or type of RenderOutput, and *`file_name`*, which is where you want the result saved. Certain AOVs will require other attributes to be set, like `primitive_attribute` to specify the attribute to visualize, or `material_aov`, which specifies the material expression. You can refer to the [RenderOutput Scene Class](../../../scene-classes/render-output/) which contains a full attribute reference. There are also guides on specific RenderOutput types linked under the Types section below.
+
+*Example: World Position*
+```lua
+-- output position in world space  
+RenderOutput("/output/result/worldPos") {  
+    ["file name"] = "result0.exr",  
+    ["result"] = 3, -- state variable  
+    ["state variable"] = 10, -- "WP"  
+    ["channel format"] = 0  
+}
+```
+
+## Types
+
+### General
+
+| Type | Description |
+| ---- | ----------- |
+| Beauty | Full render (RGB) |
+| Alpha | Full render alpha channel (A) |
+| Depth | z-distance away from camera (Z) |
+| [DisplayFilter](../../../scene-classes/display-filters) | Outputs the results from a DisplayFilter |
+
+### AOVs
+
+| Type | Description |
+| ---- | ----------- |
+| State Variable | Visualize a built-in state variable (pos, nor, texture coords, etc) | 
+| Primitive Attribute | Visualize procedural-provided attributes |
+| [Material AOV](material-aovs) | AOV generated using a material expression |
+| Light AOV | AOV generated using a light path expression |
+| [Visibility AOV](visibility-aovs) | Fraction of light samples that hit the light source |
+| [Variance AOV](variance-aovs) | Pixel variance of a specified AOV | 
+| Weight | Pixel sample count, normalized between 0 and 1 |
+| [Cryptomatte](cryptomatte) | Generate .exr layers containing pixel coverages by specified geometry(ies) | 
+| Alpha Aux | Alpha auxiliary sample data for adaptive sampling |
+| Beauty Aux | Beauty auxiliary sample data for adaptive sampling |
+
+### Diagnostic Results
+
+| Type | Description |
+| ---- | ----------- |
+| Time Per Pixel | Time per pixel heat map metric |
+| Wireframe | Render as wireframe |
+
+## Examples
 
 #### RGBAZ
 ```lua
@@ -35,18 +80,6 @@ RenderOutput("/output/result0/depth") {
     ["result"] = 2, -- depth  
     ["channel format"] = 0, -- 32 bit float  
     ["math filter"] = "min"
-}
-```
-
-#### World Position
-
-```lua
--- output position in world space  
-RenderOutput("/output/result/worldPos") {  
-    ["file name"] = "result0.exr",  
-    ["result"] = 3, -- state variable  
-    ["state variable"] = 10, -- "WP"  
-    ["channel format"] = 0  
 }
 ```
 
@@ -111,7 +144,7 @@ RenderOutput("/output/diffuse_key") {
 
 #### Motion Vectors
 
-See also: [Motion Vectors](/moonray/how-to-guides/motion-vectors)
+See also: [Motion Vectors](motion-vectors)
 
 ```lua
 -- Create 2D screen space motion vectors  
@@ -121,10 +154,4 @@ RenderOutput("/output/motion_vectors") {
     ["channel_suffix_mode"] = "rgb"  
 }
 ```
-
-### Additional Info
-
-[General Light Path Expressions](https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions)
-
-[Extra Aovs](/moonray/how-to-guides/extra-aovs)
 

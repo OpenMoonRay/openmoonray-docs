@@ -1,0 +1,296 @@
+// Sane box model
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(html, body) {
+  // Allow percentage-based heights
+  // See: https://www.joshwcomeau.com/css/custom-css-reset/#digit-percentage-based-heights
+  block-size: 100%;
+
+  // See: https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+  -webkit-text-size-adjust: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+// Remove default margins
+:where(:not(dialog)) {
+  margin: 0;
+}
+
+// Remove default borders
+:where(:not(fieldset, progress, meter)) {
+  border-width: 0;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+// Embolden headings
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: var(--font-weight-bold);
+}
+
+// Embolden pseudo-headings for def list and details/summary
+:where(dt, summary) {
+  font-weight: var(--font-weight-bold);
+}
+
+// Lists
+:where(ol, ul) {
+  padding-inline-start: var(--size-8);
+}
+:where(li) {
+  padding-inline-start: var(--size-2);
+}
+
+// Menu list element
+// See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
+:where(menu) {
+  padding-inline-start: 0;
+  display: flex;
+  gap: var(--size-3);
+}
+
+// Definition lists
+:where(dt:not(:first-of-type)) {
+  margin-block-start: var(--size-5);
+}
+
+// Horizontal rules
+:where(hr) {
+  margin-block: var(--size-2);
+  height: var(--border-size-2);
+}
+
+// Figures
+:where(figure) {
+  display: grid;
+  gap: var(--size-2);
+  place-items: center;
+
+  & > :where(figcaption) {
+    font-size: var(--font-size-1);
+  }
+}
+
+// Blockquotes and citations
+:where(blockquote) {
+  padding-block: var(--size-3);
+  padding-inline: var(--size-4);
+}
+:where(blockquote, :not(blockquote) > cite) {
+  border-inline-start-width: var(--border-size-3);
+}
+:where(:not(blockquote) > cite) {
+  padding-inline-start: var(--size-2);
+}
+
+// Text markup elements
+:where(kbd, var) {
+  padding: var(--size-1) var(--size-2);
+  border-width: var(--border-size-1);
+  border-color: var(--color-code-inline-text);
+  border-radius: var(--radius-2);
+}
+:where(mark) {
+  border-radius: var(--radius-2);
+  padding-inline: var(--size-1);
+}
+:where(del) {
+  background: var(--red-9);
+  color: var(--red-2);
+}
+
+:where(ins) {
+  background: var(--green-9);
+  color: var(--green-1);
+}
+:where(abbr) {
+  text-decoration-color: var(--blue-5);
+}
+
+:where(a:hover, .link--hover) {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+// Position underline for elements that naturally have one
+:where(a, u, ins, abbr) {
+  text-underline-offset: 1px;
+
+  @supports (-moz-appearance: none) {
+    text-underline-offset: 2px;
+  }
+}
+
+// Force the "this is clickable" pointer for interactive elements
+:where(
+    a[href],
+    area,
+    button,
+    input,
+    label[for],
+    select,
+    summary,
+    textarea,
+    [tabindex]:not([tabindex*='-'])
+  ) {
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// Tab focus behavior (focus via keyboard navigation)
+// See: https://css-tricks.com/almanac/selectors/f/focus-visible/
+:where(:not(:active):focus-visible) {
+  outline-offset: 5px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :where(:focus-visible) {
+    transition: outline-offset 145ms var(--ease-2);
+  }
+  :where(:not(:active):focus-visible) {
+    transition-duration: 0.25s;
+  }
+}
+
+// Monospace font display elements
+:where(code, kbd, samp, pre) {
+  font-family: var(--font-mono);
+}
+:where(pre) {
+  white-space: pre;
+}
+:where(:not(pre) > code, kbd) {
+  white-space: nowrap;
+}
+:where(:not(pre) > code) {
+  padding: 0.1875rem var(--size-1);
+  border-radius: var(--radius-2);
+  vertical-align: middle;
+}
+
+// Media elements
+:where(img, svg, video, canvas, audio, iframe, embed, object) {
+  display: block;
+}
+:where(img, svg, video) {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+// Inherit font attributes for form inputs and buttons.
+:where(input, button, textarea, select),
+:where(input[type='file'])::-webkit-file-upload-button {
+  font: inherit;
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+// Default form input padding
+:where(input:not([type='range']), textarea) {
+  padding-inline: var(--size-2);
+  padding-block: var(--size-1);
+}
+:where(select) {
+  padding-inline: 1.25ch 0;
+  padding-block: 0.75ch;
+}
+
+// Default form input border-radius
+:where(
+    textarea,
+    select,
+    input:not(
+        button,
+        button[type],
+        input[type='button'],
+        input[type='submit'],
+        input[type='reset']
+      )
+  ) {
+  border-radius: var(--radius-2);
+}
+
+// Default checkbox and radio dimensions
+:where(input[type='checkbox'], input[type='radio']) {
+  block-size: var(--size-3);
+  inline-size: var(--size-3);
+}
+
+// Make textarea elements resizeable
+:where(textarea) {
+  resize: vertical;
+}
+
+// Fieldsets
+:where(fieldset) {
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--color-hr);
+}
+
+// Dialogs
+:where(dialog) {
+  color: inherit;
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-6);
+
+  &::backdrop {
+    backdrop-filter: blur(25px);
+  }
+}
+// :where(html:has(dialog[open])) {
+//   overflow: hidden;
+// }
+
+// Detail/summary
+:where(summary) {
+  padding: var(--size-2) var(--size-3) var(--size-2) var(--size-7);
+  margin: calc(var(--size-2) * -1) calc(var(--size-3) * -1);
+  border-radius: 0.25rem;
+  position: relative;
+  display: block;
+}
+:where(details) {
+  margin-block: var(--size-5);
+  padding-inline: var(--size-3);
+  padding-block: var(--size-2);
+  border-radius: var(--radius-2);
+}
+:where(details[open] > summary) {
+  margin-bottom: var(--size-2);
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+
+:where(summary)::before {
+  content: '';
+  border-width: 0.38rem;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color-disclosure-expand-icon);
+  position: absolute;
+  top: 1.1rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+}
+
+:where(details[open] > summary)::before {
+  transform: rotate(90deg);
+}
+
+:where(summary)::-webkit-details-marker,
+:where(summary)::marker {
+  display: none;
+}
+
+:where(sl-icon) {
+  vertical-align: middle;
+}

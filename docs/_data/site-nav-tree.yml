@@ -1,505 +1,511 @@
 ---
-title: Documentation
-toc:
-  - item: Beta
-    path: /beta/
+  - text: Beta
+    path: beta/index.md
     subitems:
-        - item: Arras Intro
-          path: /beta/arras-intro
-        - item: Building
-          path: /beta/building
-        - item: Dependencies
-          path: /beta/dependencies
-        - item: Distributed Arras
-          path: /beta/distributed-arras
-        - item: Hydra Setup
-          path: /beta/hydra-setup
-        - item: Release Contents
-          path: /beta/release-contents
-        - item: Scene Formats
-          path: /beta/scene-formats
-        - item: Source Contents
-          path: /beta/source-contents
-  - item: Overview
-    path: /overview/
+      - text: Arras Intro
+        path: beta/arras-intro.md
+      - text: Building
+        path: beta/building.md
+      - text: Dependencies
+        path: beta/dependencies.md
+      - text: Distributed Arras
+        path: beta/distributed-arras.md
+      - text: Hydra Setup
+        path: beta/hydra-setup.md
+      - text: Release Contents
+        path: beta/release-contents.md
+      - text: Scene Formats
+        path: beta/scene-formats.md
+      - text: Source Contents
+        path: beta/source-contents.md
+  - text: Overview
+    path: overview/index.md
     subitems:
-      - item: Community
-        path: /overview/community
-      - item: What's included
-        path: /overview/whats-included
-      - item: Beginner's Guide
-        path: /overview/beginners-guide
-  - item: Scene Classes
-    path: /scene-classes
+      - text: Community
+        path: overview/community/index.md
+      - text: What's included
+        path: overview/whats-included/index.md
+      - text: Beginner's Guide
+        path: overview/beginners-guide/index.md
+  - text: Scene Classes
+    path: scene-classes/index.md
     subitems:
-      - item: Cameras
-        path: /scene-classes/cameras/
+      - text: Cameras
+        path: scene-classes/cameras/index.md
         subitems:
-          - item: BakeCamera
-            path: /scene-classes/cameras/BakeCamera
-          - item: DomeMaster3DCamera
-            path: /scene-classes/cameras/DomeMaster3DCamera
-          - item: OrthographicCamera
-            path: /scene-classes/cameras/OrthographicCamera
-          - item: PerspectiveCamera
-            path: /scene-classes/cameras/PerspectiveCamera
-          - item: SphericalCamera
-            path: /scene-classes/cameras/SphericalCamera
-      - item: Displacement
-        path: /scene-classes/displacement
+          - text: BakeCamera
+            path: scene-classes/cameras/BakeCamera.md
+          - text: DomeMaster3DCamera
+            path: scene-classes/cameras/DomeMaster3DCamera.md
+          - text: OrthographicCamera
+            path: scene-classes/cameras/OrthographicCamera.md
+          - text: PerspectiveCamera
+            path: scene-classes/cameras/PerspectiveCamera.md
+          - text: SphericalCamera
+            path: scene-classes/cameras/SphericalCamera.md
+      - text: Displacement
+        path: scene-classes/displacement/index.md
         subitems:
-          - item: CombineDisplacement
-            path: /scene-classes/displacement/CombineDisplacement
-          - item: NormalDisplacement
-            path: /scene-classes/displacement/NormalDisplacement
-          - item: SwitchDisplacement
-            path: /scene-classes/displacement/SwitchDisplacement
-          - item: VectorDisplacement
-            path: /scene-classes/displacement/VectorDisplacement
-      - item: Display Filters
-        path: /scene-classes/display-filters/
+          - text: CombineDisplacement
+            path: scene-classes/displacement/CombineDisplacement.md
+          - text: NormalDisplacement
+            path: scene-classes/displacement/NormalDisplacement.md
+          - text: SwitchDisplacement
+            path: scene-classes/displacement/SwitchDisplacement.md
+          - text: VectorDisplacement
+            path: scene-classes/displacement/VectorDisplacement.md
+      - text: Display Filters
+        path: scene-classes/display-filters/index.md
         subitems:
-          - item: BlendDisplayFilter
-            path: /scene-classes/display-filters/BlendDisplayFilter
-          - item: ClampDisplayFilter
-            path: /scene-classes/display-filters/ClampDisplayFilter
-          - item: ColorCorrectDisplayFilter
-            path: /scene-classes/display-filters/ColorCorrectDisplayFilter
-          - item: ConstantDisplayFilter
-            path: /scene-classes/display-filters/ConstantDisplayFilter
-          - item: ConvolutionDisplayFilter
-            path: /scene-classes/display-filters/ConvolutionDisplayFilter
-          - item: DiscretizeDisplayFilter
-            path: /scene-classes/display-filters/DiscretizeDisplayFilter
-          - item: DofDisplayFilter
-            path: /scene-classes/display-filters/DofDisplayFilter
-          - item: HalftoneDisplayFilter
-            path: /scene-classes/display-filters/HalftoneDisplayFilter
-          - item: ImageDisplayFilter
-            path: /scene-classes/display-filters/ImageDisplayFilter
-          - item: OpDisplayFilter
-            path: /scene-classes/display-filters/OpDisplayFilter
-          - item: OverDisplayFilter
-            path: /scene-classes/display-filters/OverDisplayFilter
-          - item: RampDisplayFilter
-            path: /scene-classes/display-filters/RampDisplayFilter
-          - item: RemapDisplayFilter
-            path: /scene-classes/display-filters/RemapDisplayFilter
-          - item: RgbToFloatDisplayFilter
-            path: /scene-classes/display-filters/RgbToFloatDisplayFilter
-          - item: RgbToHsvDisplayFilter
-            path: /scene-classes/display-filters/RgbToHsvDisplayFilter
-          - item: ShadowDisplayFilter
-            path: /scene-classes/display-filters/ShadowDisplayFilter
-          - item: TangentSpaceDisplayFilter
-            path: /scene-classes/display-filters/TangentSpaceDisplayFilter
-          - item: ToonDisplayFilter
-            path: /scene-classes/display-filters/ToonDisplayFilter
-      - item: Geometry
-        path: /scene-classes/geometry
+          - text: BlendDisplayFilter
+            path: scene-classes/display-filters/BlendDisplayFilter.md
+          - text: ClampDisplayFilter
+            path: scene-classes/display-filters/ClampDisplayFilter.md
+          - text: ColorCorrectDisplayFilter
+            path: scene-classes/display-filters/ColorCorrectDisplayFilter.md
+          - text: ConstantDisplayFilter
+            path: scene-classes/display-filters/ConstantDisplayFilter.md
+          - text: ConvolutionDisplayFilter
+            path: scene-classes/display-filters/ConvolutionDisplayFilter.md
+          - text: DiscretizeDisplayFilter
+            path: scene-classes/display-filters/DiscretizeDisplayFilter.md
+          - text: DofDisplayFilter
+            path: scene-classes/display-filters/DofDisplayFilter.md
+          - text: HalftoneDisplayFilter
+            path: scene-classes/display-filters/HalftoneDisplayFilter.md
+          - text: ImageDisplayFilter
+            path: scene-classes/display-filters/ImageDisplayFilter.md
+          - text: OpDisplayFilter
+            path: scene-classes/display-filters/OpDisplayFilter.md
+          - text: OverDisplayFilter
+            path: scene-classes/display-filters/OverDisplayFilter.md
+          - text: RampDisplayFilter
+            path: scene-classes/display-filters/RampDisplayFilter.md
+          - text: RemapDisplayFilter
+            path: scene-classes/display-filters/RemapDisplayFilter.md
+          - text: RgbToFloatDisplayFilter
+            path: scene-classes/display-filters/RgbToFloatDisplayFilter.md
+          - text: RgbToHsvDisplayFilter
+            path: scene-classes/display-filters/RgbToHsvDisplayFilter.md
+          - text: ShadowDisplayFilter
+            path: scene-classes/display-filters/ShadowDisplayFilter.md
+          - text: TangentSpaceDisplayFilter
+            path: scene-classes/display-filters/TangentSpaceDisplayFilter.md
+          - text: ToonDisplayFilter
+            path: scene-classes/display-filters/ToonDisplayFilter.md
+      - text: Geometry
+        path: scene-classes/geometry/index.md
         subitems:
-          - item: BoxGeometry
-            path: /scene-classes/geometry/BoxGeometry
-          - item: RdlCurveGeometry
-            path: /scene-classes/geometry/RdlCurveGeometry
-          - item: RdlInstancerGeometry
-            path: /scene-classes/geometry/RdlInstancerGeometry
-          - item: RdlMeshGeometry
-            path: /scene-classes/geometry/RdlMeshGeometry
-          - item: RdlPointGeometry
-            path: /scene-classes/geometry/RdlPointGeometry
-          - item: SphereGeometry
-            path: /scene-classes/geometry/SphereGeometry
-          - item: UsdGeometry
-            path: /scene-classes/geometry/UsdGeometry
-          - item: UsdInstanceGeometry
-            path: /scene-classes/geometry/UsdInstanceGeometry
-          - item: VdbGeometry
-            path: /scene-classes/geometry/VdbGeometry
-      - item: Joint
-        path: /scene-classes/joint
-      - item: Materials
-        path: /scene-classes/materials
+          - text: BoxGeometry
+            path: scene-classes/geometry/BoxGeometry.md
+          - text: RdlCurveGeometry
+            path: scene-classes/geometry/RdlCurveGeometry.md
+          - text: RdlInstancerGeometry
+            path: scene-classes/geometry/RdlInstancerGeometry.md
+          - text: RdlMeshGeometry
+            path: scene-classes/geometry/RdlMeshGeometry.md
+          - text: RdlPointGeometry
+            path: scene-classes/geometry/RdlPointGeometry.md
+          - text: SphereGeometry
+            path: scene-classes/geometry/SphereGeometry.md
+          - text: UsdGeometry
+            path: scene-classes/geometry/UsdGeometry.md
+          - text: UsdInstanceGeometry
+            path: scene-classes/geometry/UsdInstanceGeometry.md
+          - text: VdbGeometry
+            path: scene-classes/geometry/VdbGeometry.md
+      - text: Joint
+        path: scene-classes/joint/index.md
+      - text: Materials
+        path: scene-classes/materials/index.md
         subitems:
-          - item: Dwa Materials
-            path: /scene-classes/materials/dwa
+          - text: Dwa Materials
+            path: scene-classes/materials/dwa/index.md
             subitems:
-              - item: DwaAdjustMaterial
-                path: /scene-classes/materials/dwa/DwaAdjustMaterial
-              - item: DwaBaseMaterial
-                path: /scene-classes/materials/dwa/DwaBaseMaterial
-              - item: DwaColorCorrectMaterial
-                path: /scene-classes/materials/dwa/DwaColorCorrectMaterial
-              - item: DwaEmissiveMaterial
-                path: /scene-classes/materials/dwa/DwaEmissiveMaterial
-              - item: DwaFabricMaterial
-                path: /scene-classes/materials/dwa/DwaFabricMaterial
-              - item: DwaLayerMaterial
-                path: /scene-classes/materials/dwa/DwaLayerMaterial
-              - item: DwaMetalMaterial
-                path: /scene-classes/materials/dwa/DwaMetalMaterial
-              - item: DwaMixMaterial
-                path: /scene-classes/materials/dwa/DwaMixMaterial
-              - item: DwaRefractiveMaterial
-                path: /scene-classes/materials/dwa/DwaRefractiveMaterial
-              - item: DwaSkinMaterial
-                path: /scene-classes/materials/dwa/DwaSkinMaterial
-              - item: DwaSolidDielectricMaterial
-                path: /scene-classes/materials/dwa/DwaSolidDielectricMaterial
-              - item: DwaSwitchMaterial
-                path: /scene-classes/materials/dwa/DwaSwitchMaterial
-              - item: DwaToonMaterial
-                path: /scene-classes/materials/dwa/DwaToonMaterial
-              - item: DwaTwoSidedMaterial
-                path: /scene-classes/materials/dwa/DwaTwoSidedMaterial
-              - item: DwaVelvetMaterial_v2
-                path: /scene-classes/materials/dwa/DwaVelvetMaterial_v2
-          - item: Hair Materials
-            path: /scene-classes/materials/hair
+              - text: DwaAdjustMaterial
+                path: scene-classes/materials/dwa/DwaAdjustMaterial.md
+              - text: DwaBaseMaterial
+                path: scene-classes/materials/dwa/DwaBaseMaterial.md
+              - text: DwaColorCorrectMaterial
+                path: scene-classes/materials/dwa/DwaColorCorrectMaterial.md
+              - text: DwaEmissiveMaterial
+                path: scene-classes/materials/dwa/DwaEmissiveMaterial.md
+              - text: DwaFabricMaterial
+                path: scene-classes/materials/dwa/DwaFabricMaterial.md
+              - text: DwaLayerMaterial
+                path: scene-classes/materials/dwa/DwaLayerMaterial.md
+              - text: DwaMetalMaterial
+                path: scene-classes/materials/dwa/DwaMetalMaterial.md
+              - text: DwaMixMaterial
+                path: scene-classes/materials/dwa/DwaMixMaterial.md
+              - text: DwaRefractiveMaterial
+                path: scene-classes/materials/dwa/DwaRefractiveMaterial.md
+              - text: DwaSkinMaterial
+                path: scene-classes/materials/dwa/DwaSkinMaterial.md
+              - text: DwaSolidDielectricMaterial
+                path: scene-classes/materials/dwa/DwaSolidDielectricMaterial.md
+              - text: DwaSwitchMaterial
+                path: scene-classes/materials/dwa/DwaSwitchMaterial.md
+              - text: DwaToonMaterial
+                path: scene-classes/materials/dwa/DwaToonMaterial.md
+              - text: DwaTwoSidedMaterial
+                path: scene-classes/materials/dwa/DwaTwoSidedMaterial.md
+              - text: DwaVelvetMaterial_v2
+                path: scene-classes/materials/dwa/DwaVelvetMaterial_v2.md
+          - text: Hair Materials
+            path: scene-classes/materials/hair/index.md
             subitems:
-              - item: HairColorCorrectMaterial
-                path: /scene-classes/materials/hair/HairColorCorrectMaterial
-              - item: HairDiffuseMaterial
-                path: /scene-classes/materials/hair/HairDiffuseMaterial
-              - item: HairLayerMaterial
-                path: /scene-classes/materials/hair/HairLayerMaterial
-              - item: HairMaterial_v3
-                path: /scene-classes/materials/hair/HairMaterial_v3
-              - item: HairToonMaterial
-                path: /scene-classes/materials/hair/HairToonMaterial
-          - item: RaySwitchMaterial
-            path: /scene-classes/materials/RaySwitchMaterial
-          - item: SwitchMaterial
-            path: /scene-classes/materials/SwitchMaterial
-          - item: UsdPreviewSurface
-            path: /scene-classes/materials/UsdPreviewSurface
-      - item: Maps
-        path: /scene-classes/maps
+              - text: HairColorCorrectMaterial
+                path: scene-classes/materials/hair/HairColorCorrectMaterial.md
+              - text: HairDiffuseMaterial
+                path: scene-classes/materials/hair/HairDiffuseMaterial.md
+              - text: HairLayerMaterial
+                path: scene-classes/materials/hair/HairLayerMaterial.md
+              - text: HairMaterial_v3
+                path: scene-classes/materials/hair/HairMaterial_v3.md
+              - text: HairToonMaterial
+                path: scene-classes/materials/hair/HairToonMaterial.md
+          - text: RaySwitchMaterial
+            path: scene-classes/materials/RaySwitchMaterial.md
+          - text: SwitchMaterial
+            path: scene-classes/materials/SwitchMaterial.md
+          - text: UsdPreviewSurface
+            path: scene-classes/materials/UsdPreviewSurface.md
+      - text: Maps
+        path: scene-classes/maps/index.md
         subitems:
-          - item: AttributeMap
-            path: /scene-classes/maps/AttributeMap
-          - item: AxisAngleMap
-            path: /scene-classes/maps/AxisAngleMap
-          - item: BlendMap
-            path: /scene-classes/maps/BlendMap
-          - item: CheckerboardMap
-            path: /scene-classes/maps/CheckerboardMap
-          - item: ClampMap
-            path: /scene-classes/maps/ClampMap
-          - item: ColorCorrectContrastMap
-            path: /scene-classes/maps/ColorCorrectContrastMap
-          - item: ColorCorrectGainOffsetMap
-            path: /scene-classes/maps/ColorCorrectGainOffsetMap
-          - item: ColorCorrectGammaMap
-            path: /scene-classes/maps/ColorCorrectGammaMap
-          - item: ColorCorrectHsvMap
-            path: /scene-classes/maps/ColorCorrectHsvMap
-          - item: ColorCorrectHueShiftMap
-            path: /scene-classes/maps/ColorCorrectHueShiftMap
-          - item: ColorCorrectLegacyMap
-            path: /scene-classes/maps/ColorCorrectLegacyMap
-          - item: ColorCorrectMap
-            path: /scene-classes/maps/ColorCorrectMap
-          - item: ColorCorrectNukeMap
-            path: /scene-classes/maps/ColorCorrectNukeMap
-          - item: ColorCorrectSaturationMap
-            path: /scene-classes/maps/ColorCorrectSaturationMap
-          - item: ColorCorrectTMIMap
-            path: /scene-classes/maps/ColorCorrectTMIMap
-          - item: ConstantColorMap
-            path: /scene-classes/maps/ConstantColorMap
-          - item: ConstantScalarMap
-            path: /scene-classes/maps/ConstantScalarMap
-          - item: CurvatureMap
-            path: /scene-classes/maps/CurvatureMap
-          - item: DebugMap
-            path: /scene-classes/maps/DebugMap
-          - item: DeformationMap
-            path: /scene-classes/maps/DeformationMap
-          - item: DirectionalMap
-            path: /scene-classes/maps/DirectionalMap
-          - item: ExtraAovMap
-            path: /scene-classes/maps/ExtraAovMap
-          - item: FloatToRgbMap
-            path: /scene-classes/maps/FloatToRgbMap
-          - item: GradientMap
-            path: /scene-classes/maps/GradientMap
-          - item: HairColorPresetsMap
-            path: /scene-classes/maps/HairColorPresetsMap
-          - item: HairColumnMap
-            path: /scene-classes/maps/HairColumnMap
-          - item: HairMap
-            path: /scene-classes/maps/HairMap
-          - item: HsvToRgbMap
-            path: /scene-classes/maps/HsvToRgbMap
-          - item: ImageMap
-            path: /scene-classes/maps/ImageMap
-          - item: LayerMap
-            path: /scene-classes/maps/LayerMap
-          - item: LcToRgbMap
-            path: /scene-classes/maps/LcToRgbMap
-          - item: ListMap
-            path: /scene-classes/maps/ListMap
-          - item: LODMap
-            path: /scene-classes/maps/LODMap
-          - item: NoiseMap
-            path: /scene-classes/maps/NoiseMap
-          - item: NoiseMap_v2
-            path: /scene-classes/maps/NoiseMap_v2
-          - item: NoiseWorleyMap
-            path: /scene-classes/maps/NoiseWorleyMap
-          - item: NoiseWorleyMap_v2
-            path: /scene-classes/maps/NoiseWorleyMap_v2
-          - item: NormalToRgbMap
-            path: /scene-classes/maps/NormalToRgbMap
-          - item: OpenVdbMap
-            path: /scene-classes/maps/OpenVdbMap
-          - item: OpenVdbMap_v2
-            path: /scene-classes/maps/OpenVdbMap_v2
-          - item: OpMap
-            path: /scene-classes/maps/OpMap
-          - item: ProjectCameraMap
-            path: /scene-classes/maps/ProjectCameraMap
-          - item: ProjectCameraMap_v2
-            path: /scene-classes/maps/ProjectCameraMap_v2
-          - item: ProjectCylindricalMap
-            path: /scene-classes/maps/ProjectCylindricalMap
-          - item: ProjectPlanarMap
-            path: /scene-classes/maps/ProjectPlanarMap
-          - item: ProjectSphericalMap
-            path: /scene-classes/maps/ProjectSphericalMap
-          - item: ProjectTriplanarMap
-            path: /scene-classes/maps/ProjectTriplanarMap
-          - item: ProjectTriplanarMap_v2
-            path: /scene-classes/maps/ProjectTriplanarMap_v2
-          - item: ProjectTriplanarUdimMap
-            path: /scene-classes/maps/ProjectTriplanarUdimMap
-          - item: RampMap
-            path: /scene-classes/maps/RampMap
-          - item: RandomMap
-            path: /scene-classes/maps/RandomMap
-          - item: RemapMap
-            path: /scene-classes/maps/RemapMap
-          - item: RgbToFloatMap
-            path: /scene-classes/maps/RgbToFloatMap
-          - item: RgbToHsvMap
-            path: /scene-classes/maps/RgbToHsvMap
-          - item: RgbToLabMap
-            path: /scene-classes/maps/RgbToLabMap
-          - item: SwitchColorMap
-            path: /scene-classes/maps/SwitchColorMap
-          - item: SwitchFloatMap
-            path: /scene-classes/maps/SwitchFloatMap
-          - item: ToonMap
-            path: /scene-classes/maps/ToonMap
-          - item: TransformSpaceMap
-            path: /scene-classes/maps/TransformSpaceMap
-          - item: UsdPrimvarReader_float
-            path: /scene-classes/maps/UsdPrimvarReader_float
-          - item: UsdPrimvarReader_float2
-            path: /scene-classes/maps/UsdPrimvarReader_float2
-          - item: UsdPrimvarReader_float3
-            path: /scene-classes/maps/UsdPrimvarReader_float3
-          - item: UsdPrimvarReader_int
-            path: /scene-classes/maps/UsdPrimvarReader_int
-          - item: UsdPrimvarReader_normal
-            path: /scene-classes/maps/UsdPrimvarReader_normal
-          - item: UsdPrimvarReader_point
-            path: /scene-classes/maps/UsdPrimvarReader_point
-          - item: UsdPrimvarReader_vector
-            path: /scene-classes/maps/UsdPrimvarReader_vector
-          - item: UsdTransform2d
-            path: /scene-classes/maps/UsdTransform2d
-          - item: UsdUVTexture
-            path: /scene-classes/maps/UsdUVTexture
-          - item: UVTransformMap
-            path: /scene-classes/maps/UVTransformMap
-          - item: WireframeMap
-            path: /scene-classes/maps/WireframeMap
-      - item: Meta Data
-        path: /scene-classes/meta-data
-      - item: Normal Maps
-        path: /scene-classes/normal-maps
+          - text: AttributeMap
+            path: scene-classes/maps/AttributeMap.md
+          - text: AxisAngleMap
+            path: scene-classes/maps/AxisAngleMap.md
+          - text: BlendMap
+            path: scene-classes/maps/BlendMap.md
+          - text: CheckerboardMap
+            path: scene-classes/maps/CheckerboardMap.md
+          - text: ClampMap
+            path: scene-classes/maps/ClampMap.md
+          - text: ColorCorrectContrastMap
+            path: scene-classes/maps/ColorCorrectContrastMap.md
+          - text: ColorCorrectGainOffsetMap
+            path: scene-classes/maps/ColorCorrectGainOffsetMap.md
+          - text: ColorCorrectGammaMap
+            path: scene-classes/maps/ColorCorrectGammaMap.md
+          - text: ColorCorrectHsvMap
+            path: scene-classes/maps/ColorCorrectHsvMap.md
+          - text: ColorCorrectHueShiftMap
+            path: scene-classes/maps/ColorCorrectHueShiftMap.md
+          - text: ColorCorrectLegacyMap
+            path: scene-classes/maps/ColorCorrectLegacyMap.md
+          - text: ColorCorrectMap
+            path: scene-classes/maps/ColorCorrectMap.md
+          - text: ColorCorrectNukeMap
+            path: scene-classes/maps/ColorCorrectNukeMap.md
+          - text: ColorCorrectSaturationMap
+            path: scene-classes/maps/ColorCorrectSaturationMap.md
+          - text: ColorCorrectTMIMap
+            path: scene-classes/maps/ColorCorrectTMIMap.md
+          - text: ConstantColorMap
+            path: scene-classes/maps/ConstantColorMap.md
+          - text: ConstantScalarMap
+            path: scene-classes/maps/ConstantScalarMap.md
+          - text: CurvatureMap
+            path: scene-classes/maps/CurvatureMap.md
+          - text: DebugMap
+            path: scene-classes/maps/DebugMap.md
+          - text: DeformationMap
+            path: scene-classes/maps/DeformationMap.md
+          - text: DirectionalMap
+            path: scene-classes/maps/DirectionalMap.md
+          - text: ExtraAovMap
+            path: scene-classes/maps/ExtraAovMap.md
+          - text: FloatToRgbMap
+            path: scene-classes/maps/FloatToRgbMap.md
+          - text: GradientMap
+            path: scene-classes/maps/GradientMap.md
+          - text: HairColorPresetsMap
+            path: scene-classes/maps/HairColorPresetsMap.md
+          - text: HairColumnMap
+            path: scene-classes/maps/HairColumnMap.md
+          - text: HairMap
+            path: scene-classes/maps/HairMap.md
+          - text: HsvToRgbMap
+            path: scene-classes/maps/HsvToRgbMap.md
+          - text: ImageMap
+            path: scene-classes/maps/ImageMap.md
+          - text: LayerMap
+            path: scene-classes/maps/LayerMap.md
+          - text: LcToRgbMap
+            path: scene-classes/maps/LcToRgbMap.md
+          - text: ListMap
+            path: scene-classes/maps/ListMap.md
+          - text: LODMap
+            path: scene-classes/maps/LODMap.md
+          - text: NoiseMap
+            path: scene-classes/maps/NoiseMap.md
+          - text: NoiseMap_v2
+            path: scene-classes/maps/NoiseMap_v2.md
+          - text: NoiseWorleyMap
+            path: scene-classes/maps/NoiseWorleyMap.md
+          - text: NoiseWorleyMap_v2
+            path: scene-classes/maps/NoiseWorleyMap_v2.md
+          - text: NormalToRgbMap
+            path: scene-classes/maps/NormalToRgbMap.md
+          - text: OpenVdbMap
+            path: scene-classes/maps/OpenVdbMap.md
+          - text: OpenVdbMap_v2
+            path: scene-classes/maps/OpenVdbMap_v2.md
+          - text: OpMap
+            path: scene-classes/maps/OpMap.md
+          - text: ProjectCameraMap
+            path: scene-classes/maps/ProjectCameraMap.md
+          - text: ProjectCameraMap_v2
+            path: scene-classes/maps/ProjectCameraMap_v2.md
+          - text: ProjectCylindricalMap
+            path: scene-classes/maps/ProjectCylindricalMap.md
+          - text: ProjectPlanarMap
+            path: scene-classes/maps/ProjectPlanarMap.md
+          - text: ProjectSphericalMap
+            path: scene-classes/maps/ProjectSphericalMap.md
+          - text: ProjectTriplanarMap
+            path: scene-classes/maps/ProjectTriplanarMap.md
+          - text: ProjectTriplanarMap_v2
+            path: scene-classes/maps/ProjectTriplanarMap_v2.md
+          - text: ProjectTriplanarUdimMap
+            path: scene-classes/maps/ProjectTriplanarUdimMap.md
+          - text: RampMap
+            path: scene-classes/maps/RampMap.md
+          - text: RandomMap
+            path: scene-classes/maps/RandomMap.md
+          - text: RemapMap
+            path: scene-classes/maps/RemapMap.md
+          - text: RgbToFloatMap
+            path: scene-classes/maps/RgbToFloatMap.md
+          - text: RgbToHsvMap
+            path: scene-classes/maps/RgbToHsvMap.md
+          - text: RgbToLabMap
+            path: scene-classes/maps/RgbToLabMap.md
+          - text: SwitchColorMap
+            path: scene-classes/maps/SwitchColorMap.md
+          - text: SwitchFloatMap
+            path: scene-classes/maps/SwitchFloatMap.md
+          - text: ToonMap
+            path: scene-classes/maps/ToonMap.md
+          - text: TransformSpaceMap
+            path: scene-classes/maps/TransformSpaceMap.md
+          - text: UsdPrimvarReader_float
+            path: scene-classes/maps/UsdPrimvarReader_float.md
+          - text: UsdPrimvarReader_float2
+            path: scene-classes/maps/UsdPrimvarReader_float2.md
+          - text: UsdPrimvarReader_float3
+            path: scene-classes/maps/UsdPrimvarReader_float3.md
+          - text: UsdPrimvarReader_int
+            path: scene-classes/maps/UsdPrimvarReader_int.md
+          - text: UsdPrimvarReader_normal
+            path: scene-classes/maps/UsdPrimvarReader_normal.md
+          - text: UsdPrimvarReader_point
+            path: scene-classes/maps/UsdPrimvarReader_point.md
+          - text: UsdPrimvarReader_vector
+            path: scene-classes/maps/UsdPrimvarReader_vector.md
+          - text: UsdTransform2d
+            path: scene-classes/maps/UsdTransform2d.md
+          - text: UsdUVTexture
+            path: scene-classes/maps/UsdUVTexture.md
+          - text: UVTransformMap
+            path: scene-classes/maps/UVTransformMap.md
+          - text: WireframeMap
+            path: scene-classes/maps/WireframeMap.md
+      - text: Meta Data
+        path: scene-classes/meta-data/index.md
+      - text: Normal Maps
+        path: scene-classes/normal-maps/index.md
         subitems:
-          - item: CombineNormalMap
-            path: /scene-classes/normal-maps/CombineNormalMap
-          - item: DistortNormalMap
-            path: /scene-classes/normal-maps/DistortNormalMap
-          - item: ImageNormalMap
-            path: /scene-classes/normal-maps/ImageNormalMap
-          - item: ProjectCameraNormalMap
-            path: /scene-classes/normal-maps/ProjectCameraNormalMap
-          - item: ProjectPlanarNormalMap
-            path: /scene-classes/normal-maps/ProjectPlanarNormalMap
-          - item: ProjectTriplanarNormalMap
-            path: /scene-classes/normal-maps/ProjectTriplanarNormalMap
-          - item: ProjectTriplanarNormalMap_v2
-            path: /scene-classes/normal-maps/ProjectTriplanarNormalMap_v2
-          - item: RandomNormalMap
-            path: /scene-classes/normal-maps/RandomNormalMap
-          - item: RgbToNormalMap
-            path: /scene-classes/normal-maps/RgbToNormalMap
-          - item: SwitchNormalMap
-            path: /scene-classes/normal-maps/SwitchNormalMap
-          - item: TransformNormalMap
-            path: /scene-classes/normal-maps/TransformNormalMap
-      - item: Layer
-        path: /scene-classes/Layer
-      - item: Lights
-        path: /scene-classes/lights
+          - text: CombineNormalMap
+            path: scene-classes/normal-maps/CombineNormalMap.md
+          - text: DistortNormalMap
+            path: scene-classes/normal-maps/DistortNormalMap.md
+          - text: ImageNormalMap
+            path: scene-classes/normal-maps/ImageNormalMap.md
+          - text: ProjectCameraNormalMap
+            path: scene-classes/normal-maps/ProjectCameraNormalMap.md
+          - text: ProjectPlanarNormalMap
+            path: scene-classes/normal-maps/ProjectPlanarNormalMap.md
+          - text: ProjectTriplanarNormalMap
+            path: scene-classes/normal-maps/ProjectTriplanarNormalMap.md
+          - text: ProjectTriplanarNormalMap_v2
+            path: scene-classes/normal-maps/ProjectTriplanarNormalMap_v2.md
+          - text: RandomNormalMap
+            path: scene-classes/normal-maps/RandomNormalMap.md
+          - text: RgbToNormalMap
+            path: scene-classes/normal-maps/RgbToNormalMap.md
+          - text: SwitchNormalMap
+            path: scene-classes/normal-maps/SwitchNormalMap.md
+          - text: TransformNormalMap
+            path: scene-classes/normal-maps/TransformNormalMap.md
+      - text: Layer
+        path: scene-classes/layer/index.md
+      - text: Lights
+        path: scene-classes/lights/index.md
         subitems:
-          - item: CylinderLight
-            path: /scene-classes/lights/CylinderLight
-          - item: DiskLight
-            path: /scene-classes/lights/DiskLight
-          - item: DistantLight
-            path: /scene-classes/lights/DistantLight
-          - item: EnvLight
-            path: /scene-classes/lights/EnvLight
-          - item: LightSet
-            path: /scene-classes/lights/LightSet
-          - item: MeshLight
-            path: /scene-classes/lights/MeshLight
-          - item: RectLight
-            path: /scene-classes/lights/RectLight
-          - item: SphereLight
-            path: /scene-classes/lights/SphereLight
-          - item: SpotLight
-            path: /scene-classes/lights/SpotLight
-      - item: Light Filters
+          - text: CylinderLight
+            path: scene-classes/lights/CylinderLight.md
+          - text: DiskLight
+            path: scene-classes/lights/DiskLight.md
+          - text: DistantLight
+            path: scene-classes/lights/DistantLight.md
+          - text: EnvLight
+            path: scene-classes/lights/EnvLight.md
+          - text: LightSet
+            path: scene-classes/lights/LightSet.md
+          - text: MeshLight
+            path: scene-classes/lights/MeshLight.md
+          - text: RectLight
+            path: scene-classes/lights/RectLight.md
+          - text: SphereLight
+            path: scene-classes/lights/SphereLight.md
+          - text: SpotLight
+            path: scene-classes/lights/SpotLight.md
+      - text: Light Filters
         subitems:
-          - item: BarnDoorLightFilter
-            path: /scene-classes/light-filters/BarnDoorLightFilter
-          - item: ColorRampLightFilter
-            path: /scene-classes/light-filters/ColorRampLightFilter
-          - item: CombineLightFilter
-            path: /scene-classes/light-filters/CombineLightFilter
-          - item: CookieLightFilter
-            path: /scene-classes/light-filters/CookieLightFilter
-          - item: DecayLightFilter
-            path: /scene-classes/light-filters/DecayLightFilter
-          - item: IntensityLightFilter
-            path: /scene-classes/light-filters/IntensityLightFilter
-          - item: LightFilterSet
-            path: /scene-classes/light-filters/LightFilterSet
-          - item: RodLightFilter
-            path: /scene-classes/light-filters/RodLightFilter
-          - item: VdbLightFilter
-            path: /scene-classes/light-filters/VdbLightFilter
-      - item: Render Output
-        path: /scene-classes/render-output
-      - item: Scene Variables
-        path: /scene-classes/scene-variables
-      - item: Shadow Set
-        path: /scene-classes/shadow-set
-      - item: Shadow Receiver Set
-        path: /scene-classes/shadow-receiver-set
-      - item: Trace Set
-        path: /scene-classes/trace-set
-      - item: User Data
-        path: /scene-classes/user-data
-      - item: Volumes
-        path: /scene-classes/volumes
+          - text: BarnDoorLightFilter
+            path: scene-classes/light-filters/BarnDoorLightFilter.md
+          - text: ColorRampLightFilter
+            path: scene-classes/light-filters/ColorRampLightFilter.md
+          - text: CombineLightFilter
+            path: scene-classes/light-filters/CombineLightFilter.md
+          - text: CookieLightFilter
+            path: scene-classes/light-filters/CookieLightFilter.md
+          - text: DecayLightFilter
+            path: scene-classes/light-filters/DecayLightFilter.md
+          - text: IntensityLightFilter
+            path: scene-classes/light-filters/IntensityLightFilter.md
+          # - text: LightFilterSet
+          #   path: scene-classes/light-filters/LightFilterSet.md
+          - text: RodLightFilter
+            path: scene-classes/light-filters/RodLightFilter.md
+          - text: VdbLightFilter
+            path: scene-classes/light-filters/VdbLightFilter.md
+      - text: Render Output
+        path: scene-classes/render-output/index.md
+      - text: Scene Variables
+        path: scene-classes/scene-variables/index.md
+      - text: Shadow Set
+        path: scene-classes/shadow-set/index.md
+      - text: Shadow Receiver Set
+        path: scene-classes/shadow-receiver-set/index.md
+      - text: Trace Set
+        path: scene-classes/trace-set/index.md
+      - text: User Data
+        path: scene-classes/user-data/index.md
+      - text: Volumes
+        path: scene-classes/volumes/index.md
         subitems:
-          - item: BaseVolume
-            path: /scene-classes/volumes/BaseVolume
-          - item: CutoutVolume
-            path: /scene-classes/volumes/CutoutVolume
-          - item: VdbVolume
-            path: /scene-classes/volumes/VdbVolume
-  - item: MoonRay
-    path: /moonray
-    subitems: 
-      - item: Using moonray-gui
-        path: /moonray/moonray_gui
-      - item: Cmd-line Options
-        path: /moonray/cmd-line-options
-      - item: Execution modes
-        path: /moonray/execution-modes
-      - item: Performance Considerations
-        path: /moonray/performance-considerations
-      - item: How-To Guides
-        path: /moonray/how-to-guides/
-        subitems:
-          - item: Adaptive Sampling
-            path: /moonray/how-to-guides/adaptive-sampling
-          - item: Baking Textures
-            path: /moonray/how-to-guides/baking-textures
-          - item: Bokeh
-            path: /moonray/how-to-guides/bokeh
-          - item: Extra AOV Workflow and Case Studies
-            path: /moonray/how-to-guides/extra-aovs
-          - item: Material AOVs
-            path: /moonray/how-to-guides/material-aovs
-          - item: Motion vectors
-            path: /moonray/how-to-guides/motion-vectors
-          - item: Path Guiding
-            path: /moonray/how-to-guides/path-guiding
-          - item: PBR Validity
-            path: /moonray/how-to-guides/pbr-validity
-          - item: Point Rendering
-            path: /moonray/how-to-guides/point-rendering
-          - item: Render Outputs
-            path: /moonray/how-to-guides/render-outputs
-          - item: Render Inside a Medium
-            path: /moonray/how-to-guides/render-inside-medium
-  - item: Hydra
-    path: /hydra
+          - text: BaseVolume
+            path: /scene-classes/volumes/BaseVolume.md
+          - text: CutoutVolume
+            path: /scene-classes/volumes/CutoutVolume.md
+          - text: VdbVolume
+            path: /scene-classes/volumes/VdbVolume.md
+  - text: MoonRay
+    path: /moonray/index.md
     subitems:
-      - item: HdMoonRay Features
-        path: /hydra/hdmoonray-features
-      - item: HdMoonRay Plugin
-        path: /hydra/plugin
-      - item: HdMoonRay Setup
-        path: /hydra/hdmoonray-setup
-      - item: HdMoonRay Render Settings
-        path: /hydra/render-settings
-      - item: hd_render Command
-        path: /hydra/hd_render
-  - item: Tools
-    path: /tools
-    subitems:
-    - item: Render Profile Viewer
-      path: /tools/render-profile-viewer
-  - item: Developer's Guide
-    path: /developers-guide
-    subitems:
-      - item: The scene_rdl2 Library
-        path: /developers-guide/scene_rdl2-library
-      - item: Arras
-        path: /developers-guide/arras/arras-overview
+      - text: Using moonray-gui
+        path: /moonray/moonray_gui.md
+      - text: Cmd-line Options
+        path: /moonray/cmd-line-options.md
+      - text: Execution modes
+        path: /moonray/execution-modes.md
+      - text: Performance Considerations
+        path: /moonray/performance-considerations.md
+      - text: How-To Guides
+        path: /moonray/how-to-guides/index.md
         subitems:
-        - item: Arras Session Definitions
-          path: /developers-guide/arras/arras-session-definitions
-        - item: Arras Client API
-          path: /developers-guide/arras/arras-client-api
-      - item: Doxygen Reference
-        path: /api/html
-      - item: Writing Shaders
-        path: /developers-guide/shaders/
+          - text: Adaptive Sampling
+            path: /moonray/how-to-guides/adaptive-sampling.md
+          - text: Baking Textures
+            path: /moonray/how-to-guides/baking-textures.md
+          - text: Bokeh
+            path: /moonray/how-to-guides/bokeh.md
+          - text: Path Guiding
+            path: /moonray/how-to-guides/path-guiding.md
+          - text: PBR Validity
+            path: /moonray/how-to-guides/pbr-validity.md
+          - text: Point Rendering
+            path: /moonray/how-to-guides/point-rendering.md
+          - text: Render Outputs
+            path: /moonray/how-to-guides/render-outputs.md
+            subitems:
+              - text: Cryptomatte
+                path: /moonray/how-to-guides/render-outputs/cryptomatte.md
+              - text: Extra AOVs
+                path: /moonray/how-to-guides/render-outputs/extra-aovs.md
+              - text: Material AOVs
+                path: /moonray/how-to-guides/render-outputs/material-aovs.md
+              - text: Motion vectors
+                path: /moonray/how-to-guides/render-outputs/motion-vectors.md
+              - text: Variance AOVs
+                path: /moonray/how-to-guides/render-outputs/variance-aovs.md
+              - text: Visibility AOVs
+                path: /moonray/how-to-guides/render-outputs/visibility-aovs.md
+          - text: Render Inside a Medium
+            path: /moonray/how-to-guides/render-inside-medium.md
+  - text: Hydra
+    path: /hydra/index.md
+    subitems:
+      - text: HdMoonRay Features
+        path: /hydra/hdmoonray-features.md
+      - text: HdMoonRay Plugin
+        path: /hydra/plugin.md
+      - text: HdMoonRay Setup
+        path: /hydra/hdmoonray-setup.md
+      - text: HdMoonRay Render Settings
+        path: /hydra/render-settings.md
+      - text: hd_render Command
+        path: /hydra/hd_render.md
+  - text: Tools
+    path: /tools/index.md
+    subitems:
+    - text: Render Profile Viewer
+      path: /tools/render-profile-viewer.md
+    - item: Denoiser
+      path: /tools/denoiser.md
+  - text: Developer's Guide
+    path: developers-guide/index.md
+    subitems:
+      - text: The scene_rdl2 Library
+        path: developers-guide/scene_rdl2-library.md
+      - text: Arras
+        path: developers-guide/arras/index.md
         subitems:
-          - item: Cameras
-            path: /developers-guide/shaders/cameras
-          - item: Displacement
-            path: /developers-guide/shaders/displacement
-          - item: Display Filters
-            path: /developers-guide/shaders/display-filters
-          - item: Geometry Procedurals
-            path: /developers-guide/shaders/geometry-procedurals
-          - item: Lights
-            path: /developers-guide/shaders/lights
-          - item: Light Filters
-            path: /developers-guide/shaders/light-filters
-          - item: Maps
-            path: /developers-guide/shaders/maps
-          - item: Materials
-            path: /developers-guide/shaders/materials
-          - item: Normal Maps
-            path: /developers-guide/shaders/normal-maps
-          - item: Volume Shaders
-            path: /developers-guide/shaders/volume-shaders
-  - item: Release Notes
-    path: /release-notes
-  - item: Legal/Licensing
-    path: /license
-
+          - text: Arras Session Definitions
+            path: developers-guide/arras/arras-session-definitions.md
+          - text: Arras Client API
+            path: developers-guide/arras/arras-client-api.md
+      - text: Doxygen Reference
+        path: api/html/index.html
+      - text: Writing Shaders
+        path: developers-guide/shaders/index.md
+        subitems:
+          - text: Cameras
+            path: developers-guide/shaders/cameras.md
+          - text: Displacement
+            path: developers-guide/shaders/displacement.md
+          - text: Display Filters
+            path: developers-guide/shaders/display-filters.md
+          - text: Geometry Procedurals
+            path: developers-guide/shaders/geometry-procedurals.md
+          - text: Lights
+            path: developers-guide/shaders/lights.md
+          - text: Light Filters
+            path: developers-guide/shaders/light-filters.md
+          - text: Maps
+            path: developers-guide/shaders/maps.md
+          - text: Materials
+            path: developers-guide/shaders/materials.md
+          - text: Normal Maps
+            path: developers-guide/shaders/normal-maps.md
+          - text: Volume Shaders
+            path: developers-guide/shaders/volume-shaders.md
+  - text: Release Notes
+    path: release-notes/index.md
+  - text: Legal/Licensing
+    path: license.md

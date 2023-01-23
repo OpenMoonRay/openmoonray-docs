@@ -1,0 +1,82 @@
+:where(html, body) {
+  // Default browser font size is 16px, so 1rem = 16px
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+:where(h1, h3, h4, h5, h6) {
+  font-weight: var(--font-weight-semibold);
+}
+
+:where(h1) {
+  font-size: var(--font-size-6-fluid);
+  line-height: clamp(3rem, 8vw, 4rem);
+  margin-block-end: clamp(var(--size-6), 6vw, var(--size-8));
+  letter-spacing: -0.03em;
+  color: var(--color-h1);
+}
+
+:where(h2) {
+  font-size: var(--font-size-5-fluid);
+  font-weight: var(--font-weight-normal);
+  line-height: 3.25rem;
+  margin-block-start: clamp(var(--size-6), 3vw, var(--size-8));
+  margin-block-end: var(--size-5);
+  color: var(--color-h2);
+  letter-spacing: -0.03em;
+}
+
+:where(h3) {
+  font-size: var(--font-size-3-fluid);
+  color: var(--color-h3);
+}
+:where(h4) {
+  font-size: var(--font-size-2);
+  color: var(--color-h4);
+}
+
+:where(h5) {
+  color: var(--color-h5);
+}
+
+:where(h6) {
+  color: var(--color-h6);
+}
+
+:where(p, ul, ol, dl, h5, h6) {
+  font-size: var(--font-size-1);
+  line-height: 1.75rem;
+}
+
+:where(p, ul, ol, dl, h3, h4, h5, h6) {
+  margin-block: var(--size-5);
+}
+
+:where(ul, ol, dl) :where(main li:not([class])) {
+  margin-block: var(--size-2);
+}
+
+// !! Capital M is necessary below
+// see: https://github.com/sass/sass/issues/2849#issuecomment-820538086
+
+:where(small) {
+  font-size: var(--font-size-00);
+  // max-inline-size: var(--size-content-1);
+}
+
+:where(sup) {
+  font-size: var(--font-size-00);
+}
+
+:where(pre, code) {
+  font-size: var(--font-size-0);
+  line-height: 1.5rem;
+}
+
+:where(pre) {
+  margin-block: var(--size-5);
+}
+
+:where(summary) {
+  font-weight: var(--font-weight-semibold);
+}
