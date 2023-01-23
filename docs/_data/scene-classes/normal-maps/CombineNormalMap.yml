@@ -1,4 +1,5 @@
 ---
+overview: overviews/CombineNormalMapOverview.md
 image_path: /assets/images/scene-classes/normal-maps/CombineNormalMap
 gallery:
   - image: 1first.jpg
