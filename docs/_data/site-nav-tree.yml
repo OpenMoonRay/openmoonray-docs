@@ -17,9 +17,9 @@
         path: getting-started/installation
         subitems:
           - text: Building MoonRay
-            path: getting-started/installation/building.md
+            path: getting-started/installation/building-moonray.md
           - text: Dependencies
-            path: getting-started/installation/dependencies.md
+            path: getting-started/installation/moonray-dependencies.md
   - text: User Reference
     path: user-reference
     subitems:

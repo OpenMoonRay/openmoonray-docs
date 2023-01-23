@@ -17,12 +17,12 @@ The *openmoonray* repository contains instructions for building MoonRay in a Doc
 
 Each of these documents follows a fixed procedure, which you can vary as appropriate. The rest of this document is an overview of the build process.
 
-MoonRay builds on Linux using CMake. The top-level *CMakeLists.txt* file in the *openmoonray* repository builds all of MoonRay and Arras. You will need to populate all of the submodules that the *openmoonray* references before building (see [Cloning the Repo](cloning-the-repo)). You can set the option **BUILD_QT_APPS** to *NO* to skip build of the GUI applications *moonray_gui* and *arras_render*.
+MoonRay builds on Linux using CMake. The top-level *CMakeLists.txt* file in the *openmoonray* repository builds all of MoonRay and Arras. You will need to populate all of the submodules that the *openmoonray* references before building (see [Cloning the Repo](../cloning-the-repo)). You can set the option **BUILD_QT_APPS** to *NO* to skip build of the GUI applications *moonray_gui* and *arras_render*.
 
 The MoonRay build requires CMake 3.23 or newer. The instructions referenced above describe how to get and install this version, since it is newer than that provided by most Linux distributions. At DWA we build MoonRay with GCC-6 and GCC-9 : build instructions generally assume version 9, but you should be able to substitute version 6.
 ## Dependencies
 
-The main preparation required is to install the third-party libraries and tools that the MoonRay build is dependent on. These are listed in a table [here](moonray-dependencies). However the best reference to use is the files *Dockerfile* and *CMakeLists.txt* in the */building* directory of the openmoonray repository. These will be up-to-date for the source version you have checked out, and contain more detail about build options.
+The main preparation required is to install the third-party libraries and tools that the MoonRay build is dependent on. These are listed in a table [here](../moonray-dependencies). However the best reference to use is the files *Dockerfile* and *CMakeLists.txt* in the */building* directory of the openmoonray repository. These will be up-to-date for the source version you have checked out, and contain more detail about build options.
 
 ***Dockerfile*** lists a set of binary packages that can be installed on Centos-7 using the package manager *yum*. We haven't tested building MoonRay on other Linux distributions, but these should have similar packages.
 
