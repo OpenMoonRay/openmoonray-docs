@@ -1,8 +1,8 @@
---
+---
 title: About
 ---
-
-## [About MoonRay](moonray)
-## [About Scene Formats](rdl-scene-format)
-## [About Arras](arras)
+# About...
+## [MoonRay](moonray)
+## [Scene Formats](rdl-scene-format)
+## [Arras](arras)
 

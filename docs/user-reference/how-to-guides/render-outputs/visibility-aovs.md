@@ -1,4 +1,7 @@
-# Visbility AOVs
+---
+title: Visibility AOVs
+---
+# Visibility AOVs
 ![Visibility AOV Example]({{site.baseurl}}/assets/images/user-reference/how-to-guides/visibility-aovs/visibility-aov-header.png)
 
 A visibility AOV provides a way to visualize how much of the scene is visible from a certain light. In MoonRay, a ratio is calculated representing how much light is received: 

@@ -1,3 +1,6 @@
+---
+title: Building MoonRay in a Docker container
+---
 # Building MoonRay in a Docker container
 
 These instructions should also be available in the *building* subdirectory of the source code.

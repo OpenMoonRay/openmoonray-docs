@@ -1,11 +1,5 @@
 ---
-title: GlitterFlakeMaterial_v2
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
+title: Glitter Flake Material_v2
 ---
 # GlitterFlakeMaterial_v2
 {%-include overview.html data=site.data.scene-classes.materials.GlitterFlakeMaterial_v2-%}

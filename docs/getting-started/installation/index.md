@@ -1,5 +1,5 @@
 ---
-title: OpenMoonRay Overview
+title: MoonRay Overview
 ---
 # Overview
 

@@ -1,5 +1,5 @@
 ---
-title: The scene-rdl2 library
+title: The scene_rdl2 library
 ---
 
 # The scene_rdl2 library

@@ -1,11 +1,5 @@
 ---
 title: Writing Display Filters
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Writing Display Filters
 This page covers how to author a new Display Filter using our plugin API. MoonRay currently contains 18 [display filters]({{site.baseurl}}/user-reference/scene-objects/display-filters), which themselves can be chained together to achieve new effects. You can find the code for our existing display filter plugins in the [moonshine](https://github.com/dreamworksanimation/moonshine/tree/release/dso) repository. For the DisplayFilter base class, look [here](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/DisplayFilter.cc).

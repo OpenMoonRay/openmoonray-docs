@@ -1,3 +1,6 @@
+---
+title: Variance AOVs
+---
 # Variance AOVs
 A variance AOV is a special AOV that measures the pixel variance of another AOV. It is always a buffer of single floats, as opposed to, for example, RGB or XYZ. 
 

@@ -1,3 +1,6 @@
+---
+title: Bake Camera Example
+---
 ### Basic
 
 {%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.examples.basic.images data=site.data.scene-classes.cameras.BakeCamera-%}

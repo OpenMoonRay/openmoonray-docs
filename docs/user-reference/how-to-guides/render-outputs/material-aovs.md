@@ -1,3 +1,6 @@
+---
+title: Material AOVs
+---
 # Material AOVs
 A Material AOV is a RenderOutput that provides a diagnostic view of a material "property", like color, emission, or roughness. This material "property" is specified through a custom LPE-like material aov syntax. Note: A Material AOV does NOT include any information that is influenced by scene lighting and occlusion is not considered. A Material AOV is specified by three attributes: label + selection + property. 
 

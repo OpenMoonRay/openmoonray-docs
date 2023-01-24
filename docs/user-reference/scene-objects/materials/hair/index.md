@@ -1,11 +1,5 @@
 ---
-title: Hair Materials
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
+title: MoonRay Hair Materials
 ---
 # Hair Materials
 >Hair materials produce a BCSDF (Bidirectional Cylindrical Scattering Distribution Function) to simulate the complex interaction of light inside a cylindrical fiber.

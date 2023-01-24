@@ -1,5 +1,5 @@
 ---
-Title:  OpenMoonRay Documentation Home
+Title: MoonRay Documentation Home
 ---
 # MoonRay Documentation Home
 

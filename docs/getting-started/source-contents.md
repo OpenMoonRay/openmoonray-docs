@@ -1,8 +1,5 @@
 ---
 title: What's Included?
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # What's Included?
 

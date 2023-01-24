@@ -1,11 +1,5 @@
 ---
 title: Writing Shaders
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Writing Shaders
 This page covers some general information about writing plug-ins (aka. _shaders_, _DSO's_, _procedurals_)

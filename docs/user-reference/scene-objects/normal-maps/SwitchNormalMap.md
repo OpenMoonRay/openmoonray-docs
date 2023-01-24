@@ -1,11 +1,5 @@
 ---
-title: SwitchNormalMap
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
+title: Switch Normal Map
 ---
 # SwitchNormalMap
 {%-include overview.html data=site.data.scene-classes.normal-maps.SwitchNormalMap-%}

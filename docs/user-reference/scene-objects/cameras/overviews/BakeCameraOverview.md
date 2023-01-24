@@ -1,3 +1,6 @@
+---
+title: Bake Camera Overiew
+---
 Baking in Moonray is accomplished through the use of a BakeCamera camera shader. The BakeCamera, like any other camera shader, is responsible for turning sample locations on the image plane into primary rays (ray origin and ray direction). For each pixel location `(px, py)` in the image being rendered a `(u, v)` coordinate is computed as:
 
 ```
