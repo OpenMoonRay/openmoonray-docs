@@ -8,10 +8,10 @@ title: What's Included?
 
 The open source release contains the following pieces of technology:
 
-- [MoonRay](/about/moonray): path-tracing renderer
+- [MoonRay](about/moonray): path-tracing renderer
 - [Scene Object Classes]({{site.baseurl}}/user-reference/scene-objects): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
 - [HdMoonRay]({{site.baseurl}}/user-reference/tools/hydra): the hydra plugin for MoonRay
-- [Arras](/about/arras): execution and distribution framework, used to integrate MoonRay into applications
+- [Arras](about/arras): execution and distribution framework, used to integrate MoonRay into applications
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
