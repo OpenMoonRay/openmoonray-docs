@@ -1,6 +1,6 @@
 ---
   - text: Getting Started
-    path: getting-started.md
+    path: getting-started/index.md
     subitems:
       - text: About
         path: getting-started/about.md
@@ -21,7 +21,7 @@
           - text: Dependencies
             path: getting-started/installation/moonray-dependencies.md
   - text: User Reference
-    path: user-reference.md
+    path: user-reference/index.md
     subitems:
       - text: MoonRay GUI
         path: user-reference/moonray-gui.md
