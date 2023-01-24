@@ -1,9 +1,9 @@
 ---
   - text: Getting Started
-    path: getting-started
+    path: getting-started.md
     subitems:
       - text: About
-        path: getting-started/about
+        path: getting-started/about.md
         subitems:
           - text: MoonRay
             path: getting-started/about/moonray.md
@@ -14,21 +14,21 @@
       - text: What's Included
         path: getting-started/source-contents.md 
       - text: Installation
-        path: getting-started/installation
+        path: getting-started/installation.md
         subitems:
           - text: Building MoonRay
             path: getting-started/installation/building-moonray.md
           - text: Dependencies
             path: getting-started/installation/moonray-dependencies.md
   - text: User Reference
-    path: user-reference
+    path: user-reference.md
     subitems:
       - text: MoonRay GUI
         path: user-reference/moonray-gui.md
       - text: Execution Modes
         path: user-reference/execution-modes.md
       - text: Scene Objects
-        path: user-reference/scene-objects
+        path: user-reference/scene-objects.md
         subitems:
         - text: Cameras
           path: user-reference/scene-objects/cameras/index.md
