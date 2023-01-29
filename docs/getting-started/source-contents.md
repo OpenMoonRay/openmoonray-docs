@@ -8,7 +8,7 @@ The open source release contains the following pieces of technology:
 - [MoonRay](about/moonray): path-tracing renderer
 - [Scene Object Classes]({{site.baseurl}}/user-reference/scene-objects): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
 - [HdMoonRay]({{site.baseurl}}/user-reference/tools/hydra): the hydra plugin for MoonRay
-- [Arras](about/arras): execution and distribution framework, used to integrate MoonRay into applications
+- [Arras](about/arras): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
@@ -26,28 +26,30 @@ Three Git repositories make up the main source of MoonRay, providing the command
 
 The `moonray` repository contains a basic set of of scene class plugins for use with MoonRay. The `moonshine` repository contains an additional set of scene classes. 
 
+
+
 | |
 |------|
 |**Camera** | 
-| Bake DomeMaster3D Orthographic Perspective Spherical |
+| Bake, DomeMaster3D, Orthographic, Perspective, Spherical |
 |**Displacement**| 
-| Combine Normal Vector Switch |
+| Combine, Normal, Vector, Switch |
 |**Display filter**|
-| Blend Constant Halftone Ramp Shadow Clamp      Convolution Image Remap TangentSpace Discretize Op RgbToFloat Toon ColorCorrect Dof Over RgbToHsv |
+| Blend, Constant, Halftone, Ramp, Shadow, Clamp, Convolution, Image, Remap, TangentSpace, Discretize, Op, RgbToFloat, Toon, ColorCorrect, Dof, Over, RgbToHsv |
 |**Geometry**| 
-| OpenVdb RdlCurve RdlInstancer RdlMesh RdlPoint Box Sphere Template |
+| OpenVdb, RdlCurve, RdlInstancer, RdlMesh, RdlPoint, Box, Sphere, Template |
 |**Light**| 
-|Cylinder Disk Distant Env Mesh Rect Sphere Spot |
+|Cylinder, Disk, Distant, Env, Mesh, Rect, Sphere, Spot |
 |**Light Filter**| 
-|BarnDoor ColorRamp Cookie Intensity Vdb Combine Decay Rod |
+|BarnDoor, ColorRamp, Cookie, Intensity, Vdb, Combine, Decay, Rod |
 |**Map**| 
-| Attribute Debug List UsdPrimvarReader_float2 UsdPrimvarReader_point UsdUVTexture Checkerboard ExtraAov OpenVdb UsdPrimvarReader_float3 UsdPrimvarReader_vector Image UsdPrimvarReader_float UsdPrimvarReader_int UsdTransform2d AxisAngle ColorCorrectLegacy Directional LOD ProjectSpherical SwitchColor Blend ColorCorrect FloatToRgb Noise ProjectTriplanar SwitchFloat Clamp ColorCorrectNuke Gradient NoiseWorley ProjectTriplanarUdim Template ColorCorrectSaturation HairColorPresets NormalToRgb Ramp Toon ColorCorrectContrast ColorCorrectTMI HairColumn Op Random TransformNormal ColorCorrectGainOffset ConstantColor Hair  OpSqrt Remap TransformSpace ColorCorrectGamma ConstantScalar HsvToRgb ProjectCamera RgbToFloat UVTransform ColorCorrectHsv Curvature Layer ProjectCylindrical RgbToHsv Wireframe ColorCorrectHueShift Deformation LcToRgb ProjectPlanar RgbToLab |
+| Attribute, Debug, List, UsdPrimvarReader_float2, UsdPrimvarReader_point, UsdUVTexture, Checkerboard, ExtraAov, OpenVdb, UsdPrimvarReader_float3, UsdPrimvarReader_vector, Image, UsdPrimvarReader_float, UsdPrimvarReader_int, UsdTransform2d, AxisAngle, ColorCorrectLegacy, Directional, LOD, ProjectSpherical, SwitchColor, Blend, ColorCorrect, FloatToRgb, Noise, ProjectTriplanar, SwitchFloat, Clamp, ColorCorrectNuke, Gradient, NoiseWorley, ProjectTriplanarUdim, Template, ColorCorrectSaturation, HairColorPresets, NormalToRgb, Ramp, Toon, ColorCorrectContrast, ColorCorrectTMI, HairColumn, Op, Random, TransformNormal, ColorCorrectGainOffset, ConstantColor, Hair, OpSqrt, Remap, TransformSpace, ColorCorrectGamma, ConstantScalar, HsvToRgb, ProjectCamera, RgbToFloat, UVTransform, ColorCorrectHsv, Curvature, Layer, ProjectCylindrical, RgbToHsv, Wireframe, ColorCorrectHueShift, Deformation, LcToRgb, ProjectPlanar, RgbToLab |
 |**Normal Map**| 
-| Distort  ProjectCamera  ProjectTriplanar RgbToNormal UsdPrimvarReader_normal Combine Image ProjectPlanar  Random Switch |
+| Distort,  ProjectCamera,  ProjectTriplanar, RgbToNormal, UsdPrimvarReader_normal, Combine, Image, ProjectPlanar,  Random, Switch |
 |**Material**| 
-| Axf Base Measured RaySwitch Switch UsdPreviewSurface *DwaColorCorrect  DwaLayer  DwaRefractive DwaSwitch GlitterFlake HairDiffuse Toon HairToon DwaAdjust DwaEmissive      DwaMetal DwaSkin DwaTwoSided Hair HairLayer DwaBase DwaFabric DwaMix DwaSolidDielectric DwaVelvet HairColorCorrect MacroFlake |
+| Axf, Base, Measured, RaySwitch, Switch, UsdPreviewSurface, *DwaColorCorrect,  DwaLayer,  DwaRefractive, DwaSwitch, GlitterFlake, HairDiffuse, Toon, HairToon, DwaAdjust, DwaEmissive, DwaMetal, DwaSkin, DwaTwoSided, Hair, HairLayer, DwaBase, DwaFabric, DwaMix, DwaSolidDielectric, DwaVelvet, HairColorCorrect, MacroFlake |
 |**Volume**| 
-| Base Cutout |
+| Base, Cutout |
 
 
 The `moonshine_usd` repository contains two geometry classes : Usd and UsdInstance. 

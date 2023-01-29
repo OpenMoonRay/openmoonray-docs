@@ -69,25 +69,25 @@ finline float roundFloat(const float in, const uint8_t lsb)
 ## Images
 
 Bare image.
-![Mesh]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh.png)
+![Mesh]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh.png)
 
 Image with a width constraint.
-![Mesh]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh.png)
+![Mesh]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh.png)
 {: style="width: calc(1/3 * 100%)"}
 
 Full-width.
-![Albedo values: 0.001, 0.01, 0.02, 0.04, 0.12]({{site.baseurl}}/assets/images/moonray/how-to-guides/pbr-validity/albedo_drops_low_final.jpg)
+![Albedo values: 0.001, 0.01, 0.02, 0.04, 0.12]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/albedo_drops_low_final.jpg)
 {: .full-width}
 
 ---
 
 <div class="wrap-text-right" markdown="1">
 
-![Mesh]({{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh.png)
+![Mesh]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh.png)
 
 <!-- Alternatively, use an image with a caption.
 <figure class="with-caption">
-  <img src="{{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh.png">
+  <img src="{{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh.png">
   <figcaption>
   An image with a caption
   </figcaption>
@@ -105,7 +105,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ---
 
 <figure class="with-caption">
-  <img src="{{site.baseurl}}/assets/images/moonray/how-to-guides/baking-textures/mesh.png">
+  <img src="{{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh.png">
   <figcaption>
   An image with a caption
   </figcaption>
@@ -124,12 +124,12 @@ Image comparer.
   <sl-icon slot="handle" library="material" name="drag_indicator"></sl-icon>
   <img
     slot="before"
-    src="{{site.baseurl}}/assets/images/scene-classes/display-filters/BlendDisplayFilter/blend_filter_input1.png"
+    src="{{site.baseurl}}/assets/images/user-reference/scene-classes/display-filters/BlendDisplayFilter/blend_filter_input1.png"
     alt="Beauty render output"
   />
   <img
     slot="after"
-    src="{{site.baseurl}}/assets/images/scene-classes/display-filters/BlendDisplayFilter/blend_result.png"
+    src="{{site.baseurl}}/assets/images/user-reference/scene-classes/display-filters/BlendDisplayFilter/blend_result.png"
     alt="blendAmt=0.6, blendType=cubic"
   />
 </sl-image-comparer>

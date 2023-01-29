@@ -456,8 +456,8 @@
   - text: Developer's Guide
     path: developers-guide/index.md
     subitems:
-      - text: Doxygen Reference
-        path: api/html/index.html
+      # - text: Doxygen Reference
+      #  path: api/html/index.html
       - text: Writing Shaders
         path: developers-guide/shaders/index.md
         subitems:
