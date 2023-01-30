@@ -374,6 +374,8 @@
               path: user-reference/scene-objects/light-filters/CombineLightFilter.md
             - text: CookieLightFilter
               path: user-reference/scene-objects/light-filters/CookieLightFilter.md
+            - text: CookieLightFilter_v2
+              path: user-reference/scene-objects/light-filters/CookieLightFilter_v2.md
             - text: DecayLightFilter
               path: user-reference/scene-objects/light-filters/DecayLightFilter.md
             - text: IntensityLightFilter
@@ -381,9 +383,9 @@
             # - text: LightFilterSet
             #   path: scene-objects/light-filters/LightFilterSet.md
             - text: RodLightFilter
-              path: scene-objects/light-filters/RodLightFilter.md
+              path: user-reference/scene-objects/light-filters/RodLightFilter.md
             - text: VdbLightFilter
-              path: scene-objects/light-filters/VdbLightFilter.md
+              path: user-reference/scene-objects/light-filters/VdbLightFilter.md
         - text: Render Output
           path: user-reference/scene-objects/render-output/RenderOutput/RenderOutput.md
         - text: Scene Variables
