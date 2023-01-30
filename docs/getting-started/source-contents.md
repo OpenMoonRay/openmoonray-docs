@@ -1,26 +1,22 @@
 ---
 title: What's Included?
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # What's Included?
 
 The open source release contains the following pieces of technology:
 
-- [MoonRay](/about/moonray): path-tracing renderer
+- [MoonRay](about/moonray): path-tracing renderer
 - [Scene Object Classes]({{site.baseurl}}/user-reference/scene-objects): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
 - [HdMoonRay]({{site.baseurl}}/user-reference/tools/hydra): the hydra plugin for MoonRay
-- [Arras](/about/arras): execution and distribution framework, used to integrate MoonRay into applications
+- [Arras](about/arras): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
 ## MoonRay
 
-Four Git repositories make up the main source of MoonRay, providing the command line renderer and libraries used to integrate MoonRay and author scene objects:
+Three Git repositories make up the main source of MoonRay, providing the command line renderer and libraries used to integrate MoonRay and author scene objects:
 
 - `scene_rdl2` provides the [RDL2 scene description format](/about/rdl-scene-format.md) used by MoonRay. The in-memory format is called `SceneContext`. `scene_rdl2` can read and write SceneContexts in two file formats: RDLA and RDLB.
-- `moonray_stats` is a small repository containing code to generate and output performance statistics for MoonRay renders.
 - `mcrt_denoise` contains the implementation of the MoonRay denoiser.
 - `moonray` is the main implemention of the renderer, and depends on the previous three repositories.
 
@@ -30,20 +26,31 @@ Four Git repositories make up the main source of MoonRay, providing the command 
 
 The `moonray` repository contains a basic set of of scene class plugins for use with MoonRay. The `moonshine` repository contains an additional set of scene classes. 
 
-| Type | Classes |
-|------|---------|
-|**camera** | Bake DomeMaster3D Orthographic Perspective Spherical
-|**displacement**| Combine Normal Vector *Switch*
-|**display filter**| *Blend* *Constant* *Halftone* *Ramp* *Shadow* *Clamp*      *Convolution* *Image* *Remap* *TangentSpace* *Discretize* *Op* *RgbToFloat* *Toon* *ColorCorrect* *Dof* *Over* *RgbToHsv*
-|**geometry**| OpenVdb RdlCurve RdlInstancer RdlMesh RdlPoint *Box* *Sphere* *Template*
-|**light**| Cylinder Disk Distant Env Mesh Rect Sphere Spot
-|**light filter**| BarnDoor ColorRamp Cookie Intensity Vdb Combine Decay Rod
-|**map**| Attribute Debug List UsdPrimvarReader_float2 UsdPrimvarReader_point UsdUVTexture Checkerboard ExtraAov OpenVdb UsdPrimvarReader_float3 UsdPrimvarReader_vector Image UsdPrimvarReader_float UsdPrimvarReader_int     UsdTransform2d *AxisAngle* *ColorCorrectLegacy* *Directional* *LOD* *ProjectSpherical* *SwitchColor* *Blend* *ColorCorrect* *FloatToRgb* *Noise* *ProjectTriplanar* *SwitchFloat* *Clamp* *ColorCorrectNuke* *Gradient* *NoiseWorley* *ProjectTriplanarUdim* *Template* *ColorCorrectSaturation* *HairColorPresets* *NormalToRgb* *Ramp* *Toon* *ColorCorrectContrast* *ColorCorrectTMI* *HairColumn* *Op* *Random* *TransformNormal* *ColorCorrectGainOffset* *ConstantColor* *Hair*  *OpSqrt* *Remap* *TransformSpace* *ColorCorrectGamma* *ConstantScalar* *HsvToRgb* *ProjectCamera* *RgbToFloat* *UVTransform* *ColorCorrectHsv* *Curvature* *Layer*     *ProjectCylindrical* *RgbToHsv* *Wireframe* *ColorCorrectHueShift* *Deformation* *LcToRgb* *ProjectPlanar* *RgbToLab*
-|**normal map**| *Distort*  *ProjectCamera*  *ProjectTriplanar* *RgbToNormal* *UsdPrimvarReader_normal* *Combine* *Image* *ProjectPlanar*  *Random* *Switch*
-|**material**| Axf Base Measured RaySwitch Switch UsdPreviewSurface *DwaColorCorrect*  *DwaLayer*  *DwaRefractive* *DwaSwitch* *GlitterFlake* *HairDiffuse* *Toon* *HairToon* *DwaAdjust* *DwaEmissive*      *DwaMetal* *DwaSkin* *DwaTwoSided* *Hair* *HairLayer* *DwaBase* *DwaFabric* *DwaMix* *DwaSolidDielectric* *DwaVelvet* *HairColorCorrect* *MacroFlake*
-|**volume**| Base Cutout
 
-Names in *italics* are in the moonshine repository.
+
+| |
+|------|
+|**Camera** | 
+| Bake, DomeMaster3D, Orthographic, Perspective, Spherical |
+|**Displacement**| 
+| Combine, Normal, Vector, Switch |
+|**Display filter**|
+| Blend, Constant, Halftone, Ramp, Shadow, Clamp, Convolution, Image, Remap, TangentSpace, Discretize, Op, RgbToFloat, Toon, ColorCorrect, Dof, Over, RgbToHsv |
+|**Geometry**| 
+| OpenVdb, RdlCurve, RdlInstancer, RdlMesh, RdlPoint, Box, Sphere, Template |
+|**Light**| 
+|Cylinder, Disk, Distant, Env, Mesh, Rect, Sphere, Spot |
+|**Light Filter**| 
+|BarnDoor, ColorRamp, Cookie, Intensity, Vdb, Combine, Decay, Rod |
+|**Map**| 
+| Attribute, Debug, List, UsdPrimvarReader_float2, UsdPrimvarReader_point, UsdUVTexture, Checkerboard, ExtraAov, OpenVdb, UsdPrimvarReader_float3, UsdPrimvarReader_vector, Image, UsdPrimvarReader_float, UsdPrimvarReader_int, UsdTransform2d, AxisAngle, ColorCorrectLegacy, Directional, LOD, ProjectSpherical, SwitchColor, Blend, ColorCorrect, FloatToRgb, Noise, ProjectTriplanar, SwitchFloat, Clamp, ColorCorrectNuke, Gradient, NoiseWorley, ProjectTriplanarUdim, Template, ColorCorrectSaturation, HairColorPresets, NormalToRgb, Ramp, Toon, ColorCorrectContrast, ColorCorrectTMI, HairColumn, Op, Random, TransformNormal, ColorCorrectGainOffset, ConstantColor, Hair, OpSqrt, Remap, TransformSpace, ColorCorrectGamma, ConstantScalar, HsvToRgb, ProjectCamera, RgbToFloat, UVTransform, ColorCorrectHsv, Curvature, Layer, ProjectCylindrical, RgbToHsv, Wireframe, ColorCorrectHueShift, Deformation, LcToRgb, ProjectPlanar, RgbToLab |
+|**Normal Map**| 
+| Distort,  ProjectCamera,  ProjectTriplanar, RgbToNormal, UsdPrimvarReader_normal, Combine, Image, ProjectPlanar,  Random, Switch |
+|**Material**| 
+| Axf, Base, Measured, RaySwitch, Switch, UsdPreviewSurface, *DwaColorCorrect,  DwaLayer,  DwaRefractive, DwaSwitch, GlitterFlake, HairDiffuse, Toon, HairToon, DwaAdjust, DwaEmissive, DwaMetal, DwaSkin, DwaTwoSided, Hair, HairLayer, DwaBase, DwaFabric, DwaMix, DwaSolidDielectric, DwaVelvet, HairColorCorrect, MacroFlake |
+|**Volume**| 
+| Base, Cutout |
+
 
 The `moonshine_usd` repository contains two geometry classes : Usd and UsdInstance. 
 

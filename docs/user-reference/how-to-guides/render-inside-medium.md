@@ -1,3 +1,6 @@
+---
+title: How to Render Inside a Medium
+---
 # How to: Render Inside A Medium 
 #### (with correct IOR tracking)
 

@@ -1,6 +1,9 @@
+---
+title: Building MoonRay on CentOS 7
+---
 # Building MoonRay on a Centos 7 machine
 
-If there are no conflicts between the base packages that MoonRay requires and packages already installed on the system, building on a Centos 7 machine is essentially the same as building in a Centos 7 Docker container (see [Building MoonRay in a container](building-moonray-container)). The process described in this document installs dependencies built from source to the ***/installs*** folder, to avoid conflicting with existing installs, but you can modify the process to install to the default location (usually */usr/local*) if there are no conflicts.
+If there are no conflicts between the base packages that MoonRay requires and packages already installed on the system, building on a Centos 7 machine is essentially the same as building in a Centos 7 Docker container (see [Building MoonRay in a container]({{site.baseurl}}/getting-started/installation/building-moonray/building-moonray-container)). The process described in this document installs dependencies built from source to the ***/installs*** folder, to avoid conflicting with existing installs, but you can modify the process to install to the default location (usually */usr/local*) if there are no conflicts.
 
 NVIDIA Optix headers need to be downloaded manually (from https://developer.nvidia.com/designworks/optix/download), since they require a EULA. They are copied into the install area in Step 3.
 

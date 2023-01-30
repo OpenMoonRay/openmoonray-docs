@@ -1,4 +1,4 @@
-**OpenMoonRay** README
+**MoonRay** README
 
 # Guidelines for Content Contributors
 

@@ -1,3 +1,6 @@
+---
+title: Cryptomatte
+---
 # Cryptomatte
 Cryptomatte provides a way to isolate specific objects in the scene by ingesting user-specified object ids and generating pixel coverages. 
 

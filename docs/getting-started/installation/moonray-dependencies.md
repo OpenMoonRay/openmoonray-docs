@@ -1,11 +1,8 @@
 ---
 title: Dependencies
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 
-# OpenMoonRay dependencies
+# MoonRay dependencies
 
 These are the third-party libraries and tools that MoonRay and Arras depend on, at the time of writing. The file */building/CMakeLists.txt* in the *openmoonray* repository is generally a better reference, since that will be up-to-date for that particular version of the source, and also lists build options.
 

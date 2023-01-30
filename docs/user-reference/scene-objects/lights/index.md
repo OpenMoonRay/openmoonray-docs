@@ -1,6 +1,5 @@
 ---
 title: Lights in MoonRay
-# uncomment if you want MathJax formatting available
 maths: 1
 ---
 

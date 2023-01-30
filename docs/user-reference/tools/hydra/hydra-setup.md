@@ -1,4 +1,5 @@
 ---
+title: MoonRay Hydra Setup
 ---
 # Hydra setup
 

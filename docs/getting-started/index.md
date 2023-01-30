@@ -6,18 +6,18 @@ title: Getting Started
 ## Contents
 The open source release contains the following pieces of technology:
 
-- [MoonRay](/about/moonray): path-tracing renderer
+- [MoonRay]({{site.baseurl}}/getting-started/about/moonray): path-tracing renderer
 - [Scene Object Classes]({{site.baseurl}}/user-reference/scene-objects): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
 - [HdMoonRay]({{site.baseurl}}/user-reference/tools/hydra): the hydra plugin for MoonRay
-- [Arras](/about/arras): execution and distribution framework, used to integrate MoonRay into applications
+- [Arras]({{site.baseurl}}/getting-started/about/arras): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
-For more information, see [What's Included?](/source-contents)
+For more information, see [What's Included?]({{site.baseurl}}/getting-started/source-contents)
 
 ## Installation
 
-For information on how to install MoonRay, please see our instructions on [Building MoonRay](/installation/building). You can also find a list of MoonRay's [Dependencies](/installation/dependencies) 
+For information on how to install MoonRay, please see our instructions on [Building MoonRay]({{site.baseurl}}/getting-started/installation/building-moonray/). You can also find a list of MoonRay's [Dependencies]({{site.baseurl}}/getting-started/installation/moonray-dependencies) 
 
 ## Running MoonRay
 

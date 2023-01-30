@@ -1,8 +1,11 @@
+---
+title: Building MoonRay in a Docker container
+---
 # Building MoonRay in a Docker container
 
 These instructions should also be available in the *building* subdirectory of the source code.
 
-You will need Docker and a copy of the MoonRay source (see [Cloning the Repo](cloning-the-repo)) The instructions assume that the source is in */source/openmoonray*
+You will need Docker and a copy of the MoonRay source (see [Cloning the Repo]({{site.baseurl}}/getting-started/installation/cloning-the-repo)) The instructions assume that the source is in */source/openmoonray*
 
 NVIDIA Optix headers need to be downloaded manually (from https://developer.nvidia.com/designworks/optix/download), since they require a EULA. The instructions assume that these are in */optix/include*. 
 
@@ -106,7 +109,7 @@ To commit **openmoonray_run**, follow the same procedure as step 2.
 
 To run **moonray_gui**, you need to set up X in the container. The steps required may vary depending on the host setup, but generally you will need to set the environment variables ***DISPLAY*** and ***XAUTHORITY***, and make sure the directory that *XAUTHORITY* points to is mounted in the container. 
 
-You may also need to install additional packages. On my machine, the hotkeys in moonray_gui do not function if package *libxkbcommon-x11* is not installed.
+You may also need to install additional packages. For instance, the hotkeys in moonray_gui may not function if package *libxkbcommon-x11* is not installed.
 
 ```bash
 > docker run -v /source/openmoonray:/openmoonray:shared -v /tmp:/tmp:shared -e DISPLAY=$DISPLAY -e XAUTHORITY=${XAUTHORITY} -v "${XAUTHORITY}:${XAUTHORITY}:z" --network=host --rm -it openmoonray_run

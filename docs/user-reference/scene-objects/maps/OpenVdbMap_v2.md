@@ -1,11 +1,5 @@
 ---
-title: OpenVdbMap_v2
-
-# uncomment if you want MathJax formatting available
-# maths: 1
-
-# format is YYYY-MM-DD 00:00:00 +0000
-# last-modified-date: 2025-02-14 00:00:00 +0000
+title: OpenVDB Map_v2
 ---
 # OpenVdbMap_v2
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2-%}
