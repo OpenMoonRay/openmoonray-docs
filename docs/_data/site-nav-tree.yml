@@ -382,9 +382,9 @@
             # - text: LightFilterSet
             #   path: scene-objects/light-filters/LightFilterSet.md
             - text: RodLightFilter
-              path: scene-objects/light-filters/RodLightFilter.md
+              path: user-reference/scene-objects/light-filters/RodLightFilter.md
             - text: VdbLightFilter
-              path: scene-objects/light-filters/VdbLightFilter.md
+              path: user-reference/scene-objects/light-filters/VdbLightFilter.md
         - text: Render Output
           path: user-reference/scene-objects/render-output/index.md
         - text: Scene Variables
