@@ -3,7 +3,7 @@ title: Bake Camera Example
 ---
 ### Basic
 
-{%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.examples.basic.images data=site.data.scene-classes.cameras.BakeCamera-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.examples.basic.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
 
 ```lua
 local key = EnvLight("/Scene/lighting/key") { ... }
@@ -45,7 +45,7 @@ BakeCamera("/Scene/rendering/camera") {
 
 ### Baking along a normal
 
-{%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.examples.bakingAlongNormal.images data=site.data.scene-classes.cameras.BakeCamera-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.examples.bakingAlongNormal.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
 
 ```lua
 local key = EnvLight("/Scene/lighting/key") { ... }
@@ -80,7 +80,7 @@ Layer("/Scene/layer")(assignments)
 
 ### Generating a Normal Map
 
-{%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.examples.generatingNormalMap.images data=site.data.scene-classes.cameras.BakeCamera-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.examples.generatingNormalMap.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
 
 This example is similar to the previous example, except that the surfacing of the sphere contains a normal map. In order to take these normals into account, we can run a pre-pass that generates the normal map and then a second pass that generates a bake map along these normals. 
 
@@ -190,7 +190,7 @@ BakeCamera("/Scene/rendering/camera") {
 
 ### UDIMs
 
-{%-include image-gallery.html images=site.data.scene-classes.cameras.BakeCamera.examples.udims.images data=site.data.scene-classes.cameras.BakeCamera-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.examples.udims.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
 
 ```lua
 local key = EnvLight("/Scene/lighting/key") { ... }

@@ -2,9 +2,9 @@
 title: Image Display Filter
 ---
 # ImageDisplayFilter
-{%-include overview.html data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-{%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.gallery data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-{%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.gallery data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.links-%}
 ---
 ## Attribute Reference
 
@@ -17,16 +17,16 @@ title: Image Display Filter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.invert_mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mix.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -43,34 +43,34 @@ title: Image Display Filter
           | fit_by_largest_dimension = 4
           | no_scale = 5
       <p class="scene-class-comments">Method used to fit the input image to the image plane.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.display_type.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.display_type.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.display_type.links heading=4-%}
     </p>
     <h3>image_path</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">File path to the .exr we want to fit to the image plane</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.image_path.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.image_path.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.image_path.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput to use in the ImageDisplayFilter</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.ImageDisplayFilter.attributes.mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.display-filters.ImageDisplayFilter-%}
+{%-include example.html data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}

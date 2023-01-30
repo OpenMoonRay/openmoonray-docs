@@ -1,0 +1,12 @@
+---
+overview: overviews/CombineNormalMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/normal-maps/CombineNormalMap
+gallery:
+  - image: 1first.jpg
+    text: Base Map
+  - image: 2second.jpg
+    text: Detail Map
+  - image: 3combine.jpg
+    text: Combined Result (Correct)
+  - image: 4normalize.jpg
+    text: Linear Blending (Flattened)

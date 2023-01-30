@@ -28,7 +28,7 @@
       - text: Execution Modes
         path: user-reference/execution-modes.md
       - text: Scene Objects
-        path: user-reference/scene-objects.md
+        path: user-reference/scene-objects/index.md
         subitems:
         - text: Cameras
           path: user-reference/scene-objects/cameras/index.md
@@ -365,6 +365,7 @@
             - text: SpotLight
               path: user-reference/scene-objects/lights/SpotLight.md
         - text: Light Filters
+          path: user-reference/scene-objects/light-filters/index.md
           subitems:
             - text: BarnDoorLightFilter
               path: user-reference/scene-objects/light-filters/BarnDoorLightFilter.md
@@ -387,17 +388,17 @@
             - text: VdbLightFilter
               path: user-reference/scene-objects/light-filters/VdbLightFilter.md
         - text: Render Output
-          path: user-reference/scene-objects/render-output/RenderOutput/RenderOutput.md
+          path: user-reference/scene-objects/render-output/index.md
         - text: Scene Variables
-          path: user-reference/scene-objects/scene-variables/SceneVariables/SceneVariables.md
+          path: user-reference/scene-objects/scene-variables/index.md
         - text: Shadow Set
-          path: user-reference/scene-objects/shadow-set/ShadowSet/ShadowSet.md
+          path: user-reference/scene-objects/shadow-set/index.md
         - text: Shadow Receiver Set
-          path: user-reference/scene-objects/shadow-receiver-set/ShadowReceiverSet/ShadowReceiverSet.md
+          path: user-reference/scene-objects/shadow-receiver-set/index.md
         - text: Trace Set
-          path: user-reference/scene-objects/trace-set/TraceSet/TraceSet.md
+          path: user-reference/scene-objects/trace-set/index.md
         - text: User Data
-          path: user-reference/scene-objects/user-data/UserData/UserData.md
+          path: user-reference/scene-objects/user-data/index.md
         - text: Volumes
           path: user-reference/scene-objects/volumes/index.md
           subitems:

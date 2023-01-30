@@ -2,9 +2,9 @@
 title: Color Correct Gain Offset Map
 ---
 # ColorCorrectGainOffsetMap
-{%-include overview.html data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.gallery data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.gallery data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.links-%}
 ---
 ## Attribute Reference
 
@@ -17,98 +17,98 @@ title: Color Correct Gain Offset Map
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">multiplies the input channels by the specified values</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain.links heading=4-%}
     </p>
     <h3>gain_b</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">multiplies the blue channel by the specified values</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain_b.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain_b.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain_b.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain_b.links heading=4-%}
     </p>
     <h3>gain_g</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">multiplies the green channel by the specified values</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain_g.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain_g.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain_g.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain_g.links heading=4-%}
     </p>
     <h3>gain_r</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">multiplies the red channel by the specified values</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain_r.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.gain_r.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain_r.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.gain_r.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.input.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.input.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.mix.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.mix.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.mix.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.mix.links heading=4-%}
     </p>
     <h3>offset</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.0
       <p class="scene-class-comments">adds the specified values to the input</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset.links heading=4-%}
     </p>
     <h3>offset_b</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the blue channel</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset_b.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset_b.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset_b.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset_b.links heading=4-%}
     </p>
     <h3>offset_g</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the green channel</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset_g.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset_g.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset_g.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset_g.links heading=4-%}
     </p>
     <h3>offset_r</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">adds the specified values to the red channel</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset_r.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.offset_r.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset_r.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.offset_r.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.on.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.on.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.on.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.on.links heading=4-%}
     </p>
     <h3>use_per_channel_gain_offset</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">enables separate RGB controls for gain and offset</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.use_per_channel_gain_offset.images data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectGainOffsetMap.attributes.use_per_channel_gain_offset.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.use_per_channel_gain_offset.images data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap.attributes.use_per_channel_gain_offset.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.ColorCorrectGainOffsetMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.ColorCorrectGainOffsetMap-%}

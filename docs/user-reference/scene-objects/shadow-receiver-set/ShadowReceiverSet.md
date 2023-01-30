@@ -2,9 +2,9 @@
 title: MoonRay Shadow Receiver Set
 ---
 # ShadowReceiverSet
-{%-include overview.html data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
-{%-include image-gallery.html images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
-{%-include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.gallery data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.links-%}
 ---
 ## Attribute Reference
 
@@ -17,8 +17,8 @@ title: MoonRay Shadow Receiver Set
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.images data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
-      {%-include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.complement.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.complement.images data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.complement.links heading=4-%}
     </p>
   </p>
 </details>
@@ -30,10 +30,10 @@ title: MoonRay Shadow Receiver Set
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
-      {%-include see-also.html links=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet-%}
+{%-include example.html data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}

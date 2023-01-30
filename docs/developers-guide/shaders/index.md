@@ -3,7 +3,7 @@ title: Writing Shaders
 ---
 # Writing Shaders
 This page covers some general information about writing plug-ins (aka. _shaders_, _DSO's_, _procedurals_)
-for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, (see [scene-classes]({{site.baseurl}}/user-reference/scene-objects))
+for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, (see [scene-objects]({{site.baseurl}}/user-reference/scene-objects))
 but additional plug-ins can be authored to extend MoonRay's functionality.
 
 Probably the best way to quickly understand what is required to write a new plug-in of a given
