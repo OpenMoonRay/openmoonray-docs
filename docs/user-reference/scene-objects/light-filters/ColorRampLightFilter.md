@@ -1,5 +1,11 @@
 ---
-title: Color Ramp Light Filter
+title: ColorRampLightFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorRampLightFilter
 {%-include overview.html data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
@@ -16,7 +22,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Where the ramp starts relative to the light or the ramp's independent transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.begin_distance.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.begin_distance.links heading=4-%}
     </p>
@@ -24,7 +30,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>RgbVector</b>
       default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Vector of colors specified at different distances</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.colors.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.colors.links heading=4-%}
     </p>
@@ -32,7 +38,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The density of the filter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.density.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.density.links heading=4-%}
     </p>
@@ -40,7 +46,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>FloatVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Distances between which colors are interpolated</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.distances.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.distances.links heading=4-%}
     </p>
@@ -48,7 +54,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Where the ramp ends relative to the light or the ramp's independent transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.end_distance.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.end_distance.links heading=4-%}
     </p>
@@ -56,7 +62,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The intensity of the filter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.intensity.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.intensity.links heading=4-%}
     </p>
@@ -73,7 +79,7 @@ title: Color Ramp Light Filter
       <b>Int</b> <i>enum</i>
           | radial = 0 (default)
           | directional = 1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Ramp: Radiates out from the center of the light or ramp location.  Directional: Linear starting at the location of the light or ramp location along negative z</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.mode.links heading=4-%}
     </p>
@@ -81,7 +87,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Orientation of the light filter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.node_xform.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.node_xform.links heading=4-%}
     </p>
@@ -111,7 +117,7 @@ title: Color Ramp Light Filter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The filter can be bound to a light or lights position or when this toggle is set, can have its own transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.use_xform.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.use_xform.links heading=4-%}
     </p>

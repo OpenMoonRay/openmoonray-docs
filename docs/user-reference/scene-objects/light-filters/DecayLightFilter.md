@@ -1,5 +1,11 @@
 ---
-title: Decay Light Filter
+title: DecayLightFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DecayLightFilter
 {%-include overview.html data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -16,7 +22,7 @@ title: Decay Light Filter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">does the light fade out?</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.falloff_far.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.falloff_far.links heading=4-%}
     </p>
@@ -24,7 +30,7 @@ title: Decay Light Filter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">does the light fade in?</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.falloff_near.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.falloff_near.links heading=4-%}
     </p>
@@ -32,7 +38,7 @@ title: Decay Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">distance from light to end of fade out</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.far_end.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.far_end.links heading=4-%}
     </p>
@@ -40,7 +46,7 @@ title: Decay Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">distance from light to start of fade out</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.far_start.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.far_start.links heading=4-%}
     </p>
@@ -48,7 +54,7 @@ title: Decay Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">distance from light to end of fade in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.near_end.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.near_end.links heading=4-%}
     </p>
@@ -56,7 +62,7 @@ title: Decay Light Filter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">distance from light to start of fade in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.near_start.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.near_start.links heading=4-%}
     </p>
