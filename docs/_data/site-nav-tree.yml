@@ -456,6 +456,8 @@
                 path: user-reference/tools/hydra/hd_render.md
           - text: Render Profile Viewer
             path: user-reference/tools/render-profile-viewer.md
+      - text: Maximizing Performance
+        path: user-reference/performance.md
   - text: Developer's Guide
     path: developers-guide/index.md
     subitems:
@@ -495,8 +497,6 @@
             path: developers-guide/arras/arras-session-definitions.md
           - text: Arras Client API
             path: developers-guide/arras/arras-client-api.md
-      - text: Maximizing Performance
-        path: developers-guide/performance.md
       - text: Contributions
         path: developers-guide/contributions.md  
   - text: Release Notes
