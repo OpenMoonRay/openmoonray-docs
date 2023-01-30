@@ -2,9 +2,9 @@
 title: Color Correct Legacy Map
 ---
 # ColorCorrectLegacyMap
-{%-include overview.html data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.gallery data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.gallery data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.links-%}
 ---
 ## Attribute Reference
 
@@ -17,56 +17,56 @@ title: Color Correct Legacy Map
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.brightness.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.brightness.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.brightness.links heading=4-%}
     </p>
     <h3>clamp</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.clamp.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.clamp.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.clamp.links heading=4-%}
     </p>
     <h3>contrast</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.contrast.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.contrast.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.contrast.links heading=4-%}
     </p>
     <h3>hue</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.hue.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.hue.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.hue.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.input.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.invert.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.invert.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.invert.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.mask.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.mask.links heading=4-%}
     </p>
     <h3>monochrome</h3>
     <p class="scene-class-type">
@@ -80,34 +80,34 @@ title: Color Correct Legacy Map
           | green channel = 6
           | blue channel = 7
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.monochrome.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.monochrome.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.monochrome.links heading=4-%}
     </p>
     <h3>multiplier</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.multiplier.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.multiplier.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.multiplier.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.on.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.on.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.on.links heading=4-%}
     </p>
     <h3>saturation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.images data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ColorCorrectLegacyMap.attributes.saturation.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.saturation.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.saturation.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.ColorCorrectLegacyMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}

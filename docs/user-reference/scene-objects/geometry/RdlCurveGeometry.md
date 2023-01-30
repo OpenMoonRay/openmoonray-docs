@@ -2,9 +2,9 @@
 title: RDL Curve Geometry
 ---
 # RdlCurveGeometry
-{%-include overview.html data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-{%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.gallery data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-{%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.gallery data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.links-%}
 ---
 ## Attribute Reference
 
@@ -17,8 +17,8 @@ title: RDL Curve Geometry
       <b>Int</b>
       default: 4
       <p class="scene-class-comments">Number of segments to split curve spans into</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.tessellation_rate.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.tessellation_rate.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.links heading=4-%}
     </p>
   </p>
 </details>
@@ -30,16 +30,16 @@ title: RDL Curve Geometry
       <b>Vec3fVector</b>
       default: []
       <p class="scene-class-comments">Optionally declare vertex accelerations for quadratic motion interpolation</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.accleration_list.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.accleration_list.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.accleration_list.links heading=4-%}
     </p>
     <h3>contains_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.contains_camera.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.contains_camera.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.contains_camera.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.contains_camera.links heading=4-%}
     </p>
     <h3>curve_subtype</h3>
     <p class="scene-class-type">
@@ -47,8 +47,8 @@ title: RDL Curve Geometry
           | ray_facing = 0 (default)
           | round = 1
       <p class="scene-class-comments">Curve subtype is ray facing or round</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curve_subtype.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curve_subtype.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_subtype.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_subtype.links heading=4-%}
     </p>
     <h3>curve_type</h3>
     <p class="scene-class-type">
@@ -57,32 +57,40 @@ title: RDL Curve Geometry
           | bezier = 1 (default)
           | bspline = 2
       <p class="scene-class-comments">Curve interpolation type is linear, bezier, or bspline</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curve_type.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curve_type.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_type.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_type.links heading=4-%}
     </p>
     <h3>curved_motion_blur_sample_count</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 10
       <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curved_motion_blur_sample_count.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curved_motion_blur_sample_count.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curved_motion_blur_sample_count.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curved_motion_blur_sample_count.links heading=4-%}
     </p>
     <h3>curves_vertex_count</h3>
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of vertices per curve</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curves_vertex_count.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.curves_vertex_count.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_vertex_count.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_vertex_count.links heading=4-%}
+    </p>
+    <h3>dicing_camera</h3>
+    <p class="scene-class-type">
+      <b>SceneObject</b>
+      default: None
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.label.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.label.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.label.links heading=4-%}
     </p>
     <h3>motion_blur_type</h3>
     <p class="scene-class-type">
@@ -94,32 +102,32 @@ title: RDL Curve Geometry
           | acceleration = 3
           | hermite = 4
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.motion_blur_type.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.motion_blur_type.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.motion_blur_type.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.node_xform.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.node_xform.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.node_xform.links heading=4-%}
     </p>
     <h3>part_indices</h3>
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">Ordered list of part indices. </p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.part_indices.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.part_indices.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_indices.links heading=4-%}
     </p>
     <h3>part_list</h3>
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
       <p class="scene-class-comments">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.part_list.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.part_list.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_list.links heading=4-%}
     </p>
     <h3>primitive_attribute_frame</h3>
     <p class="scene-class-type">
@@ -128,72 +136,72 @@ title: RDL Curve Geometry
           | second motion step = 1
           | both motion steps = 2 (default)
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attribute_frame.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attribute_frame.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attribute_frame.links heading=4-%}
     </p>
     <h3>primitive_attributes</h3>
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
       default: []
       <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attributes.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.primitive_attributes.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
     <h3>radius_list</h3>
     <p class="scene-class-type">
       <b>FloatVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">Stores all radii</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.radius_list.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.radius_list.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.ray_epsilon.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.ray_epsilon.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.ray_epsilon.links heading=4-%}
     </p>
     <h3>references</h3>
     <p class="scene-class-type">
       <b>Geometry Vector</b>
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.references.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.references.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.references.links heading=4-%}
     </p>
     <h3>reverse_normals</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.reverse_normals.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.reverse_normals.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.reverse_normals.links heading=4-%}
     </p>
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
     </p>
     <h3>shadow_ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
     </p>
     <h3>shadow_receiver_label</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.links heading=4-%}
     </p>
     <h3>side_type</h3>
     <p class="scene-class-type">
@@ -202,146 +210,146 @@ title: RDL Curve Geometry
           | force single-sided = 1
           | use mesh sidedness = 2
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.side_type.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.side_type.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.side_type.links heading=4-%}
     </p>
     <h3>static</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.static.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.static.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.static.links heading=4-%}
     </p>
     <h3>use_rotation_motion_blur</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
     </p>
     <h3>uv_list</h3>
     <p class="scene-class-type">
       <b>Vec2fVector</b>
       default: []
       <p class="scene-class-comments">If the curves are using UVs, store them per-curve in this list</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.uv_list.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.uv_list.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.uv_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.uv_list.links heading=4-%}
     </p>
     <h3>velocity_list_0</h3>
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
       <p class="scene-class-comments">Optionally declare vertex velocities instead of a second motion step'</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_list_0.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_list_0.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_0.links heading=4-%}
     </p>
     <h3>velocity_list_1</h3>
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
       <p class="scene-class-comments">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_list_1.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_list_1.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_1.links heading=4-%}
     </p>
     <h3>velocity_scale</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">Adjust magnitude of velocity-based motion blur</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_scale.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.velocity_scale.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_scale.links heading=4-%}
     </p>
     <h3>vertex_list_0</h3>
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
       <p class="scene-class-comments">Stores all vertices used by the points at motion step 0</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.vertex_list_0.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.vertex_list_0.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_0.links heading=4-%}
     </p>
     <h3>vertex_list_1</h3>
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
       <p class="scene-class-comments">If the curves are in motion, the second motion step is stored in this attribute</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.vertex_list_1.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.vertex_list_1.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_1.links heading=4-%}
     </p>
     <h3>visible_diffuse_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_diffuse_reflection.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
     </p>
     <h3>visible_diffuse_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_diffuse_transmission.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
     </p>
     <h3>visible_glossy_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_glossy_reflection.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_glossy_reflection.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_glossy_reflection.links heading=4-%}
     </p>
     <h3>visible_glossy_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_glossy_transmission.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_glossy_transmission.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_glossy_transmission.links heading=4-%}
     </p>
     <h3>visible_in_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_in_camera.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_in_camera.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_in_camera.links heading=4-%}
     </p>
     <h3>visible_mirror_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_mirror_reflection.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_mirror_reflection.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_mirror_reflection.links heading=4-%}
     </p>
     <h3>visible_mirror_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_mirror_transmission.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_mirror_transmission.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_mirror_transmission.links heading=4-%}
     </p>
     <h3>visible_shadow</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_shadow.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_shadow.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_shadow.links heading=4-%}
     </p>
     <h3>visible_volume</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_volume.images data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry.RdlCurveGeometry.attributes.visible_volume.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.visible_volume.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.geometry.RdlCurveGeometry-%}
+{%-include example.html data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}

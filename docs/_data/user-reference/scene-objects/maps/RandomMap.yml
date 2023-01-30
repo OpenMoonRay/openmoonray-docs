@@ -1,0 +1,7 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/RandomMap
+gallery:
+  - image: node_network.jpg
+    text: driving randomness via point attributes
+  - image: tree.jpg
+    text: procedurally varying leaf color

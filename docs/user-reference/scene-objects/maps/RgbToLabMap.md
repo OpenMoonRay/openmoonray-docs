@@ -2,9 +2,9 @@
 title: RGB to Lab Map
 ---
 # RgbToLabMap
-{%-include overview.html data=site.data.scene-classes.maps.RgbToLabMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.RgbToLabMap.gallery data=site.data.scene-classes.maps.RgbToLabMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.RgbToLabMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.RgbToLabMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToLabMap.gallery data=site.data.user-reference.scene-objects.maps.RgbToLabMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToLabMap.links-%}
 ---
 ## Attribute Reference
 
@@ -17,10 +17,10 @@ title: RGB to Lab Map
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.RgbToLabMap.attributes.input_color.images data=site.data.scene-classes.maps.RgbToLabMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.RgbToLabMap.attributes.input_color.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToLabMap.attributes.input_color.images data=site.data.user-reference.scene-objects.maps.RgbToLabMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToLabMap.attributes.input_color.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.RgbToLabMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.RgbToLabMap-%}

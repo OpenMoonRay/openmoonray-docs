@@ -2,9 +2,9 @@
 title: Noise Worley Map_v2
 ---
 # NoiseWorleyMap_v2
-{%-include overview.html data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.gallery data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-{%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.gallery data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.links-%}
 ---
 ## Attribute Reference
 
@@ -17,56 +17,56 @@ title: Noise Worley Map_v2
       <b>Float</b> <i>bindable</i>
       default: 0.5
       <p class="scene-class-comments">Bias of interpolation from color A to color B</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.bias.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.bias.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.bias.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.bias.links heading=4-%}
     </p>
     <h3>gain</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.5
       <p class="scene-class-comments">Gain of interpolation from color A to color B</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.gain.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.gain.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.gain.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.gain.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Invert the final pattern</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.invert.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.invert.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.invert.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.invert.links heading=4-%}
     </p>
     <h3>point_size</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">For points output mode, relative radius of points</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.point_size.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.point_size.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.point_size.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.point_size.links heading=4-%}
     </p>
     <h3>remap</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
       default: [ 0, 1 ]
       <p class="scene-class-comments">Allows mapping the distances from the specified min/max range into the 0..1 range</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.remap.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.remap.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.remap.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.remap.links heading=4-%}
     </p>
     <h3>smoothstep</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
       default: [ 0, 1 ]
       <p class="scene-class-comments">min/max values between which the smoothstep will interpolate</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.smoothstep.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.smoothstep.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.smoothstep.links heading=4-%}
     </p>
     <h3>use_smoothstep</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Put the noise value through a smoothstep function defined by min/max</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.use_smoothstep.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.use_smoothstep.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.use_smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.use_smoothstep.links heading=4-%}
     </p>
   </p>
 </details>
@@ -78,32 +78,32 @@ title: Noise Worley Map_v2
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">Influence of F1 (the closest feature point)</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F1.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F1.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F1.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F1.links heading=4-%}
     </p>
     <h3>F2</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.0
       <p class="scene-class-comments">Influence of F2 (the second closest feature point)</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F2.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F2.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F2.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F2.links heading=4-%}
     </p>
     <h3>F3</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.0
       <p class="scene-class-comments">Influence of F3 (the third closest feature point)</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F3.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F3.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F3.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F3.links heading=4-%}
     </p>
     <h3>F4</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.0
       <p class="scene-class-comments">Influence of F4 (the fourth closest feature point)</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F4.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.F4.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F4.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F4.links heading=4-%}
     </p>
     <h3>cell_id</h3>
     <p class="scene-class-type">
@@ -113,8 +113,8 @@ title: Noise Worley Map_v2
           | f3 = 2
           | f4 = 3
       <p class="scene-class-comments">Which of the distances determines the cell id</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.cell_id.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.cell_id.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.cell_id.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.cell_id.links heading=4-%}
     </p>
   </p>
 </details>
@@ -131,16 +131,16 @@ title: Noise Worley Map_v2
           | quadratic = 4
           | minkowski = 5
       <p class="scene-class-comments">Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.distance_method.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.distance_method.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.distance_method.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.distance_method.links heading=4-%}
     </p>
     <h3>minkowski_number</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 3.0
       <p class="scene-class-comments">Exponent on distances when distance method is set to Minkowski</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.minkowski_number.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.minkowski_number.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.minkowski_number.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.minkowski_number.links heading=4-%}
     </p>
     <h3>output_mode</h3>
     <p class="scene-class-type">
@@ -151,8 +151,8 @@ title: Noise Worley Map_v2
           | cell edges = 3
           | points = 4
       <p class="scene-class-comments">Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.output_mode.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.output_mode.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.links heading=4-%}
     </p>
   </p>
 </details>
@@ -164,24 +164,24 @@ title: Noise Worley Map_v2
       <b>Camera</b>
       default: None
       <p class="scene-class-comments">camera used to define camera and screen space</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.camera.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.camera.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.camera.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.camera.links heading=4-%}
     </p>
     <h3>input_texture_coordinates</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.links heading=4-%}
     </p>
     <h3>object_space</h3>
     <p class="scene-class-type">
       <b>Geometry</b>
       default: None
       <p class="scene-class-comments">Directly connect object to use that object's space.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.object_space.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.object_space.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.object_space.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.object_space.links heading=4-%}
     </p>
     <h3>space</h3>
     <p class="scene-class-type">
@@ -197,8 +197,8 @@ title: Noise Worley Map_v2
           | hair_surface_uv = 8
           | hair_closest_surface_uv = 9
       <p class="scene-class-comments">The space to calculate the noise in</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.space.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.space.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.space.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.space.links heading=4-%}
     </p>
   </p>
 </details>
@@ -210,8 +210,8 @@ title: Noise Worley Map_v2
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotates the noise in space based on the specified rotation order</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.rotation.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.rotation.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation.links heading=4-%}
     </p>
     <h3>rotation_order</h3>
     <p class="scene-class-type">
@@ -223,16 +223,16 @@ title: Noise Worley Map_v2
           | zxy = 4
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply the euler rotations</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.rotation_order.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.rotation_order.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation_order.links heading=4-%}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Vector to scale the noise non-proportionally</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.scale.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.scale.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.scale.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.scale.links heading=4-%}
     </p>
     <h3>transformation_order</h3>
     <p class="scene-class-type">
@@ -244,16 +244,16 @@ title: Noise Worley Map_v2
           | tsr = 4 (default)
           | trs = 5
       <p class="scene-class-comments">Order in which to apply the translation, rotation, and frequency</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.transformation_order.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.transformation_order.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.transformation_order.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.transformation_order.links heading=4-%}
     </p>
     <h3>translation</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Translation of the noise in space</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.translation.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.translation.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.translation.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.translation.links heading=4-%}
     </p>
   </p>
 </details>
@@ -265,50 +265,50 @@ title: Noise Worley Map_v2
       <b>Rgb</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">The interpolated color value at distance equals zero</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.color_A.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.color_A.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.color_A.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.color_A.links heading=4-%}
     </p>
     <h3>color_B</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The interpolated color value at distance equals one</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.color_B.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.color_B.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.color_B.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.color_B.links heading=4-%}
     </p>
     <h3>frequency</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">Scalar multiplier for the frequency vector</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.frequency.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.frequency.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.frequency.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.frequency.links heading=4-%}
     </p>
     <h3>jitter</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">Controls the distortion of the cells</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.jitter.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.jitter.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.jitter.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.jitter.links heading=4-%}
     </p>
     <h3>max_level</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-comments">Number of octaves of noise to add together for the final result</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.max_level.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.max_level.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.max_level.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.max_level.links heading=4-%}
     </p>
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 0
       <p class="scene-class-comments">The seed for the random number generator</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.seed.images data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NoiseWorleyMap_v2.attributes.seed.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.seed.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.seed.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.NoiseWorleyMap_v2-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}

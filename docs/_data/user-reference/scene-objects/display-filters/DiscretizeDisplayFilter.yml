@@ -1,0 +1,14 @@
+---
+overview: overviews/DiscretizeDisplayFilterOverview.md
+example: examples/DiscretizeDisplayFilterExample.md
+image_path: /assets/images/user-reference/scene-objects/display-filters/DiscretizeDisplayFilter
+gallery:
+  - image: input.png
+    text: Input
+  - image: num_bins_4.png
+    text: num_bins = 4
+attributes:
+  num_bins:
+    images:
+      - image: num_bins_4.png
+        text: num_bins = 4

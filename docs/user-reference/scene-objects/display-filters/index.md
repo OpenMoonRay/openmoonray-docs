@@ -2,7 +2,7 @@
 title: Display Filters
 ---
 # DisplayFilters
-![DisplayFilter Example]({{site.baseurl}}/assets/images/user-reference/scene-classes/display-filters/displayFilterExample.png)
+![DisplayFilter Example]({{site.baseurl}}/assets/images/user-reference/scene-objects/display-filters/displayFilterExample.png)
 
 ## Overview
 DisplayFilters are compositing nodes that can alter pixel values as a post-process in MoonRay. 

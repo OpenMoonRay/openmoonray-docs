@@ -1,0 +1,23 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/WireframeMap
+attributes:
+  fill_color:
+    images:
+      - image: fillColor.gif
+  line_color:
+    images:
+      - image: lineColor.gif
+  line_width:
+    images:
+      - image: lineWidthRaster.gif
+        text: Raster Mode
+      - image: lineWidthWorld.gif
+        text: Worldspace Mode
+  raster:
+    images:
+      - image: screenpixels_worldunits.gif
+        text: Comparison
+      - image: raster.jpg
+        text: Raster Teapot
+      - image: world.jpg
+        text: Worldspace Teapot

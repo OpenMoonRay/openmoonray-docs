@@ -2,9 +2,9 @@
 title: RGB to Normal Map
 ---
 # RgbToNormalMap
-{%-include overview.html data=site.data.scene-classes.normal-maps.RgbToNormalMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.normal-maps.RgbToNormalMap.gallery data=site.data.scene-classes.normal-maps.RgbToNormalMap-%}
-{%-include see-also.html links=site.data.scene-classes.normal-maps.RgbToNormalMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap.gallery data=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap.links-%}
 ---
 ## Attribute Reference
 
@@ -17,10 +17,10 @@ title: RGB to Normal Map
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert to a normal map</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.RgbToNormalMap.attributes.input.images data=site.data.scene-classes.normal-maps.RgbToNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.RgbToNormalMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap.attributes.input.images data=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap.attributes.input.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.normal-maps.RgbToNormalMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap-%}

@@ -1,0 +1,9 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/ProjectPlanarMap
+attributes:
+  use_reference_space:
+    images:
+      - image: no_ref.jpg
+        text: default does not match object
+      - image: ref.jpg
+        text: active, matching object without transforming
