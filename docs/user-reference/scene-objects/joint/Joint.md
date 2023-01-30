@@ -8,9 +8,9 @@ title: Joint
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Joint
-{%-include overview.html data=site.data.scene-classes.joint.Joint-%}
-{%-include image-gallery.html images=site.data.scene-classes.joint.Joint.gallery data=site.data.scene-classes.joint.Joint-%}
-{%-include see-also.html links=site.data.scene-classes.joint.Joint.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.joint.Joint-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.joint.Joint.gallery data=site.data.user-reference.scene-objects.joint.Joint-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.joint.Joint.links-%}
 ---
 ## Attribute Reference
 
@@ -23,10 +23,10 @@ title: Joint
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.joint.Joint.attributes.node_xform.images data=site.data.scene-classes.joint.Joint-%}
-      {%-include see-also.html links=site.data.scene-classes.joint.Joint.attributes.node_xform.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.joint.Joint.attributes.node_xform.images data=site.data.user-reference.scene-objects.joint.Joint-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.joint.Joint.attributes.node_xform.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.joint.Joint-%}
+{%-include example.html data=site.data.user-reference.scene-objects.joint.Joint-%}

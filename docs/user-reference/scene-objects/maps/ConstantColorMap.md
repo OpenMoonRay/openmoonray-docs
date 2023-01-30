@@ -8,9 +8,9 @@ title: ConstantColorMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantColorMap
-{%-include overview.html data=site.data.scene-classes.maps.ConstantColorMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.ConstantColorMap.gallery data=site.data.scene-classes.maps.ConstantColorMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.ConstantColorMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantColorMap.gallery data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantColorMap.links-%}
 ---
 ## Attribute Reference
 
@@ -23,10 +23,10 @@ title: ConstantColorMap
       <b>Rgb</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">constant color value</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.ConstantColorMap.attributes.color_value.images data=site.data.scene-classes.maps.ConstantColorMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.ConstantColorMap.attributes.color_value.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.images data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.ConstantColorMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}

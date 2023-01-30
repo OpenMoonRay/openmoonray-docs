@@ -1,7 +1,7 @@
 ---
 >An energy-conserving, artist-friendly shader for human hair, animal fur and any other curve-based geometry.
 
-![]({{site.baseurl}}/assets/images/scene-classes/materials/hair/HairMaterial_v3/abominable.jpg) 
+![]({{site.baseurl}}/assets/images/user-reference/scene-objects/materials/hair/HairMaterial_v3/abominable.jpg) 
 
 The three most important attributes that determine the overall look:  
 

@@ -8,9 +8,9 @@ title: HalftoneDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HalftoneDisplayFilter
-{%-include overview.html data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-{%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.gallery data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-{%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.gallery data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.links-%}
 ---
 ## Attribute Reference
 
@@ -23,16 +23,16 @@ title: HalftoneDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.invert_mask.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.invert_mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.mix.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.mix.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
 </details>
@@ -44,50 +44,50 @@ title: HalftoneDisplayFilter
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">The width in pixels of the antialiasing</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.filter_width.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.filter_width.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.filter_width.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.filter_width.links heading=4-%}
     </p>
     <h3>grayscale</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Ignore color information, render as grayscale</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.grayscale.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.grayscale.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.grayscale.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.grayscale.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput to be represented in halftone</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.input.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Whether the dots should be black (normal) or white/color (inverted)</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.invert.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.invert.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.invert.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.invert.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.mask.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.mask.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>size</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 5
       <p class="scene-class-comments">The size in pixels of the halftone dots</p>
-      {%-include image-gallery.html images=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.size.images data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
-      {%-include see-also.html links=site.data.scene-classes.display-filters.HalftoneDisplayFilter.attributes.size.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.size.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.size.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.display-filters.HalftoneDisplayFilter-%}
+{%-include example.html data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}

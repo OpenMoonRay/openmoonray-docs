@@ -8,9 +8,9 @@ title: MultiChannelToFloatMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # MultiChannelToFloatMap
-{%-include overview.html data=site.data.scene-classes.maps.MultiChannelToFloatMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.MultiChannelToFloatMap.gallery data=site.data.scene-classes.maps.MultiChannelToFloatMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.MultiChannelToFloatMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.gallery data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.links-%}
 ---
 ## Attribute Reference
 
@@ -23,8 +23,8 @@ title: MultiChannelToFloatMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.MultiChannelToFloatMap.attributes.input.images data=site.data.scene-classes.maps.MultiChannelToFloatMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.MultiChannelToFloatMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.input.links heading=4-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -37,18 +37,18 @@ title: MultiChannelToFloatMap
           | Yellow = 5
           | White = 6
       <p class="scene-class-comments">Specifies which color channels including combination channels (Cyan, Magenta, Yellow, and White) to convert to float.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.MultiChannelToFloatMap.attributes.mode.images data=site.data.scene-classes.maps.MultiChannelToFloatMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.MultiChannelToFloatMap.attributes.mode.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.links heading=4-%}
     </p>
     <h3>tolerance</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 0.20000000298
       <p class="scene-class-comments">Low tolerance values will tend to produce harsher edges near overlapping colors, while high tolerance values may result in cross-color bleeding.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.MultiChannelToFloatMap.attributes.tolerance.images data=site.data.scene-classes.maps.MultiChannelToFloatMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.MultiChannelToFloatMap.attributes.tolerance.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.MultiChannelToFloatMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}

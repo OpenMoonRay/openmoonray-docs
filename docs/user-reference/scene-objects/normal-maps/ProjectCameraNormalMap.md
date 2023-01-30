@@ -8,9 +8,9 @@ title: ProjectCameraNormalMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectCameraNormalMap
-{%-include overview.html data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.gallery data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-{%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.gallery data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.links-%}
 ---
 ## Attribute Reference
 
@@ -24,16 +24,16 @@ title: ProjectCameraNormalMap
           | from texture = 0 (default)
           | custom = 1
       <p class="scene-class-comments">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.aspect_ratio_source.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.aspect_ratio_source.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.aspect_ratio_source.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.aspect_ratio_source.links heading=4-%}
     </p>
     <h3>custom_aspect_ratio</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">a custom aspect ratio for the projected texture</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.custom_aspect_ratio.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.custom_aspect_ratio.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.custom_aspect_ratio.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.custom_aspect_ratio.links heading=4-%}
     </p>
     <h3>normal_encoding</h3>
     <p class="scene-class-type">
@@ -41,42 +41,42 @@ title: ProjectCameraNormalMap
           | [0,1] = 0 (default)
           | [-1,1] = 1
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.links heading=4-%}
     </p>
     <h3>project_on_back_faces</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Toggles whether camera projections appear on back faces.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.project_on_back_faces.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.project_on_back_faces.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.project_on_back_faces.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.project_on_back_faces.links heading=4-%}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
       <b>Camera</b>
       default: None
       <p class="scene-class-comments">the camera to project from</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.projector.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.projector.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.projector.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.projector.links heading=4-%}
     </p>
     <h3>texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.texture.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.texture.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.texture.links heading=4-%}
     </p>
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">use reference space</p>
-      {%-include image-gallery.html images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.use_reference_space.images data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
-      {%-include see-also.html links=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.attributes.use_reference_space.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.use_reference_space.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.normal-maps.ProjectCameraNormalMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}

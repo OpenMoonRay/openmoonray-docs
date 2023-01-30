@@ -8,9 +8,9 @@ title: HsvToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HsvToRgbMap
-{%-include overview.html data=site.data.scene-classes.maps.HsvToRgbMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.HsvToRgbMap.gallery data=site.data.scene-classes.maps.HsvToRgbMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.HsvToRgbMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HsvToRgbMap.gallery data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.HsvToRgbMap.links-%}
 ---
 ## Attribute Reference
 
@@ -23,10 +23,10 @@ title: HsvToRgbMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.HsvToRgbMap.attributes.input.images data=site.data.scene-classes.maps.HsvToRgbMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.HsvToRgbMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HsvToRgbMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HsvToRgbMap.attributes.input.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.HsvToRgbMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}

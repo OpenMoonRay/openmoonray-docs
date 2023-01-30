@@ -8,9 +8,9 @@ title: GeometrySet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # GeometrySet
-{%-include overview.html data=site.data.scene-classes.geometry-set.GeometrySet-%}
-{%-include image-gallery.html images=site.data.scene-classes.geometry-set.GeometrySet.gallery data=site.data.scene-classes.geometry-set.GeometrySet-%}
-{%-include see-also.html links=site.data.scene-classes.geometry-set.GeometrySet.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.geometry-set.GeometrySet-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry-set.GeometrySet.gallery data=site.data.user-reference.scene-objects.geometry-set.GeometrySet-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.geometry-set.GeometrySet.links-%}
 ---
 ## Attribute Reference
 
@@ -23,10 +23,10 @@ title: GeometrySet
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.images data=site.data.scene-classes.geometry-set.GeometrySet-%}
-      {%-include see-also.html links=site.data.scene-classes.geometry-set.GeometrySet.attributes.geometries.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry-set.GeometrySet.attributes.geometries.images data=site.data.user-reference.scene-objects.geometry-set.GeometrySet-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry-set.GeometrySet.attributes.geometries.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.geometry-set.GeometrySet-%}
+{%-include example.html data=site.data.user-reference.scene-objects.geometry-set.GeometrySet-%}

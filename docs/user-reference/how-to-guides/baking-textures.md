@@ -43,7 +43,7 @@ features of MoonRay rendering are available, including Aovs. There are some feat
 avoid though. Motion-blur and depth of field are not implemented in the BakeCamera. So turning
 those on could produce undesirable or unexpected results.
 
-See the [BakeCamera]({{site.baseurl}}/user-reference/scene-classes/cameras/BakeCamera) class reference for the
+See the [BakeCamera]({{site.baseurl}}/user-reference/scene-objects/cameras/BakeCamera) class reference for the
 full list of attributes
 
 The __node xform__ attribute is used to define the location of the bake camera. This location is

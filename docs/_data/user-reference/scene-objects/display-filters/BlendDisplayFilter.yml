@@ -1,0 +1,11 @@
+---
+overview: overviews/BlendDisplayFilterOverview.md
+example: examples/BlendDisplayFilterExample.md
+image_path: /assets/images/user-reference/scene-objects/display-filters/BlendDisplayFilter
+gallery:
+  - image: blend_filter_input1.png
+    text: Beauty render output
+  - image: blend_filter_input2.png
+    text: Albedo render output
+  - image: blend_result.png
+    text: blendAmt=0.6, blendType=cubic

@@ -8,9 +8,9 @@ title: NormalToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NormalToRgbMap
-{%-include overview.html data=site.data.scene-classes.maps.NormalToRgbMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.gallery data=site.data.scene-classes.maps.NormalToRgbMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.NormalToRgbMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.NormalToRgbMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NormalToRgbMap.gallery data=site.data.user-reference.scene-objects.maps.NormalToRgbMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.NormalToRgbMap.links-%}
 ---
 ## Attribute Reference
 
@@ -23,10 +23,10 @@ title: NormalToRgbMap
       <b>NormalMap</b>
       default: None
       <p class="scene-class-comments">Input normal map to convert to a color</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.images data=site.data.scene-classes.maps.NormalToRgbMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.NormalToRgbMap.attributes.input.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NormalToRgbMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.NormalToRgbMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NormalToRgbMap.attributes.input.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.NormalToRgbMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.NormalToRgbMap-%}

@@ -8,9 +8,9 @@ title: SphericalCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SphericalCamera
-{%-include overview.html data=site.data.scene-classes.cameras.SphericalCamera-%}
-{%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.gallery data=site.data.scene-classes.cameras.SphericalCamera-%}
-{%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.gallery data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.links-%}
 ---
 ## Attribute Reference
 
@@ -23,16 +23,16 @@ title: SphericalCamera
       <b>Float</b>
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.far.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.far.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.far.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.far.links heading=4-%}
     </p>
     <h3>near</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.near.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.near.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.near.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.near.links heading=4-%}
     </p>
   </p>
 </details>
@@ -44,16 +44,16 @@ title: SphericalCamera
       <b>SceneObject</b>
       default: None
       <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.medium_geometry.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.medium_geometry.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_geometry.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_geometry.links heading=4-%}
     </p>
     <h3>medium_material</h3>
     <p class="scene-class-type">
       <b>SceneObject</b>
       default: None
       <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.medium_material.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.medium_material.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_material.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_material.links heading=4-%}
     </p>
   </p>
 </details>
@@ -65,24 +65,24 @@ title: SphericalCamera
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.mb_shutter_bias.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.mb_shutter_bias.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.mb_shutter_bias.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.mb_shutter_bias.links heading=4-%}
     </p>
     <h3>mb_shutter_close</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.mb_shutter_close.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.mb_shutter_close.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.mb_shutter_close.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.mb_shutter_close.links heading=4-%}
     </p>
     <h3>mb_shutter_open</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.mb_shutter_open.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.mb_shutter_open.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.mb_shutter_open.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.mb_shutter_open.links heading=4-%}
     </p>
   </p>
 </details>
@@ -94,8 +94,8 @@ title: SphericalCamera
       <b>String</b>
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.pixel_sample_map.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.pixel_sample_map.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>
   </p>
 </details>
@@ -107,10 +107,10 @@ title: SphericalCamera
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
-      {%-include image-gallery.html images=site.data.scene-classes.cameras.SphericalCamera.attributes.node_xform.images data=site.data.scene-classes.cameras.SphericalCamera-%}
-      {%-include see-also.html links=site.data.scene-classes.cameras.SphericalCamera.attributes.node_xform.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.node_xform.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.node_xform.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.cameras.SphericalCamera-%}
+{%-include example.html data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}

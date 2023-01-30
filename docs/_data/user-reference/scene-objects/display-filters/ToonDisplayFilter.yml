@@ -1,0 +1,62 @@
+---
+overview: overviews/ToonDisplayFilterOverview.md
+example: examples/ToonDisplayFilterExample.md
+image_path: /assets/images/user-reference/scene-objects/display-filters/ToonDisplayFilter
+gallery:
+  - image: num_cels_2.png
+attributes:
+  input_diffuse:
+    images:
+      - image: diffuse.png
+  input_glossy:
+    images:
+      - image: glossy.png
+  input_albedo:
+    images:
+      - image: albedo.png
+  input_depth:
+    images:
+      - image: depth.png
+  input_normal:
+    images:
+      - image: normals.png
+  num_cels:
+    images:
+      - image: num_cels_1.png
+        text: num_cels = 1
+      - image: num_cels_2.png
+        text: num_cels = 2
+      - image: num_cels_3.png
+        text: num_cels = 3
+  ambient: 
+    images:
+      - image: ambient_1.png
+        text: ambient = Rgb(0, 0, 0)
+      - image: ambient_2.png
+        text: ambient = Rgb(0.1, 0.05, 0.2)
+  ink_depth_threshold:
+    images:
+      - image: ink_depth_threshold_0.01.png
+        text: ink_depth_threshold = 0.01
+  ink_normal_threshold:
+    images:
+      - image: ink_normal_threshold_0.png
+        text: ink_normal_threshold = 0.0
+      - image: ink_normal_threshold_1.png
+        text: ink_normal_threshold = 1.0
+  ink_normal_scale:
+    images:
+      - image: ink_normal_scale_1.png
+        text: ink_normal_scale = 1.0
+      - image: ink_normal_scale_5.png
+        text: ink_normal_scale = 5.0
+  edge_detector:
+    images:
+      - image: edge_detector_none.png
+        text: edge_detector = none
+      - image: edge_detector_sobel.png
+        text: edge_detector = sobel
+      - image: edge_detector_laplacian.png
+        text: edge_detector = Laplacian
+      - image: edge_detector_laplacian_of_gaussian.png
+        text: edge_detector = Laplacian of Gaussian

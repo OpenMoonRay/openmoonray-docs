@@ -1,0 +1,17 @@
+---
+overview: overviews/RemapDisplayFilterOverview.md
+example: examples/RemapDisplayFilterExample.md
+image_path: /assets/images/user-reference/scene-objects/display-filters/RemapDisplayFilter
+gallery:
+  - image: example1.png
+    text: "invert
+          <br><b>in: </b>[0, 1] 
+          <br><b>out: </b>[1, 0]"
+  - image: example2.png
+    text: "invert red channel
+          <br><b>in: </b>[Rgb(0, 0, 0), Rgb(1, 1, 1)] 
+          <br><b>out: </b>[Rgb(1, 0, 0), Rgb(0, 1, 1)]"
+  - image: example3.png
+    text: "limit green channel
+          <br><b>in: </b>[Rgb(0, 0, 0), Rgb(1, 1, 1)] 
+          <br><b>out: </b>[Rgb(0, 0.4, 0), Rgb(1, 0.7, 1)]"

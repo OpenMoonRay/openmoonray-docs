@@ -114,7 +114,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ---
 
 Image gallery.
-{%-include image-gallery.html images=site.data.scene-classes.display-filters.BlendDisplayFilter.gallery data=site.data.scene-classes.display-filters.BlendDisplayFilter-%}
+{%-include image-gallery.html images=site.data./user-reference/scene-objects.display-filters.BlendDisplayFilter.gallery data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
 
 ---
 
@@ -124,12 +124,12 @@ Image comparer.
   <sl-icon slot="handle" library="material" name="drag_indicator"></sl-icon>
   <img
     slot="before"
-    src="{{site.baseurl}}/assets/images/scene-classes/display-filters/BlendDisplayFilter/blend_filter_input1.png"
+    src="{{site.baseurl}}/assets/images/user-reference/scene-objects/display-filters/BlendDisplayFilter/blend_filter_input1.png"
     alt="Beauty render output"
   />
   <img
     slot="after"
-    src="{{site.baseurl}}/assets/images/scene-classes/display-filters/BlendDisplayFilter/blend_result.png"
+    src="{{site.baseurl}}/assets/images/user-reference/scene-objects/display-filters/BlendDisplayFilter/blend_result.png"
     alt="blendAmt=0.6, blendType=cubic"
   />
 </sl-image-comparer>
@@ -174,16 +174,16 @@ Visit https://fonts.google.com/icons?selected=Material+Icons to search the Mater
         <b>Float</b>
         default: 0.0
         <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
-        {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.bound_padding.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
-        {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.bound_padding.links heading=4-%}
+        {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.bound_padding.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
+        {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.bound_padding.links heading=4-%}
       </p>
       <h3>input_1</h3>
       <p class="scene-class-type">
         <b>Displacement</b>
         default: None
         <p class="scene-class-comments">Displacement object 1</p>
-        {%-include image-gallery.html images=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_1.images data=site.data.scene-classes.displacement.CombineDisplacement-%}
-        {%-include see-also.html links=site.data.scene-classes.displacement.CombineDisplacement.attributes.input_1.links heading=4-%}
+        {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.input_1.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
+        {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.input_1.links heading=4-%}
       </p>
       <h3>operation</h3>
       <p class="scene-class-type">

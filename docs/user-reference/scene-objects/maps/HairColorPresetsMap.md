@@ -8,9 +8,9 @@ title: HairColorPresetsMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColorPresetsMap
-{%-include overview.html data=site.data.scene-classes.maps.HairColorPresetsMap-%}
-{%-include image-gallery.html images=site.data.scene-classes.maps.HairColorPresetsMap.gallery data=site.data.scene-classes.maps.HairColorPresetsMap-%}
-{%-include see-also.html links=site.data.scene-classes.maps.HairColorPresetsMap.links-%}
+{%-include overview.html data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
+{%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.gallery data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
+{%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.links-%}
 ---
 ## Attribute Reference
 
@@ -37,10 +37,10 @@ title: HairColorPresetsMap
           | ash brown = 13
           | chestnut brown = 14
       <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.scene-classes.maps.HairColorPresetsMap.attributes.color.images data=site.data.scene-classes.maps.HairColorPresetsMap-%}
-      {%-include see-also.html links=site.data.scene-classes.maps.HairColorPresetsMap.attributes.color.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.links heading=4-%}
     </p>
   </p>
 </details>
 </div>
-{%-include example.html data=site.data.scene-classes.maps.HairColorPresetsMap-%}
+{%-include example.html data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
