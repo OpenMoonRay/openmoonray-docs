@@ -30,7 +30,7 @@ title: CookieLightFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the far distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_far_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_far_value.links heading=4-%}
     </p>
@@ -38,7 +38,7 @@ title: CookieLightFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the mid distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_mid_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_mid_value.links heading=4-%}
     </p>
@@ -62,7 +62,7 @@ title: CookieLightFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the far distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the near distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_near_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_near_value.links heading=4-%}
     </p>
@@ -71,7 +71,7 @@ title: CookieLightFilter
       <b>Int</b> <i>enum</i>
           | gaussian = 0 (default)
           | circular = 1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Gaussian or circular blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_type.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_type.links heading=4-%}
     </p>
@@ -134,7 +134,7 @@ title: CookieLightFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.on.links heading=4-%}
     </p>
@@ -167,7 +167,7 @@ title: CookieLightFilter
       <b>Int</b> <i>enum</i>
           | perspective = 0 (default)
           | orthographic = 1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Perspective or orthographic projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.projector_type.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.projector_type.links heading=4-%}
     </p>

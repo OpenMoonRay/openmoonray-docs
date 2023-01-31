@@ -1,5 +1,11 @@
 ---
-title: Barn Door Light Filter
+title: BarnDoorLightFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BarnDoorLightFilter
 {%-include overview.html data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
@@ -209,7 +215,7 @@ title: Barn Door Light Filter
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.on.links heading=4-%}
     </p>

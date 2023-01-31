@@ -22,7 +22,7 @@ title: IntensityLightFilter
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Multiply the light radiance by this RGB color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.color.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.color.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: IntensityLightFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Multiply the light radiance by exposure = pow(2, exposure)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.exposure.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.exposure.links heading=4-%}
     </p>
@@ -38,7 +38,7 @@ title: IntensityLightFilter
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Multiply the light radiance by this intensity value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.intensity.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.intensity.links heading=4-%}
     </p>
@@ -46,7 +46,7 @@ title: IntensityLightFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Invert the light radiance by 1/radiance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.invert.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.invert.links heading=4-%}
     </p>
@@ -59,7 +59,7 @@ title: IntensityLightFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.on.links heading=4-%}
     </p>
