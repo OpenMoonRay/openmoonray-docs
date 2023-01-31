@@ -1,5 +1,11 @@
 ---
 title: PerspectiveCamera
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # PerspectiveCamera
 {%-include overview.html data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
@@ -64,7 +70,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Whether to enable depth of field</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof.links heading=4-%}
     </p>
@@ -72,7 +78,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 8.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Depth of field aperture width</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_aperture.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_aperture.links heading=4-%}
     </p>
@@ -80,7 +86,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Depth of field focus distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_focus_distance.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_focus_distance.links heading=4-%}
     </p>
@@ -93,7 +99,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 10000.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Far clipping plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.far.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.far.links heading=4-%}
     </p>
@@ -101,7 +107,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 24.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Scale the aperture of the camera (i.e., the frustum) by this value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.film_width_aperture.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.film_width_aperture.links heading=4-%}
     </p>
@@ -109,7 +115,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b> <i>blurrable</i>
       default: 30.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Focal length</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.focal.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.focal.links heading=4-%}
     </p>
@@ -117,7 +123,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Horizontal offset of the frustum.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.horizontal_film_offset.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.horizontal_film_offset.links heading=4-%}
     </p>
@@ -125,7 +131,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Near clipping plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.near.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.near.links heading=4-%}
     </p>
@@ -141,7 +147,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Vertical offset of the frustum.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.vertical_film_offset.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.vertical_film_offset.links heading=4-%}
     </p>
@@ -175,7 +181,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Biases the motion blur samples toward one end of the shutter interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.mb_shutter_bias.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.mb_shutter_bias.links heading=4-%}
     </p>
@@ -183,7 +189,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Frame at which the shutter closes, i.e., the end of the motion blur interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.mb_shutter_close.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.mb_shutter_close.links heading=4-%}
     </p>
@@ -191,7 +197,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Frame at which the shutter opens, i.e., the beginning of the motion blur interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.mb_shutter_open.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.mb_shutter_open.links heading=4-%}
     </p>
@@ -204,7 +210,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>String</b>
       default: 
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). This is a multiplier on the global pixel sample count specified in SceneVariables. If the provided map has incompatible dimensions, it will be resized.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>
@@ -217,7 +223,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 100.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Distance at which all the stereo views converge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_convergence_distance.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_convergence_distance.links heading=4-%}
     </p>
@@ -225,7 +231,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 6.30000019073
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Distance between the left and right 'eyes'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_interocular_distance.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_interocular_distance.links heading=4-%}
     </p>
@@ -235,7 +241,7 @@ title: PerspectiveCamera
           | center view = 0 (default)
           | left view = 1
           | right view = 2
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Render from the center, left, or right stereo view.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_view.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_view.links heading=4-%}
     </p>
