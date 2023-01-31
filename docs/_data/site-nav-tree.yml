@@ -417,6 +417,8 @@
             path: /user-reference/how-to-guides/baking-textures.md
           - text: Bokeh
             path: /user-reference/how-to-guides/bokeh.md
+          - text: Look Dev Transparent Surfaces
+            path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
           - text: Path Guiding
             path: /user-reference/how-to-guides/path-guiding.md
           - text: PBR Validity

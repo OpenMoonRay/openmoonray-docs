@@ -1,0 +1,9 @@
+---
+image_path: /assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces
+gallery:
+  - image: ior1.5.png
+    text: IOR 1.5
+  - image: transmissionIor1.2.png
+    text: IOR 1.5, Transmission IOR 1.2
+  - image: ior1.2.png
+    text: IOR 1.2
