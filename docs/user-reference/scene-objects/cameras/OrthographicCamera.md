@@ -1,5 +1,11 @@
 ---
 title: OrthographicCamera
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OrthographicCamera
 {%-include overview.html data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
@@ -64,7 +70,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Whether to enable depth of field</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof.links heading=4-%}
     </p>
@@ -72,7 +78,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 8.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Depth of field aperture width</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_aperture.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_aperture.links heading=4-%}
     </p>
@@ -80,7 +86,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Depth of field focus distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_focus_distance.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_focus_distance.links heading=4-%}
     </p>
@@ -93,7 +99,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 10000.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Far clipping plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.far.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.far.links heading=4-%}
     </p>
@@ -101,7 +107,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 24.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Scale the aperture of the camera (i.e., the orthographic frustum) by this value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.film_width_aperture.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.film_width_aperture.links heading=4-%}
     </p>
@@ -109,7 +115,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Horizontal offset of the orthographic frustum.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.horizontal_film_offset.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.horizontal_film_offset.links heading=4-%}
     </p>
@@ -117,7 +123,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Near clipping plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.near.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.near.links heading=4-%}
     </p>
@@ -133,7 +139,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Vertical offset of the orthographic frustum.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.vertical_film_offset.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.vertical_film_offset.links heading=4-%}
     </p>
@@ -167,7 +173,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Biases the motion blur samples toward one end of the shutter interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_bias.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_bias.links heading=4-%}
     </p>
@@ -175,7 +181,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Frame at which the shutter closes, i.e., the end of the motion blur interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_close.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_close.links heading=4-%}
     </p>
@@ -183,7 +189,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Frame at which the shutter opens, i.e., the beginning of the motion blur interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_open.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_open.links heading=4-%}
     </p>
@@ -196,7 +202,7 @@ title: OrthographicCamera
     <p class="scene-class-type">
       <b>String</b>
       default: 
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). This is a multiplier on the global pixel sample count specified in SceneVariables. If the provided map has incompatible dimensions, it will be resized.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>
