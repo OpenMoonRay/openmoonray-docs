@@ -46,13 +46,17 @@ inherited `generate` function that most of the work typically happens.
 Here's a bare-bones `generate` function that creates a single point with a settable radius.
 
 ```c++
-void
-generate(const GenerateContext &generateContext,
-         const shading::XformSamples &parent2render)
-{
-    const scene_rdl2::rdl2::Geometry *rdlGeometry = generateContext.getRdlGeometry();
+using namespace scene_rdl2::rdl2;
+using namespace shading;
 
-    const SimpleGeometry *rdlPointGeometry = static_cast<const SimpleGeometry*>(rdlGeometry);
+void
+SimpleProcedural::generate(const GenerateContext &generateContext,
+                           const XformSamples &parent2render)
+{
+    const Geometry *rdlGeometry = generateContext.getRdlGeometry();
+
+    const SimpleGeometry *rdlPointGeometry =
+        static_cast<const SimpleGeometry*>(rdlGeometry);
 
     // vertices
     const size_t vertCount  = 1;
@@ -66,25 +70,23 @@ generate(const GenerateContext &generateContext,
     radii.assign(vertCount, radius);
 
     // layer assignments
-    const scene_rdl2::rdl2::Layer *rdlLayer = generateContext.getRdlLayer();
+    const Layer *rdlLayer = generateContext.getRdlLayer();
     const int defaultAssignmentId =
         rdlLayer->getAssignmentId(rdlPointGeometry,
                                   ""); // default part name
     LayerAssignmentId layerAssignmentId(defaultAssignmentId);
 
     // add a constant color "Cd" to the primitive attribue table
-    shading::PrimitiveAttributeTable pat;
-    std::vector<scene_rdl2::rdl2::RgbVector> samples =
-        { { scene_rdl2::rdl2::Rgb(1.f, 0.f, 0.f) } };
-    pat.addAttribute(shading::TypedAttributeKey<scene_rdl2::rdl2::Rgb>("Cd"),
+    PrimitiveAttributeTable pat;
+    std::vector<RgbVector> samples = { { Rgb(1.f, 0.f, 0.f) } };
+    pat.addAttribute(TypedAttributeKey<Rgb>("Cd"),
                      AttributeRate::RATE_CONSTANT,
                      std::move(samples));
 
-    std::unique_ptr<Points> primitive =
-        createPoints(std::move(vertices),
-                     std::move(radii),
-                     std::move(layerAssignmentId),
-                     std::move(pat));
+    std::unique_ptr<Points> primitive = createPoints(std::move(vertices),
+                                                     std::move(radii),
+                                                     std::move(layerAssignmentId),
+                                                     std::move(pat));
 
     if (primitive) {
         addPrimitive(std::move(primitive),
