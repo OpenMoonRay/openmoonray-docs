@@ -417,6 +417,34 @@
             path: /user-reference/how-to-guides/baking-textures.md
           - text: Bokeh
             path: /user-reference/how-to-guides/bokeh.md
+          - text: Checkpoint/Resume rendering
+            subitems:
+              - text: Checkpoint
+                path: /user-reference/how-to-guides/checkpoint-resume/checkpoint.md
+                subitems:
+                  - text: filename and AOV definition
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/filename-AOV.md
+                  - text: checkpoint sceneVariables
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/checkpoint-sceneVariables.md
+                  - text: other sceneVariables
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/other-sceneVariables.md
+                  - text: post checkpoint LUA script
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
+                  - text: Unexpected rendering process interruption by SIGINT
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
+              - text: Resume
+                path: /user-reference/how-to-guides/checkpoint-resume/resume.md
+                subitems:
+                  - text: on-resume LUA script
+                    path: /user-reference/how-to-guides/checkpoint-resume/resume/on-resume-LUA-script.md
+              - text: File output logic
+                path: /user-reference/how-to-guides/checkpoint-resume/file-output-logic.md
+              - text: exsample 
+                path: /user-reference/how-to-guides/checkpoint-resume/example.md
+              - text: EXR Metadata
+                path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
+              - text: KJ Sequence
+                path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
           - text: Path Guiding
