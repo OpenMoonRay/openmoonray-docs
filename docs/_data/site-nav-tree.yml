@@ -354,8 +354,6 @@
               path: user-reference/scene-objects/lights/DistantLight.md
             - text: EnvLight
               path: user-reference/scene-objects/lights/EnvLight.md
-            - text: LightSet
-              path: user-reference/scene-objects/lights/LightSet.md
             - text: MeshLight
               path: user-reference/scene-objects/lights/MeshLight.md
             - text: RectLight
@@ -364,6 +362,8 @@
               path: user-reference/scene-objects/lights/SphereLight.md
             - text: SpotLight
               path: user-reference/scene-objects/lights/SpotLight.md
+        - text: LightSet
+          path: user-reference/scene-objects/light-set/LightSet.md
         - text: Light Filters
           path: user-reference/scene-objects/light-filters/index.md
           subitems:
@@ -381,12 +381,12 @@
               path: user-reference/scene-objects/light-filters/DecayLightFilter.md
             - text: IntensityLightFilter
               path: user-reference/scene-objects/light-filters/IntensityLightFilter.md
-            # - text: LightFilterSet
-            #   path: scene-objects/light-filters/LightFilterSet.md
             - text: RodLightFilter
               path: user-reference/scene-objects/light-filters/RodLightFilter.md
             - text: VdbLightFilter
               path: user-reference/scene-objects/light-filters/VdbLightFilter.md
+        - text: LightFilterSet
+          path: user-reference/scene-objects/light-filter-set/LightFilterSet.md
         - text: Render Output
           path: user-reference/scene-objects/render-output/RenderOutput.md
         - text: Scene Variables
