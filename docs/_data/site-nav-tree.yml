@@ -422,12 +422,10 @@
               - text: Checkpoint
                 path: /user-reference/how-to-guides/checkpoint-resume/checkpoint.md
                 subitems:
-                  - text: filename and AOV definition
-                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/filename-AOV.md
-                  - text: checkpoint sceneVariables
-                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/checkpoint-sceneVariables.md
-                  - text: other sceneVariables
-                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/other-sceneVariables.md
+                  - text: How to use Checkpoint Rendering
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/how-to-use-checkpoint.md
+                  - text: optional checkpoint sceneVariables
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/optional-checkpoint-sceneVariables.md
                   - text: post checkpoint LUA script
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
                   - text: Unexpected rendering process interruption by SIGINT
