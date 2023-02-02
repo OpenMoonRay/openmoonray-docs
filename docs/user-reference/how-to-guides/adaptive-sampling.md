@@ -10,17 +10,19 @@ title: Map
 # Adaptive Sampling
 ---
 
-This feature allows the user to set a desired overall noise level instead of explicitly setting the number of samples per pixel (SPP). Instead, the renderer will adaptively choose the number of samples per pixel to reach the desired error threshold over the entire image. Since we want the noise at each pixel to fall below this specified error threshold, it also has the beneficial side effect of removing fireflies from the output.
+This feature allows the user to set a desired overall noise level instead of explicitly setting the number of samples per pixel (SPP). Instead, the renderer will adaptively choose the number of samples per pixel to reach the desired error threshold over the entire image. Since we want the noise at each pixel to fall below this specified error threshold, it also has the beneficial side effect of removing fireflies from the output. The error is measured on the beauty image only.
 
 Below are two renders requiring the same amount of time. Figure 1 is without adaptive sampling, and Figure 2 is with adaptive sampling. Notice how the error is spread out more uniformly and the fireflies are attenuated in the adaptive sampling case.
 
-<img src="media/image1.png" style="width:4.875in;height:2.02083in" />
+<figure>
+    <img src="{{site.baseurl}}/assets/images/user-reference/adaptive-sampling/uniform.png" width='800'/>
+    <figcaption>Figure 1: Uniform sampling (adaptive sampling disabled)</figcaption>
+</figure>
 
-Figure 1: uniform sampling (adaptive sampling disabled)
-
-<img src="media/image2.png" style="width:4.875in;height:2.02083in" />
-
-Figure 2: adaptive sampling
+<figure>
+    <img src="{{site.baseurl}}/assets/images/user-reference/adaptive-sampling/adaptive.png" width='800'/>
+    <figcaption>Figure 2: Adaptive sampling</figcaption>
+</figure>
 
 ## RDL Parameters
 
@@ -42,7 +44,7 @@ The table below contains descriptions of the attributes related to adaptive samp
 
 To find suitable values for the adaptive sampling parameters, check the output value "Pixels at max adaptive samples." If the value is significant and your image is noisy, consider increasing max_adaptive_samples. On the other hand, if the value is small and your image is converged, you may be able to increase your error threshold.
 
-## Example usage:
+## Example RDLA Syntax
 
     SceneVariables
     {
@@ -52,11 +54,12 @@ To find suitable values for the adaptive sampling parameters, check the output v
         ["target_adaptive_error"] = 1.5,
     }
 
-In `moonray_gui`, hotkey "8" will toggle to a grayscale view showing the number of samples rendered per pixel. The brighter the pixel, the higher the sample count. Figure 3 shows this diagnostic view for the above renderings. In addition, a weight AOV is available that also records the absolute number of pixel samples. To be human-viewable, the weight AOV may need to be normalized to [0, 1] in compositing software.
+In `moonray_gui`, hotkey "8" will toggle to a grayscale view showing the number of samples rendered per pixel. The brighter the pixel, the higher the sample count. In addition, a weight AOV is available that also records the absolute number of pixel samples. To be human-viewable, the weight AOV may need to be normalized to [0, 1] in compositing software. Figure 3 shows this normalized AOV for the rendering in Figure 2.
 
-<img src="media/image3.tmp" style="width:4.875in;height:2.84375in" />
-
-Figure 3: Adaptive sampling samples per pixel in moonray_gui
+<figure>
+    <img src="{{site.baseurl}}/assets/images/user-reference/adaptive-sampling/weight.png" width='800'/>
+    <figcaption>Figure 3: Adaptive sampling normalized weight AOV</figcaption>
+</figure>
 
 ## Questions and Answers
 
