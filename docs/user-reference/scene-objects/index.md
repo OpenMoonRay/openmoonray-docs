@@ -1,25 +1,32 @@
 ---
-title: MoonRay Scene Classes
+title: Scene Objects
 ---
-# Scene Classes
+# Scene Objects
 
-SceneClasses represent the various constructs that describe a scene.
+Scene Objects represent the various constructs that describe a scene.
 
-SceneClasses in MoonRay have several canonical types and include:
+Scene Objects in MoonRay have several canonical types and include:
 
 [Camera](./cameras/)  
 [Displacement](./displacement/)  
 [DisplayFilter](./display-filters/)  
 [Geometry](./geometry/)  
-[Joint](./joint/)  
-[Material](./materials/)  
+[GeometrySet](./geometry-set/GeometrySet)  
+[Joint](./joint/Joint)  
 [Map](./maps/)  
-[MetaData](./meta-data/)  
-[NormalMap](./normal-map/)  
-[Layer](./layer/)  
+[Material](./materials/)  
+[MetaData](./meta-data/MetaData)  
+[NormalMap](./normal-maps/)  
+[Layer](./layer/Layer)  
 [Light](./lights/)  
+[LightSet](./light-set/LightSet)  
 [LightFilter](./light-filters/)  
-[RenderOutput](./render-output/)  
-[SceneVariables](./scene-variables/)  
-[ShadowSet](./shadow-set/)  
-[ShadowReceiverSet](./shadow-receiver-set/)  
+[LightFilterSet](./light-filter-set/LightFilterSet)  
+[RenderOutput](./render-output/RenderOutput)  
+[SceneVariables](./scene-variables/SceneVariables)  
+[ShadowSet](./shadow-set/ShadowSet)  
+[ShadowReceiverSet](./shadow-receiver-set/ShadowReceiverSet)  
+[TraceSet](./trace-set/TraceSet)  
+[UserData](./user-data/UserData)  
+[Volumes](./volumes/)  
+
