@@ -354,8 +354,6 @@
               path: user-reference/scene-objects/lights/DistantLight.md
             - text: EnvLight
               path: user-reference/scene-objects/lights/EnvLight.md
-            - text: LightSet
-              path: user-reference/scene-objects/lights/LightSet.md
             - text: MeshLight
               path: user-reference/scene-objects/lights/MeshLight.md
             - text: RectLight
@@ -364,6 +362,8 @@
               path: user-reference/scene-objects/lights/SphereLight.md
             - text: SpotLight
               path: user-reference/scene-objects/lights/SpotLight.md
+        - text: LightSet
+          path: user-reference/scene-objects/light-set/LightSet.md
         - text: Light Filters
           path: user-reference/scene-objects/light-filters/index.md
           subitems:
@@ -381,24 +381,24 @@
               path: user-reference/scene-objects/light-filters/DecayLightFilter.md
             - text: IntensityLightFilter
               path: user-reference/scene-objects/light-filters/IntensityLightFilter.md
-            # - text: LightFilterSet
-            #   path: scene-objects/light-filters/LightFilterSet.md
             - text: RodLightFilter
               path: user-reference/scene-objects/light-filters/RodLightFilter.md
             - text: VdbLightFilter
               path: user-reference/scene-objects/light-filters/VdbLightFilter.md
+        - text: LightFilterSet
+          path: user-reference/scene-objects/light-filter-set/LightFilterSet.md
         - text: Render Output
-          path: user-reference/scene-objects/render-output/index.md
+          path: user-reference/scene-objects/render-output/RenderOutput.md
         - text: Scene Variables
-          path: user-reference/scene-objects/scene-variables/index.md
+          path: user-reference/scene-objects/scene-variables/SceneVariables.md
         - text: Shadow Set
-          path: user-reference/scene-objects/shadow-set/index.md
+          path: user-reference/scene-objects/shadow-set/ShadowSet.md
         - text: Shadow Receiver Set
-          path: user-reference/scene-objects/shadow-receiver-set/index.md
+          path: user-reference/scene-objects/shadow-receiver-set/ShadowReceiverSet.md
         - text: Trace Set
-          path: user-reference/scene-objects/trace-set/index.md
+          path: user-reference/scene-objects/trace-set/TraceSet.md
         - text: User Data
-          path: user-reference/scene-objects/user-data/index.md
+          path: user-reference/scene-objects/user-data/UserData.md
         - text: Volumes
           path: user-reference/scene-objects/volumes/index.md
           subitems:
@@ -491,6 +491,10 @@
     subitems:
       # - text: Doxygen Reference
       #  path: api/html/index.html
+      - text: Source Structure
+        path: developers-guide/source-structure/index.md
+      - text: Scene RDL2 Library
+        path: developers-guide/scene_rdl2-library.md
       - text: Writing Shaders
         path: developers-guide/shaders/index.md
         subitems:
@@ -514,8 +518,6 @@
             path: developers-guide/shaders/normal-maps.md
           - text: Volume Shaders
             path: developers-guide/shaders/volume-shaders.md
-      - text: Scene RDL2 Library
-        path: developers-guide/scene_rdl2-library.md
       - text: Arras
         path: developers-guide/arras/index.md
         subitems:

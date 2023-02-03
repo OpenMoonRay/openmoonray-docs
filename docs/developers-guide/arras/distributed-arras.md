@@ -4,7 +4,7 @@ title: Distributed Arras
 
 # Distributed Arras
 
-## Note
+## Security Note
 
 Since distributed Arras runs services that can read and produce production data, running it in a production environment may require integration with existing infrastructure, and some care regarding security issues. The setup described in this document is a simple one suitable for testing at smaller scale, but you should be aware that the services being started potentially have the ability to execute arbitrary actions (with the permissions of the user running them) on request via a network socket.
 
