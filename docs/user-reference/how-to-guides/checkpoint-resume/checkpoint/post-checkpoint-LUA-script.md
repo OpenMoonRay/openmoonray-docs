@@ -29,6 +29,8 @@ the post checkpoint LUA script, moonray crash and you get stack-trace.<br>
 
 ## Post checkpoint LUA global variables
 
+assosiative array name = "**checkpoint**"
+
 **associative item (=element) name** | **type** | **description**
 ---------- | ---------- | ----------
 filename | string array | all checkpoint file names at this checkpoint output

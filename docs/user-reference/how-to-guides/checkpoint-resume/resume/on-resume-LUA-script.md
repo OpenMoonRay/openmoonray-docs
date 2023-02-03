@@ -26,6 +26,8 @@ the on-resume LUA script, moonray crash.<br>
 
 ## On-resume script LUA global variables
 
+assosiative array name = "**resume**"
+
 **associative item (=element) name** | **type** | **description**
 ---------- | ---------- | ----------
 resumeStartStatus | bool | result of resume start condition
