@@ -1,0 +1,16 @@
+{% if include.position %}
+<sl-image-comparer position="{{include.position}}">
+{% else %}
+<sl-image-comparer>
+{% endif %}
+    <img
+      slot="before"
+      src="{{site.baseurl}}/{{include.image_path_before}}"
+      alt="{{include.image_alt_before}}"
+    />
+    <img
+      slot="after"
+      src="{{site.baseurl}}/{{include.image_path_after}}"
+      alt="include.image_alt_after"
+    />
+  </sl-image-comparer>
