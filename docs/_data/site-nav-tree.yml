@@ -417,6 +417,32 @@
             path: /user-reference/how-to-guides/baking-textures.md
           - text: Bokeh
             path: /user-reference/how-to-guides/bokeh.md
+          - text: Checkpoint/Resume rendering
+            subitems:
+              - text: Checkpoint
+                path: /user-reference/how-to-guides/checkpoint-resume/checkpoint.md
+                subitems:
+                  - text: How to use Checkpoint Rendering
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/how-to-use-checkpoint.md
+                  - text: Optional checkpoint sceneVariables
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/optional-checkpoint-sceneVariables.md
+                  - text: Post checkpoint LUA script
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
+                  - text: Unexpected interruption by SIGINT
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
+              - text: Resume
+                path: /user-reference/how-to-guides/checkpoint-resume/resume.md
+                subitems:
+                  - text: on-resume LUA script
+                    path: /user-reference/how-to-guides/checkpoint-resume/resume/on-resume-LUA-script.md
+              - text: File output logic
+                path: /user-reference/how-to-guides/checkpoint-resume/file-output-logic.md
+              - text: Sample rdla
+                path: /user-reference/how-to-guides/checkpoint-resume/sample-rdla.md
+              - text: EXR Metadata
+                path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
+              - text: KJ Sequence
+                path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
           - text: Path Guiding
