@@ -1,5 +1,11 @@
 ---
-title: MoonRay Metadata
+title: Metadata
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # Metadata
 {%-include overview.html data=site.data.user-reference.scene-objects.meta-data.Metadata-%}
@@ -16,7 +22,7 @@ title: MoonRay Metadata
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Metadata name</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.meta-data.Metadata.attributes.name.images data=site.data.user-reference.scene-objects.meta-data.Metadata-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.meta-data.Metadata.attributes.name.links heading=4-%}
     </p>
@@ -32,7 +38,7 @@ title: MoonRay Metadata
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Metadata value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.meta-data.Metadata.attributes.value.images data=site.data.user-reference.scene-objects.meta-data.Metadata-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.meta-data.Metadata.attributes.value.links heading=4-%}
     </p>
