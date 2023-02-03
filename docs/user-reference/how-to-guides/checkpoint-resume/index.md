@@ -10,7 +10,7 @@ title: Checkpoint / Resume rendering
   - [Post checkpoint LUA script](./checkpoint/post-checkpoint-LUA-script)
   - [Unexpected interruption by SIGINT](./checkpoint/sigint-interruption)
 - [Resume](./resume)
-  - [on-Resume LUA script](./resume/on-resume-LUA-script)
+  - [On-Resume LUA script](./resume/on-resume-LUA-script)
 - [File output logic](./file-output-logic)
 - [Sample rdla](./sample-rdla)
 - [EXR Metadata](./exr-metadata)
