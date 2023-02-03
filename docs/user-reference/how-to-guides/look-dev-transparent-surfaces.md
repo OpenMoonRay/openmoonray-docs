@@ -21,9 +21,10 @@ Transparent surfaces require higher depth settings because light rays need more 
 * `max_glossy_depth` (default: 2)
 * `max_mirror_depth` (default: 3)
 
-| max_depth: 5, glossy_depth: 2 | max_depth: 6, glossy_depth: 6 |
-| -- | -- |
-| ![Max Depth Example1]({{site.baseurl}}/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/max_depth_example1.png) | ![Max Depth Example2]({{site.baseurl}}/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/max_depth_example2.png) |
+{% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/max_depth_example2.png'
+                               image_path_after='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/max_depth_example1.png' 
+                               image_alt_before='Higher depth settings for transparent surfaces.' 
+                               image_alt_after='Default depth settings.' %}
 
 ## Roughness and Layering
 
