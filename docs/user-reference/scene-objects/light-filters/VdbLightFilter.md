@@ -79,7 +79,7 @@ title: VdbLightFilter
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">List of density remap interpolation types</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.links heading=4-%}
     </p>
