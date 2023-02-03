@@ -6,7 +6,7 @@ title: Optional Checkpoint SceneVariables
 There are other optional scene-variables which are shared by both of **time-based** and
 **quality-based** checkpoint rendering.
 
-## checkpoint file overwrite and multi-version control
+## Checkpoint file overwrite and multi-version control
 Every time checkpoint files are created, previous checkpoint files are overwritten.
 This is default behavior. If you don't want to overwrite checkpoint files
 (i.e. keep every checkpoint file), you can set overwrite mode to **false** by
@@ -37,7 +37,7 @@ the new location. This is useful for generating machine learning training data f
 Default of `checkpoint_multi_version_file_name` is empty.<br>
 <br>
 
-## background checkpoint write control
+## Background checkpoint write control
 Image file write operation cost is not free. We are using openEXR and other image format and
 mostly they are using data compression logic and it is CPU intensive task. Also posix I/O
 operation over the network disk is costly. We need to write multiple checkpoint files during
@@ -61,7 +61,7 @@ Default of this scene variable is **true** and always checkpoint file is write o
 thread by parallel.<br>
 <br>
 
-## checkpoint max bg cache control
+## Checkpoint max bg cache control
 ```
 ["checkpoint_max_bgcache"] = <n>
 ```
@@ -91,7 +91,7 @@ and last checkpoint output. Usually (last - 1) and last checkpoint output is exe
 interval under time based checkpoint and might request increased internal memory usage.<br>
 <br>
 
-## checkpoint output start sample control
+## Checkpoint output start sample control
 You can specify samples per pixel (SPP) number to control when checkpoint render starts dumping file.
 Checkpoint file is created when all pixel's SPP are same or bigger than this number.
 Until then, checkpint file dump logic is skipped.
@@ -102,7 +102,7 @@ Deafult is 1. This means all checkpoint output sequence will be executed equal o
 You can set to 0 as well. If so checkpoint output file is always created regardless of SPP.<br>
 <br>
 
-## sample cap control
+## Sample cap control
 You can set sub pixel sample cap count for one pixel.
 ```
 ["checkpoint sample cap"] = <int> -- sub pixel sample limit
@@ -113,7 +113,7 @@ Defaul is 0. This disables sample cap functionality.
 This control is basically designed for debugging purpose.<br>
 <br>
 
-## time cap control
+## Time cap control
 You can set MCRT rendering time cap length by minute.
 ```
 ["checkpoint time cap"] = <float> -- minute

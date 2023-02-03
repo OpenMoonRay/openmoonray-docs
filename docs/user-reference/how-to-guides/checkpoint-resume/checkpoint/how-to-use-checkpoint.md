@@ -26,7 +26,7 @@ Technically checkpoint logic does not required following special AOVs but you ne
 if you would like to use checkpoint file as resume file (= input of resume rendering).
 It would be useful and safe if following special AOVs are always defined for all of the final render and checkpoint render scripts.
 If so you can always adding more samples to the image by resume rendering.
-5 special AOVs are required for resume render. `"beauty"`, `"alpha"`, `"weight"`, `"beauty aux"` and `"alpha aux"` AOVs
+5 special AOVs are required for resume render. "**beauty**", "**alpha**", "**weight**", "**beauty aux**" and "**alpha aux**" AOVs
 
 1. beauty AOV
 ```
@@ -195,7 +195,7 @@ At this moment, this test is done at after finishing following subpixel samples.
 1, 5, 11, 19, 29, 41, 55, 71, 89, 109, 131, 155, 181, 209, 239, 271, 305, , , ,
 ```
 
-This special subpixel sampling sequence (calls as KJ sequence. See below "KJ sequence" section : link here)
+This special subpixel sampling sequence (calls as [KJ sequence](../../kj-sequence))
 is hardcoded internal of adaptive sampling logic and user can not change (also this sequence might be
 changed in the future).<br>
 <br>

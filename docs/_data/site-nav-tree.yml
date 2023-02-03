@@ -424,11 +424,11 @@
                 subitems:
                   - text: How to use Checkpoint Rendering
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/how-to-use-checkpoint.md
-                  - text: optional checkpoint sceneVariables
+                  - text: Optional checkpoint sceneVariables
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/optional-checkpoint-sceneVariables.md
-                  - text: post checkpoint LUA script
+                  - text: Post checkpoint LUA script
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
-                  - text: Unexpected rendering process interruption by SIGINT
+                  - text: Unexpected interruption by SIGINT
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
               - text: Resume
                 path: /user-reference/how-to-guides/checkpoint-resume/resume.md
@@ -437,8 +437,8 @@
                     path: /user-reference/how-to-guides/checkpoint-resume/resume/on-resume-LUA-script.md
               - text: File output logic
                 path: /user-reference/how-to-guides/checkpoint-resume/file-output-logic.md
-              - text: exsample 
-                path: /user-reference/how-to-guides/checkpoint-resume/example.md
+              - text: Sample rdla
+                path: /user-reference/how-to-guides/checkpoint-resume/sample-rdla.md
               - text: EXR Metadata
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Sequence
