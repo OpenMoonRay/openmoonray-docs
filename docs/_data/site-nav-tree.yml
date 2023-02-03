@@ -23,8 +23,6 @@
   - text: User Reference
     path: user-reference/index.md
     subitems:
-      - text: MoonRay GUI
-        path: user-reference/moonray-gui.md
       - text: Execution Modes
         path: user-reference/execution-modes.md
       - text: Scene Objects
@@ -483,7 +481,11 @@
                 path: user-reference/tools/hydra/render-settings.md
               - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render.md
-          - text: Render Profile Viewer
+          - text: moonray
+            path: user-reference/tools/moonray.md
+          - text: moonray_gui
+            path: user-reference/tools/moonray-gui.md
+          - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
         path: user-reference/performance.md
