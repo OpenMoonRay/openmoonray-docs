@@ -1,5 +1,11 @@
 ---
-title: Cutout Volume
+title: CutoutVolume
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CutoutVolume
 {%-include overview.html data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
@@ -42,7 +48,7 @@ title: Cutout Volume
     <p class="scene-class-type">
       <b>Volume</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The volume to cutout / use for indirect illumination and occlusion.  Cutout behavior is invoked for primary rays but secondary/indirect rays are processed normally.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.indirect_volume.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.indirect_volume.links heading=4-%}
     </p>
