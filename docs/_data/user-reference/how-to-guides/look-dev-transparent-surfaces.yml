@@ -1,9 +1,16 @@
 ---
 image_path: /assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces
-gallery:
-  - image: ior1.5.png
-    text: IOR 1.5
-  - image: transmissionIor1.2.png
-    text: IOR 1.5, Transmission IOR 1.2
-  - image: ior1.2.png
-    text: IOR 1.2
+clearcoat_gallery:
+  - image: clearcoat_example1.png
+    text: Roughness 0.05
+  - image: clearcoat_example2.png
+    text: Roughness 0.4
+  - image: clearcoat_example3.png
+    text: Clearcoat
+clearcoat_bending_gallery:
+  - image: clearcoat_bending_example1.png
+    text: Roughness 0.4
+  - image: clearcoat_bending_example2.png
+    text: Clearcoat (Bending OFF)
+  - image: clearcoat_bending_example3.png
+    text: Clearcoat (Bending ON)
