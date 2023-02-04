@@ -33,8 +33,10 @@ Camera
 }
 ```
 
-The images below show the effect of setting the medium_material to water. As expected, the rightmost sphere with a water material applied to it disappears, while the sphere with the red specular material applied to it appears duller. 
+The image comparison below shows the effect of setting the medium_material to water. As expected, the rightmost sphere with a water material applied to it disappears, while the sphere with the red specular material applied to it appears duller. 
 
-| medium_material: None | medium_material: DwaRefractive (IOR 1.33) |
-| --------------------- | ----------------------------------------- |
-| ![Medium Material None Example]({{site.baseurl}}/assets/images/user-reference/how-to-guides/render-in-medium/medium_material_none.png) | ![Medium Material Water Example]({{site.baseurl}}/assets/images/user-reference/how-to-guides/render-in-medium/medium_material_refractive.png) |
+{% include image-comparer.html image_path_after='/assets/images/user-reference/how-to-guides/render-in-medium/medium_material_none.png'
+                               image_path_before='/assets/images/user-reference/how-to-guides/render-in-medium/medium_material_refractive.png' 
+                               image_alt_after='no medium material applied' 
+                               image_alt_before='medium material with IOR 1.33 applied' 
+                               position='52' %}
