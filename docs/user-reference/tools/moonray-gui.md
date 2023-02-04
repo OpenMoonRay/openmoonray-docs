@@ -1,5 +1,5 @@
 ---
-title: MoonRay GUI
+title: moonray_gui
 ---
 # moonray_gui
 
@@ -7,7 +7,7 @@ The **moonray_gui** command renders the scene in an interactive mode.  It displa
 navigate the camera using the keyboard and mouse. You can also view individual color channels and any RenderOutputs that are defined in your scene.
 
 ## Command line options
-Most of the command line options are the same as the **moonray** executable, with a few exceptions.
+Most of the command line options are the same as the [**moonray**]({{site.baseurl}}/user-reference/tools/moonray) executable, with a few exceptions.
 Use the _-h_ flag to display the full list of command line options.
 
 ```bash
@@ -22,43 +22,50 @@ or by using the `o` key to toggle between modes at run-time.
 
 ## Hotkeys (common to both modes)
 
-| **Key**         | **Result**                                                                                                                |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------|
-| `h`             | Display list of hotkeys                                                                                                   |
-| `Alt`+`RMB`     | Roll camera                                                                                                               |
-| `r`             | Reset camera to original start-up world location                                                                          |
-| `t`             | Print current camera matrix to console                                                                                    |
-| `o`             | Toggle between free camera and orbit camera                                                                               |
-| `u`             | Upright camera (remove roll)                                                                                              |
-| `p`             | Toggle bucket progress on/off                                                                                             |
-| `w`             | Translate forward                                                                                                         |
-| `s`             | Translate backward                                                                                                        |
-| `a`             | Translate left                                                                                                            |
-| `d`             | Translate right                                                                                                           |
-| `Space`         | Translate upward                                                                                                          |
-| `c`             | Translate downward                                                                                                        |
-| `q`             | Slow down movement                                                                                                        |
-| `e`             | Speed up movement                                                                                                         |
-| `k`             | Take snapshot - saves an image of the current render result (eg. ./snapshot.0001.exr) ( see console output )              |
-| `l`             | Toggle fast lighting mode, useful for for moving the camera in heavy scenes ( see console output )                        |
-| `Alt`+`Up`      | Switch to previous fast lighting mode ( see console output )                                                              |
-| `Alt`+`Down`    | Switch to next fast lighting mode ( see console output )                                                                  |
-| `i`             | Cycles "pick" mode (Light Contributions, Geometry, Geometry Part, Material, None). Use `RMB` to pick, see console output for result |
-| `n`             | Toggle denoising ( see console output )                                                                                   |
-| `N`             | Toggle between NVIDIA's Optix Denoiser (currently requires driver version 470+) and Intel's Open Image Denoise            |
-| `b`             | Select which additional (B)uffers to use for denoising (none, albeldo only, or albedo and normals).                       |
-| `` ` ``         | Display RGB channels                                                                                                      |
-| `1`             | Display red channel                                                                                                       |
-| `2`             | Display green channel                                                                                                     |
-| `3`             | Display blue channel                                                                                                      |
-| `4`             | Display alpha channel                                                                                                     |
-| `5`             | Display luminance                                                                                                         |
-| `6`             | Display saturation (not implemented yet)                                                                                  |
-| `7`             | Display normalized RGB channels (0-1)                                                                                     |
-| `8`             | View heat map of number of samples rendered per pixel (mainly useful in conjunction with adaptive sampling).              |
-| `,`             | Display previous RenderOutput (aka AOV)( see console output )                                                             |
-| `.`             | Display next RenderOutput (aka AOV) ( see console output )                                                                |
-| `ESCAPE`        | Quit rendering and exit                                                                                                   |
+| **Key**               | **Result**                                                                                                                          |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| `h`                   | Display list of hotkeys                                                                                                             |
+| `Alt`+`RMB`           | Roll camera                                                                                                                         |
+| `r`                   | Reset camera to original start-up world location                                                                                    |
+| `t`                   | Print current camera matrix to console                                                                                              |
+| `o`                   | Toggle between free camera and orbit camera                                                                                         |
+| `u`                   | Upright camera (remove roll)                                                                                                        |
+| `p`                   | Toggle bucket progress on/off                                                                                                       |
+| `w`                   | Translate forward                                                                                                                   |
+| `s`                   | Translate backward                                                                                                                  |
+| `a`                   | Translate left                                                                                                                      |
+| `d`                   | Translate right                                                                                                                     |
+| `Space`               | Translate upward                                                                                                                    |
+| `c`                   | Translate downward                                                                                                                  |
+| `q`                   | Slow down movement                                                                                                                  |
+| `e`                   | Speed up movement                                                                                                                   |
+| `k`                   | Take snapshot - saves an image of the current render result (eg. ./snapshot.0001.exr) ( see console output )                        |
+| `l`                   | Toggle fast lighting mode, useful for for moving the camera in heavy scenes ( see console output )                                  |
+| `Alt`+`Up`            | Switch to previous fast lighting mode ( see console output )                                                                        |
+| `Alt`+`Down`          | Switch to next fast lighting mode ( see console output )                                                                            |
+| `i`                   | Cycles "pick" mode (Light Contributions, Geometry, Geometry Part, Material, None). Use `RMB` to pick, see console output for result |
+| `n`                   | Toggle denoising ( see console output )                                                                                             |
+| `N`                   | Toggle between NVIDIA's Optix Denoiser (currently requires driver version 470+) and Intel's Open Image Denoise                      |
+| `b`                   | Select which additional (B)uffers to use for denoising (none, albeldo only, or albedo and normals).                                 |
+| `` ` ``               | Display RGB channels                                                                                                                |
+| `1`                   | Display red channel                                                                                                                 |
+| `2`                   | Display green channel                                                                                                               |
+| `3`                   | Display blue channel                                                                                                                |
+| `4`                   | Display alpha channel                                                                                                               |
+| `5`                   | Display luminance                                                                                                                   |
+| `6`                   | Display saturation (not implemented yet)                                                                                            |
+| `7`                   | Display normalized RGB channels (0-1)                                                                                               |
+| `8`                   | View heat map of number of samples rendered per pixel (mainly useful in conjunction with adaptive sampling).                        |
+| `,`                   | Display previous RenderOutput (aka AOV)( see console output )                                                                       |
+| `.`                   | Display next RenderOutput (aka AOV) ( see console output )                                                                          |
+| `ESCAPE`              | Quit rendering and exit                                                                                                             |
+| `x`(hold)+`LMB`(drag) | Adjust exposure                                                                                                                     |
+| `x`(hold)+`LMB`(tap)  | Reset exposure                                                                                                                      |
+| `x`(tap)              | Set exposure                                                                                                                        |
+| `y`(hold)+`LMB`(drag) | Adjust gamma                                                                                                                        |
+| `y`(hold)+`LMB`(tap)  | Reset gamma                                                                                                                         |
+| `y`(tap)              | Set gamma                                                                                                                           |
+| `Shift`+`Up`\|`Down`  | Increment/decrement exposure by 1                                                                                                   |
 
 ## Hotkeys (Orbit mode)
 
