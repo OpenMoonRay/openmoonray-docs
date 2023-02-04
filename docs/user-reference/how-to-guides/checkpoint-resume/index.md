@@ -1,7 +1,7 @@
 ---
-title: Checkpoint / Resume rendering
+title: Checkpoint and Resume rendering
 ---
-# Checkpoint / Resume rendering
+# Checkpoint and Resume rendering
 ---
 
 - [Checkpoint](./checkpoint)
