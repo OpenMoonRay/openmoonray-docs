@@ -64,14 +64,14 @@ The set of five AOVs required for Resume rendering are:
 These AOVs are mandatory for Resume rendering and are for input to Resume rendering.  If these AOVs are not in the resumable Checkpoint file, MoonRay can not resume from that file, and will fall back to normal rendering, starting at the beginning.
 
 ### C) Optionally specify a "resumable output" setting
-The Checkpoint logic does not require this parameter unless you would like to use any given checkpoint image as resumable file.  In order to create "**resumable_output**" mode file, you need to define the  `"resumable output"` parameter:
-```lua
-["resumable output"] = true
-```
-Or pass the command option to MoonRay to create a resumable file; e.g.
-```bash
--resumable_output
-```
+The Checkpoint logic does not require this parameter unless you would like to use any given checkpoint image as resumable file.  In order to create "**resumable_output**" mode file, you need to define the `"resumable output"` scene variable parameter:
+> ```lua
+> ["resumable output"] = true
+> ```
+> Or pass the command option to MoonRay to create a resumable file; e.g.
+> ```bash
+> -resumable_output
+> ```
 
 ### D) Specify Checkpoint mode
 Choose either one of the checkpoint modes "**time-based**" or "**quality-based**".  Each mode has different settings to control the intervals of checkpoint creation.  The settings are controlled by scene variables as explained below.
@@ -100,7 +100,7 @@ Note that the `checkpoint interval` setting is ignored when using **quality-base
 #### Scene variables for quality based checkpoint mode
 There are two different ways to control **quality-based** checkpoint renders. One we define as 'easy-mode' and the other we define as an 'expert-mode'.
 
-##### `Easy-mode` scene variables for quality based checkpoint renders 
+##### 'Easy-mode' scene variables for quality based checkpoint renders 
 The following setting are an easy way to control checkpoint file generation intervals using **quality-based** checkpoint mode. 
 > ```lua
 > ["checkpoint mode"] = 1 
@@ -151,7 +151,7 @@ Here's how to interpret that log message:
 > In this example a total 10 checkpoint files were created.
 >>As can be seen, in this example MoonRay created 10 checkpoint files instead of the user defined 11.
 
-##### `Expert-mode` scene variables for quality based checkpoint renders 
+##### 'Expert-mode' scene variables for quality based checkpoint renders 
 These settings directly control the checkpoint file interval by using `checkpoint quality steps`. Checkpoint file generation intervals based on the SPP sampling number using `checkpoint quality steps` are defined as follows.
 
 > ```lua
@@ -230,12 +230,11 @@ After setting up all of the settings above, you are ready to do checkpoint rende
 > ```lua
 > ["checkpoint active"] = <bool>
 > -- true or false
-```
-or
-MoonRay command option
-```bash
--checkpoint # checkpoint render enable
-```
+> ```
+> or MoonRay command option
+> ```bash
+> -checkpoint # checkpoint render enable
+> ```
 
 
 
