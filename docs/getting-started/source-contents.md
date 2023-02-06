@@ -58,7 +58,7 @@ The `moonshine_usd` repository contains two geometry classes : Usd and UsdInstan
 
 The `hdMoonRay` repository contains the MoonRay Hydra render delegate plugin and several *adapter* plugins for the USD scene delegate. The adapter plugins are needed to work around missing support in earlier versions of the USD scene delegate, and should no longer be necessary as Hydra evolves.
 
-The MoonRay material and map shader classes need to be registered with the USD SDR library to use MoonRay material networks. This is done with two plugins in `moonrayNdrPlugins`. These plugins read JSON descriptions of the shaders from `MOONRAY_CLASS_PATH`. 
+The MoonRay material and map shader classes need to be registered with the USD SDR library to use MoonRay material networks. This is done with two plugins in `moonray_sdr_plugins`. These plugins read JSON descriptions of the shaders from `MOONRAY_CLASS_PATH`. 
 The JSON files are not built by the MoonRay *cmake* system : you will need to generate them using the `rdl2_json_exporter` program before using HdMoonRay for the first time.
 
 HdMoonRay requires Arras to build and run.
