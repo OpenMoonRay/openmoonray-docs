@@ -41,4 +41,57 @@ The _.cc_ file is written in C++ and typically contains two class definitions.  
 `scene_rdl2::rdl2::Geometry` and should be named the same as the plugin.   This class is more of a 
 wrapper and contains one important method `createProcedural()` which returns an instance of the
 second class that needs to be implemented which should derive from `ProceduralLeaf`.  It is in the
-inherited `generate` function that most of the work typically happens.  
+inherited `generate` function that most of the work typically happens.
+
+Here's a bare-bones `generate` function that creates a single point with a settable radius.
+
+```c++
+using namespace scene_rdl2::rdl2;
+using namespace shading;
+
+void
+SimpleProcedural::generate(const GenerateContext &generateContext,
+                           const XformSamples &parent2render)
+{
+    const Geometry *rdlGeometry = generateContext.getRdlGeometry();
+
+    const SimpleGeometry *rdlPointGeometry =
+        static_cast<const SimpleGeometry*>(rdlGeometry);
+
+    // vertices
+    const size_t vertCount  = 1;
+    const size_t motionSampleCount = 1;
+    Points::VertexBuffer vertices(vertCount, motionSampleCount);
+    vertices(0, 0) = Vec3f(0.f, 0.f, 0.f);
+
+    // radius buffer
+    float radius = rdlPointGeometry->get(attrRadius);
+    Points::RadiusBuffer radii(vertCount);
+    radii.assign(vertCount, radius);
+
+    // layer assignments
+    const Layer *rdlLayer = generateContext.getRdlLayer();
+    const int defaultAssignmentId =
+        rdlLayer->getAssignmentId(rdlPointGeometry,
+                                  ""); // default part name
+    LayerAssignmentId layerAssignmentId(defaultAssignmentId);
+
+    // add a constant color "Cd" to the primitive attribue table
+    PrimitiveAttributeTable pat;
+    std::vector<RgbVector> samples = { { Rgb(1.f, 0.f, 0.f) } };
+    pat.addAttribute(TypedAttributeKey<Rgb>("Cd"),
+                     AttributeRate::RATE_CONSTANT,
+                     std::move(samples));
+
+    std::unique_ptr<Points> primitive = createPoints(std::move(vertices),
+                                                     std::move(radii),
+                                                     std::move(layerAssignmentId),
+                                                     std::move(pat));
+
+    if (primitive) {
+        addPrimitive(std::move(primitive),
+                     generateContext.getMotionBlurParams(),
+                     parent2render);
+    }
+}
+```

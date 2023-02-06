@@ -23,8 +23,6 @@
   - text: User Reference
     path: user-reference/index.md
     subitems:
-      - text: MoonRay GUI
-        path: user-reference/moonray-gui.md
       - text: Execution Modes
         path: user-reference/execution-modes.md
       - text: Scene Objects
@@ -354,8 +352,6 @@
               path: user-reference/scene-objects/lights/DistantLight.md
             - text: EnvLight
               path: user-reference/scene-objects/lights/EnvLight.md
-            - text: LightSet
-              path: user-reference/scene-objects/lights/LightSet.md
             - text: MeshLight
               path: user-reference/scene-objects/lights/MeshLight.md
             - text: RectLight
@@ -364,6 +360,8 @@
               path: user-reference/scene-objects/lights/SphereLight.md
             - text: SpotLight
               path: user-reference/scene-objects/lights/SpotLight.md
+        - text: LightSet
+          path: user-reference/scene-objects/light-set/LightSet.md
         - text: Light Filters
           path: user-reference/scene-objects/light-filters/index.md
           subitems:
@@ -381,24 +379,24 @@
               path: user-reference/scene-objects/light-filters/DecayLightFilter.md
             - text: IntensityLightFilter
               path: user-reference/scene-objects/light-filters/IntensityLightFilter.md
-            # - text: LightFilterSet
-            #   path: scene-objects/light-filters/LightFilterSet.md
             - text: RodLightFilter
               path: user-reference/scene-objects/light-filters/RodLightFilter.md
             - text: VdbLightFilter
               path: user-reference/scene-objects/light-filters/VdbLightFilter.md
+        - text: LightFilterSet
+          path: user-reference/scene-objects/light-filter-set/LightFilterSet.md
         - text: Render Output
-          path: user-reference/scene-objects/render-output/index.md
+          path: user-reference/scene-objects/render-output/RenderOutput.md
         - text: Scene Variables
-          path: user-reference/scene-objects/scene-variables/index.md
+          path: user-reference/scene-objects/scene-variables/SceneVariables.md
         - text: Shadow Set
-          path: user-reference/scene-objects/shadow-set/index.md
+          path: user-reference/scene-objects/shadow-set/ShadowSet.md
         - text: Shadow Receiver Set
-          path: user-reference/scene-objects/shadow-receiver-set/index.md
+          path: user-reference/scene-objects/shadow-receiver-set/ShadowReceiverSet.md
         - text: Trace Set
-          path: user-reference/scene-objects/trace-set/index.md
+          path: user-reference/scene-objects/trace-set/TraceSet.md
         - text: User Data
-          path: user-reference/scene-objects/user-data/index.md
+          path: user-reference/scene-objects/user-data/UserData.md
         - text: Volumes
           path: user-reference/scene-objects/volumes/index.md
           subitems:
@@ -417,6 +415,33 @@
             path: /user-reference/how-to-guides/baking-textures.md
           - text: Bokeh
             path: /user-reference/how-to-guides/bokeh.md
+          - text: Checkpoint/Resume rendering
+            path: /user-reference/how-to-guides/checkpoint-resume/index.md
+            subitems:
+              - text: Checkpoint
+                path: /user-reference/how-to-guides/checkpoint-resume/checkpoint.md
+                subitems:
+                  - text: How to use Checkpoint Rendering
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/how-to-use-checkpoint.md
+                  - text: Optional checkpoint sceneVariables
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/optional-checkpoint-sceneVariables.md
+                  - text: Post checkpoint LUA script
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
+                  - text: Unexpected interruption by SIGINT
+                    path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
+              - text: Resume
+                path: /user-reference/how-to-guides/checkpoint-resume/resume.md
+                subitems:
+                  - text: On-Resume LUA script
+                    path: /user-reference/how-to-guides/checkpoint-resume/resume/on-resume-LUA-script.md
+              - text: File output logic
+                path: /user-reference/how-to-guides/checkpoint-resume/file-output-logic.md
+              - text: Sample rdla
+                path: /user-reference/how-to-guides/checkpoint-resume/sample-rdla.md
+              - text: EXR Metadata
+                path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
+              - text: KJ Sequence
+                path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
           - text: Overlapping Dielectrics
@@ -458,7 +483,11 @@
                 path: user-reference/tools/hydra/render-settings.md
               - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render.md
-          - text: Render Profile Viewer
+          - text: moonray
+            path: user-reference/tools/moonray.md
+          - text: moonray_gui
+            path: user-reference/tools/moonray-gui.md
+          - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
         path: user-reference/performance.md
@@ -467,6 +496,10 @@
     subitems:
       # - text: Doxygen Reference
       #  path: api/html/index.html
+      - text: Source Structure
+        path: developers-guide/source-structure/index.md
+      - text: Scene RDL2 Library
+        path: developers-guide/scene_rdl2-library.md
       - text: Writing Shaders
         path: developers-guide/shaders/index.md
         subitems:
@@ -490,8 +523,6 @@
             path: developers-guide/shaders/normal-maps.md
           - text: Volume Shaders
             path: developers-guide/shaders/volume-shaders.md
-      - text: Scene RDL2 Library
-        path: developers-guide/scene_rdl2-library.md
       - text: Arras
         path: developers-guide/arras/index.md
         subitems:

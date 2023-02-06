@@ -131,7 +131,7 @@ title: RodLightFilter
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.RodLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.on.links heading=4-%}
     </p>
