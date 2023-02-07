@@ -1,0 +1,7 @@
+---
+overview: overviews/CylinderLightOverview.md
+example: examples/CylinderLightExample.md
+image_path: /assets/images/user-reference/scene-objects/lights/CylinderLight
+gallery:
+  - image: CylinderLight.jpg
+    text: CylinderLight example
