@@ -3,19 +3,35 @@ title: Developer's Guide
 ---
 # Developer's Guide
 
-## MoonRay
+If you want to develop with the MoonRay code base, the first step is to clone the repository and make sure you can build it:
 
-[MoonRay scene file formats](scene-formats)
+[Building MoonRay]({{site.baseurl}}/getting-started/installation/building-moonray/)
 
-[The scene_rdl2 library](scene_rdl2-library)  
+The overall structure of the source repositories is detailed here:
 
-[Writing MoonRay shaders](shaders/index)
-## Arras
+[Source structure](source-structure)
 
-[Arras Overview](arras/Arras-overview)  
+Most development tasks require some knowledge of MoonRay's internal scene description format, **RDL2**. This is provided by the **scene_rdl2** library, described here:
 
-[Session Definitions](arras/Arras-Session-Definitions)  
+[The scene_rdl2 library](scene_rdl2-library). 
 
-[Client API](arras/Arras-Client-API)
+The file formats used to store scenes are described here:
+
+[RDL2 scene formats]({{site.baseurl}}/getting-started/about/rdl-scene-format)
+
+If you want to translate scenes to or from RDL2 format, scene_rdl2 may be all you need.
+
+You can extend MoonRay itself by authoring new **shader** plugins. Instructions on how to do this are here:
+
+[Writing new shaders](shaders/index)
+
+**Arras** is used to integrate interactive MoonRay rendering into applications. The following pages have more information:
+
+
+[Arras Overview](arras/index)  
+
+[Session Definitions](arras/arras-session-definitions)  
+
+[Client API](arras/arras-client-api)
 
 [Running distributed Arras](arras/distributed-arras)

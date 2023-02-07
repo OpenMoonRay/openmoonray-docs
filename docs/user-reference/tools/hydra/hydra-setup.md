@@ -19,7 +19,7 @@ export ARRAS_SESSION_PATH=$REL/sessions
 # adds the Arras runtime execComp to the path
 export PATH=$REL/bin:${PATH}
 # adds the pxr plugins to the plugin path 
-export PXR_PLUGINPATH_NAME=$REL/plugin/usd:${PXR_PLUGINPATH_NAME}
+export PXR_PLUGINPATH_NAME=$REL/plugin/pxr/usd:${PXR_PLUGINPATH_NAME}
 ```
 
 ## Setup for the MoonRay docker container
@@ -30,7 +30,7 @@ The env vars RDL2_DSO_PATH, ARRAS_SESSION_PATH and PATH are already set correctl
 mkdir /tmp/shader_json
 rdl2_json_exporter --out /tmp/shader_json/ --sparse
 export MOONRAY_CLASS_PATH=/tmp/shader_json
-export PXR_PLUGIN_PATH=/baked_packages/packages/remaining/openmoonray/1.0.0.9999/ext/plugin/usd:${PXR_PLUGIN_PATH}
+export PXR_PLUGIN_PATH=/baked_packages/packages/remaining/openmoonray/1.0.0.9999/ext/plugin/pxr/usd:${PXR_PLUGIN_PATH}
 ```
 
 You should then be able to render USD scenes with hd_render:

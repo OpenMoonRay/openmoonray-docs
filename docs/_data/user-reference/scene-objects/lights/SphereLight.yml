@@ -1,0 +1,7 @@
+---
+overview: overviews/SphereLightOverview.md
+example: examples/SphereLightExample.md
+image_path: /assets/images/user-reference/scene-objects/lights/SphereLight
+gallery:
+  - image: SphereLight.jpg
+    text: SphereLight example
