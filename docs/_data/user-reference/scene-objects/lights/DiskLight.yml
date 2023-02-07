@@ -1,0 +1,7 @@
+---
+overview: overviews/DiskLightOverview.md
+example: examples/DiskLightExample.md
+image_path: /assets/images/user-reference/scene-objects/lights/DiskLight
+gallery:
+  - image: DiskLight.jpg
+    text: DiskLight example
