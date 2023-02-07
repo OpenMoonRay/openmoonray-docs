@@ -4,52 +4,44 @@ title: Post checkpoint LUA script
 # Post checkpoint LUA script
 ---
 
-You can specify LUA script which is executed just after every checkpoint file is created by
-following scene variable.
-```
+You can specify a LUA script to be executed after every checkpoint file is created, with the following setting:
+
+```lua
 ["checkpoint_post_script"] = <filename>
 ```
-default is empty and run post checkpoint script functionality is disabled.<br>
-<br>
-This LUA script is executed under freshly constructed LUA execution environment (lua_State) and
-there is no way to access other LUA environment like RDLA parser and **on-resume script** execution
-internally.<br>
-This LUA script is executed by independent thread from MCRT threads by parallel if you set
-`checkpoint_bg_write` = **true**. Otherwise, this LUA script is exclusively executed under all
-MCRT threads are stopped when `checkpoint_bg_write` = **false**.<br>
-<br>
-moonray sets several different checkpoint related information as LUA's global variables.
-All the information is stored inside associative array named as "**checkpoint**".
-So LUA script can get checkpoint related information via global variable "**checkpoint**".
-This is an current version of LUA associative array (item may vary depend on the moonray versions).<br>
-<br>
-You should **NOT** use **os.exit()** from **post-checkpoint** script. If you use **os.exit()** inside
-the post checkpoint LUA script, moonray crash and you get stack-trace.<br>
-<br>
+
+The default value is empty, which disables post checkpoint LUA script functionality.
+
+When enabled, the LUA script is executed under a freshly constructed LUA execution environment (lua_State) and there is no way to access any other LUA environment, such as the internal RDLA parser and on-resume LUA scripts.
+
+The LUA script is executed on a parallel, independent thread from MCRT rendering threads if the _checkpoint_bg_write_ setting is true.  Otherwise, the LUA script is executed exclusively after all MCRT threads are stopped, when _checkpoint_bg_write_ = false.
+
+MoonRay sets several different checkpoint related information as part of the LUA' execution environment'ss global variables.  This information is stored inside an associative array named "checkpoint", so that the LUA script can query checkpoint related information via the global variable "checkpoint".
+
+Note: you should _not_ use {% highlight lua %}os.exit(){% endhighlight %} from your post-checkpoint script, as that would cause MoonRay to crash.
 
 ## Post checkpoint LUA global variables
 
-assosiative array name = "**checkpoint**"
+associative array name = "checkpoint"
 
 **associative item (=element) name** | **type** | **description**
 ---------- | ---------- | ----------
 filename | string array | all checkpoint file names at this checkpoint output
 tileSampleTotal | int	| total number of samples per tile (8 x 8 pixels)
 
-<br>
 
 ## Example of post checkpoint LUA global variables
-```
+```lua
 checkpoint = {
     tileSampleTotal = 1234,
     filename = {"/usr/pic1/test/A.exr", "/usr/pic1/test/B.exr", "/usr/pic1/test/C.exr" }
 }
 ```
-<br>
+
 
 ## Sample post checkpoint LUA script
-This is a sample LUA script which just dump all "**checkpoint**" associative array members.
-```
+This is a sample LUA script which prints all "checkpoint" associative array members.
+```lua
 function showTable(indent, tbl)
     strIndent = function(indent)
         str = ""
