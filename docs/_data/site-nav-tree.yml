@@ -469,6 +469,8 @@
                 path: /user-reference/how-to-guides/render-outputs/visibility-aovs.md
           - text: Render Inside a Medium
             path: /user-reference/how-to-guides/render-inside-medium.md
+          - text: Textures
+            path: /user-reference/how-to-guides/textures.md
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
