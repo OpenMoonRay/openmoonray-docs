@@ -25,7 +25,7 @@ export ARRAS_SESSION_PATH=$REL/sessions
 # adds the Arras runtime execComp to the path
 export PATH=$REL/bin:${PATH}
 # adds the pxr plugins to the plugin path 
-export PXR_PLUGINPATH_NAME=$REL/plugin/usd:${PXR_PLUGINPATH_NAME}
+export PXR_PLUGINPATH_NAME=$REL/plugin/pxr/usd:${PXR_PLUGINPATH_NAME}
 ```
 
 ## Modes
