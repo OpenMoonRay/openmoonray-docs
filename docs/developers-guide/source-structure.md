@@ -23,7 +23,11 @@ The top-level ***moonray*** directory contains the repositories that implement M
 
 - ***moonray/moonray*** is the repository that implements the MoonRay render engine and the moonray command-line renderer. The code is divided into roughly 20 libraries. *moonray* also contains a set of basic scene object (shader) plugins.
 
+- ***moonray/moonray_dcc_plugins*** plugins for using moonray nodes in third-party DCC tools
+
 - ***moonray/moonray_gui*** implements the moonray_gui Qt application, that can be used to view render progress and final results.
+
+- ***moonray/render_profile_viewer*** a Python tool for comparing render logs
 
 - ***moonray/moonshine*** contains a far more extensive set of scene object plugins.
 

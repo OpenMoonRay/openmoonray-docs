@@ -2,6 +2,7 @@
 title: MoonRay Tools
 ---
 # Tools
+This section covers some of the tools that are included with MoonRay/Arras.
 
-## [Render Profile Viewer](render-profile-viewer)
-## [Denoiser](denoiser)
+[denoise](denoise)  
+[render_profile_viewer](render-profile-viewer)  

@@ -495,7 +495,7 @@
       # - text: Doxygen Reference
       #  path: api/html/index.html
       - text: Source Structure
-        path: developers-guide/source-structure/index.md
+        path: developers-guide/source-structure.md
       - text: Scene RDL2 Library
         path: developers-guide/scene_rdl2-library.md
       - text: Writing Shaders
