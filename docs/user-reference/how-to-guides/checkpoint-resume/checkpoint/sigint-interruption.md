@@ -1,114 +1,76 @@
 ---
-title: Unexpected rendering process Interruption by SIGINT
+title: Interrupting a Rendering Process with SIGINT
 ---
-# Unexpected rendering process Interruption by SIGINT
+# Interrupting a rendering process with SIGINT
 ---
 
-Moonray can save the checkpoint file when receiving **SIGINT** signal.
-This functionality is working with both **time-based** and **quality-based** checkpoint modes.
-Moonray starts checkpoint write out action immediately when receiving the **SIGINT** signal.
-This is pretty useful for offline rendering and we can save lots of RU from unexpected interruption
-if queueing system properly kill offline moonray by **SIGINT**.<br>
-<br>
-This functionality is disabled by default.<br>
-<br>
-Technically, moonray is doing snapshot action internally by some interval regardless of receiving
-**SIGINT** signal or not. This creates a memory copy of snapshot data inside the process always
-(we call this as **extra-snapshots**) and prepares to receive unexpected **SIGINT** signal.
-Moonray can start to save checkpoint files immediately for already memory saved snapshot data
-when receives **SIGINT** signal. This **extra-snapshot** needs one set of snapshot memory space.
-This means we need extra memory space in order to use this functionality. However, soon or later,
-regular checkpoint output logic also needs 1 set of snapshot memory. Actually, the **extra-snapshot**
-can share this memory space with regular checkpoint action. This means in most cases,
-the memory overhead of **extra-snapshots** is not a big issue.<br>
-<br>
-You can control the interval of the **extra-snapshot** by one of following 2 scene variables.
+Moonray can save a checkpoint file when receiving a **SIGINT** signal.  This functionality works with both time- and quality-based checkpoint modes.  This is particularly useful for offline rendering and would save RU cost and re-rendering from scratch due to an unexpected interruption if the render job management system properly kills a MoonRay job using SIGINT.
 
-1. `["checkpoint_snapshot_interval"] = <minute>`<br>
-You can set extra snapshot interval time by minute by yourself. 
-If you set a small value, **extra-snapshot** is executed in high frequency.
-As a result, moonray can pick snapshot data quickly when receiving **SIGINT** signals.
-This causes lost (wasted) RU is getting smaller. However, in this case, **extra-snapshot** cost
-over the entire MCRT stage is getting bigger, and the efficiency of rendering dropped. <br>
-If you set a bigger value, **extra-snapshot** is executed in low frequency.
-As a result, moonray pickup bit older snapshot data when receiving **SIGINT**.
-In this case, lost (wasted) RU is getting bigger. But, like the opposite of above,
-extra snapshot cost over the entire MCRT stage is getting smaller and efficiency of rendering is gained.<br>
-You should set a reasonable interval value for **extra-snapshot** (but this is not easy in most cases.
-This is why the next `checkpoint_max_snapshot_overhead` scene variable was introduced).<br>
-Actually, this `checkpoint_snapshot_interval` is mainly used for development purposes.<br>
-<br>
-If this value is ZERO or negative, `checkpoint_max_snapshot_overhead` parameter is used instead.<br>
-ZERO is the default.
 
-2. `["checkpoint_max_snapshot_overhead"] = <fraction>`<br>
-It is pretty difficult to specify a proper number for `checkpoint_snapshot_interval` scene variable.
-It would be nice if users can specify affordable overhead for extra-snapshot by a fraction of MCRT stage.
-This `checkpoint_max_snapshot_overhead` scene variable does this for you.<br>
-In order to use this functionality, you should set `checkpoint_snapshot_interval` as ZERO or negative.
-You set fraction value from 0.0 to 1.0 range for affordable extra snapshot cost against
-MCRT computation stage.<br>
-If you set 0.01, this means, moonray assigns 1% of MCRT stage resources to the extra snapshot.<br>
-Please do not use a big number (like 0.99 or more) without a particular reason.
-It probably works but moonray is too busy with extra-snapshot tasks and it creates extremely slow
-rendering progress.<br>
-ZERO is the default.
+Note that this functionality is disabled by default.
 
-<br>
-If both of the scene variables are set ZERO or negative, moonray cancels the feature of creating
-checkpoint files by unexpected interruption by SIGINT signal.<br>
-<br>
-When moonray writes out checkpoint file by receiving SIGINT, checkpoint file name is defined by
-regular checkpoint logic as usual. the only difference is to write action is started by receiving SIGINT.<br>
-If you use
-[overwrite](../optional-checkpoint-sceneVariables/#checkpoint-file-overwrite-and-multi-version-control)=off
-or
-[multi-version](../optional-checkpoint-sceneVariables/#checkpoint-file-overwrite-and-multi-version-control)=on,
-moonray gets sampling information from **extra-snapshot** data.<br>
-If you use **quality-based** checkpoint, obviously quality steps (i.e. sampling total) are not
-used as you expected. Moonray gets them from **extra-snapshot** data and over-written.<br>
-This functionality is working with both **time-based** and **quality-based** checkpoint modes.
-And also this is working with all the options about checkpoint control like follows
-- [background checkpoint write](../optional-checkpoint-sceneVariables/#background-checkpoint-write-control)
-- [post checkpoint LUA scripting](../post-checkpoint-LUA-script/)
-- [sample cap](../optional-checkpoint-sceneVariables/#sample-cap-control)
-- [time cap](../optional-checkpoint-sceneVariables/#time-cap-control)
 
-<br>
 
-# Image data write action progress information for queue system
-Moonray creates a special ASCII file in order to report image-writing action progress information to other
-process. 
-This functionality was originally designed for the queue system in order to wait to send **SIGKILL** to
-moonray if moonray is writing the checkpoint file.<br>
-<br>
-This functionality is only enabled when you set the following configuration.<br>
-<br>
+In detail, MoonRay is doing a snapshot action internally on an interval, regardless of receiving a SIGINT signal or not.  This creates a memory copy of the snapshot data inside the render process, which we call "extra-snapshot", and which is always prepared to receive a SIGINT signal. 
 
-1. use `checkpoint_snapshot_interval <minute>` with positive non zero minute
-or
-2. use `checkpoint_max_snapshot_overhead <fraction>` with proper fraction value.
+MoonRay can start the checkpoint write action immediately for snapshot data already saved in memory when receiving the SIGINT signal.  The "extra-snapshot" needs one set of snapshot memory space, which means MoonRay needs extra memory space in order to use this functionality.  However, the regular checkpoint output logic _also_ needs 1 set of snapshot memory, and so the extra-snapshot data simply shares the extra memory space with the required regular checkpoint logic, and the memory overhead is not an issue.
 
-This means if moonray executes **extra-snapshots** internally for unexpected interruption by **SIGINT**,
-moonray creates a special ASCII file for reporting write-action progress updates.<br>
-The write action progress update file name is like this.  **PID** is moonray process id number.<br>
+The interval of the extra-snapshot is controlled by one of following two settings:
+
+```lua 
+["checkpoint_snapshot_interval"] = <minute>
 ```
+The default value is zero.  If this value is ZERO or negative, _checkpoint_max_snapshot_overhead_ setting is used instead.
+
+If the setting is set to a small value, the extra-snapshot is executed at a high frequency, with the result that MoonRay will pick up snapshot data quickly when receiving SIGINT.  This can minimize any lost RU cost when interrupting the render.  The tradeoff in this case however, is that the extra-snapshot cost over the entire MCRT stage is getting larger, and the efficiency of rendering lowered.
+
+If the setting is set to a larger value, the extra-snapshot is executed at a low frequency, with the result that MoonRay will pick up a potentially older snapshot data when receiving SIGNINT.  In this case, more RU cost is sunk, but the extra snapshot cost over the entire MCRT stage is smaller and the efficiency of rendering is increased.
+
+In general, try to set a reasonable interval value for the extra-snapshot creation for typical checkpoint workflows.  This may be difficult to balance, so there is also setting for:
+
+```lua
+["checkpoint_max_snapshot_overhead"] = <fraction>
+```
+The default value is zero.
+
+As it can be difficult to specify a proper number for the _checkpoint_snapshot_interval_ setting, it would be useful to specify an affordable overhead for extra-snapshots as a fraction of the MCRT stage.  This setting allows that functionality.  In order to do so, set the _checkpoint_snapshot_interval_ to zero or a negative value. Then set the fraction value of _checkpoint_max_snapshot_overhead from 0.0 to 1.0 to get an affordable extra_snapshot cost against the 
+MCRT computation stage.
+
+For example, a setting of 0.01 would mean that MoonRay assigns 1% of the MCRT stage resources to creating the extra snapshop.  We warn not to use a large number such as 0.99 or greater without a very specific reason.  That would likely work, but MoonRay will be very busy with extrasnapshot tasks and will result in extremely slow rendering progress.
+
+
+If both of the prior settings are set zero or negative, then MoonRay will not support the functionality of creating a checkpoint files due to a SIGINT signal.
+
+
+When MoonRay does write out a checkpoint file via SIGINT, the checkpoint file name is defined by the regular checkpoint logic, so the only difference the trigger to write is started by receiving SIGINT. 
+
+If [overwriting](../optional-checkpoint-sceneVariables/#checkpoint-file-overwrite-and-multi-version-control) is off or
+[multi-version](../optional-checkpoint-sceneVariables/#checkpoint-file-overwrite-and-multi-version-control) is on, then MoonRay gets its sampling information from the extra-snapshot data.
+
+When using quality-based checkpoint rendering, the quality steps (i.e. sampling total) are not used, but rather Moonray  will get that from  the extra-snapshot data.
+
+The SIGINT functionality works with both time- and **quality-based** checkpoint modes, along with all other checkpoint settings such as [background checkpoint write](../optional-checkpoint-sceneVariables/#background-checkpoint-write-control), [post checkpoint LUA scripting](../post-checkpoint-LUA-script/), [sample caps](../optional-checkpoint-sceneVariables/#sample-cap-control) and [time caps](../optional-checkpoint-sceneVariables/#time-cap-control).
+
+## Image write progress information
+Moonray creates a special ASCII file in order to report the image writing progress information to other
+processes. This functionality was originally designed for the queue system so that it could wait to send a **SIGKILL** to
+MoonRay if it is still writing the checkpoint file. This functionality is only enabled when configuration is set:
+
+- The _checkpoint_snapshot_interval_ value is greater than zero, or
+- The _checkpoint_max_snapshot_overhead_ has a proper fraction value greater than zero.
+
+In this scenario, MoonRay executes extra-snapshots internally for any SIGINT interrupts, and so will also create a special ASCII file for reporting the write-action progress.  The file name for this progress update is:
+
+```plaintext
 /tmp/moonray_write.<PID>
 ```
-<br>
-This file is automatically removed when moonray process exits.<br>
-When moonray starts the image writing phase, moonray outputs the condition of the writing stage to this file
-at least **250ms** interval. <br>
-This means moonray guarantees file is updated every **250ms** interval as long as moonray write action is
-properly ongoing.<br>
-If moonray completed file out or file out is hang-up during write action, this file update is also stopped.<br>
-This means another process (like a queue system) can recognize moonray is in the middle of the writing action or not
-by checking this file's size by more than **250ms** interval.<br>
-<br>
-FYI, This is an ASCII file and you can see the detailed write action progress if you see the internal
-of this file by
 
-```
+\<PID\> is the MoonRay process id number.  This file is automatically removed when the MoonRay process exits.  When MoonRay starts the image writing phase, it will output the condition of that stage to this file in at least **250ms** intervals. 
+
+MoonRay guarantees the progress file is updated at every 250ms interval as long as the write action is ongoing.  If MoonRay has completed the checkpoint file output or the checkpoint output is hung-up during the write action, then this progress file update will stop.  This means that a different process, such as a queue system, can recognize whether MoonRay is in the middle of a writing action or not, by checking this progress file's size at greater than 250ms intervals.
+
+Also note that the progress file is plaintext ASCII and the detailed write progress can be seen by tailing the file:
+
+```plaintext
 tail -f /tmp/moonray_write.<PID>
 ```
-for example.

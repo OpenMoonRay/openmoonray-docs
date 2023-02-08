@@ -23,7 +23,7 @@ The name of the intermediate checkpoint files are defined by _checkpoint_file_na
 To save the intermediate checkpoint files in a different location from the regular checkpoint output, set the _checkpoint_multi_version_file_name_ setting inside the **RenderOutput** block.  For example:
 
 ```lua
-["checkpoint multi version file name"] = <multiVersionFilename>
+["checkpoint_multi_version_file name"] = <multiVersionFilename>
 ```
 
 If the _checkpoint_multi_version_file_name_ value is not empty, the checkpoint file names are changed as follows:
@@ -86,7 +86,7 @@ For example, if the value is set to 64, then rendering will stop when the subpix
 This setting specified a cap in minutes on MCRT rendering time.
 
 ```lua
-["checkpoint time cap"] = <float> -- minute
+["checkpoint_time_cap"] = <float> -- minute
 ```
 
 For example, the checkpoint render will forced finished when the entire render time, excluding renderPrep time, is
