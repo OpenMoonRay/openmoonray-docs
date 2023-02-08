@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "cdgiorstu",
   1: "crt",
   2: "c",
-  3: "cdgiorsu"
+  3: "cdgiosu"
 };
 
 var indexSectionNames =
