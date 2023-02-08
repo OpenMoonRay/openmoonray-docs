@@ -3,7 +3,7 @@ title: Arras Doxygen Pages
 ---
 # Arras Doxygen Pages
 ---
-## mcrt::dataio::ClientReceiverFb
+## mcrt_dataio::ClientReceiverFb
 We are using a highly delta coded protocol to receive image data from back-end computations.
 We call this protocol a "**Pack Tile Codec**". Also, we call the message which uses Pack Tile
 codec a "**Progressive Frame**" message.<br>

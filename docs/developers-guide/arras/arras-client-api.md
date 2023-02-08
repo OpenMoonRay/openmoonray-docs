@@ -24,7 +24,7 @@ The client is configured to use Arras local mode, by specifying "arras:local" as
 
 A client normally needs to translate scene data from some other format into MoonRay's native RDLB before sending it to Arras. For this example, we will just load the data from RDLA format files.
 
-The central class in the Arras client API is `SDK`. Each instance of this class represents a single session : to run multiple sessions at the same time, the client would simply create multiple SDK objects. Similarly, an instance of [`ClientReceiverFb`](../doxygen-pages/#mcrtdataioclientreceiverfb) is used to decode incoming rendered frames from a single session:
+The central class in the Arras client API is `SDK`. Each instance of this class represents a single session : to run multiple sessions at the same time, the client would simply create multiple SDK objects. Similarly, an instance of [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) is used to decode incoming rendered frames from a single session:
 
 ```C++
 std::unique_ptr<mcrt_dataio::ClientReceiverFb> theFbReceiver;
@@ -167,7 +167,7 @@ void messageHandler(const arras4::api::Message& msg)
         mcrt::ProgressiveFrame::ConstPtr frameMsg = msg.contentAs<mcrt::ProgressiveFrame>();
 ```
   
-ProgressiveFrame messages are sent by the render and merge computations at regular intervals as shading progresses. Each message contains differences from the previous one : [`ClientReceiverFb`](../doxygen-pages/#mcrtdataioclientreceiverfb) knows how to accumulate these into an image:
+ProgressiveFrame messages are sent by the render and merge computations at regular intervals as shading progresses. Each message contains differences from the previous one : [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) knows how to accumulate these into an image:
 
 **Decode**
 ```C++
@@ -183,7 +183,7 @@ If we are using credit messages, an update should be sent back after decoding is
         theSdk->sendMessage(creditMsg);
 ```
 
-[`ClientReceiverFb`](../doxygen-pages/#mcrtdataioclientreceiverfb) can provide render progress as a number between 0 and 1. It also provides a status value, which can be `STARTED`, `RENDERING`, `FINISHED`, `CANCELLED`,  or `ERROR`.
+[`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) can provide render progress as a number between 0 and 1. It also provides a status value, which can be `STARTED`, `RENDERING`, `FINISHED`, `CANCELLED`,  or `ERROR`.
 
 **Show status**
 ```C++
@@ -207,7 +207,7 @@ The current image can be fetched from `theFbReceiver` at any point after the fir
  
 `deliverImage` is left undefined in this example.
 
-`ProgressiveFrame` messages may contain additional images, beyond the beauty image. [`ClientReceiverFb`](../doxygen-pages/#mcrtdataioclientreceiverfb) provides access to these with `getHeatMap`, `getWeightBuffer` and `getRenderOutput`. The images are also available in *Rgb888* format.
+`ProgressiveFrame` messages may contain additional images, beyond the beauty image. [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) provides access to these with `getHeatMap`, `getWeightBuffer` and `getRenderOutput`. The images are also available in *Rgb888* format.
 
 ## Status Handler
 
