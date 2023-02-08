@@ -532,8 +532,8 @@
             path: developers-guide/arras/arras-session-definitions.md
           - text: Arras Client API
             path: developers-guide/arras/arras-client-api.md
-          - text: Arras Doxgen Document
-            path: developers-guide/arras/doxgen-doc.md
+          - text: Arras Doxygen Pages
+            path: developers-guide/arras/doxygen-pages.md
       - text: Contributions
         path: developers-guide/contributions.md  
   - text: Release Notes
