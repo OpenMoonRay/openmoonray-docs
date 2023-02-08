@@ -397,7 +397,7 @@ This is a full list of the options supported by each computation. Many are curre
 |---------|----|-------|-----------|
 |applicationMode|`string` _"motionCapture"_|undefined|Affects the behavior of the backend render computation. Currently, we have one possible setting : “motionCapture”, but this is experimental. The default of "undefined" is best for interactive lighting sessions.|
 |dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
-|enableDepthBuffer|`bool`|false|This command generates pixel center depth value as pixelInfo data, independent from AOV buffers. A client can access pixelInfo value using the `mcrt_dataio::ClientRecieverFb::getPixelInfo*()` APIs.|
+|enableDepthBuffer|`bool`|false|This command generates pixel center depth value as pixelInfo data, independent from AOV buffers. A client can access pixelInfo value using the `mcrt_dataio::ClientReceiverFb::getPixelInfo*()` [APIs](../doxygen-pages/#mcrtdataioclientreceiverfb).|
 |execMode|`string` _"auto"_\|_"vector"_ \|_"scalar"_\|_"xpu"_|_scalar_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
 |fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surfaces will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast\_geometry\_update”.|
 |fps|`float`|12.0|Set image update fps.|
