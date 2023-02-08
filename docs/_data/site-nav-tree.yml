@@ -423,11 +423,11 @@
                 subitems:
                   - text: How to use Checkpoint Rendering
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/how-to-use-checkpoint.md
-                  - text: Optional checkpoint sceneVariables
+                  - text: Optional checkpoint settings
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/optional-checkpoint-sceneVariables.md
                   - text: Post checkpoint LUA script
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
-                  - text: Unexpected interruption by SIGINT
+                  - text: Interrupting a rendering process with SIGINT
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
               - text: Resume
                 path: /user-reference/how-to-guides/checkpoint-resume/resume.md
@@ -469,6 +469,8 @@
                 path: /user-reference/how-to-guides/render-outputs/visibility-aovs.md
           - text: Render Inside a Medium
             path: /user-reference/how-to-guides/render-inside-medium.md
+          - text: Textures
+            path: /user-reference/how-to-guides/textures.md
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
