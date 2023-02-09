@@ -3,19 +3,19 @@ title: moonray_gui
 ---
 # moonray_gui
 
-The **moonray_gui** executable renders the scene in an interactive mode.  It displays the render in-progress in a graphical window, and enables you to
+The **moonray_gui** executable is the interactive rendering counterpart to [**moonray**](../moonray).  It displays the render in-progress in a graphical window, and enables you to
 navigate the camera using the keyboard and mouse. You can also view individual color channels and any
-[RenderOutputs]({{site.baseurl}}/user-reference/scene-objects/render-output/RenderOutput/) that are defined in your scene.
+[RenderOutputs](../../scene-objects/render-output/RenderOutput/) that are defined in your scene.
 
 This tool was meant to be used primarily as a developer tool rather than for production artists. It is especially useful during testing and when working
-directly with [RDLA]({{site.baseurl}}/getting-started/about/rdl-scene-format/) files via a text editor.
+directly with [RDLA](../../../getting-started/about/rdl-scene-format/) files via a text editor.
 
 When the render is complete the resulting beauty render is written to disk, as well as any additional images that are specified via
-[RenderOutputs]({{site.baseurl}}/user-reference/scene-objects/render-output/RenderOutput/)
+[RenderOutputs](../../scene-objects/render-output/RenderOutput/)
 
 ## Command-line options
-Most of the [command-line options]({{site.baseurl}}/user-reference/tools/moonray/#command-line-options) are the same as the
-[**moonray**]({{site.baseurl}}/user-reference/tools/moonray) executable, with a few exceptions, so we won't list them all here.
+Most of the [command-line options](../moonray/#command-line-options) are the same as the
+[**moonray**](../moonray) executable, with a few exceptions, so we won't list them all here.
 
 Use the _-h_ flag to display the full list of command-line options.
 
@@ -23,7 +23,7 @@ Use the _-h_ flag to display the full list of command-line options.
 $ moonray_gui -h
 ```
 
-One key difference with **moonray_gui** is that the input [RDL2]({{site.baseurl}}/getting-started/about/rdl-scene-format/) files are automatically
+One key difference with **moonray_gui** is that the input [RDL2](../../../getting-started/about/rdl-scene-format/) files are automatically
 "watched" for changes, and the render updates/restarts to reflect any changes to any of the input files.
 
 ### Deltas

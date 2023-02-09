@@ -3,23 +3,132 @@ title: moonray
 ---
 # moonray
 
-**moonray** is the command-line tool for rendering scenes in [RDL2]({{site.baseurl}}/getting-started/about/rdl-scene-format/) scene format with MoonRay.
+**moonray** is the command-line tool for rendering scenes in [RDL2](../../../getting-started/about/rdl-scene-format/) scene format with MoonRay.
+For interactive rendering, see [**moonray_gui**](../moonray-gui).
 
-When the render is complete the resulting beauty render is written to disk, as well as any additional images that are specified via
-[RenderOutputs]({{site.baseurl}}/user-reference/scene-objects/render-output/RenderOutput/)
+**moonray** takes in one or more input files, and when the render is complete the resulting rendered image is written to disk, along with any additional images that are specified via
+[RenderOutputs](../../scene-objects/render-output/RenderOutput/) in the scene description.
 
 ## Command-line options
-**moonray** has many command-line options -- too many to mention them all here so we'll just cover some of the
-most commonly used options.
-
 Use the _-h_ flag to display the full list of command-line options.
 
 ```bash
 $ moonray -h
+Usage: moonray [options]
+Options:
+    -help
+        Print this message.
+
+    -in scene.rdl{a|b}
+        Input RDL scene data. May appear more than once. Processes multiple
+        files in order.
+
+    -deltas file.rdl{a|b}
+        Updates to apply to RDL scene data. May appear more than once.
+        First renders without deltas and outputs the image. Then applies each
+        delta file in order, outputting an image between each one.
+
+    -out scene.exr
+        Output image name and type.
+
+    -threads n
+        Number of threads to use (all by default).
+
+    -size 1920 1080
+        Canonical frame width and height (in pixels).
+
+    -res 1.0
+        Resolution divisor for frame dimensions.
+
+    -exec_mode mode
+        Choose a specific mode of execution. Valid options are:
+        scalar - run in scalar mode (default).
+        vector - always run vectorized regardless if volumes are found.
+        xpu    - run in xpu mode.
+        auto   - attempt to run vectorized but fall back to scalar if volumes are found.
+
+    -sub_viewport l b r t
+    -sub_vp       l b r t
+        Clamp viewport render region.
+
+    -debug_pixel x y
+        Only render this one pixel for debugging. Overrides viewport.
+
+    -dso_path dso/path
+        Prepend to search path for RDL DSOs.
+
+    -texturesystem texsys
+        Choose a specific texture system. Valid options are:
+        sony          - use stock OIIO (slow).
+        dwaproduction - use vectorized texture sampling with lazy loading.
+
+    -camera camera
+        Camera to render from.
+
+    -layer layer
+        Layer to render from.
+
+    -fast_geometry_update
+        Turn on supporting fast geometry update for animation.
+
+    -record_rays .raydb/.mm
+        Save ray database or mm for later debugging.
+
+    -primary_range 0 [0]
+        Start and end range of primary ray(s) to debug. Only active with
+        -record_rays.
+
+    -depth_range 0 [0]
+        Start and end range of ray depths to debug. Only active with
+        -record_rays.
+
+    -rdla_set "var name" "expression"
+        Sets a global variable in the Lua interpreter before any RDLA is
+        executed.
+
+    -scene_var "name" "value"
+        Override a specific scene variable.
+
+    -attr_set "object" "attribute name" "value"
+        Override the value of an attribute on a specific SceneObject.
+
+    -attr_bind "object" "attribute name" "bound object name"
+        Override the binding on an attribute of a specific SceneObject.
+
+    -info
+        Enable verbose progress and statistics logging on stdout.
+
+    -debug
+        Enable debug level logging on stdout.
+
+    -stats filename.csv
+        Enable logging of statistics to a formatted file.
+
+    -athena_tags "TAG1=VALUE1 TAG2=VALUE2 ... TAGN=VALUEN"
+        Provided string will be sent to Athena Log Server and can be used to access stats on this render
+        Intended to be used for storing user specific data of interest such as RATS tests, testmaps, etc
+        TAG and VALUES are entirely up to the user
+
+    -resume_render
+        activate both of resume render and checkpoint render
+
+    -resumable_output
+        Make aov output as resumable for resume render
+
+    -checkpoint
+        Enable progress checkpoint rendering mode
 ```
 
+Below is more information on the some of the most commonly used options and workflows.
+
+### Checkpoint Rendering
+See the [Checkpoint/Resume Rendering](../../how-to-guides/checkpoint-resume/) page.
+
+### Execution Mode
+See the [Exeuction Modes](../../execution-modes/) page for more info.
+
 ### Inputs
-The inputs to **moonray** are one or more RDLA or RDLB files (see the [RDL2]({{site.baseurl}}/getting-started/about/rdl-scene-format/) scene format).
+The inputs to **moonray** are one or more RDLA or RDLB files (see the [RDL2](../../../getting-started/about/rdl-scene-format/) scene format).
 
 ```bash
 $ moonray -in scene.rdla
@@ -43,7 +152,10 @@ By default, **moonray** writes out an image named _scene.exr_.  This name of thi
 $ moonray -in scene.rdla -out my_image.exr
 ```
 
-### Scene Variables
+**moonray** will also potentially write out additional images containing various data if the scene contains
+[RenderOutputs](../../scene-objects/render-output/RenderOutput/)
+
+### Overriding Scene Variables
 It is possible to set or override any attribute of the [SceneVariables](../../scene-objects/scene-variables/SceneVariables/) directly from the command-line,
 via the _-scene_var_ command-line argument.  This is useful for things like optimizing render settings on an existing scene without modifying the input RDL2
 files.
@@ -62,7 +174,26 @@ SceneVariables {
 $ moonray -in scene.rdla -scene_var "max_depth" "2" -scene_var "pixel_samples" "1" -scene_var "res" "2"
 ```
 
-### Lua Variables
+### Overriding Attributes
+You can override an attribute of any Scene Object using _-attr_set_ on the command-line. This feature can be useful for things like running a series of
+wedge renders via bash script, for example.
+
+Here's a simple example:
+```lua
+-- sphere.rdla
+SphereGeometry("sphere") {
+    ["radius"] = 1,
+    ["phi_max"] = 360,
+    ["zmax"] = 1,
+    ["zmin"] = -1,
+}
+```
+
+```bash
+$ moonray -in sphere.rdla -attr_set "sphere" "radius" "42"
+```
+
+### Setting Lua Variables
 It is also possible to set global Lua variables that will be available during the processing of the input RDLA files using
 the _-rdla_set_ command-line argument.  These variables can then be accessed in an RDLA file.
 
@@ -80,50 +211,4 @@ SphereGeometry("sphere") {
 ```bash
 $ moonray -in sphere.rdla -rdla_set "my_radius" "42"
 ```
----
 
-Here's a slightly more practical example where we combine some of the ideas mentioned on this page.
-
-First we have some snippet of some input scene, "sphere.rdla":
-```lua
--- sphere.rdla
-SceneVariables {
-    ["pixel_samples"] = 12,
-    ["max_depth"] = 10,
-    ["image_width"] = 1920,
-    ["image_height"] = 782,
-}
-SphereGeometry("sphere") {
-    ["radius"] = 1,
-    ["phi_max"] = 360,
-    ["zmax"] = 1,
-    ["zmin"] = -1,
-}
-
--- ... Skipping the rest of this content for brevity.
--- ... Don't forget to add a Camera, Layer, GeometrySet, LightSet, Lights, Materials, etc...
-```
-
-Next we create a new RLDA file to override the sphere's _radius_, "override.rdla"
-```lua
--- override.rdla
-SphereGeometry("sphere") {
-    ["radius"] = my_radius, -- override sphere's radius by accessing a global Lua variable
-}
-```
-
-Lastly we render the scene using
-```bash
-$ moonray -in sphere.rdla -in override.rdla -rdla_set "my_radius" "42" -scene_var "pixel_samples" "1" -scene_var "max_depth" "2" -scene_var "res" "2"
-```
-
-In this example, we used:
-  - two input RDLA files, presumably an "original" scene file and a file containing only overrides
-  - a Lua variable which is used in the second file to override an attribute from an object in the first file
-  - some SceneVariable overrides, to make the scene render more quickly while testing
-
-.. All of that and we didn't even modify the original "sphere.rdla" scene file!  This type of command-line workflow can be handy
-when testing heavy scenes, wedging parameters,  or for other purposes such as... 
-
-... a bash script that batch renders a static scene by using _-rdla_set_ with
-a different value each time to drive a Lua variable that in turn animates a camera spin, for a poor man's wedge/asset review tool.
