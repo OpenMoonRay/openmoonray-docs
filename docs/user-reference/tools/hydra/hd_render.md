@@ -5,7 +5,9 @@ title: MoonRay hd_render and hd_usd2rdl commands
 
 ## hd_render
 
-The HdMoonRay project includes a command-line program, `hd_render`, that performs Hydra renders from a USD scene file. `hd_render` can use any Hydra render delegate except for Storm (the Pixar openGl renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for hd_render.
+The HdMoonRay project includes a command-line program, **hd_render** that performs Hydra renders from a USD scene file.
+**hd_render** can use any Hydra render delegate except for Storm (the Pixar openGl renderer).  This limitation is because
+Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for **hd_render**.
 
 ```
 hd_render [Flags]
@@ -74,9 +76,9 @@ Optional:
     Use the Pixar trace library to trace function calls for the given step. Supported step names are: load_plugin, open_stage, populate, render, open_delta_stage and delta_render. Writes log to the specified file, or to /tmp/trace_<STEPNAME> if no file is specified. Can appear multiple times
 ```
 
-# hd_usd2rdl
+## hd_usd2rdl
 
-`hd_usd2rdl` uses HdMoonRay to translate a USD scene to RDL2, but then outputs the RDL2 data to a file rather than rendering it.
+**hd_usd2rdl** uses HdMoonRay to translate a USD scene to RDL2, but then outputs the RDL2 data to a file rather than rendering it.
 
 ```
 hd_usd2rdl [Flags]

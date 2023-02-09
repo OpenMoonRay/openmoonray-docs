@@ -77,7 +77,7 @@ SceneVariables {
     ...
 }
 ```
-Following is a equivalent setting by moonray command line.
+Following is a equivalent setting by moonray command-line.
 ```
 moonray ... -checkpoint -scene_var checkpoint_mode 0 -scene_var checkpoint_interval 5 -scene_var checkpoint_time_cap 120 -resumable_output -resume_render
 ```
@@ -96,7 +96,7 @@ SceneVariables {
     ...
 }
 ```
-Following is a equivalent setting by moonray command line of above.
+Following is a equivalent setting by moonray command-line of above.
 ```
 moonray ... -checkpoint -scene_var checkpoint_mode 1 -scene_var checkpoint_quality_steps 2 -scene_var checkpoint_time_cap 120 -resumable_output -resume_render
 ```

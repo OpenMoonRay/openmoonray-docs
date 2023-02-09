@@ -3,7 +3,7 @@ title: MoonRay Render Profile Viewer
 ---
 
 # render_profile_viewer
-The `render_profile_viewer` is a standalone command-line application that graphs and compares statistics read from MoonRay render logs.
+The **render_profile_viewer** is a standalone command-line application that graphs and compares statistics read from MoonRay render logs.
 The logs must be written using the `-info` option when rendering in order to include the extra information required by the render_profiler_viewer tool.
 
 ![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/render_profile_viewer.jpg)

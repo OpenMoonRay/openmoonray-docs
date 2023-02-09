@@ -470,6 +470,8 @@
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
+          - text: denoise
+            path: user-reference/tools/denoise.md
           - text: Hydra Delegate
             path: user-reference/tools/hydra/index.md
             subitems:
