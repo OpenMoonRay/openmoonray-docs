@@ -27,6 +27,6 @@ HdMoonRay supports almost all of the Hydra features that are applicable to MoonR
 
 [HdMoonRay Features](hdmoonray-features)
 
-Included with HdMoonRay are two command-line applications that apply HdMoonRay to USD data : `hd_render` renders an image from a USD scene, and `hd_usd2rdl` translates a USD scene into MoonRay's native RDL2 format.
+Included with HdMoonRay are two command-line applications that apply HdMoonRay to USD data : **hd_render** renders an image from a USD scene, and **hd_usd2rdl** translates a USD scene into MoonRay's native RDL2 format.
 
 [hd_render and hd_usd2rdl](hd_render)
