@@ -80,15 +80,15 @@ Choose one of the checkpoint modes, either time- or quality-based.  Each mode ha
 #### Settings for time-based checkpoint mode
 Note that the time-based checkpoint mode is the default for MoonRay.  The settings are:
 ```lua
-["checkpoint mode"] = 0
+["checkpoint_mode"] = 0
 ```
 or 
 ```lua
-["checkpoint mode"] = "time"
+["checkpoint_mode"] = "time"
 ```
   
 ```lua
-["checkpoint interval"] = <minute>  -- Sets the checkpoint interval time in minutes, using a float value. The default is 15 minutes.
+["checkpoint_interval"] = <minute>  -- Sets the checkpoint interval time in minutes, using a float value. The default is 15 minutes.
 ```
 
 Note that the _checkpoint_interval_ setting is ignored when using quality-based checkpoint mode.
@@ -149,15 +149,15 @@ Here's how to interpret that log message:
 These settings directly control the checkpoint file interval by using _checkpoint_quality_steps_. Checkpoint file generation intervals based on the SPP sampling number using _checkpoint_quality_steps_ are defined as follows:
 
 ```lua
-["checkpoint mode"] = 1 
+["checkpoint_mode"] = 1 
 ```
 or 
 ```lua
-["checkpoint mode"] = "quality"
+["checkpoint_mode"] = "quality"
 ```
 
 ```lua
-["checkpoint quality steps"] = <n> -- the number of steps between quality checkpoints, using an integer.  The default is 2
+["checkpoint_quality_steps"] = <n> -- the number of steps between quality checkpoints, using an integer.  The default is 2
 ```
 
 Note that the _checkpoint_quality_steps_ setting is ignored when using time-based checkpoint mode.  Also note that if the _checkpoint_total_files_ value is 1 or larger, then this `checkpoint_quality_steps` setting is ignored. The _checkpoint_quality_steps+ setting has different effect depending on if you are rendering with uniform- or adaptive-sampling.
@@ -226,7 +226,7 @@ Again the subpixel sampling number is first converted to the tile-based sampling
 ### Activation of checkpoint rendering
 After setting up all of the settings above, you are ready to do checkpoint rendering.  There are two ways to activate checkpoint rendering.  Via a setting:
 ```lua
-["checkpoint active"] = <bool> -- true or false
+["checkpoint_active"] = <bool> -- true or false
 ```
 or via MoonRay command option
 ```bash
