@@ -1,7 +1,7 @@
 ---
-title: moonray_gui
+title: MoonRay GUI Viewer
 ---
-# moonray_gui
+# MoonRay GUI Viewer
 
 The **moonray_gui** executable is the interactive rendering counterpart to [**moonray**](../moonray).  It displays the render in-progress in a graphical window, and enables you to
 navigate the camera using the keyboard and mouse. You can also view individual color channels and any

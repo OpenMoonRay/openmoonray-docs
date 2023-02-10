@@ -474,7 +474,7 @@
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
-          - text: denoise
+          - text: Denoising
             path: user-reference/tools/denoise.md
           - text: Hydra Delegate
             path: user-reference/tools/hydra/index.md
@@ -487,11 +487,11 @@
                 path: user-reference/tools/hydra/render-settings.md
               - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render.md
-          - text: moonray
+          - text: MoonRay
             path: user-reference/tools/moonray.md
-          - text: moonray_gui
+          - text: MoonRay GUI
             path: user-reference/tools/moonray-gui.md
-          - text: render_profile_viewer
+          - text: Render Profile Viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
         path: user-reference/performance.md
