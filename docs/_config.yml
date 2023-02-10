@@ -9,7 +9,7 @@ collections_dir: .
 sass:
   sourcemap: never
 
-baseurl: /openmoonray-docs
+baseurl: /openmoonray-docs/docs/
 url: http://dreamworksanimation.github.io/
 BASE_PATH : http://dreamworksanimation.github.io/openmoonray-docs/
 repository: https://github.com/dreamworksanimation/openmoonray-docs/
