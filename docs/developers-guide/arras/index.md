@@ -12,7 +12,7 @@ This is a diagram of a typical multi-machine rendering session:
 
 
 
-Each of the orange boxes is a computation. The four "render" computations are all rendering the same scene, and will normally be placed on different physical machines. "dispatch" handles dispatching the scene description to each render, and "merge" merges the rendered outputs into a single image. Dispatch and merge will usually be placed on the same machine as one of the render computations. Arrows between the boxes represent messages.
+Each of the orange boxes is a computation. The four "render" computations (we call this computation as "**mcrt**" computation) are all rendering the same scene, and will normally be placed on different physical machines. "dispatch" handles dispatching the scene description to each render, and "merge" merges the rendered outputs into a single image. Dispatch and merge will usually be placed on the same machine as one of the mcrt computations. Arrows between the boxes represent messages.
 
 The ***client*** is similar to the computations, in that it sends and receives messages. Unlike the computations, it is not created by Arras : it is part of the application that is using Arras. The client code begins by asking Arras to create a session : Arras responds with a network connection that the client can use to send to and receive from the session. Then the client starts sending input data to the session in the form of messages, and receiving results (also as messages). A client application can have any number of sessions running at any one time.
 
@@ -36,7 +36,7 @@ Problems can occur if a computation sends out messages at a greater rate than th
 
 When the client sends new input data into a session, it may continue to receive results based on the previous input for a time, due to latency in the system. Each source input message contains a unique source id which is copied across to any output messages based on that input. The client can identify the first output message corresponding to an input change by examining the source ids.
 
-Messages have types : for example "RDLMessage" is the type of messages used to send RDLB format scene descriptions to render computations. Computations normally determine how to handle an incoming message based on its type.
+Messages have types : for example "RDLMessage" is the type of messages used to send RDLB format scene descriptions to mcrt computations. Computations normally determine how to handle an incoming message based on its type.
 
 The Arras message API is used to define new message types. Each new type must define serialization and deserialization functions to convert between its in-memory representation and the bytes sent to transmit it over a socket.
 
@@ -45,8 +45,8 @@ The Arras message API is used to define new message types. Each new type must de
 Computation processes use an executable called ***execComp***. execComp handles initial startup of the computation, connection to Node (or the client, when using local mode), and serialization/deserialization of messages. The actual work of a computation is performed by a shared library loaded by execComp. These shared libraries are often referred to as the computations. The shared libraries used by MoonRay computations are as follows:
 
 ```
-    render       libcomputation_progmcrt.so
     dispatch     libcomputation_progmcrt_dispatch.so
+    mcrt         libcomputation_progmcrt.so
     merge        libcomputation_progmcrt_merge.so
 ```
 

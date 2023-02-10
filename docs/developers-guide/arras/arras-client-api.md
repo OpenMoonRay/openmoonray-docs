@@ -60,13 +60,13 @@ The next step is to create a new session. This requires three things:
         arras4::client::SessionDefinition session_def = 
 arras4::client::SessionDefinition::load(SESSION_NAME);
         if (NUM_MACHINES > 1) {
-            session_def["render"]["arrayExpand"] = NUM_MACHINES;
+            session_def["mcrt"]["arrayExpand"] = NUM_MACHINES;
         }
         std::string url(COORDINATOR_URL);
         arras4::client::SessionOptions options;
 ```
 
-Session definitions are described in detail [here](arras-session-definitions). This code loads a JSON template from a file and then modifies the number of render computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
+Session definitions are described in detail [here](arras-session-definitions). This code loads a JSON template from a file and then modifies the number of mcrt computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
 
 COORDINATOR_URL is hard-coded to "arras:local" at the start of the code, which will cause the client library itself to create the session on the local machine, rather than requesting it from a Coordinator service. 
 
@@ -123,7 +123,7 @@ To start the session rendering, we need to send it an `RDLMessage` with the scen
         scene.commitAllChanges();
 ```
 
-Because we set the send mode of `theSdk` to Sync, `sendMessage` will return after sending out the message. As soon as the render computations in the session receive the message, they will start rendering the scene : after an initial "render prep" period, the client will begin to receive messages containing rendered frames.
+Because we set the send mode of `theSdk` to Sync, `sendMessage` will return after sending out the message. As soon as the mcrt computations in the session receive the message, they will start rendering the scene : after an initial "render prep" period, the client will begin to receive messages containing rendered frames.
 
 If the scene changes, we can send updates into the session. Calling `setDeltaEncoding(true)` on the `BinaryWriter` causes it to only encode objects and values that have changed since the last call to `SceneContext::commitAllChanges()`. For purposes of illustration, we'll wait 10 seconds, then load a  "delta" file into the context and send an update.
 
@@ -139,7 +139,7 @@ If the scene changes, we can send updates into the session. Calling `setDeltaEnc
         scene.commitAllChanges();
 ```
 
-Setting `rdlMsg->mForceReload` to false causes the render computations to apply this message on top of the existing scene. To begin afresh with a new scene, we would send a message with `mForceReload = true`.
+Setting `rdlMsg->mForceReload` to false causes the mcrt computations to apply this message on top of the existing scene. To begin afresh with a new scene, we would send a message with `mForceReload = true`.
 
 The final step in the main function is to wait 10 seconds and then terminate the session. Obviously, in practice this would happen when the user requests it, or possibly when the render is complete.
 
@@ -167,7 +167,7 @@ void messageHandler(const arras4::api::Message& msg)
         mcrt::ProgressiveFrame::ConstPtr frameMsg = msg.contentAs<mcrt::ProgressiveFrame>();
 ```
   
-ProgressiveFrame messages are sent by the render and merge computations at regular intervals as shading progresses. Each message contains differences from the previous one : [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) knows how to accumulate these into an image:
+ProgressiveFrame messages are sent by the mcrt and merge computations at regular intervals as shading progresses. Each message contains differences from the previous one : [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) knows how to accumulate these into an image:
 
 **Decode**
 ```C++
@@ -350,7 +350,7 @@ int main(int argc, char* argv[])
     // Collect creation parameters 
     arras4::client::SessionDefinition session_def = arras4::client::SessionDefinition::load(SESSION_NAME);
     if (NUM_MACHINES > 1) {
-        session_def["render"]["arrayExpand"] = NUM_MACHINES;
+        session_def["mcrt"]["arrayExpand"] = NUM_MACHINES;
     }
     std::string url(COORDINATOR_URL);
     arras4::client::SessionOptions options;
