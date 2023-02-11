@@ -188,7 +188,7 @@ This means fundamentally, we don't need so many cores for merge computation.
 However, merge computation might become a bottleneck if mcrt total is 32 or more configurations for example.
 It would be better to assign as many cores as possible to the merge computation under extreme configuration.
 
-"message" object of "dispatch", "mcrt", and "merge" is not dependent on the mcrt total configuration.
+"message" object of "dispatch", "mcrt", and "merge" is not dependent on the mcrt total number.
 This example of "message" object definition is recommended for all mutli-machine configurations.
 
 In order to run arras_render by multi-machine mode, the typical procedure is like this.
