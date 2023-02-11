@@ -5,7 +5,7 @@ title: arras_render
 
 **arras_render** is the command-line tool for rendering scenes by moonray under distributed
 single/multi machine environment.
-**arras_render** is the client application and connects to the backend arras moonray processes.
+arras_render is the client application and connects to the backend arras moonray processes.
 arras_render itself does not do rendering itself.
 it creates scene information and sends it to the backend computations.
 All rendering job is performed on backend computations (moonray) and rendered image would send
@@ -19,7 +19,7 @@ The client only needs to think about a small set of dependencies.
 2. Scalability<br>
 We can easily scale up performance by using more machines in a brute-force way.
 
-**arras_render** is a developer's test tool of single/multi machine distributed moonray rendering
+arras_render is a developer's test tool of single/multi machine distributed moonray rendering
 for interactive lighting sessions.
 And, arras_render is a good code example of how to write arras moonray client by yourself.<br>
 
@@ -63,7 +63,7 @@ There are many variations of how to configure "dispatch", "mcrt", and "merge" co
 multiple hosts.
 
 This is a naive example of mcrt total = 2 configurations.
-Using 3 hosts. hostA, hostB, and hostC for backend computations. (Also we need client hosts as well)
+Using 3 hosts. hostA, hostB, and hostC for backend computations. (Also we need client hosts as well.)
 Each host has 96 HTcores for example.
 - assign mcrt computation to hostA and hostB.
   - assign entire cores to mcrt computations
@@ -73,7 +73,7 @@ Each host has 96 HTcores for example.
   - dispatch computation only needs single core (using defalt would be OK and it's 1)
   - Assigning the rest of the cores to merge computation would be nice.<br>
     In this case, assign 94 cores to the merge computation for example.<br>
-    94(for merge) + 1(for dispatch) + 1(for arras-framework) = 96.
+    94(for merge) + 1(for dispatch) + 1(for arras-fundation) = 96.
 
 This is a sessiondef files example of the above configuration.
 ```
@@ -180,7 +180,8 @@ This is a sessiondef files example of the above configuration.
 }
 ```        
 See "requirements" object of "dispatch", "mcrt", and "merge".
-Actually, "dispatch" does not have "requirements" object and this means all requirement is default.<br>
+Actually, "dispatch" does not have "resources" of "requirements" object and this means all resources
+setting is default.<br>
 We can use this sessiondef file from 32HTcore to 96HTcore hosts.
 (We can use more cores hosts as well).<br>
 Usually, merge computation is not a computational bottleneck if mcrt total is not so high (like around 6 or less).
@@ -225,7 +226,7 @@ For example, scene data is saved into a remote disk. and that remote disk is mou
 
 Under this environment, all backend computations can access the destination data by the same filename path.
 
-The next tip is you should use an absolute path for file information in your scene and should **NOT** use a relative path.
+The next rule is you should use an absolute path for file information in your scene and should **NOT** use a relative path.
 If you use a relative path like "./geomA" in your scene, backend computation tries to open the file using "./geomA".
 But probably the current directory is not the same and backend computation can not open the file and fail.
 You should use an absolute path for all filename information in your scene.
