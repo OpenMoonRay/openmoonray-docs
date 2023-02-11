@@ -3,8 +3,9 @@ title: moonray
 ---
 # moonray
 
-**moonray** is the command-line tool for rendering scenes in [RDL2](../../../getting-started/about/rdl-scene-format/) scene format with MoonRay.
-For interactive rendering, see [**moonray_gui**](../moonray-gui).
+**moonray** is the command-line tool for rendering scenes in [RDL2](../../../getting-started/about/rdl-scene-format/) scene format with MoonRay.<br>
+For interactive rendering, see [**moonray_gui**](../moonray-gui).<br>
+For distributed single/multi machine rendering, see [**arras_render**](../arras_render).<br>
 
 **moonray** takes in one or more input files, and when the render is complete the resulting rendered image is written to disk, along with any additional images that are specified via
 [RenderOutputs](../../scene-objects/render-output/RenderOutput/) in the scene description.

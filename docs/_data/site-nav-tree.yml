@@ -493,6 +493,8 @@
             path: user-reference/tools/moonray-gui.md
           - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
+          - text: arras_render
+            path: user-reference/tools/arras_render.md
       - text: Maximizing Performance
         path: user-reference/performance.md
   - text: Developer's Guide
