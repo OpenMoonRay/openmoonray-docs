@@ -2,7 +2,7 @@
 <div class="gallery-grid">
 {%- for img in include.images -%}
   <figure>
-    <img src="{{site.baseurl}}/{{include.data.image_path}}/{{img.image}}" alt="{{img.text}}" lightbox>
+    <img src="{{ include.data.image_path | absolute_url}}/{{ img.image }}" alt="{{img.text}}" lightbox>
     {% if img.text %}
       <figcaption>
       {{img.text}}
@@ -12,3 +12,4 @@
 {% endfor %}
 </div>
 {% endif %}
+
