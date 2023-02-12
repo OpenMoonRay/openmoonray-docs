@@ -2,7 +2,6 @@
 title: Getting Started
 ---
 # Getting Started
-
 ![The Bad Guys]({{ "/assets/images/getting-started/badguys_car.png" | absolute_url }})
 
 ## Contents
