@@ -20,6 +20,7 @@ MoonRay uses best-in-class open source libraries.
 * We use [OpenImageIO](http://openimageio.org/) to generically handle different image file formats
 * [OpenSubdiv](https://graphics.pixar.com/opensubdiv/docs/intro.html) is an open source geometry library
 * [OpenVDB](https://www.openvdb.org/) is a volumetric representational format that we open sourced at DreamWorks
+
 ## Goals
 
 All renderers have personalities.  _“Keep all the lanes of all the cores of all the machines busy all the time with meaningful work”_ is MoonRay's mantra and our personality.  This is our guiding principle for development.
