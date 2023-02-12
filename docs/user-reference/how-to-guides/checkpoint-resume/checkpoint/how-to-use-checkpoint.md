@@ -20,45 +20,25 @@ The Checkpoint logic does not require the following special AOVs, however these 
 
 The set of five AOVs required for Resume rendering are:
 
-1. Beauty 
+1. Beauty AOV
 ```lua
-["result"] = 0
-``` 
-or 
-```lua
-["result"] = "beauty"
+["result"] = 0 -- or "beauty"
 ```
-2. Alpha
+2. Alpha AOV
 ```lua
-["result"] = 1
-``` 
-or 
-```lua
-["result"] = "alpha"
+["result"] = 1 -- or "alpha" 
 ```
-3. Weight
+3. Weight AOV
 ```lua
-["result"] = 11
-``` 
-or 
-```lua
-["result"] = "weight"
+["result"] = 11 -- or "weight" 
 ```
-4. Beauty Aux
+4. Beauty Aux AOV
 ```lua
-["result"] = 12
+["result"] = 12 -- or "beauty aux"
 ```
-or 
+5. Alpha Aux AOV
 ```lua
-["result"] = "beauty aux"
-```
-5. Alpha Aux
-```lua
-["result"] = 14 
-``` 
-or 
-```lua
-["result"] = "alpha aux" 
+["result"] = 14 -- or "alpha aux" 
 ```
 
 These AOVs are mandatory for Resume rendering and are for input to Resume rendering.  Note that if these AOVs are not in the resumable Checkpoint file, MoonRay can not resume from that file, and will fall back to normal rendering, starting at the beginning.

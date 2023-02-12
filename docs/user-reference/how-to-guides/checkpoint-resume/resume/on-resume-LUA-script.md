@@ -2,40 +2,33 @@
 title: On-resume LUA script execution
 ---
 # On-resume LUA script execution
----
-
-You can specify LUA script which is executed just after resume data load operation under resume
-rendering regardless of resume render started properly or fall back to normal render.
-```
+A LUA script can be defined, which is executed just after resumable image file data load operation occurs when resume
+rendering starts, regardless of whether the resume render started properly or fell back to normal, non-resumable rendering due to an error.  The script to be run is defined in the following setting:
+```lua
 ["on_resume_script"] = <filename>
 ```
-Default is empty and on-resume script functionality is disabled.<br>
-This LUA script is executed under a freshly constructed LUA execution environment (lua_State) and
-there is no way to access other LUA environments like RDLA parser and post-checkpoint script execution
-internally.<br>
-This LUA script is executed exclusively and all MCRT threads are stopped until on-resume script execution
-is completed. Keep in mind if you run a very long task by on-resume script, MCRT computation is suspended
-until on-resume script is done.<br>
-Moonray provides several resume related information as LUA's global variables.
-All the information is stored inside an associative array named as "**resume**".
-So LUA script can get resume related information via global variable "**resume**".<br>
-<br>
-You should **NOT** use **os.exit()** from on-resume script. if you use **os.exit()** inside
-the on-resume LUA script, moonray crash.<br>
-<br>
+The default value is empty and on-resume script functionality is disabled.
+
+If definied, the LUA script is executed in a freshly constructed LUA execution environment (lua_State) and there is no way to internally access other LUA environments such as the RDLA parser and post-checkpoint script execution.
+
+This LUA script is executed exclusively and all MCRT threads will be stopped until the on-resume script execution
+is completed.  Keep this in mind when running very long tasks via the on-resume script.
+
+MoonRay provides resume-related information to LUA's global variables.  All of the information is stored inside an associative array named "resume", so that the script can get this information via a global variable "resume".
+
+Note:  do *not* use "os.exit()" from the on-resume script, which would cause `moonray` to crash.
 
 ## On-resume script LUA global variables
 
-assosiative array name = "**resume**"
+associative array name = "resume"
 
 **associative item (=element) name** | **type** | **description**
 ---------- | ---------- | ----------
-resumeStartStatus | bool | result of resume start condition
-resumeFiles	| string array | all resume file names of resume render
+resumeStartStatus | bool | result of the resume start condition
+resumeFiles	| string array | all resumable file names of the resume render
 resumeParam | dictionary | resume start condition (See below for detail of resumeParam dictionary)
-resumeHistory | array of dictionary | resumeHistory information from resume file metadata
+resumeHistory | array of dictionary | resumeHistory information from the resumable image file metadata
 
-<br>
 resumeParam dictionary LUA global parameter name and description
 
 **associative item (=element) name** | **type** | **description**
@@ -45,13 +38,12 @@ AovFilterNumConsistentSample | int | AovFilterNumConsistent samples number
 sampling | string | resume sampling mode. "uniform" or "adaptive"
 adaptiveSampleParameters | float[3]	| adaptive sample parameters.<br>[0] = min adaptive sample.<br>[1] = max adaptive sample.<br>[2] = adaptive target error.
 
-<br>
 
-## Example of on-resume script LUA global varialbes
-This is an example of a "**on-resume**" script LUA global variable. (item may vary depending on the versions).<br>
-<br>
+## Example of on-resume script LUA global variables
+This is an example of on-resume script LUA global variables. 
+
 LUA global variable example for uniform sampling
-```
+```lua
 resume = {
     resumeStartStatus = true, -- result of resume status
     resumeFiles = { -- which file we are using for resume file(s)
@@ -151,9 +143,9 @@ resume = {
     }
 }
 ```
-<br>
+
 LUA global variable example for adaptive sampling
-```
+```lua
 resume = {
     resumeStartStatus = true, -- result of resume status
     resumeFiles = { -- which file we are using for resume file(s)
@@ -245,9 +237,9 @@ resume = {
     }
 }
 ```
-<br>
-LUA global variable example when resume failed then fall back to regular render situation
-```
+
+LUA global variable example when resume failed, and then fell back to regular non-resumable rendering
+```lua
 resume = {
     resumeStartStatus = false
 }

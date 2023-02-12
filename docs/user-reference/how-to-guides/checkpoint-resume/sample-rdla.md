@@ -1,71 +1,65 @@
 ---
-Title: Sample rdla file for Checkpoint and Resume render
+Title: Sample RDLA file for Checkpoint and Resume render
 ---
-# Sample rdla file for Checkpoint and Resume render
+# Sample RDLA file for Checkpoint and Resume render
 ---
-## rdla renderOutput block sample
-This rdla example creates one output file and defines one checkpoint file for checkpoint render.
-Regular output and checkpoint output includes "**weight**" "**beauty aux**" and "**alpha aux**"
-AOVs for resume render.<br>
-Also defines resume file as input of resume render.<br>
+## RenderOutput block sample
+This example creates one output image file and defines one checkpoint image file for checkpoint rendering.  The regular image output and checkpoint image output both include the Alpha, Beauty, Weight, Beauty Aux and Alpha Aux AOVs for Resume rendering. Additionally, the example defines the resumable file as an input to Resume renderering
 
-```
+```lua
 -- alpha
 RenderOutput("/output/alpha") {
-    ["file name"] = "result0.exr",
+    ["file_name"] = "result0.exr",
     ["result"] = 1, -- alpha
-    ["channel name"] = "alpha",
-    ["checkpoint file name"] = "checkpoint0.exr",
-    ["resume file name"] = "resume0.exr",
+    ["channel_name"] = "alpha",
+    ["checkpoint_file_name"] = "checkpoint0.exr",
+    ["resume_file_name"] = "resume0.exr",
 }
   
 -- beauty
 RenderOutput("/output/beauty") {
-    ["file name"] = "result0.exr",
+    ["file_name"] = "result0.exr",
     ["result"] = 0, -- beauty
-    ["channel name"] = "beauty",
-    ["checkpoint file name"] = "checkpoint0.exr",
+    ["channel_name"] = "beauty",
+    ["checkpoint_file_name"] = "checkpoint0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
   
 -- weight
 RenderOutput("/output/weight") {
-    ["file name"] = "result0.exr",
+    ["file_name"] = "result0.exr",
     ["result"] = 11, -- weight
-    ["channel name"] = "weight",
-    ["checkpoint file name"] = "checkpoint0.exr",
+    ["channel_name"] = "weight",
+    ["checkpoint_file_name"] = "checkpoint0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
  
 -- beauty aux
 RenderOutput("/output/beautyaux") {
-    ["file name"] = "result0.exr",
+    ["file_name"] = "result0.exr",
     ["result"] = 12, -- beauty aux
-    ["channel name"] = "beauty aux",
-    ["checkpoint file name"] = "checkpoint0.exr",
+    ["channel_name"] = "beauty aux",
+    ["checkpoint_file_name"] = "checkpoint0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
   
 -- alpha aux
 RenderOutput("/output/alphaaux") {
-    ["file name"] = "result0.exr",
+    ["file_name"] = "result0.exr",
     ["result"] = 14, -- alpha aux
-    ["channel name"] = "alpha aux",
-    ["checkpoint file name"] = "checkpoint0.exr",
+    ["channel_name"] = "alpha aux",
+    ["checkpoint_file_name"] = "checkpoint0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
 ```
 
-<br>
-## Checkpoint with resume render enable example 
-Following setting activate **time-based** checkpoint render by interval **5 minute** and
-time cap **120 minute** and create resumable output image.<br>
-If resume file is exist, start from resume file. If not, just start from scratch.
-```
+## Checkpoint with Resume rendering enabled 
+This example activates time-based checkpoint rendering with an interval of 5 minutes and a time cap of 120 minutes, and creates a resumable output image.  If a resumable output image file exists, MoonRay will resume from that file. If not, MoonRay will start from scratch.
+```lua
 SceneVariables {
     ...
     ["checkpoint_active"] = true,
@@ -77,14 +71,13 @@ SceneVariables {
     ...
 }
 ```
-Following is a equivalent setting by moonray command-line.
-```
+The following are the equivalent settings via the command-line.
+```bash
 moonray ... -checkpoint -scene_var checkpoint_mode 0 -scene_var checkpoint_interval 5 -scene_var checkpoint_time_cap 120 -resumable_output -resume_render
 ```
 
-<br>
-Next setting activate **quality-based** checkpoint render by **quality-steps 2**. Other setting is same as above.
-```
+This example activates quality-based checkpoint rendering with a quality-steps value of 2. Other settings are the same as the previous example.
+```lua
 SceneVariables {
     ...
     ["checkpoint_active"] = true,
@@ -96,8 +89,8 @@ SceneVariables {
     ...
 }
 ```
-Following is a equivalent setting by moonray command-line of above.
-```
+The following are the equivalent settings via the command-line.
+```bash
 moonray ... -checkpoint -scene_var checkpoint_mode 1 -scene_var checkpoint_quality_steps 2 -scene_var checkpoint_time_cap 120 -resumable_output -resume_render
 ```
 
