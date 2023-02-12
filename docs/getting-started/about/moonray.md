@@ -23,7 +23,9 @@ MoonRay uses best-in-class open source libraries.
 
 ## Goals
 
-All renderers have personalities.  _“Keep all the lanes of all the cores of all the machines busy all the time with meaningful work”_ is MoonRay's mantra and our personality.  This is our guiding principle for development.
+>_Keep all the lanes of all the cores of all the machines busy all the time with meaningful work_ 
+
+All renderers have personalities, and _"Keep all the lanes..."_ is MoonRay's mantra and our personality.  This is our guiding principle for development.
 
 Our goal was to achieve scalability up to real-time rendering leveraging all of the available hardware.  The need to trace and shade billions of rays implied thin interfaces and no data structure redundancy.  We embraced “Data Oriented Design”, which is a methodology that first grew in the games industry, but we applied it with great success in MoonRay.
 
