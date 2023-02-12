@@ -4,8 +4,9 @@
 <h{{h_size}}>See Also</h{{h_size}}>
 {%- for link in include.links -%}
   <div>
-    <a href="{{site.baseurl}}/{{link.url}}">{{link.text}}</a>
+    <a href="{{link.url | absolute_url}}">{{link.text}}</a>
   </div>
 {% endfor %}
 </div><br>
 {% endif %}
+

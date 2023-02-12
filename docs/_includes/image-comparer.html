@@ -6,12 +6,12 @@
 <sl-icon slot="handle" library="material" name="drag_indicator"></sl-icon>
     <img
       slot="before"
-      src="{{site.baseurl}}/{{include.image_path_before}}"
+      src="{{include.image_path_before | absolute_url}}"
       alt="{{include.image_alt_before}}"
     />
     <img
       slot="after"
-      src="{{site.baseurl}}/{{include.image_path_after}}"
+      src="{{include.image_path_after | absolute_url}}"
       alt="include.image_alt_after"
     />
   </sl-image-comparer>
