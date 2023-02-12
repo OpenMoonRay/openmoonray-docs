@@ -42,7 +42,7 @@ Therefore, on the lower end - to achieve dark looking materials, it is recommend
 ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_albedo_low.jpg)
 Albedo values: 0.001, 0.01, 0.02, 0.04, 0.12
 
-On the higher end, for brighter materials, it is recommended to use values less than 0.87. This is an important change in the workflow compared to old moonlight workflows, where it was common to see values of 0.9 or higher being used for instance in the red channel for skin.
+On the higher end, for brighter materials, it is recommended to use values less than 0.87. 
 ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/albedo_drops_high_final.jpg)
 ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_albedo_high.jpg)
 Albedo values: 0.6, 0.8, 0.9, 0.95, 0.99
