@@ -3,21 +3,23 @@ title: Getting Started
 ---
 # Getting Started
 
+![The Bad Guys]({{ "/assets/images/getting-started/badguys_car.png" | absolute_url }})
+
 ## Contents
 The open source release contains the following pieces of technology:
 
-- [MoonRay]({{site.baseurl}}/getting-started/about/moonray): path-tracing renderer
-- [Scene Object Classes]({{site.baseurl}}/user-reference/scene-objects): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
-- [HdMoonRay]({{site.baseurl}}/user-reference/tools/hydra): the hydra plugin for MoonRay
-- [Arras]({{site.baseurl}}/getting-started/about/arras): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
+- [MoonRay]({{ "/getting-started/about/moonray" | absolute_url }}): path-tracing renderer
+- [Scene Object Classes]({{ "/user-reference/scene-objects" | absolute_url }}): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
+- [HdMoonRay]({{ "/user-reference/tools/hydra" | absolute_url }}): the hydra plugin for MoonRay
+- [Arras]({{ "/getting-started/about/arras" | absolute_url }}): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
-For more information, see [What's Included?]({{site.baseurl}}/getting-started/source-contents)
+For more information, see [What's Included?]({{ "/getting-started/source-contents" | absolute_url }})
 
 ## Installation
 
-For information on how to install MoonRay, please see our instructions on [Building MoonRay]({{site.baseurl}}/getting-started/installation/building-moonray/). You can also find a list of MoonRay's [Dependencies]({{site.baseurl}}/getting-started/installation/moonray-dependencies) 
+For information on how to install MoonRay, please see our instructions on [Building MoonRay]({{ "/getting-started/installation/building-moonray/" | absolute_url }}). You can also find a list of MoonRay's [Dependencies]({{ "/getting-started/installation/moonray-dependencies" | absolute_url }}) 
 
 ## Running MoonRay
 
@@ -60,7 +62,7 @@ To show the full set of command line options, run:
 moonray --help
 ```
 
-[`moonray_gui`]({{site.baseurl}}/user-reference/moonray-gui) is a Qt application that displays the framebuffer while rendering. The command line options are very similar to those for `moonray`. `moonray_gui` has hotkeys to alter the display mode, move the camera around, and various other useful things. You can display a menu of the hotkeys by pressing 'H'.
+[`moonray_gui`]({{ "/user-reference/moonray-gui" | absolute_url }}) is a Qt application that displays the framebuffer while rendering. The command line options are very similar to those for `moonray`. `moonray_gui` has hotkeys to alter the display mode, move the camera around, and various other useful things. You can display a menu of the hotkeys by pressing 'H'.
 
 `moonray_gui` monitors the input scene files while it is running : if a file changes, it automatically reloads the data and restarts the render.
 
