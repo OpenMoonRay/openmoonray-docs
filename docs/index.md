@@ -3,6 +3,9 @@ Title: MoonRay Documentation Home
 ---
 # MoonRay Documentation Home
 
+![How To Train Your Dragon: The Hidden World]({{ "/assets/images/d3_hiccup.png" | absolute_url }})
+
+
 The open source release of MoonRay contains the following pieces of technology:
 
 - MoonRay path-tracing renderer
