@@ -39,15 +39,6 @@ Our goal was to achieve scalability up to real-time rendering leveraging all of 
 With MoonRay, we range between 92 - 154 million core-hours for rendering a DreamWorks Feature. 
 </div>  
 
-## A brief history
-
-MoonRay was started as an experiment in about 2013 to produce an interactive renderer for product design with an effort called Nova.  After the experiment, our VFX Supervisor on [How To Train Your Dragon: The Hidden World](https://dreamworksanimation.com/movies/how-to-train-your-dragon-the-hidden-world) saw the results achieved with Nova and made an impassioned plea for MCRT.  
-
-Here is the test scene he set up to convince the execs. He wanted to be sure that we knew this was only a test and not final surfacing, lighting, rigging, etc.
-
-![MoonRay Test]({{ "/assets/images/getting-started/about/moonray/about_moonray.png" | absolute_url }})
-
-This convinced the execs that the look could be achieved with MoonRay. And could handle the complexity of dense foliage, shading complexity, the ease of lighting set up, and the speed of rendering. His plea for MCRT was green-lit, and so MoonRay continues rendering features at DreamWorks today.
 
 
 
