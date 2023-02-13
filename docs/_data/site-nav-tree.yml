@@ -540,6 +540,8 @@
             path: developers-guide/arras/doxygen-pages.md
       - text: Contributions
         path: developers-guide/contributions.md  
+      - text: Coding Standards
+        path: developers-guide/coding-standards/index.md  
   - text: Release Notes
     path: release-notes/index.md
   - text: Legal/Licensing
