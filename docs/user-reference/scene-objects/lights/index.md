@@ -8,14 +8,14 @@ maths: 1
 Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. (Note that it is possible to assign an emissive material to a geometry object as another way to illuminate a scene. However, we are not referring to that kind of setup when we talk about lights.)
 
 There are 8 types of light supported in MoonRay:
-* [CylinderLight](/openmoonray-docs/user-reference/scene-objects/lights/CylinderLight)
-* [DiskLight](/openmoonray-docs/user-reference/scene-objects/lights/DiskLight)
-* [DistantLight](/openmoonray-docs/user-reference/scene-objects/lights/DistantLight)
-* [EnvLight](/openmoonray-docs/user-reference/scene-objects/lights/EnvLight)
-* [MeshLight](/openmoonray-docs/user-reference/scene-objects/lights/MeshLight)
-* [RectLight](/openmoonray-docs/user-reference/scene-objects/lights/RectLight)
-* [SphereLight](/openmoonray-docs/user-reference/scene-objects/lights/SphereLight)
-* [SpotLight](/openmoonray-docs/user-reference/scene-objects/lights/SpotLight)
+* [CylinderLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/CylinderLight/)
+* [DiskLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/DiskLight/)
+* [DistantLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/DistantLight/)
+* [EnvLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/EnvLight/)
+* [MeshLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/MeshLight/)
+* [RectLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/RectLight/)
+* [SphereLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/SphereLight/)
+* [SpotLight](https://docs.openmoonray.org/user-reference/scene-objects/lights/SpotLight/)
 
 Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordinates (for instance, a SphereLight is positioned by setting its *center* attribute).
 
