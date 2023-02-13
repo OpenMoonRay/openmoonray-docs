@@ -1,7 +1,7 @@
 ---
-Title: Sample RDLA file for Checkpoint and Resume render
+Title: Sample RDLA file for Checkpoint and Resume rendering
 ---
-# Sample RDLA file for Checkpoint and Resume render
+# Sample RDLA file for Checkpoint and Resume rendering
 ---
 ## RenderOutput block sample
 This example creates one output image file and defines one checkpoint image file for checkpoint rendering.  The regular image output and checkpoint image output both include the Alpha, Beauty, Weight, Beauty Aux and Alpha Aux AOVs for Resume rendering. Additionally, the example defines the resumable file as an input to Resume renderering
