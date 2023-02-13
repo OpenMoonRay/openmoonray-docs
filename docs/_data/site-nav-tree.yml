@@ -418,7 +418,7 @@
           - text: Checkpoint/Resume rendering
             path: /user-reference/how-to-guides/checkpoint-resume/index.md
             subitems:
-              - text: Checkpoint
+              - text: Checkpoint Rendering
                 path: /user-reference/how-to-guides/checkpoint-resume/checkpoint.md
                 subitems:
                   - text: How to use Checkpoint Rendering
@@ -429,18 +429,18 @@
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
                   - text: Interrupting a rendering process with SIGINT
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
-              - text: Resume
+              - text: Resume Rendering
                 path: /user-reference/how-to-guides/checkpoint-resume/resume.md
                 subitems:
                   - text: On-Resume LUA script
                     path: /user-reference/how-to-guides/checkpoint-resume/resume/on-resume-LUA-script.md
-              - text: File output logic
+              - text: Checkpoint/Resume Image File Output Logic
                 path: /user-reference/how-to-guides/checkpoint-resume/file-output-logic.md
-              - text: Sample rdla
+              - text: Example RDLA for Checkpoint/Resume rendering
                 path: /user-reference/how-to-guides/checkpoint-resume/sample-rdla.md
-              - text: EXR Metadata
+              - text: EXR Header Metadata
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
-              - text: KJ Sequence
+              - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md

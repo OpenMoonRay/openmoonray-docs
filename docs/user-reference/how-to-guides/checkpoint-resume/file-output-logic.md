@@ -1,7 +1,7 @@
 ---
-title: Checkpoint and Resume image file output logic
+title: Checkpoint and Resume Image File Output Logic
 ---
-# Checkpoint and Resume image file output logic
+# Checkpoint and Resume Image File Output Logic
 The image file output logic for non-Deep Images uses following procedure:
 
 1. First create a temporary file.  
@@ -19,5 +19,5 @@ This procedure reduces the risk of generating garbage image files due to an unex
 
 The procedure is also friendly for remote disk operation because MoonRay only uses file copy operations and does not use complex seek or other Posix I/O operations.
 
-MoonRay will directly write to the final file destination, without the temporary procedure logic when the scene is using Deep Images.
+Note that when a scene is using Deep Images, then MoonRay will directly write to the final file destination, without the temporary file output logic .
 

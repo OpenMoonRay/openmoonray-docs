@@ -1,8 +1,9 @@
 ---
-title: KJ Sequence
+title: KJ Subpixel Sampling Sequence
 ---
-# KJ Sequence
-KJ sequence from 1 to 65536
+# KJ Subpixel Sampling Sequence
+
+## KJ sequence from 1 to 65536
 ```
     1,    5,   11,   19,   29,   41,   55,   71,   89,  109,
   131,  155,  181,  209,  239,  271,  305,  341,  379,  419,
