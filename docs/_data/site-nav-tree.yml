@@ -114,6 +114,52 @@
               path: user-reference/scene-objects/geometry/VdbGeometry.md
         - text: Joint
           path: user-reference/scene-objects/joint/Joint.md
+        - text: Layer
+          path: user-reference/scene-objects/layer/Layer.md
+        - text: Lights
+          path: user-reference/scene-objects/lights/index.md
+          subitems:
+            - text: CylinderLight
+              path: user-reference/scene-objects/lights/CylinderLight.md
+            - text: DiskLight
+              path: user-reference/scene-objects/lights/DiskLight.md
+            - text: DistantLight
+              path: user-reference/scene-objects/lights/DistantLight.md
+            - text: EnvLight
+              path: user-reference/scene-objects/lights/EnvLight.md
+            - text: MeshLight
+              path: user-reference/scene-objects/lights/MeshLight.md
+            - text: RectLight
+              path: user-reference/scene-objects/lights/RectLight.md
+            - text: SphereLight
+              path: user-reference/scene-objects/lights/SphereLight.md
+            - text: SpotLight
+              path: user-reference/scene-objects/lights/SpotLight.md
+        - text: LightSet
+          path: user-reference/scene-objects/light-set/LightSet.md
+        - text: Light Filters
+          path: user-reference/scene-objects/light-filters/index.md
+          subitems:
+            - text: BarnDoorLightFilter
+              path: user-reference/scene-objects/light-filters/BarnDoorLightFilter.md
+            - text: ColorRampLightFilter
+              path: user-reference/scene-objects/light-filters/ColorRampLightFilter.md
+            - text: CombineLightFilter
+              path: user-reference/scene-objects/light-filters/CombineLightFilter.md
+            - text: CookieLightFilter
+              path: user-reference/scene-objects/light-filters/CookieLightFilter.md
+            - text: CookieLightFilter_v2
+              path: user-reference/scene-objects/light-filters/CookieLightFilter_v2.md
+            - text: DecayLightFilter
+              path: user-reference/scene-objects/light-filters/DecayLightFilter.md
+            - text: IntensityLightFilter
+              path: user-reference/scene-objects/light-filters/IntensityLightFilter.md
+            - text: RodLightFilter
+              path: user-reference/scene-objects/light-filters/RodLightFilter.md
+            - text: VdbLightFilter
+              path: user-reference/scene-objects/light-filters/VdbLightFilter.md
+        - text: LightFilterSet
+          path: user-reference/scene-objects/light-filter-set/LightFilterSet.md
         - text: Materials
           path: user-reference/scene-objects/materials/index.md
           subitems:
@@ -339,52 +385,6 @@
               path: user-reference/scene-objects/normal-maps/SwitchNormalMap.md
             - text: TransformNormalMap
               path: user-reference/scene-objects/normal-maps/TransformNormalMap.md
-        - text: Layer
-          path: user-reference/scene-objects/layer/Layer.md
-        - text: Lights
-          path: user-reference/scene-objects/lights/index.md
-          subitems:
-            - text: CylinderLight
-              path: user-reference/scene-objects/lights/CylinderLight.md
-            - text: DiskLight
-              path: user-reference/scene-objects/lights/DiskLight.md
-            - text: DistantLight
-              path: user-reference/scene-objects/lights/DistantLight.md
-            - text: EnvLight
-              path: user-reference/scene-objects/lights/EnvLight.md
-            - text: MeshLight
-              path: user-reference/scene-objects/lights/MeshLight.md
-            - text: RectLight
-              path: user-reference/scene-objects/lights/RectLight.md
-            - text: SphereLight
-              path: user-reference/scene-objects/lights/SphereLight.md
-            - text: SpotLight
-              path: user-reference/scene-objects/lights/SpotLight.md
-        - text: LightSet
-          path: user-reference/scene-objects/light-set/LightSet.md
-        - text: Light Filters
-          path: user-reference/scene-objects/light-filters/index.md
-          subitems:
-            - text: BarnDoorLightFilter
-              path: user-reference/scene-objects/light-filters/BarnDoorLightFilter.md
-            - text: ColorRampLightFilter
-              path: user-reference/scene-objects/light-filters/ColorRampLightFilter.md
-            - text: CombineLightFilter
-              path: user-reference/scene-objects/light-filters/CombineLightFilter.md
-            - text: CookieLightFilter
-              path: user-reference/scene-objects/light-filters/CookieLightFilter.md
-            - text: CookieLightFilter_v2
-              path: user-reference/scene-objects/light-filters/CookieLightFilter_v2.md
-            - text: DecayLightFilter
-              path: user-reference/scene-objects/light-filters/DecayLightFilter.md
-            - text: IntensityLightFilter
-              path: user-reference/scene-objects/light-filters/IntensityLightFilter.md
-            - text: RodLightFilter
-              path: user-reference/scene-objects/light-filters/RodLightFilter.md
-            - text: VdbLightFilter
-              path: user-reference/scene-objects/light-filters/VdbLightFilter.md
-        - text: LightFilterSet
-          path: user-reference/scene-objects/light-filter-set/LightFilterSet.md
         - text: Render Output
           path: user-reference/scene-objects/render-output/RenderOutput.md
         - text: Scene Variables
@@ -442,10 +442,10 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
-          - text: Look Dev Transparent Surfaces
-            path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
-          - text: Overlapping Dielectrics
-            path: /user-reference/how-to-guides/overlapping-dielectrics.md
+         # - text: Look Dev Transparent Surfaces
+         #   path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
+         # - text: Overlapping Dielectrics
+         #   path: /user-reference/how-to-guides/overlapping-dielectrics.md
           - text: Path Guiding
             path: /user-reference/how-to-guides/path-guiding.md
           - text: PBR Validity

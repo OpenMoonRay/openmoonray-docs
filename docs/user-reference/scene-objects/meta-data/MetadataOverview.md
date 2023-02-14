@@ -1,0 +1,1 @@
+Metadata is a list of attributes, along with their types and values. It is often used to specify arbitrary image header data.
