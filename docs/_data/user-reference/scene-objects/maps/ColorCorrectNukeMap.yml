@@ -1,0 +1,31 @@
+---
+overview: overviews/ColorCorrectNukeMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/maps/ColorCorrectMap
+gallery:
+attributes:
+  saturation:
+    images:
+      - image: saturation_varyRgb2.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  contrast:
+    images:
+      - image: contrast_varyRgb.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  gamma:
+    images:
+      - image: gamma_varyRgb.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  gain:
+    images:
+      - image: gain_varyRgb.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  TMI:
+    images:
+      - image: tme_varyXyz.jpg
+        text: TMI -0.5, -0.25, 0.0, 0.25, 0.5
+      - image: tme_varyX.jpg
+        text: T only -0.5, -0.25, 0.0, 0.25, 0.5
+  offset:
+    images:
+      - image: offset_varyRgb.jpg
+        text: -0.25, -0.125, 0.0, 0.125, 0.25
