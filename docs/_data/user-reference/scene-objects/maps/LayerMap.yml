@@ -1,0 +1,40 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/LayerMap
+attributes:
+  input_A:
+    images:
+      - image: imgA.jpg
+  input_B:
+    images:
+      - image: imgB.jpg
+  mode:
+    images:
+      - image: mode_wedge.0.jpg
+      - image: mode_wedge.1.jpg
+      - image: mode_wedge.2.jpg
+      - image: mode_wedge.3.jpg
+      - image: mode_wedge.4.jpg
+      - image: mode_wedge.5.jpg
+      - image: mode_wedge.6.jpg
+      - image: mode_wedge.7.jpg
+      - image: mode_wedge.8.jpg
+      - image: mode_wedge.9.jpg
+      - image: mode_wedge.10.jpg
+      - image: mode_wedge.11.jpg
+      - image: mode_wedge.12.jpg
+      - image: mode_wedge.13.jpg
+      - image: mode_wedge.14.jpg
+      - image: mode_wedge.15.jpg
+  threshold_min:
+    images:
+      - image: thresholdMin.000.png
+        text: 0.00
+      - image: thresholdMin.001.png
+        text: 0.25
+      - image: thresholdMin.002.png
+        text: 0.50
+      - image: thresholdMin.003.png
+        text: 0.75
+      - image: thresholdMin.004.png
+        text: 1.00
+  

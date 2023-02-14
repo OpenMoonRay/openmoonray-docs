@@ -3,11 +3,18 @@ Title: MoonRay Documentation Home
 ---
 # MoonRay Documentation Home
 
-The open source release of MoonRay contains the following pieces of technology:
+![How To Train Your Dragon: The Hidden World]({{ "/assets/images/d3_hiccup.png" | absolute_url }})
 
-- MoonRay path-tracing renderer
-- Most of the scene object classes (materials, geometry, lights, cameras, etc) used at DreamWorks Animation (about 150 in total)
-- Hydra plugin for MoonRay: HdMoonRay
-- Arras execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
-[Learn more about getting and using MoonRay](./getting-started/)
+Welcome to the OpenMoonRay documentation site!
+
+**MoonRay** is DreamWorks Animation's in-house 3D renderer, used to render all DreamWorks movies since [How To Train Your Dragon: The Hidden World](https://dreamworksanimation.com/movies/how-to-train-your-dragon-the-hidden-world).
+
+DreamWorks has released MoonRay as open source, under the Apache 2.0 license. The release features
+
+- the MoonRay high-performance path-tracing renderer.
+- many of the MoonRay plugins developed at DreamWorks.
+- a Hydra plugin for MoonRay, allowing its use in Hydra-supporting applications such as Houdini and Maya.
+- the Arras system, used to distribute MoonRay rendering across multiple machines.
+
+To get started, explore the links to the left or [Click here]({{ "/getting-started" | absolute_url }}).

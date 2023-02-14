@@ -1,15 +1,13 @@
 ---
-title: MoonRay Overview
+title: MoonRay Installation Overview
 ---
-# Overview
+# Installation Overview
+
+![MoonRay]({{ "/assets/images/getting-started/installation/paper.png" | absolute_url }})
 
 ## Getting MoonRay
 
-The easiest way to obtain MoonRay for testing and evaluation is to use the pre-built **Docker container image**. Inside a Docker container you can run MoonRay from the command-line to render scenes in written in RDL2 (MoonRay's native format) or USD (using HdMoonRay from its command-line program `hd_render`). On Linux hosts with X you should also be able to run the GUI programs `moonray_gui` and `arras_render`.
-
-[Running MoonRay from the Docker Image](running-from-docker)
-
-You can build MoonRay yourself, either in a Docker container or directly on a Linux machine.
+MoonRay is distributed in source form, via github.com. You can build MoonRay in a Docker container or directly on a Linux machine.
 
 [Cloning the MoonRay source Repository](cloning-the-repo)
 
@@ -17,12 +15,16 @@ You can build MoonRay yourself, either in a Docker container or directly on a Li
 
 ## Using MoonRay
 
-[Moonray GUI application](../moonray/moonray_gui)
+[Hydra Render Delegate]({{ "/user-reference/tools/hydra/" | absolute_url }})  
 
-[Scene Formats](../developers-guide/scene-formats)
+[GUI application]({{ "/user-reference/tools/moonray-gui/" | absolute_url }})  
+
+[Scene Format]({{ "/getting-started/about/rdl-scene-format/" | absolute_url }})
 
 ## Developing MoonRay
 
-[Source Structure](../developers-guide/source-structure)
+[Source Structure]({{ "/developers-guide/source-structure/" | absolute_url }})  
 
-[Shaders](../developers-guide/shaders/index)
+[Shaders]({{ "//developers-guide/shaders/" | absolute_url }})  
+
+[RDL2]({{ "//developers-guide/scene_rdl2-library/" | absolute_url }})

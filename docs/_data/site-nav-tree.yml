@@ -418,7 +418,7 @@
           - text: Checkpoint/Resume rendering
             path: /user-reference/how-to-guides/checkpoint-resume/index.md
             subitems:
-              - text: Checkpoint
+              - text: Checkpoint Rendering
                 path: /user-reference/how-to-guides/checkpoint-resume/checkpoint.md
                 subitems:
                   - text: How to use Checkpoint Rendering
@@ -429,18 +429,18 @@
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/post-checkpoint-LUA-script.md
                   - text: Interrupting a rendering process with SIGINT
                     path: /user-reference/how-to-guides/checkpoint-resume/checkpoint/sigint-interruption.md
-              - text: Resume
+              - text: Resume Rendering
                 path: /user-reference/how-to-guides/checkpoint-resume/resume.md
                 subitems:
                   - text: On-Resume LUA script
                     path: /user-reference/how-to-guides/checkpoint-resume/resume/on-resume-LUA-script.md
-              - text: File output logic
+              - text: Checkpoint/Resume Image File Output Logic
                 path: /user-reference/how-to-guides/checkpoint-resume/file-output-logic.md
-              - text: Sample rdla
+              - text: Example RDLA for Checkpoint/Resume rendering
                 path: /user-reference/how-to-guides/checkpoint-resume/sample-rdla.md
-              - text: EXR Metadata
+              - text: EXR Header Metadata
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
-              - text: KJ Sequence
+              - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
@@ -474,7 +474,7 @@
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
-          - text: denoise
+          - text: Denoising
             path: user-reference/tools/denoise.md
           - text: Hydra Delegate
             path: user-reference/tools/hydra/index.md
@@ -487,11 +487,11 @@
                 path: user-reference/tools/hydra/render-settings.md
               - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render.md
-          - text: moonray
+          - text: MoonRay
             path: user-reference/tools/moonray.md
-          - text: moonray_gui
+          - text: MoonRay GUI
             path: user-reference/tools/moonray-gui.md
-          - text: render_profile_viewer
+          - text: Render Profile Viewer
             path: user-reference/tools/render-profile-viewer.md
           - text: arras_render
             path: user-reference/tools/arras_render.md
@@ -542,6 +542,8 @@
             path: developers-guide/arras/doxygen-pages.md
       - text: Contributions
         path: developers-guide/contributions.md  
+      - text: Coding Standards
+        path: developers-guide/coding-standards/index.md  
   - text: Release Notes
     path: release-notes/index.md
   - text: Legal/Licensing

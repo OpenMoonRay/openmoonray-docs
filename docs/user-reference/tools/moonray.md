@@ -1,7 +1,7 @@
 ---
-title: moonray
+title: MoonRay command-line tool
 ---
-# moonray
+# MoonRay command-line tool
 
 **moonray** is the command-line tool for rendering scenes in [RDL2](../../../getting-started/about/rdl-scene-format/) scene format with MoonRay.<br>
 For interactive rendering, see [**moonray_gui**](../moonray-gui).<br>

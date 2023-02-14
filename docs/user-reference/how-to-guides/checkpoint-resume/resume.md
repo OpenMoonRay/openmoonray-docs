@@ -4,151 +4,117 @@ title: Resume rendering
 # Resume rendering
 ---
 
-## What's "Resume Rendering"
-moonray can adding more sampling to the previously computed image. This is a idea of resume rendering.
-(Currently only moonray is supporting resume rendering mode and moonray_gui does not.)<br>
-However we can not use all of the image files as resume image file (which is a input of resume rendering).
-We need special procedure to create resume file. <br>
-This resume file needs to have stored special information for resume rendering. We need to generate
-this special resume file for resume render input by "**resumable output**" mode.<br>
-<br>
+## What is "Resume Rendering"
+Resume rendering allows more sample data to be added to a previously computed image.  This is supported in `moonray` running in "resume rendering" mode, and is not supported in `moonray_gui`.
 
-## Resume file generation as resumable output
-You can use any output image and checkpoint file image for resume rendering however these files should
-be created by "**resumable_output**" mode.<br>
-moonray can not start resume render from resume file which is not created by "**resumable_output**" mode.
-In order to create "**resumable_output**" mode file, you should use scene_variable `"resumable output"` like
-```
-["resumable output"] = true
-```
-or
-```
-moonray command option "-resumable_output" to create resume file.
-```
-Resume file also need to include 5 special AOV buffers. (See also
-[here](../checkpoint/how-to-use-checkpoint/#b-special-aovs-definition-for-resume-rendering))
+It is important to note that not all image files can be used as a resumable image file, which is the required input for resume rendering.  A special procedure is to create a resumable file, as it needs to store additional information for the resume rendering functionality.  This procedure to to generate a resumable file is done by setting the _resumable_output_  mode.
 
-1. beauty AOV
+## Creating resumable output files
+Any output image and checkpoint file image can be for resume rendering, however these files are only creating when `moonray` is running in _resumable_output_ mode.  MoonRay can not start resume a render from an image file which was not created during a _resumable_output_" mode.  To create a _resumable_output_ mode image file, you should use the setting liek so:
+```lua
+["resumable_output"] = true
 ```
-["result"] = 0 -- or "beauty" : this is for "beauty" AOV
+or set the command option to create a resumable file:
+```bash
+moonray -resumable_output
 ```
-2. alpha AOV
+Each resumable image file needs to include five special AOV buffers, similar to [checkpoint image files](../checkpoint/how-to-use-checkpoint/#b-special-aovs-definition-for-resume-rendering). 
+
+1. Beauty AOV
+```lua
+["result"] = 0 -- or "beauty"
 ```
-["result"] = 1 -- or "alpha" : this is for "alpha" AOV
+2. Alpha AOV
+```lua
+["result"] = 1 -- or "alpha" 
 ```
-3. weight AOV
+3. Weight AOV
+```lua
+["result"] = 11 -- or "weight" 
 ```
-["result"] = 11 -- or "weight" : this is for "weight" AOV
+4. Beauty Aux AOV
+```lua
+["result"] = 12 -- or "beauty aux"
 ```
-4. beauty aux AOV
-```
-["result"] = 12 -- or "beauty aux" : this is for "beauty aux" AOV
-```
-5. alpha aux AOV
-```
-["result"] = 14 -- or "alpha aux" : this is for "alpha aux" AOV
+5. Alpha Aux AOV
+```lua
+["result"] = 14 -- or "alpha aux" 
 ```
 
-Without these special AOV buffers, moonray also can not start render and fall back to normal
-rendering mode. These "**beauty**", "**alpha**", "**weight**", "**beauty aux**", and "**alpha aux**" AOVs
-definitions are not created by "`resumable_output`" option automatically.
-You need to define these by yourself.<br>
-<br>
+Without these special AOV buffers, MoonRay can not start resumable renderering and will fall back to normal
+rendering mode.  These AOVs are *not* created by the _resumable_output_ option automatically, and will need to be defined.
 
-## How to run "resume rendering"
-First of all, you need to modify RenderOutput block "`resume file name`" command and specify resume file name.
-for example
+## How to run Resume rendering
+The first step is to modify the _resume_file_name setting in the "RenderOutput" block to specify the resumable file name.  For example
+```lua
+["resume_file_name"] = "resume0.exr"
 ```
-["resume file name"] = "resume0.exr"
+If there are multiple file output settings in the RenderOutput" block, then the setting for _resume_file_name_ needs to follow the exact same pattern as the setting for _file_name_, which is used for regular image file output.
+
+In other words, different patterns for both settings are not supported for resume rendering, such as regular image file output going to two files, but the resumable image file output going only to one file.   In such a case, `moonray` would show an error and then exit.
+
+After setting the _resume_file_name value, MoonRay is ready to do resume rendering.  There are two ways to activate a resumable render; either via a setting:
+
+```lua
+["resume_render"] = <bool> -- enable or disable resume render
 ```
-If you have multiple file output configuration on your `RenderOutput` block, you need to set
-"`resume file name`" as exactly same pattern as "`file name`". 
-This means different pattern settings are not supported for resume rendering like regular file output goes
-to 2 files and resume file is 1 file. In this case, moonray shows error then exit.
-Resume file setting should follow same pattern of regular output file setting.<br>
-After setup resume file name setting by `RenderOutput`, you are ready to do resume rendering.<br>
-<br>
-There are 2 ways to activate resume render.<br>
-<br>
-scene variable (rdla) solution 
+or via the command option:
+
+```bash
+moonray -resume_render 
 ```
-["resume_render"] = <bool> -- enable or disable resume render.
-```
-or
-moonray command option solution
-```
--resume_render # enable resume render
-```
-Resume render is disabled by default.<br>
-**Resume render mode is canceled and fall back to regular standard rendering when resume render can not open
-resume file.**<br>
-<br>
 
-## Goal and Quality of resume render
-Thinking about following 2 situations.
-1. using some sampling parameters and create images by normal render
-2. using same sampling parameters of 1. but image is created by multiple phases by resume render from resume
-file which created by checkpoint render.
+Resume rendering is disabled by default.  Also note that Resume rendering mode is canceled and will fall back to regular standard rendering when it can not open a resumable file.
 
-Basically renderer try to create same image for above 2 situations.
-For **uniform sampling** with full float resume file case, results are match by very high precision.<br>
-However, **adaptive sampling** with float resume file case, renderer can not guarantee to render exactly the
-same image. Basically #2 is slightly better (more samples) than #1 in this case.<br>
-If resume file is created half float instead of full float, result is also slightly different between
-#1 and #2 then simillaly #2 is also slightly better than #1.<br>
-<br>
+## Goals and quality output of Resume rendering
+Consider the following two scenarios, for which MoonRay will try to create the same image:
 
-## Fall back to regular render from resume render
-Some case resume render fallbacks to regular render when render got trouble to revert information from
-resume file. Followings are cases which fallbacks to the regular render from resume render.
+1. Using some sampling parameters and creating an image with normal, non-resumable rendering
+2. Using the same sampling parameters, however this time the image is created in multiple phases by resumable rendering via a resumable file which created by checkpoint rendering.
 
-### A. Resume file related error
-1. resume file is not specified inside RenderOutput definition => fallback
-2. can not open resume file or multiple resume files => fallback
-3. read data from resume file failed => fallback
-4. multipart image name is wrong between RenderOutput definition => fallback
-5. resume file resolution mismatch with scene variable => fallback
-6. resume file AOV configuration is different from RenderOutput definition => fallback
-7. no weight AOV data in the resume file => fallback
-8. no beautyAUX data in the resume file => fallback
-9. no "progressCheckpointTileSamples" in the resume file exr meta data => fallback
-10. resume related metadata is different between multiple defined resume files => fallback
 
-### B. Sampling condition related error
-1. previous sample is **ADAPTIVE** and current is **UNIFORM** => fallback
+When rendering using uniform sampling and with a full float resumable image file, the rendering results results are matched with a very high precision.
 
-### C. Internal memory related error
-1. There is small possibility to get memory allocation error which related to resume render => fallback
+However, when rendering using adaptive sampling with a full float resumable image file, the rendering results can not guarantee to render exactly the same image as in uniform sampling. Essentially, scenario #2 is slightly better (more samples) than scenario #1.
 
-<br>
+If the resumable file is created at half float instead of full float, then the rendered result is also slightly different between  Scenarios 1 and 2, with Scenario #2 having slightly better results.
 
-## Limitation and quality control for resume render
-Basically you can not any scene description change between previous render and resume render.
-Obviously change scene does not make sense for resume render.
-However, you can change sampling parameters for resume render. This sampling parameters are the only
-parameter which you can change by resume render.<br>
-Most typical scenario is set higher sampling rate for resume render. And some times might change
-sampling mode between **uniform** / **adaptive**.<br>
-<br>
-Regarding sampling type, technically there are 4 different situation for resume render and resume
-file configurations.
+## Falling back to regular, non-resumable rendering
+In some cases, Resume rendering mode falls back to regular rendering mode, when MoonRay has trouble to revert information from a resumable file.  The following are some cases this can be seen:
 
-1. uniform sampled resume file -> uniform sampling resume render
-2. uniform sampled resume file -> adaptive sampling resume render
-3. adaptive sampled resume file -> adaptive sampling resume render
-4. adaptive sampled resume file -> uniform sampling resume render
+### Resumable file errors
+- The _resume_file_name_ setting is not specified inside RenderOutput definition
+- MoonRay can not open the resume file or multiple resume files
+- Reading data from resume file fails
+- Multipart image name is wrong in the RenderOutput definition
+- There is resumable file resolution mismatch with the resume setting
+- The resumable file AOV configuration is different the settings defined in the RenderOutput block
+- No Weight AOV data exists in the resumable file
+- No Beauty AUX AOV data exists in the resumable file
+- No "progressCheckpointTileSamples" exists in the resumable file exr meta data
+- Resume related metadata is different between multiple defined resumable files
 
-All the case from #1 to #3 are OK. moonray properly compute resume render task.
-However, #4 does not work so far. Main internal resume logic can support #4 but
-progress percentage update logic does not support situation of #4 so far unfortunately.<br>
-You can not use #4 at this moment. If your resume render has situation of #4,
-moonray shows error and cancel resume render and fall back to normal rendering.<br>
-<br>
+### Sampling condition error
+- The prior sampling mode of the resumable image file is *ADAPTIVE* and current sampling mode Resume rendering is *UNIFORM* 
+
+### Internal memory error
+- There is small possibility to get memory allocation error related to resume render
+
+
+## Limitations and quality controls for Resume rendering
+The essential limitation of Resume rendering is that there can not be any scene description changes between previous resumable image file and resuming the render, which would not make sense.  However, the sampling setting can be changed when resuming a render. In fact, the sampling settings are the only parameters which can be changed when resuming renders.
+
+The most typical scenario is to set a higher sampling rate for resuming a render.  Occasionaly there may be a desire to also change the sampling mode between uniform and adaptive sampling.  That would entail the following four scenarios:
+
+1. Uniformly sampled resumable file -> resuming a render with uniform sampling
+2. Uniformly sampled resumable file -> resuming a render with adaptive sampling
+3. Adaptively sampled resumable file -> resuming a render with adaptive sampling
+4. Adaptively sampled resumable file -> resuming a render with uniform sampling
+
+The scenarios from 1 to 3 are fine and MoonRay will properly compute the resume render task.  However, the fourth scenario does not currently work.  This is because although the internal resume logic can support Scenario #4, the progress percentage update logic does not support it (yet).  Therefore if MoonRay encounters that fourth scenario, it will show an error, cancel resume rendering and fall back to normal rendering.
 
 ## On-resume LUA script execution
-Moonray provides the way to run LUA script on the resume action started.
-Detail info is [here](./on-resume-LUA-script).
-
+MoonRay also provides a way to run a LUA script when a resume rendering action has started.  This is useful to execute a user-defined action for resumable image files.  Further details are [here](./on-resume-LUA-script).
 
 
 

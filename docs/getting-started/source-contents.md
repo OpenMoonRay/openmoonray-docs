@@ -2,13 +2,14 @@
 title: What's Included?
 ---
 # What's Included?
+![The Bad Guys]({{ "/assets/images/getting-started/badguys_loot.png" | absolute_url }})
 
 The open source release contains the following pieces of technology:
 
-- [MoonRay](about/moonray): path-tracing renderer
-- [Scene Object Classes]({{site.baseurl}}/user-reference/scene-objects): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
-- [HdMoonRay]({{site.baseurl}}/user-reference/tools/hydra): the hydra plugin for MoonRay
-- [Arras](about/arras): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
+- [MoonRay]({{ "/getting-started/about/moonray" | absolute_url }}): path-tracing renderer
+- [Scene Object Classes]({{ "/user-reference/scene-objects" | absolute_url }}): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
+- [HdMoonRay]({{ "/user-reference/tools/hydra" | absolute_url }}): the hydra plugin for MoonRay
+- [Arras]({{ "/getting-started/about/arras/" | absolute_url }}): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
 The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
 
@@ -16,7 +17,7 @@ The source is contained in multiple Git repositories. The `openmoonray` reposito
 
 Three Git repositories make up the main source of MoonRay, providing the command line renderer and libraries used to integrate MoonRay and author scene objects:
 
-- `scene_rdl2` provides the [RDL2 scene description format](/about/rdl-scene-format.md) used by MoonRay. The in-memory format is called `SceneContext`. `scene_rdl2` can read and write SceneContexts in two file formats: RDLA and RDLB.
+- `scene_rdl2` provides the [RDL2 scene description format]({{ "/getting-started/about/rdl-scene-format" | absolute_url }}) used by MoonRay. The in-memory format is called `SceneContext`. `scene_rdl2` can read and write SceneContexts in two file formats: RDLA and RDLB.
 - `mcrt_denoise` contains the implementation of the MoonRay denoiser.
 - `moonray` is the main implemention of the renderer, and depends on the previous three repositories.
 
@@ -63,7 +64,7 @@ The JSON files are not built by the MoonRay *cmake* system : you will need to ge
 
 HdMoonRay requires Arras to build and run.
 
-There are more instructions on how to configure and use HdMoonRay in the Hydra plugin README file (**hydra/README.md**) and [here]({{site.baseurl}}/user-reference/tools/hydra).
+There are more instructions on how to configure and use HdMoonRay in the Hydra plugin README file (**hydra/README.md**) and [here]({{ "/user-reference/tools/hydra" | absolute_url }}).
 
 ## Arras
 
