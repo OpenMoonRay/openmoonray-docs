@@ -32,7 +32,7 @@ AOVs.<br>
 
 ## LocalOnly mode
 We can run arras_render and backend render process (we call this process "MCRT computation".
-See more detail [here](../../../developpers-guide/arras)) on the same machine.
+See more detail [here](../../../developers-guide/arras)) on the same machine.
 We call this execution style "**LocalOnly**" mode.
 In this case, you do **NOT** need to run "**minicoord**" coordinator before starting arras_render.
 You only need to run **arras_render** process with setup 3 environment variables.
@@ -56,7 +56,7 @@ In this case, we need to run "**minicoord**" and manage multiple hosts before st
 (Detail info is [here](../../../developers-guide/arras/distributed-arras/#coordinator))
 
 We need 3 different computations. "dispatch", "mcrt", and "merge" computations for multi-machine
-mode (Detail is [here](../../../developpers-guide/arras/)).<br>
+mode (Detail is [here](../../../developers-guide/arras/)).<br>
 Basically, rendering task is done by mcrt computation and we use multiple mcrt computations.
 And, we need to run "dispatch" and "merge" computation.
 There are many variations of how to configure "dispatch", "mcrt", and "merge" coputation on
@@ -67,7 +67,7 @@ Using 3 hosts. hostA, hostB, and hostC for backend computations. (Also we need c
 Each host has 96 HTcores for example.
 - assign mcrt computation to hostA and hostB.
   - assign entire cores to mcrt computations
-  ([maxCores](../../../developpers-guide/arras/arras-session-definitions/#requirements) = *).
+  ([maxCores](../../../developers-guide/arras/arras-session-definitions/#requirements) = *).
 - assign dispatch computation and merge computation to hostC.
   - This is a most naive configuration and hostC is more lightweight than hostA and hostB.
   - dispatch computation only needs single core (using defalt would be OK and it's 1)
