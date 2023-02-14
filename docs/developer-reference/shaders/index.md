@@ -284,7 +284,7 @@ _RampMap.json_
 ```
 
 Refer to the [SceneClass](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/SceneClass.h)
-source code, the [scene_rdl2]({{site.baseurl}}/developers-guide/scene_rdl2-library) page, or the existing plug-ins
+source code, the [scene_rdl2]({{site.baseurl}}/developer-reference/scene_rdl2-library) page, or the existing plug-ins
 for more examples of how to declare SceneClass attributes and their metadata.
 
 ----

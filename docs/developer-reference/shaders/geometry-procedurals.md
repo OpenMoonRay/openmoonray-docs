@@ -33,7 +33,7 @@ also passed a set of
 
 There are typically 3 files that make up a geometry procedural's source:
 * _\<ClassName\>.cc_
-* [attributes.cc]({{site.baseurl}}/developers-guide/shaders/#defining-the-plug-ins-attributes) 
+* [attributes.cc]({{site.baseurl}}/developer-reference/shaders/#defining-the-plug-ins-attributes) 
 * CMakeLists.txt
 
 

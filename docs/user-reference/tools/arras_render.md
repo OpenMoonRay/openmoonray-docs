@@ -10,7 +10,7 @@ arras_render itself does not do rendering itself.
 it creates scene information and sends it to the backend computations.
 All rendering job is performed on backend computations (moonray) and rendered image would send
 back to the arras_render via socket communication.
-(Detailed info is [here](../../../developers-guide/arras))<br>
+(Detailed info is [here](../../../developer-reference/arras))<br>
 
 There are 2 potential benefits to using this style of rendering.<br>
 1. Light Weight Code Dependency<br>
@@ -32,7 +32,7 @@ AOVs.<br>
 
 ## LocalOnly mode
 We can run arras_render and backend render process (we call this process "MCRT computation".
-See more detail [here](../../../developers-guide/arras)) on the same machine.
+See more detail [here](../../../developer-reference/arras)) on the same machine.
 We call this execution style "**LocalOnly**" mode.
 In this case, you do **NOT** need to run "**minicoord**" coordinator before starting arras_render.
 You only need to run **arras_render** process with setup 3 environment variables.
@@ -53,10 +53,10 @@ based on "mcrt_progressive.sessiondef" and modify it.
 ## Multi-machine mode
 We can run arras_render at one host and can run multiple backend computations on other multiple hosts.
 In this case, we need to run "**minicoord**" and manage multiple hosts before start arras_render.
-(Detail info is [here](../../../developers-guide/arras/distributed-arras/#coordinator))
+(Detail info is [here](../../../developer-reference/arras/distributed-arras/#coordinator))
 
 We need 3 different computations. "dispatch", "mcrt", and "merge" computations for multi-machine
-mode (Detail is [here](../../../developers-guide/arras/)).<br>
+mode (Detail is [here](../../../developer-reference/arras/)).<br>
 Basically, rendering task is done by mcrt computation and we use multiple mcrt computations.
 And, we need to run "dispatch" and "merge" computation.
 There are many variations of how to configure "dispatch", "mcrt", and "merge" coputation on
@@ -67,7 +67,7 @@ Using 3 hosts. hostA, hostB, and hostC for backend computations. (Also we need c
 Each host has 96 HTcores for example.
 - assign mcrt computation to hostA and hostB.
   - assign entire cores to mcrt computations
-  ([maxCores](../../../developers-guide/arras/arras-session-definitions/#requirements) = *).
+  ([maxCores](../../../developer-reference/arras/arras-session-definitions/#requirements) = *).
 - assign dispatch computation and merge computation to hostC.
   - This is a most naive configuration and hostC is more lightweight than hostA and hostB.
   - dispatch computation only needs single core (using defalt would be OK and it's 1)
@@ -194,8 +194,8 @@ This example of "message" object definition is recommended for all mutli-machine
 
 In order to run arras_render by multi-machine mode, the typical procedure is like this.
 
-run [minicoord](../../../developers-guide/arras/distributed-arras/#coordinator) on client host<br>
-run [arras4_node](../../../developers-guide/arras/distributed-arras/#node) on hostA, hostB, and hostC.<br>
+run [minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) on client host<br>
+run [arras4_node](../../../developer-reference/arras/distributed-arras/#node) on hostA, hostB, and hostC.<br>
 
 on client hosts, you need to set 3 environment variables and run arras_render as follows.
 ```
@@ -236,7 +236,7 @@ You should use an absolute path for all filename information in your scene.
 Use just execute **arras_render** without any command-line options to display the full list.
 (The full command-line options include DWA-specific options but are not explained here.)<br>
 The followings are the options we use with
-[minicoord](../../../developers-guide/arras/distributed-arras/#coordinator) environment and **LocalOnly** mode.
+[minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) environment and **LocalOnly** mode.
 
 ```
 $ arras_render
