@@ -1,0 +1,16 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/ColorCorrectHueShiftMap
+gallery:
+attributes:
+  hue_shift:
+    images:
+      - image: scene.000.png
+        text: -180
+      - image: scene.001.png
+        text: -90
+      - image: scene.002.png
+        text: 0
+      - image: scene.003.png
+        text: 90
+      - image: scene.004.png
+        text: 180

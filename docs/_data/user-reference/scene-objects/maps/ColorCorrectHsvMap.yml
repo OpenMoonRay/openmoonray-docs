@@ -1,0 +1,25 @@
+---
+overview: overviews/ColorCorrectHsvMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/maps/ColorCorrectMap
+gallery:
+attributes:
+  saturation:
+    images:
+      - image: saturation_varyRgb2.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  value_shift:
+    images:
+      - image: offset_varyRgb.jpg
+        text: -0.25, -0.125, 0.0, 0.125, 0.25
+  hue_shift:
+    images:
+      - image: scene.000.png
+        text: -180
+      - image: scene.001.png
+        text: -90
+      - image: scene.002.png
+        text: 0
+      - image: scene.003.png
+        text: 90
+      - image: scene.004.png
+        text: 180
