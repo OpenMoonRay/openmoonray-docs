@@ -4,48 +4,27 @@ title: Getting Started
 # Getting Started
 ![The Bad Guys]({{ "/assets/images/getting-started/badguys_car.png" | absolute_url }})
 
-## Contents
-The open source release contains the following pieces of technology:
+OpenMoonRay can be obtained in source form from our github site https://github.com/dreamworksanimation.
 
-- [MoonRay]({{ "/getting-started/about/moonray" | absolute_url }}): path-tracing renderer
-- [Scene Object Classes]({{ "/user-reference/scene-objects" | absolute_url }}): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
-- [HdMoonRay]({{ "/user-reference/tools/hydra" | absolute_url }}): the hydra plugin for MoonRay
-- [Arras]({{ "/getting-started/about/arras" | absolute_url }}): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
-
-The source is contained in multiple Git repositories. The `openmoonray` repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the `openmoonray` repository with the submodules filled in.
-
-For more information, see [What's Included?]({{ "/getting-started/source-contents" | absolute_url }})
+We do not currently provide OpenMoonRay as a built package, for licensing reasons.
 
 ## Installation
 
-For information on how to install MoonRay, please see our instructions on [Building MoonRay]({{ "/getting-started/installation/building-moonray/" | absolute_url }}). You can also find a list of MoonRay's [Dependencies]({{ "/getting-started/installation/moonray-dependencies" | absolute_url }}) 
+For information on how to install MoonRay, please see our instructions on [Building MoonRay]({{ "/getting-started/installation/building-moonray/" | absolute_url }}). 
 
 ## Running MoonRay
 
-### Scene Authoring with RDL
+The main command-line program to render images with MoonRay is `moonray`, in the *bin* directory of a completed installation. `moonray_gui` is a GUI version of MoonRay that displays the output images as they are rendering. 
 
-`RDL2` is the scene format used by MoonRay : scene files are either in RDLA (text : `.rdla`) or RDLB (binary : `.rdlb`) format. There are several utilities in the release **bin** directory. Generally these require the environment variable `RDL2_DSO_PATH` to be set to point to the scene object SO files -- at least the proxy versions are needed to read and write RDL2 files.
+Both `moonray` and `moonray_gui` require input scene descriptions in the proprietary [RDL2 format]({{ "/getting-started/about/rdl-scene-format" | absolute_url }}).
 
-`rdl2_convert` converts between RDLA and RDLB format :
+You can render scenes in Pixar's USD format using the MoonRay Hydra plugin [HdMoonRay]({{ "/user-reference/tools/hydra" | absolute_url }}).
 
-```bash
-rdl2_convert <inputfile> <outputfile>
-```
+## moonray command
 
- The format of each file is determined by the extension (`.rdla` or `.rdlb`). Converting from one RDLA file to another will produce an output in a *canonical* form  (removing any non-trivial Lua scripting). 
+Basic use to render a scene is as follows:
 
-`rdl2_print` has two functions :
 
-- `rdl2_print <classname>` lists the attribute of the given scene object class, together with type and defaults. For example, `rdl2_print PerspectiveCamera`.
-
-- `rdl2_print <rdl_file>` prints out the objects in the given file.
-
-- `rdl2_print --help` lists some additional options.
-
-### MoonRay Run Command
-
-The command line program to run MoonRay is `moonray`, in the **bin** directory.
-Basic use is as follows:
 
 ```bash
 moonray -in scene.rdla -out render.exr
@@ -60,6 +39,8 @@ To show the full set of command line options, run:
 ```bash
 moonray --help
 ```
+
+## moonray_gui command
 
 [`moonray_gui`]({{ "/user-reference/moonray-gui" | absolute_url }}) is a Qt application that displays the framebuffer while rendering. The command line options are very similar to those for `moonray`. `moonray_gui` has hotkeys to alter the display mode, move the camera around, and various other useful things. You can display a menu of the hotkeys by pressing 'H'.
 
