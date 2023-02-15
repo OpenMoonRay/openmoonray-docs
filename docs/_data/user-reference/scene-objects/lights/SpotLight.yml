@@ -3,5 +3,5 @@ overview: overviews/SpotLightOverview.md
 example: examples/SpotLightExample.md
 image_path: /assets/images/user-reference/scene-objects/lights/SpotLight
 gallery:
-  - image: SpotLight.jpg
+  - image: SpotLight.png
     text: SpotLight example
