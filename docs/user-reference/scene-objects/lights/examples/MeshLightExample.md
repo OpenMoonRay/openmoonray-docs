@@ -1,8 +1,10 @@
 ```lua
-SphereLight("/lights/sphere") {
-    ["node xform"] = Translate(1.0, 2.0, 3.0),
-    ["radius"] = 0.3,
-    ["color"] = Rgb(1.0, 0.9, 0.6),
-    ["intensity"] = 3.0,
+MeshLight("/lights/mesh") {
+    ["node_xform"] = rotate(45, 0, 1, 0) * translate(10, 20, 30),
+    ["geometry"] = UsdGeometry("/geom/mesh"),
+    ["parts"] = {"part1", "part2"},
+    ["on"] = true,
+    ["color"] = Rgb(1, 2, 3),
+    ["intensity"] = 0.03,
 }
 ```

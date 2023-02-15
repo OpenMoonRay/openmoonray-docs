@@ -3,5 +3,5 @@ overview: overviews/RectLightOverview.md
 example: examples/RectLightExample.md
 image_path: /assets/images/user-reference/scene-objects/lights/RectLight
 gallery:
-  - image: RectLight.jpg
+  - image: RectLight.png
     text: RectLight example
