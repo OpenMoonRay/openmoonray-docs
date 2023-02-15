@@ -3,5 +3,5 @@ overview: overviews/MeshLightOverview.md
 example: examples/MeshLightExample.md
 image_path: /assets/images/user-reference/scene-objects/lights/MeshLight
 gallery:
-  - image: MeshLight.jpg
+  - image: MeshLight.png
     text: MeshLight example

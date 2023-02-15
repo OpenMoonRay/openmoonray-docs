@@ -23,8 +23,8 @@ MoonRay is distributed in source form, via github.com. You can build MoonRay in 
 
 ## Developing MoonRay
 
-[Source Structure]({{ "/developers-guide/source-structure/" | absolute_url }})  
+[Source Structure]({{ "/developer-reference/source-structure/" | absolute_url }})  
 
-[Shaders]({{ "//developers-guide/shaders/" | absolute_url }})  
+[Shaders]({{ "//developer-reference/shaders/" | absolute_url }})  
 
-[RDL2]({{ "//developers-guide/scene_rdl2-library/" | absolute_url }})
+[RDL2]({{ "//developer-reference/scene_rdl2-library/" | absolute_url }})

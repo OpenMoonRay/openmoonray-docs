@@ -1,0 +1,8 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/ColorCorrectMap
+gallery:
+attributes:
+  gamma:
+    images:
+      - image: gamma_varyRgb.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0

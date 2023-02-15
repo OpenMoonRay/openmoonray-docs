@@ -1,0 +1,6 @@
+image_path: /assets/images/user-reference/how-to-guides/overlapping-dielectrics
+gallery:
+  - image: example_pt1.png
+    text: Ray enters glass
+  - image: example_pt2.png
+    text: Ray encounters false intersection with liquid

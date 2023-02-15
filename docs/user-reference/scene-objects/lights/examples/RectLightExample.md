@@ -1,8 +1,13 @@
 ```lua
-SphereLight("/lights/sphere") {
-    ["node xform"] = Translate(1.0, 2.0, 3.0),
-    ["radius"] = 0.3,
-    ["color"] = Rgb(1.0, 0.9, 0.6),
-    ["intensity"] = 3.0,
+RectLight("/lights/rect") {
+    ["node_xform"] = translate(0, 100, 0),
+    ["on"] = true,
+    ["sidedness" = 1,
+    ["color"] = Rgb(1, 1, 1),
+    ["intensity"] = 5,
+    ["normalized"] = false,
+    ["width"] = 5,
+    ["height"] = 10,
+    ["texture"] = "path/texture.exr",
 }
 ```

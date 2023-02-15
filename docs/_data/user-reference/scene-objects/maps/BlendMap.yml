@@ -1,0 +1,45 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/BlendMap
+gallery:
+attributes:
+  blend_amount:
+    images:
+      - image: blendAmount.000.png
+        text: 0.00
+      - image: blendAmount.001.png
+        text: 0.25
+      - image: blendAmount.002.png
+        text: 0.50
+      - image: blendAmount.003.png
+        text: 0.75
+      - image: blendAmount.004.png
+        text: 1.00
+  blend_type:
+    images:
+      - image: linear.png
+      - image: cubic.png
+  threshold_max:
+    images:
+      - image: thresholdMax.000.png
+        text: 0.00
+      - image: thresholdMax.001.png
+        text: 0.25
+      - image: thresholdMax.002.png
+        text: 0.50
+      - image: thresholdMax.003.png
+        text: 0.75
+      - image: thresholdMax.004.png
+        text: 1.00
+  threshold_min:
+    images:
+      - image: thresholdMin.000.png
+        text: 0.00
+      - image: thresholdMin.001.png
+        text: 0.25
+      - image: thresholdMin.002.png
+        text: 0.50
+      - image: thresholdMin.003.png
+        text: 0.75
+      - image: thresholdMin.004.png
+        text: 1.00
+  

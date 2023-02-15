@@ -1,0 +1,13 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/ColorCorrectMap
+gallery:
+attributes:
+  saturation_r:
+    images:
+      - image: saturation_varyR2.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  saturation:
+    images:
+      - image: saturation_varyRgb2.jpg
+        text: 0, 0.5, 1.0, 1.5, 2.0
+  

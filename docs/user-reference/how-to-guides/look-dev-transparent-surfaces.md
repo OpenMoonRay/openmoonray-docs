@@ -5,7 +5,7 @@ Title: How To Look Dev Transparent Surfaces
 
 ![Title Image](/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/title_image.png)
 
-A transparent surface is a material interface that allows light to pass through. The law of refraction defines how light bends as it enters/exits from one medium to another (e.g., from air to water, or air to glass). MoonRay's ![DwaRefractiveMaterial]({{/user-reference/scene-objects/materials/dwa/DwaRefractiveMaterial}}) allows you to author a transparent material, and below are some tips on how to dial the settings to achieve a desired look.
+A transparent surface is a material interface that allows light to pass through. The law of refraction defines how light bends as it enters/exits from one medium to another (e.g., from air to water, or air to glass). MoonRay's [DwaRefractiveMaterial](../scene-objects/materials/dwa/DwaRefractiveMaterial.md) allows you to author a transparent material, and below are some tips on how to dial the settings to achieve a desired look.
 
 ### Index of Refraction for Common Materials
 
@@ -28,6 +28,9 @@ Transparent surfaces require higher depth settings because light rays need more 
                                image_alt_before='Higher depth settings for transparent surfaces.' 
                                image_alt_after='Default depth settings.' 
                                position='52' %}
+
+## Overlapping Dielectrics
+What if you have overlapping transparent mediums (e.g. water in a glass cup)? You will need to set a [material priority](./overlapping-dielectrics.md). 
 
 ## Roughness and Layering
 TODO

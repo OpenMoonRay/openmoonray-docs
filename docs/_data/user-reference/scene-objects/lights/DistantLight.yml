@@ -3,5 +3,5 @@ overview: overviews/DistantLightOverview.md
 example: examples/DistantLightExample.md
 image_path: /assets/images/user-reference/scene-objects/lights/DistantLight
 gallery:
-  - image: DistantLight.jpg
+  - image: DistantLight.png
     text: DistantLight example

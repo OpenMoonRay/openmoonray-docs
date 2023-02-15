@@ -42,25 +42,28 @@ Use to switch between up to 64 different other materials using the choice parame
 Usd specification compliant material
 
 ## Other material topics
+
+### Material Assignments
+Materials are assigned via a [Layer]({{site.baseurl}}/user-reference/scene-objects/layer/Layer/) assignment. At a minimum a geometry and material must be provided and by default the material will be lit by all lights in the scene. Further refinement of the material assignment can be achieved by providing a list of part names on the geometry, specifying a lightset, etc. Of note, displacement is applied separately from the material assignment.
+
+
 ### Normals
+Most materials accept a normal map as input, however, there are exceptions like the HairMaterial_v3 which only uses the geometric normals of the curves it is applied to. If a normal map is not supplied, then the material will either use explicit normals if they have been provided as an attribute on the geometry or the geometric normals.
 
 ### Thin Geometry
-Use thin geometry if you want the behavior of a thin surface, like a bubble or a balloon filled with _air_. This will essentially let light pass through without bending. It correctly handles _IORs_ (index of refraction) when exiting the surface via back-sided polygons.   
+Use thin geometry if you want the behavior of a thin surface, like a bubble or a balloon filled with air. This will essentially let light pass through without bending. It correctly handles _IORs_ (index of refraction) when exiting the surface via back-sided polygons.   
 
 Thin geometry is also useful for planar or open surfaces modeled without thickness, eg. a leaf modeled without thickness or windows modeled single-sided.  
 
-When something hits the back-side of a surface, MoonRay treats that ray as if it is coming from the inside of a surface and wants to correctly invert the IORs. When designated as _thin geometry_, MoonRay treats it as if it is hitting a front-facing surface and does not invert IORs and does not bend the ray since any bending will be corrected upon exiting from the infinitely thin surface.   
+When something hits the back-side of a surface, MoonRay treats that ray as if it is coming from the inside of a surface and wants to correctly invert the IORs. When designated as _thin_geometry_, MoonRay treats it as if it is hitting a front-facing surface and does not invert IORs and does not bend the ray since any bending will be corrected upon exiting from the infinitely thin surface.   
 
-Note: that `roughness` will have no effect when `thin geometry` is on.
+Note: that _roughness_ will have no effect when _thin_geometry_ is on.
 
-### [Presence](linkToPresence)
-Sometimes you need to cut out or punch holes in a material so that it is not *present* in that region. For example a leaf on a flat card or a grate with many small holes. To accomplish this the **presence** attribute exists. This is not the same idea as opacity and it is intended to be used in a binary manner, the surface is either *present* or *not present*.
+### Presence
+Sometimes you need to cut out or punch holes in a material so that it is not *present* in that region. For example a leaf on a flat card or a grate with many small holes. To accomplish this the _presence_ attribute exists. This is not the same idea as opacity and it is intended to be used in a binary manner, the surface is either *present* or *not present*.
 
-### [Nested Dielectrics](linkToGuideOnNestedDielectrics)
-Special care must be taken when rendering _nested dielectrics_, or refractive objects that share a boundary and have different _IORs_ (index of refraction) such as water in a glass cup with a partially submerged ice cube. There is no gap of air between the objects like there is in most rendering scenarios so the refracted light rays must keep track of their IOR and the object priority. This is accomplished via the **priority** attribute which only needs to be set in these scenarios.
+### [Nested Dielectrics]({{site.baseurl}}/user-reference/how-to-guides/overlapping-dielectrics/)
+Special care must be taken when rendering _nested dielectrics_, or refractive objects that share a boundary and have different _IORs_ (index of refraction) such as water in a glass cup with a partially submerged ice cube. There is no gap of air between the objects like there is in most rendering scenarios so the refracted light rays must keep track of their IOR and the object priority. This is accomplished via the _priority_ attribute which only needs to be set in these scenarios.
 
 ### Caustics
-A term for any light path that travels from a light source, to a specular surface, to a diffuse surface, to the camera. More commonly thought of as light rays focused by the curvature of a refractive or reflective surface such as the light pattern on the bottom of a pool or through a glass cup. Caustics by default are not enabled because of their rendering cost. However, in order to render accurate shadows cast by a refractive object or the focusing of light caused by a refractive or reflective surface **casts caustics** must be enabled on the specular material.
-
-
-### Material Assignments
+A term for any light path that travels from a light source, to a specular surface, to a diffuse surface, to the camera. More commonly thought of as light rays focused by the curvature of a refractive or reflective surface such as the light pattern on the bottom of a pool or through a glass cup. Caustics by default are not enabled because of their rendering cost. However, in order to render accurate shadows cast by a refractive object or the focusing of light caused by a refractive or reflective surface _casts_caustics_ must be enabled on the specular material.

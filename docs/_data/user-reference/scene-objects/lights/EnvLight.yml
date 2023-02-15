@@ -3,5 +3,5 @@ overview: overviews/EnvLightOverview.md
 example: examples/EnvLightExample.md
 image_path: /assets/images/user-reference/scene-objects/lights/EnvLight
 gallery:
-  - image: EnvLight.jpg
+  - image: EnvLight.png
     text: EnvLight example
