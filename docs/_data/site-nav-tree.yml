@@ -11,7 +11,7 @@
             path: getting-started/about/arras.md
           - text: RDL Scene Format
             path: getting-started/about/rdl-scene-format.md
-          - text: About Documentation Images and Models
+          - text: Documentation Images and Models
             path: getting-started/about/docs-images-models.md
       - text: What's Included
         path: getting-started/source-contents.md 
