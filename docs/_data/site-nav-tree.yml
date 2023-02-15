@@ -474,6 +474,8 @@
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
+          - text: Arras Render
+            path: user-reference/tools/arras_render.md
           - text: Denoising
             path: user-reference/tools/denoise.md
           - text: Hydra Delegate
@@ -493,8 +495,6 @@
             path: user-reference/tools/moonray-gui.md
           - text: Render Profile Viewer
             path: user-reference/tools/render-profile-viewer.md
-          - text: arras_render
-            path: user-reference/tools/arras_render.md
       - text: Maximizing Performance
         path: user-reference/performance.md
   - text: Developer Reference
