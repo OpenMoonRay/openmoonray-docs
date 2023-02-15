@@ -15,7 +15,7 @@ There are 8 types of light supported in MoonRay:
 * [MeshLight](    {{ "/user-reference/scene-objects/lights/MeshLight/"     | absolute_url }})
 * [RectLight](    {{ "/user-reference/scene-objects/lights/RectLight/"     | absolute_url }})
 * [SphereLight](  {{ "/user-reference/scene-objects/lights/SphereLight/"   | absolute_url }})
-* [SpotLight](    {{ "/user-reference/scene-objects/lights/SotLight/"      | absolute_url }})
+* [SpotLight](    {{ "/user-reference/scene-objects/lights/SpotLight/"     | absolute_url }})
 
 Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordinates (for instance, a SphereLight is positioned by setting its *center* attribute).
 
