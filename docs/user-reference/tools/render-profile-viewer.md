@@ -59,7 +59,7 @@ This sections covers miscellaneous options that can be used.
 
 *Show Fallback* will highlight any tests that were set to execute in vector or xpu mode and fell back to scalar due to feature limitations.
 
-![]({{ "/assets/images/user-reference/tools/render-profile-viewer/options.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/options.jpg" | absolute_url }})
 
 ### View
 The *Refit Chart* button will manually reframe the view to fit all of the selected tests.
