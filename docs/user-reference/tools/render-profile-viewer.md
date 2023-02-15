@@ -1,12 +1,12 @@
 ---
-title: MoonRay Render Profile Viewer
+title: Render Profile Viewer
 ---
 
 # Render Profile Viewer
 The **render_profile_viewer** is a standalone command-line application that graphs and compares statistics read from MoonRay render logs.
-The logs must be written using the `-info` option when rendering in order to include the extra information required by the render_profiler_viewer tool.
+The logs must be written using the `-info` option when rendering in order to include the extra information required by the **render_profiler_viewer** tool.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/render_profile_viewer.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/render_profile_viewer.jpg" | absolute_url }})
 
 ## Usage
 ```bash
@@ -22,7 +22,7 @@ pip install .
 ```
 
 ### Log List
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/log_list.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/log_list.jpg" | absolute_url }})
 
 The log list shows all of the logs that have been loaded into the viewer.  If the paths are too long, the *Show full paths* checkbox can be toggled off.
 To view one or more logs in the graph pane, simply select them using the shift or control keys.
@@ -30,25 +30,25 @@ To view one or more logs in the graph pane, simply select them using the shift o
 ### Stats
 The stats pane controls which stats to view in the graph.   It's divided into three sections: mcrt rendering, render prep, and memory.   Only the mcrt rendering stats are checked by default.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/rendering_stats.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/rendering_stats.jpg" | absolute_url }})
 
 Enabling any of the render prep stats will stack them under the mcrt stats in the graph.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/render_prep_stats.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/render_prep_stats.jpg" | absolute_url }})
 
 Enabling the memory stats will disable the mcrt stats since memory is measured in gigabytes and mrct is measured in time.
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/memory_stats.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/memory_stats.jpg" | absolute_url }})
 
 
 ### Test Types
 If the log files have a suffix for the type of render ( _scalar, _vector, or _xpu) then these toggles will filter which tests are shown in the graph.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/test_types.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/test_types.jpg" | absolute_url }})
 
 ### Performance Thresholds
 These checkboxes can be toggled on to highlight adjacent tests that perform worse or better than the specified percentage threshold.  By default, tests that are 10% slower or faster are highlighted.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/performance_thresholds.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/performance_thresholds.jpg" | absolute_url }})
 
 ### Options
 This sections covers miscellaneous options that can be used.
@@ -59,15 +59,15 @@ This sections covers miscellaneous options that can be used.
 
 *Show Fallback* will highlight any tests that were set to execute in vector or xpu mode and fell back to scalar due to feature limitations.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/options.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/options.jpg)
 
 ### View
 The *Refit Chart* button will manually reframe the view to fit all of the selected tests.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/view_refit.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/view_refit.jpg" | absolute_url }})
 
 ### Logs
 The *Logs* tab can be used to view the actual render logs.
 
-![]({{site.baseurl}}/assets/images/user-reference/tools/render-profile-viewer/log_view.jpg)
+![]({{ "/assets/images/user-reference/tools/render-profile-viewer/log_view.jpg" | absolute_url }})
 
