@@ -58,6 +58,5 @@ MoonRay does not support different light links on different instances in the sam
 Hydra itself does not currently support light linking to prims inside an instance prototype graph. The links must point to the instancing prim (the prim creating the instanced composition arc) or to one of its ancestors. Links to prims below this are ignored. 
 
 # Motion Blur
-Motion blur is only supported for camera motion.
-
+Motion blur is fully supported.  Transformational motion blur is supported on cameras, light, and geometry.  Geometry also supports deformational motion blur with either frame delta, velocity (`v`), or acceleration (`accel`) based on the present primitive attributes.   
 

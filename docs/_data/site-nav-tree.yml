@@ -11,6 +11,8 @@
             path: getting-started/about/arras.md
           - text: RDL Scene Format
             path: getting-started/about/rdl-scene-format.md
+          - text: About Documentation Images and Models
+            path: getting-started/about/docs-images-models.md
       - text: What's Included
         path: getting-started/source-contents.md 
       - text: Installation
@@ -474,6 +476,8 @@
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
+          - text: Arras Render
+            path: user-reference/tools/arras_render.md
           - text: Denoising
             path: user-reference/tools/denoise.md
           - text: Hydra Delegate
@@ -495,53 +499,53 @@
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
         path: user-reference/performance.md
-  - text: Developer's Guide
-    path: developers-guide/index.md
+  - text: Developer Reference
+    path: developer-reference/index.md
     subitems:
       # - text: Doxygen Reference
       #  path: api/html/index.html
       - text: Source Structure
-        path: developers-guide/source-structure.md
+        path: developer-reference/source-structure.md
       - text: Scene RDL2 Library
-        path: developers-guide/scene_rdl2-library.md
+        path: developer-reference/scene_rdl2-library.md
       - text: Writing Shaders
-        path: developers-guide/shaders/index.md
+        path: developer-reference/shaders/index.md
         subitems:
           - text: Cameras
-            path: developers-guide/shaders/cameras.md
+            path: developer-reference/shaders/cameras.md
           - text: Displacement
-            path: developers-guide/shaders/displacement.md
+            path: developer-reference/shaders/displacement.md
           - text: Display Filters
-            path: developers-guide/shaders/display-filters.md
+            path: developer-reference/shaders/display-filters.md
           - text: Geometry Procedurals
-            path: developers-guide/shaders/geometry-procedurals.md
+            path: developer-reference/shaders/geometry-procedurals.md
           - text: Lights
-            path: developers-guide/shaders/lights.md
+            path: developer-reference/shaders/lights.md
           - text: Light Filters
-            path: developers-guide/shaders/light-filters.md
+            path: developer-reference/shaders/light-filters.md
           - text: Maps
-            path: developers-guide/shaders/maps.md
+            path: developer-reference/shaders/maps.md
           - text: Materials
-            path: developers-guide/shaders/materials.md
+            path: developer-reference/shaders/materials.md
           - text: Normal Maps
-            path: developers-guide/shaders/normal-maps.md
+            path: developer-reference/shaders/normal-maps.md
           - text: Volume Shaders
-            path: developers-guide/shaders/volume-shaders.md
+            path: developer-reference/shaders/volume-shaders.md
       - text: Arras
-        path: developers-guide/arras/index.md
+        path: developer-reference/arras/index.md
         subitems:
           - text: Distributed Arras
-            path: developers-guide/arras/distributed-arras.md
+            path: developer-reference/arras/distributed-arras.md
           - text: Arras Session Definitions
-            path: developers-guide/arras/arras-session-definitions.md
+            path: developer-reference/arras/arras-session-definitions.md
           - text: Arras Client API
-            path: developers-guide/arras/arras-client-api.md
+            path: developer-reference/arras/arras-client-api.md
           - text: Arras Doxygen Pages
-            path: developers-guide/arras/doxygen-pages.md
+            path: developer-reference/arras/doxygen-pages.md
       - text: Contributions
-        path: developers-guide/contributions.md  
+        path: developer-reference/contributions.md
       - text: Coding Standards
-        path: developers-guide/coding-standards/index.md  
+        path: developer-reference/coding-standards/index.md
   - text: Release Notes
     path: release-notes/index.md
   - text: Legal/Licensing

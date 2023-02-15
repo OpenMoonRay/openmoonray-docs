@@ -1,0 +1,29 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/CheckerboardMap
+gallery:
+attributes:
+  color_A:
+    images:
+      - image: default.jpg
+      - image: colorA.jpg
+  color_B:
+    images:
+      - image: default.jpg
+      - image: colorB.jpg
+  num_u_tiles:
+    images:
+      - image: u2.jpg
+      - image: u4.jpg
+      - image: u6.jpg
+      - image: default.jpg
+  num_v_tiles:
+    images:
+      - image: v2.jpg
+      - image: v4.jpg
+      - image: v6.jpg
+      - image: default.jpg
+  input_texture_coordinates:
+    images:
+      - image: proj.jpg
+        text: Custom coordinates
+  

@@ -2,7 +2,6 @@
 title: What's Included?
 ---
 # What's Included?
-![The Bad Guys]({{ "/assets/images/getting-started/badguys_loot.png" | absolute_url }})
 
 The open source release contains the following pieces of technology:
 
