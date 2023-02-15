@@ -3,7 +3,7 @@ title: Getting Started
 ---
 # Getting Started
 
-You can read more about the components making up OpenMoonRay in the About section [here]( {{ "/getting-started/about" | absolute_url}})
+You can read more about the components making up MoonRay in the About section [here]( {{ "/getting-started/about" | absolute_url}})
 
 MoonRay can be obtained in source form from our [github site](https://github.com/dreamworksanimation).
 

@@ -6,7 +6,7 @@ Title: MoonRay Documentation Home
 ![MoonRay]({{ "/assets/images/paper.png" | absolute_url }})
 
 
-Welcome to the OpenMoonRay documentation site!
+Welcome to the MoonRay Production Renderer documentation site!
 
 **MoonRay** is DreamWorks Animation's in-house 3D renderer, used to render all DreamWorks movies since [How To Train Your Dragon: The Hidden World](https://dreamworksanimation.com/movies/how-to-train-your-dragon-the-hidden-world).
 
