@@ -12,7 +12,7 @@ title: MoonRay Materials
 <!-- Concept info here: Explain the background and context of a this subject. --> 
 >Materials produce [BSDFs](linkToShadingAPI?) (bidirectional scattering distribution functions) which describe to the integrator how a surface scatters light at a given point and therefore its appearance. A material can produce one or many BSDFs depending on how complex the surface is.
 
-Broadly speaking BSDFs can be broken down into two major categories: _BRDFs_ (reflection) and _BTDFs_ (transmission). How much light is reflected versus transmitted is governed by the Fresnel equations. MoonRay supports multiple Fresnel models, but mostly uses _dielectric_ (non-metals) and _conductor_ (metals) Fresnel models.
+Broadly speaking BSDFs can be broken down into two major categories: <span class="define">_BRDFs_</span> (reflection) and <span class="define">_BTDFs_</span> (transmission). How much light is reflected versus transmitted is governed by the Fresnel equations. MoonRay supports multiple Fresnel models, but mostly uses <span class="define">_dielectric_</span> (non-metals) and <span class="define">_conductor_</span> (metals) Fresnel models.
 
 Each material automatically creates the appropriate BSDFs and Fresnel models according to its input.
 
@@ -27,7 +27,7 @@ MoonRay accomplishes layering through parameter blending. This means each layera
 The key benefit of parameter blending is that it is incredibly fast and efficient. A complex multi-layer material gets resolved to a single new material. The parameters are intelligently blended so layering works even for dissimilar materials.
 
 ## [Hair materials](hair)
->Hair materials produce a separate type of BSDF called a BCSDF (bidirectional cylindrical scattering distribution function). A BCSDF models the reflection and transmission of light through a cylindrical fiber rather than a flat plane.
+>Hair materials produce a separate type of BSDF called a <span class="define">BCSDF</span> (bidirectional cylindrical scattering distribution function). A BCSDF models the reflection and transmission of light through a cylindrical fiber rather than a flat plane.
 
 Hair materials are designed solely to be used on curve geometry to render hair, fur, or other fibers. They use an entirely different shading model and as such are not compatible with the Dwa materials. However, they are layerable with each other.
 
@@ -51,6 +51,7 @@ Materials are assigned via a [Layer]({{site.baseurl}}/user-reference/scene-objec
 Most materials accept a normal map as input, however, there are exceptions like the HairMaterial_v3 which only uses the geometric normals of the curves it is applied to. If a normal map is not supplied, then the material will either use explicit normals if they have been provided as an attribute on the geometry or the geometric normals.
 
 ### Thin Geometry
+
 Use thin geometry if you want the behavior of a thin surface, like a bubble or a balloon filled with air. This will essentially let light pass through without bending. It correctly handles _IORs_ (index of refraction) when exiting the surface via back-sided polygons.   
 
 Thin geometry is also useful for planar or open surfaces modeled without thickness, eg. a leaf modeled without thickness or windows modeled single-sided.  

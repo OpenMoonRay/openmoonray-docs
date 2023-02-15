@@ -6,10 +6,10 @@ title: Render Outputs
 See also: [RenderOutput Attribute Reference]({{site.baseurl}}/user-reference/scene-objects/render-output/RenderOutput)
 ## Introduction
 
-The RenderOutput object is used to specify any output the renderer produces.
+The <span class="define">RenderOutput</span> object is used to specify any output the renderer produces.
 
 ## Setup
-Generally, when setting up a RenderOutput object, you want to specify at least two attributes: the *`result`*, or type of RenderOutput, and *`file_name`*, which is where you want the result saved. Certain AOVs will require other attributes to be set, like `primitive_attribute` to specify the attribute to visualize, or `material_aov`, which specifies the material expression. You can refer to the [RenderOutput Scene Class]({{site.baseurl}}/user-reference/scene-objects/render-output/RenderOutput) which contains a full attribute reference. There are also guides on specific RenderOutput types linked under the Types section below.
+Generally, when setting up a RenderOutput object, you want to specify at least two attributes: the *result*, or type of RenderOutput, and *file_name*, which is where you want the result saved. Certain AOVs will require other attributes to be set, like *primitive_attribute* to specify the attribute to visualize, or *material_aov*, which specifies the material expression. You can refer to the [RenderOutput Scene Class]({{site.baseurl}}/user-reference/scene-objects/render-output/RenderOutput) which contains a full attribute reference. There are also guides on specific RenderOutput types linked under the Types section below.
 
 *Example: World Position*
 ```lua

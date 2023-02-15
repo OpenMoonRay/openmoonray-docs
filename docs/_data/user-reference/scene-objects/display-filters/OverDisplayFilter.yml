@@ -8,7 +8,7 @@ gallery:
   - image: input_top.png
     text: Input Top
   - image: mix.png
-    text: mix = 0.7
+    text: <i>mix</i> = 0.7
 attributes:
   alpha:
     images:

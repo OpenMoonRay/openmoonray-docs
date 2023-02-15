@@ -2,14 +2,16 @@
 title: Material AOVs
 ---
 # Material AOVs
-A Material AOV is a RenderOutput that provides a diagnostic view of a material "property", like color, emission, or roughness. This material "property" is specified through a custom LPE-like material aov syntax. Note: A Material AOV does NOT include any information that is influenced by scene lighting and occlusion is not considered. A Material AOV is specified by three attributes: label + selection + property. 
+A Material AOV is a RenderOutput that provides a diagnostic view of a material "property", like *color*, *emission*, or *roughness*. This material "property" is specified through a custom LPE-like material aov syntax. Note: A Material AOV does NOT include any information that is influenced by scene lighting and occlusion is not considered. A Material AOV is specified by three attributes: label + selection + property. 
 
 ## Syntax
 
-`[('<Label>')+\.][(SS | R | T | D | G | M)+\.][fresnel\.]<property>`
+```
+[('<Label>')+\.][(SS | R | T | D | G | M)+\.][fresnel\.]<property>
+```
 
 ## Properties
-A property is a value that can be computed from a Bsdf closure returned from a material shader. There are currently 7:
+A <span class="define">property</span> is a value that can be computed from a Bsdf closure returned from a material shader. There are currently 7:
 * `albedo`: result of shining an unoccluded, omnidirectional white light
 * `color`
 * `emission`: emitted radiance
@@ -19,7 +21,7 @@ A property is a value that can be computed from a Bsdf closure returned from a m
 * `roughness`: glossy roughness
 
 ## Selections 
-A *selection* is a portion of the bsdf closure we are interested in. A bsdf closure can consist of up to 8 lobes:
+A <span class="define">selection</span> is a portion of the bsdf closure we are interested in. A bsdf closure can consist of up to 8 lobes:
 
 * `R` / `T` = reflection / transmission
 * `D` / `G` / `M` = diffuse / glossy / mirror
@@ -28,10 +30,16 @@ A *selection* is a portion of the bsdf closure we are interested in. A bsdf clos
 * `emission` = emission color
 
 ## Labels
-Labels can be used to further refine material aov selection. Material shaders can assign multiple labels to bsdf lobes and bssrdf objects. You can add labels by doing the following:
+<span class="define">Labels</span> can be used to further refine material aov selection. Material shaders can assign multiple labels to bsdf lobes and bssrdf objects. You can add labels by doing the following:
 * updating "labels" in the associated .json file
-* passing them as an argument in ISPC: `Closure_add...(... , /* labels = */ aov...|...);`
-* passing them as an argument in C++: `lobe->setLabel(aov...|aov...);`
+* passing them as an argument in ISPC: 
+  ```
+  Closure_add...(... , /* labels = */ aov...|...);
+  ```
+* passing them as an argument in C++: 
+  ```cpp
+  lobe->setLabel(aov...|aov...);
+  ```
 
 Notes:
 - any selected lobe or bssrdf must match at least one label

@@ -3,7 +3,7 @@ title: About MoonRay
 ---
 # About MoonRay
 
-MoonRay is DreamWorks Animation's path-tracing production renderer, developed in-house and open-sourced in 2023.  It is easy to use and provides artists with fast iterations.  It can be integrated into wide variety of tools such as Houdini, Maya, Katana, Blender, in-house lighting tools, etc., with an appropriate plugin or via the [`hdMoonray`]({{ "/user-reference/tools/hydra/" | absolute_url }}) Hydra render delegate.  MoonRay is provided as a service to our internal clients via our in-house cloud framework ["Arras"]({{ "/getting-started/about/arras" | absolute_url }}).  Not only does this simplify application integration, but it also allows MoonRay to take advantage of massive machine scale distributed rendering.
+<span class="define">MoonRay</span> is DreamWorks Animation's path-tracing production renderer, developed in-house and open-sourced in 2023.  It is easy to use and provides artists with fast iterations.  It can be integrated into wide variety of tools such as Houdini, Maya, Katana, Blender, in-house lighting tools, etc., with an appropriate plugin or via the [**hdMoonray**]({{ "/user-reference/tools/hydra/" | absolute_url }}) Hydra render delegate.  MoonRay is provided as a service to our internal clients via our in-house cloud framework [**Arras**]({{ "/getting-started/about/arras" | absolute_url }}).  Not only does this simplify application integration, but it also allows MoonRay to take advantage of massive machine scale distributed rendering.
 
 MoonRay has rendered all of DreamWork's in-house features and shorts since [How To Train Your Dragon: The Hidden World](https://dreamworksanimation.com/movies/how-to-train-your-dragon-the-hidden-world).
 

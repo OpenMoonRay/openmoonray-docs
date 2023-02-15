@@ -3,7 +3,7 @@ title: Scene Objects
 ---
 # Scene Objects
 
-We define "scene objects" as the various constructs that describe a scene. This section includes attribute descriptions for all of these scene objects, along with some contextual information and examples. 
+We define <span class="define">scene objects</span> as the various constructs that describe a scene. This section includes attribute descriptions for all of these scene objects, along with some contextual information and examples. 
 
 Scene objects in MoonRay have several canonical types and include the following:
 
@@ -28,7 +28,7 @@ Scene objects in MoonRay have several canonical types and include the following:
     alt="Displacement example image"
     style="object-position: center 20%"
   />
-  Displacement shaders are nodes that can displace geometry given an input map and/or displacement amount.
+  <span class="define">Displacement shaders</span> are nodes that can displace geometry given an input map and/or displacement amount.
 </sl-card>
 
 <sl-card class="card-header">
@@ -39,7 +39,7 @@ Scene objects in MoonRay have several canonical types and include the following:
     src="/assets/images/user-reference/scene-objects/display-filters/displayFilterExample.png"
     alt="Display filter example image"
   />
-  DisplayFilters are compositing nodes that can alter pixel values as a post-process in MoonRay.
+  <span class="define">DisplayFilters</span> are compositing nodes that can alter pixel values as a post-process in MoonRay.
 </sl-card>
 
 <sl-card class="card-header">
@@ -66,7 +66,7 @@ Scene objects in MoonRay have several canonical types and include the following:
   <div slot="header">
     <a href="./layer/Layer">Layer</a>
   </div>
-  A Layer is an object that associates a Geometry with other scene objects. For instance, you would use this Layer object to relate a Geometry to its Material, or to a LightSet that should affect it.
+  A <span class="define">layer</span> contains a set of assignments to geometry objects or parts.
 </sl-card>
 
 <sl-card class="card-header">
@@ -77,7 +77,7 @@ Scene objects in MoonRay have several canonical types and include the following:
     src="/assets/images/user-reference/adaptive-sampling/adaptive.png"
     alt="Light example image"
   />
-  Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. There are 8 types of light supported in MoonRay. A LightSet is a high-level grouping of lights, whose purpose is primarily to specify which lights influence any specific geometry object.
+  Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. There are 8 types of light supported in MoonRay. A <span class="define">LightSet</span> is a high-level grouping of lights, whose purpose is primarily to specify which lights influence any specific geometry object.
 </sl-card>
 
 <sl-card class="card-header">
@@ -89,7 +89,7 @@ Scene objects in MoonRay have several canonical types and include the following:
     alt="LightFilter example image"
     style="object-position: center 75%"
   /> 
-  LightFilters can be used to alter a light, to give it a different shape, color, etc. As with the LightSet, a LightFilterSet is a high-level grouping of light filters, whose purpose is to specify which light filters influence a specified geometry object.
+  <span class="define">LightFilters</span> can be used to alter a light, to give it a different shape, color, etc. As with the LightSet, a <span class="define">LightFilterSet</span> is a high-level grouping of light filters, whose purpose is to specify which light filters influence a specified geometry object.
 </sl-card>
 
 <sl-card class="card-header">
@@ -100,7 +100,7 @@ Scene objects in MoonRay have several canonical types and include the following:
     src="/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/dispersion_on_example1.png"
     alt="Materials example image"
   />
-  Materials produce BSDFs (bidirectional scattering distribution functions) which describe to the integrator how a surface scatters light at a given point and therefore its appearance. MoonRay supports multiple Fresnel models, but mostly uses dielectric (non-metals) and conductor (metals) Fresnel models.
+  Materials produce <span class="define">BSDFs</span> (bidirectional scattering distribution functions) which describe to the integrator how a surface scatters light at a given point and therefore its appearance. MoonRay supports multiple Fresnel models, but mostly uses dielectric (non-metals) and conductor (metals) Fresnel models.
 </sl-card>
 
 <sl-card class="card-header">
@@ -111,14 +111,14 @@ Scene objects in MoonRay have several canonical types and include the following:
     src="/assets/images/user-reference/scene-objects/maps/ToonMap/nadder.jpg"
     alt="Map example image"
   />
-  A map is a textural tool -- an input that can be projected onto a geometry surface. 
+  <span class="define">Maps</span> are 2 or 3 dimensional patterns that are evaluated for each sample.
 </sl-card>
 
 <sl-card class="card-header">
   <div slot="header">
     <a href="./meta-data/Metadata">MetaData</a>
   </div>
-  Metadata is a list of attributes, along with their types and values. It is often used to specify arbitrary image header data.
+  <span class="define">Metadata</span> is a list of attributes, along with their types and values. It is often used to specify arbitrary image header data.
 </sl-card>
 
 <sl-card class="card-header">
@@ -130,7 +130,7 @@ Scene objects in MoonRay have several canonical types and include the following:
     alt="Normal Map example image"
     style="object-position: center 70%"
   />
-  A normal map is a RGB map used to alter the shading normals of a surface to produce a textured, light-responsive effect. MoonRay offers 11 types of normal maps.
+  A <span class="define">normal map</span> is a RGB map used to alter the shading normals of a surface to produce a textured, light-responsive effect. MoonRay offers 11 types of normal maps.
 </sl-card>
 
 <sl-card class="card-header">
@@ -141,35 +141,35 @@ Scene objects in MoonRay have several canonical types and include the following:
     src="/assets/images/user-reference/how-to-guides/material-aovs/beauty.png"
     alt="Render Output example image"
   />
-  The RenderOutput object is used to specify any output the renderer produces.
+  The <span class="define">RenderOutput</span> object is used to specify any output the renderer produces.
 </sl-card>
 
 <sl-card class="card-header">
   <div slot="header">
     <a href="./scene-variables/SceneVariables">SceneVariables</a>
   </div>
-  SceneVariables are the global rendering attributes.
+  <span class="define">SceneVariables</span> are the global rendering attributes.
 </sl-card>
 
 <sl-card class="card-header">
   <div slot="header">
     <a href="./shadow-set/">ShadowSet</a>
   </div>
-  A ShadowSet is a mechanism to suppress light emitted by specified lights from casting shadows off of specified geometry objects.
+  A <span class="define">ShadowSet</span> is a mechanism to suppress light emitted by specified lights from casting shadows off of specified geometry objects.
 </sl-card>
 
 <sl-card class="card-header">
   <div slot="header">
     <a href="./shadow-receiver-set/">ShadowReceiverSet</a>
   </div>
-  A ShadowReceiverSet is a mechanism to suppress light cast off of specified caster geometries (or their specified parts) onto specified receiver geometries.
+  A <span class="define">ShadowReceiverSet</span> is a mechanism to suppress light cast off of specified caster geometries (or their specified parts) onto specified receiver geometries.
 </sl-card>
 
 <sl-card class="card-header">
   <div slot="header">
     <a href="./trace-set/">TraceSet</a>
   </div>
-  A Trace Set is a list of geometries and parts. It is used to specify a set of geometric primitives that a ray can trace. This can be useful in subsurface scattering, when we want to trace rays through geometries that have similar, but different, subsurface materials.
+  A <span class="define">Trace Set</span> is a list of geometries and parts. It is used to specify a set of geometric primitives that a ray can trace. This can be useful in subsurface scattering, when we want to trace rays through geometries that have similar, but different, subsurface materials.
 </sl-card>
 
 <sl-card class="card-header">
@@ -188,5 +188,5 @@ Scene objects in MoonRay have several canonical types and include the following:
     alt="Volumes example image"
     style="object-position: center 30%"
   />
-  MoonRay supports both homogenous volumes with <strong>Base Volume</strong>, and heterogeneous volumes with <strong>Vdb Volume</strong>.
+  MoonRay supports both homogenous volumes with BaseVolume, and heterogeneous volumes with Vdb Volume.
 </sl-card>

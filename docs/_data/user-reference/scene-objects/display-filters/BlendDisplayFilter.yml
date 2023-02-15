@@ -8,4 +8,4 @@ gallery:
   - image: blend_filter_input2.png
     text: Albedo render output
   - image: blend_result.png
-    text: blendAmt=0.6, blendType=cubic
+    text: <i>blendAmt</i> = 0.6, <br><i>blendType</i> = cubic

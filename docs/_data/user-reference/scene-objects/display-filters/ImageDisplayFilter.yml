@@ -8,7 +8,7 @@ gallery:
   - image: input_img.png
     text: Input Image
   - image: stretch_w_alpha_mask.png
-    text: display_type = stretch (with alpha mask)
+    text: <i>display_type</i> = stretch (with alpha mask)
 attributes:
   display_type:
     images:

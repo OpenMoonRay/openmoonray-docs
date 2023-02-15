@@ -3,23 +3,23 @@ title: About MoonRay Scene Formats
 ---
 # MoonRay Scene Formats
 
-MoonRay uses a proprietary scene description format called RDL2. There are two primary file formats for RDL2:
+MoonRay uses a proprietary scene description format called <span class="define">RDL2</span>. There are two primary file formats for RDL2:
 
-- RDLA is a readable text format based on the programming language Lua
-- RDLB is a binary format
+- <span class="define">RDLA</span> is a readable text format based on the programming language Lua
+- <span class="define">RDLB</span> is a binary format
 
-You can use the program `rdl2_convert` to translate between the two formats, for example:
+You can use the program <span class="define">**rdl2_convert**</span> to translate between the two formats, for example:
 
 ```bash
 rdl2_convert -in scene_binary.rdlb -out scene_text.rdla
 ```
 
-You can also read and write both formats from code using the `scene_rdl2` library.
+You can also read and write both formats from code using the **scene_rdl2** library.
 
 
 ## RDLA Format
 
-An RDLA file is actually a Lua (https://www.lua.org) script, with some extensions to support RDL2 scene objects. It is intended primarily for authoring test data : you can use Lua features like functions and loops to automate and simplify the creation of test scenes. RDLA is less appropriate for large production scenes, since RDLB is much more efficient and compact in this situation.
+An RDLA file is actually a [Lua](https://www.lua.org) script, with some extensions to support RDL2 scene objects. It is intended primarily for authoring test data : you can use Lua features like functions and loops to automate and simplify the creation of test scenes. RDLA is less appropriate for large production scenes, since RDLB is much more efficient and compact in this situation.
 
 
 ### Objects, classes and attributes
@@ -33,13 +33,13 @@ DwaSolidDielectricMaterial("/scene/sphere/mtl/yellow") {
 }
 ```
 
-`DwaSolidDielectricMaterial` is the class of the object, and `/scene/sphere/mtl/yellow` is the name. `refractive_index` and `albedo` are attributes supported by the `DwaSolidDeielectricMaterial` class.
+`DwaSolidDielectricMaterial` is the class of the object, and "/scene/sphere/mtl/yellow" is the name. *refractive_index* and *albedo* are attributes supported by the `DwaSolidDeielectricMaterial` class.
 
-In most cases, classes are implemented as shared library plugins. MoonRay searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, MoonRay will find the library `DwaSolidDielectricMaterial.so` somewhere on the path.
+In most cases, classes are implemented as shared library plugins. MoonRay searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, MoonRay will find the library **DwaSolidDielectricMaterial.so** somewhere on the path.
 
 `DwaSolidDielectricMaterial` has about 90 attributes in total. Attributes that you don't explicitly set take a default value defined by the class.
 
-You can see the attributes of a class using the `rdl2_print` command:
+You can see the attributes of a class using the <span class="define">**rdl2_print**</span> command:
 
 ```bash
 $ rdl2_print DwaSolidDielectricMaterial
@@ -126,7 +126,7 @@ Comment lines in Lua begin with two dashes (`--`)
 
 ### Layers
 
-A layer contains a set of assignments to geometry objects or parts. 
+A <span class="define">layer</span> contains a set of assignments to geometry objects or parts. 
 
 The most general form of a layer entry specifies a geometry object, part name, material, light set, displacement and volume shader. However, you can leave out items from the end of this list, and it is common to just set geometry, material and light set. In RDLA, a layer looks like this:
 
@@ -148,7 +148,7 @@ In this example, the "part name" component of the layer assignments is set to an
 
 ### Bindings
 
-Some attributes can accept a map binding as well as a value. Maps are 2 or 3 dimensional patterns that are evaluated for each sample. Bindings are created using the `bind` function:
+Some attributes can accept a map binding as well as a value. <span class="define">Maps</span> are 2 or 3 dimensional patterns that are evaluated for each sample. Bindings are created using the `bind` function:
 
 ```lua
 DwaBaseMaterial("/scene/sphere/base") {
@@ -162,7 +162,7 @@ Each class implementation can decide how to combine the evaluated map value and 
 
 ### Motion Blur
 
-Motion blur requires two attribute values to be set : one for the start time and one for the end. In RDLA the `blur` function is used:
+<span class="define">Motion blur</span> requires two attribute values to be set : one for the start time and one for the end. In RDLA the `blur` function is used:
 
 ```lua
 Camera("/Scene/rendering/camera") {
@@ -173,7 +173,7 @@ Camera("/Scene/rendering/camera") {
 ```
 ### Scene Variables
 
-The scene variables object contains overall settings for the render. It can be accessed through the global variable `SceneVariables`. This is how to set scene variables in an RDLA file:
+The <span class="define">scene variables</span> object contains overall settings for the render. It can be accessed through the global variable `SceneVariables`. This is how to set scene variables in an RDLA file:
 
 ```lua
 SceneVariables {
@@ -182,7 +182,7 @@ SceneVariables {
 }
 ```
 
-There are just over 100 different scene variables in total. You can list them all using `rdl2_print`:
+There are just over 100 different scene variables in total. You can list them all using **rdl2_print**:
 
 ```bash
 $ rdl2_print SceneVariables

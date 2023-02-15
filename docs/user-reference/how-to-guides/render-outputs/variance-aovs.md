@@ -4,12 +4,12 @@ title: Variance AOVs
 
 # Variance AOVs
 
-A variance AOV measures the pixel variance of another AOV. It is always a buffer of floats. Variance AOVs are
+A <span class="define">variance AOV</span> measures the pixel variance of another AOV. It is always a buffer of floats. Variance AOVs are
 unavailable in vectorized or GPU rendering.
 
 ## Setup
 
-To indicate which AOV the variance AOV should monitor, the user can set the attribute "reference_render_output" to point
+To indicate which AOV the variance AOV should monitor, the user can set the attribute *reference_render_output* to point
 to the appropriate RenderOutput object.
 
 ```lua
@@ -24,7 +24,7 @@ RenderOutput("beauty_var") {
 
 ## What is variance?
 
-_Variance_ is a statistical measure of sampled data points: it can be thought of as how spread out the sample points
+<span class="define">Variance</span> is a statistical measure of sampled data points: it can be thought of as how spread out the sample points
 are. The [variance of {8, 8, 8, 8}](https://www.wolframalpha.com/input?i=variance%7B8%2C8%2C8%2C8%7D), for example, is 0
 because the samples are not spread out. On the other hand, if our samples had instead
 been [{6, 8, 3, 3}](https://www.wolframalpha.com/input?i=variance%7B6%2C8%2C3%2C3%7D), the variance

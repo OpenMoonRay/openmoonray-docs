@@ -8,4 +8,4 @@ gallery:
   - image: input2.png
     text: Input 2
   - image: result.png
-    text: operation = add
+    text: <i>operation</i> = add
