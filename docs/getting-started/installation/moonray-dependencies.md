@@ -4,7 +4,7 @@ title: Dependencies
 
 # MoonRay dependencies
 
-These are the third-party libraries and tools that MoonRay and Arras depend on, at the time of writing. The file */building/CMakeLists.txt* in the *openmoonray* repository is generally a better reference, since that will be up-to-date for that particular version of the source, and also lists build options.
+These are the third-party libraries and tools that MoonRay and Arras depend on, at the time of writing. The file **/building/CMakeLists.txt** in the **openmoonray** repository is generally a better reference, since that will be up-to-date for that particular version of the source, and also lists build options.
 
 | Name           | Version    |  |
 |----------------|------------|-----------------|

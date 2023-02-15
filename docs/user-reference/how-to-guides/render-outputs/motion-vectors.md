@@ -14,7 +14,7 @@ RenderOutput("/output/motion_vectors") {
 This example produces a two-channel (.R, .G) output that estimates pixel
 motion in screen space units per frame. For reference, screen space is
 the camera frustum space normalized from -1 on the left to +1 on the
-right &#8211; i.e., not pixels. The values are resolution independent. Other systems may refer to these as _NDC coordinates_.
+right &#8211; i.e., not pixels. The values are resolution independent. Other systems may refer to these as <span class="define">NDC coordinates</span>.
 
 # More Details
 

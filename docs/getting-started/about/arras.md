@@ -4,13 +4,13 @@ title: About Arras
 
 # About Arras
 
-The core of Arras is a system for communicating between processes using messages. It is used to split a program into multiple components, each running in its own process. Some of the reasons you might want to do this are:
+The core of <span class="define">Arras</span> is a system for communicating between processes using messages. It is used to split a program into multiple components, each running in its own process. Some of the reasons you might want to do this are:
 
 - To distribute execution of a program across multiple machines.
 - To isolate components from each other. For example, splitting into multiple processes can help with conflicts between compilers or different versions of the same library.
 - To make a program configurable by allowing components to be assembled in different ways.
 
-A single Arras component (i.e. a process) is called a **computation**. An assembly of communicating computations forming a "program" is called a **session**.
+A single Arras component (i.e. a process) is called a <span class="define">computation</span>. An assembly of communicating computations forming a "program" is called a <span class="define">session</span>.
 
 An Arras client communicates with a session using messages : both to provide input data and to collect results. Clients can be standalone programs or plugins to applications like Maya or Houdini.
 
@@ -32,8 +32,8 @@ You can integrate interactive MoonRay rendering into an application using an Arr
 
 ## Local and distributed modes
 
-In **local mode** Arras starts a single render process on the same machine as the client. This provides the benefits of isolation from the the main client application, but doesn't support remote or multi-machine rendering. The code to start a local mode session is in the Arras client library, so you don't need any additional services or setup to use local mode.
+In <span class="define">local mode</span> Arras starts a single render process on the same machine as the client. This provides the benefits of isolation from the the main client application, but doesn't support remote or multi-machine rendering. The code to start a local mode session is in the Arras client library, so you don't need any additional services or setup to use local mode.
 
-In **distributed mode**, Arras uses a service called **Coordinator** to manage a *pool* of render machines. Coordinator allocates machines in the pool as the client requests them, based on the remaining CPU and memory resources on each machine. As well as a running Coordinator service, distributed mode requires a service called **Node** running on each machine in the pool.
+In <span class="define">distributed mode</span>, Arras uses a service called <span class="define">Coordinator</span> to manage a *pool* of render machines. Coordinator allocates machines in the pool as the client requests them, based on the remaining CPU and memory resources on each machine. As well as a running Coordinator service, distributed mode requires a service called <span class="define">Node</span> running on each machine in the pool.
 
 The client plugin code required to use local mode and distributed mode is essentially the same. When requesting a new Arras session, the client provides the URL of a Coordinator service that it wants to use. If it uses the string "local:" in place of an actual Coordinator endpoint, Arras automatically uses local mode. 
