@@ -111,7 +111,6 @@ main {
   background-color: var(--color-main-bg);
   color: var(--color-main-text);
   inline-size: 100%;
-  scrollbar-width: 15px;
 
   @media screen and (min-width: 64.0625em) {
     position: unset;
@@ -191,15 +190,11 @@ header {
   }
 }
 
-#root {
-  --scrollbar-width: calc(100vw - 100%);
-}
-
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  inline-size: calc(100% - 15px);
+  inline-size: 100%;
   display: flex;
   align-items: center;
   block-size: var(--size-7);

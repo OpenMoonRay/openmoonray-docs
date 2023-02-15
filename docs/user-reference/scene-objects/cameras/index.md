@@ -2,8 +2,6 @@
 title: Cameras
 ---
 # Cameras
-![Camera Overview Image]({{site.baseurl}}/assets/images/user-reference/scene-objects/camera_example.jpg)
-
 
 MoonRay includes several different kinds of cameras: 
 
