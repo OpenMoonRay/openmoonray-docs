@@ -17,7 +17,7 @@ For information on how to install MoonRay, please see our instructions on [Build
 
 The main command-line program to render images with MoonRay is `moonray`, in the *bin* directory of a completed installation. `moonray_gui` is a GUI version of MoonRay that displays the output images as they are rendering. 
 
-Both `moonray` and `moonray_gui` require input scene descriptions in the proprietary [RDL2 format]({{ "/getting-started/about/rdl-scene-format" | absolute_url }}).
+Both `moonray` and `moonray_gui` require input scene descriptions in the native [RDL2 format]({{ "/getting-started/about/rdl-scene-format" | absolute_url }}).
 
 You can render scenes in Pixar's USD format using the MoonRay Hydra plugin [HdMoonRay]({{ "/user-reference/tools/hydra" | absolute_url }}).
 
