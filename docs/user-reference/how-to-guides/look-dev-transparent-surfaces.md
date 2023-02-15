@@ -3,8 +3,6 @@ Title: How To Look Dev Transparent Surfaces
 ---
 # How To: Look Dev Transparent Surfaces
 
-![Title Image](/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/title_image.png)
-
 A transparent surface is a material interface that allows light to pass through. The law of refraction defines how light bends as it enters/exits from one medium to another (e.g., from air to water, or air to glass). MoonRay's [DwaRefractiveMaterial](../scene-objects/materials/dwa/DwaRefractiveMaterial.md) allows you to author a transparent material, and below are some tips on how to dial the settings to achieve a desired look.
 
 ### Index of Refraction for Common Materials
@@ -57,11 +55,6 @@ Light gets absorbed as it travels through a refractive medium, which `BaseVolume
 
 Set <span class="define">*diffuse_color*</span> to black to eliminate scattering within the volume, then set the <span class="define">*attenuation_color*</span> to the desired absorption color. 
 
-{% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/transmissionColor.png'
-                               image_path_after='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/baseVolume.png' 
-                               image_alt_before='Refraction color using transmission color.' 
-                               image_alt_after='Refraction color using BaseVolume.' %}
-
 ## Caustics
 <span class="define">Caustics</span> occur when light rays are bent through a transparent medium then hit a specular surface. Due to the noisiness it produces in unidirectional path tracers, caustics are turned *OFF* by default in MoonRay. You should typically switch <span class="define">*casts_caustics*</span> on in the material settings if the transparent surface occludes any other surface.
 
@@ -76,11 +69,6 @@ If you are modeling a thin surface, like a plastic cup or bubble, you should try
 | | |
 | - | - |
 | ![Thin Geometry Diagram Off]({{site.baseurl}}/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_off.png) | ![Thin Geometry Diagram On]({{site.baseurl}}/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_on.png) |
-
-{% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_on.png'
-                               image_path_after='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_off.png' 
-                               image_alt_before='Thin Geometry On' 
-                               image_alt_after='Thin Geometry Off' %}
 
 Thin Geometry is also useful for planar or open surfaces modeled without thickness. When a ray hits the backside of a surface, MoonRay typically treats it as if it's coming from the *inside* of the surface, and inverts the IORs accordingly. When using thin geometry, we treat the ray as if it's hitting the front-facing surface and do *not* invert IORs or bend the ray, since any bending will be corrected upon exiting from the infinitely thin surface. 
 
