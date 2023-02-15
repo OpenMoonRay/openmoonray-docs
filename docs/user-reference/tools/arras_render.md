@@ -12,12 +12,15 @@ All rendering job is performed on backend computations (moonray) and rendered im
 back to the arras_render via socket communication.
 (Detailed info is [here](../../../developer-reference/arras))<br>
 
-There are 2 potential benefits to using this style of rendering.<br>
+There are 3 potential benefits to using this style of rendering.<br>
 1. Light Weight Code Dependency<br>
 The client application does not have a heavy dependency on moonray itself.
 The client only needs to think about a small set of dependencies.
 2. Scalability<br>
 We can easily scale up performance by using more machines in a brute-force way.
+3. Be save the frontend process from unexpected backend termination.<br>
+Backend computations are separate processes. The frontend can restert backend and recover
+from the backend unexpected termination.
 
 arras_render is a developer's test tool of single/multi machine distributed moonray rendering
 for interactive lighting sessions.
