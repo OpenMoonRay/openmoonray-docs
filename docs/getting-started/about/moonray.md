@@ -35,11 +35,8 @@ MoonRay uses best-in-class open source libraries.
 All renderers have personalities, and _"Keep all the lanes..."_ is MoonRay's mantra and our personality.  This is our guiding principle for development.
 
 Our goal was to achieve scalability up to real-time rendering leveraging all of the available hardware.  The need to trace and shade billions of rays implied thin interfaces and no data structure redundancy.  We embraced “Data Oriented Design”, which is a methodology that first grew in the games industry, but we applied it with great success in MoonRay.
-
-With MoonRay, we range between 92 - 154 million core-hours for rendering a DreamWorks Feature. 
 </div>  
-
-
+With MoonRay, we range between 92 - 154 million core-hours for rendering a DreamWorks Feature. 
 
 
 
