@@ -3,7 +3,6 @@ title: MoonRay Installation Overview
 ---
 # Installation Overview
 
-![MoonRay]({{ "/assets/images/getting-started/installation/paper.png" | absolute_url }})
 
 ## Getting MoonRay
 

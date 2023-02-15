@@ -3,7 +3,7 @@ Title: MoonRay Documentation Home
 ---
 # MoonRay Documentation Home
 
-![How To Train Your Dragon: The Hidden World]({{ "/assets/images/d3_hiccup.png" | absolute_url }})
+![MoonRay]({{ "/assets/images/paper.png" | absolute_url }})
 
 
 Welcome to the OpenMoonRay documentation site!

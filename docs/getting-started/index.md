@@ -2,13 +2,12 @@
 title: Getting Started
 ---
 # Getting Started
-![The Bad Guys]({{ "/assets/images/getting-started/badguys_car.png" | absolute_url }})
 
 You can read more about the components making up OpenMoonRay in the About section [here]( {{ "/getting-started/about" | absolute_url}})
 
-OpenMoonRay can be obtained in source form from our [github site] (https://github.com/dreamworksanimation).
+MoonRay can be obtained in source form from our [github site] (https://github.com/dreamworksanimation).
 
-We do not currently provide OpenMoonRay as a pre-built package.
+We do not currently provide MoonRay as a pre-built package.
 
 ## Installation
 
