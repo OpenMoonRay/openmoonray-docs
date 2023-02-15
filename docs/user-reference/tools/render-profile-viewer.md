@@ -15,10 +15,10 @@ render_profile_viewer [-h] [logs [logs ...]]
 Where logs is either a list of log files or a directory containing log files.
 
 ## Requirements
-This tool requires several Python modules in order to run.  These requirements along with their versions are listed in the file [requirements.txt](),
-and can be installed on a system using the following:
+This tool requires several Python modules in order to run and can be installed on a system using the following:
 ```bash
-python -m pip install -r requirements.txt
+cd <install_dir>/python/render_profile_viewer
+pip install .
 ```
 
 ### Log List
