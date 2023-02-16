@@ -1,0 +1,1 @@
+A <span class="define">LightSet</span> is a high-level grouping of lights, whose purpose is primarily to specify which lights influence an associated geometry object.
