@@ -4,10 +4,16 @@ title: Overlapping Dielectrics
 # Overlapping Dielectrics
 ![Title Image]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/title.png)
 
-How do you ensure that the index of refraction is correct, regardless of how many nested mediums a light ray enters? MoonRay employs a system of material tracking (as per "Simple Nested Dielectrics in Ray Traced Images") to ensure that overlapping materials with different indices of refraction refract light correctly. In order to correctly render these overlapping surfaces:
+How do you ensure that the index of refraction is correct, regardless of how many nested mediums a light ray enters? MoonRay employs a system of material tracking to ensure that overlapping materials with different indices of refraction refract light correctly. In order to correctly render these overlapping surfaces:
 
 1. Model overlapping objects as *closed surfaces* that *intentionally overlap* each other
 2. Assign a different material `priority` to each surface so the renderer can resolve the overlaps when tracing the rays. This defaults to 0 (no material priority).
+
+<aside>
+<p>See the associated paper here: Schmidt, Charles & Budge, Brian. (2002). Simple Nested Dielectrics in Ray Traced Images.</p>
+</aside>
+{: .info-aside}
+
 
 ### Example
 
