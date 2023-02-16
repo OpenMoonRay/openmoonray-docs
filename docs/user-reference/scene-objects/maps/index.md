@@ -1,70 +1,39 @@
 ---
 title: MoonRay Map Shaders
 ---
-# Map
+# Maps
 
-Map shaders in MoonRay include:
+Map shaders read and create colors and textures to link into Material shaders.
 
-[AttributeMap](AttributeMap)  
-[AxisAngleMap](AxisAngleMap)  
-[BlendMap](BlendMap)  
+Maps are separated from _NormalMap_ and _Displacement_ shaders-- a user must explicitly convert from one type to another using a utility like [NormalToRgbMap](NormalToRgbMap), to ensure that the manipulating colors vs. normals is intentional. A NormalMap cannot be bound to an input meant for a Map, or vice-versa.
+
+
+## Images and Procedural Colors
+Read and create colors.
+
 [CheckerboardMap](CheckerboardMap)  
-[ClampMap](ClampMap)  
-[ColorCorrectContrastMap](ColorCorrectContrastMap)  
-[ColorCorrectGainOffsetMap](ColorCorrectGainOffsetMap)  
-[ColorCorrectGammaMap](ColorCorrectGammaMap)  
-[ColorCorrectHsvMap](ColorCorrectHsvMap)  
-[ColorCorrectHueShiftMap](ColorCorrectHueShiftMap)  
-[ColorCorrectLegacyMap](ColorCorrectLegacyMap)  
-[ColorCorrectMap](ColorCorrectMap)  
-[ColorCorrectNukeMap](ColorCorrectNukeMap)  
-[ColorCorrectSaturationMap](ColorCorrectSaturationMap)  
-[ColorCorrectTMIMap](ColorCorrectTMIMap)  
 [ConstantColorMap](ConstantColorMap)  
 [ConstantScalarMap](ConstantScalarMap)  
 [CurvatureMap](CurvatureMap)  
-[DebugMap](DebugMap)  
-[DeformationMap](DeformationMap)  
 [DirectionalMap](DirectionalMap)  
-[ExtraAovMap](ExtraAovMap)  
-[FloatToRgbMap](FloatToRgbMap)  
 [GradientMap](GradientMap)  
 [HairColorPresetsMap](HairColorPresetsMap)  
-[HairColumnMap](HairColumnMap)  
 [HairMap](HairMap)  
-[HsvToRgbMap](HsvToRgbMap)  
 [ImageMap](ImageMap)  
-[LODMap](LODMap)  
-[LayerMap](LayerMap)  
-[LcToRgbMap](LcToRgbMap)  
-[ListMap](ListMap)  
-[NoiseMap](NoiseMap)  
 [NoiseMap_v2](NoiseMap_v2)  
-[NoiseWorleyMap](NoiseWorleyMap)  
 [NoiseWorleyMap_v2](NoiseWorleyMap_v2)  
-[NormalToRgbMap](NormalToRgbMap)  
-[OpMap](OpMap)  
-[OpenVdbMap](OpenVdbMap)  
 [OpenVdbMap_v2](OpenVdbMap_v2)  
-[ProjectCameraMap](ProjectCameraMap)  
-[ProjectCameraMap_v2](ProjectCameraMap_v2)  
-[ProjectCylindricalMap](ProjectCylindricalMap)  
-[ProjectPlanarMap](ProjectPlanarMap)  
-[ProjectSphericalMap](ProjectSphericalMap)  
-[ProjectTriplanarMap](ProjectTriplanarMap)  
-[ProjectTriplanarMap_v2](ProjectTriplanarMap_v2)  
-[ProjectTriplanarUdimMap](ProjectTriplanarUdimMap)  
 [RampMap](RampMap)  
 [RandomMap](RandomMap)  
-[RemapMap](RemapMap)  
-[RgbToFloatMap](RgbToFloatMap)  
-[RgbToHsvMap](RgbToHsvMap)  
-[RgbToLabMap](RgbToLabMap)  
-[SwitchColorMap](SwitchColorMap)  
-[SwitchFloatMap](SwitchFloatMap)  
 [ToonMap](ToonMap)  
+[WireframeMap](WireframeMap)  
+[UsdUVTexture](UsdUVTexture)  
+
+## Attributes and Primvars
+Read information from geometry.
+
+[AttributeMap](AttributeMap)  
 [TransformSpaceMap](TransformSpaceMap)  
-[UVTransformMap](UVTransformMap)  
 [UsdPrimvarReader_float](UsdPrimvarReader_float)  
 [UsdPrimvarReader_float2](UsdPrimvarReader_float2)  
 [UsdPrimvarReader_float3](UsdPrimvarReader_float3)  
@@ -73,6 +42,66 @@ Map shaders in MoonRay include:
 [UsdPrimvarReader_point](UsdPrimvarReader_point)  
 [UsdPrimvarReader_vector](UsdPrimvarReader_vector)  
 [UsdTransform2d](UsdTransform2d)  
-[UsdUVTexture](UsdUVTexture)  
-[WireframeMap](WireframeMap)  
 
+## Mixing and Color Correction
+Mix, pick, manipulate color signals.
+
+[BlendMap](BlendMap)  
+[ClampMap](ClampMap)  
+[ColorCorrectContrastMap](ColorCorrectContrastMap)  
+[ColorCorrectGainOffsetMap](ColorCorrectGainOffsetMap)  
+[ColorCorrectGammaMap](ColorCorrectGammaMap)  
+[ColorCorrectHueShiftMap](ColorCorrectHueShiftMap)  
+[ColorCorrectMap](ColorCorrectMap)  
+[ColorCorrectSaturationMap](ColorCorrectSaturationMap)  
+[ColorCorrectTMIMap](ColorCorrectTMIMap)  
+[LayerMap](LayerMap)  
+[LODMap](LODMap)  
+[OpMap](OpMap)  
+[RemapMap](RemapMap)  
+[SwitchColorMap](SwitchColorMap)  
+[SwitchFloatMap](SwitchFloatMap)  
+
+## Projection and UVs
+Create and manipulate UVs, or textures that don't need UVs.
+
+[HairColumnMap](HairColumnMap)  
+[ProjectCameraMap](ProjectCameraMap)  
+[ProjectCameraMap_v2](ProjectCameraMap_v2)  
+[ProjectCylindricalMap](ProjectCylindricalMap)  
+[ProjectPlanarMap](ProjectPlanarMap)  
+[ProjectSphericalMap](ProjectSphericalMap)  
+[ProjectTriplanarMap_v2](ProjectTriplanarMap_v2)  
+[ProjectTriplanarUdimMap](ProjectTriplanarUdimMap)  
+[UVTransformMap](UVTransformMap)  
+
+## Conversion Utilities
+Transform data between formats.
+
+[FloatToRgbMap](FloatToRgbMap)  
+[HsvToRgbMap](HsvToRgbMap)  
+[LcToRgbMap](LcToRgbMap)  
+[NormalToRgbMap](NormalToRgbMap)  
+[RgbToFloatMap](RgbToFloatMap)  
+[RgbToHsvMap](RgbToHsvMap)  
+[RgbToLabMap](RgbToLabMap)  
+
+## Other Utilities
+
+[AxisAngleMap](AxisAngleMap)  
+[DebugMap](DebugMap)  
+[DeformationMap](DeformationMap)  
+[ExtraAovMap](ExtraAovMap)  
+
+## Deprecated Map Shaders
+
+In the course of supporting productions, certain maps need major interface or changes. In cases where these changes would break in-progress productions, entirely new maps are created for future use, often with a **_v2** suffix. The following maps are not actively supported:
+
+[ColorCorrectNukeMap](ColorCorrectNukeMap)  
+[ColorCorrectHsvMap](ColorCorrectHsvMap)  
+[ColorCorrectLegacyMap](ColorCorrectLegacyMap)  
+[ListMap](ListMap)  
+[NoiseMap](NoiseMap)  
+[NoiseWorleyMap](NoiseWorleyMap)  
+[OpenVdbMap](OpenVdbMap)  
+[ProjectTriplanarMap](ProjectTriplanarMap)  
