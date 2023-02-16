@@ -4,7 +4,7 @@ door](https://en.wikipedia.org/wiki/Stage_lighting_accessories#Barn_doors)
 in stage lighting. Typically there are four flaps attached to a light
 that shape the lighting by restricting where the light can shine.
 
-(image)
+<!-- (image) -->
 
 If the flaps were stitched to each other, the ends of the flaps would
 form a rectangular portal that constrains the light.
@@ -36,6 +36,7 @@ the light is replaced by the singular position of the Barn Door (a
 single point).  It treats the light as a point light for filter
 shadowing.
 
+<!--
 | (image)
              | (image)
    | (image)
@@ -43,10 +44,12 @@ shadowing.
 
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | analytical mode                                      | physical mode                                        | no filter                                            |
+-->
 
 There are two projection types, *perspective* and *orthographic*. These are
 mainly useful for analytical mode, shown below. 
 
+<!--
 | (image)
        |  (image)
    |  (image)
@@ -54,6 +57,7 @@ mainly useful for analytical mode, shown below.
 
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | perspective projection                          |  orthographic projection                        | no filter                      |
+-->
 
 The modes affect the shape of the light beam. In physical mode, the projection type determines how big the
 flap opening is:
