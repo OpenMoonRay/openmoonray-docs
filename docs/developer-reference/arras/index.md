@@ -8,7 +8,7 @@ Arras creates processes that perform work for an application. The individual pro
 
 This is a diagram of a typical multi-machine rendering session:
 
-![Arras Session Diagram]({{site.baseurl}}/assets/images/developer-reference/arras/arras-session-diagram.png)
+![Arras Session Diagram]({{ "/assets/images/developer-reference/arras/arras-session-diagram.png" | absolute_url }})
 
 
 

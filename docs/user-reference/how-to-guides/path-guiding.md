@@ -37,16 +37,16 @@ path guiding is enabled, the basic cases will run more slowly and consume more m
 The following examples show situations where path guiding can help. In the first example, the ring is casting a bright
 caustic reflection on a rough surface.
 
-| ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image1.png) | ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image2.png) |
+| ![]({{ "/assets/images/user-reference/how-to-guides/path-guiding/image1.png" | absolute_url }}) | ![]({{ "/assets/images/user-reference/how-to-guides/path-guiding/image2.png" | absolute_url }}) |
 | Ring 1:19:55 / 417Mb with path guiding | Ring 1:29:52 518Mb without path guiding (note adaptive sampling failures in this case) |
 
 The second example shows a difficult _SDS_ light path (specular-diffuse-specular). In this case light passes through the
 cube (a specular surface), onto a torus (diffuse surface), back out through the cube, and finally onto the floor (
 another diffuse surface).
 
-| ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image3.png) | ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image4.png) |
+| ![]({{ "/assets/images/user-reference/how-to-guides/path-guiding/image3.png" | absolute_url }}) | ![]({{ "/assets/images/user-reference/how-to-guides/path-guiding/image4.png" | absolute_url }}) |
 | SDS 50:58 / 437Mb with path guiding | SDS 42:08 / 437.0 without path guiding (note how adaptive sampling gives up in
 this case) |
 
-| ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image5.png) | ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image6.png) |
+| ![]({{ "/assets/images/user-reference/how-to-guides/path-guiding/image5.png" | absolute_url }}) | ![]({{ "/assets/images/user-reference/how-to-guides/path-guiding/image6.png" | absolute_url }}) |
 | Bedroom 13:01 / 1.3Gb with path guiding | Bedroom 48:09 / 1.2Gb without path guiding |

@@ -15,12 +15,12 @@ This feature allows the user to set a desired overall noise level instead of exp
 Below are two renders requiring the same amount of time. Figure 1 is without adaptive sampling, and Figure 2 is with adaptive sampling. Notice how the error is spread out more uniformly and the fireflies are attenuated in the adaptive sampling case.
 
 <figure>
-    <img src="{{site.baseurl}}/assets/images/user-reference/adaptive-sampling/uniform.png" width='800'/>
+    <img src="{{ "/assets/images/user-reference/adaptive-sampling/uniform.png" | absolute_url }}" width='800'/>
     <figcaption>Figure 1: Uniform sampling (adaptive sampling disabled)</figcaption>
 </figure>
 
 <figure>
-    <img src="{{site.baseurl}}/assets/images/user-reference/adaptive-sampling/adaptive.png" width='800'/>
+    <img src="{{ "/assets/images/user-reference/adaptive-sampling/adaptive.png" | absolute_url }}" width='800'/>
     <figcaption>Figure 2: Adaptive sampling</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ To find suitable values for the adaptive sampling parameters, check the output v
 In `moonray_gui`, hotkey "8" will toggle to a grayscale view showing the number of samples rendered per pixel. The brighter the pixel, the higher the sample count. In addition, a weight AOV is available that also records the absolute number of pixel samples. To be human-viewable, the weight AOV may need to be normalized to [0, 1] in compositing software. Figure 3 shows this normalized AOV for the rendering in Figure 2.
 
 <figure>
-    <img src="{{site.baseurl}}/assets/images/user-reference/adaptive-sampling/weight.png" width='800'/>
+    <img src="{{ "/assets/images/user-reference/adaptive-sampling/weight.png" | absolute_url }}" width='800'/>
     <figcaption>Figure 3: Adaptive sampling normalized weight AOV</figcaption>
 </figure>
 

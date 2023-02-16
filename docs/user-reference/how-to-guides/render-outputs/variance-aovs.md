@@ -66,9 +66,9 @@ returns, further justifying a post-process de-noising step).
 
 | AOV                                                                                                 | Variance                                                                                                         |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| ![Beauty]({{site.baseurl}}/assets/images/user-reference/how-to-guides/variance-aovs/beauty.jpg)     | ![Beauty Variance]({{site.baseurl}}/assets/images/user-reference/how-to-guides/variance-aovs/beauty_var.jpg)     |
-| ![Depth]({{site.baseurl}}/assets/images/user-reference/how-to-guides/variance-aovs/depth.jpg)       | ![Depth Variance]({{site.baseurl}}/assets/images/user-reference/how-to-guides/variance-aovs/depth_var.jpg)       |
-| ![Normal]({{site.baseurl}}/assets/images/user-reference/how-to-guides/variance-aovs/geo_normal.jpg) | ![Normal Variance]({{site.baseurl}}/assets/images/user-reference/how-to-guides/variance-aovs/geo_normal_var.jpg) |
+| ![Beauty]({{ "/assets/images/user-reference/how-to-guides/variance-aovs/beauty.jpg" | absolute_url }})     | ![Beauty Variance]({{ "/assets/images/user-reference/how-to-guides/variance-aovs/beauty_var.jpg" | absolute_url }})     |
+| ![Depth]({{ "/assets/images/user-reference/how-to-guides/variance-aovs/depth.jpg" | absolute_url }})       | ![Depth Variance]({{ "/assets/images/user-reference/how-to-guides/variance-aovs/depth_var.jpg" | absolute_url }})       |
+| ![Normal]({{ "/assets/images/user-reference/how-to-guides/variance-aovs/geo_normal.jpg" | absolute_url }}) | ![Normal Variance]({{ "/assets/images/user-reference/how-to-guides/variance-aovs/geo_normal_var.jpg" | absolute_url }}) |
 
 In this simple example image, the beauty variance is insignificant since each pixel does not vary much per ray. However,
 the depth and geometry normal AOVs are much more interesting: the depth variance is high at the edges of the spheres

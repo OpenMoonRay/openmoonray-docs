@@ -5,7 +5,7 @@ title: Building MoonRay in a Docker container
 
 These instructions should also be available in the *building* subdirectory of the source code.
 
-You will need Docker and a copy of the MoonRay source (see [Cloning the Repo]({{site.baseurl}}/getting-started/installation/cloning-the-repo)) The instructions assume that the source is in */source/openmoonray*
+You will need Docker and a copy of the MoonRay source (see [Cloning the Repo]({{ "/getting-started/installation/cloning-the-repo)" | absolute_url }}) The instructions assume that the source is in */source/openmoonray*
 
 NVIDIA Optix headers need to be downloaded manually (from https://developer.nvidia.com/designworks/optix/download), since they require a EULA. The instructions assume that these are in */optix/include*. 
 

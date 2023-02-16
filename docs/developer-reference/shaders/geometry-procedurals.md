@@ -4,7 +4,7 @@ title: Writing Geometry Procedurals
 # Writing Geometry Procedurals
 Geometry procedurals typically read data from their
 parameters and use it to create one of the supported moonray primitives.
-The [geometry]({{site.baseurl}}/user-reference/scene-objects/geometry) procedurals included
+The [geometry]({{ "/user-reference/scene-objects/geometry" | absolute_url }}) procedurals included
 with Moonray generate primitives in various ways based on their parameters.   Some convert
 explicit data from their parameter lists such as `RdlMeshGeometry`.   Others, such as
 `SphereGeometry` use their parameters implicitly.  Unlike map shaders geometry procedurals
@@ -33,7 +33,7 @@ also passed a set of
 
 There are typically 3 files that make up a geometry procedural's source:
 * _\<ClassName\>.cc_
-* [attributes.cc]({{site.baseurl}}/developer-reference/shaders/#defining-the-plug-ins-attributes) 
+* [attributes.cc]({{ "/developer-reference/shaders/#defining-the-plug-ins-attributes" | absolute_url }}) 
 * CMakeLists.txt
 
 
