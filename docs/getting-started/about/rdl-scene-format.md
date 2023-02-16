@@ -8,7 +8,7 @@ MoonRay uses a proprietary scene description format called <span class="define">
 - <span class="define">RDLA</span> is a readable text format based on the programming language Lua
 - <span class="define">RDLB</span> is a binary format
 
-You can use the program <span class="define">**rdl2_convert**</span> to translate between the two formats, for example:
+You can use the program `rdl2_convert` to translate between the two formats, for example:
 
 ```bash
 rdl2_convert -in scene_binary.rdlb -out scene_text.rdla
@@ -32,14 +32,15 @@ DwaSolidDielectricMaterial("/scene/sphere/mtl/yellow") {
     ["albedo"] = Rgb(0.8, 0.8, 0.2)
 }
 ```
-
-`DwaSolidDielectricMaterial` is the class of the object, and "/scene/sphere/mtl/yellow" is the name. *refractive_index* and *albedo* are attributes supported by the `DwaSolidDeielectricMaterial` class.
+- `DwaSolidDielectricMaterial` is the class of the object
+- "/scene/sphere/mtl/yellow" is the object name 
+- *refractive_index* and *albedo* are attributes supported by the `DwaSolidDielectricMaterial` class
 
 In most cases, classes are implemented as shared library plugins. MoonRay searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, MoonRay will find the library **DwaSolidDielectricMaterial.so** somewhere on the path.
 
 `DwaSolidDielectricMaterial` has about 90 attributes in total. Attributes that you don't explicitly set take a default value defined by the class.
 
-You can see the attributes of a class using the <span class="define">**rdl2_print**</span> command:
+You can see the attributes of a class using the `rdl2_print` command:
 
 ```bash
 $ rdl2_print DwaSolidDielectricMaterial
@@ -156,7 +157,7 @@ DwaBaseMaterial("/scene/sphere/base") {
 }
 ```
 
-The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.8)` to obtain the value for `albedo`.
+The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.8)` to obtain the value for *albedo*.
 
 Each class implementation can decide how to combine the evaluated map value and the attribute's base value : it is not required that the class multiply one by the other, although that is usually the case.
 
@@ -182,7 +183,7 @@ SceneVariables {
 }
 ```
 
-There are just over 100 different scene variables in total. You can list them all using **rdl2_print**:
+There are just over 100 different scene variables in total. You can list them all using `rdl2_print`:
 
 ```bash
 $ rdl2_print SceneVariables

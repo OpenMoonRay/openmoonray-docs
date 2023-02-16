@@ -1,0 +1,1 @@
+<span class="define">SceneVariables</span> are the global rendering settings.

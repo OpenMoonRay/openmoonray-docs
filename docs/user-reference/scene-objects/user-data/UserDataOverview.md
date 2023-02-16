@@ -1,0 +1,1 @@
+An object used to encapsulate arbitrary, user-specified primitive attributes.
