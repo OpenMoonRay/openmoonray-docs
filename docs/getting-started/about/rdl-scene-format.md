@@ -3,7 +3,7 @@ title: About MoonRay Scene Formats
 ---
 # MoonRay Scene Formats
 
-MoonRay uses a proprietary scene description format called <span class="define">RDL2</span>. There are two primary file formats for RDL2:
+MoonRay's native scene description format is called <span class="define">RDL2</span>. There are two primary file formats for RDL2:
 
 - <span class="define">RDLA</span> is a readable text format based on the programming language Lua
 - <span class="define">RDLB</span> is a binary format
