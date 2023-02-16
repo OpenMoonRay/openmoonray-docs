@@ -50,6 +50,3 @@ this case) |
 
 | ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image5.png) | ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image6.png) |
 | Bedroom 13:01 / 1.3Gb with path guiding | Bedroom 48:09 / 1.2Gb without path guiding |
-
-| ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image7.jpeg) | ![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/path-guiding/image8.jpeg) |
-| Tiger 40:32 with path guiding | Tiger \~4 hours without path guiding |
