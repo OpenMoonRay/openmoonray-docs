@@ -30,7 +30,7 @@ Transparent surfaces require higher depth settings because light rays need more 
 --->
 
 ## Overlapping Dielectrics
-What if you have overlapping transparent mediums (e.g. water in a glass cup)? You will need to set a *material priority*. 
+What if you have overlapping transparent mediums (e.g. water in a glass cup)? You will need to set a [*material priority*](./overlapping-dielectrics.md). 
 
 ## Independent Transmission IOR
 By default the reflective and refractive IOR are the same. If you want to reduce distortions in refractions, lower the *independent_transmission_refractive_index*on the DwaRefractiveMaterial. 
