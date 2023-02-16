@@ -35,8 +35,6 @@
           subitems:
             - text: BakeCamera
               path: user-reference/scene-objects/cameras/BakeCamera.md
-            - text: DomeMaster3DCamera
-              path: user-reference/scene-objects/cameras/DomeMaster3DCamera.md
             - text: OrthographicCamera
               path: user-reference/scene-objects/cameras/OrthographicCamera.md
             - text: PerspectiveCamera
