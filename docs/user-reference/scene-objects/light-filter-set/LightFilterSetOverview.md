@@ -1,0 +1,1 @@
+A <span class="define">LightFilterSet</span> is a high-level grouping of LightFilters, whose purpose is to specify which LightFilters influence a specified geometry object.

@@ -1,0 +1,1 @@
+ A <span class="define">Trace Set</span> is a list of geometries and parts. It is used to specify a set of geometric primitives that a ray can trace. This can be useful in subsurface scattering, when we want to trace rays through geometries that have similar, but different, subsurface materials.

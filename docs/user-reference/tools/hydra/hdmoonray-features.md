@@ -58,5 +58,27 @@ MoonRay does not support different light links on different instances in the sam
 Hydra itself does not currently support light linking to prims inside an instance prototype graph. The links must point to the instancing prim (the prim creating the instanced composition arc) or to one of its ancestors. Links to prims below this are ignored. 
 
 # Motion Blur
-Motion blur is fully supported.  Transformational motion blur is supported on cameras, light, and geometry.  Geometry also supports deformational motion blur with either frame delta, velocity (`v`), or acceleration (`accel`) based on the present primitive attributes.   
+Motion blur is fully supported.  Transformational motion blur is supported on cameras, lights, and geometry.  Geometry also supports deformational motion blur.   The type of motion blur for geometry is dependent on the `motion_blur_type` parameter setting and the data present.  The types are:
 
+Type|Description
+---|---
+*static*|Treat the mesh as static.  No motion blur.
+*velocity*|Will blur using the supplied vertex velocities(`v`)
+*frame delta*|Will interpolate between the two supplied vertex positions
+*acceleration*|Will blur using the supplied vertex velocities(`v`) and accelerations(`accel`)
+*hermite*|Will use the supplied pair of positions(`P`) and velocities(`v`) to interpolate along a cubic hermite curve.
+*best*(default)|Will choose the method which provides the highest quality with the given data.
+
+When set to *best*, the type chosen is based on the following data being available in order of preference.
+
+Type|Required Data
+---|---
+*hermite*|A pair of positions(`P`) and velocities(`v`)
+*acceleration*|velocity(`v`) and acceleration(`accel`)
+*velocity*|velocity(`v`)
+*frame delta*|A pair of positions(`P`)
+
+Motion blur types:
+![]({{site.baseurl}}/assets/images/user-reference/tools/hydra/motion_blur.jpg)
+*Left to right: geometry types (mesh, curves, and points).
+Top to bottom: motion blur types (transform, frame delta, velocity, acceleration, and hermite).*

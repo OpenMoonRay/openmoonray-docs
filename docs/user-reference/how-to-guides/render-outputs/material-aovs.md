@@ -69,7 +69,8 @@ RenderOutput("/output") {
 }
 ```
 
-### Visual Output Examples
+<!--- Images included in the section below need to be properly attributed. --->
+<!--- ### Visual Output Examples
 
 **Beauty Render**
 
@@ -105,5 +106,5 @@ RenderOutput("/output") {
 
 **'diffuse translucency'.DSS.albedo**
 
-![Diffuse Translucent Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/diffuse-translucency-dss-albedo.png)
+![Diffuse Translucent Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/diffuse-translucency-dss-albedo.png) --->
 
