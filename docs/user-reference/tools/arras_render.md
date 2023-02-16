@@ -33,10 +33,10 @@ This output image does not include all of the [RenderOutputs](../../scene-object
 AOVs.<br>
 
 
-## LocalOnly mode
+## Local mode
 We can run arras_render and backend render process (we call this process "MCRT computation".
 See more detail [here](../../../developer-reference/arras)) on the same machine.
-We call this execution style "**LocalOnly**" mode.
+We call this execution style "**Local**" mode.
 In this case, you do **NOT** need to run "**minicoord**" coordinator before starting arras_render.
 You only need to run **arras_render** process with setup 3 environment variables.
 ```
@@ -239,7 +239,7 @@ You should use an absolute path for all filename information in your scene.
 Use just execute **arras_render** without any command-line options to display the full list.
 (The full command-line options include DWA-specific options but are not explained here.)<br>
 The followings are the options we use with
-[minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) environment and **LocalOnly** mode.
+[minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) environment and **Local** mode.
 
 ```
 $ arras_render
@@ -287,7 +287,7 @@ At least one RDL file is required
                                     environment
 ```
 
-`--dc local` is used for **LocalOnly** mode<br>
+`--dc local` is used for **Local** mode<br>
 
 `--infoRec`, `--inforRecDisp`, and `--infoRecFile` options are used for statistical information dump purposes.<br>
 `--debug-console` option is designed for debugging/developping purposes.

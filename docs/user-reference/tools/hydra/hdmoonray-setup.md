@@ -30,7 +30,7 @@ export PXR_PLUGINPATH_NAME=$REL/plugin/pxr/usd:${PXR_PLUGINPATH_NAME}
 
 ## Modes
 
-By default, `hdMoonray` uses Arras local mode (more [info](../../arras_render/#localonly-mode)) to create a separate MoonRay
+By default, `hdMoonray` uses Arras local mode (more [info](../../arras_render/#local-mode)) to create a separate MoonRay
 render process. If you have a distributed Arras pool set up (more [info](../../arras_render/#multi-machine-mode)),
 you can increase the number of render nodes using Arras distributed mode.
 
