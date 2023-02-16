@@ -2,7 +2,7 @@
 title: Writing Light Shaders
 ---
 # Writing Light Shaders
-This page covers how to write new types of Lights for MoonRay. Unlike other categories in the Developer's Guide, there is no formalized API for designing and writing a plugin in one location yet. As such, Lights must currently be added ad the MoonRay layer, not the MoonShine layer. Adding a new type of light is still relatively straightforward.
+This page covers how to write new types of Lights for MoonRay. Unlike other categories in the Developer's Guide, there is no formalized API for designing and writing a plugin in one location yet. As such, Lights must currently be added at the MoonRay layer, not the MoonShine layer. Adding a new type of light is still relatively straightforward.
 
 ## Overview
 Each Light plugin reguires you to:
