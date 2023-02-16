@@ -1,4 +1,4 @@
-DirectionalMap blends colors based on alignment of the surface normal and a specified "prime direction."
+**DirectionalMap** blends colors based on alignment of the surface normal and a specified "prime direction."
 
 This is useful for view-dependent effects or physical phenomena like dust accumulating atop surfaces.
 
