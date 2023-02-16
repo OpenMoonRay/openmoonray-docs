@@ -98,7 +98,7 @@ If you're interested in running benchmarking or regression tests, in addition to
 
 - To the last point, the relevant data to look for during benchmarking is MCRT (raytracing) time, not RenderPrep (textures, object loads, etc.) time. Both are calculated in MoonRay logs after a scene is rendered.
 
-- The [Render Profile Viewer]({{site.baseurl}}/user-reference/tools/render-profile-viewer) is useful for benchmarking results for scenes across time, and inspecting any regressions.
+- The [Render Profile Viewer]({{ "/user-reference/tools/render-profile-viewer" | absolute_url }}) is useful for benchmarking results for scenes across time, and inspecting any regressions.
 
 - Naturally take care not to be running any other processes on the machine during benchmarking.
 

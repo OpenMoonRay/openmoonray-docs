@@ -30,7 +30,7 @@ The above block shows an example of selecting and validating diffuse lobes.  Sim
 
 ### What does the AOV output look like?
 A color scheme that is easy to visualize valid and invalid areas is used. Red areas are considered invalid, while green areas are considered valid. Values in between are shown as an interpolation between green and red (they show up as orange for close to invalid, and yellow for close to valid).
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aov_example.jpg)
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/aov_example.jpg" | absolute_url }})
 
 *Please note*: The validity for albedo and metallic color is evaluated based on the value of the color, i.e. the maximum of red, green or blue channels. Validity is not evaluated individually per RGB channel!
 
@@ -38,18 +38,18 @@ A color scheme that is easy to visualize valid and invalid areas is used. Red ar
 Physically reasonable values (max of RGB) for albedo are between 0.032 and 0.87.
 
 Therefore, on the lower end - to achieve dark looking materials, it is recommended to use values greater than 0.032 (~0.04). It might be tempting to use lower values like 0.02, or even 0.0 to get black, but, those materials will not light well. With a correct LUT applied, values around 0.04 should be able to yield inky black results!
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/albedo_drops_low_final.jpg)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_albedo_low.jpg)
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/albedo_drops_low_final.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/aovs_albedo_low.jpg" | absolute_url }})
 Albedo values: 0.001, 0.01, 0.02, 0.04, 0.12
 
 On the higher end, for brighter materials, it is recommended to use values less than 0.87. 
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/albedo_drops_high_final.jpg)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_albedo_high.jpg)
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/albedo_drops_high_final.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/aovs_albedo_high.jpg" | absolute_url }})
 Albedo values: 0.6, 0.8, 0.9, 0.95, 0.99
 
 Validity also works with textures that are bound to the albedo, along with any map operations that are applied to the texture in the shading network (like color corrections or remaps). This is really useful because it is very difficult to evaluate all values in a texture map by hand, and almost impossible to track down end values that actually get plugged into the albedo in a complicated shading network. Below is an example of a skin setup:
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/render_skin.jpg)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_skin_albedo.jpg)
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/render_skin.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/aovs_skin_albedo.jpg" | absolute_url }})
 
 ### Refractive Index Validity for Specular
 Dielectric materials, either reflective or refractive have an Index of Refraction (or refractive index) that controls the specular behavior in the Dwa family of materials. The IOR is a single floating point value in our shaders - since we only allow non-colored specular response for dielectrics.
@@ -57,13 +57,13 @@ Dielectric materials, either reflective or refractive have an Index of Refractio
 Most common solids have an IOR of 1.5 (the default value in our shaders). This is the recommended value, and thus, it represents the center of the valid range. In order to achieve different looks, we recommend using IOR values that are between 1.33 and 1.58. Some gemstones are known to have higher IOR values like 1.68 (so these are exceptions).
 
 Examples of how Validity shows up for reflective and refractive materials:
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/reflect_drops_final.jpg)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/render_amber_refract.jpg)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_spec_refract.jpg)
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/reflect_drops_final.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/render_amber_refract.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/aovs_spec_refract.jpg" | absolute_url }})
 IOR values: 1.1, 1.318, 1.5, 1.72, 2.4
 
 ### Metallic Color Validity for Metals
 Metals are parameterized by a metallic color that controls the specular response in our shaders. The recommended values for metallic color is greater than 0.53 (for max RGB). Anything less than 0.46 will get flagged as invalid.
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/metaldrops_final.jpg)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/pbr-validity/aovs_metal.jpg)
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/metaldrops_final.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/pbr-validity/aovs_metal.jpg" | absolute_url }})
 Metallic color values: 0.165, 0.5, 0.66, 0.99, > 1.0 (but gets clamped to 1.0 in shader)

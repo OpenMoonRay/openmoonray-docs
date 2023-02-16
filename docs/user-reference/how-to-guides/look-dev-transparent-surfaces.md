@@ -69,7 +69,7 @@ If you are modeling a thin surface, like a plastic cup or bubble, you should try
 
 | | |
 | - | - |
-| ![Thin Geometry Diagram Off]({{site.baseurl}}/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_off.png) | ![Thin Geometry Diagram On]({{site.baseurl}}/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_on.png) |
+| ![Thin Geometry Diagram Off]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_off.png" | absolute_url }}) | ![Thin Geometry Diagram On]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_on.png" | absolute_url }}) |
 
 Thin Geometry is also useful for planar or open surfaces modeled without thickness. When a ray hits the backside of a surface, MoonRay typically treats it as if it's coming from the *inside* of the surface, and inverts the IORs accordingly. When using thin geometry, we treat the ray as if it's hitting the front-facing surface and do *not* invert IORs or bend the ray, since any bending will be corrected upon exiting from the infinitely thin surface. 
 

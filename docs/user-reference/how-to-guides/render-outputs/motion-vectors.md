@@ -69,7 +69,7 @@ Camera("shot_cam") {
 
 # Full Example RDLA
 
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/motion-vectors/image1.png)
+![]({{ "/assets/images/user-reference/how-to-guides/motion-vectors/image1.png" | absolute_url }})
 
 ```lua
 SceneVariables {  

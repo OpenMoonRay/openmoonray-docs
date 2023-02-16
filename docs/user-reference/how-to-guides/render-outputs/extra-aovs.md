@@ -135,14 +135,14 @@ The basic idea here is that any ray path that passes through objects (either via
 
 In the beauty image we have presence based transparency on the right, true refractive transparency with an ior of 1 in the middle, and true refractive transparency with an ior of 1.5 on the left.
 
-![Beauty]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/result.png)
+![Beauty]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/result.png" | absolute_url }})
 
 The resulting transparency aov is a 3-channel result that essentially tells us how much light from a pure white environment would shine through these transparent objects.  Note that in the case of the ior=1.5 object, this is not the same thing as what is scene from directly behind the object.
 
-![Transparency AOV]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/result0.png)
+![Transparency AOV]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/result0.png" | absolute_url }})
 
 ### Mattes of objects seen through refraction
-![Torus]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/scene.png)
+![Torus]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/scene.png" | absolute_url }})
 
 Here we have a torus sitting inside a refractive glass object on top of a background plane.  Our desire is isolate a matte for the torus.  The alpha channel for this shot is not particularly helpful - it is just opaque white.
 
@@ -172,13 +172,13 @@ torusMtl = DwaSolidDielectricMaterial("torusMtl")
 ```
 
 _C[RT]'U:torus_matte'_
-![Torus One Bounce]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/one_bounce.png)
+![Torus One Bounce]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/one_bounce.png" | absolute_url }})
 
 _C[RT][RT]'U:torus_matte'_
-![Torus Two Bounce]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/two_bounce.png)
+![Torus Two Bounce]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/two_bounce.png" | absolute_url }})
 
 _C[RT][RT][RT]'U:torus_matte'_
-![Torus Three Bounce]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/three_bounce.png)
+![Torus Three Bounce]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/three_bounce.png" | absolute_url }})
 
 Those are reasonably interesting images.  They basically show us the path throughput of the blue channel for one, two, and three bounce paths that end at the torus.  But usually when we want to make a matte, we want the object for the matte to be "solid" where it should be solid.  In other words we want it to be solid blue except on what we perceive as the edges of the torus.  Mathematically we can think of this as a ratio between all the paths that hit the torus divided by all the paths that could have possibly hit the torus.  The denominator in this case is just all the rays that transmitted through the cube.  This value can be captured using the "sum" math filter and constant white extra_aov on the cube.
 
@@ -215,7 +215,7 @@ RenderOutput("/Scene/output/torusMatteDenominator")
 We created a pure white aov, assigned it to the glass cube and have it accumulate on all transmission rays "post scatter".  Furthermore we use a "sum" math filter on the output.  This aov provides a count of the number of transmission rays that passed through the glass cube.  These are all the rays that could possibly hit the torus.
 
 _CT'U:glass_transmission_matte'_
-![Matte Denom]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/matte_denom.png)
+![Matte Denom]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/matte_denom.png" | absolute_url }})
 
 Now to get a count of all the rays that hit the torus we can use the same torus_matte aov as before, but we can output the result using the "sum" filter.  This results in the blue channel containing the number of rays that hit the torus.
 
@@ -231,11 +231,11 @@ RenderOutput("/Scene/output/torusMatteNumerator")
 ```
 
 _CT'U:'torus_matte_num'_
-![Torus Matte Num]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/torus_matte_num.png)
+![Torus Matte Num]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/torus_matte_num.png" | absolute_url }})
 
 Our final matte result is just the division of these two images.
 
 ```
 oiiotool torus_matte_num.exr torus_matte_denom.exr --div
 ```
-![Torus Matte Div]({{site.baseurl}}/assets/images/user-reference/how-to-guides/extra-aovs/torus_matte_div.png)
+![Torus Matte Div]({{ "/assets/images/user-reference/how-to-guides/extra-aovs/torus_matte_div.png" | absolute_url }})

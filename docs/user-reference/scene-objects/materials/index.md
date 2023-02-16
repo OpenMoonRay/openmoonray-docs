@@ -5,7 +5,7 @@ title: MoonRay Materials
 <!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
 
 # Materials
-![Materials]({{site.baseurl}}/assets/images/user-reference/scene-objects/materials/materials.jpg)
+![Materials]({{ "/assets/images/user-reference/scene-objects/materials/materials.jpg" | absolute_url }})
 
 <!-- All topics>
 
@@ -44,7 +44,7 @@ Usd specification compliant material
 ## Other material topics
 
 ### Material Assignments
-Materials are assigned via a [Layer]({{site.baseurl}}/user-reference/scene-objects/layer/Layer/) assignment. At a minimum a geometry and material must be provided and by default the material will be lit by all lights in the scene. Further refinement of the material assignment can be achieved by providing a list of part names on the geometry, specifying a lightset, etc. Of note, displacement is applied separately from the material assignment.
+Materials are assigned via a [Layer]({{ "/user-reference/scene-objects/layer/Layer/" | absolute_url }}) assignment. At a minimum a geometry and material must be provided and by default the material will be lit by all lights in the scene. Further refinement of the material assignment can be achieved by providing a list of part names on the geometry, specifying a lightset, etc. Of note, displacement is applied separately from the material assignment.
 
 
 ### Normals
@@ -63,7 +63,7 @@ Note: that _roughness_ will have no effect when _thin_geometry_ is on.
 ### Presence
 Sometimes you need to cut out or punch holes in a material so that it is not *present* in that region. For example a leaf on a flat card or a grate with many small holes. To accomplish this the _presence_ attribute exists. This is not the same idea as opacity and it is intended to be used in a binary manner, the surface is either *present* or *not present*.
 
-### [Nested Dielectrics]({{site.baseurl}}/user-reference/how-to-guides/overlapping-dielectrics/)
+### [Nested Dielectrics]({{ "/user-reference/how-to-guides/overlapping-dielectrics/" | absolute_url }})
 Special care must be taken when rendering _nested dielectrics_, or refractive objects that share a boundary and have different _IORs_ (index of refraction) such as water in a glass cup with a partially submerged ice cube. There is no gap of air between the objects like there is in most rendering scenarios so the refracted light rays must keep track of their IOR and the object priority. This is accomplished via the _priority_ attribute which only needs to be set in these scenarios.
 
 ### Caustics

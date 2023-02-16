@@ -14,7 +14,7 @@ Once the 3D location is known, the primary ray origin and direction can be chose
 - `2`: _surface along reflection vector_ : The ray direction is the reflection vector defined by the bake camera's location and the surface normal. The ray origin is the surface location, offset slightly along the reflection vector direction.
 - `3`: _reverse normal_ : The ray direction is the negative normal direction. The ray origin is offset just slightly above the surface.
 
-![Baking Modes]({{site.baseurl}}/assets/images/user-reference/scene-objects/cameras/BakeCamera/BakeModes.png)
+![Baking Modes]({{ "/assets/images/user-reference/scene-objects/cameras/BakeCamera/BakeModes.png" | absolute_url }})
 
 Once the primary ray has been defined, there is nothing left that is specific to baking. All features of Moonray rendering are available, including AOVs. There are some features you should avoid though. Motion-blur and depth of field are not implemented in the BakeCamera. So turning those on could produce undesirable or unexpected results.
 

@@ -79,6 +79,6 @@ Type|Required Data
 *frame delta*|A pair of positions(`P`)
 
 Motion blur types:
-![]({{site.baseurl}}/assets/images/user-reference/tools/hydra/motion_blur.jpg)
+![]({{ "/assets/images/user-reference/tools/hydra/motion_blur.jpg" | absolute_url }})
 *Left to right: geometry types (mesh, curves, and points).
 Top to bottom: motion blur types (transform, frame delta, velocity, acceleration, and hermite).*
