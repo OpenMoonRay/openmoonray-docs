@@ -4,13 +4,25 @@ gallery:
 attributes:
   hue_shift:
     images:
-      - image: scene.000.png
-        text: -180
-      - image: scene.001.png
-        text: -90
-      - image: scene.002.png
+      - image: scene.0.png
         text: 0
-      - image: scene.003.png
-        text: 90
-      - image: scene.004.png
-        text: 180
+      - image: scene.1.png
+        text: 0.25
+      - image: scene.2.png
+        text: 0.5
+      - image: scene.3.png
+        text: 0.75
+      - image: scene.4.png
+        text: 1
+  mix:
+    images:
+      - image: scene.0.png
+        text: 0
+      - image: mix.1.png
+        text: 0.25
+      - image: mix.2.png
+        text: 0.5
+      - image: mix.3.png
+        text: 0.75
+      - image: scene.2.png
+        text: 1

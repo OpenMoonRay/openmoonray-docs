@@ -3,7 +3,27 @@ image_path: /assets/images/user-reference/scene-objects/maps/ToonMap
 attributes:
   mode:
     images:
-      - image: nadder.jpg
+      - image: outline.png
         text: Outline
-      - image: gargoyle.jpg
+      - image: crease.png
         text: Crease
+      - image: both.png
+        text: Both
+  fill_color:
+    images:
+      - image: both.png
+        text: Black
+      - image: fillColor.png
+        text: Gray
+  outline_threshold:
+    images:
+      - image: outline.png
+        text: 0.0
+      - image: outlineThreshold.png
+        text: 0.1
+  crease_threshold:
+    images:
+      - image: crease.png
+        text: 45.0
+      - image: creaseThreshold.png
+        text: 15.0
