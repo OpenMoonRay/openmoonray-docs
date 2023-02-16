@@ -4,9 +4,7 @@ door](https://en.wikipedia.org/wiki/Stage_lighting_accessories#Barn_doors)
 in stage lighting. Typically there are four flaps attached to a light
 that shape the lighting by restricting where the light can shine.
 
-| ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image9.png)   | ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image8.png)     |
-|------------------------------------------------------|-------------------------------------------------------|
-| Example scene without a filter                | Example scene with Barn Door light filter              |
+(image)
 
 If the flaps were stitched to each other, the ends of the flaps would
 form a rectangular portal that constrains the light.
@@ -38,7 +36,10 @@ the light is replaced by the singular position of the Barn Door (a
 single point).  It treats the light as a point light for filter
 shadowing.
 
-| ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image7.png)              | ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image8.png)   | ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image9.png)     |
+| (image)
+             | (image)
+   | (image)
+     |
 
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | analytical mode                                      | physical mode                                        | no filter                                            |
@@ -46,7 +47,10 @@ shadowing.
 There are two projection types, *perspective* and *orthographic*. These are
 mainly useful for analytical mode, shown below. 
 
-| ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image7.png)       |  ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image10.png)   |  ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image9.png)   |
+| (image)
+       |  (image)
+   |  (image)
+   |
 
 |------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
 | perspective projection                          |  orthographic projection                        | no filter                      |
