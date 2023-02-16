@@ -1,4 +1,4 @@
-ColorCorrectMap is a suite of previous color correction options.
+**ColorCorrectMap** is a suite of previous color correction options.
 
 ## Color Correction Options:
 These attributes can be separately enabled and disabled
