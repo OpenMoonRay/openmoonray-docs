@@ -10,4 +10,3 @@ attributes:
     images:
       - image: saturation_varyRgb2.jpg
         text: 0, 0.5, 1.0, 1.5, 2.0
-  

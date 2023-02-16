@@ -1,22 +1,32 @@
 ---
 overview: overviews/CurvatureMapOverview.md
 image_path: /assets/images/user-reference/scene-objects/maps/CurvatureMap
-gallery:
-  - image: gargoyle_rotate.gif
 attributes:
   mode:
     images:
-      - image: convex.jpg
+      - image: convex.png
         text: Convex
-      - image: concave.jpg
+      - image: concave.png
         text: Concave
-      - image: composite.jpg
+      - image: composite.png
         text: Composite
-      - image: all.jpg
+      - image: all.png
         text: All
   power:
     images:
-      - image: curvatureMapPower.gif
+      - image: convex.png
+        text: 1.0
+      - image: power.png
+        text: 2.0
   scale:
     images:
-      - image: curvatureMapScale.gif
+      - image: convex.png
+        text: 0.1
+      - image: scale.png
+        text: 0.5
+  invert:
+    images:
+      - image: convex.png
+        text: False
+      - image: invert.png
+        text: True
