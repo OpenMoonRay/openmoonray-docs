@@ -30,14 +30,14 @@ camera's location and the surface normal. The ray origin is the surface location
 along the reflection vector direction.
 * __3:__ __reverse normal__: The ray direction is the negative normal direction. The ray origin is offset just
 slightly above the surface.
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/BakeModes.png)
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/BakeModes.png" | absolute_url }})
 
 Once the primary ray has been defined, there is nothing left that is specific to baking. All
 features of MoonRay rendering are available, including Aovs. There are some features you should
 avoid though. Motion-blur and depth of field are not implemented in the BakeCamera. So turning
 those on could produce undesirable or unexpected results.
 
-See the [BakeCamera]({{site.baseurl}}/user-reference/scene-objects/cameras/BakeCamera) class reference for the
+See the [BakeCamera]({{ "/user-reference/scene-objects/cameras/BakeCamera" | absolute_url }}) class reference for the
 full list of attributes
 
 The __node xform__ attribute is used to define the location of the bake camera. This location is
@@ -95,8 +95,8 @@ normal map, you'll most likely want to use "tangent space."
 ## Examples
 ### Basic
 
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/bake_mesh.png)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh.png)
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/bake_mesh.png" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/mesh.png" | absolute_url }})
 ```lua
 -- bake_mesh.rdla
 -- bake the lighting on the planeGeom, from the camera viewpoint
@@ -174,8 +174,8 @@ BakeCamera("/Scene/rendering/camera") {
 ```
 
 ### Baking along a normal
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/sphere.png)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/sphere_bake.png)
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/sphere.png" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/sphere_bake.png" | absolute_url }})
 
 ```lua
 -- Bake a sphere along its normal directions
@@ -220,9 +220,9 @@ Layer("/Scene/layer")(assignments)
 ```
 
 ### Generating a Normal Map
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/sphere2.png)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/sphere_normals.png)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/sphere_bake2.png)
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/sphere2.png" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/sphere_normals.png" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/sphere_bake2.png" | absolute_url }})
 
 ```lua
 This example is similar to the previous example, except that the surfacing of the sphere contains a normal map. In order to take these normals into account, we can run a pre-pass that generates the normal map and then a second pass that generates a bake map along these normals.
@@ -389,8 +389,8 @@ Layer("/Scene/layer")(assignments)
 ```
 
 ### UDIMs
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/mesh_udim.png)
-![]({{site.baseurl}}/assets/images/user-reference/how-to-guides/baking-textures/bake_plane_1001.png)
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/mesh_udim.png" | absolute_url }})
+![]({{ "/assets/images/user-reference/how-to-guides/baking-textures/bake_plane_1001.png" | absolute_url }})
 
 ```lua
 -- bake_plane.rdla

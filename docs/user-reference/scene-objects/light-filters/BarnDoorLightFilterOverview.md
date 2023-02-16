@@ -11,18 +11,18 @@ form a rectangular portal that constrains the light.
 
 This light filter operates by simulating such a portal, called the flap opening, shown in gray below:
 
-![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image4.png)
+![]({{ "/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image4.png" | absolute_url }})
 
 The flap opening can be moved, resized, rotated, rounded, colored, and
 blurred, with varying blur per side. Here is a rough overview of the
 various shaping parameters.
 
-![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image5.png)
+![]({{ "/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image5.png" | absolute_url }})
 
 The edge expands outwards and there are controls to scale the size of
 each edge.
 
-| ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image6.png)           |
+| ![]({{ "/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image6.png" | absolute_url }})           |
 |------------------------------------------------------|
 | edge size and per-edge scaling animation             |
 
