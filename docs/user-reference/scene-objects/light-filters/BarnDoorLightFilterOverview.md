@@ -4,9 +4,9 @@ door](https://en.wikipedia.org/wiki/Stage_lighting_accessories#Barn_doors)
 in stage lighting. Typically there are four flaps attached to a light
 that shape the lighting by restricting where the light can shine.
 
-| ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image2.png)        | ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image3.jpeg)            |
+| ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image9.png)   | ![]({{site.baseurl}}/assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter/image8.png)     |
 |------------------------------------------------------|-------------------------------------------------------|
-| Example photo of a Barn Door (black)                 | Photo of a Barn Door narrowing the light              |
+| Example scene without a filter                | Example scene with Barn Door light filter              |
 
 If the flaps were stitched to each other, the ends of the flaps would
 form a rectangular portal that constrains the light.
