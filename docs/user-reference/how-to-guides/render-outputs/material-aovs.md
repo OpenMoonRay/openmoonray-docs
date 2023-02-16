@@ -74,37 +74,37 @@ RenderOutput("/output") {
 
 **Beauty Render**
 
-![Beauty Render]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/beauty.png)
+![Beauty Render]({{ "/assets/images/user-reference/how-to-guides/material-aovs/beauty.png" | absolute_url }})
 
 **DSS.albedo**
 
-![Diffuse Translucent Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/dss-albedo.png)
+![Diffuse Translucent Albedo]({{ "/assets/images/user-reference/how-to-guides/material-aovs/dss-albedo.png" | absolute_url }})
 
 **G.albedo**
 
-![Glossy Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/glossy-albedo.png)
+![Glossy Albedo]({{ "/assets/images/user-reference/how-to-guides/material-aovs/glossy-albedo.png" | absolute_url }})
 
 **M.albedo**
 
-![Mirror Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/mirror-albedo.png)
+![Mirror Albedo]({{ "/assets/images/user-reference/how-to-guides/material-aovs/mirror-albedo.png" | absolute_url }})
 
 **emission**
 
-![Emission]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/emission.png)
+![Emission]({{ "/assets/images/user-reference/how-to-guides/material-aovs/emission.png" | absolute_url }})
 
 **GSS.fresnel.factor**
 
-![Glossy and SS Fresnel]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/gss-fresnel-factor.png)
+![Glossy and SS Fresnel]({{ "/assets/images/user-reference/how-to-guides/material-aovs/gss-fresnel-factor.png" | absolute_url }})
 
 **DGM.roughness**
 
-![Roughness]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/dgm-roughness.png)
+![Roughness]({{ "/assets/images/user-reference/how-to-guides/material-aovs/dgm-roughness.png" | absolute_url }})
 
 **'specular'.albedo**
 
-![Specular Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/specular-albedo.png)
+![Specular Albedo]({{ "/assets/images/user-reference/how-to-guides/material-aovs/specular-albedo.png" | absolute_url }})
 
 **'diffuse translucency'.DSS.albedo**
 
-![Diffuse Translucent Albedo]({{site.baseurl}}/assets/images/user-reference/how-to-guides/material-aovs/diffuse-translucency-dss-albedo.png) --->
+![Diffuse Translucent Albedo]({{ "/assets/images/user-reference/how-to-guides/material-aovs/diffuse-translucency-dss-albedo.png" | absolute_url }}) --->
 

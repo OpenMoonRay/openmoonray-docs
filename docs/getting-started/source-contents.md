@@ -74,13 +74,15 @@ The **arras4_core** repository contains C++ interfaces and implementations of th
 **moonray_arras** (under the **moonray** top-level directory) contains the MoonRay-specific Arras components:
 - **mcrt_messages** defines the Arras messages used to communicate between client and render processes.
 - **mcrt_computation** contains the Arras computations that execute MoonRay rendering under Arras.
-- **mcrt_dataio** contains code to compress rendered images, required by both client and render processes.
+- **mcrt_dataio** contains code to decode rendered images and to merge partially rendered images,
+required by both client and render processes.
 
 The **arras/distributed** directory holds the components needed to run distributed Arras renders:
 - **arras4_node** runs on every render node
 - a single instance of `minicoord` is run as a service to allocate and manage render nodes
 
-**arras_render** is a GUI tool to execute Arras renders, and provides an example of Arras integration.
+[**arras_render**](../../user-reference/tools/arras_render) is a GUI tool to execute Arras renders,
+and provides an example of Arras integration.
 
 
 

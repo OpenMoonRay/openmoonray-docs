@@ -446,8 +446,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
-         # - text: Overlapping Dielectrics
-         #   path: /user-reference/how-to-guides/overlapping-dielectrics.md
+          - text: Overlapping Dielectrics
+            path: /user-reference/how-to-guides/overlapping-dielectrics.md
           - text: Path Guiding
             path: /user-reference/how-to-guides/path-guiding.md
           - text: PBR Validity

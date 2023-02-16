@@ -3,7 +3,7 @@ title: Writing Shaders
 ---
 # Writing Shaders
 This page covers some general information about writing plug-ins (aka. _shaders_, _DSO's_, _procedurals_)
-for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, (see [scene-objects]({{site.baseurl}}/user-reference/scene-objects))
+for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, (see [scene-objects]({{ "/user-reference/scene-objects" | absolute_url }}))
 but additional plug-ins can be authored to extend MoonRay's functionality.
 
 Probably the best way to quickly understand what is required to write a new plug-in of a given
@@ -284,7 +284,7 @@ _RampMap.json_
 ```
 
 Refer to the [SceneClass](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/SceneClass.h)
-source code, the [scene_rdl2]({{site.baseurl}}/developer-reference/scene_rdl2-library) page, or the existing plug-ins
+source code, the [scene_rdl2]({{ "/developer-reference/scene_rdl2-library/" | absolute_url }}) page, or the existing plug-ins
 for more examples of how to declare SceneClass attributes and their metadata.
 
 ----

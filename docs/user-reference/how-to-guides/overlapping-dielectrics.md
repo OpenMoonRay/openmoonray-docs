@@ -2,7 +2,7 @@
 title: Overlapping Dielectrics
 ---
 # Overlapping Dielectrics
-![Title Image]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/title.png)
+![Title Image]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/title.png" | absolute_url }})
 
 How do you ensure that the index of refraction is correct, regardless of how many nested mediums a light ray enters? MoonRay employs a system of material tracking (as per "Simple Nested Dielectrics in Ray Traced Images") to ensure that overlapping materials with different indices of refraction refract light correctly. In order to correctly render these overlapping surfaces:
 
@@ -13,33 +13,33 @@ How do you ensure that the index of refraction is correct, regardless of how man
 
 | Correct Setup | Incorrect Setup |
 | ------------- | --------------- |
-| ![Correct Setup]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/correct.png) | ![Incorrect Setup]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/incorrect.png) |
+| ![Correct Setup]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/correct.png" | absolute_url }}) | ![Incorrect Setup]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/incorrect.png" | absolute_url }}) |
 
 In the example walkthrough below, you will see that each object is assigned a priority, where a lower number corresponds to a higher priority. Both glass and ice displace the liquid, and therefore have a higher priority. The liquid does not exist in the overlap areas because it is lower priority, and MoonRay ignores intersections with lower priority surfaces. 
 
 **Step 1**
-![Example Part 1]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt1.png)
+![Example Part 1]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt1.png" | absolute_url }})
 
 **Step 2**
-![Example Part 2]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt2.png)
+![Example Part 2]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt2.png" | absolute_url }})
 
 **Step 3**
-![Example Part 3]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt3.png)
+![Example Part 3]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt3.png" | absolute_url }})
 
 **Step 4**
-![Example Part 4]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt4.png)
+![Example Part 4]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt4.png" | absolute_url }})
 
 **Step 5**
-![Example Part 5]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt5.png)
+![Example Part 5]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt5.png" | absolute_url }})
 
 **Step 6**
-![Example Part 6]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt6.png)
+![Example Part 6]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt6.png" | absolute_url }})
 
 **Step 7**
-![Example Part 7]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt7.png)
+![Example Part 7]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt7.png" | absolute_url }})
 
 **Step 8**
-![Example Part 8]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt8.png)
+![Example Part 8]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt8.png" | absolute_url }})
 
 **Step 9**
-![Example Part 9]({{site.baseurl}}/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt9.png)
+![Example Part 9]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt9.png" | absolute_url }})
