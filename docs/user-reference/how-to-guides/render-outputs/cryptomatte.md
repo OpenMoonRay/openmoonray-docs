@@ -8,6 +8,29 @@ In MoonRay, a single geometry (or part) covering a pixel will be represented by 
 
 These `{id, weight}` pairs will be stored in the R, G and B, A channels of each .exr layer, and the *cryptomatte_depth* user attribute determines how many layers will be generated (labeled like so: **Cryptomatte00**, **Cryptomatte01**, **Cryptomatte02**, etc). The `{id, weight}` pairs are sorted by max coverage, so the geometry with the most pixel coverage will always be the first entry. 
 
+<!-- Uncomment section when feature is released 
+## Extensions
+
+As of moonray-?, there are several options to output additional information. 
+
+### Positions, Normals, Beauty
+
+The RenderOutput object contains the additional toggles:
+
+- *output_cryptomatte_positions*
+- *output_cryptomatte_normals*
+- *output_cryptomatte_beauty*
+
+When turned on, each id/weight pair will also have the associated position/normal/beauty value output to a separate layer. If there are multiple pixel samples, the values from all the samples will be _averaged_ together. The output layers are as follows:
+
+- **CryptoP**: position `(x, y, z)` is stored in `(r, g, b)`, respectively
+- **CryptoN**: normal `(x, y, z)` is stored in `(r, g, b)`, respectively
+- **CryptoB**: beauty `(r, g, b, presence)` is stored in `(r, g, b, a)`
+
+### Multiple Presence Bounces
+
+In SceneVariables, you can toggle on *cryptomatte_multi_presence* to count each presence bounce as a separate cryptomatte entry. 
+-->
 ## Examples
 
 ### Assigning IDs to Different Geometries
