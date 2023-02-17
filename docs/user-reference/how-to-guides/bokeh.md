@@ -3,6 +3,11 @@ title: Bokeh
 ---
 # Bokeh
 ## This page needs to be rebuilt
+
+TODO: This feature needs to be redesigned, so it's been removed from
+the main documentation index.  For one, it's not supportable in
+vector mode.  See the notes at the bottom of this document.
+
 ---
 
 *Bokeh* refers to set of aesthetic qualities of out-of-focus portions of
