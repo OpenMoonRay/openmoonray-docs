@@ -1,5 +1,11 @@
 ---
-title: Hair Color Correct Material
+title: HairColorCorrectMaterial
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColorCorrectMaterial
 {%-include overview.html data=site.data.user-reference.scene-objects.materials.HairColorCorrectMaterial-%}

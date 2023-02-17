@@ -1,5 +1,11 @@
 ---
-title: Toon Map
+title: ToonMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ToonMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -40,7 +46,7 @@ title: Toon Map
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Default color, within the outlines and creases</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.fill_color.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ToonMap.attributes.fill_color.links heading=4-%}
     </p>
@@ -50,7 +56,7 @@ title: Toon Map
           | outline = 0
           | crease = 1
           | both = 2 (default)
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Pick which features are displayed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ToonMap.attributes.mode.links heading=4-%}
     </p>

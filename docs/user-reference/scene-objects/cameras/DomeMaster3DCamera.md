@@ -12,8 +12,6 @@ title: DomeMaster3DCamera
 {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera.gallery data=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera-%}
 {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera.links-%}
 ---
-TODO: Is this proprietary and should not be released with OpenMoonRay?
-
 ## Attribute Reference
 
 <div class="scene-class">
@@ -203,4 +201,3 @@ TODO: Is this proprietary and should not be released with OpenMoonRay?
 </details>
 </div>
 {%-include example.html data=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera-%}
-

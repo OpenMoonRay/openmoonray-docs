@@ -1,5 +1,11 @@
 ---
-title: Project Camera Map_v2
+title: ProjectCameraMap_v2
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectCameraMap_v2
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
@@ -41,7 +47,7 @@ title: Project Camera Map_v2
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">a custom aspect ratio for the projected texture</p>
+      <p class="scene-class-comments">Custom aspect ratio for the projected texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.custom_aspect_ratio.images data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.custom_aspect_ratio.links heading=4-%}
     </p>
@@ -67,7 +73,7 @@ title: Project Camera Map_v2
     <p class="scene-class-type">
       <b>Camera</b>
       default: None
-      <p class="scene-class-comments">the camera to project from</p>
+      <p class="scene-class-comments">The camera to project from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.projector.links heading=4-%}
     </p>
@@ -75,7 +81,7 @@ title: Project Camera Map_v2
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.texture.images data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.texture.links heading=4-%}
     </p>
@@ -91,7 +97,7 @@ title: Project Camera Map_v2
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">use reference space</p>
+      <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.use_reference_space.links heading=4-%}
     </p>

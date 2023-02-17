@@ -1,5 +1,11 @@
 ---
-title: Project Planar Map
+title: ProjectPlanarMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectPlanarMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.ProjectPlanarMap-%}
@@ -108,7 +114,7 @@ title: Project Planar Map
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">use reference space</p>
+      <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectPlanarMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectPlanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectPlanarMap.attributes.use_reference_space.links heading=4-%}
     </p>

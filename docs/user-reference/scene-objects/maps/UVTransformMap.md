@@ -1,5 +1,11 @@
 ---
-title: UV Transform Map
+title: UVTransformMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UVTransformMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
@@ -16,7 +22,7 @@ title: UV Transform Map
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Shifts UV coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.links heading=4-%}
     </p>
@@ -48,7 +54,7 @@ title: UV Transform Map
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Scales UV coordinates (after rotation, before offset)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.links heading=4-%}
     </p>
@@ -62,7 +68,7 @@ title: UV Transform Map
           | object = 4
           | reference = 5
           | texture = 6 (default)
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Determines source of coordinates. Default is mesh UVs. Other options procedurally create UVs from the chosen space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.links heading=4-%}
     </p>

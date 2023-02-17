@@ -1,5 +1,11 @@
 ---
 title: NoiseMap_v2
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NoiseMap_v2
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -111,7 +117,7 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">User specified UVs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.input_texture_coordinates.links heading=4-%}
     </p>
@@ -119,7 +125,7 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Geometry</b>
       default: None
-      <p class="scene-class-comments">Directly connect object to use that object's space.</p>
+      <p class="scene-class-comments">Directly connect object to use that object's space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.object_space.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.object_space.links heading=4-%}
     </p>

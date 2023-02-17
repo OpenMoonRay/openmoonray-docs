@@ -1,5 +1,11 @@
 ---
-title: Mesh Light
+title: MeshLight
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # MeshLight
 {%-include overview.html data=site.data.user-reference.scene-objects.lights.MeshLight-%}
@@ -149,7 +155,7 @@ title: Mesh Light
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
+      <p class="scene-class-comments">Shadows less than this distance from the light are ignored. Setting this value to 0.0 or less effectively disables this feature.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.MeshLight.attributes.clear_radius.images data=site.data.user-reference.scene-objects.lights.MeshLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.MeshLight.attributes.clear_radius.links heading=4-%}
     </p>
@@ -157,7 +163,7 @@ title: Mesh Light
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
+      <p class="scene-class-comments">Distance over which the shadows fall off. Shadows are fully visible at a distance clear_radius + clear_radius_falloff_distance from the light, and fully invisble at a distance clear_radius from the light.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.MeshLight.attributes.clear_radius_falloff_distance.images data=site.data.user-reference.scene-objects.lights.MeshLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.MeshLight.attributes.clear_radius_falloff_distance.links heading=4-%}
     </p>
@@ -168,7 +174,7 @@ title: Mesh Light
           | exponential_up = 1
           | exponential_down = 2
           | smoothstep = 3
-      <p class="scene-class-comments">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
+      <p class="scene-class-comments">Interpolation type to use for the clear radius shadow falloff.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.MeshLight.attributes.clear_radius_interpolation_type.images data=site.data.user-reference.scene-objects.lights.MeshLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.MeshLight.attributes.clear_radius_interpolation_type.links heading=4-%}
     </p>
