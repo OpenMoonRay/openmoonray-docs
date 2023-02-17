@@ -1,5 +1,11 @@
 ---
-title: Ramp Map
+title: RampMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RampMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.RampMap-%}
@@ -41,7 +47,7 @@ title: Ramp Map
       <b>Int</b> <i>enum</i>
           | wrap = 0 (default)
           | clamp = 1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Whether to repeat the ramp or maintain the color at each edge</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.links heading=4-%}
     </p>
@@ -125,7 +131,7 @@ title: Ramp Map
           | uxv = 6
           | four corner = 7
           | input = 8
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Determines input signal / shape of the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.links heading=4-%}
     </p>
@@ -153,7 +159,7 @@ title: Ramp Map
       <b>Int</b> <i>enum</i>
           | default state coordinates = 0 (default)
           | input texture coordinates = 1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Whether to read existing coordinates or bind custom ones</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.links heading=4-%}
     </p>

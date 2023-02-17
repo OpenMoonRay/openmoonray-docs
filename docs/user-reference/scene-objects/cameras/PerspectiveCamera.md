@@ -78,7 +78,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 8.0
-      <p class="scene-class-comments">Depth of field aperture width</p>
+      <p class="scene-class-comments">Depth of field focus distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_aperture.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_aperture.links heading=4-%}
     </p>
@@ -86,7 +86,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">Depth of field focus distance</p>
+      <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_focus_distance.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.dof_focus_distance.links heading=4-%}
     </p>

@@ -1,5 +1,11 @@
 ---
-title: Op Map
+title: OpMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OpMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.OpMap-%}
@@ -16,7 +22,7 @@ title: Op Map
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">if on, the result is clamped to 0 - 1</p>
+      <p class="scene-class-comments">Whether to clamp result to 0 - 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.clamp.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.clamp.links heading=4-%}
     </p>
@@ -24,7 +30,7 @@ title: Op Map
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">the first operand</p>
+      <p class="scene-class-comments">First operand</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op1.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.op1.links heading=4-%}
     </p>
@@ -32,7 +38,7 @@ title: Op Map
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
-      <p class="scene-class-comments">a scalar multiplier on op1</p>
+      <p class="scene-class-comments">Scalar multiplier on op1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op1_factor.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.op1_factor.links heading=4-%}
     </p>
@@ -40,7 +46,7 @@ title: Op Map
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">the second operand</p>
+      <p class="scene-class-comments">Second operand</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op2.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.op2.links heading=4-%}
     </p>
@@ -48,7 +54,7 @@ title: Op Map
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
-      <p class="scene-class-comments">a scalar multiplier on op2</p>
+      <p class="scene-class-comments">Scalar multiplier on op2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op2_factor.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.op2_factor.links heading=4-%}
     </p>
@@ -94,7 +100,7 @@ title: Op Map
           | bit_shift_right = 36
           | bitwise_and = 37
           | bitwise_or = 38
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.links heading=4-%}
     </p>

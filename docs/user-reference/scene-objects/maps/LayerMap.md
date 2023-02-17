@@ -1,5 +1,11 @@
 ---
-title: Layer Map
+title: LayerMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # LayerMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -16,7 +22,7 @@ title: Layer Map
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Foreground color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.links heading=4-%}
     </p>
@@ -24,7 +30,7 @@ title: Layer Map
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Background color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.links heading=4-%}
     </p>
@@ -32,7 +38,7 @@ title: Layer Map
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Blending amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.links heading=4-%}
     </p>
@@ -55,7 +61,7 @@ title: Layer Map
           | soft light = 13
           | difference = 14
           | exclusion = 15
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Method of blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.links heading=4-%}
     </p>

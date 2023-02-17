@@ -1,5 +1,11 @@
 ---
-title: Curvature Map
+title: CurvatureMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CurvatureMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
@@ -16,7 +22,7 @@ title: Curvature Map
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Flips the value of the curvature.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.invert.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.invert.links heading=4-%}
     </p>
@@ -35,7 +41,7 @@ title: Curvature Map
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.5
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Raises the value of the curvature to the given power.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.power.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.power.links heading=4-%}
     </p>
@@ -43,7 +49,7 @@ title: Curvature Map
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Multiplies the value of the curvature. Results are still clamped between 0 and 1.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.scale.links heading=4-%}
     </p>

@@ -1,5 +1,11 @@
 ---
-title: Project Cylindrical Map
+title: ProjectCylindricalMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ProjectCylindricalMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
@@ -37,7 +43,7 @@ title: Project Cylindrical Map
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">enables projection on surfaces with inward facing normals</p>
+      <p class="scene-class-comments">Enables projection on surfaces with inward facing normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.links heading=4-%}
     </p>
@@ -45,7 +51,7 @@ title: Project Cylindrical Map
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">enables projection on surfaces with outward facing normals</p>
+      <p class="scene-class-comments">Enables projection on surfaces with outward facing normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.links heading=4-%}
     </p>
@@ -116,7 +122,7 @@ title: Project Cylindrical Map
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">use reference space</p>
+      <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.use_reference_space.links heading=4-%}
     </p>

@@ -1,5 +1,11 @@
 ---
-title: Hair Color Presets Map
+title: HairColorPresetsMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColorPresetsMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
@@ -30,7 +36,7 @@ title: Hair Color Presets Map
           | golden brown = 12
           | ash brown = 13
           | chestnut brown = 14
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Chooses a preset hair albedo</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.links heading=4-%}
     </p>

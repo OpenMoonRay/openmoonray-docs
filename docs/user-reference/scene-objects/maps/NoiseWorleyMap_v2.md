@@ -1,5 +1,11 @@
 ---
-title: Noise Worley Map_v2
+title: NoiseWorleyMap_v2
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NoiseWorleyMap_v2
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -163,7 +169,7 @@ title: Noise Worley Map_v2
     <p class="scene-class-type">
       <b>Camera</b>
       default: None
-      <p class="scene-class-comments">camera used to define camera and screen space</p>
+      <p class="scene-class-comments">Camera used to define camera and screen space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.camera.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.camera.links heading=4-%}
     </p>
@@ -171,7 +177,7 @@ title: Noise Worley Map_v2
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">User specified UVs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.links heading=4-%}
     </p>

@@ -1,5 +1,11 @@
 ---
-title: MoonRay Scene Variables
+title: SceneVariables
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # SceneVariables
 {%-include overview.html data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -462,14 +468,6 @@ title: MoonRay Scene Variables
 <details open>
   <summary>Global Toggles attributes</summary>
   <p>
-    <h3>correct_reflections_in_medium</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">Temporary toggle to turn on a bug fix that corrects reflections that occur within a medium.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.correct_reflections_in_medium.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.correct_reflections_in_medium.links heading=4-%}
-    </p>
     <h3>enable_displacement</h3>
     <p class="scene-class-type">
       <b>Bool</b>
