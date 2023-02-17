@@ -406,7 +406,7 @@
               path: user-reference/scene-objects/volumes/CutoutVolume.md
             - text: VdbVolume
               path: user-reference/scene-objects/volumes/VdbVolume.md
-      - text: How-To-Guides
+      - text: How-To Guides
         path: user-reference/how-to-guides/index.md
         subitems:
           - text: Adaptive Sampling
