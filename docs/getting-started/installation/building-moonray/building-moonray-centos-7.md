@@ -9,8 +9,9 @@ building on a Centos 7 machine is essentially the same as building in a Centos 7
 The process described in this document installs dependencies built from source to the ***/installs*** folder to avoid conflicting with existing installs,
 but you can modify the process to install to the default location (usually */usr/local*) if there are no conflicts.
 
-NVIDIA Optix headers need to be downloaded manually (from https://developer.nvidia.com/designworks/optix/download), since they require a EULA.
-They are copied into the install area in Step 3.
+NVIDIA Optix headers need to be downloaded manually from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy), since they require a EULA.
+Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
+The headers are copied into the install area in Step 3.
 
 ---
 ## Step 1. Base requirements

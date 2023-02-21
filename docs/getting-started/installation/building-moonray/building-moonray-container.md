@@ -7,7 +7,9 @@ These instructions should also be available in the *building* subdirectory of th
 
 You will need Docker and a copy of the MoonRay source (see [Cloning the Repo]({{ "/getting-started/installation/cloning-the-repo)" | absolute_url }}) The instructions assume that the source is in */source/openmoonray*
 
-NVIDIA Optix headers need to be downloaded manually (from https://developer.nvidia.com/designworks/optix/download), since they require a EULA. The instructions assume that these are in */optix/include*. 
+NVIDIA Optix headers need to be downloaded manually from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy), since they require a EULA.
+Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
+The instructions assume that these are in */optix/include*. 
 
 Substitute */source/openmoonray* and */optix* for the actual locations wherever they appear in the instructions.
 
