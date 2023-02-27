@@ -15,7 +15,7 @@ If the MoonRay release is in `$REL`, a typical setup looks like this:
 
 ```bash
 # tells MoonRay where to find shader dsos
-export RDL2_DSO_PATH=$REL/rdl2dso.proxy:${rel_rool}/rdl2dso
+export RDL2_DSO_PATH=$REL/rdl2dso.proxy:$REL/rdl2dso
 # only need to run this once for a MoonRay build
 $REL/bin/rdl2_json_exporter --out $REL/shader_json/ --sparse
 # tells the Sdr plugins where to find the shader descriptions
