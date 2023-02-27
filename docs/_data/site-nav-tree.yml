@@ -485,6 +485,8 @@
                 path: user-reference/tools/hydra/hdmoonray-setup.md
               - text: HdMoonRay Render Settings
                 path: user-reference/tools/hydra/render-settings.md
+              - text: HdMoonRay Houdini Integration
+                path: user-reference/tools/hydra/hdmoonray-houdini.md
               - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render.md
           - text: MoonRay
