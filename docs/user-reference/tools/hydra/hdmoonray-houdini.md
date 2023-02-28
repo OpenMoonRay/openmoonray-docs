@@ -20,11 +20,11 @@ See: [https://www.sidefx.com/docs/houdini/basics/config.html](https://www.sidefx
 
 Add the folder to your *HOUDINI_PATH*:
 ```bash
-export HOUDINI_PATH=$HOUDINI_PATH:$REL/plugin/houdini
+export HOUDINI_PATH=$HOUDINI_PATH:$REL/plugin:$REL/plugin/houdini
 ```
 or copy the folders to your local houdini install:
 ```bash
-    cp -r $REL/plugin/houdini/* ~/houdini19.5/
+cp -r $REL/plugin/houdini/* ~/houdini19.5/
 ```
 
 ## Houdini Components
