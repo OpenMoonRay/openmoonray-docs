@@ -26,6 +26,11 @@ dark-mode-toggle::part(legend) {
   transform: translate(-50%, -150%);
   left: 50%;
   font-size: var(--font-size-00);
+  display: none;
+
+  @media screen and (min-width: 64.0625em) {
+    display:inline;
+  }
 }
 
 dark-mode-toggle::part(toggleLabel) {
