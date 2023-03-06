@@ -22,7 +22,7 @@ title: BoxGeometry
     <p class="scene-class-type">
       <b>Vec3f</b>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The size of the box</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.size.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.size.links heading=4-%}
     </p>
