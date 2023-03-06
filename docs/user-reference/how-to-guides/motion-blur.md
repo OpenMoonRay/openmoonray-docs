@@ -11,7 +11,7 @@ PerspectiveCamera("camera") {
     ["focal"] = blur(30, 31),
 }
 ```
-This blurs the attribute over the time inteval defined by the 
+This blurs the attribute over the time interval defined by the 
 [SceneVariables]({{ "/user-reference/scene-objects/SceneVariables" | absolute_url }})
 *frame* value and the
 [camera's]({{ "/user-reference/scene-objects/cameras/PerspectiveCamera" | absolute_url }}) motion blur attributes
@@ -31,17 +31,17 @@ attribute where two 4x4 matrices are blended as in the example below.
 Deformational motion blur is supported on hard surface geometry (i.e.
 [RdlMeshGeometry]({{ "/user-reference/scene-objects/geometry/RdlMeshGeometry" | absolute_url }}),
 [RdlCurveGeometry]({{ "/user-reference/scene-objects/geometry/RdlCurveGeometry" | absolute_url }}),
-[RdlPointGeometry]({{ "/user-reference/scene-objects/geometry/RdlPointGeometry" | absolute_url }})).
+[RdlPointGeometry]({{ "/user-reference/scene-objects/geometry/RdlPointGeometry" | absolute_url }}), etc.).
 The type of motion blur is dependent on the *motion_blur_type* attribute setting and the data present.  The types are:
 
 Type|Description
 ---|---
 *static*|Treat the mesh as static.  No motion blur.
-*velocity*|Will blur using the supplied vertex velocities(`v`)
-*frame delta*|Will interpolate between the two supplied vertex positions
-*acceleration*|Will blur using the supplied vertex velocities(`v`) and accelerations(`accel`)
-*hermite*|Will use the supplied pair of positions(`P`) and velocities(`v`) to interpolate along a cubic hermite curve.
-*best*(default)|Will choose the method which provides the highest quality with the given data.
+*velocity*|Blur using the supplied vertex velocities(`v`)
+*frame delta*|Interpolate between the two supplied vertex positions
+*acceleration*|Blur using the supplied vertex velocities(`v`) and accelerations(`accel`)
+*hermite*|Use the supplied pair of positions(`P`) and velocities(`v`) to interpolate along a cubic hermite curve.
+*best*(default)|Choose the method which provides the highest quality with the given data.
 
 When set to *best*, the type chosen is based on the following data being available in order of preference.
 
