@@ -18,14 +18,6 @@ title: ImageMap
 <details open>
   <summary>Blur attributes</summary>
   <p>
-    <h3>blur</h3>
-    <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
-      default: 0.0
-      <p class="scene-class-comments">This parameter is deprecated, do not use!   Number of pixels to blur the image</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.blur.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.blur.links heading=4-%}
-    </p>
     <h3>mip_bias</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
@@ -33,14 +25,6 @@ title: ImageMap
       <p class="scene-class-comments">Amount to scale derivatives which controls mipmap selection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.links heading=4-%}
-    </p>
-    <h3>num_blur_samples</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      default: 3
-      <p class="scene-class-comments">This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.num_blur_samples.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.num_blur_samples.links heading=4-%}
     </p>
   </p>
 </details>
