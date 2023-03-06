@@ -22,7 +22,7 @@ title: SphereGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 360.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The arc of the sphere surface around the z axis expressed in degrees.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.phi_max.images data=site.data.user-reference.scene-objects.geometry.SphereGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.phi_max.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: SphereGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The radius of the sphere.  The sphere will clip if the radius exceeds the magnitude of either the zmin or zmax values.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.radius.images data=site.data.user-reference.scene-objects.geometry.SphereGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.radius.links heading=4-%}
     </p>
@@ -38,7 +38,7 @@ title: SphereGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The maximum extent of sphere on the z axis expressed in object space and independent of the radius.  The sphere will clip if the radius exceeds the magnitude of this parameter.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.zmax.images data=site.data.user-reference.scene-objects.geometry.SphereGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.zmax.links heading=4-%}
     </p>
@@ -46,7 +46,7 @@ title: SphereGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: -1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The minimum extent of sphere on the z axis expressed in object space and independent of the radius.  The sphere will clip if the radius exceeds the magnitude of this parameter.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.zmin.images data=site.data.user-reference.scene-objects.geometry.SphereGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.SphereGeometry.attributes.zmin.links heading=4-%}
     </p>
