@@ -442,6 +442,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
+          - text: Motion Blur
+            path: /user-reference/how-to-guides/motion-blur.md
           - text: Overlapping Dielectrics
             path: /user-reference/how-to-guides/overlapping-dielectrics.md
           - text: Path Guiding

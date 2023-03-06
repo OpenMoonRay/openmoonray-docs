@@ -14,3 +14,5 @@ Geometry procedurals in MoonRay include:
 [UsdGeometry](UsdGeometry)  
 [UsdInstanceGeometry](UsdInstanceGeometry)  
 [VdbGeometry](VdbGeometry)  
+
+All geometry types support [motion blur]({{ "/user-reference/how-to-guides/motion_blur" | absolute_url }})
