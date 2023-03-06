@@ -38,7 +38,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>SceneObject</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
