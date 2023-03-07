@@ -442,6 +442,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
+          - text: Motion Blur
+            path: /user-reference/how-to-guides/motion-blur.md
           - text: Overlapping Dielectrics
             path: /user-reference/how-to-guides/overlapping-dielectrics.md
           - text: Path Guiding
@@ -450,6 +452,8 @@
             path: /user-reference/how-to-guides/pbr-validity.md
           - text: Point Rendering
             path: /user-reference/how-to-guides/point-rendering.md   
+          - text: Ray Depth
+            path: /user-reference/how-to-guides/ray-depth.md
           - text: Render Outputs
             path: user-reference/how-to-guides/render-outputs.md
             subitems:
