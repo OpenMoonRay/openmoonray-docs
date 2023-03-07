@@ -132,7 +132,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of the number of faces belonging to the part with corresponding index in 'part list'.</p>
+      <p class="scene-class-comments">List of the number of faces belonging to the part with corresponding index in 'part list'.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.links heading=4-%}
     </p>
@@ -140,7 +140,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of face indices. No index should have a value greater than the size of 'face_vertex_count'</p>
+      <p class="scene-class-comments">List of face indices. No index should have a value greater than the size of 'face_vertex_count'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.links heading=4-%}
     </p>
@@ -148,7 +148,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
-      <p class="scene-class-comments">Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
+      <p class="scene-class-comments">List of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.links heading=4-%}
     </p>
@@ -166,7 +166,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
       default: []
-      <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.</p>
+      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the mesh.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
