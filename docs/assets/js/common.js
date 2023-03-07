@@ -84,6 +84,7 @@ for (const sectionHeadingEl of sectionHeadingEls) {
   `;
 }
 
+// Enable attribute permalink reveal on hover
 for (const attributeEl of attributeEls) {
   const permalinkMsg = encodeHtmlEntity(
     `Permalink to ${attributeEl.innerText}`
