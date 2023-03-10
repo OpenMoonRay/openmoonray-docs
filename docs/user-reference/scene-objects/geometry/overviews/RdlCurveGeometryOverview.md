@@ -46,6 +46,7 @@ curves1 = RdlCurveGeometry("curves1") {
 ```
 
 The curves can be rendered as *ray_facing* as in the above example or *round*
+
 *ray_facing*
 ![]({{ "/assets/images/user-reference/scene-objects/geometry/RdlCurveGeometry/ray_facing.jpg" | absolute_url }})
 *round*
