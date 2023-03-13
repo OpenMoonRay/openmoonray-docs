@@ -47,4 +47,4 @@ RdlMeshGeometry("shape_creases") {
 
 ```
 The above code generates this creased mesh:
-![]({{ "/assets/images/user-reference/scene-objects/geometry/RdlMesh/rdl_mesh.jpg" | absolute_url }})
+![]({{ "/assets/images/user-reference/scene-objects/geometry/RdlMeshGeometry/rdl_mesh.jpg" | absolute_url }})
