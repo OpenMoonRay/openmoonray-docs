@@ -30,7 +30,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
+      <p class="scene-class-comments">The maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.adaptive_error.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.adaptive_error.links heading=4-%}
     </p>
@@ -232,7 +232,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
+      <p class="scene-class-comments">Generates smooth shading normals when rendering a PolygonMesh and the mesh doesn't provide shading normal itself</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.smooth_normal.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.smooth_normal.links heading=4-%}
     </p>
@@ -312,7 +312,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
     </p>
