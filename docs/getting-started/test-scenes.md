@@ -3,7 +3,7 @@ title: MoonRay Test Scenes
 ---
 # Test Scenes for MoonRay
 
-A selection of [scenes converted to MoonRay's native RDL format and optimized are available at this link](https://dreamworks.app.box.com/folder/164995024834?s=yemnny3cq7yducyru0rg94grv7ff6f87) for testing.  
+A selection of [scenes converted to MoonRay's native RDL format and optimized are available at this link](https://dreamworksanimation.com) for testing.  
 
 ## Credits
 
