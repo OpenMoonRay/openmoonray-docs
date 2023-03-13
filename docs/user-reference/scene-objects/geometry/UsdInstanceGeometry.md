@@ -54,7 +54,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">evaluate geometry at specified frame instead of SceneVariables frame<br></p>
+      <p class="scene-class-comments">Evaluate geometry at specified frame instead of SceneVariables frame<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.links heading=4-%}
     </p>
@@ -66,7 +66,7 @@ title: UsdInstanceGeometry
           | instance level 2 = 2
           | instance level 3 = 3
           | instance level 4 = 4
-      <p class="scene-class-comments">Level of this instance.  This level can be referenced in TransformSpaceMap to allow for transforming data to/from the local space of each instance this instancer produces.</p>
+      <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.links heading=4-%}
     </p>
@@ -103,7 +103,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>String</b>
       default: 
-      <p class="scene-class-comments">The point instancer to load from the USD Stage<br></p>
+      <p class="scene-class-comments">The point instancer to load from the USD Stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.links heading=4-%}
     </p>
@@ -121,7 +121,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>UserData Vector</b>
       default: []
-      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per -instance</p>
+      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per-instance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
@@ -187,7 +187,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
-      <p class="scene-class-comments">USD Stage to load<br></p>
+      <p class="scene-class-comments">USD Stage to load containing the point instancer</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.links heading=4-%}
     </p>
@@ -203,7 +203,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">uses "evaluation frame" instead of SceneVariables frame<br></p>
+      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.links heading=4-%}
     </p>
@@ -235,7 +235,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache<br></p>
+      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>

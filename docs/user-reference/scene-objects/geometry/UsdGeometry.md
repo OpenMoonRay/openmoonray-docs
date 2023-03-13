@@ -68,7 +68,7 @@ title: UsdGeometry
       <b>Int</b> <i>enum</i>
           | ray_facing = 0 (default)
           | round = 1
-      <p class="scene-class-comments">Curves subtype is ray facing or round</p>
+      <p class="scene-class-comments">Set the style that curve primitives are rendered in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
     </p>
@@ -84,7 +84,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">evaluate geometry at specified frame instead of SceneVariables frame<br></p>
+      <p class="scene-class-comments">Evaluate geometry at specified frame instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.links heading=4-%}
     </p>
@@ -137,7 +137,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>String</b>
       default: 
-      <p class="scene-class-comments">The geometry Prim to load from the USD Stage<br></p>
+      <p class="scene-class-comments">The geometry Prim to load from the USD Stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.links heading=4-%}
     </p>
@@ -163,7 +163,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">radius multiplier for points and curves</p>
+      <p class="scene-class-comments">Multiplier for the radius of points and curves</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.links heading=4-%}
     </p>
@@ -237,7 +237,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
-      <p class="scene-class-comments">USD Stage to load<br></p>
+      <p class="scene-class-comments">USD Stage to load</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.links heading=4-%}
     </p>
@@ -255,7 +255,7 @@ title: UsdGeometry
           | use mesh type = 0 (default)
           | force polygon mesh = 1
           | force subdivision mesh = 2
-      <p class="scene-class-comments">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.<br></p>
+      <p class="scene-class-comments">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.links heading=4-%}
     </p>
@@ -271,7 +271,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">uses "evaluation frame" instead of SceneVariables frame<br></p>
+      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.links heading=4-%}
     </p>
@@ -279,7 +279,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">If the prim is an instance proxy, use the xform from the master Prim during geometry creation<br></p>
+      <p class="scene-class-comments">If the prim is an instance proxy, use the xform from the master Prim during geometry creation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.links heading=4-%}
     </p>
@@ -287,7 +287,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">Include the xform from the Prim during geometry creation<br></p>
+      <p class="scene-class-comments">Include the xform from the Prim during geometry creation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.links heading=4-%}
     </p>
@@ -303,7 +303,7 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache<br></p>
+      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>
