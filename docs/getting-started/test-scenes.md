@@ -7,7 +7,7 @@ A selection of [scenes converted to MoonRay's native RDL format](https://dreamwo
 
 ## Credits
 
-The [ALab scene was created by Animal Logic](https://animallogic.com/alab/) as a reference USD production scene for exploration. This scene was developed to be used in different environments, such as demonstrations and training materials. 
+The [ALab scene was created by Animal Logic](https://animallogic.com/alab/) as a reference USD production scene for exploration. This scene was developed to be used in different environments, such as demonstrations and training materials and in the testing of USD support across software and pipeline. 
 
 The pbrt scenes were [curated by Benedikt Bitterli](https://benedikt-bitterli.me/resources/). They are designed to render modern, realistic images.
 
