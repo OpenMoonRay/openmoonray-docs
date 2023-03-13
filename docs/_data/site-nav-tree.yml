@@ -22,6 +22,8 @@
             path: getting-started/installation/building-moonray.md
           - text: Dependencies
             path: getting-started/installation/moonray-dependencies.md
+      - text: Test Scenes
+        path: getting-started/test-scenes.md
   - text: User Reference
     path: user-reference/index.md
     subitems:
