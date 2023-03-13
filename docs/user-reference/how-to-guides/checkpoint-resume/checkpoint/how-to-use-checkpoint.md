@@ -60,11 +60,7 @@ Choose one of the checkpoint modes, either time- or quality-based.  Each mode ha
 #### Settings for time-based checkpoint mode
 Note that the time-based checkpoint mode is the default for MoonRay.  The settings are:
 ```lua
-["checkpoint_mode"] = 0
-```
-or 
-```lua
-["checkpoint_mode"] = "time"
+["checkpoint_mode"] = 0 -- or "time"
 ```
   
 ```lua
@@ -79,11 +75,7 @@ There are two different ways to control quality-based checkpoint renders. One we
 ##### 'Easy-mode' scene variables for quality based checkpoint renders 
 The following setting are an easy way to control checkpoint file generation intervals using quality-based checkpoint mode. 
 ```lua
-["checkpoint_mode"] = 1 
-```
-or 
-```lua
-["checkpoint_mode"] = "quality"
+["checkpoint_mode"] = 1 -- or "quality"
 ```
 
 ```lua
@@ -129,11 +121,7 @@ Here's how to interpret that log message:
 These settings directly control the checkpoint file interval by using _checkpoint_quality_steps_. Checkpoint file generation intervals based on the SPP sampling number using _checkpoint_quality_steps_ are defined as follows:
 
 ```lua
-["checkpoint_mode"] = 1 
-```
-or 
-```lua
-["checkpoint_mode"] = "quality"
+["checkpoint_mode"] = 1 -- or "quality"
 ```
 
 ```lua
