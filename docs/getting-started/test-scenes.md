@@ -11,7 +11,7 @@ The [ALab scene was created by Animal Logic](https://animallogic.com/alab/) as a
 
 The pbrt scenes were [curated by Benedikt Bitterli](https://benedikt-bitterli.me/resources/). They are designed to render modern, realistic images.
 
-The moonray_sphere.usd file is was developed by DreamWorks as a simple test of hdMoonray rendering USD format data.  It is distributed as part of the Apache version 2.0 license.
+The moonray_sphere.usd file is was developed by DreamWorks as a simple test of hdMoonray rendering USD format data.  It is distributed under the [ASWF Digital Assets License v1.1]({{ "/getting-started/moonray-sphere-usd-license" | absolute_url }}).
 
 
 
