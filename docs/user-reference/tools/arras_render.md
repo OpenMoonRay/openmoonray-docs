@@ -39,7 +39,7 @@ See more detail [here](../../../developer-reference/arras)) on the same machine.
 We call this execution style "**Local**" mode.
 In this case, you do **NOT** need to run "**minicoord**" coordinator before starting arras_render.
 You only need to run **arras_render** process with setup 3 environment variables.
-```
+```bash
 export PATH=${rel_root}/bin:${PATH}
 export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy
 export ARRAS_SESSION_PATH=${rel_root}/sessions
@@ -79,7 +79,7 @@ Each host has 96 HTcores for example.
     94(for merge) + 1(for dispatch) + 1(for arras-fundation) = 96.
 
 This is a sessiondef files example of the above configuration.
-```
+```lua
 {
     "name": "mcrt_progressive_n_sample",
     "computations": {
@@ -201,7 +201,7 @@ run [minicoord](../../../developer-reference/arras/distributed-arras/#coordinato
 run [arras4_node](../../../developer-reference/arras/distributed-arras/#node) on hostA, hostB, and hostC.<br>
 
 on client hosts, you need to set 3 environment variables and run arras_render as follows.
-```
+```bash
 export PATH=${rel_root}/bin:${PATH}
 export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy
 export ARRAS_SESSION_PATH=${rel_root}/sessions
@@ -241,7 +241,7 @@ Use just execute **arras_render** without any command-line options to display th
 The followings are the options we use with
 [minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) environment and **Local** mode.
 
-```
+```bash
 $ arras_render
 At least one RDL file is required
   --help                            produce help message
@@ -294,7 +294,7 @@ At least one RDL file is required
 
 ## Mouse / Hotkey Operation
 
-`Left Mouse Botton` dragging rotates the camera direction.
+`Left Mouse Button` dragging rotates the camera direction.
 There is no orbit camera mode like moonray_gui at this moment.
 
 Key|Description
