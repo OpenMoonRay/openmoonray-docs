@@ -1,4 +1,5 @@
 ---
+example: examples/ProjectCylindricalMapExample.md
 image_path: /assets/images/user-reference/scene-objects/maps/ProjectCylindricalMap
 attributes:
   use_reference_space:
