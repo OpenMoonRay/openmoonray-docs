@@ -1,4 +1,5 @@
 ---
+example: examples/RampMapExample.md
 image_path: /assets/images/user-reference/scene-objects/maps/RampMap
 attributes:
   uv_repeat:

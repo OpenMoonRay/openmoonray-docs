@@ -1,4 +1,6 @@
 ---
+overview: overviews/ProjectCameraMap_v2Overview.md
+example: examples/ProjectCameraMap_v2Example.md
 image_path: /assets/images/user-reference/scene-objects/maps/ProjectCameraMap
 gallery:
   - image: project_camera_v2_setup.png
