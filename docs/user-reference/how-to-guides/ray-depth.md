@@ -89,6 +89,8 @@ physically correct, and currently total internal reflection won't trigger the ef
 ## Max Hair Depth
 *max_hair_depth* is the maximum number of hair interactions for a ray.
 
+*Hair is not affected by max_depth!*
+
 ## Max Presence Depth
 *max_presence_depth* is the maximum number of presence interactions for a ray.
 
