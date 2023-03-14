@@ -17,4 +17,4 @@ DreamWorks has released MoonRay as open source, under the Apache 2.0 license. Th
 - a Hydra plugin for MoonRay, allowing its use in Hydra-supporting applications such as Houdini and Maya.
 - the Arras system, used to distribute MoonRay rendering across multiple machines.
 
-To get started, explore the links to the left or [Click here]({{ "/getting-started" | absolute_url }}).
+To get started, explore the links in the navigation or [click here]({{ "/getting-started" | absolute_url }}).

@@ -22,7 +22,7 @@ title: BoxGeometry
     <p class="scene-class-type">
       <b>Vec3f</b>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The size of the box</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.size.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.size.links heading=4-%}
     </p>
@@ -43,7 +43,7 @@ title: BoxGeometry
     <p class="scene-class-type">
       <b>SceneObject</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.dicing_camera.links heading=4-%}
     </p>

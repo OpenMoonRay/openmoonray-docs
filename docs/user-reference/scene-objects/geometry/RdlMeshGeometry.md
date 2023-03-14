@@ -22,7 +22,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Optionally declare vertex accelerations for quadratic motion interpolation</p>
+      <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.accleration_list.links heading=4-%}
     </p>
@@ -30,7 +30,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
-      <p class="scene-class-comments">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
+      <p class="scene-class-comments">The maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.adaptive_error.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.adaptive_error.links heading=4-%}
     </p>
@@ -54,7 +54,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>SceneObject</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
@@ -62,7 +62,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh</p>
+      <p class="scene-class-comments">List of vertices per face, used in conjunction with vertices_by_index to construct the mesh</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.face_vertex_count.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.face_vertex_count.links heading=4-%}
     </p>
@@ -115,7 +115,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments"> If the mesh is using normals, store them per-face-vertex in this list</p>
+      <p class="scene-class-comments"> If the mesh is using normals, store them per face-vertex in this list</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.normal_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.normal_list.links heading=4-%}
     </p>
@@ -132,7 +132,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">The number of faces belonging to the part with corresponding index in 'part list'.</p>
+      <p class="scene-class-comments">List of the number of faces belonging to the part with corresponding index in 'part list'.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.links heading=4-%}
     </p>
@@ -140,7 +140,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'</p>
+      <p class="scene-class-comments">List of face indices. No index should have a value greater than the size of 'face_vertex_count'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.links heading=4-%}
     </p>
@@ -148,7 +148,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
-      <p class="scene-class-comments">Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
+      <p class="scene-class-comments">List of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.links heading=4-%}
     </p>
@@ -166,7 +166,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
       default: []
-      <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.</p>
+      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the mesh.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
@@ -232,7 +232,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
-      <p class="scene-class-comments">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
+      <p class="scene-class-comments">Generates smooth shading normals when rendering a PolygonMesh and the mesh doesn't provide shading normal itself</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.smooth_normal.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.smooth_normal.links heading=4-%}
     </p>
@@ -312,7 +312,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
     </p>
@@ -320,7 +320,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec2fVector</b>
       default: []
-      <p class="scene-class-comments">If the mesh is using UVs, store them per-face-vertex in this list</p>
+      <p class="scene-class-comments">If the mesh is using UVs, store them per face-vertex in this list</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.uv_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.uv_list.links heading=4-%}
     </p>
@@ -328,7 +328,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Optionally declare vertex velocities instead of a second motion step'</p>
+      <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_0.links heading=4-%}
     </p>
@@ -336,7 +336,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
+      <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_1.links heading=4-%}
     </p>
@@ -344,7 +344,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">Adjust magnitude of velocity-based motion blur</p>
+      <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_scale.links heading=4-%}
     </p>
@@ -352,7 +352,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Stores all vertices used by the mesh at motion step 0</p>
+      <p class="scene-class-comments">List of vertex positions used by the mesh at motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_0.links heading=4-%}
     </p>
@@ -360,7 +360,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">If the mesh is in motion, the second motion step is stored in this attribute</p>
+      <p class="scene-class-comments">If the mesh is in motion, the vertex positions for the second motion step are stored in this attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_1.links heading=4-%}
     </p>
@@ -368,7 +368,7 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of vertex indices used to construct the mesh using the vertex list</p>
+      <p class="scene-class-comments">List of vertex indices used to construct the mesh using the vertex list</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.links heading=4-%}
     </p>

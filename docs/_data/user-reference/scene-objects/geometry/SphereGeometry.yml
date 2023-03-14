@@ -1,0 +1,13 @@
+---
+image_path: /assets/images/user-reference/scene-objects/geometry/SphereGeometry
+gallery:
+attributes:
+  radius:
+    images:
+      - image: radius.gif
+  zmax:
+    images:
+      - image: zmax.gif
+  phi_max:
+    images:
+      - image: phi_max.gif

@@ -35,7 +35,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Optionally declare vertex accelerations for quadratic motion interpolation</p>
+      <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.accleration_list.links heading=4-%}
     </p>
@@ -78,7 +78,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of vertices per curve</p>
+      <p class="scene-class-comments">List of vertices per curve</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_vertex_count.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_vertex_count.links heading=4-%}
     </p>
@@ -86,7 +86,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>SceneObject</b>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
@@ -123,7 +123,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">Ordered list of part indices. </p>
+      <p class="scene-class-comments">List of part indices.  No index should have a value greater than the size of 'curves_vertex_count'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_indices.links heading=4-%}
     </p>
@@ -131,7 +131,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
-      <p class="scene-class-comments">Ordered list of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
+      <p class="scene-class-comments">List of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_list.links heading=4-%}
     </p>
@@ -149,7 +149,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
       default: []
-      <p class="scene-class-comments">Vector of UserData.Each key/value pair will be added as a primitive attribute of the points.</p>
+      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the curves.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
@@ -157,7 +157,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>FloatVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      <p class="scene-class-comments">Stores all radii</p>
+      <p class="scene-class-comments">List of radius values.  The rate will be determined based on the number of values.   A single value will be interpreted as constant.   If the  number of values matches the number of curves, the rate will be interpreted as uniform.   If the number of values matches the number of vertices, the rate will be interpreted as  vertex.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.links heading=4-%}
     </p>
@@ -231,7 +231,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
-      <p class="scene-class-comments">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
     </p>
@@ -247,7 +247,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Optionally declare vertex velocities instead of a second motion step'</p>
+      <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_0.links heading=4-%}
     </p>
@@ -255,7 +255,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
+      <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_list_1.links heading=4-%}
     </p>
@@ -263,7 +263,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
-      <p class="scene-class-comments">Adjust magnitude of velocity-based motion blur</p>
+      <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_scale.links heading=4-%}
     </p>
@@ -271,7 +271,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">Stores all vertices used by the points at motion step 0</p>
+      <p class="scene-class-comments">List of vertex positions used by the curves at motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_0.links heading=4-%}
     </p>
@@ -279,7 +279,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       default: []
-      <p class="scene-class-comments">If the curves are in motion, the second motion step is stored in this attribute</p>
+      <p class="scene-class-comments">If the curves are in motion, the vertex positions for the second motion step are stored in this attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_1.links heading=4-%}
     </p>
