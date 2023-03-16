@@ -4,7 +4,8 @@ title: textures
 
 # Textures
 
-MoonRay requires textures to be tiled and mipmapped before rendering. The OpenImageIO utility application `maketx` is the easiest way to do this.
+<aside class="info-aside">MoonRay <b>requires</b> textures to be tiled and mipmapped before rendering.</aside>
+The OpenImageIO utility application `maketx` is the easiest way to do this.
 
 ## Workflow
 In most cases, MoonRay requires supplied textures to be tiled and mipmapped. The easiest way to achieve this is through OpenImageIO’s `maketx` utility, which will convert the provided image to a tiled and mipmapped TIFF file with a TX extension.
