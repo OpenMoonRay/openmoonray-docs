@@ -11,7 +11,9 @@ You will need Docker and a copy of the MoonRay source. To clone the source from 
 git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
 ```
 
-You will also need to download the NVIDIA Optix headers (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA. Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
+You will also need to download the NVIDIA Optix headers (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA. 
+
+ <aside class="info-aside">Be sure to download Optix version <b>7.3</b>, as MoonRay is <b>not</b> yet compatible with their more recent releases.</aside>
 
 The build process creates three Docker images:
 
@@ -47,7 +49,7 @@ This step creates the openmoonray_build container by downloading, building and i
 
 The *building* directory in the openmoonray repo contains a file *CMakeLists.txt". This file defines a series of CMake targets that automatically download and install the third-party dependencies. 
 
-The Optix 7.3 header files from NVidia cannot be downloaded automatically : as discussed in the first section, you must have previously downloaded them yourself from the NVidia site.
+The Optix **7.3** header files from NVidia cannot be downloaded automatically : as discussed in the first section, you must have previously downloaded them yourself from the NVidia site.
 
 This step begins by running a Docker container using the openmoonray_base image created in step 1. This container will not be able to access arbitrary files on your machine or the network : you must use the docker run "-v" option to mount the directories containing CMakeLists.txt and the NVidia headers, like this:
 
