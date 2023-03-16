@@ -34,13 +34,15 @@ To find suitable values for the adaptive sampling parameters, check the output v
 
 ## Example RDLA Syntax
 
-    SceneVariables
-    {
-        ["sampling_mode"] = 1,
-        ["min_adaptive_samples"] = 16,
-        ["max_adaptive_samples"] = 4096,
-        ["target_adaptive_error"] = 1.5,
-    }
+```lua
+SceneVariables
+{
+    ["sampling_mode"] = 1,
+    ["min_adaptive_samples"] = 16,
+    ["max_adaptive_samples"] = 4096,
+    ["target_adaptive_error"] = 1.5,
+}
+```
 
 In `moonray_gui`, hotkey "8" will toggle to a grayscale view showing the number of samples rendered per pixel. The brighter the pixel, the higher the sample count. In addition, a weight AOV is available that also records the absolute number of pixel samples. To be human-viewable, the weight AOV may need to be normalized to [0, 1] in compositing software.
 
