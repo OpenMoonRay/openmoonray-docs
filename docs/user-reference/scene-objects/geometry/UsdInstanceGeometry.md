@@ -16,6 +16,50 @@ title: UsdInstanceGeometry
 
 <div class="scene-class">
 <details open>
+  <summary>Motion Blur attributes</summary>
+  <p>
+    <h3>curved_motion_blur_sample_count</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      default: 10
+      <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.curved_motion_blur_sample_count.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.curved_motion_blur_sample_count.links heading=4-%}
+    </p>
+    <h3>motion_blur_type</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | best = -1 (default)
+          | static = 0
+          | velocity = 1
+          | frame delta = 2
+          | acceleration = 3
+          | hermite = 4
+      <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.links heading=4-%}
+    </p>
+    <h3>primitive_attribute_frame</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | first motion step = 0
+          | second motion step = 1
+          | both motion steps = 2 (default)
+      <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.links heading=4-%}
+    </p>
+    <h3>use_rotation_motion_blur</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>General attributes</summary>
   <p>
     <h3>contains_camera</h3>
@@ -25,14 +69,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.contains_camera.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.contains_camera.links heading=4-%}
-    </p>
-    <h3>curved_motion_blur_sample_count</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      default: 10
-      <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.curved_motion_blur_sample_count.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.curved_motion_blur_sample_count.links heading=4-%}
     </p>
     <h3>dicing_camera</h3>
     <p class="scene-class-type">
@@ -78,19 +114,6 @@ title: UsdInstanceGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.label.links heading=4-%}
     </p>
-    <h3>motion_blur_type</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | best = -1 (default)
-          | static = 0
-          | velocity = 1
-          | frame delta = 2
-          | acceleration = 3
-          | hermite = 4
-      <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.links heading=4-%}
-    </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
@@ -106,16 +129,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">The point instancer to load from the USD Stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.links heading=4-%}
-    </p>
-    <h3>primitive_attribute_frame</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | first motion step = 0
-          | second motion step = 1
-          | both motion steps = 2 (default)
-      <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.links heading=4-%}
     </p>
     <h3>primitive_attributes</h3>
     <p class="scene-class-type">
@@ -222,14 +235,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_xforms.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_xforms.links heading=4-%}
-    </p>
-    <h3>use_rotation_motion_blur</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
     </p>
     <h3>use_stage_cache</h3>
     <p class="scene-class-type">
