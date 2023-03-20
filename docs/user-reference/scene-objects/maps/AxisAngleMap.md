@@ -31,8 +31,8 @@ title: AxisAngleMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">the space of the axis to rotate about</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.axis_space.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.axis_space.links heading=4-%}
@@ -41,11 +41,11 @@ title: AxisAngleMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = render(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">the space to transform from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.input_space.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.input_space.links heading=4-%}
@@ -63,11 +63,11 @@ title: AxisAngleMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = render(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">the space to transform the resulting vector to</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.output_space.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.output_space.links heading=4-%}

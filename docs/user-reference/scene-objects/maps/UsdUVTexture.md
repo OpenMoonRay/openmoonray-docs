@@ -49,11 +49,11 @@ title: UsdUVTexture
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = rgb(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = r<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = g<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = b<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = a<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">Controls which channel(s) to output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.output_mode.links heading=4-%}
@@ -71,9 +71,9 @@ title: UsdUVTexture
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = raw<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = sRGB<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = auto(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;3 = name (default)<br>
       <p class="scene-class-comments">Flag indicating the color space in which the source texture is encoded.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.sourceColorSpace.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.sourceColorSpace.links heading=4-%}
@@ -118,11 +118,11 @@ title: UsdUVTexture
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = black<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = clamp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = repeat<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = mirror<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = useMetadata(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
       <p class="scene-class-comments">Wrap mode when reading this texture.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.wrapS.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.wrapS.links heading=4-%}
@@ -131,11 +131,11 @@ title: UsdUVTexture
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = black<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = clamp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = repeat<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = mirror<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = useMetadata(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
       <p class="scene-class-comments">Wrap mode when reading this texture.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.wrapT.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.wrapT.links heading=4-%}

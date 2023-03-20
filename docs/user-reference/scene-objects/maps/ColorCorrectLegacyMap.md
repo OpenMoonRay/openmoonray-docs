@@ -85,14 +85,14 @@ title: ColorCorrectLegacyMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = off(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = luminance<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = average<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = minimum<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = maximum<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = red channel<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = green channel<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = blue channel<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.monochrome.images data=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectLegacyMap.attributes.monochrome.links heading=4-%}

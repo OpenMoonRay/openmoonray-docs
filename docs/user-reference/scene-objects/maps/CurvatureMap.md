@@ -31,10 +31,10 @@ title: CurvatureMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = convex<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = concave<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = composite<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = all(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name (default)<br>
       <p class="scene-class-comments">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.links heading=4-%}

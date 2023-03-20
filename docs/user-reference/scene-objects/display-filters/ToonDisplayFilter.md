@@ -31,10 +31,10 @@ title: ToonDisplayFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = None(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = Sobel<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = Laplacian<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = Laplacian of Gaussian<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">Type of edge detector to use</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.edge_detector.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.edge_detector.links heading=4-%}

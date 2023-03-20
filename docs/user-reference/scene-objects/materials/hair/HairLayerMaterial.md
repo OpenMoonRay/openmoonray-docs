@@ -22,9 +22,9 @@ title: HairLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = RGB(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = HSV<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = HSL<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.blend_color_space.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.blend_color_space.links heading=4-%}
@@ -33,8 +33,8 @@ title: HairLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = normalized diffusion(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = dipole<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.fallback_bssrdf.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.fallback_bssrdf.links heading=4-%}

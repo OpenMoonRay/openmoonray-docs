@@ -166,8 +166,8 @@ title: UsdPreviewSurface
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Metalness workflow(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = Specular workflow<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">This node can fundamentally operate in two modes : Specular workflow where you provide a texture/value to the 'specularColor' input. Or, Metallic workflow where you provide a texture/value to the 'metallic' input.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.useSpecularWorkflow.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.useSpecularWorkflow.links heading=4-%}

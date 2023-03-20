@@ -49,8 +49,8 @@ title: RampMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = wrap(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = clamp<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Whether to repeat the ramp or maintain the color at each edge</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.links heading=4-%}
@@ -105,9 +105,9 @@ title: RampMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = rgb(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = hsv<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = hsl<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Color space to perform interpolation in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.color_space.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.color_space.links heading=4-%}
@@ -134,15 +134,15 @@ title: RampMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = v(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = u<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = diagonal<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = radial<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = circular<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = box<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = uxv<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = four corner<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = input<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
       <p class="scene-class-comments">Determines input signal / shape of the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.links heading=4-%}
@@ -151,13 +151,13 @@ title: RampMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = render(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = texture<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
       <p class="scene-class-comments">Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.space.links heading=4-%}
@@ -171,8 +171,8 @@ title: RampMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = default state coordinates(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = input texture coordinates<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Whether to read existing coordinates or bind custom ones</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.links heading=4-%}

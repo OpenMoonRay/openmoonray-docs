@@ -150,9 +150,9 @@ title: DomeMaster3DCamera
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = center view(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = left view<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = right view<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera.attributes.stereo_view.images data=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.DomeMaster3DCamera.attributes.stereo_view.links heading=4-%}

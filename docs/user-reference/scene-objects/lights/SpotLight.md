@@ -72,11 +72,11 @@ title: SpotLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = linear<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = ease in<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = ease out<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = ease in/out(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
       <p class="scene-class-comments">The falloff function applied between the outer and inner cones. To calculate this, the angle from the cone's axis to the the point being illuminated is measured as seen from the SpotLight's position. This angle is converted into a fractional value representing the fraction from the outer cone angle to the inner cone angle, clamped to the range [0,1]. The resulting value is then fed into one of the following user-selectable functions to determine the final 0-1 scaling value to be applied to thelight's radiance: <br>  0 (off)         - no fallof, a step function at the outer cone boundary is applied<br>  1 (linear)      - a linear ramp, i.e. the fractional parameter is applied as-is<br>  2 (ease in)     - a quadratic ramp with zero gradient at the start point (outer cone)<br>  3 (ease out)    - a quadratic ramp with zero gradient at the end point (inner cone)<br>  4 (ease in/out) - a cubic ramp with zero gradient at both ends (outer and inner cone)<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.angle_falloff_type.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.angle_falloff_type.links heading=4-%}
@@ -266,10 +266,10 @@ title: SpotLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = linear(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = exponential_up<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = exponential_down<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = smoothstep<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">Interpolation type to use for the clear radius shadow falloff.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_interpolation_type.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_interpolation_type.links heading=4-%}
@@ -350,9 +350,9 @@ title: SpotLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = force off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = force on<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = use default(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
       <p class="scene-class-comments">Switch this attribute on for shadows cast from this light to correctly respect presence values. When off, surfaces with a material with presence less than 1.0 will cast opaque shadows from this light. This is an optimization - when the attribute is off, occlusion rays (fast) are used for testing for shadows. When it is on, regular rays (slower) are used, and the material's presence is evaluated to determine how much shadowing should occur. When set to "use default" it reads from the value of SceneVariable enable_presence_shadows.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.presence_shadows.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.presence_shadows.links heading=4-%}
@@ -370,10 +370,10 @@ title: SpotLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = nearest neighbor(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = bilinear<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = nearest neighbor with nearest mip<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = bilinear with nearest mip<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">The filtering mode to apply to the texture. Nearest neighbor is the cheapest filtering mode but produces a blocky result. Switch linear filtering on for a smoother result. Additionally, mip-mapping can be switched on with either nearest neighbor or linear filtering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.texture_filter.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.texture_filter.links heading=4-%}
@@ -382,9 +382,9 @@ title: SpotLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = force off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = force on<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = use default(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
       <p class="scene-class-comments">Whether the light is directly visible in the scene's active camera. When set to "use default" it reads from the value of SceneVariable lights_visible_in_camera.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.visible_in_camera.links heading=4-%}

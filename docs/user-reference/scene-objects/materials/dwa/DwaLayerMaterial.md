@@ -22,9 +22,9 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = RGB(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = HSV<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = HSL<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.blend_color_space.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.blend_color_space.links heading=4-%}
@@ -33,9 +33,9 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = normalized diffusion(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = dipole<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = random walk<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_bssrdf.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_bssrdf.links heading=4-%}
@@ -53,8 +53,8 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Beckmann<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = GGX(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_outer_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_outer_specular_model.links heading=4-%}
@@ -63,8 +63,8 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Beckmann<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = GGX(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">If child materials disagree on the type of specular model, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_specular_model.links heading=4-%}
@@ -82,9 +82,9 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Beckmann<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = GGX(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = Toon<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_toon_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_toon_specular_model.links heading=4-%}
@@ -116,12 +116,12 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = off(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = blend<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = color<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = averageColor<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = footprintArea<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = radius<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_glitter_debug_mode.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_glitter_debug_mode.links heading=4-%}
@@ -130,8 +130,8 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = physical(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = additive<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_glitter_layering_mode.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_glitter_layering_mode.links heading=4-%}
@@ -158,8 +158,8 @@ title: DwaLayerMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference(default)<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name (default)<br>
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_glitter_space.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.fallback_glitter_space.links heading=4-%}

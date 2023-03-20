@@ -131,8 +131,8 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = time(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = quality<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Select whether checkpoint images are written depending on time elapsed or on quality reached.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_mode.links heading=4-%}
@@ -286,8 +286,8 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = openexr2.0<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = opendcx2.0(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">Deep image format:<br>&emsp;&emsp;openexr2.0: vanilla OpenEXR deep<br>&emsp;&emsp;opendcx2.0: DCX abuffer mask encoding</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_format.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_format.links heading=4-%}
@@ -391,8 +391,8 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = non-overlapped tile<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = multiplex pixel(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.task_distribution_type.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.task_distribution_type.links heading=4-%}
@@ -424,9 +424,9 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = box<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = cubic b-spline(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = quadratic b-spline<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">The type of filter used for filter importance sampling. A box filter with a width of 1 is analogous to disabling pixel filtering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter.links heading=4-%}
@@ -612,11 +612,11 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Off(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = On<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = On (Sine Compensation Alternative)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = On (GGX Compensation Alternative)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = On (Cosine Compensation Alternative<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.shadow_terminator_fix.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.shadow_terminator_fix.links heading=4-%}
@@ -840,9 +840,9 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = multi-sample(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = one-sample<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = one-lobe<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_sampler_strategy.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_sampler_strategy.links heading=4-%}
@@ -1045,9 +1045,9 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = sum(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = max<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = rnd<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;Warning: light linking does not work correctly in sum mode.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_overlap_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_overlap_mode.links heading=4-%}
@@ -1088,14 +1088,14 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = top<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = bottom<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = left<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = right<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = morton(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = random<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = spiral square<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = spiral rect<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.links heading=4-%}
@@ -1104,14 +1104,14 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = top<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = bottom<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = left<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = right<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = morton(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = random<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = spiral square<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = spiral rect<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.links heading=4-%}
@@ -1147,14 +1147,14 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = top<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = bottom<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = left<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = right<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = morton(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = random<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = spiral square<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = spiral rect<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.links heading=4-%}
@@ -1163,8 +1163,8 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = uniform(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = adaptive<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Controls which sampling scheme to use: uniform or adaptive.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sampling_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sampling_mode.links heading=4-%}

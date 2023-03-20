@@ -31,8 +31,8 @@ title: LODMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = feature width(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera distance<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LODMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LODMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LODMap.attributes.mode.links heading=4-%}

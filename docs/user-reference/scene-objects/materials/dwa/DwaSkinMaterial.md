@@ -86,9 +86,9 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = normalized diffusion(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = dipole<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = random walk<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.bssrdf.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.bssrdf.links heading=4-%}
@@ -115,8 +115,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = RGB<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = Monochromatic(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">Controls how diffuse transmission color attenuates diffuse reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.diffuse_transmission_blending_behavior.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.diffuse_transmission_blending_behavior.links heading=4-%}
@@ -356,12 +356,12 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = off(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = blend<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = color<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = averageColor<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = footprintArea<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = radius<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">developer debug visualization modes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.glitter_debug_mode.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.glitter_debug_mode.links heading=4-%}
@@ -388,8 +388,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = physical(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = additive<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.glitter_layering_mode.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.glitter_layering_mode.links heading=4-%}
@@ -452,8 +452,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference(default)<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name (default)<br>
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.glitter_space.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.glitter_space.links heading=4-%}
@@ -530,8 +530,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = primary specular(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = clearcoat/moisture specular<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Apply iridescence to primary specular lobe or clearcoat/moisture lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_apply_to.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_apply_to.links heading=4-%}
@@ -558,8 +558,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = use hue interpolation(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = use ramp<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_color_control.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_color_control.links heading=4-%}
@@ -622,8 +622,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = RGB(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = HSV<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_ramp_interpolation_mode.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_ramp_interpolation_mode.links heading=4-%}
@@ -673,8 +673,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Beckmann<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = GGX(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">sets the normal distribution function for the moisture specular.  GGX is currently isotropic only</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.moisture_model.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.moisture_model.links heading=4-%}
@@ -765,8 +765,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = none(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = toksvig<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Normal map anti-aliasing strategy to use - 'none' uses regular mip-mapping, 'toksvig' increases specular roughness corresponding to the geometric details filtered out because of mip-mapping.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.normal_AA_strategy.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.normal_AA_strategy.links heading=4-%}
@@ -825,8 +825,8 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Beckmann<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = GGX(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">sets the normal distribution function for specular.  GGX is currently isotropic only</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.specular_model.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.specular_model.links heading=4-%}

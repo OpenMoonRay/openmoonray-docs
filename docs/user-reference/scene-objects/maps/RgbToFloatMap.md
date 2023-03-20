@@ -31,14 +31,14 @@ title: RgbToFloatMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = r<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = g<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = b<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = min<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = max<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = average(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = sum<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = luminance<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name (default)<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
       <p class="scene-class-comments">The method to convert RGB Color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.links heading=4-%}

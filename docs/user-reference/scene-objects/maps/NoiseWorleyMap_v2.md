@@ -126,10 +126,10 @@ title: NoiseWorleyMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = f1(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = f2<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = f3<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = f4<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">Which of the distances determines the cell id</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.cell_id.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.cell_id.links heading=4-%}
@@ -143,12 +143,12 @@ title: NoiseWorleyMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = linear(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = linear squared<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = manhattan<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = chebyshev<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = quadratic<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = minkowski<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.distance_method.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.distance_method.links heading=4-%}
@@ -166,11 +166,11 @@ title: NoiseWorleyMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = distance(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = gradient<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = cell id<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = cell edges<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = points<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.links heading=4-%}
@@ -211,16 +211,16 @@ title: NoiseWorleyMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = render<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = texture<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = input texture coordinates<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = hair_surface_uv<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = hair_closest_surface_uv<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.space.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.space.links heading=4-%}
@@ -243,12 +243,12 @@ title: NoiseWorleyMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = xyz(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = xzy<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = yxz<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = yzx<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = zxy<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = zyx<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">Order in which to apply the euler rotations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation_order.links heading=4-%}
@@ -266,12 +266,12 @@ title: NoiseWorleyMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = srt<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = str<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = rst<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = rts<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = tsr(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = trs<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name (default)<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">Order in which to apply the translation, rotation, and frequency</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.transformation_order.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.transformation_order.links heading=4-%}

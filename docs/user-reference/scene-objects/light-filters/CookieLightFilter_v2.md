@@ -76,8 +76,8 @@ title: CookieLightFilter_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = gaussian(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = circular<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Gaussian or circular blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_type.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_type.links heading=4-%}
@@ -113,9 +113,9 @@ title: CookieLightFilter_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = black(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = white<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = default<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">What happens outside the frustum of the projection camera.  Black (default), White, or Default (This uses the mode set on the Moonray map shader)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.outside_projection.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.outside_projection.links heading=4-%}
@@ -192,8 +192,8 @@ title: CookieLightFilter_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = perspective(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = orthographic<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Perspective or orthographic projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.projector_type.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.projector_type.links heading=4-%}

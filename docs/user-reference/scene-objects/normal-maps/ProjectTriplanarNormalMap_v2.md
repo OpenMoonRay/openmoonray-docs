@@ -484,12 +484,12 @@ title: ProjectTriplanarNormalMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = Scale Rot Trans(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = Scale Trans Rot<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = Rot Scale Trans<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = Rot Trans Scale<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = Trans Scale Rot<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = Trans Rot Scale<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.TRS_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.TRS_order.links heading=4-%}
@@ -516,9 +516,9 @@ title: ProjectTriplanarNormalMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = P/N(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = ref_P/ref_N<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = input_position/input_normal<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Input position to use</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.input_position_source.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.input_position_source.links heading=4-%}
@@ -581,8 +581,8 @@ title: ProjectTriplanarNormalMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = [0,1](default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = [-1,1]<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.normal_encoding.links heading=4-%}
@@ -591,9 +591,9 @@ title: ProjectTriplanarNormalMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = one<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = three(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = six<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;3 = name (default)<br>
+          &nbsp;&nbsp;6 = name<br>
       <p class="scene-class-comments">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.number_of_textures.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.number_of_textures.links heading=4-%}
@@ -665,9 +665,9 @@ title: ProjectTriplanarNormalMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = projector(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = projection_matrix<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = TRS<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.projection_mode.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.projection_mode.links heading=4-%}
@@ -730,12 +730,12 @@ title: ProjectTriplanarNormalMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = xyz(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = xzy<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = yxz<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = yzx<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = zxy<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = zyx<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap_v2.attributes.rotation_order.links heading=4-%}

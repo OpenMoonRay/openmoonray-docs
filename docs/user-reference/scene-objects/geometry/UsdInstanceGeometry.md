@@ -31,9 +31,9 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = force two-sided(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = force single-sided<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = use mesh sidedness<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.side_type.links heading=4-%}
@@ -56,11 +56,11 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = instance level 0(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = instance level 1<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = instance level 2<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = instance level 3<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = instance level 4<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.links heading=4-%}
@@ -124,12 +124,12 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;-1 = best(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = static<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = velocity<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = frame delta<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = acceleration<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = hermite<br>
+          &nbsp;&nbsp;-1 = name (default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.links heading=4-%}
@@ -138,9 +138,9 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = first motion step<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = second motion step<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = both motion steps(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.links heading=4-%}

@@ -49,22 +49,22 @@ title: LayerMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = over(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = add<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = subtract<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = multiply<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = overlay<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = overlay contrast<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = darken<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = lighten<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;10 = color dodge<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;11 = color burn<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;12 = hard light<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;13 = soft light<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;14 = difference<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;15 = exclusion<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;10 = name<br>
+          &nbsp;&nbsp;11 = name<br>
+          &nbsp;&nbsp;12 = name<br>
+          &nbsp;&nbsp;13 = name<br>
+          &nbsp;&nbsp;14 = name<br>
+          &nbsp;&nbsp;15 = name<br>
       <p class="scene-class-comments">Method of blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.links heading=4-%}

@@ -222,8 +222,8 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = Toon_Surface(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = Toon_Hair<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">sets the normal distribution function for specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.links heading=4-%}
@@ -399,8 +399,8 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = Toon_Surface(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = Toon_Hair<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">sets the normal distribution function for specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.links heading=4-%}
@@ -576,8 +576,8 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = Toon_Surface(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = Toon_Hair<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">sets the normal distribution function for specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.links heading=4-%}
@@ -663,8 +663,8 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = normalized diffusion(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = dipole<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.bssrdf.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.bssrdf.links heading=4-%}

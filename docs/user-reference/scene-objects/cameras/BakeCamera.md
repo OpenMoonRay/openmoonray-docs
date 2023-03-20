@@ -141,10 +141,10 @@ title: BakeCamera
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = from camera to surface<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = from surface along normal<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = from surface along reflection vector<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = above surface reverse normal(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name (default)<br>
       <p class="scene-class-comments">How to generate primary rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.mode.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.mode.links heading=4-%}
@@ -171,8 +171,8 @@ title: BakeCamera
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = camera space(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = tangent space<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.normal_map_space.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.normal_map_space.links heading=4-%}

@@ -108,8 +108,8 @@ title: ImageNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = [0,1](default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = [-1,1]<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.normal_encoding.links heading=4-%}
@@ -127,8 +127,8 @@ title: ImageNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = texture(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = input texture coordinates<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.texture_coordinates.links heading=4-%}

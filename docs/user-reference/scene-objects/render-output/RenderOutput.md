@@ -40,8 +40,8 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = float<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = half(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
       <p class="scene-class-comments">The pixel encoding (bit depth and type) of the output channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_format.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_format.links heading=4-%}
@@ -59,10 +59,10 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = auto(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = rgb<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = xyz<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = uvw<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">When processing multi-channel outputs, how should channel names be suffixed?<br>&emsp;auto : a best guess suffix is chosen based on the type of output<br>&emsp;rgb  : .R, .G, .B<br>&emsp;xyz  : .X, .Y, .Z<br>&emsp;uvw  : .U, .V, .W</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_suffix_mode.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_suffix_mode.links heading=4-%}
@@ -89,16 +89,16 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = none<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = zip(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = rle<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = zips<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = piz<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = pxr24<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = b44<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = b44a<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = dwaa<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = dwab<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
       <p class="scene-class-comments">Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.compression.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.compression.links heading=4-%}
@@ -125,9 +125,9 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = not an input(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = as albedo<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = as normal<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">How to use this output as a denoiser input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.denoiser_input.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.denoiser_input.links heading=4-%}
@@ -199,12 +199,12 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = average(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = sum<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = min<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = max<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = force_consistent_sampling<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = closest<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
       <p class="scene-class-comments">the math filter over the pixel.<br>options include:<br>&emsp;average<br>&emsp;sum<br>&emsp;min<br>&emsp;max<br>&emsp;force_consistent_sampling : average of the first "min_adaptive_samples"<br>&emsp;closest                   : use sample with minimum z-depth</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.math_filter.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.math_filter.links heading=4-%}
@@ -231,10 +231,10 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = FLOAT(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = VEC2F<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = VEC3F<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = RGB<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute_type.links heading=4-%}
@@ -252,22 +252,22 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = beauty(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = alpha<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = depth<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = state variable<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = primitive attribute<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = time per pixel<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = wireframe<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = material aov<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = light aov<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = visibility aov<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;10 = variance aov<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;11 = weight<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;12 = beauty aux<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;13 = cryptomatte<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;14 = alpha aux<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;15 = display filter<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;10 = name<br>
+          &nbsp;&nbsp;11 = name<br>
+          &nbsp;&nbsp;12 = name<br>
+          &nbsp;&nbsp;13 = name<br>
+          &nbsp;&nbsp;14 = name<br>
+          &nbsp;&nbsp;15 = name<br>
       <p class="scene-class-comments">The result to output.  Available results: <br>&emsp;general results:<br>&emsp;&emsp;"beauty" - full render (R, G, B), <br>&emsp;&emsp;"alpha" - full render alpha channel (A), <br>&emsp;&emsp;"depth" - z distance from camera (Z), <br>&emsp;&emsp;"display filter" - output results from a display filter, <br>&emsp;aov results:<br>&emsp;&emsp;"state variable" - Built-in state variable, <br>&emsp;&emsp;"primitive attribute" - Procedural provided attributes, <br>&emsp;&emsp;"material aov" - Aovs provided via material expressions <br>&emsp;&emsp;"light aov" - Aovs provided via light path expressions <br>&emsp;&emsp;"visibility aov" - Fraction of light samples that hit light source<br>&emsp;&emsp;"variance aov" - Aovs calculated from the pixel variance of other aovs<br>&emsp;&emsp;"weight" - weight,<br>&emsp;&emsp;"beauty aux" - renderBuffer auxiliary sample data for adaptive sampling,<br>&emsp;&emsp;"cryptomatte" - cryptomatte,<br>&emsp;&emsp;"alpha aux" - alpha auxiliary sample data for adaptive sampling,<br>&emsp;diagnostic results:<br>&emsp;&emsp;"time per pixel" - Time per pixel heat map metric,<br>&emsp;&emsp;"wireframe" - Render as wireframe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.links heading=4-%}
@@ -285,19 +285,19 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = P<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = Ng<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = N(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = St<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = dPds<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = dPdt<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = dSdx<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = dSdy<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = dTdx<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = dTdy<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;10 = Wp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;11 = depth<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;12 = motionvec<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;10 = name<br>
+          &nbsp;&nbsp;11 = name<br>
+          &nbsp;&nbsp;12 = name<br>
       <p class="scene-class-comments">If "result" is "state variable", this attribute specifies the particular state variable result. <br>&emsp;"P" - position (P.X, P.Y, P.Z), <br>&emsp;"Ng" - geometric normal (Ng.X, Ng.Y, Ng.Z), <br>&emsp;"N" - normal (N.X, N.Y, N.Z), <br>&emsp;"St" - texture coordinates (St.X, St.Y), <br>&emsp;"dPds" - derivative of P w.r.t S (dPds.X, dPds.Y, dPds.Z), <br>&emsp;"dPdt" - derivative of P w.r.t T (dPdt.X, dPdt.Y, dPdt.Z), <br>&emsp;"dSdx" - s derivative w.r.t. x (dSdx), <br>&emsp;"dSdy" - s derivative w.r.t. y (dSdy), <br>&emsp;"dTdx" - t derivative w.r.t. x (dTdx), <br>&emsp;"dTdy" - t derivative w.r.t. y (dTdy), <br>&emsp;"Wp" - world position (Wp.X, Wp.Y, Wp.Z), <br>&emsp;"depth" - z distance from camera (Z), <br>&emsp;"motionvec" - 2D motion vector</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.state_variable.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.state_variable.links heading=4-%}

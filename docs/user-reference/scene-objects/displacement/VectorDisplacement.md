@@ -40,8 +40,8 @@ title: VectorDisplacement
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = tangent(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = object<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">The space that the map bound to the vector parameter is in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.source_space.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.source_space.links heading=4-%}
@@ -50,8 +50,8 @@ title: VectorDisplacement
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = tnb(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = tbn<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.links heading=4-%}

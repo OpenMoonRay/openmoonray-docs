@@ -158,9 +158,9 @@ title: ImageMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = on<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = auto(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma.links heading=4-%}
@@ -223,10 +223,10 @@ title: ImageMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = texture(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = hair surface<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = input texture coordinates<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = hair closest surface<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture_coordinates.links heading=4-%}

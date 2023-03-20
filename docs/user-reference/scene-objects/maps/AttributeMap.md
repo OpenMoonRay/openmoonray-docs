@@ -31,11 +31,11 @@ title: AttributeMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = float<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = vec2f<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = vec3f<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = rgb(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = int<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name (default)<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.links heading=4-%}
@@ -67,24 +67,24 @@ title: AttributeMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = primitive attribute(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = position<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = texture st<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = shading normal<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = geometric normal<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = dpds<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = dpdt<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = dnds<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = dndt<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = map color<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;12 = hair surface P<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;13 = hair surface N<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;14 = hair surface st<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;15 = hair closest surface st<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;16 = id<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;17 = velocity<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;18 = acceleration<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;19 = motionvec<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;12 = name<br>
+          &nbsp;&nbsp;13 = name<br>
+          &nbsp;&nbsp;14 = name<br>
+          &nbsp;&nbsp;15 = name<br>
+          &nbsp;&nbsp;16 = name<br>
+          &nbsp;&nbsp;17 = name<br>
+          &nbsp;&nbsp;18 = name<br>
+          &nbsp;&nbsp;19 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.links heading=4-%}

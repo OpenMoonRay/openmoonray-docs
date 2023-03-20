@@ -31,9 +31,9 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = force two-sided(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = force single-sided<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = use mesh sidedness<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.side_type.links heading=4-%}
@@ -56,11 +56,11 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = instance level 0(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = instance level 1<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = instance level 2<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = instance level 3<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = instance level 4<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
       <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.instance_level.links heading=4-%}
@@ -69,8 +69,8 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = xform attributes(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = xform list<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">Specifies the source of the transform data for instancing. If set to "xform attributes", data is used from the "positions", "orientations", "scales" attributes.If set to "xform list", data is used from the "xform list"attribute.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.method.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.method.links heading=4-%}

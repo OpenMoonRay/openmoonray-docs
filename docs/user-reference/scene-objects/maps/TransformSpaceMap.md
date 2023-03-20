@@ -40,18 +40,18 @@ title: TransformSpaceMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = render(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = local tangent<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = instance object transform<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = instance level 0<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = instance level 1<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = instance level 2<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;10 = instance level 3<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;11 = instance level 4<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;10 = name<br>
+          &nbsp;&nbsp;11 = name<br>
       <p class="scene-class-comments">the space to transform from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.from_space.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.from_space.links heading=4-%}
@@ -69,9 +69,9 @@ title: TransformSpaceMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = point<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = vector(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = normal<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-comments">the type of input value provided</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.input_type.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.input_type.links heading=4-%}
@@ -89,18 +89,18 @@ title: TransformSpaceMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = render<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = world(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = local reference tangent<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = instance level 0<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = instance level 1<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = instance level 2<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;9 = instance level 3<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;10 = instance level 4<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;11 = instance object transform<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
+          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;10 = name<br>
+          &nbsp;&nbsp;11 = name<br>
       <p class="scene-class-comments">the space to transform to</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.to_space.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.to_space.links heading=4-%}

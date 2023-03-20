@@ -109,8 +109,8 @@ title: HairDiffuseMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = normalized diffusion(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = dipole<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairDiffuseMaterial.attributes.bssrdf.images data=site.data.user-reference.scene-objects.materials.HairDiffuseMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairDiffuseMaterial.attributes.bssrdf.links heading=4-%}

@@ -100,9 +100,9 @@ title: HairMaterial_v3
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = simple longitudinal<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = dielectric cylinder(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = layered cuticles<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;2 = name<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.fresnel_type.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.fresnel_type.links heading=4-%}

@@ -86,15 +86,15 @@ title: RampDisplayFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = v_ramp(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = u_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = diagonal_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = radial_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4 = circular_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5 = box_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;6 = uxv_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;7 = four_corner_ramp<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;8 = input_ramp<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;7 = name<br>
+          &nbsp;&nbsp;8 = name<br>
       <p class="scene-class-comments">Type of ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.links heading=4-%}

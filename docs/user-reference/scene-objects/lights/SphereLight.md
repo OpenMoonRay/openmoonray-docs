@@ -189,10 +189,10 @@ title: SphereLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = linear(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = exponential_up<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = exponential_down<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = smoothstep<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">Interpolation type to use for the clear radius shadow falloff.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SphereLight.attributes.clear_radius_interpolation_type.images data=site.data.user-reference.scene-objects.lights.SphereLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SphereLight.attributes.clear_radius_interpolation_type.links heading=4-%}
@@ -273,9 +273,9 @@ title: SphereLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = force off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = force on<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = use default(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
       <p class="scene-class-comments">Switch this attribute on for shadows cast from this light to correctly respect presence values. When off, surfaces with a material with presence less than 1.0 will cast opaque shadows from this light. This is an optimization - when the attribute is off, occlusion rays (fast) are used for testing for shadows. When it is on, regular rays (slower) are used, and the material's presence is evaluated to determine how much shadowing should occur. When set to "use default" it reads from the value of SceneVariable enable_presence_shadows.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SphereLight.attributes.presence_shadows.images data=site.data.user-reference.scene-objects.lights.SphereLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SphereLight.attributes.presence_shadows.links heading=4-%}
@@ -302,10 +302,10 @@ title: SphereLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = nearest neighbor(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = bilinear<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = nearest neighbor with nearest mip<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;3 = bilinear with nearest mip<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;3 = name<br>
       <p class="scene-class-comments">The filtering mode to apply to the texture. Nearest neighbor is the cheapest filtering mode but produces a blocky result. Switch linear filtering on for a smoother result. Additionally, mip-mapping can be switched on with either nearest neighbor or linear filtering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SphereLight.attributes.texture_filter.images data=site.data.user-reference.scene-objects.lights.SphereLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SphereLight.attributes.texture_filter.links heading=4-%}
@@ -314,9 +314,9 @@ title: SphereLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = force off<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = force on<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;2 = use default(default)<br>
+          &nbsp;&nbsp;0 = name<br>
+          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;2 = name (default)<br>
       <p class="scene-class-comments">Whether the light is directly visible in the scene's active camera. When set to "use default" it reads from the value of SceneVariable lights_visible_in_camera.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SphereLight.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.lights.SphereLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SphereLight.attributes.visible_in_camera.links heading=4-%}
@@ -407,8 +407,8 @@ title: SphereLight
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;0 = regular(default)<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;1 = reverse<br>
+          &nbsp;&nbsp;0 = name (default)<br>
+          &nbsp;&nbsp;1 = name<br>
       <p class="scene-class-comments">When set to 0 (regular), light is emitted from the outward-facing surface of the sphere. When set to 1 (reverse), light is emitted from the inward-facing surface of the sphere. There is no mode for emitting from both surfaces at the same time, but two sphere lights of opposing sidedness can be combined to achieve this effect.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SphereLight.attributes.sidedness.images data=site.data.user-reference.scene-objects.lights.SphereLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SphereLight.attributes.sidedness.links heading=4-%}
