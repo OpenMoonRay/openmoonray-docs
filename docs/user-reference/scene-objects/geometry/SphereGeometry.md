@@ -16,7 +16,7 @@ title: SphereGeometry
 
 <div class="scene-class">
 <details open>
-  <summary>Quadric attributes</summary>
+  <summary>Sphere attributes</summary>
   <p>
     <h3>phi_max</h3>
     <p class="scene-class-type">

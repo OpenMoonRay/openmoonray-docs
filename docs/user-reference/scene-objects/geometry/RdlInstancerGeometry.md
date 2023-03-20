@@ -16,6 +16,122 @@ title: RdlInstancerGeometry
 
 <div class="scene-class">
 <details open>
+  <summary>Instancing attributes</summary>
+  <p>
+    <h3>disable_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">A list of index values to hide / disable.  For example, with 4 instances you can supply a list of 0, 2 to disable those instances.  If an index in this list is out of range, it is ignored.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.links heading=4-%}
+    </p>
+    <h3>instance_level</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | instance level 0 = 0 (default)
+          | instance level 1 = 1
+          | instance level 2 = 2
+          | instance level 3 = 3
+          | instance level 4 = 4
+      <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.instance_level.links heading=4-%}
+    </p>
+    <h3>method</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | xform attributes = 0 (default)
+          | xform list = 2
+      <p class="scene-class-comments">Specifies the source of the transform data for instancing. If set to "xform attributes", data is used from the "positions", "orientations", "scales" attributes.If set to "xform list", data is used from the "xform list"attribute.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.method.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.method.links heading=4-%}
+    </p>
+    <h3>orientations</h3>
+    <p class="scene-class-type">
+      <b>Vec4fVector</b>
+      default: []
+      <p class="scene-class-comments">A list of Vec4 quaternions that represent the per-instance orientation. The length of the list should be either 0 or consistent with "positions".</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.orientations.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.orientations.links heading=4-%}
+    </p>
+    <h3>positions</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">A list of Vec3 values that represent the per-instance position.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.links heading=4-%}
+    </p>
+    <h3>ref_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">A list of index values to specify which reference geometry to instance at each   position.   The list corresponds to entries in the "references" attribute.  The length of the list should be either 0 or consistent with "positions"|"xform_list".  The index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.links heading=4-%}
+    </p>
+    <h3>scales</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">A list of Vec3 values that represet the per-instance velocity(motion blur).  The length of the list should be either 0 or consistent with "positions".</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.scales.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.scales.links heading=4-%}
+    </p>
+    <h3>use_reference_attributes</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_attributes.links heading=4-%}
+    </p>
+    <h3>use_reference_xforms</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_xforms.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_xforms.links heading=4-%}
+    </p>
+    <h3>xform_list</h3>
+    <p class="scene-class-type">
+      <b>Mat4dVector</b>
+      default: []
+      <p class="scene-class-comments">A list of Mat4 transforms that represent the per-instance xform.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.xform_list.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.xform_list.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Motion Blur attributes</summary>
+  <p>
+    <h3>velocities</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.velocities.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.velocities.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Time attributes</summary>
+  <p>
+    <h3>evaluation_frame</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 0.0
+      <p class="scene-class-comments">Evaluate geometry at specified frame (relative) instead of SceneVariables frame.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.evaluation_frame.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>User Data attributes</summary>
   <p>
     <h3>primitive_attributes</h3>
@@ -124,34 +240,6 @@ title: RdlInstancerGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
-    <h3>disable_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">A list of index values to hide / disable.  For example, with 4 instances you can supply a list of 0, 2 to disable those instances.  If an index in this list is out of range, it is ignored.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.links heading=4-%}
-    </p>
-    <h3>evaluation_frame</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 0.0
-      <p class="scene-class-comments">Evaluate geometry at specified frame (relative) instead of SceneVariables frame.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.evaluation_frame.links heading=4-%}
-    </p>
-    <h3>instance_level</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | instance level 0 = 0 (default)
-          | instance level 1 = 1
-          | instance level 2 = 2
-          | instance level 3 = 3
-          | instance level 4 = 4
-      <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.instance_level.links heading=4-%}
-    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -159,15 +247,6 @@ title: RdlInstancerGeometry
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.label.links heading=4-%}
-    </p>
-    <h3>method</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | xform attributes = 0 (default)
-          | xform list = 2
-      <p class="scene-class-comments">Specifies the source of the transform data for instancing. If set to "xform attributes", data is used from the "positions", "orientations", "scales" attributes.If set to "xform list", data is used from the "xform list"attribute.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.method.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.method.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
@@ -177,22 +256,6 @@ title: RdlInstancerGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.node_xform.links heading=4-%}
     </p>
-    <h3>orientations</h3>
-    <p class="scene-class-type">
-      <b>Vec4fVector</b>
-      default: []
-      <p class="scene-class-comments">A list of Vec4 quaternions that represent the per-instance orientation. The length of the list should be either 0 or consistent with "positions".</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.orientations.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.orientations.links heading=4-%}
-    </p>
-    <h3>positions</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">A list of Vec3 values that represent the per-instance position.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.links heading=4-%}
-    </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -200,14 +263,6 @@ title: RdlInstancerGeometry
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ray_epsilon.links heading=4-%}
-    </p>
-    <h3>ref_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">A list of index values to specify which reference geometry to instance at each   position.   The list corresponds to entries in the "references" attribute.  The length of the list should be either 0 or consistent with "positions"|"xform_list".  The index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.links heading=4-%}
     </p>
     <h3>references</h3>
     <p class="scene-class-type">
@@ -224,14 +279,6 @@ title: RdlInstancerGeometry
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.reverse_normals.links heading=4-%}
-    </p>
-    <h3>scales</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">A list of Vec3 values that represet the per-instance velocity(motion blur).  The length of the list should be either 0 or consistent with "positions".</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.scales.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.scales.links heading=4-%}
     </p>
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
@@ -274,38 +321,6 @@ title: RdlInstancerGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>use_reference_attributes</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_attributes.links heading=4-%}
-    </p>
-    <h3>use_reference_xforms</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_xforms.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.use_reference_xforms.links heading=4-%}
-    </p>
-    <h3>velocities</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.velocities.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.velocities.links heading=4-%}
-    </p>
-    <h3>xform_list</h3>
-    <p class="scene-class-type">
-      <b>Mat4dVector</b>
-      default: []
-      <p class="scene-class-comments">A list of Mat4 transforms that represent the per-instance xform.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.xform_list.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.xform_list.links heading=4-%}
     </p>
   </p>
 </details>

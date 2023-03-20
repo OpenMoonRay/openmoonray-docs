@@ -43,14 +43,6 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.links heading=4-%}
     </p>
-    <h3>tessellation_rate</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      default: 4
-      <p class="scene-class-comments">Number of segments to split curve spans into</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.links heading=4-%}
-    </p>
     <h3>tip_width_factor</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -58,6 +50,19 @@ title: UsdGeometry
       <p class="scene-class-comments">Multiplier for the radius of the tip of curves</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Curves attributes</summary>
+  <p>
+    <h3>tessellation_rate</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      default: 4
+      <p class="scene-class-comments">Number of segments to split curve spans into</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.links heading=4-%}
     </p>
   </p>
 </details>
@@ -162,6 +167,51 @@ title: UsdGeometry
       <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>USD attributes</summary>
+  <p>
+    <h3>prim_path</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      default: 
+      <p class="scene-class-comments">The geometry Prim to load from the USD Stage</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.links heading=4-%}
+    </p>
+    <h3>stage</h3>
+    <p class="scene-class-type">
+      <b>String</b> <i>filename</i>
+      default: 
+      <p class="scene-class-comments">USD Stage to load</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.links heading=4-%}
+    </p>
+    <h3>use_master_xform</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">If the prim is an instance proxy, use the xform from the master Prim during geometry creation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.links heading=4-%}
+    </p>
+    <h3>use_prim_xform</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">Include the xform from the Prim during geometry creation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.links heading=4-%}
+    </p>
+    <h3>use_stage_cache</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>
   </p>
 </details>
@@ -298,14 +348,6 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.node_xform.links heading=4-%}
     </p>
-    <h3>prim_path</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      default: 
-      <p class="scene-class-comments">The geometry Prim to load from the USD Stage</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.links heading=4-%}
-    </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -364,14 +406,6 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.side_type.links heading=4-%}
     </p>
-    <h3>stage</h3>
-    <p class="scene-class-type">
-      <b>String</b> <i>filename</i>
-      default: 
-      <p class="scene-class-comments">USD Stage to load</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.links heading=4-%}
-    </p>
     <h3>static</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -379,30 +413,6 @@ title: UsdGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>use_master_xform</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">If the prim is an instance proxy, use the xform from the master Prim during geometry creation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.links heading=4-%}
-    </p>
-    <h3>use_prim_xform</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">Include the xform from the Prim during geometry creation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.links heading=4-%}
-    </p>
-    <h3>use_stage_cache</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>
   </p>
 </details>

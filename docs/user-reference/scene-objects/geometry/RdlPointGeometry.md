@@ -18,6 +18,14 @@ title: RdlPointGeometry
 <details open>
   <summary>Motion Blur attributes</summary>
   <p>
+    <h3>accleration_list</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.accleration_list.links heading=4-%}
+    </p>
     <h3>curved_motion_blur_sample_count</h3>
     <p class="scene-class-type">
       <b>Int</b>
@@ -56,6 +64,75 @@ title: RdlPointGeometry
       <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
+    </p>
+    <h3>velocity_list_0</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_0.links heading=4-%}
+    </p>
+    <h3>velocity_list_1</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_1.links heading=4-%}
+    </p>
+    <h3>velocity_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_scale.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Points attributes</summary>
+  <p>
+    <h3>part_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of part indices.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.links heading=4-%}
+    </p>
+    <h3>part_list</h3>
+    <p class="scene-class-type">
+      <b>StringVector</b>
+      default: []
+      <p class="scene-class-comments">List of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_list.links heading=4-%}
+    </p>
+    <h3>radius_list</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      <p class="scene-class-comments">List of per point radius values</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.links heading=4-%}
+    </p>
+    <h3>vertex_list_0</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">List of vertex positions used by the points at motion step 0</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_0.links heading=4-%}
+    </p>
+    <h3>vertex_list_1</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">If the points are in motion, the vertex positions for the second motion step are stored in this attribute</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_1.links heading=4-%}
     </p>
   </p>
 </details>
@@ -152,14 +229,6 @@ title: RdlPointGeometry
 <details open>
   <summary>General attributes</summary>
   <p>
-    <h3>accleration_list</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.accleration_list.links heading=4-%}
-    </p>
     <h3>contains_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -191,30 +260,6 @@ title: RdlPointGeometry
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.node_xform.links heading=4-%}
-    </p>
-    <h3>part_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of part indices.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.links heading=4-%}
-    </p>
-    <h3>part_list</h3>
-    <p class="scene-class-type">
-      <b>StringVector</b>
-      default: []
-      <p class="scene-class-comments">List of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_list.links heading=4-%}
-    </p>
-    <h3>radius_list</h3>
-    <p class="scene-class-type">
-      <b>FloatVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      <p class="scene-class-comments">List of per point radius values</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
@@ -281,46 +326,6 @@ title: RdlPointGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>velocity_list_0</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_0.links heading=4-%}
-    </p>
-    <h3>velocity_list_1</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_1.links heading=4-%}
-    </p>
-    <h3>velocity_scale</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_scale.links heading=4-%}
-    </p>
-    <h3>vertex_list_0</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">List of vertex positions used by the points at motion step 0</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_0.links heading=4-%}
-    </p>
-    <h3>vertex_list_1</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">If the points are in motion, the vertex positions for the second motion step are stored in this attribute</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_1.links heading=4-%}
     </p>
   </p>
 </details>

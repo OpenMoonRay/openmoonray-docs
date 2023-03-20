@@ -16,6 +16,47 @@ title: UsdInstanceGeometry
 
 <div class="scene-class">
 <details open>
+  <summary>Instancing attributes</summary>
+  <p>
+    <h3>disable_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.links heading=4-%}
+    </p>
+    <h3>instance_level</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | instance level 0 = 0 (default)
+          | instance level 1 = 1
+          | instance level 2 = 2
+          | instance level 3 = 3
+          | instance level 4 = 4
+      <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.links heading=4-%}
+    </p>
+    <h3>use_reference_attributes</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_attributes.links heading=4-%}
+    </p>
+    <h3>use_reference_xforms</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_xforms.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_xforms.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Motion Blur attributes</summary>
   <p>
     <h3>curved_motion_blur_sample_count</h3>
@@ -77,6 +118,35 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>USD attributes</summary>
+  <p>
+    <h3>point_instancer_path</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      default: 
+      <p class="scene-class-comments">The point instancer to load from the USD Stage</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.links heading=4-%}
+    </p>
+    <h3>stage</h3>
+    <p class="scene-class-type">
+      <b>String</b> <i>filename</i>
+      default: 
+      <p class="scene-class-comments">USD Stage to load containing the point instancer</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.links heading=4-%}
+    </p>
+    <h3>use_stage_cache</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>
   </p>
 </details>
@@ -189,26 +259,6 @@ title: UsdInstanceGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
-    <h3>disable_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.links heading=4-%}
-    </p>
-    <h3>instance_level</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | instance level 0 = 0 (default)
-          | instance level 1 = 1
-          | instance level 2 = 2
-          | instance level 3 = 3
-          | instance level 4 = 4
-      <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.links heading=4-%}
-    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -224,14 +274,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.node_xform.links heading=4-%}
-    </p>
-    <h3>point_instancer_path</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      default: 
-      <p class="scene-class-comments">The point instancer to load from the USD Stage</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
@@ -291,14 +333,6 @@ title: UsdInstanceGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.side_type.links heading=4-%}
     </p>
-    <h3>stage</h3>
-    <p class="scene-class-type">
-      <b>String</b> <i>filename</i>
-      default: 
-      <p class="scene-class-comments">USD Stage to load containing the point instancer</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.links heading=4-%}
-    </p>
     <h3>static</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -306,30 +340,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>use_reference_attributes</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_attributes.links heading=4-%}
-    </p>
-    <h3>use_reference_xforms</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">Transform the reference (prototype) geometry by it's node_xform parameter before applying the instance transform</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_xforms.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_xforms.links heading=4-%}
-    </p>
-    <h3>use_stage_cache</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>
   </p>
 </details>

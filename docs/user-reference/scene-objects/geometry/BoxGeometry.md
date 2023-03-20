@@ -16,7 +16,7 @@ title: BoxGeometry
 
 <div class="scene-class">
 <details open>
-  <summary>Quadric attributes</summary>
+  <summary>Box attributes</summary>
   <p>
     <h3>size</h3>
     <p class="scene-class-type">

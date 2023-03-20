@@ -26,6 +26,22 @@ title: RdlMeshGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.adaptive_error.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.adaptive_error.links heading=4-%}
     </p>
+    <h3>face_vertex_count</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of vertices per face, used in conjunction with vertices_by_index to construct the mesh</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.face_vertex_count.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.face_vertex_count.links heading=4-%}
+    </p>
+    <h3>is_subd</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.is_subd.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.is_subd.links heading=4-%}
+    </p>
     <h3>mesh_resolution</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -33,6 +49,47 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.mesh_resolution.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.mesh_resolution.links heading=4-%}
+    </p>
+    <h3>normal_list</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments"> If the mesh is using normals, store them per face-vertex in this list</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.normal_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.normal_list.links heading=4-%}
+    </p>
+    <h3>orientation</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | right-handed = 0 (default)
+          | left-handed = 1
+      <p class="scene-class-comments">When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.orientation.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.orientation.links heading=4-%}
+    </p>
+    <h3>part_face_count_list</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of the number of faces belonging to the part with corresponding index in 'part list'.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.links heading=4-%}
+    </p>
+    <h3>part_face_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of face indices. No index should have a value greater than the size of 'face_vertex_count'</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.links heading=4-%}
+    </p>
+    <h3>part_list</h3>
+    <p class="scene-class-type">
+      <b>StringVector</b>
+      default: []
+      <p class="scene-class-comments">List of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.links heading=4-%}
     </p>
     <h3>smooth_normal</h3>
     <p class="scene-class-type">
@@ -42,11 +99,115 @@ title: RdlMeshGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.smooth_normal.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.smooth_normal.links heading=4-%}
     </p>
+    <h3>subd_boundary</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | none = 0
+          | edge only = 1
+          | edge and corner = 2 (default)
+      <p class="scene-class-comments">Boundary interpolation: Corners, Edges or None</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_boundary.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_boundary.links heading=4-%}
+    </p>
+    <h3>subd_corner_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of indices for each corner vertex with an assigned sharpness.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_indices.links heading=4-%}
+    </p>
+    <h3>subd_corner_sharpnesses</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      <p class="scene-class-comments">Sharpness value for each corner vertex.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_sharpnesses.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_sharpnesses.links heading=4-%}
+    </p>
+    <h3>subd_crease_indices</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of vertex index pairs for each crease edge with an assigned sharpness.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_indices.links heading=4-%}
+    </p>
+    <h3>subd_crease_sharpnesses</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      <p class="scene-class-comments">Sharpness value for each crease edge.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_sharpnesses.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_sharpnesses.links heading=4-%}
+    </p>
+    <h3>subd_fvar_linear</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | none = 0
+          | corners only = 1 (default)
+          | corners plus1 = 2
+          | corners plus2 = 3
+          | boundaries = 4
+          | all = 5
+      <p class="scene-class-comments">Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_fvar_linear.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_fvar_linear.links heading=4-%}
+    </p>
+    <h3>subd_scheme</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | bilinear = 0
+          | catclark = 1 (default)
+      <p class="scene-class-comments">CatClark or Bilinear</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_scheme.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_scheme.links heading=4-%}
+    </p>
+    <h3>uv_list</h3>
+    <p class="scene-class-type">
+      <b>Vec2fVector</b>
+      default: []
+      <p class="scene-class-comments">If the mesh is using UVs, store them per face-vertex in this list</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.uv_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.uv_list.links heading=4-%}
+    </p>
+    <h3>vertex_list_0</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">List of vertex positions used by the mesh at motion step 0</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_0.links heading=4-%}
+    </p>
+    <h3>vertex_list_1</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">If the mesh is in motion, the vertex positions for the second motion step are stored in this attribute</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_1.links heading=4-%}
+    </p>
+    <h3>vertices_by_index</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">List of vertex indices used to construct the mesh using the vertex list</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.links heading=4-%}
+    </p>
   </p>
 </details>
 <details open>
   <summary>Motion Blur attributes</summary>
   <p>
+    <h3>accleration_list</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.accleration_list.links heading=4-%}
+    </p>
     <h3>curved_motion_blur_sample_count</h3>
     <p class="scene-class-type">
       <b>Int</b>
@@ -85,6 +246,30 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
+    </p>
+    <h3>velocity_list_0</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_0.links heading=4-%}
+    </p>
+    <h3>velocity_list_1</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      default: []
+      <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_1.links heading=4-%}
+    </p>
+    <h3>velocity_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_scale.links heading=4-%}
     </p>
   </p>
 </details>
@@ -181,14 +366,6 @@ title: RdlMeshGeometry
 <details open>
   <summary>General attributes</summary>
   <p>
-    <h3>accleration_list</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.accleration_list.links heading=4-%}
-    </p>
     <h3>contains_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -205,22 +382,6 @@ title: RdlMeshGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
-    <h3>face_vertex_count</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of vertices per face, used in conjunction with vertices_by_index to construct the mesh</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.face_vertex_count.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.face_vertex_count.links heading=4-%}
-    </p>
-    <h3>is_subd</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.is_subd.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.is_subd.links heading=4-%}
-    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -236,47 +397,6 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.node_xform.links heading=4-%}
-    </p>
-    <h3>normal_list</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments"> If the mesh is using normals, store them per face-vertex in this list</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.normal_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.normal_list.links heading=4-%}
-    </p>
-    <h3>orientation</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | right-handed = 0 (default)
-          | left-handed = 1
-      <p class="scene-class-comments">When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.orientation.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.orientation.links heading=4-%}
-    </p>
-    <h3>part_face_count_list</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of the number of faces belonging to the part with corresponding index in 'part list'.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_count_list.links heading=4-%}
-    </p>
-    <h3>part_face_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of face indices. No index should have a value greater than the size of 'face_vertex_count'</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_face_indices.links heading=4-%}
-    </p>
-    <h3>part_list</h3>
-    <p class="scene-class-type">
-      <b>StringVector</b>
-      default: []
-      <p class="scene-class-comments">List of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
@@ -343,126 +463,6 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>subd_boundary</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | none = 0
-          | edge only = 1
-          | edge and corner = 2 (default)
-      <p class="scene-class-comments">Boundary interpolation: Corners, Edges or None</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_boundary.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_boundary.links heading=4-%}
-    </p>
-    <h3>subd_corner_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of indices for each corner vertex with an assigned sharpness.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_indices.links heading=4-%}
-    </p>
-    <h3>subd_corner_sharpnesses</h3>
-    <p class="scene-class-type">
-      <b>FloatVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      <p class="scene-class-comments">Sharpness value for each corner vertex.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_sharpnesses.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_corner_sharpnesses.links heading=4-%}
-    </p>
-    <h3>subd_crease_indices</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of vertex index pairs for each crease edge with an assigned sharpness.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_indices.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_indices.links heading=4-%}
-    </p>
-    <h3>subd_crease_sharpnesses</h3>
-    <p class="scene-class-type">
-      <b>FloatVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      <p class="scene-class-comments">Sharpness value for each crease edge.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_sharpnesses.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_crease_sharpnesses.links heading=4-%}
-    </p>
-    <h3>subd_fvar_linear</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | none = 0
-          | corners only = 1 (default)
-          | corners plus1 = 2
-          | corners plus2 = 3
-          | boundaries = 4
-          | all = 5
-      <p class="scene-class-comments">Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_fvar_linear.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_fvar_linear.links heading=4-%}
-    </p>
-    <h3>subd_scheme</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | bilinear = 0
-          | catclark = 1 (default)
-      <p class="scene-class-comments">CatClark or Bilinear</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_scheme.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_scheme.links heading=4-%}
-    </p>
-    <h3>uv_list</h3>
-    <p class="scene-class-type">
-      <b>Vec2fVector</b>
-      default: []
-      <p class="scene-class-comments">If the mesh is using UVs, store them per face-vertex in this list</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.uv_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.uv_list.links heading=4-%}
-    </p>
-    <h3>velocity_list_0</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_0.links heading=4-%}
-    </p>
-    <h3>velocity_list_1</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_list_1.links heading=4-%}
-    </p>
-    <h3>velocity_scale</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.velocity_scale.links heading=4-%}
-    </p>
-    <h3>vertex_list_0</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">List of vertex positions used by the mesh at motion step 0</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_0.links heading=4-%}
-    </p>
-    <h3>vertex_list_1</h3>
-    <p class="scene-class-type">
-      <b>Vec3fVector</b>
-      default: []
-      <p class="scene-class-comments">If the mesh is in motion, the vertex positions for the second motion step are stored in this attribute</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertex_list_1.links heading=4-%}
-    </p>
-    <h3>vertices_by_index</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      <p class="scene-class-comments">List of vertex indices used to construct the mesh using the vertex list</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.links heading=4-%}
     </p>
   </p>
 </details>
