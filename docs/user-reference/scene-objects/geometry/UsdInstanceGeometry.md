@@ -60,6 +60,40 @@ title: UsdInstanceGeometry
   </p>
 </details>
 <details open>
+  <summary>Time attributes</summary>
+  <p>
+    <h3>evaluation_frame</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Evaluates geometry at the specified frame instead of SceneVariables frame</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.links heading=4-%}
+    </p>
+    <h3>use_evaluation_frame</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>User Data attributes</summary>
+  <p>
+    <h3>primitive_attributes</h3>
+    <p class="scene-class-type">
+      <b>UserData Vector</b>
+      default: []
+      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per-instance</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Visibility attributes</summary>
   <p>
     <h3>visible_diffuse_reflection</h3>
@@ -163,14 +197,6 @@ title: UsdInstanceGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.links heading=4-%}
     </p>
-    <h3>evaluation_frame</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Evaluate geometry at specified frame instead of SceneVariables frame<br></p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.links heading=4-%}
-    </p>
     <h3>instance_level</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
@@ -206,14 +232,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">The point instancer to load from the USD Stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.links heading=4-%}
-    </p>
-    <h3>primitive_attributes</h3>
-    <p class="scene-class-type">
-      <b>UserData Vector</b>
-      default: []
-      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per-instance</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
@@ -288,14 +306,6 @@ title: UsdInstanceGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>use_evaluation_frame</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.links heading=4-%}
     </p>
     <h3>use_reference_attributes</h3>
     <p class="scene-class-type">

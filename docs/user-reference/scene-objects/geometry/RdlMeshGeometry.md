@@ -89,6 +89,19 @@ title: RdlMeshGeometry
   </p>
 </details>
 <details open>
+  <summary>User Data attributes</summary>
+  <p>
+    <h3>primitive_attributes</h3>
+    <p class="scene-class-type">
+      <b>SceneObject Vector</b>
+      default: []
+      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the mesh.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Visibility attributes</summary>
   <p>
     <h3>visible_diffuse_reflection</h3>
@@ -264,14 +277,6 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">List of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.part_list.links heading=4-%}
-    </p>
-    <h3>primitive_attributes</h3>
-    <p class="scene-class-type">
-      <b>SceneObject Vector</b>
-      default: []
-      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the mesh.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">

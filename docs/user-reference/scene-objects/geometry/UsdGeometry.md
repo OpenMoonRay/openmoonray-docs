@@ -145,6 +145,27 @@ title: UsdGeometry
   </p>
 </details>
 <details open>
+  <summary>Time attributes</summary>
+  <p>
+    <h3>evaluation_frame</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Evaluates geometry at the specified frame instead of SceneVariables frame</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.links heading=4-%}
+    </p>
+    <h3>use_evaluation_frame</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>User Data attributes</summary>
   <p>
     <h3>part_list</h3>
@@ -261,14 +282,6 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
-    <h3>evaluation_frame</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Evaluate geometry at specified frame instead of SceneVariables frame</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.links heading=4-%}
-    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -366,14 +379,6 @@ title: UsdGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>use_evaluation_frame</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.links heading=4-%}
     </p>
     <h3>use_master_xform</h3>
     <p class="scene-class-type">

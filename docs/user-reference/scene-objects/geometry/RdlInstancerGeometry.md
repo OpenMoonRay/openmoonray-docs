@@ -16,6 +16,19 @@ title: RdlInstancerGeometry
 
 <div class="scene-class">
 <details open>
+  <summary>User Data attributes</summary>
+  <p>
+    <h3>primitive_attributes</h3>
+    <p class="scene-class-type">
+      <b>UserData Vector</b>
+      default: []
+      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per-instance</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.primitive_attributes.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Visibility attributes</summary>
   <p>
     <h3>visible_diffuse_reflection</h3>
@@ -179,14 +192,6 @@ title: RdlInstancerGeometry
       <p class="scene-class-comments">A list of Vec3 values that represent the per-instance position.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.links heading=4-%}
-    </p>
-    <h3>primitive_attributes</h3>
-    <p class="scene-class-type">
-      <b>UserData Vector</b>
-      default: []
-      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per-instance</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">

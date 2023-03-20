@@ -73,6 +73,19 @@ title: RdlCurveGeometry
   </p>
 </details>
 <details open>
+  <summary>User Data attributes</summary>
+  <p>
+    <h3>primitive_attributes</h3>
+    <p class="scene-class-type">
+      <b>SceneObject Vector</b>
+      default: []
+      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the curves.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Visibility attributes</summary>
   <p>
     <h3>visible_diffuse_reflection</h3>
@@ -234,14 +247,6 @@ title: RdlCurveGeometry
       <p class="scene-class-comments">List of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_list.links heading=4-%}
-    </p>
-    <h3>primitive_attributes</h3>
-    <p class="scene-class-type">
-      <b>SceneObject Vector</b>
-      default: []
-      <p class="scene-class-comments">Vector of UserData.  Each key/value pair will be added as a primitive attribute of the curves.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
     <h3>radius_list</h3>
     <p class="scene-class-type">
