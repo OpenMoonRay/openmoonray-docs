@@ -20,7 +20,7 @@ title: LayerMap
   <p>
     <h3>input_A</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Foreground color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -28,7 +28,7 @@ title: LayerMap
     </p>
     <h3>input_B</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Background color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -36,7 +36,7 @@ title: LayerMap
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
+      <b>Float</b><br/> <i>bindable</i><br/>
       default: 1.0
       <p class="scene-class-comments">Blending amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -44,23 +44,23 @@ title: LayerMap
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | off = 0
-          | over = 1 (default)
-          | add = 2
-          | subtract = 3
-          | multiply = 4
-          | screen = 5
-          | overlay = 6
-          | overlay contrast = 7
-          | darken = 8
-          | lighten = 9
-          | color dodge = 10
-          | color burn = 11
-          | hard light = 12
-          | soft light = 13
-          | difference = 14
-          | exclusion = 15
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=off<br/>
+          1=over(default)<br/>
+          2=add<br/>
+          3=subtract<br/>
+          4=multiply<br/>
+          5=screen<br/>
+          6=overlay<br/>
+          7=overlay contrast<br/>
+          8=darken<br/>
+          9=lighten<br/>
+          10=color dodge<br/>
+          11=color burn<br/>
+          12=hard light<br/>
+          13=soft light<br/>
+          14=difference<br/>
+          15=exclusion<br/>
       <p class="scene-class-comments">Method of blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.links heading=4-%}

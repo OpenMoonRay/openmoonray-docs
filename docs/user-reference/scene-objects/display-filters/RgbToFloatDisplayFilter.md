@@ -20,7 +20,7 @@ title: RgbToFloatDisplayFilter
   <p>
     <h3>invert_mask</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
@@ -28,7 +28,7 @@ title: RgbToFloatDisplayFilter
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
@@ -41,7 +41,7 @@ title: RgbToFloatDisplayFilter
   <p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b>
+      <b>RenderOutput</b><br/>
       default: None
       <p class="scene-class-comments">RenderOutput to use in the RgbToFloat operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
@@ -49,7 +49,7 @@ title: RgbToFloatDisplayFilter
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b>
+      <b>RenderOutput</b><br/>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
@@ -57,15 +57,15 @@ title: RgbToFloatDisplayFilter
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | r = 0
-          | g = 1
-          | b = 2
-          | min = 3
-          | max = 4
-          | average = 5 (default)
-          | sum = 6
-          | luminance = 7
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=r<br/>
+          1=g<br/>
+          2=b<br/>
+          3=min<br/>
+          4=max<br/>
+          5=average(default)<br/>
+          6=sum<br/>
+          7=luminance<br/>
       <p class="scene-class-comments">The method used to convert RGB Color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.links heading=4-%}

@@ -20,7 +20,7 @@ title: CurvatureMap
   <p>
     <h3>invert</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">Flips the value of the curvature.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.invert.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
@@ -28,18 +28,18 @@ title: CurvatureMap
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | convex = 0
-          | concave = 1
-          | composite = 2
-          | all = 3 (default)
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=convex<br/>
+          1=concave<br/>
+          2=composite<br/>
+          3=all(default)<br/>
       <p class="scene-class-comments">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.links heading=4-%}
     </p>
     <h3>power</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 0.5
       <p class="scene-class-comments">Raises the value of the curvature to the given power.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.power.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
@@ -47,7 +47,7 @@ title: CurvatureMap
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-comments">Multiplies the value of the curvature. Results are still clamped between 0 and 1.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}

@@ -20,7 +20,7 @@ title: HairMap
   <p>
     <h3>base_color</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color at each hair's base</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.base_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
@@ -28,7 +28,7 @@ title: HairMap
     </p>
     <h3>bias</h3>
     <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
+      <b>Float</b><br/> <i>bindable</i><br/>
       default: 0.5
       <p class="scene-class-comments">Modulates the shape of blending between base and tip color. &lt; 0.5 pushes the center of the blend towards the base, and &gt; 0.5 towards the tip.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.bias.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
@@ -36,7 +36,7 @@ title: HairMap
     </p>
     <h3>column_uv_color</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
@@ -44,7 +44,7 @@ title: HairMap
     </p>
     <h3>gain</h3>
     <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
+      <b>Float</b><br/> <i>bindable</i><br/>
       default: 0.5
       <p class="scene-class-comments">Modulates the shape of blending between base and tip color. &lt; 0.5 is higher contrast in the middle of the blend. &gt; 0.5 is higher contrast at the start and end, and lower contrast in the middle.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.gain.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
@@ -52,7 +52,7 @@ title: HairMap
     </p>
     <h3>tip_color</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color at each hair's tip</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.tip_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}

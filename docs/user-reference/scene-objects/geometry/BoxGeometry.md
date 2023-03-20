@@ -20,7 +20,7 @@ title: BoxGeometry
   <p>
     <h3>size</h3>
     <p class="scene-class-type">
-      <b>Vec3f</b>
+      <b>Vec3f</b><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The size of the box</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.size.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -33,7 +33,7 @@ title: BoxGeometry
   <p>
     <h3>reverse_normals</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -41,10 +41,10 @@ title: BoxGeometry
     </p>
     <h3>side_type</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | force two-sided = 0 (default)
-          | force single-sided = 1
-          | use mesh sidedness = 2
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=force two-sided(default)<br/>
+          1=force single-sided<br/>
+          2=use mesh sidedness<br/>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.side_type.links heading=4-%}
@@ -56,7 +56,7 @@ title: BoxGeometry
   <p>
     <h3>label</h3>
     <p class="scene-class-type">
-      <b>String</b>
+      <b>String</b><br/>
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -64,7 +64,7 @@ title: BoxGeometry
     </p>
     <h3>shadow_receiver_label</h3>
     <p class="scene-class-type">
-      <b>String</b>
+      <b>String</b><br/>
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -77,7 +77,7 @@ title: BoxGeometry
   <p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -85,7 +85,7 @@ title: BoxGeometry
     </p>
     <h3>shadow_ray_epsilon</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -98,7 +98,7 @@ title: BoxGeometry
   <p>
     <h3>visible_diffuse_reflection</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -106,7 +106,7 @@ title: BoxGeometry
     </p>
     <h3>visible_diffuse_transmission</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -114,7 +114,7 @@ title: BoxGeometry
     </p>
     <h3>visible_glossy_reflection</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -122,7 +122,7 @@ title: BoxGeometry
     </p>
     <h3>visible_glossy_transmission</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -130,7 +130,7 @@ title: BoxGeometry
     </p>
     <h3>visible_in_camera</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -138,7 +138,7 @@ title: BoxGeometry
     </p>
     <h3>visible_mirror_reflection</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -146,7 +146,7 @@ title: BoxGeometry
     </p>
     <h3>visible_mirror_transmission</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -154,7 +154,7 @@ title: BoxGeometry
     </p>
     <h3>visible_shadow</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -162,7 +162,7 @@ title: BoxGeometry
     </p>
     <h3>visible_volume</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -175,7 +175,7 @@ title: BoxGeometry
   <p>
     <h3>contains_camera</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.contains_camera.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -183,7 +183,7 @@ title: BoxGeometry
     </p>
     <h3>dicing_camera</h3>
     <p class="scene-class-type">
-      <b>SceneObject</b>
+      <b>SceneObject</b><br/>
       default: None
       <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -191,7 +191,7 @@ title: BoxGeometry
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
-      <b>Mat4d</b> <i>blurrable</i>
+      <b>Mat4d</b><br/> <i>blurrable</i><br/>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -199,7 +199,7 @@ title: BoxGeometry
     </p>
     <h3>references</h3>
     <p class="scene-class-type">
-      <b>Geometry Vector</b>
+      <b>Geometry Vector</b><br/>
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -207,7 +207,7 @@ title: BoxGeometry
     </p>
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
-      <b>String</b>
+      <b>String</b><br/>
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
@@ -215,7 +215,7 @@ title: BoxGeometry
     </p>
     <h3>static</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}

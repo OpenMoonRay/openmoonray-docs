@@ -20,7 +20,7 @@ title: AttributeMap
   <p>
     <h3>primitive_attribute_name</h3>
     <p class="scene-class-type">
-      <b>String</b>
+      <b>String</b><br/>
       default: Cd
       <p class="scene-class-comments">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_name.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
@@ -28,12 +28,12 @@ title: AttributeMap
     </p>
     <h3>primitive_attribute_type</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | float = 0
-          | vec2f = 1
-          | vec3f = 2
-          | rgb = 3 (default)
-          | int = 4
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=float<br/>
+          1=vec2f<br/>
+          2=vec3f<br/>
+          3=rgb(default)<br/>
+          4=int<br/>
       <p class="scene-class-comments">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.links heading=4-%}
@@ -45,7 +45,7 @@ title: AttributeMap
   <p>
     <h3>color</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">input color - preferably a connected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
@@ -53,7 +53,7 @@ title: AttributeMap
     </p>
     <h3>default_value</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">default value to display when the requested attribute is not available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.default_value.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
@@ -61,32 +61,32 @@ title: AttributeMap
     </p>
     <h3>map_type</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | primitive attribute = 0 (default)
-          | position = 1
-          | texture st = 2
-          | shading normal = 3
-          | geometric normal = 4
-          | dpds = 5
-          | dpdt = 6
-          | dnds = 7
-          | dndt = 8
-          | map color = 9
-          | hair surface P = 12
-          | hair surface N = 13
-          | hair surface st = 14
-          | hair closest surface st = 15
-          | id = 16
-          | velocity = 17
-          | acceleration = 18
-          | motionvec = 19
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=primitive attribute(default)<br/>
+          1=position<br/>
+          2=texture st<br/>
+          3=shading normal<br/>
+          4=geometric normal<br/>
+          5=dpds<br/>
+          6=dpdt<br/>
+          7=dnds<br/>
+          8=dndt<br/>
+          9=map color<br/>
+          12=hair surface P<br/>
+          13=hair surface N<br/>
+          14=hair surface st<br/>
+          15=hair closest surface st<br/>
+          16=id<br/>
+          17=velocity<br/>
+          18=acceleration<br/>
+          19=motionvec<br/>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.links heading=4-%}
     </p>
     <h3>warn_when_unavailable</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.warn_when_unavailable.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}

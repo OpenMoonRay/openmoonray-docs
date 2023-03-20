@@ -20,7 +20,7 @@ title: ClampMap
   <p>
     <h3>clamp</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ClampMap.attributes.clamp.images data=site.data.user-reference.scene-objects.maps.ClampMap-%}
@@ -28,7 +28,7 @@ title: ClampMap
     </p>
     <h3>clamp_max</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-comments">the maximum value output by this map when 'clamp' is enabled</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ClampMap.attributes.clamp_max.images data=site.data.user-reference.scene-objects.maps.ClampMap-%}
@@ -36,7 +36,7 @@ title: ClampMap
     </p>
     <h3>clamp_min</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 0.0
       <p class="scene-class-comments">the minimum value output by this map when 'clamp' is enabled</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ClampMap.attributes.clamp_min.images data=site.data.user-reference.scene-objects.maps.ClampMap-%}
@@ -44,7 +44,7 @@ title: ClampMap
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input values to be remapped</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ClampMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ClampMap-%}

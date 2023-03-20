@@ -20,7 +20,7 @@ title: VectorDisplacement
   <p>
     <h3>bound_padding</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.bound_padding.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
@@ -28,7 +28,7 @@ title: VectorDisplacement
     </p>
     <h3>factor</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.factor.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
@@ -36,25 +36,25 @@ title: VectorDisplacement
     </p>
     <h3>source_space</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | tangent = 0 (default)
-          | object = 1
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=tangent(default)<br/>
+          1=object<br/>
       <p class="scene-class-comments">The space that the map bound to the vector parameter is in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.source_space.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.source_space.links heading=4-%}
     </p>
     <h3>tangent_space_style</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | tnb = 0 (default)
-          | tbn = 1
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=tnb(default)<br/>
+          1=tbn<br/>
       <p class="scene-class-comments">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.links heading=4-%}
     </p>
     <h3>vector</h3>
     <p class="scene-class-type">
-      <b>Vec3f</b> <i>bindable</i>
+      <b>Vec3f</b><br/> <i>bindable</i><br/>
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.vector.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}

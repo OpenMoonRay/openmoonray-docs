@@ -20,7 +20,7 @@ title: RgbToHsvMap
   <p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
+      <b>Rgb</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToHsvMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RgbToHsvMap-%}

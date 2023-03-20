@@ -20,7 +20,7 @@ title: TransformSpaceMap
   <p>
     <h3>camera</h3>
     <p class="scene-class-type">
-      <b>Camera</b>
+      <b>Camera</b><br/>
       default: None
       <p class="scene-class-comments">an alternate camera to use when transforming to/from 'camera' space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.camera.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -28,7 +28,7 @@ title: TransformSpaceMap
     </p>
     <h3>concatenate_instance_level_transforms</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: True
       <p class="scene-class-comments">When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.concatenate_instance_level_transforms.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -36,26 +36,26 @@ title: TransformSpaceMap
     </p>
     <h3>from_space</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | render = 0 (default)
-          | camera = 1
-          | world = 2
-          | screen = 3
-          | object = 4
-          | local tangent = 5
-          | instance object transform = 6
-          | instance level 0 = 7
-          | instance level 1 = 8
-          | instance level 2 = 9
-          | instance level 3 = 10
-          | instance level 4 = 11
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=render(default)<br/>
+          1=camera<br/>
+          2=world<br/>
+          3=screen<br/>
+          4=object<br/>
+          5=local tangent<br/>
+          6=instance object transform<br/>
+          7=instance level 0<br/>
+          8=instance level 1<br/>
+          9=instance level 2<br/>
+          10=instance level 3<br/>
+          11=instance level 4<br/>
       <p class="scene-class-comments">the space to transform from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.from_space.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.from_space.links heading=4-%}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>Vec3f</b> <i>bindable</i>
+      <b>Vec3f</b><br/> <i>bindable</i><br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input value to transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -63,17 +63,17 @@ title: TransformSpaceMap
     </p>
     <h3>input_type</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | point = 0
-          | vector = 1 (default)
-          | normal = 2
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=point<br/>
+          1=vector(default)<br/>
+          2=normal<br/>
       <p class="scene-class-comments">the type of input value provided</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.input_type.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.input_type.links heading=4-%}
     </p>
     <h3>object</h3>
     <p class="scene-class-type">
-      <b>Geometry</b>
+      <b>Geometry</b><br/>
       default: None
       <p class="scene-class-comments">an alternate object to use when transforming to/from 'object' space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.object.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -81,26 +81,26 @@ title: TransformSpaceMap
     </p>
     <h3>to_space</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | render = 0
-          | camera = 1
-          | world = 2 (default)
-          | screen = 3
-          | object = 4
-          | local reference tangent = 5
-          | instance level 0 = 6
-          | instance level 1 = 7
-          | instance level 2 = 8
-          | instance level 3 = 9
-          | instance level 4 = 10
-          | instance object transform = 11
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=render<br/>
+          1=camera<br/>
+          2=world(default)<br/>
+          3=screen<br/>
+          4=object<br/>
+          5=local reference tangent<br/>
+          6=instance level 0<br/>
+          7=instance level 1<br/>
+          8=instance level 2<br/>
+          9=instance level 3<br/>
+          10=instance level 4<br/>
+          11=instance object transform<br/>
       <p class="scene-class-comments">the space to transform to</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.to_space.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.to_space.links heading=4-%}
     </p>
     <h3>use_custom_window_coordinates</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">used to apply non-uniform scaling to projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.use_custom_window_coordinates.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -108,7 +108,7 @@ title: TransformSpaceMap
     </p>
     <h3>window_x_max</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-comments">maximum projected x coordinate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.window_x_max.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -116,7 +116,7 @@ title: TransformSpaceMap
     </p>
     <h3>window_x_min</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: -1.0
       <p class="scene-class-comments">minimum projected x coordinate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.window_x_min.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -124,7 +124,7 @@ title: TransformSpaceMap
     </p>
     <h3>window_y_max</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-comments">maximum projected y coordinate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.window_y_max.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
@@ -132,7 +132,7 @@ title: TransformSpaceMap
     </p>
     <h3>window_y_min</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: -1.0
       <p class="scene-class-comments">minimum projected y coordinate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.window_y_min.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}

@@ -20,7 +20,7 @@ title: ImageDisplayFilter
   <p>
     <h3>invert_mask</h3>
     <p class="scene-class-type">
-      <b>Bool</b>
+      <b>Bool</b><br/>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
@@ -28,7 +28,7 @@ title: ImageDisplayFilter
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b><br/>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
@@ -41,20 +41,20 @@ title: ImageDisplayFilter
   <p>
     <h3>display_type</h3>
     <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | stretch = 0 (default)
-          | fit_horizontal = 1
-          | fit_vertical = 2
-          | fit_by_smallest_dimension = 3
-          | fit_by_largest_dimension = 4
-          | no_scale = 5
+      <b>Int</b><br/> <i>enum</i><br/>
+          0=stretch(default)<br/>
+          1=fit_horizontal<br/>
+          2=fit_vertical<br/>
+          3=fit_by_smallest_dimension<br/>
+          4=fit_by_largest_dimension<br/>
+          5=no_scale<br/>
       <p class="scene-class-comments">Method used to fit the input image to the image plane.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.display_type.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.display_type.links heading=4-%}
     </p>
     <h3>image_path</h3>
     <p class="scene-class-type">
-      <b>String</b> <i>filename</i>
+      <b>String</b><br/> <i>filename</i><br/>
       default: 
       <p class="scene-class-comments">File path to the .exr we want to fit to the image plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.image_path.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
@@ -62,7 +62,7 @@ title: ImageDisplayFilter
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b>
+      <b>RenderOutput</b><br/>
       default: None
       <p class="scene-class-comments">RenderOutput to use in the ImageDisplayFilter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
@@ -70,7 +70,7 @@ title: ImageDisplayFilter
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b>
+      <b>RenderOutput</b><br/>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
