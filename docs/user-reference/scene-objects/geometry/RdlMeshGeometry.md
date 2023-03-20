@@ -89,6 +89,83 @@ title: RdlMeshGeometry
   </p>
 </details>
 <details open>
+  <summary>Visibility attributes</summary>
+  <p>
+    <h3>visible_diffuse_reflection</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
+    </p>
+    <h3>visible_diffuse_transmission</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
+    </p>
+    <h3>visible_glossy_reflection</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_reflection.links heading=4-%}
+    </p>
+    <h3>visible_glossy_transmission</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_transmission.links heading=4-%}
+    </p>
+    <h3>visible_in_camera</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_in_camera.links heading=4-%}
+    </p>
+    <h3>visible_mirror_reflection</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_reflection.links heading=4-%}
+    </p>
+    <h3>visible_mirror_transmission</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_transmission.links heading=4-%}
+    </p>
+    <h3>visible_shadow</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry casts shadows</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_shadow.links heading=4-%}
+    </p>
+    <h3>visible_volume</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_volume.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>General attributes</summary>
   <p>
     <h3>accleration_list</h3>
@@ -381,78 +458,6 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">List of vertex indices used to construct the mesh using the vertex list</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.vertices_by_index.links heading=4-%}
-    </p>
-    <h3>visible_diffuse_reflection</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
-    </p>
-    <h3>visible_diffuse_transmission</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
-    </p>
-    <h3>visible_glossy_reflection</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_reflection.links heading=4-%}
-    </p>
-    <h3>visible_glossy_transmission</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_glossy_transmission.links heading=4-%}
-    </p>
-    <h3>visible_in_camera</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_in_camera.links heading=4-%}
-    </p>
-    <h3>visible_mirror_reflection</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_reflection.links heading=4-%}
-    </p>
-    <h3>visible_mirror_transmission</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_mirror_transmission.links heading=4-%}
-    </p>
-    <h3>visible_shadow</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry casts shadows</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_shadow.links heading=4-%}
-    </p>
-    <h3>visible_volume</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.visible_volume.links heading=4-%}
     </p>
   </p>
 </details>

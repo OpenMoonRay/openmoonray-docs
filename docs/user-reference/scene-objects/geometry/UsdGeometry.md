@@ -145,6 +145,104 @@ title: UsdGeometry
   </p>
 </details>
 <details open>
+  <summary>User Data attributes</summary>
+  <p>
+    <h3>part_list</h3>
+    <p class="scene-class-type">
+      <b>StringVector</b>
+      default: []
+      <p class="scene-class-comments">Ordered list of part names.   The length of the<br>list should match the length of any "part" rate primitive attribute</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.links heading=4-%}
+    </p>
+    <h3>primitive_attributes</h3>
+    <p class="scene-class-type">
+      <b>UserData Vector</b>
+      default: []
+      <p class="scene-class-comments">A list of UserData scene objects specifying arbitrary primitive attributes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Visibility attributes</summary>
+  <p>
+    <h3>visible_diffuse_reflection</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
+    </p>
+    <h3>visible_diffuse_transmission</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
+    </p>
+    <h3>visible_glossy_reflection</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_reflection.links heading=4-%}
+    </p>
+    <h3>visible_glossy_transmission</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_transmission.links heading=4-%}
+    </p>
+    <h3>visible_in_camera</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_in_camera.links heading=4-%}
+    </p>
+    <h3>visible_mirror_reflection</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_reflection.links heading=4-%}
+    </p>
+    <h3>visible_mirror_transmission</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_transmission.links heading=4-%}
+    </p>
+    <h3>visible_shadow</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry casts shadows</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_shadow.links heading=4-%}
+    </p>
+    <h3>visible_volume</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_volume.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>General attributes</summary>
   <p>
     <h3>contains_camera</h3>
@@ -187,14 +285,6 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.node_xform.links heading=4-%}
     </p>
-    <h3>part_list</h3>
-    <p class="scene-class-type">
-      <b>StringVector</b>
-      default: []
-      <p class="scene-class-comments">Ordered list of part names.   The length of the<br>list should match the length of any "part" rate primitive attribute</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.links heading=4-%}
-    </p>
     <h3>prim_path</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -202,14 +292,6 @@ title: UsdGeometry
       <p class="scene-class-comments">The geometry Prim to load from the USD Stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.links heading=4-%}
-    </p>
-    <h3>primitive_attributes</h3>
-    <p class="scene-class-type">
-      <b>UserData Vector</b>
-      default: []
-      <p class="scene-class-comments">A list of UserData scene objects specifying arbitrary primitive attributes</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
@@ -316,78 +398,6 @@ title: UsdGeometry
       <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.links heading=4-%}
-    </p>
-    <h3>visible_diffuse_reflection</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
-    </p>
-    <h3>visible_diffuse_transmission</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
-    </p>
-    <h3>visible_glossy_reflection</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_reflection.links heading=4-%}
-    </p>
-    <h3>visible_glossy_transmission</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_transmission.links heading=4-%}
-    </p>
-    <h3>visible_in_camera</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_in_camera.links heading=4-%}
-    </p>
-    <h3>visible_mirror_reflection</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_reflection.links heading=4-%}
-    </p>
-    <h3>visible_mirror_transmission</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_transmission.links heading=4-%}
-    </p>
-    <h3>visible_shadow</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry casts shadows</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_shadow.links heading=4-%}
-    </p>
-    <h3>visible_volume</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: True
-      <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_volume.links heading=4-%}
     </p>
   </p>
 </details>
