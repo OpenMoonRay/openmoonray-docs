@@ -20,7 +20,8 @@ title: ShadowReceiverSet
   <p>
     <h3>complement</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.complement.images data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}
@@ -33,7 +34,8 @@ title: ShadowReceiverSet
   <p>
     <h3>geometries</h3>
     <p class="scene-class-type">
-      <b>SceneObjectIndexable</b><br/>
+      <b>SceneObjectIndexable</b>
+      <br/>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}

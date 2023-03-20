@@ -20,7 +20,8 @@ title: MultiChannelToFloatMap
   <p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/> <i>bindable</i><br/>
+      <b>Rgb</b> <i>bindable</i>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
@@ -28,21 +29,23 @@ title: MultiChannelToFloatMap
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=Red(default)<br/>
-          1=Green<br/>
-          2=Blue<br/>
-          3=Cyan<br/>
-          4=Magenta<br/>
-          5=Yellow<br/>
-          6=White<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = Red(default)<br/>
+          </t>1 = Green<br/>
+          </t>2 = Blue<br/>
+          </t>3 = Cyan<br/>
+          </t>4 = Magenta<br/>
+          </t>5 = Yellow<br/>
+          </t>6 = White<br/>
       <p class="scene-class-comments">Specifies which color channels including combination channels (Cyan, Magenta, Yellow, and White) to convert to float.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.links heading=4-%}
     </p>
     <h3>tolerance</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/> <i>bindable</i><br/>
+      <b>Float</b> <i>bindable</i>
+      <br/>
       default: 0.20000000298
       <p class="scene-class-comments">Low tolerance values will tend to produce harsher edges near overlapping colors, while high tolerance values may result in cross-color bleeding.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}

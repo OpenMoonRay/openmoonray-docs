@@ -20,7 +20,8 @@ title: LayerMap
   <p>
     <h3>input_A</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/> <i>bindable</i><br/>
+      <b>Rgb</b> <i>bindable</i>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Foreground color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -28,7 +29,8 @@ title: LayerMap
     </p>
     <h3>input_B</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/> <i>bindable</i><br/>
+      <b>Rgb</b> <i>bindable</i>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Background color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -36,7 +38,8 @@ title: LayerMap
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/> <i>bindable</i><br/>
+      <b>Float</b> <i>bindable</i>
+      <br/>
       default: 1.0
       <p class="scene-class-comments">Blending amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
@@ -44,23 +47,24 @@ title: LayerMap
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=off<br/>
-          1=over(default)<br/>
-          2=add<br/>
-          3=subtract<br/>
-          4=multiply<br/>
-          5=screen<br/>
-          6=overlay<br/>
-          7=overlay contrast<br/>
-          8=darken<br/>
-          9=lighten<br/>
-          10=color dodge<br/>
-          11=color burn<br/>
-          12=hard light<br/>
-          13=soft light<br/>
-          14=difference<br/>
-          15=exclusion<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = off<br/>
+          </t>1 = over(default)<br/>
+          </t>2 = add<br/>
+          </t>3 = subtract<br/>
+          </t>4 = multiply<br/>
+          </t>5 = screen<br/>
+          </t>6 = overlay<br/>
+          </t>7 = overlay contrast<br/>
+          </t>8 = darken<br/>
+          </t>9 = lighten<br/>
+          </t>10 = color dodge<br/>
+          </t>11 = color burn<br/>
+          </t>12 = hard light<br/>
+          </t>13 = soft light<br/>
+          </t>14 = difference<br/>
+          </t>15 = exclusion<br/>
       <p class="scene-class-comments">Method of blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.links heading=4-%}

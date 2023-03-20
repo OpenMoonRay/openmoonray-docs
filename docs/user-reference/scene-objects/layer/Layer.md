@@ -20,7 +20,8 @@ title: Layer
   <p>
     <h3>displacements</h3>
     <p class="scene-class-type">
-      <b>Displacement Vector</b><br/>
+      <b>Displacement Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.displacements.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -28,7 +29,8 @@ title: Layer
     </p>
     <h3>geometries</h3>
     <p class="scene-class-type">
-      <b>SceneObjectIndexable</b><br/>
+      <b>SceneObjectIndexable</b>
+      <br/>
       default: None
       <p class="scene-class-comments">Geometry objects that are members of this TraceSet</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.geometries.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -36,7 +38,8 @@ title: Layer
     </p>
     <h3>lightfiltersets</h3>
     <p class="scene-class-type">
-      <b>LightFilterSet Vector</b><br/>
+      <b>LightFilterSet Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.lightfiltersets.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -44,7 +47,8 @@ title: Layer
     </p>
     <h3>lightsets</h3>
     <p class="scene-class-type">
-      <b>LightSet Vector</b><br/>
+      <b>LightSet Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.lightsets.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -52,7 +56,8 @@ title: Layer
     </p>
     <h3>parts</h3>
     <p class="scene-class-type">
-      <b>StringVector</b><br/>
+      <b>StringVector</b>
+      <br/>
       default: []
       <p class="scene-class-comments">Part names (one for each geometry object)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.parts.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -60,7 +65,8 @@ title: Layer
     </p>
     <h3>shadowreceiversets</h3>
     <p class="scene-class-type">
-      <b>ShadowReceiverSet Vector</b><br/>
+      <b>ShadowReceiverSet Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.shadowreceiversets.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -68,7 +74,8 @@ title: Layer
     </p>
     <h3>shadowsets</h3>
     <p class="scene-class-type">
-      <b>ShadowSet Vector</b><br/>
+      <b>ShadowSet Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.shadowsets.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -76,7 +83,8 @@ title: Layer
     </p>
     <h3>surface_shaders</h3>
     <p class="scene-class-type">
-      <b>Material Vector</b><br/>
+      <b>Material Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.surface_shaders.images data=site.data.user-reference.scene-objects.layer.Layer-%}
@@ -84,7 +92,8 @@ title: Layer
     </p>
     <h3>volume_shaders</h3>
     <p class="scene-class-type">
-      <b>Volume Vector</b><br/>
+      <b>Volume Vector</b>
+      <br/>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.volume_shaders.images data=site.data.user-reference.scene-objects.layer.Layer-%}

@@ -20,7 +20,8 @@ title: RampDisplayFilter
   <p>
     <h3>invert_mask</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -28,7 +29,8 @@ title: RampDisplayFilter
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/>
+      <b>Float</b>
+      <br/>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -41,7 +43,8 @@ title: RampDisplayFilter
   <p>
     <h3>colors</h3>
     <p class="scene-class-type">
-      <b>RgbVector</b><br/>
+      <b>RgbVector</b>
+      <br/>
       default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of ramp colors</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.colors.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -49,7 +52,8 @@ title: RampDisplayFilter
     </p>
     <h3>interpolations</h3>
     <p class="scene-class-type">
-      <b>IntVector</b><br/>
+      <b>IntVector</b>
+      <br/>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-comments">List of ramp interpolations.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.interpolations.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -57,7 +61,8 @@ title: RampDisplayFilter
     </p>
     <h3>positions</h3>
     <p class="scene-class-type">
-      <b>FloatVector</b><br/>
+      <b>FloatVector</b>
+      <br/>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">List of ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.positions.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -70,7 +75,8 @@ title: RampDisplayFilter
   <p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b><br/>
+      <b>RenderOutput</b>
+      <br/>
       default: None
       <p class="scene-class-comments">RenderOutput fed into the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -78,16 +84,17 @@ title: RampDisplayFilter
     </p>
     <h3>ramp_type</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=v_ramp(default)<br/>
-          1=u_ramp<br/>
-          2=diagonal_ramp<br/>
-          3=radial_ramp<br/>
-          4=circular_ramp<br/>
-          5=box_ramp<br/>
-          6=uxv_ramp<br/>
-          7=four_corner_ramp<br/>
-          8=input_ramp<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = v_ramp(default)<br/>
+          </t>1 = u_ramp<br/>
+          </t>2 = diagonal_ramp<br/>
+          </t>3 = radial_ramp<br/>
+          </t>4 = circular_ramp<br/>
+          </t>5 = box_ramp<br/>
+          </t>6 = uxv_ramp<br/>
+          </t>7 = four_corner_ramp<br/>
+          </t>8 = input_ramp<br/>
       <p class="scene-class-comments">Type of ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.links heading=4-%}
@@ -99,7 +106,8 @@ title: RampDisplayFilter
   <p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b><br/>
+      <b>RenderOutput</b>
+      <br/>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}

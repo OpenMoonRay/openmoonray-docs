@@ -20,7 +20,8 @@ title: ColorCorrectNukeMap
   <p>
     <h3>TMI</h3>
     <p class="scene-class-type">
-      <b>Vec3f</b><br/>
+      <b>Vec3f</b>
+      <br/>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.TMI.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -28,7 +29,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>TMI_control_enabled</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.TMI_control_enabled.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -36,7 +38,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>contrast</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/>
+      <b>Rgb</b>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.contrast.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -44,7 +47,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>contrast_enabled</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.contrast_enabled.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -52,7 +56,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>gain</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/>
+      <b>Rgb</b>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.gain.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -60,7 +65,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>gain_offset_enabled</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.gain_offset_enabled.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -68,7 +74,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>gamma</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/>
+      <b>Rgb</b>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.gamma.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -76,7 +83,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>gamma_enabled</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.gamma_enabled.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -84,7 +92,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/> <i>bindable</i><br/>
+      <b>Rgb</b> <i>bindable</i>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -92,7 +101,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>offset</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/>
+      <b>Rgb</b>
+      <br/>
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -100,7 +110,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>saturation</h3>
     <p class="scene-class-type">
-      <b>Rgb</b><br/>
+      <b>Rgb</b>
+      <br/>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.saturation.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
@@ -108,7 +119,8 @@ title: ColorCorrectNukeMap
     </p>
     <h3>saturation_enabled</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.saturation_enabled.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}

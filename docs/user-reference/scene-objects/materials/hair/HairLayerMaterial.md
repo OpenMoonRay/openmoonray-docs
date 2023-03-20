@@ -20,19 +20,21 @@ title: HairLayerMaterial
   <p>
     <h3>blend_color_space</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=RGB(default)<br/>
-          1=HSV<br/>
-          2=HSL<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = RGB(default)<br/>
+          </t>1 = HSV<br/>
+          </t>2 = HSL<br/>
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.blend_color_space.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.blend_color_space.links heading=4-%}
     </p>
     <h3>fallback_bssrdf</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=normalized diffusion(default)<br/>
-          1=dipole<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = normalized diffusion(default)<br/>
+          </t>1 = dipole<br/>
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.fallback_bssrdf.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.fallback_bssrdf.links heading=4-%}
@@ -44,7 +46,8 @@ title: HairLayerMaterial
   <p>
     <h3>extra_aovs</h3>
     <p class="scene-class-type">
-      <b>Map</b><br/>
+      <b>Map</b>
+      <br/>
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
@@ -52,7 +55,8 @@ title: HairLayerMaterial
     </p>
     <h3>hair_material_A</h3>
     <p class="scene-class-type">
-      <b>DwaBaseHairLayerable</b><br/>
+      <b>DwaBaseHairLayerable</b>
+      <br/>
       default: None
       <p class="scene-class-comments">foreground hair material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_A.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
@@ -60,7 +64,8 @@ title: HairLayerMaterial
     </p>
     <h3>hair_material_B</h3>
     <p class="scene-class-type">
-      <b>DwaBaseHairLayerable</b><br/>
+      <b>DwaBaseHairLayerable</b>
+      <br/>
       default: None
       <p class="scene-class-comments">background hair material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
@@ -68,7 +73,8 @@ title: HairLayerMaterial
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
-      <b>String</b><br/>
+      <b>String</b>
+      <br/>
       default: 
       <p class="scene-class-comments">label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
@@ -76,7 +82,8 @@ title: HairLayerMaterial
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/> <i>bindable</i><br/>
+      <b>Float</b> <i>bindable</i>
+      <br/>
       default: 1.0
       <p class="scene-class-comments">foreground hair material weight</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.mask.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
@@ -84,7 +91,8 @@ title: HairLayerMaterial
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/>
+      <b>Int</b>
+      <br/>
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}

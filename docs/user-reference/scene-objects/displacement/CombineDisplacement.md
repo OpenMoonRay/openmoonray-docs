@@ -20,7 +20,8 @@ title: CombineDisplacement
   <p>
     <h3>bound_padding</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/>
+      <b>Float</b>
+      <br/>
       default: 0.0
       <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.bound_padding.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
@@ -28,7 +29,8 @@ title: CombineDisplacement
     </p>
     <h3>input_1</h3>
     <p class="scene-class-type">
-      <b>Displacement</b><br/>
+      <b>Displacement</b>
+      <br/>
       default: None
       <p class="scene-class-comments">Displacement object 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.input_1.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
@@ -36,7 +38,8 @@ title: CombineDisplacement
     </p>
     <h3>input_2</h3>
     <p class="scene-class-type">
-      <b>Displacement</b><br/>
+      <b>Displacement</b>
+      <br/>
       default: None
       <p class="scene-class-comments">Displacement object 2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.input_2.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
@@ -44,17 +47,19 @@ title: CombineDisplacement
     </p>
     <h3>operation</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=add(default)<br/>
-          1=max magnitude<br/>
-          2=min magnitude<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = add(default)<br/>
+          </t>1 = max magnitude<br/>
+          </t>2 = min magnitude<br/>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.operation.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.operation.links heading=4-%}
     </p>
     <h3>scale_1</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/> <i>bindable</i><br/>
+      <b>Float</b> <i>bindable</i>
+      <br/>
       default: 1.0
       <p class="scene-class-comments">Scale of input 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.scale_1.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
@@ -62,7 +67,8 @@ title: CombineDisplacement
     </p>
     <h3>scale_2</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/> <i>bindable</i><br/>
+      <b>Float</b> <i>bindable</i>
+      <br/>
       default: 1.0
       <p class="scene-class-comments">Scale of input 2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.scale_2.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}

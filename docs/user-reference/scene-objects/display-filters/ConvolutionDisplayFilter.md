@@ -20,7 +20,8 @@ title: ConvolutionDisplayFilter
   <p>
     <h3>invert_mask</h3>
     <p class="scene-class-type">
-      <b>Bool</b><br/>
+      <b>Bool</b>
+      <br/>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
@@ -28,7 +29,8 @@ title: ConvolutionDisplayFilter
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
-      <b>Float</b><br/>
+      <b>Float</b>
+      <br/>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
@@ -41,7 +43,8 @@ title: ConvolutionDisplayFilter
   <p>
     <h3>custom_kernel</h3>
     <p class="scene-class-type">
-      <b>FloatVector</b><br/>
+      <b>FloatVector</b>
+      <br/>
       default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       <p class="scene-class-comments">A list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
@@ -49,7 +52,8 @@ title: ConvolutionDisplayFilter
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b><br/>
+      <b>RenderOutput</b>
+      <br/>
       default: None
       <p class="scene-class-comments">RenderOutput to convolve</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
@@ -57,7 +61,8 @@ title: ConvolutionDisplayFilter
     </p>
     <h3>kernel_size</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/>
+      <b>Int</b>
+      <br/>
       default: 5
       <p class="scene-class-comments">Size of kernel in pixels. Size must be odd. If using a custom kernel, this attribute is ignored, and the size of the custom kernel is used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
@@ -65,17 +70,19 @@ title: ConvolutionDisplayFilter
     </p>
     <h3>kernel_type</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=gaussian(default)<br/>
-          1=box<br/>
-          2=custom<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = gaussian(default)<br/>
+          </t>1 = box<br/>
+          </t>2 = custom<br/>
       <p class="scene-class-comments">Kernel to use for convolution.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.links heading=4-%}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
-      <b>RenderOutput</b><br/>
+      <b>RenderOutput</b>
+      <br/>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}

@@ -20,22 +20,23 @@ title: HairColorPresetsMap
   <p>
     <h3>color</h3>
     <p class="scene-class-type">
-      <b>Int</b><br/> <i>enum</i><br/>
-          0=black(default)<br/>
-          1=gray<br/>
-          2=platinum blond<br/>
-          3=light blond<br/>
-          4=golden blond<br/>
-          5=strawberry blond<br/>
-          6=light red<br/>
-          7=dark red<br/>
-          8=light auburn<br/>
-          9=dark auburn<br/>
-          10=brown<br/>
-          11=dark brown<br/>
-          12=golden brown<br/>
-          13=ash brown<br/>
-          14=chestnut brown<br/>
+      <b>Int</b> <i>enum</i>
+      <br/>
+          </t>0 = black(default)<br/>
+          </t>1 = gray<br/>
+          </t>2 = platinum blond<br/>
+          </t>3 = light blond<br/>
+          </t>4 = golden blond<br/>
+          </t>5 = strawberry blond<br/>
+          </t>6 = light red<br/>
+          </t>7 = dark red<br/>
+          </t>8 = light auburn<br/>
+          </t>9 = dark auburn<br/>
+          </t>10 = brown<br/>
+          </t>11 = dark brown<br/>
+          </t>12 = golden brown<br/>
+          </t>13 = ash brown<br/>
+          </t>14 = chestnut brown<br/>
       <p class="scene-class-comments">Chooses a preset hair albedo</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.links heading=4-%}
