@@ -3,7 +3,9 @@ title: MoonRay Test Scenes
 ---
 # Test Scenes for MoonRay
 
-A selection of scenes converted to MoonRay's native RDL format are available for testing, including [example_scenes.zip]({{ "/assets/test-scenes/example_scenes.zip" | absolute_url }}) and [moonray_sphere.usd]({{ "/assets/test-scenes/moonray_sphere.usd" | absolute_url }}). 
+A selection of scenes converted to MoonRay's native RDL2 format are available for testing here: [example_scenes.zip]({{ "/assets/test-scenes/example_scenes.zip" | absolute_url }}).
+
+A simple USD scene can be used for testing using MoonRay's Hydra plugin: [moonray_sphere.usd]({{ "/assets/test-scenes/moonray_sphere.usd" | absolute_url }}).
 
 ## Credits
 
