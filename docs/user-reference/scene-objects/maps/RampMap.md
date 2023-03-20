@@ -73,7 +73,7 @@ title: RampMap
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32e60>
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.links heading=4-%}
@@ -82,7 +82,7 @@ title: RampMap
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32c08>
       <p class="scene-class-comments">Color ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.links heading=4-%}

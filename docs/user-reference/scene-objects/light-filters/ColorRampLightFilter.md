@@ -49,7 +49,7 @@ title: ColorRampLightFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32cf8>
       <p class="scene-class-comments">Distances between which colors are interpolated</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.distances.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.distances.links heading=4-%}
@@ -76,7 +76,7 @@ title: ColorRampLightFilter
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32c08>
       <p class="scene-class-comments">Interpolation types between the specified distances.  0: None 1: linear 2: exponential_up 3: exponential_down 4: smooth 5: catmull_rom</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.interpolation_types.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.interpolation_types.links heading=4-%}

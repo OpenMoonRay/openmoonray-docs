@@ -303,7 +303,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32938>
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.interpolations.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.interpolations.links heading=4-%}
@@ -312,7 +312,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a4d500>
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.positions.links heading=4-%}
@@ -962,7 +962,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a4d320>
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_interpolations.links heading=4-%}
@@ -971,7 +971,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a4d488>
       <p class="scene-class-comments">ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_positions.links heading=4-%}
@@ -1233,7 +1233,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a4d668>
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.links heading=4-%}
@@ -1242,7 +1242,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a4d6e0>
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.links heading=4-%}
@@ -1287,7 +1287,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a4d758>
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_values.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_values.links heading=4-%}

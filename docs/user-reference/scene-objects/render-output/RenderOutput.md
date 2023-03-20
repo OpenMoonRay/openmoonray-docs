@@ -306,7 +306,7 @@ title: RenderOutput
     <p class="scene-class-type">
       <b>String</b>
       <br>
-      default: C[&lt;T.&gt;&lt;RS&gt;]*[&lt;R[DG]&gt;&lt;TD&gt;][LO]
+      default: C[<T.><RS>]*[<R[DG]><TD>][LO]
       <p class="scene-class-comments">If "result" is "visibility aov", this attribute specifies a light path expression that defines the set of all paths usedto compute the visibility ratio.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.visibility_aov.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.visibility_aov.links heading=4-%}

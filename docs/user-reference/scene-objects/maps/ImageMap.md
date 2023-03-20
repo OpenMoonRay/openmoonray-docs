@@ -253,7 +253,7 @@ title: ImageMap
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32ed8>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.links heading=4-%}

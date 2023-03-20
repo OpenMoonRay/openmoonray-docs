@@ -77,7 +77,7 @@ title: VdbLightFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32cf8>
       <p class="scene-class-comments">List of input remap curve values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_inputs.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_inputs.links heading=4-%}
@@ -86,7 +86,7 @@ title: VdbLightFilter
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32c08>
       <p class="scene-class-comments">List of density remap interpolation types</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_interpolation_types.links heading=4-%}
@@ -113,7 +113,7 @@ title: VdbLightFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32de8>
       <p class="scene-class-comments">List of output remap curve values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_outputs.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_remap_outputs.links heading=4-%}

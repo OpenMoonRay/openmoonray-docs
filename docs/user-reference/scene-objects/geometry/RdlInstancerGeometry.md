@@ -47,7 +47,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32ed8>
       <p class="scene-class-comments">A list of index values to hide / disable.  For example, with 4 instances you can supply a list of 0, 2 to disable those instances.  If an index in this list is out of range, it is ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.links heading=4-%}
@@ -97,7 +97,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32c08>
       <p class="scene-class-comments">A list of index values to specify which reference geometry to instance at each   position.   The list corresponds to entries in the "references" attribute.  The length of the list should be either 0 or consistent with "positions"|"xform_list".  The index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.links heading=4-%}
