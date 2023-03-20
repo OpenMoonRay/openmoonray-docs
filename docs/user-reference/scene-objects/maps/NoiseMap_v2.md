@@ -145,16 +145,16 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name (default)<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
-          &nbsp;&nbsp;7 = name<br>
-          &nbsp;&nbsp;8 = name<br>
-          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;render&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;camera&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;world&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;screen&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo; (default)<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;texture&rdquo;<br>
+          &nbsp;&nbsp;7 = &ldquo;input texture coordinates&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;hair_surface_uv&rdquo;<br>
+          &nbsp;&nbsp;9 = &ldquo;hair_closest_surface_uv&rdquo;<br>
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.space.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.space.links heading=4-%}
@@ -177,12 +177,12 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;xyz&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;xzy&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;yxz&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;yzx&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;zxy&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply the euler rotations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.rotation_order.links heading=4-%}
@@ -200,12 +200,12 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name (default)<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;srt&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;str&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;rst&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;rts&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;tsr&rdquo; (default)<br>
+          &nbsp;&nbsp;5 = &ldquo;trs&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply the translation, rotation, and frequency</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.transformation_order.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.transformation_order.links heading=4-%}
@@ -273,8 +273,8 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;perlin classic&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;perlin simplex&rdquo;<br>
       <p class="scene-class-comments">Type of noise to use for distortion.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.distortion_noise_type.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.distortion_noise_type.links heading=4-%}
@@ -310,8 +310,8 @@ title: NoiseMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;perlin classic&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;perlin simplex&rdquo;<br>
       <p class="scene-class-comments">Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.noise_type.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.noise_type.links heading=4-%}

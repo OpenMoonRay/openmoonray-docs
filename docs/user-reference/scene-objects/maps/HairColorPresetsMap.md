@@ -22,21 +22,21 @@ title: HairColorPresetsMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
-          &nbsp;&nbsp;7 = name<br>
-          &nbsp;&nbsp;8 = name<br>
-          &nbsp;&nbsp;9 = name<br>
-          &nbsp;&nbsp;10 = name<br>
-          &nbsp;&nbsp;11 = name<br>
-          &nbsp;&nbsp;12 = name<br>
-          &nbsp;&nbsp;13 = name<br>
-          &nbsp;&nbsp;14 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;black&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;gray&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;platinum blond&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;light blond&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;golden blond&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;strawberry blond&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;light red&rdquo;<br>
+          &nbsp;&nbsp;7 = &ldquo;dark red&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;light auburn&rdquo;<br>
+          &nbsp;&nbsp;9 = &ldquo;dark auburn&rdquo;<br>
+          &nbsp;&nbsp;10 = &ldquo;brown&rdquo;<br>
+          &nbsp;&nbsp;11 = &ldquo;dark brown&rdquo;<br>
+          &nbsp;&nbsp;12 = &ldquo;golden brown&rdquo;<br>
+          &nbsp;&nbsp;13 = &ldquo;ash brown&rdquo;<br>
+          &nbsp;&nbsp;14 = &ldquo;chestnut brown&rdquo;<br>
       <p class="scene-class-comments">Chooses a preset hair albedo</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.links heading=4-%}

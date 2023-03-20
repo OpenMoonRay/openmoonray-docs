@@ -22,12 +22,12 @@ title: ProjectPlanarNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;Scale Rot Trans&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;Scale Trans Rot&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;Rot Scale Trans&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;Rot Trans Scale&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;Trans Scale Rot&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.links heading=4-%}
@@ -36,8 +36,8 @@ title: ProjectPlanarNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;[0,1]&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;[-1,1]&rdquo;<br>
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.links heading=4-%}
@@ -55,9 +55,9 @@ title: ProjectPlanarNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;projector&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;projection_matrix&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;TRS&rdquo;<br>
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_mode.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_mode.links heading=4-%}
@@ -84,12 +84,12 @@ title: ProjectPlanarNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;xyz&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;xzy&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;yxz&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;yzx&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;zxy&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.links heading=4-%}

@@ -31,8 +31,8 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;clamp&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;absolute&rdquo;<br>
       <p class="scene-class-comments">determines how surfaces facing opposite the prime direction are handled</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.clamping_behavior.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.clamping_behavior.links heading=4-%}
@@ -41,8 +41,8 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;cosine&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;linear&rdquo;<br>
       <p class="scene-class-comments">determines how the effect falls off as the difference angle increases</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.falloff_type.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.falloff_type.links heading=4-%}
@@ -142,12 +142,12 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;+X axis&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;-X axis&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;+Y axis&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;-Y axis&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;+Z axis&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;-Z axis&rdquo;<br>
       <p class="scene-class-comments">which axis to use when 'prime direction' is set to 'axis of object'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.object_axis.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.object_axis.links heading=4-%}
@@ -156,8 +156,8 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;perpendicular&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;parallel&rdquo;<br>
       <p class="scene-class-comments">determines which directions are given color A and which are given color B. Switching this effectively swaps the colors</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.polarity.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.polarity.links heading=4-%}
@@ -166,10 +166,10 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;observer direction&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;custom direction&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;axis of object&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;look-at object&rdquo;<br>
       <p class="scene-class-comments">which source is used for the prime direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.prime_direction.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.prime_direction.links heading=4-%}

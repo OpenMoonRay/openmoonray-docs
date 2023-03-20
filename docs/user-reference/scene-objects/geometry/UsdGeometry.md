@@ -31,8 +31,8 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;ray_facing&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;round&rdquo;<br>
       <p class="scene-class-comments">Set the style that curve primitives are rendered in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
@@ -87,9 +87,9 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;force two-sided&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force single-sided&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;use mesh sidedness&rdquo;<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.side_type.links heading=4-%}
@@ -153,9 +153,9 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;use mesh type&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force polygon mesh&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;force subdivision mesh&rdquo;<br>
       <p class="scene-class-comments">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.links heading=4-%}
@@ -178,12 +178,12 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;-1 = name (default)<br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;-1 = &ldquo;best&rdquo; (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;static&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;velocity&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;frame delta&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;acceleration&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;hermite&rdquo;<br>
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.links heading=4-%}
@@ -192,9 +192,9 @@ title: UsdGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;first motion step&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;second motion step&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;both motion steps&rdquo; (default)<br>
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attribute_frame.links heading=4-%}

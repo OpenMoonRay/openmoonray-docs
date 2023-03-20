@@ -72,9 +72,9 @@ title: ConvolutionDisplayFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;gaussian&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;box&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;custom&rdquo;<br>
       <p class="scene-class-comments">Kernel to use for convolution.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.links heading=4-%}

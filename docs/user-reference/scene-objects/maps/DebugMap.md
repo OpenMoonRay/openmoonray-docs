@@ -22,8 +22,8 @@ title: DebugMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;tangent&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;render&rdquo;<br>
       <p class="scene-class-comments">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DebugMap.attributes.input_normal_space.images data=site.data.user-reference.scene-objects.maps.DebugMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DebugMap.attributes.input_normal_space.links heading=4-%}
@@ -46,10 +46,10 @@ title: DebugMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;float&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;vec2f&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;vec3f&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;rgb&rdquo;<br>
       <p class="scene-class-comments">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DebugMap.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.maps.DebugMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DebugMap.attributes.primitive_attribute_type.links heading=4-%}
@@ -90,13 +90,13 @@ title: DebugMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;position&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;texture st&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;shading normal&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;geometric normal&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;dpds&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;dpdt&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;primitive attribute&rdquo;<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DebugMap.attributes.map_type.images data=site.data.user-reference.scene-objects.maps.DebugMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DebugMap.attributes.map_type.links heading=4-%}

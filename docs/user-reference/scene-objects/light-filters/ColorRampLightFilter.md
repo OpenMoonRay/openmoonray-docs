@@ -85,8 +85,8 @@ title: ColorRampLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;radial&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;directional&rdquo;<br>
       <p class="scene-class-comments">Ramp: Radiates out from the center of the light or ramp location.  Directional: Linear starting at the location of the light or ramp location along negative z</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.mode.links heading=4-%}
@@ -104,8 +104,8 @@ title: ColorRampLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;extend&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;mirror&rdquo;<br>
       <p class="scene-class-comments">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z &gt; 0.  Mirror: f(z) = f(-z).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.wrap_mode.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.wrap_mode.links heading=4-%}

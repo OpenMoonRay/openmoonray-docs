@@ -45,8 +45,8 @@ title: TransformNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;tangent to render&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;render to tangent&rdquo;<br>
       <p class="scene-class-comments">transform to apply to the normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.TransformNormalMap.attributes.transform.images data=site.data.user-reference.scene-objects.normal-maps.TransformNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.TransformNormalMap.attributes.transform.links heading=4-%}

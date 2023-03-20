@@ -31,8 +31,8 @@ title: BlendMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;linear&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;cubic&rdquo;<br>
       <p class="scene-class-comments">The type of blending algorithm</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_type.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_type.links heading=4-%}

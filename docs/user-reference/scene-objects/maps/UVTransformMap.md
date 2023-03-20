@@ -67,13 +67,13 @@ title: UVTransformMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;render&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;camera&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;world&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;screen&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;texture&rdquo; (default)<br>
       <p class="scene-class-comments">Determines source of coordinates. Default is mesh UVs. Other options procedurally create UVs from the chosen space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.links heading=4-%}

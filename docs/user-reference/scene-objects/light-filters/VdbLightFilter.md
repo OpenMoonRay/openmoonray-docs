@@ -22,8 +22,8 @@ title: VdbLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;gaussian&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;circular&rdquo;<br>
       <p class="scene-class-comments">The type of blur to apply</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.blur_type.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.blur_type.links heading=4-%}
@@ -140,9 +140,9 @@ title: VdbLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;point&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;box&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;quadratic&rdquo;<br>
       <p class="scene-class-comments">The type of interpolation to use when sampling the filter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.vdb_interpolation_type.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.vdb_interpolation_type.links heading=4-%}

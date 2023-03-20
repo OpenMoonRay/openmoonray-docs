@@ -58,9 +58,9 @@ title: ToonMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;outline&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;crease&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;both&rdquo; (default)<br>
       <p class="scene-class-comments">Pick which features are displayed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ToonMap.attributes.mode.links heading=4-%}

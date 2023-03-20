@@ -22,9 +22,9 @@ title: DwaSwitchMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;normalized diffusion&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;dipole&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;random walk&rdquo;<br>
       <p class="scene-class-comments">If the two materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.fallback_bssrdf.images data=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.fallback_bssrdf.links heading=4-%}

@@ -45,9 +45,9 @@ title: BoxGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;force two-sided&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force single-sided&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;use mesh sidedness&rdquo;<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.BoxGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.BoxGeometry.attributes.side_type.links heading=4-%}

@@ -81,8 +81,8 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;RGB&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;Monochromatic&rdquo; (default)<br>
       <p class="scene-class-comments">Controls how diffuse transmission color attenuates diffuse reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.diffuse_transmission_blending_behavior.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.diffuse_transmission_blending_behavior.links heading=4-%}
@@ -363,12 +363,12 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;blend&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;color&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;averageColor&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;footprintArea&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;radius&rdquo;<br>
       <p class="scene-class-comments">developer debug visualization modes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_debug_mode.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_debug_mode.links heading=4-%}
@@ -395,8 +395,8 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;physical&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;additive&rdquo;<br>
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_layering_mode.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_layering_mode.links heading=4-%}
@@ -459,8 +459,8 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name (default)<br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo; (default)<br>
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_space.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_space.links heading=4-%}

@@ -31,8 +31,8 @@ title: ProjectCameraMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;from texture&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;custom&rdquo;<br>
       <p class="scene-class-comments">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.aspect_ratio_source.images data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.aspect_ratio_source.links heading=4-%}
@@ -59,9 +59,9 @@ title: ProjectCameraMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;on&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;auto&rdquo; (default)<br>
       <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.gamma.images data=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCameraMap_v2.attributes.gamma.links heading=4-%}

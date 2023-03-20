@@ -90,12 +90,12 @@ title: GradientMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;none&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;natural&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;linear&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;squared&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;gaussian&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;ease out&rdquo;<br>
       <p class="scene-class-comments">Falloff blend mode</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.GradientMap.attributes.falloff_type.images data=site.data.user-reference.scene-objects.maps.GradientMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.GradientMap.attributes.falloff_type.links heading=4-%}
@@ -145,13 +145,13 @@ title: GradientMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;render&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;camera&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;world&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;screen&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;texture&rdquo;<br>
       <p class="scene-class-comments">The transformation space in which to perform the blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.GradientMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.GradientMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.GradientMap.attributes.space.links heading=4-%}

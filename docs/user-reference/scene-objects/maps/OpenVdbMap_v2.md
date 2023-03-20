@@ -63,9 +63,9 @@ title: OpenVdbMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;point&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;box&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;quadratic&rdquo; (default)<br>
       <p class="scene-class-comments">The type of interpolation to use when sampling the vdb</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.interpolation.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.interpolation.links heading=4-%}
@@ -101,9 +101,9 @@ title: OpenVdbMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;position&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;reference position&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;input texture coordinates&rdquo;<br>
       <p class="scene-class-comments">Which coordinate source to use for the texture lookup</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.texture_coordinates.links heading=4-%}
@@ -112,8 +112,8 @@ title: OpenVdbMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;from texture&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;from OpenVdbGeometry&rdquo;<br>
       <p class="scene-class-comments">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.vdb_source.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.vdb_source.links heading=4-%}

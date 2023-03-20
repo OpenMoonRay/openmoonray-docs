@@ -49,9 +49,9 @@ title: CombineDisplacement
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;add&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;max magnitude&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;min magnitude&rdquo;<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.operation.images data=site.data.user-reference.scene-objects.displacement.CombineDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.CombineDisplacement.attributes.operation.links heading=4-%}

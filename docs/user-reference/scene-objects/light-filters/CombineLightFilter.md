@@ -31,11 +31,11 @@ title: CombineLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;multiply&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;min&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;max&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;add&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;subtract&rdquo;<br>
       <p class="scene-class-comments">How the light filters are combined</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.mode.links heading=4-%}

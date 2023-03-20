@@ -63,9 +63,9 @@ title: DwaAdjustMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;unmodified&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force on&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;force off&rdquo;<br>
       <p class="scene-class-comments">allows you to keep or set casts caustics attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.casts_caustics.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.casts_caustics.links heading=4-%}
@@ -101,9 +101,9 @@ title: DwaAdjustMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;unmodified&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force on&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;force off&rdquo;<br>
       <p class="scene-class-comments">allows you to keep or set thin geometry attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.thin_geometry.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.thin_geometry.links heading=4-%}
@@ -126,9 +126,9 @@ title: DwaAdjustMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;masked&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;unmasked&rdquo;<br>
       <p class="scene-class-comments">how to handle emission input. masked uses mix input, unmasked is mix = 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission_mode.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission_mode.links heading=4-%}

@@ -45,12 +45,12 @@ title: ImageDisplayFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;stretch&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;fit_horizontal&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;fit_vertical&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;fit_by_smallest_dimension&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;fit_by_largest_dimension&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;no_scale&rdquo;<br>
       <p class="scene-class-comments">Method used to fit the input image to the image plane.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.display_type.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.display_type.links heading=4-%}

@@ -94,8 +94,8 @@ title: BarnDoorLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;analytical&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;physical&rdquo;<br>
       <p class="scene-class-comments">analytical mode allows light to shading points that project to the flap opening.physical mode allows light whose direction goes through the flap opening.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.mode.links heading=4-%}
@@ -122,9 +122,9 @@ title: BarnDoorLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;black&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;white&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;default&rdquo; (default)<br>
       <p class="scene-class-comments">force region before the pre_barn_distance to be fully filtered (black), not filtered at all (white), or treated the same as elsewhere (default)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_mode.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_mode.links heading=4-%}
@@ -151,8 +151,8 @@ title: BarnDoorLightFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;perspective&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;orthographic&rdquo;<br>
       <p class="scene-class-comments">projection type used to map points to the flap opening. perspective has a focal point, while orthographic does not.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_type.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_type.links heading=4-%}

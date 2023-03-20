@@ -49,22 +49,22 @@ title: LayerMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
-          &nbsp;&nbsp;7 = name<br>
-          &nbsp;&nbsp;8 = name<br>
-          &nbsp;&nbsp;9 = name<br>
-          &nbsp;&nbsp;10 = name<br>
-          &nbsp;&nbsp;11 = name<br>
-          &nbsp;&nbsp;12 = name<br>
-          &nbsp;&nbsp;13 = name<br>
-          &nbsp;&nbsp;14 = name<br>
-          &nbsp;&nbsp;15 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;over&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;add&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;subtract&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;multiply&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;screen&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;overlay&rdquo;<br>
+          &nbsp;&nbsp;7 = &ldquo;overlay contrast&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;darken&rdquo;<br>
+          &nbsp;&nbsp;9 = &ldquo;lighten&rdquo;<br>
+          &nbsp;&nbsp;10 = &ldquo;color dodge&rdquo;<br>
+          &nbsp;&nbsp;11 = &ldquo;color burn&rdquo;<br>
+          &nbsp;&nbsp;12 = &ldquo;hard light&rdquo;<br>
+          &nbsp;&nbsp;13 = &ldquo;soft light&rdquo;<br>
+          &nbsp;&nbsp;14 = &ldquo;difference&rdquo;<br>
+          &nbsp;&nbsp;15 = &ldquo;exclusion&rdquo;<br>
       <p class="scene-class-comments">Method of blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.links heading=4-%}

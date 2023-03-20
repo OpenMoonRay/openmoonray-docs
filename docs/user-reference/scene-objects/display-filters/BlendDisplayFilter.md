@@ -54,8 +54,8 @@ title: BlendDisplayFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;linear&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;cubic&rdquo;<br>
       <p class="scene-class-comments">Method used to blend between input1 and input2.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendType.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendType.links heading=4-%}

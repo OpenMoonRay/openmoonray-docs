@@ -180,8 +180,8 @@ title: RemapMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;uniform&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;RGB&rdquo;<br>
       <p class="scene-class-comments">Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RemapMap.attributes.remap_method.images data=site.data.user-reference.scene-objects.maps.RemapMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RemapMap.attributes.remap_method.links heading=4-%}

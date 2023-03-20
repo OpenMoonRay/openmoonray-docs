@@ -31,9 +31,9 @@ title: VdbGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;force two-sided&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force single-sided&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;use mesh sidedness&rdquo;<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.side_type.links heading=4-%}
@@ -224,9 +224,9 @@ title: VdbGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;nearest neighbor&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;linear&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;quadratic&rdquo;<br>
       <p class="scene-class-comments">the voxel interpolation to use when sampling the volume data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.links heading=4-%}

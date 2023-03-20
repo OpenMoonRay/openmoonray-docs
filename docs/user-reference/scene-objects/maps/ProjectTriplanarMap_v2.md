@@ -484,12 +484,12 @@ title: ProjectTriplanarMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;Scale Rot Trans&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;Scale Trans Rot&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;Rot Scale Trans&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;Rot Trans Scale&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;Trans Scale Rot&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.TRS_order.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.TRS_order.links heading=4-%}
@@ -498,9 +498,9 @@ title: ProjectTriplanarMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;on&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;auto&rdquo; (default)<br>
       <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.gamma.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.gamma.links heading=4-%}
@@ -527,9 +527,9 @@ title: ProjectTriplanarMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;P/N&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;ref_P/ref_N&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;input_position/input_normal&rdquo;<br>
       <p class="scene-class-comments">Input position to use</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.input_position_source.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.input_position_source.links heading=4-%}
@@ -592,9 +592,9 @@ title: ProjectTriplanarMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;3 = name (default)<br>
-          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;1 = &ldquo;one&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;three&rdquo; (default)<br>
+          &nbsp;&nbsp;6 = &ldquo;six&rdquo;<br>
       <p class="scene-class-comments">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.number_of_textures.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.number_of_textures.links heading=4-%}
@@ -666,9 +666,9 @@ title: ProjectTriplanarMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;projector&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;projection_matrix&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;TRS&rdquo;<br>
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.projection_mode.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.projection_mode.links heading=4-%}
@@ -731,12 +731,12 @@ title: ProjectTriplanarMap_v2
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;xyz&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;xzy&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;yxz&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;yzx&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;zxy&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap_v2.attributes.rotation_order.links heading=4-%}

@@ -31,13 +31,13 @@ title: MultiChannelToFloatMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;Red&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;Green&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;Blue&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;Cyan&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;Magenta&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;Yellow&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;White&rdquo;<br>
       <p class="scene-class-comments">Specifies which color channels including combination channels (Cyan, Magenta, Yellow, and White) to convert to float.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.links heading=4-%}

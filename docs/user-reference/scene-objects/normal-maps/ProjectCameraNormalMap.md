@@ -22,8 +22,8 @@ title: ProjectCameraNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;from texture&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;custom&rdquo;<br>
       <p class="scene-class-comments">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.aspect_ratio_source.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.aspect_ratio_source.links heading=4-%}
@@ -41,8 +41,8 @@ title: ProjectCameraNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;[0,1]&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;[-1,1]&rdquo;<br>
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.links heading=4-%}

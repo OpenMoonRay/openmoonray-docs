@@ -22,9 +22,9 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;RGB&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;HSV&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;HSL&rdquo;<br>
       <p class="scene-class-comments">Color space used when blending the two material's color parameters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.blend_color_space.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.blend_color_space.links heading=4-%}
@@ -33,9 +33,9 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;normalized diffusion&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;dipole&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;random walk&rdquo;<br>
       <p class="scene-class-comments">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_bssrdf.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_bssrdf.links heading=4-%}
@@ -53,8 +53,8 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;Beckmann&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;GGX&rdquo; (default)<br>
       <p class="scene-class-comments">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_outer_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_outer_specular_model.links heading=4-%}
@@ -63,8 +63,8 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;Beckmann&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;GGX&rdquo; (default)<br>
       <p class="scene-class-comments">If child materials disagree on the type of specular model, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_specular_model.links heading=4-%}
@@ -82,9 +82,9 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;Beckmann&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;GGX&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;Toon&rdquo;<br>
       <p class="scene-class-comments">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_toon_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_toon_specular_model.links heading=4-%}
@@ -116,12 +116,12 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;blend&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;color&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;averageColor&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;footprintArea&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;radius&rdquo;<br>
       <p class="scene-class-comments">developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_glitter_debug_mode.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_glitter_debug_mode.links heading=4-%}
@@ -130,8 +130,8 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;physical&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;additive&rdquo;<br>
       <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_glitter_layering_mode.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_glitter_layering_mode.links heading=4-%}
@@ -158,8 +158,8 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name (default)<br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo; (default)<br>
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_glitter_space.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.fallback_glitter_space.links heading=4-%}
@@ -812,10 +812,10 @@ title: DwaMixMaterial
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;linear&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;hold&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;nearest&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;smooth&rdquo;<br>
       <p class="scene-class-comments">Adjusts rate of transition from one material to the next based on mix value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.mix_interpolation.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.mix_interpolation.links heading=4-%}

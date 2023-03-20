@@ -31,13 +31,13 @@ title: DistortNormalMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;4 = name (default)<br>
-          &nbsp;&nbsp;5 = name<br>
-          &nbsp;&nbsp;6 = name<br>
-          &nbsp;&nbsp;7 = name<br>
-          &nbsp;&nbsp;8 = name<br>
-          &nbsp;&nbsp;9 = name<br>
+          &nbsp;&nbsp;2 = &ldquo;world&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo; (default)<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;texture&rdquo;<br>
+          &nbsp;&nbsp;7 = &ldquo;input texture coordinates&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;hair_surface_uv&rdquo;<br>
+          &nbsp;&nbsp;9 = &ldquo;hair_closest_surface_uv&rdquo;<br>
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.noise_space.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.noise_space.links heading=4-%}

@@ -67,8 +67,8 @@ title: CheckerboardMap
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;texture&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;input texture coordinates&rdquo;<br>
       <p class="scene-class-comments">switches between the model's uv coordinates or the input texture coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.texture_coordinates.links heading=4-%}

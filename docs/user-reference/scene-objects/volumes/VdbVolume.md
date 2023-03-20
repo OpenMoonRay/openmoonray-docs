@@ -72,9 +72,9 @@ title: VdbVolume
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;default&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;divisions&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;voxel size&rdquo;<br>
       <p class="scene-class-comments">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_resolution_mode.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_resolution_mode.links heading=4-%}

@@ -63,8 +63,8 @@ title: RgbToHsvDisplayFilter
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;rgb_to_hsv&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;hsv_to_rgb&rdquo;<br>
       <p class="scene-class-comments">Specifies whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.links heading=4-%}

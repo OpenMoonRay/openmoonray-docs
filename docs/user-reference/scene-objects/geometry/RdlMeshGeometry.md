@@ -31,9 +31,9 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;force two-sided&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;force single-sided&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;use mesh sidedness&rdquo;<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.side_type.links heading=4-%}
@@ -115,8 +115,8 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name (default)<br>
-          &nbsp;&nbsp;1 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;right-handed&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;left-handed&rdquo;<br>
       <p class="scene-class-comments">When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.orientation.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.orientation.links heading=4-%}
@@ -161,9 +161,9 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;none&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;edge only&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;edge and corner&rdquo; (default)<br>
       <p class="scene-class-comments">Boundary interpolation: Corners, Edges or None</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_boundary.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_boundary.links heading=4-%}
@@ -208,12 +208,12 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
-          &nbsp;&nbsp;5 = name<br>
+          &nbsp;&nbsp;0 = &ldquo;none&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;corners only&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;corners plus1&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;corners plus2&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;boundaries&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;all&rdquo;<br>
       <p class="scene-class-comments">Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_fvar_linear.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_fvar_linear.links heading=4-%}
@@ -222,8 +222,8 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;bilinear&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;catclark&rdquo; (default)<br>
       <p class="scene-class-comments">CatClark or Bilinear</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_scheme.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.subd_scheme.links heading=4-%}
@@ -291,12 +291,12 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;-1 = name (default)<br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name<br>
-          &nbsp;&nbsp;3 = name<br>
-          &nbsp;&nbsp;4 = name<br>
+          &nbsp;&nbsp;-1 = &ldquo;best&rdquo; (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;static&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;velocity&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;frame delta&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;acceleration&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;hermite&rdquo;<br>
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.motion_blur_type.links heading=4-%}
@@ -305,9 +305,9 @@ title: RdlMeshGeometry
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
-          &nbsp;&nbsp;0 = name<br>
-          &nbsp;&nbsp;1 = name<br>
-          &nbsp;&nbsp;2 = name (default)<br>
+          &nbsp;&nbsp;0 = &ldquo;first motion step&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;second motion step&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;both motion steps&rdquo; (default)<br>
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.primitive_attribute_frame.links heading=4-%}
