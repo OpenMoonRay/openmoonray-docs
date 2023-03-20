@@ -154,7 +154,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a32848>
+      default: \{\}
       <p class="scene-class-comments">List of part indices.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.links heading=4-%}
@@ -172,7 +172,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32ed8>
+      default: \{\}
       <p class="scene-class-comments">List of per point radius values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.links heading=4-%}

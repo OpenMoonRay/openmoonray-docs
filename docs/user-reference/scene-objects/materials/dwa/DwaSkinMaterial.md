@@ -595,7 +595,7 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a4d050>
+      default: \{\}
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_interpolations.links heading=4-%}
@@ -604,7 +604,7 @@ title: DwaSkinMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a4d2a8>
+      default: \{\}
       <p class="scene-class-comments">ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_positions.images data=site.data.user-reference.scene-objects.materials.DwaSkinMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSkinMaterial.attributes.iridescence_positions.links heading=4-%}

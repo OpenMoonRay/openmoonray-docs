@@ -47,7 +47,7 @@ title: UsdInstanceGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a329b0>
+      default: \{\}
       <p class="scene-class-comments">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.links heading=4-%}

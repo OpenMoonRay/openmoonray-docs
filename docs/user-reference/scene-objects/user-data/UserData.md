@@ -76,7 +76,7 @@ title: UserData
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32e60>
+      default: \{\}
       <p class="scene-class-comments">float type user data values for motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_0.links heading=4-%}
@@ -85,7 +85,7 @@ title: UserData
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.FloatVector object at 0x7f6c15a32c08>
+      default: \{\}
       <p class="scene-class-comments">float type user data values for motion step 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_1.links heading=4-%}
@@ -103,7 +103,7 @@ title: UserData
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: <scene_rdl2.__scene_rdl2__.IntVector object at 0x7f6c15a4d050>
+      default: \{\}
       <p class="scene-class-comments">integer type user data values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_values.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_values.links heading=4-%}
