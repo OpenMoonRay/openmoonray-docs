@@ -18,6 +18,31 @@ title: UsdGeometry
 <details open>
   <summary>Curve attributes</summary>
   <p>
+    <h3>base_width_factor</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Multiplier for the radius of the base of curves</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.links heading=4-%}
+    </p>
+    <h3>curves_subtype</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | ray_facing = 0 (default)
+          | round = 1
+      <p class="scene-class-comments">Set the style that curve primitives are rendered in</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
+    </p>
+    <h3>radius_mult</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Multiplier for the radius of points and curves</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.links heading=4-%}
+    </p>
     <h3>tessellation_rate</h3>
     <p class="scene-class-type">
       <b>Int</b>
@@ -25,6 +50,29 @@ title: UsdGeometry
       <p class="scene-class-comments">Number of segments to split curve spans into</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.links heading=4-%}
+    </p>
+    <h3>tip_width_factor</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 1.0
+      <p class="scene-class-comments">Multiplier for the radius of the tip of curves</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Mesh attributes</summary>
+  <p>
+    <h3>subd_type</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | use mesh type = 0 (default)
+          | force polygon mesh = 1
+          | force subdivision mesh = 2
+      <p class="scene-class-comments">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.links heading=4-%}
     </p>
   </p>
 </details>
@@ -38,14 +86,6 @@ title: UsdGeometry
       <p class="scene-class-comments">The maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.adaptive_error.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.adaptive_error.links heading=4-%}
-    </p>
-    <h3>base_width_factor</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Multiplier for the radius of the base of curves</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.links heading=4-%}
     </p>
     <h3>contains_camera</h3>
     <p class="scene-class-type">
@@ -62,15 +102,6 @@ title: UsdGeometry
       <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curved_motion_blur_sample_count.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curved_motion_blur_sample_count.links heading=4-%}
-    </p>
-    <h3>curves_subtype</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | ray_facing = 0 (default)
-          | round = 1
-      <p class="scene-class-comments">Set the style that curve primitives are rendered in</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
     </p>
     <h3>dicing_camera</h3>
     <p class="scene-class-type">
@@ -159,14 +190,6 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
-    <h3>radius_mult</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Multiplier for the radius of points and curves</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.links heading=4-%}
-    </p>
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -248,24 +271,6 @@ title: UsdGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>subd_type</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | use mesh type = 0 (default)
-          | force polygon mesh = 1
-          | force subdivision mesh = 2
-      <p class="scene-class-comments">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.links heading=4-%}
-    </p>
-    <h3>tip_width_factor</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 1.0
-      <p class="scene-class-comments">Multiplier for the radius of the tip of curves</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.links heading=4-%}
     </p>
     <h3>use_evaluation_frame</h3>
     <p class="scene-class-type">
