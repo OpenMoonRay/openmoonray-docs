@@ -77,6 +77,14 @@ title: RdlCurveGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.links heading=4-%}
     </p>
+    <h3>uv_list</h3>
+    <p class="scene-class-type">
+      <b>Vec2fVector</b>
+      default: []
+      <p class="scene-class-comments">If the curves are using UVs, store them per-curve in this list</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.uv_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.uv_list.links heading=4-%}
+    </p>
     <h3>vertex_list_0</h3>
     <p class="scene-class-type">
       <b>Vec3fVector</b>
@@ -92,6 +100,50 @@ title: RdlCurveGeometry
       <p class="scene-class-comments">If the curves are in motion, the vertex positions for the second motion step are stored in this attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.vertex_list_1.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Geometry attributes</summary>
+  <p>
+    <h3>reverse_normals</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.reverse_normals.links heading=4-%}
+    </p>
+    <h3>side_type</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | force two-sided = 0 (default)
+          | force single-sided = 1
+          | use mesh sidedness = 2
+      <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.side_type.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Labels attributes</summary>
+  <p>
+    <h3>label</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      default: 
+      <p class="scene-class-comments">label used in material aov expresssions</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.label.links heading=4-%}
+    </p>
+    <h3>shadow_receiver_label</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      default: 
+      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.links heading=4-%}
     </p>
   </p>
 </details>
@@ -168,6 +220,27 @@ title: RdlCurveGeometry
       <p class="scene-class-comments">Adjusts magnitude of velocity-based motion blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.velocity_scale.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Ray Tracing attributes</summary>
+  <p>
+    <h3>ray_epsilon</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 0.0
+      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.ray_epsilon.links heading=4-%}
+    </p>
+    <h3>shadow_ray_epsilon</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 0.0
+      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
     </p>
   </p>
 </details>
@@ -280,14 +353,6 @@ title: RdlCurveGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
-    <h3>label</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      default: 
-      <p class="scene-class-comments">label used in material aov expresssions</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.label.links heading=4-%}
-    </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
@@ -295,14 +360,6 @@ title: RdlCurveGeometry
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.node_xform.links heading=4-%}
-    </p>
-    <h3>ray_epsilon</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 0.0
-      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.ray_epsilon.links heading=4-%}
     </p>
     <h3>references</h3>
     <p class="scene-class-type">
@@ -312,14 +369,6 @@ title: RdlCurveGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.references.links heading=4-%}
     </p>
-    <h3>reverse_normals</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.reverse_normals.links heading=4-%}
-    </p>
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -328,32 +377,6 @@ title: RdlCurveGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
     </p>
-    <h3>shadow_ray_epsilon</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 0.0
-      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
-    </p>
-    <h3>shadow_receiver_label</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      default: 
-      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_receiver_label.links heading=4-%}
-    </p>
-    <h3>side_type</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | force two-sided = 0 (default)
-          | force single-sided = 1
-          | use mesh sidedness = 2
-      <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.side_type.links heading=4-%}
-    </p>
     <h3>static</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -361,14 +384,6 @@ title: RdlCurveGeometry
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>uv_list</h3>
-    <p class="scene-class-type">
-      <b>Vec2fVector</b>
-      default: []
-      <p class="scene-class-comments">If the curves are using UVs, store them per-curve in this list</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.uv_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.uv_list.links heading=4-%}
     </p>
   </p>
 </details>

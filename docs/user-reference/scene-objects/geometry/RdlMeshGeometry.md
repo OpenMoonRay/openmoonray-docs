@@ -16,6 +16,50 @@ title: RdlMeshGeometry
 
 <div class="scene-class">
 <details open>
+  <summary>Geometry attributes</summary>
+  <p>
+    <h3>reverse_normals</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      default: False
+      <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.reverse_normals.links heading=4-%}
+    </p>
+    <h3>side_type</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+          | force two-sided = 0 (default)
+          | force single-sided = 1
+          | use mesh sidedness = 2
+      <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.side_type.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Labels attributes</summary>
+  <p>
+    <h3>label</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      default: 
+      <p class="scene-class-comments">label used in material aov expresssions</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.label.links heading=4-%}
+    </p>
+    <h3>shadow_receiver_label</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      default: 
+      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_receiver_label.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Mesh attributes</summary>
   <p>
     <h3>adaptive_error</h3>
@@ -274,6 +318,27 @@ title: RdlMeshGeometry
   </p>
 </details>
 <details open>
+  <summary>Ray Tracing attributes</summary>
+  <p>
+    <h3>ray_epsilon</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 0.0
+      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.ray_epsilon.links heading=4-%}
+    </p>
+    <h3>shadow_ray_epsilon</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      default: 0.0
+      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>User Data attributes</summary>
   <p>
     <h3>primitive_attributes</h3>
@@ -382,14 +447,6 @@ title: RdlMeshGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
-    <h3>label</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      default: 
-      <p class="scene-class-comments">label used in material aov expresssions</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.label.links heading=4-%}
-    </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
@@ -397,14 +454,6 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.node_xform.links heading=4-%}
-    </p>
-    <h3>ray_epsilon</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 0.0
-      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.ray_epsilon.links heading=4-%}
     </p>
     <h3>references</h3>
     <p class="scene-class-type">
@@ -414,14 +463,6 @@ title: RdlMeshGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.references.links heading=4-%}
     </p>
-    <h3>reverse_normals</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      default: False
-      <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.reverse_normals.links heading=4-%}
-    </p>
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -429,32 +470,6 @@ title: RdlMeshGeometry
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
-    </p>
-    <h3>shadow_ray_epsilon</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      default: 0.0
-      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
-    </p>
-    <h3>shadow_receiver_label</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      default: 
-      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.shadow_receiver_label.links heading=4-%}
-    </p>
-    <h3>side_type</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-          | force two-sided = 0 (default)
-          | force single-sided = 1
-          | use mesh sidedness = 2
-      <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.side_type.links heading=4-%}
     </p>
     <h3>static</h3>
     <p class="scene-class-type">
