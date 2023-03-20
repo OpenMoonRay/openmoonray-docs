@@ -43,7 +43,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">List of vertices per curve</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_vertex_count.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_vertex_count.links heading=4-%}
@@ -52,7 +52,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">List of part indices.  No index should have a value greater than the size of 'curves_vertex_count'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.part_indices.links heading=4-%}
@@ -70,7 +70,7 @@ title: RdlCurveGeometry
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">List of radius values.  The rate will be determined based on the number of values.   A single value will be interpreted as constant.   If the  number of values matches the number of curves, the rate will be interpreted as uniform.   If the number of values matches the number of vertices, the rate will be interpreted as  vertex.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.links heading=4-%}

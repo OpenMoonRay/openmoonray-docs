@@ -253,7 +253,7 @@ title: ImageMap
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.links heading=4-%}

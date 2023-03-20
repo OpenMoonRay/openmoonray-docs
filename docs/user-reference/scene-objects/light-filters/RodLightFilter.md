@@ -103,7 +103,7 @@ title: RodLightFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">input distance for ramp control</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.ramp_in_distances.images data=site.data.user-reference.scene-objects.light-filters.RodLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.ramp_in_distances.links heading=4-%}
@@ -112,7 +112,7 @@ title: RodLightFilter
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">interpolation types for ramp control</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.ramp_interpolation_types.images data=site.data.user-reference.scene-objects.light-filters.RodLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.ramp_interpolation_types.links heading=4-%}
@@ -121,7 +121,7 @@ title: RodLightFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">remapped distances for ramp control</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.ramp_out_distances.images data=site.data.user-reference.scene-objects.light-filters.RodLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.RodLightFilter.attributes.ramp_out_distances.links heading=4-%}

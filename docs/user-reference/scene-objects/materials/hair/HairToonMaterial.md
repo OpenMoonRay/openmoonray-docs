@@ -213,7 +213,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_interpolations.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_interpolations.links heading=4-%}
@@ -232,7 +232,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_positions.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_positions.links heading=4-%}
@@ -295,7 +295,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_values.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_values.links heading=4-%}
@@ -390,7 +390,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_interpolations.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_interpolations.links heading=4-%}
@@ -409,7 +409,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_positions.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_positions.links heading=4-%}
@@ -472,7 +472,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_values.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_values.links heading=4-%}
@@ -567,7 +567,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_interpolations.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_interpolations.links heading=4-%}
@@ -586,7 +586,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_positions.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_positions.links heading=4-%}
@@ -649,7 +649,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_values.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_values.links heading=4-%}

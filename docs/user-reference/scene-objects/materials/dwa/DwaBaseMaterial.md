@@ -700,7 +700,7 @@ title: DwaBaseMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.iridescence_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.iridescence_interpolations.links heading=4-%}
@@ -709,7 +709,7 @@ title: DwaBaseMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.iridescence_positions.images data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.iridescence_positions.links heading=4-%}

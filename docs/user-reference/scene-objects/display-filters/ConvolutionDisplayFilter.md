@@ -45,7 +45,7 @@ title: ConvolutionDisplayFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: \{\}
+      default: []
       <p class="scene-class-comments">A list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.links heading=4-%}
