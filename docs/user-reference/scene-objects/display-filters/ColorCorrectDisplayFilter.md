@@ -21,7 +21,7 @@ title: ColorCorrectDisplayFilter
     <h3>invert_mask</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -30,7 +30,7 @@ title: ColorCorrectDisplayFilter
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -44,7 +44,7 @@ title: ColorCorrectDisplayFilter
     <h3>contrast</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Negative values decrease contrast, while positive values increase it</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.contrast.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -53,7 +53,7 @@ title: ColorCorrectDisplayFilter
     <h3>exposure</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Adjusts the exposure, in fstops</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.exposure.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -62,7 +62,7 @@ title: ColorCorrectDisplayFilter
     <h3>gamma</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Adjusts gamma of input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.gamma.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -71,7 +71,7 @@ title: ColorCorrectDisplayFilter
     <h3>input</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput to color correct</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -80,7 +80,7 @@ title: ColorCorrectDisplayFilter
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -89,7 +89,7 @@ title: ColorCorrectDisplayFilter
     <h3>multiply</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Multiplies input using specified color</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.multiply.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -98,7 +98,7 @@ title: ColorCorrectDisplayFilter
     <h3>offset</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Adds offset color to input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.offset.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}
@@ -107,7 +107,7 @@ title: ColorCorrectDisplayFilter
     <h3>saturation</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Desaturates input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter.attributes.saturation.images data=site.data.user-reference.scene-objects.display-filters.ColorCorrectDisplayFilter-%}

@@ -21,7 +21,7 @@ title: NoiseWorleyMap_v2
     <h3>bias</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.5
       <p class="scene-class-comments">Bias of interpolation from color A to color B</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.bias.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -30,7 +30,7 @@ title: NoiseWorleyMap_v2
     <h3>gain</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.5
       <p class="scene-class-comments">Gain of interpolation from color A to color B</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.gain.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -39,7 +39,7 @@ title: NoiseWorleyMap_v2
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert the final pattern</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.invert.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -48,7 +48,7 @@ title: NoiseWorleyMap_v2
     <h3>point_size</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">For points output mode, relative radius of points</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.point_size.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -57,7 +57,7 @@ title: NoiseWorleyMap_v2
     <h3>remap</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 1 ]
       <p class="scene-class-comments">Allows mapping the distances from the specified min/max range into the 0..1 range</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.remap.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -66,7 +66,7 @@ title: NoiseWorleyMap_v2
     <h3>smoothstep</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 1 ]
       <p class="scene-class-comments">min/max values between which the smoothstep will interpolate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -75,7 +75,7 @@ title: NoiseWorleyMap_v2
     <h3>use_smoothstep</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Put the noise value through a smoothstep function defined by min/max</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.use_smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -89,7 +89,7 @@ title: NoiseWorleyMap_v2
     <h3>F1</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Influence of F1 (the closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F1.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -98,7 +98,7 @@ title: NoiseWorleyMap_v2
     <h3>F2</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Influence of F2 (the second closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F2.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -107,7 +107,7 @@ title: NoiseWorleyMap_v2
     <h3>F3</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Influence of F3 (the third closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F3.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -116,7 +116,7 @@ title: NoiseWorleyMap_v2
     <h3>F4</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Influence of F4 (the fourth closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F4.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -125,11 +125,11 @@ title: NoiseWorleyMap_v2
     <h3>cell_id</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = f1(default)<br/>
-          </t>1 = f2<br/>
-          </t>2 = f3<br/>
-          </t>3 = f4<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = f1(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = f2<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = f3<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = f4<br>
       <p class="scene-class-comments">Which of the distances determines the cell id</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.cell_id.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.cell_id.links heading=4-%}
@@ -142,13 +142,13 @@ title: NoiseWorleyMap_v2
     <h3>distance_method</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = linear(default)<br/>
-          </t>1 = linear squared<br/>
-          </t>2 = manhattan<br/>
-          </t>3 = chebyshev<br/>
-          </t>4 = quadratic<br/>
-          </t>5 = minkowski<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = linear(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = linear squared<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = manhattan<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = chebyshev<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = quadratic<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = minkowski<br>
       <p class="scene-class-comments">Metric for calculating distance to feature points which controls the shape of the falloff when output mode is distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.distance_method.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.distance_method.links heading=4-%}
@@ -156,7 +156,7 @@ title: NoiseWorleyMap_v2
     <h3>minkowski_number</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 3.0
       <p class="scene-class-comments">Exponent on distances when distance method is set to Minkowski</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.minkowski_number.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -165,12 +165,12 @@ title: NoiseWorleyMap_v2
     <h3>output_mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = distance(default)<br/>
-          </t>1 = gradient<br/>
-          </t>2 = cell id<br/>
-          </t>3 = cell edges<br/>
-          </t>4 = points<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = distance(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = gradient<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = cell id<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = cell edges<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = points<br>
       <p class="scene-class-comments">Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.links heading=4-%}
@@ -183,7 +183,7 @@ title: NoiseWorleyMap_v2
     <h3>camera</h3>
     <p class="scene-class-type">
       <b>Camera</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">Camera used to define camera and screen space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.camera.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -192,7 +192,7 @@ title: NoiseWorleyMap_v2
     <h3>input_texture_coordinates</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">User specified UVs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -201,7 +201,7 @@ title: NoiseWorleyMap_v2
     <h3>object_space</h3>
     <p class="scene-class-type">
       <b>Geometry</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">Directly connect object to use that object's space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.object_space.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -210,17 +210,17 @@ title: NoiseWorleyMap_v2
     <h3>space</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = render<br/>
-          </t>1 = camera<br/>
-          </t>2 = world(default)<br/>
-          </t>3 = screen<br/>
-          </t>4 = object<br/>
-          </t>5 = reference<br/>
-          </t>6 = texture<br/>
-          </t>7 = input texture coordinates<br/>
-          </t>8 = hair_surface_uv<br/>
-          </t>9 = hair_closest_surface_uv<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = render<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = world(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;6 = texture<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;7 = input texture coordinates<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;8 = hair_surface_uv<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;9 = hair_closest_surface_uv<br>
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.space.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.space.links heading=4-%}
@@ -233,7 +233,7 @@ title: NoiseWorleyMap_v2
     <h3>rotation</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotates the noise in space based on the specified rotation order</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -242,13 +242,13 @@ title: NoiseWorleyMap_v2
     <h3>rotation_order</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = xyz(default)<br/>
-          </t>1 = xzy<br/>
-          </t>2 = yxz<br/>
-          </t>3 = yzx<br/>
-          </t>4 = zxy<br/>
-          </t>5 = zyx<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = xyz(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = xzy<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = yxz<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = yzx<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = zxy<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = zyx<br>
       <p class="scene-class-comments">Order in which to apply the euler rotations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation_order.links heading=4-%}
@@ -256,7 +256,7 @@ title: NoiseWorleyMap_v2
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Vector to scale the noise non-proportionally</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.scale.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -265,13 +265,13 @@ title: NoiseWorleyMap_v2
     <h3>transformation_order</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = srt<br/>
-          </t>1 = str<br/>
-          </t>2 = rst<br/>
-          </t>3 = rts<br/>
-          </t>4 = tsr(default)<br/>
-          </t>5 = trs<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = srt<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = str<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = rst<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = rts<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = tsr(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = trs<br>
       <p class="scene-class-comments">Order in which to apply the translation, rotation, and frequency</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.transformation_order.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.transformation_order.links heading=4-%}
@@ -279,7 +279,7 @@ title: NoiseWorleyMap_v2
     <h3>translation</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Translation of the noise in space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.translation.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -293,7 +293,7 @@ title: NoiseWorleyMap_v2
     <h3>color_A</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">The interpolated color value at distance equals zero</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.color_A.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -302,7 +302,7 @@ title: NoiseWorleyMap_v2
     <h3>color_B</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The interpolated color value at distance equals one</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.color_B.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -311,7 +311,7 @@ title: NoiseWorleyMap_v2
     <h3>frequency</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Scalar multiplier for the frequency vector</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.frequency.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -320,7 +320,7 @@ title: NoiseWorleyMap_v2
     <h3>jitter</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Controls the distortion of the cells</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.jitter.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -329,7 +329,7 @@ title: NoiseWorleyMap_v2
     <h3>max_level</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Number of octaves of noise to add together for the final result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.max_level.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
@@ -338,7 +338,7 @@ title: NoiseWorleyMap_v2
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 0
       <p class="scene-class-comments">The seed for the random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.seed.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}

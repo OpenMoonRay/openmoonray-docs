@@ -21,7 +21,7 @@ title: OverDisplayFilter
     <h3>alpha</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">Alpha for over operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
@@ -30,7 +30,7 @@ title: OverDisplayFilter
     <h3>input_bottom</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput on bottom</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
@@ -39,7 +39,7 @@ title: OverDisplayFilter
     <h3>input_top</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput on top</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
@@ -48,7 +48,7 @@ title: OverDisplayFilter
     <h3>invert_alpha</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert value of alpha</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
@@ -57,7 +57,7 @@ title: OverDisplayFilter
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blend between input_top and input_bottom, using alpha as a mask.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}

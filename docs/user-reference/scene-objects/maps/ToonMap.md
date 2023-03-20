@@ -21,7 +21,7 @@ title: ToonMap
     <h3>crease_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 0, 0 ]
       <p class="scene-class-comments">Creases are sharp edges like corners in the geometry.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.crease_color.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -30,7 +30,7 @@ title: ToonMap
     <h3>crease_scale</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">This attribute controls the thickness of creases.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.crease_scale.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -39,7 +39,7 @@ title: ToonMap
     <h3>crease_threshold</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 45.0
       <p class="scene-class-comments">This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.crease_threshold.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -48,7 +48,7 @@ title: ToonMap
     <h3>fill_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Default color, within the outlines and creases</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.fill_color.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -57,10 +57,10 @@ title: ToonMap
     <h3>mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = outline<br/>
-          </t>1 = crease<br/>
-          </t>2 = both(default)<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = outline<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = crease<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = both(default)<br>
       <p class="scene-class-comments">Pick which features are displayed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ToonMap.attributes.mode.links heading=4-%}
@@ -68,7 +68,7 @@ title: ToonMap
     <h3>outline_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Outlines are silhouettes of the geometry</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.outline_color.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -77,7 +77,7 @@ title: ToonMap
     <h3>outline_scale</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">This attribute controls the thickness of outlines.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.outline_scale.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
@@ -86,7 +86,7 @@ title: ToonMap
     <h3>outline_threshold</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.outline_threshold.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}

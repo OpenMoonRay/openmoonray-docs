@@ -21,7 +21,7 @@ title: ColorCorrectHueShiftMap
     <h3>hue_shift</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">shifts the hue of the input (spectrum range is 0-1)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.hue_shift.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
@@ -30,7 +30,7 @@ title: ColorCorrectHueShiftMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
@@ -39,7 +39,7 @@ title: ColorCorrectHueShiftMap
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.mix.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
@@ -48,7 +48,7 @@ title: ColorCorrectHueShiftMap
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.on.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}

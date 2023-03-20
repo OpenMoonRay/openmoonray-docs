@@ -21,7 +21,7 @@ title: RgbToFloatMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
@@ -30,15 +30,15 @@ title: RgbToFloatMap
     <h3>mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = r<br/>
-          </t>1 = g<br/>
-          </t>2 = b<br/>
-          </t>3 = min<br/>
-          </t>4 = max<br/>
-          </t>5 = average(default)<br/>
-          </t>6 = sum<br/>
-          </t>7 = luminance<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = r<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = g<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = b<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = min<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = max<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = average(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;6 = sum<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;7 = luminance<br>
       <p class="scene-class-comments">The method to convert RGB Color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.links heading=4-%}

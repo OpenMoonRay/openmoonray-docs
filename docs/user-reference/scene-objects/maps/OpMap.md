@@ -21,7 +21,7 @@ title: OpMap
     <h3>clamp</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Whether to clamp result to 0 - 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.clamp.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
@@ -30,7 +30,7 @@ title: OpMap
     <h3>op1</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">First operand</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op1.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
@@ -39,7 +39,7 @@ title: OpMap
     <h3>op1_factor</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Scalar multiplier on op1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op1_factor.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
@@ -48,7 +48,7 @@ title: OpMap
     <h3>op2</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Second operand</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op2.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
@@ -57,7 +57,7 @@ title: OpMap
     <h3>op2_factor</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Scalar multiplier on op2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.op2_factor.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
@@ -66,46 +66,46 @@ title: OpMap
     <h3>operation</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = add(default)<br/>
-          </t>1 = subtract<br/>
-          </t>2 = multiply<br/>
-          </t>3 = divide<br/>
-          </t>4 = maximum<br/>
-          </t>5 = minimum<br/>
-          </t>6 = power<br/>
-          </t>7 = cross<br/>
-          </t>8 = dot<br/>
-          </t>9 = invert op1<br/>
-          </t>10 = normalize op1<br/>
-          </t>11 = op1<br/>
-          </t>12 = op2<br/>
-          </t>13 = overlay<br/>
-          </t>14 = screen<br/>
-          </t>15 = abs<br/>
-          </t>16 = ceil<br/>
-          </t>17 = floor<br/>
-          </t>18 = modulo<br/>
-          </t>19 = fraction<br/>
-          </t>20 = length<br/>
-          </t>21 = sine<br/>
-          </t>22 = cosine<br/>
-          </t>23 = round<br/>
-          </t>24 = acos<br/>
-          </t>25 = less_than<br/>
-          </t>26 = less_than_or_equal<br/>
-          </t>27 = greater_than<br/>
-          </t>28 = greater_than_or_equal<br/>
-          </t>29 = equal<br/>
-          </t>30 = not equal<br/>
-          </t>31 = and<br/>
-          </t>32 = or<br/>
-          </t>33 = not<br/>
-          </t>34 = xor<br/>
-          </t>35 = bit_shift_left<br/>
-          </t>36 = bit_shift_right<br/>
-          </t>37 = bitwise_and<br/>
-          </t>38 = bitwise_or<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = add(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = subtract<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = multiply<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = divide<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = maximum<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = minimum<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;6 = power<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;7 = cross<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;8 = dot<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;9 = invert op1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;10 = normalize op1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;11 = op1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;12 = op2<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;13 = overlay<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;14 = screen<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;15 = abs<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;16 = ceil<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;17 = floor<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;18 = modulo<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;19 = fraction<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;20 = length<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;21 = sine<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;22 = cosine<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;23 = round<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;24 = acos<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;25 = less_than<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;26 = less_than_or_equal<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;27 = greater_than<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;28 = greater_than_or_equal<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;29 = equal<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;30 = not equal<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;31 = and<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;32 = or<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;33 = not<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;34 = xor<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;35 = bit_shift_left<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;36 = bit_shift_right<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;37 = bitwise_and<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;38 = bitwise_or<br>
       <p class="scene-class-comments">Operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.links heading=4-%}

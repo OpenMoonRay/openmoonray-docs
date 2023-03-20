@@ -21,7 +21,7 @@ title: FloatToRgbMap
     <h3>B</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blue Channel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.B.images data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
@@ -30,7 +30,7 @@ title: FloatToRgbMap
     <h3>G</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Green Channel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.G.images data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
@@ -39,7 +39,7 @@ title: FloatToRgbMap
     <h3>R</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Red Channel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.R.images data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}

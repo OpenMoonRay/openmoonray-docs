@@ -21,7 +21,7 @@ title: ColorCorrectSaturationMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -30,7 +30,7 @@ title: ColorCorrectSaturationMap
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">how much of the overall color correct to mix in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.mix.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -39,7 +39,7 @@ title: ColorCorrectSaturationMap
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">enables/disables all color correct operations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.on.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -48,7 +48,7 @@ title: ColorCorrectSaturationMap
     <h3>saturation</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">desaturates the input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -57,7 +57,7 @@ title: ColorCorrectSaturationMap
     <h3>saturation_b</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">desaturates the blue channel input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_b.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -66,7 +66,7 @@ title: ColorCorrectSaturationMap
     <h3>saturation_g</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">desaturates the green channel input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_g.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -75,7 +75,7 @@ title: ColorCorrectSaturationMap
     <h3>saturation_r</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">desaturates the red channel input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_r.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
@@ -84,7 +84,7 @@ title: ColorCorrectSaturationMap
     <h3>use_per_channel_saturation</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">enables separate RGB controls for saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.use_per_channel_saturation.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}

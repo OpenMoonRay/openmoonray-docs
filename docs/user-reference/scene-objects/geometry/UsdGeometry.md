@@ -21,7 +21,7 @@ title: UsdGeometry
     <h3>base_width_factor</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Multiplier for the radius of the base of curves</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -30,9 +30,9 @@ title: UsdGeometry
     <h3>curves_subtype</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = ray_facing(default)<br/>
-          </t>1 = round<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = ray_facing(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = round<br>
       <p class="scene-class-comments">Set the style that curve primitives are rendered in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
@@ -40,7 +40,7 @@ title: UsdGeometry
     <h3>radius_mult</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Multiplier for the radius of points and curves</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -49,7 +49,7 @@ title: UsdGeometry
     <h3>tip_width_factor</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Multiplier for the radius of the tip of curves</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -63,7 +63,7 @@ title: UsdGeometry
     <h3>tessellation_rate</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 4
       <p class="scene-class-comments">Number of segments to split curve spans into</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -77,7 +77,7 @@ title: UsdGeometry
     <h3>reverse_normals</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -86,10 +86,10 @@ title: UsdGeometry
     <h3>side_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = force two-sided(default)<br/>
-          </t>1 = force single-sided<br/>
-          </t>2 = use mesh sidedness<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = force two-sided(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = force single-sided<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = use mesh sidedness<br>
       <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.side_type.links heading=4-%}
@@ -102,7 +102,7 @@ title: UsdGeometry
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">label used in material aov expresssions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -111,7 +111,7 @@ title: UsdGeometry
     <h3>shadow_receiver_label</h3>
     <p class="scene-class-type">
       <b>String</b>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -125,7 +125,7 @@ title: UsdGeometry
     <h3>adaptive_error</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">The maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.adaptive_error.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -134,7 +134,7 @@ title: UsdGeometry
     <h3>mesh_resolution</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 2.0
       <p class="scene-class-comments">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.mesh_resolution.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -143,7 +143,7 @@ title: UsdGeometry
     <h3>smooth_normal</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">Generates smooth shading normals when rendering a PolygonMesh and the mesh doesn't provide shading normal itself</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.smooth_normal.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -152,10 +152,10 @@ title: UsdGeometry
     <h3>subd_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = use mesh type(default)<br/>
-          </t>1 = force polygon mesh<br/>
-          </t>2 = force subdivision mesh<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = use mesh type(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = force polygon mesh<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = force subdivision mesh<br>
       <p class="scene-class-comments">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.subd_type.links heading=4-%}
@@ -168,7 +168,7 @@ title: UsdGeometry
     <h3>curved_motion_blur_sample_count</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 10
       <p class="scene-class-comments">Number of time samples generated along each curve when using curved motion blur</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curved_motion_blur_sample_count.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -177,13 +177,13 @@ title: UsdGeometry
     <h3>motion_blur_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>-1 = best(default)<br/>
-          </t>0 = static<br/>
-          </t>1 = velocity<br/>
-          </t>2 = frame delta<br/>
-          </t>3 = acceleration<br/>
-          </t>4 = hermite<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;-1 = best(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = static<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = velocity<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = frame delta<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = acceleration<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = hermite<br>
       <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.links heading=4-%}
@@ -191,10 +191,10 @@ title: UsdGeometry
     <h3>primitive_attribute_frame</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = first motion step<br/>
-          </t>1 = second motion step<br/>
-          </t>2 = both motion steps(default)<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = first motion step<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = second motion step<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = both motion steps(default)<br>
       <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attribute_frame.links heading=4-%}
@@ -202,7 +202,7 @@ title: UsdGeometry
     <h3>use_rotation_motion_blur</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -216,7 +216,7 @@ title: UsdGeometry
     <h3>ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -225,7 +225,7 @@ title: UsdGeometry
     <h3>shadow_ray_epsilon</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -239,7 +239,7 @@ title: UsdGeometry
     <h3>evaluation_frame</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Evaluates geometry at the specified frame instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -248,7 +248,7 @@ title: UsdGeometry
     <h3>use_evaluation_frame</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -262,7 +262,7 @@ title: UsdGeometry
     <h3>prim_path</h3>
     <p class="scene-class-type">
       <b>String</b>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">The geometry Prim to load from the USD Stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.prim_path.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -271,7 +271,7 @@ title: UsdGeometry
     <h3>stage</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">USD Stage to load</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -280,7 +280,7 @@ title: UsdGeometry
     <h3>use_master_xform</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">If the prim is an instance proxy, use the xform from the master Prim during geometry creation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_master_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -289,7 +289,7 @@ title: UsdGeometry
     <h3>use_prim_xform</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">Include the xform from the Prim during geometry creation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_prim_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -298,7 +298,7 @@ title: UsdGeometry
     <h3>use_stage_cache</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -312,7 +312,7 @@ title: UsdGeometry
     <h3>part_list</h3>
     <p class="scene-class-type">
       <b>StringVector</b>
-      <br/>
+      <br>
       default: []
       <p class="scene-class-comments">Ordered list of part names.   The length of the<br>list should match the length of any "part" rate primitive attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -321,7 +321,7 @@ title: UsdGeometry
     <h3>primitive_attributes</h3>
     <p class="scene-class-type">
       <b>UserData Vector</b>
-      <br/>
+      <br>
       default: []
       <p class="scene-class-comments">A list of UserData scene objects specifying arbitrary primitive attributes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -335,7 +335,7 @@ title: UsdGeometry
     <h3>visible_diffuse_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -344,7 +344,7 @@ title: UsdGeometry
     <h3>visible_diffuse_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -353,7 +353,7 @@ title: UsdGeometry
     <h3>visible_glossy_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -362,7 +362,7 @@ title: UsdGeometry
     <h3>visible_glossy_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -371,7 +371,7 @@ title: UsdGeometry
     <h3>visible_in_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -380,7 +380,7 @@ title: UsdGeometry
     <h3>visible_mirror_reflection</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -389,7 +389,7 @@ title: UsdGeometry
     <h3>visible_mirror_transmission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -398,7 +398,7 @@ title: UsdGeometry
     <h3>visible_shadow</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry casts shadows</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -407,7 +407,7 @@ title: UsdGeometry
     <h3>visible_volume</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -421,7 +421,7 @@ title: UsdGeometry
     <h3>contains_camera</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.contains_camera.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -430,7 +430,7 @@ title: UsdGeometry
     <h3>dicing_camera</h3>
     <p class="scene-class-type">
       <b>SceneObject</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -439,7 +439,7 @@ title: UsdGeometry
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
-      <br/>
+      <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.node_xform.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -448,7 +448,7 @@ title: UsdGeometry
     <h3>references</h3>
     <p class="scene-class-type">
       <b>Geometry Vector</b>
-      <br/>
+      <br>
       default: []
       <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -457,7 +457,7 @@ title: UsdGeometry
     <h3>shadow_exclusion_mappings</h3>
     <p class="scene-class-type">
       <b>String</b>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
@@ -466,7 +466,7 @@ title: UsdGeometry
     <h3>static</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}

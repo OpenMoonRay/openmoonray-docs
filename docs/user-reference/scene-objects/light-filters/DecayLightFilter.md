@@ -21,7 +21,7 @@ title: DecayLightFilter
     <h3>falloff_far</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">does the light fade out?</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.falloff_far.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -30,7 +30,7 @@ title: DecayLightFilter
     <h3>falloff_near</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">does the light fade in?</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.falloff_near.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -39,7 +39,7 @@ title: DecayLightFilter
     <h3>far_end</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">distance from light to end of fade out</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.far_end.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -48,7 +48,7 @@ title: DecayLightFilter
     <h3>far_start</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">distance from light to start of fade out</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.far_start.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -57,7 +57,7 @@ title: DecayLightFilter
     <h3>near_end</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">distance from light to end of fade in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.near_end.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -66,7 +66,7 @@ title: DecayLightFilter
     <h3>near_start</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">distance from light to start of fade in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.near_start.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
@@ -80,7 +80,7 @@ title: DecayLightFilter
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}

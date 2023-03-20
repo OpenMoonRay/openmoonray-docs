@@ -21,7 +21,7 @@ title: UVTransformMap
     <h3>offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
-      <br/>
+      <br>
       default: [ 0, 0 ]
       <p class="scene-class-comments">Shifts UV coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
@@ -30,7 +30,7 @@ title: UVTransformMap
     <h3>rotation_angle</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Rotation in degrees</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_angle.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
@@ -39,7 +39,7 @@ title: UVTransformMap
     <h3>rotation_axis</h3>
     <p class="scene-class-type">
       <b>Vec3f</b>
-      <br/>
+      <br>
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">Axis in which to rotate (only for 3D spaces)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_axis.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
@@ -48,7 +48,7 @@ title: UVTransformMap
     <h3>rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
-      <br/>
+      <br>
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">UV coordinate around which to rotate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_center.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
@@ -57,7 +57,7 @@ title: UVTransformMap
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
-      <br/>
+      <br>
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales UV coordinates (after rotation, before offset)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
@@ -66,14 +66,14 @@ title: UVTransformMap
     <h3>space</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = render<br/>
-          </t>1 = camera<br/>
-          </t>2 = world<br/>
-          </t>3 = screen<br/>
-          </t>4 = object<br/>
-          </t>5 = reference<br/>
-          </t>6 = texture(default)<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = render<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = world<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = object<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;6 = texture(default)<br>
       <p class="scene-class-comments">Determines source of coordinates. Default is mesh UVs. Other options procedurally create UVs from the chosen space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.links heading=4-%}

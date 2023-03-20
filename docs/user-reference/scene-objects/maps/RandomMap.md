@@ -21,7 +21,7 @@ title: RandomMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
@@ -30,7 +30,7 @@ title: RandomMap
     <h3>monochrome</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">outputs the same color for all three channels</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.monochrome.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
@@ -39,7 +39,7 @@ title: RandomMap
     <h3>output_max</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">the maximum output random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_max.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
@@ -48,7 +48,7 @@ title: RandomMap
     <h3>output_min</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">the minimum output random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_min.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
@@ -57,7 +57,7 @@ title: RandomMap
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.seed.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}

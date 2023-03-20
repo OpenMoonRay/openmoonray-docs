@@ -21,11 +21,11 @@ title: DeformationMap
     <h3>output_mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = RGB<br/>
-          </t>1 = deformation_S<br/>
-          </t>2 = deformation_T<br/>
-          </t>3 = deformation_avg(default)<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = RGB<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = deformation_S<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = deformation_T<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = deformation_avg(default)<br>
       <p class="scene-class-comments">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.output_mode.links heading=4-%}
@@ -33,7 +33,7 @@ title: DeformationMap
     <h3>use_warning_color</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">If derivatives are missing or zero output the warning color erroring out</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.use_warning_color.images data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
@@ -42,7 +42,7 @@ title: DeformationMap
     <h3>warning_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Warning color to output when derivatives are missing or zero</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.warning_color.images data=site.data.user-reference.scene-objects.maps.DeformationMap-%}

@@ -21,7 +21,7 @@ title: RgbToHsvDisplayFilter
     <h3>invert_mask</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
@@ -30,7 +30,7 @@ title: RgbToHsvDisplayFilter
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
@@ -44,7 +44,7 @@ title: RgbToHsvDisplayFilter
     <h3>input</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput to use in the RgbToHsv operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
@@ -53,7 +53,7 @@ title: RgbToHsvDisplayFilter
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
@@ -62,9 +62,9 @@ title: RgbToHsvDisplayFilter
     <h3>mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = rgb_to_hsv(default)<br/>
-          </t>1 = hsv_to_rgb<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = rgb_to_hsv(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = hsv_to_rgb<br>
       <p class="scene-class-comments">Specifies whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.links heading=4-%}

@@ -21,7 +21,7 @@ title: ShadowDisplayFilter
     <h3>density</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.density.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
@@ -30,7 +30,7 @@ title: ShadowDisplayFilter
     <h3>occluded</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput containing the occluded image</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
@@ -39,7 +39,7 @@ title: ShadowDisplayFilter
     <h3>shadow_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Color of the shadow</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.shadow_color.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
@@ -48,7 +48,7 @@ title: ShadowDisplayFilter
     <h3>unoccluded</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput containing the unoccluded image</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}

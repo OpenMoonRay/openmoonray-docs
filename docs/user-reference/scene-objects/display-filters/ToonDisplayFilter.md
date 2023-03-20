@@ -21,7 +21,7 @@ title: ToonDisplayFilter
     <h3>ambient</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Adds an ambient light to the cel shading</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ambient.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -30,11 +30,11 @@ title: ToonDisplayFilter
     <h3>edge_detector</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = None(default)<br/>
-          </t>1 = Sobel<br/>
-          </t>2 = Laplacian<br/>
-          </t>3 = Laplacian of Gaussian<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = None(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = Sobel<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = Laplacian<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = Laplacian of Gaussian<br>
       <p class="scene-class-comments">Type of edge detector to use</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.edge_detector.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.edge_detector.links heading=4-%}
@@ -42,7 +42,7 @@ title: ToonDisplayFilter
     <h3>ink_depth_threshold</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.00999999977648
       <p class="scene-class-comments">The threshold for the depth-based ink outline</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_depth_threshold.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -51,7 +51,7 @@ title: ToonDisplayFilter
     <h3>ink_normal_scale</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.00999999977648
       <p class="scene-class-comments">Increase for a more pronounced normal-based ink outline</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_normal_scale.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -60,7 +60,7 @@ title: ToonDisplayFilter
     <h3>ink_normal_threshold</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.00999999977648
       <p class="scene-class-comments">The threshold for the normal-based ink outline</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_normal_threshold.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -69,7 +69,7 @@ title: ToonDisplayFilter
     <h3>input_albedo</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput that represents diffuse albedo material aov</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_albedo.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -78,7 +78,7 @@ title: ToonDisplayFilter
     <h3>input_depth</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput with 'depth' result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_depth.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -87,7 +87,7 @@ title: ToonDisplayFilter
     <h3>input_diffuse</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput that represents diffuse reflection LPE</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_diffuse.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -96,7 +96,7 @@ title: ToonDisplayFilter
     <h3>input_glossy</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput that represents glossy reflection LPE</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_glossy.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -105,7 +105,7 @@ title: ToonDisplayFilter
     <h3>input_normal</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput with 'normal' result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_normal.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -114,7 +114,7 @@ title: ToonDisplayFilter
     <h3>num_cels</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 2
       <p class="scene-class-comments">Sets number of toon cels in diffuse shading</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.num_cels.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}

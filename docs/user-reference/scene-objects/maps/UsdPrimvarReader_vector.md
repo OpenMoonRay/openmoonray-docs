@@ -21,7 +21,7 @@ title: UsdPrimvarReader_vector
     <h3>fallback</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector.attributes.fallback.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector-%}
@@ -30,7 +30,7 @@ title: UsdPrimvarReader_vector
     <h3>varname</h3>
     <p class="scene-class-type">
       <b>String</b>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector.attributes.varname.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector-%}
@@ -39,7 +39,7 @@ title: UsdPrimvarReader_vector
     <h3>warn_when_unavailable</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector.attributes.warn_when_unavailable.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector-%}

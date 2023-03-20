@@ -21,13 +21,13 @@ title: ProjectPlanarNormalMap
     <h3>TRS_order</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = Scale Rot Trans(default)<br/>
-          </t>1 = Scale Trans Rot<br/>
-          </t>2 = Rot Scale Trans<br/>
-          </t>3 = Rot Trans Scale<br/>
-          </t>4 = Trans Scale Rot<br/>
-          </t>5 = Trans Rot Scale<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = Scale Rot Trans(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = Scale Trans Rot<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = Rot Scale Trans<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = Rot Trans Scale<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = Trans Scale Rot<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = Trans Rot Scale<br>
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.links heading=4-%}
@@ -35,9 +35,9 @@ title: ProjectPlanarNormalMap
     <h3>normal_encoding</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = [0,1](default)<br/>
-          </t>1 = [-1,1]<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = [0,1](default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = [-1,1]<br>
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.links heading=4-%}
@@ -45,7 +45,7 @@ title: ProjectPlanarNormalMap
     <h3>projection_matrix</h3>
     <p class="scene-class-type">
       <b>Mat4d</b>
-      <br/>
+      <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -54,10 +54,10 @@ title: ProjectPlanarNormalMap
     <h3>projection_mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = projector(default)<br/>
-          </t>1 = projection_matrix<br/>
-          </t>2 = TRS<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = projector(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = projection_matrix<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = TRS<br>
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_mode.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_mode.links heading=4-%}
@@ -65,7 +65,7 @@ title: ProjectPlanarNormalMap
     <h3>projector</h3>
     <p class="scene-class-type">
       <b>Node</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -74,7 +74,7 @@ title: ProjectPlanarNormalMap
     <h3>rotate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -83,13 +83,13 @@ title: ProjectPlanarNormalMap
     <h3>rotation_order</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = xyz(default)<br/>
-          </t>1 = xzy<br/>
-          </t>2 = yxz<br/>
-          </t>3 = yzx<br/>
-          </t>4 = zxy<br/>
-          </t>5 = zyx<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = xyz(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = xzy<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = yxz<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = yzx<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = zxy<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = zyx<br>
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.links heading=4-%}
@@ -97,7 +97,7 @@ title: ProjectPlanarNormalMap
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.scale.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -106,7 +106,7 @@ title: ProjectPlanarNormalMap
     <h3>texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
-      <br/>
+      <br>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -115,7 +115,7 @@ title: ProjectPlanarNormalMap
     <h3>translate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -124,7 +124,7 @@ title: ProjectPlanarNormalMap
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
@@ -133,7 +133,7 @@ title: ProjectPlanarNormalMap
     <h3>wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.wrap_around.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}

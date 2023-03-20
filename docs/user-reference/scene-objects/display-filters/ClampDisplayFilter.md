@@ -21,7 +21,7 @@ title: ClampDisplayFilter
     <h3>invert_mask</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
@@ -30,7 +30,7 @@ title: ClampDisplayFilter
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
@@ -44,7 +44,7 @@ title: ClampDisplayFilter
     <h3>input</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput to clamp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
@@ -53,7 +53,7 @@ title: ClampDisplayFilter
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
@@ -62,7 +62,7 @@ title: ClampDisplayFilter
     <h3>max</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Maximum color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.max.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
@@ -71,7 +71,7 @@ title: ClampDisplayFilter
     <h3>min</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Minimum color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.min.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}

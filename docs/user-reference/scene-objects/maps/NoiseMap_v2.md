@@ -21,7 +21,7 @@ title: NoiseMap_v2
     <h3>time</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">If use 4D noise is on, this is the value for the 4th dimension</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.time.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -30,7 +30,7 @@ title: NoiseMap_v2
     <h3>use_4D_noise</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">If on, 4-dimensional noise is used instead of 3-dimensional</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.use_4D_noise.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -44,7 +44,7 @@ title: NoiseMap_v2
     <h3>bias</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.5
       <p class="scene-class-comments">Bias the noise towards 0 or 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.bias.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -53,7 +53,7 @@ title: NoiseMap_v2
     <h3>gain</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.5
       <p class="scene-class-comments">Apply gain to the noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.gain.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -62,7 +62,7 @@ title: NoiseMap_v2
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert the final pattern</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.invert.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -71,7 +71,7 @@ title: NoiseMap_v2
     <h3>smoothstep</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 1 ]
       <p class="scene-class-comments">min/max values between which the smoothstep will interpolate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -80,7 +80,7 @@ title: NoiseMap_v2
     <h3>use_smoothstep</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Put the noise value through a smoothstep function defined by min/max</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.use_smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -94,7 +94,7 @@ title: NoiseMap_v2
     <h3>flow_advection_rate</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Rate of advection for flow noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.flow_advection_rate.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -103,7 +103,7 @@ title: NoiseMap_v2
     <h3>flow_angle</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Angle of rotation for flow noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.flow_angle.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -117,7 +117,7 @@ title: NoiseMap_v2
     <h3>camera</h3>
     <p class="scene-class-type">
       <b>Camera</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">camera used to define camera and screen space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.camera.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -126,7 +126,7 @@ title: NoiseMap_v2
     <h3>input_texture_coordinates</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">User specified UVs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -135,7 +135,7 @@ title: NoiseMap_v2
     <h3>object_space</h3>
     <p class="scene-class-type">
       <b>Geometry</b>
-      <br/>
+      <br>
       default: None
       <p class="scene-class-comments">Directly connect object to use that object's space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.object_space.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -144,17 +144,17 @@ title: NoiseMap_v2
     <h3>space</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = render<br/>
-          </t>1 = camera<br/>
-          </t>2 = world<br/>
-          </t>3 = screen<br/>
-          </t>4 = object(default)<br/>
-          </t>5 = reference<br/>
-          </t>6 = texture<br/>
-          </t>7 = input texture coordinates<br/>
-          </t>8 = hair_surface_uv<br/>
-          </t>9 = hair_closest_surface_uv<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = render<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = camera<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = world<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = screen<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = object(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = reference<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;6 = texture<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;7 = input texture coordinates<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;8 = hair_surface_uv<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;9 = hair_closest_surface_uv<br>
       <p class="scene-class-comments">The space to calculate the noise in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.space.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.space.links heading=4-%}
@@ -167,7 +167,7 @@ title: NoiseMap_v2
     <h3>rotation</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotates the noise in space based on the specified rotation order</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.rotation.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -176,13 +176,13 @@ title: NoiseMap_v2
     <h3>rotation_order</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = xyz(default)<br/>
-          </t>1 = xzy<br/>
-          </t>2 = yxz<br/>
-          </t>3 = yzx<br/>
-          </t>4 = zxy<br/>
-          </t>5 = zyx<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = xyz(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = xzy<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = yxz<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = yzx<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = zxy<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = zyx<br>
       <p class="scene-class-comments">Order in which to apply the euler rotations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.rotation_order.links heading=4-%}
@@ -190,7 +190,7 @@ title: NoiseMap_v2
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Vector to scale the noise non-proportionally</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.scale.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -199,13 +199,13 @@ title: NoiseMap_v2
     <h3>transformation_order</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = srt<br/>
-          </t>1 = str<br/>
-          </t>2 = rst<br/>
-          </t>3 = rts<br/>
-          </t>4 = tsr(default)<br/>
-          </t>5 = trs<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = srt<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = str<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2 = rst<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3 = rts<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4 = tsr(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;5 = trs<br>
       <p class="scene-class-comments">Order in which to apply the translation, rotation, and frequency</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.transformation_order.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.transformation_order.links heading=4-%}
@@ -213,7 +213,7 @@ title: NoiseMap_v2
     <h3>translation</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Translation of the noise in space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.translation.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -227,7 +227,7 @@ title: NoiseMap_v2
     <h3>amplitude</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Intensity of the noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.amplitude.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -236,7 +236,7 @@ title: NoiseMap_v2
     <h3>color</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Outputs RGB noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.color.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -245,7 +245,7 @@ title: NoiseMap_v2
     <h3>color_A</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">The color value at 0 noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.color_A.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -254,7 +254,7 @@ title: NoiseMap_v2
     <h3>color_B</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color value at 1 noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.color_B.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -263,7 +263,7 @@ title: NoiseMap_v2
     <h3>distortion</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Warp input coordinate space with single noise level before looking up noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.distortion.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -272,9 +272,9 @@ title: NoiseMap_v2
     <h3>distortion_noise_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = perlin classic(default)<br/>
-          </t>1 = perlin simplex<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = perlin classic(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = perlin simplex<br>
       <p class="scene-class-comments">Type of noise to use for distortion.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.distortion_noise_type.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.distortion_noise_type.links heading=4-%}
@@ -282,7 +282,7 @@ title: NoiseMap_v2
     <h3>frequency_multiplier</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Scalar multiplier for the frequency vector</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.frequency_multiplier.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -291,7 +291,7 @@ title: NoiseMap_v2
     <h3>lacunarity</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 2.0
       <p class="scene-class-comments">Multiplier on the noise frequency per level</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.lacunarity.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -300,7 +300,7 @@ title: NoiseMap_v2
     <h3>max_level</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Number of octaves of noise to add together for the final result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.max_level.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -309,9 +309,9 @@ title: NoiseMap_v2
     <h3>noise_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-      <br/>
-          </t>0 = perlin classic(default)<br/>
-          </t>1 = perlin simplex<br/>
+      <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;0 = perlin classic(default)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1 = perlin simplex<br>
       <p class="scene-class-comments">Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.noise_type.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.noise_type.links heading=4-%}
@@ -319,7 +319,7 @@ title: NoiseMap_v2
     <h3>persistence</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
-      <br/>
+      <br>
       default: 0.5
       <p class="scene-class-comments">Multiplier on the noise amplitude per level</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.persistence.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
@@ -328,7 +328,7 @@ title: NoiseMap_v2
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 0
       <p class="scene-class-comments">The seed for the random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.seed.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}

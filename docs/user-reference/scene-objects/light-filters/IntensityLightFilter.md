@@ -21,7 +21,7 @@ title: IntensityLightFilter
     <h3>color</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Multiply the light radiance by this RGB color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.color.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
@@ -30,7 +30,7 @@ title: IntensityLightFilter
     <h3>exposure</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 0.0
       <p class="scene-class-comments">Multiply the light radiance by exposure = pow(2, exposure)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.exposure.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
@@ -39,7 +39,7 @@ title: IntensityLightFilter
     <h3>intensity</h3>
     <p class="scene-class-type">
       <b>Float</b>
-      <br/>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Multiply the light radiance by this intensity value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.intensity.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
@@ -48,7 +48,7 @@ title: IntensityLightFilter
     <h3>invert</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: False
       <p class="scene-class-comments">Invert the light radiance by 1/radiance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.invert.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
@@ -62,7 +62,7 @@ title: IntensityLightFilter
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
-      <br/>
+      <br>
       default: True
       <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}

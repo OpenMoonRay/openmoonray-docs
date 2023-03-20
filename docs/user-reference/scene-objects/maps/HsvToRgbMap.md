@@ -21,7 +21,7 @@ title: HsvToRgbMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HsvToRgbMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}

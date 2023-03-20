@@ -21,7 +21,7 @@ title: RandomNormalMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
-      <br/>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.input.images data=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap-%}
@@ -30,7 +30,7 @@ title: RandomNormalMap
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
-      <br/>
+      <br>
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.seed.images data=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap-%}
