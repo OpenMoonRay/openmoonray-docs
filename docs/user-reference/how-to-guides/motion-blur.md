@@ -58,5 +58,6 @@ Motion blur types:
 Top to bottom: motion blur types (transform, frame delta, velocity, acceleration, and hermite).*
 
 ## Volumes
-The [VdbVolume]({{ "/user-reference/scene-objects/geometry/VdbVolume" | absolute_url }}) geometry
+The [VdbVolume]({{ "/user-reference/scene-objects/volumes/VdbVolume" | absolute_url }}) geometry
 node uses an explicit *velocity_grid* for volume motion.
+

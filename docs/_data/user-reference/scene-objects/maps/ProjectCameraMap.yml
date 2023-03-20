@@ -1,0 +1,11 @@
+---
+overview: overviews/ProjectCameraMapOverview.md
+example: examples/ProjectCameraMapExample.md
+image_path: /assets/images/user-reference/scene-objects/maps/ProjectCameraMap
+attributes:
+  project_on_back_faces:
+    images:
+      - image: project_on_backfaces_false.png
+        text: Inactive (Default)
+      - image: project_on_backfaces_true.png
+        text: Active

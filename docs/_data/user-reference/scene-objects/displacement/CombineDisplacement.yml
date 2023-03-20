@@ -1,5 +1,6 @@
 ---
 overview: overviews/CombineDisplacementOverview.md
+example: examples/CombineDisplacementExample.md
 image_path: /assets/images/user-reference/scene-objects/displacement/CombineDisplacement
 gallery:
   - image: checker.jpg

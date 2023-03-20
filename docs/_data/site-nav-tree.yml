@@ -473,6 +473,8 @@
                 path: /user-reference/how-to-guides/render-outputs/visibility-aovs.md
           - text: Render Inside a Medium
             path: /user-reference/how-to-guides/render-inside-medium.md
+          - text: Shadow Controls
+            path: /user-reference/how-to-guides/shadow-controls.md
           - text: Textures
             path: /user-reference/how-to-guides/textures.md
       - text: Tools
@@ -546,11 +548,11 @@
             path: developer-reference/arras/arras-client-api.md
           - text: Arras Doxygen Pages
             path: developer-reference/arras/doxygen-pages.md
-      - text: Contributions
-        path: developer-reference/contributions.md
+      # - text: Contributions
+      #  path: developer-reference/contributions.md
       - text: Coding Standards
         path: developer-reference/coding-standards/index.md
   - text: Release Notes
     path: release-notes/index.md
-  - text: Legal/Licensing
+  - text: Legal/Licensing and Contributions
     path: license.md
