@@ -65,7 +65,7 @@ title: BlendDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">First RenderOutput to use in the blend operation</p>
+      <p class="scene-class-comments">First renderoutput to use in the blend operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input1.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input1.links heading=4-%}
     </p>
@@ -74,7 +74,7 @@ title: BlendDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Second RenderOutput to use in the blend operation</p>
+      <p class="scene-class-comments">Second renderoutput to use in the blend operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input2.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input2.links heading=4-%}
     </p>
@@ -83,7 +83,7 @@ title: BlendDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mask.links heading=4-%}
     </p>

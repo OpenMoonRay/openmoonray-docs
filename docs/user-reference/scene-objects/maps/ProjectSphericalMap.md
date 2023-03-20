@@ -37,7 +37,7 @@ title: ProjectSphericalMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">the transform to use for projection</p>
+      <p class="scene-class-comments">The transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_matrix.links heading=4-%}
     </p>
@@ -57,7 +57,7 @@ title: ProjectSphericalMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">the object whose transform to use for projection</p>
+      <p class="scene-class-comments">The object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projector.links heading=4-%}
     </p>
@@ -107,7 +107,7 @@ title: ProjectSphericalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">use reference space</p>
+      <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.use_reference_space.links heading=4-%}
     </p>

@@ -23,7 +23,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Bias of interpolation from color A to color B</p>
+      <p class="scene-class-comments">Bias of interpolation from color a to color b</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.bias.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.bias.links heading=4-%}
     </p>
@@ -32,7 +32,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Gain of interpolation from color A to color B</p>
+      <p class="scene-class-comments">Gain of interpolation from color a to color b</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.gain.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.gain.links heading=4-%}
     </p>
@@ -68,7 +68,7 @@ title: NoiseWorleyMap_v2
       <b>Vec2f</b> <i>bindable</i>
       <br>
       default: [ 0, 1 ]
-      <p class="scene-class-comments">min/max values between which the smoothstep will interpolate</p>
+      <p class="scene-class-comments">Min/max values between which the smoothstep will interpolate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.smoothstep.links heading=4-%}
     </p>
@@ -91,7 +91,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Influence of F1 (the closest feature point)</p>
+      <p class="scene-class-comments">Influence of f1 (the closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F1.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F1.links heading=4-%}
     </p>
@@ -100,7 +100,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Influence of F2 (the second closest feature point)</p>
+      <p class="scene-class-comments">Influence of f2 (the second closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F2.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F2.links heading=4-%}
     </p>
@@ -109,7 +109,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Influence of F3 (the third closest feature point)</p>
+      <p class="scene-class-comments">Influence of f3 (the third closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F3.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F3.links heading=4-%}
     </p>
@@ -118,7 +118,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Influence of F4 (the fourth closest feature point)</p>
+      <p class="scene-class-comments">Influence of f4 (the fourth closest feature point)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F4.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.F4.links heading=4-%}
     </p>
@@ -158,7 +158,7 @@ title: NoiseWorleyMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 3.0
-      <p class="scene-class-comments">Exponent on distances when distance method is set to Minkowski</p>
+      <p class="scene-class-comments">Exponent on distances when distance method is set to minkowski</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.minkowski_number.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.minkowski_number.links heading=4-%}
     </p>
@@ -171,7 +171,7 @@ title: NoiseWorleyMap_v2
           &nbsp;&nbsp;2 = &ldquo;cell id&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;cell edges&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;points&rdquo;<br>
-      <p class="scene-class-comments">Method by which the shader outputs a color.  Distance uses F1..F4 interpolated between color A and color B, gradient outputs the gradient of the noise, and cell ID outputs a random color for each cell</p>
+      <p class="scene-class-comments">Method by which the shader outputs a color.  distance uses f1..f4 interpolated between color a and color b, gradient outputs the gradient of the noise, and cell id outputs a random color for each cell</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.output_mode.links heading=4-%}
     </p>
@@ -194,7 +194,7 @@ title: NoiseWorleyMap_v2
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">User specified UVs</p>
+      <p class="scene-class-comments">User specified uvs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.input_texture_coordinates.links heading=4-%}
     </p>

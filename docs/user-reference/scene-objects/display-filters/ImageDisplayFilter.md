@@ -69,7 +69,7 @@ title: ImageDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput to use in the ImageDisplayFilter</p>
+      <p class="scene-class-comments">Renderoutput to use in the imagedisplayfilter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.input.links heading=4-%}
     </p>
@@ -78,7 +78,7 @@ title: ImageDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ImageDisplayFilter.attributes.mask.links heading=4-%}
     </p>

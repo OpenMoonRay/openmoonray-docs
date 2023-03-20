@@ -77,7 +77,7 @@ title: ColorRampLightFilter
       <b>IntVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">Interpolation types between the specified distances.  0: None 1: linear 2: exponential_up 3: exponential_down 4: smooth 5: catmull_rom</p>
+      <p class="scene-class-comments">Interpolation types between the specified distances.  0: none 1: linear 2: exponential_up 3: exponential_down 4: smooth 5: catmull_rom</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.interpolation_types.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.interpolation_types.links heading=4-%}
     </p>
@@ -87,7 +87,7 @@ title: ColorRampLightFilter
       <br>
           &nbsp;&nbsp;0 = &ldquo;radial&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;directional&rdquo;<br>
-      <p class="scene-class-comments">Ramp: Radiates out from the center of the light or ramp location.  Directional: Linear starting at the location of the light or ramp location along negative z</p>
+      <p class="scene-class-comments">Ramp: radiates out from the center of the light or ramp location.  directional: linear starting at the location of the light or ramp location along negative z</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.mode.links heading=4-%}
     </p>
@@ -106,7 +106,7 @@ title: ColorRampLightFilter
       <br>
           &nbsp;&nbsp;0 = &ldquo;extend&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;mirror&rdquo;<br>
-      <p class="scene-class-comments">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z &gt; 0.  Mirror: f(z) = f(-z).</p>
+      <p class="scene-class-comments">For directional filter mode where filter uses distance along -z axis.  extend: f(z) = f(0) for z &gt; 0.  mirror: f(z) = f(-z).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.wrap_mode.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.wrap_mode.links heading=4-%}
     </p>

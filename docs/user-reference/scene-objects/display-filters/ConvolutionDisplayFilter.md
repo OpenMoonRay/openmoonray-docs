@@ -46,7 +46,7 @@ title: ConvolutionDisplayFilter
       <b>FloatVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">A list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7).</p>
+      <p class="scene-class-comments">A list of kernel values for a custom filter. the number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.links heading=4-%}
     </p>
@@ -55,7 +55,7 @@ title: ConvolutionDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput to convolve</p>
+      <p class="scene-class-comments">Renderoutput to convolve</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.input.links heading=4-%}
     </p>
@@ -64,7 +64,7 @@ title: ConvolutionDisplayFilter
       <b>Int</b>
       <br>
       default: 5
-      <p class="scene-class-comments">Size of kernel in pixels. Size must be odd. If using a custom kernel, this attribute is ignored, and the size of the custom kernel is used instead.</p>
+      <p class="scene-class-comments">Size of kernel in pixels. size must be odd. if using a custom kernel, this attribute is ignored, and the size of the custom kernel is used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.links heading=4-%}
     </p>
@@ -84,7 +84,7 @@ title: ConvolutionDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mask.links heading=4-%}
     </p>

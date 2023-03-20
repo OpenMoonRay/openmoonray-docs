@@ -23,7 +23,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for bool type user data</p>
+      <p class="scene-class-comments">Key name for bool type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.bool_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.bool_key.links heading=4-%}
     </p>
@@ -32,7 +32,7 @@ title: UserData
       <b>BoolVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">bool type user data values</p>
+      <p class="scene-class-comments">Bool type user data values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.bool_values.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.bool_values.links heading=4-%}
     </p>
@@ -41,7 +41,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for color type user data</p>
+      <p class="scene-class-comments">Key name for color type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.color_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.color_key.links heading=4-%}
     </p>
@@ -50,7 +50,7 @@ title: UserData
       <b>RgbVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">color type user data values for motion step 0</p>
+      <p class="scene-class-comments">Color type user data values for motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.color_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.color_values_0.links heading=4-%}
     </p>
@@ -59,7 +59,7 @@ title: UserData
       <b>RgbVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">color type user data values for motion step 1</p>
+      <p class="scene-class-comments">Color type user data values for motion step 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.color_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.color_values_1.links heading=4-%}
     </p>
@@ -68,7 +68,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for float type user data</p>
+      <p class="scene-class-comments">Key name for float type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_key.links heading=4-%}
     </p>
@@ -77,7 +77,7 @@ title: UserData
       <b>FloatVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">float type user data values for motion step 0</p>
+      <p class="scene-class-comments">Float type user data values for motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_0.links heading=4-%}
     </p>
@@ -86,7 +86,7 @@ title: UserData
       <b>FloatVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">float type user data values for motion step 1</p>
+      <p class="scene-class-comments">Float type user data values for motion step 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.float_values_1.links heading=4-%}
     </p>
@@ -95,7 +95,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for integer type user data</p>
+      <p class="scene-class-comments">Key name for integer type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_key.links heading=4-%}
     </p>
@@ -104,7 +104,7 @@ title: UserData
       <b>IntVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">integer type user data values</p>
+      <p class="scene-class-comments">Integer type user data values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_values.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_values.links heading=4-%}
     </p>
@@ -113,7 +113,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for mat4f type user data</p>
+      <p class="scene-class-comments">Key name for mat4f type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_key.links heading=4-%}
     </p>
@@ -122,7 +122,7 @@ title: UserData
       <b>Mat4fVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">mat4f type user data values for motion step 0</p>
+      <p class="scene-class-comments">Mat4f type user data values for motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_values_0.links heading=4-%}
     </p>
@@ -131,7 +131,7 @@ title: UserData
       <b>Mat4fVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">mat4f type user data values for motion step 1</p>
+      <p class="scene-class-comments">Mat4f type user data values for motion step 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_values_1.links heading=4-%}
     </p>
@@ -140,7 +140,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for string type user data</p>
+      <p class="scene-class-comments">Key name for string type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.string_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.string_key.links heading=4-%}
     </p>
@@ -149,7 +149,7 @@ title: UserData
       <b>StringVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">string type user data values</p>
+      <p class="scene-class-comments">String type user data values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.string_values.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.string_values.links heading=4-%}
     </p>
@@ -158,7 +158,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for vec2f type user data</p>
+      <p class="scene-class-comments">Key name for vec2f type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec2f_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec2f_key.links heading=4-%}
     </p>
@@ -167,7 +167,7 @@ title: UserData
       <b>Vec2fVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">vec2f type user data values for motion step 0</p>
+      <p class="scene-class-comments">Vec2f type user data values for motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec2f_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec2f_values_0.links heading=4-%}
     </p>
@@ -176,7 +176,7 @@ title: UserData
       <b>Vec2fVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">vec2f type user data values for motion step 1</p>
+      <p class="scene-class-comments">Vec2f type user data values for motion step 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec2f_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec2f_values_1.links heading=4-%}
     </p>
@@ -185,7 +185,7 @@ title: UserData
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">key name for vec3f type user data</p>
+      <p class="scene-class-comments">Key name for vec3f type user data</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec3f_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec3f_key.links heading=4-%}
     </p>
@@ -194,7 +194,7 @@ title: UserData
       <b>Vec3fVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">vec3f type user data values for motion step 0</p>
+      <p class="scene-class-comments">Vec3f type user data values for motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec3f_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec3f_values_0.links heading=4-%}
     </p>
@@ -203,7 +203,7 @@ title: UserData
       <b>Vec3fVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">vec3f type user data values for motion step 1</p>
+      <p class="scene-class-comments">Vec3f type user data values for motion step 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec3f_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.vec3f_values_1.links heading=4-%}
     </p>

@@ -23,7 +23,7 @@ title: AttributeMap
       <b>String</b>
       <br>
       default: Cd
-      <p class="scene-class-comments">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+      <p class="scene-class-comments">The name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_name.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_name.links heading=4-%}
     </p>
@@ -36,7 +36,7 @@ title: AttributeMap
           &nbsp;&nbsp;2 = &ldquo;vec3f&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;rgb&rdquo; (default)<br>
           &nbsp;&nbsp;4 = &ldquo;int&rdquo;<br>
-      <p class="scene-class-comments">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+      <p class="scene-class-comments">The type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.links heading=4-%}
     </p>
@@ -50,7 +50,7 @@ title: AttributeMap
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">input color - preferably a connected map</p>
+      <p class="scene-class-comments">Input color - preferably a connected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.color.links heading=4-%}
     </p>
@@ -59,7 +59,7 @@ title: AttributeMap
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">default value to display when the requested attribute is not available</p>
+      <p class="scene-class-comments">Default value to display when the requested attribute is not available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.default_value.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.default_value.links heading=4-%}
     </p>

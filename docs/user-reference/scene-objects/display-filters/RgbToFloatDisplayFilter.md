@@ -46,7 +46,7 @@ title: RgbToFloatDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput to use in the RgbToFloat operation</p>
+      <p class="scene-class-comments">Renderoutput to use in the rgbtofloat operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.input.links heading=4-%}
     </p>
@@ -55,7 +55,7 @@ title: RgbToFloatDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mask.links heading=4-%}
     </p>
@@ -71,7 +71,7 @@ title: RgbToFloatDisplayFilter
           &nbsp;&nbsp;5 = &ldquo;average&rdquo; (default)<br>
           &nbsp;&nbsp;6 = &ldquo;sum&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;luminance&rdquo;<br>
-      <p class="scene-class-comments">The method used to convert RGB Color to float</p>
+      <p class="scene-class-comments">The method used to convert rgb color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.links heading=4-%}
     </p>

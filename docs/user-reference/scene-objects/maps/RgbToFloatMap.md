@@ -39,7 +39,7 @@ title: RgbToFloatMap
           &nbsp;&nbsp;5 = &ldquo;average&rdquo; (default)<br>
           &nbsp;&nbsp;6 = &ldquo;sum&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;luminance&rdquo;<br>
-      <p class="scene-class-comments">The method to convert RGB Color to float</p>
+      <p class="scene-class-comments">The method to convert rgb color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.links heading=4-%}
     </p>

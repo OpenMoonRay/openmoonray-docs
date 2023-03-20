@@ -32,7 +32,7 @@ title: CookieLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the far distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture uv space) at the far distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_far_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_far_value.links heading=4-%}
     </p>
@@ -41,7 +41,7 @@ title: CookieLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the mid distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture uv space) at the mid distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_mid_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_mid_value.links heading=4-%}
     </p>
@@ -68,7 +68,7 @@ title: CookieLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the near distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture uv space) at the near distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_near_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.blur_near_value.links heading=4-%}
     </p>
@@ -107,7 +107,7 @@ title: CookieLightFilter
           &nbsp;&nbsp;0 = &ldquo;black&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;white&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;default&rdquo;<br>
-      <p class="scene-class-comments">What happens outside the frustum of the projection camera.  Black (default), White, or Default (This uses the mode set on the Moonray map shader)</p>
+      <p class="scene-class-comments">What happens outside the frustum of the projection camera.  black (default), white, or default (this uses the mode set on the moonray map shader)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.outside_projection.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.outside_projection.links heading=4-%}
     </p>
@@ -125,7 +125,7 @@ title: CookieLightFilter
       <b>Map</b>
       <br>
       default: None
-      <p class="scene-class-comments">Moonray map. Any Moonray map generator, checkerboard, noise, image map.  You may also add any of the map modifiers, color correct for example.  The default is an image map.</p>
+      <p class="scene-class-comments">Moonray map. any moonray map generator, checkerboard, noise, image map.  you may also add any of the map modifiers, color correct for example.  the default is an image map.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.texture_map.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter.attributes.texture_map.links heading=4-%}
     </p>

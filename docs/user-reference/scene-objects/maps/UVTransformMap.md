@@ -23,7 +23,7 @@ title: UVTransformMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">Shifts UV coordinates</p>
+      <p class="scene-class-comments">Shifts uv coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.links heading=4-%}
     </p>
@@ -41,7 +41,7 @@ title: UVTransformMap
       <b>Vec3f</b>
       <br>
       default: [ 0, 0, 1 ]
-      <p class="scene-class-comments">Axis in which to rotate (only for 3D spaces)</p>
+      <p class="scene-class-comments">Axis in which to rotate (only for 3d spaces)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_axis.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_axis.links heading=4-%}
     </p>
@@ -50,7 +50,7 @@ title: UVTransformMap
       <b>Vec2f</b>
       <br>
       default: [ 0.5, 0.5 ]
-      <p class="scene-class-comments">UV coordinate around which to rotate</p>
+      <p class="scene-class-comments">Uv coordinate around which to rotate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_center.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_center.links heading=4-%}
     </p>
@@ -59,7 +59,7 @@ title: UVTransformMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">Scales UV coordinates (after rotation, before offset)</p>
+      <p class="scene-class-comments">Scales uv coordinates (after rotation, before offset)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.links heading=4-%}
     </p>
@@ -74,7 +74,7 @@ title: UVTransformMap
           &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;reference&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;texture&rdquo; (default)<br>
-      <p class="scene-class-comments">Determines source of coordinates. Default is mesh UVs. Other options procedurally create UVs from the chosen space.</p>
+      <p class="scene-class-comments">Determines source of coordinates. default is mesh uvs. other options procedurally create uvs from the chosen space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.links heading=4-%}
     </p>

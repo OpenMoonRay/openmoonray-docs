@@ -55,7 +55,7 @@ title: ProjectPlanarMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">the transform to use for projection</p>
+      <p class="scene-class-comments">The transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectPlanarMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectPlanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectPlanarMap.attributes.projection_matrix.links heading=4-%}
     </p>
@@ -75,7 +75,7 @@ title: ProjectPlanarMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">the object whose transform to use for projection</p>
+      <p class="scene-class-comments">The object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectPlanarMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectPlanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectPlanarMap.attributes.projector.links heading=4-%}
     </p>

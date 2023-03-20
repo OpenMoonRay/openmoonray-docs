@@ -23,7 +23,7 @@ title: NoiseMap_v2
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">If use 4D noise is on, this is the value for the 4th dimension</p>
+      <p class="scene-class-comments">If use 4d noise is on, this is the value for the 4th dimension</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.time.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.time.links heading=4-%}
     </p>
@@ -73,7 +73,7 @@ title: NoiseMap_v2
       <b>Vec2f</b> <i>bindable</i>
       <br>
       default: [ 0, 1 ]
-      <p class="scene-class-comments">min/max values between which the smoothstep will interpolate</p>
+      <p class="scene-class-comments">Min/max values between which the smoothstep will interpolate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.smoothstep.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.smoothstep.links heading=4-%}
     </p>
@@ -119,7 +119,7 @@ title: NoiseMap_v2
       <b>Camera</b>
       <br>
       default: None
-      <p class="scene-class-comments">camera used to define camera and screen space</p>
+      <p class="scene-class-comments">Camera used to define camera and screen space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.camera.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.camera.links heading=4-%}
     </p>
@@ -128,7 +128,7 @@ title: NoiseMap_v2
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">User specified UVs</p>
+      <p class="scene-class-comments">User specified uvs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.input_texture_coordinates.links heading=4-%}
     </p>
@@ -238,7 +238,7 @@ title: NoiseMap_v2
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Outputs RGB noise</p>
+      <p class="scene-class-comments">Outputs rgb noise</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.color.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.color.links heading=4-%}
     </p>
@@ -312,7 +312,7 @@ title: NoiseMap_v2
       <br>
           &nbsp;&nbsp;0 = &ldquo;perlin classic&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;perlin simplex&rdquo;<br>
-      <p class="scene-class-comments">Type of noise to use. Simplex grid activates Flow Noise Angle and Advection</p>
+      <p class="scene-class-comments">Type of noise to use. simplex grid activates flow noise angle and advection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.noise_type.images data=site.data.user-reference.scene-objects.maps.NoiseMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseMap_v2.attributes.noise_type.links heading=4-%}
     </p>

@@ -23,7 +23,7 @@ title: SwitchDisplacement
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
+      <p class="scene-class-comments">Bound padding defines how much to extend the bounding box of the object. keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). setting the bound padding too large will consume more memory and tessellation time.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.bound_padding.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.bound_padding.links heading=4-%}
     </p>
@@ -32,7 +32,7 @@ title: SwitchDisplacement
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
+      <p class="scene-class-comments">Which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.choice.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.choice.links heading=4-%}
     </p>

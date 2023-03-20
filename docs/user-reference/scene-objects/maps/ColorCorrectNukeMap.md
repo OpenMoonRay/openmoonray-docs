@@ -23,7 +23,7 @@ title: ColorCorrectNukeMap
       <b>Vec3f</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+      <p class="scene-class-comments">T = temperature where positive values push towards blue and negative towards red.   m = magenta where positive values push towards magenta and negative towards green.  i = intensity where negative values remove and positive values add energy </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.TMI.images data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.attributes.TMI.links heading=4-%}
     </p>

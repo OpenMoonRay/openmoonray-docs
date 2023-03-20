@@ -23,7 +23,7 @@ title: RenderOutput
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">true enables, false disables render output.</p>
+      <p class="scene-class-comments">True enables, false disables render output.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.active.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.active.links heading=4-%}
     </p>
@@ -32,7 +32,7 @@ title: RenderOutput
       <b>Camera</b>
       <br>
       default: None
-      <p class="scene-class-comments">Camera to use for this output.  If not specified, defaults to the primary camera.</p>
+      <p class="scene-class-comments">Camera to use for this output.  if not specified, defaults to the primary camera.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.camera.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.camera.links heading=4-%}
     </p>
@@ -51,7 +51,7 @@ title: RenderOutput
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Name of the output channel.  In the case of an empty channel name a sensible default name is chosen.</p>
+      <p class="scene-class-comments">Name of the output channel.  in the case of an empty channel name a sensible default name is chosen.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_name.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_name.links heading=4-%}
     </p>
@@ -63,7 +63,7 @@ title: RenderOutput
           &nbsp;&nbsp;1 = &ldquo;rgb&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;xyz&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;uvw&rdquo;<br>
-      <p class="scene-class-comments">When processing multi-channel outputs, how should channel names be suffixed?<br>&emsp;auto : a best guess suffix is chosen based on the type of output<br>&emsp;rgb  : .R, .G, .B<br>&emsp;xyz  : .X, .Y, .Z<br>&emsp;uvw  : .U, .V, .W</p>
+      <p class="scene-class-comments">When processing multi-channel outputs, how should channel names be suffixed?<br>&emsp;auto : a best guess suffix is chosen based on the type of output<br>&emsp;rgb  : .r, .g, .b<br>&emsp;xyz  : .x, .y, .z<br>&emsp;uvw  : .u, .v, .w</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_suffix_mode.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.channel_suffix_mode.links heading=4-%}
     </p>
@@ -99,7 +99,7 @@ title: RenderOutput
           &nbsp;&nbsp;7 = &ldquo;b44a&rdquo;<br>
           &nbsp;&nbsp;8 = &ldquo;dwaa&rdquo;<br>
           &nbsp;&nbsp;9 = &ldquo;dwab&rdquo;<br>
-      <p class="scene-class-comments">Compression used for file (or file part in the multi-part case). All render outputs that target the same image must specify the same compression.</p>
+      <p class="scene-class-comments">Compression used for file (or file part in the multi-part case). all render outputs that target the same image must specify the same compression.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.compression.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.compression.links heading=4-%}
     </p>
@@ -146,7 +146,7 @@ title: RenderOutput
       <b>Float</b>
       <br>
       default: 85.0
-      <p class="scene-class-comments">Compression level used for file with dwaa or dwab compression. All render outputs that target the same image must specify the same compression level.</p>
+      <p class="scene-class-comments">Compression level used for file with dwaa or dwab compression. all render outputs that target the same image must specify the same compression level.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.exr_dwa_compression_level.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.exr_dwa_compression_level.links heading=4-%}
     </p>
@@ -155,7 +155,7 @@ title: RenderOutput
       <b>Metadata</b>
       <br>
       default: None
-      <p class="scene-class-comments">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
+      <p class="scene-class-comments">Metadata that is passed directly to the exr header. format: {"name", "type", "value"}</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.exr_header_attributes.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.exr_header_attributes.links heading=4-%}
     </p>
@@ -182,7 +182,7 @@ title: RenderOutput
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">This attribute specifies a light path expression to output. For details on light path expression syntax see:<br>&emsp;&emsp;https://github.com/imageworks/OpenShadingLanguage/wiki/OSL-Light-Path-Expressions<br>&emsp;Labels on scattering events are constructed from two parts: [ML.]LL Where:<br>&emsp;&emsp;&lt;ML&gt; is the label attribute value of the material (if non-empty)<br>&emsp;&emsp;&lt;LL&gt; is the lobe label assigned in the shader by the shader writer<br>&emsp;Labels on light events are set from the label attribute of the light.<br>&emsp;Additionally, a small set of pre-defined expressions are available:<br>&emsp;&emsp;'caustic'      : CD[S]+[&lt;L.&gt;O]<br>&emsp;&emsp;'diffuse'      : CD[&lt;L.&gt;O]<br>&emsp;&emsp;'emission'     : CO<br>&emsp;&emsp;'glossy'       : CG[&lt;L.&gt;O]<br>&emsp;&emsp;'mirror'       : CS[&lt;L.&gt;O]<br>&emsp;&emsp;'reflection'   : C&lt;RS&gt;[DSG]+[&lt;L.&gt;O]<br>&emsp;&emsp;'translucent'  : C&lt;TD&gt;[DSG]+[&lt;L.&gt;O]<br>&emsp;&emsp;'transmission' : C&lt;TS&gt;[DSG]+[&lt;L.&gt;O]</p>
+      <p class="scene-class-comments">This attribute specifies a light path expression to output. for details on light path expression syntax see:<br>&emsp;&emsp;https://github.com/imageworks/openshadinglanguage/wiki/osl-light-path-expressions<br>&emsp;labels on scattering events are constructed from two parts: [ml.]ll where:<br>&emsp;&emsp;&lt;ml&gt; is the label attribute value of the material (if non-empty)<br>&emsp;&emsp;&lt;ll&gt; is the lobe label assigned in the shader by the shader writer<br>&emsp;labels on light events are set from the label attribute of the light.<br>&emsp;additionally, a small set of pre-defined expressions are available:<br>&emsp;&emsp;'caustic'      : cd[s]+[&lt;l.&gt;o]<br>&emsp;&emsp;'diffuse'      : cd[&lt;l.&gt;o]<br>&emsp;&emsp;'emission'     : co<br>&emsp;&emsp;'glossy'       : cg[&lt;l.&gt;o]<br>&emsp;&emsp;'mirror'       : cs[&lt;l.&gt;o]<br>&emsp;&emsp;'reflection'   : c&lt;rs&gt;[dsg]+[&lt;l.&gt;o]<br>&emsp;&emsp;'translucent'  : c&lt;td&gt;[dsg]+[&lt;l.&gt;o]<br>&emsp;&emsp;'transmission' : c&lt;ts&gt;[dsg]+[&lt;l.&gt;o]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.lpe.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.lpe.links heading=4-%}
     </p>
@@ -191,7 +191,7 @@ title: RenderOutput
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">If "result" is "material aov", this attribute specifies a material aov expression to output.  The expression format is: <br>&emsp;[('&lt;GL&gt;')+\.][('&lt;ML&gt;')+\.][('&lt;LL&gt;')+\.][(SS|R|T|D|G|M)+\.][fresnel\.]&lt;property&gt;. Where:<br>&emsp;&emsp;&lt;GL&gt; is a label associated with the geometry <br>&emsp;&emsp;&lt;ML&gt; is a label associated with the material <br>&emsp;&emsp;&lt;LL&gt; is a lobe label <br>&emsp;&emsp;R means reflection side lobe <br>&emsp;&emsp;T means transmission side lobe <br>&emsp;&emsp;D means diffuse lobe category <br>&emsp;&emsp;G means glossy lobe category <br>&emsp;&emsp;M means mirror lobe category <br>&emsp;&emsp;SS means sub-surface component of the material <br>&emsp;&emsp;fresnel means to select the lobe's or sub-surface's fresnel <br>&emsp;&emsp;&lt;property&gt; can be one of: <br>&emsp;&emsp;&emsp;'albedo'       (bsdf lobe | subsurface)           (RGB),<br>&emsp;&emsp;&emsp;'color'        (bsdf lobe | subsurface | fresnel) (RGB),<br>&emsp;&emsp;&emsp;'depth'        (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dPds'         (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'dPdt'         (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'dSdx'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dSdy'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dTdx'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'dTdy'         (state variable)                   (FLOAT),<br>&emsp;&emsp;&emsp;'emission'     (bsdf)                             (RGB),<br>&emsp;&emsp;&emsp;'factor'       (fresnel)                          (FLOAT),<br>&emsp;&emsp;&emsp;'float:&lt;attr&gt;' (primitive attribute)              (FLOAT),<br>&emsp;&emsp;&emsp;'matte'        (bsdf lobe | subsurface)           (FLOAT),<br>&emsp;&emsp;&emsp;'motionvec'    (state variable)                   (VEC2F),<br>&emsp;&emsp;&emsp;'N'            (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'Ng'           (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'normal'       (bsdf lobe | subsurface)           (VEC3F),<br>&emsp;&emsp;&emsp;'P'            (state variable)                   (VEC3F),<br>&emsp;&emsp;&emsp;'pbr_validity' (bsdf lobe | subsurface)           (RGB),<br>&emsp;&emsp;&emsp;'radius'       (subsurface)                       (RGB),<br>&emsp;&emsp;&emsp;'rgb:&lt;attr&gt;'   (primitive attribute)              (RGB),<br>&emsp;&emsp;&emsp;'roughness'    (bsdf lobe) (fresnel)              (VEC2F),<br>&emsp;&emsp;&emsp;'St'           (state variable)                   (VEC2F),<br>&emsp;&emsp;&emsp;'vec2:&lt;attr&gt;'  (primitive attribute)              (VEC2F),<br>&emsp;&emsp;&emsp;'vec3:&lt;attr&gt;'  (primitive attribute)              (VEC3F),<br>&emsp;&emsp;&emsp;'Wp'           (state variable)                   (VEC3F)<br>&emsp;Examples:<br>&emsp;&emsp;albedo              : Albedo of all rendered materials <br>&emsp;&emsp;R.albedo            : Total reflection albedo <br>&emsp;&emsp;'spec'.MG.roughness : Roughness of all mirror and glossy lobes that have the 'spec' label</p>
+      <p class="scene-class-comments">If "result" is "material aov", this attribute specifies a material aov expression to output.  the expression format is: <br>&emsp;[('&lt;gl&gt;')+\.][('&lt;ml&gt;')+\.][('&lt;ll&gt;')+\.][(ss|r|t|d|g|m)+\.][fresnel\.]&lt;property&gt;. where:<br>&emsp;&emsp;&lt;gl&gt; is a label associated with the geometry <br>&emsp;&emsp;&lt;ml&gt; is a label associated with the material <br>&emsp;&emsp;&lt;ll&gt; is a lobe label <br>&emsp;&emsp;r means reflection side lobe <br>&emsp;&emsp;t means transmission side lobe <br>&emsp;&emsp;d means diffuse lobe category <br>&emsp;&emsp;g means glossy lobe category <br>&emsp;&emsp;m means mirror lobe category <br>&emsp;&emsp;ss means sub-surface component of the material <br>&emsp;&emsp;fresnel means to select the lobe's or sub-surface's fresnel <br>&emsp;&emsp;&lt;property&gt; can be one of: <br>&emsp;&emsp;&emsp;'albedo'       (bsdf lobe | subsurface)           (rgb),<br>&emsp;&emsp;&emsp;'color'        (bsdf lobe | subsurface | fresnel) (rgb),<br>&emsp;&emsp;&emsp;'depth'        (state variable)                   (float),<br>&emsp;&emsp;&emsp;'dpds'         (state variable)                   (vec3f),<br>&emsp;&emsp;&emsp;'dpdt'         (state variable)                   (vec3f),<br>&emsp;&emsp;&emsp;'dsdx'         (state variable)                   (float),<br>&emsp;&emsp;&emsp;'dsdy'         (state variable)                   (float),<br>&emsp;&emsp;&emsp;'dtdx'         (state variable)                   (float),<br>&emsp;&emsp;&emsp;'dtdy'         (state variable)                   (float),<br>&emsp;&emsp;&emsp;'emission'     (bsdf)                             (rgb),<br>&emsp;&emsp;&emsp;'factor'       (fresnel)                          (float),<br>&emsp;&emsp;&emsp;'float:&lt;attr&gt;' (primitive attribute)              (float),<br>&emsp;&emsp;&emsp;'matte'        (bsdf lobe | subsurface)           (float),<br>&emsp;&emsp;&emsp;'motionvec'    (state variable)                   (vec2f),<br>&emsp;&emsp;&emsp;'n'            (state variable)                   (vec3f),<br>&emsp;&emsp;&emsp;'ng'           (state variable)                   (vec3f),<br>&emsp;&emsp;&emsp;'normal'       (bsdf lobe | subsurface)           (vec3f),<br>&emsp;&emsp;&emsp;'p'            (state variable)                   (vec3f),<br>&emsp;&emsp;&emsp;'pbr_validity' (bsdf lobe | subsurface)           (rgb),<br>&emsp;&emsp;&emsp;'radius'       (subsurface)                       (rgb),<br>&emsp;&emsp;&emsp;'rgb:&lt;attr&gt;'   (primitive attribute)              (rgb),<br>&emsp;&emsp;&emsp;'roughness'    (bsdf lobe) (fresnel)              (vec2f),<br>&emsp;&emsp;&emsp;'st'           (state variable)                   (vec2f),<br>&emsp;&emsp;&emsp;'vec2:&lt;attr&gt;'  (primitive attribute)              (vec2f),<br>&emsp;&emsp;&emsp;'vec3:&lt;attr&gt;'  (primitive attribute)              (vec3f),<br>&emsp;&emsp;&emsp;'wp'           (state variable)                   (vec3f)<br>&emsp;examples:<br>&emsp;&emsp;albedo              : albedo of all rendered materials <br>&emsp;&emsp;r.albedo            : total reflection albedo <br>&emsp;&emsp;'spec'.mg.roughness : roughness of all mirror and glossy lobes that have the 'spec' label</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov.links heading=4-%}
     </p>
@@ -205,7 +205,7 @@ title: RenderOutput
           &nbsp;&nbsp;3 = &ldquo;max&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;force_consistent_sampling&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;closest&rdquo;<br>
-      <p class="scene-class-comments">the math filter over the pixel.<br>options include:<br>&emsp;average<br>&emsp;sum<br>&emsp;min<br>&emsp;max<br>&emsp;force_consistent_sampling : average of the first "min_adaptive_samples"<br>&emsp;closest                   : use sample with minimum z-depth</p>
+      <p class="scene-class-comments">The math filter over the pixel.<br>options include:<br>&emsp;average<br>&emsp;sum<br>&emsp;min<br>&emsp;max<br>&emsp;force_consistent_sampling : average of the first "min_adaptive_samples"<br>&emsp;closest                   : use sample with minimum z-depth</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.math_filter.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.math_filter.links heading=4-%}
     </p>
@@ -214,7 +214,7 @@ title: RenderOutput
       <b>String</b>
       <br>
       default: flat
-      <p class="scene-class-comments">Specifies the type of output.  Defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.</p>
+      <p class="scene-class-comments">Specifies the type of output.  defaults to "flat", meaning a flat exr file.  "deep" will output a deep exr file.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.output_type.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.output_type.links heading=4-%}
     </p>
@@ -223,7 +223,7 @@ title: RenderOutput
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  Default channel name is based on primitive attribute name and type.</p>
+      <p class="scene-class-comments">If "result" is "primitive attribute", this attribute specifies the particular primitive attribute to output.  default channel name is based on primitive attribute name and type.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute.links heading=4-%}
     </p>
@@ -235,7 +235,7 @@ title: RenderOutput
           &nbsp;&nbsp;1 = &ldquo;VEC2F&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;VEC3F&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;RGB&rdquo;<br>
-      <p class="scene-class-comments">This attribute specifies the type of the attribute named with the "primitive attribute" setting.  This is required to uniquely specify the primitive attribute.</p>
+      <p class="scene-class-comments">This attribute specifies the type of the attribute named with the "primitive attribute" setting.  this is required to uniquely specify the primitive attribute.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute_type.links heading=4-%}
     </p>
@@ -268,7 +268,7 @@ title: RenderOutput
           &nbsp;&nbsp;13 = &ldquo;cryptomatte&rdquo;<br>
           &nbsp;&nbsp;14 = &ldquo;alpha aux&rdquo;<br>
           &nbsp;&nbsp;15 = &ldquo;display filter&rdquo;<br>
-      <p class="scene-class-comments">The result to output.  Available results: <br>&emsp;general results:<br>&emsp;&emsp;"beauty" - full render (R, G, B), <br>&emsp;&emsp;"alpha" - full render alpha channel (A), <br>&emsp;&emsp;"depth" - z distance from camera (Z), <br>&emsp;&emsp;"display filter" - output results from a display filter, <br>&emsp;aov results:<br>&emsp;&emsp;"state variable" - Built-in state variable, <br>&emsp;&emsp;"primitive attribute" - Procedural provided attributes, <br>&emsp;&emsp;"material aov" - Aovs provided via material expressions <br>&emsp;&emsp;"light aov" - Aovs provided via light path expressions <br>&emsp;&emsp;"visibility aov" - Fraction of light samples that hit light source<br>&emsp;&emsp;"variance aov" - Aovs calculated from the pixel variance of other aovs<br>&emsp;&emsp;"weight" - weight,<br>&emsp;&emsp;"beauty aux" - renderBuffer auxiliary sample data for adaptive sampling,<br>&emsp;&emsp;"cryptomatte" - cryptomatte,<br>&emsp;&emsp;"alpha aux" - alpha auxiliary sample data for adaptive sampling,<br>&emsp;diagnostic results:<br>&emsp;&emsp;"time per pixel" - Time per pixel heat map metric,<br>&emsp;&emsp;"wireframe" - Render as wireframe</p>
+      <p class="scene-class-comments">The result to output.  available results: <br>&emsp;general results:<br>&emsp;&emsp;"beauty" - full render (r, g, b), <br>&emsp;&emsp;"alpha" - full render alpha channel (a), <br>&emsp;&emsp;"depth" - z distance from camera (z), <br>&emsp;&emsp;"display filter" - output results from a display filter, <br>&emsp;aov results:<br>&emsp;&emsp;"state variable" - built-in state variable, <br>&emsp;&emsp;"primitive attribute" - procedural provided attributes, <br>&emsp;&emsp;"material aov" - aovs provided via material expressions <br>&emsp;&emsp;"light aov" - aovs provided via light path expressions <br>&emsp;&emsp;"visibility aov" - fraction of light samples that hit light source<br>&emsp;&emsp;"variance aov" - aovs calculated from the pixel variance of other aovs<br>&emsp;&emsp;"weight" - weight,<br>&emsp;&emsp;"beauty aux" - renderbuffer auxiliary sample data for adaptive sampling,<br>&emsp;&emsp;"cryptomatte" - cryptomatte,<br>&emsp;&emsp;"alpha aux" - alpha auxiliary sample data for adaptive sampling,<br>&emsp;diagnostic results:<br>&emsp;&emsp;"time per pixel" - time per pixel heat map metric,<br>&emsp;&emsp;"wireframe" - render as wireframe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.links heading=4-%}
     </p>
@@ -298,7 +298,7 @@ title: RenderOutput
           &nbsp;&nbsp;10 = &ldquo;Wp&rdquo;<br>
           &nbsp;&nbsp;11 = &ldquo;depth&rdquo;<br>
           &nbsp;&nbsp;12 = &ldquo;motionvec&rdquo;<br>
-      <p class="scene-class-comments">If "result" is "state variable", this attribute specifies the particular state variable result. <br>&emsp;"P" - position (P.X, P.Y, P.Z), <br>&emsp;"Ng" - geometric normal (Ng.X, Ng.Y, Ng.Z), <br>&emsp;"N" - normal (N.X, N.Y, N.Z), <br>&emsp;"St" - texture coordinates (St.X, St.Y), <br>&emsp;"dPds" - derivative of P w.r.t S (dPds.X, dPds.Y, dPds.Z), <br>&emsp;"dPdt" - derivative of P w.r.t T (dPdt.X, dPdt.Y, dPdt.Z), <br>&emsp;"dSdx" - s derivative w.r.t. x (dSdx), <br>&emsp;"dSdy" - s derivative w.r.t. y (dSdy), <br>&emsp;"dTdx" - t derivative w.r.t. x (dTdx), <br>&emsp;"dTdy" - t derivative w.r.t. y (dTdy), <br>&emsp;"Wp" - world position (Wp.X, Wp.Y, Wp.Z), <br>&emsp;"depth" - z distance from camera (Z), <br>&emsp;"motionvec" - 2D motion vector</p>
+      <p class="scene-class-comments">If "result" is "state variable", this attribute specifies the particular state variable result. <br>&emsp;"p" - position (p.x, p.y, p.z), <br>&emsp;"ng" - geometric normal (ng.x, ng.y, ng.z), <br>&emsp;"n" - normal (n.x, n.y, n.z), <br>&emsp;"st" - texture coordinates (st.x, st.y), <br>&emsp;"dpds" - derivative of p w.r.t s (dpds.x, dpds.y, dpds.z), <br>&emsp;"dpdt" - derivative of p w.r.t t (dpdt.x, dpdt.y, dpdt.z), <br>&emsp;"dsdx" - s derivative w.r.t. x (dsdx), <br>&emsp;"dsdy" - s derivative w.r.t. y (dsdy), <br>&emsp;"dtdx" - t derivative w.r.t. x (dtdx), <br>&emsp;"dtdy" - t derivative w.r.t. y (dtdy), <br>&emsp;"wp" - world position (wp.x, wp.y, wp.z), <br>&emsp;"depth" - z distance from camera (z), <br>&emsp;"motionvec" - 2d motion vector</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.state_variable.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.state_variable.links heading=4-%}
     </p>

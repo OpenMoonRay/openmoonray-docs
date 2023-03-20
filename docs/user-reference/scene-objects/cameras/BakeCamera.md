@@ -46,7 +46,7 @@ title: BakeCamera
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
+      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (the use case for this is typically partially-submerged cameras)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.medium_geometry.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.medium_geometry.links heading=4-%}
     </p>
@@ -55,7 +55,7 @@ title: BakeCamera
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
+      <p class="scene-class-comments">The material the camera is 'inside'. if no medium_geometry is specified, all rays will have this initial index of refraction applied. </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.medium_material.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.medium_material.links heading=4-%}
     </p>
@@ -101,7 +101,7 @@ title: BakeCamera
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). This is a multiplier on the global pixel sample count specified in SceneVariables. If the provided map has incompatible dimensions, it will be resized.</p>
+      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). this is a multiplier on the global pixel sample count specified in scenevariables. if the provided map has incompatible dimensions, it will be resized.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>
@@ -163,7 +163,7 @@ title: BakeCamera
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
+      <p class="scene-class-comments">Use this option to supply your own normals that are used when computing ray directions.  without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.normal_map.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.normal_map.links heading=4-%}
     </p>
@@ -173,7 +173,7 @@ title: BakeCamera
       <br>
           &nbsp;&nbsp;0 = &ldquo;camera space&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;tangent space&rdquo;<br>
-      <p class="scene-class-comments">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
+      <p class="scene-class-comments">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  you probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.normal_map_space.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.normal_map_space.links heading=4-%}
     </p>
@@ -200,7 +200,7 @@ title: BakeCamera
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
+      <p class="scene-class-comments">Specifies a vec2f primitive attribute to use as the uv coordinates.  if empty, the default uv for the mesh is used.  the uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.uv_attribute.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.uv_attribute.links heading=4-%}
     </p>

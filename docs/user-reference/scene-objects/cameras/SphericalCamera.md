@@ -46,7 +46,7 @@ title: SphericalCamera
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
+      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (the use case for this is typically partially-submerged cameras)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_geometry.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_geometry.links heading=4-%}
     </p>
@@ -55,7 +55,7 @@ title: SphericalCamera
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
+      <p class="scene-class-comments">The material the camera is 'inside'. if no medium_geometry is specified, all rays will have this initial index of refraction applied. </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_material.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.medium_material.links heading=4-%}
     </p>
@@ -101,7 +101,7 @@ title: SphericalCamera
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). This is a multiplier on the global pixel sample count specified in SceneVariables. If the provided map has incompatible dimensions, it will be resized.</p>
+      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). this is a multiplier on the global pixel sample count specified in scenevariables. if the provided map has incompatible dimensions, it will be resized.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>

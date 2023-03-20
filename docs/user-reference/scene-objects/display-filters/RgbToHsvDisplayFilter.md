@@ -46,7 +46,7 @@ title: RgbToHsvDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput to use in the RgbToHsv operation</p>
+      <p class="scene-class-comments">Renderoutput to use in the rgbtohsv operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.input.links heading=4-%}
     </p>
@@ -55,7 +55,7 @@ title: RgbToHsvDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mask.links heading=4-%}
     </p>

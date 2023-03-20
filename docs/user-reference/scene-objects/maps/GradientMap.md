@@ -23,7 +23,7 @@ title: GradientMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Color A blends into Color B and then back into Color A from the start to the end point</p>
+      <p class="scene-class-comments">Color a blends into color b and then back into color a from the start to the end point</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.GradientMap.attributes.symmetric.images data=site.data.user-reference.scene-objects.maps.GradientMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.GradientMap.attributes.symmetric.links heading=4-%}
     </p>

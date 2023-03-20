@@ -23,7 +23,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
+      <p class="scene-class-comments">Enable to reverse the normals in the geometry</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.reverse_normals.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.reverse_normals.links heading=4-%}
     </p>
@@ -34,7 +34,7 @@ title: UsdInstanceGeometry
           &nbsp;&nbsp;0 = &ldquo;force two-sided&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;force single-sided&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;use mesh sidedness&rdquo;<br>
-      <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+      <p class="scene-class-comments">Set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.side_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.side_type.links heading=4-%}
     </p>
@@ -48,7 +48,7 @@ title: UsdInstanceGeometry
       <b>IntVector</b>
       <br>
       default: []
-      <p class="scene-class-comments">A list of index values to hide / disable. For example, with 4 instances you can supply a list of 0, 2 to disable those instances. If an index in this list is out of range, it is ignored.</p>
+      <p class="scene-class-comments">A list of index values to hide / disable. for example, with 4 instances you can supply a list of 0, 2 to disable those instances. if an index in this list is out of range, it is ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.disable_indices.links heading=4-%}
     </p>
@@ -61,7 +61,7 @@ title: UsdInstanceGeometry
           &nbsp;&nbsp;2 = &ldquo;instance level 2&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;instance level 3&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;instance level 4&rdquo;<br>
-      <p class="scene-class-comments">Sets the level/depth of this instance.  This adds a Mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  The name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
+      <p class="scene-class-comments">Sets the level/depth of this instance.  this adds a mat4f primitive attribute to the geometry which can be referenced during shading to use the local space of each instance.  the name of the primitive attribute corresponds the the instance level  that is set (i.e. "instance_level_0", "instance_level_1", etc)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.instance_level.links heading=4-%}
     </p>
@@ -70,7 +70,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the InstanceGeometry.   Currently only works for shadow_ray_epsilon</p>
+      <p class="scene-class-comments">Use the geometry attributes of the reference (prototype) instead of the ones on the instancegeometry.   currently only works for shadow_ray_epsilon</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_reference_attributes.links heading=4-%}
     </p>
@@ -93,7 +93,7 @@ title: UsdInstanceGeometry
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">label used in material aov expresssions</p>
+      <p class="scene-class-comments">Label used in material aov expresssions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.label.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.label.links heading=4-%}
     </p>
@@ -102,7 +102,7 @@ title: UsdInstanceGeometry
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+      <p class="scene-class-comments">Label used to associate geometry objects into sets. then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.shadow_receiver_label.links heading=4-%}
     </p>
@@ -130,7 +130,7 @@ title: UsdInstanceGeometry
           &nbsp;&nbsp;2 = &ldquo;frame delta&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;acceleration&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;hermite&rdquo;<br>
-      <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
+      <p class="scene-class-comments">Motion blur type for polygonmesh/points/curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.motion_blur_type.links heading=4-%}
     </p>
@@ -141,7 +141,7 @@ title: UsdInstanceGeometry
           &nbsp;&nbsp;0 = &ldquo;first motion step&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;second motion step&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;both motion steps&rdquo; (default)<br>
-      <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
+      <p class="scene-class-comments">Which frame(s) do we take the primitive attributes from?<br>&emsp;o : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attribute_frame.links heading=4-%}
     </p>
@@ -150,7 +150,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  turning on this will disable adaptive tessellation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
     </p>
@@ -164,7 +164,7 @@ title: UsdInstanceGeometry
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  instead, it is considered part of the current intersection's geometry.  if zero, an automatically calculated epsilon will be used.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.ray_epsilon.links heading=4-%}
     </p>
@@ -173,7 +173,7 @@ title: UsdInstanceGeometry
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  if this value is less than "ray_epsilon", then it has no additional effect.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
     </p>
@@ -187,7 +187,7 @@ title: UsdInstanceGeometry
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Evaluates geometry at the specified frame instead of SceneVariables frame</p>
+      <p class="scene-class-comments">Evaluates geometry at the specified frame instead of scenevariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.evaluation_frame.links heading=4-%}
     </p>
@@ -196,7 +196,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Uses "evaluation frame" instead of SceneVariables frame</p>
+      <p class="scene-class-comments">Uses "evaluation frame" instead of scenevariables frame</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_evaluation_frame.links heading=4-%}
     </p>
@@ -210,7 +210,7 @@ title: UsdInstanceGeometry
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">The point instancer to load from the USD Stage</p>
+      <p class="scene-class-comments">The point instancer to load from the usd stage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.point_instancer_path.links heading=4-%}
     </p>
@@ -219,7 +219,7 @@ title: UsdInstanceGeometry
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">USD Stage to load containing the point instancer</p>
+      <p class="scene-class-comments">Usd stage to load containing the point instancer</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.stage.links heading=4-%}
     </p>
@@ -228,7 +228,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Load the entire stage and use StageCache to share it among all UsdInstanceGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdInstanceGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache.</p>
+      <p class="scene-class-comments">Load the entire stage and use stagecache to share it among all usdinstancegeometry objects.<br>if this is false, load a stage masked to the prim path just for this usdinstancegeometry.<br>for large stages with thousands of unique assets, it is faster to enable the stage cache.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.use_stage_cache.links heading=4-%}
     </p>
@@ -242,7 +242,7 @@ title: UsdInstanceGeometry
       <b>UserData Vector</b>
       <br>
       default: []
-      <p class="scene-class-comments">A list of UserData to specify arbitrary primitive attributes(For example, color or roughness multiplier) per-instance</p>
+      <p class="scene-class-comments">A list of userdata to specify arbitrary primitive attributes(for example, color or roughness multiplier) per-instance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.primitive_attributes.links heading=4-%}
     </p>
@@ -256,7 +256,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
+      <p class="scene-class-comments">Whether the geometry is visible in diffuse reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_diffuse_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_diffuse_reflection.links heading=4-%}
     </p>
@@ -265,7 +265,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
+      <p class="scene-class-comments">Whether the geometry is visible in diffuse transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_diffuse_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_diffuse_transmission.links heading=4-%}
     </p>
@@ -274,7 +274,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
+      <p class="scene-class-comments">Whether the geometry is visible in glossy reflection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_glossy_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_glossy_reflection.links heading=4-%}
     </p>
@@ -283,7 +283,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
+      <p class="scene-class-comments">Whether the geometry is visible in glossy transmission (refraction).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_glossy_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_glossy_transmission.links heading=4-%}
     </p>
@@ -292,7 +292,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
+      <p class="scene-class-comments">Whether the geometry is visible to camera rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_in_camera.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_in_camera.links heading=4-%}
     </p>
@@ -301,7 +301,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
+      <p class="scene-class-comments">Whether the geometry is visible in miror reflection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_mirror_reflection.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_mirror_reflection.links heading=4-%}
     </p>
@@ -310,7 +310,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
+      <p class="scene-class-comments">Whether the geometry is visible in miror transmission (refraction).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_mirror_transmission.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_mirror_transmission.links heading=4-%}
     </p>
@@ -319,7 +319,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry casts shadows</p>
+      <p class="scene-class-comments">Whether the geometry casts shadows</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_shadow.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_shadow.links heading=4-%}
     </p>
@@ -328,7 +328,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
+      <p class="scene-class-comments">Whether the geometry is visible in indirect volume rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_volume.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.visible_volume.links heading=4-%}
     </p>
@@ -342,7 +342,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for IOR tracking. This should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
+      <p class="scene-class-comments">Specifies whether the geometry contains the camera and should be used for ior tracking. this should not be changed by the user -- they should instead attach the relevant geometry to the camera, which will then flag this geometry.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.contains_camera.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.contains_camera.links heading=4-%}
     </p>
@@ -351,7 +351,7 @@ title: UsdInstanceGeometry
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  This is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
+      <p class="scene-class-comments">Alternate camera that is used for adaptive tessellation.  this is useful if you want adaptive tessellation to behave consistently in a sequence, regardless of what the main camera is doing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.dicing_camera.links heading=4-%}
     </p>
@@ -369,7 +369,7 @@ title: UsdInstanceGeometry
       <b>Geometry Vector</b>
       <br>
       default: []
-      <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+      <p class="scene-class-comments">List of geometries that geometry procedural can reference during procedural generate/update stages. for example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.references.links heading=4-%}
     </p>
@@ -378,7 +378,7 @@ title: UsdInstanceGeometry
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+      <p class="scene-class-comments">List of mappings of the form a:b where:<br>a is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>b is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
     </p>
@@ -387,7 +387,7 @@ title: UsdInstanceGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
+      <p class="scene-class-comments">Disable if the geometry will be updated between frames</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdInstanceGeometry.attributes.static.links heading=4-%}
     </p>

@@ -23,7 +23,7 @@ title: SwitchNormalMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
+      <p class="scene-class-comments">Which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.SwitchNormalMap.attributes.choice.images data=site.data.user-reference.scene-objects.normal-maps.SwitchNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.SwitchNormalMap.attributes.choice.links heading=4-%}
     </p>

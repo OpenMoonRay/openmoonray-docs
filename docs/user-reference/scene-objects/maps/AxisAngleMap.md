@@ -23,7 +23,7 @@ title: AxisAngleMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">the angle of rotation in degrees</p>
+      <p class="scene-class-comments">The angle of rotation in degrees</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.angle.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.angle.links heading=4-%}
     </p>
@@ -33,7 +33,7 @@ title: AxisAngleMap
       <br>
           &nbsp;&nbsp;2 = &ldquo;world&rdquo; (default)<br>
           &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
-      <p class="scene-class-comments">the space of the axis to rotate about</p>
+      <p class="scene-class-comments">The space of the axis to rotate about</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.axis_space.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.axis_space.links heading=4-%}
     </p>
@@ -46,7 +46,7 @@ title: AxisAngleMap
           &nbsp;&nbsp;2 = &ldquo;world&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;screen&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
-      <p class="scene-class-comments">the space to transform from</p>
+      <p class="scene-class-comments">The space to transform from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.input_space.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.input_space.links heading=4-%}
     </p>
@@ -55,7 +55,7 @@ title: AxisAngleMap
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 1 ]
-      <p class="scene-class-comments">input vector to be rotated</p>
+      <p class="scene-class-comments">Input vector to be rotated</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.input_vector.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.input_vector.links heading=4-%}
     </p>
@@ -68,7 +68,7 @@ title: AxisAngleMap
           &nbsp;&nbsp;2 = &ldquo;world&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;screen&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
-      <p class="scene-class-comments">the space to transform the resulting vector to</p>
+      <p class="scene-class-comments">The space to transform the resulting vector to</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.output_space.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.output_space.links heading=4-%}
     </p>
@@ -77,7 +77,7 @@ title: AxisAngleMap
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 1, 0 ]
-      <p class="scene-class-comments">axis to be rotated around</p>
+      <p class="scene-class-comments">Axis to be rotated around</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.rotation_axis.images data=site.data.user-reference.scene-objects.maps.AxisAngleMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AxisAngleMap.attributes.rotation_axis.links heading=4-%}
     </p>

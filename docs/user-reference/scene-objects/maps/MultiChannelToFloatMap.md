@@ -38,7 +38,7 @@ title: MultiChannelToFloatMap
           &nbsp;&nbsp;4 = &ldquo;Magenta&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;Yellow&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;White&rdquo;<br>
-      <p class="scene-class-comments">Specifies which color channels including combination channels (Cyan, Magenta, Yellow, and White) to convert to float.</p>
+      <p class="scene-class-comments">Specifies which color channels including combination channels (cyan, magenta, yellow, and white) to convert to float.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.links heading=4-%}
     </p>

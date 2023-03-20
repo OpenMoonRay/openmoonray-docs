@@ -74,7 +74,7 @@ title: DwaTwoSidedMaterial
       <b>TraceSet</b>
       <br>
       default: None
-      <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. The DwaTwoSidedMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+      <p class="scene-class-comments">By default, only the geometry associated with this material contributes to subsurface. the dwatwosidedmaterial ignores the sss trace sets of the submaterials. if you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.sss_trace_set.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.sss_trace_set.links heading=4-%}
     </p>
@@ -88,7 +88,7 @@ title: DwaTwoSidedMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-comments">material to use on back-facing surfaces</p>
+      <p class="scene-class-comments">Material to use on back-facing surfaces</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.back_material.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.back_material.links heading=4-%}
     </p>
@@ -97,7 +97,7 @@ title: DwaTwoSidedMaterial
       <b>Map</b>
       <br>
       default: None
-      <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+      <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
@@ -106,7 +106,7 @@ title: DwaTwoSidedMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-comments">material to use on front-facing surfaces</p>
+      <p class="scene-class-comments">Material to use on front-facing surfaces</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.front_material.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.front_material.links heading=4-%}
     </p>
@@ -115,7 +115,7 @@ title: DwaTwoSidedMaterial
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">label used in material and light aovs</p>
+      <p class="scene-class-comments">Label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.label.links heading=4-%}
     </p>
@@ -124,7 +124,7 @@ title: DwaTwoSidedMaterial
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.priority.links heading=4-%}
     </p>

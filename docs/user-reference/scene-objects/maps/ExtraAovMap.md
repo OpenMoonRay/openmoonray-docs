@@ -32,7 +32,7 @@ title: ExtraAovMap
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Sets the LPE label that is used for the extra aov</p>
+      <p class="scene-class-comments">Sets the lpe label that is used for the extra aov</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ExtraAovMap.attributes.label.images data=site.data.user-reference.scene-objects.maps.ExtraAovMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ExtraAovMap.attributes.label.links heading=4-%}
     </p>
@@ -41,7 +41,7 @@ title: ExtraAovMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">If true, accumulate this aov when scattering off the surface as an indirect ray (after the LPE scatter transition event, after path throughput multiplication), rather than when the surface is first intersected.  The purpose of this setting is to efficiently capture information from all rays that leave a surface that could potentially intersect and trigger aov evaluation on other surfaces.</p>
+      <p class="scene-class-comments">If true, accumulate this aov when scattering off the surface as an indirect ray (after the lpe scatter transition event, after path throughput multiplication), rather than when the surface is first intersected.  the purpose of this setting is to efficiently capture information from all rays that leave a surface that could potentially intersect and trigger aov evaluation on other surfaces.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ExtraAovMap.attributes.post_scatter.images data=site.data.user-reference.scene-objects.maps.ExtraAovMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ExtraAovMap.attributes.post_scatter.links heading=4-%}
     </p>

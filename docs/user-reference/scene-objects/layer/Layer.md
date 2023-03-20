@@ -32,7 +32,7 @@ title: Layer
       <b>SceneObjectIndexable</b>
       <br>
       default: None
-      <p class="scene-class-comments">Geometry objects that are members of this TraceSet</p>
+      <p class="scene-class-comments">Geometry objects that are members of this traceset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.geometries.images data=site.data.user-reference.scene-objects.layer.Layer-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.layer.Layer.attributes.geometries.links heading=4-%}
     </p>

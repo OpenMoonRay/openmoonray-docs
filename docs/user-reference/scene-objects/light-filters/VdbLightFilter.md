@@ -42,7 +42,7 @@ title: VdbLightFilter
       <b>Rgb</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Tints the light filter.  Lower density increases the shift toward the tint color.</p>
+      <p class="scene-class-comments">Tints the light filter.  lower density increases the shift toward the tint color.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.color_tint.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.color_tint.links heading=4-%}
     </p>
@@ -51,7 +51,7 @@ title: VdbLightFilter
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+      <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). if no grid is specified, it will use 'density' as the defaultin cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_grid_name.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.density_grid_name.links heading=4-%}
     </p>

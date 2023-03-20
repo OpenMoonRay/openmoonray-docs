@@ -41,7 +41,7 @@ title: ToonMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 45.0
-      <p class="scene-class-comments">This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
+      <p class="scene-class-comments">This attribute sets the threshold angle (in degree units) to draw creases. the more the threshold angle is, the less the creases are traced.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ToonMap.attributes.crease_threshold.images data=site.data.user-reference.scene-objects.maps.ToonMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ToonMap.attributes.crease_threshold.links heading=4-%}
     </p>

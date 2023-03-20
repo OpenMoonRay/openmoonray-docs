@@ -23,7 +23,7 @@ title: BlendMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
-      <p class="scene-class-comments">The amount to blend between color A (0) and color B (1)</p>
+      <p class="scene-class-comments">The amount to blend between color a (0) and color b (1)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_amount.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_amount.links heading=4-%}
     </p>
@@ -60,7 +60,7 @@ title: BlendMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">If the blend amount is greater than this amount, it will choose color B (1)</p>
+      <p class="scene-class-comments">If the blend amount is greater than this amount, it will choose color b (1)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_max.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_max.links heading=4-%}
     </p>
@@ -69,7 +69,7 @@ title: BlendMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
+      <p class="scene-class-comments">If the blend amount is less than or equal to this amount, it will choose color a (0)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_min.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_min.links heading=4-%}
     </p>

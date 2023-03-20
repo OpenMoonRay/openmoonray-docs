@@ -33,7 +33,7 @@ title: ProjectCameraNormalMap
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">a custom aspect ratio for the projected texture</p>
+      <p class="scene-class-comments">A custom aspect ratio for the projected texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.custom_aspect_ratio.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.custom_aspect_ratio.links heading=4-%}
     </p>
@@ -43,7 +43,7 @@ title: ProjectCameraNormalMap
       <br>
           &nbsp;&nbsp;0 = &ldquo;[0,1]&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;[-1,1]&rdquo;<br>
-      <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+      <p class="scene-class-comments">Most normal maps are encoded [0,1].   only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.normal_encoding.links heading=4-%}
     </p>
@@ -61,7 +61,7 @@ title: ProjectCameraNormalMap
       <b>Camera</b>
       <br>
       default: None
-      <p class="scene-class-comments">the camera to project from</p>
+      <p class="scene-class-comments">The camera to project from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.projector.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.projector.links heading=4-%}
     </p>
@@ -70,7 +70,7 @@ title: ProjectCameraNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.texture.links heading=4-%}
     </p>
@@ -79,7 +79,7 @@ title: ProjectCameraNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">use reference space</p>
+      <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectCameraNormalMap.attributes.use_reference_space.links heading=4-%}
     </p>

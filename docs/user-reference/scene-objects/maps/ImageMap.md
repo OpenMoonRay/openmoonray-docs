@@ -37,7 +37,7 @@ title: ImageMap
       <b>Vec3f</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+      <p class="scene-class-comments">T = temperature where positive values push towards blue and negative towards red.   m = magenta where positive values push towards magenta and negative towards green.  i = intensity where negative values remove and positive values add energy </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.TMI.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.TMI.links heading=4-%}
     </p>
@@ -141,7 +141,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.</p>
+      <p class="scene-class-comments">If true, the alpha channel of the texture will be placed in the rgb channels.  if the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.alpha_only.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.alpha_only.links heading=4-%}
     </p>
@@ -150,7 +150,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 0, 1, 0 ]
-      <p class="scene-class-comments">default color to be used for missing udims when 'use default color when missing' is enabled</p>
+      <p class="scene-class-comments">Default color to be used for missing udims when 'use default color when missing' is enabled</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.default_color.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.default_color.links heading=4-%}
     </p>
@@ -197,7 +197,7 @@ title: ImageMap
       <b>Vec2f</b>
       <br>
       default: [ 0.5, 0.5 ]
-      <p class="scene-class-comments">UV coordinate around which to rotate</p>
+      <p class="scene-class-comments">Uv coordinate around which to rotate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.rotation_center.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.rotation_center.links heading=4-%}
     </p>
@@ -215,7 +215,7 @@ title: ImageMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '&lt;UDIM&gt;', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). if filename contains '&lt;udim&gt;', udim index substitution is performed on filename.  in the udim case, 'scale', 'offset', and 'wrap around' are ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture.links heading=4-%}
     </p>
@@ -245,7 +245,7 @@ title: ImageMap
       <b>Int</b>
       <br>
       default: 10
-      <p class="scene-class-comments">udim maximum v value</p>
+      <p class="scene-class-comments">Udim maximum v value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_max_v.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_max_v.links heading=4-%}
     </p>
