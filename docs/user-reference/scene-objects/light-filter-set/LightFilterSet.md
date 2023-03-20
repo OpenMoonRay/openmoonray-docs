@@ -21,8 +21,9 @@ title: LightFilterSet
     <h3>lightfilters</h3>
     <p class="scene-class-type">
       <b>LightFilter Vector</b>
+      <br>
       default: []
-      <p class="scene-class-comments">List of light filters that belong to this LightFilterSet</p>
+      <p class="scene-class-comments">List of light filters that belong to this lightfilterset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet.attributes.lightfilters.images data=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet.attributes.lightfilters.links heading=4-%}
     </p>

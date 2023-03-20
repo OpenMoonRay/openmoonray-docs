@@ -21,24 +21,27 @@ title: DwaVelvetMaterial_v2
     <h3>casts_caustics</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: False
-      <p class="scene-class-comments">allows continuation of caustic light paths.</p>
+      <p class="scene-class-comments">Allows continuation of caustic light paths.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.casts_caustics.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.casts_caustics.links heading=4-%}
     </p>
     <h3>presence</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+      <p class="scene-class-comments">Controls the visibility of this object. useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.presence.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.presence.links heading=4-%}
     </p>
     <h3>thin_geometry</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: False
-      <p class="scene-class-comments">enables proper shading of infinitely thin geometry such as paper or leaves.</p>
+      <p class="scene-class-comments">Enables proper shading of infinitely thin geometry such as paper or leaves.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.thin_geometry.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.thin_geometry.links heading=4-%}
     </p>
@@ -50,32 +53,36 @@ title: DwaVelvetMaterial_v2
     <h3>albedo</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">the overall surface color as seen from a distance (ie. diffuse color)</p>
+      <p class="scene-class-comments">The overall surface color as seen from a distance (ie. diffuse color)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.albedo.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.albedo.links heading=4-%}
     </p>
     <h3>diffuse_roughness</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.0
-      <p class="scene-class-comments">Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.</p>
+      <p class="scene-class-comments">Roughness of the diffuse shading.  if the value is zero a lambertian model is used.  if it's above zero the oren nayar model is used.   not compatible with subsurface scattering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_roughness.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_roughness.links heading=4-%}
     </p>
     <h3>diffuse_transmission</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">multiplier on the amount of light that is transmitted through the surface.</p>
+      <p class="scene-class-comments">Multiplier on the amount of light that is transmitted through the surface.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_transmission.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_transmission.links heading=4-%}
     </p>
     <h3>diffuse_transmission_blending_behavior</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | RGB = 0
-          | Monochromatic = 1 (default)
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;RGB&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;Monochromatic&rdquo; (default)<br>
       <p class="scene-class-comments">Controls how diffuse transmission color attenuates diffuse reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_transmission_blending_behavior.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_transmission_blending_behavior.links heading=4-%}
@@ -83,16 +90,18 @@ title: DwaVelvetMaterial_v2
     <h3>diffuse_transmission_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">the color/amount of light that is transmitted through the surface.</p>
+      <p class="scene-class-comments">The color/amount of light that is transmitted through the surface.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_transmission_color.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.diffuse_transmission_color.links heading=4-%}
     </p>
     <h3>show_diffuse</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: True
-      <p class="scene-class-comments">enables/disables diffuse reflectance</p>
+      <p class="scene-class-comments">Enables/disables diffuse reflectance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.show_diffuse.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.show_diffuse.links heading=4-%}
     </p>
@@ -104,16 +113,18 @@ title: DwaVelvetMaterial_v2
     <h3>emission</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">the energy emitted from this material</p>
+      <p class="scene-class-comments">The energy emitted from this material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.emission.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.emission.links heading=4-%}
     </p>
     <h3>show_emission</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: False
-      <p class="scene-class-comments">enables/disable emission</p>
+      <p class="scene-class-comments">Enables/disable emission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.show_emission.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.show_emission.links heading=4-%}
     </p>
@@ -125,14 +136,16 @@ title: DwaVelvetMaterial_v2
     <h3>fuzz</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">fuzz mask</p>
+      <p class="scene-class-comments">Fuzz mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz.links heading=4-%}
     </p>
     <h3>fuzz_albedo</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color of the fuzz highlights.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz_albedo.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -141,6 +154,7 @@ title: DwaVelvetMaterial_v2
     <h3>fuzz_coverage</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.25
       <p class="scene-class-comments">Lower values result in glancing angle highlights while higher values result in a broad, uniform coverage</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz_coverage.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -149,22 +163,25 @@ title: DwaVelvetMaterial_v2
     <h3>fuzz_normal</h3>
     <p class="scene-class-type">
       <b>NormalMap</b>
+      <br>
       default: None
-      <p class="scene-class-comments">specifies an independent shading normal (normal map) for the fuzz lobe</p>
+      <p class="scene-class-comments">Specifies an independent shading normal (normal map) for the fuzz lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz_normal.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz_normal.links heading=4-%}
     </p>
     <h3>fuzz_normal_dial</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">controls the amount of infuence of the alternate fuzz normal</p>
+      <p class="scene-class-comments">Controls the amount of infuence of the alternate fuzz normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz_normal_dial.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.fuzz_normal_dial.links heading=4-%}
     </p>
     <h3>show_fuzz</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: True
       <p class="scene-class-comments">Enables/disables fuzz lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.show_fuzz.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -173,6 +190,7 @@ title: DwaVelvetMaterial_v2
     <h3>use_absorbing_fuzz_fibers</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: False
       <p class="scene-class-comments">Specify whether dark fuzz fibers absorb energy or transmit it to the layers below.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.use_absorbing_fuzz_fibers.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -186,99 +204,111 @@ title: DwaVelvetMaterial_v2
     <h3>glitter</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">enables/disables glitter model (binary 0|1 for plausibility)</p>
+      <p class="scene-class-comments">Enables/disables glitter model (binary 0|1 for plausibility)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter.links heading=4-%}
     </p>
     <h3>glitter_LOD_quality</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 0.5
-      <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
+      <p class="scene-class-comments">Controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_LOD_quality.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_LOD_quality.links heading=4-%}
     </p>
     <h3>glitter_approximate_for_secondary_rays</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: True
-      <p class="scene-class-comments">use an approximation to shade glitter for non-mirror secondary rays</p>
+      <p class="scene-class-comments">Use an approximation to shade glitter for non-mirror secondary rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_approximate_for_secondary_rays.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_approximate_for_secondary_rays.links heading=4-%}
     </p>
     <h3>glitter_color_A</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
+      <p class="scene-class-comments">Base flake color (use physical metallic color values)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_A.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_A.links heading=4-%}
     </p>
     <h3>glitter_color_B</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
+      <p class="scene-class-comments">Base flake color (use physical metallic color values)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_B.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_B.links heading=4-%}
     </p>
     <h3>glitter_color_hue_variation</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.0
-      <p class="scene-class-comments">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
+      <p class="scene-class-comments">Introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_hue_variation.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_hue_variation.links heading=4-%}
     </p>
     <h3>glitter_color_saturation_variation</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.0
-      <p class="scene-class-comments">introduce saturation variation in flake color centered at the base flake color's saturation</p>
+      <p class="scene-class-comments">Introduce saturation variation in flake color centered at the base flake color's saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_saturation_variation.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_saturation_variation.links heading=4-%}
     </p>
     <h3>glitter_color_value_variation</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.0
-      <p class="scene-class-comments">introduce value variation in flake color centered at the base flake color's value</p>
+      <p class="scene-class-comments">Introduce value variation in flake color centered at the base flake color's value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_value_variation.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_color_value_variation.links heading=4-%}
     </p>
     <h3>glitter_compensate_reference_space_deformation</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: True
-      <p class="scene-class-comments">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
+      <p class="scene-class-comments">(in referencespace) compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_compensate_reference_space_deformation.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_compensate_reference_space_deformation.links heading=4-%}
     </p>
     <h3>glitter_debug_mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | off = 0 (default)
-          | blend = 1
-          | color = 2
-          | averageColor = 3
-          | footprintArea = 4
-          | radius = 5
-      <p class="scene-class-comments">developer debug visualization modes</p>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;blend&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;color&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;averageColor&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;footprintArea&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;radius&rdquo;<br>
+      <p class="scene-class-comments">Developer debug visualization modes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_debug_mode.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_debug_mode.links heading=4-%}
     </p>
     <h3>glitter_density</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
+      <p class="scene-class-comments">Controls the number of flakes per unit length; larger density packs more flakes into same space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_density.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_density.links heading=4-%}
     </p>
     <h3>glitter_jitter</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Controls how much the flakes are randomly offset from a regular grid</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_jitter.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -287,39 +317,44 @@ title: DwaVelvetMaterial_v2
     <h3>glitter_layering_mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | physical = 0 (default)
-          | additive = 1
-      <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;physical&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;additive&rdquo;<br>
+      <p class="scene-class-comments">Layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_layering_mode.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_layering_mode.links heading=4-%}
     </p>
     <h3>glitter_randomness</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 0.5
-      <p class="scene-class-comments">randomness of flake orientation</p>
+      <p class="scene-class-comments">Randomness of flake orientation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_randomness.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_randomness.links heading=4-%}
     </p>
     <h3>glitter_roughness_A</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 0.140000000596
-      <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+      <p class="scene-class-comments">Specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_A.links heading=4-%}
     </p>
     <h3>glitter_roughness_B</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 0.140000000596
-      <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+      <p class="scene-class-comments">Specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_B.links heading=4-%}
     </p>
     <h3>glitter_seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
+      <br>
       default: 0
       <p class="scene-class-comments">The seed for the glitter random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_seed.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -328,24 +363,27 @@ title: DwaVelvetMaterial_v2
     <h3>glitter_size_A</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+      <p class="scene-class-comments">Size of the flakes.  apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_size_A.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_size_A.links heading=4-%}
     </p>
     <h3>glitter_size_B</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+      <p class="scene-class-comments">Size of the flakes.  apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_size_B.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_size_B.links heading=4-%}
     </p>
     <h3>glitter_space</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | object = 4
-          | reference = 5 (default)
+      <br>
+          &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;reference&rdquo; (default)<br>
       <p class="scene-class-comments">The space to calculate the worley noise in, defaults to reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_space.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_space.links heading=4-%}
@@ -353,6 +391,7 @@ title: DwaVelvetMaterial_v2
     <h3>glitter_style_A_frequency</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_style_A_frequency.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -361,6 +400,7 @@ title: DwaVelvetMaterial_v2
     <h3>glitter_style_B_frequency</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.0
       <p class="scene-class-comments">0 implies none of this style, 1 implies all the flakes will get this style</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_style_B_frequency.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -369,30 +409,34 @@ title: DwaVelvetMaterial_v2
     <h3>glitter_texture_A</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
+      <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_A.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_A.links heading=4-%}
     </p>
     <h3>glitter_texture_B</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
+      <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_B.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_B.links heading=4-%}
     </p>
     <h3>glitter_texture_orientation_randomness</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 0.15000000596
-      <p class="scene-class-comments">randomly orient each texture</p>
+      <p class="scene-class-comments">Randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_orientation_randomness.links heading=4-%}
     </p>
     <h3>show_glitter</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: False
       <p class="scene-class-comments">Enables/disables glitter lobes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.show_glitter.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -406,16 +450,18 @@ title: DwaVelvetMaterial_v2
     <h3>input_normal</h3>
     <p class="scene-class-type">
       <b>NormalMap</b>
+      <br>
       default: None
-      <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
+      <p class="scene-class-comments">Specifies an alternate shading normal in the tangent frame (normal map)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.input_normal.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.input_normal.links heading=4-%}
     </p>
     <h3>input_normal_dial</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
+      <p class="scene-class-comments">Controls the amount of influence of the alternate normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.input_normal_dial.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.input_normal_dial.links heading=4-%}
     </p>
@@ -427,24 +473,27 @@ title: DwaVelvetMaterial_v2
     <h3>extra_aovs</h3>
     <p class="scene-class-type">
       <b>Map</b>
+      <br>
       default: None
-      <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+      <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
+      <br>
       default: 
-      <p class="scene-class-comments">label used in material and light aovs</p>
+      <p class="scene-class-comments">Label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.label.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
     <p class="scene-class-type">
       <b>Int</b>
+      <br>
       default: 0
-      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.priority.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.priority.links heading=4-%}
     </p>

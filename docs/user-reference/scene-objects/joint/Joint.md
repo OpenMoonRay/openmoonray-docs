@@ -21,6 +21,7 @@ title: Joint
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
+      <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.joint.Joint.attributes.node_xform.images data=site.data.user-reference.scene-objects.joint.Joint-%}

@@ -21,6 +21,7 @@ title: WireframeMap
     <h3>fill_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.WireframeMap.attributes.fill_color.images data=site.data.user-reference.scene-objects.maps.WireframeMap-%}
@@ -29,6 +30,7 @@ title: WireframeMap
     <h3>line_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
+      <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.WireframeMap.attributes.line_color.images data=site.data.user-reference.scene-objects.maps.WireframeMap-%}
@@ -37,6 +39,7 @@ title: WireframeMap
     <h3>line_width</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.WireframeMap.attributes.line_width.images data=site.data.user-reference.scene-objects.maps.WireframeMap-%}
@@ -45,6 +48,7 @@ title: WireframeMap
     <h3>raster</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.WireframeMap.attributes.raster.images data=site.data.user-reference.scene-objects.maps.WireframeMap-%}

@@ -21,8 +21,9 @@ title: ConstantScalarMap
     <h3>scalar_value</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 1.0
-      <p class="scene-class-comments">constant scalar value</p>
+      <p class="scene-class-comments">Constant scalar value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantScalarMap.attributes.scalar_value.images data=site.data.user-reference.scene-objects.maps.ConstantScalarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantScalarMap.attributes.scalar_value.links heading=4-%}
     </p>

@@ -21,6 +21,7 @@ title: RgbToNormalMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert to a normal map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap.attributes.input.images data=site.data.user-reference.scene-objects.normal-maps.RgbToNormalMap-%}

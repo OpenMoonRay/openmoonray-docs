@@ -21,8 +21,9 @@ title: ConstantColorMap
     <h3>color_value</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
+      <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">constant color value</p>
+      <p class="scene-class-comments">Constant color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.images data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.links heading=4-%}
     </p>
