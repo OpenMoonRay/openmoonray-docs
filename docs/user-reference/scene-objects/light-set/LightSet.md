@@ -22,7 +22,7 @@ title: LightSet
     <p class="scene-class-type">
       <b>Light Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.images data=site.data.user-reference.scene-objects.light-set.LightSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.links heading=4-%}

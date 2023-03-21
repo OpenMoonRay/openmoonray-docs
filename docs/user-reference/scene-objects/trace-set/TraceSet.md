@@ -31,7 +31,7 @@ title: TraceSet
     <p class="scene-class-type">
       <b>StringVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Part names (one for each geometry object)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.trace-set.TraceSet.attributes.parts.images data=site.data.user-reference.scene-objects.trace-set.TraceSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.trace-set.TraceSet.attributes.parts.links heading=4-%}

@@ -73,7 +73,7 @@ title: RampMap
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.links heading=4-%}
@@ -82,7 +82,7 @@ title: RampMap
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Color ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.links heading=4-%}

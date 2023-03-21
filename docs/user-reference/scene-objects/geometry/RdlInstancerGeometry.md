@@ -47,7 +47,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of index values to hide / disable.  for example, with 4 instances you can supply a list of 0, 2 to disable those instances.  if an index in this list is out of range, it is ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.disable_indices.links heading=4-%}
@@ -79,7 +79,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Vec4fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of vec4 quaternions that represent the per-instance orientation. the length of the list should be either 0 or consistent with "positions".</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.orientations.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.orientations.links heading=4-%}
@@ -88,7 +88,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of vec3 values that represent the per-instance position.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.positions.links heading=4-%}
@@ -97,7 +97,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of index values to specify which reference geometry to instance at each   position.   the list corresponds to entries in the "references" attribute.  the length of the list should be either 0 or consistent with "positions"|"xform_list".  the index entry falls back to 0 when this attribute is empty or the value of entry is out of index range</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.ref_indices.links heading=4-%}
@@ -106,7 +106,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of vec3 values that represet the per-instance velocity(motion blur).  the length of the list should be either 0 or consistent with "positions".</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.scales.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.scales.links heading=4-%}
@@ -133,7 +133,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Mat4dVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of mat4 transforms that represent the per-instance xform.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.xform_list.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.xform_list.links heading=4-%}
@@ -170,7 +170,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.velocities.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.velocities.links heading=4-%}
@@ -221,7 +221,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>UserData Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">A list of userdata to specify arbitrary primitive attributes(for example, color or roughness multiplier) per-instance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.primitive_attributes.links heading=4-%}
@@ -348,7 +348,7 @@ title: RdlInstancerGeometry
     <p class="scene-class-type">
       <b>Geometry Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">List of geometries that geometry procedural can reference during procedural generate/update stages. for example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlInstancerGeometry.attributes.references.links heading=4-%}
