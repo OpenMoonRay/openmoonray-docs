@@ -350,7 +350,7 @@ title: DistantLight
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Vector of lightfilters associated with the light.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.DistantLight.attributes.light_filters.images data=site.data.user-reference.scene-objects.lights.DistantLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.DistantLight.attributes.light_filters.links heading=4-%}

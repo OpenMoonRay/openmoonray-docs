@@ -227,7 +227,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.links heading=4-%}
@@ -236,7 +236,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_depth_range.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_depth_range.links heading=4-%}
@@ -254,7 +254,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_primary_range.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_primary_range.links heading=4-%}
@@ -296,7 +296,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>StringVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Names of primitive attributes containing deep ids</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.links heading=4-%}
@@ -630,7 +630,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">The window of the camera aperture. overrides image_width and image_height. ordered as xmin, ymin, xmax, and ymax, with origin at the bottom-left.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.links heading=4-%}
@@ -657,7 +657,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Window that is rendered. overrides image width / height (and overrides aperture window override). order: xmin ymin xmax ymax, with origin at left bottom.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.links heading=4-%}
@@ -675,7 +675,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Subviewport of region window. coordinate (0,0) maps to left, bottom of region window</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.links heading=4-%}
@@ -771,7 +771,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Frame-relative time offsets for motion sampling</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.motion_steps.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.motion_steps.links heading=4-%}

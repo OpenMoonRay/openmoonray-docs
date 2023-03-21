@@ -70,7 +70,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Optionally declared vertex accelerations for quadratic motion interpolation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.accleration_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.accleration_list.links heading=4-%}
@@ -122,7 +122,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Optionally declared explicit vertex velocities to use instead of vertex positions from a second motion step'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_0.links heading=4-%}
@@ -131,7 +131,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Optionally declared second set of vertex velocities together with vertex positions from the second motion step for cubic motion interpolation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.velocity_list_1.links heading=4-%}
@@ -154,7 +154,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">List of part indices.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_indices.links heading=4-%}
@@ -163,7 +163,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>StringVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">List of part names, used in conjunction with 'part_indices' to assign per-part materials</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.part_list.links heading=4-%}
@@ -172,7 +172,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">List of per point radius values</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.links heading=4-%}
@@ -181,7 +181,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">List of vertex positions used by the points at motion step 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_0.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_0.links heading=4-%}
@@ -190,7 +190,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>Vec3fVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">If the points are in motion, the vertex positions for the second motion step are stored in this attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_1.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.vertex_list_1.links heading=4-%}
@@ -227,7 +227,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Vector of userdata.  each key/value pair will be added as a primitive attribute of the points.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.primitive_attributes.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.primitive_attributes.links heading=4-%}
@@ -354,7 +354,7 @@ title: RdlPointGeometry
     <p class="scene-class-type">
       <b>Geometry Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">List of geometries that geometry procedural can reference during procedural generate/update stages. for example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.references.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.references.links heading=4-%}

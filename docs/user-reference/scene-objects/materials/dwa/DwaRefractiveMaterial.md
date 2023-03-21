@@ -338,7 +338,7 @@ title: DwaRefractiveMaterial
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial.attributes.iridescence_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial.attributes.iridescence_interpolations.links heading=4-%}
@@ -347,7 +347,7 @@ title: DwaRefractiveMaterial
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">Ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial.attributes.iridescence_positions.images data=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial.attributes.iridescence_positions.links heading=4-%}

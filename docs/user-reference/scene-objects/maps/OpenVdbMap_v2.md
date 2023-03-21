@@ -74,7 +74,7 @@ title: OpenVdbMap_v2
     <p class="scene-class-type">
       <b>Geometry Vector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-comments">The openvdbgeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from openvdbgeometry'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.openvdb_geometry.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap_v2.attributes.openvdb_geometry.links heading=4-%}

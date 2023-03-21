@@ -58,7 +58,7 @@ title: ImageNormalMap
     <p class="scene-class-type">
       <b>StringVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_files.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_files.links heading=4-%}
@@ -76,7 +76,7 @@ title: ImageNormalMap
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: []
+      default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_values.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_values.links heading=4-%}
