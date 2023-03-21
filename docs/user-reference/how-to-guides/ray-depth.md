@@ -89,7 +89,10 @@ physically correct, and currently total internal reflection won't trigger the ef
 ## Max Hair Depth
 *max_hair_depth* is the maximum number of hair interactions for a ray.
 
-*Hair is not affected by max_depth!*
+max_hair_depth is not limited by max_depth.  This exception is to allow for extra hair-to-hair bounces without increasing max_depth
+globally within the scene.  This is especially useful for characters with white (or very light) dense hair/fur where often
+10 or more bounces is needed to get that nice and white/fluffy look, but when such a high number of bounces is not required
+for illuminating the rest of the scene.
 
 ## Max Presence Depth
 *max_presence_depth* is the maximum number of presence interactions for a ray.
