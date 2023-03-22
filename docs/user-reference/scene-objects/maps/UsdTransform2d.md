@@ -25,6 +25,7 @@ title: UsdTransform2d
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">This input provides the data. it is usually connected to a usdprimvarreader_float2 that will provide the data.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.in.images data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.in.videos data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.in.links heading=4-%}
     </p>
     <h3>rotation</h3>
@@ -34,6 +35,7 @@ title: UsdTransform2d
       default: 0.0
       <p class="scene-class-comments">Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.rotation.images data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.rotation.videos data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.rotation.links heading=4-%}
     </p>
     <h3>scale</h3>
@@ -43,6 +45,7 @@ title: UsdTransform2d
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scale around the origin to be applied to all components of the data.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.scale.images data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.scale.links heading=4-%}
     </p>
     <h3>translation</h3>
@@ -52,6 +55,7 @@ title: UsdTransform2d
       default: [ 0, 0 ]
       <p class="scene-class-comments">Translation to be applied to all components of the data.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.translation.images data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.translation.videos data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.translation.links heading=4-%}
     </p>
   </p>

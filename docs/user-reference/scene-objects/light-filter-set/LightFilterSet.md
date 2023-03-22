@@ -25,6 +25,7 @@ title: LightFilterSet
       default: {}
       <p class="scene-class-comments">List of light filters that belong to this lightfilterset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet.attributes.lightfilters.images data=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet.attributes.lightfilters.videos data=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filter-set.LightFilterSet.attributes.lightfilters.links heading=4-%}
     </p>
   </p>

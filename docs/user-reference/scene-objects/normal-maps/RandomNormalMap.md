@@ -25,6 +25,7 @@ title: RandomNormalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The input color used as a base seed to generate the random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.input.images data=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.input.videos data=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.input.links heading=4-%}
     </p>
     <h3>seed</h3>
@@ -34,6 +35,7 @@ title: RandomNormalMap
       default: 0
       <p class="scene-class-comments">Additional seed added to input for random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.seed.images data=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.seed.videos data=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.RandomNormalMap.attributes.seed.links heading=4-%}
     </p>
   </p>

@@ -25,6 +25,7 @@ title: DwaEmissiveMaterial
       default: 1.0
       <p class="scene-class-comments">Controls the visibility of this object. useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.presence.images data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.presence.videos data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.presence.links heading=4-%}
     </p>
   </p>
@@ -39,6 +40,7 @@ title: DwaEmissiveMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The energy emitted from this material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.emission.images data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.emission.videos data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.emission.links heading=4-%}
     </p>
     <h3>show_emission</h3>
@@ -48,6 +50,7 @@ title: DwaEmissiveMaterial
       default: True
       <p class="scene-class-comments">Enables/disable emission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.show_emission.images data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.show_emission.videos data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.show_emission.links heading=4-%}
     </p>
   </p>
@@ -62,6 +65,7 @@ title: DwaEmissiveMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>label</h3>
@@ -71,6 +75,7 @@ title: DwaEmissiveMaterial
       default: 
       <p class="scene-class-comments">Label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.label.videos data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
@@ -80,6 +85,7 @@ title: DwaEmissiveMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaEmissiveMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>

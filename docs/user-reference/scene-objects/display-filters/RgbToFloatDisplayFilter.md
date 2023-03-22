@@ -25,6 +25,7 @@ title: RgbToFloatDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: RgbToFloatDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: RgbToFloatDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput to use in the rgbtofloat operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -57,6 +60,7 @@ title: RgbToFloatDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>mode</h3>
@@ -73,6 +77,7 @@ title: RgbToFloatDisplayFilter
           &nbsp;&nbsp;7 = &ldquo;luminance&rdquo;<br>
       <p class="scene-class-comments">The method used to convert rgb color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.images data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.videos data=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToFloatDisplayFilter.attributes.mode.links heading=4-%}
     </p>
   </p>

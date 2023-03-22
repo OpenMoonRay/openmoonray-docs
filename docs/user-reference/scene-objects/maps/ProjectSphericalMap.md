@@ -30,6 +30,7 @@ title: ProjectSphericalMap
           &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.TRS_order.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.TRS_order.links heading=4-%}
     </p>
     <h3>projection_matrix</h3>
@@ -39,6 +40,7 @@ title: ProjectSphericalMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_matrix.links heading=4-%}
     </p>
     <h3>projection_mode</h3>
@@ -50,6 +52,7 @@ title: ProjectSphericalMap
           &nbsp;&nbsp;2 = &ldquo;TRS&rdquo;<br>
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_mode.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_mode.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projection_mode.links heading=4-%}
     </p>
     <h3>projector</h3>
@@ -59,6 +62,7 @@ title: ProjectSphericalMap
       default: None
       <p class="scene-class-comments">The object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projector.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.projector.links heading=4-%}
     </p>
     <h3>rotate</h3>
@@ -68,6 +72,7 @@ title: ProjectSphericalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.rotate.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.rotate.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.rotate.links heading=4-%}
     </p>
     <h3>rotation_order</h3>
@@ -82,6 +87,7 @@ title: ProjectSphericalMap
           &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.rotation_order.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.rotation_order.links heading=4-%}
     </p>
     <h3>scale</h3>
@@ -91,6 +97,7 @@ title: ProjectSphericalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.scale.links heading=4-%}
     </p>
     <h3>translate</h3>
@@ -100,6 +107,7 @@ title: ProjectSphericalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.translate.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.translate.links heading=4-%}
     </p>
     <h3>use_reference_space</h3>
@@ -109,6 +117,7 @@ title: ProjectSphericalMap
       default: False
       <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.use_reference_space.links heading=4-%}
     </p>
   </p>

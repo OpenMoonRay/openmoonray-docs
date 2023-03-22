@@ -25,6 +25,7 @@ title: TangentSpaceDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: TangentSpaceDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">Connect a renderoutput with state n aov here. used to construct tangent space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.N.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.N.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.N.links heading=4-%}
     </p>
     <h3>dPds</h3>
@@ -57,6 +60,7 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">Connect a renderoutput with state dpds aov here. used to construct tangent space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.dPds.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.dPds.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.dPds.links heading=4-%}
     </p>
     <h3>input</h3>
@@ -66,6 +70,7 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput to transform into tangent space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -75,6 +80,7 @@ title: TangentSpaceDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>normal_map_output</h3>
@@ -84,6 +90,7 @@ title: TangentSpaceDisplayFilter
       default: True
       <p class="scene-class-comments">When on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.normal_map_output.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.normal_map_output.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.normal_map_output.links heading=4-%}
     </p>
   </p>

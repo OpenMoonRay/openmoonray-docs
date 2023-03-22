@@ -25,6 +25,7 @@ title: RampDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: RampDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: RampDisplayFilter
       default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of ramp colors</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.colors.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.colors.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.colors.links heading=4-%}
     </p>
     <h3>interpolations</h3>
@@ -57,6 +60,7 @@ title: RampDisplayFilter
       default: {}
       <p class="scene-class-comments">List of ramp interpolations.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.interpolations.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.interpolations.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.interpolations.links heading=4-%}
     </p>
     <h3>positions</h3>
@@ -66,6 +70,7 @@ title: RampDisplayFilter
       default: {}
       <p class="scene-class-comments">List of ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.positions.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.positions.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.positions.links heading=4-%}
     </p>
   </p>
@@ -80,6 +85,7 @@ title: RampDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput fed into the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>ramp_type</h3>
@@ -97,6 +103,7 @@ title: RampDisplayFilter
           &nbsp;&nbsp;8 = &ldquo;input_ramp&rdquo;<br>
       <p class="scene-class-comments">Type of ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.ramp_type.links heading=4-%}
     </p>
   </p>
@@ -111,6 +118,7 @@ title: RampDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>

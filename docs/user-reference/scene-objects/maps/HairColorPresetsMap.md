@@ -39,6 +39,7 @@ title: HairColorPresetsMap
           &nbsp;&nbsp;14 = &ldquo;chestnut brown&rdquo;<br>
       <p class="scene-class-comments">Chooses a preset hair albedo</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.videos data=site.data.user-reference.scene-objects.maps.HairColorPresetsMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairColorPresetsMap.attributes.color.links heading=4-%}
     </p>
   </p>

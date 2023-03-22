@@ -25,6 +25,7 @@ title: ConstantScalarMap
       default: 1.0
       <p class="scene-class-comments">Constant scalar value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantScalarMap.attributes.scalar_value.images data=site.data.user-reference.scene-objects.maps.ConstantScalarMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ConstantScalarMap.attributes.scalar_value.videos data=site.data.user-reference.scene-objects.maps.ConstantScalarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantScalarMap.attributes.scalar_value.links heading=4-%}
     </p>
   </p>

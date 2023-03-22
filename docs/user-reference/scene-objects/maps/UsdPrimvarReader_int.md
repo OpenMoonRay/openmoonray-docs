@@ -25,6 +25,7 @@ title: UsdPrimvarReader_int
       default: 0
       <p class="scene-class-comments">Fallback value to be returned if geometry fetch failed.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.fallback.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.fallback.videos data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.fallback.links heading=4-%}
     </p>
     <h3>varname</h3>
@@ -34,6 +35,7 @@ title: UsdPrimvarReader_int
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.varname.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.varname.videos data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.varname.links heading=4-%}
     </p>
     <h3>warn_when_unavailable</h3>
@@ -43,6 +45,7 @@ title: UsdPrimvarReader_int
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.warn_when_unavailable.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.warn_when_unavailable.videos data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_int.attributes.warn_when_unavailable.links heading=4-%}
     </p>
   </p>

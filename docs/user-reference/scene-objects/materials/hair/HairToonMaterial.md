@@ -25,6 +25,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">(advanced only) hair color used for back-lit hair (transmission/forward reflectance)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.back_hair_color.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.back_hair_color.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.back_hair_color.links heading=4-%}
     </p>
     <h3>front_hair_color</h3>
@@ -34,6 +35,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">(advanced only) hair color used for front-lit hair (backward reflectance)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.front_hair_color.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.front_hair_color.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.front_hair_color.links heading=4-%}
     </p>
     <h3>sss_trace_set</h3>
@@ -43,6 +45,7 @@ title: HairToonMaterial
       default: None
       <p class="scene-class-comments">Set of geometries that contribute neighboring subsurface points. by default, only the geometry associated with this material contributes to subsurface. if you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.sss_trace_set.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.sss_trace_set.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.sss_trace_set.links heading=4-%}
     </p>
     <h3>use_independent_front_and_back_hair_color</h3>
@@ -52,6 +55,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">(advanced) use a separate hair color for front and back</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.use_independent_front_and_back_hair_color.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.use_independent_front_and_back_hair_color.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.use_independent_front_and_back_hair_color.links heading=4-%}
     </p>
   </p>
@@ -66,6 +70,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls the visibility of this object. useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.presence.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.presence.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.presence.links heading=4-%}
     </p>
   </p>
@@ -80,6 +85,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.hair_color.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.hair_color.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.hair_color.links heading=4-%}
     </p>
     <h3>hair_diffuse</h3>
@@ -89,6 +95,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">Amount of hair diffuse</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.hair_diffuse.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.hair_diffuse.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.hair_diffuse.links heading=4-%}
     </p>
     <h3>show_hair_diffuse</h3>
@@ -98,6 +105,7 @@ title: HairToonMaterial
       default: True
       <p class="scene-class-comments">Show the hair diffuse lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.show_hair_diffuse.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.show_hair_diffuse.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.show_hair_diffuse.links heading=4-%}
     </p>
   </p>
@@ -112,6 +120,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The energy emitted from this material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.emission.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.emission.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.emission.links heading=4-%}
     </p>
     <h3>show_emission</h3>
@@ -121,6 +130,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables/disable emission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.show_emission.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.show_emission.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.show_emission.links heading=4-%}
     </p>
   </p>
@@ -135,6 +145,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables indirect ggx reflections for toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_enable_indirect_reflections.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_enable_indirect_reflections.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_enable_indirect_reflections.links heading=4-%}
     </p>
     <h3>specular_1_enable_input_normal</h3>
@@ -144,6 +155,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables sampling the normal map for toon specular 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_enable_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_enable_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_enable_input_normal.links heading=4-%}
     </p>
     <h3>specular_1_indirect_reflections_intensity</h3>
@@ -153,6 +165,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">The intensity for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_indirect_reflections_intensity.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_indirect_reflections_intensity.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_indirect_reflections_intensity.links heading=4-%}
     </p>
     <h3>specular_1_indirect_reflections_roughness</h3>
@@ -162,6 +175,7 @@ title: HairToonMaterial
       default: 0.5
       <p class="scene-class-comments">The roughness for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_indirect_reflections_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_indirect_reflections_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_indirect_reflections_roughness.links heading=4-%}
     </p>
     <h3>specular_1_input_U</h3>
@@ -171,6 +185,7 @@ title: HairToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Input u / tangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_U.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_U.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_U.links heading=4-%}
     </p>
     <h3>specular_1_input_V</h3>
@@ -180,6 +195,7 @@ title: HairToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Input v / bitangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_V.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_V.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_V.links heading=4-%}
     </p>
     <h3>specular_1_input_normal</h3>
@@ -189,6 +205,7 @@ title: HairToonMaterial
       default: None
       <p class="scene-class-comments">Specifies an alternate shading normal for toon specular 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_normal.links heading=4-%}
     </p>
     <h3>specular_1_input_normal_dial</h3>
@@ -198,6 +215,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls influence of input normal versus hair normal for toon specular 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_normal_dial.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_normal_dial.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_input_normal_dial.links heading=4-%}
     </p>
     <h3>specular_1_intensity</h3>
@@ -207,6 +225,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">The overall intensity of the specular response</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_intensity.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_intensity.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_intensity.links heading=4-%}
     </p>
     <h3>specular_1_interpolations</h3>
@@ -216,6 +235,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_interpolations.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_interpolations.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_interpolations.links heading=4-%}
     </p>
     <h3>specular_1_model</h3>
@@ -226,6 +246,7 @@ title: HairToonMaterial
           &nbsp;&nbsp;3 = &ldquo;Toon_Hair&rdquo;<br>
       <p class="scene-class-comments">Sets the normal distribution function for specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.links heading=4-%}
     </p>
     <h3>specular_1_positions</h3>
@@ -235,6 +256,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">Ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_positions.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_positions.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_positions.links heading=4-%}
     </p>
     <h3>specular_1_roughness</h3>
@@ -244,6 +266,7 @@ title: HairToonMaterial
       default: 0.899999976158
       <p class="scene-class-comments">The roughness of the toon specular.   smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.links heading=4-%}
     </p>
     <h3>specular_1_show</h3>
@@ -253,6 +276,7 @@ title: HairToonMaterial
       default: True
       <p class="scene-class-comments">Show first toon specular lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_show.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_show.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_show.links heading=4-%}
     </p>
     <h3>specular_1_stretch_u</h3>
@@ -262,6 +286,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the u direction </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_stretch_u.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_stretch_u.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_stretch_u.links heading=4-%}
     </p>
     <h3>specular_1_stretch_v</h3>
@@ -271,6 +296,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the v direction </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_stretch_v.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_stretch_v.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_stretch_v.links heading=4-%}
     </p>
     <h3>specular_1_tint</h3>
@@ -280,6 +306,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_tint.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_tint.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_tint.links heading=4-%}
     </p>
     <h3>specular_1_use_input_vectors_for_stretch</h3>
@@ -289,6 +316,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">When checked, use input_u and v. otherwise use geometry dpds/t</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_use_input_vectors_for_stretch.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_use_input_vectors_for_stretch.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_use_input_vectors_for_stretch.links heading=4-%}
     </p>
     <h3>specular_1_values</h3>
@@ -298,6 +326,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_values.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_values.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_values.links heading=4-%}
     </p>
   </p>
@@ -312,6 +341,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables indirect ggx reflections for toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_enable_indirect_reflections.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_enable_indirect_reflections.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_enable_indirect_reflections.links heading=4-%}
     </p>
     <h3>specular_2_enable_input_normal</h3>
@@ -321,6 +351,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables sampling the normal map for toon specular 2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_enable_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_enable_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_enable_input_normal.links heading=4-%}
     </p>
     <h3>specular_2_indirect_reflections_intensity</h3>
@@ -330,6 +361,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">The intensity for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_indirect_reflections_intensity.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_indirect_reflections_intensity.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_indirect_reflections_intensity.links heading=4-%}
     </p>
     <h3>specular_2_indirect_reflections_roughness</h3>
@@ -339,6 +371,7 @@ title: HairToonMaterial
       default: 0.5
       <p class="scene-class-comments">The roughness for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_indirect_reflections_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_indirect_reflections_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_indirect_reflections_roughness.links heading=4-%}
     </p>
     <h3>specular_2_input_U</h3>
@@ -348,6 +381,7 @@ title: HairToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Input u / tangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_U.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_U.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_U.links heading=4-%}
     </p>
     <h3>specular_2_input_V</h3>
@@ -357,6 +391,7 @@ title: HairToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Input v / bitangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_V.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_V.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_V.links heading=4-%}
     </p>
     <h3>specular_2_input_normal</h3>
@@ -366,6 +401,7 @@ title: HairToonMaterial
       default: None
       <p class="scene-class-comments">Specifies an alternate shading normal for toon specular 2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_normal.links heading=4-%}
     </p>
     <h3>specular_2_input_normal_dial</h3>
@@ -375,6 +411,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls influence of input normal versus hair normal for toon specular 2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_normal_dial.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_normal_dial.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_input_normal_dial.links heading=4-%}
     </p>
     <h3>specular_2_intensity</h3>
@@ -384,6 +421,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">The overall intensity of the specular response</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_intensity.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_intensity.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_intensity.links heading=4-%}
     </p>
     <h3>specular_2_interpolations</h3>
@@ -393,6 +431,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_interpolations.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_interpolations.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_interpolations.links heading=4-%}
     </p>
     <h3>specular_2_model</h3>
@@ -403,6 +442,7 @@ title: HairToonMaterial
           &nbsp;&nbsp;3 = &ldquo;Toon_Hair&rdquo;<br>
       <p class="scene-class-comments">Sets the normal distribution function for specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.links heading=4-%}
     </p>
     <h3>specular_2_positions</h3>
@@ -412,6 +452,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">Ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_positions.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_positions.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_positions.links heading=4-%}
     </p>
     <h3>specular_2_roughness</h3>
@@ -421,6 +462,7 @@ title: HairToonMaterial
       default: 0.899999976158
       <p class="scene-class-comments">The roughness of the toon specular.   smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.links heading=4-%}
     </p>
     <h3>specular_2_show</h3>
@@ -430,6 +472,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Show second toon specular lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_show.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_show.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_show.links heading=4-%}
     </p>
     <h3>specular_2_stretch_u</h3>
@@ -439,6 +482,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the u direction </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_stretch_u.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_stretch_u.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_stretch_u.links heading=4-%}
     </p>
     <h3>specular_2_stretch_v</h3>
@@ -448,6 +492,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the v direction </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_stretch_v.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_stretch_v.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_stretch_v.links heading=4-%}
     </p>
     <h3>specular_2_tint</h3>
@@ -457,6 +502,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_tint.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_tint.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_tint.links heading=4-%}
     </p>
     <h3>specular_2_use_input_vectors_for_stretch</h3>
@@ -466,6 +512,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">When checked, use input_u and v. otherwise use geometry dpds/t</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_use_input_vectors_for_stretch.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_use_input_vectors_for_stretch.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_use_input_vectors_for_stretch.links heading=4-%}
     </p>
     <h3>specular_2_values</h3>
@@ -475,6 +522,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_values.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_values.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_values.links heading=4-%}
     </p>
   </p>
@@ -489,6 +537,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables indirect ggx reflections for toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_enable_indirect_reflections.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_enable_indirect_reflections.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_enable_indirect_reflections.links heading=4-%}
     </p>
     <h3>specular_3_enable_input_normal</h3>
@@ -498,6 +547,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables sampling the normal map for toon specular 3</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_enable_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_enable_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_enable_input_normal.links heading=4-%}
     </p>
     <h3>specular_3_indirect_reflections_intensity</h3>
@@ -507,6 +557,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">The intensity for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_indirect_reflections_intensity.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_indirect_reflections_intensity.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_indirect_reflections_intensity.links heading=4-%}
     </p>
     <h3>specular_3_indirect_reflections_roughness</h3>
@@ -516,6 +567,7 @@ title: HairToonMaterial
       default: 0.5
       <p class="scene-class-comments">The roughness for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_indirect_reflections_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_indirect_reflections_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_indirect_reflections_roughness.links heading=4-%}
     </p>
     <h3>specular_3_input_U</h3>
@@ -525,6 +577,7 @@ title: HairToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Input u / tangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_U.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_U.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_U.links heading=4-%}
     </p>
     <h3>specular_3_input_V</h3>
@@ -534,6 +587,7 @@ title: HairToonMaterial
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Input v / bitangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_V.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_V.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_V.links heading=4-%}
     </p>
     <h3>specular_3_input_normal</h3>
@@ -543,6 +597,7 @@ title: HairToonMaterial
       default: None
       <p class="scene-class-comments">Specifies an alternate shading normal for toon specular 3</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_normal.links heading=4-%}
     </p>
     <h3>specular_3_input_normal_dial</h3>
@@ -552,6 +607,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls influence of input normal versus hair normal for toon specular 3</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_normal_dial.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_normal_dial.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_input_normal_dial.links heading=4-%}
     </p>
     <h3>specular_3_intensity</h3>
@@ -561,6 +617,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">The overall intensity of the specular response</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_intensity.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_intensity.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_intensity.links heading=4-%}
     </p>
     <h3>specular_3_interpolations</h3>
@@ -570,6 +627,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_interpolations.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_interpolations.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_interpolations.links heading=4-%}
     </p>
     <h3>specular_3_model</h3>
@@ -580,6 +638,7 @@ title: HairToonMaterial
           &nbsp;&nbsp;3 = &ldquo;Toon_Hair&rdquo;<br>
       <p class="scene-class-comments">Sets the normal distribution function for specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.links heading=4-%}
     </p>
     <h3>specular_3_positions</h3>
@@ -589,6 +648,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">Ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_positions.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_positions.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_positions.links heading=4-%}
     </p>
     <h3>specular_3_roughness</h3>
@@ -598,6 +658,7 @@ title: HairToonMaterial
       default: 0.899999976158
       <p class="scene-class-comments">The roughness of the toon specular.   smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.links heading=4-%}
     </p>
     <h3>specular_3_show</h3>
@@ -607,6 +668,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Show third toon specular lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_show.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_show.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_show.links heading=4-%}
     </p>
     <h3>specular_3_stretch_u</h3>
@@ -616,6 +678,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the u direction </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_stretch_u.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_stretch_u.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_stretch_u.links heading=4-%}
     </p>
     <h3>specular_3_stretch_v</h3>
@@ -625,6 +688,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">Amount to stretch or compress the specular in the v direction </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_stretch_v.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_stretch_v.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_stretch_v.links heading=4-%}
     </p>
     <h3>specular_3_tint</h3>
@@ -634,6 +698,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_tint.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_tint.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_tint.links heading=4-%}
     </p>
     <h3>specular_3_use_input_vectors_for_stretch</h3>
@@ -643,6 +708,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">When checked, use input_u and v. otherwise use geometry dpds/t</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_use_input_vectors_for_stretch.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_use_input_vectors_for_stretch.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_use_input_vectors_for_stretch.links heading=4-%}
     </p>
     <h3>specular_3_values</h3>
@@ -652,6 +718,7 @@ title: HairToonMaterial
       default: {}
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_values.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_values.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_values.links heading=4-%}
     </p>
   </p>
@@ -667,6 +734,7 @@ title: HairToonMaterial
           &nbsp;&nbsp;1 = &ldquo;dipole&rdquo;<br>
       <p class="scene-class-comments">0 for normalizeddiffuse, 1 for dipole. random walk unsupported for hair.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.bssrdf.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.bssrdf.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.bssrdf.links heading=4-%}
     </p>
     <h3>enable_sss_input_normal</h3>
@@ -676,6 +744,7 @@ title: HairToonMaterial
       default: False
       <p class="scene-class-comments">Enables sampling the normal map for sss samples. more accurate but potentially expensive</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.enable_sss_input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.enable_sss_input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.enable_sss_input_normal.links heading=4-%}
     </p>
     <h3>input_normal</h3>
@@ -685,6 +754,7 @@ title: HairToonMaterial
       default: None
       <p class="scene-class-comments">Specifies an alternate shading normal (only for sss lobe)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.input_normal.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.input_normal.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.input_normal.links heading=4-%}
     </p>
     <h3>input_normal_dial</h3>
@@ -694,6 +764,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">Controls influence of input normal versus hair normal for sss</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.input_normal_dial.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.input_normal_dial.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.input_normal_dial.links heading=4-%}
     </p>
     <h3>scattering_color</h3>
@@ -703,6 +774,7 @@ title: HairToonMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The subsurface scattering 'falloff' color</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.scattering_color.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.scattering_color.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.scattering_color.links heading=4-%}
     </p>
     <h3>scattering_radius</h3>
@@ -712,6 +784,7 @@ title: HairToonMaterial
       default: 0.0
       <p class="scene-class-comments">The distance the light scatters beneath the surface.  when 0 surface diffuse is used</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.scattering_radius.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.scattering_radius.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.scattering_radius.links heading=4-%}
     </p>
     <h3>subsurface_blend</h3>
@@ -721,6 +794,7 @@ title: HairToonMaterial
       default: 1.0
       <p class="scene-class-comments">0 is fully hair diffuse, 1 is fully sss. no effect if scattering radius is 0.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.subsurface_blend.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.subsurface_blend.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.subsurface_blend.links heading=4-%}
     </p>
   </p>
@@ -735,6 +809,7 @@ title: HairToonMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>label</h3>
@@ -744,6 +819,7 @@ title: HairToonMaterial
       default: 
       <p class="scene-class-comments">Label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.label.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>priority</h3>
@@ -753,6 +829,7 @@ title: HairToonMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>

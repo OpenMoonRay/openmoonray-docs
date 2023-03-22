@@ -25,6 +25,7 @@ title: NormalToRgbMap
       default: None
       <p class="scene-class-comments">Input normal map to convert to a color</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NormalToRgbMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.NormalToRgbMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.NormalToRgbMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.NormalToRgbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NormalToRgbMap.attributes.input.links heading=4-%}
     </p>
   </p>

@@ -25,6 +25,7 @@ title: ColorCorrectSaturationMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bind the input here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.input.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">How much of the overall color correct to mix in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.mix.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.mix.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.mix.links heading=4-%}
     </p>
     <h3>on</h3>
@@ -43,6 +45,7 @@ title: ColorCorrectSaturationMap
       default: True
       <p class="scene-class-comments">Enables/disables all color correct operations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.on.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.on.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.on.links heading=4-%}
     </p>
     <h3>saturation</h3>
@@ -52,6 +55,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">Desaturates the input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation.links heading=4-%}
     </p>
     <h3>saturation_b</h3>
@@ -61,6 +65,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">Desaturates the blue channel input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_b.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_b.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_b.links heading=4-%}
     </p>
     <h3>saturation_g</h3>
@@ -70,6 +75,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">Desaturates the green channel input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_g.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_g.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_g.links heading=4-%}
     </p>
     <h3>saturation_r</h3>
@@ -79,6 +85,7 @@ title: ColorCorrectSaturationMap
       default: 1.0
       <p class="scene-class-comments">Desaturates the red channel input below 1.0 and adds saturation above 1.0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_r.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_r.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.saturation_r.links heading=4-%}
     </p>
     <h3>use_per_channel_saturation</h3>
@@ -88,6 +95,7 @@ title: ColorCorrectSaturationMap
       default: False
       <p class="scene-class-comments">Enables separate rgb controls for saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.use_per_channel_saturation.images data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.use_per_channel_saturation.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectSaturationMap.attributes.use_per_channel_saturation.links heading=4-%}
     </p>
   </p>

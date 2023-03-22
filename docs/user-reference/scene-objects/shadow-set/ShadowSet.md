@@ -25,6 +25,7 @@ title: ShadowSet
       default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-set.ShadowSet.attributes.lights.images data=site.data.user-reference.scene-objects.shadow-set.ShadowSet-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.shadow-set.ShadowSet.attributes.lights.videos data=site.data.user-reference.scene-objects.shadow-set.ShadowSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.shadow-set.ShadowSet.attributes.lights.links heading=4-%}
     </p>
   </p>
