@@ -3,7 +3,10 @@ Title: How To Look Dev Transparent Surfaces
 ---
 # How To: Look Dev Transparent Surfaces
 
-A transparent surface is a material interface that allows light to pass through. The law of refraction defines how light bends as it enters/exits from one medium to another (e.g., from air to water, or air to glass). MoonRay's [DwaRefractiveMaterial](../scene-objects/materials/dwa/DwaRefractiveMaterial.md) allows you to author a transparent material, and below are some tips on how to dial the settings to achieve a desired look.
+A transparent surface is a material interface that allows light to pass through. The law of refraction defines
+how light bends as it enters/exits from one medium to another (e.g., from air to water, or air to glass).
+MoonRay's [DwaRefractiveMaterial](../scene-objects/materials/dwa/DwaRefractiveMaterial.md) allows you to author
+a transparent material, and below are some tips on how to dial the settings to achieve a desired look.
 
 ### Index of Refraction for Common Materials
 
@@ -15,19 +18,20 @@ A transparent surface is a material interface that allows light to pass through.
 | Gemstones, etc | 2.x |
 
 ## Depth Settings
-Transparent surfaces require higher depth settings because light rays need more bounces to escape the medium. Increase the following SceneVariable settings to produce a brighter render:
+Transparent surfaces require higher depth settings because light rays need more bounces to escape the medium.
+Increase the following SceneVariable settings to produce a brighter render:
 
 * *max_depth* (default: 5)
 * *max_glossy_depth* (default: 2)
 * *max_mirror_depth* (default: 3)
 
-<!--- ============= These images need to be attributed before they are used ==============================
+See the [Ray Depth]({{ "/user-reference/how-to-guides/ray-depth/" | absolute_url }}) page for more info.
+
 {% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/max_depth_example2.png'
                                image_path_after='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/max_depth_example1.png' 
                                image_alt_before='Higher depth settings for transparent surfaces.' 
                                image_alt_after='Default depth settings.' 
                                position='52' %}
---->
 
 ## Overlapping Dielectrics
 What if you have overlapping transparent mediums (e.g. water in a glass cup)? You will need to set a [*material priority*](./overlapping-dielectrics.md). 
@@ -65,18 +69,53 @@ Set *diffuse_color* to black to eliminate scattering within the volume, then set
                                image_alt_after='Refraction color using BaseVolume.' %}
 
 ## Thin Geometry
-If you are modeling a thin surface, like a plastic cup or bubble, you should try turning on the material setting *thin_geometry*. This will essentially let light pass through *without* bending, and it will correctly handle IORs when exiting the surface via back-sided polygons. 
+Some geometry models often used in production represent extremely "thin" objects, where the geometry is either "open" and does not enclose any
+spatial volume, or the geometry is technically closed but intended to represent a very thin film such as a soap bubble.
 
-| | |
-| - | - |
-| ![Thin Geometry Diagram Off]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_off.png" | absolute_url }}) | ![Thin Geometry Diagram On]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_diagram_on.png" | absolute_url }}) |
+Examples include:
+* a sheet of paper with zero thickness
+* a soap bubble, where the walls of the bubble have zero thickness
+* a glass window with zero thickness
+* any other planar surface such as a wall, floor or ceiling
 
-Thin Geometry is also useful for planar or open surfaces modeled without thickness. When a ray hits the backside of a surface, MoonRay typically treats it as if it's coming from the *inside* of the surface, and inverts the IORs accordingly. When using thin geometry, we treat the ray as if it's hitting the front-facing surface and do *not* invert IORs or bend the ray, since any bending will be corrected upon exiting from the infinitely thin surface. 
+In MoonRay we refer to models such as these as "thin geometry" and their materials require special handling in order to look correct. The materials
+in moonray have an attribute called _thin_geometry_ that is used to control the material's behavior for both reflection and transmission events.
+
+The diagrams below show how transmission events interact with these types of geometry based on the state of this material setting.
+
+![]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_01.png" | absolute_url }})
+
+![]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_02.png" | absolute_url }})
+
+![]({{ "/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/thin_geometry_03.png" | absolute_url }})
+
+In this comparison the same sphere model is used to represent solid glass and a soap bubble. When _thin_geometry_ is set to _false_ the
+soap bubble looks incorrect.  This comparison shows what happens when _thin_geometry_ is set to _true_ on the soap bubble material:
+{% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/bubble_thin_geometry_on.jpg'
+                               image_path_after='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/bubble_thin_geometry_off.jpg' 
+                               image_alt_before='A solid glass sphere and a soap bubble with thin_geometry = false'
+                               image_alt_after='A solid glass sphere and a soap bubble with thin_geometry = true' %}
+
+In this comparison the tinted glass slab on the left is modeled with thickness > 0 (a box), and the tinted thin glass sheet on the right is modeled with zero thickness (a simple plane).
+When _thin_geometry_ is set to _false_ on the thin sheet's material the refraction looks wrong -- the rays are bent as they enter the sheet but never unbent
+because there is no exit.
+
+This comparison shows what happens when _thin_geometry_ is set to _true_ on the thin sheet's material:
+{% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/glass_slab_thin_geometry_on.jpg'
+                               image_path_after='/assets/images/user-reference/how-to-guides/look-dev-transparent-surfaces/glass_slab_thin_geometry_off.jpg' 
+                               image_alt_before='A solid glass sphere and a soap bubble with thin_geometry = false'
+                               image_alt_after='A solid glass sphere and a soap bubble with thin_geometry = true' %}
+
 
 <aside> <!-- Also: <aside class="info-aside"> -->
-<p>Note that <i>roughness</i> will have no effect when 'thin_geometry' is on.</p>
+<p>Note that there is currently limitation where the material's <i>roughness</i> will not effect transmission rays when 'thin_geometry' is set to 'true'.</p>
 </aside>
 {: .info-aside}
+
+For reflections, the _thin_geometry_ material attribute is also required for correct behavior. When a ray hits the backside of a "thin" surface, MoonRay
+considers this as an _exiting_ event and inverts the relative index of refraction accordingly. This often has the unwanted effect of making the surface highly
+reflective when viewed from the backside, and in fact "total internal reflection" can occur.
+When _thin_geometry_ is enabled on the material, both sides of the surface are treated as front-facing and the relative index of refraction is not inverted.
 
 ## Clearcoat
 You can use *clearcoat* to decouple reflection and refraction roughness, where regular roughness will be used for refractions under the clearcoat reflections.
