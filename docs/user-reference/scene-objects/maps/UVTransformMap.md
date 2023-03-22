@@ -25,6 +25,7 @@ title: UVTransformMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">Shifts uv coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.videos data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.offset.links heading=4-%}
     </p>
     <h3>rotation_angle</h3>
@@ -34,6 +35,7 @@ title: UVTransformMap
       default: 0.0
       <p class="scene-class-comments">Rotation in degrees</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_angle.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_angle.videos data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_angle.links heading=4-%}
     </p>
     <h3>rotation_axis</h3>
@@ -43,6 +45,7 @@ title: UVTransformMap
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">Axis in which to rotate (only for 3d spaces)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_axis.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_axis.videos data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_axis.links heading=4-%}
     </p>
     <h3>rotation_center</h3>
@@ -52,6 +55,7 @@ title: UVTransformMap
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">Uv coordinate around which to rotate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_center.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_center.videos data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.rotation_center.links heading=4-%}
     </p>
     <h3>scale</h3>
@@ -61,6 +65,7 @@ title: UVTransformMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">Scales uv coordinates (after rotation, before offset)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.scale.links heading=4-%}
     </p>
     <h3>space</h3>
@@ -76,6 +81,7 @@ title: UVTransformMap
           &nbsp;&nbsp;6 = &ldquo;texture&rdquo; (default)<br>
       <p class="scene-class-comments">Determines source of coordinates. default is mesh uvs. other options procedurally create uvs from the chosen space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.videos data=site.data.user-reference.scene-objects.maps.UVTransformMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UVTransformMap.attributes.space.links heading=4-%}
     </p>
   </p>

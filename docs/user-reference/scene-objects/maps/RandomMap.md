@@ -25,6 +25,7 @@ title: RandomMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The input color used as a base seed to generate the random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RandomMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.RandomMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RandomMap.attributes.input.links heading=4-%}
     </p>
     <h3>monochrome</h3>
@@ -34,6 +35,7 @@ title: RandomMap
       default: True
       <p class="scene-class-comments">Outputs the same color for all three channels</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.monochrome.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RandomMap.attributes.monochrome.videos data=site.data.user-reference.scene-objects.maps.RandomMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RandomMap.attributes.monochrome.links heading=4-%}
     </p>
     <h3>output_max</h3>
@@ -43,6 +45,7 @@ title: RandomMap
       default: 1.0
       <p class="scene-class-comments">The maximum output random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_max.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_max.videos data=site.data.user-reference.scene-objects.maps.RandomMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_max.links heading=4-%}
     </p>
     <h3>output_min</h3>
@@ -52,6 +55,7 @@ title: RandomMap
       default: 0.0
       <p class="scene-class-comments">The minimum output random value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_min.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_min.videos data=site.data.user-reference.scene-objects.maps.RandomMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RandomMap.attributes.output_min.links heading=4-%}
     </p>
     <h3>seed</h3>
@@ -61,6 +65,7 @@ title: RandomMap
       default: 0
       <p class="scene-class-comments">Additional seed added to input for random number generator</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RandomMap.attributes.seed.images data=site.data.user-reference.scene-objects.maps.RandomMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RandomMap.attributes.seed.videos data=site.data.user-reference.scene-objects.maps.RandomMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RandomMap.attributes.seed.links heading=4-%}
     </p>
   </p>

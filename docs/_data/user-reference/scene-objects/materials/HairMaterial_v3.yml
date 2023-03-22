@@ -1,2 +1,25 @@
 ---
 overview: HairMaterial_v3Overview.md
+image_path: /assets/images/user-reference/scene-objects/materials/hair
+
+attributes:
+  refractive_index:
+    videos:
+      - video: iorVar.mp4
+        text: refractive index 1-3
+  primary_specular_roughness:
+    videos:
+      - video: roughnessVar.mp4
+        text: primary specular roughness 0-1
+  independent_secondary_specular_roughness:
+    videos:
+      - video: trtR.mp4
+        text: independent secondary specular roughness 0-1
+  independent_transmission_roughness:
+    videos:
+      - video: transmissionR.mp4
+        text: independent transmission roughness 0-1
+  transmission_azimuthal_roughness:
+    videos:
+      - video: aziR.mp4
+        text: transmission azimuthal roughness 0-1

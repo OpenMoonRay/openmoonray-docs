@@ -25,6 +25,7 @@ title: ColorCorrectHueShiftMap
       default: 0.0
       <p class="scene-class-comments">Shifts the hue of the input (spectrum range is 0-1)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.hue_shift.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.hue_shift.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.hue_shift.links heading=4-%}
     </p>
     <h3>input</h3>
@@ -34,6 +35,7 @@ title: ColorCorrectHueShiftMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bind the input here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.input.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -43,6 +45,7 @@ title: ColorCorrectHueShiftMap
       default: 1.0
       <p class="scene-class-comments">How much of the overall color correct to mix in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.mix.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.mix.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.mix.links heading=4-%}
     </p>
     <h3>on</h3>
@@ -52,6 +55,7 @@ title: ColorCorrectHueShiftMap
       default: True
       <p class="scene-class-comments">Enables/disables all color correct operations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.on.images data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.on.videos data=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectHueShiftMap.attributes.on.links heading=4-%}
     </p>
   </p>

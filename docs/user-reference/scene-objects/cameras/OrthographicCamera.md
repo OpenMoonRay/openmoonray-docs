@@ -25,6 +25,7 @@ title: OrthographicCamera
       default: False
       <p class="scene-class-comments">Enable bokeh. requires dof to be enabled.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh.links heading=4-%}
     </p>
     <h3>bokeh_angle</h3>
@@ -34,6 +35,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Angle of iris rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_angle.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_angle.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_angle.links heading=4-%}
     </p>
     <h3>bokeh_image</h3>
@@ -43,6 +45,7 @@ title: OrthographicCamera
       default: 
       <p class="scene-class-comments">Path to image file to be used for the iris</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_image.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_image.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_image.links heading=4-%}
     </p>
     <h3>bokeh_sides</h3>
@@ -52,6 +55,7 @@ title: OrthographicCamera
       default: 0
       <p class="scene-class-comments">Number of sides of the iris. specifying less than 3 sides will default to a disk.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_sides.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_sides.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_sides.links heading=4-%}
     </p>
     <h3>bokeh_weight_location</h3>
@@ -61,6 +65,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Distance from the origin of bokeh shape</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_weight_location.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_weight_location.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_weight_location.links heading=4-%}
     </p>
     <h3>bokeh_weight_strength</h3>
@@ -70,6 +75,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Controls the strength of weights as samples approach the weight location</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_weight_strength.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_weight_strength.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.bokeh_weight_strength.links heading=4-%}
     </p>
     <h3>dof</h3>
@@ -79,6 +85,7 @@ title: OrthographicCamera
       default: False
       <p class="scene-class-comments">Whether to enable depth of field</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof.links heading=4-%}
     </p>
     <h3>dof_aperture</h3>
@@ -88,6 +95,7 @@ title: OrthographicCamera
       default: 8.0
       <p class="scene-class-comments">Depth of field focus distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_aperture.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_aperture.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_aperture.links heading=4-%}
     </p>
     <h3>dof_focus_distance</h3>
@@ -97,6 +105,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_focus_distance.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_focus_distance.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.dof_focus_distance.links heading=4-%}
     </p>
   </p>
@@ -111,6 +120,7 @@ title: OrthographicCamera
       default: 10000.0
       <p class="scene-class-comments">Far clipping plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.far.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.far.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.far.links heading=4-%}
     </p>
     <h3>film_width_aperture</h3>
@@ -120,6 +130,7 @@ title: OrthographicCamera
       default: 24.0
       <p class="scene-class-comments">Scale the aperture of the camera (i.e., the orthographic frustum) by this value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.film_width_aperture.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.film_width_aperture.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.film_width_aperture.links heading=4-%}
     </p>
     <h3>horizontal_film_offset</h3>
@@ -129,6 +140,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Horizontal offset of the orthographic frustum.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.horizontal_film_offset.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.horizontal_film_offset.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.horizontal_film_offset.links heading=4-%}
     </p>
     <h3>near</h3>
@@ -138,6 +150,7 @@ title: OrthographicCamera
       default: 1.0
       <p class="scene-class-comments">Near clipping plane</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.near.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.near.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.near.links heading=4-%}
     </p>
     <h3>pixel_aspect_ratio</h3>
@@ -147,6 +160,7 @@ title: OrthographicCamera
       default: 1.0
       <p class="scene-class-comments">Ratio of pixel size y / x</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_aspect_ratio.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_aspect_ratio.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_aspect_ratio.links heading=4-%}
     </p>
     <h3>vertical_film_offset</h3>
@@ -156,6 +170,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Vertical offset of the orthographic frustum.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.vertical_film_offset.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.vertical_film_offset.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.vertical_film_offset.links heading=4-%}
     </p>
   </p>
@@ -170,6 +185,7 @@ title: OrthographicCamera
       default: None
       <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (the use case for this is typically partially-submerged cameras)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.medium_geometry.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.medium_geometry.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.medium_geometry.links heading=4-%}
     </p>
     <h3>medium_material</h3>
@@ -179,6 +195,7 @@ title: OrthographicCamera
       default: None
       <p class="scene-class-comments">The material the camera is 'inside'. if no medium_geometry is specified, all rays will have this initial index of refraction applied. </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.medium_material.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.medium_material.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.medium_material.links heading=4-%}
     </p>
   </p>
@@ -193,6 +210,7 @@ title: OrthographicCamera
       default: 0.0
       <p class="scene-class-comments">Biases the motion blur samples toward one end of the shutter interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_bias.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_bias.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_bias.links heading=4-%}
     </p>
     <h3>mb_shutter_close</h3>
@@ -202,6 +220,7 @@ title: OrthographicCamera
       default: 0.25
       <p class="scene-class-comments">Frame at which the shutter closes, i.e., the end of the motion blur interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_close.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_close.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_close.links heading=4-%}
     </p>
     <h3>mb_shutter_open</h3>
@@ -211,6 +230,7 @@ title: OrthographicCamera
       default: -0.25
       <p class="scene-class-comments">Frame at which the shutter opens, i.e., the beginning of the motion blur interval.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_open.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_open.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.mb_shutter_open.links heading=4-%}
     </p>
   </p>
@@ -225,6 +245,7 @@ title: OrthographicCamera
       default: 
       <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). this is a multiplier on the global pixel sample count specified in scenevariables. if the provided map has incompatible dimensions, it will be resized.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_sample_map.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.pixel_sample_map.links heading=4-%}
     </p>
   </p>
@@ -239,6 +260,7 @@ title: OrthographicCamera
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The 4x4 matrix describing the transformation from local space to world space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.node_xform.images data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.node_xform.videos data=site.data.user-reference.scene-objects.cameras.OrthographicCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.OrthographicCamera.attributes.node_xform.links heading=4-%}
     </p>
   </p>

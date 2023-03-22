@@ -25,6 +25,7 @@ title: UsdPreviewSurface
       default: 0.0
       <p class="scene-class-comments">Second specular lobe amount. the color is white.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoat.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoat.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoat.links heading=4-%}
     </p>
     <h3>clearcoatRoughness</h3>
@@ -34,6 +35,7 @@ title: UsdPreviewSurface
       default: 0.00999999977648
       <p class="scene-class-comments">Roughness for the second specular lobe.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoatRoughness.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoatRoughness.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoatRoughness.links heading=4-%}
     </p>
     <h3>diffuseColor</h3>
@@ -43,6 +45,7 @@ title: UsdPreviewSurface
       default: [ 0.18, 0.18, 0.18 ]
       <p class="scene-class-comments">When using metallic workflow this is interpreted as albedo.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.diffuseColor.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.diffuseColor.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.diffuseColor.links heading=4-%}
     </p>
     <h3>displacement</h3>
@@ -52,6 +55,7 @@ title: UsdPreviewSurface
       default: 0.0
       <p class="scene-class-comments">Displacement in the direction of the normal.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.displacement.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.displacement.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.displacement.links heading=4-%}
     </p>
     <h3>emissiveColor</h3>
@@ -61,6 +65,7 @@ title: UsdPreviewSurface
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Emissive component.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.emissiveColor.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.emissiveColor.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.emissiveColor.links heading=4-%}
     </p>
     <h3>extra_aovs</h3>
@@ -70,6 +75,7 @@ title: UsdPreviewSurface
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>ior</h3>
@@ -79,6 +85,7 @@ title: UsdPreviewSurface
       default: 1.5
       <p class="scene-class-comments">Index of refraction to be used for translucent objects and objects with specular components, including the clearcoat if clearcoat &gt; 0.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.ior.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.ior.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.ior.links heading=4-%}
     </p>
     <h3>label</h3>
@@ -88,6 +95,7 @@ title: UsdPreviewSurface
       default: 
       <p class="scene-class-comments">Label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.label.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.label.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.label.links heading=4-%}
     </p>
     <h3>metallic</h3>
@@ -97,6 +105,7 @@ title: UsdPreviewSurface
       default: 0.0
       <p class="scene-class-comments">Use 1 for metallic surfaces and 0 for non-metallic.  if metallic is 1, then both f0 (reflectivity at 0 degree incidence) and edge f90 reflectivity will simply be the albedo.  if metallic is 0, then albedo is ignored in the calculation of f0 and f90; f0 is derived from ior via ( (1-ior)/(1+ior) )^2 and f90 is white. in between, we interpolate.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.metallic.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.metallic.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.metallic.links heading=4-%}
     </p>
     <h3>normal</h3>
@@ -106,6 +115,7 @@ title: UsdPreviewSurface
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">Expects normal in tangent space [(-1,-1,-1), (1,1,1)]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.normal.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.normal.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.normal.links heading=4-%}
     </p>
     <h3>occlusion</h3>
@@ -115,6 +125,7 @@ title: UsdPreviewSurface
       default: 1.0
       <p class="scene-class-comments">Ignored by moonray</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.occlusion.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.occlusion.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.occlusion.links heading=4-%}
     </p>
     <h3>opacity</h3>
@@ -124,6 +135,7 @@ title: UsdPreviewSurface
       default: 1.0
       <p class="scene-class-comments">When opacity is 1.0 then the geometry is fully opaque, if it is smaller than 1.0 then the geometry is translucent, when it is 0 the geometry is transparent. note that even a fully transparent object still receives lighting as, for example, perfectly clear glass still has a specular response.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.opacity.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.opacity.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.opacity.links heading=4-%}
     </p>
     <h3>opacityThreshold</h3>
@@ -133,6 +145,7 @@ title: UsdPreviewSurface
       default: 0.0
       <p class="scene-class-comments">The opacitythreshold input is useful for creating geometric cut-outs based on the opacity input. a value of 0.0 indicates that no masking is applied to the opacity input, while a value greater than 0.0 indicates that rendering of the surface is limited to the areas where the opacity is greater or equal to that value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.opacityThreshold.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.opacityThreshold.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.opacityThreshold.links heading=4-%}
     </p>
     <h3>priority</h3>
@@ -142,6 +155,7 @@ title: UsdPreviewSurface
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.priority.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.priority.links heading=4-%}
     </p>
     <h3>roughness</h3>
@@ -151,6 +165,7 @@ title: UsdPreviewSurface
       default: 0.5
       <p class="scene-class-comments">Roughness for the specular lobe. the value ranges from 0 to 1, which goes from a perfectly specular surface at 0.0 to maximum roughness of the specular lobe.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.roughness.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.roughness.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.roughness.links heading=4-%}
     </p>
     <h3>specularColor</h3>
@@ -160,6 +175,7 @@ title: UsdPreviewSurface
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Specular color to be used. this is the color at 0 incidence. edge color is assumed white. transition between the two colors according to schlick fresnel approximation.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.specularColor.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.specularColor.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.specularColor.links heading=4-%}
     </p>
     <h3>useSpecularWorkflow</h3>
@@ -170,6 +186,7 @@ title: UsdPreviewSurface
           &nbsp;&nbsp;1 = &ldquo;Specular workflow&rdquo;<br>
       <p class="scene-class-comments">This node can fundamentally operate in two modes : specular workflow where you provide a texture/value to the 'specularcolor' input. or, metallic workflow where you provide a texture/value to the 'metallic' input.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.useSpecularWorkflow.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.useSpecularWorkflow.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.useSpecularWorkflow.links heading=4-%}
     </p>
   </p>

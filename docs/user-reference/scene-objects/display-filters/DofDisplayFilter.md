@@ -25,6 +25,7 @@ title: DofDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: DofDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: DofDisplayFilter
       default: 8.0
       <p class="scene-class-comments">Aperture in millimeters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.aperture.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.aperture.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.aperture.links heading=4-%}
     </p>
     <h3>depth</h3>
@@ -57,6 +60,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">The 'depth' renderoutput to sample z-depth values from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.depth.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.depth.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.depth.links heading=4-%}
     </p>
     <h3>focal_length</h3>
@@ -66,6 +70,7 @@ title: DofDisplayFilter
       default: 30.0
       <p class="scene-class-comments">Focal length in millimeters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.focal_length.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.focal_length.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.focal_length.links heading=4-%}
     </p>
     <h3>focus_distance</h3>
@@ -75,6 +80,7 @@ title: DofDisplayFilter
       default: 0.0
       <p class="scene-class-comments">Focus distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.focus_distance.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.focus_distance.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.focus_distance.links heading=4-%}
     </p>
     <h3>input</h3>
@@ -84,6 +90,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput to which to apply depth of field</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -93,6 +100,7 @@ title: DofDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>use_camera_attributes</h3>
@@ -102,6 +110,7 @@ title: DofDisplayFilter
       default: True
       <p class="scene-class-comments">Read dof attributes from the active scene camera</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.use_camera_attributes.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.use_camera_attributes.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.use_camera_attributes.links heading=4-%}
     </p>
   </p>

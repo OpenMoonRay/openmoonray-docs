@@ -25,6 +25,7 @@ title: ConstantDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: ConstantDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: ConstantDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Fill color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.color.images data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.color.videos data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.color.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -57,6 +60,7 @@ title: ConstantDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>
