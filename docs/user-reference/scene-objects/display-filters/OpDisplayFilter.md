@@ -25,6 +25,7 @@ title: OpDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: OpDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">First renderoutput; required</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.input1.images data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.input1.videos data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.input1.links heading=4-%}
     </p>
     <h3>input2</h3>
@@ -57,6 +60,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">Second renderoutput; optional</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.input2.images data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.input2.videos data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.input2.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -66,6 +70,7 @@ title: OpDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>operation</h3>
@@ -104,6 +109,7 @@ title: OpDisplayFilter
           &nbsp;&nbsp;29 = &ldquo;not&rdquo;<br>
       <p class="scene-class-comments">Operation to use on the input(s)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.operation.images data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.operation.videos data=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OpDisplayFilter.attributes.operation.links heading=4-%}
     </p>
   </p>

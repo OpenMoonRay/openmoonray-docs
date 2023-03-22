@@ -25,6 +25,7 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Foreground color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.videos data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_A.links heading=4-%}
     </p>
     <h3>input_B</h3>
@@ -34,6 +35,7 @@ title: LayerMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Background color to blend</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.videos data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.input_B.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -43,6 +45,7 @@ title: LayerMap
       default: 1.0
       <p class="scene-class-comments">Blending amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.videos data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mask.links heading=4-%}
     </p>
     <h3>mode</h3>
@@ -67,6 +70,7 @@ title: LayerMap
           &nbsp;&nbsp;15 = &ldquo;exclusion&rdquo;<br>
       <p class="scene-class-comments">Method of blending</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.LayerMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.videos data=site.data.user-reference.scene-objects.maps.LayerMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.LayerMap.attributes.mode.links heading=4-%}
     </p>
   </p>

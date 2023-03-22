@@ -28,6 +28,7 @@ title: DeformationMap
           &nbsp;&nbsp;3 = &ldquo;deformation_avg&rdquo; (default)<br>
       <p class="scene-class-comments">Controls output: <br>&emsp;&emsp;    rgb - r = deformation along s, g = deformation along t, b = average deformation from ref space <br>&emsp;&emsp;    deformation_s - deformation along s <br>&emsp;&emsp;    deformation_t - deformation along t <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.output_mode.images data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.output_mode.videos data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.output_mode.links heading=4-%}
     </p>
     <h3>use_warning_color</h3>
@@ -37,6 +38,7 @@ title: DeformationMap
       default: False
       <p class="scene-class-comments">If derivatives are missing or zero output the warning color erroring out</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.use_warning_color.images data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.use_warning_color.videos data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.use_warning_color.links heading=4-%}
     </p>
     <h3>warning_color</h3>
@@ -46,6 +48,7 @@ title: DeformationMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Warning color to output when derivatives are missing or zero</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.warning_color.images data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.warning_color.videos data=site.data.user-reference.scene-objects.maps.DeformationMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.DeformationMap.attributes.warning_color.links heading=4-%}
     </p>
   </p>

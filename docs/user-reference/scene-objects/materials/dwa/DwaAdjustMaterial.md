@@ -25,6 +25,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">Use color adjustment attrs: color_hue_shift, color_saturation, color_gain</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_color.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_color.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_color.links heading=4-%}
     </p>
     <h3>adjust_presence</h3>
@@ -34,6 +35,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">Use presence adjustment attrs: presence_set, presence_set_blend, presence_mult</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_presence.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_presence.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_presence.links heading=4-%}
     </p>
     <h3>adjust_roughness</h3>
@@ -43,6 +45,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">Use roughness adjustment attrs: roughness_set, roughness_set_blend, roughness_mult, roughness_remap_{in/out}_{min/max}</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_roughness.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_roughness.links heading=4-%}
     </p>
     <h3>adjust_specular</h3>
@@ -52,6 +55,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">Use specular adjustment attrs: specular_set, specular_set_blend, specular_mult</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_specular.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_specular.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.adjust_specular.links heading=4-%}
     </p>
   </p>
@@ -68,6 +72,7 @@ title: DwaAdjustMaterial
           &nbsp;&nbsp;2 = &ldquo;force off&rdquo;<br>
       <p class="scene-class-comments">Allows you to keep or set casts caustics attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.casts_caustics.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.casts_caustics.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.casts_caustics.links heading=4-%}
     </p>
     <h3>disable_clearcoat</h3>
@@ -77,6 +82,7 @@ title: DwaAdjustMaterial
       default: False
       <p class="scene-class-comments">When checked, turn off clearcoat from input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_clearcoat.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_clearcoat.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_clearcoat.links heading=4-%}
     </p>
     <h3>disable_diffuse</h3>
@@ -86,6 +92,7 @@ title: DwaAdjustMaterial
       default: False
       <p class="scene-class-comments">When checked, turn off all diffuse from input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_diffuse.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_diffuse.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_diffuse.links heading=4-%}
     </p>
     <h3>disable_specular</h3>
@@ -95,6 +102,7 @@ title: DwaAdjustMaterial
       default: False
       <p class="scene-class-comments">When checked, turn off all specular from input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_specular.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_specular.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.disable_specular.links heading=4-%}
     </p>
     <h3>thin_geometry</h3>
@@ -106,6 +114,7 @@ title: DwaAdjustMaterial
           &nbsp;&nbsp;2 = &ldquo;force off&rdquo;<br>
       <p class="scene-class-comments">Allows you to keep or set thin geometry attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.thin_geometry.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.thin_geometry.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.thin_geometry.links heading=4-%}
     </p>
   </p>
@@ -120,6 +129,7 @@ title: DwaAdjustMaterial
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Emissive map to add to material's emission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission.links heading=4-%}
     </p>
     <h3>emission_mode</h3>
@@ -131,6 +141,7 @@ title: DwaAdjustMaterial
           &nbsp;&nbsp;2 = &ldquo;unmasked&rdquo;<br>
       <p class="scene-class-comments">How to handle emission input. masked uses mix input, unmasked is mix = 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission_mode.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission_mode.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.emission_mode.links heading=4-%}
     </p>
     <h3>extra_aovs</h3>
@@ -140,6 +151,7 @@ title: DwaAdjustMaterial
       default: None
       <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
     <h3>input_material</h3>
@@ -149,6 +161,7 @@ title: DwaAdjustMaterial
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.input_material.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.input_material.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.input_material.links heading=4-%}
     </p>
     <h3>label</h3>
@@ -158,6 +171,7 @@ title: DwaAdjustMaterial
       default: 
       <p class="scene-class-comments">Label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.label.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.label.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -167,6 +181,7 @@ title: DwaAdjustMaterial
       default: 1.0
       <p class="scene-class-comments">Weight of adjustments applied to the material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.mix.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.mix.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.mix.links heading=4-%}
     </p>
     <h3>on</h3>
@@ -176,6 +191,7 @@ title: DwaAdjustMaterial
       default: True
       <p class="scene-class-comments">Enable/disable all adjustments</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.on.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.on.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.on.links heading=4-%}
     </p>
     <h3>priority</h3>
@@ -185,6 +201,7 @@ title: DwaAdjustMaterial
       default: 0
       <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.priority.links heading=4-%}
     </p>
   </p>

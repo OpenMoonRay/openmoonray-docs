@@ -25,6 +25,7 @@ title: BlendDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: BlendDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: BlendDisplayFilter
       default: 0.5
       <p class="scene-class-comments">Float between [0,1] determining amount of blend between input1 and input2</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendAmt.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendAmt.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendAmt.links heading=4-%}
     </p>
     <h3>blendType</h3>
@@ -58,6 +61,7 @@ title: BlendDisplayFilter
           &nbsp;&nbsp;1 = &ldquo;cubic&rdquo;<br>
       <p class="scene-class-comments">Method used to blend between input1 and input2.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendType.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendType.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.blendType.links heading=4-%}
     </p>
     <h3>input1</h3>
@@ -67,6 +71,7 @@ title: BlendDisplayFilter
       default: None
       <p class="scene-class-comments">First renderoutput to use in the blend operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input1.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input1.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input1.links heading=4-%}
     </p>
     <h3>input2</h3>
@@ -76,6 +81,7 @@ title: BlendDisplayFilter
       default: None
       <p class="scene-class-comments">Second renderoutput to use in the blend operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input2.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input2.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.input2.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -85,6 +91,7 @@ title: BlendDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.BlendDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>

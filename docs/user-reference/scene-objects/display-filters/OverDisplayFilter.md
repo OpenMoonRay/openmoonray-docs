@@ -25,6 +25,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">Alpha for over operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.links heading=4-%}
     </p>
     <h3>input_bottom</h3>
@@ -34,6 +35,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput on bottom</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.links heading=4-%}
     </p>
     <h3>input_top</h3>
@@ -43,6 +45,7 @@ title: OverDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput on top</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.links heading=4-%}
     </p>
     <h3>invert_alpha</h3>
@@ -52,6 +55,7 @@ title: OverDisplayFilter
       default: False
       <p class="scene-class-comments">Invert value of alpha</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -61,6 +65,7 @@ title: OverDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend between input_top and input_bottom, using alpha as a mask.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>

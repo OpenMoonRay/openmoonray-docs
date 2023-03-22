@@ -30,6 +30,7 @@ title: ProjectCylindricalMap
           &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.TRS_order.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.TRS_order.links heading=4-%}
     </p>
     <h3>black_outside_projection</h3>
@@ -39,6 +40,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.black_outside_projection.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.black_outside_projection.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.black_outside_projection.links heading=4-%}
     </p>
     <h3>project_on_inward_surfaces</h3>
@@ -48,6 +50,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">Enables projection on surfaces with inward facing normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_inward_surfaces.links heading=4-%}
     </p>
     <h3>project_on_outward_surfaces</h3>
@@ -57,6 +60,7 @@ title: ProjectCylindricalMap
       default: True
       <p class="scene-class-comments">Enables projection on surfaces with outward facing normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.project_on_outward_surfaces.links heading=4-%}
     </p>
     <h3>projection_matrix</h3>
@@ -66,6 +70,7 @@ title: ProjectCylindricalMap
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">The transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_matrix.links heading=4-%}
     </p>
     <h3>projection_mode</h3>
@@ -77,6 +82,7 @@ title: ProjectCylindricalMap
           &nbsp;&nbsp;2 = &ldquo;TRS&rdquo;<br>
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_mode.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_mode.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_mode.links heading=4-%}
     </p>
     <h3>projector</h3>
@@ -86,6 +92,7 @@ title: ProjectCylindricalMap
       default: None
       <p class="scene-class-comments">The object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projector.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projector.links heading=4-%}
     </p>
     <h3>rotate</h3>
@@ -95,6 +102,7 @@ title: ProjectCylindricalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotate.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotate.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotate.links heading=4-%}
     </p>
     <h3>rotation_order</h3>
@@ -109,6 +117,7 @@ title: ProjectCylindricalMap
           &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotation_order.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotation_order.links heading=4-%}
     </p>
     <h3>scale</h3>
@@ -118,6 +127,7 @@ title: ProjectCylindricalMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.scale.links heading=4-%}
     </p>
     <h3>translate</h3>
@@ -127,6 +137,7 @@ title: ProjectCylindricalMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.translate.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.translate.links heading=4-%}
     </p>
     <h3>use_reference_space</h3>
@@ -136,6 +147,7 @@ title: ProjectCylindricalMap
       default: False
       <p class="scene-class-comments">Use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.use_reference_space.links heading=4-%}
     </p>
   </p>

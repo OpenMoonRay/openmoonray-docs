@@ -25,6 +25,7 @@ title: ConvolutionDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: ConvolutionDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: ConvolutionDisplayFilter
       default: {}
       <p class="scene-class-comments">A list of kernel values for a custom filter. the number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.custom_kernel.links heading=4-%}
     </p>
     <h3>input</h3>
@@ -57,6 +60,7 @@ title: ConvolutionDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput to convolve</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>kernel_size</h3>
@@ -66,6 +70,7 @@ title: ConvolutionDisplayFilter
       default: 5
       <p class="scene-class-comments">Size of kernel in pixels. size must be odd. if using a custom kernel, this attribute is ignored, and the size of the custom kernel is used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_size.links heading=4-%}
     </p>
     <h3>kernel_type</h3>
@@ -77,6 +82,7 @@ title: ConvolutionDisplayFilter
           &nbsp;&nbsp;2 = &ldquo;custom&rdquo;<br>
       <p class="scene-class-comments">Kernel to use for convolution.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.kernel_type.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -86,6 +92,7 @@ title: ConvolutionDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConvolutionDisplayFilter.attributes.mask.links heading=4-%}
     </p>
   </p>

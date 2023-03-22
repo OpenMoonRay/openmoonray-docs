@@ -25,6 +25,7 @@ title: RgbToHsvDisplayFilter
       default: False
       <p class="scene-class-comments">Invert the value of the mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.invert_mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.invert_mask.videos data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.invert_mask.links heading=4-%}
     </p>
     <h3>mix</h3>
@@ -34,6 +35,7 @@ title: RgbToHsvDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend [0,1] between input and output</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>
@@ -48,6 +50,7 @@ title: RgbToHsvDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput to use in the rgbtohsv operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.input.links heading=4-%}
     </p>
     <h3>mask</h3>
@@ -57,6 +60,7 @@ title: RgbToHsvDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mask.links heading=4-%}
     </p>
     <h3>mode</h3>
@@ -67,6 +71,7 @@ title: RgbToHsvDisplayFilter
           &nbsp;&nbsp;1 = &ldquo;hsv_to_rgb&rdquo;<br>
       <p class="scene-class-comments">Specifies whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.images data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.videos data=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.RgbToHsvDisplayFilter.attributes.mode.links heading=4-%}
     </p>
   </p>

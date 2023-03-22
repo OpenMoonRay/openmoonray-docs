@@ -25,6 +25,7 @@ title: ShadowDisplayFilter
       default: 1.0
       <p class="scene-class-comments">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.density.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.density.videos data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.density.links heading=4-%}
     </p>
     <h3>occluded</h3>
@@ -34,6 +35,7 @@ title: ShadowDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput containing the occluded image</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.videos data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.links heading=4-%}
     </p>
     <h3>shadow_color</h3>
@@ -43,6 +45,7 @@ title: ShadowDisplayFilter
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Color of the shadow</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.shadow_color.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.shadow_color.videos data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.shadow_color.links heading=4-%}
     </p>
     <h3>unoccluded</h3>
@@ -52,6 +55,7 @@ title: ShadowDisplayFilter
       default: None
       <p class="scene-class-comments">Renderoutput containing the unoccluded image</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.videos data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.links heading=4-%}
     </p>
   </p>

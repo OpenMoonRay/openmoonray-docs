@@ -25,6 +25,7 @@ title: HsvToRgbMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bind the input here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HsvToRgbMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HsvToRgbMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.HsvToRgbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HsvToRgbMap.attributes.input.links heading=4-%}
     </p>
   </p>

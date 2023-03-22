@@ -25,6 +25,7 @@ title: RgbToFloatMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.input.links heading=4-%}
     </p>
     <h3>mode</h3>
@@ -41,6 +42,7 @@ title: RgbToFloatMap
           &nbsp;&nbsp;7 = &ldquo;luminance&rdquo;<br>
       <p class="scene-class-comments">The method to convert rgb color to float</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.videos data=site.data.user-reference.scene-objects.maps.RgbToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToFloatMap.attributes.mode.links heading=4-%}
     </p>
   </p>

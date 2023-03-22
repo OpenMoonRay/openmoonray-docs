@@ -25,6 +25,7 @@ title: GeometrySet
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry-set.GeometrySet.attributes.geometries.images data=site.data.user-reference.scene-objects.geometry-set.GeometrySet-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry-set.GeometrySet.attributes.geometries.videos data=site.data.user-reference.scene-objects.geometry-set.GeometrySet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry-set.GeometrySet.attributes.geometries.links heading=4-%}
     </p>
   </p>

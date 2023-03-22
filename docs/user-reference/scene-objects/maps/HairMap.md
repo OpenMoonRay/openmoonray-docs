@@ -25,6 +25,7 @@ title: HairMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color at each hair's base</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.base_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairMap.attributes.base_color.videos data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairMap.attributes.base_color.links heading=4-%}
     </p>
     <h3>bias</h3>
@@ -34,6 +35,7 @@ title: HairMap
       default: 0.5
       <p class="scene-class-comments">Modulates the shape of blending between base and tip color. &lt; 0.5 pushes the center of the blend towards the base, and &gt; 0.5 towards the tip.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.bias.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairMap.attributes.bias.videos data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairMap.attributes.bias.links heading=4-%}
     </p>
     <h3>column_uv_color</h3>
@@ -43,6 +45,7 @@ title: HairMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Bound image map must have a haircolumnuvmap bound to its input texture coordinates.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.videos data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.links heading=4-%}
     </p>
     <h3>gain</h3>
@@ -52,6 +55,7 @@ title: HairMap
       default: 0.5
       <p class="scene-class-comments">Modulates the shape of blending between base and tip color. &lt; 0.5 is higher contrast in the middle of the blend. &gt; 0.5 is higher contrast at the start and end, and lower contrast in the middle.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.gain.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairMap.attributes.gain.videos data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairMap.attributes.gain.links heading=4-%}
     </p>
     <h3>tip_color</h3>
@@ -61,6 +65,7 @@ title: HairMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Color at each hair's tip</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.tip_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairMap.attributes.tip_color.videos data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairMap.attributes.tip_color.links heading=4-%}
     </p>
   </p>

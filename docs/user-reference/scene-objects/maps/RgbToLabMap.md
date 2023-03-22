@@ -25,6 +25,7 @@ title: RgbToLabMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToLabMap.attributes.input_color.images data=site.data.user-reference.scene-objects.maps.RgbToLabMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RgbToLabMap.attributes.input_color.videos data=site.data.user-reference.scene-objects.maps.RgbToLabMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToLabMap.attributes.input_color.links heading=4-%}
     </p>
   </p>

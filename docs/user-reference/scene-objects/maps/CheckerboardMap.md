@@ -25,6 +25,7 @@ title: CheckerboardMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.color_A.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.color_A.videos data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.color_A.links heading=4-%}
     </p>
     <h3>color_B</h3>
@@ -34,6 +35,7 @@ title: CheckerboardMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.color_B.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.color_B.videos data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.color_B.links heading=4-%}
     </p>
     <h3>input_texture_coordinates</h3>
@@ -43,6 +45,7 @@ title: CheckerboardMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Bind a shader that outputs uv coordinates (such as a projection shader) here</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.input_texture_coordinates.videos data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.input_texture_coordinates.links heading=4-%}
     </p>
     <h3>num_u_tiles</h3>
@@ -52,6 +55,7 @@ title: CheckerboardMap
       default: 8
       <p class="scene-class-comments">Number of checkerboard squares in the u direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.num_u_tiles.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.num_u_tiles.videos data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.num_u_tiles.links heading=4-%}
     </p>
     <h3>num_v_tiles</h3>
@@ -61,6 +65,7 @@ title: CheckerboardMap
       default: 8
       <p class="scene-class-comments">Number of checkerboard squares in the v direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.num_v_tiles.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.num_v_tiles.videos data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.num_v_tiles.links heading=4-%}
     </p>
     <h3>texture_coordinates</h3>
@@ -71,6 +76,7 @@ title: CheckerboardMap
           &nbsp;&nbsp;1 = &ldquo;input texture coordinates&rdquo;<br>
       <p class="scene-class-comments">Switches between the model's uv coordinates or the input texture coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.texture_coordinates.videos data=site.data.user-reference.scene-objects.maps.CheckerboardMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CheckerboardMap.attributes.texture_coordinates.links heading=4-%}
     </p>
   </p>

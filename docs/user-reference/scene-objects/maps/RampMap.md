@@ -25,6 +25,7 @@ title: RampMap
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Bind custom uv coordinates</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.input_texture_coordinates.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.input_texture_coordinates.links heading=4-%}
     </p>
     <h3>uv_repeat</h3>
@@ -34,6 +35,7 @@ title: RampMap
       default: [ 1, 1 ]
       <p class="scene-class-comments">Number of times to repeat the ramp pattern</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.uv_repeat.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.uv_repeat.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.uv_repeat.links heading=4-%}
     </p>
     <h3>uv_wave</h3>
@@ -43,6 +45,7 @@ title: RampMap
       default: [ 0, 0 ]
       <p class="scene-class-comments">Creates waves which perturb the ramp pattern</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.uv_wave.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.uv_wave.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.uv_wave.links heading=4-%}
     </p>
     <h3>wrap_type</h3>
@@ -53,6 +56,7 @@ title: RampMap
           &nbsp;&nbsp;1 = &ldquo;clamp&rdquo;<br>
       <p class="scene-class-comments">Whether to repeat the ramp or maintain the color at each edge</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.wrap_type.links heading=4-%}
     </p>
   </p>
@@ -67,6 +71,7 @@ title: RampMap
       default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.colors.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.colors.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.colors.links heading=4-%}
     </p>
     <h3>interpolations</h3>
@@ -76,6 +81,7 @@ title: RampMap
       default: {}
       <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.interpolations.links heading=4-%}
     </p>
     <h3>positions</h3>
@@ -85,6 +91,7 @@ title: RampMap
       default: {}
       <p class="scene-class-comments">Color ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.positions.links heading=4-%}
     </p>
   </p>
@@ -99,6 +106,7 @@ title: RampMap
       default: None
       <p class="scene-class-comments">Camera used to define camera and screen space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.camera.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.camera.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.camera.links heading=4-%}
     </p>
     <h3>color_space</h3>
@@ -110,6 +118,7 @@ title: RampMap
           &nbsp;&nbsp;2 = &ldquo;hsl&rdquo;<br>
       <p class="scene-class-comments">Color space to perform interpolation in</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.color_space.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.color_space.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.color_space.links heading=4-%}
     </p>
     <h3>input</h3>
@@ -119,6 +128,7 @@ title: RampMap
       default: 1.0
       <p class="scene-class-comments">Input signal for ramp, used when ramp type is set to input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.input.links heading=4-%}
     </p>
     <h3>object</h3>
@@ -128,6 +138,7 @@ title: RampMap
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.object.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.object.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.object.links heading=4-%}
     </p>
     <h3>ramp_type</h3>
@@ -145,6 +156,7 @@ title: RampMap
           &nbsp;&nbsp;8 = &ldquo;input&rdquo;<br>
       <p class="scene-class-comments">Determines input signal / shape of the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.ramp_type.links heading=4-%}
     </p>
     <h3>space</h3>
@@ -160,6 +172,7 @@ title: RampMap
           &nbsp;&nbsp;6 = &ldquo;texture&rdquo;<br>
       <p class="scene-class-comments">Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.space.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.space.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.space.links heading=4-%}
     </p>
   </p>
@@ -175,6 +188,7 @@ title: RampMap
           &nbsp;&nbsp;1 = &ldquo;input texture coordinates&rdquo;<br>
       <p class="scene-class-comments">Whether to read existing coordinates or bind custom ones</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.RampMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.videos data=site.data.user-reference.scene-objects.maps.RampMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RampMap.attributes.texture_coordinates.links heading=4-%}
     </p>
   </p>

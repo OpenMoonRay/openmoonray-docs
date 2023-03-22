@@ -25,6 +25,7 @@ title: LightSet
       default: {}
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.images data=site.data.user-reference.scene-objects.light-set.LightSet-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.videos data=site.data.user-reference.scene-objects.light-set.LightSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.links heading=4-%}
     </p>
   </p>

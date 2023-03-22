@@ -25,6 +25,7 @@ title: CutoutVolume
       default: 100
       <p class="scene-class-comments">Divide widest axis by this many divisions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_divisions.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_divisions.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_divisions.links heading=4-%}
     </p>
     <h3>bake_resolution_mode</h3>
@@ -36,6 +37,7 @@ title: CutoutVolume
           &nbsp;&nbsp;2 = &ldquo;voxel size&rdquo;<br>
       <p class="scene-class-comments">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. for shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_resolution_mode.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_resolution_mode.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_resolution_mode.links heading=4-%}
     </p>
     <h3>bake_voxel_size</h3>
@@ -45,6 +47,7 @@ title: CutoutVolume
       default: 10.0
       <p class="scene-class-comments">Size of voxel in world space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_voxel_size.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_voxel_size.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_voxel_size.links heading=4-%}
     </p>
     <h3>indirect_volume</h3>
@@ -54,6 +57,7 @@ title: CutoutVolume
       default: None
       <p class="scene-class-comments">The volume to cutout / use for indirect illumination and occlusion.  cutout behavior is invoked for primary rays but secondary/indirect rays are processed normally.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.indirect_volume.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.indirect_volume.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.indirect_volume.links heading=4-%}
     </p>
     <h3>label</h3>
@@ -63,6 +67,7 @@ title: CutoutVolume
       default: 
       <p class="scene-class-comments">Label used in light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.label.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.label.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.label.links heading=4-%}
     </p>
     <h3>surface_opacity_threshold</h3>
@@ -72,6 +77,7 @@ title: CutoutVolume
       default: 0.5
       <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and z</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.links heading=4-%}
     </p>
   </p>

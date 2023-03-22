@@ -25,6 +25,7 @@ title: AttributeMap
       default: Cd
       <p class="scene-class-comments">The name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_name.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_name.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_name.links heading=4-%}
     </p>
     <h3>primitive_attribute_type</h3>
@@ -38,6 +39,7 @@ title: AttributeMap
           &nbsp;&nbsp;4 = &ldquo;int&rdquo;<br>
       <p class="scene-class-comments">The type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.primitive_attribute_type.links heading=4-%}
     </p>
   </p>
@@ -52,6 +54,7 @@ title: AttributeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color - preferably a connected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.color.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.color.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.color.links heading=4-%}
     </p>
     <h3>default_value</h3>
@@ -61,6 +64,7 @@ title: AttributeMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Default value to display when the requested attribute is not available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.default_value.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.default_value.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.default_value.links heading=4-%}
     </p>
     <h3>map_type</h3>
@@ -87,6 +91,7 @@ title: AttributeMap
           &nbsp;&nbsp;19 = &ldquo;motionvec&rdquo;<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.links heading=4-%}
     </p>
     <h3>warn_when_unavailable</h3>
@@ -96,6 +101,7 @@ title: AttributeMap
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.warn_when_unavailable.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.warn_when_unavailable.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.warn_when_unavailable.links heading=4-%}
     </p>
   </p>

@@ -25,6 +25,7 @@ title: RgbToHsvMap
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Input color to convert</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.RgbToHsvMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.RgbToHsvMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.RgbToHsvMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.RgbToHsvMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.RgbToHsvMap.attributes.input.links heading=4-%}
     </p>
   </p>
