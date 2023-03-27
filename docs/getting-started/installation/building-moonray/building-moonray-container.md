@@ -45,7 +45,7 @@ This will create the openmoonray_base image in your local Docker instance.
 
 This step creates the openmoonray_build container by downloading, building and installing the third-party libraries that MoonRay needs.
 
-The *building* directory in the openmoonray repo contains a file *CMakeLists.txt". This file defines a series of CMake targets that automatically download and install the third-party dependencies. 
+The *building* directory in the openmoonray repo contains a file *CMakeLists.txt*. This file defines a series of CMake targets that automatically download and install the third-party dependencies. 
 
 The Optix 7.3 header files from NVidia cannot be downloaded automatically : as discussed in the first section, you must have previously downloaded them yourself from the NVidia site.
 
