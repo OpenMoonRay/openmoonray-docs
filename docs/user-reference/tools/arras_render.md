@@ -44,7 +44,7 @@ export PATH=${rel_root}/bin:${PATH}
 export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy
 export ARRAS_SESSION_PATH=${rel_root}/sessions
 
-arras_render --rdl <scene>.rdla --dc local
+arras_render --rdl <scene>.rdla --dc local --current-env
 ```
 arras_render automatically boots backend mcrt computation and connect to them.
 You don't need to specify -s or --session options.
