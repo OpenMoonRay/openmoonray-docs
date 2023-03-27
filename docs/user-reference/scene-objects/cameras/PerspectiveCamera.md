@@ -23,7 +23,7 @@ title: PerspectiveCamera
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enable bokeh. requires dof to be enabled.</p>
+      <p class="scene-class-comments">Enable Bokeh. Requires DOF to be enabled.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh.links heading=4-%}
@@ -53,7 +53,7 @@ title: PerspectiveCamera
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">Number of sides of the iris. specifying less than 3 sides will default to a disk.</p>
+      <p class="scene-class-comments">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh_sides.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh_sides.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh_sides.links heading=4-%}
@@ -63,7 +63,7 @@ title: PerspectiveCamera
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Distance from the origin of bokeh shape</p>
+      <p class="scene-class-comments">Distance from the origin of Bokeh shape</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh_weight_location.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh_weight_location.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.bokeh_weight_location.links heading=4-%}
@@ -168,7 +168,7 @@ title: PerspectiveCamera
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Ratio of pixel size y / x</p>
+      <p class="scene-class-comments">ratio of pixel size y / x</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_aspect_ratio.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_aspect_ratio.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_aspect_ratio.links heading=4-%}
@@ -193,7 +193,7 @@ title: PerspectiveCamera
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (the use case for this is typically partially-submerged cameras)</p>
+      <p class="scene-class-comments">The geometry the camera is 'inside' to which you'd like the medium_material applied. (The use case for this is typically partially-submerged cameras)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.medium_geometry.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.medium_geometry.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.medium_geometry.links heading=4-%}
@@ -203,7 +203,7 @@ title: PerspectiveCamera
       <b>SceneObject</b>
       <br>
       default: None
-      <p class="scene-class-comments">The material the camera is 'inside'. if no medium_geometry is specified, all rays will have this initial index of refraction applied. </p>
+      <p class="scene-class-comments">The material the camera is 'inside'. If no medium_geometry is specified, ALL rays will have this initial index of refraction applied. </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.medium_material.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.medium_material.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.medium_material.links heading=4-%}
@@ -253,7 +253,7 @@ title: PerspectiveCamera
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). this is a multiplier on the global pixel sample count specified in scenevariables. if the provided map has incompatible dimensions, it will be resized.</p>
+      <p class="scene-class-comments">Map indicating the number of pixel samples that should be used per pixel (in uniform sampling mode). This is a multiplier on the global pixel sample count specified in SceneVariables. If the provided map has incompatible dimensions, it will be resized.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_sample_map.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_sample_map.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.pixel_sample_map.links heading=4-%}

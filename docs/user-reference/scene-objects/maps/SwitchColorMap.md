@@ -23,7 +23,7 @@ title: SwitchColorMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Which of the 64 inputs (0 to 63) to use</p>
+      <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.SwitchColorMap.attributes.choice.images data=site.data.user-reference.scene-objects.maps.SwitchColorMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.SwitchColorMap.attributes.choice.videos data=site.data.user-reference.scene-objects.maps.SwitchColorMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.SwitchColorMap.attributes.choice.links heading=4-%}

@@ -39,7 +39,7 @@ title: ProjectPlanarNormalMap
       <br>
           &nbsp;&nbsp;0 = &ldquo;[0,1]&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;[-1,1]&rdquo;<br>
-      <p class="scene-class-comments">Most normal maps are encoded [0,1].   only certain rare floating point normal maps are encoded [-1,1]</p>
+      <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.normal_encoding.links heading=4-%}
@@ -49,7 +49,7 @@ title: ProjectPlanarNormalMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">The transform to use for projection</p>
+      <p class="scene-class-comments">the transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.links heading=4-%}
@@ -71,7 +71,7 @@ title: ProjectPlanarNormalMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">The object whose transform to use for projection</p>
+      <p class="scene-class-comments">the object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.links heading=4-%}
@@ -116,7 +116,7 @@ title: ProjectPlanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.links heading=4-%}
@@ -136,7 +136,7 @@ title: ProjectPlanarNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use reference space</p>
+      <p class="scene-class-comments">use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.links heading=4-%}

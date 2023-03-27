@@ -68,7 +68,7 @@ title: HalftoneDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput to be represented in halftone</p>
+      <p class="scene-class-comments">RenderOutput to be represented in halftone</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.input.links heading=4-%}
@@ -88,7 +88,7 @@ title: HalftoneDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.HalftoneDisplayFilter.attributes.mask.links heading=4-%}

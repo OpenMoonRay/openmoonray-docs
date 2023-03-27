@@ -23,7 +23,7 @@ title: ConstantColorMap
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Constant color value</p>
+      <p class="scene-class-comments">constant color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.images data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.videos data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.links heading=4-%}

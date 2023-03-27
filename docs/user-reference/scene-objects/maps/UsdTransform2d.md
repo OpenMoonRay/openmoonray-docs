@@ -23,7 +23,7 @@ title: UsdTransform2d
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">This input provides the data. it is usually connected to a usdprimvarreader_float2 that will provide the data.</p>
+      <p class="scene-class-comments">This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.in.images data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.in.videos data=site.data.user-reference.scene-objects.maps.UsdTransform2d-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdTransform2d.attributes.in.links heading=4-%}

@@ -38,7 +38,7 @@ title: ProjectTriplanarUdimMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">The transform to use for projection</p>
+      <p class="scene-class-comments">the transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.projection_matrix.links heading=4-%}
@@ -60,7 +60,7 @@ title: ProjectTriplanarUdimMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">The object whose transform to use for projection</p>
+      <p class="scene-class-comments">the object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.projector.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.projector.links heading=4-%}
@@ -115,7 +115,7 @@ title: ProjectTriplanarUdimMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use correct uv orientation</p>
+      <p class="scene-class-comments">use correct uv orientation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.use_correct_uv.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.use_correct_uv.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.use_correct_uv.links heading=4-%}
@@ -125,7 +125,7 @@ title: ProjectTriplanarUdimMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use reference space</p>
+      <p class="scene-class-comments">use reference space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.use_reference_space.links heading=4-%}
@@ -135,7 +135,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset for x projected map</p>
+      <p class="scene-class-comments">2D offset for x projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_offset.links heading=4-%}
@@ -145,7 +145,7 @@ title: ProjectTriplanarUdimMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation for x projected map</p>
+      <p class="scene-class-comments">2D rotation for x projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_rotation.links heading=4-%}
@@ -155,7 +155,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 0.5, 0.5 ]
-      <p class="scene-class-comments">2d rotation center for x projected map</p>
+      <p class="scene-class-comments">2D rotation center for x projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_rotation_center.links heading=4-%}
@@ -165,7 +165,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale for x projected map</p>
+      <p class="scene-class-comments">2D scale for x projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.x_scale.links heading=4-%}
@@ -175,7 +175,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset for y projected map</p>
+      <p class="scene-class-comments">2D offset for y projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_offset.links heading=4-%}
@@ -185,7 +185,7 @@ title: ProjectTriplanarUdimMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation for y projected map</p>
+      <p class="scene-class-comments">2D rotation for y projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_rotation.links heading=4-%}
@@ -195,7 +195,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 0.5, 0.5 ]
-      <p class="scene-class-comments">2d rotation center for y projected map</p>
+      <p class="scene-class-comments">2D rotation center for y projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_rotation_center.links heading=4-%}
@@ -205,7 +205,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale for y projected map</p>
+      <p class="scene-class-comments">2D scale for y projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.y_scale.links heading=4-%}
@@ -215,7 +215,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset for z projected map</p>
+      <p class="scene-class-comments">2D offset for z projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_offset.links heading=4-%}
@@ -225,7 +225,7 @@ title: ProjectTriplanarUdimMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation for z projected map</p>
+      <p class="scene-class-comments">2D rotation for z projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_rotation.links heading=4-%}
@@ -235,7 +235,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 0.5, 0.5 ]
-      <p class="scene-class-comments">2d rotation center for z projected map</p>
+      <p class="scene-class-comments">2D rotation center for z projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_rotation_center.links heading=4-%}
@@ -245,7 +245,7 @@ title: ProjectTriplanarUdimMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale for z projected map</p>
+      <p class="scene-class-comments">2D scale for z projected map</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarUdimMap.attributes.z_scale.links heading=4-%}

@@ -33,7 +33,7 @@ title: ShadowDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput containing the occluded image</p>
+      <p class="scene-class-comments">RenderOutput containing the occluded image</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.videos data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.occluded.links heading=4-%}
@@ -53,7 +53,7 @@ title: ShadowDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput containing the unoccluded image</p>
+      <p class="scene-class-comments">RenderOutput containing the unoccluded image</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.images data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.videos data=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ShadowDisplayFilter.attributes.unoccluded.links heading=4-%}

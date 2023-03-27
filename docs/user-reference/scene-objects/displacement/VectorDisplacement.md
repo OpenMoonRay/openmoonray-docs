@@ -23,7 +23,7 @@ title: VectorDisplacement
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Bound padding defines how much to extend the bounding box of the object. keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). setting the bound padding too large will consume more memory and tessellation time.</p>
+      <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.bound_padding.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.bound_padding.videos data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.bound_padding.links heading=4-%}
@@ -55,7 +55,7 @@ title: VectorDisplacement
       <br>
           &nbsp;&nbsp;0 = &ldquo;tnb&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;tbn&rdquo;<br>
-      <p class="scene-class-comments">Controls how rgb maps to tangent, normal, and bi-normal</p>
+      <p class="scene-class-comments">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.videos data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.tangent_space_style.links heading=4-%}

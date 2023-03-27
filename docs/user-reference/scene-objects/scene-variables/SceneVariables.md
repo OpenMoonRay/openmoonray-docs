@@ -33,7 +33,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 4000
-      <p class="scene-class-comments">Size is in mb and this is the maximum cache size</p>
+      <p class="scene-class-comments">size is in Mb and this is the maximum cache size</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_cache_size.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_cache_size.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_cache_size.links heading=4-%}
@@ -43,7 +43,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 24000
-      <p class="scene-class-comments">Maximum number of simultaneous open file handles</p>
+      <p class="scene-class-comments">maximum number of simultaneous open file handles</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.links heading=4-%}
@@ -103,7 +103,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">If true, the checkpoint file write is written in a background thread that runs in parallel with the mcrt threads. otherwise, all mcrt threads wait while the checkpoint file is written.</p>
+      <p class="scene-class-comments">If true, the checkpoint file write is written in a background thread that runs in parallel with the MCRT threads. Otherwise, all MCRT threads wait while the checkpoint file is written.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_bg_write.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_bg_write.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_bg_write.links heading=4-%}
@@ -113,7 +113,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 15.0
-      <p class="scene-class-comments">Length of time, in minutes, between checkpoint file writes. time must be greater or equal to 0.1</p>
+      <p class="scene-class-comments">Length of time, in minutes, between checkpoint file writes. Time must be greater or equal to 0.1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_interval.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_interval.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_interval.links heading=4-%}
@@ -123,7 +123,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-comments">Specify the maximum number of queued checkpoint images that the checkpoint-writing background thread can handle. the value of checkpoint_max_bgcache must be greater than or equal to 1. once this number is exceeded, the mcrt threads are suspended while background images are written to create room in the queue. a larger number can robustly support background writing even with short checkpoint intervals at the expense of memory. a value of 2 is best for most cases.</p>
+      <p class="scene-class-comments">Specify the maximum number of queued checkpoint images that the checkpoint-writing background thread can handle. The value of checkpoint_max_bgcache must be greater than or equal to 1. Once this number is exceeded, the MCRT threads are suspended while background images are written to create room in the queue. A larger number can robustly support background writing even with short checkpoint intervals at the expense of memory. A value of 2 is best for most cases.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.links heading=4-%}
@@ -133,7 +133,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by sigint. this value is fraction. if this value is zero or negative, no extra snapshot action is executed and no checkpoint file is generated when sigint is received.</p>
+      <p class="scene-class-comments">Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by SIGINT. This value is fraction. If this value is ZERO or negative, no extra snapshot action is executed and no checkpoint file is generated when SIGINT is received.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.links heading=4-%}
@@ -154,7 +154,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">If true, the last checkpoint file is overwritten when writing out the checkpoint file. if false, the checkpoint filename is appended with the total number of samples, resulting in the retention of all checkpoint files.</p>
+      <p class="scene-class-comments">If true, the last checkpoint file is overwritten when writing out the checkpoint file. If false, the checkpoint filename is appended with the total number of samples, resulting in the retention of all checkpoint files.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_overwrite.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_overwrite.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_overwrite.links heading=4-%}
@@ -164,7 +164,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">This defines the file name of a lua script executed after every checkpoint file has been written, which is run in parallel with the ongoing mcrt threads. see further documentation for moonray-provided lua variables accessible within the script.</p>
+      <p class="scene-class-comments">This defines the file name of a Lua script executed after every checkpoint file has been written, which is run in parallel with the ongoing MCRT threads. See further documentation for MoonRay-provided Lua variables accessible within the script.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_post_script.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_post_script.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_post_script.links heading=4-%}
@@ -174,7 +174,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-comments">Steps of quality, internal sampling iteration count, between checkpoint file writes. value should be equal or bigger than 1. uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. if you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. recommended number is 1~3 range. you can use more than 4 but bigger number always require longer rendering time. if you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.</p>
+      <p class="scene-class-comments">Steps of quality, internal sampling iteration count, between checkpoint file writes. Value should be equal or bigger than 1. Uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. If you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... Adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. Recommended number is 1~3 range. You can use more than 4 but bigger number always require longer rendering time. If you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.links heading=4-%}
@@ -184,7 +184,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">When total pixel sample count exceeds this value at every pixel (if you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. disabled sample cap feature when set to 0.</p>
+      <p class="scene-class-comments">When total pixel sample count exceeds this value at every pixel (If you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. Disabled sample cap feature when set to 0.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.links heading=4-%}
@@ -194,7 +194,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Interval of time in minutes, about snapshot refreshment regarding interruption by sigint. unit is minute. if this value is zero or negative, checkpoint_max_snapshot_overhead parameter is used instead.</p>
+      <p class="scene-class-comments">Interval of time in minutes, about snapshot refreshment regarding interruption by SIGINT. Unit is minute. If this value is ZERO or negative, checkpoint_max_snapshot_overhead parameter is used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.links heading=4-%}
@@ -204,7 +204,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 1
-      <p class="scene-class-comments">Specify samples per pixel (spp) number. checkpoint file is created when all pixel's spp are same or bigger than this number. until then, checkpoint file is not created.</p>
+      <p class="scene-class-comments">Specify samples per pixel (SPP) number. Checkpoint file is created when all pixel's SPP are same or bigger than this number. Until then, checkpoint file is not created.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_start_sample.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_start_sample.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_start_sample.links heading=4-%}
@@ -214,7 +214,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. disabled time cap feature when set to 0.</p>
+      <p class="scene-class-comments">When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. Disabled time cap feature when set to 0.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_time_cap.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_time_cap.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_time_cap.links heading=4-%}
@@ -224,7 +224,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">Specify total number of checkpoint files for quality based checkpoint mode.this variable is a substitute parameter of checkpoint_quality_steps.if this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable. if this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.this option respects the checkpoint_start_sample variable.in some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. however even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
+      <p class="scene-class-comments">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable. If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_total_files.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_total_files.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_total_files.links heading=4-%}
@@ -239,7 +239,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: -1
-      <p class="scene-class-comments">Specify port number for debug console. if you set -1 (=default), all debug console functionalities are disabled. if you set 0 or positive port number, debug console functionalities are enabled. if enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. if you set 0, the kernel finds the available port for you and displays the port number to the cerr. otherwise you have to set the available port number yourself.</p>
+      <p class="scene-class-comments">Specify port number for debug console. If you set -1 (=default), all debug console functionalities are disabled. If you set 0 or positive port number, debug console functionalities are enabled. If enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. If you set 0, the kernel finds the available port for you and displays the port number to the cerr. Otherwise you have to set the available port number yourself.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_console.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_console.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_console.links heading=4-%}
@@ -315,7 +315,7 @@ title: SceneVariables
       <br>
           &nbsp;&nbsp;0 = &ldquo;openexr2.0&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;opendcx2.0&rdquo; (default)<br>
-      <p class="scene-class-comments">Deep image format:<br>&emsp;&emsp;openexr2.0: vanilla openexr deep<br>&emsp;&emsp;opendcx2.0: dcx abuffer mask encoding</p>
+      <p class="scene-class-comments">Deep image format:<br>&emsp;&emsp;openexr2.0: vanilla OpenEXR deep<br>&emsp;&emsp;opendcx2.0: DCX abuffer mask encoding</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_format.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_format.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_format.links heading=4-%}
@@ -325,7 +325,7 @@ title: SceneVariables
       <b>StringVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Names of primitive attributes containing deep ids</p>
+      <p class="scene-class-comments">Names of primitive attributes containing deep IDs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.links heading=4-%}
@@ -355,7 +355,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 10
-      <p class="scene-class-comments">Volume opacity compression resolution.  lower values gives higher compression.</p>
+      <p class="scene-class-comments">Volume opacity compression resolution.  Lower values gives higher compression.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_vol_compression_res.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_vol_compression_res.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_vol_compression_res.links heading=4-%}
@@ -365,7 +365,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 2.0
-      <p class="scene-class-comments">Maximum range of the deep surface's z values within a pixel before it is split</p>
+      <p class="scene-class-comments">Maximum range of the deep surface's Z values within a pixel before it is split</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_z_tolerance.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_z_tolerance.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_z_tolerance.links heading=4-%}
@@ -410,7 +410,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: scene.exr
-      <p class="scene-class-comments">This specifies the output path for the beauty image (rgba). this is independent of the aov renderoutputs, which can also write a beauty image.</p>
+      <p class="scene-class-comments">This specifies the output path for the beauty image (RGBA). This is independent of the AOV RenderOutputs, which can also write a beauty image.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.links heading=4-%}
@@ -451,7 +451,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Define temporary directory name for temporary file generation. use $tmpdir environment variable value if this variable is empty.if $tmpdir is also empty, use /tmp</p>
+      <p class="scene-class-comments">Define temporary directory name for temporary file generation. Use $TMPDIR environment variable value if this variable is empty.If $TMPDIR is also empty, use /tmp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.tmp_dir.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.tmp_dir.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.tmp_dir.links heading=4-%}
@@ -468,7 +468,7 @@ title: SceneVariables
           &nbsp;&nbsp;0 = &ldquo;box&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;cubic b-spline&rdquo; (default)<br>
           &nbsp;&nbsp;2 = &ldquo;quadratic b-spline&rdquo;<br>
-      <p class="scene-class-comments">The type of filter used for filter importance sampling. a box filter with a width of 1 is analogous to disabling pixel filtering.</p>
+      <p class="scene-class-comments">The type of filter used for filter importance sampling. A box filter with a width of 1 is analogous to disabling pixel filtering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter.links heading=4-%}
@@ -478,7 +478,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 3.0
-      <p class="scene-class-comments">The overall extents, in pixels, of the pixel filter. larger values will result in softer images.</p>
+      <p class="scene-class-comments">The overall extents, in pixels, of the pixel filter. Larger values will result in softer images.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter_width.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter_width.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_filter_width.links heading=4-%}
@@ -503,7 +503,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Clamp material roughness along paths. a value of 1 clamps values to the maximum roughness encountered, while lower values temper the clamping value. 0 disables the effect. using this technique reduces fireflies from indirect caustics but is biased.</p>
+      <p class="scene-class-comments">Clamp material roughness along paths. A value of 1 clamps values to the maximum roughness encountered, while lower values temper the clamping value. 0 disables the effect. Using this technique reduces fireflies from indirect caustics but is biased.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.roughness_clamping_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.roughness_clamping_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.roughness_clamping_factor.links heading=4-%}
@@ -523,7 +523,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 10.0
-      <p class="scene-class-comments">Clamp sample radiance values to this maximum value (the feature is disabled if the value is 0.0). using this technique reduces fireflies, but is biased.</p>
+      <p class="scene-class-comments">Clamp sample radiance values to this maximum value (the feature is disabled if the value is 0.0). Using this technique reduces fireflies, but is biased.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sample_clamping_value.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sample_clamping_value.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sample_clamping_value.links heading=4-%}
@@ -663,7 +663,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Turns on/off propagation for ray visibility masks</p>
+      <p class="scene-class-comments">turns on/off propagation for ray visibility masks</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.propagate_visibility_bounce_type.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.propagate_visibility_bounce_type.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.propagate_visibility_bounce_type.links heading=4-%}
@@ -677,7 +677,7 @@ title: SceneVariables
           &nbsp;&nbsp;2 = &ldquo;On (Sine Compensation Alternative)&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;On (GGX Compensation Alternative)&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;On (Cosine Compensation Alternative&rdquo;<br>
-      <p class="scene-class-comments">Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "on uses a custom terminator softening method. cosine compensation" is chiang's 2019 siggraph technique.  "ggx" is estevez's raytracing gems technique.  "sine compensation" is a sine based modification of chiang's method. different scenes may work better with different techniques.  the recommendation is to start with the custom compensation on, then sine compensation technique, then ggx, then cosine.</p>
+      <p class="scene-class-comments">Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.shadow_terminator_fix.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.shadow_terminator_fix.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.shadow_terminator_fix.links heading=4-%}
@@ -692,7 +692,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">The window of the camera aperture. overrides image_width and image_height. ordered as xmin, ymin, xmax, and ymax, with origin at the bottom-left.</p>
+      <p class="scene-class-comments">The window of the camera aperture. Overrides image_width and image_height. Ordered as xmin, ymin, xmax, and ymax, with origin at the bottom-left.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.links heading=4-%}
@@ -722,7 +722,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Window that is rendered. overrides image width / height (and overrides aperture window override). order: xmin ymin xmax ymax, with origin at left bottom.</p>
+      <p class="scene-class-comments">Window that is rendered. Overrides image width / height (and overrides aperture window override). Order: xmin ymin xmax ymax, with origin at left bottom.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.links heading=4-%}
@@ -742,7 +742,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Subviewport of region window. coordinate (0,0) maps to left, bottom of region window</p>
+      <p class="scene-class-comments">Subviewport of region window. Coordinate (0,0) maps to left, bottom of region window</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.links heading=4-%}
@@ -832,7 +832,7 @@ title: SceneVariables
       <b>Metadata</b>
       <br>
       default: None
-      <p class="scene-class-comments">Metadata that is passed directly to the exr header. format: {"name", "type", "value"}</p>
+      <p class="scene-class-comments">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.exr_header_attributes.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.exr_header_attributes.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.exr_header_attributes.links heading=4-%}
@@ -847,7 +847,7 @@ title: SceneVariables
       <b>FloatVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Frame-relative time offsets for motion sampling</p>
+      <p class="scene-class-comments">frame-relative time offsets for motion sampling</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.motion_steps.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.motion_steps.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.motion_steps.links heading=4-%}
@@ -887,7 +887,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Define on-resume lua script name. this script is loaded into the renderer just after renderprep execution under resume render mode then executed. this script is not executed if non-resume render mode even if you set script name.renderer sets some lua global variables and lua script can access them. we can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. see details in rendering-wiki checkpoint/resume page. if empty, on-resume script execution is disabled.</p>
+      <p class="scene-class-comments">Define on-resume lua script name. This script is loaded into the renderer just after renderPrep execution under resume render mode then executed. This script is not executed if non-resume render mode even if you set script name.Renderer sets some lua global variables and lua script can access them. We can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. See details in rendering-wiki checkpoint/resume page. If empty, on-resume script execution is disabled.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.links heading=4-%}
@@ -897,7 +897,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Make aov output as resumable for resume render</p>
+      <p class="scene-class-comments">make aov output as resumable for resume render</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.resumable_output.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.resumable_output.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.resumable_output.links heading=4-%}
@@ -907,7 +907,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Resuming render process</p>
+      <p class="scene-class-comments">resuming render process</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.resume_render.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.resume_render.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.resume_render.links heading=4-%}
@@ -954,7 +954,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Forces all hair materials to sample each hair bsdf lobe independently. this will enable the lpe label syntax for 'hair r', 'hair tt', 'hair trt' and 'hair trrt ' but will result in slower rendering</p>
+      <p class="scene-class-comments">Forces all hair materials to sample each hair BSDF lobe independently. This will enable the LPE label syntax for 'hair R', 'hair TT', 'hair TRT' and 'hair TRRT ' but will result in slower rendering</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.disable_optimized_hair_sampling.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.disable_optimized_hair_sampling.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.disable_optimized_hair_sampling.links heading=4-%}
@@ -1054,7 +1054,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 8
-      <p class="scene-class-comments">The square root of the number of primary samples taken for each pixel in uniform sampling mode. for example, a value of 4 will result in 4*4 = 16 uniform pixel samples.</p>
+      <p class="scene-class-comments">The square root of the number of primary samples taken for each pixel in uniform sampling mode. For example, a value of 4 will result in 4*4 = 16 uniform pixel samples.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_samples.links heading=4-%}
@@ -1109,7 +1109,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.649999976158
-      <p class="scene-class-comments">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. dialing down the value generally results in more translucent look. this variable is only effective when "max volume depth" is greater than 1</p>
+      <p class="scene-class-comments">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.links heading=4-%}
@@ -1119,7 +1119,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.649999976158
-      <p class="scene-class-comments">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. dialing down the value generally results in a darker volume scattering look. this variable is only effective when "max volume depth" is greater than 1</p>
+      <p class="scene-class-comments">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.links heading=4-%}
@@ -1129,7 +1129,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 4
-      <p class="scene-class-comments">Sample number along the ray when computing volume scattering radiance towards the eye. set to 0 to turn off volume lighting completely.</p>
+      <p class="scene-class-comments">Sample number along the ray when computing volume scattering radiance towards the eye. Set to 0 to turn off volume lighting completely.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_illumination_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_illumination_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_illumination_samples.links heading=4-%}
@@ -1139,7 +1139,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.995000004768
-      <p class="scene-class-comments">As a ray travels through volume regions, it will accumulate the amount of opacity. when the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.</p>
+      <p class="scene-class-comments">As a ray travels through volume regions, it will accumulate the amount of opacity. When the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.links heading=4-%}
@@ -1151,7 +1151,7 @@ title: SceneVariables
           &nbsp;&nbsp;0 = &ldquo;sum&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;max&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;rnd&rdquo;<br>
-      <p class="scene-class-comments">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;warning: light linking does not work correctly in sum mode.</p>
+      <p class="scene-class-comments">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;Warning: light linking does not work correctly in sum mode.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_overlap_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_overlap_mode.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_overlap_mode.links heading=4-%}
@@ -1161,7 +1161,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Controls how phase function (anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. this variable is only effective when "max volume depth" is greater than 1</p>
+      <p class="scene-class-comments">Controls how phase function (anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_phase_attenuation_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_phase_attenuation_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_phase_attenuation_factor.links heading=4-%}
@@ -1171,7 +1171,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Controls the overall quality of volume rendering. the higher number gives better volume shape detail and more accurate scattering integration result.</p>
+      <p class="scene-class-comments">Controls the overall quality of volume rendering. The higher number gives better volume shape detail and more accurate scattering integration result.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_quality.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_quality.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_quality.links heading=4-%}
@@ -1181,7 +1181,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the quality of volume shadow (transmittance). the higher number gives more accurate volume shadow.</p>
+      <p class="scene-class-comments">Controls the quality of volume shadow (transmittance). The higher number gives more accurate volume shadow.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_shadow_quality.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_shadow_quality.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_shadow_quality.links heading=4-%}
@@ -1240,7 +1240,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 4096
-      <p class="scene-class-comments">When adaptive sampling is turned on, this represents the max number of samples we can throw at a pixel. it's best to err on the high side since adaptive sampling will cull out samples where they're not needed based on the target adaptive error, in which case we should rarely hit the max samples value.</p>
+      <p class="scene-class-comments">When adaptive sampling is turned on, this represents the max number of samples we can throw at a pixel. It's best to err on the high side since adaptive sampling will cull out samples where they're not needed based on the target adaptive error, in which case we should rarely hit the max samples value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.max_adaptive_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.max_adaptive_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.max_adaptive_samples.links heading=4-%}
@@ -1250,7 +1250,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 16
-      <p class="scene-class-comments">When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. this manifests itself as square 8x8 artifacts in the final image. the higher this value, the less the chance of this happening.</p>
+      <p class="scene-class-comments">When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. This manifests itself as square 8x8 artifacts in the final image. The higher this value, the less the chance of this happening.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.min_adaptive_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.min_adaptive_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.min_adaptive_samples.links heading=4-%}
@@ -1288,7 +1288,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 10.0
-      <p class="scene-class-comments">When adaptive sampling is turned on, this represents the desired quality of the output images. lower values will give higher quality but take longer to render. higher values will give lower quality but render quicker.</p>
+      <p class="scene-class-comments">When adaptive sampling is turned on, this represents the desired quality of the output images. Lower values will give higher quality but take longer to render. Higher values will give lower quality but render quicker.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.target_adaptive_error.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.target_adaptive_error.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.target_adaptive_error.links heading=4-%}
@@ -1298,7 +1298,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Selection of image file write uses two stage output logic or not. two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. this solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. temporary file directory is defined by tmp_dir scene_variable.</p>
+      <p class="scene-class-comments">Selection of image file write uses two stage output logic or not. Two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. This solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. Temporary file directory is defined by tmp_dir scene_variable.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.links heading=4-%}

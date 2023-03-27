@@ -23,7 +23,7 @@ title: FloatToRgbMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Blue channel</p>
+      <p class="scene-class-comments">Blue Channel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.B.images data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.B.videos data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.B.links heading=4-%}
@@ -33,7 +33,7 @@ title: FloatToRgbMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Green channel</p>
+      <p class="scene-class-comments">Green Channel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.G.images data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.G.videos data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.G.links heading=4-%}
@@ -43,7 +43,7 @@ title: FloatToRgbMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Red channel</p>
+      <p class="scene-class-comments">Red Channel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.R.images data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.R.videos data=site.data.user-reference.scene-objects.maps.FloatToRgbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.FloatToRgbMap.attributes.R.links heading=4-%}

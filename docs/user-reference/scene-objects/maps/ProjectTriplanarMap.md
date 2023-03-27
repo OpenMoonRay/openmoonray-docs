@@ -43,7 +43,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset</p>
+      <p class="scene-class-comments">2D offset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_offset.links heading=4-%}
@@ -53,7 +53,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation amount</p>
+      <p class="scene-class-comments">2D rotation amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_rotation.links heading=4-%}
@@ -63,7 +63,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d rotation center</p>
+      <p class="scene-class-comments">2D rotation center</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_rotation_center.links heading=4-%}
@@ -73,7 +73,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale</p>
+      <p class="scene-class-comments">2D scale</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_scale.links heading=4-%}
@@ -83,7 +83,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Swap the s and t directions.   same as a 90 degree rotation</p>
+      <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_swap_st.links heading=4-%}
@@ -128,7 +128,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset</p>
+      <p class="scene-class-comments">2D offset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_offset.links heading=4-%}
@@ -138,7 +138,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation amount</p>
+      <p class="scene-class-comments">2D rotation amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_rotation.links heading=4-%}
@@ -148,7 +148,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d rotation center</p>
+      <p class="scene-class-comments">2D rotation center</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_rotation_center.links heading=4-%}
@@ -158,7 +158,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale</p>
+      <p class="scene-class-comments">2D scale</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_scale.links heading=4-%}
@@ -168,7 +168,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Swap the s and t directions.   same as a 90 degree rotation</p>
+      <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_swap_st.links heading=4-%}
@@ -213,7 +213,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset</p>
+      <p class="scene-class-comments">2D offset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_offset.links heading=4-%}
@@ -223,7 +223,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation amount</p>
+      <p class="scene-class-comments">2D rotation amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_rotation.links heading=4-%}
@@ -233,7 +233,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d rotation center</p>
+      <p class="scene-class-comments">2D rotation center</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_rotation_center.links heading=4-%}
@@ -243,7 +243,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale</p>
+      <p class="scene-class-comments">2D scale</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_scale.links heading=4-%}
@@ -253,7 +253,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Swap the s and t directions.   same as a 90 degree rotation</p>
+      <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_swap_st.links heading=4-%}
@@ -298,7 +298,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset</p>
+      <p class="scene-class-comments">2D offset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_offset.links heading=4-%}
@@ -308,7 +308,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation amount</p>
+      <p class="scene-class-comments">2D rotation amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_rotation.links heading=4-%}
@@ -318,7 +318,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d rotation center</p>
+      <p class="scene-class-comments">2D rotation center</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_rotation_center.links heading=4-%}
@@ -328,7 +328,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale</p>
+      <p class="scene-class-comments">2D scale</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_scale.links heading=4-%}
@@ -338,7 +338,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Swap the s and t directions.   same as a 90 degree rotation</p>
+      <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_swap_st.links heading=4-%}
@@ -383,7 +383,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset</p>
+      <p class="scene-class-comments">2D offset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_offset.links heading=4-%}
@@ -393,7 +393,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation amount</p>
+      <p class="scene-class-comments">2D rotation amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_rotation.links heading=4-%}
@@ -403,7 +403,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d rotation center</p>
+      <p class="scene-class-comments">2D rotation center</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_rotation_center.links heading=4-%}
@@ -413,7 +413,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale</p>
+      <p class="scene-class-comments">2D scale</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_scale.links heading=4-%}
@@ -423,7 +423,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Swap the s and t directions.   same as a 90 degree rotation</p>
+      <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_swap_st.links heading=4-%}
@@ -468,7 +468,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d offset</p>
+      <p class="scene-class-comments">2D offset</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_offset.links heading=4-%}
@@ -478,7 +478,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">2d rotation amount</p>
+      <p class="scene-class-comments">2D rotation amount</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_rotation.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_rotation.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_rotation.links heading=4-%}
@@ -488,7 +488,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">2d rotation center</p>
+      <p class="scene-class-comments">2D rotation center</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_rotation_center.links heading=4-%}
@@ -498,7 +498,7 @@ title: ProjectTriplanarMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-comments">2d scale</p>
+      <p class="scene-class-comments">2D scale</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_scale.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_scale.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_scale.links heading=4-%}
@@ -508,7 +508,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Swap the s and t directions.   same as a 90 degree rotation</p>
+      <p class="scene-class-comments">Swap the s and t directions.   Same as a 90 degree rotation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_swap_st.links heading=4-%}
@@ -550,7 +550,7 @@ title: ProjectTriplanarMap
           &nbsp;&nbsp;0 = &ldquo;none&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;dSdx/dSdy&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;dTdx/dTdy&rdquo;<br>
-      <p class="scene-class-comments">For testing</p>
+      <p class="scene-class-comments">for testing</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.debug_mode.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.debug_mode.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.debug_mode.links heading=4-%}
@@ -562,7 +562,7 @@ title: ProjectTriplanarMap
           &nbsp;&nbsp;0 = &ldquo;off&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;on&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;auto&rdquo; (default)<br>
-      <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   auto will apply gamma decoding to 8-bit images</p>
+      <p class="scene-class-comments">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.gamma.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.gamma.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.gamma.links heading=4-%}
@@ -572,7 +572,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns this direction on/off.  output is black if off.</p>
+      <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_active.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_active.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_active.links heading=4-%}
@@ -582,7 +582,7 @@ title: ProjectTriplanarMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_texture.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_texture.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_x_texture.links heading=4-%}
@@ -592,7 +592,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns this direction on/off.  output is black if off.</p>
+      <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_active.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_active.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_active.links heading=4-%}
@@ -602,7 +602,7 @@ title: ProjectTriplanarMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_texture.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_texture.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_y_texture.links heading=4-%}
@@ -612,7 +612,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns this direction on/off.  output is black if off.</p>
+      <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_active.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_active.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_active.links heading=4-%}
@@ -622,7 +622,7 @@ title: ProjectTriplanarMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_texture.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_texture.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.negative_z_texture.links heading=4-%}
@@ -634,7 +634,7 @@ title: ProjectTriplanarMap
           &nbsp;&nbsp;1 = &ldquo;one&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;three&rdquo; (default)<br>
           &nbsp;&nbsp;6 = &ldquo;six&rdquo;<br>
-      <p class="scene-class-comments">Controls the number of active textures.   if set to 'one', only the 'pos x' texture settings will be used for all sides.   if set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   if set to 'six', each side has independent controls and texture.</p>
+      <p class="scene-class-comments">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.number_of_textures.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.number_of_textures.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.number_of_textures.links heading=4-%}
@@ -644,7 +644,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns this direction on/off.  output is black if off.</p>
+      <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_active.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_active.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_active.links heading=4-%}
@@ -654,7 +654,7 @@ title: ProjectTriplanarMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_texture.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_texture.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_x_texture.links heading=4-%}
@@ -664,7 +664,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns this direction on/off.  output is black if off.</p>
+      <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_active.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_active.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_active.links heading=4-%}
@@ -674,7 +674,7 @@ title: ProjectTriplanarMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_texture.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_texture.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_y_texture.links heading=4-%}
@@ -684,7 +684,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns this direction on/off.  output is black if off.</p>
+      <p class="scene-class-comments">Turns this direction on/off.  Output is black if off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_active.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_active.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_active.links heading=4-%}
@@ -694,7 +694,7 @@ title: ProjectTriplanarMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_texture.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_texture.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.positive_z_texture.links heading=4-%}
@@ -704,7 +704,7 @@ title: ProjectTriplanarMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">The transform to use for projection</p>
+      <p class="scene-class-comments">the transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.projection_matrix.links heading=4-%}
@@ -726,7 +726,7 @@ title: ProjectTriplanarMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">The object whose transform to use for projection</p>
+      <p class="scene-class-comments">the object whose transform to use for projection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.projector.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.projector.links heading=4-%}
@@ -746,7 +746,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Rnd flipping in s or t for each active texture</p>
+      <p class="scene-class-comments">Rnd flipping in S or T for each active texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.randomize_flip.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.randomize_flip.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.randomize_flip.links heading=4-%}
@@ -756,7 +756,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Rnd offset in s or t for each active texture</p>
+      <p class="scene-class-comments">Rnd offset in S or T for each active texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.randomize_offset.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.randomize_offset.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.randomize_offset.links heading=4-%}
@@ -811,7 +811,7 @@ title: ProjectTriplanarMap
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Controls blending of per-axis projections.   valid range is 0.0 (no blending) to 1.0 (max blending)</p>
+      <p class="scene-class-comments">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.transition_width.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.transition_width.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.transition_width.links heading=4-%}
@@ -831,7 +831,7 @@ title: ProjectTriplanarMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Project onto reference positions ('ref_p') and normals ('ref_n')</p>
+      <p class="scene-class-comments">Project onto reference positions ('ref_P') and normals ('ref_N')</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectTriplanarMap.attributes.use_reference_space.links heading=4-%}

@@ -48,7 +48,7 @@ title: ClampDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput to clamp</p>
+      <p class="scene-class-comments">RenderOutput to clamp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.input.links heading=4-%}
@@ -58,7 +58,7 @@ title: ClampDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ClampDisplayFilter.attributes.mask.links heading=4-%}

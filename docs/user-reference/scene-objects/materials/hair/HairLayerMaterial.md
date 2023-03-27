@@ -51,7 +51,7 @@ title: HairLayerMaterial
       <b>Map</b>
       <br>
       default: None
-      <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
+      <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.extra_aovs.links heading=4-%}
@@ -61,7 +61,7 @@ title: HairLayerMaterial
       <b>DwaBaseHairLayerable</b>
       <br>
       default: None
-      <p class="scene-class-comments">Foreground hair material</p>
+      <p class="scene-class-comments">foreground hair material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_A.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_A.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_A.links heading=4-%}
@@ -71,7 +71,7 @@ title: HairLayerMaterial
       <b>DwaBaseHairLayerable</b>
       <br>
       default: None
-      <p class="scene-class-comments">Background hair material</p>
+      <p class="scene-class-comments">background hair material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.links heading=4-%}
@@ -81,7 +81,7 @@ title: HairLayerMaterial
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Label used in material and light aovs</p>
+      <p class="scene-class-comments">label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.label.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.label.links heading=4-%}
@@ -91,7 +91,7 @@ title: HairLayerMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Foreground hair material weight</p>
+      <p class="scene-class-comments">foreground hair material weight</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.mask.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.mask.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.mask.links heading=4-%}
@@ -101,7 +101,7 @@ title: HairLayerMaterial
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.priority.links heading=4-%}

@@ -23,7 +23,7 @@ title: UsdPrimvarReader_float2
       <b>Vec2f</b> <i>bindable</i>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-comments">Fallback value to be returned if geometry fetch failed.</p>
+      <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_float2.attributes.fallback.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_float2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_float2.attributes.fallback.videos data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_float2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_float2.attributes.fallback.links heading=4-%}

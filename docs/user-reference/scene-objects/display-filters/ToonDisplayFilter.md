@@ -76,7 +76,7 @@ title: ToonDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput that represents diffuse albedo material aov</p>
+      <p class="scene-class-comments">RenderOutput that represents diffuse albedo material aov</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_albedo.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_albedo.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_albedo.links heading=4-%}
@@ -86,7 +86,7 @@ title: ToonDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput with 'depth' result</p>
+      <p class="scene-class-comments">RenderOutput with 'depth' result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_depth.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_depth.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_depth.links heading=4-%}
@@ -96,7 +96,7 @@ title: ToonDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput that represents diffuse reflection lpe</p>
+      <p class="scene-class-comments">RenderOutput that represents diffuse reflection LPE</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_diffuse.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_diffuse.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_diffuse.links heading=4-%}
@@ -106,7 +106,7 @@ title: ToonDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput that represents glossy reflection lpe</p>
+      <p class="scene-class-comments">RenderOutput that represents glossy reflection LPE</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_glossy.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_glossy.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_glossy.links heading=4-%}
@@ -116,7 +116,7 @@ title: ToonDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput with 'normal' result</p>
+      <p class="scene-class-comments">RenderOutput with 'normal' result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_normal.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_normal.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.input_normal.links heading=4-%}

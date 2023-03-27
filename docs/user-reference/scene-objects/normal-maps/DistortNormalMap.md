@@ -54,7 +54,7 @@ title: DistortNormalMap
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls amplitude of u distortion</p>
+      <p class="scene-class-comments">controls amplitude of U distortion</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.amplitude_U.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.amplitude_U.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.amplitude_U.links heading=4-%}
@@ -64,7 +64,7 @@ title: DistortNormalMap
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls amplitude of v distortion</p>
+      <p class="scene-class-comments">controls amplitude of V distortion</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.amplitude_V.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.amplitude_V.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.amplitude_V.links heading=4-%}
@@ -74,7 +74,7 @@ title: DistortNormalMap
       <b>Vec3f</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Controls noise frequency for u distortion</p>
+      <p class="scene-class-comments">controls noise frequency for U distortion</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.frequency_U.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.frequency_U.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.frequency_U.links heading=4-%}
@@ -84,7 +84,7 @@ title: DistortNormalMap
       <b>Vec3f</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Controls noise frequency for v distortion</p>
+      <p class="scene-class-comments">controls noise frequency for V distortion</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.frequency_V.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.frequency_V.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.frequency_V.links heading=4-%}
@@ -94,7 +94,7 @@ title: DistortNormalMap
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Input u / tangent for distortion</p>
+      <p class="scene-class-comments">input U / tangent for distortion</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_U.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_U.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_U.links heading=4-%}
@@ -104,7 +104,7 @@ title: DistortNormalMap
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Input v / bitangent for distortion</p>
+      <p class="scene-class-comments">input V / bitangent for distortion</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_V.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_V.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_V.links heading=4-%}
@@ -114,7 +114,7 @@ title: DistortNormalMap
       <b>NormalMap</b>
       <br>
       default: None
-      <p class="scene-class-comments">Optional input to distort. if not connected, use geom normals</p>
+      <p class="scene-class-comments">optional input to distort. if not connected, use geom normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_normals.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_normals.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.input_normals.links heading=4-%}
@@ -124,7 +124,7 @@ title: DistortNormalMap
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">The seed for the noise generation</p>
+      <p class="scene-class-comments">the seed for the noise generation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.seed.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.seed.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.seed.links heading=4-%}
@@ -134,7 +134,7 @@ title: DistortNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">When checked, use input_u and v. otherwise use geometry dpds/t</p>
+      <p class="scene-class-comments">when checked, use input_U and V. otherwise use geometry dPds/t</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.use_input_vectors.images data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.use_input_vectors.videos data=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.DistortNormalMap.attributes.use_input_vectors.links heading=4-%}

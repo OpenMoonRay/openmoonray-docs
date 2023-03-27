@@ -23,7 +23,7 @@ title: UsdUVTexture
       <b>Rgb</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Bias to be applied to all components of the texture.  output = texturevalue * scale + bias</p>
+      <p class="scene-class-comments">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.bias.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.bias.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.bias.links heading=4-%}
@@ -67,7 +67,7 @@ title: UsdUVTexture
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Scale to be applied to all components of the texture.  output = texturevalue * scale + bias</p>
+      <p class="scene-class-comments">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.scale.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.scale.links heading=4-%}
@@ -109,7 +109,7 @@ title: UsdUVTexture
       <b>Int</b>
       <br>
       default: 10
-      <p class="scene-class-comments">Udim maximum v value</p>
+      <p class="scene-class-comments">udim maximum v value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.links heading=4-%}

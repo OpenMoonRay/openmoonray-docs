@@ -38,7 +38,7 @@ title: OpenVdbMap
       <b>Rgb</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">A default value to use when a) the .vdb file is not found, b) the requested grid is not found, c) the grid is unspecified, but no grid is found</p>
+      <p class="scene-class-comments">A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.default_value.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.default_value.videos data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.default_value.links heading=4-%}
@@ -48,7 +48,7 @@ title: OpenVdbMap
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). if no grid is specified, the first grid found in the .vdb will be used.  in cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+      <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.grid_name.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.grid_name.videos data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.grid_name.links heading=4-%}
@@ -80,7 +80,7 @@ title: OpenVdbMap
       <b>Geometry</b>
       <br>
       default: None
-      <p class="scene-class-comments">The openvdbgeometry object from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from openvdbgeometry'</p>
+      <p class="scene-class-comments">The OpenVdbGeometry object from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.openvdb_geometry.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.openvdb_geometry.videos data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.openvdb_geometry.links heading=4-%}
@@ -90,7 +90,7 @@ title: OpenVdbMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables a warning message when a) the .vdb file is not found, b) the requested grid is not found, c) the grid is unspecified, but no grid is found</p>
+      <p class="scene-class-comments">Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.show_warnings.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.show_warnings.videos data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.show_warnings.links heading=4-%}
@@ -123,7 +123,7 @@ title: OpenVdbMap
       <br>
           &nbsp;&nbsp;0 = &ldquo;from texture&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;from OpenVdbGeometry&rdquo;<br>
-      <p class="scene-class-comments">Where to look for the vdb filename.  choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  choose 'from openvdbgeometry' to use the .vdb filename and transform from an openvdbgeometry object in the scene using the 'openvdb geometry' attribute</p>
+      <p class="scene-class-comments">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.vdb_source.images data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.vdb_source.videos data=site.data.user-reference.scene-objects.maps.OpenVdbMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpenVdbMap.attributes.vdb_source.links heading=4-%}

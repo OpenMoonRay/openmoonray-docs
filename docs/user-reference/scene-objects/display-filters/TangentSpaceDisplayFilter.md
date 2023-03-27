@@ -48,7 +48,7 @@ title: TangentSpaceDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Connect a renderoutput with state n aov here. used to construct tangent space.</p>
+      <p class="scene-class-comments">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.N.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.N.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.N.links heading=4-%}
@@ -58,7 +58,7 @@ title: TangentSpaceDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Connect a renderoutput with state dpds aov here. used to construct tangent space.</p>
+      <p class="scene-class-comments">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.dPds.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.dPds.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.dPds.links heading=4-%}
@@ -68,7 +68,7 @@ title: TangentSpaceDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput to transform into tangent space</p>
+      <p class="scene-class-comments">RenderOutput to transform into tangent space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.input.links heading=4-%}
@@ -78,7 +78,7 @@ title: TangentSpaceDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.TangentSpaceDisplayFilter.attributes.mask.links heading=4-%}

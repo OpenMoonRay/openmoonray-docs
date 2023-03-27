@@ -80,7 +80,7 @@ title: VdbVolume
           &nbsp;&nbsp;0 = &ldquo;default&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;divisions&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;voxel size&rdquo;<br>
-      <p class="scene-class-comments">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. for shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
+      <p class="scene-class-comments">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_resolution_mode.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_resolution_mode.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_resolution_mode.links heading=4-%}
@@ -100,7 +100,7 @@ title: VdbVolume
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Label used in light aovs</p>
+      <p class="scene-class-comments">label used in light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.label.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.label.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.label.links heading=4-%}
@@ -110,7 +110,7 @@ title: VdbVolume
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and z</p>
+      <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.links heading=4-%}

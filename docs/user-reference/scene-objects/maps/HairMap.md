@@ -43,7 +43,7 @@ title: HairMap
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Bound image map must have a haircolumnuvmap bound to its input texture coordinates.</p>
+      <p class="scene-class-comments">Bound image map must have a HairColumnUvMap bound to its input texture coordinates.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.images data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.videos data=site.data.user-reference.scene-objects.maps.HairMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.HairMap.attributes.column_uv_color.links heading=4-%}

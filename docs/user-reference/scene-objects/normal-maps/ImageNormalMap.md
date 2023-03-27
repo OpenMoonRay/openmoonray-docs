@@ -43,7 +43,7 @@ title: ImageNormalMap
       <b>Vec2f</b>
       <br>
       default: [ 0.5, 0.5 ]
-      <p class="scene-class-comments">Uv coordinate around which to rotate</p>
+      <p class="scene-class-comments">UV coordinate around which to rotate</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.rotation_center.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.rotation_center.videos data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.rotation_center.links heading=4-%}
@@ -73,7 +73,7 @@ title: ImageNormalMap
       <b>Int</b>
       <br>
       default: 10
-      <p class="scene-class-comments">Udim maximum v value</p>
+      <p class="scene-class-comments">udim maximum v value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_max_v.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_max_v.videos data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.udim_max_v.links heading=4-%}
@@ -98,7 +98,7 @@ title: ImageNormalMap
       <b>Vec3f</b>
       <br>
       default: [ 0, 0, 1 ]
-      <p class="scene-class-comments">Default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
+      <p class="scene-class-comments">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.default_value.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.default_value.videos data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.default_value.links heading=4-%}
@@ -119,7 +119,7 @@ title: ImageNormalMap
       <br>
           &nbsp;&nbsp;0 = &ldquo;[0,1]&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;[-1,1]&rdquo;<br>
-      <p class="scene-class-comments">Most normal maps are encoded [0,1]. only certain rare floating point normal maps are encoded [-1,1]</p>
+      <p class="scene-class-comments">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.normal_encoding.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.normal_encoding.videos data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.normal_encoding.links heading=4-%}
@@ -129,7 +129,7 @@ title: ImageNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.tangent_space_normal_texture.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.tangent_space_normal_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.tangent_space_normal_texture.links heading=4-%}

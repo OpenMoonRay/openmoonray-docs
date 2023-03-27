@@ -48,7 +48,7 @@ title: DiscretizeDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput to discretize</p>
+      <p class="scene-class-comments">RenderOutput to discretize</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter.attributes.input.links heading=4-%}
@@ -58,7 +58,7 @@ title: DiscretizeDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DiscretizeDisplayFilter.attributes.mask.links heading=4-%}

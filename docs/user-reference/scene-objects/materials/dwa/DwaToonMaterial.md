@@ -23,7 +23,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Warning: experimental and must be used with max_depth: 0 and only for non-photoreal looks. prevents culling of lights so surfaces can be lit purely with respect to the shading normal irrespective of geometry</p>
+      <p class="scene-class-comments">WARNING: Experimental and must be used with max_depth: 0 and only for non-photoreal looks. Prevents culling of lights so surfaces can be lit purely with respect to the shading normal irrespective of geometry</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.prevent_light_culling.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.prevent_light_culling.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.prevent_light_culling.links heading=4-%}
@@ -33,7 +33,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Enables/disables specular reflections (binary 0|1 for plausibility)</p>
+      <p class="scene-class-comments">enables/disables specular reflections (binary 0|1 for plausibility)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular.links heading=4-%}
@@ -43,7 +43,7 @@ title: DwaToonMaterial
       <b>TraceSet</b>
       <br>
       default: None
-      <p class="scene-class-comments">Set of geometries that contribute neighboring subsurface points. by default, only the geometry associated with this material contributes to subsurface. if you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+      <p class="scene-class-comments">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.sss_trace_set.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.sss_trace_set.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.sss_trace_set.links heading=4-%}
@@ -58,7 +58,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Enables/disables clearcoat (binary 0|1 for plausibility)</p>
+      <p class="scene-class-comments">enables/disables clearcoat (binary 0|1 for plausibility)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat.links heading=4-%}
@@ -68,7 +68,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0.5, 0.5, 0.5 ]
-      <p class="scene-class-comments">The attenuation color of the clearcoat when 'cleacoat thickness' &gt; 0</p>
+      <p class="scene-class-comments">the attenuation color of the clearcoat when 'cleacoat thickness' &gt; 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_attenuation_color.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_attenuation_color.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_attenuation_color.links heading=4-%}
@@ -78,7 +78,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">(advanced, recommended on) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat</p>
+      <p class="scene-class-comments">(advanced, recommended ON) bends rays based on the clearcoat-refractive-index before evaluating the lobes under clearcoat</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_bending.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_bending.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_bending.links heading=4-%}
@@ -89,7 +89,7 @@ title: DwaToonMaterial
       <br>
           &nbsp;&nbsp;0 = &ldquo;Beckmann&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;GGX&rdquo; (default)<br>
-      <p class="scene-class-comments">Sets the normal distribution function for clearcoat.  ggx is currently isotropic only</p>
+      <p class="scene-class-comments">sets the normal distribution function for clearcoat.  GGX is currently isotropic only</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_model.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_model.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_model.links heading=4-%}
@@ -99,7 +99,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the amount of infuence of the alternate clearcoat normal</p>
+      <p class="scene-class-comments">controls the amount of infuence of the alternate clearcoat normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_normal_dial.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_normal_dial.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_normal_dial.links heading=4-%}
@@ -109,7 +109,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 1.5
-      <p class="scene-class-comments">Defines the fresnel behavior</p>
+      <p class="scene-class-comments">defines the Fresnel behavior</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_refractive_index.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_refractive_index.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_refractive_index.links heading=4-%}
@@ -119,7 +119,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.10000000149
-      <p class="scene-class-comments">The roughness of the clearcoat lobe</p>
+      <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.links heading=4-%}
@@ -129,7 +129,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">The thickness of the virtual clearcoat layer. values &gt; 0 enable absorption</p>
+      <p class="scene-class-comments">the thickness of the virtual clearcoat layer. Values &gt; 0 enable absorption</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_thickness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_thickness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_thickness.links heading=4-%}
@@ -139,7 +139,7 @@ title: DwaToonMaterial
       <b>NormalMap</b>
       <br>
       default: None
-      <p class="scene-class-comments">Specifies an independent shading normal (normal map) for the clearcoat lobe</p>
+      <p class="scene-class-comments">specifies an independent shading normal (normal map) for the clearcoat lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_clearcoat_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_clearcoat_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_clearcoat_normal.links heading=4-%}
@@ -149,7 +149,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables/disables clearcoat</p>
+      <p class="scene-class-comments">enables/disables clearcoat</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_clearcoat.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_clearcoat.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_clearcoat.links heading=4-%}
@@ -159,7 +159,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Specifies whether the clearcoat lobe should use an independent normal</p>
+      <p class="scene-class-comments">specifies whether the clearcoat lobe should use an independent normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_clearcoat_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_clearcoat_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_clearcoat_normal.links heading=4-%}
@@ -174,7 +174,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Allows continuation of caustic light paths.</p>
+      <p class="scene-class-comments">allows continuation of caustic light paths.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.casts_caustics.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.casts_caustics.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.casts_caustics.links heading=4-%}
@@ -184,7 +184,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the visibility of this object. useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+      <p class="scene-class-comments">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.presence.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.presence.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.presence.links heading=4-%}
@@ -194,7 +194,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables proper shading of infinitely thin geometry such as paper or leaves.</p>
+      <p class="scene-class-comments">enables proper shading of infinitely thin geometry such as paper or leaves.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.thin_geometry.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.thin_geometry.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.thin_geometry.links heading=4-%}
@@ -209,7 +209,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">The overall surface color as seen from a distance (ie. diffuse color)</p>
+      <p class="scene-class-comments">the overall surface color as seen from a distance (ie. diffuse color)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.albedo.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.albedo.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.albedo.links heading=4-%}
@@ -221,7 +221,7 @@ title: DwaToonMaterial
           &nbsp;&nbsp;0 = &ldquo;normalized diffusion&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;dipole&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;random walk&rdquo;<br>
-      <p class="scene-class-comments">0 for normalizeddiffuse, 1 for dipole, 2 for random walk</p>
+      <p class="scene-class-comments">0 for NormalizedDiffuse, 1 for Dipole, 2 for random walk</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.bssrdf.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.bssrdf.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.bssrdf.links heading=4-%}
@@ -272,7 +272,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Roughness of the diffuse shading.  if the value is zero a lambertian model is used.  if it's above zero the oren nayar model is used.   not compatible with subsurface scattering.</p>
+      <p class="scene-class-comments">Roughness of the diffuse shading.  If the value is zero a Lambertian model is used.  If it's above zero the Oren Nayar model is used.   Not compatible with subsurface scattering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_roughness.links heading=4-%}
@@ -282,7 +282,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Multiplier on the amount of light that is transmitted through the surface.</p>
+      <p class="scene-class-comments">multiplier on the amount of light that is transmitted through the surface.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_transmission.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_transmission.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_transmission.links heading=4-%}
@@ -303,7 +303,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">The color/amount of light that is transmitted through the surface.</p>
+      <p class="scene-class-comments">the color/amount of light that is transmitted through the surface.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_transmission_color.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_transmission_color.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_transmission_color.links heading=4-%}
@@ -313,7 +313,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables sampling the normal map for sss samples. more accurate but potentially expensive</p>
+      <p class="scene-class-comments">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.enable_sss_input_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.enable_sss_input_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.enable_sss_input_normal.links heading=4-%}
@@ -323,7 +323,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Extends the last ramp color to unlit portions. important: only works in conjuction with prevent_light_culling on and visible_shadows off</p>
+      <p class="scene-class-comments">Extends the last ramp color to unlit portions. IMPORTANT: Only works in conjuction with prevent_light_culling ON and visible_shadows OFF</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.extend_ramp.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.extend_ramp.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.extend_ramp.links heading=4-%}
@@ -333,7 +333,7 @@ title: DwaToonMaterial
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
+      <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.interpolations.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.interpolations.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.interpolations.links heading=4-%}
@@ -343,7 +343,7 @@ title: DwaToonMaterial
       <b>FloatVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Ramp positions, maximum 10 allowed</p>
+      <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.positions.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.positions.links heading=4-%}
@@ -553,7 +553,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Tries to resolve self-intersecting geometry automatically by only evaluating 'exiting' intersections for subsurface evaluations</p>
+      <p class="scene-class-comments">tries to resolve self-intersecting geometry automatically by only evaluating 'exiting' intersections for subsurface evaluations</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.resolve_self_intersections.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.resolve_self_intersections.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.resolve_self_intersections.links heading=4-%}
@@ -563,7 +563,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">The subsurface scattering 'falloff' color</p>
+      <p class="scene-class-comments">the subsurface scattering 'falloff' color</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.scattering_color.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.scattering_color.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.scattering_color.links heading=4-%}
@@ -573,7 +573,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">The distance the light scatters beneath the surface. when 0 surface diffuse (lambertian or toon) is used</p>
+      <p class="scene-class-comments">the distance the light scatters beneath the surface. When 0 surface diffuse (lambertian or toon) is used</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.scattering_radius.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.scattering_radius.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.scattering_radius.links heading=4-%}
@@ -583,7 +583,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Enables/disables diffuse reflectance</p>
+      <p class="scene-class-comments">enables/disables diffuse reflectance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_diffuse.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_diffuse.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_diffuse.links heading=4-%}
@@ -593,7 +593,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0500000007451
-      <p class="scene-class-comments">Controls how the diffuse ligthing falls off.  values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away</p>
+      <p class="scene-class-comments">Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.links heading=4-%}
@@ -608,7 +608,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">The energy emitted from this material</p>
+      <p class="scene-class-comments">the energy emitted from this material</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.emission.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.emission.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.emission.links heading=4-%}
@@ -618,7 +618,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables/disable emission</p>
+      <p class="scene-class-comments">enables/disable emission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_emission.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_emission.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_emission.links heading=4-%}
@@ -633,7 +633,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Fuzz mask</p>
+      <p class="scene-class-comments">fuzz mask</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz.links heading=4-%}
@@ -653,7 +653,7 @@ title: DwaToonMaterial
       <b>NormalMap</b>
       <br>
       default: None
-      <p class="scene-class-comments">Specifies an independent shading normal (normal map) for the fuzz lobe</p>
+      <p class="scene-class-comments">specifies an independent shading normal (normal map) for the fuzz lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz_normal.links heading=4-%}
@@ -663,7 +663,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the amount of infuence of the alternate fuzz normal</p>
+      <p class="scene-class-comments">controls the amount of infuence of the alternate fuzz normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz_normal_dial.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz_normal_dial.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.fuzz_normal_dial.links heading=4-%}
@@ -708,7 +708,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Enables/disables glitter model (binary 0|1 for plausibility)</p>
+      <p class="scene-class-comments">enables/disables glitter model (binary 0|1 for plausibility)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter.links heading=4-%}
@@ -718,7 +718,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
+      <p class="scene-class-comments">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_LOD_quality.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_LOD_quality.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_LOD_quality.links heading=4-%}
@@ -728,7 +728,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Use an approximation to shade glitter for non-mirror secondary rays</p>
+      <p class="scene-class-comments">use an approximation to shade glitter for non-mirror secondary rays</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_approximate_for_secondary_rays.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_approximate_for_secondary_rays.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_approximate_for_secondary_rays.links heading=4-%}
@@ -738,7 +738,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Base flake color (use physical metallic color values)</p>
+      <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_A.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_A.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_A.links heading=4-%}
@@ -748,7 +748,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Base flake color (use physical metallic color values)</p>
+      <p class="scene-class-comments">base flake color (use physical metallic color values)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_B.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_B.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_B.links heading=4-%}
@@ -758,7 +758,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
+      <p class="scene-class-comments">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_hue_variation.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_hue_variation.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_hue_variation.links heading=4-%}
@@ -768,7 +768,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Introduce saturation variation in flake color centered at the base flake color's saturation</p>
+      <p class="scene-class-comments">introduce saturation variation in flake color centered at the base flake color's saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_saturation_variation.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_saturation_variation.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_saturation_variation.links heading=4-%}
@@ -778,7 +778,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Introduce value variation in flake color centered at the base flake color's value</p>
+      <p class="scene-class-comments">introduce value variation in flake color centered at the base flake color's value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_value_variation.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_value_variation.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_color_value_variation.links heading=4-%}
@@ -788,7 +788,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">(in referencespace) compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
+      <p class="scene-class-comments">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_compensate_reference_space_deformation.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_compensate_reference_space_deformation.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_compensate_reference_space_deformation.links heading=4-%}
@@ -803,7 +803,7 @@ title: DwaToonMaterial
           &nbsp;&nbsp;3 = &ldquo;averageColor&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;footprintArea&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;radius&rdquo;<br>
-      <p class="scene-class-comments">Developer debug visualization modes</p>
+      <p class="scene-class-comments">developer debug visualization modes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_debug_mode.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_debug_mode.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_debug_mode.links heading=4-%}
@@ -813,7 +813,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the number of flakes per unit length; larger density packs more flakes into same space</p>
+      <p class="scene-class-comments">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_density.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_density.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_density.links heading=4-%}
@@ -834,7 +834,7 @@ title: DwaToonMaterial
       <br>
           &nbsp;&nbsp;0 = &ldquo;physical&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;additive&rdquo;<br>
-      <p class="scene-class-comments">Layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
+      <p class="scene-class-comments">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_layering_mode.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_layering_mode.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_layering_mode.links heading=4-%}
@@ -844,7 +844,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Randomness of flake orientation</p>
+      <p class="scene-class-comments">randomness of flake orientation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_randomness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_randomness.links heading=4-%}
@@ -854,7 +854,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 0.140000000596
-      <p class="scene-class-comments">Specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+      <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.links heading=4-%}
@@ -864,7 +864,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 0.140000000596
-      <p class="scene-class-comments">Specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+      <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.links heading=4-%}
@@ -884,7 +884,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Size of the flakes.  apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+      <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_size_A.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_size_A.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_size_A.links heading=4-%}
@@ -894,7 +894,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Size of the flakes.  apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+      <p class="scene-class-comments">size of the flakes.  Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_size_B.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_size_B.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_size_B.links heading=4-%}
@@ -935,7 +935,7 @@ title: DwaToonMaterial
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_A.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_A.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_A.links heading=4-%}
@@ -945,7 +945,7 @@ title: DwaToonMaterial
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_B.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_B.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_B.links heading=4-%}
@@ -955,7 +955,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 0.15000000596
-      <p class="scene-class-comments">Randomly orient each texture</p>
+      <p class="scene-class-comments">randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.links heading=4-%}
@@ -980,7 +980,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Controls the strength of the iridescence effect</p>
+      <p class="scene-class-comments">controls the strength of the iridescence effect</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence.links heading=4-%}
@@ -1022,7 +1022,7 @@ title: DwaToonMaterial
       <br>
           &nbsp;&nbsp;0 = &ldquo;use hue interpolation&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;use ramp&rdquo;<br>
-      <p class="scene-class-comments">Use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
+      <p class="scene-class-comments">use hue interpolation: automatically cycles through hue wheel, use ramp: user specified color ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_color_control.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_color_control.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_color_control.links heading=4-%}
@@ -1052,7 +1052,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Flip interpolation around the hue wheel to counter-clockwise direction</p>
+      <p class="scene-class-comments">flip interpolation around the hue wheel to counter-clockwise direction</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_flip_hue_direction.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_flip_hue_direction.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_flip_hue_direction.links heading=4-%}
@@ -1062,7 +1062,7 @@ title: DwaToonMaterial
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
+      <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_interpolations.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_interpolations.links heading=4-%}
@@ -1072,7 +1072,7 @@ title: DwaToonMaterial
       <b>FloatVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Ramp positions</p>
+      <p class="scene-class-comments">ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_positions.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_positions.links heading=4-%}
@@ -1093,7 +1093,7 @@ title: DwaToonMaterial
       <br>
           &nbsp;&nbsp;0 = &ldquo;RGB&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;HSV&rdquo;<br>
-      <p class="scene-class-comments">Rgb: lerp in rgb space which matches ui preview but can lose saturation, hsv: lerp in hsv space which preserves saturation</p>
+      <p class="scene-class-comments">RGB: lerp in RGB space which matches UI preview but can lose saturation, HSV: lerp in HSV space which preserves saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_ramp_interpolation_mode.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_ramp_interpolation_mode.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.iridescence_ramp_interpolation_mode.links heading=4-%}
@@ -1128,7 +1128,7 @@ title: DwaToonMaterial
       <b>NormalMap</b>
       <br>
       default: None
-      <p class="scene-class-comments">Specifies an alternate shading normal in the tangent frame (normal map)</p>
+      <p class="scene-class-comments">specifies an alternate shading normal in the tangent frame (normal map)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.input_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.input_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.input_normal.links heading=4-%}
@@ -1138,7 +1138,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the amount of influence of the alternate normal</p>
+      <p class="scene-class-comments">controls the amount of influence of the alternate normal</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.input_normal_dial.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.input_normal_dial.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.input_normal_dial.links heading=4-%}
@@ -1153,7 +1153,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls the amount roughness compensation from the normal map aa strategy.</p>
+      <p class="scene-class-comments">Controls the amount roughness compensation from the normal map AA strategy.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.normal_AA_dial.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.normal_AA_dial.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.normal_AA_dial.links heading=4-%}
@@ -1179,7 +1179,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Controls the shape of the primary reflection</p>
+      <p class="scene-class-comments">controls the shape of the primary reflection</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.anisotropy.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.anisotropy.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.anisotropy.links heading=4-%}
@@ -1189,7 +1189,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Enables/disables metallic model (binary 0|1 for plausibility)</p>
+      <p class="scene-class-comments">enables/disables metallic model (binary 0|1 for plausibility)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic.links heading=4-%}
@@ -1199,7 +1199,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">The overall reflection color, defines fresnel behavior</p>
+      <p class="scene-class-comments">the overall reflection color, defines Fresnel behavior</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic_color.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic_color.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic_color.links heading=4-%}
@@ -1209,7 +1209,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">The reflection color at grazing angles, defines fresnel behavior</p>
+      <p class="scene-class-comments">the reflection color at grazing angles, defines Fresnel behavior</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic_edge_color.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic_edge_color.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.metallic_edge_color.links heading=4-%}
@@ -1219,7 +1219,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 1.5
-      <p class="scene-class-comments">Defines the fresnel behavior (affects only refraction when model is toon)</p>
+      <p class="scene-class-comments">defines the Fresnel behavior (affects only refraction when model is Toon)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.refractive_index.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.refractive_index.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.refractive_index.links heading=4-%}
@@ -1229,7 +1229,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
-      <p class="scene-class-comments">The roughness of the surface</p>
+      <p class="scene-class-comments">the roughness of the surface</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.roughness.links heading=4-%}
@@ -1239,7 +1239,7 @@ title: DwaToonMaterial
       <b>Vec2f</b> <i>bindable</i>
       <br>
       default: [ 1, 0 ]
-      <p class="scene-class-comments">Controls the orientation of anistropy</p>
+      <p class="scene-class-comments">controls the orientation of anistropy</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.shading_tangent.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.shading_tangent.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.shading_tangent.links heading=4-%}
@@ -1249,7 +1249,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Enables/disables specular reflections</p>
+      <p class="scene-class-comments">enables/disables specular reflections</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_specular.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_specular.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_specular.links heading=4-%}
@@ -1261,7 +1261,7 @@ title: DwaToonMaterial
           &nbsp;&nbsp;0 = &ldquo;Beckmann&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;GGX&rdquo; (default)<br>
           &nbsp;&nbsp;2 = &ldquo;Toon&rdquo;<br>
-      <p class="scene-class-comments">Sets the normal distribution function for specular.  ggx is currently isotropic only</p>
+      <p class="scene-class-comments">sets the normal distribution function for specular.  GGX is currently isotropic only</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular_model.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular_model.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular_model.links heading=4-%}
@@ -1271,7 +1271,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables indirect ggx reflections for toon specular model</p>
+      <p class="scene-class-comments">enables indirect GGX reflections for toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_indirect_reflections.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_indirect_reflections.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_indirect_reflections.links heading=4-%}
@@ -1281,7 +1281,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Enables sampling the normal map for toon toon specular</p>
+      <p class="scene-class-comments">enables sampling the normal map for toon toon specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_input_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_input_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_input_normal.links heading=4-%}
@@ -1291,7 +1291,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">The intensity for the indirect reflections of the toon specular model</p>
+      <p class="scene-class-comments">the intensity for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_indirect_reflections_intensity.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_indirect_reflections_intensity.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_indirect_reflections_intensity.links heading=4-%}
@@ -1301,7 +1301,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
-      <p class="scene-class-comments">The roughness for the indirect reflections of the toon specular model</p>
+      <p class="scene-class-comments">the roughness for the indirect reflections of the toon specular model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_indirect_reflections_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_indirect_reflections_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_indirect_reflections_roughness.links heading=4-%}
@@ -1311,7 +1311,7 @@ title: DwaToonMaterial
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Input u / tangent for specular stretch</p>
+      <p class="scene-class-comments">input U / tangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_U.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_U.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_U.links heading=4-%}
@@ -1321,7 +1321,7 @@ title: DwaToonMaterial
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Input v / bitangent for specular stretch</p>
+      <p class="scene-class-comments">input V / bitangent for specular stretch</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_V.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_V.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_V.links heading=4-%}
@@ -1331,7 +1331,7 @@ title: DwaToonMaterial
       <b>NormalMap</b>
       <br>
       default: None
-      <p class="scene-class-comments">Specifies an alternate shading normal for toon toon specular</p>
+      <p class="scene-class-comments">specifies an alternate shading normal for toon toon specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_normal.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_normal.links heading=4-%}
@@ -1341,7 +1341,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Controls influence of input normal versus hair normal for toon toon specular</p>
+      <p class="scene-class-comments">controls influence of input normal versus hair normal for toon toon specular</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_normal_dial.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_normal_dial.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_input_normal_dial.links heading=4-%}
@@ -1361,7 +1361,7 @@ title: DwaToonMaterial
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">None: 0 | linear: 1 | exponential up: 2 | exponential down: 3 |<br>&emsp;&emsp;&emsp;smooth: 4 | catmull rom: 5 | monotone cubic: 6</p>
+      <p class="scene-class-comments">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.links heading=4-%}
@@ -1371,7 +1371,7 @@ title: DwaToonMaterial
       <b>FloatVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Ramp positions, maximum 10 allowed</p>
+      <p class="scene-class-comments">ramp positions, maximum 10 allowed</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.links heading=4-%}
@@ -1411,7 +1411,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">When checked, use input_u and v. otherwise use geometry dpds/t</p>
+      <p class="scene-class-comments">when checked, use input_U and V. otherwise use geometry dPds/t</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_use_input_vectors_for_stretch.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_use_input_vectors_for_stretch.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_use_input_vectors_for_stretch.links heading=4-%}
@@ -1436,7 +1436,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 34.0
-      <p class="scene-class-comments">The amount of dispersion/chromatic-aberration via refractions. lower this number to increase the effect. a value of 0 turns off dispersion. around [25-80] makes sense for realistic glass. lower values may look better on gemstones.</p>
+      <p class="scene-class-comments">The amount of dispersion/chromatic-aberration via refractions. Lower this number to increase the effect. A value of 0 turns off dispersion. Around [25-80] makes sense for realistic glass. Lower values may look better on gemstones.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.dispersion_abbe_number.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.dispersion_abbe_number.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.dispersion_abbe_number.links heading=4-%}
@@ -1446,7 +1446,7 @@ title: DwaToonMaterial
       <b>Float</b>
       <br>
       default: 1.5
-      <p class="scene-class-comments">Defines a separate ior for the bending of light with transmission</p>
+      <p class="scene-class-comments">defines a separate IOR for the bending of light with transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_transmission_refractive_index.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_transmission_refractive_index.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_transmission_refractive_index.links heading=4-%}
@@ -1456,7 +1456,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
-      <p class="scene-class-comments">Separate roughness for transmission</p>
+      <p class="scene-class-comments">separate roughness for transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_transmission_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_transmission_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.independent_transmission_roughness.links heading=4-%}
@@ -1466,7 +1466,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Enables/disables refractive solid model</p>
+      <p class="scene-class-comments">enables/disables refractive solid model</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_transmission.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_transmission.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_transmission.links heading=4-%}
@@ -1476,7 +1476,7 @@ title: DwaToonMaterial
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Enables/disables refractive solid model (binary 0|1 for plausibility)</p>
+      <p class="scene-class-comments">enables/disables refractive solid model (binary 0|1 for plausibility)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.transmission.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.transmission.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.transmission.links heading=4-%}
@@ -1486,7 +1486,7 @@ title: DwaToonMaterial
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">The desired color of transmitted light</p>
+      <p class="scene-class-comments">the desired color of transmitted light</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.transmission_color.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.transmission_color.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.transmission_color.links heading=4-%}
@@ -1496,7 +1496,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use dispersion effects in transmission</p>
+      <p class="scene-class-comments">use dispersion effects in transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_dispersion.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_dispersion.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_dispersion.links heading=4-%}
@@ -1506,7 +1506,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use a separate ior for transmission</p>
+      <p class="scene-class-comments">use a separate IOR for transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_transmission_refractive_index.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_transmission_refractive_index.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_transmission_refractive_index.links heading=4-%}
@@ -1516,7 +1516,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use a separate roughness for transmission</p>
+      <p class="scene-class-comments">use a separate roughness for transmission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_transmission_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_transmission_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.use_independent_transmission_roughness.links heading=4-%}
@@ -1531,7 +1531,7 @@ title: DwaToonMaterial
       <b>Map</b>
       <br>
       default: None
-      <p class="scene-class-comments">Bind this attribute to a 'listmap' that contains references to extraaovmaps that specify additional outputs that can be assigned to a renderoutput "light aov" result</p>
+      <p class="scene-class-comments">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.extra_aovs.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.extra_aovs.links heading=4-%}
@@ -1541,7 +1541,7 @@ title: DwaToonMaterial
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Label used in material and light aovs</p>
+      <p class="scene-class-comments">label used in material and light aovs</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.label.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.label.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.label.links heading=4-%}
@@ -1551,7 +1551,7 @@ title: DwaToonMaterial
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. a value of 0 means the priority should be ignored. materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  to enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+      <p class="scene-class-comments">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.priority.links heading=4-%}

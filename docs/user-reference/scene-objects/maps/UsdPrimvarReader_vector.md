@@ -23,7 +23,7 @@ title: UsdPrimvarReader_vector
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Fallback value to be returned if geometry fetch failed.</p>
+      <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector.attributes.fallback.images data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector.attributes.fallback.videos data=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdPrimvarReader_vector.attributes.fallback.links heading=4-%}

@@ -23,7 +23,7 @@ title: IntensityLightFilter
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Multiply the light radiance by this rgb color value</p>
+      <p class="scene-class-comments">Multiply the light radiance by this RGB color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.color.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.color.videos data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.color.links heading=4-%}

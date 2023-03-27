@@ -58,7 +58,7 @@ title: ConstantDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ConstantDisplayFilter.attributes.mask.links heading=4-%}

@@ -58,7 +58,7 @@ title: DofDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">The 'depth' renderoutput to sample z-depth values from</p>
+      <p class="scene-class-comments">The 'depth' RenderOutput to sample z-depth values from</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.depth.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.depth.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.depth.links heading=4-%}
@@ -88,7 +88,7 @@ title: DofDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput to which to apply depth of field</p>
+      <p class="scene-class-comments">RenderOutput to which to apply depth of field</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.input.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.input.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.input.links heading=4-%}
@@ -98,7 +98,7 @@ title: DofDisplayFilter
       <b>RenderOutput</b>
       <br>
       default: None
-      <p class="scene-class-comments">Renderoutput used to mask the output, revealing input1</p>
+      <p class="scene-class-comments">RenderOutput used to mask the output, revealing input1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mask.images data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.DofDisplayFilter.attributes.mask.links heading=4-%}

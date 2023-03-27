@@ -36,7 +36,7 @@ title: CurvatureMap
           &nbsp;&nbsp;1 = &ldquo;concave&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;composite&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;all&rdquo; (default)<br>
-      <p class="scene-class-comments">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. the all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
+      <p class="scene-class-comments">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.videos data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.mode.links heading=4-%}
@@ -56,7 +56,7 @@ title: CurvatureMap
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Multiplies the value of the curvature. results are still clamped between 0 and 1.</p>
+      <p class="scene-class-comments">Multiplies the value of the curvature. Results are still clamped between 0 and 1.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.CurvatureMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.CurvatureMap.attributes.scale.links heading=4-%}

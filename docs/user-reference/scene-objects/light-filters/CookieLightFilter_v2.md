@@ -33,7 +33,7 @@ title: CookieLightFilter_v2
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture uv space) at the far distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the far distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_far_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_far_value.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_far_value.links heading=4-%}
@@ -43,7 +43,7 @@ title: CookieLightFilter_v2
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture uv space) at the mid distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the mid distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_mid_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_mid_value.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_mid_value.links heading=4-%}
@@ -73,7 +73,7 @@ title: CookieLightFilter_v2
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture uv space) at the near distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the near distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_near_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_near_value.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_near_value.links heading=4-%}
@@ -104,7 +104,7 @@ title: CookieLightFilter_v2
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Per-channel gamma used in color-correcting the light filter's texture, if one is present. this is achieved by applying the following formula for each channel:<br>  for input &gt;  0, output = pow(input, gamma)<br>  for input &lt;= 0, output = input</p>
+      <p class="scene-class-comments">Per-channel gamma used in color-correcting the light filter's texture, if one is present. This is achieved by applying the following formula for each channel:<br>  For input &gt;  0, output = pow(input, gamma)<br>  For input &lt;= 0, output = input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.gamma.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.gamma.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.gamma.links heading=4-%}
@@ -126,7 +126,7 @@ title: CookieLightFilter_v2
           &nbsp;&nbsp;0 = &ldquo;black&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;white&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;default&rdquo;<br>
-      <p class="scene-class-comments">What happens outside the frustum of the projection camera.  black (default), white, or default (this uses the mode set on the moonray map shader)</p>
+      <p class="scene-class-comments">What happens outside the frustum of the projection camera.  Black (default), White, or Default (This uses the mode set on the Moonray map shader)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.outside_projection.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.outside_projection.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.outside_projection.links heading=4-%}
@@ -146,7 +146,7 @@ title: CookieLightFilter_v2
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">File name of the texture applied to the light filter.  any file format supported by openimageio can be used.  </p>
+      <p class="scene-class-comments">File name of the texture applied to the light filter.  Any file format supported by OpenImageIO can be used.  </p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.texture.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.texture.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.texture.links heading=4-%}
