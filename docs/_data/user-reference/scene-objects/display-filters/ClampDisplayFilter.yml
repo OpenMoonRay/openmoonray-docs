@@ -11,10 +11,10 @@ gallery:
     text: max = Rgb(0.3, 0.4, 0.1)
 attributes:
   max:
-    images:
-      - image: max_clamp_example.png
-        text: max = Rgb(0.3, 0.4, 0.1)
+    videos:
+      - video: clamp_df_max.mp4
+        text: max = Rgb(range 1.0 --> 0.0, 1.0, 1.0)
   min:
-    images:
-      - image: min_clamp_example.png
-        text: min = Rgb(0.3, 0.1, 0.4)
+    videos:
+      - video: clamp_df_min.mp4
+        text: min = Rgb(range 0.0 --> 1.0, 0.0, 0.0)
