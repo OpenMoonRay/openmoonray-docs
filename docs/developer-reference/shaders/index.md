@@ -77,7 +77,7 @@ Most MoonRay plug-ins comprise several source files, as follows:
 | _CMakeLists.txt_ | always | Used to build the plug-in with CMake |
 | _SConscript_ | never | Used only for legacy internal DWA builds, not needed for new plug-ins. Existing _SConscript_ files will be removed in a later release |
 
-All of the above files should be placed within their own source directory to satisy the one-dso-per-directory
+All of the above files should be placed within their own source directory to satisfy the one-dso-per-directory
 requirement of the current build system.
 
 For example, the source files for a new "Zebra" map shader might be:

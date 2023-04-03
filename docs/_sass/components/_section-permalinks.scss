@@ -1,8 +1,8 @@
-h2 {
+h2, .scene-class h3 {
   position: relative;
 }
 
-h2[id] > span {
+h2[id] > span, .scene-class h3[id] > span {
   position: relative;
   z-index: 1;
 }
@@ -15,7 +15,7 @@ h2 > a {
   }
 }
 
-h2 > a::before {
+h2 > a::before, .scene-class h3 > a::before {
   content: "#";
   display: inline-block;
   opacity: 0;
@@ -26,12 +26,14 @@ h2 > a::before {
 }
 
 h2:hover a::before,
-h2 a:hover::before {
+h2 a:hover::before,
+.scene-class h3:hover a::before,
+.scene-class h3 a:hover::before {
   opacity: 1;
   scale: 0.8;
   translate: 0;
 }
 
-h2 > a[href^='#'] {
+h2 > a[href^='#'], .scene-class h3 > a[href^='#'] {
   color: var(--color-section-permalink) !important;
 }

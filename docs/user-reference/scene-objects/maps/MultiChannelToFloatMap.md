@@ -1,5 +1,11 @@
 ---
-title: Multi Channel to FloatMap
+title: MultiChannelToFloatMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # MultiChannelToFloatMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
@@ -15,31 +21,37 @@ title: Multi Channel to FloatMap
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.input.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.input.videos data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.input.links heading=4-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | Red = 0 (default)
-          | Green = 1
-          | Blue = 2
-          | Cyan = 3
-          | Magenta = 4
-          | Yellow = 5
-          | White = 6
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;Red&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;Green&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;Blue&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;Cyan&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;Magenta&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;Yellow&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;White&rdquo;<br>
       <p class="scene-class-comments">Specifies which color channels including combination channels (Cyan, Magenta, Yellow, and White) to convert to float.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.videos data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.mode.links heading=4-%}
     </p>
     <h3>tolerance</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.20000000298
       <p class="scene-class-comments">Low tolerance values will tend to produce harsher edges near overlapping colors, while high tolerance values may result in cross-color bleeding.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.videos data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.links heading=4-%}
     </p>
   </p>

@@ -1,5 +1,11 @@
 ---
-title: Over Display Filter
+title: OverDisplayFilter
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # OverDisplayFilter
 {%-include overview.html data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
@@ -15,41 +21,51 @@ title: Over Display Filter
     <h3>alpha</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
+      <br>
       default: None
       <p class="scene-class-comments">Alpha for over operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.alpha.links heading=4-%}
     </p>
     <h3>input_bottom</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput on bottom</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_bottom.links heading=4-%}
     </p>
     <h3>input_top</h3>
     <p class="scene-class-type">
       <b>RenderOutput</b>
+      <br>
       default: None
       <p class="scene-class-comments">RenderOutput on top</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.input_top.links heading=4-%}
     </p>
     <h3>invert_alpha</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: False
       <p class="scene-class-comments">Invert value of alpha</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.invert_alpha.links heading=4-%}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
+      <br>
       default: 1.0
       <p class="scene-class-comments">Blend between input_top and input_bottom, using alpha as a mask.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.images data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.videos data=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.OverDisplayFilter.attributes.mix.links heading=4-%}
     </p>
   </p>

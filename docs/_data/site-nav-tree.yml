@@ -22,6 +22,8 @@
             path: getting-started/installation/building-moonray.md
           - text: Dependencies
             path: getting-started/installation/moonray-dependencies.md
+      - text: Test Scenes
+        path: getting-started/test-scenes.md
   - text: User Reference
     path: user-reference/index.md
     subitems:
@@ -440,8 +442,12 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
+          - text: Light Normalization
+            path: /user-reference/how-to-guides/light-normalization.md
           - text: Look Dev Transparent Surfaces
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
+          - text: Motion Blur
+            path: /user-reference/how-to-guides/motion-blur.md
           - text: Overlapping Dielectrics
             path: /user-reference/how-to-guides/overlapping-dielectrics.md
           - text: Path Guiding
@@ -450,6 +456,8 @@
             path: /user-reference/how-to-guides/pbr-validity.md
           - text: Point Rendering
             path: /user-reference/how-to-guides/point-rendering.md   
+          - text: Ray Depth
+            path: /user-reference/how-to-guides/ray-depth.md
           - text: Render Outputs
             path: user-reference/how-to-guides/render-outputs.md
             subitems:
@@ -467,6 +475,8 @@
                 path: /user-reference/how-to-guides/render-outputs/visibility-aovs.md
           - text: Render Inside a Medium
             path: /user-reference/how-to-guides/render-inside-medium.md
+          - text: Shadow Controls
+            path: /user-reference/how-to-guides/shadow-controls.md
           - text: Textures
             path: /user-reference/how-to-guides/textures.md
       - text: Tools
@@ -485,6 +495,8 @@
                 path: user-reference/tools/hydra/hdmoonray-setup.md
               - text: HdMoonRay Render Settings
                 path: user-reference/tools/hydra/render-settings.md
+              - text: HdMoonRay Houdini Integration
+                path: user-reference/tools/hydra/hdmoonray-houdini.md
               - text: hd_render Command
                 path: user-reference/tools/hydra/hd_render.md
           - text: MoonRay
@@ -538,11 +550,11 @@
             path: developer-reference/arras/arras-client-api.md
           - text: Arras Doxygen Pages
             path: developer-reference/arras/doxygen-pages.md
-      - text: Contributions
-        path: developer-reference/contributions.md
+      # - text: Contributions
+      #  path: developer-reference/contributions.md
       - text: Coding Standards
         path: developer-reference/coding-standards/index.md
   - text: Release Notes
     path: release-notes/index.md
-  - text: Legal/Licensing
+  - text: Legal/Licensing and Contributions
     path: license.md

@@ -1,0 +1,22 @@
+.video-container {
+  align-items: stretch;
+  background-color: var(--color-gallery-grid-bg);
+  border: 1px solid var(--color-branch-neutral);
+  color: var(--color-gallery-grid-text);
+  margin-block: var(--size-5);
+}
+
+.video-container figure {
+  background-color: var(--color-gallery-grid-bg);
+  margin: calc(-1 * var(--size-3));
+  padding: var(--size-3);
+  position: relative;
+  transform: scale(1);
+  transition-property: box-shadow, transform;
+  transition: 0.2s ease-out;
+}
+
+.video-container video {
+  align-self: start;
+  object-fit: contain;
+}

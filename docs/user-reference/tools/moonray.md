@@ -126,7 +126,7 @@ Below is more information on the some of the most commonly used options and work
 See the [Checkpoint/Resume Rendering](../../how-to-guides/checkpoint-resume/) page.
 
 ### Execution Mode
-See the [Exeuction Modes](../../execution-modes/) page for more info.
+See the [Execution Modes](../../execution-modes/) page for more info.
 
 ### Inputs
 The inputs to **moonray** are one or more RDLA or RDLB files (see the [RDL2](../../../getting-started/about/rdl-scene-format/) scene format).

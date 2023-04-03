@@ -3,6 +3,7 @@ const mainNavEl = document.querySelector('#main-nav');
 const lightboxEl = document.querySelector('bento-lightbox-gallery');
 const galleryGridEls = document.querySelectorAll('.gallery-grid');
 const sectionHeadingEls = document.querySelectorAll('main h2');
+const attributeEls = document.querySelectorAll('.scene-class h3');
 
 const focusLightbox = () => {
   setTimeout(() => {
@@ -77,10 +78,21 @@ for (const sectionHeadingEl of sectionHeadingEls) {
   const permalinkMsg = encodeHtmlEntity(
     `Permalink to ${sectionHeadingEl.innerText}`
   );
-  console.log(permalinkMsg);
   sectionHeadingEl.innerHTML = `
     <span>${sectionHeadingEl.innerHTML}</span>
     <a href="#${sectionHeadingEl.id}" title="${permalinkMsg}"><span class="sr-only">${permalinkMsg}</span></a>
+  `;
+}
+
+// Enable attribute permalink reveal on hover
+for (const attributeEl of attributeEls) {
+  const permalinkMsg = encodeHtmlEntity(
+    `Permalink to ${attributeEl.innerText}`
+  );
+  attributeEl.id = attributeEl.innerText;
+  attributeEl.innerHTML = `
+    <span>${attributeEl.innerHTML}</span>
+    <a href="#${attributeEl.id}" title="${permalinkMsg}"><span class="sr-only">${permalinkMsg}</span></a>
   `;
 }
 

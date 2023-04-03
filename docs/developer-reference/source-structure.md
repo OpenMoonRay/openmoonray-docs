@@ -3,7 +3,7 @@ title: MoonRay Source Structure
 ---
 # MoonRay Source Structure
 
-***openmoonray*** is the master repository for the OpenMoonSource. The actual source code is contained in a number of other repositories referenced as git submodules.
+***openmoonray*** is the top-level repository for MoonRay open source. The actual source code is contained in a number of other repositories referenced as git submodules.
 
 ## Arras
 

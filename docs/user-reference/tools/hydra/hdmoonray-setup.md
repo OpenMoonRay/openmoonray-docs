@@ -15,7 +15,7 @@ If the MoonRay release is in `$REL`, a typical setup looks like this:
 
 ```bash
 # tells MoonRay where to find shader dsos
-export RDL2_DSO_PATH=$REL/rdl2dso.proxy:${rel_rool}/rdl2dso
+export RDL2_DSO_PATH=$REL/rdl2dso.proxy:$REL/rdl2dso
 # only need to run this once for a MoonRay build
 $REL/bin/rdl2_json_exporter --out $REL/shader_json/ --sparse
 # tells the Sdr plugins where to find the shader descriptions
@@ -27,6 +27,20 @@ export PATH=$REL/bin:${PATH}
 # adds the pxr plugins to the plugin path 
 export PXR_PLUGINPATH_NAME=$REL/plugin/pxr/usd:${PXR_PLUGINPATH_NAME}
 ```
+
+## Python and Hydra setup
+
+HdMoonray needs to be built with versions of Python and Hydra that are binary-compatible with the versions used by the host application. Generally the application itself will set these up for use.
+
+If you are using the `hd_render` command-line tool, then Python and USD/Hydra need to be set up before running it. The Python runtime linked into the tool will try to configure itself at runtime : if it fails to find the Python libraries you will see an error at startup and may need to set the PYTHONHOME environment variable.
+
+If hd_render produces a series of errors saying that it is unable to load pxr/USD python modules, you may need to set PYTHONPATH to contain the USD python installation. In the container build of MoonRay, this is in /usr/local/lib/python, so you would do this:
+
+```
+export PYTHONPATH=/usr/local/lib/python:${PYTHONPATH}
+```
+
+hd_render may also report missing Python modules for HdMoonray plugins like MoonrayShaderDiscovery. This is harmless, since these modules do not have Python bindings.
 
 ## Modes
 

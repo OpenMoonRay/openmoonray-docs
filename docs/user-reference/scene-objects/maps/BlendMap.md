@@ -1,5 +1,11 @@
 ---
-title: Blend Map
+title: BlendMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BlendMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.BlendMap-%}
@@ -15,50 +21,62 @@ title: Blend Map
     <h3>blend_amount</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.5
       <p class="scene-class-comments">The amount to blend between color A (0) and color B (1)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_amount.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_amount.videos data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_amount.links heading=4-%}
     </p>
     <h3>blend_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | linear = 0 (default)
-          | cubic = 1
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;linear&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;cubic&rdquo;<br>
       <p class="scene-class-comments">The type of blending algorithm</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_type.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_type.videos data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.blend_type.links heading=4-%}
     </p>
     <h3>color_A</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color you get if blend amount is 0</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.color_A.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.BlendMap.attributes.color_A.videos data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.color_A.links heading=4-%}
     </p>
     <h3>color_B</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">The color you get if blend amount is 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.color_B.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.BlendMap.attributes.color_B.videos data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.color_B.links heading=4-%}
     </p>
     <h3>threshold_max</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 1.0
       <p class="scene-class-comments">If the blend amount is greater than this amount, it will choose color B (1)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_max.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_max.videos data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_max.links heading=4-%}
     </p>
     <h3>threshold_min</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
+      <br>
       default: 0.0
       <p class="scene-class-comments">If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_min.images data=site.data.user-reference.scene-objects.maps.BlendMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_min.videos data=site.data.user-reference.scene-objects.maps.BlendMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.BlendMap.attributes.threshold_min.links heading=4-%}
     </p>
   </p>

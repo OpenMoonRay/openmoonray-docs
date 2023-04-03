@@ -1,5 +1,11 @@
---- 
-title: Constant Color Map
+---
+title: ConstantColorMap
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantColorMap
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
@@ -15,9 +21,11 @@ title: Constant Color Map
     <h3>color_value</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
+      <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">constant color value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.images data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.videos data=site.data.user-reference.scene-objects.maps.ConstantColorMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ConstantColorMap.attributes.color_value.links heading=4-%}
     </p>
   </p>

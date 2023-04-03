@@ -21,29 +21,35 @@ title: CombineLightFilter
     <h3>light_filters</h3>
     <p class="scene-class-type">
       <b>SceneObject Vector</b>
-      default: []
+      <br>
+      default: {}
       <p class="scene-class-comments">List of light filters to combine together</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.light_filters.images data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.light_filters.videos data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.light_filters.links heading=4-%}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
-          | multiply = 0 (default)
-          | min = 1
-          | max = 2
-          | add = 3
-          | subtract = 4
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;multiply&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;min&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;max&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;add&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;subtract&rdquo;<br>
       <p class="scene-class-comments">How the light filters are combined</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.mode.videos data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.mode.links heading=4-%}
     </p>
     <h3>on</h3>
     <p class="scene-class-type">
       <b>Bool</b>
+      <br>
       default: True
       <p class="scene-class-comments">Turns the light filter on/off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.on.links heading=4-%}
     </p>
   </p>
