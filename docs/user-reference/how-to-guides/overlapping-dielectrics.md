@@ -4,10 +4,34 @@ title: Overlapping Dielectrics
 # Overlapping Dielectrics
 ![Title Image]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/title.png" | absolute_url }})
 
-How do you ensure that the index of refraction is correct, regardless of how many nested mediums a light ray enters? MoonRay employs a system of material tracking to ensure that overlapping materials with different indices of refraction refract light correctly. In order to correctly render these overlapping surfaces:
+How do you ensure that the index of refraction is correct, regardless of how many nested or overlapping mediums a light ray enters?  Some common situations are:
+
+1. Beverages in glassware, with floating ice.
+2. Bubbles in transparent solids or liquids.
+3. Overlapping materials with different indices of refraction.
+
+These situations require careful setup to avoid incorrect refraction.
+
+For example, if you have an ice cube floating in liquid in a glass, do you:
+1. Just model the top surface of the liquid?
+2. Try to cut out the ice cube from the liquid?
+3. Model the liquid as a closed surface and try to precisely match the interfaces between glass and ice?
+4. What about numerical precision problems at the interfaces where some intersections might be ignored due to ray bias?
+5. How do you tell Moonray how to track the different IORs properly as rays traverse the interfaces?
+6. Overlapping?
+7. Ugh!
+
+MoonRay employs a system of material tracking to ensure that overlapping materials with different indices of refraction refract light correctly. In order to correctly render these overlapping surfaces you must:
 
 1. Model overlapping objects as *closed surfaces* that *intentionally overlap* each other
-2. Assign a different material `priority` to each surface so the renderer can resolve the overlaps when tracing the rays. This defaults to 0 (no material priority).
+2. Assign a different material `priority` to each material so the renderer can resolve the overlaps when tracing the rays. This priority is simply a `priority` attribute on each material that defaults to 0 (no material priority).
+
+With this scheme, the modeling of interfaces no longer needs to be exact (intentional overlap!). 
+No cutting out of shapes is needed.  Only the highest priority material exists at any point in space when tracing rays.  Moonray will ignore “invalid” ray-surface intersections based on priority.
+
+The key to making this work is a material list that tracks materials as rays enter/exit geometry.  The highest
+priority material in the list is the current material (and current index of refraction.)  Moonray can use this
+information to skip false intersections / ignore lower priority geometry.
 
 <aside>
 <p>See the associated paper here: Schmidt, Charles & Budge, Brian. (2002). Simple Nested Dielectrics in Ray Traced Images.</p>
@@ -49,3 +73,7 @@ In the example walkthrough below, you will see that each object is assigned a pr
 
 **Step 9**
 ![Example Part 9]({{ "/assets/images/user-reference/how-to-guides/overlapping-dielectrics/example_pt9.png" | absolute_url }})
+
+If you don’t specify a `priority` attr on a Material, it will default to “0” (no priority) and all of the “false” intersections in the example above will become “true” intersections and be shaded.
+
+If you don’t have any overlapping dielectric materials, you don’t need to specify priorities.
