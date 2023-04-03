@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# set encoding vars
+export LC_ALL="C.UTF-8"
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US.UTF-8"
+
+# run jekyll
+bundle exec jekyll s --livereload
