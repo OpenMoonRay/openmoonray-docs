@@ -442,8 +442,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
-          - text: Look Dev Transparent Surfaces
-            path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
+          - text: Displacement
+            path: /user-reference/how-to-guides/displacement.md
           - text: Motion Blur
             path: /user-reference/how-to-guides/motion-blur.md
           - text: Overlapping Dielectrics
