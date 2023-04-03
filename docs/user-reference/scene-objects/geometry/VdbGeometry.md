@@ -68,6 +68,41 @@ title: VdbGeometry
   </p>
 </details>
 <details open>
+  <summary>Motion Blur attributes</summary>
+  <p>
+    <h3>velocity_grid</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      <br>
+      default: 
+      <p class="scene-class-comments">the name of vector grid representing the velocity field. Usually named "v" or "vel" in simulation export. If multiple velocity grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "v[3]". The index must be in [] brackets. The index can be different from the index on the "density_grid".</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_grid.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_grid.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_grid.links heading=4-%}
+    </p>
+    <h3>velocity_sample_rate</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.20000000298
+      <p class="scene-class-comments">the relative scale of input velocity grid resolution. Lower value has lower memory overhead and lower fidelity of motion blur effect, which is sometimes desired for artistic reasons</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.links heading=4-%}
+    </p>
+    <h3>velocity_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">A scale factor for the velocity field. A value of 0 disables motion blur.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_scale.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_scale.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Ray Tracing attributes</summary>
   <p>
     <h3>ray_epsilon</h3>
@@ -89,6 +124,63 @@ title: VdbGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.shadow_ray_epsilon.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.shadow_ray_epsilon.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>VDB attributes</summary>
+  <p>
+    <h3>density_grid</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      <br>
+      default: density
+      <p class="scene-class-comments">The name of the density grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "density[3]". The index must be in [] brackets.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.density_grid.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.density_grid.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.density_grid.links heading=4-%}
+    </p>
+    <h3>emission_grid</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      <br>
+      default: 
+      <p class="scene-class-comments">The name of the emission grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "emission[3]". The index must be in [] brackets.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_grid.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_grid.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_grid.links heading=4-%}
+    </p>
+    <h3>emission_sample_rate</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">the relative scale of input emission grid resolution. Lower value has lower memory overhead and faster render time, with the cost of lower fidelity of emission shape and illumination</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.links heading=4-%}
+    </p>
+    <h3>interpolation</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;nearest neighbor&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;linear&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;quadratic&rdquo;<br>
+      <p class="scene-class-comments">the voxel interpolation to use when sampling the volume data</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.links heading=4-%}
+    </p>
+    <h3>model</h3>
+    <p class="scene-class-type">
+      <b>String</b> <i>filename</i>
+      <br>
+      default: 
+      <p class="scene-class-comments">filename that points to a VDB file</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.model.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.model.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.model.links heading=4-%}
     </p>
   </p>
 </details>
@@ -200,16 +292,6 @@ title: VdbGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.contains_camera.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.contains_camera.links heading=4-%}
     </p>
-    <h3>density_grid</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      <br>
-      default: density
-      <p class="scene-class-comments">The name of the density grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "density[3]". The index must be in [] brackets.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.density_grid.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.density_grid.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.density_grid.links heading=4-%}
-    </p>
     <h3>dicing_camera</h3>
     <p class="scene-class-type">
       <b>SceneObject</b>
@@ -219,48 +301,6 @@ title: VdbGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.dicing_camera.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.dicing_camera.links heading=4-%}
-    </p>
-    <h3>emission_grid</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      <br>
-      default: 
-      <p class="scene-class-comments">The name of the emission grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "emission[3]". The index must be in [] brackets.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_grid.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_grid.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_grid.links heading=4-%}
-    </p>
-    <h3>emission_sample_rate</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 1.0
-      <p class="scene-class-comments">the relative scale of input emission grid resolution. Lower value has lower memory overhead and faster render time, with the cost of lower fidelity of emission shape and illumination</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.links heading=4-%}
-    </p>
-    <h3>interpolation</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-      <br>
-          &nbsp;&nbsp;0 = &ldquo;nearest neighbor&rdquo;<br>
-          &nbsp;&nbsp;1 = &ldquo;linear&rdquo; (default)<br>
-          &nbsp;&nbsp;2 = &ldquo;quadratic&rdquo;<br>
-      <p class="scene-class-comments">the voxel interpolation to use when sampling the volume data</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.interpolation.links heading=4-%}
-    </p>
-    <h3>model</h3>
-    <p class="scene-class-type">
-      <b>String</b> <i>filename</i>
-      <br>
-      default: 
-      <p class="scene-class-comments">filename that points to a VDB file</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.model.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.model.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.model.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
@@ -301,36 +341,6 @@ title: VdbGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.static.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.static.links heading=4-%}
-    </p>
-    <h3>velocity_grid</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      <br>
-      default: 
-      <p class="scene-class-comments">the name of vector grid representing the velocity field. Usually named "v" or "vel" in simulation export. If multiple velocity grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "v[3]". The index must be in [] brackets. The index can be different from the index on the "density_grid".</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_grid.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_grid.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_grid.links heading=4-%}
-    </p>
-    <h3>velocity_sample_rate</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 0.20000000298
-      <p class="scene-class-comments">the relative scale of input velocity grid resolution. Lower value has lower memory overhead and lower fidelity of motion blur effect, which is sometimes desired for artistic reasons</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.links heading=4-%}
-    </p>
-    <h3>velocity_scale</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 1.0
-      <p class="scene-class-comments">A scale factor for the velocity field. A value of 0 disables motion blur.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_scale.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_scale.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_scale.links heading=4-%}
     </p>
   </p>
 </details>

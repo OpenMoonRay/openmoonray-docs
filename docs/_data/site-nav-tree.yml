@@ -442,8 +442,15 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
+<<<<<<< HEAD
           - text: Displacement
             path: /user-reference/how-to-guides/displacement.md
+=======
+          - text: Light Normalization
+            path: /user-reference/how-to-guides/light-normalization.md
+          - text: Look Dev Transparent Surfaces
+            path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
+>>>>>>> main
           - text: Motion Blur
             path: /user-reference/how-to-guides/motion-blur.md
           - text: Overlapping Dielectrics
