@@ -1,5 +1,5 @@
 ---
-overview: overviews/DwaMetalMaterialOverview.md
+overview: overviews/DwaBaseMaterialOverview.md
 image_path: /assets/images/user-reference/scene-objects/materials/dwa
 
 attributes:
@@ -31,10 +31,30 @@ attributes:
     videos:
       - video: SD_clearcoat_thickness_wedge.mp4
         text: "clearcoat thickness: 0 - 1"
+  casts_caustics:
+    videos:
+      - video: R_casts_caustics_wedge.mp4
+        text: "casts caustics: true | false" 
   presence:
     videos:
       - video: SD_presence_wedge.mp4
         text: "presence: 0 - 1"
+  albedo:
+    videos:
+      - video: SD_albedo_wedge.mp4
+        text: "albedo: Rgb(red, orange, yellow, green, blue, purple)" 
+  bssrdf:
+    videos:
+      - video: SD_bssrdf_wedge.mp4
+        text: "bssrdf: normalized diffusion vs dipole diffusion, random walk not shown"
+  scattering_color:
+    videos:
+      - video: SD_scattering_color_wedge.mp4
+        text: "scattering color: Rgb(red, orange, yellow, green, blue, purple)" 
+  scattering_radius:
+    videos:
+      - video: SD_scattering_radius_wedge.mp4
+        text: "scattering radius: 0.01 - 0.11" 
   emission:
     videos:
       - video: SD_emission_wedge.mp4
@@ -48,7 +68,7 @@ attributes:
   fuzz:
     videos:
       - video: SD_fuzz_coverage_wedge.mp4
-        text: "fuzz: 0 - 1" 
+        text: "fuzz: 0 - 1"
   fuzz_albedo:
     images:
       - image: SD_fuzz_albedoWhite.jpg
@@ -119,6 +139,10 @@ attributes:
     videos:
       - video: M_metallic_edge_color_wedge.mp4
         text: "metallic edge color: Rgb(orange, yellow, green, blue, purple, red)"
+  refractive_index:
+    videos:
+      - video: SD_ior_wedge.mp4
+        text: "refractive index: 1 - 2.3" 
   roughness:
     videos:
       - video: SD_roughness_wedge.mp4
@@ -126,4 +150,8 @@ attributes:
   shading_tangent:
     videos:
       - video: SD_shading_tangent_wedge.mp4
-        text: "shading tangent: Vec2(1,0) - Vec2(0,1) - Vec2(-1,0) - Vec2(0,1)" 
+        text: "shading tangent: Vec2(1,0) - Vec2(0,1) - Vec2(-1,0) - Vec2(0,1)"
+  transmission_color:
+    videos:
+      - video: R_transmission_color_wedge.mp4
+        text: "transmission color: Rgb(1, 1, 1) - Rgb(0.5, 0.04, 0.04)"
