@@ -9,6 +9,6 @@ gallery:
     text: num_bins = 4
 attributes:
   num_bins:
-    images:
-      - image: num_bins_4.png
-        text: num_bins = 4
+    videos:
+      - video: discretize_df.mp4
+        text: num_bins = 1 --> 20

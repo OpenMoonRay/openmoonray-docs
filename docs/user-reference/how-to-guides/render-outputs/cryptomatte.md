@@ -11,15 +11,15 @@ These `{id, weight}` pairs will be stored in the R, G and B, A channels of each 
 <!-- Uncomment section when feature is released 
 ## Extensions
 
-As of moonray-?, there are several options to output additional information. 
+There are several options to output additional information. 
 
 ### Positions, Normals, Beauty
 
 The RenderOutput object contains the additional toggles:
 
-- *output_cryptomatte_positions*
-- *output_cryptomatte_normals*
-- *output_cryptomatte_beauty*
+- *cryptomatte_output_positions*
+- *cryptomatte_output_normals*
+- *cryptomatte_output_beauty*
 
 When turned on, each id/weight pair will also have the associated position/normal/beauty value output to a separate layer. If there are multiple pixel samples, the values from all the samples will be _averaged_ together. The output layers are as follows:
 

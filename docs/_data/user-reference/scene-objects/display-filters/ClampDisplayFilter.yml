@@ -13,8 +13,8 @@ attributes:
   max:
     videos:
       - video: clamp_df_max.mp4
-        text: max = Rgb(range 1.0 --> 0.0, 1.0, 1.0)
+        text: max = Rgb(1.0 --> 0.0, 1.0, 1.0)
   min:
     videos:
       - video: clamp_df_min.mp4
-        text: min = Rgb(range 0.0 --> 1.0, 0.0, 0.0)
+        text: min = Rgb(0.0 --> 1.0, 0.0, 0.0)

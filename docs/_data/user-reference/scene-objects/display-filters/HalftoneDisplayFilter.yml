@@ -31,8 +31,6 @@ attributes:
       - image: inverted.png
         text: invert = true
   size:
-    images:
-      - image: size_4.png
-        text: size = 4.0
-      - image: size_10.png
-        text: size = 10
+    videos:
+      - video: size.mp4
+        text: size = 1 --> size = 15
