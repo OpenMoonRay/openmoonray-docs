@@ -11,6 +11,10 @@ attributes:
     videos:
       - video: SD_clearcoat_attenuation_color_wedge.mp4
         text: "clearcoat attenuation color: Rgb(0, 0, 0) - Rgb(1, 1, 1)"
+  clearcoat_normal:
+    images:
+      - image: SD_clearcoat_normal.jpg
+        text: "clearcoat normal"
   clearcoat_normal_dial:
     videos:
       - video: SD_clearcoat_normal_dial_wedge.mp4
@@ -55,10 +59,38 @@ attributes:
     videos:
       - video: SD_emission_wedge.mp4
         text: "emission: Rgb(0, 0, 0) - Rgb(4.76, 0.02, 0.02)" 
-  fuzz_coverage:
+  show_fuzz:
+    images:
+      - image: SD_fuzz_on.jpg
+        text: "show fuzz: true"
+      - image: SD_fuzz_off.jpg
+        text: "show fuzz: false"
+  fuzz:
     videos:
       - video: SD_fuzz_coverage_wedge.mp4
-        text: "fuzz coverage: 0 - 1" 
+        text: "fuzz: 0 - 1"
+  fuzz_albedo:
+    images:
+      - image: SD_fuzz_albedoWhite.jpg
+        text: "fuzz albedo: Rgb(1, 1, 1)"
+      - image: SD_fuzz_albedoGray.jpg
+        text: "fuzz albedo: Rgb(0.5, 0.5, 0.5)"
+      - image: SD_fuzz_albedoGreen.jpg
+        text: "fuzz albedo: Rgb(0.1, 0.5, 0.1)"
+  fuzz_normal:
+    images:
+      - image: SD_fuzz_normal.jpg
+        text: "fuzz normal"
+  use_absorbing_fuzz_fibers:
+    images:
+      - image: SD_fuzz_absorb_off.jpg
+        text: "use absorbing fuzz fibers: false"
+      - image: SD_fuzz_absorb_on.jpg
+        text: "use absorbing fuzz fibers: true"
+      - image: SD_fuzz_absorb_off2.jpg
+        text: "use absorbing fuzz fibers: false"
+      - image: SD_fuzz_absorb_on2.jpg
+        text: "use absorbing fuzz fibers: true"
   iridescence:
     videos:
       - video: M_iridescence_wedge.mp4
@@ -87,6 +119,10 @@ attributes:
     videos:
       - video: M_iridescence_thickness_wedge.mp4
         text: "iridescence thickness: 0 - 5" 
+  input_normal:
+    images:
+      - image: SD_input_normal.jpg
+        text: "input normal" 
   input_normal_dial:
     videos:
       - video: SD_input_normal_dial_wedge.mp4
