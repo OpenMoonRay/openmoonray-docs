@@ -54,7 +54,7 @@ The Optix **7.3** header files from NVidia cannot be downloaded automatically : 
 This step begins by running a Docker container using the openmoonray_base image created in step 1. This container will not be able to access arbitrary files on your machine or the network : you must use the docker run "-v" option to mount the directories containing CMakeLists.txt and the NVidia headers, like this:
 
 ```bash
-> docker run -v <moonray_repo>/building:/building:shared  -v <nvidia-download-dir>:/optix:shared --network=host --rm -it openmoonray_base
+> docker run -v <moonray_repo>/building:/building -v <nvidia-download-dir>:/optix --network=host --rm -it openmoonray_base
 ```
 
 If the command is successful, you will now be in a *bash* shell running as root in the container. You can check that the mounts were successful by checking that */building* contains *CMakeLists.txt* and that */optix/include* holds a set of header files.
@@ -98,7 +98,7 @@ The container ID will be different in your case. Do not exit the shell that is r
 To build MoonRay itself, you need to start the *openmoonray_build* container with the root of the openmoonray source repo mounted. I also mount "/tmp" in the container, as somewhere to place test output images.
 
 ```bash
-> docker run -v <moonray_repo>:/openmoonray:shared -v /tmp:/tmp:shared --network=host --rm -it openmoonray_build
+> docker run -v <moonray_repo>:/openmoonray -v /tmp:/tmp --network=host --rm -it openmoonray_build
 ```
 The entire OpenMoonRay code base is built by running CMake at the top level of the source tree. The locations of dependencies are provided to the build system using a CMake preset defined in *CMakePresets.json*. The source tree already contains a preset for building in a container created following the process described here, called **container-release**.
 
@@ -108,7 +108,7 @@ Once in the container, cd to the root of the source and build openmoonray:
 
 ```bash
 > cd /openmoonray
-> cmake --preset container-release 
+> cmake --preset container-release
 > cmake --build --preset container-release -- -j 64
 > mkdir /installs/openmoonray
 > cmake --install ../build --prefix /installs/openmoonray
@@ -127,7 +127,7 @@ If everything is working, you should see output something like this:
 ```
 Loading Scene File(s): /openmoonray/testdata/rectangle.rdla
 Render prep time = 00:00:00.008
-  [+] Rendering [======================] 100.0% 
+  [+] Rendering [======================] 100.0%
 00:00:01  671.2 MB | ---------- Time ------------------------------------------
 00:00:01  671.2 MB | Render time                      = 00:00:01.404000
 00:00:01  671.2 MB | Total time                       = 00:00:01.442000
@@ -145,12 +145,12 @@ CONTAINER ID        IMAGE               ...
 > docker commit 71b4c31684f8 openmoonray_run
 ```
 
-You can now continue to use moonray, or exit the container. 
+You can now continue to use moonray, or exit the container.
 
 To restart the run container:
 
 ```bash
-> docker run -v <moonray_repo>:/openmoonray:shared -v /tmp:/tmp:shared --network=host --rm -it openmoonray_run
+> docker run -v <moonray_repo>:/openmoonray -v /tmp:/tmp --network=host --rm -it openmoonray_run
 ```
 This command mounts the moonray repo to provide access to the test data : moonray doesn't need the moonray source to run. You can add additional mounts via *-v*, to provide container access to input scenes or output image directories.
 
@@ -161,7 +161,7 @@ You will need to source the setup script again when restarting the container, be
 > hd_render -in /openmoonray/testdata/sphere.usd -out /tmp/sphere.exr
 ```
 
-## 4. Running moonray_gui 
+## 4. Running moonray_gui
 ---
 
 To run **moonray_gui**, you need to set up X in the container. The steps required may vary depending on the host setup, but generally you will need to set the environment variables ***DISPLAY*** and ***XAUTHORITY***, and make sure the directory that *XAUTHORITY* points to is mounted in the container. 
@@ -169,7 +169,7 @@ To run **moonray_gui**, you need to set up X in the container. The steps require
 You may also need to install additional packages. For instance, the hotkeys in moonray_gui may not function if package *libxkbcommon-x11* is not installed.
 
 ```bash
-> docker run -v /source/openmoonray:/openmoonray:shared -v /tmp:/tmp:shared -e DISPLAY=$DISPLAY -e XAUTHORITY=${XAUTHORITY} -v "${XAUTHORITY}:${XAUTHORITY}:z" --network=host --rm -it openmoonray_run
+> docker run -v /source/openmoonray:/openmoonray -v /tmp:/tmp -e DISPLAY=$DISPLAY -e XAUTHORITY=${XAUTHORITY} -v "${XAUTHORITY}:${XAUTHORITY}:z" --network=host --rm -it openmoonray_run
 
 > yum install -y libxkbcommon-x11
 > source /installs/openmoonray/scripts/setup.sh
