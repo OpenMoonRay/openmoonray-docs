@@ -15,3 +15,20 @@ gallery:
     text: "limit green channel
           <br><b>in: </b>[Rgb(0, 0, 0), Rgb(1, 1, 1)] 
           <br><b>out: </b>[Rgb(0, 0.4, 0), Rgb(1, 0.7, 1)]"
+attributes:
+  input_min:
+    videos:
+      - video: remap_uniform_inmin.mp4
+        text: "input_min = 0.0 --> 1.0, input_max = 1.0, output_min = 0.0, output_max = 1.0"
+  input_max:
+    videos:
+      - video: remap_uniform_inmax.mp4
+        text: "input_min = 0.0, input_max = 1.0 --> 0.0, output_min = 0.0, output_max = 1.0"
+  output_min:
+    videos:
+      - video: remap_uniform_outmin.mp4
+        text: "input_min = 0.0, input_max = 1.0, output_min = 0.0 --> 1.0, output_max = 1.0"
+  output_max:
+    videos:
+      - video: remap_uniform_outmax.mp4
+        text: "input_min = 0.0, input_max = 1.0, output_min = 0.0, output_max = 1.0 --> 0.0"

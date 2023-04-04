@@ -9,3 +9,8 @@ gallery:
     text: Albedo render output
   - image: blend_result.png
     text: <i>blendAmt</i> = 0.6, <br><i>blendType</i> = cubic
+attributes:
+  blendAmt:
+    videos:
+      - video: blend_df.mp4
+        text: blendAmt = 0.0 --> 1.0

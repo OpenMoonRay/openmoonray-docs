@@ -20,9 +20,9 @@ attributes:
                <br> -1.0, -1.0, -1.0, -1.0, -1.0,
                <br> -1.0, -1.0, -1.0, -1.0, -1.0}
   kernel_size:
-    images:
-      - image: kernel_size_55.png
-        text: kernel_size = 55
+    videos:
+      - video: convolution_df.mp4
+        text: kernel_size = 1 --> 100
   kernel_type:
     images:
       - image: kernel_gaussian.png

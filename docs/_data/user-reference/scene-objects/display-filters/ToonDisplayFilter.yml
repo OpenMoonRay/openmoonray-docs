@@ -45,11 +45,9 @@ attributes:
       - image: ink_normal_threshold_1.png
         text: ink_normal_threshold = 1.0
   ink_normal_scale:
-    images:
-      - image: ink_normal_scale_1.png
-        text: ink_normal_scale = 1.0
-      - image: ink_normal_scale_5.png
-        text: ink_normal_scale = 5.0
+    videos:
+      - video: toon_normal_scale.mp4
+        text: ink_normal_scale = 0.0 --> 30.0
   edge_detector:
     images:
       - image: edge_detector_none.png
