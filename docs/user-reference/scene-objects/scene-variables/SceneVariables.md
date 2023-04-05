@@ -58,7 +58,7 @@ title: SceneVariables
       <b>Camera</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This specifies the camera object used for rendering. If no camera is specified in the scene variables, MoonRay will render using the first camera object encountered.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.camera.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.camera.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.camera.links heading=4-%}
@@ -103,7 +103,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">If true, the checkpoint file write is written in a background thread that runs in parallel with the MCRT threads. Otherwise, all MCRT threads wait while the checkpoint file is written.</p>
+      <p class="scene-class-comments">When set to true, checkpoint file writes occur in a background thread that runs concurrently with the MCRT threads. Otherwise, all MCRT threads must wait while the checkpoint file is written.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_bg_write.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_bg_write.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_bg_write.links heading=4-%}
@@ -113,7 +113,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 15.0
-      <p class="scene-class-comments">Length of time, in minutes, between checkpoint file writes. Time must be greater or equal to 0.1</p>
+      <p class="scene-class-comments">This setting specifies the time interval, in minutes, between checkpoint file writes. The interval must be equal to or greater than 0.1 minutes.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_interval.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_interval.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_interval.links heading=4-%}
@@ -123,7 +123,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-comments">Specify the maximum number of queued checkpoint images that the checkpoint-writing background thread can handle. The value of checkpoint_max_bgcache must be greater than or equal to 1. Once this number is exceeded, the MCRT threads are suspended while background images are written to create room in the queue. A larger number can robustly support background writing even with short checkpoint intervals at the expense of memory. A value of 2 is best for most cases.</p>
+      <p class="scene-class-comments">This setting specifies the maximum number of queued checkpoint images the checkpoint-writing background thread can handle. The value of checkpoint_max_bgcache must be greater than or equal to 1. If the number of queued checkpoint images exceeds this limit, MCRT threads will be temporarily suspended while background images are written to make room in the queue. A larger value can support background writing even with short checkpoint intervals, but it may require more memory. A value of 2 is recommended for most cases.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_bgcache.links heading=4-%}
@@ -133,7 +133,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by SIGINT. This value is fraction. If this value is ZERO or negative, no extra snapshot action is executed and no checkpoint file is generated when SIGINT is received.</p>
+      <p class="scene-class-comments">This setting specifies the maximum fraction of the snapshot overhead threshold for an extra snapshot action in the event of an unexpected interruption by SIGINT. The value is expressed as a fraction. If the value is set to zero or a negative number, no extra snapshot action will be executed, and no checkpoint file will be generated if SIGINT is received.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_max_snapshot_overhead.links heading=4-%}
@@ -144,7 +144,7 @@ title: SceneVariables
       <br>
           &nbsp;&nbsp;0 = &ldquo;time&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;quality&rdquo;<br>
-      <p class="scene-class-comments">Select whether checkpoint images are written depending on time elapsed or on quality reached.</p>
+      <p class="scene-class-comments">This setting allows you to choose whether checkpoint images are written based on time elapsed or on quality reached.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_mode.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_mode.links heading=4-%}
@@ -154,7 +154,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">If true, the last checkpoint file is overwritten when writing out the checkpoint file. If false, the checkpoint filename is appended with the total number of samples, resulting in the retention of all checkpoint files.</p>
+      <p class="scene-class-comments">When set to true, the last checkpoint file will be overwritten when writing out the new checkpoint file. If set to false, the checkpoint filename will be appended with the total number of samples, which will result in the retention of all checkpoint files.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_overwrite.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_overwrite.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_overwrite.links heading=4-%}
@@ -164,7 +164,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">This defines the file name of a Lua script executed after every checkpoint file has been written, which is run in parallel with the ongoing MCRT threads. See further documentation for MoonRay-provided Lua variables accessible within the script.</p>
+      <p class="scene-class-comments">This setting specifies the filename of a Lua script that will be executed after every checkpoint file is written. The script will run concurrently with the ongoing MCRT threads. For more information, refer to the documentation for MoonRay-provided Lua variables accessible within the script.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_post_script.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_post_script.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_post_script.links heading=4-%}
@@ -174,7 +174,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-comments">Steps of quality, internal sampling iteration count, between checkpoint file writes. Value should be equal or bigger than 1. Uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. If you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... Adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. Recommended number is 1~3 range. You can use more than 4 but bigger number always require longer rendering time. If you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.</p>
+      <p class="scene-class-comments">This setting specifies the number of quality steps, which refers to the internal sampling iteration count between checkpoint file writes. The value must be equal to or greater than 1. In the case of uniform sampling, this number of steps is equivalent to the pixel sampling steps for each pixel. For example, if you set quality steps to 2, a checkpoint file will be created every time each pixel's sample count exceeds 2, 4, 6, 8, 10, and so on. In the case of adaptive sampling, this number of steps is equivalent to the internal adaptive sampling iteration steps. A recommended number falls within the range of 1 to 3. For example, if you set the value to 2, a checkpoint file will be created after finishing every 2 adaptive sampling passes. A larger value will conduct more rendering passes before writing a file.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_quality_steps.links heading=4-%}
@@ -184,7 +184,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">When total pixel sample count exceeds this value at every pixel (If you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. Disabled sample cap feature when set to 0.</p>
+      <p class="scene-class-comments">This setting causes the render to finish based on the total pixel sample count. For example, if the value is 1024, the render will end after the next checkpoint write when each pixel exceeds 1024 samples. If the value is set to 0, the sample cap feature is disabled.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_sample_cap.links heading=4-%}
@@ -194,7 +194,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Interval of time in minutes, about snapshot refreshment regarding interruption by SIGINT. Unit is minute. If this value is ZERO or negative, checkpoint_max_snapshot_overhead parameter is used instead.</p>
+      <p class="scene-class-comments">This setting specifies the time interval, in minutes, allowed for a snapshot when a SIGINT is encountered. If the value is 0 or negative, the checkpoint_max_snapshot_overhead parameter is used instead.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_snapshot_interval.links heading=4-%}
@@ -204,7 +204,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 1
-      <p class="scene-class-comments">Specify samples per pixel (SPP) number. Checkpoint file is created when all pixel's SPP are same or bigger than this number. Until then, checkpoint file is not created.</p>
+      <p class="scene-class-comments">This setting specifies the samples per pixel (SPP). A checkpoint file is created when all pixels' SPP are greater than or equal to this number. A checkpoint file is created once this criterion is met.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_start_sample.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_start_sample.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_start_sample.links heading=4-%}
@@ -214,7 +214,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. Disabled time cap feature when set to 0.</p>
+      <p class="scene-class-comments">This setting determines when the render will finish based on the total render process time in minutes. If the value is exceeded, the render will finish after the next checkpoint write. If the value is set to 0, the time cap feature is disabled.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_time_cap.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_time_cap.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_time_cap.links heading=4-%}
@@ -224,7 +224,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 0
-      <p class="scene-class-comments">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable. If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
+      <p class="scene-class-comments">This variable specifies the total number of checkpoint files for the quality-based checkpoint mode. It serves as a substitute parameter for checkpoint_quality_steps. If the value is set to 0 (the default), the interval at which checkpoints are generated is controlled by the checkpoint_quality_steps variable. If the value is set to 1 or higher, the renderer will attempt to automatically generate a user-defined number of checkpoint files based on this value. This option takes into account the checkpoint_start_sample variable.<br><br>In some cases, the renderer may be unable to create the requested number of checkpoint_total_files due to limitations in the internal implementation or because the user has specified a value greater than 1 for the checkpoint_start_sample variable. However, in these cases, the renderer will attempt to generate the closest possible number of checkpoint files to the user-defined value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_total_files.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_total_files.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_total_files.links heading=4-%}
@@ -568,6 +568,16 @@ title: SceneVariables
 <details open>
   <summary>Global Toggles attributes</summary>
   <p>
+    <h3>cryptomatte_multi_presence</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to count presence bounces as separate cryptomatte samples</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.links heading=4-%}
+    </p>
     <h3>enable_displacement</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -974,7 +984,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">By default, the random number generators are seeded by considering the frame number. However, if lock_frame_noise is true, the same seed values are used for each frame, which is typically undesirable.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.lock_frame_noise.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.lock_frame_noise.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.lock_frame_noise.links heading=4-%}
@@ -1064,7 +1074,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.999000012875
-      <p class="scene-class-comments">Defines at which point the accumulated presence can be considered as opaque, skipping generation of presence continuation rays.</p>
+      <p class="scene-class-comments">The presence threshold defines the point at which the accumulated presence can be considered opaque, skipping the generation of presence continuation rays.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.links heading=4-%}
@@ -1074,7 +1084,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.0375000014901
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The Russian roulette threshold specifies the point at which point Russian roulette is evaluated for direct light sampling and BSDF continuation. The unit is luminance of the radiance.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.links heading=4-%}
@@ -1084,7 +1094,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">Defines at which point the accumulated opacity can be considered as opaque, skipping generation of new transparency rays.</p>
+      <p class="scene-class-comments">The transparency threshold defines the point at which the accumulated opacity can be considered opaque, skipping the generation of new transparency rays.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.transparency_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.transparency_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.transparency_threshold.links heading=4-%}
@@ -1139,7 +1149,7 @@ title: SceneVariables
       <b>Float</b>
       <br>
       default: 0.995000004768
-      <p class="scene-class-comments">As a ray travels through volume regions, it will accumulate the amount of opacity. When the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.</p>
+      <p class="scene-class-comments">As a ray travels through volumes, it will accumulate opacity. When the value exceeds the volume opacity threshold, the renderer will stop further volume integration along this ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.links heading=4-%}
@@ -1250,7 +1260,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 16
-      <p class="scene-class-comments">When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. This manifests itself as square 8x8 artifacts in the final image. The higher this value, the less the chance of this happening.</p>
+      <p class="scene-class-comments">This is the minimum number of samples taken per pixel before enabling adaptive sampling. A larger number of samples may prevent the adaptive sampler from prematurely identifying an area as converged but may incur a longer running time.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.min_adaptive_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.min_adaptive_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.min_adaptive_samples.links heading=4-%}
