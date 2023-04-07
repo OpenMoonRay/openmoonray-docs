@@ -28,7 +28,7 @@ the set texture cache size and also the `main cache miss ratio`.  Even if the re
 percent, this can make a big difference in render time. Increasing the texture_cache_size can be a good way to
 improve performance in such scenes.
 
-Here's exanple output from the log ( with `-info` enabled):
+Here's example output from the log ( with `-info` enabled):
 
 ```bash
 00:00:35    1.2 GB | ---------- OpenImageIO Texture Summary -------------------
