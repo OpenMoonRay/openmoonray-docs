@@ -121,6 +121,46 @@ title: RenderOutput
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_depth.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_depth.links heading=4-%}
     </p>
+    <h3>cryptomatte_output_beauty</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output beauty data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_beauty.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_beauty.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_beauty.links heading=4-%}
+    </p>
+    <h3>cryptomatte_output_normals</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output shading normal data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_normals.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_normals.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_normals.links heading=4-%}
+    </p>
+    <h3>cryptomatte_output_positions</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output position data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_positions.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_positions.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_positions.links heading=4-%}
+    </p>
+    <h3>cryptomatte_support_resume_render</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to add additional cryptomatte layers to support checkpoint/resume rendering</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_support_resume_render.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_support_resume_render.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_support_resume_render.links heading=4-%}
+    </p>
     <h3>denoise</h3>
     <p class="scene-class-type">
       <b>Bool</b>
