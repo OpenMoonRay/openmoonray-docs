@@ -16,7 +16,7 @@ title: VdbVolume
 
 <div class="scene-class">
 <details open>
-  <summary>Optical Properties attributes</summary>
+  <summary>Volume attributes</summary>
   <p>
     <h3>anisotropy</h3>
     <p class="scene-class-type">
@@ -58,10 +58,20 @@ title: VdbVolume
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.opacity_gain_mult.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.opacity_gain_mult.links heading=4-%}
     </p>
+    <h3>surface_opacity_threshold</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.5
+      <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.links heading=4-%}
+    </p>
   </p>
 </details>
 <details open>
-  <summary>General attributes</summary>
+  <summary>Volume Baking attributes</summary>
   <p>
     <h3>bake_divisions</h3>
     <p class="scene-class-type">
@@ -95,6 +105,11 @@ title: VdbVolume
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_voxel_size.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.bake_voxel_size.links heading=4-%}
     </p>
+  </p>
+</details>
+<details open>
+  <summary>General attributes</summary>
+  <p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -104,16 +119,6 @@ title: VdbVolume
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.label.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.label.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.label.links heading=4-%}
-    </p>
-    <h3>surface_opacity_threshold</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 0.5
-      <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.surface_opacity_threshold.links heading=4-%}
     </p>
   </p>
 </details>

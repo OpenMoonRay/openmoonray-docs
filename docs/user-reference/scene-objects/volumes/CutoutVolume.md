@@ -16,7 +16,22 @@ title: CutoutVolume
 
 <div class="scene-class">
 <details open>
-  <summary>General attributes</summary>
+  <summary>Volume attributes</summary>
+  <p>
+    <h3>surface_opacity_threshold</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.5
+      <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Volume Baking attributes</summary>
   <p>
     <h3>bake_divisions</h3>
     <p class="scene-class-type">
@@ -50,6 +65,11 @@ title: CutoutVolume
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_voxel_size.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_voxel_size.links heading=4-%}
     </p>
+  </p>
+</details>
+<details open>
+  <summary>General attributes</summary>
+  <p>
     <h3>indirect_volume</h3>
     <p class="scene-class-type">
       <b>Volume</b>
@@ -69,16 +89,6 @@ title: CutoutVolume
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.label.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.label.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.label.links heading=4-%}
-    </p>
-    <h3>surface_opacity_threshold</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 0.5
-      <p class="scene-class-comments">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.surface_opacity_threshold.links heading=4-%}
     </p>
   </p>
 </details>
