@@ -50,7 +50,7 @@ title: CutoutVolume
           &nbsp;&nbsp;0 = &ldquo;default&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;divisions&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;voxel size&rdquo;<br>
-      <p class="scene-class-comments">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
+      <p class="scene-class-comments">Method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: For shaders that are bound to vdb volumes, use vdb resolution.<br>&emsp;&emsp;         For shaders that are bounds to mesh geometries use 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_resolution_mode.images data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_resolution_mode.videos data=site.data.user-reference.scene-objects.volumes.CutoutVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.CutoutVolume.attributes.bake_resolution_mode.links heading=4-%}
