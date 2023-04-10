@@ -16,14 +16,24 @@ title: BaseVolume
 
 <div class="scene-class">
 <details open>
-  <summary>Attenuation Properties attributes</summary>
+  <summary>Volume attributes</summary>
   <p>
+    <h3>anisotropy</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is.  A value of 0.0 indicates an isotropic volume.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.links heading=4-%}
+    </p>
     <h3>attenuation_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">a color to tint (multiply to) the attenuation. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.(Note the inverse behavior of color with this parameter.)</p>
+      <p class="scene-class-comments">A color multiplier for the attenuation.  The resulting color will be the inverse of the color set with this parameter.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.links heading=4-%}
@@ -43,22 +53,27 @@ title: BaseVolume
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">the rate at which the intensity of a ray traversing a volume is lost. The attenuation (extinction) coefficient is technically the product of attenuation_color, attenuation_intensity, and attenuation_factor</p>
+      <p class="scene-class-comments">The rate at which the intensity of a ray traversing a volume is lost. The attenuation (extinction) coefficient is the product of attenuation_color, attenuation_intensity, and attenuation_factor</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.links heading=4-%}
     </p>
-  </p>
-</details>
-<details open>
-  <summary>Emission Properties attributes</summary>
-  <p>
+    <h3>diffuse_color</h3>
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      <br>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">Reflectance color (scattering albedo) of the volume.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.links heading=4-%}
+    </p>
     <h3>emission_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">a color to tint (multiply to) the emission Technically the product of emision color and intensity is the emission coefficient</p>
+      <p class="scene-class-comments">A color multiplier for the emission.  The product of emission color and intensity is the emission coefficient</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.emission_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.emission_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.emission_color.links heading=4-%}
@@ -68,41 +83,11 @@ title: BaseVolume
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-comments">the rate at which a volume emits light at a given point. Technically the product of emission color and intensity is the emission coefficient.</p>
+      <p class="scene-class-comments">The rate at which a volume emits light at a given point.  The product of emission color and intensity is the emission coefficient.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.emission_intensity.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.emission_intensity.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.emission_intensity.links heading=4-%}
     </p>
-  </p>
-</details>
-<details open>
-  <summary>Scattering Properties attributes</summary>
-  <p>
-    <h3>anisotropy</h3>
-    <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
-      <br>
-      default: 0.0
-      <p class="scene-class-comments">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.links heading=4-%}
-    </p>
-    <h3>diffuse_color</h3>
-    <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
-      <br>
-      default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">reflectance color of the volume. Technically this is called scattering albedo, which is the scattering coefficient divided by the extinction coefficient.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.links heading=4-%}
-    </p>
-  </p>
-</details>
-<details open>
-  <summary>Volume attributes</summary>
-  <p>
     <h3>surface_opacity_threshold</h3>
     <p class="scene-class-type">
       <b>Float</b>
