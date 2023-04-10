@@ -23,7 +23,7 @@ title: VdbVolume
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
+      <p class="scene-class-comments">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is.  A value of 0.0 indicates an isotropic volume.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.anisotropy.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.anisotropy.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.anisotropy.links heading=4-%}
@@ -33,7 +33,7 @@ title: VdbVolume
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">A multiplier further applied to the color.</p>
+      <p class="scene-class-comments">The albedo of the volume</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.color_mult.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.color_mult.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.color_mult.links heading=4-%}
@@ -43,7 +43,7 @@ title: VdbVolume
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">A multiplier further applied to the incandescence gain.</p>
+      <p class="scene-class-comments">A multiplier applied to the volume emission</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.incandescence_gain_mult.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.incandescence_gain_mult.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.incandescence_gain_mult.links heading=4-%}
@@ -53,7 +53,7 @@ title: VdbVolume
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">A multiplier further applied to the opacity gain.</p>
+      <p class="scene-class-comments">A multiplier applied to the volume density</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.opacity_gain_mult.images data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.opacity_gain_mult.videos data=site.data.user-reference.scene-objects.volumes.VdbVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.VdbVolume.attributes.opacity_gain_mult.links heading=4-%}
