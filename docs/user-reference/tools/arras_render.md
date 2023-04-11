@@ -1,44 +1,29 @@
 ---
-title: arras_render
+title: Arras Render
 ---
-# arras_render
+# Arras Render
 
-**arras_render** is the command-line tool for rendering scenes by moonray under distributed
-single/multi machine environment.
-arras_render is the client application and connects to the backend arras moonray processes.
-arras_render itself does not do rendering itself.
-it creates scene information and sends it to the backend computations.
-All rendering job is performed on backend computations (moonray) and rendered image would send
-back to the arras_render via socket communication.
-(Detailed info is [here](../../../developer-reference/arras))<br>
+**arras_render** is a command-line and GUI tool for rendering scenes with MoonRay in a distributed single or multi-machine environment.  It is a client application which connects to backend Arras computation processes.   The arras_render client application does not do rendering on its own, rather it creates the scene information and sends that to backend computations.  All rendering is performed on these backend computations using <span class="define">moonray</span> and the rendered image is sent back to arras_render via socket communication.  More detailed information can be found in the [Arras overview documentation]({{ "/developer-reference/arras/" | absolute_url }})
 
-There are 3 potential benefits to using this style of rendering.<br>
-1. Light Weight Code Dependency<br>
-The client application does not have a heavy dependency on moonray itself.
-The client only needs to think about a small set of dependencies.
-2. Scalability<br>
-We can easily scale up performance by using more machines in a brute-force way.
-3. Be save the frontend process from unexpected backend termination.<br>
-Backend computations are separate processes. The frontend can restert backend and recover
-from the backend unexpected termination.
 
-arras_render is a developer's test tool of single/multi machine distributed moonray rendering
-for interactive lighting sessions.
-And, arras_render is a good code example of how to write arras moonray client by yourself.<br>
+There are three primary benefits to using this style of rendering:
 
-**arras_render** takes in one or more input files (--rdl option) as the same as **moonray**,
-and when the render is complete the resulting rendered image is written to disk but this image
-containts "**beauty**" and "**alpha**" only.
-This output image does not include all of the [RenderOutputs](../../scene-objects/render-output/RenderOutput/)
-AOVs.<br>
+1. Lightweight code dependency
+	* The client application does not have a heavy dependency on <span class="define">moonray</span> itself.
+	* The client only needs to think about a small set of dependencies.
+2. Scalability
+	* Performance can easily scale up by using more machines.
+3. The frontend process can be isolated from unexpected backend termination.
+	* Backend computations are separate processes, and so the frontend can restart backend to recover
+from any unexpected backend termination.
+
+**arras_render** is a developer's test tool of single and multi-machine distributed MoonRay rendering for interactive lighting sessions.  It is a good code example of how to write an Arras MoonRay client.  It takes in one or more input files using the `--rdl` option, the same as <span class="define">moonray</span>, and when the render is complete the resulting image is written to disk.  Note that the output image does not inculde all of the [RenderOutput]({{ "/user-reference/scene-objects/render-output/RenderOutput/" | absolute_url }}) AOVS, but only the `beauty` and `alpha`.
 
 
 ## Local mode
-We can run arras_render and backend render process (we call this process "MCRT computation".
-See more detail [here](../../../developer-reference/arras)) on the same machine.
-We call this execution style "**Local**" mode.
-In this case, you do **NOT** need to run "**minicoord**" coordinator before starting arras_render.
-You only need to run **arras_render** process with setup 3 environment variables.
+The frontend **arras_render** and the [backend Arras computation]({{ "/developer-reference/arras/" | absolute_url }}) process can be run on the same machine.  This execution style is referred to as "Local" mode.  In this mode, it is not needed to run the [*minicoord*]({{ "/developer-reference/arras/distributed-arras/#setup" | absolute_url }}) coordinator before starting arras_render.  It is only needed to run the arras_render process, having established 3 environment variables:
+
+
 ```bash
 export PATH=${rel_root}/bin:${PATH}
 export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy
@@ -46,39 +31,27 @@ export ARRAS_SESSION_PATH=${rel_root}/sessions
 
 arras_render --rdl <scene>.rdla --dc local --current-env
 ```
-arras_render automatically boots backend mcrt computation and connect to them.
-You don't need to specify -s or --session options.
-arras_render automatically picks up "mcrt_progressive" for you.<br>
-If you want to a specific configuration, it would be better to create new sessiondef file
-based on "mcrt_progressive.sessiondef" and modify it.
+**arras_render** automatically boots the backend MCRT computations and connects to them.  It is not necessary to specify `-s` or `--session` options, and arras_render automatically picks up "mcrt_progressive".  To make a specific configuration, create new sessiondef file based on `mcrt_progressive.sessiondef` and modify it.
 
 
 ## Multi-machine mode
-We can run arras_render at one host and can run multiple backend computations on other multiple hosts.
-In this case, we need to run "**minicoord**" and manage multiple hosts before start arras_render.
-(Detail info is [here](../../../developer-reference/arras/distributed-arras/#coordinator))
+**arras_render** can be run at one host and can connect to multiple backend MCRT computations on other hosts.  In this mode it is necessary to run the [*minicoord* coordinator]({{ "/developer-reference/arras/distributed-arras/#coordinator" | absolute_url }}) and manage multiple hosts before starting arras_render.
 
-We need 3 different computations. "dispatch", "mcrt", and "merge" computations for multi-machine
-mode (Detail is [here](../../../developer-reference/arras/)).<br>
-Basically, rendering task is done by mcrt computation and we use multiple mcrt computations.
-And, we need to run "dispatch" and "merge" computation.
-There are many variations of how to configure "dispatch", "mcrt", and "merge" coputation on
-multiple hosts.
+Three different [computations]({{ "/developer-reference/arras/" | absolute_url }}) are needed for multi-machine mode: "dispatch", "mcrt", and "merge".  The rendering task is done by the *mcrt* computation, and multiple *mcrt* computations can be used.  There are many variations on how to configure *dispatch*, *mcrt* and *merge* computation across multiple hosts.
 
-This is a naive example of mcrt total = 2 configurations.
-Using 3 hosts. hostA, hostB, and hostC for backend computations. (Also we need client hosts as well.)
-Each host has 96 HTcores for example.
-- assign mcrt computation to hostA and hostB.
-  - assign entire cores to mcrt computations
-  ([maxCores](../../../developer-reference/arras/arras-session-definitions/#requirements) = *).
-- assign dispatch computation and merge computation to hostC.
-  - This is a most naive configuration and hostC is more lightweight than hostA and hostB.
-  - dispatch computation only needs single core (using defalt would be OK and it's 1)
-  - Assigning the rest of the cores to merge computation would be nice.<br>
-    In this case, assign 94 cores to the merge computation for example.<br>
-    94(for merge) + 1(for dispatch) + 1(for arras-fundation) = 96.
+This is a simple multi-node example with two *mcrt* computations, using 3 hosts in total; hostA and hostB for the *mcrt* computations, and hostC for the backend computation.  Additional client hosts will be needed as well.  In this example, each host has 96 hyperthreaded cores:
 
-This is a sessiondef files example of the above configuration.
+
+- Assign an mcrt computation each to hostA and hostB.
+  - Assign all free cores to each mcrt computation by setting [maxCores]({{ "/developer-reference/arras/arras-session-definitions/#requirements" | absolute_url }}) = *.
+- Assign a dispatch computation and merge computation to hostC.
+  - This is a naive configuration and hostC is more lightweight than hostA and hostB.
+  - The dispatch computation only needs a single core (the default is 1 core)
+  - Assigning the remainder of the cores to the merge computations is desired.<br> 
+    In this example, we assign 94 cores to the merge computation<br>
+    94 (for merge) + 1 (for dispatch) + 1 (for arras-foundation) = 96 cores.
+
+This is an example sessiondef file for the above configuration.
 ```lua
 {
     "name": "mcrt_progressive_n_sample",
@@ -181,26 +154,23 @@ This is a sessiondef files example of the above configuration.
         }
     }
 }
-```        
-See "requirements" object of "dispatch", "mcrt", and "merge".
-Actually, "dispatch" does not have "resources" of "requirements" object and this means all resources
-setting is default.<br>
-We can use this sessiondef file from 32HTcore to 96HTcore hosts.
-(We can use more cores hosts as well).<br>
-Usually, merge computation is not a computational bottleneck if mcrt total is not so high (like around 6 or less).
-This means fundamentally, we don't need so many cores for merge computation.
-However, merge computation might become a bottleneck if mcrt total is 32 or more configurations for example.
-It would be better to assign as many cores as possible to the merge computation under extreme configuration.
+```
 
-"message" object of "dispatch", "mcrt", and "merge" is not dependent on the mcrt total number.
-This example of "message" object definition is recommended for all mutli-machine configurations.
+### Example Notes
+In the above example sessiondef file, look at the "requirements" object of "dispatch", "mcrt", and "merge".  Note that "dispatch" does not have "resources" defined in its "requirements" object, which means the default setting of all resources is used for "dispatch".
 
-In order to run arras_render by multi-machine mode, the typical procedure is like this.
+In this example sessiondef file, there can be anywhere from 32 to 96 hyperthreaded core hosts defined, and more core hosts can be defined.
 
-run [minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) on client host<br>
-run [arras4_node](../../../developer-reference/arras/distributed-arras/#node) on hostA, hostB, and hostC.<br>
+Additionally, in the usual case the *merge* computation is not a computational bottleneck if the mcrt total is not too high; around 6 or less.  This means that not so many cores are needed for the for merge computation.  However, the merge computation may become a bottleneck if the mcrt total is 32 or more configurations, for example.  In this case, it would be better to assign as many cores as possible to the merge computation under extreme configuration.
 
-on client hosts, you need to set 3 environment variables and run arras_render as follows.
+The "message" object of "dispatch", "mcrt", and "merge" is not dependent on the mcrt total number.  The example "message" object definition in the above example is recommended for all multi-machine configurations.
+
+In order to run arras_render in multi-machine mode, the typical procedure looks like the following.
+
+- Run [minicoord]({{ "/developer-reference/arras/distributed-arras/#coordinator" | absolute_url }}) on the client host.
+- Run [arras4_node]({{ "/developer-reference/arras/distributed-arras/#node" | absolute_url }}) on hostA, hostB, and hostC.
+- On the client hosts, set 3 environment variables and run arras_render as follows:
+
 ```bash
 export PATH=${rel_root}/bin:${PATH}
 export RDL2_DSO_PATH=${rel_root}/rdl2dso.proxy
@@ -208,38 +178,27 @@ export ARRAS_SESSION_PATH=${rel_root}/sessions
 
 arras_render --host <minicoord-running-host> --port 8888 --rdl <scene.rdla> -s <sessiondef-name> --num-mcrt 2 --current-env
 ```
-In this case, -s specified sessiondef file name of above sessiondef example (but without extension .sessiondef).<br>
-This sessiondef file should be located in ${rel_root}/sessions/.<br>
-Actually, --num-mcrt overwrite the "arrayExpand" field of "mcrt". So this sessiondef file can be used for
-other --num-mcrt numbers as well.<br>
-You can use multiple `--rdl` options. arras_render reads multiple rdl files by specified order.
+
+In this example, the `-s` setting specified the sessiondef file name, but without the extension ".sessiondef".  The sessiondef file should be located in ${rel_root}/sessions/.
+
+Additionally the `--num-mcrt` setting overwrites the "arrayExpand" field of "mcrt" object. So this sessiondef file can be used with other `--num-mcrt` numbers as well.
+
+Multiple `--rdl` options can be set as well.  arras_render reads multiple rdl files in the order specified.
 
 ## Scene Data for Multi-machine rendering
-There are 2 important rules you should understand for multi-machine rendering.
+There are two important rules to understand for multi-machine rendering.
 
 The first one is related to the remote disk mount on the backend hosts.
 
-We create sceneContext data at the client process and send it to the backend computation by message.
-Backend computations receive them and try to reconstruct scenes based on the received message.
-If this received message includes separate data located on the server and pointed by the filename path for example,
-backend computation needs to open that file properly based on the filename path.
-In order to do this, all the data need to locate at the same location from all backend computations.<br>
-This is easy to achieve by locating the data to the remote disk which mount to each host by the same name.
-For example, scene data is saved into a remote disk. and that remote disk is mounted to /work/scene on each host.
+SceneContext data is created at the client process and then sent o the backend computation via message.  Backend computations receive the message and try to reconstruct scenes based on the received message data.  If the received message includes separate data located on the server and pointed by a filename path, for example, then the backend computation needs to open that file properly based on the filename path.  In order to do this, all the data needs to be located at the same location from all the backend computations.  This is easy to achieve by locating the data to a remote disk which is mounted to each host with the same name.  For example, scene data is saved on to a remote disk which is mounted to /work/scene on each host.  With this example environment, all backend computations can access the destination data using the same filename path.
 
-Under this environment, all backend computations can access the destination data by the same filename path.
-
-The next rule is you should use an absolute path for file information in your scene and should **NOT** use a relative path.
-If you use a relative path like "./geomA" in your scene, backend computation tries to open the file using "./geomA".
-But probably the current directory is not the same and backend computation can not open the file and fail.
-You should use an absolute path for all filename information in your scene.
+The next rule is to use an absolute path for file information in your scene and to **NOT** use a relative path.  If a relative path like "./geomA" is in the scene, the backend computation will try to to open the file using "./geomA".  However, it's likely that the current directory is *not* the same and therefore the backend computation cannot open the file and will fail.  Therefore it's recommended to use an absolute path for all filename information in the scene.
 
 
 ## Command-line options
-Use just execute **arras_render** without any command-line options to display the full list.
-(The full command-line options include DWA-specific options but are not explained here.)<br>
-The followings are the options we use with
-[minicoord](../../../developer-reference/arras/distributed-arras/#coordinator) environment and **Local** mode.
+Running `arras_render` without any command-line options will display the full list of options (including DWA-specific options which are not covered here).
+
+The following described the options used with the [minicoord]({{ "/developer-reference/arras/distributed-arras/#coordinator" | absolute_url }}) environment and **Local** mode.
 
 ```bash
 $ arras_render
@@ -287,15 +246,15 @@ At least one RDL file is required
                                     environment
 ```
 
-`--dc local` is used for **Local** mode<br>
+The `--dc local` option is used for **Local** mode.
 
-`--infoRec`, `--inforRecDisp`, and `--infoRecFile` options are used for statistical information dump purposes.<br>
-`--debug-console` option is designed for debugging/developping purposes.
+The `--infoRec`, `--inforRecDisp`, and `--infoRecFile` options are used for statistical information purposes.
+
+The `--debug-console` option is designed for debugging purposes.
 
 ## Mouse / Hotkey Operation
 
-`Left Mouse Button` dragging rotates the camera direction.
-There is no orbit camera mode like moonray_gui at this moment.
+`Left Mouse Button` dragging rotates the camera direction.  There is no orbit camera mode like moonray_gui at this moment.
 
 Key|Description
 ---|---
