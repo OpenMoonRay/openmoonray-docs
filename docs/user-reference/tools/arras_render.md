@@ -39,7 +39,9 @@ arras_render --rdl <scene>.rdla --dc local --current-env
 
 Three different [computations]({{ "/developer-reference/arras/" | absolute_url }}) are needed for multi-machine mode: "dispatch", "mcrt", and "merge".  The rendering task is done by the *mcrt* computation, and multiple *mcrt* computations can be used.  There are many variations on how to configure *dispatch*, *mcrt* and *merge* computation across multiple hosts.
 
-This is a simple multi-node example with two *mcrt* computations, using 3 hosts in total; hostA and hostB for the *mcrt* computations, and hostC for the backend computation.  Additional client hosts will be needed as well.  In this example, each host has 96 hyperthreaded cores:
+This is a simple multi-node example with two *mcrt* computations, using 3 hosts in total; hostA and hostB for the *mcrt* computations, and hostC for the *dispatch* and *merge* computations. Additional client hosts will be needed as well.
+
+In this example, each host has 96 hyperthreaded cores:
 
 
 - Assign an mcrt computation each to hostA and hostB.
@@ -159,8 +161,8 @@ This is an example sessiondef file for the above configuration.
 ### Example Notes
 In the above example sessiondef file, look at the "requirements" object of "dispatch", "mcrt", and "merge".  Note that "dispatch" does not have "resources" defined in its "requirements" object, which means the default setting of all resources is used for "dispatch".
 
-In this example sessiondef file, there can be anywhere from 32 to 96 hyperthreaded core hosts defined, and more core hosts can be defined.
-
+ We can use this same sessiondef file for from 32 HTcores machine to 96 HTcores machines. (This sessiondef file might be also OK for more than 96 HTcores machine).
+ 
 Additionally, in the usual case the *merge* computation is not a computational bottleneck if the mcrt total is not too high; around 6 or less.  This means that not so many cores are needed for the for merge computation.  However, the merge computation may become a bottleneck if the mcrt total is 32 or more configurations, for example.  In this case, it would be better to assign as many cores as possible to the merge computation under extreme configuration.
 
 The "message" object of "dispatch", "mcrt", and "merge" is not dependent on the mcrt total number.  The example "message" object definition in the above example is recommended for all multi-machine configurations.
@@ -190,10 +192,28 @@ There are two important rules to understand for multi-machine rendering.
 
 The first one is related to the remote disk mount on the backend hosts.
 
-SceneContext data is created at the client process and then sent o the backend computation via message.  Backend computations receive the message and try to reconstruct scenes based on the received message data.  If the received message includes separate data located on the server and pointed by a filename path, for example, then the backend computation needs to open that file properly based on the filename path.  In order to do this, all the data needs to be located at the same location from all the backend computations.  This is easy to achieve by locating the data to a remote disk which is mounted to each host with the same name.  For example, scene data is saved on to a remote disk which is mounted to /work/scene on each host.  With this example environment, all backend computations can access the destination data using the same filename path.
+SceneContext data is created at the client process and then sent to the backend computation via message.  Backend computations receive the message and try to reconstruct scenes based on the received message data.  If the received message includes separate data located on the server and pointed by a filename path, for example, then the backend computation needs to open that file properly based on the filename path.  In order to do this, all the data needs to be located at the same location from all the backend computations.  This is easy to achieve by locating the data to a remote disk which is mounted to each host with the same name.  For example, scene data is saved on to a remote disk which is mounted to /work/scene on each host.  With this example environment, all backend computations can access the destination data using the same filename path.
 
 The next rule is to use an absolute path for file information in your scene and to **NOT** use a relative path.  If a relative path like "./geomA" is in the scene, the backend computation will try to to open the file using "./geomA".  However, it's likely that the current directory is *not* the same and therefore the backend computation cannot open the file and will fail.  Therefore it's recommended to use an absolute path for all filename information in the scene.
 
+
+## Characteristic of Moonray multi-machine rendering
+Current multi-machine implementation has several advantages as follows.
+- Each machine does not need to sync to start the timing of rendering. Sometimes boot timing of backend computations is very different depending on the each machine's condition. The current multimachine implementation is very generous for boot backend timing difference.
+Quick boot computation start rendering first and slow boot computation will join the later timing.
+- We can use mixed situations of different performance spec machines for backend computations. We can achieve pretty much full utilization of computational resources  for each backend MCRT computation even though each hardware performance is very different.
+We don't need to set up exact same spec machines.
+- Render is finally can be finished even if some of the backend MCRT computation is dead during rendering sessions.
+- Easy to achieve very scalable performance for MCRT calculation phase by multi-machine.
+
+Especially in order to achieve good scalability by host count, inter-communication between backend MCRT computation is minimized.
+
+One of the important tasks is how to properly stop rendering under multiple machine configuration.
+Merge computation needs to evaluate merged image results and analyze whether entire pixels have enough samples or not. 
+After that, merge computation sends a stop render message to all MCRT computations if the result merged image already includes enough samples. Each MCRT computation stops after receiving this STOP message from the merge computation. Usually, MCRT computation needs some interval to stop after receiving the STOP message and this is depending on the timing of which phase of rendering MCRT is processing at that time. 
+Probably, you might see more than 100% final rendering progress percentage in some configurations and scenes. This overrun of progress percentage is related to the STOP logic of multi-machine implementation.
+
+This solution works well for uniform sampling but does not work well for adaptive sampling at this moment. Please use uniform sampling if possible.
 
 ## Command-line options
 Running `arras_render` without any command-line options will display the full list of options (including DWA-specific options which are not covered here).
