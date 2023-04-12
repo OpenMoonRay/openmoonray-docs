@@ -161,7 +161,7 @@ This is an example sessiondef file for the above configuration.
 ### Example Notes
 In the above example sessiondef file, look at the "requirements" object of "dispatch", "mcrt", and "merge".  Note that "dispatch" does not have "resources" defined in its "requirements" object, which means the default setting of all resources is used for "dispatch".
 
- We can use this same sessiondef file for from 32 HTcores machine to 96 HTcores machines. (This sessiondef file might be also OK for more than 96 HTcores machine).
+This same sessiondef file can be used for from 32 to 96 HTcores machines, and it may also be OK for more than 96HTcores machine.
  
 Additionally, in the usual case the *merge* computation is not a computational bottleneck if the mcrt total is not too high; around 6 or less.  This means that not so many cores are needed for the for merge computation.  However, the merge computation may become a bottleneck if the mcrt total is 32 or more configurations, for example.  In this case, it would be better to assign as many cores as possible to the merge computation under extreme configuration.
 
@@ -198,22 +198,22 @@ The next rule is to use an absolute path for file information in your scene and 
 
 
 ## Characteristic of Moonray multi-machine rendering
-Current multi-machine implementation has several advantages as follows.
-- Each machine does not need to sync to start the timing of rendering. Sometimes boot timing of backend computations is very different depending on the each machine's condition. The current multimachine implementation is very generous for boot backend timing difference.
-Quick boot computation start rendering first and slow boot computation will join the later timing.
-- We can use mixed situations of different performance spec machines for backend computations. We can achieve pretty much full utilization of computational resources  for each backend MCRT computation even though each hardware performance is very different.
-We don't need to set up exact same spec machines.
-- Render is finally can be finished even if some of the backend MCRT computation is dead during rendering sessions.
-- Easy to achieve very scalable performance for MCRT calculation phase by multi-machine.
+The multi-machine implementation has several advantages, as follows.
+- Each machine does not need to be synchronized to start the timing of rendering. Sometimes the boot timing of the backend computations are very different depending on each machine's condition. The current multimachine implementation is very generous for boot backend timing differences.
+Faster booted computations will start rendering first and slower booted computation will join the later timing.
+- Therefore it is possible to use mixed, heterogeneous environment with different machines of varying performance specifications for the backend computations. Arras achieves pretty much full utilization of computational resources for each backend MCRT computation even though each hardware performance is very different.
+It is not necessary to set up machines with the exact matching specifications.
+- Rendering can be finished even if some of the backend MCRT computations fail or go inactive during rendering sessions.
+- It is easy to achieve very scalable performance for the MCRT computation phase using multi-machine rendering.
 
-Especially in order to achieve good scalability by host count, inter-communication between backend MCRT computation is minimized.
+In particular, in order to achieve good scalability through increased host count, the inter-communication time between backend MCRT computation is minimized.
 
 One of the important tasks is how to properly stop rendering under multiple machine configuration.
-Merge computation needs to evaluate merged image results and analyze whether entire pixels have enough samples or not. 
-After that, merge computation sends a stop render message to all MCRT computations if the result merged image already includes enough samples. Each MCRT computation stops after receiving this STOP message from the merge computation. Usually, MCRT computation needs some interval to stop after receiving the STOP message and this is depending on the timing of which phase of rendering MCRT is processing at that time. 
-Probably, you might see more than 100% final rendering progress percentage in some configurations and scenes. This overrun of progress percentage is related to the STOP logic of multi-machine implementation.
+The Merge computation needs to evaluate merged image results and analyze whether entire pixels have enough samples or not.
+Following that, the merge computation sends a stop render message to all MCRT computations if the resulting merged image already includes enough samples. Each MCRT computation then stops after receiving this STOP message from the merge computation. Usually, the MCRT computation needs some interval to stop after receiving the STOP message and this is depending on the timing of which phase of rendering MCRT is processing at that time.
+Therefore, it's possible to see a greater than 100% final rendering progress percentage in some configurations and scenes. This overrun of progress percentage is related to the STOP logic of multi-machine implementation.
 
-This solution works well for uniform sampling but does not work well for adaptive sampling at this moment. Please use uniform sampling if possible.
+Note that this solution works well for uniform sampling but does not work well for adaptive sampling currently (and is being addressed in a future update). For the moment, it's best to use uniform sampling if possible for multi-machine rendering.
 
 ## Command-line options
 Running `arras_render` without any command-line options will display the full list of options (including DWA-specific options which are not covered here).
