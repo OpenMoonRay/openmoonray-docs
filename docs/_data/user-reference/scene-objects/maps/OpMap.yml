@@ -1,2 +1,107 @@
 ---
 overview: overviews/OpMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/maps/OpMap
+gallery:
+attributes:
+  op1:
+    images:
+      - image: op1.jpg
+  op2:
+    images:
+      - image: op2.jpg
+  op1_factor:
+    images:
+      - image: fac100.jpg
+        text: 0
+      - image: fac105.jpg
+        text: 0.5
+      - image: add.jpg
+        text: 1
+  op2_factor:
+    images:
+      - image: fac200.jpg
+        text: 0
+      - image: fac205.jpg
+        text: 0.5
+      - image: add.jpg
+        text: 1
+  operation:
+    images:
+      - image: add.jpg
+        text: 0 - add
+      - image: sub.jpg
+        text: 1 - sub
+      - image: mul.jpg
+        text: 2 - mul
+      - image: div.jpg
+        text: 3 - div
+      - image: max.jpg
+        text: 4 - max
+      - image: min.jpg
+        text: 5 - min
+      - image: pow.jpg
+        text: 6 - power
+      - image: cross.jpg
+        text: 7 - cross
+      - image: dot.jpg
+        text: 8 - dot
+      - image: invert.jpg
+        text: 9 - invert op 1
+      - image: normalize.jpg
+        text: 10 - normalize op 1
+      - image: op1.jpg
+        text: 11 - op1
+      - image: op2.jpg
+        text: 12 - op2
+      - image: overlay.jpg
+        text: 13 - overlay
+      - image: screen.jpg
+        text: 14 - screen
+      - image: abs.jpg
+        text: 15 - abs
+      - image: ceil.jpg
+        text: 16 - ceil
+      - image: floor.jpg
+        text: 17 - floor
+      - image: modulo.jpg
+        text: 18 - modulo
+      - image: fraction.jpg
+        text: 19 - fraction
+      - image: length.jpg
+        text: 20 - length
+      - image: sine.jpg
+        text: 21 - sine
+      - image: cosine.jpg
+        text: 22 - cosine
+      - image: overlay.jpg
+        text: 23 - round
+      - image: acos.jpg
+        text: 24 - acos
+      - image: less_than.jpg
+        text: 25 - less_than
+      - image: less_than_or_equal.jpg
+        text: 26 - less_than_or_equal
+      - image: greater_than.jpg
+        text: 27 - greater_than
+      - image: greater_than_or_equal.jpg
+        text: 28 - greater_than_or_equal
+      - image: equal.jpg
+        text: 29 - equal
+      - image: not_equal.jpg
+        text: 30 - not_equal
+      - image: and.jpg
+        text: 31 - and
+      - image: or.jpg
+        text: 32 - or
+      - image: not.jpg
+        text: 33 - not
+      - image: xor.jpg
+        text: 34 - xor
+      - image: bit_shift_left.jpg
+        text: 35 - bit_shift_left
+      - image: bit_shift_right.jpg
+        text: 36 - bit_shift_right
+      - image: bitwise_and.jpg
+        text: 37 - bitwise_and
+      - image: bitwise_or.jpg
+        text: 38 - bitwise_or
