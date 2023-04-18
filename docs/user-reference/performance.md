@@ -90,12 +90,12 @@ also dependent on the OpenImageIO (OIIO) version. For example, a miss rate of 1.
 a miss rate of 4.36% of OIIO 2.3.20. Please keep this in mind, otherwise you might be confused when MoonRay upgrades OIIO versions.
 
 ## Quick Texture Cache Size Setup
-You can use the following procedure to find the best texture cache size for your moonray process If your moonray process exclusively run on the host. Idea is simple
+The following procedure helps to find the best texture cache size for the `moonray` process if that process is ran exclusively on tha host. The idea is simple.
 
 `texture cache size` = ***free_memory_size*** - ***MCRT_phase_start_timing_memory_size***
 
-### Step A : Get free memory size on the host<br>
-Get free available memory size by using "free" command.
+### Step A : Get the free memory size on the host<br>
+Get the free available memory size by using `free` command.
 ```
 > free
              total        used        free      shared  buff/cache   available
@@ -103,10 +103,12 @@ Mem:      197571200     6790192   125246204      775464    65534804   189254584
 Swap:       8388604     1639168     6749436
 ```
 
-In this example, free memory size is 125246204Kbyte = 119.444GByte
+In this example, the free memory size is 125246204Kbyte, which equals 119.444GByte
 
-### Step B : Get MCRT phase start timing memory size<br>
-You can get the exact used memory size of moonray process at MCRT phase start timing if you run rendering once at advance. This is done by -info output of moonray.
+### Step B : Get the MCRT phase start timing memory size<br>
+The exact used memory size of `moonray` process for the MCRT phase at the start of timing can be seen by running
+a render once in advance.
+The start memory for the MCRT start timing phase is then seen using the `-info` output of moonray.
 ```
 00:01:40   15.2 GB | ---------- MCRT Rendering --------------------------------
 no-extra-snapshot
@@ -118,14 +120,14 @@ no-extra-snapshot
 
 In this case, the used memory size at MCRT phase start timing is 15.2GB.
 
-### Step C : Calculate texture cache size<br>
+### Step C : Calculate the texture cache size<br>
 Therefore, the expected best texture cache size would be
 
 ```
 textureCacheSize = 119GByte - 15.2GByte = 104GByte = 106496MByte
 ```
 
-We should convert it to MByte and set it as sceneVariable.
+This should be converted to MByte and set as sceneVariable.
 
 ```lua
 ["texture_cache_size"] = 106496
