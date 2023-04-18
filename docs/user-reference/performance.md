@@ -30,7 +30,7 @@ improve performance in such scenes.
 
 Here's example output from the log ( with `-info` enabled):
 
-```bash
+```
 00:00:35    1.2 GB | ---------- OpenImageIO Texture Summary -------------------
 00:00:35    1.2 GB | Total texture I/O time           = 164.71s
 00:00:35    1.2 GB | Total texture MB read            = 371.29 MB
@@ -44,7 +44,7 @@ and this texture cache size seems optimal.
 
 The following example is from a texture heavy scene (Animal Logic's ALab) with a small texture cache size.
 
-```bash
+```
 00:41:07    8.4 GB | ---------- OpenImageIO Texture Summary -------------------
 00:41:07    8.4 GB | Total texture I/O time           = 68,276.54s
 00:41:07    8.4 GB | Total texture MB read            = 4.50 TB
@@ -61,7 +61,7 @@ The `texture_cache_size` SceneVariables attribute is specified in Mb (40960MB = 
 
 In this example (also from the ALab scene), the texture_cache_size has been raised to 40GB:
 
-```bash
+```
 00:08:50   42.9 GB | ---------- OpenImageIO Texture Summary -------------------
 00:08:50   42.9 GB | Total texture I/O time           = 812.61s
 00:08:50   42.9 GB | Total texture MB read            = 49.67 GB
@@ -88,6 +88,48 @@ balance.
 A lower cache miss rate is always better than a larger cache miss rate. However, the cache miss rate value itself is
 also dependent on the OpenImageIO (OIIO) version. For example, a miss rate of 1.94% of OIIO 1.7.7 is roughly the same as
 a miss rate of 4.36% of OIIO 2.3.20. Please keep this in mind, otherwise you might be confused when MoonRay upgrades OIIO versions.
+
+## Quick Texture Cache Size Setup
+You can use the following procedure to find the best texture cache size for your moonray process If your moonray process exclusively run on the host. Idea is simple
+
+`texture cache size` = ***free_memory_size*** - ***MCRT_phase_start_timing_memory_size***
+
+### Step A : Get free memory size on the host<br>
+Get free available memory size by using "free" command.
+```
+> free
+             total        used        free      shared  buff/cache   available
+Mem:      197571200     6790192   125246204      775464    65534804   189254584
+Swap:       8388604     1639168     6749436
+```
+
+In this example, free memory size is 125246204Kbyte = 119.444GByte
+
+### Step B : Get MCRT phase start timing memory size<br>
+You can get the exact used memory size of moonray process at MCRT phase start timing if you run rendering once at advance. This is done by -info output of moonray.
+```
+00:01:40   15.2 GB | ---------- MCRT Rendering --------------------------------
+no-extra-snapshot
+00:01:40   15.5 GB | Rendering [  0%]
+00:02:40   18.1 GB | Rendering [  0%]
+00:03:41   22.5 GB | Rendering [  0%]
+00:04:41   27.2 GB | Rendering [  0%]
+```
+
+In this case, the used memory size at MCRT phase start timing is 15.2GB.
+
+### Step C : Calculate texture cache size<br>
+Therefore, the expected best texture cache size would be
+
+```
+textureCacheSize = 119GByte - 15.2GByte = 104GByte = 106496MByte
+```
+
+We should convert it to MByte and set it as sceneVariable.
+
+```lua
+["texture_cache_size"] = 106496
+```
 
 ## A note on Benchmarking
 
