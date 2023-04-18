@@ -8,7 +8,7 @@ _Path guiding_ is MoonRay's method for handling difficult light transport situat
 dominated by _indirect lighting_ (such as a room lit through a door crack). Other techniques for these types of
 problems (which are not currently implemented in MoonRay) include metropolis light transport, VCM, photon mapping, and
 various other bi-directional path tracing techniques. The specific path guiding technique in MoonRay is based
-on [Practical Path Guiding for Efficient Light-Transport Simulation](http://drz.disneyresearch.com/~jnovak/publications/PathGuide/index.html).
+on [Practical Path Guiding for Efficient Light-Transport Simulation](https://jannovak.info/publications/PathGuide/index.html).
 
 ## How do I use it?
 
