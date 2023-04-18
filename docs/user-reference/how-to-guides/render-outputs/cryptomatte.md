@@ -4,11 +4,17 @@ title: Cryptomatte
 # Cryptomatte
 <span class="define">Cryptomatte</span> provides a way to isolate specific objects in the scene by ingesting user-specified object ids and generating pixel coverages. 
 
-In MoonRay, a single geometry (or part) covering a pixel will be represented by an `{id, weight}` pair, where the `id` represents some hash value assigned to the geometry by the user, and the `weight` represents the coverage amount. To understand coverage amount, you might consider the case  where you have an object with presence, where there might be multiple geometries contributing to the final value of a pixel. 
+In MoonRay, a single geometry (or part) covering a pixel will be represented by an `{id, weight}` pair, where the `id` 
+represents some hash value assigned to the geometry by the user, and the `weight` represents the "coverage" amount, or 
+the fractional amount the associated geometry contributes to the final value of the pixel. To understand coverage amount, 
+you might consider the case  where you have an object with presence, where there might be multiple geometries contributing 
+to the final value of a pixel. 
 
-These `{id, weight}` pairs will be stored in the R, G and B, A channels of each .exr layer, and the *cryptomatte_depth* user attribute determines how many layers will be generated (labeled like so: **Cryptomatte00**, **Cryptomatte01**, **Cryptomatte02**, etc). The `{id, weight}` pairs are sorted by max coverage, so the geometry with the most pixel coverage will always be the first entry. 
+These `{id, weight}` pairs will be stored in the R, G and B, A channels of each .exr layer, and the *cryptomatte_depth* 
+user attribute determines how many layers will be generated (labeled like so: **Cryptomatte00**, **Cryptomatte01**, 
+**Cryptomatte02**, etc). The `{id, weight}` pairs are sorted by max coverage, so the geometry with the most pixel 
+coverage will always be the first entry. 
 
-<!-- Uncomment section when feature is released 
 ## Extensions
 
 There are several options to output additional information. 
@@ -21,7 +27,9 @@ The RenderOutput object contains the additional toggles:
 - *cryptomatte_output_normals*
 - *cryptomatte_output_beauty*
 
-When turned on, each id/weight pair will also have the associated position/normal/beauty value output to a separate layer. If there are multiple pixel samples, the values from all the samples will be _averaged_ together. The output layers are as follows:
+When turned on, each id/weight pair will also have the associated position/normal/beauty value output to a separate layer. 
+If there are multiple pixel samples, the values from all the samples will be _averaged_ together. The output layers are 
+as follows:
 
 - **CryptoP**: position `(x, y, z)` is stored in `(r, g, b)`, respectively
 - **CryptoN**: normal `(x, y, z)` is stored in `(r, g, b)`, respectively
@@ -30,7 +38,20 @@ When turned on, each id/weight pair will also have the associated position/norma
 ### Multiple Presence Bounces
 
 In SceneVariables, you can toggle on *cryptomatte_multi_presence* to count each presence bounce as a separate cryptomatte entry. 
--->
+
+## Resume/Checkpoint Rendering
+In order to support resume/checkpoint rendering for the cryptomatte extensions, use the attribute *cryptomatte_support_resume_render*. 
+When on, this will output the presence depth and fragment samples to a layer called **CryptoS**, which allows us to accurately 
+restore the cryptomatte fragment data upon resuming rendering. 
+
+<aside> 
+By default, the <i>channel_format</i> of the RenderOutput is set to "half", which means we get half-precision. This is 
+typically fine. However, when re-constructing cryptomatte data during resume/checkpoint rendering, the ids may not match 
+due to precision loss. If you find you have split cryptomatte fragments during checkpoint rendering, try changing the 
+<i>channel_format</i> to "float". 
+</aside>
+{: .info-aside}
+
 ## Examples
 
 ### Assigning IDs to Different Geometries
@@ -67,9 +88,9 @@ RenderOutput("cryptomatte") {
                                     -- (in this case, only 1 layer needed)
 }
 
-RenderOutput("dummy0") {
-    ["file_name"] = "ignore_this_file",
-    ["primitive_attribute"] = "prim_id",
+RenderOutput("dummy0") {                  -- this extra layer is always needed
+    ["file_name"] = "ignore_this_file",   -- so that cryptomatte can access
+    ["primitive_attribute"] = "prim_id",  -- the id primitive attribute
     ["result"] = "primitive attribute",
 }
 ```
@@ -93,9 +114,11 @@ local geom0 = AbcGeometry("geom0") {
 RenderOutput("cryptomatte") {
     ["result"] = "cryptomatte",
     ["file_name"] = "result0.exr",
-    ["cryptomatte_depth"] = 2       -- max possible number of {id, weight} pairs
+    ["cryptomatte_depth"] = 2,      -- max possible number of {id, weight} pairs
                                     -- limits number of generated exr layers 
                                     -- (in this case, only 1 layer needed)
+    ["cryptomatte_output_positions"] = true,
+    ["cryptomatte_output_beauty"] = true
 }
 
 RenderOutput("dummy0") {
@@ -104,3 +127,5 @@ RenderOutput("dummy0") {
     ["result"] = "primitive attribute",
 }
 ```
+Since this example includes cryptomatte extensions, it will output these named layers: Cryptomatte00, CryptoP00, 
+CryptoP01, CryptoB00, CryptoB01.

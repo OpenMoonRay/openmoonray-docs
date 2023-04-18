@@ -1,6 +1,10 @@
-**RdlInstancerGeometry** instances other geometry based on it's parameters.
+**RdlInstancerGeometry** instances other geometry based on its parameters.
 
-Geometry to instance is referenced with the *references* attribute.   Which geometry to use per-instance is defined with the *ref_indices* attribute.   The transforms of the instances can be defined by either the *xforms_list* which uses a list matrices or the *positions*, *orientations*, and *scales* vector list attributes.  Primitive attributes can be defined per-instance but only at a constant rate.
+Geometry to instance is referenced with the *references* attribute.   Which geometry to use per-instance is defined with the *ref_indices* attribute.  Note that the reference object itself will _not_ be rendered -- only its instances.
+
+The transforms of the instances can be defined by either the *xforms_list* which uses a list matrices or the *positions*, *orientations*, and *scales* vector list attributes. Any *node_xform* on the original reference object is ignored. Primitive attributes can be defined per-instance but only at a constant rate.
+
+<aside class="info-aside"> Volumes can also be instanced in the same manner, but keep in mind that MoonRay is currently limited to max 512 volumes. </aside>
 
 ```lua
 boxGeom = BoxGeometry("boxGeom") {
@@ -60,7 +64,12 @@ colorData2 = UserData("colorData2") {
 ```
 
 Referenced geometry must also be declared in the *GeometrySet* and materials must also be assigned to
-the referenced geometry.   Any material assigned to the *RdlInstancerGeometry* itself is ignored.
+the referenced geometry. Any material assigned to the *RdlInstancerGeometry* itself is ignored.
+
+If the instancer and the referenced object have two different LightSets applied, they will be combined in a logical
+OR operation (i.e., lights from _both_ sets will apply to the referenced object's instances). If the instancer and the 
+reference object have different visibility flags, they will be combined in a logical AND operation 
+(i.e., the visibility flag has to be present on both the instancer and the reference object to apply).
 
 ```lua
 GeometrySet("/Scene/geometry/all") {
@@ -79,9 +88,11 @@ geomMtl = DwaSolidDielectricMaterial("geomMtl") {
 }
 
 Layer("/Scene/rendering/all") {
-    {boxGeom,    "", geomMtl},
+    {boxGeom,    "", geomMtl, LightSetA},
     {sphereGeom, "", geomMtl},
-    {instancer0, "" },
+    {instancer0, "",          LightSetB}, -- see the explanation above about what 
+                                          -- happens if the instancer ALSO has a 
+                                          -- LightSet applied
 }
 ```
 
@@ -89,7 +100,7 @@ Layer("/Scene/rendering/all") {
 
 
 Instancer geometry may itself also be instanced up to four levels deep.  The example below instances the
-previously defined instancer.  It also uses it's own set of *Cd* color data which overrides the data on
+previously defined instancer.  It also uses its own set of *Cd* color data which overrides the data on
 the referenced instancer.
 
 ```lua
