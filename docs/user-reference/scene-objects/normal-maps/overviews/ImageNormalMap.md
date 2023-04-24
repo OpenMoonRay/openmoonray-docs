@@ -1,0 +1,1 @@
+**ImageNormalMap** applies tangent space normal mapping to materials.   It is typically referenced by the *input_normal* attribute of a [material]({{ "/user-reference/scene-objects/materials" | absolute_url }}).
