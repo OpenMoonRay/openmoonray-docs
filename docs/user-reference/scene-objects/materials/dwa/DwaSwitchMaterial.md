@@ -65,6 +65,16 @@ title: DwaSwitchMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
+    <h3>invisible_refractive_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaSwitchMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
+    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
