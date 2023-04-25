@@ -2,7 +2,7 @@
 
 Geometry to instance is referenced with the *references* attribute.   Which geometry to use per-instance is defined with the *ref_indices* attribute.  Note that the reference object itself will _not_ be rendered -- only its instances.
 
-The transforms of the instances can be defined by either the *xforms_list* which uses a list matrices or the *positions*, *orientations*, and *scales* vector list attributes. Any *node_xform* on the original reference object is ignored. Primitive attributes can be defined per-instance but only at a constant rate.
+The transforms of the instances can be defined by either the *xforms_list* which uses a list matrices or the *positions*, *orientations*, and *scales* vector list attributes. The attribute *use_reference_xforms* determines whether the instances should first be transformed by the reference object's *node_xform*. Primitive attributes can be defined per-instance but only at a constant rate.
 
 <aside class="info-aside"> Volumes can also be instanced in the same manner, but keep in mind that MoonRay is currently limited to max 512 volumes. </aside>
 
@@ -66,11 +66,6 @@ colorData2 = UserData("colorData2") {
 Referenced geometry must also be declared in the *GeometrySet* and materials must also be assigned to
 the referenced geometry. Any material assigned to the *RdlInstancerGeometry* itself is ignored.
 
-If the instancer and the referenced object have two different LightSets applied, they will be combined in a logical
-OR operation (i.e., lights from _both_ sets will apply to the referenced object's instances). If the instancer and the 
-reference object have different visibility flags, they will be combined in a logical AND operation 
-(i.e., the visibility flag has to be present on both the instancer and the reference object to apply).
-
 ```lua
 GeometrySet("/Scene/geometry/all") {
     grid,
@@ -88,11 +83,9 @@ geomMtl = DwaSolidDielectricMaterial("geomMtl") {
 }
 
 Layer("/Scene/rendering/all") {
-    {boxGeom,    "", geomMtl, LightSetA},
+    {boxGeom,    "", geomMtl},
     {sphereGeom, "", geomMtl},
-    {instancer0, "",          LightSetB}, -- see the explanation above about what 
-                                          -- happens if the instancer ALSO has a 
-                                          -- LightSet applied
+    {instancer0, ""}
 }
 ```
 

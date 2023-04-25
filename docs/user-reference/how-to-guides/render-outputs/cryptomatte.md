@@ -31,8 +31,8 @@ When turned on, each id/weight pair will also have the associated position/norma
 If there are multiple pixel samples, the values from all the samples will be _averaged_ together. The output layers are 
 as follows:
 
-- **CryptoP**: position `(x, y, z)` is stored in `(r, g, b)`, respectively
-- **CryptoN**: normal `(x, y, z)` is stored in `(r, g, b)`, respectively
+- **CryptoP**: world position `(x, y, z)` is stored in `(r, g, b)`, respectively
+- **CryptoN**: shading normal `(x, y, z)` is stored in `(r, g, b)`, respectively
 - **CryptoB**: beauty `(r, g, b, presence)` is stored in `(r, g, b, a)`
 
 ### Multiple Presence Bounces
