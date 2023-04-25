@@ -1,0 +1,8 @@
+---
+overview: /overviews/DwaMixMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/dwa/DwaMixMaterial
+attributes:
+  mix_interpolation:
+    images:
+      - image: mix_interpolation.jpg
+        text: "From top to bottom: linear, smooth, nearest, hold"
