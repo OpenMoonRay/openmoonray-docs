@@ -33,7 +33,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 4000
-      <p class="scene-class-comments">size is in Mb and this is the maximum cache size</p>
+      <p class="scene-class-comments">This setting specifies the maximum size of the texture cache in megabytes. This value can significantly impact rendering speed, where larger values often improve rendering speed.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_cache_size.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_cache_size.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_cache_size.links heading=4-%}
@@ -239,7 +239,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: -1
-      <p class="scene-class-comments">Specify port number for debug console. If you set -1 (=default), all debug console functionalities are disabled. If you set 0 or positive port number, debug console functionalities are enabled. If enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. If you set 0, the kernel finds the available port for you and displays the port number to the cerr. Otherwise you have to set the available port number yourself.</p>
+      <p class="scene-class-comments">This setting specifies the port number for the debug console. When the debug console functionalities are enabled, you can use a telnet connection to send commands and control rendering behavior for debugging purposes.<br>- A value of -1 disables all debug console functionality.<br>- A positive value specifies a specific port number.<br>- If you set the port number to 0, the kernel will find an available port for you and display the port number to stderr.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_console.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_console.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_console.links heading=4-%}
@@ -573,7 +573,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Whether to count presence bounces as separate cryptomatte samples</p>
+      <p class="scene-class-comments">This setting determines whether to record presence bounces as separate cryptomatte samples</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.links heading=4-%}
@@ -897,7 +897,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Define on-resume lua script name. This script is loaded into the renderer just after renderPrep execution under resume render mode then executed. This script is not executed if non-resume render mode even if you set script name.Renderer sets some lua global variables and lua script can access them. We can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. See details in rendering-wiki checkpoint/resume page. If empty, on-resume script execution is disabled.</p>
+      <p class="scene-class-comments">When using resumable rendering, the Lua script named here is loaded after the render prep stage. In addition, MoonRay sets some Lua global variables the script can access. This functionality is disabled when the script name is empty or when not using resumable rendering. Please refer to the checkpoint/resume documentation for more details.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.links heading=4-%}
@@ -1308,7 +1308,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Selection of image file write uses two stage output logic or not. Two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. This solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. Temporary file directory is defined by tmp_dir scene_variable.</p>
+      <p class="scene-class-comments">This setting specifies whether to use a two-stage writing process for images. In two-stage writing, the image is first written to a temporary location and then copied or renamed. This approach significantly reduces the risk of output data corruption due to an unexpected render process termination.<br>The directory where the temporary files are stored is defined by the "tmp_dir" scene variable.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.links heading=4-%}
