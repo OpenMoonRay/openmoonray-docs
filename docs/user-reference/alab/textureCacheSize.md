@@ -12,11 +12,11 @@ A quick general solution to find the good texture cache size for an exclusive mo
 This is a rendering test result image of ALab 2.0.1. (without denoising)
 ![alab201]({{ "/assets/images/user-reference/alab/out_txCache096Xpu0.png" | absolute_url }})
 
-The texture cache size setting has a huge impact on the efficiency of rendering.
+The texture cache size setting has a huge impact on the efficiency of rendering especially texture-heavy scenes like ALab.
 This is a test profiling result of various different texture cache sizes on ALab2.0.1.
 ![Texture Cache Size Performance Difference]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})
 
-All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself).
+All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself) with 4K high reso texture and baked geometry.
 Basically all sceneVariable settings are default except image size and uniform sampling related parameters.
 ```
 SceneVariables {
@@ -58,7 +58,15 @@ More than 96G is also basically fine but it makes slightly slow down the renderi
 swap out some portion of BVH and sceneContext memory at runtime. Then this might make some small impact on the final
 efficiency and as a result it is slowdown a bit.
 
-XPU performance is constantly better than scalar and its ratio is 1.16x ~ 1.68x better.
-Vector performance is also constantly better than scalar and its ratio is 1.14x ~ 1.34x better as well.
+XPU performance is constantly better than scalar and its ratio is __1.16x__ ~ __1.68x__ better.
+Vector performance is also constantly better than scalar and its ratio is __1.14x__ ~ __1.34x__ better as well.
 Moonrays vector/XPU architecture is very useful for texture-heavy scenes due to vector/XPU architecture maximizing
 the memory access coherency.
+
+This is a breakdown of runtime by profile_viewer for the XPU runs.
+![renderProfileViewer]({{ "/assets/images/user-reference/alab/renderProfileViewer.png" | absolute_url }})
+
+As you can see, the texturing time is dominant when the texture cache size is small.
+Also, shader handler time is directly related to the texturing time and it is getting big if the texturing time is big.
+Performance is improved when texture sampling cost is dropped by increasing texture cache size.
+
