@@ -509,6 +509,13 @@
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
         path: user-reference/performance.md
+      - text: ALab Rendering
+        path: user-reference/alab/index.md
+        subitems:
+          - text: Texture Cache Size Consideration
+            path: user-reference/alab/textureCacheSize.md
+          - text: Quality Settings
+            path: user-reference/alab/qualitySettings.md
   - text: Developer Reference
     path: developer-reference/index.md
     subitems:
