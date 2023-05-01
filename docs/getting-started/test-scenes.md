@@ -13,7 +13,7 @@ The "MoonRay Widget" shader ball model used in this documentation is released in
 
 ## Credits
 
-The example scenes were [curated by Benedikt Bitterli](https://benedikt-bitterli.me/resources/). They are designed to render modern, realistic images.
+The example scenes were [curated by Benedikt Bitterli](https://benedikt-bitterli.me/resources/). They are designed to render modern, realistic scenes.
 
 The [ALab scene was created by Animal Logic](https://animallogic.com/alab/) as a reference USD production scene for exploration. This scene was developed to be used in different environments, such as demonstrations and training materials and in the testing of USD support across software and pipeline. 
 
