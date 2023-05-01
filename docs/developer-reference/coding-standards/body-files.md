@@ -7,6 +7,7 @@ title: Body Files
 
 * Whenever possible, make variables and functions static or place them in an anonymous namespace to reduce namespace
 collisions. For example,
+
 ```c++
 // file : sort.cc
 // both swap1 and swap2 are only visible in sort.cc
