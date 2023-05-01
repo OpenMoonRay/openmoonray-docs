@@ -1,0 +1,6 @@
+---
+overview: overviews/ProjectCameraNormalMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/normal-maps/ProjectCameraNormalMap
+gallery:
+  - image: project_camera_normal_map_setup.png
+    text: Texture is applied via a camera frustum
