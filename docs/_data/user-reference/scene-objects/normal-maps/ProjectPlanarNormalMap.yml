@@ -1,0 +1,8 @@
+---
+overview: overviews/ProjectPlanarNormalMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/normal-maps/ProjectPlanarNormalMap
+gallery:
+  - image: project_planar_normal_map.jpg
+    text: Applied normal map
+  - image: spheres_n_ogl.jpg
+    text: The texture used in this example
