@@ -16,7 +16,8 @@ The texture cache size setting has a huge impact on the efficiency of rendering 
 This is a test profiling result (MCRT time. not include RenderPrep time) of various different texture cache sizes on ALab2.0.1.
 ![Texture Cache Size Performance Difference]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})
 
-All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself) with 4K high reso texture and baked geometry.
+All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself) with 4K high reso texture and baked geometry. Linux kernel cache was warm enough by preliminary test render. All tests were rendered 3 times and averaged results.
+
 Basically, all sceneVariable settings are default except image size and uniform sampling related parameters.
 ```
 SceneVariables {
