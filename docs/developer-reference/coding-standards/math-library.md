@@ -3,7 +3,7 @@ title: Math Library
 ---
 # Math Library
 
-We use our own math library (**lib/common/math** in the **scene_rdl2** repo). For convenience we typically do the following in our .cc files (but NEVER in our header files):
+We use our own math library, **lib/common/math** in the **scene_rdl2** repo. For convenience we typically do the following in our .cc files (but NEVER in our header files):
 ```
 using namespace scene_rdl2::math;
 ```
