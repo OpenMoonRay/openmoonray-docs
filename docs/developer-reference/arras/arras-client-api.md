@@ -57,13 +57,12 @@ The next step is to create a new session. This requires three things:
 - A set of session options
 
 ```c++
-        arras4::client::SessionDefinition session_def = 
-arras4::client::SessionDefinition::load(SESSION_NAME);
-        if (NUM_MACHINES > 1) {
-            session_def["mcrt"]["arrayExpand"] = NUM_MACHINES;
-        }
-        std::string url(COORDINATOR_URL);
-        arras4::client::SessionOptions options;
+arras4::client::SessionDefinition session_def = arras4::client::SessionDefinition::load(SESSION_NAME);
+if (NUM_MACHINES > 1) {
+    session_def["mcrt"]["arrayExpand"] = NUM_MACHINES;
+}
+std::string url(COORDINATOR_URL);
+arras4::client::SessionOptions options;
 ```
 
 Session definitions are described in detail [here](arras-session-definitions). This code loads a JSON template from a file and then modifies the number of mcrt computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
@@ -74,16 +73,16 @@ COORDINATOR_URL is hard-coded to "arras:local" at the start of the code, which w
 
 **Session creation**
 ```c++
-        std::string sessionId;
-        try {
-            sessionId = theSdk->createSession(session_def, url, options);
-        } catch (const arras4::sdk::SDKException& e) {
-            std::cerr << e.what() << std::endl;
-        }
-        if (sessionId.empty()) {
-            std::cerr << "Session creation failed" << std::endl;
-            return -1;
-        }
+std::string sessionId;
+try {
+    sessionId = theSdk->createSession(session_def, url, options);
+} catch (const arras4::sdk::SDKException& e) {
+    std::cerr << e.what() << std::endl;
+}
+if (sessionId.empty()) {
+    std::cerr << "Session creation failed" << std::endl;
+    return -1;
+}
 ```
 
 If session creation fails, `createSession` will throw an exception. The most likely cause of failure is that the Coordinator cannot find machines to satisfy the requests in the session definition. Creation will also fail if the Coordinator URL is incorrect or if, in local mode, more than one computation is requested.
@@ -94,11 +93,11 @@ When the client code establishes a connection to the session, startup of the req
 
 **Wait for creation to complete**
 ```c++
-        bool ready = theSdk->waitForEngineReady(30);
-        if (!ready) {
-            std::cerr << "Session startup timed out" << std::endl;
-            return -1;
-        }
+bool ready = theSdk->waitForEngineReady(30);
+if (!ready) {
+    std::cerr << "Session startup timed out" << std::endl;
+    return -1;
+}
 ```
 
 `waitForEngineReady(30)` blocks for up to 30 seconds waiting for startup to complete. You can also use the non-blocking function `isEngineReady()` if it is more appropriate. The best timeout value can depend on the speed of the network and whether you are running in local or distributed mode. A failed startup generally means that one of more of the machines assigned to the session is not functioning correctly.
@@ -107,20 +106,20 @@ For this example, we are loading the scene from an RDLA file using the `scene_rd
 
 **Load scene to render**
 ```c++
-        scene_rdl2::rdl2::SceneContext scene;
-        scene.setProxyModeEnabled(true);
-        scene_rdl2::rdl2::readSceneFromFile(SCENE_FILE, scene);
+scene_rdl2::rdl2::SceneContext scene;
+scene.setProxyModeEnabled(true);
+scene_rdl2::rdl2::readSceneFromFile(SCENE_FILE, scene);
 ```
 
 To start the session rendering, we need to send it an `RDLMessage` with the scene contents. `BinaryWriter` encodes the `SceneContext` as RDLB and places it in a message:
 
 **Send scene to Arras**
 ```c++
-        mcrt::RDLMessage::Ptr rdlMsg = std::make_shared<mcrt::RDLMessage>();
-        scene_rdl2::rdl2::BinaryWriter writer(scene);
-        writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);
-        theSdk->sendMessage(rdlMsg);
-        scene.commitAllChanges();
+mcrt::RDLMessage::Ptr rdlMsg = std::make_shared<mcrt::RDLMessage>();
+scene_rdl2::rdl2::BinaryWriter writer(scene);
+writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);
+theSdk->sendMessage(rdlMsg);
+scene.commitAllChanges();
 ```
 
 Because we set the send mode of `theSdk` to Sync, `sendMessage` will return after sending out the message. As soon as the mcrt computations in the session receive the message, they will start rendering the scene : after an initial "render prep" period, the client will begin to receive messages containing rendered frames.
@@ -129,14 +128,14 @@ If the scene changes, we can send updates into the session. Calling `setDeltaEnc
 
 **Update scene and resend**
 ```c++
-        sleep(10);
+sleep(10);
 
-        scene_rdl2::rdl2::readSceneFromFile(SCENE_DELTA_FILE, scene);
-        writer.setDeltaEncoding(true);
-        writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);    
-        rdlMsg->mForceReload = false;
-        theSdk->sendMessage(rdlMsg);
-        scene.commitAllChanges();
+scene_rdl2::rdl2::readSceneFromFile(SCENE_DELTA_FILE, scene);
+writer.setDeltaEncoding(true);
+writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);    
+rdlMsg->mForceReload = false;
+theSdk->sendMessage(rdlMsg);
+scene.commitAllChanges();
 ```
 
 Setting `rdlMsg->mForceReload` to false causes the mcrt computations to apply this message on top of the existing scene. To begin afresh with a new scene, we would send a message with `mForceReload = true`.
@@ -145,13 +144,13 @@ The final step in the main function is to wait 10 seconds and then terminate the
 
 **Shutdown session**
 ```c++
-        sleep(10);
+sleep(10);
 
-        theSdk->shutdownSession();
-        if (!theSdk->waitForDisconnect(30)) {
-        std::cerr << "Session failed to disconnect on request" << std::endl;
-            theSdk->disconnect();
-        }
+theSdk->shutdownSession();
+if (!theSdk->waitForDisconnect(30)) {
+    std::cerr << "Session failed to disconnect on request" << std::endl;
+    theSdk->disconnect();
+}
 ```
 
 `shutdownSession()` is the polite way to terminate a session : Arras will send back a status message with information about the session and then disconnect from the client remotely. If something goes wrong with shutdown -- generally because one or more of the computations has become unresponsive and won't shut itself down cleanly --- the `waitForDisconnect(30)` function will timeout after 30 seconds. Then the client code calls `disconnect()`, which closes the connection from the client end.
@@ -165,44 +164,44 @@ void messageHandler(const arras4::api::Message& msg)
 {
     if (msg.classId() == mcrt::ProgressiveFrame::ID) {
         mcrt::ProgressiveFrame::ConstPtr frameMsg = msg.contentAs<mcrt::ProgressiveFrame>();
+    }
 ```
   
 ProgressiveFrame messages are sent by the mcrt and merge computations at regular intervals as shading progresses. Each message contains differences from the previous one : [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) knows how to accumulate these into an image:
 
 **Decode**
 ```c++
-        theFbReceiver->decodeProgressiveFrame(*frameMsg, true, [&]() {});
+theFbReceiver->decodeProgressiveFrame(*frameMsg, true, [&]() {});
 ```
 
 If we are using credit messages, an update should be sent back after decoding is complete:
 
 **Credit response**
 ```c++
-        mcrt::CreditUpdate::Ptr creditMsg = std::make_shared<mcrt::CreditUpdate>();
-        creditMsg->value() = 1;
-        theSdk->sendMessage(creditMsg);
+ mcrt::CreditUpdate::Ptr creditMsg = std::make_shared<mcrt::CreditUpdate>();
+creditMsg->value() = 1;
+theSdk->sendMessage(creditMsg);
 ```
 
 [`ClientReceiverFb`](../doxygen-pages/#mcrt_dataioclientreceiverfb) can provide render progress as a number between 0 and 1. It also provides a status value, which can be `STARTED`, `RENDERING`, `FINISHED`, `CANCELLED`,  or `ERROR`.
 
 **Show status**
 ```c++
-        std::cout << "Render progress " << theFbReceiver->getProgress();      
-        bool frameComplete = theFbReceiver->getStatus() == mcrt::BaseFrame::FINISHED;
+std::cout << "Render progress " << theFbReceiver->getProgress();      
+bool frameComplete = theFbReceiver->getStatus() == mcrt::BaseFrame::FINISHED;
 ```
 
 The current image can be fetched from `theFbReceiver` at any point after the first frame is received. In this case, we wait until the frame is complete before extracting the image as Rgb888 data.
 
 **Handle final image**
 ```c++
-        if (frameComplete) {
-            std::vector<float> rgbaData;
-            theFbReceiver->getBeauty(rgbaData);
-            deliverImage(theFbReceiver->getWidth(),
-                         theFbReceiver->getHeight(),
-                         rgbaData);
-        }
-    }
+if (frameComplete) {
+    std::vector<float> rgbaData;
+    theFbReceiver->getBeauty(rgbaData);
+    deliverImage(theFbReceiver->getWidth(),
+        theFbReceiver->getHeight(),
+         rgbaData);
+}
 ```
  
 `deliverImage` is left undefined in this example.
