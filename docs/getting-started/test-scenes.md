@@ -9,7 +9,7 @@ A version of Animal Logic's ALab scene, converted to MoonRay-native RDL2 scene f
 
 A simple USD scene can be used for testing using MoonRay's Hydra plugin: [moonray_sphere.usd]({{ "/assets/test-scenes/moonray_sphere.usd" | absolute_url }}).
 
-The "MoonRay Widget" shader ball model used in this documentation is released as a USD file: [MoonRayWidget.zip]({{ "/assets/test-scenes/MoonRayWidget.zip" | absolute_url }}).
+The "MoonRay Widget" shader ball model used in this documentation is released in USD ascii and binary formats: [MoonRayWidget.zip]({{ "/assets/test-scenes/MoonRayWidget.zip" | absolute_url }}).
 
 ## Credits
 
