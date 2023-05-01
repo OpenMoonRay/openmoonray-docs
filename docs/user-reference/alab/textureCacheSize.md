@@ -17,7 +17,7 @@ This is a test profiling result of various different texture cache sizes on ALab
 ![Texture Cache Size Performance Difference]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})
 
 All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself) with 4K high reso texture and baked geometry.
-Basically all sceneVariable settings are default except image size and uniform sampling related parameters.
+Basically, all sceneVariable settings are default except image size and uniform sampling related parameters.
 ```
 SceneVariables {
     ["image_width"] = 1920,
@@ -49,22 +49,20 @@ Memory : 187 GByte (However, test redner was done around 124GByte of free memory
 GPU : Nvidia Quadro RTX 6000
 ```
 
-Texture main cache hit miss number is very depend on the OpenImageIO versions. This is based on the OpenImageIO 2.3.20.<br>
+Texture's main-cache-hit-miss number is very depend on the OpenImageIO versions. This is based on the OpenImageIO 2.3.20.<br>
 4GByte (actually, default is 3.91GByte) texture cache render run did not show the main cache hit-miss ratio in the log
 (and is not plotted on the graph).
-Looks like overall render performance using around 96G texture cache size would be ideal configuration for this scene with
-this environment. 
+Looks like overall render performance using around 96G texture cache size would be the idealbest configuration for this scene under this environment. 
 More than 96G is also basically fine but it makes slightly slow down the rendering. Probably big texture cache makes
 swap out some portion of BVH and sceneContext memory at runtime. Then this might make some small impact on the final
-efficiency and as a result it is slowdown a bit.
+efficiency and as a result, it is slow down a bit.
 
 XPU performance is constantly better than scalar and its ratio is __1.16x__ ~ __1.68x__ better.
 Vector performance is also constantly better than scalar and its ratio is __1.14x__ ~ __1.34x__ better as well.
-Moonrays vector/XPU architecture is very useful for texture-heavy scenes due to vector/XPU architecture maximizing
-the memory access coherency.
+Moonrays vector/XPU architecture is very useful for texture-heavy scenes due to this architecture maximizes the memory access coherency.
 
-This is a breakdown of runtime by profile_viewer for the XPU runs.
-![renderProfileViewer]({{ "/assets/images/user-reference/alab/renderProfileViewer.png" | absolute_url }})
+This is a breakdown of runtime timing by profile_viewer for the XPU runs.
+![Renderprofileviewer]({{ "/assets/images/user-reference/alab/renderProfileViewer.png" | absolute_url }})
 
 As you can see, the texturing time is dominant when the texture cache size is small.
 Also, shader handler time is directly related to the texturing time and it is getting big if the texturing time is big.
