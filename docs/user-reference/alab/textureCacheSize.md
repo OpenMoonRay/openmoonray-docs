@@ -13,7 +13,7 @@ This is a rendering test result image of ALab 2.0.1. (without denoising)
 ![alab201]({{ "/assets/images/user-reference/alab/out_txCache096Xpu0.png" | absolute_url }})
 
 The texture cache size setting has a huge impact on the efficiency of rendering especially texture-heavy scenes like ALab.
-This is a test profiling result of various different texture cache sizes on ALab2.0.1.
+This is a test profiling result (MCRT time. not include RenderPrep time) of various different texture cache sizes on ALab2.0.1.
 ![Texture Cache Size Performance Difference]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})
 
 All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself) with 4K high reso texture and baked geometry.
