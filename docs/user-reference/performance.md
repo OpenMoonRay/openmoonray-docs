@@ -4,19 +4,52 @@ title: Performance Considerations
 # Performance Considerations
 This page documents how to get the best performance out of MoonRay
 
-## Tiled Textures
-
-<aside class="info-aside">MoonRay <b>requires</b> the use of tiled textures which greatly improves rendering performance.</aside>  
-
-The OpenImageIO utility
-`maketx` or `oiiotool` should be used to convert common file formats to the optimal .tx format.
-
 ## Adaptive Error Tesselation
 The `adaptive_error` setting on geometry is off by default (set to 0) resulting in uniform tessellation.
 Depending on the `mesh_resolution` setting, the geometry may be overtessellated for it's distance from the camera.
 Turning `adaptive_error` on sets the maximum allowable difference in pixels for subdivison mesh adaptive tessellation.
 Each final tessellated edge won't be longer than n pixels if adaptive error is set to n.  Adaptive tessellation is
 not supported for instances.
+
+## Textures
+
+### Tiled Textures
+
+<aside class="info-aside">MoonRay <b>requires</b> the use of tiled textures which greatly improves rendering performance.</aside>  
+
+The OpenImageIO utility
+`maketx` or `oiiotool` should be used to convert common file formats to the optimal .tx format.
+
+### Texture Format
+Texture loading during rendering should use the best trade-off between renderer memory usage, disk space, network traffic, and reading performance.
+
+The central aspect is ensuring textures use the least memory once loaded in the renderer's in-memory texture cache. Memory usage is a premium in a ray tracer, especially in larger scenes.
+- 8-bit textures use half the memory compared to 16-bit half-float .exr textures once loaded in the renderer's 
+in-memory texture cache. You would have to double the renderer's texture cache size to get the same performance, so we recommend leveraging 8-bit textures as much as possible.
+- .exr textures should use 16-bit floats instead of 32-bit floats per channel, which can save another 2x in memory 
+  usage. 32-bit float precision is never needed for texture maps.
+- Grayscale textures should use single-channel files and never RGB or RGBA files. Using single-channel files can save 
+  3x to 4x in memory usage, respectively.
+As a contrived but not unheard-of example, compounding the three bullet points, we can make grayscale textures use 16x less renderer memory when using 8-bit single-channel textures, compared to 32-bit float RGBA textures.
+
+To lower the disk space and network traffic used by textures, use the file format choice and compression options judiciously. The issues are:
+- The .exr format doesn't support 8-bit per channel images, but the .tx format does.
+- Both .exr and .tx formats can be either lossily or losslessly compressed. The "zip" compression is the best to-date 
+  lossless compression for both formats. The "dwa-med" or "dwa-hi" can be used to do lossy-compression of .exr files, and the "jpeg" compression (with high-quality settings equal to or above 90) can be used to do effective and artifact-free lossy-compression of .tx files.
+
+General tests across various formats show that texture load / decoding time is generally insignificant compared to total render time across these options.
+
+### Texture Format Recommendation
+
+Surfacing artists can author their textures in a fully-linear color pipeline and save them to 16-bit half-float .exr (or whatever format they like). However, before rendering, the painted textures should be converted to mipmapped and tiled "render-ready" textures as follows:
+- Surfacing color textures: using 8-bit gamma 2.2 is sufficient visually, so using .tx files, either zip or
+  jpeg-compressed (-q >= 90), is advised.
+- High-dynamic-range lighting color textures: use 16-bit .exr with dwa-med, dwa-hi, or zip compression.
+- Normal-Displacement, bump, and normal maps: use 16-bit half-float .exr render-ready textures to avoid precision / 
+  visual artifacts. We should use single-channel for normal-displacement maps. Compression should be zip.
+- Vector Displacement maps should be 32-bit float RGB zip-compressed.
+- Other grayscale masks or control maps (e.g., roughness or radius) are best as 8-bit single-channel .tx, either zip 
+  or jpeg-compressed (-q >= 90).
 
 ## Texture Cache Size
 Setting a proper texture cache size can be very important for MCRT stage efficiency, especially for texture-heavy
