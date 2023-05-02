@@ -556,7 +556,5 @@
       #  path: developer-reference/contributions.md
       - text: Coding Standards
         path: developer-reference/coding-standards/index.md
-  - text: Release Notes
-    path: release-notes/index.md
   - text: Legal/Licensing and Contributions
     path: license.md
