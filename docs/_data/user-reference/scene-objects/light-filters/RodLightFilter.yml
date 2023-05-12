@@ -1,0 +1,87 @@
+---
+overview: RodLightFilterOverview.md
+image_path: /assets/images/user-reference/scene-objects/light-filters/RodLightFilter
+example: RodLightFilterExample.md
+
+attributes:
+  width:
+    images:
+      - image: Rod_1.jpg
+        text: width = 1
+      - image: Rod_2.jpg
+        text: width = 2
+      - image: Rod_3.jpg
+        text: width = 3
+
+  height:
+    images:
+      - image: Rod_4.jpg
+        text: height = 1
+      - image: Rod_5.jpg
+        text: height = 2
+      - image: Rod_6.jpg
+        text: height = 3
+
+  depth:
+    images:
+      - image: Rod_7.jpg
+        text: depth = 1
+      - image: Rod_8.jpg
+        text: depth = 2
+      - image: Rod_9.jpg
+        text: depth = 4
+
+  radius:
+    images:
+      - image: Rod_10.jpg
+        text: radius = 0
+      - image: Rod_11.jpg
+        text: radius = 0.25
+      - image: Rod_12.jpg
+        text: radius = 1
+
+  edge:
+    images:
+      - image: Rod_13.jpg
+        text: edge = 0
+      - image: Rod_14.jpg
+        text: edge = 0.25
+      - image: Rod_15.jpg
+        text: edge = 1
+
+  color:
+    images:
+      - image: Rod_16.jpg
+        text: color = Rgb(0,0,0)
+      - image: Rod_17.jpg
+        text: color = Rgb(0.33,0.33,0.33)
+      - image: Rod_18.jpg
+        text: color = Rgb(0.66,0.66,0.66)
+      - image: Rod_23.jpg
+        text: color = Rgb(1,0,0)
+
+  intensity:
+    images:
+      - image: Rod_24.jpg
+        text: color = Rgb(1,1,1) <br> intensity = 0.25
+      - image: Rod_25.jpg
+        text: color = Rgb(1,1,1) <br> intensity = 1
+      - image: Rod_26.jpg
+        text: color = Rgb(1,1,1) <br> intensity = 4
+
+  density:
+    images:
+      - image: Rod_27.jpg
+        text: density = 1
+      - image: Rod_28.jpg
+        text: density = 0.5
+      - image: Rod_29.jpg
+        text: density = 0.25
+
+  invert:
+    images:
+      - image: Rod_19.jpg
+        text: invert = false
+      - image: Rod_20.jpg
+        text: invert = true
+
