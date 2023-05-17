@@ -4,30 +4,26 @@ title: Texture Cache Size Considerations
 # Texture Cache Size Considerations
 ---
 
-Selecting proper texture cache size is very crucial for efficient rendering especially texture-heavy scenes like ALab2.0.1.
-Actually, the best configuration is depending on the scene itself and the machine environment.
-A quick general solution to find the good texture cache size for an exclusive moonray run is
-[here](../../performance/#quick-texture-cache-size-setup).
+Selecting the proper texture cache size is crucial for efficient rendering of especially texture-heavy scenes like the [ALab Scene](../../../getting-started/test-scenes/).  The best configuration will be dependant on the scene itself as well as the machine environment.  A quick general solution to find a good texture cache size for a general `moonray` run is documented here [here]({{ "/user-reference/performance/#quick-texture-cache-size-setup" | absolute_url }}).
 
-This is a rendering test result image of ALab 2.0.1. (without denoising)
+
+
+This is a rendered result image of ALab, v2.0.1 without denoising
 ![alab201]({{ "/assets/images/user-reference/alab/out_txCache096Xpu0.png" | absolute_url }})
 
-The texture cache size setting has a huge impact on the efficiency of rendering especially texture-heavy scenes like ALab.
-This is a test profiling result (MCRT time. not include RenderPrep time) of various different texture cache sizes on ALab2.0.1.
+The texture cache size setting has a large impact on the efficiency of rendering especially texture-heavy scenes like ALab.  What follows are the results of tests profiling the results of MCRT time (not including the RenderPrep time) for various different texture cache sizes on the ALab scene.
 ![Texture Cache Size Performance Difference]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})
 
-All tests are using vanilla ALab 2.0.1 scene (i.e. no optimization of the scene itself) with 4K high reso texture and baked geometry. Linux kernel cache was warm enough by preliminary test render. All tests were rendered 3 times and averaged results.
+All tests are using the vanilla ALab v2.0.1 scene with no optimization of the scene itself) and with 4K high resolution textures and baked geometry. The Linux kernel cache was warmed by a preliminary test render. All tests were rendered 3 times and the results were averaged.
 
-Basically, all sceneVariable settings are default except image size and uniform sampling related parameters.
-```
+All sceneVariable settings are the default, except for image size and uniform sampling related parameters.
+```lua
 SceneVariables {
     ["image_width"] = 1920,
     ["image_height"] = 1080,
     ["sampling mode"] = 0,
     ["pixel samples"] = 8,
-
     ["motion_steps"] = { -0.25, 0.25},
-
 --    ["texture_cache_size"] = 4096 -- 4G
 --    ["texture_cache_size"] = 7168 -- 7G
 --    ["texture_cache_size"] = 10240 -- 10G
@@ -40,7 +36,7 @@ SceneVariables {
 }
 ```
 
-The rendering machine specification is as follows
+The tests were run on the following machine specs:
 ```
 CPU : Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
 Physical CPU : 2
@@ -49,23 +45,18 @@ Total cores : 48 (HyperThread ON)
 Memory : 187 GByte (However, test redner was done around 124GByte of free memory)
 GPU : Nvidia Quadro RTX 6000
 ```
+<aside class="info-aside">The texture main-cache-hit-miss statistic is dependent and varies based on the OpenImageIO version</aside> 
 
-Texture's main-cache-hit-miss number is very depend on the OpenImageIO versions. This is based on the OpenImageIO 2.3.20.<br>
-4GByte (actually, default is 3.91GByte) texture cache render run did not show the main cache hit-miss ratio in the log
-(and is not plotted on the graph).
-Looks like overall render performance using around 96G texture cache size would be the idealbest configuration for this scene under this environment. 
-More than 96G is also basically fine but it makes slightly slow down the rendering. Probably big texture cache makes
-swap out some portion of BVH and sceneContext memory at runtime. Then this might make some small impact on the final
-efficiency and as a result, it is slow down a bit.
+These tests were based on OpenImageIO v2.3.20.
 
-XPU performance is constantly better than scalar and its ratio is __1.16x__ ~ __1.68x__ better.
-Vector performance is also constantly better than scalar and its ratio is __1.14x__ ~ __1.34x__ better as well.
-Moonrays vector/XPU architecture is very useful for texture-heavy scenes due to this architecture maximizes the memory access coherency.
+Note that the 4GByte (actually, default is 3.91GByte) texture cache render run did not show the main cache hit-miss ratio in the log and is not plotted on the graph.
+
+In the results the overall render performance using a 96GByte texture cache size would be the ideal configuration for this scene in this environment. More than 96GByte is basically fine but it does slightly slow down the rendering, likely due to an overly large texture cache swapping out some portion of the BVH and sceneContext memory at runtime, which makes some small impact on the final efficiency, and as a result a slower render.
+
+
+XPU performance is consistently better than scalar and its ratio is __1.16x__ ~ __1.68x__ more performant.  Vector performance is also consistently better than scalar and its ratio is __1.14x__ ~ __1.34x__ more performant. MoonRay's Vector/XPU architecture is very useful for texture-heavy scenes and maximizes the memory access coherency.
 
 This is a breakdown of runtime timing by profile_viewer for the XPU runs.
 ![Renderprofileviewer]({{ "/assets/images/user-reference/alab/renderProfileViewer.png" | absolute_url }})
 
-As you can see, the texturing time is dominant when the texture cache size is small.
-Also, shader handler time is directly related to the texturing time and it is getting big if the texturing time is big.
-Performance is improved when texture sampling cost is dropped by increasing texture cache size.
-
+As can be seen, the texturing time is dominant when the texture cache size is small.  Also, shader handler time is directly related to the texturing time and it is increasing as the texturing time increases.  Performance is improved when texture sampling cost is lowered by increasing the texture cache size.
