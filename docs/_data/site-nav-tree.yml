@@ -354,8 +354,8 @@
               path: user-reference/scene-objects/maps/UsdPrimvarReader_vector.md
             - text: UsdTransform2d
               path: user-reference/scene-objects/maps/UsdTransform2d.md
-            - text: UsdUVitemure
-              path: user-reference/scene-objects/maps/UsdUVitemure.md
+            - text: UsdUVTexture
+              path: user-reference/scene-objects/maps/UsdUVTexture.md
             - text: UVTransformMap
               path: user-reference/scene-objects/maps/UVTransformMap.md
             - text: WireframeMap
