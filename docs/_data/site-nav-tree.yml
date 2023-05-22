@@ -556,5 +556,56 @@
       #  path: developer-reference/contributions.md
       - text: Coding Standards
         path: developer-reference/coding-standards/index.md
+        subitems:
+          - text: Math Library
+            path: developer-reference/coding-standards/math-library.md
+          - text: Scene RDL2 Attributes
+            path: developer-reference/coding-standards/scene_rdl2-attributes.md
+          - text: Formatting
+            path: developer-reference/coding-standards/formatting.md
+          - text: Naming Conventions
+            path: developer-reference/coding-standards/naming-conventions.md
+          - text: File Names
+            path: developer-reference/coding-standards/file-names.md
+          - text: Header Files
+            path: developer-reference/coding-standards/header-files.md
+          - text: Body Files
+            path: developer-reference/coding-standards/body-files.md
+          - text: Include Statements
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Comments
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Primitive Types
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Macros
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Classes
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Conditional Statements
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Namespaces
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Exceptions
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Templates
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Singletons
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Meta Topics
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Trademark and Copyright Notice
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: IDE Hooks
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Miscellaneous
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: C++
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: ISPC
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Python
+            path: developer-reference/coding-standards/coming-soon.md
+  - text: Release Notes
+    path: release-notes/index.md
   - text: Legal/Licensing and Contributions
     path: license.md
