@@ -56,6 +56,41 @@ Surfacing artists can author their textures in a fully-linear color pipeline and
 - Other grayscale masks or control maps (e.g., roughness or radius) are best as 8-bit single-channel TX, either zip 
   or jpeg-compressed (-q >= 90).
 
+### Texture Conversion Examples
+
+Creating a render-ready texture with `zip` compression:
+```bash
+maketx input.exr -d half --oiio --compression zip -o output.tx
+```
+
+Creating a render-ready texture with `dwa-hi` compression:
+```bash
+maketx input.exr -d half --oiio --compression dwaa:45 -o output.tx
+```
+
+Creating a render-ready texture with `dwa-med` compression:
+```bash
+maketx input.exr -d half --oiio --compression dwaa:85 -o output.tx
+```
+
+Creating an 8-bit render-ready texture from a linear EXR[^gamma]:
+```bash
+maketx input.exr --colorconvert linear sRGB -d uint8 --oiio --compression zip -o output.tx
+```
+
+Creating a dithered 8-bit render-ready texture from a linear EXR:
+```bash
+oiiotool input.exr --powc 1.0/2.2 --dither -d uint8 -o transitional.tif
+maketx transitional.tif -d uint8 --oiio --compression zip -o output.tx
+```
+
+Forcing a single channel for grayscale textures:
+```bash
+maketx input.exr --nchannels 1 -d uint8 --oiio --compression zip -o output.tx
+```
+
+[^gamma]: MoonRay applies a 2.2 gamma curve to 8-bit textures, which is close, but not exact, to the sRGB gamma curve.
+
 ## Texture Cache Size
 Setting a proper texture cache size can be very important for MCRT stage efficiency, especially for texture-heavy
 scenes.  The `texture_cache_size` scene variable is set to 4000MB by default.   If the scene being rendered makes
