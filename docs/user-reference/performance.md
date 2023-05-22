@@ -22,6 +22,9 @@ MoonRay <b>requires</b> the use of tiled textures, which significantly improves 
 The OpenImageIO utility
 `maketx` or `oiiotool` should be used to convert common file formats to the optimal TX format.
 
+### Gamma Correction
+MoonRay assumes scene linear color spaces for all textures except for 8-bit RGB, on which MoonRay applies an inverse gamma-2.2 curve.
+
 ### Texture Format
 Texture loading during rendering should use the best trade-off between renderer memory usage, disk space, network traffic, and reading performance.
 
