@@ -572,39 +572,39 @@
           - text: Body Files
             path: developer-reference/coding-standards/body-files.md
           - text: Include Statements
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/include-statements.md
           - text: Comments
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/comments.md
           - text: Primitive Types
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/primitive-types.md
           - text: Macros
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/macros.md
           - text: Classes
             path: developer-reference/coding-standards/coming-soon.md
           - text: Conditional Statements
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/conditional-statements.md
           - text: Namespaces
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/namespaces.md
           - text: Exceptions
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/exceptions.md
           - text: Templates
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/templates.md
           - text: Singletons
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/singletons.md
+          - text: Asserts
+            path: developer-reference/coding-standards/asserts.md
           - text: Meta Topics
-            path: developer-reference/coding-standards/coming-soon.md
-          - text: Trademark and Copyright Notice
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/meta-topics.md
           - text: IDE Hooks
-            path: developer-reference/coding-standards/coming-soon.md
-          - text: Miscellaneous
-            path: developer-reference/coding-standards/coming-soon.md
+            path: developer-reference/coding-standards/ide-hooks.md
           - text: C++
             path: developer-reference/coding-standards/coming-soon.md
           - text: ISPC
             path: developer-reference/coding-standards/coming-soon.md
           - text: Python
             path: developer-reference/coding-standards/coming-soon.md
+          - text: Miscellaneous
+            path: developer-reference/coding-standards/miscellaneous.md
   - text: Release Notes
     path: release-notes/index.md
   - text: Legal/Licensing and Contributions
