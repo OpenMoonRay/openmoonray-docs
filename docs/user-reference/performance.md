@@ -6,7 +6,7 @@ This page documents how to get the best performance out of MoonRay
 
 ## Adaptive Error Tesselation
 The `adaptive_error` setting on geometry is off by default (set to 0) resulting in uniform tessellation.
-Depending on the `mesh_resolution` setting, the geometry may be overtessellated for it's distance from the camera.
+Depending on the `mesh_resolution` setting, the geometry may be over-tessellated for it's distance from the camera.
 Turning `adaptive_error` on sets the maximum allowable difference in pixels for subdivison mesh adaptive tessellation.
 Each final tessellated edge won't be longer than n pixels if adaptive error is set to n.  Adaptive tessellation is
 not supported for instances.
@@ -15,40 +15,42 @@ not supported for instances.
 
 ### Tiled Textures
 
-<aside class="info-aside">MoonRay <b>requires</b> the use of tiled textures which greatly improves rendering performance.</aside>  
+<aside class="info-aside">
+MoonRay <b>requires</b> the use of tiled textures, which significantly improves rendering performance. The only exception is within the cookie light filter, which accepts raw EXR files.
+</aside>  
 
 The OpenImageIO utility
-`maketx` or `oiiotool` should be used to convert common file formats to the optimal .tx format.
+`maketx` or `oiiotool` should be used to convert common file formats to the optimal TX format.
 
 ### Texture Format
 Texture loading during rendering should use the best trade-off between renderer memory usage, disk space, network traffic, and reading performance.
 
 The central aspect is ensuring textures use the least memory once loaded in the renderer's in-memory texture cache. Memory usage is a premium in a ray tracer, especially in larger scenes.
-- 8-bit textures use half the memory compared to 16-bit half-float .exr textures once loaded in the renderer's 
+- 8-bit textures use half the memory compared to 16-bit half-float EXR textures once loaded in the renderer's 
 in-memory texture cache. You would have to double the renderer's texture cache size to get the same performance, so we recommend leveraging 8-bit textures as much as possible.
-- .exr textures should use 16-bit floats instead of 32-bit floats per channel, which can save another 2x in memory 
+- EXR textures should use 16-bit floats instead of 32-bit floats per channel, which can save another 2x in memory 
   usage. 32-bit float precision is never needed for texture maps.
 - Grayscale textures should use single-channel files and never RGB or RGBA files. Using single-channel files can save 
   3x to 4x in memory usage, respectively.
 As a contrived but not unheard-of example, compounding the three bullet points, we can make grayscale textures use 16x less renderer memory when using 8-bit single-channel textures, compared to 32-bit float RGBA textures.
 
 To lower the disk space and network traffic used by textures, use the file format choice and compression options judiciously. The issues are:
-- The .exr format doesn't support 8-bit per channel images, but the .tx format does.
-- Both .exr and .tx formats can be either lossily or losslessly compressed. The "zip" compression is the best to-date 
-  lossless compression for both formats. The "dwa-med" or "dwa-hi" can be used to do lossy-compression of .exr files, and the "jpeg" compression (with high-quality settings equal to or above 90) can be used to do effective and artifact-free lossy-compression of .tx files.
+- The EXR format doesn't support 8-bit per channel images, but the TX format does.
+- Both EXR and TX formats can be either lossily or losslessly compressed. The "zip" compression is the best to-date 
+  lossless compression for both formats. The "dwa-med" or "dwa-hi" can be used to do lossy-compression of EXR files, and the "jpeg" compression (with high-quality settings equal to or above 90) can be used to do effective and artifact-free lossy-compression of TX files.
 
 General tests across various formats show that texture load / decoding time is generally insignificant compared to total render time across these options.
 
 ### Texture Format Recommendation
 
-Surfacing artists can author their textures in a fully-linear color pipeline and save them to 16-bit half-float .exr (or whatever format they like). However, before rendering, the painted textures should be converted to mipmapped and tiled "render-ready" textures as follows:
-- Surfacing color textures: using 8-bit gamma 2.2 is sufficient visually, so using .tx files, either zip or
+Surfacing artists can author their textures in a fully-linear color pipeline and save them to 16-bit half-float EXR (or another preferred format). However, before rendering, the painted textures should be converted to mipmapped and tiled "render-ready" textures as follows:
+- Surfacing color textures: using 8-bit gamma 2.2 is sufficient visually, so using TX files, either zip or
   jpeg-compressed (-q >= 90), is advised.
-- High-dynamic-range lighting color textures: use 16-bit .exr with dwa-med, dwa-hi, or zip compression.
-- Normal-Displacement, bump, and normal maps: use 16-bit half-float .exr render-ready textures to avoid precision / 
+- High-dynamic-range lighting color textures: use 16-bit EXR with dwa-med, dwa-hi, or zip compression.
+- Normal-Displacement, bump, and normal maps: use 16-bit half-float EXR render-ready textures to avoid precision / 
   visual artifacts. We should use single-channel for normal-displacement maps. Compression should be zip.
 - Vector Displacement maps should be 32-bit float RGB zip-compressed.
-- Other grayscale masks or control maps (e.g., roughness or radius) are best as 8-bit single-channel .tx, either zip 
+- Other grayscale masks or control maps (e.g., roughness or radius) are best as 8-bit single-channel TX, either zip 
   or jpeg-compressed (-q >= 90).
 
 ## Texture Cache Size
@@ -56,7 +58,7 @@ Setting a proper texture cache size can be very important for MCRT stage efficie
 scenes.  The `texture_cache_size` scene variable is set to 4000MB by default.   If the scene being rendered makes
 use of many and/or large texture maps, this may not be large enough.
 
-The moonray render log output (when using the `-info` cmd-line option or SceneVariabels attribute) reports both
+The MoonRay render log output (when using the `-info` cmd-line option or SceneVariabels attribute) reports both
 the set texture cache size and also the `main cache miss ratio`.  Even if the reported miss ratio is only a few
 percent, this can make a big difference in render time. Increasing the texture_cache_size can be a good way to
 improve performance in such scenes.
@@ -141,7 +143,7 @@ In this example, the free memory size is 125246204Kbyte, which equals 119.444GBy
 ### Step B : Get the MCRT phase start timing memory size<br>
 The exact used memory size of `moonray` process for the MCRT phase at the start of timing can be seen by running
 a render once in advance.
-The start memory for the MCRT start timing phase is then seen using the `-info` output of moonray.
+The start memory for the MCRT start timing phase is then seen using the `-info` output of MoonRay.
 ```
 00:01:40   15.2 GB | ---------- MCRT Rendering --------------------------------
 no-extra-snapshot
