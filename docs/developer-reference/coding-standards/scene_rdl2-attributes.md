@@ -6,7 +6,7 @@ title: Scene RDL2 Attributes
 Scenes ingested into MoonRay will typically use the rdla file format. This format is actually straight lua code in which
 we define different types of SceneObjects, each with a specific set of attributes. For example, a bool attribute can be
 set as follows:
-```
+```c++
 ["lights_visible_in_camera"] = true,
 ```
 Here, `"lights_visible_in_camera"` is the attribute name. The convention for attribute names is lowercase letters and
