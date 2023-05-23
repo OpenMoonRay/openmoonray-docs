@@ -354,8 +354,8 @@
               path: user-reference/scene-objects/maps/UsdPrimvarReader_vector.md
             - text: UsdTransform2d
               path: user-reference/scene-objects/maps/UsdTransform2d.md
-            - text: UsdUVitemure
-              path: user-reference/scene-objects/maps/UsdUVitemure.md
+            - text: UsdUVTexture
+              path: user-reference/scene-objects/maps/UsdUVTexture.md
             - text: UVTransformMap
               path: user-reference/scene-objects/maps/UVTransformMap.md
             - text: WireframeMap
@@ -444,6 +444,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
+          - text: Displacement
+            path: /user-reference/how-to-guides/displacement.md
           - text: Instance-Level Transforms
             path: /user-reference/how-to-guides/instance-level-transforms.md
           - text: Light Normalization
@@ -558,6 +560,55 @@
       #  path: developer-reference/contributions.md
       - text: Coding Standards
         path: developer-reference/coding-standards/index.md
+        subitems:
+          - text: Math Library
+            path: developer-reference/coding-standards/math-library.md
+          - text: Scene RDL2 Attributes
+            path: developer-reference/coding-standards/scene_rdl2-attributes.md
+          - text: Formatting
+            path: developer-reference/coding-standards/formatting.md
+          - text: Naming Conventions
+            path: developer-reference/coding-standards/naming-conventions.md
+          - text: File Names
+            path: developer-reference/coding-standards/file-names.md
+          - text: Header Files
+            path: developer-reference/coding-standards/header-files.md
+          - text: Body Files
+            path: developer-reference/coding-standards/body-files.md
+          - text: Include Statements
+            path: developer-reference/coding-standards/include-statements.md
+          - text: Comments
+            path: developer-reference/coding-standards/comments.md
+          - text: Primitive Types
+            path: developer-reference/coding-standards/primitive-types.md
+          - text: Macros
+            path: developer-reference/coding-standards/macros.md
+          - text: Classes
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Conditional Statements
+            path: developer-reference/coding-standards/conditional-statements.md
+          - text: Namespaces
+            path: developer-reference/coding-standards/namespaces.md
+          - text: Exceptions
+            path: developer-reference/coding-standards/exceptions.md
+          - text: Templates
+            path: developer-reference/coding-standards/templates.md
+          - text: Singletons
+            path: developer-reference/coding-standards/singletons.md
+          - text: Asserts
+            path: developer-reference/coding-standards/asserts.md
+          - text: Meta Topics
+            path: developer-reference/coding-standards/meta-topics.md
+          - text: IDE Hooks
+            path: developer-reference/coding-standards/ide-hooks.md
+          - text: C++
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: ISPC
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Python
+            path: developer-reference/coding-standards/coming-soon.md
+          - text: Miscellaneous
+            path: developer-reference/coding-standards/miscellaneous.md
   - text: Release Notes
     path: release-notes/index.md
   - text: Legal/Licensing and Contributions

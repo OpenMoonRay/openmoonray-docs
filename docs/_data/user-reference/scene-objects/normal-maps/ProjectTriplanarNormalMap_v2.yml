@@ -1,0 +1,24 @@
+---
+overview: overviews/ProjectTriplanarNormalMap_v2Overview.md
+image_path: /assets/images/user-reference/scene-objects/maps/ProjectTriplanarMap
+gallery:
+  - image: disp_nml.jpg
+    text: Procedurally applying a normal map with triplanar
+  - image: spheres_n_ogl.jpg
+    text: The texture used in this triplanar example
+attributes:
+  number_of_textures:
+    images:
+      - image: number_of_textures.jpg
+  randomize_flip:
+    images:
+      - image: randomize_flip.jpg
+  randomize_offset:
+    images:
+      - image: randomize_offset.jpg
+  randomize_rotation:
+    images:
+      - image: randomize_rotation.jpg
+  transition_width:
+    images:
+      - image: transition_width.jpg

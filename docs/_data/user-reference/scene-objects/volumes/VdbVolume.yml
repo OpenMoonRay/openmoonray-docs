@@ -1,0 +1,21 @@
+---
+overview: overviews/VdbVolume.md
+image_path: /assets/images/user-reference/scene-objects/volumes/VdbVolume
+
+attributes:
+  anisotropy:
+    videos:
+      - video: vdb_volume_anisotropy.mp4
+        text: "anisotropy: -1 | 1 (backlit)"
+  color_mult:
+    videos:
+      - video: vdb_volume_color_mult.mp4
+        text: "color_mult: (0,0,0) | (1,1,1)"
+  incandescence_gain_mult:
+    videos:
+      - video: vdb_volume_incandescence_gain_mult.mp4
+        text: "incandescence_gain_mult: (0,0,0) | (1,1,1)"
+  opacity_gain_mult:
+    videos:
+      - video: vdb_volume_opacity_gain_mult.mp4
+        text: "opacity_gain_mult: (0,0,0) | (1000,1000,1000)"

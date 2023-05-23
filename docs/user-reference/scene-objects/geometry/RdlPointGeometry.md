@@ -122,7 +122,7 @@ title: RdlPointGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is enabled, enabling this feature can produce a curved rotation trail.  Enabling this feature will disable adaptive tessellation for this mesh</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_rotation_motion_blur.videos data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_rotation_motion_blur.links heading=4-%}

@@ -94,14 +94,13 @@ moonray/dso/map/ZebraMap/
 ## Defining the Plug-in's Attributes
 Attributes are how a SceneClass exposes control to the end-user.  Attributes come in many types, including:
 
-`Bool Int Long Float Double String Rgb Rgba Vec2f Vec2d Vec3f Vec3d Vec4f Vec4d Mat4f Mat4d BoolVector IntVector
-LongVector FloatVector DoubleVector StringVector RgbVector RgbaVector Vec2fVector Vec2dVector Vec3fVector
-Vec3dVector Vec4fVector Vec4dVector Mat4fVector Mat4dVector SceneObject* SceneObjectVector SceneObjectIndexable
-SceneObjectSet ConstSceneObjectSet`
+`Bool Int Long Float Double String Rgb Rgba Vec2f Vec2d Vec3f Vec3d Vec4f Vec4d Mat4f Mat4d BoolVector`
+`IntVector LongVector FloatVector DoubleVector StringVector RgbVector RgbaVector Vec2fVector Vec2dVector`
+`Vec3fVector Vec3dVector Vec4fVector Vec4dVector Mat4fVector Mat4dVector SceneObject* SceneObjectVector`
+`SceneObjectIndexable SceneObjectSet ConstSceneObjectSet`
 
 Each attribute can have a default value, a label to use for display in a UI, a useful comment to describe its
-purpose to the user, as well as one or more flags that affect their behavior, eg. `FLAGS_BINDABLE FLAGS_BLURRABLE
-FLAGS_ENUMERABLE FLAGS_FILENAME etc.`.
+purpose to the user, as well as one or more flags that affect their behavior, eg. `FLAGS_BINDABLE FLAGS_BLURRABLE FLAGS_ENUMERABLE FLAGS_FILENAME` etc.
 
 Attributes can also have additional arbitrary metadata associated with them to control where and how they appear or
 behave when displayed in a user-interface, or for any other purpose, really.

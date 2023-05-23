@@ -48,8 +48,19 @@ You will find a *Moonray* tab with render settings specific to Moonray.
 
 ![]({{ "/assets/images/user-reference/tools/hydra/houdini/render_settings.png" | absolute_url }})
 
+### Geometry Settings
+Geometry setting such as *mesh_resolution* can be set using a LOP wrangle node.
+
+For example:
+```
+usd_addprimvar(0, @primpath, "moonray:mesh_resolution", "float");
+usd_setprimvar(0, @primpath, "moonray:mesh_resolution", 10);
+```
+
+
 ### Light Filters:
 * Not yet available
 
 ### RenderVars:
 * Not yet avalable
+

@@ -1,5 +1,11 @@
 ---
+overview: overviews/ProjectTriplanarMap_v2Overview.md
 image_path: /assets/images/user-reference/scene-objects/maps/ProjectTriplanarMap
+gallery:
+  - image: disp.jpg
+    text: Triplanar mapped texture used for displacement
+  - image: spheres_h.jpg
+    text: The texture used in this triplanar example
 attributes:
   number_of_textures:
     images:

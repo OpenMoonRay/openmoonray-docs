@@ -76,6 +76,16 @@ title: HairLayerMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.links heading=4-%}
     </p>
+    <h3>invisible_refractive_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
+    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>

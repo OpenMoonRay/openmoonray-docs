@@ -1,0 +1,157 @@
+---
+overview: overviews/DwaBaseMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/dwa
+
+attributes:
+  specular:
+    videos:
+      - video: SD_specular_wedge.mp4
+        text: "specular: 0 | 1"
+  clearcoat_attenuation_color:
+    videos:
+      - video: SD_clearcoat_attenuation_color_wedge.mp4
+        text: "clearcoat attenuation color: Rgb(0, 0, 0) - Rgb(1, 1, 1)"
+  clearcoat_normal:
+    images:
+      - image: SD_clearcoat_normal.jpg
+        text: "clearcoat normal"
+  clearcoat_normal_dial:
+    videos:
+      - video: SD_clearcoat_normal_dial_wedge.mp4
+        text: "clearcoat normal dial: 0 - 1"
+  clearcoat_refractive_index:
+    videos:
+      - video: SD_clearcoat_ior_wedge.mp4
+        text: "clearcoat refractive index: 1 - 2.3"
+  clearcoat_roughness:
+    videos:
+      - video: SD_clearcoat_roughness_wedge.mp4
+        text: "clearcoat roughness: 0 - 1"
+  clearcoat_thickness:
+    videos:
+      - video: SD_clearcoat_thickness_wedge.mp4
+        text: "clearcoat thickness: 0 - 1"
+  casts_caustics:
+    videos:
+      - video: R_casts_caustics_wedge.mp4
+        text: "casts caustics: true | false" 
+  presence:
+    videos:
+      - video: SD_presence_wedge.mp4
+        text: "presence: 0 - 1"
+  albedo:
+    videos:
+      - video: SD_albedo_wedge.mp4
+        text: "albedo: Rgb(red, orange, yellow, green, blue, purple)" 
+  bssrdf:
+    videos:
+      - video: SD_bssrdf_wedge.mp4
+        text: "bssrdf: normalized diffusion vs dipole diffusion, random walk not shown"
+  scattering_color:
+    videos:
+      - video: SD_scattering_color_wedge.mp4
+        text: "scattering color: Rgb(red, orange, yellow, green, blue, purple)" 
+  scattering_radius:
+    videos:
+      - video: SD_scattering_radius_wedge.mp4
+        text: "scattering radius: 0.01 - 0.11" 
+  emission:
+    videos:
+      - video: SD_emission_wedge.mp4
+        text: "emission: Rgb(0, 0, 0) - Rgb(4.76, 0.02, 0.02)" 
+  show_fuzz:
+    images:
+      - image: SD_fuzz_on.jpg
+        text: "show fuzz: true"
+      - image: SD_fuzz_off.jpg
+        text: "show fuzz: false"
+  fuzz:
+    videos:
+      - video: SD_fuzz_coverage_wedge.mp4
+        text: "fuzz: 0 - 1"
+  fuzz_albedo:
+    images:
+      - image: SD_fuzz_albedoWhite.jpg
+        text: "fuzz albedo: Rgb(1, 1, 1)"
+      - image: SD_fuzz_albedoGray.jpg
+        text: "fuzz albedo: Rgb(0.5, 0.5, 0.5)"
+      - image: SD_fuzz_albedoGreen.jpg
+        text: "fuzz albedo: Rgb(0.1, 0.5, 0.1)"
+  fuzz_normal:
+    images:
+      - image: SD_fuzz_normal.jpg
+        text: "fuzz normal"
+  use_absorbing_fuzz_fibers:
+    images:
+      - image: SD_fuzz_absorb_off.jpg
+        text: "use absorbing fuzz fibers: false"
+      - image: SD_fuzz_absorb_on.jpg
+        text: "use absorbing fuzz fibers: true"
+      - image: SD_fuzz_absorb_off2.jpg
+        text: "use absorbing fuzz fibers: false"
+      - image: SD_fuzz_absorb_on2.jpg
+        text: "use absorbing fuzz fibers: true"
+  iridescence:
+    videos:
+      - video: M_iridescence_wedge.mp4
+        text: "iridescence: 0 - 1" 
+  iridescence_at_0_incidence:
+    videos:
+      - video: M_iridescence_at_0_incidence_wedge.mp4
+        text: "iridescence at 0 incidence: 0 - 1" 
+  iridescence_exponent:
+    videos:
+      - video: M_iridescence_exponent_wedge.mp4
+        text: "iridescence exponent: 0 - 2.5" 
+  iridescence_flip_hue_direction:
+    videos:
+      - video: M_iridescence_flip_hue_direction_wedge.mp4
+        text: "iridescence flip hue direction: true | false" 
+  iridescence_primary_color:
+    videos:
+      - video: M_iridescence_primary_color_wedge.mp4
+        text: "iridescence primary color: Rgb(orange, yellow, green, blue, purple, red)" 
+  iridescence_secondary_color:
+    videos:
+      - video: M_iridescence_secondary_color_wedge.mp4
+        text: "iridescence secondary color: Rgb(orange, yellow, green, blue, purple, red)" 
+  iridescence_thickness:
+    videos:
+      - video: M_iridescence_thickness_wedge.mp4
+        text: "iridescence thickness: 0 - 5" 
+  input_normal:
+    images:
+      - image: SD_input_normal.jpg
+        text: "input normal" 
+  input_normal_dial:
+    videos:
+      - video: SD_input_normal_dial_wedge.mp4
+        text: "input normal dial: 0 - 1" 
+  anisotropy:
+    videos:
+      - video: SD_anisotropy_wedge.mp4
+        text: "anisotropy: -1 - 1"
+  metallic_color:
+    videos:
+      - video: M_metallic_color_wedge.mp4
+        text: "metallic color: physical values for gold, copper, silver, and alluminum"
+  metallic_edge_color:
+    videos:
+      - video: M_metallic_edge_color_wedge.mp4
+        text: "metallic edge color: Rgb(orange, yellow, green, blue, purple, red)"
+  refractive_index:
+    videos:
+      - video: SD_ior_wedge.mp4
+        text: "refractive index: 1 - 2.3" 
+  roughness:
+    videos:
+      - video: SD_roughness_wedge.mp4
+        text: "roughness: 0 - 1" 
+  shading_tangent:
+    videos:
+      - video: SD_shading_tangent_wedge.mp4
+        text: "shading tangent: Vec2(1,0) - Vec2(0,1) - Vec2(-1,0) - Vec2(0,1)"
+  transmission_color:
+    videos:
+      - video: R_transmission_color_wedge.mp4
+        text: "transmission color: Rgb(1, 1, 1) - Rgb(0.5, 0.04, 0.04)"
