@@ -415,6 +415,8 @@
             path: /user-reference/how-to-guides/adaptive-sampling.md
           - text: Baking Textures
             path: /user-reference/how-to-guides/baking-textures.md
+          - text: Base Volume Ramp
+            path: /user-reference/how-to-guides/base-volume-ramp-controls.md
           - text: Checkpoint/Resume rendering
             path: /user-reference/how-to-guides/checkpoint-resume/index.md
             subitems:
@@ -444,6 +446,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
           - text: Displacement
             path: /user-reference/how-to-guides/displacement.md
+          - text: Instance-Level Transforms
+            path: /user-reference/how-to-guides/instance-level-transforms.md
           - text: Light Normalization
             path: /user-reference/how-to-guides/light-normalization.md
           - text: Look Dev Transparent Surfaces
