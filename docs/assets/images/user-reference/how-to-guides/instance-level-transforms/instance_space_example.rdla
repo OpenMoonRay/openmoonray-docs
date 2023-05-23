@@ -1,0 +1,199 @@
+SceneVariables {
+    ["image width"] = 1000,
+    ["image height"] = 1000,
+    ["pixel samples"] = 5,
+}
+
+env = EnvLight("/Scene/lighting/env") {
+    ["on"] = true,
+    ["intensity"] = 0.25,
+    ["exposure"] = 0.0,
+    ["texture"] = "/work/gshad/moonshine_test/rats_data/material/usd_preview_surface/gld_dusk_GI_HS_PF_hdr.exr",
+}
+
+PerspectiveCamera("/Scene/rendering/camera") {
+    ["near"] = 0.01,
+    ["node xform"] = rotate(-10, 1, 0, 0) * translate(0, 1, 0.5)
+}
+
+key = RectLight("/Scene/lighting/key") {
+    ["node xform"] = translate(0, 0, 50) * rotate(-30, 1, 0, 0) * rotate(20, 0, 1, 0),
+    ["intensity"] = 1,
+    ["exposure"] = 1.0,
+    ["color"] = Rgb(1,1,1),
+    ["width"] = 1,
+    ["height"] = 1,
+    ["visible_in_camera"] = 1,
+}
+
+lightSet = LightSet("/Scene/lighting/lightSet") {
+    --env,
+    key,
+}
+
+shadowSet = ShadowSet("shadowSet") {
+    --EnvLight("/Scene/lighting/env"),
+    RectLight("/Scene/lighting/key")
+}
+
+--------------------------- Geometry --------------------------------------
+--wedge = 0.0;
+distFromCenter = 0.4
+
+sphereXTime0 = (math.cos((0 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime0 = (math.sin((0 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime1 = (math.cos((0.1 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime1 = (math.sin((0.1 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime2 = (math.cos((0.2 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime2 = (math.sin((0.2 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime3 = (math.cos((0.3 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime3 = (math.sin((0.3 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime4 = (math.cos((0.4 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime4 = (math.sin((0.4 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime5 = (math.cos((0.5 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime5 = (math.sin((0.5 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime6 = (math.cos((0.6 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime6 = (math.sin((0.6 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime7 = (math.cos((0.7 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime7 = (math.sin((0.7 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime8 = (math.cos((0.8 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime8 = (math.sin((0.8 + wedge) * 2 * math.pi)) * distFromCenter
+
+sphereXTime9 = (math.cos((0.9 + wedge) * 2 * math.pi)) * distFromCenter
+sphereYTime9 = (math.sin((0.9 + wedge) * 2 * math.pi)) * distFromCenter
+
+planeGeom = MmGeometry("/Scene/geometry/planeGeom") {
+    ["node xform"] = scale(100.0, 1, 100.0) * translate(-50, 0, 0),
+    ["model"] = "/work/gshad/moonshine_test/rats_data/material/usd_preview_surface/plane_xz.mm",
+}
+
+sphereGeom = MmGeometry("/Scene/geometry/sphere") {
+    ["model"] = "/work/gshad/moonshine_test/rats_data/material/usd_preview_surface/sphere.mm"
+}
+
+colorData = UserData("colorData") {
+    ["vec3f key"] = "Cd",
+    ["vec3f values"] = {
+        Vec3(0.62, 0.0039, 0.24),
+        Vec3(0.855, .233, 0.21),
+        Vec3(0.977, 0.397, 0.223),
+        Vec3(1.0, 0.76, 0.28),
+        Vec3(0.97, 0.9, 0.45),
+        Vec3(0.912, 0.99, 0.3),
+        Vec3(0.67, 0.97, 0.44),
+        Vec3(0.4, 0.86, 0.75),
+        Vec3(0.196, 0.53, 0.741),
+        Vec3(0.37, 0.31, 0.635)
+    }
+}
+
+instanceSpheres = RdlInstancerGeometry("instanceSpheres") {
+    ["references"] = {sphereGeom},
+    ["positions"] = {
+        Vec3(sphereXTime0, 0.65 + sphereYTime0, -1.5),
+        Vec3(sphereXTime1, 0.65 + sphereYTime1, -1.5),
+        Vec3(sphereXTime2, 0.65 + sphereYTime2, -1.5),
+        Vec3(sphereXTime3, 0.65 + sphereYTime3, -1.5),
+        Vec3(sphereXTime4, 0.65 + sphereYTime4, -1.5),
+        Vec3(sphereXTime5, 0.65 + sphereYTime5, -1.5),
+        Vec3(sphereXTime6, 0.65 + sphereYTime6, -1.5),
+        Vec3(sphereXTime7, 0.65 + sphereYTime7, -1.5),
+        Vec3(sphereXTime8, 0.65 + sphereYTime8, -1.5),
+        Vec3(sphereXTime9, 0.65 + sphereYTime9, -1.5)
+    }, 
+    ["orientations"] = {
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0),
+        Vec4(0, 1, 0, 0)
+    },
+    ["scales"] = {
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12),
+        Vec3(0.12, 0.12, 0.12)
+    },
+    ["primitive_attributes"] = {
+        colorData
+    }
+}
+
+GeometrySet("Scene/geometrySet") {
+    planeGeom,
+    instanceSpheres
+}
+
+--------------------------- Materials --------------------------------------
+
+planeMap = ImageMap("/Scene/surfacing/planeMap") {
+    ["texture"] = "/work/gshad/moonshine_test/rats_data/material/usd_preview_surface/rgb_checker.exr",
+    ["scale"] = Vec2(100.0, 100.0),
+    ["offset"] = Vec2(0.0, 0.0),
+    ["wrap around"] = true,
+}
+
+desaturateMap = ColorCorrectSaturationMap("desaturateMap") {
+    ["input"] = bind(planeMap),
+    ["saturation"] = 0.0,
+}
+
+planeMtl = DwaBaseMaterial("/Scene/surfacing/planeMtl") {
+    ["albedo"] = bind(desaturateMap),
+    ["show_specular"] = false,
+    ["presence"] = 0.75,
+}
+
+attrCd = AttributeMap("colorMap") {
+    ["map_type"] = 0,
+    ["primitive_attribute_type"] = 2,
+    ["primitive_attribute_name"] = "Cd",
+}
+
+noiseMapColor = NoiseMap("noiseMapColor") {
+    ["space"] = "object",
+    ["object_space"] = sphereGeom,
+
+    --["space"] = "input texture coordinates",
+    --["input_texture_coordinates"] = bind(tsmLeaves),
+
+    ["color_A"] = Rgb(0, 0.0, 0.1),
+    ["color_B"] = bind(attrCd),
+    ["frequency_multiplier"] = 4,
+    ["max_level"] = 5,
+    ["use_smoothstep"] = true,
+    ["smoothstep"] = Vec2(0.2, 0.8),
+}
+
+sphereMtl = DwaSolidDielectricMaterial("sphereMtl") {
+    ["show_diffuse"] = true,
+    ["albedo"] = bind(noiseMapColor),
+    ["show_specular"] = false,
+}
+
+--------------------------- Materials end ---------------------------------
+
+Layer("/Scene/layer") {
+    {planeGeom, {""}, planeMtl, lightSet, undef(), undef()},
+    {sphereGeom, {""}, sphereMtl, lightSet, undef(), undef()},
+    {instanceSpheres, ""}
+}
