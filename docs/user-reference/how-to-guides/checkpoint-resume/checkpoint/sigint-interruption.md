@@ -62,7 +62,7 @@ MoonRay if it is still writing the checkpoint file. This functionality is only e
 In this scenario, MoonRay executes extra-snapshots internally for any SIGINT interrupts, and so will also create a special ASCII file for reporting the write-action progress.  The file name for this progress update is:
 
 ```plaintext
-/tmp/moonray_write.<PID>
+/tmp/moonray_write.<PID>.log
 ```
 
 \<PID\> is the MoonRay process id number.  This file is automatically removed when the MoonRay process exits.  When MoonRay starts the image writing phase, it will output the condition of that stage to this file in at least **250ms** intervals. 
@@ -72,5 +72,5 @@ MoonRay guarantees the progress file is updated at every 250ms interval as long 
 Also note that the progress file is plaintext ASCII and the detailed write progress can be seen by tailing the file:
 
 ```plaintext
-tail -f /tmp/moonray_write.<PID>
+tail -f /tmp/moonray_write.<PID>.log
 ```
