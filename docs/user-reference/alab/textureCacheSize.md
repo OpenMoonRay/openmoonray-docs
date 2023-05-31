@@ -54,7 +54,7 @@ Note that the 4GByte (actually, default is 3.91GByte) texture cache render run d
 In the results the overall render performance using a 96GByte texture cache size would be the ideal configuration for this scene in this environment. More than 96GByte is basically fine but it does slightly slow down the rendering, likely due to an overly large texture cache swapping out some portion of the BVH and sceneContext memory at runtime, which makes some small impact on the final efficiency, and as a result a slower render.
 
 
-XPU performance is consistently better than scalar and its ratio is __1.16x__ ~ __1.68x__ more performant.  Vector performance is also consistently better than scalar and its ratio is __1.14x__ ~ __1.34x__ more performant. MoonRay's Vector/XPU architecture is very useful for texture-heavy scenes and maximizes the memory access coherency.
+XPU performance is consistently better than scalar and its ratio is __1.20x__ ~ __1.62x__ more performant.  Vector performance is also consistently better than scalar and its ratio is __1.16x__ ~ __1.33x__ more performant. MoonRay's Vector/XPU architecture is very useful for texture-heavy scenes and maximizes the memory access coherency.
 
 This is a breakdown of runtime timing by profile_viewer for the XPU runs.
 ![Renderprofileviewer]({{ "/assets/images/user-reference/alab/renderProfileViewer.png" | absolute_url }})
