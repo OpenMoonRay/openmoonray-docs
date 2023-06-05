@@ -409,8 +409,7 @@ assume anything about the world outside of your SceneObject.
 ## The Plug-in Interfaces
 Depending on the plug-in type, each plugin class will potentially:
 * implement/override the virtual interface members declared by the base class
-* implement one or more of the static functions prototyped in
-[`scene_rdl2/lib/scene/rdl2/Types.h`](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/Types.h)  
+* implement one or more of the static functions prototyped in [Types.h](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/Types.h)  
 and set the associated inherited function pointer members
 
 The table below lists the plug-in types with name of the function(s) that comprise that plug-in type's "interface"
@@ -473,6 +472,7 @@ shade(const uniform Material * uniform self,
       const varying State &state,
       varying BsdfBuilder &bsdfBuilder);
 ```
+
 ----
 ## Building with CMake
 MoonRay includes a CMake module called _MoonrayDso_ which defines two functions to facilitate the building of DSOs,
