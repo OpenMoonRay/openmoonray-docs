@@ -34,7 +34,7 @@ functionality should clearly document why the corresponding STL classes were not
 
 * Avoid goto.
 
-*Avoid "magic numbers". Use symbolic constants
+* Avoid "magic numbers". Use symbolic constants
   + to make the meaning clear, e.g.
 ```c++
     if (delta < NR_ERROR_TOLERANCE)

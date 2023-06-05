@@ -23,7 +23,7 @@ following the opening parenthesis.
 
 * Include the standard copyright notice at the top of all files:
 ```c++
-// Copyright 2023 DreamWorks Animation LLC and Intel Corporation
+// Copyright 2023 DreamWorks Animation LLC
 // SPDX-License-Identifier: Apache-2.0
 ```
 
