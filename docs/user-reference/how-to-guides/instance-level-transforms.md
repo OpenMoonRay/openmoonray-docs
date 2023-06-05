@@ -128,23 +128,36 @@ it would concatenate levels 0, 1, 2, 3, and 4.
     </video>
 </figure>
 
-<!-- ## Instance to Render Space
+## Instance to Render Space
 Let's say we have a leaf model with custom normals (0, 1, 0), defined in the object space of the model. 
 
+![Leaf Instance Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-instance-space.jpg" | absolute_url }})
+
 When you instance these leaves without a TransformSpaceMap, the custom normals still point up throughout the animation.
+
+![Leaf Instance Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-instance-space.gif" | absolute_url }})
 
 In this case, you need to transform these normals from the instance's local space to render space (*from_space* 
 "instance level 0" *to_space* "render"). 
 
+![Leaf Render Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-render-space.gif" | absolute_url }})
+
 ### Instance Points
 Let's say that the custom normals were defined on instance points instead of an instanced model.
 
+![Primitive Attributes on Instancer Points]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/prim-attrs-on-instancer-pts.png" | absolute_url }})
+
 Primitive attributes on instancer points are transferred to the instanced geometry, which means our custom normals are 
-already in "instance level 0" space. However, primitive attributes are not automatically transformed with an object. 
+already in "instance level 0" space. However, primitive attributes are not automatically transformed with an object. See 
+below how customN values remain the same, even though their positions are transformed.
+
+![customN Instance Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-instance-space.gif" | absolute_url }})
 
 There are two ways to handle this issue: 
 
-1. Transform our custom normals from the instance's local space to render space. 
+1. **Transform our custom normals from the instance's local space to render space.**
+
+![customN Render Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-render-space.gif" | absolute_url }})
 
 ```lua
 -- retrieve our custom normals 
@@ -155,11 +168,11 @@ attrMapCustomN = AttributeMap("attrMapCustomN") {
 
 rotx = frame * 90 / 60
 
-instanceLeavesSphere = RdlInstancerGeometry("instanceLeavesSphere") {
+instanceLeavesSphere = InstanceGeometry("instanceLeavesSphere") {
     ["node_xform"] = rotate(-rotx, 0, 0, 1) * translate(0.0, 4.0, 0.0),
     ["method"] = "point file",
     ["point_file"] = "scatter_leaves_sphere.abc", -- our points to scatter leaves on
-    ["references"] = { leafToGeom },              -- our leaf model
+    ["references"] = { leaf2Geom },              -- our leaf model
     ["instance_level"] = "instance level 0",
     ["use_reference_xforms"] = false
 } 
@@ -172,4 +185,39 @@ tsmLeavesCustomN = TransformSpaceMap("tsmLeavesCustomN") {
     ["object"] = instanceLeavesSphere,
     ["to_space"] = "render"
 }
-``` -->
+``` 
+
+2. **Use instance level 1.** That way, there is no reference to the specific object's space. Bu sure to turn off concatenation 
+of transforms, as we only want the level 1 transform. (Normals are already authored in instance level 0 space) 
+
+```lua
+instanceLeavesSphere = InstanceGeometry("instanceLeavesSphere") {
+    ["node_xform"] = rotate(-rotx, 0, 0, 1) * translate(0.0, 4.0, 0.0),
+    ["method"] = "point file",
+    ["point_file"] = "scatter_leaves_sphere.abc", -- our points to scatter leaves on
+    ["references"] = { leaf2Geom },              -- our leaf model
+    ["instance_level"] = "instance level 0"
+} 
+
+instanceLeafSpheres = InstanceGeometry("instanceLeafSpheres") {
+    ["node xform"] = translate(0.0, 4.0, 0.0),
+    ["method"] = "point file",
+    ["point_file"] = "scatter_leaves_sphere.abc",
+    ["references"] = { sphereGeom, instanceLeavesSphere }, 
+    ["instance_level"] = "instance level 1"
+}
+
+attrMapCustomN = AttributeMap("attrMapCustomN") {
+    ["map_type"] = "primitive attribute",
+    ["primitive_attribute_name"] = "customN"
+}
+
+-- transform normals from the instance level space to render space
+tsmLeavesCustomN = TransformSpaceMap("tsmLeavesCustomN") {
+    ["input"] = bind(attrMapCustomN),
+    ["input_type"] = "vector",
+    ["from_space"] = "instance level 1",
+    ["to_space"] = "render",
+    ["concatenate_instance_level_transforms"] = false
+}
+```
