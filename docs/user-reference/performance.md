@@ -1,7 +1,7 @@
 ---
-title: Performance Considerations
+title: Maximizing Performance
 ---
-# Performance Considerations
+# Maximizing Performance
 This page documents how to get the best performance out of MoonRay
 
 ## Adaptive Error Tesselation
