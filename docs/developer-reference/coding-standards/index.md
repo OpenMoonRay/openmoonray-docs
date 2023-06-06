@@ -9,27 +9,8 @@ or added, please send a note to [MoonRay@dreamworks.com](mailto:MoonRay@dreamwor
 
 The single most important guideline to ahere to is to follow the local standards and style of the source file you are editing. Where more detail is needed, please refer to the relevant section below.
 
-* [Math Library](math-library)
-* [Scene RDL2 Attributes](scene_rdl2-attributes)
-* [Formatting](formatting)
-* [Naming Conventions](naming-conventions)
-* [File Names](file-names)
-* [Header Files](header-files)
-* [Body Files](body-files)
-* [Include Statements](include-statements)
-* [Comments](comments)
-* [Primitive Types](primitive-types)
-* [Macros](macros)
-* [Classes](coming-soon)
-* [Conditional Statements](conditional-statements)
-* [Namespaces](namespaces)
-* [Exceptions](exceptions)
-* [Templates](templates)
-* [Singletons](singletons)
-* [Asserts](asserts)
-* [Meta Topics](meta-topics)
-* [IDE Hooks](ide-hoooks)
-* [C++](coming-soon)
-* [ISPC](coming-soon)
-* [Python](coming-soon)
-* [Miscellaneous](miscellaneous)
+{% assign section = site.data.site-nav-tree[2].subitems[4].subitems %}
+{%- for item in section -%}
+- [{{ item.text }}]({{ item.path | replace: "index.md", "" | relative_url | replace: ".md", "/"}})
+{% endfor %}
+
