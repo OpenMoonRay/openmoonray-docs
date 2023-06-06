@@ -9,15 +9,11 @@ Lights in MoonRay are not treated as solid objects, but rather as abstract entit
 (Note that it is possible to assign an emissive material to a geometry object as another way to illuminate a scene.
 However, we are not referring to that kind of setup when we talk about lights.)
 
-There are 8 types of light supported in MoonRay:
-* [CylinderLight]({{ "/user-reference/scene-objects/lights/CylinderLight/" | absolute_url }})
-* [DiskLight](    {{ "/user-reference/scene-objects/lights/DiskLight/"     | absolute_url }})
-* [DistantLight]( {{ "/user-reference/scene-objects/lights/DistantLight/"  | absolute_url }})
-* [EnvLight](     {{ "/user-reference/scene-objects/lights/EnvLight/"      | absolute_url }})
-* [MeshLight](    {{ "/user-reference/scene-objects/lights/MeshLight/"     | absolute_url }})
-* [RectLight](    {{ "/user-reference/scene-objects/lights/RectLight/"     | absolute_url }})
-* [SphereLight](  {{ "/user-reference/scene-objects/lights/SphereLight/"   | absolute_url }})
-* [SpotLight](    {{ "/user-reference/scene-objects/lights/SpotLight/"     | absolute_url }})
+The following Light types are included in MoonRay:
+{% assign section = site.data.site-nav-tree[1].subitems[1].subitems[6].subitems %}
+{%- for item in section -%}
+- [{{ item.text }}]({{ item.path | replace: "index.md", "" | relative_url | replace: ".md", "/"}})
+{% endfor %}
 
 Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity.
 The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial
