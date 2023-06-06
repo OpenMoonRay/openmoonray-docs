@@ -488,9 +488,9 @@
       - text: Tools
         path: user-reference/tools/index.md
         subitems:
-          - text: Arras Render
+          - text: arras_render
             path: user-reference/tools/arras_render.md
-          - text: Denoising
+          - text: denoise
             path: user-reference/tools/denoise.md
           - text: Hydra Delegate
             path: user-reference/tools/hydra/index.md
@@ -503,13 +503,13 @@
                 path: user-reference/tools/hydra/render-settings.md
               - text: HdMoonRay Houdini Integration
                 path: user-reference/tools/hydra/hdmoonray-houdini.md
-              - text: hd_render Command
+              - text: hd_render
                 path: user-reference/tools/hydra/hd_render.md
-          - text: MoonRay
+          - text: moonray
             path: user-reference/tools/moonray.md
-          - text: MoonRay GUI
+          - text: moonray_gui
             path: user-reference/tools/moonray-gui.md
-          - text: Render Profile Viewer
+          - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
         path: user-reference/performance.md

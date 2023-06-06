@@ -151,10 +151,10 @@ RDL2_DSO_ATTR_DECLARE
 RDL2_DSO_ATTR_DEFINE(rdl2::Geometry)
   
     attrShowLid =
-        sceneClass.declareAttribute<rdl2::Bool>("show lid", true);
+        sceneClass.declareAttribute<rdl2::Bool>("show_lid", true);
 
     attrSpoutRadius =
-        sceneClass.declareAttribute<rdl2::Float>("spout radius", 1.0f, rdl2::FLAGS_BINDABLE);
+        sceneClass.declareAttribute<rdl2::Float>("spout_radius", 1.0f);
   
 RDL2_DSO_ATTR_END
 ```
