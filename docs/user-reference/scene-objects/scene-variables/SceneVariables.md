@@ -944,7 +944,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The square root of the number of samples taken for BSDF evaluations on the primary intersection. The number taken depends on the BSDF sampler strategy.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_samples.links heading=4-%}
@@ -954,7 +954,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The square root of the number of samples taken to evaluate BSSRDF (subsurface scattering) contributions on the primary intersection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bssrdf_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bssrdf_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bssrdf_samples.links heading=4-%}
@@ -974,7 +974,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The square root of the number of samples taken for each light on the primary intersection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.light_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.light_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.light_samples.links heading=4-%}
