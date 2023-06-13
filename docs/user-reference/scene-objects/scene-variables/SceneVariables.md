@@ -593,7 +593,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Enable camera depth-of-field (DOF)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_dof.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_dof.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_dof.links heading=4-%}
@@ -897,7 +897,7 @@ title: SceneVariables
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">When using resumable rendering, the Lua script named here is loaded after the render prep stage. In addition, MoonRay sets some Lua global variables the script can access. This functionality is disabled when the script name is empty or when not using resumable rendering. Please refer to the checkpoint/resume documentation for more details.</p>
+      <p class="scene-class-comments">When using resumable rendering, the Lua script named here is executed after the render prep stage. In addition, MoonRay sets some Lua global variables the script can access. This functionality is disabled when the script name is empty or when not using resumable rendering. Please refer to the checkpoint/resume documentation for more details.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.on_resume_script.links heading=4-%}
@@ -1213,7 +1213,7 @@ title: SceneVariables
           &nbsp;&nbsp;5 = &ldquo;random&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;spiral square&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;spiral rect&rdquo;<br>
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting specifies the order in which tiles (as areas of 8x8 pixels) are prioritized for batch rendering, which determines which areas of the image are rendered first. The ordering is not guaranteed: the strict sequence of tile starting and completion for any pass is nondeterministic due to thread scheduling.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.links heading=4-%}
@@ -1230,10 +1230,20 @@ title: SceneVariables
           &nbsp;&nbsp;5 = &ldquo;random&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;spiral square&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;spiral rect&rdquo;<br>
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting specifies the order in which tiles (as areas of 8x8 pixels) are prioritized for checkpoint rendering, which determines which areas of the image are rendered first. The ordering is not guaranteed: the strict sequence of tile starting and completion for any pass is nondeterministic due to thread scheduling.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.links heading=4-%}
+    </p>
+    <h3>crypto_uv_attribute_name</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      <br>
+      default: 
+      <p class="scene-class-comments">Names of primitive attribute containing crypto UVs</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.crypto_uv_attribute_name.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.crypto_uv_attribute_name.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.crypto_uv_attribute_name.links heading=4-%}
     </p>
     <h3>fps</h3>
     <p class="scene-class-type">
@@ -1277,7 +1287,7 @@ title: SceneVariables
           &nbsp;&nbsp;5 = &ldquo;random&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;spiral square&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;spiral rect&rdquo;<br>
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting specifies the order in which tiles (as areas of 8x8 pixels) are prioritized for progressive rendering, which determines which areas of the image are rendered first. The ordering is not guaranteed: the strict sequence of tile starting and completion for any pass is nondeterministic due to thread scheduling.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.links heading=4-%}
@@ -1308,7 +1318,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">This setting specifies whether to use a two-stage writing process for images. In two-stage writing, the image is first written to a temporary location and then copied or renamed. This approach significantly reduces the risk of output data corruption due to an unexpected render process termination.<br>The directory where the temporary files are stored is defined by the "tmp_dir" scene variable.</p>
+      <p class="scene-class-comments">This setting specifies whether to use a two-stage writing process for images. In two-stage writing, the image is first written to a temporary location and then copied or renamed to the final location. This approach significantly reduces the risk of output data corruption due to an unexpected render process termination.<br>The directory where the temporary files are stored is defined by the "tmp_dir" scene variable.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.links heading=4-%}
