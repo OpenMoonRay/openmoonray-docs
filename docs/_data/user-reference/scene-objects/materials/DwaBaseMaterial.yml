@@ -47,6 +47,14 @@ attributes:
     videos:
       - video: SD_bssrdf_wedge.mp4
         text: "bssrdf: normalized diffusion vs dipole diffusion, random walk not shown"
+  diffuse_roughness:
+    videos:
+      - video: SD_diffuse_roughness_wedge.mp4
+        text: "diffuse roughness: 0 - 1"
+  diffuse_transmission:
+    videos:
+      - video: SD_diffuse_transmission_wedge.mp4
+        text: "diffuse transmission: 0 - 1"
   scattering_color:
     videos:
       - video: SD_scattering_color_wedge.mp4
