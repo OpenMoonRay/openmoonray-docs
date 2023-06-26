@@ -10,3 +10,6 @@ The following Geometry procedurals are included in MoonRay:
 {% endfor %}
 
 All geometry types support [motion blur]({{ "/user-reference/how-to-guides/motion-blur" | absolute_url }})
+
+For development, see:
+[Writing Geometry Procedurals]({{ "/developer-reference/shaders/geometry-procedurals" | absolute_url }})
