@@ -4,7 +4,11 @@ title: Instance Level Transforms
 
 # Instance Level Transforms
 
-There are a few attributes, on both `RdlInstanceGeometry` and `TransformSpaceMap`, that allow you to transform to and 
+There are a few attributes, on both
+[RdlInstanceGeometry]({{ "/user-reference/scene-objects/geometry/RdlInstanceGeometry" | absolute_url }})
+and
+[TransformSpaceMap]({{ "/user-reference/scene-objects/maps/TransformSpaceMap" | absolute_url }})
+, that allow you to transform to and 
 from instance spaces. This guide goes over why and how you would do this. 
 
 ## What is a Space?
@@ -42,7 +46,9 @@ a number of sphere instances, but where the texture coordinates are defined rela
 
 ## Set Instance Levels on Geometry
 
-On `RdlInstancerGeometry`, you will notice that we have an attribute called *instance_level*, which 
+On
+[RdlInstanceGeometry]({{ "/user-reference/scene-objects/geometry/RdlInstanceGeometry" | absolute_url }})
+, you will notice that we have an attribute called *instance_level*, which 
 has the following options:
 
 - "instance level 0"
@@ -51,12 +57,14 @@ has the following options:
 - "instance level 3"
 - "instance level 4"
 
-This allows you to mark the level or depth of the instance geometry. 
+This allows you to mark the level or depth of the instance geometry and the reference this with a
+[TransformSpaceMap]({{ "/user-reference/scene-objects/maps/TransformSpaceMap" | absolute_url }}).
 
 ## Render to Instance Space
-In order to transform coordinates to instance level space, we can use a `TransformSpaceMap`, which allows you to transform 
-a point or vector to/from the desired spaces. We can then take the transformed points and connect the output to a 
-texture coordinates attribute.
+In order to transform coordinates to instance level space, we can use a
+[TransformSpaceMap]({{ "/user-reference/scene-objects/maps/TransformSpaceMap" | absolute_url }})
+, which allows you to transform a point, vector, or normal to/from the desired spaces. For example,
+we can take transform position *P* and connect the output to a texture coordinates attribute.
 
 ```lua
 
@@ -75,7 +83,7 @@ tsmSpheres = TransformSpaceMap("tsmSpheres") {
     ["input"] = bind(amP),
     ["input_type"] = "point",
     ["from_space"] = "render",
-    ["to_space"] = "instance level 1"
+    ["to_space"] = "instance level 0"
 }
 
 -- use these transformed points as the texture coordinates
@@ -90,8 +98,8 @@ noiseMapColor = NoiseMap("noiseMapColor") {
 }
 ```
 
-If we look at the example from before, we'll notice that transforming the space to "instance level 1" prevents the texture 
-from "swimming" like it was in object space. 
+If we look at the example from before, we'll notice that transforming the space to
+"instance level 0" prevents the texture from "swimming" like it was in object space. 
 
 <figure>
     <video controls loop muted>
@@ -118,12 +126,13 @@ The following maps have bindable input positions and/or normals:
 When adding a second level of instancing ("instance level 1"), the texture on the spheres still sticks. Why does this 
 happen?
 
-`TransformSpaceMap` concatenates multiple instance levels by default. 
+[TransformSpaceMap]({{ "/user-reference/scene-objects/maps/TransformSpaceMap" | absolute_url }})
+concatenates multiple instance levels by default. 
 
 - *to_space* concatenates all of the levels above the specified level. For example, if *to_space* is "instance level 0", 
 it would concatenate levels 0, 1, 2, 3, and 4.
 - *from_space* concatenates all of the levels below the specified level. For example, if *from_space* is "instance level 
-4", it would concatenate levels 4, 3, 2, 1, and 0. 
+4", it would concatenate levels 4, 3, 2, 1, and 0. o
 - *concatenate_instance_level_transforms* allows you to enable/disable this behavior (on by default)
 
 <figure>
@@ -147,7 +156,7 @@ In this case, you need to transform these normals from the instance's local spac
 ![Leaf Render Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-render-space.gif" | absolute_url }})
 
 ### Instance Points
-Let's say that the custom normals were defined on instance points instead of an instanced model.
+Let's say that the custom normals were defined on the instance points instead of the instanced model.
 
 ![Primitive Attributes on Instancer Points]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/prim-attrs-on-instancer-pts.png" | absolute_url }})
 
@@ -159,7 +168,7 @@ below how customN values remain the same, even though their positions are transf
 
 There are two ways to handle this issue: 
 
-1. **Transform our custom normals from the instance's local space to render space.**
+1 **Transform our custom normals from the instance's local space to render space.**
 
 ![customN Render Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-render-space.gif" | absolute_url }})
 
@@ -191,8 +200,9 @@ tsmLeavesCustomN = TransformSpaceMap("tsmLeavesCustomN") {
 }
 ``` 
 
-2. **Use instance level 1.** That way, there is no reference to the specific object's space. Bu sure to turn off concatenation 
-of transforms, as we only want the level 1 transform. (Normals are already authored in instance level 0 space) 
+2 **Use instance level 1.** That way, there is no reference to the specific object's space. Make sure to turn
+off concatenation of transforms, as we only want the level 1 transform.
+(Normals are already authored in instance level 0 space) 
 
 ```lua
 instanceLeavesSphere = InstanceGeometry("instanceLeavesSphere") {
