@@ -1,3 +1,7 @@
+---
+title: Shadow Terminators
+---
+
 # Shadow Terminators
 
 <aside>

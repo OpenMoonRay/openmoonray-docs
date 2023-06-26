@@ -1,6 +1,7 @@
 ---
 title: Baking Textures
 ---
+
 # Baking Textures
 Baking in MoonRay is accomplished through the use of a BakeCamera camera shader. The BakeCamera,
 like any other camera shader is responsible for turning sample locations on the image plane into
