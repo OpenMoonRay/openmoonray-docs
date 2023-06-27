@@ -1,2 +1,187 @@
 ---
 overview: BarnDoorLightFilterOverview.md
+image_path: /assets/images/user-reference/scene-objects/light-filters/BarnDoorLightFilter
+example: BarnDoorLightFilterExample.md
+
+attributes:
+  mode:
+    images:
+      - image: Barn_10.jpg
+        text: mode = analytical
+      - image: Barn_11.jpg
+        text: mode = physical
+
+  projector_type:
+    images:
+      - image: Barn_20.jpg
+        text: projector_type = perspective <br> mode = analytical
+      - image: Barn_21.jpg
+        text: projector_type = orthographic <br> mode = analytical
+
+  projector_focal_distance:
+    images:
+      - image: Barn_30.jpg
+        text: projector_focal_distance = 7.6
+      - image: Barn_31.jpg
+        text: projector_focal_distance = 8.3
+      - image: Barn_32.jpg
+        text: projector_focal_distance = 9
+
+  use_light_xform:
+    images:
+      - image: Barn_40.jpg
+        text: use_light_xform = true
+      - image: Barn_41.jpg
+        text: use_light_xform = false; <br> node_xform = rotate(-90,1,0,0) * translate(-2,9,-6)
+
+  projector_width:
+    images:
+      - image: Barn_50.jpg
+        text: projector_width = 0.1
+      - image: Barn_51.jpg
+        text: projector_width = 0.2
+      - image: Barn_52.jpg
+        text: projector_width = 0.4
+
+  projector_height:
+    images:
+      - image: Barn_60.jpg
+        text: projector_height = 0.1
+      - image: Barn_61.jpg
+        text: projector_height = 0.2
+      - image: Barn_62.jpg
+        text: projector_height = 0.4
+
+  radius:
+    images:
+      - image: Barn_70.jpg
+        text: radius = 0
+      - image: Barn_71.jpg
+        text: radius = 0.5
+      - image: Barn_72.jpg
+        text: radius = 1
+
+  edge:
+    images:
+      - image: Barn_80.jpg
+        text: edge = 0
+      - image: Barn_81.jpg
+        text: edge = 0.5
+      - image: Barn_82.jpg
+        text: edge = 1
+
+  pre_barn_mode:
+    images:
+      - image: Barn_90.jpg
+        text: pre_barn_mode = 0.1
+      - image: Barn_91.jpg
+        text: pre_barn_mode = 0.2
+      - image: Barn_92.jpg
+        text: pre_barn_mode = 0.4
+    links:
+      - url:
+        text: </a>Note&#58; Here pre_barn_distance is set to the distance from the BarnDoorLightFilter to the ground plane, just like the focal distance.<a>
+
+  pre_barn_distance:
+    images:
+      - image: Barn_100.jpg
+        text: pre_barn_distance = 7.5
+      - image: Barn_101.jpg
+        text: pre_barn_distance = 8.5
+      - image: Barn_102.jpg
+        text: pre_barn_distance = 9.5
+    links:
+      - url:
+        text: </a>Note&#58; The distance from the BarnDoorLightFilter to the ground is 9.<a>
+
+  size_left:
+    images:
+      - image: Barn_110.jpg
+        text: size_left = 0.1
+
+  size_bottom:
+    images:
+      - image: Barn_111.jpg
+        text: size_bottom = 0.1
+
+  size_right:
+    images:
+      - image: Barn_112.jpg
+        text: size_right = 0.1
+
+  size_top:
+    images:
+      - image: Barn_113.jpg
+        text: size_top = 0.1
+
+  edge_scale_left:
+    images:
+      - image: Barn_120.jpg
+        text: edge_scale_left = 3
+
+  edge_scale_bottom:
+    images:
+      - image: Barn_121.jpg
+        text: edge_scale_bottom = 3
+
+  edge_scale_right:
+    images:
+      - image: Barn_122.jpg
+        text: edge_scale_right = 0.333
+
+  edge_scale_top:
+    images:
+      - image: Barn_123.jpg
+        text: edge_scale_top = 0.333
+
+  density:
+    images:
+      - image: Barn_130.jpg
+        text: density = 0.4
+      - image: Barn_131.jpg
+        text: density = 0.7
+      - image: Barn_132.jpg
+        text: density = 1
+
+  invert:
+    images:
+      - image: Barn_140.jpg
+        text: invert = false
+      - image: Barn_141.jpg
+        text: invert = true
+
+  rotation:
+    images:
+      - image: Barn_150.jpg
+        text: rotation = 0
+      - image: Barn_151.jpg
+        text: rotation = 15
+      - image: Barn_152.jpg
+        text: rotation = 30
+
+  node_xform:
+    images:
+      - image: Barn_160.jpg
+        text: use_light_xform = true
+      - image: Barn_161.jpg
+        text: use_light_xform = false <br> node_xform = rotate(-90,1,0,0) * translate(-2,9,-6)
+
+  color:
+    images:
+      - image: Barn_170.jpg
+        text: color = Rgb(1,1,1)
+      - image: Barn_171.jpg
+        text: color = Rgb(1,0,0)
+      - image: Barn_172.jpg
+        text: color = Rgb(1,0,0) <br> invert = true
+      - image: Barn_173.jpg
+        text: color = Rgb(1,0,0) <br> density = 0.5
+      - image: Barn_174.jpg
+        text: color = Rgb(1,0,0) <br> invert = true <br> density = 0.5
+
+  on:
+    images:
+      - image: Barn_180.jpg
+        text: on = true
+      - image: Barn_181.jpg
+        text: on = false

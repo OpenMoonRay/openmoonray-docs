@@ -3,7 +3,7 @@ title: Cameras
 ---
 # Cameras
 
-MoonRay includes several different kinds of cameras: 
+The following Camera types are included in MoonRay:
 
 | Type | Description |
 | ---- | ----------- |

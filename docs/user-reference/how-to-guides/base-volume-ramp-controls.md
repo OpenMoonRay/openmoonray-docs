@@ -1,3 +1,7 @@
+---
+title: Base Volume Ramp
+---
+
 # Base Volume Ramp
 ![Header]({{ "/assets/images/user-reference/how-to-guides/base-volume-ramp-controls/header.png" | absolute_url }})
 

@@ -233,8 +233,6 @@ title: DwaMixMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.extra_aovs.links heading=4-%}
     </p>
-<<<<<<< Updated upstream
-=======
     <h3>invisible_refractive_cryptomatte</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -245,7 +243,6 @@ title: DwaMixMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
     </p>
->>>>>>> Stashed changes
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>

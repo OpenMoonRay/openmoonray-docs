@@ -2,10 +2,11 @@
 title: About
 ---
 # Learn About...
-- [MoonRay Renderer](moonray)
-- [MoonRay's Hydra Plugin]({{ "/user-reference/tools/hydra" | absolute_url }})
-- [MoonRay's RDL2 Scene Format](rdl-scene-format)
-- [Arras Computation Framework](arras)
+
+{% assign section = site.data.site-nav-tree[0].subitems[0].subitems %}
+{%- for item in section -%}
+- [{{ item.text }}]({{ item.path | replace: "index.md", "" | relative_url | replace: ".md", "/"}})
+{% endfor %}
 
 
 

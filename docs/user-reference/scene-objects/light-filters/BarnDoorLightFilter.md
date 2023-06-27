@@ -23,7 +23,7 @@ title: BarnDoorLightFilter
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Color within the Barn Door lit region. For each color channel, 0=full shadow, 1=no shadow</p>
+      <p class="scene-class-comments">Color within the Barn Door lit region. For each color channel 0 is full shadow and 1 is no shadow.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.color.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.color.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.color.links heading=4-%}
@@ -33,7 +33,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">fades the filter effect. 0=no effect (like having no filter), 1=full effect</p>
+      <p class="scene-class-comments">Fades the filter effect. 0 means no effect (like having no filter), and 1 means full effect.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.density.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.density.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.density.links heading=4-%}
@@ -43,7 +43,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">size of transition zone from the rounded box to the outside, as a proportion of width (or height, whichever is smaller)</p>
+      <p class="scene-class-comments">The size of the transition zone from the rounded box to the outside, as a proportion of width (or height, whichever is smaller).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge.links heading=4-%}
@@ -53,7 +53,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">scale factor for bottom edge</p>
+      <p class="scene-class-comments">The scale factor for the bottom edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_bottom.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_bottom.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_bottom.links heading=4-%}
@@ -63,7 +63,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">scale factor for left edge</p>
+      <p class="scene-class-comments">The scale factor for the left edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_left.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_left.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_left.links heading=4-%}
@@ -73,7 +73,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">scale factor for right edge</p>
+      <p class="scene-class-comments">The scale factor for the right edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_right.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_right.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_right.links heading=4-%}
@@ -83,7 +83,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">scale factor for top edge</p>
+      <p class="scene-class-comments">The scale factor for the top edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_top.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_top.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.edge_scale_top.links heading=4-%}
@@ -93,7 +93,7 @@ title: BarnDoorLightFilter
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">swap application of filter from inside the Barn Door to outside</p>
+      <p class="scene-class-comments">Swap application of the filter from inside the Barn Door to outside.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.invert.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.invert.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.invert.links heading=4-%}
@@ -104,7 +104,7 @@ title: BarnDoorLightFilter
       <br>
           &nbsp;&nbsp;0 = &ldquo;analytical&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;physical&rdquo;<br>
-      <p class="scene-class-comments">analytical mode allows light to shading points that project to the flap opening.physical mode allows light whose direction goes through the flap opening.</p>
+      <p class="scene-class-comments">Analytical mode allows light to shading points that project to the flap opening. Physical mode allows light whose direction goes through the flap opening.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.mode.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.mode.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.mode.links heading=4-%}
@@ -114,7 +114,7 @@ title: BarnDoorLightFilter
       <b>Mat4d</b> <i>blurrable</i>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">transform of the filter</p>
+      <p class="scene-class-comments">The transform of the filter.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.node_xform.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.node_xform.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.node_xform.links heading=4-%}
@@ -124,7 +124,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.5
-      <p class="scene-class-comments">distance from the BarnDoorLightFilter that the pre_barn_mode control takes effect</p>
+      <p class="scene-class-comments">The distance from the BarnDoorLightFilter that the pre_barn_mode control takes effect.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_distance.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_distance.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_distance.links heading=4-%}
@@ -136,7 +136,7 @@ title: BarnDoorLightFilter
           &nbsp;&nbsp;0 = &ldquo;black&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;white&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;default&rdquo; (default)<br>
-      <p class="scene-class-comments">force region before the pre_barn_distance to be fully filtered (black), not filtered at all (white), or treated the same as elsewhere (default)</p>
+      <p class="scene-class-comments">Force the region before the pre_barn_distance to be fully filtered (black), not filtered at all (white), or treated the same as elsewhere (default).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_mode.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_mode.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.pre_barn_mode.links heading=4-%}
@@ -146,7 +146,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 30.0
-      <p class="scene-class-comments">distance of the flap opening from the projector origin. Ignored for orthographic projection</p>
+      <p class="scene-class-comments">The distance of the flap opening from the projector origin. Ignored for orthographic projection.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_focal_distance.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_focal_distance.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_focal_distance.links heading=4-%}
@@ -156,7 +156,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">height of the frustum at distance 1.0</p>
+      <p class="scene-class-comments">The height of the frustum at distance 1.0.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_height.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_height.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_height.links heading=4-%}
@@ -167,7 +167,7 @@ title: BarnDoorLightFilter
       <br>
           &nbsp;&nbsp;0 = &ldquo;perspective&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;orthographic&rdquo;<br>
-      <p class="scene-class-comments">projection type used to map points to the flap opening. perspective has a focal point, while orthographic does not.</p>
+      <p class="scene-class-comments">The projection type used to map points to the flap opening. Perspective has a focal point, while orthographic does not.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_type.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_type.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_type.links heading=4-%}
@@ -177,7 +177,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">width of the frustum at distance 1.0</p>
+      <p class="scene-class-comments">The width of the frustum at distance 1.0.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_width.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_width.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.projector_width.links heading=4-%}
@@ -187,7 +187,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">radius by which to convert the base box shape into a rounded box, as a proportion of half the width (or height, whichever is smaller)</p>
+      <p class="scene-class-comments">The radius by which to convert the base box shape into a rounded box, as a proportion of half the width (or height, whichever is smaller).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.radius.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.radius.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.radius.links heading=4-%}
@@ -197,7 +197,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">angle to rotate the Barn Door counter-clockwise as seen from the light, in degrees</p>
+      <p class="scene-class-comments">The angle to rotate the Barn Door counter-clockwise as seen from the light, in degrees.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.rotation.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.rotation.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.rotation.links heading=4-%}
@@ -207,7 +207,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">additional size on bottom edge</p>
+      <p class="scene-class-comments">Additional size on the bottom edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_bottom.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_bottom.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_bottom.links heading=4-%}
@@ -217,7 +217,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">additional size on left edge</p>
+      <p class="scene-class-comments">Additional size on the left edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_left.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_left.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_left.links heading=4-%}
@@ -227,7 +227,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">additional size on right edge</p>
+      <p class="scene-class-comments">Additional size on the right edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_right.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_right.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_right.links heading=4-%}
@@ -237,7 +237,7 @@ title: BarnDoorLightFilter
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">additional size on top edge</p>
+      <p class="scene-class-comments">Additional size on the top edge.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_top.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_top.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.size_top.links heading=4-%}
@@ -247,7 +247,7 @@ title: BarnDoorLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">attach to the light (in the -Z direction) and ignore node_xform</p>
+      <p class="scene-class-comments">Attach the filter to the light (in the -Z direction) and ignore node_xform.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.use_light_xform.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.use_light_xform.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.use_light_xform.links heading=4-%}

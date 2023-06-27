@@ -16,19 +16,23 @@ title: RdlCurveGeometry
 
 <div class="scene-class">
 <details open>
+  <summary>Curve attributes</summary>
+  <p>
+    <h3>tessellation_rate</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      <br>
+      default: 4
+      <p class="scene-class-comments">Number of segments to split curve spans into</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Curves attributes</summary>
   <p>
-    <h3>curve_subtype</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-      <br>
-          &nbsp;&nbsp;0 = &ldquo;ray_facing&rdquo; (default)<br>
-          &nbsp;&nbsp;1 = &ldquo;round&rdquo;<br>
-      <p class="scene-class-comments">Curve subtype is ray facing or round</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_subtype.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_subtype.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curve_subtype.links heading=4-%}
-    </p>
     <h3>curve_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
@@ -80,16 +84,6 @@ title: RdlCurveGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.radius_list.links heading=4-%}
-    </p>
-    <h3>tessellation_rate</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      <br>
-      default: 4
-      <p class="scene-class-comments">Number of segments to split curve spans into</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.tessellation_rate.links heading=4-%}
     </p>
     <h3>uv_list</h3>
     <p class="scene-class-type">
@@ -230,7 +224,7 @@ title: RdlCurveGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is enabled, enabling this feature can produce a curved rotation trail.  Enabling this feature will disable adaptive tessellation for this mesh</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
@@ -414,6 +408,18 @@ title: RdlCurveGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.contains_camera.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.contains_camera.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.contains_camera.links heading=4-%}
+    </p>
+    <h3>curves_subtype</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;ray_facing&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;round&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;normal_oriented&rdquo;<br>
+      <p class="scene-class-comments">Selects the style the curves are rendered</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_subtype.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.curves_subtype.links heading=4-%}
     </p>
     <h3>dicing_camera</h3>
     <p class="scene-class-type">

@@ -1,0 +1,1 @@
+**RgbToNormalMap** Converts a regular [map]({{ "/user-reference/scene-objects/maps" | absolute_url }}) that outputs a color into a normal map.  No further transformation is applied and a [TransformNormalMap]({{ "/user-reference/scene-objects/normal-maps/TransformNormalMap" | absolute_url }}) should be used to transform the input from tangent to render space.

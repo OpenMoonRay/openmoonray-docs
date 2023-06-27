@@ -1,5 +1,4 @@
 ---
-title: MoonRay Release Notes
+title: Release Notes
 ---
-# Release Notes
-
+<meta http-equiv="Refresh" content="0; url='https://github.com/dreamworksanimation/openmoonray/releases'" />

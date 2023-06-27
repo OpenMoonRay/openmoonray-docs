@@ -1,0 +1,9 @@
+---
+overview: overviews/ImageNormalMap.md
+image_path: /assets/images/user-reference/scene-objects/normal-maps/ImageNormalMap
+
+gallery:
+  - image: normal_map.jpg
+    text: Typical normal map encoded 0 to 1
+  - image: normal_mapping.jpg
+    text: Normal map applied to geometry

@@ -30,9 +30,10 @@ attributes:
       - image: focal_length_30.png
         text: focal_length = 30
   focus_distance:
-    - image: focus_distance_20.png
-      text: focus_distance = 20
-    - image: focus_distance_25.png
-      text: focus_distance = 25
-    - image: focus_distance_30.png
-      text: focus_distance = 30
+    images:
+      - image: focus_distance_20.png
+        text: focus_distance = 20
+      - image: focus_distance_25.png
+        text: focus_distance = 25
+      - image: focus_distance_30.png
+        text: focus_distance = 30

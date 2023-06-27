@@ -1,0 +1,37 @@
+---
+overview: overviews/BaseVolume.md
+image_path: /assets/images/user-reference/scene-objects/volumes/BaseVolume
+gallery:
+  - image: BaseVolume.jpg
+    text: BaseVolume applied to a sphere with a NoiseMap bound to attenuation_intensity
+  - image: godrays.jpg
+    text: BaseVolume with volume shadows
+attributes:
+  anisotropy:
+    videos:
+      - video: base_volume_anisotropy.mp4
+        text: "anisotropy: -1 | 1 (backlit)"
+  attenuation_color:
+    videos:
+      - video: base_volume_attenuation_color.mp4
+        text: "attenuation_color: (0,0,0) | (1,1,1)"
+  attenuation_factor:
+    videos:
+      - video: base_volume_attenuation_factor.mp4
+        text: "attenuation_factor: 0 | 1"
+  attenuation_intensity:
+    videos:
+      - video: base_volume_attenuation_intensity.mp4
+        text: "attenuation_intensity: 0 | 1"
+  diffuse_color:
+    videos:
+      - video: base_volume_diffuse_color.mp4
+        text: "diffuse_color: (0,0,0) | (1,1,1)"
+  emission_color:
+    videos:
+      - video: base_volume_emission_color.mp4
+        text: "emission_color: (0,0,0) | (1,1,1)"
+  emission_intensity:
+    videos:
+      - video: base_volume_emission_intensity.mp4
+        text: "emission_intensity: 0 | 1"

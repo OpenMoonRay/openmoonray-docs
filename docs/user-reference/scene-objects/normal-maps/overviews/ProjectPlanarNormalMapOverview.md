@@ -1,0 +1,1 @@
+**ProjectPlanarNormalMap** projects a tangent space normal map along the z axis by default.  The direction can be set with a matrix, TRS controls, or a projector object based on the value of the *projection_mode* attribute.

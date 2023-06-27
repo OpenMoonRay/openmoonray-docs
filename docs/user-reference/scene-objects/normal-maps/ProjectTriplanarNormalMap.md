@@ -538,7 +538,7 @@ title: ProjectTriplanarNormalMap
           &nbsp;&nbsp;3 = &ldquo;Rot Trans Scale&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;Trans Scale Rot&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
-      <p class="scene-class-comments">Order in which to apply transformations</p>
+      <p class="scene-class-comments">Order in which to apply transformations when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.TRS_order.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.TRS_order.links heading=4-%}
@@ -558,7 +558,7 @@ title: ProjectTriplanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_x_texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_x_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_x_texture.links heading=4-%}
@@ -578,7 +578,7 @@ title: ProjectTriplanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_y_texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_y_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_y_texture.links heading=4-%}
@@ -598,7 +598,7 @@ title: ProjectTriplanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_z_texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_z_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.negative_z_texture.links heading=4-%}
@@ -641,7 +641,7 @@ title: ProjectTriplanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_x_texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_x_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_x_texture.links heading=4-%}
@@ -661,7 +661,7 @@ title: ProjectTriplanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_y_texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_y_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_y_texture.links heading=4-%}
@@ -681,7 +681,7 @@ title: ProjectTriplanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_z_texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_z_texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.positive_z_texture.links heading=4-%}
@@ -691,7 +691,7 @@ title: ProjectTriplanarNormalMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">the transform to use for projection</p>
+      <p class="scene-class-comments">The transform to use for projection when 'projection_mode' is set to 'projection_matrix'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.projection_matrix.links heading=4-%}
@@ -713,7 +713,7 @@ title: ProjectTriplanarNormalMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">the object whose transform to use for projection</p>
+      <p class="scene-class-comments">The object whose transform to use for projection when 'projection_mode' is set to 'projector'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.projector.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.projector.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.projector.links heading=4-%}
@@ -733,7 +733,7 @@ title: ProjectTriplanarNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Rnd flipping in S or T for each active texture</p>
+      <p class="scene-class-comments">Random flipping in S or T for each active texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_flip.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_flip.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_flip.links heading=4-%}
@@ -743,7 +743,7 @@ title: ProjectTriplanarNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Rnd offset in S or T for each active texture</p>
+      <p class="scene-class-comments">Random offset in S or T for each active texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_offset.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_offset.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_offset.links heading=4-%}
@@ -753,7 +753,7 @@ title: ProjectTriplanarNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Rnd 2d rotation of each active texture</p>
+      <p class="scene-class-comments">Random 2d rotation of each active texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_rotation.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_rotation.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.randomize_rotation.links heading=4-%}
@@ -763,7 +763,7 @@ title: ProjectTriplanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Rotation of the projection transform</p>
+      <p class="scene-class-comments">Rotation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.rotate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.rotate.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.rotate.links heading=4-%}
@@ -778,7 +778,7 @@ title: ProjectTriplanarNormalMap
           &nbsp;&nbsp;3 = &ldquo;yzx&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;zxy&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
-      <p class="scene-class-comments">Order in which to apply rotation transformations</p>
+      <p class="scene-class-comments">Order in which to apply rotation transformations when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.rotation_order.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.rotation_order.links heading=4-%}
@@ -788,7 +788,7 @@ title: ProjectTriplanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Scale of the projection transform</p>
+      <p class="scene-class-comments">Scale of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.scale.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.scale.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.scale.links heading=4-%}
@@ -808,7 +808,7 @@ title: ProjectTriplanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Tranlation of the projection transform</p>
+      <p class="scene-class-comments">Tranlation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.translate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectTriplanarNormalMap.attributes.translate.links heading=4-%}

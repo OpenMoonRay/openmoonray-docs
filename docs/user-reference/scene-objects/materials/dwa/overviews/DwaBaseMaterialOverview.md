@@ -1,0 +1,2 @@
+---
+The <span class="define">DwaBaseMaterial</span> is an "uber shader" that is most useful for roughly transferring values from a third party uber shader or connecting maps from a content creation tool that uses the uber shader model. In other words, if you're making use of _metallic_ maps this is the material to use. The [DwaSolidDielectricMaterial]({{site.baseurl}}/user-reference/scene-objects/materials/dwa/DwaSolidDielectricMaterial) is still the general purpose material intended for most materials such as wood, paint, plastic, stone, clay, etc.

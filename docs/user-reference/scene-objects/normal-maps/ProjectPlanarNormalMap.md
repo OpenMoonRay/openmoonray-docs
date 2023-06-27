@@ -28,7 +28,7 @@ title: ProjectPlanarNormalMap
           &nbsp;&nbsp;3 = &ldquo;Rot Trans Scale&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;Trans Scale Rot&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
-      <p class="scene-class-comments">Order in which to apply transformations</p>
+      <p class="scene-class-comments">Order in which to apply transformations when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.TRS_order.links heading=4-%}
@@ -49,7 +49,7 @@ title: ProjectPlanarNormalMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">the transform to use for projection</p>
+      <p class="scene-class-comments">The transform to use for projection when 'projection_mode' is set to 'projection_matrix'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projection_matrix.links heading=4-%}
@@ -71,7 +71,7 @@ title: ProjectPlanarNormalMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">the object whose transform to use for projection</p>
+      <p class="scene-class-comments">The object whose transform to use for projection when 'projection_mode' is set to 'projector'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.projector.links heading=4-%}
@@ -81,7 +81,7 @@ title: ProjectPlanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Rotation of the projection transform</p>
+      <p class="scene-class-comments">Rotation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotate.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotate.links heading=4-%}
@@ -96,7 +96,7 @@ title: ProjectPlanarNormalMap
           &nbsp;&nbsp;3 = &ldquo;yzx&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;zxy&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
-      <p class="scene-class-comments">Order in which to apply rotation transformations</p>
+      <p class="scene-class-comments">Order in which to apply rotation transformations when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.rotation_order.links heading=4-%}
@@ -106,7 +106,7 @@ title: ProjectPlanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Scale of the projection transform</p>
+      <p class="scene-class-comments">Scale of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.scale.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.scale.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.scale.links heading=4-%}
@@ -116,7 +116,7 @@ title: ProjectPlanarNormalMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.texture.links heading=4-%}
@@ -126,7 +126,7 @@ title: ProjectPlanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Tranlation of the projection transform</p>
+      <p class="scene-class-comments">Tranlation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.links heading=4-%}
@@ -136,7 +136,7 @@ title: ProjectPlanarNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">use reference space</p>
+      <p class="scene-class-comments">Use reference space position(ref_P) and normals(ref_N)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.links heading=4-%}

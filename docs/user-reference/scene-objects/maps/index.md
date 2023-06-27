@@ -105,3 +105,7 @@ In the course of supporting productions, certain maps need major interface or ch
 [NoiseWorleyMap](NoiseWorleyMap)  
 [OpenVdbMap](OpenVdbMap)  
 [ProjectTriplanarMap](ProjectTriplanarMap)  
+
+## Development
+
+[Writing Map Shaders]({{ "/developer-reference/shaders/maps" | absolute_url }})

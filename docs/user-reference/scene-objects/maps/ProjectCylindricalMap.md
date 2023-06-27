@@ -28,7 +28,7 @@ title: ProjectCylindricalMap
           &nbsp;&nbsp;3 = &ldquo;Rot Trans Scale&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;Trans Scale Rot&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;Trans Rot Scale&rdquo;<br>
-      <p class="scene-class-comments">Order in which to apply transformations</p>
+      <p class="scene-class-comments">Order in which to apply transformations when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.TRS_order.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.TRS_order.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.TRS_order.links heading=4-%}
@@ -68,7 +68,7 @@ title: ProjectCylindricalMap
       <b>Mat4d</b>
       <br>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      <p class="scene-class-comments">the transform to use for projection</p>
+      <p class="scene-class-comments">The transform to use for projection when 'projection_mode' is set to 'projection_matrix'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_matrix.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_matrix.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projection_matrix.links heading=4-%}
@@ -90,7 +90,7 @@ title: ProjectCylindricalMap
       <b>Node</b>
       <br>
       default: None
-      <p class="scene-class-comments">the object whose transform to use for projection</p>
+      <p class="scene-class-comments">The object whose transform to use for projection when 'projection_mode' is set to 'projector'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projector.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projector.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.projector.links heading=4-%}
@@ -100,7 +100,7 @@ title: ProjectCylindricalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Rotation of the projection transform</p>
+      <p class="scene-class-comments">Rotation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotate.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotate.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotate.links heading=4-%}
@@ -115,7 +115,7 @@ title: ProjectCylindricalMap
           &nbsp;&nbsp;3 = &ldquo;yzx&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;zxy&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;zyx&rdquo;<br>
-      <p class="scene-class-comments">Order in which to apply rotation transformations</p>
+      <p class="scene-class-comments">Order in which to apply rotation transformations when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotation_order.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotation_order.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.rotation_order.links heading=4-%}
@@ -125,7 +125,7 @@ title: ProjectCylindricalMap
       <b>Vec3d</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Scale of the projection transform</p>
+      <p class="scene-class-comments">Scale of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.scale.links heading=4-%}
@@ -135,7 +135,7 @@ title: ProjectCylindricalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Tranlation of the projection transform</p>
+      <p class="scene-class-comments">Tranlation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.translate.images data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectCylindricalMap.attributes.translate.links heading=4-%}

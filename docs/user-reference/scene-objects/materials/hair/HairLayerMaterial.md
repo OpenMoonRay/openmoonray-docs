@@ -76,8 +76,6 @@ title: HairLayerMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.hair_material_B.links heading=4-%}
     </p>
-<<<<<<< Updated upstream
-=======
     <h3>invisible_refractive_cryptomatte</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -88,7 +86,6 @@ title: HairLayerMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.HairLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairLayerMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
     </p>
->>>>>>> Stashed changes
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
