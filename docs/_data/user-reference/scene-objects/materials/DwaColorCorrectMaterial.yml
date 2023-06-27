@@ -1,0 +1,24 @@
+---
+overview: overviews/DwaColorCorrectMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/dwa/DwaColorCorrectMaterial
+attributes:
+  gain:
+    videos:
+      - video: colorCorrect_gain.mp4
+        text: "gain: 0.0 -> 2.0"
+  hue_shift:
+    videos:
+      - video: colorCorrect_hueShift.mp4
+        text: "hue_shift: 0.0 -> 1.0"
+  saturation:
+    videos: 
+      - video: colorCorrect_saturation.mp4
+        text: "saturation: 0.0 -> 2.0"
+  TMI:
+    videos:
+      - video: colorCorrect_TMI0.mp4
+        text: "TMI: (-1, 0, 0) -> (1, 0, 0)"
+      - video: colorCorrect_TMI1.mp4
+        text: "TMI: (0, -1, 0) -> (0, 1, 0)"
+      - video: colorCorrect_TMI2.mp4
+        text: "TMI: (0, 0, -1) -> (0, 0, 1)"

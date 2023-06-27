@@ -238,7 +238,7 @@ title: DwaMixMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
@@ -258,7 +258,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material0.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material0.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material0.links heading=4-%}
@@ -268,7 +268,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material1.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material1.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material1.links heading=4-%}
@@ -278,7 +278,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material10.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material10.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material10.links heading=4-%}
@@ -288,7 +288,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material11.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material11.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material11.links heading=4-%}
@@ -298,7 +298,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material12.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material12.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material12.links heading=4-%}
@@ -308,7 +308,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material13.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material13.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material13.links heading=4-%}
@@ -318,7 +318,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material14.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material14.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material14.links heading=4-%}
@@ -328,7 +328,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material15.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material15.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material15.links heading=4-%}
@@ -338,7 +338,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material16.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material16.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material16.links heading=4-%}
@@ -348,7 +348,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material17.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material17.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material17.links heading=4-%}
@@ -358,7 +358,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material18.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material18.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material18.links heading=4-%}
@@ -368,7 +368,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material19.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material19.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material19.links heading=4-%}
@@ -378,7 +378,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material2.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material2.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material2.links heading=4-%}
@@ -388,7 +388,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material20.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material20.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material20.links heading=4-%}
@@ -398,7 +398,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material21.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material21.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material21.links heading=4-%}
@@ -408,7 +408,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material22.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material22.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material22.links heading=4-%}
@@ -418,7 +418,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material23.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material23.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material23.links heading=4-%}
@@ -428,7 +428,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material24.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material24.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material24.links heading=4-%}
@@ -438,7 +438,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material25.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material25.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material25.links heading=4-%}
@@ -448,7 +448,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material26.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material26.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material26.links heading=4-%}
@@ -458,7 +458,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material27.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material27.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material27.links heading=4-%}
@@ -468,7 +468,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material28.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material28.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material28.links heading=4-%}
@@ -478,7 +478,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material29.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material29.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material29.links heading=4-%}
@@ -488,7 +488,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material3.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material3.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material3.links heading=4-%}
@@ -498,7 +498,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material30.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material30.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material30.links heading=4-%}
@@ -508,7 +508,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material31.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material31.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material31.links heading=4-%}
@@ -518,7 +518,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material32.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material32.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material32.links heading=4-%}
@@ -528,7 +528,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material33.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material33.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material33.links heading=4-%}
@@ -538,7 +538,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material34.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material34.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material34.links heading=4-%}
@@ -548,7 +548,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material35.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material35.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material35.links heading=4-%}
@@ -558,7 +558,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material36.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material36.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material36.links heading=4-%}
@@ -568,7 +568,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material37.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material37.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material37.links heading=4-%}
@@ -578,7 +578,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material38.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material38.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material38.links heading=4-%}
@@ -588,7 +588,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material39.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material39.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material39.links heading=4-%}
@@ -598,7 +598,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material4.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material4.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material4.links heading=4-%}
@@ -608,7 +608,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material40.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material40.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material40.links heading=4-%}
@@ -618,7 +618,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material41.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material41.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material41.links heading=4-%}
@@ -628,7 +628,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material42.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material42.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material42.links heading=4-%}
@@ -638,7 +638,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material43.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material43.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material43.links heading=4-%}
@@ -648,7 +648,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material44.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material44.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material44.links heading=4-%}
@@ -658,7 +658,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material45.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material45.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material45.links heading=4-%}
@@ -668,7 +668,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material46.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material46.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material46.links heading=4-%}
@@ -678,7 +678,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material47.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material47.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material47.links heading=4-%}
@@ -688,7 +688,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material48.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material48.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material48.links heading=4-%}
@@ -698,7 +698,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material49.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material49.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material49.links heading=4-%}
@@ -708,7 +708,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material5.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material5.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material5.links heading=4-%}
@@ -718,7 +718,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material50.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material50.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material50.links heading=4-%}
@@ -728,7 +728,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material51.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material51.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material51.links heading=4-%}
@@ -738,7 +738,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material52.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material52.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material52.links heading=4-%}
@@ -748,7 +748,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material53.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material53.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material53.links heading=4-%}
@@ -758,7 +758,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material54.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material54.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material54.links heading=4-%}
@@ -768,7 +768,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material55.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material55.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material55.links heading=4-%}
@@ -778,7 +778,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material56.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material56.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material56.links heading=4-%}
@@ -788,7 +788,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material57.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material57.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material57.links heading=4-%}
@@ -798,7 +798,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material58.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material58.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material58.links heading=4-%}
@@ -808,7 +808,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material59.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material59.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material59.links heading=4-%}
@@ -818,7 +818,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material6.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material6.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material6.links heading=4-%}
@@ -828,7 +828,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material60.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material60.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material60.links heading=4-%}
@@ -838,7 +838,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material61.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material61.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material61.links heading=4-%}
@@ -848,7 +848,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material62.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material62.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material62.links heading=4-%}
@@ -858,7 +858,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material63.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material63.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material63.links heading=4-%}
@@ -868,7 +868,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material7.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material7.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material7.links heading=4-%}
@@ -878,7 +878,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material8.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material8.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material8.links heading=4-%}
@@ -888,7 +888,7 @@ title: DwaMixMaterial
       <b>DwaBaseLayerable</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">material input</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material9.images data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material9.videos data=site.data.user-reference.scene-objects.materials.DwaMixMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaMixMaterial.attributes.material9.links heading=4-%}

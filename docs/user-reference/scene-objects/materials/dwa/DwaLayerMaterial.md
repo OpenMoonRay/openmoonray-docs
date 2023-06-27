@@ -238,7 +238,7 @@ title: DwaLayerMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaLayerMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaLayerMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}

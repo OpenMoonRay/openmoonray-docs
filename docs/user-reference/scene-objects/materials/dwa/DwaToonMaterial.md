@@ -230,7 +230,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>RgbVector</b>
       <br>
-      default: [[ 1, 1, 1 ], [ 0.75, 0.75, 0.75 ], [ 0.25, 0.25, 0.25 ], [ 0, 0, 0 ]]
+      default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       <p class="scene-class-comments">List of colors on the ramp</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.colors.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.colors.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -1541,7 +1541,7 @@ title: DwaToonMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
