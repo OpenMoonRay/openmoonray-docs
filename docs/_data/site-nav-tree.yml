@@ -511,6 +511,8 @@
             path: user-reference/tools/moonray.md
           - text: moonray_gui
             path: user-reference/tools/moonray-gui.md
+          - text: rdl2_print
+            path: user-reference/tools/rdl2_print.md
           - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
