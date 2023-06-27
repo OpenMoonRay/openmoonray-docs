@@ -385,6 +385,19 @@ title: HairMaterial_v3
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.hair_color.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.hair_color.links heading=4-%}
     </p>
+<<<<<<< Updated upstream
+=======
+    <h3>invisible_refractive_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.invisible_refractive_cryptomatte.links heading=4-%}
+    </p>
+>>>>>>> Stashed changes
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>

@@ -526,6 +526,19 @@ title: DwaVelvetMaterial_v2
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.extra_aovs.links heading=4-%}
     </p>
+<<<<<<< Updated upstream
+=======
+    <h3>invisible_refractive_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.invisible_refractive_cryptomatte.links heading=4-%}
+    </p>
+>>>>>>> Stashed changes
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
