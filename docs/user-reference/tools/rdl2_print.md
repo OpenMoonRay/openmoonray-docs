@@ -28,7 +28,7 @@ Usage:
     Print a specific SceneObject found in the RDL file.  The default SceneVariables object is named __SceneVariables__.
 
 Options:
-    -d, ---dso_path         Specify an additional path to search for SceneClasses (DSOs).
+    -d, --dso_path          Specify an additional path to search for SceneClasses (DSOs).
     -h, --help              Print this help message.
     --no_sort               Do not sort the classes and attributes alphabetically.
     -s, --simple            Print without comments.
