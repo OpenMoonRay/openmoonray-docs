@@ -1,0 +1,6 @@
+---
+overview: overviews/OpenVdbMap_v2.md
+image_path: /assets/images/user-reference/scene-objects/maps/OpenVdbMap_v2
+gallery:
+  - image: OpenVdbMap_v2.jpg
+    text: BaseVolumes with diffuse_color bound to OpenVdbMap_v2
