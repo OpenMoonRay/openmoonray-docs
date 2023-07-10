@@ -573,7 +573,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">This setting determines whether to record presence bounces as separate cryptomatte samples</p>
+      <p class="scene-class-comments">This setting determines whether to record presence bounces as separate cryptomatte samples.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.cryptomatte_multi_presence.links heading=4-%}
@@ -944,7 +944,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 2
-      <p class="scene-class-comments">The square root of the number of samples taken for BSDF evaluations on the primary intersection. The number taken depends on the BSDF sampler strategy.</p>
+      <p class="scene-class-comments">The square root of the number of samples taken for BSDF lobe evaluations on the primary intersection. The number of samples taken per material depends on the BSDF sampler strategy and the number of lobes that comprise the material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_samples.links heading=4-%}
@@ -1318,7 +1318,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">This setting specifies whether to use a two-stage writing process for images. In two-stage writing, the image is first written to a temporary location and then copied or renamed to the final location. This approach significantly reduces the risk of output data corruption due to an unexpected render process termination.<br>The directory where the temporary files are stored is defined by the "tmp_dir" scene variable.</p>
+      <p class="scene-class-comments">This setting specifies whether to use a two-stage writing process for images. In two-stage writing, the image is first written to a temporary location and then moved to the final location. This approach significantly reduces the risk of output data corruption due to an unexpected render process termination.<br>The directory where the temporary files are stored is defined by the "tmp_dir" scene variable.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.two_stage_output.links heading=4-%}
