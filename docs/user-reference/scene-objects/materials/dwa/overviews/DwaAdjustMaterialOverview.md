@@ -1,3 +1,4 @@
+---
 ![]({{"/assets/images/user-reference/scene-objects/materials/dwa/DwaAdjustMaterial/dwa_adjust_overview.png" | absolute_url}})
 
 **DwaAdjustMaterial** operates in the same vein as the DwaColorCorrectMaterial: it allows for easy editing of materials 

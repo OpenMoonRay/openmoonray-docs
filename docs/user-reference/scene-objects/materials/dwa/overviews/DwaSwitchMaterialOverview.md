@@ -1,3 +1,4 @@
+---
 The DwaSwitchMaterial allows you to easily switch between materials, and it supports up to 64 material inputs. The 
 *choice* attribute is responsible for selecting the material. 
 

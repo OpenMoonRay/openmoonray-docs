@@ -1,0 +1,81 @@
+---
+overview: overviews/DwaFabricMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/dwa
+attributes:
+  casts_caustics:
+    videos:
+      - video: R_casts_caustics_wedge.mp4
+        text: "casts caustics: true | false"
+  presence:
+    videos:
+      - video: SD_presence_wedge.mp4
+        text: "presence: 0 - 1"
+  albedo:
+    videos:
+      - video: SD_albedo_wedge.mp4
+        text: "albedo: Rgb(red, orange, yellow, green, blue, purple)" 
+  diffuse_roughness:
+    videos:
+      - video: SD_diffuse_roughness_wedge.mp4
+        text: "diffuse roughness: 0 - 1"
+  diffuse_transmission:
+    videos:
+      - video: SD_diffuse_transmission_wedge.mp4
+        text: "diffuse transmission: 0 - 1"
+  fabric_diffuse_scattering:
+    videos:
+      - video: fabric_diffuse_scattering.mp4
+        text: "fabric_diffuse_scattering: 0 -> 1"
+  emission:
+    videos:
+      - video: SD_emission_wedge.mp4
+        text: "emission: Rgb(0, 0, 0) - Rgb(4.76, 0.02, 0.02)" 
+  show_fuzz:
+    images:
+      - image: SD_fuzz_on.jpg
+        text: "show fuzz: true"
+      - image: SD_fuzz_off.jpg
+        text: "show fuzz: false"
+  fuzz:
+    videos:
+      - video: SD_fuzz_coverage_wedge.mp4
+        text: "fuzz: 0 - 1"
+  fuzz_albedo:
+    images:
+      - image: SD_fuzz_albedoWhite.jpg
+        text: "fuzz albedo: Rgb(1, 1, 1)"
+      - image: SD_fuzz_albedoGray.jpg
+        text: "fuzz albedo: Rgb(0.5, 0.5, 0.5)"
+      - image: SD_fuzz_albedoGreen.jpg
+        text: "fuzz albedo: Rgb(0.1, 0.5, 0.1)"
+  fuzz_normal:
+    images:
+      - image: SD_fuzz_normal.jpg
+        text: "fuzz normal"
+  use_absorbing_fuzz_fibers:
+    images:
+      - image: SD_fuzz_absorb_off.jpg
+        text: "use absorbing fuzz fibers: false"
+      - image: SD_fuzz_absorb_on.jpg
+        text: "use absorbing fuzz fibers: true"
+      - image: SD_fuzz_absorb_off2.jpg
+        text: "use absorbing fuzz fibers: false"
+      - image: SD_fuzz_absorb_on2.jpg
+        text: "use absorbing fuzz fibers: true"
+  input_normal:
+    images:
+      - image: SD_input_normal.jpg
+        text: "input normal" 
+  input_normal_dial:
+    videos:
+      - video: SD_input_normal_dial_wedge.mp4
+        text: "input normal dial: 0 - 1" 
+  warp_roughness:
+    videos:
+      - video: warp_roughness.mp4
+        text: "warp_roughness: 0 -> 1"
+  weft_roughness:
+    videos:
+      - video: weft_roughness.mp4
+        text: "weft_roughness: 0 -> 1"
+  
