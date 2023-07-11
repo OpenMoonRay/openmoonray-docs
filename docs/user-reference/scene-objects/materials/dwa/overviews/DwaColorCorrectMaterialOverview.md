@@ -1,3 +1,4 @@
+---
 The DwaColorCorrectMaterial provides common color-correction controls for making "global" adjustments to an existing material.
 
 ```lua
