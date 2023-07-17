@@ -280,8 +280,6 @@
               path: user-reference/scene-objects/maps/ImageMap.md
             - text: LayerMap
               path: user-reference/scene-objects/maps/LayerMap.md
-            - text: LcToRgbMap
-              path: user-reference/scene-objects/maps/LcToRgbMap.md
             - text: ListMap
               path: user-reference/scene-objects/maps/ListMap.md
             - text: LODMap
