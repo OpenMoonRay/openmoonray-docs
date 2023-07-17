@@ -80,7 +80,6 @@ Transform data between formats.
 
 [FloatToRgbMap](FloatToRgbMap)  
 [HsvToRgbMap](HsvToRgbMap)  
-[LcToRgbMap](LcToRgbMap)  
 [NormalToRgbMap](NormalToRgbMap)  
 [RgbToFloatMap](RgbToFloatMap)  
 [RgbToHsvMap](RgbToHsvMap)  
