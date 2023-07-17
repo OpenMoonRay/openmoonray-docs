@@ -1,3 +1,4 @@
+---
 ![]({{"/assets/images/user-reference/scene-objects/materials/dwa/DwaMixMaterial/dwa_mix_overview.png" | absolute_url }})
 
 **DwaMixMaterial** allows for multiple materials to be blended sequentially, and it supports up to 64 material inputs. 
