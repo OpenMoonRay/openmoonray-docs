@@ -1,2 +1,7 @@
 ---
 overview: overviews/DwaEmissiveMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/dwa
+emission:
+    videos:
+      - video: SD_emission_wedge.mp4
+        text: "emission: Rgb(0, 0, 0) - Rgb(4.76, 0.02, 0.02)" 
