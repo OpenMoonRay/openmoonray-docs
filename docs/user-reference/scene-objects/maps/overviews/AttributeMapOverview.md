@@ -8,7 +8,7 @@ are returned with the various *map_type* settings:
 
 |*map_type*|return value|
 |--------|--------------|
-|*primitive attribute*|Explicit primitive attribute specified with *primitive_attribute_name* and *primitive_attribut_type* parameters|
+|*primitive attribute*|Explicit primitive attribute specified with *primitive_attribute_name* and *primitive_attribute_type* parameters|
 |*position*|Position in render space `P`(*Vec3f*)|
 |*texture st*|Texture coordinates specified with `surface_st`(*Vec2f*) for meshes or `uv`(*Vec2f*) for points or implicit coordinates depending on geometry type|
 |*shading normal*|Normal specified with `N`(*Vec3f*) or implicit geometric normal|
