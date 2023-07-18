@@ -280,8 +280,6 @@
               path: user-reference/scene-objects/maps/ImageMap.md
             - text: LayerMap
               path: user-reference/scene-objects/maps/LayerMap.md
-            - text: LcToRgbMap
-              path: user-reference/scene-objects/maps/LcToRgbMap.md
             - text: ListMap
               path: user-reference/scene-objects/maps/ListMap.md
             - text: LODMap
@@ -511,6 +509,8 @@
             path: user-reference/tools/moonray.md
           - text: moonray_gui
             path: user-reference/tools/moonray-gui.md
+          - text: rdl2_print
+            path: user-reference/tools/rdl2_print.md
           - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
