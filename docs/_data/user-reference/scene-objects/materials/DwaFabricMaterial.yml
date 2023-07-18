@@ -22,6 +22,16 @@ attributes:
     videos:
       - video: SD_diffuse_transmission_wedge.mp4
         text: "diffuse transmission: 0 - 1"
+  diffuse_transmission_blending_behavior:
+    images:
+      - image: SD_diffuse_transmission_blending_behavior_0.jpg
+        text: "diffuse transmission blending behavior: RGB"
+      - image: SD_diffuse_transmission_blending_behavior_1.jpg
+        text: "diffuse transmission blending behavior: Monochromatic"
+  diffuse_transmission_color:
+    videos:
+      - video: SD_diffuse_transmission_color_wedge.mp4
+        text: "diffuse transmission color: Rgb(red, orange, yellow, green, blue, purple)"
   fabric_diffuse_scattering:
     videos:
       - video: fabric_diffuse_scattering.mp4
