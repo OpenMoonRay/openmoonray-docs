@@ -70,12 +70,4 @@ attributes:
     videos:
       - video: SD_input_normal_dial_wedge.mp4
         text: "input normal dial: 0 - 1" 
-  warp_roughness:
-    videos:
-      - video: warp_roughness.mp4
-        text: "warp_roughness: 0 -> 1"
-  weft_roughness:
-    videos:
-      - video: weft_roughness.mp4
-        text: "weft_roughness: 0 -> 1"
   
