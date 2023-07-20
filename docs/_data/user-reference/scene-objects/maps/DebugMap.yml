@@ -1,0 +1,24 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/DebugMap
+gallery:
+attributes:
+  checkerboard:
+    images:
+      - image: checkerboard.jpg
+        text: Active
+      - image: type_1.jpg
+        text: Inactive
+  map_type:
+    images:
+      - image: type_0.jpg
+        text: position
+      - image: type_1.jpg
+        text: texture st
+      - image: type_2.jpg
+        text: shading normal
+      - image: type_3.jpg
+        text: geometric normal
+      - image: type_4.jpg
+        text: dpds
+      - image: type_5.jpg
+        text: dpdt

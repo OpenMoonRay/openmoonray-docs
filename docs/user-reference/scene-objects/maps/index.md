@@ -95,7 +95,7 @@ Transform data between formats.
 
 ## Deprecated Map Shaders
 
-In the course of supporting productions, certain maps need major interface or changes. In cases where these changes would break in-progress productions, entirely new maps are created for future use, often with a **_v2** suffix. The following maps are not actively supported:
+In the course of supporting productions, certain maps need major interface additions or changes. In cases where these changes would break in-progress productions, entirely new maps are created for future use, often with a **_v2** suffix. The following maps are not actively supported:
 
 [ColorCorrectNukeMap](ColorCorrectNukeMap)  
 [ColorCorrectHsvMap](ColorCorrectHsvMap)  
