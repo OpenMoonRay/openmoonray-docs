@@ -1,6 +1,6 @@
 Generates Moonray class documentation by filling in a template using data obtained through the scene_rdl2 Python bindings.
 
-Out scene_rdl2 python bindings don't work with python-3 atm, because of an import issue.
+Our scene_rdl2 python bindings don't work with python-3 at the moment due to an import issue.
 Be sure to include the following packages in your rez-env cmd:
 ```bash
 rez-env moonshine_usd jinja2 python-2
