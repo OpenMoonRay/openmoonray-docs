@@ -1,0 +1,1 @@
+**ConstantScalarMap** is a basic utility for creating a single value. It can be used in math utilities or as a grayscale color.
