@@ -1,0 +1,8 @@
+---
+overview: overviews/DistortNormalMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/normal-maps/DistortNormalMap
+gallery:
+  - image: normal_map.jpg
+    text: Normal map with no distortion applied
+  - image: distort_normal_map.jpg
+    text: Normal map with distortion applied

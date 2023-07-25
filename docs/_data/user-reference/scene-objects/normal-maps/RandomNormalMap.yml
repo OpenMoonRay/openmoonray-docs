@@ -1,0 +1,6 @@
+---
+overview: overviews/RandomNormalMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/normal-maps/RandomNormalMap
+gallery:
+  - image: random_normal_map.jpg
+    text: Random normals based on worley noise

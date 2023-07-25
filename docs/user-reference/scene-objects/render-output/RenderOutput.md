@@ -121,6 +121,16 @@ title: RenderOutput
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_depth.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_depth.links heading=4-%}
     </p>
+    <h3>cryptomatte_enable_refract</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: True
+      <p class="scene-class-comments">Enable refractive cryptomatte channels.  Doubles the number of cryptomatte channels.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_enable_refract.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_enable_refract.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_enable_refract.links heading=4-%}
+    </p>
     <h3>cryptomatte_output_beauty</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -150,6 +160,36 @@ title: RenderOutput
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_positions.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_positions.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_positions.links heading=4-%}
+    </p>
+    <h3>cryptomatte_output_refn</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output refn data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_refn.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_refn.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_refn.links heading=4-%}
+    </p>
+    <h3>cryptomatte_output_refp</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output refp data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_refp.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_refp.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_refp.links heading=4-%}
+    </p>
+    <h3>cryptomatte_output_uv</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output uv data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_uv.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_uv.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_uv.links heading=4-%}
     </p>
     <h3>cryptomatte_support_resume_render</h3>
     <p class="scene-class-type">

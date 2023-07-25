@@ -1,5 +1,5 @@
 ---
-overview: overviews/DwaBaseMaterialOverview.md
+overview: overviews/DwaSkinMaterialOverview.md
 image_path: /assets/images/user-reference/scene-objects/materials/dwa
 
 attributes:
@@ -7,34 +7,6 @@ attributes:
     videos:
       - video: SD_specular_wedge.mp4
         text: "specular: 0 | 1"
-  clearcoat_attenuation_color:
-    videos:
-      - video: SD_clearcoat_attenuation_color_wedge.mp4
-        text: "clearcoat attenuation color: Rgb(0, 0, 0) - Rgb(1, 1, 1)"
-  clearcoat_normal:
-    images:
-      - image: SD_clearcoat_normal.jpg
-        text: "clearcoat normal"
-  clearcoat_normal_dial:
-    videos:
-      - video: SD_clearcoat_normal_dial_wedge.mp4
-        text: "clearcoat normal dial: 0 - 1"
-  clearcoat_refractive_index:
-    videos:
-      - video: SD_clearcoat_ior_wedge.mp4
-        text: "clearcoat refractive index: 1 - 2.3"
-  clearcoat_roughness:
-    videos:
-      - video: SD_clearcoat_roughness_wedge.mp4
-        text: "clearcoat roughness: 0 - 1"
-  clearcoat_thickness:
-    videos:
-      - video: SD_clearcoat_thickness_wedge.mp4
-        text: "clearcoat thickness: 0 - 1"
-  casts_caustics:
-    videos:
-      - video: R_casts_caustics_wedge.mp4
-        text: "casts caustics: true | false" 
   presence:
     videos:
       - video: SD_presence_wedge.mp4
@@ -77,16 +49,10 @@ attributes:
     videos:
       - video: SD_emission_wedge.mp4
         text: "emission: Rgb(0, 0, 0) - Rgb(4.76, 0.02, 0.02)" 
-  show_fuzz:
-    images:
-      - image: SD_fuzz_on.jpg
-        text: "show fuzz: true"
-      - image: SD_fuzz_off.jpg
-        text: "show fuzz: false"
   fuzz:
     videos:
       - video: SD_fuzz_coverage_wedge.mp4
-        text: "fuzz: 0 - 1"
+        text: "fuzz: 0 - 1" 
   fuzz_albedo:
     images:
       - image: SD_fuzz_albedoWhite.jpg
@@ -99,6 +65,12 @@ attributes:
     images:
       - image: SD_fuzz_normal.jpg
         text: "fuzz normal"
+  show_fuzz:
+    images:
+      - image: SD_fuzz_on.jpg
+        text: "show fuzz: true"
+      - image: SD_fuzz_off.jpg
+        text: "show fuzz: false"
   use_absorbing_fuzz_fibers:
     images:
       - image: SD_fuzz_absorb_off.jpg
@@ -148,15 +120,7 @@ attributes:
   anisotropy:
     videos:
       - video: SD_anisotropy_wedge.mp4
-        text: "anisotropy: -1 - 1"
-  metallic_color:
-    videos:
-      - video: M_metallic_color_wedge.mp4
-        text: "metallic color: physical values for gold, copper, silver, and alluminum"
-  metallic_edge_color:
-    videos:
-      - video: M_metallic_edge_color_wedge.mp4
-        text: "metallic edge color: Rgb(orange, yellow, green, blue, purple, red)"
+        text: "anisotropy: -1 - 1" 
   refractive_index:
     videos:
       - video: SD_ior_wedge.mp4
@@ -168,8 +132,4 @@ attributes:
   shading_tangent:
     videos:
       - video: SD_shading_tangent_wedge.mp4
-        text: "shading tangent: Vec2(1,0) - Vec2(0,1) - Vec2(-1,0) - Vec2(0,1)"
-  transmission_color:
-    videos:
-      - video: R_transmission_color_wedge.mp4
-        text: "transmission color: Rgb(1, 1, 1) - Rgb(0.5, 0.04, 0.04)"
+        text: "shading tangent: Vec2(1,0) - Vec2(0,1) - Vec2(-1,0) - Vec2(0,1)" 

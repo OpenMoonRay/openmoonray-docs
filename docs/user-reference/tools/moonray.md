@@ -58,11 +58,6 @@ Options:
     -dso_path dso/path
         Prepend to search path for RDL DSOs.
 
-    -texturesystem texsys
-        Choose a specific texture system. Valid options are:
-        sony          - use stock OIIO (slow).
-        dwaproduction - use vectorized texture sampling with lazy loading.
-
     -camera camera
         Camera to render from.
 
