@@ -22,6 +22,10 @@ attributes:
     videos:
       - video: SD_diffuse_transmission_wedge.mp4
         text: "diffuse transmission: 0 - 1"
+  fabric_diffuse_scattering:
+    videos:
+      - video: ./DwaFabricMaterial/fabric_diffuse_scattering.mp4
+        text: "fabric_diffuse_scattering: 0 -> 1, albedo: (1, 0, 0), warp_color: (0, 0, 1)"
   diffuse_transmission_blending_behavior:
     images:
       - image: SD_diffuse_transmission_blending_behavior_0.jpg
@@ -32,10 +36,6 @@ attributes:
     videos:
       - video: SD_diffuse_transmission_color_wedge.mp4
         text: "diffuse transmission color: Rgb(red, orange, yellow, green, blue, purple)"
-  fabric_diffuse_scattering:
-    videos:
-      - video: fabric_diffuse_scattering.mp4
-        text: "fabric_diffuse_scattering: 0 -> 1"
   emission:
     videos:
       - video: SD_emission_wedge.mp4
@@ -80,11 +80,34 @@ attributes:
     videos:
       - video: SD_input_normal_dial_wedge.mp4
         text: "input normal dial: 0 - 1" 
+  use_independent_weft_attributes:
+    images:
+      - image: ./DwaFabricMaterial/use_independent_weft_attributes_false.png
+        text: "use independent weft attributes: false, albedo: (1, 0, 0), warp color: (0, 0, 1), weft color: (0, 1, 1)"
+      - image: ./DwaFabricMaterial/use_independent_weft_attributes_true.png
+        text: "use independent weft attributes: true, albedo: (1, 0, 0), warp color: (0, 0, 1), weft color: (0, 1, 1)"
   warp_roughness:
     videos:
-      - video: warp_roughness.mp4
-        text: "warp_roughness: 0 -> 1"
+      - video: ./DwaFabricMaterial/warp_roughness.mp4
+        text: "warp roughness: 0 -> 1"
   weft_roughness:
     videos:
-      - video: weft_roughness.mp4
+      - video: ./DwaFabricMaterial/weft_roughness.mp4
         text: "weft_roughness: 0 -> 1"
+  warp_thread_coverage:
+    videos:
+      - video: ./DwaFabricMaterial/warp_thread_coverage.mp4
+        text: "warp thread coverage: 0 -> 1, albedo: (1, 0, 0), warp_color: (0, 0, 1), weft_color: (0, 1, 1)"
+  warp_thread_direction:
+    videos:
+      - video: ./DwaFabricMaterial/warp_thread_direction.mp4
+        text: "warp_thread_direction: (0.0 -> 1.0, 0.5, 0.0)"
+    images:
+      - image: ./DwaFabricMaterial/warp_thread_direction_example1.png
+        text: "warp_thread_direction with binding to velvet ImageMap"
+      - image: ./DwaFabricMaterial/warp_thread_direction_example2.png
+        text: "warp_thread_direction with binding to crushed fabric ImageMap"
+  warp_thread_elevation:
+    videos:
+      - video: ./DwaFabricMaterial/warp_thread_elevation.mp4
+        text: "warp thread elevation: 0 -> 90, warp thread direction: (0, 0, 1)"
