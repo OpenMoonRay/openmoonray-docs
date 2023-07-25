@@ -1,5 +1,6 @@
 ---
-The DwaSwitchMaterial allows you to easily switch between materials in the Dwa* suite, and it supports up to 64 material inputs. The 
+
+The SwitchMaterial allows you to switch between materials that are *not* part of the Dwa* material suite. The 
 *choice* attribute is responsible for selecting the material. 
 
 ```lua
@@ -15,7 +16,7 @@ mtl2 = DwaMetalMaterial("mtl2") {
     ["specular_model"] = 0,
 }
 
-switchMtl0 = DwaSwitchMaterial("switchMtl0") {
+switchMtl0 = SwitchMaterial("switchMtl0") {
     ["choice"] = 0,
     ["material0"] = mtl0,
     ["material1"] = mtl1,
