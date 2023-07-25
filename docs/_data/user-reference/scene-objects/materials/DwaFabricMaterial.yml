@@ -72,6 +72,14 @@ attributes:
         text: "use absorbing fuzz fibers: false"
       - image: SD_fuzz_absorb_on2.jpg
         text: "use absorbing fuzz fibers: true"
+  glitter_density:
+    videos:
+      - video: SD_glitter_density_wedge.mp4
+        text: "glitter density: 10 - 20" 
+  glitter_size_A:
+    videos:
+      - video: SD_glitter_size_A_wedge.mp4
+        text: "glitter size A: 0.02 - 0.12" 
   input_normal:
     images:
       - image: SD_input_normal.jpg
