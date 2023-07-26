@@ -3,11 +3,11 @@ image_path: /assets/images/user-reference/scene-objects/geometry/SphereGeometry
 gallery:
 attributes:
   radius:
-    images:
-      - image: radius.mp4
+    videos:
+      - video: radius.mp4
   zmax:
-    images:
-      - image: zmax.mp4
+    videos:
+      - video: zmax.mp4
   phi_max:
-    images:
-      - image: phi_max.mp4
+    videos:
+      - video: phi_max.mp4

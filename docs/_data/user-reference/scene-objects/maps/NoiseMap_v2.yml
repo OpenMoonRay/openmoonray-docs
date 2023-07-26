@@ -4,61 +4,61 @@ image_path: /assets/images/user-reference/scene-objects/maps/NoiseMap
 gallery:
 attributes:
   time:
-    images:
-      - image: noise_4D.mp4
+    videos:
+      - video: noise_4D.mp4
         text: Perlin
-      - image: noise_simplex_4D.mp4
+      - video: noise_simplex_4D.mp4
         text: Simplex
   bias:
-    images:
-      - image: noise_bias.mp4
+    videos:
+      - video: noise_bias.mp4
   gain:
-    images:
-      - image: noise_gain.mp4
+    videos:
+      - video: noise_gain.mp4
   flow_advection_rate:
-    images:
-      - image: noise_advection_rate_0_2.mp4
+    videos:
+      - video: noise_advection_rate_0_2.mp4
         text: 0.2
-      - image: noise_advection_rate_0_5.mp4
+      - video: noise_advection_rate_0_5.mp4
         text: 0.5
-      - image: noise_advection_rate_1.mp4
+      - video: noise_advection_rate_1.mp4
         text: 1
   flow_angle:
-    images:
-      - image: noise_flow_angle.mp4
-      - image: noise_flow_angle2.mp4
+    videos:
+      - video: noise_flow_angle.mp4
+      - video: noise_flow_angle2.mp4
   invert:
     images:
       - image: perlin_no_invert.jpg
       - image: perlin_invert.jpg
   smoothstep:
-    images:
-      - image: noise_smoothstep_0.mp4
-      - image: noise_smoothstep_1.mp4
+    videos:
+      - video: noise_smoothstep_0.mp4
+      - video: noise_smoothstep_1.mp4
   rotation:
-    images:
-      - image: noise_rotation.mp4
+    videos:
+      - video: noise_rotation.mp4
   scale:
-    images:
-      - image: noise_scale.mp4
+    videos:
+      - video: noise_scale.mp4
   translation:
-    images:
-      - image: noise_translation.mp4
+    videos:
+      - video: noise_translation.mp4
   amplitude:
-    images:
-      - image: noise_amplitude.mp4
+    videos:
+      - video: noise_amplitude.mp4
   distortion:
-    images:
-      - image: noise_distortion.mp4
+    videos:
+      - video: noise_distortion.mp4
   freqency_multiplier:
-    images:
-      - image: noise_frequency_multiplier.mp4
+    videos:
+      - video: noise_frequency_multiplier.mp4
   lacunarity:
-    images:
-      - image: noise_lacunarity.mp4
+    videos:
+      - video: noise_lacunarity.mp4
   max_level:
-    images:
-      - image: noise_max_level.mp4
+    videos:
+      - video: noise_max_level.mp4
   noise_type:
     images:
       - image: noise.jpg
@@ -66,8 +66,8 @@ attributes:
       - image: simplex.jpg
         text: Simplex
   persistence:
-    images:
-      - image: noise_persistence.mp4
+    videos:
+      - video: noise_persistence.mp4
   seed:
-    images:
-      - image: noise_seed.mp4
+    videos:
+      - video: noise_seed.mp4

@@ -73,7 +73,11 @@ However, we may encounter <span class="define">total internal reflection</span>,
 inside of the object without losing energy, instead of refracting into the next medium. Therefore, you may need to 
 increase the max depth to get the desired energy. 
 
-![Mirror Depth GIF]({{ "/assets/images/user-reference/how-to-guides/ray-depth/mirror_depth.mp4" | absolute_url }})
+<figure>
+    <video controls loop muted>
+      <source src="{{ "/assets/images/user-reference/how-to-guides/ray-depth/mirror_depth.mp4" | absolute_url }}" alt="Mirror Depth">
+    </video>
+</figure>
 
 ### Ray Termination Lights
 In order to help combat these dark areas where ray paths have been terminated too early due to depth controls, we have 
