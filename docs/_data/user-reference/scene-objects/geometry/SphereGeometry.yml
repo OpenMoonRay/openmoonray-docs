@@ -4,10 +4,10 @@ gallery:
 attributes:
   radius:
     images:
-      - image: radius.gif
+      - image: radius.mp4
   zmax:
     images:
-      - image: zmax.gif
+      - image: zmax.mp4
   phi_max:
     images:
-      - image: phi_max.gif
+      - image: phi_max.mp4

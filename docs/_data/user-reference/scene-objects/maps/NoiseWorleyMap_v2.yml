@@ -5,10 +5,10 @@ gallery:
 attributes:
   bias:
     images:
-      - image: worley_bias.gif
+      - image: worley_bias.mp4
   gain:
     images:
-      - image: worley_gain.gif
+      - image: worley_gain.mp4
   invert:
     images:
       - image: worley_invertA.jpg
@@ -16,12 +16,12 @@ attributes:
   point_size:
   remap:
     images:
-      - image: worley_remap.gif
-      - image: worley_remap2.gif
+      - image: worley_remap.mp4
+      - image: worley_remap2.mp4
   smoothstep:
     images:
-      - image: worley_smoothstep1.gif
-      - image: worley_smoothstep2.gif
+      - image: worley_smoothstep1.mp4
+      - image: worley_smoothstep2.mp4
   F1:
     images:
       - image: F1_distance.png
@@ -55,7 +55,7 @@ attributes:
       - image: distance_minkowski.png
   minkowski_number:
     images:
-      - image: worley_minkowski_number.gif
+      - image: worley_minkowski_number.mp4
   output_mode:
     images:
       - image: output_mode_distance.png
@@ -66,24 +66,24 @@ attributes:
         text: Gradient
   rotation:
     images:
-      - image: worley_rotation.gif
+      - image: worley_rotation.mp4
         text: World Space
-      - image: worley_rotation_obj.gif
+      - image: worley_rotation_obj.mp4
         text: Object Space
   translation:
     images:
-      - image: worley_offset.gif
+      - image: worley_offset.mp4
   color_A:
     images:
       - image: worley_colorAB.jpg
   jitter:
     images:
-      - image: worley_jitter.gif
+      - image: worley_jitter.mp4
   max_level:
     images:
-      - image: worley_max_level_distance.gif
-      - image: worley_max_level_cellid.gif
-      - image: worley_max_level_gradient.gif
+      - image: worley_max_level_distance.mp4
+      - image: worley_max_level_cellid.mp4
+      - image: worley_max_level_gradient.mp4
   seed:
     images:
-      - image: worley_seed.gif
+      - image: worley_seed.mp4

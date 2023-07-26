@@ -148,12 +148,12 @@ Let's say we have a leaf model with custom normals (0, 1, 0), defined in the obj
 
 When you instance these leaves without a TransformSpaceMap, the custom normals still point up throughout the animation.
 
-![Leaf Instance Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-instance-space.gif" | absolute_url }})
+![Leaf Instance Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-instance-space.mp4" | absolute_url }})
 
 In this case, you need to transform these normals from the instance's local space to render space (*from_space* 
 "instance level 0" *to_space* "render"). 
 
-![Leaf Render Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-render-space.gif" | absolute_url }})
+![Leaf Render Space Animation]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/leaf-render-space.mp4" | absolute_url }})
 
 ### Instance Points
 Let's say that the custom normals were defined on the instance points instead of the instanced model.
@@ -164,13 +164,13 @@ Primitive attributes on instancer points are transferred to the instanced geomet
 already in "instance level 0" space. However, primitive attributes are not automatically transformed with an object. See 
 below how customN values remain the same, even though their positions are transformed.
 
-![customN Instance Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-instance-space.gif" | absolute_url }})
+![customN Instance Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-instance-space.mp4" | absolute_url }})
 
 There are two ways to handle this issue: 
 
 1 **Transform our custom normals from the instance's local space to render space.**
 
-![customN Render Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-render-space.gif" | absolute_url }})
+![customN Render Space]({{ "/assets/images/user-reference/how-to-guides/instance-level-transforms/customN-render-space.mp4" | absolute_url }})
 
 ```lua
 -- retrieve our custom normals 

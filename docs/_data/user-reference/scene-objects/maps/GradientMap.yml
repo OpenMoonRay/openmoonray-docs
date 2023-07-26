@@ -6,16 +6,16 @@ attributes:
       - image: symmetric.png
   symmetric_center:
     images:
-      - image: gradient_symmetric_center.gif
+      - image: gradient_symmetric_center.mp4
   falloff_bias:
     images:
-      - image: gradient_falloff_bias.gif
+      - image: gradient_falloff_bias.mp4
   falloff_end_intensity:
     images:
-      - image: gradient_falloff_end_intensity.gif
+      - image: gradient_falloff_end_intensity.mp4
   falloff_exponent:
     images:
-      - image: gradient_falloff_exponent.gif
+      - image: gradient_falloff_exponent.mp4
   falloff_type:
     images:
       - image: falloffNone.png
