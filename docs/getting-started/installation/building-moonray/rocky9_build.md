@@ -3,7 +3,9 @@ title: Building MoonRay on Rocky Linux 9
 ---
 # Building MoonRay on Rocky Linux 9
 
-The general documentation for building MoonRay is [here](../general_build). This documents gives more explicit instructions for building on a Rocky Linux 9 installation. To keep it concrete, I've chosen specific directory locations, which you can change as needed:
+Start with reading the [general build instructions](../general_build). 
+
+This document gives more explicit instructions for building on a Rocky Linux 9 installation. To keep it concrete, I've chosen specific directory locations, which you can change as needed:
 
 - */source* location of the openmoonray repository clone
 - */build* CMake build directory
@@ -42,10 +44,10 @@ You need to create a CMake build directory : it can be anywhere, but I will use 
 mkdir /build
 cd /build
 cmake /source/building/Rocky9
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
-The option "-j 64" tells CMake to use up to 64 cores on your machine for building. You may see a number of warning messages during the build.
+The option "-j $(nproc)" tells CMake to use all available cores on your machine for building. You may see a number of warning messages during the build.
 
 If you are building with GPU support, copy the Optix headers that you downloaded and extracted into */usr/local*
 
@@ -63,7 +65,7 @@ The main CMake project in *openmoonray* builds MoonRay itself. I will use the sa
 cd /build
 rm -rf *
 cmake /source -DPYTHON_EXECUTABLE=python3 -DBOOST_PYTHON_COMPONENT_NAME=python39 -DABI_VERSION=0
-cmake --build . -j 64
+cmake --build . -j $(nproc)
 ```
 
 The install step will install to */installs/openmoonray* : again, this directory is arbitrary, and you can install wherever you like.
@@ -84,3 +86,15 @@ To set up the install and test moonray:
 > hd_render -in /source/testdata/sphere.usd -out /tmp/sphere.exr
 ```
 
+
+If everything is working, the moonray command should produce output like this:
+
+```
+Loading Scene File(s): /source/testdata/rectangle.rdla
+Render prep time = 00:00:00.008
+  [+] Rendering [======================] 100.0%
+00:00:01  671.2 MB | ---------- Time ------------------------------------------
+00:00:01  671.2 MB | Render time                      = 00:00:01.404000
+00:00:01  671.2 MB | Total time                       = 00:00:01.442000
+Wrote /tmp/rectangle.exr
+```

@@ -1,12 +1,18 @@
+---
+title: Building Open MoonRay
+---
+
 # Building Open MoonRay
 
 MoonRay currently builds on Linux systems. We test the build on Centos 7 (with GCC 6 and 9) and Rocky Linux 9 (with GCC 11). It should be possible to build on other distributions, but often some adjustments are needed, especially regarding obtaining the necessary third-party dependencies. MoonRay can be built directly on a Linux system or inside a suitable Docker container.
 
 Support for GPU/XPU and building of the GUI tools are both options that can be turned off if you don't need them.
 
----
+The build process described here includes cloning the source, obtaining the required dependencies and building MoonRay itself. The details depend somewhat on the Linux distribution being used, whether you need compatibility with some other software or build framework, and where you want to install MoonRay. This document discusses the various alternatives. For more concrete instructions, look at the documents that discuss building on specific platforms.
 
+---
 ## MoonRay Source Repositories
+---
 
 The Open MoonRay source is split into 19 git repositories, all available at https://github.com/dreamworksanimation. Each repository can be built separately, by invoking cmake with the root of the repository as the source path. This requires that CMake be configured so that it can find all of the libraries and tools that are needed by the particular repository you are building.
 
@@ -14,7 +20,9 @@ We've created the ***openmoonray*** repository as a way to download and build al
 
 If you do want to build the repositories separately, the process may be made easier by using a dependency/build framework like Rez/rez-build. The following page has a description of the individual repositories and their dependencies : [Open Moonray Repositories](repo_deps.md).
 
+---
 ## Getting the source via the ***openmoonray*** repository
+---
 
 The *openmoonray* repo references the other 18 repositories via *Git* submodules. To clone all the repositories into one structure, run the following git command:
 
@@ -25,18 +33,18 @@ git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonra
 The source for every repository will be downloaded and organised into a directory structure that enables everything to be built using a single CMake project at the root of the *openmoonray* clone. Of course, you can also clone the repositories individually into any structure you want, but you will then need to build them separately.
 
 ---
-
 ## Obtaining the dependencies
+---
 
 MoonRay is dependent on a number of third-party libraries and tools. You can obtain these however you want, but the *openmoonray* repo defines a "canonical" process for selected platforms. 
 
-Rather than providing a list of dependencies and versions, we provide sets of scripts and CMake projects in the */building* directory of *openmoonray*. These have several advantages. Firstly, they will always match the current source, and can be directly tested for accuracy by running them. Secondly, they contain build options and other settings, as well as specifying a particular version for each dependency. If your requirements fit what they do, you can simply run them directly to install the dependencies. If not, you can either modify them as appropriate, or use them as a reference.
+Rather than providing a list of dependencies and versions, we provide sets of scripts and CMake projects in the */building* directory of *openmoonray*. Running these scripts will install the dependencies onto the system. This has several advantages. Firstly, the scripts will always match the current source, and can be directly tested for accuracy by running them. Secondly, they contain build options and other settings, as well as specifying a particular version for each dependency. If your requirements fit what they do, you can simply run them directly to install the dependencies. If not, you can either modify them as appropriate, or use them as a reference.
 
-There are separate directories under */building* for obtaining dependencies under different Linux distributions (currently Centos 7 and Rocky Linux 9). The rest of this section describes how to use the scripts.
+There are separate directories under */building* for obtaining dependencies under different Linux distributions (currently Centos 7 and Rocky Linux 9). The rest of this section describes how to use the scripts. They are designed to run in the *bash* shell.
 
 ### 1. Packages
 
-The first step is to install required packages from the OS distribution. The availability of suitable package versions varies from distribution to distribution : for example, Rocky Linux 9 has more of the dependencies available that does Centos 7. If there is no suitable binary package for a dependency, you may need to download it as source and build it -- as discussed in the next section. The script to install the required packages is called *install_packages.sh*. It makes some changes to the current shell environment, so you should run it like this:
+The first step is to install required packages from the OS distribution. The availability of suitable package versions varies from distribution to distribution : for example, Rocky Linux 9 has more of the dependencies available that does Centos 7. If there is no suitable binary package for a dependency, you can download it as source and build it -- as discussed in the next section. The script to install the required packages is called *install_packages.sh*. It makes some changes to the current shell environment, so you should run it like this:
 
 ```bash
 source building/Rocky9/install_packages.sh
@@ -78,20 +86,20 @@ The procedure for running the dependencies CMake project is as follows:
 mkdir /build
 cd /build
 cmake /source/building/Rocky9
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
-The option *-j 64* tells make/cmake to use up to 64 threads for building : you can change this number or omit the option entirely.
+The option *-j $(nproc)* tells make/cmake to use all available cores for building : you can change this to a number, or omit the option entirely for serial building.
 
-The projects are set up to build the individual dependencies serially : the DEPENDS line on each *ExternalProject_Add* forces this. Issues or errors in the build process tend to be less confusing when run this way, but you can remove these lines to enable a faster, fully-parallel build if desired. Once the build is complete, you can delete the contents of the build directory.
+The projects are set up to build the individual dependencies serially : the DEPENDS line on each *ExternalProject_Add* forces this. Issues or errors in the build process tend to be less confusing when run this way, but you can try optimzing the dependencies to enable a faster, fully-parallel build if desired. Once the build is complete, you can delete the contents of the build directory.
 
-The dependency building projects don't have many configuration options. Generally, adapting the process to run on a different platform requires trial and error, producing multiple inter-related changes. We don't have any very practical way to capture the differences in a model that is any simpler than the scripts themselves. Therefore developing a new dependency install process in practice means producing a new set of scripts.
+The dependency building projects don't have many configuration options. Generally, adapting the process to run on a different platform requires trial and error, producing multiple inter-related changes. We don't have any very practical way to capture the differences in a model that is any simpler than the scripts themselves. Therefore developing a new dependency install process in practice means producing a new set of scripts, similar to the sets for Centos 7 and Rocky 9.
 
 You can change the directory that the dependency build project installs to, using the variable *InstallRoot*. For example:
 
 ```bash
 cmake /source/building/Rocky9 -DInstallRoot=~/moonray/dependencies
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
 If you do this, you will also have to configure the main CMake build of MoonRay to find the dependencies in their alternate location. The default value of *InstallRoot* is */usr/local* : this corresponds to the default location that CMake looks at to find dependencies, and so with the default setting, the main MoonRay CMake will find the dependencies without further hints. The is discussed further below. 
@@ -105,19 +113,18 @@ Only the header files are needed, and the MoonRay build expects to find them in 
 Optix is not needed if you are building MoonRay without GPU support.
 
 ---
-
 ## Building MoonRay
+---
 
 Once the dependencies are installed, you can run the main MoonRay CMake project. If you don't need to set any additional CMake configuration, the steps are as follows:
 
 - Start from an empty build directory, which can be anywhere.
-
 ```bash
 cmake <openmoonray root dir>
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
-- You can install the build result whereever you want
+- You can then install the build result wherever you want
 ```bash
 cmake --install . --prefix <install dir>
 ```
@@ -129,7 +136,7 @@ The MoonRay CMake project also includes some custom options, some of which may b
 ```bash
 # Rocky 9
 cmake <openmoonray root dir> -DPYTHON_EXECUTABLE=python3 -DBOOST_PYTHON_COMPONENT_NAME=python39 -DABI_VERSION=0
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
 The Centos 7 build works with the default values of these options, but uses a version of Lua installed in */usr/local* that is different than the one already in Centos 7. You need to configure the build to use this version by setting the environment variable ***LUA_DIR*** to */usr/local*
@@ -138,13 +145,13 @@ The Centos 7 build works with the default values of these options, but uses a ve
 # Centos 7
 export LUA_DIR=/usr/local
 cmake <openmoonray root dir>
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 or
 ```bash
 # Centos 7
 LUA_DIR=/usr/local cmake <openmoonray root dir>
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
 Setting ***-DBUILD_QT_APPS=NO*** will suppress building of the Qt applications *moonray_gui* and *arras_render*, which removes the dependency on Qt5 libraries.
@@ -152,10 +159,10 @@ Setting ***-DBUILD_QT_APPS=NO*** will suppress building of the Qt applications *
 Setting ***-DMOONRAY_USE_CUDA=NO*** builds MoonRay without GPU support : CUDA and Optix are no longer required dependencies, but MoonRay will not use XPU mode or GPU denoising even if a GPU is present at run time.
 
 ---
+## Installation Setup
+---
 
-## Release Setup
-
-The release contains a script ***scripts/setup.sh*** that sets up a shell environment suitable for running MoonRay:
+The installation contains a script ***scripts/setup.sh*** that sets up a shell environment suitable for running MoonRay:
 
 ```bash
 source <install dir>/scripts/setup.sh
@@ -180,9 +187,11 @@ The other environment variables set up by *setup.sh* are:
 | **MOONRAY_CLASS_PATH = *release*/shader_json** | *tells Hydra Ndr plugins where to find shader descriptions (see above)* |
 | **PXR_PLUGINPATH_NAME += *release*/plugin/usd** | *adds MoonRay Hydra plugins to Hydra plugin path* |
 
----
+*setup.py* doesn't set up PYTHONPATH to include the Python modules that come with USD. It doesn't need to be set for MoonRay's purposes, but the *hd_render* command will log a series of warnings that they are not found. This isn't harmful, because *hd_render* doesn't invoke Python code.
 
+---
 ## Testing the install
+---
 
 There are some very simple test files in the source release that you can use to check the install is valid:
 
@@ -202,10 +211,12 @@ Test the Hydra plugin:
 ```
 
 ---
-
 ## Finding Dependencies
+---
 
-CMake has standard methods for locating the pre-built dependencies of a project. The default, without any additional settings, is usually to look in */usr/local* : */usr/local/include* for headers, */usr/local/lib* for libraries, */usr/local/bin* for executables, and so on.
+If you choose to install or use dependencies in non-standard locations, you will need to configure the main MoonRay CMake build to tell it where they are.
+
+CMake has standard methods for locating the pre-built dependencies of a project. The default, without any additional settings, is normally to look in */usr/local* : */usr/local/include* for headers, */usr/local/lib* for libraries, */usr/local/bin* for executables, and so on.
 
 If CMake cannot find a dependency, you will usually see an error message like this:
 
@@ -237,7 +248,7 @@ The environment variables used for the different packages are:
 
 The ***ISPC*** environment variable should be set to point to the ISPC compiler binary (i.e. *.../bin/ispc*).
 
-There is an alternative method, generally used when the dependency is itself built with CMake. CMake can generate a script -- usually called ***PACKAGENAME*Config.cmake** --- that correctly configures a dependency for use in other projects. These config scripts are installed with the dependency. For CMake to find them, the CMake variable ***CMAKE_PREFIX_PATH*** must include the directory containing them (or an ancestor). This second method is used for the following libraries:
+There is an alternative method, generally used when the dependency is itself built with CMake. CMake can generate a script -- usually called ***PACKAGENAME*Config.cmake**, where ***PACKAGENAME*** is the name of the package being built -- that correctly configures a dependency for use in other projects. These config scripts are installed with the dependency. For CMake to find them, the CMake variable ***CMAKE_PREFIX_PATH*** must include the directory containing them (or an ancestor). This second method is used for the following libraries:
 
 - Boost
 - Cuda
@@ -256,31 +267,31 @@ The Pixar USD libraries are required for Hydra and USD support, and are found un
 If you systematically install all the dependencies somewhere other than */usr/local*, you will need to set all the *_ROOT* hint variables, plus *CMAKE_PREFIX_PATH*, to the alternate locations. One way to do this is with CMake presets, discussed briefly in the next section.
 
 ---
-
 ## CMake Presets
+---
 
 CMake provides a ***presets*** mechanism, which can be useful to capture sets of CMake configuration options. They are contained in files called *CMakePresets.json* and *CMakeUserPresets.json*. The difference is that *CMakeUserPresets.json* is typically used for presets that you don't want to add to source control. The full documentation for presets is [here](https://cmake.org/cmake/help/v3.23/manual/cmake-presets.7.html).
 
 ---
-
 ## Building in a Docker container
+---
 
-You can build MoonRay inside a Docker container : the process isn't really different than building directly on a machine. The process of building in a container for Centos 7 is documented in */building/Centos7/centos7_container_build.md*
+You can build MoonRay inside a Docker container : the process isn't really different than building directly on a machine. Building in a container for Centos 7 and for Rocky 9 have sets of instructions in the documentation.
 
 ### Container build tips
 
-You might need to use the docker run option ***--security-opt seccomp=unconfined*** to allow the container to access the host network fully.
+You might need to use the docker run option ***--security-opt seccomp=unconfined*** to allow the container to access the host network fully. This seems to be required for Rocky 9 images.
 
 You can clone the Open MoonRay source on the host machine and mount it into the container, which may be more convenient than cloning from inside the container. It can also be useful to mount */tmp*, as a way to transfer files between the host and the container. To mount a directory in the container, use the -v option to docker run:
 
 ```bash
-docker run --security-opt seccomp=unconfined -v <openmoonray source>:/source -v /tmp:/tmp:shared --network=host --rm -it rockylinux:9
+docker run --security-opt seccomp=unconfined -v <openmoonray source>:/source -v /tmp:/tmp --network=host --rm -it rockylinux:9
 ```
 
 You can also transfer Optix headers from the host through a mount. However you may find that you cannot access GPU devices on the host from inside the container, and that it makes more sense to do a build with GPU support disabled.
 
-Instead of starting with an OS base container and running *install_packages.sh* , you can build an initial image containing the OS and required packages using the Docker build command. This is configured with a Dockerfile, and you can see an example in the documented Centos 7 process. Currently this doesn't work for Rocky Linux 9, because it requires the option *--security-opt seccomp=unconfined* mentioned above, and this isn't available to the Docker build command.
+You can save the current state of the container at any time using the docker commit command. However, note that this will not save the current shell environment : when you run the saved container it will start a new *bash* shell.
 
-You can save the current state of the container at any time using the docker commit command. 
+You can use the docker build command to create an initial base container with the OS and the packages installed by *install_packages.sh*. This is done by writing a "Dockerfile" with the contents of *install_packages.sh* translated into docker build commands. You don't have to do this, and it is not documented further here.
 
 Running the GUI applications from inside a container requires X to be set up in the container. Exactly how to do this may depend on the X setup on the host, but the documented Centos 7 process gives an example.

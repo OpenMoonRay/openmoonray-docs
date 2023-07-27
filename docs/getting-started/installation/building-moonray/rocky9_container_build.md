@@ -1,11 +1,11 @@
 ---
-title: Building MoonRay in a Centos 7 Docker container
+title: Building MoonRay in a Rocky 9 Docker container
 ---
-# Building MoonRay in a Centos 7 Docker container
-
+# Building MoonRay in a Rocky 9 Docker container
+ 
 Start with reading the [general build instructions](../general_build).
 
-This document follows essentially the same process as building directly on a Centos 7 system, but inside a container.
+This document follows essentially the same process as building directly on a Rocky Linux 9 system, but inside a container.
 
 To keep it concrete, I've chosen specific directory locations inside the container : you can change these if needed:
 
@@ -26,28 +26,28 @@ This version of the build omits Cuda/GPU support, because GPU devices are not ge
 ## Step 1. Base requirements
 ---
 
-Start a new container running the centos:7 image:
+Start a new container running the rockylinux:9 image:
 
 ```bash
-> docker run -v <openmoonray-dir>:/source -v /tmp:/tmp --rm -it centos:7
+> docker run -v <openmoonray-dir>:/source -v /tmp:/tmp --security-opt seccomp=unconfined --rm -it rockylinux:9
 ```
 
-Once inside the container, the first step is to install some additional RPM packages. The script *building/Centos7/install_packages.sh* will install the packages and perform some environment variable setup. 
+Once inside the container, the first step is to install some additional RPM packages. The script *building/Rocky9/install_packages.sh* will install the packages and perform some environment variable setup. 
 
 ```bash
-source /source/building/Centos7/install_packages.sh --nocuda
+source /source/building/Rocky9/install_packages.sh --nocuda
 ```
 
 ---
 ## Step 2. Build the remaining dependencies
 ---
 
-The next step is to build the remaining dependencies from source. The CMake project *building/Centos7/CMakeLists.txt* contains targets that will do it automatically.
+The next step is to build the remaining dependencies from source. The CMake project *building/Rocky9/CMakeLists.txt* contains targets that will do it automatically.
 
 ```bash
 > mkdir /build
 > cd /build
-> cmake /source/building/Centos7
+> cmake /source/building/Rocky9
 > cmake --build . -- -j $(nproc)
 ```
 
@@ -62,8 +62,7 @@ The main CMake project in *openmoonray* builds MoonRay itself, and installs it t
 ```bash
 > cd /build
 > rm -rf *
-> export LUA_DIR=/usr/local
-> cmake /source -DMOONRAY_USE_CUDA=NO
+> cmake /source -DPYTHON_EXECUTABLE=python3 -DBOOST_PYTHON_COMPONENT_NAME=python39 -DABI_VERSION=0 -DMOONRAY_USE_CUDA=NO
 > cmake --build . -j $(nproc)
 
 > mkdir /installs/openmoonray
@@ -101,7 +100,7 @@ To save the container as an image, run 'docker ps` in another shell. This will s
 > docker ps
 
 CONTAINER ID        IMAGE               ...
-c3a90b08a53a        centos:7            ...
+c3a90b08a53a        rockylinux:9    ...
 
 > docker commit c3a90b08a53a openmoonray
 ```
@@ -111,7 +110,7 @@ The container ID will be different in your case. Do not exit the shell that is r
 To run the new container:
 
 ```bash
-> docker run -v <openmoonray-dir>:/source -v /tmp:/tmp --rm -it openmoonray
+> docker run -v <openmoonray-dir>:/source -v /tmp:/tmp --security-opt seccomp=unconfined --rm -it openmoonray
 ```
 
 Moonray doesn't need the source repository mounted to run, but it is included here to provide access to the test files. You can add any additional mounts you need to access files on the host machine.
@@ -130,7 +129,7 @@ You will need to rerun *setup.sh* once the container is started, to set up the e
 To run **moonray_gui**, you need to set up X in the container. The steps required may vary depending on the host setup, but generally you will need to set the environment variables ***DISPLAY*** and ***XAUTHORITY***, and make sure the directory that *XAUTHORITY* points to is mounted in the container. 
 
 ```bash
-> docker run -v <openmoonray-dir>:/source -v /tmp:/tmp -e DISPLAY=$DISPLAY -e XAUTHORITY=${XAUTHORITY} -v "${XAUTHORITY}:${XAUTHORITY}:z" --rm -it openmoonray
+> docker run -v <openmoonray-dir>:/source -v /tmp:/tmp -e DISPLAY=$DISPLAY -e XAUTHORITY=${XAUTHORITY} -v "${XAUTHORITY}:${XAUTHORITY}:z" --security-opt seccomp=unconfined --rm -it openmoonray
 
 > source /installs/openmoonray/scripts/setup.sh
 > moonray_gui -in /source/testdata/rectangle.rdla -out /tmp/rectangle.exr

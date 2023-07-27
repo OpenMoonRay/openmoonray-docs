@@ -1,9 +1,9 @@
 ---
 title: Building MoonRay on Centos 7
 ---
-# Building MoonRay on Rocky Linux 9
+# Building MoonRay on Centos 7
 
-The general documentation for building MoonRay is [here](../general_build).
+Start with reading the [general build instructions](../general_build).
 
 This document gives more explicit instructions for building on a Centos 7 machine. All the information here should also be covered in the general document.
 
@@ -46,10 +46,10 @@ You need to create a CMake build directory : it can be anywhere, but I will use 
 mkdir /build
 cd /build
 cmake /source/building/Centos7
-cmake --build . -- -j 64
+cmake --build . -- -j $(nproc)
 ```
 
-The option "-j 64" tells CMake to use up to 64 cores on your machine for building. You may see a number of warning messages during the build.
+The option "-j $(nproc)" tells CMake to use all available cores on your machine for building. You may see a number of warning messages during the build.
 
 If you are building with GPU support, copy the Optix headers that you downloaded and extracted into */usr/local/include*
 
@@ -68,7 +68,7 @@ cd /build
 rm -rf *
 export LUA_DIR=/usr/local
 cmake /source
-cmake --build . -j 64
+cmake --build . -j $(nproc)
 ```
  
 The build is configured to use the version of Lua we installed in step 2, rather than the one in */bin*, by setting ***LUA_DIR*** to */usr/local*.
@@ -91,3 +91,14 @@ To set up the install and test moonray:
 > hd_render -in /source/testdata/sphere.usd -out /tmp/sphere.exr
 ```
 
+If everything is working, the moonray command should produce output like this:
+
+```
+Loading Scene File(s): /source/testdata/rectangle.rdla
+Render prep time = 00:00:00.008
+  [+] Rendering [======================] 100.0%
+00:00:01  671.2 MB | ---------- Time ------------------------------------------
+00:00:01  671.2 MB | Render time                      = 00:00:01.404000
+00:00:01  671.2 MB | Total time                       = 00:00:01.442000
+Wrote /tmp/rectangle.exr
+```
