@@ -1,3 +1,6 @@
+---
+title: Open MoonRay repositories
+---
 # Open MoonRay repositories
 
 The following table lists the Open MoonRay repositories and their requirements.

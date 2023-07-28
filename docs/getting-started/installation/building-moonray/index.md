@@ -3,7 +3,7 @@ title: Building MoonRay
 ---
 # Building MoonRay
 
-The general instructions for building Open MoonRay are [here](general_build)
+Start with reading the [general build instructions](general_build)
 
 We also provide more concrete examples of the building process:
 
