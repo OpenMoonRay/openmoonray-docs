@@ -1,0 +1,28 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/ClampMap
+gallery:
+attributes:
+  clamp_max:
+    images:
+      - image: max_000.jpg
+        text: 0.00
+      - image: max_025.jpg
+        text: 0.25
+      - image: max_050.jpg
+        text: 0.50
+      - image: max_075.jpg
+        text: 0.75
+      - image: clamp_default.jpg
+        text: 1.00
+  clamp_min:
+    images:
+      - image: clamp_default.jpg
+        text: 0.00
+      - image: min_025.jpg
+        text: 0.25
+      - image: min_050.jpg
+        text: 0.50
+      - image: min_075.jpg
+        text: 0.75
+      - image: min_100.jpg
+        text: 1.00
