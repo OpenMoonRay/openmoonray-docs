@@ -101,7 +101,7 @@ This is an example sessiondef file for the above configuration.
                 "context":"arras_moonray",
                 "resources": {
                     "maxCores": "*",
-                    "minCores": "*",
+                    "minCores": 1.0,
                     "memoryMB": 16384
                 }
             },
@@ -131,8 +131,8 @@ This is an example sessiondef file for the above configuration.
                 "computationAPI": "4.x",
                 "context":"arras_moonray",
                 "resources": {
-                    "maxCores": 94,
-                    "minCores": 30.0
+                    "maxCores": "*",
+                    "minCores": 1.0
                 }
             },
             "messages": {
