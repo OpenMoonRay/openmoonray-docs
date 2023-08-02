@@ -23,7 +23,7 @@ title: LightSet
       <b>Light Vector</b>
       <br>
       default: {}
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">List of lights that belong to this LightSet</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.images data=site.data.user-reference.scene-objects.light-set.LightSet-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.videos data=site.data.user-reference.scene-objects.light-set.LightSet-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-set.LightSet.attributes.lights.links heading=4-%}

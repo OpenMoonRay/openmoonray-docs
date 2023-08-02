@@ -11,9 +11,9 @@ lightSet1 = LightSet("lightSet1") {
 }
 
 Layer("Scene/layer") {
-    {sphere1, "", lightSet1}
+    {geom1, "", lightSet1}
 }
 ```
 
-Here, the Geometry object sphere1 will be illuminated by the lights in its assigned LightSet, i.e. lightA and lightB.
+Here, the Geometry object geom1 will be illuminated by the lights in its assigned LightSet, i.e. lightA and lightB.
 It will not be illuminated by any other lights present in the scene.
