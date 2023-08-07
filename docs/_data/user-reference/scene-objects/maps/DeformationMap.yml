@@ -1,0 +1,14 @@
+---
+overview: overviews/DeformationMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/maps/DeformationMap
+attributes:
+  output_mode:
+    images:
+      - image: def_0.jpg
+        text: RGB
+      - image: def_1.jpg
+        text: S
+      - image: def_2.jpg
+        text: T
+      - image: def_3.jpg
+        text: Average

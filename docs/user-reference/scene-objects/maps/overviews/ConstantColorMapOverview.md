@@ -1,0 +1,1 @@
+**ConstantColorMap** is a basic utility for creating a single color.
