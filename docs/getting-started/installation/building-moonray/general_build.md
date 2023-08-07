@@ -18,7 +18,7 @@ The Open MoonRay source is split into 19 git repositories, all available at [Dre
 
 We've created the ***openmoonray*** repository as a way to download and build all of the source in one step, without worrying about dependencies between the separate repositories. It is highly recommended that you use this process, unless you have a strong reason to build the individual parts separately, or to build only a subset. However, the *openmoonray* repository is not a *necessary* part of the Open MoonRay source : we do not use it for the builds we use internally in production.
 
-If you do want to build the repositories separately, the process may be made easier by using a dependency/build framework like Rez/rez-build. The following page has a description of the individual repositories and their dependencies : [Open Moonray Repositories](../repo_deps).
+If you do want to build the repositories separately, the process may be made easier by using a dependency/build framework like Rez/rez-build. The following page has a description of the individual repositories and their dependencies : [Open Moonray Repositories](repo_deps.md), and some more information is given below.
 
 ---
 ## Getting the source via the ***openmoonray*** repository
@@ -248,7 +248,7 @@ The environment variables used for the different packages are:
 
 The ***ISPC*** environment variable should be set to point to the ISPC compiler binary (i.e. *.../bin/ispc*).
 
-There is an alternative method, generally used when the dependency is itself built with CMake. CMake can generate a script -- usually called ***PACKAGENAME*Config.cmake**, where ***PACKAGENAME*** is the name of the package being built -- that correctly configures a dependency for use in other projects. These config scripts are installed with the dependency. For CMake to find them, the CMake variable ***CMAKE_PREFIX_PATH*** must include the directory containing them (or an ancestor). This second method is used for the following libraries:
+There is an alternative method, generally used when the dependency is itself built with CMake. CMake can generate a script -- usually called ***packagename*Config.cmake**, where ***packagename*** is the name of the package being built -- that correctly configures a dependency for use in other projects. These config scripts are installed with the dependency. For CMake to find them, the CMake variable ***CMAKE_PREFIX_PATH*** must include the directory containing them (or an ancestor). This second method is used for the following libraries:
 
 - Boost
 - Cuda
@@ -295,3 +295,52 @@ You can save the current state of the container at any time using the docker com
 You can use the docker build command to create an initial base container with the OS and the packages installed by *install_packages.sh*. This is done by writing a "Dockerfile" with the contents of *install_packages.sh* translated into docker build commands. You don't have to do this, and it is not documented further here.
 
 Running the GUI applications from inside a container requires X to be set up in the container. Exactly how to do this may depend on the X setup on the host, but the documented Centos 7 process gives an example.
+
+---
+## Building the Repositories Separately
+---
+
+Each repository can be built on its own, by running the CMake project (*CMakeLists.txt*) at the root of the repository. The dependencies required for each repository are listed here: [Open Moonray Repositories](repo_deps.md). 
+
+There are a number of different variables and options that need to be set correctly : to build this way regularly, you will probably want to automate the process or use a build/configuration system like Rez.
+
+The external dependencies can be set up in the same way as for the full build. If you are not installing them directly on to the machine, read the section on **Finding Dependencies** above for how to configure the CMake build to find them.
+
+Many of the repositories use the source files (mostly cmake modules) in the ***cmake_modules*** repository, so you need access to a clone of this repo. Set the environment variable ***CMAKE_MODULES_ROOT*** to point to the root of this repository. Also, make sure the correct versions of CMake and the C++ compiler are set on your PATH.
+
+To deal with dependencies between the different MoonRay repositories, each repo generates a ***reponame*Config.cmake** as part of the install process. For example, installing scene_rdl2 generates the file `lib64/cmake/SceneRdl2-12.4.0.0` under the install root. For these to be found, the install roots should be added to the environment variable ***CMAKE_PREFIX_PATH***. 
+
+For example, building the ***moonray*** repository requires the repositories ***mcrt_denoise*** and ***scene_rdl2*** to be previously built and installed, so you would set the prefix path as follows:
+
+```bash
+export CMAKE_PREFIX_PATH=<root of scene_rdl2 install>:${CMAKE_PREFIX_PATH}
+export CMAKE_PREFIX_PATH=<root of mcrt_denoise install>:${CMAKE_PREFIX_PATH}
+```
+
+(if CMAKE_PREFIX_PATH already contains entries for external dependencies, obviously these must be preserved)
+
+Repositories that compile MoonRay shaders need access to the ***rdl2_json_exporter*** program, which is installed by the *scene_rdl2* repository. Therefore, once *scene_rdl2* is built and installed, add its ***bin*** directory to PATH:
+
+```bash
+export PATH=<root of scene_rdl2 install>/bin:${PATH}
+```
+Once everything is set up run *cmake* in an empty build directory, passing the root of the repository you are building as the source path. The arguments need to be the same as for a full build, with the addition of `-DCMAKE_MODULE_PATH=${CMAKE_MODULES_ROOT}/cmake` (so that the cmake modules in the *cmake_modules* repository are visible to cmake). For example, on Rocky 9:
+
+```bash
+cmake /source/moonray/moonray -DCMAKE_MODULE_PATH=${CMAKE_MODULES_ROOT}/cmake -DPYTHON_EXECUTABLE=python3 -DBOOST_PYTHON_COMPONENT_NAME=python39 -DABI_VERSION=0
+```
+
+Then you can build and install as usual:
+
+```bash
+cmake --build . -- -j $(nproc)
+cmake --install . --prefix <install dir>
+```
+
+### Summary:
+
+- External dependencies must be set up (as for a full build)
+- CMake and C++ compiler must be set up on PATH
+- Internal dependencies (on other MoonRay repos) are set up by adding the root of the dependency install to CMAKE_PREFIX_PATH.
+- Once scene_rdl2 is built and installed, its bin directory should be added to PATH
+- set the environment variable CMAKE_MODULES_ROOT to the root of the *cmake_modules* repository (source), and also pass the argument `-DCMAKE_MODULE_PATH=${CMAKE_MODULES_ROOT}/cmake` to the cmake command.
