@@ -284,12 +284,8 @@
               path: user-reference/scene-objects/maps/ListMap.md
             - text: LODMap
               path: user-reference/scene-objects/maps/LODMap.md
-            - text: NoiseMap
-              path: user-reference/scene-objects/maps/NoiseMap.md
             - text: NoiseMap_v2
               path: user-reference/scene-objects/maps/NoiseMap_v2.md
-            - text: NoiseWorleyMap
-              path: user-reference/scene-objects/maps/NoiseWorleyMap.md
             - text: NoiseWorleyMap_v2
               path: user-reference/scene-objects/maps/NoiseWorleyMap_v2.md
             - text: NormalToRgbMap
