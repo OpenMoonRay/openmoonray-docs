@@ -8,7 +8,7 @@ MoonRay's native scene description format is called <span class="define">RDL2</s
 - <span class="define">RDLA</span> is a readable text format based on the programming language Lua
 - <span class="define">RDLB</span> is a binary format
 
-You can use the program `rdl2_convert` to translate between the two formats, for example:
+You can use the program [**rdl2_convert**]({{ "user-reference/tools/rdl2_convert" | absolute_url }}) to translate between the two formats, for example:
 
 ```bash
 rdl2_convert -in scene_binary.rdlb -out scene_text.rdla
