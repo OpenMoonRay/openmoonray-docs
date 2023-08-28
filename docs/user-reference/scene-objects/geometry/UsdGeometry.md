@@ -28,17 +28,6 @@ title: UsdGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.base_width_factor.links heading=4-%}
     </p>
-    <h3>curves_subtype</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-      <br>
-          &nbsp;&nbsp;0 = &ldquo;ray_facing&rdquo; (default)<br>
-          &nbsp;&nbsp;1 = &ldquo;round&rdquo;<br>
-      <p class="scene-class-comments">Set the style that curve primitives are rendered in</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
-    </p>
     <h3>radius_mult</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -49,21 +38,6 @@ title: UsdGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.radius_mult.links heading=4-%}
     </p>
-    <h3>tip_width_factor</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 1.0
-      <p class="scene-class-comments">Multiplier for the radius of the tip of curves</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.links heading=4-%}
-    </p>
-  </p>
-</details>
-<details open>
-  <summary>Curves attributes</summary>
-  <p>
     <h3>tessellation_rate</h3>
     <p class="scene-class-type">
       <b>Int</b>
@@ -73,6 +47,16 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tessellation_rate.links heading=4-%}
+    </p>
+    <h3>tip_width_factor</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Multiplier for the radius of the tip of curves</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.tip_width_factor.links heading=4-%}
     </p>
   </p>
 </details>
@@ -121,7 +105,7 @@ title: UsdGeometry
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+      <p class="scene-class-comments">Label used to associate Geometry objects into ShadowReceiverSets. Using this in combination with the ["shadow_exclusion_mappings"] attribute, shadows from specified geometries or their parts can be suppressed from casting shadows onto one or more specified sets.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_receiver_label.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_receiver_label.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_receiver_label.links heading=4-%}
@@ -156,7 +140,7 @@ title: UsdGeometry
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Generates smooth shading normals when rendering a PolygonMesh and the mesh doesn't provide shading normal itself</p>
+      <p class="scene-class-comments">Generates smooth shading normals on a PolygonMesh when the mesh doesn't provide shading normals</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.smooth_normal.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.smooth_normal.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.smooth_normal.links heading=4-%}
@@ -198,7 +182,7 @@ title: UsdGeometry
           &nbsp;&nbsp;2 = &ldquo;frame delta&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;acceleration&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;hermite&rdquo;<br>
-      <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
+      <p class="scene-class-comments">Motion blur type for PolygonMesh/Points/Curves.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.motion_blur_type.links heading=4-%}
@@ -220,7 +204,7 @@ title: UsdGeometry
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">If "xform" is time varying and motion blur is turned on, this toggle can generate better rotation trail.  Turning on this will disable adaptive tessellation</p>
+      <p class="scene-class-comments">If "xform" is time varying and motion blur is enabled, enabling this feature can produce a curved rotation trail.  Enabling this feature will disable adaptive tessellation for this mesh</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_rotation_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_rotation_motion_blur.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_rotation_motion_blur.links heading=4-%}
@@ -340,7 +324,7 @@ title: UsdGeometry
       <b>StringVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Ordered list of part names.   The length of the<br>list should match the length of any "part" rate primitive attribute</p>
+      <p class="scene-class-comments">List of part names.   The length of the<br>list should match the length of any "part" rate primitive attribute</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.part_list.links heading=4-%}
@@ -465,6 +449,18 @@ title: UsdGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.contains_camera.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.contains_camera.links heading=4-%}
     </p>
+    <h3>curves_subtype</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;ray_facing&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;round&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;normal_oriented&rdquo;<br>
+      <p class="scene-class-comments">Selects the style the curves are rendered</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.curves_subtype.links heading=4-%}
+    </p>
     <h3>dicing_camera</h3>
     <p class="scene-class-type">
       <b>SceneObject</b>
@@ -500,7 +496,7 @@ title: UsdGeometry
       <b>String</b>
       <br>
       default: 
-      <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+      <p class="scene-class-comments">A space-separated list of mappings of the form A:B where:<br>A is a comma-separated list of names of parts of this Geometry, or an asterisk to specify the whole geometry;<br>B is a comma-separated list of shadow receiver set labels established using the ["shadow_receiver_label"] attribute, or an asterisk to specify to all such sets in the scene.<br>For each of the listed mappings, shadows from the parts specified in A will be suppressed from casting onto any geometries in the ShadowReceiverSets specified in B.<br>**Note: no part name should appear more than once in the string, otherwise the behavior is undefined.**</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_exclusion_mappings.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_exclusion_mappings.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.shadow_exclusion_mappings.links heading=4-%}
@@ -514,6 +510,36 @@ title: UsdGeometry
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.static.links heading=4-%}
+    </p>
+    <h3>use_explicit_shading_attributes</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Enable the use of explicit shading attributes (N, dPds, dPdt) if they are present</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_explicit_shading_attributes.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_explicit_shading_attributes.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_explicit_shading_attributes.links heading=4-%}
+    </p>
+    <h3>use_local_camera_motion_blur</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Enables experimental feature that also attempts to remove the camera blur in the local regions</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_local_camera_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_local_camera_motion_blur.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_local_camera_motion_blur.links heading=4-%}
+    </p>
+    <h3>use_local_motion_blur</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Enables the local motion blur feature, which makes the geometry procedural responsible for handling all of the geometry's motion and allows for custom effects</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_local_motion_blur.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_local_motion_blur.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.use_local_motion_blur.links heading=4-%}
     </p>
   </p>
 </details>

@@ -5,7 +5,9 @@ title: MoonRay Test Scenes
 
 A selection of scenes converted to MoonRay's native RDL2 format are available for testing here: [example_scenes.zip]({{ "/assets/test-scenes/example_scenes.zip" | absolute_url }}).
 
-A version of Animal Logic's ALab scene, converted to MoonRay-native RDL2 scene format, including ready-to-render .tx format textures is available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab.zip">ALab.zip</a>
+The latest 2.0.1 version of Animal Logic's ALab scene, converted to MoonRay-native RDL scene format using `hd_usd2rdl`, including 4k mip-mapped .tx format textures is available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.0.1.zip">ALab_2.0.1.zip</a>.  This is the basis of the [texture cache profiling page]({{ "/user-reference/alab/textureCacheSize/" | absolute_url }}).  Useful information is in the moonray.memo for rendering, aong with a file middleQualityUniformHD.rdla for a middle-quality rendering setup.
+
+An earlier version of the ALab scene is also available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab.zip">ALab.zip</a>
 
 A simple USD scene can be used for testing using MoonRay's Hydra plugin: [moonray_sphere.usd]({{ "/assets/test-scenes/moonray_sphere.usd" | absolute_url }}).
 
@@ -20,6 +22,7 @@ The [ALab scene was created by Animal Logic](https://animallogic.com/alab/) as a
 The moonray_sphere.usd file was developed by DreamWorks as a simple test of hdMoonray rendering USD format data.  It is distributed under the [ASWF Digital Assets License v1.1]({{ "/getting-started/moonray-sphere-usd-license" | absolute_url }}).
 
 The MoonRayWidget.zip file was developed by DreamWorks as a model to demonstrate various shader and material properties.  It is distributed under the [ASWF Digital Assets License v1.1]({{ "/getting-started/moonray-widget-license" | absolute_url }}).
+
 
 
 

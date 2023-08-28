@@ -8,7 +8,7 @@ MoonRay's native scene description format is called <span class="define">RDL2</s
 - <span class="define">RDLA</span> is a readable text format based on the programming language Lua
 - <span class="define">RDLB</span> is a binary format
 
-You can use the program `rdl2_convert` to translate between the two formats, for example:
+You can use the program [**rdl2_convert**]({{ "user-reference/tools/rdl2_convert" | absolute_url }}) to translate between the two formats, for example:
 
 ```bash
 rdl2_convert -in scene_binary.rdlb -out scene_text.rdla
@@ -157,7 +157,7 @@ DwaBaseMaterial("/scene/sphere/base") {
 }
 ```
 
-The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.8)` to obtain the value for *albedo*.
+The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.2)` to obtain the value for *albedo*.
 
 Each class implementation can decide how to combine the evaluated map value and the attribute's base value : it is not required that the class multiply one by the other, although that is usually the case.
 

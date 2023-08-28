@@ -1,0 +1,1 @@
+**FloatToRgbMap** is a utility to create a color from separate R, G, B channels.

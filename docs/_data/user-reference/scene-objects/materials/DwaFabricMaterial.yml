@@ -26,6 +26,16 @@ attributes:
     videos:
       - video: ./DwaFabricMaterial/fabric_diffuse_scattering.mp4
         text: "fabric_diffuse_scattering: 0 -> 1, albedo: (1, 0, 0), warp_color: (0, 0, 1)"
+  diffuse_transmission_blending_behavior:
+    images:
+      - image: SD_diffuse_transmission_blending_behavior_0.jpg
+        text: "diffuse transmission blending behavior: RGB"
+      - image: SD_diffuse_transmission_blending_behavior_1.jpg
+        text: "diffuse transmission blending behavior: Monochromatic"
+  diffuse_transmission_color:
+    videos:
+      - video: SD_diffuse_transmission_color_wedge.mp4
+        text: "diffuse transmission color: Rgb(red, orange, yellow, green, blue, purple)"
   emission:
     videos:
       - video: SD_emission_wedge.mp4
@@ -62,6 +72,14 @@ attributes:
         text: "use absorbing fuzz fibers: false"
       - image: SD_fuzz_absorb_on2.jpg
         text: "use absorbing fuzz fibers: true"
+  glitter_density:
+    videos:
+      - video: SD_glitter_density_wedge.mp4
+        text: "glitter density: 10 - 20" 
+  glitter_size_A:
+    videos:
+      - video: SD_glitter_size_A_wedge.mp4
+        text: "glitter size A: 0.02 - 0.12" 
   input_normal:
     images:
       - image: SD_input_normal.jpg
@@ -101,6 +119,3 @@ attributes:
     videos:
       - video: ./DwaFabricMaterial/warp_thread_elevation.mp4
         text: "warp thread elevation: 0 -> 90, warp thread direction: (0, 0, 1)"
-
-
-  

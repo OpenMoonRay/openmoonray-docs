@@ -280,18 +280,12 @@
               path: user-reference/scene-objects/maps/ImageMap.md
             - text: LayerMap
               path: user-reference/scene-objects/maps/LayerMap.md
-            - text: LcToRgbMap
-              path: user-reference/scene-objects/maps/LcToRgbMap.md
             - text: ListMap
               path: user-reference/scene-objects/maps/ListMap.md
             - text: LODMap
               path: user-reference/scene-objects/maps/LODMap.md
-            - text: NoiseMap
-              path: user-reference/scene-objects/maps/NoiseMap.md
             - text: NoiseMap_v2
               path: user-reference/scene-objects/maps/NoiseMap_v2.md
-            - text: NoiseWorleyMap
-              path: user-reference/scene-objects/maps/NoiseWorleyMap.md
             - text: NoiseWorleyMap_v2
               path: user-reference/scene-objects/maps/NoiseWorleyMap_v2.md
             - text: NormalToRgbMap
@@ -511,6 +505,10 @@
             path: user-reference/tools/moonray.md
           - text: moonray_gui
             path: user-reference/tools/moonray-gui.md
+          - text: rdl2_convert
+            path: user-reference/tools/rdl2_convert.md
+          - text: rdl2_print
+            path: user-reference/tools/rdl2_print.md
           - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
