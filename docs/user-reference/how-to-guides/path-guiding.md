@@ -31,6 +31,7 @@ is enabled, the basic cases will run more slowly and consume more memory.
 - Sample clamping can lead to inconsistent lighting, especially compared to non-path-guided results. Do not use sample
   clamping with path guiding.
 - Bounces off sub-surface objects (like skin) are not path guided.
+- Does not work with checkpoint/resume
 
 ## Examples
 
