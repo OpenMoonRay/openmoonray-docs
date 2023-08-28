@@ -157,7 +157,7 @@ DwaBaseMaterial("/scene/sphere/base") {
 }
 ```
 
-The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.8)` to obtain the value for *albedo*.
+The `CheckerboardMap` will be evaluated per sample during shading, and the resulting color value multiplied by the base value `Rgb(0.8,0.8,0.2)` to obtain the value for *albedo*.
 
 Each class implementation can decide how to combine the evaluated map value and the attribute's base value : it is not required that the class multiply one by the other, although that is usually the case.
 
