@@ -23,7 +23,7 @@ This build uses gcc-9 : you may be able to build successfully with other version
 ```bash
 > yum install -y epel-release centos-release-scl.noarch
 > yum install -y devtoolset-9 devtoolset-9-gcc devtoolset-9-gcc-c++ devtoolset-9-libatomic-devel
-> yum install -y bison flex  wget git python3 python3-devel patch giflib-devel libmng libtiff-devel libjpeg-devel libatomic libcgroup-devel libuuid-devel openssl-devel curl-devel
+> yum install -y bison flex  wget git python3 python3-devel patch.giflib-devel libmng libtiff-devel libjpeg-devel libatomic libcgroup-devel libuuid-devel openssl-devel curl-devel
 > yum install -y yum-utils
 > yum-config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-rhel7.repo
 > yum install -y cuda-toolkit-11-4

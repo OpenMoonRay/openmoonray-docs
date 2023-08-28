@@ -11,5 +11,5 @@ gallery:
     text: CombineDisplacement
 attributes:
   operation:
-    images:
-      - image: combine_op.gif
+    videos:
+      - video: combine_op.mp4
