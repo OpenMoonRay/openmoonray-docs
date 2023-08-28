@@ -75,6 +75,10 @@ Optional:
 -trace <STEPNAME> [<FILE>]
     Use the Pixar trace library to trace function calls for the given step. Supported step names are: load_plugin, open_stage, populate, render, open_delta_stage and delta_render. Writes log to the specified file, or to /tmp/trace_<STEPNAME> if no file is specified. Can appear multiple times
 ```
+Note that scene variables can be customized using the -set flag.  For example, to set a custom *pixel_samples* value:
+```
+-set sceneVariable:pixel_samples 10
+```
 
 ## hd_usd2rdl
 
