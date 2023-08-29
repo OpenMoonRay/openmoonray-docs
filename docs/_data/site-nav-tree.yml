@@ -512,14 +512,20 @@
           - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
       - text: Maximizing Performance
-        path: user-reference/performance.md
-      - text: ALab Rendering
-        path: user-reference/alab/index.md
+        path: user-reference/performance/index.md
         subitems:
-          - text: Texture Cache Size Consideration
-            path: user-reference/alab/textureCacheSize.md
-          - text: Quality Settings
-            path: user-reference/alab/qualitySettings.md
+          - text: Adaptive Tessellation
+            path: user-reference/performance/adaptive-tesselation.md
+          - text: Texture Cache Size
+            path: user-reference/performance/texture-cache-size.md
+          - text: Texture Format
+            path: user-reference/performance/texture-format.md
+          - text: Sampling Settings
+            path: user-reference/performance/sampling-settings.md
+          - text: ALab Rendering
+            path: user-reference/performance/alab.md
+          - text: Benchmarking
+            path: user-reference/performance/benchmarking.md
   - text: Developer Reference
     path: developer-reference/index.md
     subitems:
