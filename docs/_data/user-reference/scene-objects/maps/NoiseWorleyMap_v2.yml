@@ -64,6 +64,10 @@ attributes:
         text: Cell ID
       - image: output_mode_gradient.png
         text: Gradient
+      - image: output_mode_cell_edges.png
+        text: Cell Edges
+      - image: output_mode_points.png
+        text: Points
   rotation:
     videos:
       - video: worley_rotation.mp4
