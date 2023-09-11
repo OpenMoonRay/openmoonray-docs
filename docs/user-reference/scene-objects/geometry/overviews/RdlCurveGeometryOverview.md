@@ -13,7 +13,7 @@ colorData = UserData("colorData") {
 
 curves1 = RdlCurveGeometry("curves1") {
     ["curve_type"] = "bspline",
-    ["curve_subtype"] = "ray_facing",
+    ["curves_subtype"] = "ray_facing",
     ["tessellation_rate"] = 12,
     ["curves_vertex_count"] = { 6, 6, 6 },
     ["vertex_list_0"] = {
