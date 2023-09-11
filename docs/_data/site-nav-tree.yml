@@ -448,6 +448,8 @@
             path: /user-reference/how-to-guides/look-dev-transparent-surfaces.md
           - text: Motion Blur
             path: /user-reference/how-to-guides/motion-blur.md
+          - text: Meshes Best Practices
+            path: /user-reference/how-to-guides/meshes-best-practices.md
           - text: Overlapping Dielectrics
             path: /user-reference/how-to-guides/overlapping-dielectrics.md
           - text: Path Guiding
