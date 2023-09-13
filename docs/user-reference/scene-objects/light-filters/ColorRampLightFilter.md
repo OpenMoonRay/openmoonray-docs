@@ -130,7 +130,7 @@ title: ColorRampLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.ColorRampLightFilter.attributes.on.links heading=4-%}

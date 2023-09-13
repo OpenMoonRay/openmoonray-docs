@@ -43,7 +43,7 @@ title: ImageNormalMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Rotates the UV coordinates in texture space.  The order of operations is rotation, scale, and then offset.</p>
+      <p class="scene-class-comments">Rotation of the UV coordinates in texture space in degrees.  The order of operations is rotation, scale, and then offset.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.rotation_angle.images data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.rotation_angle.videos data=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ImageNormalMap.attributes.rotation_angle.links heading=4-%}

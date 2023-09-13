@@ -191,7 +191,7 @@ title: VdbLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.on.links heading=4-%}

@@ -148,6 +148,22 @@ title: UserData
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_values_1.videos data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat4f_values_1.links heading=4-%}
     </p>
+    <h3>rate</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;auto&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;constant&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;part&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;uniform&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;vertex&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;varying&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;face varying&rdquo;<br>
+      <p class="scene-class-comments">The rate of the data.  Auto mode will guess the rate by comparing the number of values to component(i.e. part, face. vertex) counts.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.rate.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.user-data.UserData.attributes.rate.videos data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.rate.links heading=4-%}
+    </p>
     <h3>string_key</h3>
     <p class="scene-class-type">
       <b>String</b>

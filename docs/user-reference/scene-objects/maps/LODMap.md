@@ -53,7 +53,7 @@ title: LODMap
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.00999999977648
+      default: 0.009999999776482582
       <p class="scene-class-comments">feature_width/camera_distance at which to start blending near_value-&gt;far_value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LODMap.attributes.start.images data=site.data.user-reference.scene-objects.maps.LODMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.LODMap.attributes.start.videos data=site.data.user-reference.scene-objects.maps.LODMap-%}
@@ -63,7 +63,7 @@ title: LODMap
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.10000000149
+      default: 0.10000000149011612
       <p class="scene-class-comments">feature_width/camera_distance at which to stop blending near_value-&gt;far_value</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.LODMap.attributes.stop.images data=site.data.user-reference.scene-objects.maps.LODMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.LODMap.attributes.stop.videos data=site.data.user-reference.scene-objects.maps.LODMap-%}

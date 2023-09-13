@@ -45,7 +45,7 @@ title: ToonDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.00999999977648
+      default: 0.009999999776482582
       <p class="scene-class-comments">The threshold for the depth-based ink outline</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_depth_threshold.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_depth_threshold.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -55,7 +55,7 @@ title: ToonDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.00999999977648
+      default: 0.009999999776482582
       <p class="scene-class-comments">Increase for a more pronounced normal-based ink outline</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_normal_scale.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_normal_scale.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
@@ -65,7 +65,7 @@ title: ToonDisplayFilter
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.00999999977648
+      default: 0.009999999776482582
       <p class="scene-class-comments">The threshold for the normal-based ink outline</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_normal_threshold.images data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter.attributes.ink_normal_threshold.videos data=site.data.user-reference.scene-objects.display-filters.ToonDisplayFilter-%}

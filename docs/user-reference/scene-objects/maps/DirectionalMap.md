@@ -54,7 +54,7 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.550000011921
+      default: 0.550000011920929
       <p class="scene-class-comments">the value at which the effect is considered 100% on</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.smoothstep_end.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.smoothstep_end.videos data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
@@ -64,7 +64,7 @@ title: DirectionalMap
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.449999988079
+      default: 0.44999998807907104
       <p class="scene-class-comments">the value at which the effect is considered 100% off</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.smoothstep_start.images data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.DirectionalMap.attributes.smoothstep_start.videos data=site.data.user-reference.scene-objects.maps.DirectionalMap-%}

@@ -293,7 +293,7 @@ title: BaseMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.10000000149
+      default: 0.10000000149011612
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.BaseMaterial.attributes.specular_factor.images data=site.data.user-reference.scene-objects.materials.BaseMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.BaseMaterial.attributes.specular_factor.videos data=site.data.user-reference.scene-objects.materials.BaseMaterial-%}
@@ -303,7 +303,7 @@ title: BaseMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.300000011921
+      default: 0.30000001192092896
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.BaseMaterial.attributes.specular_roughness.images data=site.data.user-reference.scene-objects.materials.BaseMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.BaseMaterial.attributes.specular_roughness.videos data=site.data.user-reference.scene-objects.materials.BaseMaterial-%}

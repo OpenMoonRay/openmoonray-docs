@@ -32,7 +32,7 @@ title: UsdPreviewSurface
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.00999999977648
+      default: 0.009999999776482582
       <p class="scene-class-comments">Roughness for the second specular lobe.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoatRoughness.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.clearcoatRoughness.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
