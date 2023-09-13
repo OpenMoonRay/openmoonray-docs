@@ -43,7 +43,7 @@ title: UsdUVTexture
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Path to the texture</p>
+      <p class="scene-class-comments">Filename of an EXR or TX format texture (must be mip-mapped and tiled with maketx). If filename contains '&lt;UDIM&gt;', udim index substitution is performed on filename.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.file.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.file.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.file.links heading=4-%}
@@ -79,7 +79,7 @@ title: UsdUVTexture
           &nbsp;&nbsp;0 = &ldquo;raw&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;sRGB&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;auto&rdquo; (default)<br>
-      <p class="scene-class-comments">Flag indicating the color space in which the source texture is encoded.</p>
+      <p class="scene-class-comments">Flag indicating the color space in which the source texture is encoded.  If set to auto, gamma correction will be applied if the images is not single channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.sourceColorSpace.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.sourceColorSpace.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.sourceColorSpace.links heading=4-%}
@@ -99,7 +99,7 @@ title: UsdUVTexture
       <b>StringVector</b>
       <br>
       default: {}
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Explicit list of UDIM filenames corresponding to values in the "udim_values" list</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_files.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_files.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_files.links heading=4-%}
@@ -109,7 +109,7 @@ title: UsdUVTexture
       <b>Int</b>
       <br>
       default: 10
-      <p class="scene-class-comments">udim maximum v value</p>
+      <p class="scene-class-comments">Maximum UDIM v value used (maximum UDIM row). Needed to for texture allocation.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.links heading=4-%}
@@ -119,7 +119,7 @@ title: UsdUVTexture
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Explicit list of UDIM values corresponding to filename in the "udim_files" list</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_values.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_values.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_values.links heading=4-%}

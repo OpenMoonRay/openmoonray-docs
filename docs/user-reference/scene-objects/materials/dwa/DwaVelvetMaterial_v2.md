@@ -369,7 +369,7 @@ title: DwaVelvetMaterial_v2
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.140000000596
+      default: 0.14000000059604645
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_A.videos data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -379,7 +379,7 @@ title: DwaVelvetMaterial_v2
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.140000000596
+      default: 0.14000000059604645
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_roughness_B.videos data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
@@ -470,7 +470,7 @@ title: DwaVelvetMaterial_v2
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.15000000596
+      default: 0.15000000596046448
       <p class="scene-class-comments">randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2.attributes.glitter_texture_orientation_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaVelvetMaterial_v2-%}

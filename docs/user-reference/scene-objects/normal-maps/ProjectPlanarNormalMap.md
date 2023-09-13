@@ -126,7 +126,7 @@ title: ProjectPlanarNormalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Tranlation of the projection transform when 'projection_mode' is set to 'TRS'</p>
+      <p class="scene-class-comments">Translation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.translate.links heading=4-%}
@@ -136,7 +136,7 @@ title: ProjectPlanarNormalMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-comments">Use reference space position(ref_P) and normals(ref_N)</p>
+      <p class="scene-class-comments">Use reference space position (ref_P) and normals (ref_N)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.images data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.videos data=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.normal-maps.ProjectPlanarNormalMap.attributes.use_reference_space.links heading=4-%}

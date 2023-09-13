@@ -262,7 +262,7 @@ title: BarnDoorLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.BarnDoorLightFilter.attributes.on.links heading=4-%}

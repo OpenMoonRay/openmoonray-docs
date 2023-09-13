@@ -98,7 +98,7 @@ title: DwaRefractiveMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.10000000149
+      default: 0.10000000149011612
       <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial.attributes.clearcoat_roughness.images data=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial.attributes.clearcoat_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaRefractiveMaterial-%}

@@ -48,7 +48,7 @@ title: MultiChannelToFloatMap
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.20000000298
+      default: 0.20000000298023224
       <p class="scene-class-comments">Low tolerance values will tend to produce harsher edges near overlapping colors, while high tolerance values may result in cross-color bleeding.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.images data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap.attributes.tolerance.videos data=site.data.user-reference.scene-objects.maps.MultiChannelToFloatMap-%}
