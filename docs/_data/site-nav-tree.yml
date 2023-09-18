@@ -438,6 +438,8 @@
                 path: /user-reference/how-to-guides/checkpoint-resume/exr-metadata.md
               - text: KJ Subpixel Sampling Sequence
                 path: /user-reference/how-to-guides/checkpoint-resume/kj-sequence.md
+          - text: Dicing Camera
+            path: /user-reference/how-to-guides/dicing-camera.md
           - text: Displacement
             path: /user-reference/how-to-guides/displacement.md
           - text: Instance-Level Transforms
