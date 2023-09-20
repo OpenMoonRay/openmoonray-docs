@@ -444,6 +444,8 @@
             path: /user-reference/how-to-guides/displacement.md
           - text: Instance-Level Transforms
             path: /user-reference/how-to-guides/instance-level-transforms.md
+          - text: Iridescence 
+            path: /user-reference/how-to-guides/iridescence.md
           - text: Light Normalization
             path: /user-reference/how-to-guides/light-normalization.md
           - text: Look Dev Transparent Surfaces
