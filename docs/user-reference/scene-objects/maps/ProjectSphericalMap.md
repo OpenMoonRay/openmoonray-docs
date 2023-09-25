@@ -105,7 +105,7 @@ title: ProjectSphericalMap
       <b>Vec3d</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Tranlation of the projection transform when 'projection_mode' is set to 'TRS'</p>
+      <p class="scene-class-comments">Translation of the projection transform when 'projection_mode' is set to 'TRS'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.translate.images data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.translate.videos data=site.data.user-reference.scene-objects.maps.ProjectSphericalMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ProjectSphericalMap.attributes.translate.links heading=4-%}

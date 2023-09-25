@@ -277,7 +277,7 @@ title: PerspectiveCamera
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 6.30000019073
+      default: 6.300000190734863
       <p class="scene-class-comments">Distance between the left and right 'eyes'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_interocular_distance.images data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.PerspectiveCamera.attributes.stereo_interocular_distance.videos data=site.data.user-reference.scene-objects.cameras.PerspectiveCamera-%}

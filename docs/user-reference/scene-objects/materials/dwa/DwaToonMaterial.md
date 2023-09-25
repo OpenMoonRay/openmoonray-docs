@@ -118,7 +118,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.10000000149
+      default: 0.10000000149011612
       <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -592,7 +592,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.0500000007451
+      default: 0.05000000074505806
       <p class="scene-class-comments">Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -853,7 +853,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.140000000596
+      default: 0.14000000059604645
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -863,7 +863,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.140000000596
+      default: 0.14000000059604645
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -954,7 +954,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.15000000596
+      default: 0.15000000596046448
       <p class="scene-class-comments">randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}

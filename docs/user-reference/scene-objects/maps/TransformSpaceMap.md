@@ -101,12 +101,12 @@ title: TransformSpaceMap
           &nbsp;&nbsp;3 = &ldquo;screen&rdquo;<br>
           &nbsp;&nbsp;4 = &ldquo;object&rdquo;<br>
           &nbsp;&nbsp;5 = &ldquo;local reference tangent&rdquo;<br>
-          &nbsp;&nbsp;6 = &ldquo;instance level 0&rdquo;<br>
-          &nbsp;&nbsp;7 = &ldquo;instance level 1&rdquo;<br>
-          &nbsp;&nbsp;8 = &ldquo;instance level 2&rdquo;<br>
-          &nbsp;&nbsp;9 = &ldquo;instance level 3&rdquo;<br>
-          &nbsp;&nbsp;10 = &ldquo;instance level 4&rdquo;<br>
-          &nbsp;&nbsp;11 = &ldquo;instance object transform&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;instance object transform&rdquo;<br>
+          &nbsp;&nbsp;7 = &ldquo;instance level 0&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;instance level 1&rdquo;<br>
+          &nbsp;&nbsp;9 = &ldquo;instance level 2&rdquo;<br>
+          &nbsp;&nbsp;10 = &ldquo;instance level 3&rdquo;<br>
+          &nbsp;&nbsp;11 = &ldquo;instance level 4&rdquo;<br>
       <p class="scene-class-comments">the space to transform to</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.to_space.images data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.TransformSpaceMap.attributes.to_space.videos data=site.data.user-reference.scene-objects.maps.TransformSpaceMap-%}

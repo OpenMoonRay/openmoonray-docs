@@ -23,7 +23,7 @@ title: ImageMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Amount to scale derivatives which controls mipmap selection</p>
+      <p class="scene-class-comments">Amount to scale derivatives which controls mipmap selection.   This can be used to provide a cheap, albiet low quality, blur.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.links heading=4-%}
@@ -48,7 +48,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Enables 'TMI' (Temperature Magenta Intensity) parameter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.TMI_control_enabled.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.TMI_control_enabled.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.TMI_control_enabled.links heading=4-%}
@@ -58,7 +58,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Applies contrast per channel in the style of Nuke where the pivot is at 0.18</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.contrast.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.contrast.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.contrast.links heading=4-%}
@@ -68,7 +68,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Enables 'contrast' parameter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.contrast_enabled.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.contrast_enabled.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.contrast_enabled.links heading=4-%}
@@ -78,7 +78,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Applies multiplier per channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gain.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gain.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gain.links heading=4-%}
@@ -88,7 +88,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Enables 'gain' and 'offset_adjust' parameters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gain_offset_enabled.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gain_offset_enabled.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gain_offset_enabled.links heading=4-%}
@@ -98,7 +98,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Applies gamma(power fuction) per channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma_adjust.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma_adjust.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma_adjust.links heading=4-%}
@@ -108,7 +108,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Enables 'gamma_adjust' parameter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma_enabled.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma_enabled.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma_enabled.links heading=4-%}
@@ -118,7 +118,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Applies offset per channel.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.offset_adjust.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.offset_adjust.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.offset_adjust.links heading=4-%}
@@ -128,7 +128,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Applies saturation per channel with 0.0 being grayscale and 1.0 being full saturation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.saturation.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.saturation.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.saturation.links heading=4-%}
@@ -138,7 +138,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Enables 'saturation' parameter</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.saturation_enabled.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.saturation_enabled.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.saturation_enabled.links heading=4-%}
@@ -163,7 +163,7 @@ title: ImageMap
       <b>Rgb</b>
       <br>
       default: [ 0, 1, 0 ]
-      <p class="scene-class-comments">default color to be used for missing udims when 'use default color when missing' is enabled</p>
+      <p class="scene-class-comments">Default color to be used for missing udims when 'use default color when missing' is enabled</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.default_color.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.default_color.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.default_color.links heading=4-%}
@@ -175,7 +175,7 @@ title: ImageMap
           &nbsp;&nbsp;0 = &ldquo;off&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;on&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;auto&rdquo; (default)<br>
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">If this is set to 'on' or 'auto' and the 'texture' file is 8-bit, then a power of 2.2 will be applied to the RGB channels of the image.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.gamma.links heading=4-%}
@@ -185,7 +185,7 @@ title: ImageMap
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">If the 'texture_coordinates' parameter is set to 'input texture coordinates' then this parameter is evaluated and the resulting red and green channels are used for the u and v coordinates respectively.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.input_texture_coordinates.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.input_texture_coordinates.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.input_texture_coordinates.links heading=4-%}
@@ -195,7 +195,7 @@ title: ImageMap
       <b>Vec2f</b>
       <br>
       default: [ 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A constant offset applied to the texture coordinates.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.offset.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.offset.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.offset.links heading=4-%}
@@ -205,7 +205,7 @@ title: ImageMap
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Rotation in degrees</p>
+      <p class="scene-class-comments">A constant rotation in degrees applied to the texture coordinates.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.rotation_angle.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.rotation_angle.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.rotation_angle.links heading=4-%}
@@ -225,7 +225,7 @@ title: ImageMap
       <b>Vec2f</b>
       <br>
       default: [ 1, 1 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A constant scale applied to the texture coordinates.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.scale.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.scale.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.scale.links heading=4-%}
@@ -235,7 +235,7 @@ title: ImageMap
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '&lt;UDIM&gt;', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
+      <p class="scene-class-comments">Filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '&lt;UDIM&gt;', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture.links heading=4-%}
@@ -248,7 +248,7 @@ title: ImageMap
           &nbsp;&nbsp;1 = &ldquo;hair surface&rdquo;<br>
           &nbsp;&nbsp;2 = &ldquo;input texture coordinates&rdquo;<br>
           &nbsp;&nbsp;3 = &ldquo;hair closest surface&rdquo;<br>
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Selects the source of the coordinates used to map the texture.  For meshes, the 'texture' setting will read a Vec2f attribute named 'surface_st' if it exists, otherwise it will use barycentric coordinates.   For points and curves, the 'texture' setting will read a Vec2f attribute named 'uv' if it exists.   If the attribute doesn't exist, parametric st coordinates are used for curves and a constant value of (1.0, 1.0) is used for points.  The 'input texture coordinates' setting will evaluate a binding on the 'input_texture_coordinates' parameter and use the resulting red and green channels as the texture coordinates.   The 'hair surface' setting will try to read an explicit attribute named 'surface_st'.   The 'hair closest surface' setting will try to read an explicit attribute named 'closest_surface_uv'.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture_coordinates.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture_coordinates.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.texture_coordinates.links heading=4-%}
@@ -258,7 +258,7 @@ title: ImageMap
       <b>StringVector</b>
       <br>
       default: {}
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Explicit list of UDIM filenames corresponding to values in the 'udim_values' list.  If this is set, the 'texture' parameter is ignored.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_files.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_files.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_files.links heading=4-%}
@@ -268,7 +268,7 @@ title: ImageMap
       <b>Int</b>
       <br>
       default: 10
-      <p class="scene-class-comments">udim maximum v value</p>
+      <p class="scene-class-comments">Maximum UDIM v value used (maximum UDIM row). Needed to for texture allocation.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_max_v.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_max_v.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_max_v.links heading=4-%}
@@ -278,7 +278,7 @@ title: ImageMap
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Explicit list of UDIM values corresponding to filename in the 'udim_files' list.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.udim_values.links heading=4-%}
@@ -298,7 +298,7 @@ title: ImageMap
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">If true, the image will repeat itself at it's boundries.   If false, the image will be clamped at it's boundries.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.wrap_around.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.wrap_around.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.wrap_around.links heading=4-%}

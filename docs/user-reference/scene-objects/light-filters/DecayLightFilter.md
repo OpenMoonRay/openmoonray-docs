@@ -88,7 +88,7 @@ title: DecayLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.DecayLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.DecayLightFilter.attributes.on.links heading=4-%}

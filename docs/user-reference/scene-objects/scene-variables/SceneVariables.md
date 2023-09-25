@@ -43,7 +43,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: 24000
-      <p class="scene-class-comments">maximum number of simultaneous open file handles</p>
+      <p class="scene-class-comments">This setting specifies the maximum number of simultaneous open texture file handles.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.links heading=4-%}
@@ -68,7 +68,7 @@ title: SceneVariables
       <b>Camera</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This attribute specifies a camera to use for adaptive geometry tessellation. The rendering camera is used if no camera is specified.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.dicing_camera.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.dicing_camera.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.dicing_camera.links heading=4-%}
@@ -93,7 +93,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting enables or disables checkpoint file writing.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_active.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_active.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_active.links heading=4-%}
@@ -334,7 +334,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.10000000149
+      default: 0.10000000149011612
       <p class="scene-class-comments">Minimum distance between deep layers</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -583,7 +583,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting enables or disables geometry displacement.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_displacement.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_displacement.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_displacement.links heading=4-%}
@@ -593,7 +593,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Enable camera depth-of-field (DOF)</p>
+      <p class="scene-class-comments">This setting enables camera depth-of-field (DOF)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_dof.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_dof.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_dof.links heading=4-%}
@@ -633,7 +633,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting enables or disables shadowing through occlusion rays.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_shadowing.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_shadowing.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_shadowing.links heading=4-%}
@@ -643,7 +643,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting enables or disables sub-surface scattering.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_subsurface_scattering.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_subsurface_scattering.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.enable_subsurface_scattering.links heading=4-%}
@@ -653,7 +653,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting globally enables or disables lights being visible in camera. Each light has its own setting which may override this value.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.lights_visible_in_camera.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.lights_visible_in_camera.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.lights_visible_in_camera.links heading=4-%}
@@ -767,7 +767,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">[DreamWorks Animation internal] This setting enables sending logging results to the Athena debugging database instead of the production database.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.athena_debug.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.athena_debug.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.athena_debug.links heading=4-%}
@@ -777,20 +777,10 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting determines whether debugging-level messages are logged.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug.links heading=4-%}
-    </p>
-    <h3>error</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: True
-      <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.error.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.error.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.error.links heading=4-%}
     </p>
     <h3>fatal_color</h3>
     <p class="scene-class-type">
@@ -807,7 +797,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting determines whether information-level messages are logged.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.info.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.info.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.info.links heading=4-%}
@@ -821,16 +811,6 @@ title: SceneVariables
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.stats_file.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.stats_file.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.stats_file.links heading=4-%}
-    </p>
-    <h3>warning</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: True
-      <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.warning.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.warning.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.warning.links heading=4-%}
     </p>
   </p>
 </details>
@@ -866,7 +846,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.00999999977648
+      default: 0.009999999776482582
       <p class="scene-class-comments">(in meters): one unit in world space = 'scene scale' meters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.scene_scale.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.scene_scale.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1073,7 +1053,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.999000012875
+      default: 0.9990000128746033
       <p class="scene-class-comments">The presence threshold defines the point at which the accumulated presence can be considered opaque, skipping the generation of presence continuation rays.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1083,7 +1063,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.0375000014901
+      default: 0.03750000149011612
       <p class="scene-class-comments">The Russian roulette threshold specifies the point at which point Russian roulette is evaluated for direct light sampling and BSDF continuation. The unit is luminance of the radiance.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1118,7 +1098,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.649999976158
+      default: 0.6499999761581421
       <p class="scene-class-comments">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1128,7 +1108,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.649999976158
+      default: 0.6499999761581421
       <p class="scene-class-comments">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1148,7 +1128,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.995000004768
+      default: 0.9950000047683716
       <p class="scene-class-comments">As a ray travels through volumes, it will accumulate opacity. When the value exceeds the volume opacity threshold, the renderer will stop further volume integration along this ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}

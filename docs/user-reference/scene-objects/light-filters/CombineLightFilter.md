@@ -47,7 +47,7 @@ title: CombineLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.CombineLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CombineLightFilter.attributes.on.links heading=4-%}
