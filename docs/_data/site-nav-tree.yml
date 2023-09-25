@@ -442,10 +442,10 @@
             path: /user-reference/how-to-guides/dicing-camera.md
           - text: Displacement
             path: /user-reference/how-to-guides/displacement.md
-          - text: Instance-Level Transforms
-            path: /user-reference/how-to-guides/instance-level-transforms.md
           - text: Glitter Shader
             path: /user-reference/how-to-guides/glitter-shader.md
+          - text: Instance-Level Transforms
+            path: /user-reference/how-to-guides/instance-level-transforms.md
           - text: Iridescence 
             path: /user-reference/how-to-guides/iridescence.md
           - text: Light Normalization
