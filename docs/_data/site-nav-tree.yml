@@ -442,6 +442,8 @@
             path: /user-reference/how-to-guides/displacement.md
           - text: Instance-Level Transforms
             path: /user-reference/how-to-guides/instance-level-transforms.md
+          - text: Glitter Shader
+            path: /user-reference/how-to-guides/glitter-shader.md
           - text: Light Normalization
             path: /user-reference/how-to-guides/light-normalization.md
           - text: Look Dev Transparent Surfaces
