@@ -1,0 +1,11 @@
+---
+image_path: /assets/images/user-reference/how-to-guides/glitter-shader
+layering_gallery:
+  - image: baseline.jpg
+    text: Glitter Only
+  - image: clearcoat.jpg
+    text: With Clearcoat
+  - image: fuzz.jpg
+    text: With Fuzz
+  - image: clearcoat_fuzz.jpg
+    text: With Clearcoat and Fuzz
