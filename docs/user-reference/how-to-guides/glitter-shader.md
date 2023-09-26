@@ -61,7 +61,7 @@ Glitter has a number of options to provide more randomized effects, which are ac
 - _**glitter_randomness**_ changes the random orientation of each flake
 - _**glitter_texture_orientation_randomness**_ determines range of random rotation for texture UVs
 - _**glitter_hue_variation**_, _**glitter_saturation_variation**_, and _**glitter_value_variation**_ randomize color.
-- _**glitter_jitter**_ changes the arrangement of flakes; 1 (default) is cell noize while 0 conforms to a grid
+- _**glitter_jitter**_ changes the arrangement of flakes; 1 (default) is cell noise while 0 conforms to a grid
 
 {% include image-comparer.html image_path_before='/assets/images/user-reference/how-to-guides/glitter-shader/variation.jpg'
                                image_path_after='/assets/images/user-reference/how-to-guides/glitter-shader/baseline.jpg' 
