@@ -1193,6 +1193,7 @@ title: SceneVariables
           &nbsp;&nbsp;5 = &ldquo;random&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;spiral square&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;spiral rect&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;morton shiftflip&rdquo;<br>
       <p class="scene-class-comments">This setting specifies the order in which tiles (as areas of 8x8 pixels) are prioritized for batch rendering, which determines which areas of the image are rendered first. The ordering is not guaranteed: the strict sequence of tile starting and completion for any pass is nondeterministic due to thread scheduling.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.batch_tile_order.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1210,6 +1211,7 @@ title: SceneVariables
           &nbsp;&nbsp;5 = &ldquo;random&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;spiral square&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;spiral rect&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;morton shiftflip&rdquo;<br>
       <p class="scene-class-comments">This setting specifies the order in which tiles (as areas of 8x8 pixels) are prioritized for checkpoint rendering, which determines which areas of the image are rendered first. The ordering is not guaranteed: the strict sequence of tile starting and completion for any pass is nondeterministic due to thread scheduling.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.checkpoint_tile_order.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1267,6 +1269,7 @@ title: SceneVariables
           &nbsp;&nbsp;5 = &ldquo;random&rdquo;<br>
           &nbsp;&nbsp;6 = &ldquo;spiral square&rdquo;<br>
           &nbsp;&nbsp;7 = &ldquo;spiral rect&rdquo;<br>
+          &nbsp;&nbsp;8 = &ldquo;morton shiftflip&rdquo;<br>
       <p class="scene-class-comments">This setting specifies the order in which tiles (as areas of 8x8 pixels) are prioritized for progressive rendering, which determines which areas of the image are rendered first. The ordering is not guaranteed: the strict sequence of tile starting and completion for any pass is nondeterministic due to thread scheduling.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_tile_order.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
