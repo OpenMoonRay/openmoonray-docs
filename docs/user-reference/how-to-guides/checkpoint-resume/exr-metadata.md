@@ -199,7 +199,7 @@ The following is a description of the available metadata information:
 				<tr>
 					<td>checkpointAverageSec</td>
 					<td>float</td>
-					<td>Average time in seconds spent during the checkpoint data output operation, but not including the background  thread writing cost</td>
+					<td>Average time in seconds spent during the checkpoint data output operation, but not including the background thread writing cost</td>
 				</tr>
                 <tr>
                     <td>timeSaveSecBySignalCheckpoint</td>
@@ -225,7 +225,7 @@ The following is a description of the available metadata information:
                 <tr>
                     <td>bgCheckpointWrite</td>
                     <td>bool(true/false)</td>
-                    <td>Condition of background checkpoint write logic</td>
+                    <td>true if background checkpoint write logic created this file, false if not</td>
                 </tr>
 				<tr>
 					<td>startTileSamplesId</td>
@@ -309,7 +309,7 @@ The following is a description of the available metadata information:
                 <tr>
                     <td>extraSnapshot</td>
                     <td>bool(true/false)</td>
-                    <td>Condition of extraSnapshot logic</td>
+                    <td>true if extraSnapshot (i.e. signal-based checkpoint) logic created this data, false if not</td>
                 </tr>
 				<tr>
 					<td>MCRTStartTime</td>
@@ -341,7 +341,7 @@ The following is a description of the available metadata information:
 </table>  
 
 ## Example Metadata Output
-In this example, sample.exr was constructed in single checkpoint render. The file was dumped as a checkpoint file three times. The 3rd checkpoint was created by signal-based checkpoint logic.
+In this example, sample.exr was overwritten 3 times by checkpoint output logic. 1st and 2nd checkpoint write was done by regular checkpoint output. 3rd checkpoint write was done by signal-based checkpoint.
 
 ```bash
 > oiiotool -info -v sample.exr
