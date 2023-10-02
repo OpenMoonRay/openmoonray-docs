@@ -215,6 +215,35 @@ Therefore, it's possible to see a greater than 100% final rendering progress per
 
 Note that this solution works well for uniform sampling but does not work well for adaptive sampling currently (and is being addressed in a future update). For the moment, it's best to use uniform sampling if possible for multi-machine rendering.
 
+## Telemetry overlay
+arras_render has a special runtime option to display the backend computation's telemetry data to the screen.
+You can on/off this telemetry overlay at runtime.
+
+Following are some examples of telemetry panels display.
+![telemetryOverlay-A]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-devel.png" | absolute_url }})
+This is a core performance panel.
+![telemetryOverlay-B]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-corePerf.png" | absolute_url }})
+
+This functionality is pretty useful for understanding runtime backend computation's status.
+In order to use this functionality, we have to set a special environment variable to specify the font that is used for the telemetry overlay and this should be done before starting arras_render. This is done by setting up `TELEMETRY_OVERLAY_FONTTTF` as follows.
+
+```bash
+export TELEMETRY_OVERLAY_FONTTTF=<ttf file path>
+```
+
+You should set a monospaced font TTF filename for this value. for example
+
+```bash
+export TELEMETRY_OVERLAY_FONTTTF=~/fonts/ttf/JetBrainsMono-Regular.ttf
+```
+
+If you don't specify any font TTF file, arras_render disables all telemetry overlay functionalities.
+If you specify the non-monospaced font to TELEMETRY_OVERLAY_FONTTTF, the telemetry overlay's panel layout might be broken and it is not visually good in most cases.
+
+The default status of the telemetry overlay is disabled even if you properly set up TELEMETRY_OVERLAY_FONTTTF environment variable. In order to enable, you need to use arras_render's `—-telemetry` command line options or use HotKey `f` and `g`.
+
+We have multiple overlay panels and they might be different variations depending on the OpenMoonRay versions.
+
 ## Command-line options
 Running `arras_render` without any command-line options will display the full list of options (including DWA-specific options which are not covered here).
 
@@ -237,6 +266,8 @@ At least one RDL file is required
                                     gui window
   --overlayFont arg (=Arial)        Font to use when overlay is enabled
   --overlaySize arg (=32)           Font size to use when overlay is enabled
+  --telemetry                       Display telemetry info in an overlay in the
+                                    gui window
   --rdl arg                         Path to RDL input file(s)
   --exr arg                         Path to output EXR file
   --num-mcrt arg (=1)               Number of MCRT computations to use (implies
@@ -286,3 +317,6 @@ Key|Description
 `d`|Translate right
 `c`|Translate downward
 `Space`|Translate upward
+`f`|Telemetry overlay enable/disable toggle
+`g`|Switch telemetry overlay panel type
+`n`|Denoise on/off toggle
