@@ -23,16 +23,16 @@ The following is a description of the available metadata information:
 		<th>Description</th>
 	</tr>
 	<tr>
-		<td>progressCheckpointTileSamples: <i>N</i></td>
-		<td>The final tile sample totals for this file in checkpoint mode</td>
-	</tr>
-	<tr>
 		<td>adaptiveSamplingV1: min max err</td>
 		<td>The adaptive sampling values for this render result</td>
 	</tr>
 	<tr>
 		<td>AovFilterMinAdaptiveSamples: <i>N</i></td>
 		<td>The minimum adaptive sample number for AOV filter</td>
+	</tr>
+	<tr>
+		<td>progressCheckpointTileSamples: <i>N</i></td>
+		<td>The final tile sample totals for this file in checkpoint mode</td>
 	</tr>
 	<tr>
 		<td>resumeHistory:</td>
@@ -60,9 +60,9 @@ The following is a description of the available metadata information:
 					<th>Description</th>
 				</tr>
 				<tr>
- 					<td>adaptiveTargetError</td>
-					<td>float</td>
-					<td>The adaptive sampling target error (which only exists for Adaptive sampling mode)</td>
+					<td>samplingType</td>
+					<td>string</td>
+					<td>"ADAPTIVE" or "UNIFORM". Indicates the sampling type</td>
 				</tr>
 				<tr>
 					<td>minSamples</td>
@@ -75,9 +75,9 @@ The following is a description of the available metadata information:
 					<td>The maximum samples per pixel</td>
 				</tr>
 				<tr>
-					<td>samplingType</td>
-					<td>string</td>
-					<td>"ADAPTIVE" or "UNIFORM". Indicates the sampling type</td>
+ 					<td>adaptiveTargetError</td>
+					<td>float</td>
+					<td>The adaptive sampling target error (which only exists for Adaptive sampling mode)</td>
 				</tr>
 				<tr>
 					<td>sampleResult</td>
@@ -92,6 +92,16 @@ The following is a description of the available metadata information:
 					<th>Description</th>
 				</tr>
 				<tr>
+					<td>PixelSamples</td>
+					<td>int</td>
+					<td>The total number of PIXEL samples</td>
+				</tr>
+				<tr>
+					<td>lightSamples</td>
+					<td>int</td>
+					<td>The total number of LIGHT samples</td>
+ 				</tr>
+				<tr>
 					<td>bsdfSamples</td>
 					<td>int</td>
 					<td>The total number of BSDF samples</td>
@@ -100,16 +110,6 @@ The following is a description of the available metadata information:
 					<td>bssrdfSamples</td>
 					<td>int</td>
 					<td>The total number of BSSRDF samples</td>
-				</tr>
-				<tr>
-					<td>lightSamples</td>
-					<td>int</td>
-					<td>The total number of LIGHT samples</td>
- 				</tr>
-				<tr>
-					<td>PixelSamples</td>
-					<td>int</td>
-					<td>The total number of PIXEL samples</td>
 				</tr>
 				<tr>
 					<td>totalSamples</td>
@@ -177,9 +177,14 @@ The following is a description of the available metadata information:
 					<th>Description</th>
 				</tr>
 				<tr>
-					<td>checkpointAverageSec</td>
+					<td>renderPrepSec</td>
 					<td>float</td>
-					<td>Average time in seconds spent during the checkpoint data output operation, but not including the background  thread writing cost</td>
+					<td>The time in seconds spent in the RenderPrep stage</td>
+				</tr>
+				<tr>
+					<td>mcrtSec</td>
+					<td>float</td>
+					<td>The time in seconds spent in the MCRT computation stage</td>
 				</tr>
 				<tr>
 					<td>checkpointTotalSecExcludeLast</td>
@@ -192,15 +197,15 @@ The following is a description of the available metadata information:
 					<td>The total count of output checkpoint data writtent to the disk</td>
 				</tr>
 				<tr>
-					<td>mcrtSec</td>
+					<td>checkpointAverageSec</td>
 					<td>float</td>
-					<td>The time in seconds spent in the MCRT computation stage</td>
+					<td>Average time in seconds spent during the checkpoint data output operation, but not including the background thread writing cost</td>
 				</tr>
-				<tr>
-					<td>renderPrepSec</td>
-					<td>float</td>
-					<td>The time in seconds spent in the RenderPrep stage</td>
-				</tr>
+                <tr>
+                    <td>timeSaveSecBySignalCheckpoint</td>
+                    <td>float</td>
+                    <td>The time in seconds that was saved compared with regular (time/quality) checkpoint if this file is created by signal-based checkpoint logic.</td>
+                </tr>
 			</table>
 		</td>
 	</tr>
@@ -217,6 +222,11 @@ The following is a description of the available metadata information:
 					<th>Type</th>
 					<th>Description</th>
 				</tr>
+                <tr>
+                    <td>bgCheckpointWrite</td>
+                    <td>bool(true/false)</td>
+                    <td>true if background checkpoint write logic created this file, false if not</td>
+                </tr>
 				<tr>
 					<td>startTileSamplesId</td>
  					<td>unsigned int</td>
@@ -296,6 +306,11 @@ The following is a description of the available metadata information:
 					<td>int</td>
 					<td>ID of the checkpoint stint. Start from id = 0</td>
 				</tr>
+                <tr>
+                    <td>extraSnapshot</td>
+                    <td>bool(true/false)</td>
+                    <td>true if extraSnapshot (i.e. signal-based checkpoint) logic created this data, false if not</td>
+                </tr>
 				<tr>
 					<td>MCRTStartTime</td>
 					<td>time format</td>
@@ -326,33 +341,36 @@ The following is a description of the available metadata information:
 </table>  
 
 ## Example Metadata Output
-In this example, checkpoint0.exr was constructed in two different Resume render runs. The first run created a checkpoint file twice and the second run also created a checkpoint file twice.
+In this example, sample.exr was overwritten 3 times by checkpoint output logic. 1st and 2nd checkpoint write was done by regular checkpoint output. 3rd checkpoint write was done by signal-based checkpoint.
 
 ```bash
-$ oiiotool -info -v checkpoint0.exr
-Reading checkpoint0.exr
-result0.exr          :  640 x  360, 10 channel, half/float/half/float/float/float/float/float/float/float openexr
-    channel list: alpha (half), alpha aux (float), heat (half), weight (float), beauty aux.R (float), beauty aux.G (float), beauty aux.B (float), beauty.R (float), beauty.G (float), beauty.B (float)
-    adaptiveSamplingV1: 16, 4096, 0.002
-    AovFilterMinAdaptiveSamples: 16
+> oiiotool -info -v sample.exr
+Reading sample.exr
+ENVIR::btyLFT.101.exr : 1920 x  816, 4 channel, half openexr
+    12 subimages: 1920x816 [h,h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h], 1920x816 [h,h,h]
+    channel list: R, G, B, A
+    adaptiveSamplingV1: 2, 16, 0.0015
+    AovFilterNumConsistentSamples: 2
     compression: "zip"
-    DateTime: "2020:02:28 12:03:51"
-    PixelAspectRatio: 1
-    progressCheckpointTileSamples: 262144
+    DateTime: "2023:07:13 15:03:35"
+    max_adaptive_samples: 16
+    min_adaptive_samples: 1
+    pixel_samples: 8
+    progressCheckpointTileSamples: 446
     resumeHistory: "{
 "history":[
 {
   "sampling":{
     "samplingType":"ADAPTIVE",
-    "minsamples":16,
-    "maxSamples":4096,
-    "adaptiveTargetError":20.000000,
+    "minSamples":2,
+    "maxSamples":16,
+    "adaptiveTargetError":15.000000,
     "sampleResult":{
-      "PixelSamples":2534400,
-      "lightSamples":263001357,
-      "bsdfSamples":253638901,
-      "bssrdfSamples":0,
-      "totalSamples":519174658
+      "PixelSamples":8698792,
+      "lightSamples":122329571,
+      "bsdfSamples":252977045,
+      "bssrdfSamples":48994734,
+      "totalSamples":433000142
     }
   },
   "execEnv":{
@@ -361,88 +379,48 @@ result0.exr          :  640 x  360, 10 channel, half/float/half/float/float/floa
     "UTCOffsetHours":-8.000000
   },
   "timingDetail":{
+    "bgCheckpointWrite":true,
     "startTileSamplesId":0,
-    "procStartTime":{"date":"2020/Feb/28 Fri 9:36:31:122","sec":1582911391,"usec":122668},
-    "frameStartTime":{"date":"2020/Feb/28 Fri 9:36:31:239","sec":1582911391,"usec":239244},
+    "procStartTime":{"date":"2023/Jul/13 Thu 15:1:29:139","sec":1689285689,"usec":139997},
+    "frameStartTime":{"date":"2023/Jul/13 Thu 15:1:29:420","sec":1689285689,"usec":420374},
     "MCRT":[
       {
         "stint":0,
-        "MCRTStartTime":{"date":"2020/Feb/28 Fri 9:36:32:275","sec":1582911392,"usec":275429},
-        "MCRTEndTime":{"date":"2020/Feb/28 Fri 9:36:34:544","sec":1582911394,"usec":544933},
+        "extraSnapshot":false,
+        "MCRTStartTime":{"date":"2023/Jul/13 Thu 15:2:0:608","sec":1689285720,"usec":608143},
+        "MCRTEndTime":{"date":"2023/Jul/13 Thu 15:2:21:69","sec":1689285741,"usec":69478},
         "endTileSamplesId":63
       },
       {
         "stint":1,
-        "MCRTStartTime":{"date":"2020/Feb/28 Fri 9:36:34:724","sec":1582911394,"usec":724029},
-        "MCRTEndTime":{"date":"2020/Feb/28 Fri 9:36:53:694","sec":1582911413,"usec":694280},
-        "endTileSamplesId":703
-      }
-    ]
-  },
-  "timingSummary":{
-    "renderPrepSec":1.036185,
-    "mcrtSec":21.239756,
-    "checkpointTotalSecExcludeLast":0.179096,
-    "checkpointTotal":2,
-    "checkpointAverageSec":0.089548
-  }
-}
-,
-{
-  "sampling":{
-    "samplingType":"ADAPTIVE",
-    "minSamples":16,
-    "maxSamples":4096,
-    "adaptiveTargetError":20.000000,
-    "sampleResult":{
-      "PixelSamples":1651242,
-      "lightSamples":171567352,
-      "bsdfSamples":165628605,
-      "bssrdfSamples":0,
-      "totalSamples":338847199
-    }
-  },
-  "execEnv":{
-    "hostname":"pearldiva.gld.dreamworks.net",
-    "numberOfThreads":36,
-    "UTCOffsetHours":-8.000000,
-    "DWA_HOST_RU":"1234.5678",
-    "DWA_FULL_ID":"121126862.1.4.101.1"
-  },
-  "timingDetail":{
-    "startTileSamplesId":704,
-    "procStartTime":{"date":"2020/Feb/28 Fri 12:3:25:695","sec":1582920205,"usec":695025},
-    "frameStartTime":{"date":"2020/Feb/28 Fri 12:3:26:95","sec":1582920206,"usec":95499},
-    "MCRT":[
-      {
-        "stint":0,
-        "MCRTStartTime":{"date":"2020/Feb/28 Fri 12:3:33:831","sec":1582920213,"usec":831233},
-        "MCRTEndTime":{"date":"2020/Feb/28 Fri 12:3:34:749","sec":1582920214,"usec":749350},
-        "endTileSamplesId":787
+        "extraSnapshot":false,
+        "MCRTStartTime":{"date":"2023/Jul/13 Thu 15:2:21:547","sec":1689285741,"usec":547620},
+        "MCRTEndTime":{"date":"2023/Jul/13 Thu 15:3:10:518","sec":1689285790,"usec":518026},
+        "endTileSamplesId":319
       },
       {
-        "stint":1,
-        "MCRTStartTime":{"date":"2020/Feb/28 Fri 12:3:34:996","sec":1582920214,"usec":996935},
-        "MCRTEndTime":{"date":"2020/Feb/28 Fri 12:3:50:476","sec":1582920230,"usec":476337},
-        "endTileSamplesId":262143
+        "stint":2,
+        "extraSnapshot":true,
+        "MCRTStartTime":{"date":"2023/Jul/13 Thu 15:3:11:144","sec":1689285791,"usec":144124},
+        "MCRTEndTime":{"date":"2023/Jul/13 Thu 15:3:25:310","sec":1689285805,"usec":310274},
+        "endTileSamplesId":445
       }
     ]
   },
   "timingSummary":{
-    "renderPrepSec":7.735734,
-    "mcrtSec":16.397518,
-    "checkpointTotalSecExcludeLast":0.247585,
-    "checkpointTotal":2,
-    "checkpointAverageSec":0.123793
+    "renderPrepSec":31.187769,
+    "mcrtSec":83.597893,
+    "checkpointTotalSecExcludeLast":1.104240,
+    "checkpointTotal":3,
+    "checkpointAverageSec":0.552120,
+    "timeSaveSecBySignalCheckpoint":14.166150
   }
 }
 ]
 }"
-    screenWindowCenter: 0, 0
-    screenWindowWidth: 1
     oiio:ColorSpace: "Linear"
-    oiio:subimages: 1
-$
+    oiio:subimagename: "main"
+    oiio:subimages: 12
+    openexr:chunkCount: 51
+>
 ```
-
-
