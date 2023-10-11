@@ -15,6 +15,7 @@
         <sl-icon slot="divider" library="material" name="drag_indicator"></sl-icon>
         <header slot="start" primary>
           <a id="home-link" href="{{ "/" | absolute_url }}">{% include logo.html %}</a>
+          <div id="doc-search"></div>
           {% include site-nav-tree.html %}
           <dark-mode-toggle
             legend="Light&thinsp;/&thinsp;Dark Mode"
@@ -50,5 +51,15 @@
     </div>
     <bento-lightbox-gallery></bento-lightbox-gallery>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <script>
+      docsearch({
+        container: '#doc-search',
+        appId: 'MPEZ5YSLII',
+        apiKey: '552309cf83be5fe1d556f8d3616ee371',
+        indexName: 'openmoonray',
+        insights: true,
+      });
+    </script>
   </body>
 </html>

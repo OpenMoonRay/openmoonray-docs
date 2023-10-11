@@ -7,7 +7,8 @@ dark-mode-toggle {
   user-select: none;
 
   position: fixed;
-  top: 1.5rem;
+  top: calc(100% - 1rem);
+  transform: translateY(-100%);
   right: 1rem;
   z-index: 5;
   pointer-events: initial;
@@ -15,6 +16,7 @@ dark-mode-toggle {
   @media screen and (min-width: 64.0625em) {
     top: 3.25rem;
     right: 10rem;
+    transform: unset;
   }
 }
 
