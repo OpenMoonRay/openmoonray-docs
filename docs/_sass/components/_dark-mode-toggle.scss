@@ -5,6 +5,17 @@ dark-mode-toggle {
   --dark-mode-toggle-dark-icon: #{$dark-icon-url};
   contain: unset;
   user-select: none;
+
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 5;
+  pointer-events: initial;
+
+  @media screen and (min-width: 64.0625em) {
+    top: 3.25rem;
+    right: 10rem;
+  }
 }
 
 dark-mode-toggle::part(fieldset) {

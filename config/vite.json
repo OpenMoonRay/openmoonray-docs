@@ -1,0 +1,16 @@
+{
+  "all": {
+    "sourceCodeDir": "docs/assets",
+    "additionalEntrypoints": ["~/{js,styles,fonts,images}/**/*"],
+    "hideBuildConsoleOutput": true
+  },
+  "development": {
+    "autoBuild": true,
+    "publicOutputDir": "vite-dev",
+    "port": 3002
+  },
+  "test": {
+    "autoBuild": true,
+    "publicOutputDir": "vite-test"
+  }
+}
