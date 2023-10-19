@@ -1,3 +1,25 @@
+import 'dark-mode-toggle';
+import '@shoelace-style/shoelace/dist/components/split-panel/split-panel.js';
+import '@shoelace-style/shoelace/dist/components/tree/tree.js';
+import '@shoelace-style/shoelace/dist/components/tree-item/tree-item.js';
+import '@shoelace-style/shoelace/dist/components/icon/icon.js';
+import '@shoelace-style/shoelace/dist/components/image-comparer/image-comparer.js';
+import '@shoelace-style/shoelace/dist/components/card/card.js';
+import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
+import { defineElement as defineBentoLightboxGallery } from '@bentoproject/lightbox-gallery';
+
+defineBentoLightboxGallery();
+
+registerIconLibrary('material', {
+  resolver: (name) => {
+    const match = name.match(/^(.*?)(_(round|sharp))?$/);
+    return `https://cdn.jsdelivr.net/npm/@material-icons/svg@1.0.5/svg/${
+      match[1]
+    }/${match[3] || 'outline'}.svg`;
+  },
+  mutator: (svg) => svg.setAttribute('fill', 'currentColor'),
+});
+
 const rootEl = document.querySelector('#root');
 const mainNavEl = document.querySelector('#main-nav');
 const lightboxEl = document.querySelector('bento-lightbox-gallery');
@@ -8,8 +30,8 @@ const attributeEls = document.querySelectorAll('.scene-class h3');
 const focusLightbox = () => {
   setTimeout(() => {
     const firstSlideEl = lightboxEl.shadowRoot.querySelector('[part="slide"]');
-    const slideContainerEl = firstSlideEl.parentElement;
-    slideContainerEl.focus();
+    const slideContainerEl = firstSlideEl?.parentElement;
+    slideContainerEl?.focus();
   }, 500);
 };
 
@@ -70,7 +92,6 @@ for (const galleryEl of galleryGridEls) {
   )) {
     galleryItemEl.setAttribute('lightbox', uuid);
   }
-  import('https://cdn.ampproject.org/v0/bento-lightbox-gallery-1.0.mjs');
 }
 
 // Enable section permalink reveal on H2 hover
@@ -122,3 +143,62 @@ document.querySelectorAll('main table').forEach((tableEl) => {
     });
   });
 });
+
+const DARK_MODE_STORAGE_KEY = 'dark-mode-toggle'
+
+const getColorPreference = () => {
+  if (localStorage.getItem(DARK_MODE_STORAGE_KEY))
+    return localStorage.getItem(DARK_MODE_STORAGE_KEY);
+  else
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+};
+
+const reflectPreference = () => {
+  document.firstElementChild.setAttribute("data-theme", theme.value);
+};
+
+// Immediately read color preference from localStorage or
+// the system setting
+const theme = {
+  value: getColorPreference()
+};
+
+// Immediately set html[data-theme] so there is no flash of a
+// default theme before activating the user's preference
+reflectPreference();
+
+//
+document.addEventListener('DOMContentLoaded', () => {
+  reflectPreference();
+
+  const toggleEl = document.querySelector("dark-mode-toggle");
+
+  // Handle toggle event
+  toggleEl.addEventListener("colorschemechange", () => {
+    theme.value = toggleEl.mode;
+    reflectPreference();
+  });
+})
+
+// Sync with system setting when it changes
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", ({ matches: isDark }) => {
+    theme.value = isDark ? "dark" : "light";
+    reflectPreference();
+  });
+
+(async () => {
+  await Promise.allSettled([
+    customElements.whenDefined('dark-mode-toggle'),
+    customElements.whenDefined('sl-split-panel'),
+    customElements.whenDefined('sl-tree'),
+    customElements.whenDefined('sl-tree-item'),
+  ]);
+
+  // Button, card, and rating are registered now! Add
+  // the `ready` class so the UI fades in.
+  document.body.classList.add('ready');
+})();

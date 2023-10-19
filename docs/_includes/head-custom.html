@@ -6,8 +6,6 @@
   rel="stylesheet"
 />
 
-<script src="{{ 'assets/js/theme-toggle.js' | relative_url }}"></script>
-
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css"
@@ -21,6 +19,7 @@
   type="text/css"
   href="https://cdn.ampproject.org/v0/bento-lightbox-gallery-1.0.css"
 />
+
 <link rel="stylesheet" href="{{ "/assets/styles/common.css?v=" | append:
 site.github.build_revision | relative_url }}">
 
@@ -57,57 +56,8 @@ site.github.build_revision | relative_url }}">
   }
 </style>
 
-<script type="module">
-  await Promise.allSettled([
-    customElements.whenDefined('sl-split-panel'),
-    customElements.whenDefined('sl-tree'),
-    customElements.whenDefined('sl-tree-item'),
-    customElements.whenDefined('dark-mode-toggle'),
-  ]);
 
-  // Button, card, and rating are registered now! Add
-  // the `ready` class so the UI fades in.
-  document.body.classList.add('ready');
-</script>
-
-<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-<script type="module" async src="https://cdn.ampproject.org/bento.mjs"></script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/split-panel/split-panel.js"
-></script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/tree/tree.js"
-></script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/tree-item/tree-item.js"
-></script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/icon/icon.js"
-></script>
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.87/dist/components/image-comparer/image-comparer.js"
-></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/components/card/card.js"></script>
-
-<script type="module">
-  import { registerIconLibrary } from 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/utilities/icon-library.js';
-
-  registerIconLibrary('material', {
-    resolver: (name) => {
-      const match = name.match(/^(.*?)(_(round|sharp))?$/);
-      return `https://cdn.jsdelivr.net/npm/@material-icons/svg@1.0.5/svg/${
-        match[1]
-      }/${match[3] || 'outline'}.svg`;
-    },
-    mutator: (svg) => svg.setAttribute('fill', 'currentColor'),
-  });
-</script>
-<script type="module" src="{{ 'assets/js/common.js' | relative_url }}"></script>
+{% vite_javascript_tag js/common %}
 
 {% if page.maths %}
 <!-- Setup MathJax LaTex formatting -->
