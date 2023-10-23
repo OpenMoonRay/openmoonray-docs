@@ -464,6 +464,8 @@
             path: /user-reference/how-to-guides/pbr-validity.md
           - text: Point Rendering
             path: /user-reference/how-to-guides/point-rendering.md   
+          - text: PresenZ
+            path: /user-reference/how-to-guides/presenz.md
           - text: Ray Depth
             path: /user-reference/how-to-guides/ray-depth.md
           - text: Render Outputs
