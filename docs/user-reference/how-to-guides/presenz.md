@@ -4,25 +4,23 @@ title: PresenZ
 
 # PresenZ
 
-{%-include video-gallery.html videos=site.data.user-reference.how-to-guides.presenz.attributes.bias.videos data=site.data.user-reference.how-to-guides.presenz-%}
-
 [PresenZ]({{ "https://www.presenzvr.com" | absolute_url }}) is a third party technology that allows
 for rendering of full fidelity scenes for playback in virtual reality.
 
-The [presenz] ({{"https://github.com/dreamworksanimation/openmoonray/tree/release/moonray" | absolute_url}})
+The [presenz]({{"https://github.com/dreamworksanimation/openmoonray/tree/release/moonray" | absolute_url}})
 branch of moonray integrates PresenZ using the SDK which can be found here:
 [PresenZ SDK]({{ "https://github.com/Parallaxter-team/PresenZ-SDK" | absolute_url }})
 
 ## Components
-The main Moonray component used to render PresenZ frames is the new `PresenZCamera`.
-Other impacted nodes are `SceneVariables`, `RenderOutput`, and `UserData`.
+The main Moonray component used to render PresenZ frames is the new *PresenZCamera*.
+Other impacted nodes are *SceneVariables*, *RenderOutput*, and *UserData*.
 
 ## General Workflow
 This section describes the steps required to render and playback a PresenZ frame.
 
 ### Scene Variables
 The resolution of the frame is set with the image width and height.  The aspect ratio should be approximately 3:2.
-If the set resolution is invalid, the detect phase will throw and error and recommend resolution.  The resolution
+If the set resolution is invalid, the detect phase will throw and error and recommend a valid resolution.  The resolution
 will also be a factor during playback depending on the hardware used.   Motion blur should be enabled if the scene
 contains animation.   This, combined with the motion vector output described below will result in smoothly
 interpolated playback.
