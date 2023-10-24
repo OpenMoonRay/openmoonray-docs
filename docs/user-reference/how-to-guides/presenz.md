@@ -85,23 +85,25 @@ and przRender files into a playable .prz file.
 
 Run the “detect phase” with the following command:
 ```bash
-moonray -exec_mode scalar -in scene.rdla -attr_set "shot_cam_pz" "phase" 0 -rdla_set frame 101 -scene_var "frame" 101
+moonray -exec_mode scalar -in scene.rdla -attr_set "shot_cam_pz" "phase" 0
 ```
 
 Run the “render phase” with the following command:
 ```bash
-moonray -exec_mode scalar -in scene.rdla -attr_set "shot_cam_pz" "phase" 1 -rdla_set frame 101 -scene_var "frame" 101
+moonray -exec_mode scalar -in scene.rdla -attr_set "shot_cam_pz" "phase" 1
 ```
 
 
 ### Merging
-Merge the resulting files into a .prz file, which is playable with the viewer on Windows, with the following command:
-```
+Merge the resulting detect and render files into a .prz file, which is playable with the viewer on Windows, with the following command:
+```bash
 presenz_merger . -x --output test.####.prz
 ```
 
 ### Playback
-To play the resulting prz file(s), drop the first one onto the player’s icon in Windows.   This will load the sequence and generate a przToc file.   This file can be edited in notepad.   You can add a background image by adding this line to the “scenes” section typically after the “framerate” line.
+To play the resulting prz file(s), drop the first one onto the player’s icon in Windows.
+This will load the sequence and generate a przToc file.  This file can be edited in notepad.
+You can add a background image by adding this line to the “scenes” section typically after the “framerate” line.
 
 ```
 		"backgroundFile" : "sq2601_sky_paint_fix3.jpg",
@@ -113,14 +115,16 @@ You will also most likely want to set the framerate to 24.0:
 		"framerate": 24.00000,
 ```
 
-You may want to change the starting height of the viewer (default is 1.6 and can be changed during playback with the ‘t’ key):
+You may want to change the starting height of the viewer (default is 1.6 and can be changed during
+playback with the ‘t’ key):
 
 ```
 		"cameraHeight": 1.5,
 ```
 
 ## Scene Optimization
-The PresenZ player has a limit of 128MB per frame.   To help reduce the size of complex scenes, fur and other complex geometry can be marked as chaotic.  To do this, add a UserData object to the rdla file:
+The PresenZ player has a limit of 128MB per frame.   To help reduce the size of complex scenes, fur and other complex
+geometry can be marked as chaotic.  To do this, add a UserData object to the rdla file:
 
 ```
 chaotic = UserData("chaotic") {
@@ -147,12 +151,4 @@ PresenZCamera("shot_cam_pz") {
     ["froxtrum_depth"] = 6,
     ["froxtrum_resolution"] = 8,
 }
-```
-
-## Background Masking
-When using the froxtrum rendering on a background layer there may be holes that show through to the background image.  To fix this, run the `prztool` on a Windows box which will generate a mask image.   This image should be applied to the background image in Photoshop to make it black in the masked areas.
-
-Example usage:
-```
-prztool.exe -eb sq2601_s320_fg_10.0101.png sq2601_s320_fg_10.0101.prz
 ```
