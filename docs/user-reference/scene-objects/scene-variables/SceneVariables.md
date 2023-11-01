@@ -907,18 +907,6 @@ title: SceneVariables
 <details open>
   <summary>Sampling attributes</summary>
   <p>
-    <h3>bsdf_sampler_strategy</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-      <br>
-          &nbsp;&nbsp;0 = &ldquo;multi-sample&rdquo; (default)<br>
-          &nbsp;&nbsp;1 = &ldquo;one-sample&rdquo;<br>
-          &nbsp;&nbsp;2 = &ldquo;one-lobe&rdquo;<br>
-      <p class="scene-class-comments">Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_sampler_strategy.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_sampler_strategy.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.bsdf_sampler_strategy.links heading=4-%}
-    </p>
     <h3>bsdf_samples</h3>
     <p class="scene-class-type">
       <b>Int</b>

@@ -51,7 +51,7 @@ title: VdbLightFilter
     </p>
     <h3>density_grid_name</h3>
     <p class="scene-class-type">
-      <b>String</b> <i>filename</i>
+      <b>String</b>
       <br>
       default: 
       <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
