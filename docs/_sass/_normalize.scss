@@ -8,7 +8,7 @@
 :where(html, body) {
   // Allow percentage-based heights
   // See: https://www.joshwcomeau.com/css/custom-css-reset/#digit-percentage-based-heights
-  // block-size: 100%;
+  block-size: 100%;
 
   // See: https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
   -webkit-text-size-adjust: none;
@@ -16,10 +16,6 @@
   @media (prefers-reduced-motion: no-preference) {
     scroll-behavior: smooth;
   }
-}
-
-:where(body) {
-  min-height: 100vh;
 }
 
 // Remove default margins

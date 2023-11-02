@@ -15,9 +15,6 @@ repository: https://github.com/dreamworksanimation/openmoonray-docs/
 
 permalink: pretty
 
-plugins:
-  - jekyll/vite
-
 collections:
 
   cameras:
