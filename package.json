@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docs/run_jekyll"
+    "start": "bundle exec jekyll serve -s ./docs --config ./docs/_config.yml,./docs/_config.development.yml",
+    "dev": "npm run start"
   },
   "repository": {
     "type": "git",
@@ -20,14 +21,5 @@
   "bugs": {
     "url": "https://github.com/dreamworksanimation/openmoonray-docs/issues"
   },
-  "homepage": "https://github.com/dreamworksanimation/openmoonray-docs#readme",
-  "devDependencies": {
-    "vite": "^4.4.11",
-    "vite-plugin-ruby": "^3.2.2"
-  },
-  "dependencies": {
-    "@bentoproject/lightbox-gallery": "^1.2302271541.0",
-    "@shoelace-style/shoelace": "^2.9.0",
-    "dark-mode-toggle": "^0.14.6"
-  }
+  "homepage": "https://github.com/dreamworksanimation/openmoonray-docs#readme"
 }

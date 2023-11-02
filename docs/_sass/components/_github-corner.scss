@@ -1,14 +1,12 @@
 .github-corner {
-  position: sticky;
+  position: fixed;
   top: 0;
-  right: 0;
   border: 0;
+  right: 0;
   fill: var(--color-github-corner-bg);
   color: #fff;
   width: 4.75rem;
-  z-index: 1;
-  grid-row: 1/2;
-  justify-self: end;
+  z-index: 0;
 
   @media screen and (min-width: 64.0625em) {
     width: 100px;

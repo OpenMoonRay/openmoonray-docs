@@ -5,12 +5,5 @@ export LC_ALL="C.UTF-8"
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 
-script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 # run jekyll
-if which hivemind >/dev/null 2>&1; then
-  hivemind "${script_dir}/../Procfile.dev"
-else
-  echo "Install hivemind or use a different Procfile launcher."
-  echo "https://github.com/DarthSim/hivemind"
-fi
+bundle exec jekyll s --livereload
