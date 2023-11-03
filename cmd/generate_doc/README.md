@@ -12,7 +12,7 @@ Also note that currently scene_rdl2 suffers from an incompatibility with the lat
 to locally make the following change in scene_rdl2's python.py:\
 `jsoncpp-1.9.5.x` -> `jsoncpp-0.6.0`
 
-Usage is as follows. In each case, <docs_path> should be the path to your openmoonray-docs/docs folder.
+Usage is as follows. In each case, <docs_path> should be the path to your openmoonray-docs/docs folder (probably `../../docs/`)
 
 Generate docs for a specific class: `./generate_doc -c DwaBaseMaterial -d <docs_path>`
 
