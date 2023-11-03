@@ -20,6 +20,19 @@
         subitems:
           - text: Building MoonRay
             path: getting-started/installation/building-moonray.md
+            subitems:
+              - text: General Build Instructions
+                path: getting-started/installation/building-moonray/general_build.md
+              - text: Building on Rocky Linux 9
+                path: getting-started/installation/building-moonray/rocky9_build.md
+              - text: Building in a Rocky Linux 9 Container
+                path: getting-started/installation/building-moonray/rocky9_container_build.md
+              - text: Building on Centos 7
+                path: getting-started/installation/building-moonray/centos7_build.md
+              - text: Building in a Centos 7 Container
+                path: getting-started/installation/building-moonray/centos7_container_build.md
+              - text: Source Repository List
+                path: getting-started/installation/building-moonray/repo_deps.md
           - text: Dependencies
             path: getting-started/installation/moonray-dependencies.md
       - text: Test Scenes

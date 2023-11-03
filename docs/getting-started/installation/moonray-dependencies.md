@@ -4,25 +4,28 @@ title: Dependencies
 
 # MoonRay dependencies
 
-These are the third-party libraries and tools that MoonRay and Arras depend on, at the time of writing. The file **/building/CMakeLists.txt** in the **openmoonray** repository is generally a better reference, since that will be up-to-date for that particular version of the source, and also lists build options.
+These are the third-party libraries and tools that MoonRay and Arras depend on, at the time of writing. The files in the **openmoonray** repository */building* directory are generally a better reference, since that will be up-to-date for that particular version of the source, and also list build options.
 
-| Name           | Version    |  |
+The versions shown are the ones we have tested : other versions may also work.
+
+
+| Name           | Versions    |  |
 |----------------|------------|-----------------|
-|Gcc             | 6.3 or 9.3 | https://gcc.gnu.org/git/
+|Gcc             | 6.3, 9.3, 11.3 | https://gcc.gnu.org/git/
 |CMake           | 3.23.1     | https://github.com/Kitware/CMake
-|Boost           | 1.73       | https://sourceforge.net/projects/boost
-|Lua             | 5.3.5      | https://www.lua.org/ftp
+|Boost           | 1.73, 1.75, 1.76 | https://sourceforge.net/projects/boost
+|Lua             | 5.3.5, 5.5.4 | https://www.lua.org/ftp
 |Python          | 2.7+       | https://www.python.org
 |cppunit         | 1.15.1     | http://dev-www.libreoffice.org/src/
-|log4cplus       | 1.1.2      | https://github.com/log4cplus/log4cplus
-|JsonCpp         | 0.7        | https://github.com/open-source-parsers/jsoncpp.git
-|TBB             | 2020.2.0   | https://github.com/oneapi-src/oneTBB
-|ISPC            | 1.14.1     | https://github.com/ispc/ispc
-|CUDA            | 11.1       | https://developer.nvidia.com/cuda-downloads
+|log4cplus       | 1.1.2, 2.0.5 | https://github.com/log4cplus/log4cplus
+|JsonCpp         | 0.7, 1.9.5        | https://github.com/open-source-parsers/jsoncpp.git
+|TBB             | 2020.2.0, 2020.3 | https://github.com/oneapi-src/oneTBB
+|ISPC            | 1.14.1, 1.20.0     | https://github.com/ispc/ispc
+|CUDA            | 11.1, 11.4, 12.1      | https://developer.nvidia.com/cuda-downloads
 |Optix           | 7.3.0      | https://developer.nvidia.com/designworks/optix/download
-|OpenSubdiv      | 3.4.3      | https://github.com/PixarAnimationStudios/OpenSubdiv
-|OpenVdb         | 8.2.0.4    | https://github.com/AcademySoftwareFoundation/openvdb
-|OpenImageIO     | 2.2.15.1   | https://github.com/OpenImageIO/oiio
+|OpenSubdiv      | 3.4.3, 3.5.0      | https://github.com/PixarAnimationStudios/OpenSubdiv
+|OpenVdb         | 8.2.0.4, 9.1.0 | https://github.com/AcademySoftwareFoundation/openvdb
+|OpenImageIO     | 2.2.15.1, 2.3.20   | https://github.com/OpenImageIO/oiio
 |OpenColorIO     | 2.0.2      | https://github.com/AcademySoftwareFoundation/OpenColorIO
 |OpenExr         | 2.5.7      | https://github.com/AcademySoftwareFoundation/openexr
 |Random123       | 1.08.3     | https://github.com/DEShawResearch/random123
