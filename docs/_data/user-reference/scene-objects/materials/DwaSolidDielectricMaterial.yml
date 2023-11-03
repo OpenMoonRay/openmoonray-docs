@@ -51,6 +51,16 @@ attributes:
     videos:
       - video: SD_diffuse_transmission_wedge.mp4
         text: "diffuse transmission: 0 - 1"
+  diffuse_transmission_blending_behavior:
+    images:
+      - image: SD_diffuse_transmission_blending_behavior_0.jpg
+        text: "diffuse transmission blending behavior: RGB"
+      - image: SD_diffuse_transmission_blending_behavior_1.jpg
+        text: "diffuse transmission blending behavior: Monochromatic"
+  diffuse_transmission_color:
+    videos:
+      - video: SD_diffuse_transmission_color_wedge.mp4
+        text: "diffuse transmission color: Rgb(red, orange, yellow, green, blue, purple)"
   scattering_color:
     videos:
       - video: SD_scattering_color_wedge.mp4
@@ -95,6 +105,14 @@ attributes:
         text: "use absorbing fuzz fibers: false"
       - image: SD_fuzz_absorb_on2.jpg
         text: "use absorbing fuzz fibers: true"
+  glitter_density:
+    videos:
+      - video: SD_glitter_density_wedge.mp4
+        text: "glitter density: 10 - 20" 
+  glitter_size_A:
+    videos:
+      - video: SD_glitter_size_A_wedge.mp4
+        text: "glitter size A: 0.02 - 0.12" 
   iridescence:
     videos:
       - video: M_iridescence_wedge.mp4

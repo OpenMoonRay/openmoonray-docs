@@ -1,0 +1,36 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/HairMap
+gallery:
+attributes:
+  base_color:
+    images:
+      - image: baseColor0.jpg
+        text: (1, 0, 0)
+      - image: baseColor1.jpg
+        text: (0, 1, 0)
+      - image: baseColor2.jpg
+        text: (0, 0, 1)
+  tip_color:
+    images:
+      - image: tipColor0.jpg
+        text: (1, 0, 0)
+      - image: tipColor1.jpg
+        text: (0, 1, 0)
+      - image: tipColor2.jpg
+        text: (0, 0, 1)
+  bias:
+    images:
+      - image: bias025.jpg
+        text: 0.25
+      - image: baseColor2.jpg
+        text: 0.50
+      - image: bias075.jpg
+        text: 0.75
+  gain:
+    images:
+      - image: gain025.jpg
+        text: 0.25
+      - image: baseColor2.jpg
+        text: 0.50
+      - image: gain075.jpg
+        text: 0.75

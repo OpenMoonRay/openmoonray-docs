@@ -118,7 +118,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.10000000149
+      default: 0.10000000149011612
       <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.clearcoat_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -592,7 +592,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.0500000007451
+      default: 0.05000000074505806
       <p class="scene-class-comments">Controls how the diffuse ligthing falls off.  Values greater than 0.0 shift the falloff point closer to the light source and values less than 0.0 shift the falloff point further away</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.terminator_shift.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -853,7 +853,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.140000000596
+      default: 0.14000000059604645
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_A.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -863,7 +863,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.140000000596
+      default: 0.14000000059604645
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_roughness_B.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -954,7 +954,7 @@ title: DwaToonMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.15000000596
+      default: 0.15000000596046448
       <p class="scene-class-comments">randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.glitter_texture_orientation_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
@@ -1366,6 +1366,206 @@ title: DwaToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_interpolations.links heading=4-%}
     </p>
+    <h3>toon_specular_mult0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult0.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult0.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult0.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult1.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult1.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult1.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult2.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult2.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult2.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult3.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult3.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult3.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult4.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult4.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult4.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult5.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult5.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult5.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult6.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult6.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult6.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult7.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult7.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult7.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult8.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult8.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult8.links heading=4-%}
+    </p>
+    <h3>toon_specular_mult9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult9.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult9.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_mult9.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset0.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset0.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset0.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset1.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset1.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset1.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset2.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset2.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset2.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset3.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset3.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset3.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset4.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset4.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset4.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset5.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset5.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset5.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset6.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset6.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset6.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset7.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset7.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset7.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset8.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset8.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset8.links heading=4-%}
+    </p>
+    <h3>toon_specular_offset9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset9.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset9.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_offset9.links heading=4-%}
+    </p>
     <h3>toon_specular_positions</h3>
     <p class="scene-class-type">
       <b>FloatVector</b>
@@ -1375,6 +1575,16 @@ title: DwaToonMaterial
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_positions.links heading=4-%}
+    </p>
+    <h3>toon_specular_ramp_input_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Scales the input value x to the ramp lookup y, where x is based on the angle between the sample direction and normal.  This has the effect of squashing or stretching the ramp point positions towards/away from 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_ramp_input_scale.links heading=4-%}
     </p>
     <h3>toon_specular_stretch_u</h3>
     <p class="scene-class-type">

@@ -25,6 +25,8 @@ attribute where two 4x4 matrices are blended as in the example below.
 ["node_xform"] = blur(Mat4(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0),
                       Mat4(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 5.0, 0.0, 0.0, 0.0, 1.0)),
 ```
+Enabling the *use_rotation_motion_blur* parameter can produce a curved rotation trail but will disable adaptive
+tessellation for this mesh.
 
 ## Geometry
 

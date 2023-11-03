@@ -10,8 +10,8 @@ gallery:
     text: prime direction&#58; look-at object
 attributes:
   bias:
-    images:
-      - image: bias_wedge.gif
+    videos:
+      - video: bias_wedge.mp4
   clamping_behavior:
     images:
       - image: clamping_0.jpg
@@ -35,5 +35,5 @@ attributes:
       - image: prime_source_2.jpg
       - image: prime_source_3.jpg
   use_smoothstep:
-    images:
-      - image: smoothstep_wedge.gif
+    videos:
+      - video: smoothstep_wedge.mp4

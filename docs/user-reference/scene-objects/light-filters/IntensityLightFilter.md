@@ -68,7 +68,7 @@ title: IntensityLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.on.links heading=4-%}

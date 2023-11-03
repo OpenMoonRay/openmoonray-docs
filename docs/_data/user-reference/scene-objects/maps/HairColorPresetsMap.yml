@@ -1,0 +1,36 @@
+---
+image_path: /assets/images/user-reference/scene-objects/maps/HairColorPresetsMap
+gallery:
+attributes:
+  color:
+    images:
+      - image: hcp00.jpg
+        text: black
+      - image: hcp01.jpg
+        text: gray
+      - image: hcp02.jpg
+        text: platinum blond
+      - image: hcp03.jpg
+        text: light blond
+      - image: hcp04.jpg
+        text: golden blond
+      - image: hcp05.jpg
+        text: strawberry blond
+      - image: hcp06.jpg
+        text: light red
+      - image: hcp07.jpg
+        text: dark red
+      - image: hcp08.jpg
+        text: light auburn
+      - image: hcp09.jpg
+        text: dark auburn
+      - image: hcp10.jpg
+        text: brown
+      - image: hcp11.jpg
+        text: dark brown
+      - image: hcp12.jpg
+        text: golden brown
+      - image: hcp13.jpg
+        text: ash brown
+      - image: hcp14.jpg
+        text: chestnut brown

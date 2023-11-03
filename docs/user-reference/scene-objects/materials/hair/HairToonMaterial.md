@@ -136,6 +136,41 @@ title: HairToonMaterial
   </p>
 </details>
 <details open>
+  <summary>Specular attributes</summary>
+  <p>
+    <h3>specular_1_ramp_input_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Scales the input value x to the ramp lookup y, where x is based on the angle between the sample direction and normal.  This has the effect of squashing or stretching the ramp point positions towards/away from 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_ramp_input_scale.links heading=4-%}
+    </p>
+    <h3>specular_2_ramp_input_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Scales the input value x to the ramp lookup y, where x is based on the angle between the sample direction and normal.  This has the effect of squashing or stretching the ramp point positions towards/away from 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_ramp_input_scale.links heading=4-%}
+    </p>
+    <h3>specular_3_ramp_input_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Scales the input value x to the ramp lookup y, where x is based on the angle between the sample direction and normal.  This has the effect of squashing or stretching the ramp point positions towards/away from 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_ramp_input_scale.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Specular 1 attributes</summary>
   <p>
     <h3>specular_1_enable_indirect_reflections</h3>
@@ -249,6 +284,206 @@ title: HairToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_model.links heading=4-%}
     </p>
+    <h3>specular_1_mult0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult0.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult0.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult0.links heading=4-%}
+    </p>
+    <h3>specular_1_mult1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult1.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult1.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult1.links heading=4-%}
+    </p>
+    <h3>specular_1_mult2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult2.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult2.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult2.links heading=4-%}
+    </p>
+    <h3>specular_1_mult3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult3.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult3.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult3.links heading=4-%}
+    </p>
+    <h3>specular_1_mult4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult4.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult4.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult4.links heading=4-%}
+    </p>
+    <h3>specular_1_mult5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult5.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult5.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult5.links heading=4-%}
+    </p>
+    <h3>specular_1_mult6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult6.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult6.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult6.links heading=4-%}
+    </p>
+    <h3>specular_1_mult7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult7.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult7.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult7.links heading=4-%}
+    </p>
+    <h3>specular_1_mult8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult8.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult8.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult8.links heading=4-%}
+    </p>
+    <h3>specular_1_mult9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult9.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult9.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_mult9.links heading=4-%}
+    </p>
+    <h3>specular_1_offset0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset0.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset0.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset0.links heading=4-%}
+    </p>
+    <h3>specular_1_offset1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset1.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset1.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset1.links heading=4-%}
+    </p>
+    <h3>specular_1_offset2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset2.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset2.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset2.links heading=4-%}
+    </p>
+    <h3>specular_1_offset3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset3.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset3.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset3.links heading=4-%}
+    </p>
+    <h3>specular_1_offset4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset4.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset4.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset4.links heading=4-%}
+    </p>
+    <h3>specular_1_offset5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset5.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset5.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset5.links heading=4-%}
+    </p>
+    <h3>specular_1_offset6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset6.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset6.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset6.links heading=4-%}
+    </p>
+    <h3>specular_1_offset7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset7.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset7.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset7.links heading=4-%}
+    </p>
+    <h3>specular_1_offset8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset8.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset8.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset8.links heading=4-%}
+    </p>
+    <h3>specular_1_offset9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset9.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset9.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_offset9.links heading=4-%}
+    </p>
     <h3>specular_1_positions</h3>
     <p class="scene-class-type">
       <b>FloatVector</b>
@@ -263,7 +498,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.899999976158
+      default: 0.8999999761581421
       <p class="scene-class-comments">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
@@ -445,6 +680,206 @@ title: HairToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_model.links heading=4-%}
     </p>
+    <h3>specular_2_mult0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult0.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult0.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult0.links heading=4-%}
+    </p>
+    <h3>specular_2_mult1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult1.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult1.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult1.links heading=4-%}
+    </p>
+    <h3>specular_2_mult2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult2.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult2.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult2.links heading=4-%}
+    </p>
+    <h3>specular_2_mult3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult3.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult3.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult3.links heading=4-%}
+    </p>
+    <h3>specular_2_mult4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult4.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult4.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult4.links heading=4-%}
+    </p>
+    <h3>specular_2_mult5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult5.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult5.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult5.links heading=4-%}
+    </p>
+    <h3>specular_2_mult6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult6.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult6.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult6.links heading=4-%}
+    </p>
+    <h3>specular_2_mult7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult7.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult7.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult7.links heading=4-%}
+    </p>
+    <h3>specular_2_mult8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult8.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult8.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult8.links heading=4-%}
+    </p>
+    <h3>specular_2_mult9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult9.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult9.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_mult9.links heading=4-%}
+    </p>
+    <h3>specular_2_offset0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset0.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset0.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset0.links heading=4-%}
+    </p>
+    <h3>specular_2_offset1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset1.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset1.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset1.links heading=4-%}
+    </p>
+    <h3>specular_2_offset2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset2.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset2.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset2.links heading=4-%}
+    </p>
+    <h3>specular_2_offset3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset3.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset3.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset3.links heading=4-%}
+    </p>
+    <h3>specular_2_offset4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset4.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset4.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset4.links heading=4-%}
+    </p>
+    <h3>specular_2_offset5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset5.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset5.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset5.links heading=4-%}
+    </p>
+    <h3>specular_2_offset6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset6.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset6.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset6.links heading=4-%}
+    </p>
+    <h3>specular_2_offset7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset7.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset7.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset7.links heading=4-%}
+    </p>
+    <h3>specular_2_offset8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset8.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset8.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset8.links heading=4-%}
+    </p>
+    <h3>specular_2_offset9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset9.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset9.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_offset9.links heading=4-%}
+    </p>
     <h3>specular_2_positions</h3>
     <p class="scene-class-type">
       <b>FloatVector</b>
@@ -459,7 +894,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.899999976158
+      default: 0.8999999761581421
       <p class="scene-class-comments">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
@@ -641,6 +1076,206 @@ title: HairToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_model.links heading=4-%}
     </p>
+    <h3>specular_3_mult0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult0.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult0.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult0.links heading=4-%}
+    </p>
+    <h3>specular_3_mult1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult1.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult1.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult1.links heading=4-%}
+    </p>
+    <h3>specular_3_mult2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult2.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult2.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult2.links heading=4-%}
+    </p>
+    <h3>specular_3_mult3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult3.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult3.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult3.links heading=4-%}
+    </p>
+    <h3>specular_3_mult4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult4.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult4.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult4.links heading=4-%}
+    </p>
+    <h3>specular_3_mult5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult5.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult5.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult5.links heading=4-%}
+    </p>
+    <h3>specular_3_mult6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult6.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult6.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult6.links heading=4-%}
+    </p>
+    <h3>specular_3_mult7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult7.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult7.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult7.links heading=4-%}
+    </p>
+    <h3>specular_3_mult8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult8.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult8.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult8.links heading=4-%}
+    </p>
+    <h3>specular_3_mult9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Bindable multiplier on the toon specular ramp value</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult9.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult9.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_mult9.links heading=4-%}
+    </p>
+    <h3>specular_3_offset0</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset0.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset0.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset0.links heading=4-%}
+    </p>
+    <h3>specular_3_offset1</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset1.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset1.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset1.links heading=4-%}
+    </p>
+    <h3>specular_3_offset2</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset2.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset2.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset2.links heading=4-%}
+    </p>
+    <h3>specular_3_offset3</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset3.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset3.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset3.links heading=4-%}
+    </p>
+    <h3>specular_3_offset4</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset4.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset4.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset4.links heading=4-%}
+    </p>
+    <h3>specular_3_offset5</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset5.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset5.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset5.links heading=4-%}
+    </p>
+    <h3>specular_3_offset6</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset6.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset6.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset6.links heading=4-%}
+    </p>
+    <h3>specular_3_offset7</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset7.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset7.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset7.links heading=4-%}
+    </p>
+    <h3>specular_3_offset8</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset8.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset8.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset8.links heading=4-%}
+    </p>
+    <h3>specular_3_offset9</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Bindable offset to the toon specular ramp-position, add a small variation using noise etc for art-directable ramp thresholds</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset9.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset9.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_offset9.links heading=4-%}
+    </p>
     <h3>specular_3_positions</h3>
     <p class="scene-class-type">
       <b>FloatVector</b>
@@ -655,7 +1290,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.899999976158
+      default: 0.8999999761581421
       <p class="scene-class-comments">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}

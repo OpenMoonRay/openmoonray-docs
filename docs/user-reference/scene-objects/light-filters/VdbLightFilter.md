@@ -51,7 +51,7 @@ title: VdbLightFilter
     </p>
     <h3>density_grid_name</h3>
     <p class="scene-class-type">
-      <b>String</b> <i>filename</i>
+      <b>String</b>
       <br>
       default: 
       <p class="scene-class-comments">The name of the grid within the .vdb file from which to sample for density(hint: use openvdb_print to see contents of .vdb file). If no grid is specified, it will use 'density' as the defaultIn cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
@@ -191,7 +191,7 @@ title: VdbLightFilter
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.VdbLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.VdbLightFilter.attributes.on.links heading=4-%}

@@ -16,7 +16,177 @@ title: BaseVolume
 
 <div class="scene-class">
 <details open>
-  <summary>Volume attributes</summary>
+  <summary>Attenuation Properties attributes</summary>
+  <p>
+    <h3>attenuation_color</h3>
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      <br>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">A color to tint (multiply to) the attenuation. Technically the product of attenuation color and intensity is the attenuation (extinction) coefficient.(Note the inverse behavior of color with this parameter.)</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.links heading=4-%}
+    </p>
+    <h3>attenuation_colors</h3>
+    <p class="scene-class-type">
+      <b>RgbVector</b>
+      <br>
+      default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_colors.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_colors.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_colors.links heading=4-%}
+    </p>
+    <h3>attenuation_distances</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_distances.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_distances.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_distances.links heading=4-%}
+    </p>
+    <h3>attenuation_factor</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Identical in behavior to attenuation_intensity but provided as a second means  to control attenuation, intended for use during lighting as a per-shot or  per-sequence adjustment.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_factor.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_factor.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_factor.links heading=4-%}
+    </p>
+    <h3>attenuation_intensity</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">The rate at which the light traversing a volume is attenuated. The attenuation (extinction) coefficient is the product of attenuation_color, attenuation_intensity, and attenuation_factor</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.links heading=4-%}
+    </p>
+    <h3>attenuation_interpolations</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_interpolations.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_interpolations.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_interpolations.links heading=4-%}
+    </p>
+    <h3>attenuation_max_depth</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 2.0
+      <p class="scene-class-comments">Represents the maximum ray depth, or the longest visible distance a ray has to travel through the volume. This sets the upper bound for the ramp. </p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_max_depth.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_max_depth.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_max_depth.links heading=4-%}
+    </p>
+    <h3>attenuation_min_depth</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Represents the minimum ray depth, or the shortest visible distance a ray has to travel through the volume. This sets the lower bound for the ramp. </p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_min_depth.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_min_depth.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_min_depth.links heading=4-%}
+    </p>
+    <h3>invert_attenuation_color</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Invert the input attenuation color(s).</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.invert_attenuation_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.invert_attenuation_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.invert_attenuation_color.links heading=4-%}
+    </p>
+    <h3>match_diffuse</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Use the same color(s) for attenuation that is/are being used for diffuse.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.match_diffuse.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.match_diffuse.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.match_diffuse.links heading=4-%}
+    </p>
+    <h3>use_attenuation_ramp</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Use a ramp to define different attenuation colors depending on the depth of the volume.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.use_attenuation_ramp.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.use_attenuation_ramp.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.use_attenuation_ramp.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Density Properties attributes</summary>
+  <p>
+    <h3>densities</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.densities.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.densities.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.densities.links heading=4-%}
+    </p>
+    <h3>density_distances</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_distances.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_distances.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_distances.links heading=4-%}
+    </p>
+    <h3>density_interpolations</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_interpolations.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_interpolations.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_interpolations.links heading=4-%}
+    </p>
+    <h3>density_max_depth</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 2.0
+      <p class="scene-class-comments">Represents the maximum ray depth, or the longest visible distance a ray has to travel through the volume. This sets the upper bound for the ramp. </p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_max_depth.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_max_depth.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_max_depth.links heading=4-%}
+    </p>
+    <h3>density_min_depth</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Represents the minimum ray depth, or the shortest visible distance a ray has to travel through the volume. This sets the lower bound for the ramp. </p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_min_depth.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_min_depth.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.density_min_depth.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Scattering Properties attributes</summary>
   <p>
     <h3>anisotropy</h3>
     <p class="scene-class-type">
@@ -28,46 +198,81 @@ title: BaseVolume
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.anisotropy.links heading=4-%}
     </p>
-    <h3>attenuation_color</h3>
-    <p class="scene-class-type">
-      <b>Rgb</b> <i>bindable</i>
-      <br>
-      default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">A color multiplier for the attenuation.  The resulting color will be the inverse of the color set with this parameter.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_color.links heading=4-%}
-    </p>
-    <h3>attenuation_factor</h3>
-    <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
-      <br>
-      default: 1.0
-      <p class="scene-class-comments">An additional factor to scale the attenuation. This attribute behaves identically to attenuation_intensity - it is provided simply as an extra way to control attenuation, typically during lighting. Surfacing should generally avoid setting this.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_factor.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_factor.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_factor.links heading=4-%}
-    </p>
-    <h3>attenuation_intensity</h3>
-    <p class="scene-class-type">
-      <b>Float</b> <i>bindable</i>
-      <br>
-      default: 1.0
-      <p class="scene-class-comments">The rate at which the intensity of a ray traversing a volume is lost. The attenuation (extinction) coefficient is the product of attenuation_color, attenuation_intensity, and attenuation_factor</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.attenuation_intensity.links heading=4-%}
-    </p>
     <h3>diffuse_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
-      <p class="scene-class-comments">Reflectance color (scattering albedo) of the volume.</p>
+      <p class="scene-class-comments">Reflectance color of the volume. Technically this is called scattering albedo, which is the scattering coefficient divided by the extinction coefficient.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_color.links heading=4-%}
     </p>
+    <h3>diffuse_colors</h3>
+    <p class="scene-class-type">
+      <b>RgbVector</b>
+      <br>
+      default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_colors.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_colors.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_colors.links heading=4-%}
+    </p>
+    <h3>diffuse_distances</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_distances.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_distances.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_distances.links heading=4-%}
+    </p>
+    <h3>diffuse_interpolations</h3>
+    <p class="scene-class-type">
+      <b>IntVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_interpolations.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_interpolations.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_interpolations.links heading=4-%}
+    </p>
+    <h3>diffuse_max_depth</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 2.0
+      <p class="scene-class-comments">Represents the maximum ray depth, or the longest visible distance a ray has to travel through the volume. This sets the upper bound for the ramp. </p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_max_depth.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_max_depth.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_max_depth.links heading=4-%}
+    </p>
+    <h3>diffuse_min_depth</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Represents the minimum ray depth, or the shortest visible distance a ray has to travel through the volume. This sets the lower bound for the ramp. </p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_min_depth.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_min_depth.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.diffuse_min_depth.links heading=4-%}
+    </p>
+    <h3>use_diffuse_ramp</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Use a ramp to define different diffuse colors depending on the depth of the volume.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.use_diffuse_ramp.images data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.use_diffuse_ramp.videos data=site.data.user-reference.scene-objects.volumes.BaseVolume-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.volumes.BaseVolume.attributes.use_diffuse_ramp.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
+  <summary>Volume attributes</summary>
+  <p>
     <h3>emission_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>

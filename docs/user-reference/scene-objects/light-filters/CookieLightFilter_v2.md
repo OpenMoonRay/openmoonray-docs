@@ -171,7 +171,7 @@ title: CookieLightFilter_v2
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Turns the light filter on/off</p>
+      <p class="scene-class-comments">Turns the light filter on/off.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.on.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.on.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.on.links heading=4-%}

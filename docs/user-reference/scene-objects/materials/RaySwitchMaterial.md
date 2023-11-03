@@ -23,7 +23,7 @@ title: RaySwitchMaterial
       <b>Material</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The material to use if the incoming ray is a camera ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.camera_ray_material.images data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.camera_ray_material.videos data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.camera_ray_material.links heading=4-%}
@@ -33,7 +33,7 @@ title: RaySwitchMaterial
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">If true, this material acts as a cutout material, i.e. we terminate any rays that encounter this material.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.cutout_camera_rays.images data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.cutout_camera_rays.videos data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.cutout_camera_rays.links heading=4-%}
@@ -43,7 +43,7 @@ title: RaySwitchMaterial
       <b>Material</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The default material to use if no material was specified for the incoming ray type.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.default_material.images data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.default_material.videos data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.default_material.links heading=4-%}
@@ -63,7 +63,7 @@ title: RaySwitchMaterial
       <b>Material</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The material to use if the incoming ray is an indirect diffuse ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.images data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.videos data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_diffuse_ray_material.links heading=4-%}
@@ -73,7 +73,7 @@ title: RaySwitchMaterial
       <b>Material</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The material to use if the incoming ray is an indirect glossy ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.images data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.videos data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_glossy_ray_material.links heading=4-%}
@@ -83,7 +83,7 @@ title: RaySwitchMaterial
       <b>Material</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The material to use if the incoming ray is an indirect mirror ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.images data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.videos data=site.data.user-reference.scene-objects.materials.RaySwitchMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.RaySwitchMaterial.attributes.indirect_mirror_ray_material.links heading=4-%}

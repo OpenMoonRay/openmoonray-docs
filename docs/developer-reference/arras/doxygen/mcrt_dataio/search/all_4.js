@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_3d',['operator=',['../classmcrt__dataio_1_1ClientReceiverFb.html#a3adaa2b80d2b0337c106e6c70b883ca3',1,'mcrt_dataio::ClientReceiverFb']]]
+  ['impl',['Impl',['../classmcrt__dataio_1_1ClientReceiverFb_1_1Impl.html',1,'mcrt_dataio::ClientReceiverFb']]],
+  ['iscoarsepass',['isCoarsePass',['../classmcrt__dataio_1_1ClientReceiverFb.html#a694b9b7477b1f6306f83619fe2efdd41',1,'mcrt_dataio::ClientReceiverFb']]]
 ];

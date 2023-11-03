@@ -4,24 +4,24 @@ image_path: /assets/images/user-reference/scene-objects/maps/NoiseWorleyMap
 gallery:
 attributes:
   bias:
-    images:
-      - image: worley_bias.gif
+    videos:
+      - video: worley_bias.mp4
   gain:
-    images:
-      - image: worley_gain.gif
+    videos:
+      - video: worley_gain.mp4
   invert:
     images:
       - image: worley_invertA.jpg
       - image: worley_invertB.jpg
   point_size:
   remap:
-    images:
-      - image: worley_remap.gif
-      - image: worley_remap2.gif
+    videos:
+      - video: worley_remap.mp4
+      - video: worley_remap2.mp4
   smoothstep:
-    images:
-      - image: worley_smoothstep1.gif
-      - image: worley_smoothstep2.gif
+    videos:
+      - video: worley_smoothstep1.mp4
+      - video: worley_smoothstep2.mp4
   F1:
     images:
       - image: F1_distance.png
@@ -54,8 +54,8 @@ attributes:
       - image: distance_quadratic.png
       - image: distance_minkowski.png
   minkowski_number:
-    images:
-      - image: worley_minkowski_number.gif
+    videos:
+      - video: worley_minkowski_number.mp4
   output_mode:
     images:
       - image: output_mode_distance.png
@@ -64,26 +64,30 @@ attributes:
         text: Cell ID
       - image: output_mode_gradient.png
         text: Gradient
+      - image: output_mode_cell_edges.png
+        text: Cell Edges
+      - image: output_mode_points.png
+        text: Points
   rotation:
-    images:
-      - image: worley_rotation.gif
+    videos:
+      - video: worley_rotation.mp4
         text: World Space
-      - image: worley_rotation_obj.gif
+      - video: worley_rotation_obj.mp4
         text: Object Space
   translation:
-    images:
-      - image: worley_offset.gif
+    videos:
+      - video: worley_offset.mp4
   color_A:
     images:
       - image: worley_colorAB.jpg
   jitter:
-    images:
-      - image: worley_jitter.gif
+    videos:
+      - video: worley_jitter.mp4
   max_level:
-    images:
-      - image: worley_max_level_distance.gif
-      - image: worley_max_level_cellid.gif
-      - image: worley_max_level_gradient.gif
+    videos:
+      - video: worley_max_level_distance.mp4
+      - video: worley_max_level_cellid.mp4
+      - video: worley_max_level_gradient.mp4
   seed:
-    images:
-      - image: worley_seed.gif
+    videos:
+      - video: worley_seed.mp4
