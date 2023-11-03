@@ -49,6 +49,7 @@ var searchData=
   ['getsnapshotstarttime',['getSnapshotStartTime',['../classmcrt__dataio_1_1ClientReceiverFb.html#aebb0823dd98d534caea4c83e7cf62696',1,'mcrt_dataio::ClientReceiverFb']]],
   ['getstats',['getStats',['../classmcrt__dataio_1_1ClientReceiverFb.html#aefdad0c190ed546f802827a617e79efd',1,'mcrt_dataio::ClientReceiverFb']]],
   ['getstatus',['getStatus',['../classmcrt__dataio_1_1ClientReceiverFb.html#abe8b933007aaa698e96bd4fbd532a1c9',1,'mcrt_dataio::ClientReceiverFb']]],
+  ['gettelemetryoverlayactive',['getTelemetryOverlayActive',['../classmcrt__dataio_1_1ClientReceiverFb.html#a7c869e53c826f550a25277c6ffe078c5',1,'mcrt_dataio::ClientReceiverFb']]],
   ['gettotalrenderoutput',['getTotalRenderOutput',['../classmcrt__dataio_1_1ClientReceiverFb.html#ae3b7d88a350a04d61cf727e97d1b4475',1,'mcrt_dataio::ClientReceiverFb']]],
   ['getviewid',['getViewId',['../classmcrt__dataio_1_1ClientReceiverFb.html#a8b57a58f6b3c67e82c2b877e8ec63fd8',1,'mcrt_dataio::ClientReceiverFb']]],
   ['getweightbuffer',['getWeightBuffer',['../classmcrt__dataio_1_1ClientReceiverFb.html#a5ac497068e2b42dae32265d197bfb487',1,'mcrt_dataio::ClientReceiverFb']]],
