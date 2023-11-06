@@ -269,22 +269,22 @@ SceneVariables {
 
 ### Image quality difference
 Low quality uniform sampling
-![alab201-lo-xpu]({{ "/assets/images/user-reference/alab/out_096loUnifXpu0.jpg" | absolute_url }})
+![alab201-lo-xpu]({{ "/assets/images/user-reference/alab/out_096loUnifXpu0.png" | absolute_url }})
 
 Medium quality uniform sampling
-![alab201-md-xpu]({{ "/assets/images/user-reference/alab/out_096mdUnifXpu0.jpg" | absolute_url }})
+![alab201-md-xpu]({{ "/assets/images/user-reference/alab/out_096mdUnifXpu0.png" | absolute_url }})
 
 High quality uniform sampling
-![alab201-hi-xpu]({{ "/assets/images/user-reference/alab/out_096hiUnifXpu0.jpg" | absolute_url }})
+![alab201-hi-xpu]({{ "/assets/images/user-reference/alab/out_096hiUnifXpu0.png" | absolute_url }})
 
 Low quality adaptive sampling
-![alab201-lo-xpu]({{ "/assets/images/user-reference/alab/out_096loAdptXpu0.jpg" | absolute_url }})
+![alab201-lo-xpu]({{ "/assets/images/user-reference/alab/out_096loAdptXpu0.png" | absolute_url }})
 
 Medium quality adaptive sampling
-![alab201-md-xpu]({{ "/assets/images/user-reference/alab/out_096mdAdptXpu0.jpg" | absolute_url }})
+![alab201-md-xpu]({{ "/assets/images/user-reference/alab/out_096mdAdptXpu0.png" | absolute_url }})
 
 High quality adaptive sampling
-![alab201-hi-xpu]({{ "/assets/images/user-reference/alab/out_096hiAdptXpu0.jpg" | absolute_url }})
+![alab201-hi-xpu]({{ "/assets/images/user-reference/alab/out_096hiAdptXpu0.png" | absolute_url }})
 
 
 ### Render Time Comparison
