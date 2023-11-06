@@ -12,7 +12,7 @@ The page notes ways to optimize rendering for the [ALab Scene](../../../../getti
 {% endfor %}
 
 * [Texture Cache Size Considerations](#texture-cache-size-considerations)
-* [Quality Control](#quality-controle)
+* [Quality Control](#quality-control)
 
 ## Texture Cache Size Considerations
 ---
@@ -75,14 +75,14 @@ This is a breakdown of runtime timing by profile_viewer for the XPU runs.
 As can be seen, the texturing time is dominant when the texture cache size is small.  Also, shader handler time is directly related to the texturing time and it is increasing as the texturing time increases.  Performance is improved when texture sampling cost is lowered by increasing the texture cache size.
 
 
-## Quality Controle
+## Quality Control
 ---
 
 Following sceneVariable sets are a good starting point for low, medium, and high-quality setting examples for uniform / adaptive sampling based on several different DreamWorks Animation productions.
 Technically, the best parameter combination would be different in every scene. So it would be better to modify these settings if you need them.
 
 ```lua
--- low quality uniform samplinga
+-- low quality uniform sampling
 SceneVariables {
     -- pixel sampling settings
     ["sampling_mode"]               = "uniform",
