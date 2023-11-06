@@ -11,6 +11,9 @@ The page notes ways to optimize rendering for the [ALab Scene](../../../../getti
 - [{{ item.text }}]({{ item.path | replace: "index.md", "" | relative_url | replace: ".md", "/"}})
 {% endfor %}
 
+* [Texture Cache Size Considerations](#texture-cache-size-considerations)
+* [Quality Control](#quality-controle)
+
 ## Texture Cache Size Considerations
 ---
 
@@ -70,3 +73,249 @@ This is a breakdown of runtime timing by profile_viewer for the XPU runs.
 ![Renderprofileviewer]({{ "/assets/images/user-reference/alab/renderProfileViewer.png" | absolute_url }})
 
 As can be seen, the texturing time is dominant when the texture cache size is small.  Also, shader handler time is directly related to the texturing time and it is increasing as the texturing time increases.  Performance is improved when texture sampling cost is lowered by increasing the texture cache size.
+
+
+## Quality Controle
+---
+
+Following sceneVariable sets are a good starting point for low, medium, and high-quality setting examples for uniform / adaptive sampling based on several different DreamWorks Animation productions.
+Technically, the best parameter combination would be different in every scene. So it would be better to modify these settings if you need them.
+
+```lua
+-- low quality uniform samplinga
+SceneVariables {
+    -- pixel sampling settings
+    ["sampling_mode"]               = "uniform",
+    ["pixel_samples"]               = 3,
+
+    -- sampling settings
+    ["bsdf_samples"]                = 2,
+    ["light_samples"]               = 2,
+    ["bssrdf_samples"]              = 2,
+
+    -- depth settings
+    ["max_depth"]                   = 10,
+    ["max_diffuse_depth"]           = 6,
+    ["max_glossy_depth"]            = 6,
+    ["max_mirror_depth"]            = 6,
+    ["max_hair_depth"]              = 10,
+    ["max_presence_depth"]          = 16,
+    ["max_subsurface_per_path"]     = 1,
+    ["max_volume_depth"]            = 1,
+
+    -- other
+    ["russian_roulette_threshold"]  = 0.018,
+    ["sample_clamping_depth"]       = 1,
+    ["sample_clamping_value"]       = 10,
+    ["roughness_clamping_factor"]   = 0,
+}
+```
+
+```lua
+-- medium quality uniform sampling
+SceneVariables {
+    -- pixel sampling settings
+    ["sampling_mode"]               = "uniform",
+    ["pixel_samples"]               = 6,
+
+    -- sampling settings
+    ["bsdf_samples"]                = 2,
+    ["light_samples"]               = 2,
+    ["bssrdf_samples"]              = 3,
+
+    -- depth settings
+    ["max_depth"]                   = 10,
+    ["max_diffuse_depth"]           = 6,
+    ["max_glossy_depth"]            = 6,
+    ["max_mirror_depth"]            = 6,
+    ["max_hair_depth"]              = 10,
+    ["max_presence_depth"]          = 16,
+    ["max_subsurface_per_path"]     = 1,
+    ["max_volume_depth"]            = 1,
+
+    -- other
+    ["russian_roulette_threshold"]  = 0.018,
+    ["sample_clamping_depth"]       = 1,
+    ["sample_clamping_value"]       = 10,
+    ["roughness_clamping_factor"]   = 0,
+}
+```
+
+```lua
+-- high quality uniform sampling
+SceneVariables {
+    -- pixel sampling settings
+    ["sampling_mode"]               = "uniform",
+    ["pixel_samples"]               = 10,
+
+    -- sampling settings
+    ["bsdf_samples"]                = 2,
+    ["light_samples"]               = 2,
+    ["bssrdf_samples"]              = 3,
+
+    -- depth settings
+    ["max_depth"]                   = 10,
+    ["max_diffuse_depth"]           = 6,
+    ["max_glossy_depth"]            = 6,
+    ["max_mirror_depth"]            = 6,
+    ["max_hair_depth"]              = 10,
+    ["max_presence_depth"]          = 16,
+    ["max_subsurface_per_path"]     = 1,
+    ["max_volume_depth"]            = 1,
+
+    -- other
+    ["russian_roulette_threshold"]  = 0.018,
+    ["sample_clamping_depth"]       = 1,
+    ["sample_clamping_value"]       = 10,
+    ["roughness_clamping_factor"]   = 0,
+}
+```
+
+```lua
+-- low quality adaptive sampling
+SceneVariables {
+    -- pixel sampling settings
+    ["sampling_mode"]               = "adaptive",
+    ["min_adaptive_samples"]        = 4,   -- 2x2
+    ["max_adaptive_samples"]        = 16,  -- 4x4
+    ["target_adaptive_error"]       = 10,
+
+    -- sampling settings
+    ["bsdf_samples"]                = 2,
+    ["light_samples"]               = 2,
+    ["bssrdf_samples"]              = 2,
+
+    -- depth settings
+    ["max_depth"]                   = 10,
+    ["max_diffuse_depth"]           = 6,
+    ["max_glossy_depth"]            = 6,
+    ["max_mirror_depth"]            = 6,
+    ["max_hair_depth"]              = 10,
+    ["max_presence_depth"]          = 16,
+    ["max_subsurface_per_path"]     = 1,
+    ["max_volume_depth"]            = 1,
+
+    -- other
+    ["russian_roulette_threshold"]  = 0.018,
+    ["sample_clamping_depth"]       = 1,
+    ["sample_clamping_value"]       = 10,
+    ["roughness_clamping_factor"]   = 0,
+}
+```
+
+```lua
+-- medium quality adaptive sampling
+SceneVariables {
+    -- pixel sampling settings
+    ["sampling_mode"]               = "adaptive",
+    ["min_adaptive_samples"]        = 16,  -- 4x4
+    ["max_adaptive_samples"]        = 64,  -- 8x8
+    ["target_adaptive_error"]       = 7.5,
+
+    -- sampling settings
+    ["bsdf_samples"]                = 2,
+    ["light_samples"]               = 2,
+    ["bssrdf_samples"]              = 3,
+
+    -- depth settings
+    ["max_depth"]                   = 10,
+    ["max_diffuse_depth"]           = 6,
+    ["max_glossy_depth"]            = 6,
+    ["max_mirror_depth"]            = 6,
+    ["max_hair_depth"]              = 10,
+    ["max_presence_depth"]          = 16,
+    ["max_subsurface_per_path"]     = 1,
+    ["max_volume_depth"]            = 1,
+
+    -- other
+    ["russian_roulette_threshold"]  = 0.018,
+    ["sample_clamping_depth"]       = 1,
+    ["sample_clamping_value"]       = 10,
+    ["roughness_clamping_factor"]   = 0,
+}
+```
+
+```lua
+-- high quality adaptive sampling
+SceneVariables {
+    -- pixel sampling settings
+    ["sampling_mode"]               = "adaptive",
+    ["min_adaptive_samples"]        = 100, -- 10x10
+    ["max_adaptive_samples"]        = 256, -- 16x16
+    ["target_adaptive_error"]       = 3,
+
+    -- sampling settings
+    ["bsdf_samples"]                = 2,
+    ["light_samples"]               = 2,
+    ["bssrdf_samples"]              = 3,
+
+    -- depth settings
+    ["max_depth"]                   = 10,
+    ["max_diffuse_depth"]           = 6,
+    ["max_glossy_depth"]            = 6,
+    ["max_mirror_depth"]            = 6,
+    ["max_hair_depth"]              = 10,
+    ["max_presence_depth"]          = 16,
+    ["max_subsurface_per_path"]     = 1,
+    ["max_volume_depth"]            = 1,
+
+    -- other
+    ["russian_roulette_threshold"]  = 0.018,
+    ["sample_clamping_depth"]       = 1,
+    ["sample_clamping_value"]       = 10,
+    ["roughness_clamping_factor"]   = 0,
+}
+```
+
+### Image quality difference
+Low quality uniform sampling
+![alab201-lo-xpu]({{ "/assets/images/user-reference/alab/out_096loUnifXpu0.jpg" | absolute_url }})
+
+Medium quality uniform sampling
+![alab201-md-xpu]({{ "/assets/images/user-reference/alab/out_096mdUnifXpu0.jpg" | absolute_url }})
+
+High quality uniform sampling
+![alab201-hi-xpu]({{ "/assets/images/user-reference/alab/out_096hiUnifXpu0.jpg" | absolute_url }})
+
+Low quality adaptive sampling
+![alab201-lo-xpu]({{ "/assets/images/user-reference/alab/out_096loAdptXpu0.jpg" | absolute_url }})
+
+Medium quality adaptive sampling
+![alab201-md-xpu]({{ "/assets/images/user-reference/alab/out_096mdAdptXpu0.jpg" | absolute_url }})
+
+High quality adaptive sampling
+![alab201-hi-xpu]({{ "/assets/images/user-reference/alab/out_096hiAdptXpu0.jpg" | absolute_url }})
+
+
+### Render Time Comparison
+The following tests show what is the difference in terms of quality and render time for each quality setting.
+
+The test were run on the following machine specs:
+```
+CPU : Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
+Physical CPU : 2
+CPU cores : 24
+Total cores : 48 (HyperThread OFF)
+Memory : 187 GByte (However, test redner was done around 124GByte of free memory)
+GPU : Nvidia Quadro RTX 6000
+```
+
+Texture cache size is 96GByte.
+Ran 4 times and ignored 1st run (cache warm-up) then averaged from 2nd to 4th.
+
+Uniform sampling : MCRT phase (sec)
+
+| quality | scalar | vector |  xpu  |
+|:-------:|:------:|:------:|:-----:|
+|low      | 604.35 |  486.47| 435.95|
+|medium   | 1973.41| 1515.78|1285.10|
+|high     | 5174.14| 3940.35|3268.74|
+
+Adaptive sampling : MCRT phase (sec)
+
+| quality | scalar | vector |  xpu  |
+|:-------:|:------:|:------:|:-----:|
+|low      | 1021.93|  845.62| 760.17|
+|medium   | 3438.34| 2867.37|2442.24|
+|high     |13132.25|10912.51|9286.71|
+
