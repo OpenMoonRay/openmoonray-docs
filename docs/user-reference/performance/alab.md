@@ -78,8 +78,8 @@ As can be seen, the texturing time is dominant when the texture cache size is sm
 ## Quality Control
 ---
 
-Following sceneVariable sets are a good starting point for low, medium, and high-quality setting examples for uniform / adaptive sampling based on several different DreamWorks Animation productions.
-Technically, the best parameter combination would be different in every scene. So it would be better to modify these settings if you need them.
+The following sceneVariable settings are a good starting point for low, medium, and high-quality renders for uniform / adaptive sampling based on several recent DreamWorks Animation productions.
+Technically, the ideal parameter combination will likely be different from scene to scene, but these settings should represent reasonable defaults.
 
 ```lua
 -- low quality uniform sampling
@@ -296,7 +296,7 @@ CPU : Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
 Physical CPU : 2
 CPU cores : 24
 Total cores : 48 (HyperThread OFF)
-Memory : 187 GByte (However, test redner was done around 124GByte of free memory)
+Memory : 187 GByte (However, test render was done with around 124GByte of free memory)
 GPU : Nvidia Quadro RTX 6000
 ```
 
