@@ -29,7 +29,7 @@ The versions shown are the ones we have tested : other versions may also work.
 |OpenColorIO     | 2.0.2      | https://github.com/AcademySoftwareFoundation/OpenColorIO
 |OpenExr         | 2.5.7      | https://github.com/AcademySoftwareFoundation/openexr
 |Random123       | 1.08.3     | https://github.com/DEShawResearch/random123
-|Embree          | 4.2.0      | https://github.com/embree/embree
+|Embree          | 4.1.0      | https://github.com/embree/embree
 |Intel MKL       | 2020.3.279 |
 |Microhttpd      | 0.9.37     | https://ftp.gnu.org/gnu/libmicrohttpd/
 |Curl            | 7.49       | https://github.com/curl/curl
