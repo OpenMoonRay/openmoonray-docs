@@ -8,7 +8,7 @@ RDL2 is the data format that MoonRay uses internally to store the scene it is re
 
 The *scene_rdl2* library contains the implementation of RDL2 : it is in the *scene_rdl2* git repo under *lib/scene/rdl2*. The scene_rdl2 API is used to write translators to RDL2 format, Arras/MoonRay clients, and implementations of scene object classes. This document covers the main concepts, classes and functions in the API : more detail can be found in the header files themselves.
 
-The class used to represent a scene is `scene_rdl2::rdl2::SceneContext`. For the remainder of this document, I will omit the namespace prefix "scene_rdl2::scene::"
+The class used to represent a scene is `scene_rdl2::rdl2::SceneContext`. For the remainder of this document, I will omit the namespace prefix "scene_rdl2::rdl2::"
 
 MoonRay itself stores a `SceneContext` as part of the `RenderContext` class. You can also use *scene_rdl2* on its own to create, examine and modify RDLA and RDLB files. Since RDLA is a text format, it can also be edited directly, but *scene_rdl2* is the only way to work with RDLB.  
 
