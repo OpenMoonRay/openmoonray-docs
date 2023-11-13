@@ -7,7 +7,9 @@ If you're interested in running benchmarking or regression tests take considerat
 
 - Public assets can be very useful, but often need to be modified before using them for benchmarking results, to accomodate the various differences between renderers.  First attempt to make the asset look as correct as possible, and then try optimizing the asset for efficiency, followed finally by optimizing your renderer for performance.
 
-- You'll want to run MoonRay either in "auto" or "vector" mode, to take advantage of all the CPU lanes for free.  MoonRay defaults to "auto" mode, which first attempts to run vector mode, and then falls back to scalar mode if there's an unsupported feature for vector mode in the scene.
+- You'll want to run MoonRay either in "auto" or "xpu" mode, to take advantage of a GPU and all the CPU lanes.  MoonRay defaults to "auto" mode, which first attempts to run xpu mode, and then falls back to vector mode if there's an unsupported feature for xpu mode in the scene.  Auto mode may also fall back to vector mode if the GPU cannot be initialized or if the GPU has insufficient memory for the scene.  Auto mode will always fall back to scalar mode if there's an unsupported feature for vector mode in the scene (as xpu mode is a superset of vector mode.)
+
+- Specifying an explicit "scalar", "vector", or "xpu" mode will force those modes and skip the fall-back behavior.  MoonRay will attempt to render the scene, but for vector and xpu modes there may be unsupported features.
 
 - The cache for loading scene and texture data should be warmed-up before benchmarking, so that tests are fair to the MCRT phase of rendering.  For example, when we run regression tests, we'll render a given scene four times in a row on the same machine, and use the fastest run as our benchmark, to ensure we have a hot cache.
 
