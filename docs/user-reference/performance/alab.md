@@ -54,7 +54,7 @@ The tests were run on the following machine specs:
 CPU : Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
 Physical CPU : 2
 CPU cores : 24
-Total cores : 48 (HyperThread ON)
+Total cores : 48 (HyperThread OFF)
 Memory : 187 GByte (However, test redner was done around 124GByte of free memory)
 GPU : Nvidia Quadro RTX 6000
 ```
