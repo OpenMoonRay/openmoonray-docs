@@ -334,7 +334,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.10000000149011612
+      default: 0.1
       <p class="scene-class-comments">Minimum distance between deep layers</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -846,7 +846,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.009999999776482582
+      default: 0.01
       <p class="scene-class-comments">(in meters): one unit in world space = 'scene scale' meters</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.scene_scale.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.scene_scale.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1041,7 +1041,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.9990000128746033
+      default: 0.999
       <p class="scene-class-comments">The presence threshold defines the point at which the accumulated presence can be considered opaque, skipping the generation of presence continuation rays.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1051,7 +1051,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.03750000149011612
+      default: 0.0375
       <p class="scene-class-comments">The Russian roulette threshold specifies the point at which point Russian roulette is evaluated for direct light sampling and BSDF continuation. The unit is luminance of the radiance.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.russian_roulette_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1086,7 +1086,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.6499999761581421
+      default: 0.65
       <p class="scene-class-comments">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_attenuation_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1096,7 +1096,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.6499999761581421
+      default: 0.65
       <p class="scene-class-comments">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_contribution_factor.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
@@ -1116,7 +1116,7 @@ title: SceneVariables
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.9950000047683716
+      default: 0.995
       <p class="scene-class-comments">As a ray travels through volumes, it will accumulate opacity. When the value exceeds the volume opacity threshold, the renderer will stop further volume integration along this ray.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_opacity_threshold.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}

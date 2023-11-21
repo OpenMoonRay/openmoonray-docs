@@ -177,7 +177,7 @@ title: DistantLight
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.5299999713897705
+      default: 0.53
       <p class="scene-class-comments">The angle in degrees subtended by the DistantLight's diameter.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.DistantLight.attributes.angular_extent.images data=site.data.user-reference.scene-objects.lights.DistantLight-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.DistantLight.attributes.angular_extent.videos data=site.data.user-reference.scene-objects.lights.DistantLight-%}

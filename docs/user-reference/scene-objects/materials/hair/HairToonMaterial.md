@@ -498,7 +498,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.8999999761581421
+      default: 0.9
       <p class="scene-class-comments">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
@@ -894,7 +894,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.8999999761581421
+      default: 0.9
       <p class="scene-class-comments">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
@@ -1290,7 +1290,7 @@ title: HairToonMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.8999999761581421
+      default: 0.9
       <p class="scene-class-comments">The roughness of the toon specular.   Smaller values produce tighter highlights</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_roughness.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}

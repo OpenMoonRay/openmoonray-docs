@@ -118,7 +118,10 @@ class Attr(object):
     @property
     def name(self): return self.rdlAttr.getName()
     @property
-    def default_value(self): return self.defaultValue
+    def default_value(self): 
+        if self.rdlAttr.getTypeName() == "Int" or self.rdlAttr.getTypeName() == "Float":
+            return round(self.defaultValue, 4)
+        return self.defaultValue
     @property
     def type(self): 
         t = self.rdlAttr.getTypeName()

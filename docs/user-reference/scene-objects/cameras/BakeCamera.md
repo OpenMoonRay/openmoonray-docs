@@ -122,7 +122,7 @@ title: BakeCamera
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.003000000026077032
+      default: 0.003
       <p class="scene-class-comments">Ray-tracing offset for primary ray origin</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.bias.images data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.BakeCamera.attributes.bias.videos data=site.data.user-reference.scene-objects.cameras.BakeCamera-%}

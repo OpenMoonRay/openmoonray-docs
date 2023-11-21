@@ -108,7 +108,7 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.20000000298023224
+      default: 0.2
       <p class="scene-class-comments">Amount of diffuse to mix in fabric. A value of 1 means fully diffuse fabric.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.fabric_diffuse_scattering.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.fabric_diffuse_scattering.videos data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
@@ -454,7 +454,7 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.14000000059604645
+      default: 0.14
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_roughness_A.videos data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
@@ -464,7 +464,7 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.14000000059604645
+      default: 0.14
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_roughness_B.videos data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
@@ -555,7 +555,7 @@ title: DwaFabricMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.15000000596046448
+      default: 0.15
       <p class="scene-class-comments">randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaFabricMaterial.attributes.glitter_texture_orientation_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaFabricMaterial-%}
