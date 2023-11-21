@@ -8,8 +8,8 @@ const attributeEls = document.querySelectorAll('.scene-class h3');
 const focusLightbox = () => {
   setTimeout(() => {
     const firstSlideEl = lightboxEl.shadowRoot.querySelector('[part="slide"]');
-    const slideContainerEl = firstSlideEl.parentElement;
-    slideContainerEl.focus();
+    const slideContainerEl = firstSlideEl?.parentElement;
+    slideContainerEl?.focus();
   }, 500);
 };
 
