@@ -1,0 +1,41 @@
+---
+overview: overviews/HairToonMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/hair
+
+gallery:
+  - image: spike.jpg
+    text: An abrupt map for a sharp specular
+  - image: complex.jpg
+    text: Layered with a secondary red falloff
+
+attributes:
+  back_hair_color:
+    images:
+      - image: base.jpg
+        text: Same as front
+      - image: backR.jpg
+        text: Red
+      - image: backG.jpg
+        text: Green
+      - image: backB.jpg
+        text: Blue
+  front_hair_color:
+    images:
+      - image: base.jpg
+        text: Same as back
+      - image: frontR.jpg
+        text: Red
+      - image: frontG.jpg
+        text: Green
+      - image: frontB.jpg
+        text: Blue
+  scattering_color:
+    images:
+      - image: base.jpg
+        text: Black (none)
+      - image: sss1.jpg
+        text: White
+      - image: sss_red.jpg
+        text: Red
+      
+  
