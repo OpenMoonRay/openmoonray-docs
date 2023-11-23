@@ -1,0 +1,23 @@
+---
+overview: overviews/DwaVelvetMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/dwa/DwaVelvetMaterial_v2
+
+attributes:
+  fuzz_coverage:
+    images:
+      - image: fuzz_coverage000.jpg
+        text: "0.00"
+      - image: base.jpg
+        text: "0.25"
+      - image: fuzz_coverage050.jpg
+        text: "0.50"
+      - image: fuzz_coverage075.jpg
+        text: "0.75"
+      - image: fuzz_coverage100.jpg
+        text: "1.00"
+  use_absorbing_fuzz_fibers:
+    images:
+      - image: use_absorbing_false.jpg
+        text: "False"
+      - image: use_absorbing_true.jpg
+        text: "True"
