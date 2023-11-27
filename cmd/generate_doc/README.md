@@ -9,7 +9,7 @@ rez-env moonshine_usd jinja2
 If your doc changes require your locally built scene_rdl2, make sure to include your local version in the rez-env
 command (and note that for some SceneClasses, moonray inherits from scene_rdl2, so you may also need to build moonray).
 Also note that currently scene_rdl2 suffers from an incompatibility with the latest jsoncpp build, so you will need
-to locally make the following change in scene_rdl2's python.py:\
+to locally make the following change in scene_rdl2's package.py:\
 `jsoncpp-1.9.5.x` -> `jsoncpp-0.6.0`
 
 Usage is as follows. In each case, <docs_path> should be the path to your openmoonray-docs/docs folder (probably `../../docs/`)
