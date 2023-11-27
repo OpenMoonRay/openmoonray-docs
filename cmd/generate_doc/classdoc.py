@@ -120,7 +120,7 @@ class Attr(object):
     @property
     def default_value(self): 
         if self.rdlAttr.getTypeName() == "Int" or self.rdlAttr.getTypeName() == "Float":
-            return round(self.defaultValue, 4)
+            return round(self.defaultValue, 6)
         return self.defaultValue
     @property
     def type(self): 

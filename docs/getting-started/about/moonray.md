@@ -20,6 +20,10 @@ MoonRay uses best-in-class open source libraries.
 * We use [OpenImageIO](http://openimageio.org/) to generically handle different image file formats
 * [OpenSubdiv](https://graphics.pixar.com/opensubdiv/docs/intro.html) is an open source geometry library
 * [OpenVDB](https://www.openvdb.org/) is a volumetric representational format that we open sourced at DreamWorks
+* [OpenColorIO](https://opencolorio.org/) is our color management library
+* We use [OpenImageDenoise](https://www.openimagedenoise.org/) as one of our denoising tools
+* [OpenEXR](https://openexr.com/en/latest/) is our deep image format
+* We use [USD](https://www.pixar.com/usd) as a scene description format (alongside our own rdl)
 
 ## Goals
 
