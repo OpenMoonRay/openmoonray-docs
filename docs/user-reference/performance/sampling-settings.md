@@ -55,5 +55,5 @@ Solution:
 - turn off caustics
 - lower adaptive sampling error_threshold
 - use path guiding
-- use clamping
+- use sample clamping
 
