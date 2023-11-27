@@ -19,13 +19,16 @@ coverage will always be the first entry.
 
 There are several options to output additional information. 
 
-### Positions, Normals, Beauty
+### Positions, Normals, Beauty, RefP, RefN, UV
 
 The RenderOutput object contains the additional toggles:
 
 - *cryptomatte_output_positions*
 - *cryptomatte_output_normals*
 - *cryptomatte_output_beauty*
+- *cryptomatte_output_refp*
+- *cryptomatte_output_refn*
+- *cryptomatte_output_uv*
 
 When turned on, each id/weight pair will also have the associated position/normal/beauty value output to a separate layer. 
 If there are multiple pixel samples, the values from all the samples will be _averaged_ together. The output layers are 
@@ -34,6 +37,24 @@ as follows:
 - **CryptoP**: world position `(x, y, z)` is stored in `(r, g, b)`, respectively
 - **CryptoN**: shading normal `(x, y, z)` is stored in `(r, g, b)`, respectively
 - **CryptoB**: beauty `(r, g, b, presence)` is stored in `(r, g, b, a)`
+- **CryptoRefP**: reference position `(x, y, z)` is stored in `(r, g, b)`, respectively
+- **CryptoRefN**: reference normal `(x, y, z)` is stored in `(r, g, b)`, respectively
+- **CryptoUV**: uv `(u, v)` is stored in `(r, g)`, respectively
+
+### Refractive Cryptomattes
+
+In the RenderOutput, you can enable refractive crypotomattes with the toggle *cryptomatte_enable_refract*.
+
+The refracted cryptomatte data contains the first surface intersection that isn't considered "refracted".  This skips any
+surfaces traversed by the primary ray that the camera can see through, allowing for cryptomatte data for surfaces
+that are e.g. behind glass.
+
+You must tag "refractive" surfaces (materials) by setting the *invisible refractive cryptomatte*
+attribute to *true* on the surface's material.
+
+The refracted cryptomatte output is written to a separate set of render output channels
+that are named the same as the regular cryptomatte channels except with "Refract" appended.
+E.g. if there is a **CryptoP** channel, there will also be a **CryptoPRefract** channel.
 
 ### Multiple Presence Bounces
 
