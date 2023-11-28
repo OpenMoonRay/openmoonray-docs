@@ -119,7 +119,8 @@ class Attr(object):
     @property
     def name(self): return self.rdlAttr.getName()
     @property
-    def default_value(self): 
+    def default_value(self):
+        # round floats to 6 significant digits
         if self.rdlAttr.getTypeName() == "Float":
             if (self.defaultValue == 0):
                 return self.defaultValue
