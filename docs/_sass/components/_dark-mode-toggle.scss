@@ -5,6 +5,17 @@ dark-mode-toggle {
   --dark-mode-toggle-dark-icon: #{$dark-icon-url};
   contain: unset;
   user-select: none;
+
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 5;
+  pointer-events: initial;
+
+  @media screen and (min-width: 64.0625em) {
+    top: 3.25rem;
+    right: 10rem;
+  }
 }
 
 dark-mode-toggle::part(fieldset) {
@@ -29,7 +40,7 @@ dark-mode-toggle::part(legend) {
   display: none;
 
   @media screen and (min-width: 64.0625em) {
-    display:inline;
+    display: inline;
   }
 }
 
@@ -57,18 +68,18 @@ dark-mode-toggle::part(toggleLabel)::before {
   background-color: #fff;
   color: #333;
   transition: 0.4s;
-  content: "";
+  content: '';
   background-position: center;
   background-size: var(--dark-mode-toggle-icon-icon-size, 1rem);
   background-image: var(--dark-mode-toggle-light-icon);
   box-sizing: border-box;
 }
 
-dark-mode-toggle[mode="dark"]::part(toggleLabel) {
+dark-mode-toggle[mode='dark']::part(toggleLabel) {
   background-color: #4e5255;
 }
 
-dark-mode-toggle[mode="dark"]::part(toggleLabel)::before {
+dark-mode-toggle[mode='dark']::part(toggleLabel)::before {
   left: calc(100% - var(--dark-mode-toggle-icon-size, 1rem) * 1.75);
   border-color: #000;
   background-color: #ccc;
@@ -90,7 +101,7 @@ dark-mode-toggle::part(toggleLabel)::after {
   width: calc(var(--dark-mode-toggle-icon-size, 1rem) * 1.5);
   border-radius: 100%;
   color: #333;
-  content: "";
+  content: '';
   background-position: center;
   background-size: var(--dark-mode-toggle-icon-size, 1rem);
   background-image: var(--dark-mode-toggle-dark-icon);
@@ -99,7 +110,7 @@ dark-mode-toggle::part(toggleLabel)::after {
   opacity: 0.5;
 }
 
-dark-mode-toggle[mode="dark"]::part(toggleLabel)::after {
+dark-mode-toggle[mode='dark']::part(toggleLabel)::after {
   left: calc(var(--dark-mode-toggle-icon-size, 1rem) * 0.25);
   background-image: var(--dark-mode-toggle-light-icon);
   filter: var(--dark-mode-toggle-icon-filter, invert(100%));

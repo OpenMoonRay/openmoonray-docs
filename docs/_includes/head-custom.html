@@ -10,11 +10,11 @@
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css"
 />
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/dark.css"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/dark.css"
 />
 <link
   rel="stylesheet"
@@ -46,56 +46,32 @@ site.github.build_revision | relative_url }}">
   href="{{ '/assets/images/android-chrome-192x192.png' | relative_url }}"
 />
 
-<style>
-  body {
-    opacity: 0;
-  }
-
-  body.ready,
-  html:not(.js) body {
-    opacity: 1;
-  }
-</style>
-
-<script type="module">
-  await Promise.allSettled([
-    customElements.whenDefined('sl-split-panel'),
-    customElements.whenDefined('sl-tree'),
-    customElements.whenDefined('sl-tree-item'),
-    customElements.whenDefined('dark-mode-toggle'),
-  ]);
-
-  // Button, card, and rating are registered now! Add
-  // the `ready` class so the UI fades in.
-  document.body.classList.add('ready');
-</script>
-
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 <script type="module" async src="https://cdn.ampproject.org/bento.mjs"></script>
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/split-panel/split-panel.js"
+  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/split-panel/split-panel.js"
 ></script>
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/tree/tree.js"
+  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/tree/tree.js"
 ></script>
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/tree-item/tree-item.js"
+  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/tree-item/tree-item.js"
 ></script>
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/icon/icon.js"
+  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/icon/icon.js"
 ></script>
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.87/dist/components/image-comparer/image-comparer.js"
+  src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/image-comparer/image-comparer.js"
 ></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/components/card/card.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/card/card.js"></script>
 
 <script type="module">
-  import { registerIconLibrary } from 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/utilities/icon-library.js';
+  import { registerIconLibrary } from 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/utilities/icon-library.js';
 
   registerIconLibrary('material', {
     resolver: (name) => {

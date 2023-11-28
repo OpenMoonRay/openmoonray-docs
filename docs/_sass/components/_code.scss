@@ -1,3 +1,7 @@
+[class*="language-"] {
+  max-width: 90ch;
+}
+
 .highlight pre {
   background-color: #404040;
   color: #bbbbbb;
@@ -14,7 +18,7 @@
 
 .highlight pre {
   padding: var(--size-4);
-  overflow-x: auto;
+  overflow: auto;
   margin-block-start: var(--size-3);
   margin-block-end: var(--size-5);
 }
