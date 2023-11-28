@@ -6,43 +6,33 @@ title: Dependencies
 
 These are the third-party libraries and tools that MoonRay and Arras depend on, at the time of writing. The files in the **openmoonray** repository */building* directory are generally a better reference, since that will be up-to-date for that particular version of the source, and also list build options.
 
-The versions shown are the ones we have tested : other versions may also work.
+| Name            | Notes                                                                                              |
+|-----------------|-----------------------------------------------------|----------------------------------------------|
+|[Blosc](https://github.com/Blosc/c-blosc)                              |                                              |
+|[Boost](https://sourceforge.net/projects/boost)                        |                                              |
+|[CMake](https://github.com/Kitware/CMake)                              |                                              |
+|[cppunit](http://dev-www.libreoffice.org/src/)                         |                                              |
+|[CUDA](https://developer.nvidia.com/cuda-downloads)                    |                                              |
+|[Curl](https://github.com/curl/curl)                                   | only needed when building or using Arras     |
+|[Embree](https://github.com/embree/embree)                             |                                              |
+|[Gcc](https://gcc.gnu.org/git/)                                        |                                              |
+|[Intel MKL]()                                                          |                                              |
+|[ISPC](https://github.com/ispc/ispc)                                   |                                              |
+|[JsonCpp](https://github.com/open-source-parsers/jsoncpp.git)          |                                              |
+|[log4cplus](https://github.com/log4cplus/log4cplus)                    |                                              |
+|[Lua](https://www.lua.org/ftp)                                         | must be built with the -fPIC option : e.g. *make linux MYCFLAGS=-fPIC*                                             |
+|[Microhttpd](https://ftp.gnu.org/gnu/libmicrohttpd/)                   | only needed when building or using Arras     |
+|[OpenColorIO](https://github.com/AcademySoftwareFoundation/OpenColorIO)|                                              |
+|[OpenExr](https://github.com/AcademySoftwareFoundation/openexr)        |                                              |
+|[OpenImageDenoise](https://github.com/OpenImageDenoise/oidn)           |                                              |
+|[OpenImageIO](https://github.com/OpenImageIO/oiio)                     |                                              |
+|[OpenSubdiv](https://github.com/PixarAnimationStudios/OpenSubdiv)      |                                              |
+|[OpenVdb](https://github.com/AcademySoftwareFoundation/openvdb)        |                                              |
+|[Optix](https://developer.nvidia.com/designworks/optix/download)       |                                              |
+|[Python](https://www.python.org)                                       | Any version greater than or equal to 2.7 should work, but boost and USD need to be built for that version.                                             |
+|Qt                                                                     | only needed by moonray_gui and arras_render                                             |
+|[Random123](https://github.com/DEShawResearch/random123)               |                                              |
+|[TBB](https://github.com/oneapi-src/oneTBB)                            |                                              |
+|[USD](https://github.com/PixarAnimationStudios/USD)                    | only needed for the MoonRay Hydra plugins and USD geometry objects                                             |
 
-
-| Name           | Versions    |  |
-|----------------|------------|-----------------|
-|Gcc             | 6.3, 9.3, 11.3 | https://gcc.gnu.org/git/
-|CMake           | 3.23.1     | https://github.com/Kitware/CMake
-|Boost           | 1.73, 1.75, 1.76 | https://sourceforge.net/projects/boost
-|Lua             | 5.3.5, 5.5.4 | https://www.lua.org/ftp
-|Python          | 2.7+       | https://www.python.org
-|cppunit         | 1.15.1     | http://dev-www.libreoffice.org/src/
-|log4cplus       | 1.1.2, 2.0.5 | https://github.com/log4cplus/log4cplus
-|JsonCpp         | 0.7, 1.9.5        | https://github.com/open-source-parsers/jsoncpp.git
-|TBB             | 2020.2.0, 2020.3 | https://github.com/oneapi-src/oneTBB
-|ISPC            | 1.14.1, 1.20.0     | https://github.com/ispc/ispc
-|CUDA            | 11.1, 11.4, 12.1      | https://developer.nvidia.com/cuda-downloads
-|Optix           | 7.3.0      | https://developer.nvidia.com/designworks/optix/download
-|OpenSubdiv      | 3.4.3, 3.5.0      | https://github.com/PixarAnimationStudios/OpenSubdiv
-|OpenVdb         | 8.2.0.4, 9.1.0 | https://github.com/AcademySoftwareFoundation/openvdb
-|OpenImageIO     | 2.2.15.1, 2.3.20   | https://github.com/OpenImageIO/oiio
-|OpenColorIO     | 2.0.2      | https://github.com/AcademySoftwareFoundation/OpenColorIO
-|OpenExr         | 2.5.7      | https://github.com/AcademySoftwareFoundation/openexr
-|Random123       | 1.08.3     | https://github.com/DEShawResearch/random123
-|Embree          | 4.1.0      | https://github.com/embree/embree
-|Intel MKL       | 2020.3.279 |
-|Microhttpd      | 0.9.37     | https://ftp.gnu.org/gnu/libmicrohttpd/
-|Curl            | 7.49       | https://github.com/curl/curl
-|USD             | 22.5       | https://github.com/PixarAnimationStudios/USD
-|Qt              | 5.12       |
-
-**Lua** must be built with the -fPIC option : e.g. *make linux MYCFLAGS=-fPIC*
-
-**Microhttpd** and **Curl** are only needed when building or using Arras. Arras also needs **OpenSSL**.
-
-Any version of **Python** greater than or equal to 2.7 should work, but boost and USD need to be built for that version.
-
-**USD** is only needed for the MoonRay Hydra plugins and USD geometry objects
-
-**Qt** is only needed by moonray_gui and arras_render.
-
+Arras also needs **OpenSSL**.
