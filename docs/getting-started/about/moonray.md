@@ -16,14 +16,14 @@ MoonRay was developed from scratch, leveraging state of the art open source comp
 - The procedural API for the development of geometry generators.
 
 MoonRay uses best-in-class open source libraries.  
-* [Embree](https://www.embree.org/) is our ray-intersection engine
-* We use [OpenImageIO](http://openimageio.org/) to generically handle different image file formats
+* [Embree](https://www.embree.org/) acts as MoonRay's ray-intersection engine
+* [OpenImageIO](http://openimageio.org/) generically handles different image file formats
 * [OpenSubdiv](https://graphics.pixar.com/opensubdiv/docs/intro.html) is an open source geometry library
 * [OpenVDB](https://www.openvdb.org/) is a volumetric representational format that we open sourced at DreamWorks
-* [OpenColorIO](https://opencolorio.org/) is our color management library
-* We use [OpenImageDenoise](https://www.openimagedenoise.org/) as one of our denoising tools
-* [OpenEXR](https://openexr.com/en/latest/) is our deep image format
-* We use [USD](https://www.pixar.com/usd) as a scene description format (alongside our own rdl)
+* [OpenColorIO](https://opencolorio.org/) acts as MoonRay's color management library
+* [OpenImageDenoise](https://www.openimagedenoise.org/) acts as one of MoonRay's denoising tools
+* [OpenEXR](https://openexr.com/en/latest/) is a deep image format
+* [USD](https://www.pixar.com/usd) is a scene description format we use (alongside our own rdl)
 
 ## Goals
 

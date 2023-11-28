@@ -4,6 +4,7 @@ from collections import OrderedDict
 import re
 import scene_rdl2
 from jinja2 import Environment, FileSystemLoader
+from math import log10, floor
 
 hex_re              = re.compile('0[xX][0-9a-fA-F]+')
 
@@ -119,8 +120,10 @@ class Attr(object):
     def name(self): return self.rdlAttr.getName()
     @property
     def default_value(self): 
-        if self.rdlAttr.getTypeName() == "Int" or self.rdlAttr.getTypeName() == "Float":
-            return round(self.defaultValue, 6)
+        if self.rdlAttr.getTypeName() == "Float":
+            if (self.defaultValue == 0):
+                return self.defaultValue
+            return round(self.defaultValue, -int(floor(log10(abs(self.defaultValue)))) + 5)
         return self.defaultValue
     @property
     def type(self): 
