@@ -97,7 +97,7 @@ title: HairMaterial_v3
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.10000000149011612
+      default: 0.1
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.cuticle_layer_thickness.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.cuticle_layer_thickness.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
@@ -119,7 +119,7 @@ title: HairMaterial_v3
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 1.4500000476837158
+      default: 1.45
       <p class="scene-class-comments">keep this value between [1.3,2.0] for realistic behavior (human hair is around 1.55)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.refractive_index.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.refractive_index.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
@@ -179,7 +179,7 @@ title: HairMaterial_v3
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.8500000238418579
+      default: 0.85
       <p class="scene-class-comments">secondary specular glint eccentricity [0.85, 1], values that deviate from 1 make the hair fiber more elliptical and more glinty</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.glint_eccentricity.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.glint_eccentricity.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
@@ -229,7 +229,7 @@ title: HairMaterial_v3
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.4000000059604645
+      default: 0.4
       <p class="scene-class-comments">secondary specular roughness</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.independent_secondary_specular_roughness.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.independent_secondary_specular_roughness.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
@@ -304,7 +304,7 @@ title: HairMaterial_v3
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.10000000149011612
+      default: 0.1
       <p class="scene-class-comments">transmission roughness</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.independent_transmission_roughness.images data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairMaterial_v3.attributes.independent_transmission_roughness.videos data=site.data.user-reference.scene-objects.materials.HairMaterial_v3-%}

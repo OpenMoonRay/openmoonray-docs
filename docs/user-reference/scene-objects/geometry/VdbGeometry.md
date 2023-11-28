@@ -84,7 +84,7 @@ title: VdbGeometry
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.20000000298023224
+      default: 0.2
       <p class="scene-class-comments">the relative scale of input velocity grid resolution. Lower value has lower memory overhead and lower fidelity of motion blur effect, which is sometimes desired for artistic reasons</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.velocity_sample_rate.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}

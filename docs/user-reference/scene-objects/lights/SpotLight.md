@@ -91,7 +91,7 @@ title: SpotLight
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.0010000000474974513
+      default: 0.001
       <p class="scene-class-comments">The radiance used for rendering the SpotLight lens as seen through the camera via a primary ray, when the true computed radiance would otherwise be black. This is simply a convenience feature to make the SpotLight lens visible in the camera view.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.black_level.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.black_level.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}

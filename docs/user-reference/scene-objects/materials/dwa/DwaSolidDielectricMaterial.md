@@ -108,7 +108,7 @@ title: DwaSolidDielectricMaterial
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       <br>
-      default: 0.10000000149011612
+      default: 0.1
       <p class="scene-class-comments">the roughness of the clearcoat lobe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.clearcoat_roughness.images data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.clearcoat_roughness.videos data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
@@ -562,7 +562,7 @@ title: DwaSolidDielectricMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.14000000059604645
+      default: 0.14
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.glitter_roughness_A.images data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.glitter_roughness_A.videos data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
@@ -572,7 +572,7 @@ title: DwaSolidDielectricMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.14000000059604645
+      default: 0.14
       <p class="scene-class-comments">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.glitter_roughness_B.images data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.glitter_roughness_B.videos data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
@@ -663,7 +663,7 @@ title: DwaSolidDielectricMaterial
     <p class="scene-class-type">
       <b>Float</b>
       <br>
-      default: 0.15000000596046448
+      default: 0.15
       <p class="scene-class-comments">randomly orient each texture</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.glitter_texture_orientation_randomness.images data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial.attributes.glitter_texture_orientation_randomness.videos data=site.data.user-reference.scene-objects.materials.DwaSolidDielectricMaterial-%}
