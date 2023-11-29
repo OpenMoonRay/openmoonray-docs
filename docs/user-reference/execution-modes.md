@@ -74,15 +74,16 @@ XPU mode has the following additional unsupported features:
 2. Round curves with more than 2 motion samples
 3. Meshes with more than 2 motion samples
 
-The XPU code detects these unsupported features and will automatically fall back
-to CPU vector mode after outputting a warning message to the log.
+If the scene uses one of these unsupported features, a warning message will be logged
+and the scene will be rendered without the feature.
 
 XPU mode may also fall back to CPU vector mode if there is insufficient GPU memory
 for the scene, or if there is a problem initializing the GPU.
 
 ## Auto Mode
 
-Auto mode will first try to render in vector mode.  If the scene uses a feature that
-is unsupported in vector mode, MoonRay will fall back to scalar mode.  This prioritizes
-features over vector mode performance.
+Auto mode will first try to render in xpu mode.  If the scene uses a feature that
+is unsupported in xpu mode, MoonRay will fall back to vector mode.  Then, if the scene
+uses a feature that is unsupported in vector mode, MoonRay will fall back to scalar mode.
+This prioritizes features over performance.
 
