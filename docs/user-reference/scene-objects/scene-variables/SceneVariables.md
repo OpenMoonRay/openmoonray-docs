@@ -23,7 +23,7 @@ title: SceneVariables
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">If this flag is off, the tessellation related data for subdivision surface will be deleted after tessellation is done. This is to save memory for single frame rendering. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fast_geometry_update.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fast_geometry_update.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fast_geometry_update.links heading=4-%}
@@ -78,7 +78,7 @@ title: SceneVariables
       <b>Layer</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This specifies the layer object used for rendering. If no layer is specified in the scene variables, MoonRay will rendering using the first layer object encountered.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.layer.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.layer.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.layer.links heading=4-%}
@@ -249,7 +249,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This setting allows for rendering a single pixel and is typically used for debugging. The value given specifies the 2D pixel coordinate expressed from the bottom-left of the frame-viewport</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.links heading=4-%}
@@ -375,22 +375,12 @@ title: SceneVariables
 <details open>
   <summary>Driver attributes</summary>
   <p>
-    <h3>interactive_mode</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: False
-      <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.interactive_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.interactive_mode.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.interactive_mode.links heading=4-%}
-    </p>
     <h3>machine_id</h3>
     <p class="scene-class-type">
       <b>Int</b>
       <br>
       default: -1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Used only in arras moonray context, automatically set by arras and indicates the MCRT computation ID in the current session</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.machine_id.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.machine_id.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.machine_id.links heading=4-%}
@@ -400,7 +390,7 @@ title: SceneVariables
       <b>Int</b>
       <br>
       default: -1
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Used only in arras moonray context, automatically set by arras and indicates total number of MCRT computations active in the current session</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.num_machines.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.num_machines.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.num_machines.links heading=4-%}
@@ -415,36 +405,16 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.links heading=4-%}
     </p>
-    <h3>progressive_shading</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: False
-      <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_shading.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_shading.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.progressive_shading.links heading=4-%}
-    </p>
     <h3>task_distribution_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
       <br>
           &nbsp;&nbsp;0 = &ldquo;non-overlapped tile&rdquo;<br>
           &nbsp;&nbsp;1 = &ldquo;multiplex pixel&rdquo; (default)<br>
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Used only in arras moonray context, defines the task distribution method to the MCRT computation. Multi-plex pixel is the default and preferred method. Non-overlapped tile is experimental and only used for debugging/development purposes</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.task_distribution_type.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.task_distribution_type.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.task_distribution_type.links heading=4-%}
-    </p>
-    <h3>threads</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      <br>
-      default: 0
-      <p class="scene-class-no-doc">No documentation available</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.threads.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.threads.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.threads.links heading=4-%}
     </p>
     <h3>tmp_dir</h3>
     <p class="scene-class-type">

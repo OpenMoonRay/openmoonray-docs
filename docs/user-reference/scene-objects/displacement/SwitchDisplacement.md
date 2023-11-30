@@ -33,7 +33,7 @@ title: SwitchDisplacement
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in [0,63]</p>
+      <p class="scene-class-comments">Which of the 64 inputs (0 to 63) to use, values greater than 63 get cycled back to be in the [0,63] range</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.choice.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.choice.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.choice.links heading=4-%}
@@ -43,7 +43,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement0.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement0.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement0.links heading=4-%}
@@ -53,7 +53,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement1.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement1.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement1.links heading=4-%}
@@ -63,7 +63,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement10.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement10.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement10.links heading=4-%}
@@ -73,7 +73,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement11.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement11.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement11.links heading=4-%}
@@ -83,7 +83,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement12.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement12.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement12.links heading=4-%}
@@ -93,7 +93,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement13.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement13.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement13.links heading=4-%}
@@ -103,7 +103,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement14.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement14.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement14.links heading=4-%}
@@ -113,7 +113,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement15.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement15.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement15.links heading=4-%}
@@ -123,7 +123,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement16.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement16.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement16.links heading=4-%}
@@ -133,7 +133,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement17.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement17.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement17.links heading=4-%}
@@ -143,7 +143,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement18.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement18.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement18.links heading=4-%}
@@ -153,7 +153,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement19.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement19.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement19.links heading=4-%}
@@ -163,7 +163,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement2.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement2.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement2.links heading=4-%}
@@ -173,7 +173,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement20.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement20.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement20.links heading=4-%}
@@ -183,7 +183,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement21.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement21.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement21.links heading=4-%}
@@ -193,7 +193,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement22.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement22.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement22.links heading=4-%}
@@ -203,7 +203,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement23.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement23.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement23.links heading=4-%}
@@ -213,7 +213,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement24.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement24.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement24.links heading=4-%}
@@ -223,7 +223,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement25.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement25.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement25.links heading=4-%}
@@ -233,7 +233,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement26.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement26.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement26.links heading=4-%}
@@ -243,7 +243,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement27.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement27.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement27.links heading=4-%}
@@ -253,7 +253,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement28.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement28.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement28.links heading=4-%}
@@ -263,7 +263,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement29.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement29.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement29.links heading=4-%}
@@ -273,7 +273,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement3.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement3.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement3.links heading=4-%}
@@ -283,7 +283,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement30.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement30.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement30.links heading=4-%}
@@ -293,7 +293,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement31.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement31.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement31.links heading=4-%}
@@ -303,7 +303,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement32.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement32.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement32.links heading=4-%}
@@ -313,7 +313,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement33.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement33.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement33.links heading=4-%}
@@ -323,7 +323,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement34.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement34.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement34.links heading=4-%}
@@ -333,7 +333,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement35.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement35.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement35.links heading=4-%}
@@ -343,7 +343,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement36.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement36.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement36.links heading=4-%}
@@ -353,7 +353,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement37.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement37.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement37.links heading=4-%}
@@ -363,7 +363,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement38.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement38.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement38.links heading=4-%}
@@ -373,7 +373,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement39.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement39.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement39.links heading=4-%}
@@ -383,7 +383,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement4.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement4.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement4.links heading=4-%}
@@ -393,7 +393,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement40.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement40.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement40.links heading=4-%}
@@ -403,7 +403,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement41.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement41.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement41.links heading=4-%}
@@ -413,7 +413,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement42.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement42.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement42.links heading=4-%}
@@ -423,7 +423,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement43.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement43.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement43.links heading=4-%}
@@ -433,7 +433,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement44.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement44.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement44.links heading=4-%}
@@ -443,7 +443,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement45.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement45.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement45.links heading=4-%}
@@ -453,7 +453,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement46.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement46.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement46.links heading=4-%}
@@ -463,7 +463,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement47.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement47.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement47.links heading=4-%}
@@ -473,7 +473,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement48.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement48.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement48.links heading=4-%}
@@ -483,7 +483,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement49.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement49.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement49.links heading=4-%}
@@ -493,7 +493,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement5.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement5.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement5.links heading=4-%}
@@ -503,7 +503,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement50.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement50.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement50.links heading=4-%}
@@ -513,7 +513,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement51.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement51.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement51.links heading=4-%}
@@ -523,7 +523,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement52.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement52.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement52.links heading=4-%}
@@ -533,7 +533,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement53.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement53.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement53.links heading=4-%}
@@ -543,7 +543,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement54.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement54.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement54.links heading=4-%}
@@ -553,7 +553,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement55.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement55.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement55.links heading=4-%}
@@ -563,7 +563,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement56.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement56.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement56.links heading=4-%}
@@ -573,7 +573,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement57.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement57.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement57.links heading=4-%}
@@ -583,7 +583,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement58.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement58.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement58.links heading=4-%}
@@ -593,7 +593,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement59.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement59.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement59.links heading=4-%}
@@ -603,7 +603,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement6.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement6.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement6.links heading=4-%}
@@ -613,7 +613,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement60.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement60.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement60.links heading=4-%}
@@ -623,7 +623,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement61.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement61.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement61.links heading=4-%}
@@ -633,7 +633,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement62.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement62.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement62.links heading=4-%}
@@ -643,7 +643,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement63.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement63.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement63.links heading=4-%}
@@ -653,7 +653,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement7.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement7.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement7.links heading=4-%}
@@ -663,7 +663,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement8.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement8.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement8.links heading=4-%}
@@ -673,7 +673,7 @@ title: SwitchDisplacement
       <b>Displacement</b>
       <br>
       default: None
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A reference to a displacement scene object</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement9.images data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement9.videos data=site.data.user-reference.scene-objects.displacement.SwitchDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.SwitchDisplacement.attributes.displacement9.links heading=4-%}
