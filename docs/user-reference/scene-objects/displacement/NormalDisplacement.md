@@ -33,7 +33,7 @@ title: NormalDisplacement
       <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This parameter is used as the initial displacement before the zero_value and height_multiplier are applied.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.NormalDisplacement.attributes.height.images data=site.data.user-reference.scene-objects.displacement.NormalDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.NormalDisplacement.attributes.height.videos data=site.data.user-reference.scene-objects.displacement.NormalDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.NormalDisplacement.attributes.height.links heading=4-%}
@@ -53,7 +53,7 @@ title: NormalDisplacement
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">This value is added to the displacement before applying the height_multiplier.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.NormalDisplacement.attributes.zero_value.images data=site.data.user-reference.scene-objects.displacement.NormalDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.NormalDisplacement.attributes.zero_value.videos data=site.data.user-reference.scene-objects.displacement.NormalDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.NormalDisplacement.attributes.zero_value.links heading=4-%}

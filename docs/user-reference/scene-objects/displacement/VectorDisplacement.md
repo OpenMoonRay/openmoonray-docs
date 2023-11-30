@@ -33,7 +33,7 @@ title: VectorDisplacement
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">A multiplier applied to the input vector</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.factor.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.factor.videos data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.factor.links heading=4-%}
@@ -65,7 +65,7 @@ title: VectorDisplacement
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">The direction to apply the displacement.  Bind a map with tangent or object space vector values here.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.vector.images data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.vector.videos data=site.data.user-reference.scene-objects.displacement.VectorDisplacement-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.displacement.VectorDisplacement.attributes.vector.links heading=4-%}
