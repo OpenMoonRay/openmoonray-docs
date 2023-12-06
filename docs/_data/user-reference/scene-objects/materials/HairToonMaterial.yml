@@ -33,9 +33,21 @@ attributes:
     images:
       - image: base.jpg
         text: Black (none)
-      - image: sss1.jpg
+      - image: sss.jpg
         text: White
       - image: sss_red.jpg
         text: Red
-      
-  
+  subsurface_blend:
+    images:
+      - image: base.jpg
+        text: "0.0"
+      - image: sss_blend.jpg
+        text: "0.5"
+      - image: sss.jpg
+        text: "1.0"
+  bssrdf:
+    images:
+      - image: sss.jpg
+        text: normalized diffusion
+      - image: sss_mode.jpg
+        text: dipole

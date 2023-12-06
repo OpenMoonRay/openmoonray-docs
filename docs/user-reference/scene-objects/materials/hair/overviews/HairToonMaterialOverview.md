@@ -13,5 +13,9 @@ mtl = HairToonMaterial("mtl") {
     ["specular_1_values"] = {0.0, 0.05, 1.0, 1.0, 1.0},
     ["specular_1_positions"] = {0.0, 0.15, 0.2, 0.5, 1.0},
     ["specular_1_interpolation"] = {1, 1, 1, 1, 1},
+
+    ["hair_color"] = Rgb(0.351, 0.275, 0.15),
+    ["bssrdf"] = 1,
+    ["scattering_radius"] = 0.25,
 }
 ```
