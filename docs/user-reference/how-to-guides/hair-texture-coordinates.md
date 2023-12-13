@@ -1,3 +1,6 @@
+---
+title: Hair Texture Coordinates
+---
 # Hair Texture Coordinates
 
 This page describes the various hair texture coordinates and how to use them.
