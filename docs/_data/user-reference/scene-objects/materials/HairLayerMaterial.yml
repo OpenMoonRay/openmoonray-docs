@@ -1,0 +1,25 @@
+---
+overview: overviews/HairLayerMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/hair/layer
+
+attributes:
+  blend_color_space:
+    images:
+      - image: blend.jpg
+        text: RGB
+      - image: blendHSV.jpg
+        text: HSV
+      - image: blendHSL.jpg
+        text: HSL
+  mask:
+    images:
+      - image: diffSpec000.jpg
+        text: "0.00"
+      - image: diffSpec025.jpg
+        text: "0.25"
+      - image: diffSpec050.jpg
+        text: "0.50"
+      - image: diffSpec075.jpg
+        text: "0.75"
+      - image: diffSpec100.jpg
+        text: "1.00"

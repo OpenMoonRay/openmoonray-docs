@@ -1,0 +1,69 @@
+---
+overview: overviews/HairColorCorrectMaterialOverview.md
+image_path: /assets/images/user-reference/scene-objects/materials/hair/colorCorrect
+
+attributes:
+  gain:
+    images:
+      - image: gain000.jpg
+        text: "0.0"
+      - image: gain050.jpg
+        text: "0.5"
+      - image: base.jpg
+        text: "1.0"
+      - image: gain150.jpg
+        text: "1.5"
+      - image: gain200.jpg
+        text: "2.0"
+  saturation:
+    images:
+      - image: sat000.jpg
+        text: "0.0"
+      - image: sat050.jpg
+        text: "0.5"
+      - image: base.jpg
+        text: "1.0"
+      - image: sat150.jpg
+        text: "1.5"
+      - image: sat200.jpg
+        text: "2.0"
+  hue_shift:
+    images:
+      - image: base.jpg
+        text: "0.00"
+      - image: hue025.jpg
+        text: "0.25"
+      - image: hue050.jpg
+        text: "0.50"
+      - image: hue075.jpg
+        text: "0.75"
+      - image: hue100.jpg
+        text: "1.00"
+  mix:
+    images:
+      - image: base.jpg
+        text: "0.00"
+      - image: mix025.jpg
+        text: "0.25"
+      - image: mix050.jpg
+        text: "0.50"
+      - image: mix075.jpg
+        text: "0.75"
+      - image: mix100.jpg
+        text: "1.00"
+  TMI:
+    images:
+      - image: base.jpg
+        text: Unmodified
+      - image: TMI_T_0.jpg
+        text: T up
+      - image: TMI_T_1.jpg
+        text: T down
+      - image: TMI_M_0.jpg
+        text: M up
+      - image: TMI_M_1.jpg
+        text: M down
+      - image: TMI_I_0.jpg
+        text: I up
+      - image: TMI_I_1.jpg
+        text: I down
