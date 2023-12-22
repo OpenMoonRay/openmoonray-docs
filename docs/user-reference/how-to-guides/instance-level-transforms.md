@@ -5,7 +5,7 @@ title: Instance Level Transforms
 # Instance Level Transforms
 
 There are a few attributes, on both
-[RdlInstanceGeometry]({{ "/user-reference/scene-objects/geometry/RdlInstanceGeometry" | absolute_url }})
+[RdlInstancerGeometry]({{ "/user-reference/scene-objects/geometry/RdlInstancerGeometry" | absolute_url }})
 and
 [TransformSpaceMap]({{ "/user-reference/scene-objects/maps/TransformSpaceMap" | absolute_url }})
 , that allow you to transform to and 

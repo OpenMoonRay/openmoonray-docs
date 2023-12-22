@@ -100,8 +100,6 @@ In the course of supporting productions, certain maps need major interface addit
 [ColorCorrectHsvMap](ColorCorrectHsvMap)  
 [ColorCorrectLegacyMap](ColorCorrectLegacyMap)  
 [ListMap](ListMap)  
-[NoiseMap](NoiseMap)  
-[NoiseWorleyMap](NoiseWorleyMap)  
 [OpenVdbMap](OpenVdbMap)  
 [ProjectTriplanarMap](ProjectTriplanarMap)  
 

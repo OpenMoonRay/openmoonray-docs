@@ -12,7 +12,7 @@ PerspectiveCamera("camera") {
 }
 ```
 This blurs the attribute over the time interval defined by the 
-[SceneVariables]({{ "/user-reference/scene-objects/SceneVariables" | absolute_url }})
+[SceneVariables]({{ "/user-reference/scene-objects/scene-variables/SceneVariables" | absolute_url }})
 *frame* value and the
 [camera's]({{ "/user-reference/scene-objects/cameras/PerspectiveCamera" | absolute_url }}) motion blur attributes
 (*mb_shutter_open*, *mb_shutter_close*, *mb_shutter_bias*).
