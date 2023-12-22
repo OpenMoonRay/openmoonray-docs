@@ -42,7 +42,7 @@ As with lights, you can set any MoonRay-specific camera attribute using the `moo
 
 Materials are defined using the UsdShade model : i.e. as networks of connected Shader prims nested inside the Material prim.
 
-You can use any of the MoonRay material and map shaders inside a material network. The USD scene delegate requires shaders to be registered with SDR : see [Hd MoonRay Setup](hdmoonray-setup) for information on how to set this up.
+You can use any of the MoonRay material and map shaders inside a material network. The USD scene delegate requires shaders to be registered with SDR : see [HdMoonRay Setup]({{ "/user-reference/tools/hydra/hdmoonray-setup/" | absolute_url }}) for information on how to set this up.
 
 HdMoonRay creates a default material that is assigned to any geometry without an explicit assignment. This default material renders the geometry using the values of the displayColor and displayOpacity primvars. Also created is a solid magenta error material, used in place of materials that either cannot be found or fail to generate a valid MoonRay material object. 
 # Instancing
@@ -61,3 +61,4 @@ Hydra itself does not currently support light linking to prims inside an instanc
 Moonray's [Motion blur]({{ "/user-reference/how-to-guides/motion-blur" | absolute_url }})
 features are fully supported by the delegate.  The DCC should provide the appropriate primitive attributes (i.e. velocity)
 for geometric motion blur.
+
