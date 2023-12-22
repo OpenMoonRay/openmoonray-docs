@@ -6,7 +6,7 @@ title: Render Profile Viewer
 The **render_profile_viewer** is a standalone command-line application that graphs and compares statistics read from MoonRay render logs.
 The logs must be written using the `-info` option when rendering in order to include the extra information required by the **render_profiler_viewer** tool.
 
-![]({{ "/assets/images/user-reference/tools/render-profile-viewer/render_profile_viewer.jpg" | absolute_url }})
+[![]({{ "/assets/images/user-reference/tools/render-profile-viewer/render_profile_viewer.jpg" | absolute_url }})]({{ "/assets/images/user-reference/tools/render-profile-viewer/render_profile_viewer.jpg" | absolute_url }})
 
 ## Usage
 ```bash
@@ -23,7 +23,6 @@ pip install .
 
 ### Log List
 ![]({{ "/assets/images/user-reference/tools/render-profile-viewer/log_list.jpg" | absolute_url }})
-
 The log list shows all of the logs that have been loaded into the viewer.  If the paths are too long, the *Show full paths* checkbox can be toggled off.
 To view one or more logs in the graph pane, simply select them using the shift or control keys.
 
@@ -70,4 +69,3 @@ The *Refit Chart* button will manually reframe the view to fit all of the select
 The *Logs* tab can be used to view the actual render logs.
 
 ![]({{ "/assets/images/user-reference/tools/render-profile-viewer/log_view.jpg" | absolute_url }})
-

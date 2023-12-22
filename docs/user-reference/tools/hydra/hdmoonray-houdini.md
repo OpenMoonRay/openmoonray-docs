@@ -32,21 +32,21 @@ cp -r $REL/plugin/houdini/* ~/houdini19.5/
 ### Materials:
 You will find all Moonray related Materials and Maps available in the *Mat* context.
 
-![]({{ "/assets/images/user-reference/tools/hydra/houdini/shader_list.png" | absolute_url }})
+[![]({{ "/assets/images/user-reference/tools/hydra/houdini/shader_list.png" | absolute_url }})]({{ "/assets/images/user-reference/tools/hydra/houdini/shader_list.png" | absolute_url }})
 
 Connect Materials to the Collect node.  Connect Maps to materials.
 
-![]({{ "/assets/images/user-reference/tools/hydra/houdini/binding.png" | absolute_url }})
+[![]({{ "/assets/images/user-reference/tools/hydra/houdini/binding.png" | absolute_url }})]({{ "/assets/images/user-reference/tools/hydra/houdini/binding.png" | absolute_url }})
 
 ### Lights:
 Lights have a *Moonray* tab with Moonray specific attributes.
 
-![]({{ "/assets/images/user-reference/tools/hydra/houdini/lights.png" | absolute_url }})
+[![]({{ "/assets/images/user-reference/tools/hydra/houdini/lights.png" | absolute_url }})]({{ "/assets/images/user-reference/tools/hydra/houdini/lights.png" | absolute_url }})
 
 ### Render Settings:
 You will find a *Moonray* tab with render settings specific to Moonray.
 
-![]({{ "/assets/images/user-reference/tools/hydra/houdini/render_settings.png" | absolute_url }})
+[![]({{ "/assets/images/user-reference/tools/hydra/houdini/render_settings.png" | absolute_url }})]({{ "/assets/images/user-reference/tools/hydra/houdini/render_settings.png" | absolute_url }})
 
 ### Geometry Settings
 Geometry setting such as *mesh_resolution* can be set using a LOP wrangle node.

@@ -17,7 +17,7 @@ As the light's surface area increases, the amount of radiance it produces increa
 light on the right is 4x the size of the light on the left. As such, with *normalized* off, the light on the right 
 is 4x brighter than the light on the left.
 
-| ![Normalized Off Small Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_small_light.png" | absolute_url }}) | ![Normalized Off Large Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_large_light.png" | absolute_url }})|
+| [![Normalized Off Small Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_small_light.png" | absolute_url }})]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_small_light.png" | absolute_url }}) | [![Normalized Off Large Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_large_light.png" | absolute_url }})]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_large_light.png" | absolute_url }})|
 | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | *normalized = false<br>width = 1<br>height = 1<br>intensity = 20* | *normalized = false<br>width = 2<br>height = 2<br>intensity = 20* |
 
@@ -31,7 +31,7 @@ the light.
 radiance = color * intensity * 2^(exposure) / surface_area
 ```
 
-| ![Normalized Off Small Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_small_light.png" | absolute_url }}) | ![Normalized Off Large Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_large_light.png" | absolute_url }})|
+| [![Normalized Off Small Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_small_light.png" | absolute_url }})]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_small_light.png" | absolute_url }}) | [![Normalized Off Large Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_large_light.png" | absolute_url }})]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_large_light.png" | absolute_url }})|
 | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | *normalized = true<br>width = 1<br>height = 1<br>intensity = 20* | *normalized = true<br>width = 2<br>height = 2<br>intensity = 20* |
 
@@ -39,7 +39,7 @@ Note that the amount of light given off by the larger area light on the right is
 unit area light on the left. Basically, the radiance given off by the larger light has been divided by 4. We can confirm 
 this by comparing our larger area light un-normalized with intensity 5 to the same area light normalized with intensity 20.
 
-| ![Normalized Off Small Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_intensity5.png" | absolute_url }}) | ![Normalized Off Large Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_large_light.png" | absolute_url }})|
+| [![Normalized Off Small Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_intensity5.png" | absolute_url }})]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_off_intensity5.png" | absolute_url }}) | [![Normalized Off Large Light]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_large_light.png" | absolute_url }})]({{ "/assets/images/user-reference/how-to-guides/light-normalization/normalized_on_large_light.png" | absolute_url }})|
 | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | *normalized = false<br>width = 2<br>height = 2<br>intensity = 5* | *normalized = true<br>width = 2<br>height = 2<br>intensity = 20* |
 

@@ -220,9 +220,9 @@ arras_render has a special runtime option to display the backend computation's t
 You can on/off this telemetry overlay at runtime.
 
 Following are some examples of telemetry panels display.
-![telemetryOverlay-A]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-devel.png" | absolute_url }})
+[![telemetryOverlay-A]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-devel.png" | absolute_url }})]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-devel.png" | absolute_url }})
 This is a core performance panel.
-![telemetryOverlay-B]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-corePerf.png" | absolute_url }})
+[![telemetryOverlay-B]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-corePerf.png" | absolute_url }})]({{ "/assets/images/user-reference/tools/arras_render/aLab-telemetryOverlay-corePerf.png" | absolute_url }})
 
 This functionality is pretty useful for understanding runtime backend computation's status.
 In order to use this functionality, we have to set a special environment variable to specify the font that is used for the telemetry overlay and this should be done before starting arras_render. This is done by setting up `TELEMETRY_OVERLAY_FONTTTF` as follows.

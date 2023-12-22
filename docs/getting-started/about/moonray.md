@@ -31,7 +31,7 @@ MoonRay uses best-in-class open source libraries.
 
 <div class="wrap-text-right" markdown="1">
 <figure class="with-caption">
-  <img src="{{ "/assets/images/getting-started/about/moonray/threads.png" | absolute_url }}">
+  <a href="{{ "/assets/images/getting-started/about/moonray/threads.png" | absolute_url }}"><img src="{{ "/assets/images/getting-started/about/moonray/threads.png" | absolute_url }}"></a>
   <figcaption>
   MoonRay saturating worker threads
   </figcaption>
