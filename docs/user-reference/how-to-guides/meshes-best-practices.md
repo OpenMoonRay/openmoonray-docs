@@ -1,3 +1,6 @@
+---
+title: Meshes Best Practices
+---
 # Meshes Best Practices
 
 ## Subdivision Mesh vs Polygon Mesh
