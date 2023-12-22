@@ -44,9 +44,8 @@ hd_render may also report missing Python modules for HdMoonray plugins like Moon
 
 ## Modes
 
-By default, `hdMoonray` uses Arras local mode (more [info](../../arras_render/#local-mode)) to create a separate MoonRay
-render process. If you have a distributed Arras pool set up (more [info](../../arras_render/#multi-machine-mode)),
+By default, `hdMoonray` uses Arras local mode (more [info]({{ "/user-reference/tools/arras_render/#local-mode" | absolute_url }})) to create a separate MoonRay
+render process. If you have a distributed Arras pool set up (more [info]({{ "/user-reference/tools/arras_render/#multi-machine-mode" | absolute_url }})),
 you can increase the number of render nodes using Arras distributed mode.
 
 ***Debug mode*** can be selected through a render setting. This causes hdMoonray to start up an in-process instance of MoonRay, rather than using Arras. This can make it easier to debug issues, but has some disadvantages. MoonRay's use of threads via the *TBB* library appears to interfere with GUI update in Houdini, causing the rendered view to freeze temporarily. In addition, if MoonRay raises an assertion, the host application may be terminated. When running outside debug mode, Arras will simply restart the MoonRay process if it exits. A few features available in normal mode are not available in debug mode, like pausing the render.
-

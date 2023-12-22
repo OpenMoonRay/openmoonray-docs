@@ -2,8 +2,6 @@
 title: MoonRay Hydra Delegate
 ---
 
-<!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
-
 # MoonRay Hydra Delegate
 
 ***Hydra*** is Pixar's open source interface for live or batch rendering. A Hydra-enabled application should be able to render scenes using any renderer that has a Hydra plugin.
