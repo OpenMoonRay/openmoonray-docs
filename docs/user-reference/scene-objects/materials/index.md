@@ -2,15 +2,10 @@
 title: MoonRay Materials
 ---
 
-<!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
-
 # Materials
 ![Materials]({{ "/assets/images/user-reference/scene-objects/materials/materials.jpg" | absolute_url }})
 
-<!-- All topics>
-
-<!-- Concept info here: Explain the background and context of a this subject. --> 
->Materials produce [BSDFs](linkToShadingAPI?) (bidirectional scattering distribution functions) which describe to the integrator how a surface scatters light at a given point and therefore its appearance. A material can produce one or many BSDFs depending on how complex the surface is.
+>Materials produce [BSDFs]({{"/developer-reference/shaders/materials" | absolute_url }}) (bidirectional scattering distribution functions) which describe to the integrator how a surface scatters light at a given point and therefore its appearance. A material can produce one or many BSDFs depending on how complex the surface is.
 
 Broadly speaking BSDFs can be broken down into two major categories: <span class="define">_BRDFs_</span> (reflection) and <span class="define">_BTDFs_</span> (transmission). How much light is reflected versus transmitted is governed by the Fresnel equations. MoonRay supports multiple Fresnel models, but mostly uses <span class="define">_dielectric_</span> (non-metals) and <span class="define">_conductor_</span> (metals) Fresnel models.
 

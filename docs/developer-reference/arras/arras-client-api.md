@@ -65,7 +65,7 @@ std::string url(COORDINATOR_URL);
 arras4::client::SessionOptions options;
 ```
 
-Session definitions are described in detail [here](arras-session-definitions). This code loads a JSON template from a file and then modifies the number of mcrt computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
+Session definitions are described in detail [here]({{ "/developer-reference/arras/arras-session-definitions/" | absolute_url }}). This code loads a JSON template from a file and then modifies the number of mcrt computations to match NUM_MACHINES. This doesn't have any effect, given that NUM_MACHINES is set to 1 at the start of the code, but shows how the number of computations would be set in a multi-machine render.
 
 COORDINATOR_URL is hard-coded to "arras:local" at the start of the code, which will cause the client library itself to create the session on the local machine, rather than requesting it from a Coordinator service. 
 
