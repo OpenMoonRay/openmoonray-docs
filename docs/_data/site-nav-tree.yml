@@ -520,8 +520,8 @@
                 path: user-reference/tools/hydra/render-settings.md
               - text: HdMoonRay Houdini Integration
                 path: user-reference/tools/hydra/hdmoonray-houdini.md
-              - text: hd_render
-                path: user-reference/tools/hydra/hd_render.md
+              - text: Command Line
+                path: user-reference/tools/hydra/commands.md
           - text: moonray
             path: user-reference/tools/moonray.md
           - text: moonray_gui
