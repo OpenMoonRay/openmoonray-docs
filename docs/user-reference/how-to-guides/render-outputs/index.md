@@ -46,7 +46,6 @@ RenderOutput("/output/result/worldPos") {
 | [Material AOV](material-aovs) | AOV generated using a material expression |
 | Light AOV | AOV generated using a light path expression |
 | [Visibility AOV](visibility-aovs) | Fraction of light samples that hit the light source |
-| [Variance AOV](variance-aovs) | Pixel variance of a specified AOV | 
 | Weight | Pixel sample count, normalized between 0 and 1 |
 | [Cryptomatte](cryptomatte) | Generate .exr layers containing pixel coverages by specified geometry(ies) | 
 | Alpha Aux | Alpha auxiliary sample data for adaptive sampling |
