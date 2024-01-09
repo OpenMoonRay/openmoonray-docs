@@ -490,8 +490,6 @@
                 path: /user-reference/how-to-guides/render-outputs/material-aovs.md
               - text: Motion vectors
                 path: /user-reference/how-to-guides/render-outputs/motion-vectors.md
-              - text: Variance AOVs
-                path: /user-reference/how-to-guides/render-outputs/variance-aovs.md
               - text: Visibility AOVs
                 path: /user-reference/how-to-guides/render-outputs/visibility-aovs.md
           - text: Render Inside a Medium
