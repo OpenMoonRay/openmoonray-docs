@@ -23,7 +23,7 @@ title: ImageMap
       <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Amount to scale derivatives which controls mipmap selection.   This can be used to provide a cheap, albiet low quality, blur.</p>
+      <p class="scene-class-comments">Amount to offset derivatives which controls mipmap selection.   This can be used to provide a cheap, albiet low quality, blur.  Note: Setting this value to -1.0 effectively disables mip mapping and the highest resolution will be used.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.images data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.videos data=site.data.user-reference.scene-objects.maps.ImageMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ImageMap.attributes.mip_bias.links heading=4-%}
