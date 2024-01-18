@@ -341,16 +341,6 @@ title: RenderOutput
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute_type.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.primitive_attribute_type.links heading=4-%}
     </p>
-    <h3>reference_render_output</h3>
-    <p class="scene-class-type">
-      <b>RenderOutput</b>
-      <br>
-      default: None
-      <p class="scene-class-comments">If "result" is "variance aov", this attribute refers to another render output for which to calculate the pixel variance.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.reference_render_output.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.reference_render_output.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.reference_render_output.links heading=4-%}
-    </p>
     <h3>result</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
@@ -365,13 +355,12 @@ title: RenderOutput
           &nbsp;&nbsp;7 = &ldquo;material aov&rdquo;<br>
           &nbsp;&nbsp;8 = &ldquo;light aov&rdquo;<br>
           &nbsp;&nbsp;9 = &ldquo;visibility aov&rdquo;<br>
-          &nbsp;&nbsp;10 = &ldquo;variance aov&rdquo;<br>
           &nbsp;&nbsp;11 = &ldquo;weight&rdquo;<br>
           &nbsp;&nbsp;12 = &ldquo;beauty aux&rdquo;<br>
           &nbsp;&nbsp;13 = &ldquo;cryptomatte&rdquo;<br>
           &nbsp;&nbsp;14 = &ldquo;alpha aux&rdquo;<br>
           &nbsp;&nbsp;15 = &ldquo;display filter&rdquo;<br>
-      <p class="scene-class-comments">The result to output.  Available results: <br>&emsp;general results:<br>&emsp;&emsp;"beauty" - full render (R, G, B), <br>&emsp;&emsp;"alpha" - full render alpha channel (A), <br>&emsp;&emsp;"depth" - z distance from camera (Z), <br>&emsp;&emsp;"display filter" - output results from a display filter, <br>&emsp;aov results:<br>&emsp;&emsp;"state variable" - Built-in state variable, <br>&emsp;&emsp;"primitive attribute" - Procedural provided attributes, <br>&emsp;&emsp;"material aov" - Aovs provided via material expressions <br>&emsp;&emsp;"light aov" - Aovs provided via light path expressions <br>&emsp;&emsp;"visibility aov" - Fraction of light samples that hit light source<br>&emsp;&emsp;"variance aov" - Aovs calculated from the pixel variance of other aovs<br>&emsp;&emsp;"weight" - weight,<br>&emsp;&emsp;"beauty aux" - renderBuffer auxiliary sample data for adaptive sampling,<br>&emsp;&emsp;"cryptomatte" - cryptomatte,<br>&emsp;&emsp;"alpha aux" - alpha auxiliary sample data for adaptive sampling,<br>&emsp;diagnostic results:<br>&emsp;&emsp;"time per pixel" - Time per pixel heat map metric,<br>&emsp;&emsp;"wireframe" - Render as wireframe</p>
+      <p class="scene-class-comments">The result to output.  Available results: <br>&emsp;general results:<br>&emsp;&emsp;"beauty" - full render (R, G, B), <br>&emsp;&emsp;"alpha" - full render alpha channel (A), <br>&emsp;&emsp;"depth" - z distance from camera (Z), <br>&emsp;&emsp;"display filter" - output results from a display filter, <br>&emsp;aov results:<br>&emsp;&emsp;"state variable" - Built-in state variable, <br>&emsp;&emsp;"primitive attribute" - Procedural provided attributes, <br>&emsp;&emsp;"material aov" - Aovs provided via material expressions <br>&emsp;&emsp;"light aov" - Aovs provided via light path expressions <br>&emsp;&emsp;"visibility aov" - Fraction of light samples that hit light source<br>&emsp;&emsp;"weight" - weight,<br>&emsp;&emsp;"beauty aux" - renderBuffer auxiliary sample data for adaptive sampling,<br>&emsp;&emsp;"cryptomatte" - cryptomatte,<br>&emsp;&emsp;"alpha aux" - alpha auxiliary sample data for adaptive sampling,<br>&emsp;diagnostic results:<br>&emsp;&emsp;"time per pixel" - Time per pixel heat map metric,<br>&emsp;&emsp;"wireframe" - Render as wireframe</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.result.links heading=4-%}
