@@ -111,10 +111,22 @@ title: OpMap
           &nbsp;&nbsp;36 = &ldquo;bit_shift_right&rdquo;<br>
           &nbsp;&nbsp;37 = &ldquo;bitwise_and&rdquo;<br>
           &nbsp;&nbsp;38 = &ldquo;bitwise_or&rdquo;<br>
+          &nbsp;&nbsp;39 = &ldquo;vector_equal&rdquo;<br>
+          &nbsp;&nbsp;40 = &ldquo;vector_not_equal&rdquo;<br>
       <p class="scene-class-comments">Operation</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.videos data=site.data.user-reference.scene-objects.maps.OpMap-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.operation.links heading=4-%}
+    </p>
+    <h3>tolerance</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.001
+      <p class="scene-class-comments">Epsilon. Sets range for almost-equals checking of values</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.OpMap.attributes.tolerance.images data=site.data.user-reference.scene-objects.maps.OpMap-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.OpMap.attributes.tolerance.videos data=site.data.user-reference.scene-objects.maps.OpMap-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.OpMap.attributes.tolerance.links heading=4-%}
     </p>
   </p>
 </details>
