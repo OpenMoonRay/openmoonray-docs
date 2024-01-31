@@ -742,16 +742,6 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.athena_debug.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.athena_debug.links heading=4-%}
     </p>
-    <h3>debug</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: False
-      <p class="scene-class-comments">Determines whether debugging-level messages are logged.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug.links heading=4-%}
-    </p>
     <h3>fatal_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
@@ -762,15 +752,25 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_color.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_color.links heading=4-%}
     </p>
-    <h3>info</h3>
+    <h3>log_debug</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Determines whether debugging-level messages are logged.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.log_debug.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.log_debug.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.log_debug.links heading=4-%}
+    </p>
+    <h3>log_info</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       <br>
       default: False
       <p class="scene-class-comments">Determines whether information-level messages are logged.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.info.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.info.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.info.links heading=4-%}
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.log_info.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.log_info.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.log_info.links heading=4-%}
     </p>
     <h3>stats_file</h3>
     <p class="scene-class-type">
