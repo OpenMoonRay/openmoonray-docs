@@ -5,7 +5,7 @@ title: MoonRay Sphere USD Asset License
 
 License for MoonRay Sphere (the “Asset Name”).
 
-MoonRay Sphere Copyright 2023 DreamWorks Animation LLC. All rights reserved.
+MoonRay Sphere Copyright 2023-2024 DreamWorks Animation LLC. All rights reserved.
 
 Redistribution and use of these digital assets, with or without modification, solely for education, training, research, software and hardware development, performance benchmarking (including publication of benchmark results and permitting reproducibility of the benchmark results by third parties), or software and hardware product demonstrations, are permitted provided that the following conditions are met:
 
