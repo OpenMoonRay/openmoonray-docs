@@ -16,37 +16,44 @@ Use the _-h_ flag to display the full list of command-line options.
 $ rdl2_print -h
 Usage:
     rdl2_print [options]
-    Print all SceneClasses found in the RDL2_DSO_PATH environment variable.
+    Print SceneObjects in the given scene, or available SceneClasses when no scene is given.
 
-    rdl2_print [options] [<SceneClass name>]
-    Print a specific SceneClass found in the RDL2_DSO_PATH environment variable.
+    The RDL2_DSO_PATH environment variable and additional paths given by --dso-path are searched to find the SceneClasses (DSOs).
 
-    rdl2_print [options] [<RDL file>]
-    Print all SceneObjects found in the RDL file.
+General options:
+    -h, --help                                      Print this help message.
+    -d, --dso-path      <path>                      Path to search for additional SceneClasses (DSOs). Option can appear multiple times.
+    -f, --file          <scene file>                RDL2 file (.rdla|.rdlb) to load. Option can appear multiple times.
 
-    rdl2_print [options] [<RDL file> <SceneObject name>]
-    Print a specific SceneObject found in the RDL file.  The default SceneVariables object is named __SceneVariables__.
+Filtering options:
+    -a, --attr          <attribute name>            Attributes to filter by. Option can appear multiple times.
+    -c, --class         <class name>                SceneClasses to filter by. Option can appear multiple times.
+    -o, --object        <object name>               SceneObjects to filter by. Option can appear multiple times.
 
-Options:
-    -d, --dso_path          Specify an additional path to search for SceneClasses (DSOs).
-    -h, --help              Print this help message.
-    --no_sort               Do not sort the classes and attributes alphabetically.
-    -s, --simple            Print without comments.
+Formatting options:
+    --no-attrs                                      Do not include attributes.
+    --no-comments                                   Do not include attribute comments.
+    --no-sort                                       Do not sort the classes and attributes alphabetically.
 
 Examples:
-    # print all available SceneClasses with attributes, comments and default values
+    # print all available SceneClasses (found in RDL2_DSO_PATH) with attributes, comments and default values
     rdl2_print
 
-    # print the attributes, comments and default values of the RectLight SceneClass
-    rdl2_print RectLight
+    # print information about a single SceneClass
+    rdl2_print -c ImageMap
 
-    # print the attributes with default values of the SceneVariables SceneClass
-    rdl2_print -s SceneVariables
+    # print contents of an existing RDL2 scene
+    rdl2_print -f scene.rdla
 
-    # print the attributes of the SceneVariables instance in a given RDL file
-    rdl2_print ./scene.rdla __SceneVariables__
+    # print contents of an existing RDL2 scene which has been split into ascii and binary formats
+    rdl2_print -f scene.rdla -f scene.rdlb
 
-    # print the attributes of the some SceneObject instance in a given RDL file
-    rdl2_print ./scene.rdla /name/of/some/scene/object
+    # print contents of an existing RDL2 scene, but listing only instances of a particular SceneClass
+    rdl2_print -f scene.rdla -c RenderOutput
+
+    # print contents of an existing RDL2 scene, but listing only a particular named SceneObject
+    rdl2_print -f scene.rdla -o "/Scene/MyImageMap"
+
+    # print contents of an existing RDL2 scene, but listing only instances of a particular SceneClass and only certain Attributes
+    rdl2_print -f scene.rdla -c RenderOutput -a file_name -a checkpoint_file_name -a resume_file_name
 ```
-
