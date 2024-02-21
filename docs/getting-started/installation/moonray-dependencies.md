@@ -22,14 +22,14 @@ The versions shown are the ones we have tested : other versions may also work.
 |TBB             | 2020.2.0, 2020.3 | https://github.com/oneapi-src/oneTBB
 |ISPC            | 1.14.1, 1.20.0     | https://github.com/ispc/ispc
 |CUDA            | 11.1, 11.4, 12.1      | https://developer.nvidia.com/cuda-downloads
-|Optix           | 7.3.0      | https://developer.nvidia.com/designworks/optix/download
+|Optix           | 7.6.0      | https://developer.nvidia.com/designworks/optix/download
 |OpenSubdiv      | 3.4.3, 3.5.0      | https://github.com/PixarAnimationStudios/OpenSubdiv
 |OpenVdb         | 8.2.0.4, 9.1.0 | https://github.com/AcademySoftwareFoundation/openvdb
 |OpenImageIO     | 2.2.15.1, 2.3.20   | https://github.com/OpenImageIO/oiio
 |OpenColorIO     | 2.0.2      | https://github.com/AcademySoftwareFoundation/OpenColorIO
 |OpenExr         | 2.5.7      | https://github.com/AcademySoftwareFoundation/openexr
 |Random123       | 1.08.3     | https://github.com/DEShawResearch/random123
-|Embree          | 4.1.0      | https://github.com/embree/embree
+|Embree          | 4.2.0      | https://github.com/embree/embree
 |Intel MKL       | 2020.3.279 |
 |Microhttpd      | 0.9.37     | https://ftp.gnu.org/gnu/libmicrohttpd/
 |Curl            | 7.49       | https://github.com/curl/curl
