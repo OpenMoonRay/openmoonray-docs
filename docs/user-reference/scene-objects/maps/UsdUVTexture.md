@@ -94,36 +94,6 @@ title: UsdUVTexture
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.st.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.st.links heading=4-%}
     </p>
-    <h3>udim_files</h3>
-    <p class="scene-class-type">
-      <b>StringVector</b>
-      <br>
-      default: {}
-      <p class="scene-class-comments">Explicit list of UDIM filenames corresponding to values in the "udim_values" list</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_files.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_files.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_files.links heading=4-%}
-    </p>
-    <h3>udim_max_v</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      <br>
-      default: 10
-      <p class="scene-class-comments">Maximum UDIM v value used (maximum UDIM row). Needed to for texture allocation.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_max_v.links heading=4-%}
-    </p>
-    <h3>udim_values</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      <br>
-      default: {}
-      <p class="scene-class-comments">Explicit list of UDIM values corresponding to filename in the "udim_files" list</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_values.images data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_values.videos data=site.data.user-reference.scene-objects.maps.UsdUVTexture-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.maps.UsdUVTexture.attributes.udim_values.links heading=4-%}
-    </p>
     <h3>wrapS</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
