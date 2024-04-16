@@ -35,6 +35,17 @@ Options:
     -threads n
         Number of threads to use (all by default).
 
+    -cpuAffinity cpuIdDef
+        set CPU affinity definition. "-1" disables CPU affinity control.
+        cpuIdDef example : 0,1,2     => 0 1 2
+                           0-2,4,6-9 => 0,1,2,4,6,7,8,9
+                           -1        => disable CPU affinity (default)
+
+    -socketAffinity socketIdDef
+        set Socket affinity definition
+        socketIdDef example : 0
+                              0,1 or 0-1 => 0 1
+
     -size 1920 1080
         Canonical frame width and height (in pixels).
 
@@ -116,6 +127,40 @@ Options:
 ```
 
 Below is more information on the some of the most commonly used options and workflows.
+
+### CPU (physical socket/core) affinity control
+
+```
+-socketAffinity <id-def-string>
+-cpuAffinity <id-def-string>
+```
+
+You can run the moonray process attached to the physical cores by using 2 different CPU affinity control options.
+"-socketAffinity" is used for physical socket-based CPU-affinity control. and "-cpuAffinity" is used for physical core-based CPU-affinity control. We can get the same control of "-socketAffinity" option by "-cpuAffinity" if you consider carefully which core# belongs to which socket. However, this is not user-friendly, so we provide "-socketAffinity" option for simplifying the socket-based CPU affinity control.
+Both option uses id-def-string as an argument. The same format of id-def-strings are used for both of options but the meaning is different. id-def-strings for "-socketAffinity" indicates physical socket-id and id-def-strings for "-cpuAffinity" indicates physical core-id.
+
+Format of id-def-string for "-socketAffinity" and "-cpuAffinity" option
+1. list of ids : separator is ‘,’(comma) without space.
+```
+	“0,1,2”	-> 	0 1 2
+	“9,8,5”	->	5 8 9
+	“9,5,7”	->	5 7 9
+```
+2. range def by ‘-‘(dash) without space
+```
+	“0-3”		->	0 1 2 3
+	“1-3,8-9”	->	1 2 3 8 9
+	“5-7,0-2”	->	0 1 2 5 6 7
+```
+3. You can use both the list of ids and range def at the same time
+```
+	“0-2,3,4-6”	->	0 1 2 3 4 5 6
+	“4,7-8,1-3”	->	1 2 3 4 7 8
+```
+
+If you don’t specify "-socketAffinity" option, moonray tries to use "-cpuAffinity" option setting.
+If you specify "-cpuAffinity -1", this forces you to disable CPU affinity control and this is the current default.
+(This means if you don’t specify both of "-socketAffinity" and "-cpuAffinity", CPU affinity control is disabled.)
 
 ### Checkpoint Rendering
 See the [Checkpoint/Resume Rendering](../../how-to-guides/checkpoint-resume/) page.
