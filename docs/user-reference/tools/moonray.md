@@ -135,8 +135,8 @@ Below is more information on the some of the most commonly used options and work
 -cpuAffinity <id-def-string>
 ```
 
-You can run the moonray process attached to the physical cores by using one of 2 different CPU affinity control options.
-"-socketAffinity" is used for physical socket-based CPU-affinity control. And "-cpuAffinity" is used for physical core-based CPU-affinity control. We can get the same control of "-socketAffinity" option using "-cpuAffinity" if you carefully consider which core# belongs to which socket. However, this is not as user-friendly, so we provide a "-socketAffinity" option for simplifying the socket-based CPU affinity control.
+You can run the moonray process attached to the physical cores by using one of 2 different CPU affinity control options. "-socketAffinity" is used for physical socket-based CPU-affinity control. And "-cpuAffinity" is used for physical core-based CPU-affinity control.<br>
+We can get the same control of "-socketAffinity" option using "-cpuAffinity" if you carefully consider which core# belongs to which socket. However, this is not as user-friendly, so we provide a "-socketAffinity" option for simplifying the socket-based CPU affinity control.<br>
 "-cpuAffinity" option allows us to attach the MoonRay process to the cores in a more detailed way like partial cores of particular sockets. This is useful when you want to run MoonRay inside a particular NUMA node.
 
 Both options use id-def-string as an argument. The same id-def-string format is used for both of options but the meaning is different. The id-def-string for "-socketAffinity" indicates physical socket-id and the id-def-string for "-cpuAffinity" indicates physical core-id.
@@ -160,9 +160,11 @@ Format of id-def-string for "-socketAffinity" and "-cpuAffinity" option
 	“4,7-8,1-3”	->	1 2 3 4 7 8
 ```
 
-If you specify both “-socketAffinity” and “-cpuAffinity”, “-cpuAffinity” option overwrites the info, and “-socketAffinity” definition is ignored.
-If you don’t specify the "-socketAffinity" option, moonray tries to use the "-cpuAffinity" option setting.
-If you specify "-cpuAffinity -1", this disables the CPU affinity control. This is the current default.
+Combination of “-socketAffinity” and “-cpuAffinity” options
+* If you specify both “-socketAffinity” and “-cpuAffinity”, “-cpuAffinity” option overwrites the info, and “-socketAffinity” definition is ignored.<br>
+* If you specify only "-socketAffinity" option, MoonRay is attached to the cores using "-socketAffinity" options setting and ignores "-cpuAffinity" option info.<br>
+* If you don’t specify the "-socketAffinity" option, moonray tries to use the "-cpuAffinity" option setting.<br>
+* If you specify "-cpuAffinity -1", this disables the CPU affinity control. This is the current default.
 (This means if you don’t specify both "-socketAffinity" and "-cpuAffinity", CPU affinity control is disabled.)
 
 ### Checkpoint Rendering
