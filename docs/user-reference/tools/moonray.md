@@ -135,8 +135,10 @@ Below is more information on the some of the most commonly used options and work
 -cpuAffinity <id-def-string>
 ```
 
-You can run the moonray process attached to the physical cores by using 2 different CPU affinity control options.
-"-socketAffinity" is used for physical socket-based CPU-affinity control. and "-cpuAffinity" is used for physical core-based CPU-affinity control. We can get the same control of "-socketAffinity" option using "-cpuAffinity" if you carefully consider which core# belongs to which socket. However, this is not as user-friendly, so we provide a "-socketAffinity" option for simplifying the socket-based CPU affinity control.
+You can run the moonray process attached to the physical cores by using one of 2 different CPU affinity control options.
+"-socketAffinity" is used for physical socket-based CPU-affinity control. And "-cpuAffinity" is used for physical core-based CPU-affinity control. We can get the same control of "-socketAffinity" option using "-cpuAffinity" if you carefully consider which core# belongs to which socket. However, this is not as user-friendly, so we provide a "-socketAffinity" option for simplifying the socket-based CPU affinity control.
+"-cpuAffinity" option allows us to attach the MoonRay process to the cores in a more detailed way like partial cores of particular sockets. This is useful when you want to run MoonRay inside a particular NUMA node.
+
 Both options use id-def-string as an argument. The same id-def-string format is used for both of options but the meaning is different. The id-def-string for "-socketAffinity" indicates physical socket-id and the id-def-string for "-cpuAffinity" indicates physical core-id.
 
 Format of id-def-string for "-socketAffinity" and "-cpuAffinity" option
