@@ -161,11 +161,10 @@ Format of id-def-string for "-socketAffinity" and "-cpuAffinity" option
 ```
 
 Combination of “-socketAffinity” and “-cpuAffinity” options
-* If you specify both “-socketAffinity” and “-cpuAffinity”, “-cpuAffinity” option overwrites the info, and “-socketAffinity” definition is ignored.<br>
-* If you specify only "-socketAffinity" option, MoonRay is attached to the cores using "-socketAffinity" options setting and ignores "-cpuAffinity" option info.<br>
-* If you don’t specify the "-socketAffinity" option, moonray tries to use the "-cpuAffinity" option setting.<br>
-* If you specify "-cpuAffinity -1", this disables the CPU affinity control. This is the current default.
-(This means if you don’t specify both "-socketAffinity" and "-cpuAffinity", CPU affinity control is disabled.)
+* If you specify "-cpuAffinity" then MoonRay gets cpu-based control. If you specify "-cpuAffinity -1", CPU-affinity is disabled.
+* If you specify "-socketAffinity" then MoonRay gets socket-based control.
+* If you specify multiple “-socketAffinity” and/or “-cpuAffinity”, defined option order is important and the last option you set is used then ignore all former options.
+* If you specify neither of "-socketAffinity" and "-cpuAffinity" then CPU-affinity is disabled.
 
 ### Checkpoint Rendering
 See the [Checkpoint/Resume Rendering](../../how-to-guides/checkpoint-resume/) page.
