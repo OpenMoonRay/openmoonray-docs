@@ -89,6 +89,7 @@ title: AttributeMap
           &nbsp;&nbsp;17 = &ldquo;velocity&rdquo;<br>
           &nbsp;&nbsp;18 = &ldquo;acceleration&rdquo;<br>
           &nbsp;&nbsp;19 = &ldquo;motionvec&rdquo;<br>
+          &nbsp;&nbsp;20 = &ldquo;observer direction&rdquo;<br>
       <p class="scene-class-no-doc">No documentation available</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.images data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.AttributeMap.attributes.map_type.videos data=site.data.user-reference.scene-objects.maps.AttributeMap-%}
