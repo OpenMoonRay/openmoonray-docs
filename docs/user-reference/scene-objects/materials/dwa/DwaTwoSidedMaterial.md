@@ -51,6 +51,16 @@ title: DwaTwoSidedMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_outer_specular_model.videos data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_outer_specular_model.links heading=4-%}
     </p>
+    <h3>fallback_prevent_light_culling</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">If child materials disagree on prevent light culling, this will be used instead.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_prevent_light_culling.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_prevent_light_culling.videos data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_prevent_light_culling.links heading=4-%}
+    </p>
     <h3>fallback_specular_model</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>

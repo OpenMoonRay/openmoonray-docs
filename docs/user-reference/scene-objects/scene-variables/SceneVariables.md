@@ -330,26 +330,6 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_id_attribute_names.links heading=4-%}
     </p>
-    <h3>deep_layer_bias</h3>
-    <p class="scene-class-type">
-      <b>Float</b>
-      <br>
-      default: 0.1
-      <p class="scene-class-comments">Minimum distance between deep layers</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_layer_bias.links heading=4-%}
-    </p>
-    <h3>deep_max_layers</h3>
-    <p class="scene-class-type">
-      <b>Int</b>
-      <br>
-      default: 1
-      <p class="scene-class-comments">Maximum number of depth layers to output</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_max_layers.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_max_layers.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.deep_max_layers.links heading=4-%}
-    </p>
     <h3>deep_vol_compression_res</h3>
     <p class="scene-class-type">
       <b>Int</b>
