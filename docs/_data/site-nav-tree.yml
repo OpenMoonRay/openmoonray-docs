@@ -534,6 +534,8 @@
             path: user-reference/tools/rdl2_print.md
           - text: render_profile_viewer
             path: user-reference/tools/render-profile-viewer.md
+          - text: usd_mipmap_images
+            path: user-reference/tools/usd_mipmap_images.md
       - text: Maximizing Performance
         path: user-reference/performance/index.md
         subitems:
