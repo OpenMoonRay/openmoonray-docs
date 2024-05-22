@@ -120,7 +120,7 @@ title: UsdGeometry
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">The maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
+      <p class="scene-class-comments">The maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n). A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation. Adaptive tessellation is not supported for instances. The maximum tessellation won't exceed the value specified in mesh_resolution.  This prevents excessive tessellation when the mesh is extremely close to the camera.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.adaptive_error.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.adaptive_error.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.adaptive_error.links heading=4-%}

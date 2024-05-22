@@ -151,6 +151,16 @@ title: RenderOutput
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_normals.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_normals.links heading=4-%}
     </p>
+    <h3>cryptomatte_output_p0</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Whether to output p0 data per cryptomatte id</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_p0.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_p0.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.cryptomatte_output_p0.links heading=4-%}
+    </p>
     <h3>cryptomatte_output_positions</h3>
     <p class="scene-class-type">
       <b>Bool</b>

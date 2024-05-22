@@ -138,6 +138,16 @@ title: HairToonMaterial
 <details open>
   <summary>Specular attributes</summary>
   <p>
+    <h3>specular_1_fresnel_blend</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">The amount of fresnel to use for the toon specular response</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_fresnel_blend.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_fresnel_blend.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_fresnel_blend.links heading=4-%}
+    </p>
     <h3>specular_1_ramp_input_scale</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
@@ -148,6 +158,16 @@ title: HairToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_1_ramp_input_scale.links heading=4-%}
     </p>
+    <h3>specular_2_fresnel_blend</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">The amount of fresnel to use for the toon specular response</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_fresnel_blend.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_fresnel_blend.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_fresnel_blend.links heading=4-%}
+    </p>
     <h3>specular_2_ramp_input_scale</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
@@ -157,6 +177,16 @@ title: HairToonMaterial
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_2_ramp_input_scale.links heading=4-%}
+    </p>
+    <h3>specular_3_fresnel_blend</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">The amount of fresnel to use for the toon specular response</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_fresnel_blend.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_fresnel_blend.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_fresnel_blend.links heading=4-%}
     </p>
     <h3>specular_3_ramp_input_scale</h3>
     <p class="scene-class-type">

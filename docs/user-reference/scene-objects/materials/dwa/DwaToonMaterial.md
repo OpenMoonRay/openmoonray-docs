@@ -1286,6 +1286,16 @@ title: DwaToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_input_normal.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_enable_input_normal.links heading=4-%}
     </p>
+    <h3>toon_specular_fresnel_blend</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">The amount of fresnel to use for the toon specular response</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_fresnel_blend.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_fresnel_blend.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.toon_specular_fresnel_blend.links heading=4-%}
+    </p>
     <h3>toon_specular_indirect_reflections_intensity</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
