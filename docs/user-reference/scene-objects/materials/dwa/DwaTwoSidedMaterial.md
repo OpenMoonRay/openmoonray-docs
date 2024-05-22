@@ -72,18 +72,6 @@ title: DwaTwoSidedMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_specular_model.videos data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_specular_model.links heading=4-%}
     </p>
-    <h3>fallback_toon_specular_model</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-      <br>
-          &nbsp;&nbsp;0 = &ldquo;Beckmann&rdquo;<br>
-          &nbsp;&nbsp;1 = &ldquo;GGX&rdquo; (default)<br>
-          &nbsp;&nbsp;2 = &ldquo;Toon&rdquo;<br>
-      <p class="scene-class-comments">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_toon_specular_model.images data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_toon_specular_model.videos data=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaTwoSidedMaterial.attributes.fallback_toon_specular_model.links heading=4-%}
-    </p>
     <h3>sss_trace_set</h3>
     <p class="scene-class-type">
       <b>TraceSet</b>

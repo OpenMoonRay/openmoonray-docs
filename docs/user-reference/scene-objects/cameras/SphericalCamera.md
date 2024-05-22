@@ -118,6 +118,16 @@ title: SphericalCamera
 <details open>
   <summary>General attributes</summary>
   <p>
+    <h3>inside_out</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.inside_out.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.inside_out.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.inside_out.links heading=4-%}
+    </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
@@ -127,6 +137,16 @@ title: SphericalCamera
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.node_xform.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.node_xform.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.node_xform.links heading=4-%}
+    </p>
+    <h3>offset_radius</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-no-doc">No documentation available</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.offset_radius.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.offset_radius.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.offset_radius.links heading=4-%}
     </p>
   </p>
 </details>
