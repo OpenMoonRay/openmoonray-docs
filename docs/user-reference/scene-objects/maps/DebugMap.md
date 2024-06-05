@@ -38,7 +38,7 @@ title: DebugMap
     <p class="scene-class-type">
       <b>String</b>
       <br>
-      default: surface_st
+      default: st
       <p class="scene-class-comments">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.DebugMap.attributes.primitive_attribute_name.images data=site.data.user-reference.scene-objects.maps.DebugMap-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.DebugMap.attributes.primitive_attribute_name.videos data=site.data.user-reference.scene-objects.maps.DebugMap-%}
