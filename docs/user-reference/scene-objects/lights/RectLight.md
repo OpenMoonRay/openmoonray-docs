@@ -286,6 +286,16 @@ title: RectLight
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.RectLight.attributes.mb.videos data=site.data.user-reference.scene-objects.lights.RectLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.RectLight.attributes.mb.links heading=4-%}
     </p>
+    <h3>min_shadow_distance</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">The distance from the light before which a light-receiving surface will no longer receive shadows cast from that light.<br>Note that the distance is thresholded for each occlusion ray cast for this light, it is possible for a receiving point to lie at an intermediate distance such that some parts of the light are closer than the threshold distance and other parts beyond it, in which case the point will appearto be in partial shadow.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.RectLight.attributes.min_shadow_distance.images data=site.data.user-reference.scene-objects.lights.RectLight-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.RectLight.attributes.min_shadow_distance.videos data=site.data.user-reference.scene-objects.lights.RectLight-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.RectLight.attributes.min_shadow_distance.links heading=4-%}
+    </p>
     <h3>normalized</h3>
     <p class="scene-class-type">
       <b>Bool</b>
