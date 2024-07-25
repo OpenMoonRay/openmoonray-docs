@@ -33,17 +33,17 @@ DwaSolidDielectricMaterial("/scene/sphere/mtl/yellow") {
 }
 ```
 - `DwaSolidDielectricMaterial` is the class of the object
-- "/scene/sphere/mtl/yellow" is the object name 
+- "/scene/sphere/mtl/yellow" is the object name
 - *refractive_index* and *albedo* are attributes supported by the `DwaSolidDielectricMaterial` class
 
 In most cases, classes are implemented as shared library plugins. MoonRay searches for plugins on a path defined by the environment variable `RDL2_DSO_PATH`. In this case, assuming `RDL2_DSO_PATH` is set correctly, MoonRay will find the library **DwaSolidDielectricMaterial.so** somewhere on the path.
 
 `DwaSolidDielectricMaterial` has about 90 attributes in total. Attributes that you don't explicitly set take a default value defined by the class.
 
-You can see the attributes of a class using the `rdl2_print` command:
+You can see the attributes of a class using the [**rdl2_print**]({{ "/user-reference/tools/rdl2_print/" | absolute_url }}) command:
 
 ```bash
-$ rdl2_print DwaSolidDielectricMaterial
+$ rdl2_print -c DwaSolidDielectricMaterial
 DwaSolidDielectricMaterial("DwaBaseLayerable") {
     ["albedo"] = Rgb(1, 1, 1),  -- Rgb, bindable
         -- comment: the overall surface color as seen from a distance (ie. diffuse color)
@@ -183,11 +183,11 @@ SceneVariables {
 }
 ```
 
-There are just over 100 different scene variables in total. You can list them all using `rdl2_print`:
+There are just over 100 different scene variables in total. You can list them all using the [**rdl2_print**]({{ "/user-reference/tools/rdl2_print/" | absolute_url }}) command:
 
 ```bash
-$ rdl2_print SceneVariables
 SceneVariables("SceneObject") {
+$ rdl2_print -c SceneVariables
     ["aperture_window"] = IntVector(-2147483648, -2147483648, -2147483648, -2147483648),  -- IntVector
         -- comment: Window of the camera aperture. Overrides image width / height. Order: xmin ymin xmax ymax, with origin at left bottom.
         -- label: aperture window

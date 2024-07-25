@@ -9,8 +9,8 @@ title: Texture Format
 MoonRay <b>requires</b> the use of tiled textures, which significantly improves rendering performance. The only exception is within the cookie light filter, which accepts raw EXR files.
 </aside>  
 
-The OpenImageIO utility
-`maketx` or `oiiotool` should be used to convert common file formats to the optimal TX format.
+The OpenImageIO utility `maketx` or `oiiotool` should be used to convert common file formats to the optimal TX format.  For working with some publicly available USD scenes that do not come with tiled/mipmapped textures, see our
+[usd_mipmap_images]({{ "/user-reference/tools/usd_mipmap_images/" | absolute_url }}) tool.
 
 ## Gamma Correction
 MoonRay assumes scene linear color spaces for all textures except for 8-bit RGB, on which MoonRay applies an inverse gamma-2.2 curve.
