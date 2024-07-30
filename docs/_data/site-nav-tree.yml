@@ -14,7 +14,7 @@
           - text: Documentation Images and Models
             path: getting-started/about/docs-images-models.md
       - text: What's Included
-        path: getting-started/source-contents.md 
+        path: getting-started/source-contents.md
       - text: Installation
         path: getting-started/installation.md
         subitems:
@@ -27,10 +27,8 @@
                 path: getting-started/installation/building-moonray/rocky9_build.md
               - text: Building in a Rocky Linux 9 Container
                 path: getting-started/installation/building-moonray/rocky9_container_build.md
-              - text: Building on Centos 7
-                path: getting-started/installation/building-moonray/centos7_build.md
-              - text: Building in a Centos 7 Container
-                path: getting-started/installation/building-moonray/centos7_container_build.md
+              - text: Building on macOS Sonoma
+                path: getting-started/installation/building-moonray/macOS_build.md
               - text: Source Repository List
                 path: getting-started/installation/building-moonray/repo_deps.md
           - text: Dependencies

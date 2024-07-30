@@ -9,3 +9,6 @@ _site
 .*.swp
 .hintrc
 Gemfile.lock
+
+# Other
+node_modules
