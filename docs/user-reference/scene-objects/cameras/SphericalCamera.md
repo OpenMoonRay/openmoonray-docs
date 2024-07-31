@@ -118,15 +118,85 @@ title: SphericalCamera
 <details open>
   <summary>General attributes</summary>
   <p>
+    <h3>focal</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>blurrable</i>
+      <br>
+      default: 30.0
+      <p class="scene-class-comments">Focal length</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.focal.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.focal.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.focal.links heading=4-%}
+    </p>
     <h3>inside_out</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       <br>
       default: False
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">Set to true if the rendered image is to be mapped onto the outside of a sphere, e.g. the Las Vegas Sphere.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.inside_out.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.inside_out.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.inside_out.links heading=4-%}
+    </p>
+    <h3>latitude_zoom_offset</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Attribute for controlling the latitude of the center of zoom when the focal length is changed. By default, zooming will center around the mean of the min and max latitudes, but this behavior can be modified by supplying a non-zero offset which will be added to the mean and will reposition the zoom center.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.latitude_zoom_offset.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.latitude_zoom_offset.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.latitude_zoom_offset.links heading=4-%}
+    </p>
+    <h3>longitude_zoom_offset</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Attribute for controlling the longitude of the center of zoom when the focal length is changed. By default, zooming will center around the mean of the min and max longitudes, but this behavior can be modified by supplying a non-zero offset which will be added to the mean and will reposition the zoom center.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.longitude_zoom_offset.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.longitude_zoom_offset.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.longitude_zoom_offset.links heading=4-%}
+    </p>
+    <h3>max_latitude</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 90.0
+      <p class="scene-class-comments">Latitude corresponding to the top of the image</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.max_latitude.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.max_latitude.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.max_latitude.links heading=4-%}
+    </p>
+    <h3>max_longitude</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 180.0
+      <p class="scene-class-comments">Longitude corresponding to the right of the image</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.max_longitude.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.max_longitude.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.max_longitude.links heading=4-%}
+    </p>
+    <h3>min_latitude</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: -90.0
+      <p class="scene-class-comments">Latitude corresponding to the bottom of the image</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.min_latitude.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.min_latitude.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.min_latitude.links heading=4-%}
+    </p>
+    <h3>min_longitude</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: -180.0
+      <p class="scene-class-comments">Longitude corresponding to the left of the image</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.min_longitude.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.min_longitude.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.min_longitude.links heading=4-%}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
@@ -143,7 +213,7 @@ title: SphericalCamera
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-no-doc">No documentation available</p>
+      <p class="scene-class-comments">If using the ["inside_out"] attribute, set this value to a radius large enough to encompass all the geometry you wish to capture.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.offset_radius.images data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.offset_radius.videos data=site.data.user-reference.scene-objects.cameras.SphericalCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.SphericalCamera.attributes.offset_radius.links heading=4-%}
