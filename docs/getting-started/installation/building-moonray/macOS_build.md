@@ -15,7 +15,7 @@ title: Building MoonRay on macOS Sonoma
 
 ---
 ### Create the folders
-Create a clean root folder for moonray.  Attempting to build atop a previous installation may cause issues.
+Create a clean root folder for MoonRay.  Attempting to build atop a previous installation may cause issues.
 ```bash
 mkdir -p /Applications/MoonRay/{installs,build,build-deps,source}
 mkdir -p /Applications/MoonRay/installs/{bin,lib,include}

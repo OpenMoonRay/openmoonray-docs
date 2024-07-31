@@ -64,7 +64,7 @@ Generally root permissions are necessary to install packages onto a system. It m
 
 **Compiler**
 
-The Rocky 9 script installs GCC 11. clang 13/15/17 should also work for MoonRay, but we have seen a few issues building the dependencies with clang.
+The Rocky 9 script installs GCC 11. Clang 13/15/17 should also work for MoonRay, but we have seen a few issues building the dependencies with Clang.
 
 **CMake**
 
@@ -170,8 +170,8 @@ The other environment variables set up by *setup.sh* are:
 |Variable|Purpose|
 |--------|-------|
 | **PATH += *release*/bin** | *(must be set for Arras to function correctly)* |
-| **RDL2_DSO_PATH = *release*/rdl2dso** | *tells moonray where to find plugin shared libraries* |
-| **REZ_MOONRAY_ROOT  = *release*** | *tells moonray where to find shaders file for XPU mode (it will look for ${REZ_MOONRAY_ROOT}/shaders/GPUShaders.ptx* |
+| **RDL2_DSO_PATH = *release*/rdl2dso** | *tells MoonRay where to find plugin shared libraries* |
+| **REZ_MOONRAY_ROOT  = *release*** | *tells MoonRay where to find shaders file for XPU mode (it will look for ${REZ_MOONRAY_ROOT}/shaders/GPUShaders.ptx* |
 | **ARRAS_SESSION_PATH = *release*/sessions** | *tells Arras where to find session files* |
 | **MOONRAY_CLASS_PATH = *release*/shader_json** | *tells Hydra Ndr plugins where to find shader descriptions (see above)* |
 | **PXR_PLUGINPATH_NAME += *release*/plugin/usd** | *adds MoonRay Hydra plugins to Hydra plugin path* |
