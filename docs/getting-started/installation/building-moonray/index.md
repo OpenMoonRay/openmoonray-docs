@@ -11,7 +11,7 @@ We also provide more concrete examples of the building process:
 
 [Building in a Rocky Linux 9 Container](rocky9_container_build)
 
-[Building on macOS](macos_build)
+[Building on macOS](macOS_build)
 
 These examples make some arbitrary choices, for example the location of the cloned source, which you can change if you need to. Refer to the general instructions for more information on the possible variations.
 
