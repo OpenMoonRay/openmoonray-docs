@@ -60,6 +60,17 @@ cd /Applications/MoonRay/openmoonray/testdata
 moonray_gui -exec_mode xpu -info -in curves.rdla
 ```
 
+HOUDINI:
+Open "Houdini Terminal" in Applications and run:
+```
+source /Applications/MoonRay/openmoonray/scripts/macOS/setupHoudini.sh
+houdini
+```
+
+In the Scene View tab on the main window, change from "obj" to "stage".  
+Click on Sphere and click on the viewport to place in on the "stage".  
+In the viewport menu, click on "Persp" and select "Moonray", this should trigger rendering.
+
 ---
 ### Cleanup
 ```
