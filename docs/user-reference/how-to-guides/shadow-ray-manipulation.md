@@ -31,10 +31,6 @@ and the radiance we might have added from the light is discarded. We shoot as ma
         two intersect with the pink geometry. Therefore, our point is partially in shadow.
     </figcaption>
 </figure>
-![Shadow Ray Example]({{ "/assets/images/user-reference/how-to-guides/shadow-ray-manipulation/shadow-rays.png" | absolute_url }})
-*In this example, we have a shading point **p**, a RectLight, and a pink sphere geometry in between. In order to 
-determine how much p is in shadow, we shoot (in this case, four) shadow rays toward the RectLight and find that two 
-intersect with the pink geometry. Therefore, our point is partially in shadow.*
 
 Each of our shadow ray settings allow us to ignore shadow-casting objects by shortening the shadow rays, ensuring that 
 they do not find intersections with geometry within a certain distance. While the mechanism is similar for each 
