@@ -1,3 +1,7 @@
+---
+title: Shadow Ray Manipulation
+---
+
 # Shadow Ray Manipulation
 
 Suppose your scene is set inside a cave, and you want ambient light infused throughout your cave. An ideal 
