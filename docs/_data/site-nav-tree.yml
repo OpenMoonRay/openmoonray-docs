@@ -496,6 +496,8 @@
             path: /user-reference/how-to-guides/render-inside-medium.md
           - text: Shadow Controls
             path: /user-reference/how-to-guides/shadow-controls.md
+          - text: Shadow Ray Manipulation
+            path: /user-reference/how-to-guides/shadow-ray-manipulation.md
           - text: Shadow Terminators
             path: /user-reference/how-to-guides/shadow-terminators.md
           - text: Textures
