@@ -448,6 +448,16 @@ title: DwaToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.ramp_color_multiplier9.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.ramp_color_multiplier9.links heading=4-%}
     </p>
+    <h3>ramp_input_scale</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Factor to apply to the input diffuse reflectance before using it as the input to the ramp</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.ramp_input_scale.links heading=4-%}
+    </p>
     <h3>ramp_position_offset0</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
