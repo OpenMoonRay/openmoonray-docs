@@ -40,7 +40,7 @@ title: RemapMap
     </p>
     <h3>input_max_RGB</h3>
     <p class="scene-class-type">
-      <b>Rgb</b>
+      <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input value that will be remapped to the 'output max' value</p>
@@ -50,7 +50,7 @@ title: RemapMap
     </p>
     <h3>input_min_RGB</h3>
     <p class="scene-class-type">
-      <b>Rgb</b>
+      <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the input value that will be remapped to the 'output min' value</p>
@@ -60,7 +60,7 @@ title: RemapMap
     </p>
     <h3>midpoint_bias_RGB</h3>
     <p class="scene-class-type">
-      <b>Rgb</b>
+      <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0.5, 0.5, 0.5 ]
       <p class="scene-class-comments">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
@@ -70,7 +70,7 @@ title: RemapMap
     </p>
     <h3>output_max_RGB</h3>
     <p class="scene-class-type">
-      <b>Rgb</b>
+      <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the value that 'input max' is remapped to</p>
@@ -80,7 +80,7 @@ title: RemapMap
     </p>
     <h3>output_min_RGB</h3>
     <p class="scene-class-type">
-      <b>Rgb</b>
+      <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">the value that 'input min' is remapped to</p>
@@ -145,7 +145,7 @@ title: RemapMap
     </p>
     <h3>input_max</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
       <p class="scene-class-comments">the input value that will be remapped to the 'output max' value</p>
@@ -155,7 +155,7 @@ title: RemapMap
     </p>
     <h3>input_min</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
       <p class="scene-class-comments">the input value that will be remapped to the 'output min' value</p>
@@ -165,7 +165,7 @@ title: RemapMap
     </p>
     <h3>midpoint_bias</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b> <i>bindable</i>
       <br>
       default: 0.5
       <p class="scene-class-comments">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
@@ -175,7 +175,7 @@ title: RemapMap
     </p>
     <h3>output_max</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b> <i>bindable</i>
       <br>
       default: 1.0
       <p class="scene-class-comments">the value that 'input max' is remapped to</p>
@@ -185,7 +185,7 @@ title: RemapMap
     </p>
     <h3>output_min</h3>
     <p class="scene-class-type">
-      <b>Float</b>
+      <b>Float</b> <i>bindable</i>
       <br>
       default: 0.0
       <p class="scene-class-comments">the value that 'input min' is remapped to</p>
