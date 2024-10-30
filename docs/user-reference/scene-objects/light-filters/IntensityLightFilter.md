@@ -58,6 +58,22 @@ title: IntensityLightFilter
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.invert.videos data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.invert.links heading=4-%}
     </p>
+    <h3>light_path_selection</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;all light paths&rdquo; (default)<br>
+          &nbsp;&nbsp;1 = &ldquo;all indirect&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;all indirect first bounce&rdquo;<br>
+          &nbsp;&nbsp;3 = &ldquo;indirect diffuse&rdquo;<br>
+          &nbsp;&nbsp;4 = &ldquo;indirect diffuse first bounce&rdquo;<br>
+          &nbsp;&nbsp;5 = &ldquo;indirect specular&rdquo;<br>
+          &nbsp;&nbsp;6 = &ldquo;indirect specular first bounce&rdquo;<br>
+      <p class="scene-class-comments">Controls which light paths the filter is applied to.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.light_path_selection.images data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.light_path_selection.videos data=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.IntensityLightFilter.attributes.light_path_selection.links heading=4-%}
+    </p>
   </p>
 </details>
 <details open>

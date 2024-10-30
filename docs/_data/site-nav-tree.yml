@@ -142,6 +142,8 @@
               path: user-reference/scene-objects/lights/EnvLight.md
             - text: MeshLight
               path: user-reference/scene-objects/lights/MeshLight.md
+            - text: PortalLight
+              path: user-reference/scene-objects/lights/PortalLight.md
             - text: RectLight
               path: user-reference/scene-objects/lights/RectLight.md
             - text: SphereLight

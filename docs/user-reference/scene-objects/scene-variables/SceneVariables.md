@@ -802,6 +802,16 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.scene_scale.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.scene_scale.links heading=4-%}
     </p>
+    <h3>slerp_xforms</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">If use_rotation_motion_blur is false this will use slerp to interpolate the node_xform for motion blur</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.slerp_xforms.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.slerp_xforms.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.slerp_xforms.links heading=4-%}
+    </p>
   </p>
 </details>
 <details open>
