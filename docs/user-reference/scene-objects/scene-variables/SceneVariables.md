@@ -997,6 +997,16 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.pixel_samples.links heading=4-%}
     </p>
+    <h3>presence_quality</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.75
+      <p class="scene-class-comments">The presence quality defines the threshold for path throughput after which presence sampling becomes stochastic. This is similar to russian roulette.  A value of 1.0 means never use stochastic sampling (highest quality).  A value of 0.0 means always use stochastic sampling (faster, but may be noisy).  Values between 0.0 and 1.0 will generally be a good trade-off in speed vs. quality when multiple layers of presence are involved.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_quality.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_quality.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.presence_quality.links heading=4-%}
+    </p>
     <h3>presence_threshold</h3>
     <p class="scene-class-type">
       <b>Float</b>
@@ -1071,6 +1081,16 @@ title: SceneVariables
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_illumination_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_illumination_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_illumination_samples.links heading=4-%}
+    </p>
+    <h3>volume_indirect_samples</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      <br>
+      default: 0
+      <p class="scene-class-comments">Number of indirect illumination samples on volumes (per primary ray).</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_indirect_samples.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_indirect_samples.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.volume_indirect_samples.links heading=4-%}
     </p>
     <h3>volume_opacity_threshold</h3>
     <p class="scene-class-type">
