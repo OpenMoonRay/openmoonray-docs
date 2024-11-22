@@ -9,7 +9,7 @@ The latest 2.2.0 version of Animal Logic's ALab scene, converted to MoonRay-nati
 
 This is the basis of the [texture cache profiling page]({{ "/user-reference/alab/textureCacheSize/" | absolute_url }}).  Useful information for rendering is in the moonray.memo inside an unzipped directory (alab220/moonray.memo), along with a file alab220/middleQualityUniformHD.rdla for a middle-quality rendering setup.
 
-An earlier version of the ALab scene is also available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab.zip">ALab.zip</a> and here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.0.1.zip">ALab_2.0.1.zip</a> (with 4k mip-mapped .tx and baked procedurals).
+An earlier version of the ALab scene is also available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab.zip">ALab.zip</a> (version 2.0) and here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.0.1.zip">ALab_2.0.1.zip</a> (version 2.0.1, with 4k mip-mapped .tx and baked procedurals).
 
 A simple USD scene can be used for testing using MoonRay's Hydra plugin: [moonray_sphere.usd]({{ "/assets/test-scenes/moonray_sphere.usd" | absolute_url }}).
 
