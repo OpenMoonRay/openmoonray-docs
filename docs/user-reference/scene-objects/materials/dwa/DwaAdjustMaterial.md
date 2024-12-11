@@ -164,16 +164,6 @@ title: DwaAdjustMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.input_material.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.input_material.links heading=4-%}
     </p>
-    <h3>invisible_refractive_cryptomatte</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: False
-      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.invisible_refractive_cryptomatte.links heading=4-%}
-    </p>
     <h3>label</h3>
     <p class="scene-class-type">
       <b>String</b>
@@ -213,6 +203,26 @@ title: DwaAdjustMaterial
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.priority.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.priority.links heading=4-%}
+    </p>
+    <h3>record_reflected_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Indicates whether the next reflected surface should appear in the reflected cryptomatte layers</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.record_reflected_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.record_reflected_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.record_reflected_cryptomatte.links heading=4-%}
+    </p>
+    <h3>record_refracted_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Indicates whether the next refracted surface should appear in the refracted cryptomatte layers</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.record_refracted_cryptomatte.images data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.record_refracted_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaAdjustMaterial.attributes.record_refracted_cryptomatte.links heading=4-%}
     </p>
   </p>
 </details>
