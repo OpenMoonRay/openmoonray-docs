@@ -262,6 +262,21 @@ title: RdlCurveGeometry
   </p>
 </details>
 <details open>
+  <summary>Points attributes</summary>
+  <p>
+    <h3>use_screen_space_radius</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Radius is applied in screen space</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_screen_space_radius.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_screen_space_radius.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.use_screen_space_radius.links heading=4-%}
+    </p>
+  </p>
+</details>
+<details open>
   <summary>Ray Tracing attributes</summary>
   <p>
     <h3>ray_epsilon</h3>

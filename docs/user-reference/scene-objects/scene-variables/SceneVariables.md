@@ -385,6 +385,16 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.output_file.links heading=4-%}
     </p>
+    <h3>primary_aov</h3>
+    <p class="scene-class-type">
+      <b>RenderOutput</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">The aov that acts as the primary output. If undefined, it will default to the typical render buffer.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.primary_aov.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.primary_aov.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.primary_aov.links heading=4-%}
+    </p>
     <h3>task_distribution_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>

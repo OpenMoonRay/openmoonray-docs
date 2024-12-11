@@ -192,6 +192,16 @@ title: RdlPointGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.videos data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.radius_list.links heading=4-%}
     </p>
+    <h3>use_screen_space_radius</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Radius is applied in screen space</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_screen_space_radius.images data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_screen_space_radius.videos data=site.data.user-reference.scene-objects.geometry.RdlPointGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlPointGeometry.attributes.use_screen_space_radius.links heading=4-%}
+    </p>
     <h3>vertex_list_0</h3>
     <p class="scene-class-type">
       <b>Vec3fVector</b>
