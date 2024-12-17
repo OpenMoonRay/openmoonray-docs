@@ -48,6 +48,8 @@
           subitems:
             - text: BakeCamera
               path: user-reference/scene-objects/cameras/BakeCamera.md
+            - text: FisheyeCamera
+              path: user-reference/scene-objects/cameras/FisheyeCamera.md
             - text: OrthographicCamera
               path: user-reference/scene-objects/cameras/OrthographicCamera.md
             - text: PerspectiveCamera
