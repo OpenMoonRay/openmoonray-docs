@@ -3,7 +3,7 @@ title: rdla_filter
 ---
 # rdla_filter
 
-rdla_filter is a command line tool that parses an rdla file using various options and writes out a new one.   It's main use is in debugging complex scenes where it can be used to reduce the scene to a minimal reproducable case of a bug.
+rdla_filter is a command line tool that parses an rdla file using various options and writes out a new one.   Its main use is in debugging complex scenes where it can be used to reduce the scene to a minimal reproducable case of a bug.
 
 ## Command-line options
 Use the _-h_ flag to display the full list of command-line options.
