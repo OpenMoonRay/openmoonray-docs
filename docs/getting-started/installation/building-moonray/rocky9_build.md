@@ -3,12 +3,16 @@ title: Building MoonRay on Rocky Linux 9
 ---
 # Building MoonRay on Rocky Linux 9
 
-Requires CMake 3.23.1 (or greater)
+Start with reading the [general build instructions](../general_build).
 
-If you want to include MoonRay GPU support (XPU mode), you will also need to download the NVIDIA Optix headers
-(from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA.
-Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
-Once you have extracted the downloaded contents, note the location of the header files (under *include*): these will be copied to */usr/local/include* in step 3 below.
+---
+## Base Requirements
+* CMake 3.23.1 (or greater)
+
+* If you want to include MoonRay GPU support (XPU mode), you will also need to download the NVIDIA Optix headers
+    (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA.
+    Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
+    Once you have extracted the downloaded contents, note the location of the header files (under *include*): these will be copied to */usr/local/include* in step 3 below.
 
 ---
 ### Step 1. Create the folders
@@ -25,7 +29,6 @@ mkdir -p /opt/MoonRay/installs/{bin,lib,include}
 ```bash
 cd /opt/MoonRay/source
 git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
-cd ..
 ```
 
 Note: If building for Houdini, you'll potentially need to make the following changes before proceeding:
@@ -55,7 +58,7 @@ the build-deps/ and installs/ directory if you have previously installed the dep
 without passing -DNOUSD=1, to remove any USD related files or step 5 may fail to link to
 Houdini's USD libs.
 ```
-cd build-deps
+cd /opt/MoonRay/build-deps
 cmake ../source/openmoonray/building/Rocky9
 cmake --build . -- -j $(nproc)
 ```

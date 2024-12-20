@@ -3,6 +3,8 @@ title: Building MoonRay on macOS
 ---
 # Building MoonRay on macOS
 
+Start with reading the [general build instructions](../general_build).
+
 ---
 ## Base requirements:
 - Apple M-series hardware
@@ -27,12 +29,12 @@ mkdir -p /Applications/MoonRay/installs/{bin,lib,include}
 ```bash
 cd /Applications/MoonRay/source
 git clone --recurse-submodules <repository>
-cd ..
 ```
 
 ---
 ### Step 3. Create symbolic links
 ```bash
+cd /Applications/MoonRay
 ln -s source/openmoonray/building .
 ln -s source/openmoonray .
 ```
