@@ -6,7 +6,7 @@ title: Building MoonRay on macOS
 Start with reading the [general build instructions](../general_build).
 
 ---
-## Base requirements:
+## Base Requirements
 - Apple M-series hardware
 - macOS Sonoma (macOS 14, but also tested with macOS 15.1 Sequoia)
 - Install Xcode (tested with 15.2 and 16.1)
