@@ -12,10 +12,10 @@ cannot be chained together.  However, they can reference other scene objects whi
 `RdlInstancerGeometry` demonstrates.
 
 Each geometry procedural implements the `generate` method from the inherited 
-[Procedural](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/geom/Procedural.h)
+[Procedural](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/geom/Procedural.h)
  class.
 The types of primitives that can be generated are enumerated in
-[Api.h](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/geom/Api.h).
+[Api.h](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/geom/Api.h).
 Primitives are created by calling one of the helper functions such
 as `createPolygonMesh`.  In addition to any geometric data, the helper functions are all passed
 a `PrimitiveAttributeTable` and a `LayerAssignmentId`.   The `PrimitiveAttributeTable` is a lookup
@@ -24,10 +24,10 @@ to the geometry.   The `LayerAssignmentId` marks a unique combination of
 geometry/partName/material/lightSet in layer.
 The created primitive can then be added to the scene by calling the
 `addPrimitive` method of the
-[ProceduralLeaf](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/geom/ProceduralLeaf.h)
+[ProceduralLeaf](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/geom/ProceduralLeaf.h)
 class which all geometry procedurals derive from.  In addition to the primitive, this function is
 also passed a set of 
-[MotionBlurParams](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/geom/MotionBlurParams.h)
+[MotionBlurParams](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/geom/MotionBlurParams.h)
  as well as the `parent2render` matrix set which transforms the primitive from object space to render
  including the procedurals `node_xform` transform.
 
