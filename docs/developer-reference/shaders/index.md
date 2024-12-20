@@ -75,7 +75,7 @@ Most MoonRay plug-ins comprise several source files, as follows:
 | _\<ClassName\>.ispc_ |for some plug-in types | An ISPC source file which implements one or more vector functions |
 | _attributes.cc_ or _\<ClassName\>.json_ | always | A C++ or JSON file (dependending on plug-in type) which defines a list of user-facing attributes |
 | _CMakeLists.txt_ | always | Used to build the plug-in with CMake |
-| _SConscript_ | never | Used only for legacy internal DWA builds, not needed for new plug-ins. Existing _SConscript_ files will be removed in a later main |
+| _SConscript_ | never | Used only for legacy internal DWA builds, not needed for new plug-ins. Existing _SConscript_ files will be removed in a later release |
 
 All of the above files should be placed within their own source directory to satisfy the one-dso-per-directory
 requirement of the current build system.
