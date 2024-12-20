@@ -3,8 +3,10 @@ title: Building MoonRay on macOS
 ---
 # Building MoonRay on macOS
 
-### Base requirements:
-- macOS Sonoma (macOS 14, also tested with macOS 15.1 Sequoia)
+---
+## Base requirements:
+- Apple M-series hardware
+- macOS Sonoma (macOS 14, but also tested with macOS 15.1 Sequoia)
 - Install Xcode (tested with 15.2 and 16.1)
 - Download and install CMake 3.26.5 (or greater):
     https://github.com/Kitware/CMake/releases/download/v3.26.5/cmake-3.26.5-macos-universal.dmg
@@ -26,6 +28,11 @@ mkdir -p /Applications/MoonRay/installs/{bin,lib,include}
 cd /Applications/MoonRay/source
 git clone --recurse-submodules <repository>
 cd ..
+```
+
+---
+### Step 3. Create symbolic links
+```bash
 ln -s source/openmoonray/building .
 ln -s source/openmoonray .
 ```
@@ -36,7 +43,7 @@ Note: If building for Houdini, you'll potentially need to make the following cha
 * Edit source/openmoonray/building/macOS/pxr-houdini/pxrTargets.cmake to update HPYTHONLIB and HPYTHONINC if needed
 
 ---
-### Step 3. Build the dependencies
+### Step 4. Build the dependencies
 Note: If building for Houdini you'll need to build moonray against Houdini's USD libraries.
 You'll want to skip building USD during this step by adding `-DNOUSD=1` to the first cmake
 command below: `cmake -DNO_USD=1 ../building/macOS`.  You should clean
@@ -50,7 +57,7 @@ cmake --build .
 ```
 
 ---
-### Step 4. Build MoonRay
+### Step 5. Build MoonRay
 Note: If building for Houdini, replace macos-release presets below with macos-houdini-release
 ```bash
 cd /Applications/MoonRay/openmoonray
@@ -59,7 +66,7 @@ cmake --build --preset macos-release
 ```
 
 ---
-### Step 5. Run/Test
+### Step 6. Run/Test
 ```bash
 source /Applications/MoonRay/installs/openmoonray/scripts/setup.sh
 cd /Applications/MoonRay/openmoonray/testdata
