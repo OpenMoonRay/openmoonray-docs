@@ -33,7 +33,7 @@ ln -s source/openmoonray .
 Note: If building for Houdini, you'll potentially need to make the following changes before proceeding:
 * Edit source/openmoonray/CMakeMacOSPresets.json to update HOUDINI_INSTALL_DIR
 * Edit source/openmoonray/scripts/macOS/setupHoudini.sh to update HOUDINI_PATH
-* Edit source/openmoonray/building/macOS/pxr-houdini/pxrTargets.cmake to update HPYTHONLIB, HPYTHONINC
+* Edit source/openmoonray/building/macOS/pxr-houdini/pxrTargets.cmake to update HPYTHONLIB and HPYTHONINC if needed
 
 ---
 ### Step 3. Build the dependencies

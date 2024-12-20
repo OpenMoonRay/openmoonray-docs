@@ -8,13 +8,13 @@ Requires CMake 3.23.1 (or greater)
 If you want to include MoonRay GPU support (XPU mode), you will also need to download the NVIDIA Optix headers
 (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA.
 Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
-Once you have extracted the download contents, note the location of the header files (under *include*): these will be copied to */usr/local/include* in step 3 below.
+Once you have extracted the downloaded contents, note the location of the header files (under *include*): these will be copied to */usr/local/include* in step 3 below.
 
 ---
 ### Step 1. Create the folders
 Create a clean root folder for moonray.  Attempting to build atop a previous installation may cause issues.
-These can be created in the location of your choosing, but these instruction, the provided CMake presets,
-and several of the scripts mentioned in these instructions assume this location/structure.
+The folders can be created in the location of your choosing, but these instruction, the provided CMake presets,
+and several of the scripts mentioned below assume this location/structure.
 ```bash
 mkdir -p /opt/MoonRay/{installs,build,build-deps,source}
 mkdir -p /opt/MoonRay/installs/{bin,lib,include}
@@ -31,7 +31,7 @@ cd ..
 Note: If building for Houdini, you'll potentially need to make the following changes before proceeding:
 * Edit source/openmoonray/CMakeLinuxPresets.json to update HOUDINI_INSTALL_DIR
 * Edit source/openmoonray/scripts/Rocky9/setupHoudini.sh to update HOUDINI_PATH
-* Edit source/openmoonray/building/Rocky9/pxr-houdini/pxrTargets.cmake to update HPYTHONLIB, HPYTHONINC if needed
+* Edit source/openmoonray/building/Rocky9/pxr-houdini/pxrTargets.cmake to update HPYTHONLIB and HPYTHONINC if needed
 
 ---
 ### Step 3. Install some of the dependencies via script/package manager
@@ -62,7 +62,7 @@ cmake --build . -- -j $(nproc)
 
 ---
 ### Step 5. Build MoonRay
-Note: If building for Houdini, replace macos-release presets below with rocky9-houdini-release
+Note: If building for Houdini, replace rocky9-release presets below with rocky9-houdini-release
 ```
 cd /opt/MoonRay/source/openmoonray
 cmake --preset rocky9-release
