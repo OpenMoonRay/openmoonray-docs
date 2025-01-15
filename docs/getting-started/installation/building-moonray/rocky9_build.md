@@ -11,7 +11,7 @@ Start with reading the [general build instructions](../general_build).
 
 * If you want to include MoonRay GPU support (XPU mode), you will also need to download the NVIDIA Optix headers
     (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA.
-    Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases.
+    Be sure to download version 7.6, as MoonRay is not yet compatible with their more recent releases.
     Once you have extracted the downloaded contents, note the location of the header files (under *include*): these will be copied to */usr/local/include* in step 3 below.
 
 ---
