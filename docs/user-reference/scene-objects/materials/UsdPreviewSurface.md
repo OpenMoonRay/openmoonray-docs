@@ -78,16 +78,6 @@ title: UsdPreviewSurface
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.extra_aovs.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.extra_aovs.links heading=4-%}
     </p>
-    <h3>invisible_refractive_cryptomatte</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: False
-      <p class="scene-class-comments">Indicates whether material should/should not appear in the refractive cryptomatte layers</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.invisible_refractive_cryptomatte.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.invisible_refractive_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.invisible_refractive_cryptomatte.links heading=4-%}
-    </p>
     <h3>ior</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
@@ -167,6 +157,26 @@ title: UsdPreviewSurface
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.priority.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.priority.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.priority.links heading=4-%}
+    </p>
+    <h3>record_reflected_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Indicates whether the next reflected surface should appear in the reflected cryptomatte layers</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.record_reflected_cryptomatte.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.record_reflected_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.record_reflected_cryptomatte.links heading=4-%}
+    </p>
+    <h3>record_refracted_cryptomatte</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">Indicates whether the next refracted surface should appear in the refracted cryptomatte layers</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.record_refracted_cryptomatte.images data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.record_refracted_cryptomatte.videos data=site.data.user-reference.scene-objects.materials.UsdPreviewSurface-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.UsdPreviewSurface.attributes.record_refracted_cryptomatte.links heading=4-%}
     </p>
     <h3>roughness</h3>
     <p class="scene-class-type">

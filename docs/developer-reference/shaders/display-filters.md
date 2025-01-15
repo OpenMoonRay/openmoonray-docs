@@ -2,7 +2,7 @@
 title: Writing Display Filters
 ---
 # Writing Display Filters
-This page covers how to author a new Display Filter using our plugin API. MoonRay currently contains 18 [display filters]({{ "/user-reference/scene-objects/display-filters/" | absolute_url }}), which themselves can be chained together to achieve new effects. You can find the code for our existing display filter plugins in the [moonshine](https://github.com/dreamworksanimation/moonshine/tree/release/dso) repository. For the DisplayFilter base class, look [here](https://github.com/dreamworksanimation/scene_rdl2/blob/release/lib/scene/rdl2/DisplayFilter.cc).
+This page covers how to author a new Display Filter using our plugin API. MoonRay currently contains 18 [display filters]({{ "/user-reference/scene-objects/display-filters/" | absolute_url }}), which themselves can be chained together to achieve new effects. You can find the code for our existing display filter plugins in the [moonshine](https://github.com/dreamworksanimation/moonshine/tree/main/dso) repository. For the DisplayFilter base class, look [here](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/DisplayFilter.cc).
 
 ## Overview
 Each Display Filter plugin requires you to author three files:
@@ -10,7 +10,7 @@ Each Display Filter plugin requires you to author three files:
 - **DisplayFilterName.ispc**
 - **DisplayFilterName.json**
 
-Unlike with other plugins, where you must author a .cc file for scalar mode and a .ispc file for vector mode, Display Filters require *both* regardless of the mode. DisplayFilter filtering operations always occur in ISPC, while the C++ code acts as the intermediary between the [DisplayFilterDriver](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/rndr/DisplayFilterDriver.cc) and the ISPC code. 
+Unlike with other plugins, where you must author a .cc file for scalar mode and a .ispc file for vector mode, Display Filters require *both* regardless of the mode. DisplayFilter filtering operations always occur in ISPC, while the C++ code acts as the intermediary between the [DisplayFilterDriver](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/rndr/DisplayFilterDriver.cc) and the ISPC code. 
 
 ## Mix & Mask
 By default, all display filters offer the following attributes:
@@ -18,7 +18,7 @@ By default, all display filters offer the following attributes:
 - `invert_mask`
 - `mix`
 
-You are responsible for initializing and updating the corresponding `mMask`, `mInvertMask`, and `mMix` attributes, as well as defining how they operate on your new display filter. We typically assume that the `mask` attribute masks the output to reveal input1, while the `mix` attribute mixes between input1 and the output. We provide an ISPC function called `DISPLAYFILTER_mixAndMask` (see [code](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/displayfilter/DisplayFilter.ispc)) which takes your mix and mask attributes and outputs a float you can use to lerp between input1 and the result. 
+You are responsible for initializing and updating the corresponding `mMask`, `mInvertMask`, and `mMix` attributes, as well as defining how they operate on your new display filter. We typically assume that the `mask` attribute masks the output to reveal input1, while the `mix` attribute mixes between input1 and the output. We provide an ISPC function called `DISPLAYFILTER_mixAndMask` (see [code](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/displayfilter/DisplayFilter.ispc)) which takes your mix and mask attributes and outputs a float you can use to lerp between input1 and the result. 
 
 ## DisplayFilterName.cc
 
@@ -54,7 +54,7 @@ mFilterFuncv = (DisplayFilterFuncv) ispc::DisplayFilterClassName_getFilterFunc()
 ``` 
 This is the filter function you will export from ISPC. The `DisplayFilterDriver` will call this function when processing all of the display filters. 
 
-- `getInputData()` takes two arguments: *`InitializeData`* and *`InputData`*. `InitializeData` is a struct that contains *`mImageWidth`* and *`mImageHeight`* (padded width and height). The purpose of this function is to fill in [InputData](https://github.com/dreamworksanimation/moonray/blob/release/lib/rendering/displayfilter/DisplayFilter.h), which looks like the following:
+- `getInputData()` takes two arguments: *`InitializeData`* and *`InputData`*. `InitializeData` is a struct that contains *`mImageWidth`* and *`mImageHeight`* (padded width and height). The purpose of this function is to fill in [InputData](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/displayfilter/DisplayFilter.h), which looks like the following:
 ```cpp
 struct InputData 
 {

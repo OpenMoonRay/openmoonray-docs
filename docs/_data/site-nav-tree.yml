@@ -48,6 +48,8 @@
           subitems:
             - text: BakeCamera
               path: user-reference/scene-objects/cameras/BakeCamera.md
+            - text: FisheyeCamera
+              path: user-reference/scene-objects/cameras/FisheyeCamera.md
             - text: OrthographicCamera
               path: user-reference/scene-objects/cameras/OrthographicCamera.md
             - text: PerspectiveCamera
@@ -530,6 +532,8 @@
             path: user-reference/tools/moonray.md
           - text: moonray_gui
             path: user-reference/tools/moonray-gui.md
+          - text: rdla_filter
+            path: user-reference/tools/rdla_filter.md
           - text: rdl2_convert
             path: user-reference/tools/rdl2_convert.md
           - text: rdl2_print
