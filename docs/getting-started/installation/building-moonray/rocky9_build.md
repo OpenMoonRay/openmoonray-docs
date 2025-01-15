@@ -18,7 +18,7 @@ git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonra
 ```
 You can place the clone anywhere : the rest of this document assumes it is in */source*, so change any reference to */source* to your chosen location.
 
-If you want to include MoonRay GPU support, you will also need to download the NVIDIA Optix headers (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA. Be sure to download version 7.3, as MoonRay is not yet compatible with their more recent releases. Once you have extracted the download contents, note the location of the header files (under *include*) : these will be copied to */usr/local/include* during the process.
+If you want to include MoonRay GPU support, you will also need to download the NVIDIA Optix headers (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA. Be sure to download version 7.6, as MoonRay is not yet compatible with their more recent releases. Once you have extracted the download contents, note the location of the header files (under *include*) : these will be copied to */usr/local/include* during the process.
 
 ---
 ## Step 1. Base requirements
