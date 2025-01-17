@@ -145,14 +145,14 @@ affinity info by "-cpu_affinity", "-socket_affinity", and "-mem_affinity" option
 you have to specify "-auto_affinity of".
 
 ## Default and affinity disabled configuration
-The default is "-auto_affinity on".
+The default is "-auto_affinity on".<br>
 <br>
 If you specify "-auto_affinity off" and nothing is specified about "-cpu_affinity" and
-"-socket_affinity", "-cpu_affinity" and "-socket_affinity" definition is empty.
+"-socket_affinity", then "-cpu_affinity" and "-socket_affinity" definition is empty.
 This means CPU affinity is disabled. However, if Moonray uses entire cores of the machine,
 CPU affinity is automatically enabled for the MCRT phase.
-But this is only CPU affinity and memory affinity is still off.
+But this is only CPU affinity and memory affinity is still off.<br>
 <br>
-If you want to disable CPU affinity completely. you have to set both of 
-"-auto_affinity off" and "-cpu_affinity -1"
-
+If you want to disable all Affinity control completely. you have to set both
+"-auto_affinity off" and "-cpu_affinity -1". (memory affinity is automatically
+off when CPU affinity is disabled)
