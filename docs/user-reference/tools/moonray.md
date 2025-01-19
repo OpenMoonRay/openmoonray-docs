@@ -35,12 +35,12 @@ Options:
     -threads n
         Number of threads to use (all by default).
 
-    -core_affinity coreIdDef
-        set Core affinity definition. "-1" disables affinity control. "all" uses all CPUs
-        coreIdDef example : 0,1,2     => 0 1 2
-                            0-2,4,6-9 => 0,1,2,4,6,7,8,9
-                            -1        => disable affinity
-                            all       => use all Cores of the host
+    -cpu_affinity cpuIdDef
+        set CPU affinity definition. "-1" disables CPU affinity control. "all" uses all CPUs
+        cpuIdDef example : 0,1,2     => 0 1 2
+                           0-2,4,6-9 => 0,1,2,4,6,7,8,9
+                           -1        => disable CPU affinity
+                           all       => use all CPUs of the host
 
     -socket_affinity socketIdDef
         set Socket affinity definition. "all" uses all Sockets

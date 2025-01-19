@@ -14,14 +14,14 @@ We have several different options related to CPU/Memory affinity control for Moo
 The following are MoonRay's command line options that relate to affinity control
 
 ```bash
--core_affinity   <coreIdDef>
+-cpu_affinity    <cpuIdDef>
 -socket_affinity <socketIdDef>
 -mem_affinity    on|off
 -auto_affinity   on|off
 ```
 
 There are 2 different affinity categories, CPU and Memory.<br>
-We have 2 different options to specify CPU affinity. They are "-core_affinity" and "-socket_affinity".<br>
+We have 2 different options to specify CPU affinity. They are "-cpu_affinity" and "-socket_affinity".<br>
 We have 1 option to control Memory Affinity. This is "-mem_affinity".<br>
 We also have special useful options for affinity control at a higher level and this is "-auto_affinity".<br>
 <br>
@@ -35,16 +35,16 @@ control options next.
 ## CPU (physical socket or core) affinity control
 ```
 -socket_affinity <id-def-string>
--core_affinity   <id-def-string>
+-cpu_affinity    <id-def-string>
 ```
 You can run the MoonRay process attached to the physical cores by using one of 2 different CPU affinity
-control options. "-socket_affinity" is used for physical socket-based control. And "-core_affinity" is
+control options. "-socket_affinity" is used for physical socket-based control. And "-cpu_affinity" is
 used for physical core-based control.<br>
 <br>
-We can get the same control of "-socket_affinity" option using "-core_affinity" if you carefully consider
+We can get the same control of "-socket_affinity" option using "-cpu_affinity" if you carefully consider
 which core# belongs to which socket. However, this is not as user-friendly, so we provide a "-socket_affinity"
 option for simplifying the socket-based CPU affinity control.
-"-core_affinity" option allows us to attach the MoonRay process to the cores in a more detailed way
+"-cpu_affinity" option allows us to attach the MoonRay process to the cores in a more detailed way
 like some cores of particular sockets. This is useful when you want to run MoonRay inside a
 particular NUMA node.<br>
 These CPU affinity controls maximize L1, L2, and L3 cache coherency.<br>
@@ -72,9 +72,9 @@ and the id-def-string for "-core_affiity" indicates physical core-id.<br>
         "4,7-8,1-3" -> 1 2 3 4 7 8
 ```
 4. Special keyword of meaning all<br>
-        For example, some host has 2 sockets and each CPU has 8 cores 
+        For example, some host has 2 sockets and each Socket has 8 cores 
 ```
-        "all"       -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 (If used for -core_affinity)
+        "all"       -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 (If used for -cpu_affinity)
                     -> 0 1 (If used for -socket_affinity)
 ```
 <br>
@@ -88,28 +88,28 @@ example
         -socket_affinity 0   : only use socket 0
         -socket_affinity all : use all sockets (i.e. use entire CPU cores)
 ```
-You can specify id-def-string or also special value -1 for "-core_affinity" option
+You can specify id-def-string or also special value -1 for "-cpu_affinity" option
 ```
--core_affinity <id-def-string> : specify affinity CPU info by CPU core id.
+-cpu_affinity <id-def-string> : specify affinity CPU info by CPU core id.
 or
--core_affinity -1 : This is a special case. force to disable all CPU affinity control.
+-cpu_affinity -1 : This is a special case. force to disable all CPU affinity control.
 
 example
-        -core_affinity 0-3   : 0,1,2,3
-        -core_affinity -1    : force to disable all CPU affinity control.
-        -core_affinity all   : use all CPU cores.
+        -cpu_affinity 0-3   : 0,1,2,3
+        -cpu_affinity -1    : force to disable all CPU affinity control.
+        -cpu_affinity all   : use all CPU cores.
 ```
 <br>
-### Combination of "-socket_affinity" and "-core_affinity"
+### Combination of "-socket_affinity" and "-cpu_affinity"
 (This is a "-auto_affinity off" case, Explain "-auto_affinity on" in the [later](#high-level-affinity-control)).
 
-* If you specify "-core_affinity" then MoonRay gets cpu-based control. If you specify "-core_affinity -1",
+* If you specify "-cpu_affinity" then MoonRay gets cpu-based control. If you specify "-cpu_affinity -1",
 CPU affinity control is disabled.
 * If you specify "-socket_affinity" then MoonRay gets socket-based control
-* If you specify both "-socket_affinity" and "-core_affinity", MoonRay gets cpu-based control
+* If you specify both "-socket_affinity" and "-cpu_affinity", MoonRay gets cpu-based control
 (socket_affinity setting is ignored).
-* If you specify neither of "-socket_affinity" and "-core_affinity" then CPU affinity is disabled.
-However, even in this case, if you use the entire cores of the machine, MoonRay sets "-core_affinity all"
+* If you specify neither of "-socket_affinity" and "-cpu_affinity" then CPU affinity is disabled.
+However, even in this case, if you use the entire cores of the machine, MoonRay sets "-cpu_affinity all"
 automatically. (See [here](#default-and-affinity-disabled-configuration) for more detail.)
 <br>
 
@@ -119,7 +119,7 @@ Memory affinity option requires on or off argument
 -mem_affinity on|off
 ```
 You can specify memory affinity control by this option. This option works if the CPU affinity control
-("-core_affinity" or "-socket_affinity" options) is enabled. If CPU affinity control is disabled,
+("-cpu_affinity" or "-socket_affinity" options) is enabled. If CPU affinity control is disabled,
 regardless of your "-mem_affinity" setting, memory affinity control is automatically disabled.<br>
 <br>
 If memory affinity is enabled, all the MCRT threads allocate internal queues and pool memory from
@@ -137,29 +137,29 @@ The default is on.<br>
 If auto affinity is on, CPU and Memory affinity condition is decided by the following logic.
 
 1. If MoonRay runs on all the cores of the machines, MoonRay automatically sets both CPU and
-Memory affinity on. You don't need to specify "-core_affiniyty", "-socket_affinity", and
+Memory affinity on. You don't need to specify "-cpu_affinity", "-socket_affinity", and
 "-mem_affinity" options individually.
 2. If MoonRay runs on partial cores (i.e. not using entire machines by using a small number
 for "-threads" MoonRay command line options), CPU and Memory affinity are automatically disabled
 at this moment. However, this behavior will be changed in the future and decide affinity setting
 more intelligently.
 
-If auto affinity is off, fall back to the regular way and analyze "-core_affinity",
+If auto affinity is off, fall back to the regular way and analyze "-cpu_affinity",
 "-socket_affinity", and "-mem_affinity" options. This means if you want to specify detailed
-affinity info by "-core_affinity", "-socket_affinity", and "-mem_affinity" options,
+affinity info by "-cpu_affinity", "-socket_affinity", and "-mem_affinity" options,
 you have to specify "-auto_affinity off".
 
 ## Default and affinity disabled configuration
 The default is "-auto_affinity on".<br>
 <br>
-If you specify "-auto_affinity off" and nothing is specified about "-core_affinity" and
-"-socket_affinity", then "-core_affinity" and "-socket_affinity" definition is empty.
+If you specify "-auto_affinity off" and nothing is specified about "-cpu_affinity" and
+"-socket_affinity", then "-cpu_affinity" and "-socket_affinity" definition is empty.
 This means CPU affinity is disabled. However, if MoonRay uses entire cores of the machine,
 CPU affinity is automatically enabled for the MCRT phase.
 But this is only CPU affinity and memory affinity is still off.<br>
 <br>
 If you want to disable all Affinity control completely. you have to set both
-"-auto_affinity off" and "-core_affinity -1". (memory affinity is automatically
+"-auto_affinity off" and "-cpu_affinity -1". (memory affinity is automatically
 off when CPU affinity is disabled)
 
 ## Log Message
@@ -241,7 +241,7 @@ MOONRAY MCRT thread pool {
 ### Example3:  Disabled all affinity
 If MoonRay disables all affinity control by following options,
 ```
--auto_affinity off -core_affinity -1
+-auto_affinity off -cpu_affinity -1
 ```
 RenderPrep output is like this
 ```
