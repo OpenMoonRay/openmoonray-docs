@@ -6,12 +6,11 @@ title: Affinity Control
 ## Purpose
 The purpose of the affinity control is to maximize CPU/Memory cache coherency and minimize inter NUMA-node
 memory access activities, especially for the massive read/write memory access like vector mode bundled queue
-and pool entries. Using CPU and Memory affinity options, rendering speed might gain especially if your host
-has many NUMA-nodes like 8. (But improvement would depend on the hardware environment.)
+and pool entries. Setting the CPU and Memory affinity options can improve rendering performance, especially
+for hosts with a large number of NUMA nodes.
 
 ## Command line Options
-We have several different options related to CPU/Memory affinity control for MoonRay.
-The following are MoonRay's command line options that relate to affinity control
+There are several options related to CPU/Memry affinity control for MoonRay:
 
 ```bash
 -cpu_affinity    <cpuIdDef>
@@ -20,17 +19,17 @@ The following are MoonRay's command line options that relate to affinity control
 -auto_affinity   on|off
 ```
 
-There are 2 different affinity categories, CPU and Memory.<br>
-We have 2 different options to specify CPU affinity. They are "-cpu_affinity" and "-socket_affinity".<br>
-We have 1 option to control Memory Affinity. This is "-mem_affinity".<br>
-We also have special useful options for affinity control at a higher level and this is "-auto_affinity".<br>
+There are two different affinity categories, CPU and Memory.<br>
+There are two options to specify CPU affinity: "-cpu_affinity" and "-socket_affinity".<br>
+There is one option to control memory affinity: "-mem_affinity".<br>
+There is also an option for controlling affinity at a high level: "-auto_affinity". <br>
 <br>
-These options are related to NUMA architecture and only work on Linux environments.<br>
-On Mac, all the options exist but these options are ignored at runtime because Mac is a unified memory
-architecture and does not make sense regarding NUMA-related CPU/Memory affinity control.
+These options are related to NUMA architecture and only work in Linux environments.<br>
+On Mac, the options exist but are ignored at runtime because Mac is a unified memory
+architecture and does not require NUMA-related CPU/Memory affinity control.
 <br>
-In this section, explain CPU and Memory affinity options first. Then will explain higher-level affinity
-control options next.
+In this section, we explain the explicit CPU and Memory affinity options.
+The next section will explain the higher-level affinity control options.
 
 ## CPU (physical socket or core) affinity control
 ```
@@ -71,7 +70,7 @@ and the id-def-string for "-core_affiity" indicates physical core-id.<br>
         "0-2,3,4-6" -> 0 1 2 3 4 5 6
         "4,7-8,1-3" -> 1 2 3 4 7 8
 ```
-4. Special keyword of meaning all<br>
+4. Special "all" keyword<br>
         For example, some host has 2 sockets and each Socket has 8 cores 
 ```
         "all"       -> 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 (If used for -cpu_affinity)
@@ -101,7 +100,8 @@ example
 ```
 <br>
 ### Combination of "-socket_affinity" and "-cpu_affinity"
-(This is a "-auto_affinity off" case, Explain "-auto_affinity on" in the [later](#high-level-affinity-control)).
+(This applies to the "-auto_affinity off" case. We explain "-auto_affinity on"
+in the [later section](#high-level-affinity-control)).
 
 * If you specify "-cpu_affinity" then MoonRay gets cpu-based control. If you specify "-cpu_affinity -1",
 CPU affinity control is disabled.
@@ -139,26 +139,26 @@ If auto affinity is on, CPU and Memory affinity condition is decided by the foll
 1. If MoonRay runs on all the cores of the machines, MoonRay automatically sets both CPU and
 Memory affinity on. You don't need to specify "-cpu_affinity", "-socket_affinity", and
 "-mem_affinity" options individually.
-2. If MoonRay runs on partial cores (i.e. not using entire machines by using a small number
+2. If MoonRay runs on partial cores (i.e. not using the entire machine by using a small number
 for "-threads" MoonRay command line options), CPU and Memory affinity are automatically disabled
-at this moment. However, this behavior will be changed in the future and decide affinity setting
-more intelligently.
+at this moment. However, this behavior may be changed in the future to determine ideal affinity
+settings more intelligently.
 
-If auto affinity is off, fall back to the regular way and analyze "-cpu_affinity",
+If auto affinity is off, the behavior is to fall back to the regular way and analyze "-cpu_affinity",
 "-socket_affinity", and "-mem_affinity" options. This means if you want to specify detailed
-affinity info by "-cpu_affinity", "-socket_affinity", and "-mem_affinity" options,
+affinity control by "-cpu_affinity", "-socket_affinity", and "-mem_affinity" options,
 you have to specify "-auto_affinity off".
 
 ## Default and affinity disabled configuration
 The default is "-auto_affinity on".<br>
 <br>
 If you specify "-auto_affinity off" and nothing is specified about "-cpu_affinity" and
-"-socket_affinity", then "-cpu_affinity" and "-socket_affinity" definition is empty.
-This means CPU affinity is disabled. However, if MoonRay uses entire cores of the machine,
+"-socket_affinity", then "-cpu_affinity" and "-socket_affinity" definition is empty,
+this means CPU affinity is disabled. However, if MoonRay uses all of the cores of the machine,
 CPU affinity is automatically enabled for the MCRT phase.
 But this is only CPU affinity and memory affinity is still off.<br>
 <br>
-If you want to disable all Affinity control completely. you have to set both
+If you want to disable all Affinity control completely, you must set both
 "-auto_affinity off" and "-cpu_affinity -1". (memory affinity is automatically
 off when CPU affinity is disabled)
 
@@ -176,11 +176,11 @@ MCRT info is output at the beginning of the MCRT stage.
 Output formatting might be changed depending on the different versions.
 
 ### Example1: Using entire cores
-This is an example of follorwing option.
+This is an example of the following option.
 ```
 -auto_affinity on
 ```
-RenderPrep affinity control output is like this.<br>
+RenderPrep affinity control output:<br>
 ```
 RenderPrep pid:2137518 CpuAffinityMask (cpuTotal:384) {
   cpuId(383~352) bit(1111-1111-1111-1111/1111-1111-1111-1111) hex(ffff-ffff)
@@ -198,7 +198,7 @@ RenderPrep pid:2137518 CpuAffinityMask (cpuTotal:384) {
 }
 ```
 This indicates actively used cores as a bit pattern. In this case, all the cores are ON.<br>
-This is an example of MCRT phase output<br>
+This is an example of MCRT phase output:<br>
 ```
 MOONRAY MCRT thread pool {
   CPU-affinity control enabled : all : CPU-Tbl (total:384) {0-383}
@@ -208,11 +208,11 @@ MOONRAY MCRT thread pool {
 MCRT info summarizes CPU/Memory affinity information.
 
 ### Example2: Only using socket0 with memory affinity on
-If MoonRay uses only socket 0 by following the options.
+If MoonRay uses only socket 0 using following the options:
 ```
 -auto_affinity off -socket_affinity 0 -mem_affinity on
 ```
-RenderPrep output is like this
+RenderPrep output is like this:
 ```
 RenderPrep Socket-affinity 0 cpuIdTbl (total:192) {0-95,192-287}
 RenderPrep pid:2141457 CpuAffinityMask (cpuTotal:384) {
@@ -231,7 +231,7 @@ RenderPrep pid:2141457 CpuAffinityMask (cpuTotal:384) {
 }
 ```
 This indicates MoonRay only uses cores that belong to socket-0.<br>
-MCRT affinity info output is like this<br>
+MCRT affinity info output is like this:<br>
 ```
 MOONRAY MCRT thread pool {
   CPU-affinity control enabled : CPU-Tbl (total:192) {0-95,192-287}
@@ -239,15 +239,15 @@ MOONRAY MCRT thread pool {
 }
 ```
 ### Example3:  Disabled all affinity
-If MoonRay disables all affinity control by following options,
+If MoonRay disables all affinity control by following options:
 ```
 -auto_affinity off -cpu_affinity -1
 ```
-RenderPrep output is like this
+RenderPrep output is like this:
 ```
 RenderPrep CPU-affinity control disabled
 ```
-and MCRT affinity info output is like this
+and MCRT affinity info output is like this:
 ```
 MOONRAY MCRT thread pool {
   MCRT-CPU-affinity control disabled : numRenderThreads:384
@@ -257,22 +257,22 @@ MOONRAY MCRT thread pool {
 
 ## Technical Details
 If you specify CPU affinity control, this affinity info applies to the both RenderPrep phase and the MCRT phase.
-However, behavior is a slightly different between RenderPrep and MCRT.<br>
-At the RenderPrep, CPU affinity info is applied as the process-based. We don't know which thread is attached
-to the which cores at runtime because threads are generated by TBB thread pool on the fly during the RenderPrep
-stage. However, from the process level, all the thread activities are bounded to the user defined CPU ids and
-it looks process is attached to the particular sets of CPU cores and this MoonRay process never uses cores which
-is not listed in the defined core ids.<br>
+However, the behavior is a slightly different between RenderPrep and MCRT.<br>
+At the RenderPrep stage, CPU affinity control is process-based. We don't know which thread is attached
+to which cores at runtime because threads are generated by TBB thread pool on the fly during the RenderPrep
+stage. However, at the process level all the thread activities are bounded to the user defined CPU ids and
+it looks as thought the process is attached to the particular sets of CPU cores and this MoonRay process never
+uses cores which are not listed in the defined core ids.<br>
 At the MCRT stages, CPU affinity control works more precisely. MoonRay is using its own thread pool
 (i.e. not the TBB thread pool) and it precisely controls which MCRT thread is attached to which core.
 This maximizes the CPU cache coherency much better.<br>
 <br>
-Memory affinity control is tightly related to CPU affinity control. And memory affinity works on the MCRT thread
+Memory affinity control is tightly related to CPU affinity control and works on the MCRT threads
 of the MCRT phase only. We cannot apply any memory affinity effect to the RenderPrep phase at this moment. 
 Memory affinity of MCRT phase is designed to optimize the bundled architecture of MoonRay which is used by vector
-and XPU mode. Accessing the internal bundled queue and pool gets lots of benefits from memory affinity because
+and XPU modes. Accessing the internal bundled queue and pool gets lots of benefits from memory affinity because
 all the critical memory accessing is only happening inside the NUMA node to which each MCRT thread belongs.
-This situation reduces inter NUMA-node memory access penalties a lot and finally rendering speed is enhanced. 
-The memory management regarding scalar mode does not change anything even set "-mem_affinity on" at this moment.
-However, scalar performance might be increased a bit due to L1, L2, and L3 cache coherency is improved by using
+This situation reduces inter NUMA-node memory access penalties a lot and therefore rendering speed is enhanced. 
+The memory management regarding scalar mode does not change anything even if we set "-mem_affinity on" at this time.
+However, scalar performance may be increased a bit because L1, L2, and L3 cache coherency is improved by using
 CPU affinity control.
