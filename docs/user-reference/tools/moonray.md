@@ -35,16 +35,25 @@ Options:
     -threads n
         Number of threads to use (all by default).
 
-    -cpuAffinity cpuIdDef
-        set CPU affinity definition. "-1" disables CPU affinity control.
+    -cpu_affinity cpuIdDef
+        set CPU affinity definition. "-1" disables CPU affinity control. "all" uses all CPUs
         cpuIdDef example : 0,1,2     => 0 1 2
                            0-2,4,6-9 => 0,1,2,4,6,7,8,9
-                           -1        => disable CPU affinity (default)
+                           -1        => disable CPU affinity
+                           all       => use all CPUs of the host
 
-    -socketAffinity socketIdDef
-        set Socket affinity definition
-        socketIdDef example : 0
+    -socket_affinity socketIdDef
+        set Socket affinity definition. "all" uses all Sockets
+        socketIdDef example : 0          => 0
                               0,1 or 0-1 => 0 1
+                              all        => use all Sockets of the hosts
+
+    -mem_affinity on|off
+        set Memory affinity control. Default is off.
+
+    -auto_affinity on|off
+        set Auto affinity control mode. Default is on.
+        This automatically sets CPU and Memory affinity based on the user-specified thread total.
 
     -size 1920 1080
         Canonical frame width and height (in pixels).
@@ -128,43 +137,8 @@ Options:
 
 Below is more information on the some of the most commonly used options and workflows.
 
-### CPU (physical socket/core) affinity control
-
-```
--socketAffinity <id-def-string>
--cpuAffinity <id-def-string>
-```
-
-You can run the moonray process attached to the physical cores by using one of 2 different CPU affinity control options. "-socketAffinity" is used for physical socket-based CPU-affinity control. And "-cpuAffinity" is used for physical core-based CPU-affinity control.<br>
-We can get the same control of "-socketAffinity" option using "-cpuAffinity" if you carefully consider which core# belongs to which socket. However, this is not as user-friendly, so we provide a "-socketAffinity" option for simplifying the socket-based CPU affinity control.<br>
-"-cpuAffinity" option allows us to attach the MoonRay process to the cores in a more detailed way like partial cores of particular sockets. This is useful when you want to run MoonRay inside a particular NUMA node.
-
-Both options use id-def-string as an argument. The same id-def-string format is used for both of options but the meaning is different. The id-def-string for "-socketAffinity" indicates physical socket-id and the id-def-string for "-cpuAffinity" indicates physical core-id.
-
-Format of id-def-string for "-socketAffinity" and "-cpuAffinity" option
-1. list of ids : separator is ‘,’(comma) without space.
-```
-	“0,1,2”	-> 	0 1 2
-	“9,8,5”	->	5 8 9
-	“9,5,7”	->	5 7 9
-```
-2. range def by ‘-‘(dash) without space
-```
-	“0-3”		->	0 1 2 3
-	“1-3,8-9”	->	1 2 3 8 9
-	“5-7,0-2”	->	0 1 2 5 6 7
-```
-3. You can use both the list of ids and range def at the same time
-```
-	“0-2,3,4-6”	->	0 1 2 3 4 5 6
-	“4,7-8,1-3”	->	1 2 3 4 7 8
-```
-
-Combination of “-socketAffinity” and “-cpuAffinity” options
-* If you specify "-cpuAffinity" then MoonRay gets cpu-based control. If you specify "-cpuAffinity -1", CPU-affinity is disabled.
-* If you specify "-socketAffinity" then MoonRay gets socket-based control.
-* If you specify both "-socketAffinity" and "-cpuAffinity", MoonRay gets cpu-based control (socketAffinity setting is ignored).
-* If you specify neither of "-socketAffinity" and "-cpuAffinity" then CPU-affinity is disabled.
+### Affinity control (CPU and Memory)
+See the [Affinity control](../../affinity-control/) page for more info.
 
 ### Checkpoint Rendering
 See the [Checkpoint/Resume Rendering](../../how-to-guides/checkpoint-resume/) page.
