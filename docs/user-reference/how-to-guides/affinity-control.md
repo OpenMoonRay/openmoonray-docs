@@ -108,9 +108,8 @@ CPU affinity control is disabled.
 * If you specify "-socket_affinity" then MoonRay gets socket-based control
 * If you specify both "-socket_affinity" and "-cpu_affinity", MoonRay gets cpu-based control
 (socket_affinity setting is ignored).
-* If you specify neither of "-socket_affinity" and "-cpu_affinity" then CPU affinity is disabled.
-However, even in this case, if you use the entire cores of the machine, MoonRay sets "-cpu_affinity all"
-automatically. (See [here](#default-and-affinity-disabled-configuration) for more detail.)
+* If you specify neither of "-socket_affinity" and "-cpu_affinity" then CPU/Mem affinity is disabled
+(See [here](#default-and-affinity-disabled-configuration) for more details).
 <br>
 
 ## Memory affinity control
@@ -154,13 +153,14 @@ The default is "-auto_affinity on".<br>
 <br>
 If you specify "-auto_affinity off" and nothing is specified about "-cpu_affinity" and
 "-socket_affinity", then "-cpu_affinity" and "-socket_affinity" definition is empty,
-this means CPU affinity is disabled. However, if MoonRay uses all of the cores of the machine,
-CPU affinity is automatically enabled for the MCRT phase.
-But this is only CPU affinity and memory affinity is still off.<br>
+this means CPU affinity is disabled at this time. And also automatically Mem affinity is disabled
+as well. But this is related to the default behavior of empty settings of "-cpu_affinity" and
+"-socket_affinity". Default behaviour might be changed in the future version of MoonRay.<br>
 <br>
 If you want to disable all Affinity control completely, you must set both
 "-auto_affinity off" and "-cpu_affinity -1". (memory affinity is automatically
-off when CPU affinity is disabled)
+off when CPU affinity is disabled). Future version of any default behaviour change does not
+affect this and always disable all Affinity controls.
 
 ## Log Message
 MoonRay outputs Affinity conditions to the log regardless of using -info options of MoonRay.<br>
