@@ -424,6 +424,8 @@
             path: /user-reference/how-to-guides/adaptive-light-sampling.md
           - text: Adaptive Sampling
             path: /user-reference/how-to-guides/adaptive-sampling.md
+          - text: Affinity Control
+            path: /user-reference/how-to-guides/affinity-control.md
           - text: Baking Textures
             path: /user-reference/how-to-guides/baking-textures.md
           - text: Base Volume Ramp
