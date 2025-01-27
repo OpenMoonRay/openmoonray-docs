@@ -399,19 +399,23 @@ This is a full list of the options supported by each computation. Many are curre
 
 |attribute|type|default|description|
 |---------|----|-------|-----------|
-|applicationMode|`string` _"motionCapture"_|undefined|Affects the behavior of the backend mcrt computation. Currently, we have one possible setting : “motionCapture”, but this is experimental. The default of "undefined" is best for interactive lighting sessions.|
-|dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray’s command-line option -dso_path.|
+|applicationMode|`string` _"motionCapture"_|undefined|Affects the behavior of the backend mcrt computation. Currently, we have one possible setting : "motionCapture", but this is experimental. The default of "undefined" is best for interactive lighting sessions.|
+|auto_affinity|`string` _"on"_\|_"off"_|"on"|Specify auto_affinity option (See [here](../../../user-reference/how-to-guides/affinity-control/#high-level-affinity-control) for more details).|
+|cpu_affinity|`string` _"\<cpuIdString\>"_|"" (empty)|Specify cpu_affinity option (See [here](../../../user-reference/how-to-guides/affinity-control/#cpu-physical-socket-or-core-affinity-control) for more details).| 
+|dsopath|`string` (path)|"" (empty)|Prepend to search path for RDL DSOs. Same as moonray's command-line option -dso_path.|
 |enableDepthBuffer|`bool`|false|This command generates pixel center depth value as pixelInfo data, independent from AOV buffers. A client can access pixelInfo value using the `mcrt_dataio::ClientReceiverFb::getPixelInfo*()` [APIs](../doxygen-pages/#mcrt_dataioclientreceiverfb).|
-|exec_mode|`string` _"auto"_\|_"vector"_ \|_"scalar"_\|_"xpu"_|_auto_|Choose a specific mode of execution.  Same as moonray’s command-line option "-exec_mode".|
-|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surfaces will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's “fast\_geometry\_update”.|
+|exec_mode|`string` _"auto"_\|_"vector"_ \|_"scalar"_\|_"xpu"_|_auto_|Choose a specific mode of execution.  Same as moonray's command-line option "-exec_mode".|
+|fastGeometry|`bool`|false|If this flag is false, the tessellation related data for subdivision surfaces will be deleted after tessellation is done. Otherwise, that data will be kept in memory to support re-tessellation after geometry are updated. Same as SceneVariable's "fast\_geometry\_update".|
 |fps|`float`|12.0|Set image update fps.|
-|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. dispatch computation) if this option is true, and receiving an update indicates it’s time to render the next frame. Receiving a snapshot-request indicates it’s time to make another snapshot. Under single-machine configuration, this command is just skipped.  This option is experimental.|
+|frameGating|`bool`|false|In a multi-machine configuration, frame gating is handled upstream (i.e. dispatch computation) if this option is true, and receiving an update indicates it's time to render the next frame. Receiving a snapshot-request indicates it's time to make another snapshot. Under single-machine configuration, this command is just skipped.  This option is experimental.|
 |initialCredit|`int`|-1|Set initial credit rate for arras message passing layer. If rate is >= 0 credit rate control will be enabled otherwise it is inactive.|
-|machineId|`int`|-1 (default value does not work. You should always define machineId)|Each backend mcrt computation’s machineId. This machineId should be independent on each backend mcrt computations. Machine id should be start from 0 to the total number of backend mcrt computations - 1.|
+|machineId|`int`|-1 (default value does not work. You should always define machineId)|Each backend mcrt computation's machineId. This machineId should be independent on each backend mcrt computations. Machine id should be start from 0 to the total number of backend mcrt computations - 1.|
+|mem_affinity|`string` _"on"_\|_"off"_|"" (empty)|Specify mem_affinity option (See [here](../../../user-reference/how-to-guides/affinity-control/#memory-affinity-control) for more details).| 
 |numMachines|`int`|-1 (default value does not work. You should always define numMachines)|Set the total number of backend mcrt computations. The number should be 1 or bigger.
 |packTilePrecision|`string` _auto32_ \| _auto16_ \| _full32_ \| _full16_|_auto16_|The packTile codec is used in order to transfer image data between computations and clients. This command sets the packTile codec's precision mode (*see below*).|
-|renderMode|`string` _"realtime"_|"" (empty)|This is an experimental command. If you set "realtime" renderMode, the backend mcrt computation changes internal operation to realtime rendering mode. If you don’t set this command, backend mcrt computation uses “progressive” render mode for single machine computation and uses “timebased checkpoint” mode for multi-machine configuration.|
+|renderMode|`string` _"realtime"_|"" (empty)|This is an experimental command. If you set "realtime" renderMode, the backend mcrt computation changes internal operation to realtime rendering mode. If you don't set this command, backend mcrt computation uses "progressive" render mode for single machine computation and uses "timebased checkpoint" mode for multi-machine configuration.|
 |scene|`string` (scene-filename.rdl{a\|b})|"" (empty)|Backend mcrt computation reads this scene data just after booting if defined.|
+|socket_affinity|`string` _"\<socketIdString\>"_|"" (empty)|Specify socket_affinity option (See [here](../../../user-reference/how-to-guides/affinity-control/#cpu-physical-socket-or-core-affinity-control) for more details).| 
 
 More info on _packTilePrecision_ options:
 
@@ -446,5 +450,3 @@ We have 2 stages in image generation. coarse pass stage and fine pass stage.
 * _full16_ : always uses H16 (half 16bit float) for all stages
 
 This packTile precision control is a crucial and big impact on the message traffic volume. A smaller message size is always good for performance. auto16 always can generate the smallest possible messages and the best from a performance standpoint. However, if you need to get exact full precision of float data on the client, auto32 or full32 would be a practical choice.
-
-

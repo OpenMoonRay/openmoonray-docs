@@ -138,7 +138,7 @@ Options:
 Below is more information on the some of the most commonly used options and workflows.
 
 ### Affinity control (CPU and Memory)
-See the [Affinity control](../../affinity-control/) page for more info.
+See the [Affinity control](../../how-to-guides/affinity-control/) page for more info.
 
 ### Checkpoint Rendering
 See the [Checkpoint/Resume Rendering](../../how-to-guides/checkpoint-resume/) page.
