@@ -22,6 +22,7 @@ RenderOutput("/output/beauty") {
     ["result"] = 0, -- beauty
     ["channel_name"] = "beauty",
     ["checkpoint_file_name"] = "checkpoint0.exr",
+    ["resume_file_name"] = "resume0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
@@ -32,6 +33,7 @@ RenderOutput("/output/weight") {
     ["result"] = 11, -- weight
     ["channel_name"] = "weight",
     ["checkpoint_file_name"] = "checkpoint0.exr",
+    ["resume_file_name"] = "resume0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
@@ -42,6 +44,7 @@ RenderOutput("/output/beautyaux") {
     ["result"] = 12, -- beauty aux
     ["channel_name"] = "beauty aux",
     ["checkpoint_file_name"] = "checkpoint0.exr",
+    ["resume_file_name"] = "resume0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
@@ -52,6 +55,7 @@ RenderOutput("/output/alphaaux") {
     ["result"] = 14, -- alpha aux
     ["channel_name"] = "alpha aux",
     ["checkpoint_file_name"] = "checkpoint0.exr",
+    ["resume_file_name"] = "resume0.exr",
     ["compression"] = "zip",
     ["channel_format"] = "float"
 }
