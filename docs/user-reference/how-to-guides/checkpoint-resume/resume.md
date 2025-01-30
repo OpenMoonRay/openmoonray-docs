@@ -7,19 +7,24 @@ title: Resume rendering
 ## What is "Resume Rendering"
 Resume rendering allows more sample data to be added to a previously computed image.  This is supported in `moonray` running in "resume rendering" mode, and is not supported in `moonray_gui`.
 
-It is important to note that not all image files can be used as a resumable image file, which is the required input for resume rendering.  A special procedure is to create a resumable file, as it needs to store additional information for the resume rendering functionality.  This procedure to to generate a resumable file is done by setting the _resumable_output_  mode.<br>
+It is important to note that not all image files can be used as a resumable image file, which is the
+required input for resume rendering. Additional information is required for resume rendering
+functionality, and storing this information in the resumable file is done by enabling the
+_resumable_output_ attribute on SceneVariables.<br>
 <br>
-Also, we must start to resume rendering with _resumable_output_ mode. Set _resumable_output_ mode at
+Also, we must start resume rendering with _resumable_output_ enabled. Enabling _resumable_output_ mode at
 resume rendering time generates special frame buffer data internally and is used for reading in
 resumable data. This data is required to start the resume rendering process.
-The resume rendering might generate checkpoint image again and this checkpoint image must need to
-have a _resumable_output_ attribute too.<br>
+The resume rendering might generate checkpoint image again and this checkpoint image must also contain
+the extra information required to make it resumable.<br>
 <br>
-So we need _resumable_output_ mode for both generating resumable data and starting resume rendering.
+Therefore we need _resumable_output_ eabled for both generating resumable data and starting resume rendering.
 
 ## Creating resumable output files (Resumable output mode)
-Any output image and checkpoint file image can be for resume rendering, however these files are only creating when `moonray` is running in _resumable_output_ mode.  MoonRay can not start resume a render from an image file which was not created during a _resumable_output_ mode.
-Also, _resumable_output_ mode is required to start resume rendering from an already generated resumable resume file.<br>
+Any output image or checkpoint file image can be used for resume rendering, as long as they were created
+with `moonray` running in _resumable_output_ mode.  MoonRay can not start resume a render from an image
+file that was not rendered using _resumable_output_ mode.
+Also, _resumable_output_ mode is required to start resume rendering from an already generated resumable file.<br>
 To set a _resumable_output_ mode, you should use the setting like so:
 ```lua
 ["resumable_output"] = true
