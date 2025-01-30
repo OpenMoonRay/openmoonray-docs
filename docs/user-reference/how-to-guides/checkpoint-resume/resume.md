@@ -18,7 +18,7 @@ resumable data. This data is required to start the resume rendering process.
 The resume rendering might generate checkpoint image again and this checkpoint image must also contain
 the extra information required to make it resumable.<br>
 <br>
-Therefore we need _resumable_output_ eabled for both generating resumable data and starting resume rendering.
+Therefore we need _resumable_output_ enabled for both generating resumable data and starting resume rendering.
 
 ## Creating resumable output files (Resumable output mode)
 Any output image or checkpoint file image can be used for resume rendering, as long as they were created
