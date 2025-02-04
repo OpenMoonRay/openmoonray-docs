@@ -15,7 +15,7 @@ _resumable_output_ attribute on SceneVariables.<br>
 
 ## Creating resumable output files
 Any output image or checkpoint file image can be used for resume rendering, as long as they were created
-with `moonray` running in _resumable_output_ mode.  MoonRay can not start resume a render from an image
+with `moonray` running in _resumable_output_ mode.  MoonRay cannot resume a render from an image
 file that was not rendered using _resumable_output_ mode.<br>
 <br>
 To set a _resumable_output_ mode, you should use the setting like so:
@@ -49,7 +49,7 @@ Each resumable image file needs to include five special AOV buffers, similar to 
 ["result"] = 14 -- or "alpha aux" 
 ```
 
-Without these special AOV buffers, MoonRay can not start resumable renderering and will fall back to normal
+Without these special AOV buffers, MoonRay cannot start resumable renderering and will fall back to normal
 rendering mode.  These AOVs are *not* created by the _resumable_output_ option automatically, and will need to be defined.
 
 ## How to run Resume rendering
@@ -72,7 +72,7 @@ or via the command option:
 moonray -resume_render 
 ```
 
-Resume rendering is disabled by default.  Also note that Resume rendering mode is canceled and will fall back to regular standard rendering when it can not open a resumable file.
+Resume rendering is disabled by default.  Also note that Resume rendering mode is canceled and will fall back to regular standard rendering when it cannot open a resumable file.
 
 ## Goals and quality output of Resume rendering
 Consider the following two scenarios, for which MoonRay will try to create the same image:
@@ -83,7 +83,7 @@ Consider the following two scenarios, for which MoonRay will try to create the s
 
 When rendering using uniform sampling and with a full float resumable image file, the rendering results results are matched with a very high precision.
 
-However, when rendering using adaptive sampling with a full float resumable image file, the rendering results can not guarantee to render exactly the same image as in uniform sampling. Essentially, scenario #2 is slightly better (more samples) than scenario #1.
+However, when rendering using adaptive sampling with a full float resumable image file, the rendering results cannot guarantee to render exactly the same image as in uniform sampling. Essentially, scenario #2 is slightly better (more samples) than scenario #1.
 
 If the resumable file is created at half float instead of full float, then the rendered result is also slightly different between  Scenarios 1 and 2, with Scenario #2 having slightly better results.
 
@@ -92,7 +92,7 @@ In some cases, Resume rendering mode falls back to regular rendering mode, when 
 
 ### Resumable file errors
 - The _resume_file_name_ setting is not specified inside RenderOutput definition
-- MoonRay can not open the resume file or multiple resume files
+- MoonRay cannot open the resume file or multiple resume files
 - Reading data from resume file fails
 - Multipart image name is wrong in the RenderOutput definition
 - There is resumable file resolution mismatch with the resume setting
@@ -110,7 +110,7 @@ In some cases, Resume rendering mode falls back to regular rendering mode, when 
 
 
 ## Limitations and quality controls for Resume rendering
-The essential limitation of Resume rendering is that there can not be any scene description changes between previous resumable image file and resuming the render, which would not make sense.  However, the sampling setting can be changed when resuming a render. In fact, the sampling settings are the only parameters which can be changed when resuming renders.
+The essential limitation of Resume rendering is that there cannot be any scene description changes between previous resumable image file and resuming the render, which would not make sense.  However, the sampling setting can be changed when resuming a render. In fact, the sampling settings are the only parameters which can be changed when resuming renders.
 
 The most typical scenario is to set a higher sampling rate for resuming a render.  Occasionaly there may be a desire to also change the sampling mode between uniform and adaptive sampling.  That would entail the following four scenarios:
 
