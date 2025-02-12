@@ -37,7 +37,7 @@ title: ShadowReceiverSet
     <p class="scene-class-type">
       <b>SceneObjectIndexable</b>
       <br>
-      default: None
+      default: {}
       <p class="scene-class-comments">List of geometries that belong to this ShadowReceiverSet</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.images data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet.attributes.geometries.videos data=site.data.user-reference.scene-objects.shadow-receiver-set.ShadowReceiverSet-%}

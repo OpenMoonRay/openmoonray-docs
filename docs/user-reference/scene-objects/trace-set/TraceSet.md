@@ -22,7 +22,7 @@ title: TraceSet
     <p class="scene-class-type">
       <b>SceneObjectIndexable</b>
       <br>
-      default: None
+      default: {}
       <p class="scene-class-comments">Geometry objects that are members of this TraceSet</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.trace-set.TraceSet.attributes.geometries.images data=site.data.user-reference.scene-objects.trace-set.TraceSet-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.trace-set.TraceSet.attributes.geometries.videos data=site.data.user-reference.scene-objects.trace-set.TraceSet-%}
