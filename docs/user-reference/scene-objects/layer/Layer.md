@@ -32,7 +32,7 @@ title: Layer
     <p class="scene-class-type">
       <b>SceneObjectIndexable</b>
       <br>
-      default: None
+      default: {}
       <p class="scene-class-comments">The geometry objects included in the layer, each of which must be included in the GeometrySet.<br>    Note: this attribute is typically not set directly, but by using a Lua table for defining layer entries. For example,<br>      Layer("/myLayer/") { <br>        {myGeometry1, "", ...}<br>        {myGeometry2, "", ...}<br>      }</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.layer.Layer.attributes.geometries.images data=site.data.user-reference.scene-objects.layer.Layer-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.layer.Layer.attributes.geometries.videos data=site.data.user-reference.scene-objects.layer.Layer-%}
