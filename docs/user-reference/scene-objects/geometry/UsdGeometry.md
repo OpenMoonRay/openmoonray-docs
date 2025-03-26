@@ -130,7 +130,7 @@ title: UsdGeometry
       <b>Float</b>
       <br>
       default: 2.0
-      <p class="scene-class-comments">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
+      <p class="scene-class-comments">The maximum resolution to which a mesh will be tessellated. NOTE: to prevent t-junctions, only even values are supported. If "mesh resolution" is set to n, it will first be rounded up to N=n+1 for odd n, N=n for even n. An edge on an input face will then be tessellated to at most N segments. If "adaptive error" is set to 0, every edge on the input face will be uniformly tessellated to N segments. Otherwise the mesh will tessellated adaptively based on its relationship to the camera.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.mesh_resolution.images data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.mesh_resolution.videos data=site.data.user-reference.scene-objects.geometry.UsdGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.UsdGeometry.attributes.mesh_resolution.links heading=4-%}
