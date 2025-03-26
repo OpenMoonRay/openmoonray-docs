@@ -825,21 +825,6 @@ title: SceneVariables
   </p>
 </details>
 <details open>
-  <summary>Path Guide attributes</summary>
-  <p>
-    <h3>path_guide_enable</h3>
-    <p class="scene-class-type">
-      <b>Bool</b>
-      <br>
-      default: False
-      <p class="scene-class-comments">Turn on path guiding to handle difficult light transport problems (e.g. caustics) at the cost of increased memory</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.path_guide_enable.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.path_guide_enable.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.path_guide_enable.links heading=4-%}
-    </p>
-  </p>
-</details>
-<details open>
   <summary>Resume Render attributes</summary>
   <p>
     <h3>on_resume_script</h3>
