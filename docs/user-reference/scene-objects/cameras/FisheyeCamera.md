@@ -130,6 +130,16 @@ title: FisheyeCamera
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.FisheyeCamera.attributes.format.videos data=site.data.user-reference.scene-objects.cameras.FisheyeCamera-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.FisheyeCamera.attributes.format.links heading=4-%}
     </p>
+    <h3>fov</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 180.0
+      <p class="scene-class-comments">Field of view measured in degrees</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.cameras.FisheyeCamera.attributes.fov.images data=site.data.user-reference.scene-objects.cameras.FisheyeCamera-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.cameras.FisheyeCamera.attributes.fov.videos data=site.data.user-reference.scene-objects.cameras.FisheyeCamera-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.cameras.FisheyeCamera.attributes.fov.links heading=4-%}
+    </p>
     <h3>mapping</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
