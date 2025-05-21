@@ -216,6 +216,16 @@ title: DwaBaseMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.bssrdf.videos data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.bssrdf.links heading=4-%}
     </p>
+    <h3>diffuse_lightset</h3>
+    <p class="scene-class-type">
+      <b>LightSet</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">lightset to use for diffuse lobes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.diffuse_lightset.images data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.diffuse_lightset.videos data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.diffuse_lightset.links heading=4-%}
+    </p>
     <h3>diffuse_roughness</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
@@ -962,6 +972,16 @@ title: DwaBaseMaterial
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.show_specular.images data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.show_specular.videos data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.show_specular.links heading=4-%}
+    </p>
+    <h3>specular_lightset</h3>
+    <p class="scene-class-type">
+      <b>LightSet</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">lightset to use for specular lobes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.specular_lightset.images data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.specular_lightset.videos data=site.data.user-reference.scene-objects.materials.DwaBaseMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaBaseMaterial.attributes.specular_lightset.links heading=4-%}
     </p>
     <h3>specular_model</h3>
     <p class="scene-class-type">

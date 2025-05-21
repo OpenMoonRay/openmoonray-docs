@@ -256,6 +256,16 @@ title: DwaToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_flatness_falloff.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_flatness_falloff.links heading=4-%}
     </p>
+    <h3>diffuse_lightset</h3>
+    <p class="scene-class-type">
+      <b>LightSet</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">lightset to use for diffuse lobes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_lightset.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_lightset.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_lightset.links heading=4-%}
+    </p>
     <h3>diffuse_model</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
@@ -1263,6 +1273,16 @@ title: DwaToonMaterial
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_specular.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_specular.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.show_specular.links heading=4-%}
+    </p>
+    <h3>specular_lightset</h3>
+    <p class="scene-class-type">
+      <b>LightSet</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">lightset to use for specular lobes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular_lightset.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular_lightset.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.specular_lightset.links heading=4-%}
     </p>
     <h3>specular_model</h3>
     <p class="scene-class-type">
