@@ -78,6 +78,16 @@ title: HairToonMaterial
 <details open>
   <summary>Diffuse attributes</summary>
   <p>
+    <h3>diffuse_lightset</h3>
+    <p class="scene-class-type">
+      <b>LightSet</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">lightset to use for diffuse lobes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.diffuse_lightset.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.diffuse_lightset.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.diffuse_lightset.links heading=4-%}
+    </p>
     <h3>hair_color</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
@@ -197,6 +207,16 @@ title: HairToonMaterial
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_ramp_input_scale.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_ramp_input_scale.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_3_ramp_input_scale.links heading=4-%}
+    </p>
+    <h3>specular_lightset</h3>
+    <p class="scene-class-type">
+      <b>LightSet</b>
+      <br>
+      default: None
+      <p class="scene-class-comments">lightset to use for specular lobes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_lightset.images data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_lightset.videos data=site.data.user-reference.scene-objects.materials.HairToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.HairToonMaterial.attributes.specular_lightset.links heading=4-%}
     </p>
   </p>
 </details>
