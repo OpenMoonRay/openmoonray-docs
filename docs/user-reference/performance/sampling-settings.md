@@ -47,13 +47,11 @@ Solution:
 Solution:
 - more BSDF samples
 - lower adaptive sampling error_threshold
-- use path guiding
 
 ## Issue: Render has Fireflies
 
 Solution:
 - turn off caustics
 - lower adaptive sampling error_threshold
-- use path guiding
 - use sample clamping
 

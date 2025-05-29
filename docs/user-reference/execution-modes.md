@@ -48,9 +48,8 @@ Vector mode is designed to generate identical images as scalar mode, however due
 there are a few unsupported features:
 
 1. Physically-correct overlapping dielectrics
-2. Path guiding
-3. Variance buffers
-4. Volume rendering with deep file output
+2. Variance buffers
+3. Volume rendering with deep file output
 
 If the scene uses one of these unsupported features, a warning message will be logged
 and the scene will be rendered without the feature.
