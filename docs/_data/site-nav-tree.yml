@@ -477,8 +477,6 @@
             path: /user-reference/how-to-guides/meshes-best-practices.md
           - text: Overlapping Dielectrics
             path: /user-reference/how-to-guides/overlapping-dielectrics.md
-          - text: Path Guiding
-            path: /user-reference/how-to-guides/path-guiding.md
           - text: PBR Validity
             path: /user-reference/how-to-guides/pbr-validity.md
           - text: Point Rendering
