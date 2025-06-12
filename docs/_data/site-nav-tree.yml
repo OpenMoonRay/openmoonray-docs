@@ -536,6 +536,8 @@
             path: user-reference/tools/moonray-gui.md
           - text: rdla_filter
             path: user-reference/tools/rdla_filter.md
+          - text: rdla_gui
+            path: user-reference/tools/rdla_gui.md
           - text: rdl2_convert
             path: user-reference/tools/rdl2_convert.md
           - text: rdl2_print
