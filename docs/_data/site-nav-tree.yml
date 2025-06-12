@@ -347,6 +347,8 @@
               path: user-reference/scene-objects/maps/ToonMap.md
             - text: TransformSpaceMap
               path: user-reference/scene-objects/maps/TransformSpaceMap.md
+            - text: TwoSidedMap
+              path: user-reference/scene-objects/maps/TwoSidedMap.md
             - text: UsdPrimvarReader_float
               path: user-reference/scene-objects/maps/UsdPrimvarReader_float.md
             - text: UsdPrimvarReader_float2
