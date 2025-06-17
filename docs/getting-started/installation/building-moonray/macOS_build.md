@@ -25,10 +25,20 @@ mkdir -p /Applications/MoonRay/installs/{bin,lib,include}
 ```
 
 ---
-### Step 2. Check out the OpenMoonRay source
+### Step 2. Clone the OpenMoonRay source
+The *openmoonray* repo references 19 other repositories via *Git* submodules.
+Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
+You can install Git LFS using the following command:
+
+```bash
+git lfs install
+```
+
+Now, to clone all the repositories into one structure, run the following git command:
+
 ```bash
 cd /Applications/MoonRay/source
-git clone --recurse-submodules <repository>
+git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
 ```
 
 ---
