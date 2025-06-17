@@ -31,13 +31,21 @@ If you do want to build the repositories separately, the process may be made eas
 ## Getting the source via the ***openmoonray*** repository
 ---
 
-The *openmoonray* repo references the other 18 repositories via *Git* submodules. To clone all the repositories into one structure, run the following git command:
+The *openmoonray* repo references 19 other repositories via *Git* submodules.
+Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
+You can install Git LFS using the following command:
+
+```bash
+git lfs install
+```
+
+Now, to clone all the repositories into one structure, run the following git command:
 
 ```bash
 git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
 ```
 
-The source for every repository will be downloaded and organised into a directory structure that enables everything to be built using a single CMake project at the root of the *openmoonray* clone. Of course, you can also clone the repositories individually into any structure you want, but you will then need to build them separately.
+The source for every repository will be downloaded and organized into a directory structure that enables everything to be built using a single CMake project at the root of the *openmoonray* clone. Of course, you can also clone the repositories individually into any structure you want, but you will then need to build them separately.
 
 ---
 ## Obtaining the dependencies

@@ -15,6 +15,16 @@ To keep it concrete, I've chosen specific directory locations inside the contain
 
 You will need Docker and a copy of the MoonRay source. To clone the source from the github repo (on the host), use this git command:
 
+The *openmoonray* repo references 19 other repositories via *Git* submodules.
+Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
+You can install Git LFS using the following command:
+
+```bash
+git lfs install
+```
+
+The source for every repository will be downloaded and organized into a directory structure that enables everything to be built using a single CMake project at the root of the *openmoonray* clone. Of course, you can also clone the repositories individually into any structure you want, but you will then need to build them separately.
+
 ```bash
 > git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git 
 ```
