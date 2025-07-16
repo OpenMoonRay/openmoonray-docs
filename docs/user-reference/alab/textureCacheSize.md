@@ -4,9 +4,7 @@ title: Texture Cache Size Considerations
 # Texture Cache Size Considerations
 ---
 
-Selecting the proper texture cache size is crucial for efficient rendering of especially texture-heavy scenes like the [ALab Scene](../../../getting-started/test-scenes/).  The best configuration will be dependant on the scene itself as well as the machine environment.  A quick general solution to find a good texture cache size for a general `moonray` run is documented here [here]({{ "/user-reference/performance/#quick-texture-cache-size-setup" | absolute_url }}).
-
-
+Selecting the proper texture cache size is crucial for efficient rendering of especially texture-heavy scenes like the [ALab Scene](../../../getting-started/test-scenes/).  The best configuration will be dependant on the scene itself as well as the machine environment.  A quick general solution to find a good texture cache size for a general `moonray` run is documented [here]({{ "/user-reference/performance/texture-cache-size/#quick-texture-cache-size-setup" | absolute_url }}).
 
 This is a rendered result image of ALab, v2.0.1 without denoising
 ![alab201]({{ "/assets/images/user-reference/alab/out_txCache096Xpu0.png" | absolute_url }})
