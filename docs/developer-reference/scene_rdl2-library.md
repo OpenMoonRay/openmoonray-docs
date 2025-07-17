@@ -20,13 +20,13 @@ A `SceneContext` contains a set of `SceneObject`s, representing cameras, geometr
 ```cpp
 #include <scene_rdl2/scene/rdl2/rdl2.h>
 SceneContext context;
-context.readSceneFromFile("myScene.rdla",context);
+readSceneFromFile("myScene.rdla",context);
 ```
 
 and to save:
 
 ```cpp
-context.writeSceneToFile(context,"anotherScene.rdlb");
+writeSceneToFile(context,"anotherScene.rdlb");
 ```
 
 These functions automatically determine the file type (RDLA or RDLB) from the extension. They will only work if the environment variable RDL2_DSO_PATH is set correctly (more on this later...)
