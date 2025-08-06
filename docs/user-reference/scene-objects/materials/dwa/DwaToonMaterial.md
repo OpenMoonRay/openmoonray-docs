@@ -236,6 +236,16 @@ title: DwaToonMaterial
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.colors.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.colors.links heading=4-%}
     </p>
+    <h3>crease_attenuation</h3>
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">This mitigates the over-brightening around creases which random walk SSS can cause.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.crease_attenuation.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.crease_attenuation.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.crease_attenuation.links heading=4-%}
+    </p>
     <h3>diffuse_flatness</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
