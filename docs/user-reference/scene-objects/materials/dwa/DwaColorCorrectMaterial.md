@@ -55,7 +55,7 @@ title: DwaColorCorrectMaterial
   <p>
     <h3>TMI</h3>
     <p class="scene-class-type">
-      <b>Rgb</b>
+      <b>Rgb</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
@@ -90,7 +90,7 @@ title: DwaColorCorrectMaterial
     </p>
     <h3>input_material</h3>
     <p class="scene-class-type">
-      <b>DwaBaseLayerable</b>
+      <b>DwaBase</b>
       <br>
       default: None
       <p class="scene-class-comments">Material to modify</p>
