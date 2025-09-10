@@ -89,7 +89,7 @@ title: DwaTwoSidedMaterial
   <p>
     <h3>back_material</h3>
     <p class="scene-class-type">
-      <b>Material</b>
+      <b>DwaBase</b>
       <br>
       default: None
       <p class="scene-class-comments">material to use on back-facing surfaces</p>
@@ -109,7 +109,7 @@ title: DwaTwoSidedMaterial
     </p>
     <h3>front_material</h3>
     <p class="scene-class-type">
-      <b>Material</b>
+      <b>DwaBase</b>
       <br>
       default: None
       <p class="scene-class-comments">material to use on front-facing surfaces</p>
