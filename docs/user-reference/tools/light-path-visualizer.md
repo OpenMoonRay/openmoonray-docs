@@ -51,18 +51,18 @@ and do not have an effect on the values used in the full render.
 | Specular Ray Visibility | true | Show specular rays |
 | Diffuse Ray Visibility | true | Show diffuse rays |
 | Bsdf Sample Visibility | true | Show rays created by sampling the bsdf |
-| Light Sample Visibility | true | Show rays created by sampling the bsdf |
+| Light Sample Visibility | true | Show rays created by sampling the light |
 | Line Width | 1 | Width of the lines. Most efficient when set to 1. |
 | Diffuse Ray Color | Rgb(255, 0, 255) | Color to draw the diffuse rays |
 | Specular Ray Color | Rgb(0, 255, 255) | Color to draw the specular rays |
 | Light Sample Color | Rgb(255, 255, 0) | Color to draw the light rays |
-| Bsdf Sample Color | Rgb(255, 102, 0) | Color to draw the diffuse rays |
+| Bsdf Sample Color | Rgb(255, 102, 0) | Color to draw the bsdf rays |
 | Camera Ray Color | Rgb(0, 0, 255) | Color to draw the camera rays |
 
 ## How Does it Work?
 
 Whenever a parameter is changed, we run a "simulation" from the given pixel, or to elaborate, we hijack the current 
-rendering proces to start a render with the viewport restricted to the given pixel. We like this method because it is 
+rendering process to start a render with the viewport restricted to the given pixel. We like this method because it is 
 quick (since it's a single-pixel render), lightweight (since we only gather the info we need), and allows for 
 "speculative" drawing (we can change parameters on the fly to see what *would* happen to the ray tree). The biggest 
 potential drawback is that a single-pixel render is not guaranteed to match the full render's results, due to potential 
