@@ -517,6 +517,8 @@
             path: user-reference/tools/arras_render.md
           - text: denoise
             path: user-reference/tools/denoise.md
+          - text: light-path-visualizer
+            path: user-reference/tools/light-path-visualizer.md
           - text: Hydra Delegate
             path: user-reference/tools/hydra/index.md
             subitems:
