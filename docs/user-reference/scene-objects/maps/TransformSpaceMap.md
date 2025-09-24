@@ -83,7 +83,7 @@ title: TransformSpaceMap
     </p>
     <h3>object</h3>
     <p class="scene-class-type">
-      <b>Geometry</b>
+      <b>Node</b>
       <br>
       default: None
       <p class="scene-class-comments">an alternate object to use when transforming to/from 'object' space</p>

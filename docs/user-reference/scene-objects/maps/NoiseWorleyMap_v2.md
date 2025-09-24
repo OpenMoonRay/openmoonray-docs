@@ -217,7 +217,7 @@ title: NoiseWorleyMap_v2
     </p>
     <h3>object_space</h3>
     <p class="scene-class-type">
-      <b>Geometry</b>
+      <b>Node</b>
       <br>
       default: None
       <p class="scene-class-comments">Directly connect object to use that object's space.</p>

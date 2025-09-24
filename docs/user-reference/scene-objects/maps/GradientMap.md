@@ -145,7 +145,7 @@ title: GradientMap
     </p>
     <h3>object</h3>
     <p class="scene-class-type">
-      <b>Geometry</b>
+      <b>Node</b>
       <br>
       default: None
       <p class="scene-class-comments">Use the provided object's transformation space (only used if object space is also specified)</p>
