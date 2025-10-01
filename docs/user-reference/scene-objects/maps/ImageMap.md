@@ -192,7 +192,7 @@ title: ImageMap
     </p>
     <h3>offset</h3>
     <p class="scene-class-type">
-      <b>Vec2f</b>
+      <b>Vec2f</b> <i>bindable</i>
       <br>
       default: [ 0, 0 ]
       <p class="scene-class-comments">A constant offset applied to the texture coordinates.</p>
@@ -222,7 +222,7 @@ title: ImageMap
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
-      <b>Vec2f</b>
+      <b>Vec2f</b> <i>bindable</i>
       <br>
       default: [ 1, 1 ]
       <p class="scene-class-comments">A constant scale applied to the texture coordinates.</p>
