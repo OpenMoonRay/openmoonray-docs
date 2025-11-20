@@ -662,7 +662,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">The window of the camera aperture. Overrides image_width and image_height. Ordered as xmin, ymin, xmax, and ymax, with origin at the bottom-left.</p>
+      <p class="scene-class-comments">Assuming no region_window is defined, an aperture_window of {xmin, ymin, xmax, ymax} overrides image_width using (xmax-xmin) and image_height using (ymax-ymin). Since the values are overrides, they are not restricted to lie in the ranges established by image_width and image_height, but can be arbitrarily large and/or negative. The lower left corner of the image rectangle corresponds to (xmin, ymin) and its midpoint corresponds to the camera's facing direction (the negative camera z-axis), and for projective cameras each boundary edge of the rectangle corresponds to a plane of the view frustum. However, the behavior changes when a region_window is defined - see the region_window documentation.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.aperture_window.links heading=4-%}
@@ -692,7 +692,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Window that is rendered. Overrides image width / height (and overrides aperture window override). Order: xmin ymin xmax ymax, with origin at left bottom.</p>
+      <p class="scene-class-comments">A region_window of {xmin, ymin, xmax, ymax} overrides the aperture_window if defined, and overrides image_width and image_height otherwise, to establish an image rectangle (xmax-xmin) in width and (ymax-ymin) in height, whose lower left corner corresponds to (xmin, ymin). Importantly, the coordinates are expressed relative to the origin of the aperture_window, or if aperture_window is not defined, relative to the lower-left corner of the image rectangle which would be obtained in the absence of a region_window. The region_window is not restricted to a subset of the aperture_window but can extend outside it, including asymmetrically. The view frustum is reshaped to correspond to the boundary of the region_window, and may therefore end up being skewed.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.region_window.links heading=4-%}
@@ -712,7 +712,7 @@ title: SceneVariables
       <b>IntVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">Subviewport of region window. Coordinate (0,0) maps to left, bottom of region window</p>
+      <p class="scene-class-comments">A sub_viewport of {xmin, ymin, xmax, ymax} restricts the rendered pixels to the rectangle defined by xmin &lt;= x &lt; xmax, ymin &lt;= y &lt; ymax, with origin at the lower left of the image rectangle - no matter how this has been defined (i.e. regardless of which combination of image_width, image_height, aperture_window, region_window has been used). Pixels outside the sub_viewport are left black. Any part of the sub_viewport lying outside the image rectangle has no effect on the result, since there are no pixels there.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.sub_viewport.links heading=4-%}
