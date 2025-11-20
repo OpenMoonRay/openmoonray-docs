@@ -1,15 +1,15 @@
 Generates Moonray class documentation by filling in a template using data obtained through the scene_rdl2 Python
 bindings.
 
-Be sure to include the following packages in your rez-env cmd:
+Before running this you'll want to pick up the latest openmoonray release, and make sure you have jinja2 available:
 ```bash
-rez-env moonshine_usd jinja2
+rez-env openmoonray jinja2
 ```
 
-If your doc changes require your locally built scene_rdl2, make sure to include your local version in the rez-env
-command (and note that for some SceneClasses, moonray inherits from scene_rdl2, so you may also need to build moonray).
-
-Usage is as follows. In each case, <docs_path> should be the path to your openmoonray-docs/docs folder (probably `../../docs/`)
+To run the script from this directory:
+```bash
+./generate_doc -a -d ../../docs/
+```
 
 Generate docs for a specific class: `./generate_doc -c DwaBaseMaterial -d <docs_path>`
 
