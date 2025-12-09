@@ -1,0 +1,20 @@
+---
+overview: overviews/LayerMapOverview.md
+image_path: /assets/images/user-reference/scene-objects/maps/LayerMap
+attributes:
+  input_A:
+    images:
+      - image: texA.png
+  input_B:
+    images:
+      - image: texB.png
+  mode:
+    images:
+      - image: l.0.jpg
+        text: off, over, add, subtract
+      - image: l.1.jpg
+        text: multiply, screen, overlay, overlay contrast
+      - image: l.2.jpg
+        text: darken, lighten, color dodge, color burn
+      - image: l.3.jpg
+        text: hard light, soft light, difference, exclusion
