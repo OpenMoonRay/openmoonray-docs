@@ -295,6 +295,8 @@
               path: user-reference/scene-objects/maps/ImageMap.md
             - text: LayerMap
               path: user-reference/scene-objects/maps/LayerMap.md
+            - text: LayerMap_v2
+              path: user-reference/scene-objects/maps/LayerMap_v2.md
             - text: ListMap
               path: user-reference/scene-objects/maps/ListMap.md
             - text: LODMap

@@ -56,6 +56,7 @@ Mix, pick, manipulate color signals.
 [ColorCorrectSaturationMap](ColorCorrectSaturationMap)  
 [ColorCorrectTMIMap](ColorCorrectTMIMap)  
 [LayerMap](LayerMap)  
+[LayerMap_v2](LayerMap_v2)  
 [LODMap](LODMap)  
 [OpMap](OpMap)  
 [RemapMap](RemapMap)  
