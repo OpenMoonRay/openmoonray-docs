@@ -254,36 +254,6 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_pixel.links heading=4-%}
     </p>
-    <h3>debug_rays_depth_range</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      <br>
-      default: {}
-      <p class="scene-class-comments">Deprecated.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_depth_range.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_depth_range.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_depth_range.links heading=4-%}
-    </p>
-    <h3>debug_rays_file</h3>
-    <p class="scene-class-type">
-      <b>String</b>
-      <br>
-      default: 
-      <p class="scene-class-comments">Deprecated.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_file.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_file.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_file.links heading=4-%}
-    </p>
-    <h3>debug_rays_primary_range</h3>
-    <p class="scene-class-type">
-      <b>IntVector</b>
-      <br>
-      default: {}
-      <p class="scene-class-comments">Deprecated.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_primary_range.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_primary_range.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.debug_rays_primary_range.links heading=4-%}
-    </p>
     <h3>validate_geometry</h3>
     <p class="scene-class-type">
       <b>Bool</b>
