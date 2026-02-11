@@ -254,7 +254,7 @@ title: NoiseWorleyMap_v2
       <b>Vec3f</b> <i>bindable</i>
       <br>
       default: [ 0, 0, 0 ]
-      <p class="scene-class-comments">Rotates the noise in space based on the specified rotation order</p>
+      <p class="scene-class-comments">Rotates the noise in degrees based on the specified rotation order</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation.images data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation.videos data=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.maps.NoiseWorleyMap_v2.attributes.rotation.links heading=4-%}
