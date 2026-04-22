@@ -313,6 +313,16 @@ title: RenderOutput
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov.links heading=4-%}
     </p>
+    <h3>material_aov_secondary_rays</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">When "result" is "material aov", this controls whether the material aov is evaluated on secondary (indirect) rays in addition to primary rays.  Enabling this allows material aovs to appear behind refractive or reflective surfaces.  Defaults to false for backward compatibility.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov_secondary_rays.images data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov_secondary_rays.videos data=site.data.user-reference.scene-objects.render-output.RenderOutput-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.render-output.RenderOutput.attributes.material_aov_secondary_rays.links heading=4-%}
+    </p>
     <h3>math_filter</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>
