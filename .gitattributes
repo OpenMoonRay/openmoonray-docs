@@ -1,3 +1,4 @@
+docs/images/** filter=lfs diff=lfs merge=lfs -text
 docs/assets/images/** filter=lfs diff=lfs merge=lfs -text
 docs/assets/test-scenes/** filter=lfs diff=lfs merge=lfs -text
 docs/assets/images/moonray-logo.svg filter=lfs diff=lfs merge=lfs -text
