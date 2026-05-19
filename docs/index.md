@@ -10,7 +10,9 @@ Welcome to the MoonRay Production Renderer documentation site!
 
 **MoonRay** is DreamWorks Animation's in-house 3D renderer, used to render all DreamWorks movies since [How To Train Your Dragon: The Hidden World](https://dreamworksanimation.com/movies/how-to-train-your-dragon-the-hidden-world).
 
-DreamWorks has released MoonRay as open source, under the Apache 2.0 license. The release features
+MoonRay is an open source project hosted by the <a href="https://linuxfoundation.org">Linux Foundation</a> and <a href="https://aswf.io">Academy Software Foundation</a>. MoonRay was originally contributed by <a href="https://www.dreamworks.com/">DreamWorks Animation</a>, who uses MoonRay for all of their feature film production since How To Train Your Dragon: The Hidden World. It has a full-time development staff focused on those productions and contributions from the open-source community.
+
+MoonRay is released as open source, under the Apache 2.0 license. The release features
 
 - the MoonRay high-performance path-tracing renderer.
 - many of the MoonRay plugins developed at DreamWorks.

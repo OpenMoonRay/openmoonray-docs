@@ -5,7 +5,7 @@ title: Getting Started
 
 You can read more about the components making up MoonRay in the About section [here]( {{ "/getting-started/about" | absolute_url}}).
 
-MoonRay can be obtained in source form from our [Github site](https://github.com/dreamworksanimation).
+MoonRay can be obtained in source form from our [Github site](https://github.com/OpenMoonRay/openmoonray).
 
 We do not currently provide MoonRay as a pre-built package.
 
