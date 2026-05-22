@@ -27,7 +27,7 @@ In this case, texture_cache_size is 3.91GB and the main cache miss rate is 0.01%
 10K lookups).  Here, even though texture cache size is relatively small, texture accessing is quite healthy
 and this texture cache size seems optimal.
 
-The following example is from a texture heavy scene (Animal Logic's ALab) with a small texture cache size.
+The following example is from a texture heavy scene (Netflix Animation Studios ALab) with a small texture cache size.
 
 ```
 00:41:07    8.4 GB | ---------- OpenImageIO Texture Summary -------------------

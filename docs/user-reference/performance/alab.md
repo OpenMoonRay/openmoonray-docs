@@ -15,6 +15,8 @@ The page notes ways to optimize rendering for the [ALab Scene]({{ "/getting-star
 * [Texture Cache Size Considerations](#texture-cache-size-considerations)
 * [Quality Control](#quality-control)
 
+Netflix Animation Studios ALab Copyright 2025 Netflix, Inc. All rights reserved.
+
 ## Texture Cache Size Considerations
 ---
 

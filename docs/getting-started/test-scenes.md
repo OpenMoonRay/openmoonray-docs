@@ -5,9 +5,9 @@ title: MoonRay Test Scenes
 
 A selection of scenes converted to MoonRay's native RDL2 format are available for testing here: [example_scenes.zip]({{ "/assets/test-scenes/example_scenes.zip" | absolute_url }}).
 
-The latest 2.2.0 version of Animal Logic's ALab scene, converted to MoonRay-native RDL scene format using `hd_usd2rdl`, including 4k mip-mapped .tx format textures with baked procedurals is available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.2.0.zip">ALab_2.2.0.zip</a>.
+The latest 2.2.0 version of the Netflix Animation Studios ALab scene, converted to MoonRay-native RDL scene format using `hd_usd2rdl`, including 4k mip-mapped .tx format textures with baked procedurals is available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.2.0.zip">ALab_2.2.0.zip</a>.
 
-This is the basis of the [texture cache profiling page]({{ "/user-reference/alab/textureCacheSize/" | absolute_url }}).  Useful information for rendering is in the moonray.memo inside an unzipped directory (alab220/moonray.memo), along with a file alab220/middleQualityUniformHD.rdla for a middle-quality rendering setup.
+This is the basis of the [texture cache profiling page]({{ "/user-reference/performance/alab/#texture-cache-size-considerations" | absolute_url }}).  Useful information for rendering is in the moonray.memo inside an unzipped directory (alab220/moonray.memo), along with a file alab220/middleQualityUniformHD.rdla for a middle-quality rendering setup.
 
 An earlier version of the ALab scene is also available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab.zip">ALab.zip</a> (version 2.0) and here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.0.1.zip">ALab_2.0.1.zip</a> (version 2.0.1, with 4k mip-mapped .tx and baked procedurals).
 
@@ -19,7 +19,7 @@ The "MoonRay Widget" shader ball model used in this documentation is released in
 
 The example scenes were [curated by Benedikt Bitterli](https://benedikt-bitterli.me/resources/). They are designed to render modern, realistic scenes.
 
-The [ALab scene was created by Animal Logic](https://animallogic.com/alab/) as a reference USD production scene for exploration. This scene was developed to be used in different environments, such as demonstrations and training materials and in the testing of USD support across software and pipeline. 
+The ALab scene was created by Netflix Animation Studios and is hosted by ASWF's Digital Production Example Library (https://dpel.aswf.io/alab/) as a reference USD production scene for exploration. This scene was developed to be used in different environments, such as demonstrations and training materials and in the testing of USD support across software and pipeline. It is redistributed under the same [ASWF Digital Assets License v1.1](https://dpel.aswf.io/alab/alab-license/). Netflix Animation Studios ALab Copyright 2025 Netflix, Inc. All rights reserved.
 
 The moonray_sphere.usd file was developed by DreamWorks as a simple test of hdMoonray rendering USD format data.  It is distributed under the [ASWF Digital Assets License v1.1]({{ "/getting-started/moonray-sphere-usd-license" | absolute_url }}).
 
