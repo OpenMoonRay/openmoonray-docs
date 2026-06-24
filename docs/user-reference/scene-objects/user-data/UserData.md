@@ -118,6 +118,36 @@ title: UserData
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_values.videos data=site.data.user-reference.scene-objects.user-data.UserData-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.int_values.links heading=4-%}
     </p>
+    <h3>mat3f_key</h3>
+    <p class="scene-class-type">
+      <b>String</b>
+      <br>
+      default: 
+      <p class="scene-class-comments">key name for mat3f type user data</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_key.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_key.videos data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_key.links heading=4-%}
+    </p>
+    <h3>mat3f_values_0</h3>
+    <p class="scene-class-type">
+      <b>Mat3fVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">mat3f type user data values for motion step 0</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_values_0.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_values_0.videos data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_values_0.links heading=4-%}
+    </p>
+    <h3>mat3f_values_1</h3>
+    <p class="scene-class-type">
+      <b>Mat3fVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">mat3f type user data values for motion step 1</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_values_1.images data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_values_1.videos data=site.data.user-reference.scene-objects.user-data.UserData-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.user-data.UserData.attributes.mat3f_values_1.links heading=4-%}
+    </p>
     <h3>mat4f_key</h3>
     <p class="scene-class-type">
       <b>String</b>
