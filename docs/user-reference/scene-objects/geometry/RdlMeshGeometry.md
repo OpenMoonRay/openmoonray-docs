@@ -314,6 +314,86 @@ title: RdlMeshGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.curved_motion_blur_sample_count.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.curved_motion_blur_sample_count.links heading=4-%}
     </p>
+    <h3>local_motion_blur_inner_radius_list</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">Per-point inner radius for each local motion blur region (full-strength core). If empty, defaults to 1.0. Must match the length of local_motion_blur_position_list.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_inner_radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_inner_radius_list.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_inner_radius_list.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_multiplier_list</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">Per-point motion blur strength multiplier for each local motion blur region. If empty, defaults to 1.0. Must match the length of local_motion_blur_position_list.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_multiplier_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_multiplier_list.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_multiplier_list.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_orient_list</h3>
+    <p class="scene-class-type">
+      <b>Vec4fVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">Per-point orientation quaternion (x=i, y=j, z=k, w=r) for each local motion blur region. Combined with the scale list, this orients and shapes the blur falloff region. If empty, identity orientation is used. Must match the length of local_motion_blur_position_list.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_orient_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_orient_list.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_orient_list.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_position_list</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">World-space center position for each local motion blur region.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_position_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_position_list.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_position_list.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_radius_list</h3>
+    <p class="scene-class-type">
+      <b>FloatVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">Per-point outer radius for each local motion blur region. If empty, defaults to 1.0. Must match the length of local_motion_blur_position_list.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_radius_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_radius_list.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_radius_list.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_radius_multiplier</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Global radius multiplier applied to per-region radius values, whether supplied via the "radius"/"inner_radius" point attributes or the "local_motion_blur_radius_list"/"local_motion_blur_inner_radius_list" explicit list attributes</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_radius_multiplier.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_radius_multiplier.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_radius_multiplier.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_scale_list</h3>
+    <p class="scene-class-type">
+      <b>Vec3fVector</b>
+      <br>
+      default: {}
+      <p class="scene-class-comments">Per-point non-uniform scale (x,y,z) for each local motion blur region. Non-uniform scale makes the falloff region ellipsoidal rather than spherical. If empty, uniform scale (1,1,1) is used. Must match the length of local_motion_blur_position_list.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_scale_list.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_scale_list.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_scale_list.links heading=4-%}
+    </p>
+    <h3>local_motion_blur_strength_multiplier</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 1.0
+      <p class="scene-class-comments">Global strength multiplier for local motion blur application</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_strength_multiplier.images data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_strength_multiplier.videos data=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlMeshGeometry.attributes.local_motion_blur_strength_multiplier.links heading=4-%}
+    </p>
     <h3>motion_blur_type</h3>
     <p class="scene-class-type">
       <b>Int</b> <i>enum</i>

@@ -226,6 +226,8 @@ def main():
     if args.all:
         context.loadAllSceneClasses()
         for clsname in context.getSceneClassNames():
+            if clsname.startswith("Test"):
+                continue
             cls = context.getSceneClass(clsname)
             obj = context.createSceneObject(clsname,clsname+"_obj")
             scncls = ScnClass(cls,obj)
@@ -240,12 +242,17 @@ def main():
             return
         context.loadAllSceneClasses()
         for clsname in context.getSceneClassNames():
+            if clsname.startswith("Test"):
+                continue
             cls = context.getSceneClass(clsname)
             bits = int(cls.getDeclaredInterface())
             if bits & int(interface): 
                 obj = context.createSceneObject(clsname,clsname+"_obj")
                 generate(ScnClass(cls,obj),template,args.dir)
     elif args.class_name:
+        if args.class_name.startswith("Test"):
+            print("Skipping test class: "+args.class_name)
+            return
         cls = context.createSceneClass(args.class_name)
         obj = context.createSceneObject(args.class_name,args.class_name+"_obj")
         generate(ScnClass(cls,obj),template,args.dir)

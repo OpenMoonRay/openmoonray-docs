@@ -1160,6 +1160,66 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.crypto_uv_attribute_name.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.crypto_uv_attribute_name.links heading=4-%}
     </p>
+    <h3>fatal_bool</h3>
+    <p class="scene-class-type">
+      <b>Bool</b>
+      <br>
+      default: False
+      <p class="scene-class-comments">The bool to use for materialx map shaders that are unable to execute shading, usually due to incomplete initialization.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_bool.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_bool.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_bool.links heading=4-%}
+    </p>
+    <h3>fatal_int</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      <br>
+      default: 0
+      <p class="scene-class-comments">The int to use for materialx map shaders that are unable to execute shading, usually due to incomplete initialization.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_int.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_int.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_int.links heading=4-%}
+    </p>
+    <h3>fatal_mat3f</h3>
+    <p class="scene-class-type">
+      <b>Mat3f</b>
+      <br>
+      default: [ [ 1, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1 ] ]
+      <p class="scene-class-comments">The mat3f to use for materialx map shaders that are unable to execute shading, usually due to incomplete initialization.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_mat3f.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_mat3f.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_mat3f.links heading=4-%}
+    </p>
+    <h3>fatal_mat4f</h3>
+    <p class="scene-class-type">
+      <b>Mat4f</b>
+      <br>
+      default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      <p class="scene-class-comments">The mat4f to use for materialx map shaders that are unable to execute shading, usually due to incomplete initialization.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_mat4f.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_mat4f.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_mat4f.links heading=4-%}
+    </p>
+    <h3>fatal_rgba</h3>
+    <p class="scene-class-type">
+      <b>Rgba</b>
+      <br>
+      default: [ 1, 0, 1, 1 ]
+      <p class="scene-class-comments">The rgba to use for materialx map shaders that are unable to execute shading, usually due to incomplete initialization.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_rgba.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_rgba.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_rgba.links heading=4-%}
+    </p>
+    <h3>fatal_vec4f</h3>
+    <p class="scene-class-type">
+      <b>Vec4f</b>
+      <br>
+      default: [ 0, 0, 0, 0 ]
+      <p class="scene-class-comments">The vec4f to use for materialx map shaders that are unable to execute shading, usually due to incomplete initialization.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_vec4f.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_vec4f.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.fatal_vec4f.links heading=4-%}
+    </p>
     <h3>fps</h3>
     <p class="scene-class-type">
       <b>Float</b>
