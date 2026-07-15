@@ -155,7 +155,7 @@ title: VdbGeometry
       <b>Float</b>
       <br>
       default: 1.0
-      <p class="scene-class-comments">the relative scale of input emission grid resolution. Lower value has lower memory overhead and faster render time, with the cost of lower fidelity of emission shape and illumination</p>
+      <p class="scene-class-comments">The relative scale of the emission importance-sampling histogram resolution. The value is clamped to the range [0, 1]. For example, 0.5 roughly halves the resolution in each dimension, while 0 collapses to the minimum 1-bin-per-axis histogram. Lower values reduce memory usage, but also reduce importance-sampling fidelity and can converge more slowly. If the histogram is still too large after applying this rate a warning is issued and sampling falls back to a coarse bounding-box distribution. Note: this only affects importance-sampling efficiency, not the emission values evaluated during ray marching.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.images data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.videos data=site.data.user-reference.scene-objects.geometry.VdbGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.VdbGeometry.attributes.emission_sample_rate.links heading=4-%}
