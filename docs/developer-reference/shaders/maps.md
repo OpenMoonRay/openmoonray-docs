@@ -33,7 +33,7 @@ Map shaders inherit two protected function pointer members (`mSampleFunc` and `m
 `sample()` by convention.
 
 ### The moonray::shading::State
-The shading [State](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/bvh/shading/State.h) provides the sample function with geometric data at the shading point.
+The shading [State](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/shading/State.h) provides the sample function with geometric data at the shading point.
 
 ### Related ISPC macros
 The vectorized sample function (SampleFuncv) implementation is routinely followed by a call to the `DEFINE_MAP_SHADER` macro which is defined in [ShaderMacros.isph](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/shading/ispc/ShaderMacros.isph)
