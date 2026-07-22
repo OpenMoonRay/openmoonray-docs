@@ -467,6 +467,8 @@
             path: /user-reference/how-to-guides/displacement.md
           - text: Glitter Shader
             path: /user-reference/how-to-guides/glitter-shader.md
+          - text: Hair Texture Coordinates
+            path: /user-reference/how-to-guides/hair-texture-coordinates.md
           - text: Instance-Level Transforms
             path: /user-reference/how-to-guides/instance-level-transforms.md
           - text: Iridescence 
