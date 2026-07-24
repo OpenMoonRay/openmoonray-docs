@@ -38,7 +38,7 @@ Now, to clone all the repositories into one structure, run the following git com
 
 ```bash
 cd /Applications/MoonRay/source
-git clone --recurse-submodules https://github.com/openmoonray/openmoonray.git
+git clone --recurse-submodules https://github.com/OpenMoonRay/openmoonray.git
 ```
 
 ---

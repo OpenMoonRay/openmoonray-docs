@@ -11,9 +11,9 @@ type is to have a look at the source code for existing plug-ins of that type. Th
 of the general topics that are common to all MoonRay plugin types. See the links at the bottom of this page 
 for type-specific information.
 
-The [_moonray_](https://github.com/dreamworksanimation/moonray/tree/main/dso),
-[_moonshine_](https://github.com/dreamworksanimation/moonshine/tree/main/dso) and
-[_moonshine_usd_](https://github.com/dreamworksanimation/moonshine_usd/tree/main/dso) repositories all
+The [_moonray_](https://github.com/OpenMoonRay/moonray/tree/main/dso),
+[_moonshine_](https://github.com/OpenMoonRay/moonshine/tree/main/dso) and
+[_moonshine_usd_](https://github.com/OpenMoonRay/moonshine_usd/tree/main/dso) repositories all
 contain various plug-ins which can be referenced as examples and provide more information than can be
 conveyed in this document.
 
@@ -30,16 +30,16 @@ now it will be necessary to build them alongside MoonRay inside the _moonray_ so
 
 |Type| Derives from | Has Public API?|
 |------------|---------------|
-|Camera|[scene_rdl2::rdl2::Camera](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Camera.h)|no|
-|Displacement|[scene_rdl2::rdl2::Displacement](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Displacement.h)|yes|
-|DisplayFilter|[scene_rdl2::rdl2::DisplayFilter](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/DisplayFilter.h)|yes|
-|Geometry|[scene_rdl2::rdl2::Geometry](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Geometry.h)|yes|
-|Light|[scene_rdl2::rdl2::Light](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Light.h)|no|
-|LightFilter|[scene_rdl2::rdl2::LightFilter](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/LightFilter.h)|no|
-|Map|[scene_rdl2::rdl2::Map](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Map.h)|yes|
-|Material|[scene_rdl2::rdl2::Material](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Material.h)|yes|
-|NormalMap|[scene_rdl2::rdl2::NormalMap](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/NormalMap.h)|yes|
-|VolumeShader|[scene_rdl2::rdl2::VolumeShader](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/VolumeShader.h)|no|
+|Camera|[scene_rdl2::rdl2::Camera](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Camera.h)|no|
+|Displacement|[scene_rdl2::rdl2::Displacement](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Displacement.h)|yes|
+|DisplayFilter|[scene_rdl2::rdl2::DisplayFilter](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/DisplayFilter.h)|yes|
+|Geometry|[scene_rdl2::rdl2::Geometry](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Geometry.h)|yes|
+|Light|[scene_rdl2::rdl2::Light](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Light.h)|no|
+|LightFilter|[scene_rdl2::rdl2::LightFilter](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/LightFilter.h)|no|
+|Map|[scene_rdl2::rdl2::Map](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Map.h)|yes|
+|Material|[scene_rdl2::rdl2::Material](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Material.h)|yes|
+|NormalMap|[scene_rdl2::rdl2::NormalMap](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/NormalMap.h)|yes|
+|VolumeShader|[scene_rdl2::rdl2::VolumeShader](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/VolumeShader.h)|no|
 
 All plug-in types are authored as C++ classes, but some plug-in types also include functions that
 are written in ISPC.
@@ -168,7 +168,7 @@ to have all the attributes that `rdl2::Geometry` and its parent classes define a
 
 In the define section, you are in a function scope, with a local variable named _sceneClass_, which is the SceneClass being defined.
 You should call the `declareAttribute<T>()` method
-(see [`lib/scene/rdl2/SceneClass.h`](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/SceneClass.h) for
+(see [`lib/scene/rdl2/SceneClass.h`](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/SceneClass.h) for
  documentation) for each attribute and assign it to its corresponding `AttributeKey<T>` that you declared.
 
 #### vector types
@@ -282,7 +282,7 @@ _RampMap.json_
 }
 ```
 
-Refer to the [SceneClass](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/SceneClass.h)
+Refer to the [SceneClass](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/SceneClass.h)
 source code, the [scene_rdl2]({{ "/developer-reference/scene_rdl2-library/" | absolute_url }}) page, or the existing plug-ins
 for more examples of how to declare SceneClass attributes and their metadata.
 
@@ -409,7 +409,7 @@ assume anything about the world outside of your SceneObject.
 ## The Plug-in Interfaces
 Depending on the plug-in type, each plugin class will potentially:
 * implement/override the virtual interface members declared by the base class
-* implement one or more of the static functions prototyped in [Types.h](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Types.h)  
+* implement one or more of the static functions prototyped in [Types.h](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Types.h)  
 and set the associated inherited function pointer members
 
 The table below lists the plug-in types with name of the function(s) that comprise that plug-in type's "interface"

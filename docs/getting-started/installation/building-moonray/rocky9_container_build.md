@@ -26,7 +26,7 @@ git lfs install
 The source for every repository will be downloaded and organized into a directory structure that enables everything to be built using a single CMake project at the root of the *openmoonray* clone. Of course, you can also clone the repositories individually into any structure you want, but you will then need to build them separately.
 
 ```bash
-> git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git 
+> git clone --recurse-submodules https://github.com/OpenMoonRay/openmoonray.git 
 ```
 You can place the clone anywhere : the rest of this document calls the directory you have cloned openmoonray into (on the host machine) ***openmoonray-dir***. It will be mounted at */source* inside the container.
 

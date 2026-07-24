@@ -38,7 +38,7 @@ Now, to clone all the repositories into one structure, run the following git com
 
 ```bash
 cd /opt/MoonRay/source
-git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
+git clone --recurse-submodules https://github.com/OpenMoonRay/openmoonray.git
 ```
 
 Note: If building for Houdini, you'll potentially need to make the following changes before proceeding:

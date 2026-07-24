@@ -20,5 +20,5 @@ The source for every repository will be downloaded and organized into a director
 To clone the entire code base needed to build MoonRay, you need to use the ***--recurse-submodules*** option:
 
 ```bash
-git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
+git clone --recurse-submodules https://github.com/OpenMoonRay/openmoonray.git
 ```

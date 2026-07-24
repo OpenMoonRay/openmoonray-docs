@@ -11,7 +11,7 @@ the hydra delegate the
 [UsdPreviewSurface](https://graphics.pixar.com/usd/release/spec_usdpreviewsurface.html)
 and associated nodes will be renderable.  To use the more advanced Moonray materials and
 maps, first clone the
-[moonray_dcc_plugins](https://github.com/dreamworksanimation/moonray_dcc_plugins)
+[moonray_dcc_plugins](https://github.com/OpenMoonRay/moonray_dcc_plugins)
 repo.  Include the folders inside of the repo's *houdini* folder into your *HOUDINI_PATH*
 either by copying them into a folder already sourced or adding them to the
 *HOUDINI_PATH* environment variable.

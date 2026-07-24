@@ -4,7 +4,7 @@ title: Writing Displacement Shaders
 # Writing Displacement Shaders
 Displacement shaders produce `Vec3f` vector values and can be chained with other displacement shaders. They are very similar to regular Map shaders except rather than having a `sample` call that produces a color they have a `displace` call that produces a vector.
 
-Each Displacement shader implements two static functions to support MoonRay’s scalar and vector execution modes. The function prototypes are defined in scene_rdl2’s [Types.h](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Types.h) and they are `DisplaceFunc` and `DisplaceFuncv`.
+Each Displacement shader implements two static functions to support MoonRay’s scalar and vector execution modes. The function prototypes are defined in scene_rdl2’s [Types.h](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Types.h) and they are `DisplaceFunc` and `DisplaceFuncv`.
 
 Displacement shaders inherit two protected function pointer members (`mDisplaceFunc` and `mDisplaceFuncv`) which they must set, typically in the constructor.
 
