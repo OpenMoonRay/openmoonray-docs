@@ -19,5 +19,5 @@ Please have patience as we continue to work on improving this process.
 
 We also ask that potential contributors review our work-in-progress [coding standards]({{ "/developer-reference/coding-standards" | absolute_url }}) before filing a Pull Request.
 
-Further information can be found in [contributing.md](https://github.com/dreamworksanimation/openmoonray/blob/main/CONTRIBUTING.md) in the top-level [openmoonray](https://github.com/dreamworksanimation/openmoonray/) repo
+Further information can be found in [contributing.md](https://github.com/OpenMoonRay/openmoonray/blob/main/CONTRIBUTING.md) in the top-level [openmoonray](https://github.com/OpenMoonRay/openmoonray/) repo
 

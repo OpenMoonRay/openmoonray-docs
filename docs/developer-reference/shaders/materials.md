@@ -49,7 +49,7 @@ Attributes are declared in the _.json_ file via JSON.
 
 ### The shade() function
 Each Material shader implements two static functions to support MoonRay's scalar and vector execution modes.  The `ShadeFunc` and `ShadeFuncv` function prototypes are defined in scene_rdl2's
-[Types.h](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Types.h).
+[Types.h](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Types.h).
                                                                                                 
 Material shaders inherit two protected function pointer members (`mShadeFunc` and `mShadeFuncv`) which they must set, typically in the constructor, to point to the two implementations which are named
 `shade()` by convention.
@@ -57,10 +57,10 @@ Material shaders inherit two protected function pointer members (`mShadeFunc` an
 The `shade()` function is responsible for configuring the BSDF using the BsdfBuilder API.
 
 ### The moonray::shading::State
-The shading [State](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/bvh/shading/State.h) provides the shade function with geometric data at the shading point.
+The shading [State](https://github.com/OpenMoonRay/moonray/blob/main/lib/rendering/shading/State.h) provides the shade function with geometric data at the shading point.
 
 ### Related ISPC macros
-The vectorized shade function (ShadeFuncv) implementation is routinely followed by a call to the `DEFINE_MATERIAL_SHADER` macro which is defined in [ShaderMacros.isph](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/shading/ispc/ShaderMacros.isph)
+The vectorized shade function (ShadeFuncv) implementation is routinely followed by a call to the `DEFINE_MATERIAL_SHADER` macro which is defined in [ShaderMacros.isph](https://github.com/OpenMoonRay/moonray/blob/main/lib/rendering/shading/ispc/ShaderMacros.isph)
 
 ```
 DEFINE_MATERIAL_SHADER(<shader_name>, <shade_function_name>)

@@ -5,7 +5,7 @@ title: Writing Volume Shaders
 
 ## Introduction
 Volume shaders derive from the
-[VolumeShader](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl/VolumeShader.h)
+[VolumeShader](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl/VolumeShader.h)
  interface class and allow the customization of various volume properties.  They are required to
  implement the following methods:
  *extinct*, *albedo*, *emission*, *anisotropy*, *hasExtinctionMapBinding*, and *updateBakeRequired*.

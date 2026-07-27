@@ -21,9 +21,9 @@ We currently test the build on macOS 14.3 (Sonoma). Some of the instructions in 
 ## MoonRay Source Repositories
 ---
 
-The Open MoonRay source is split into 19 git repositories, all available at [DreamWorks Animation Github](https://github.com/dreamworksanimation). Each repository can be built separately, by invoking cmake with the root of the repository as the source path. This requires that CMake be configured so that it can find all of the libraries and tools that are needed by the particular repository you are building.
+The Open MoonRay source is split into multiple git repositories, all available at the [MoonRay Project on Github](https://github.com/OpenMoonRay). Each repository can be built separately, by invoking cmake with the root of the repository as the source path, however this requires that CMake be configured so that it can find all of the libraries and tools that are needed by the particular repository you are building.
 
-We've created the ***openmoonray*** repository as a way to download and build all of the source in one step, without worrying about dependencies between the separate repositories. It is highly recommended that you use this process, unless you have a strong reason to build the individual parts separately, or to build only a subset. However, the *openmoonray* repository is not a *necessary* part of the Open MoonRay source : we do not use it for the builds we use internally in production.
+To simplify the build process we've created the ***openmoonray*** repository as a way to build all of the source in one step, without worrying about dependencies between the separate repositories. It is highly recommended that you use this process, unless you have a strong reason to build the individual parts separately, or to build only a subset.
 
 If you do want to build the repositories separately, the process may be made easier by using a dependency/build framework like Rez/rez-build. The following page has a description of the individual repositories and their dependencies : [Open Moonray Repositories]({{ "/getting-started/installation/building-moonray/repo_deps" | absolute_url }}), and some more information is given below.
 
@@ -42,7 +42,7 @@ git lfs install
 Now, to clone all the repositories into one structure, run the following git command:
 
 ```bash
-git clone --recurse-submodules https://github.com/dreamworksanimation/openmoonray.git
+git clone --recurse-submodules https://github.com/OpenMoonRay/openmoonray.git
 ```
 
 The source for every repository will be downloaded and organized into a directory structure that enables everything to be built using a single CMake project at the root of the *openmoonray* clone. Of course, you can also clone the repositories individually into any structure you want, but you will then need to build them separately.

@@ -11,7 +11,7 @@ sass:
 
 url: https://docs.openmoonray.org
 BASE_PATH : https://openmoonray.org/openmoonray-docs/
-repository: https://github.com/dreamworksanimation/openmoonray-docs/
+repository: https://github.com/OpenMoonRay/openmoonray-docs/
 
 permalink: pretty
 

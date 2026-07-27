@@ -27,16 +27,16 @@ Attributes are declared in the _.json_ file via JSON.
 
 ### The sample() function
 Each Map shader implements two static functions to support MoonRay's scalar and vector execution modes.  The `SampleFunc` and `SampleFuncv` function prototypes are defined in scene_rdl2's
-[Types.h](https://github.com/dreamworksanimation/scene_rdl2/blob/main/lib/scene/rdl2/Types.h).
+[Types.h](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/Types.h).
                                                                                                 
 Map shaders inherit two protected function pointer members (`mSampleFunc` and `mSampleFuncv`) which they must set, typically in the constructor, to point to the two implementations which are named
 `sample()` by convention.
 
 ### The moonray::shading::State
-The shading [State](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/bvh/shading/State.h) provides the sample function with geometric data at the shading point.
+The shading [State](https://github.com/OpenMoonRay/moonray/blob/main/lib/rendering/shading/State.h) provides the sample function with geometric data at the shading point.
 
 ### Related ISPC macros
-The vectorized sample function (SampleFuncv) implementation is routinely followed by a call to the `DEFINE_MAP_SHADER` macro which is defined in [ShaderMacros.isph](https://github.com/dreamworksanimation/moonray/blob/main/lib/rendering/shading/ispc/ShaderMacros.isph)
+The vectorized sample function (SampleFuncv) implementation is routinely followed by a call to the `DEFINE_MAP_SHADER` macro which is defined in [ShaderMacros.isph](https://github.com/OpenMoonRay/moonray/blob/main/lib/rendering/shading/ispc/ShaderMacros.isph)
 
 ```
 DEFINE_MAP_SHADER(<shader_name>, <sample_function_name>)
@@ -48,4 +48,4 @@ from c++ code.
 ### Examples
 There are many Map shaders in the moonray and moonshine codebases that can provide concrete examples.
 
-See the [CheckerboardMap](https://github.com/dreamworksanimation/moonray/tree/main/dso/map/CheckerboardMap) for a relatively simple example.
+See the [CheckerboardMap](https://github.com/OpenMoonRay/moonray/tree/main/dso/map/CheckerboardMap) for a relatively simple example.
