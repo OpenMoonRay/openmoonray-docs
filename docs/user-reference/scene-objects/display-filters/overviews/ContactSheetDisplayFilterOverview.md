@@ -1,0 +1,1 @@
+The ContactSheetDisplayFilter takes a list of RenderOutputs using the `inputs` parameter and displays them in an optimally sized grid for an at-a-glance view. Labels can be toggled with `show_labels`, using the RenderOutputs' name by default or customized with the `labels` parameter. There are also optional controls for the labels' appearance.
