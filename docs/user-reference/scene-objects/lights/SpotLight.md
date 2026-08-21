@@ -277,28 +277,15 @@ title: SpotLight
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius.links heading=4-%}
     </p>
-    <h3>clear_radius_falloff_distance</h3>
+    <h3>clear_radius_falloff</h3>
     <p class="scene-class-type">
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Distance over which the shadows fall off. Shadows are fully visible at a distance clear_radius + clear_radius_falloff_distance from the light, and fully invisble at a distance clear_radius from the light.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_falloff_distance.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_falloff_distance.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_falloff_distance.links heading=4-%}
-    </p>
-    <h3>clear_radius_interpolation_type</h3>
-    <p class="scene-class-type">
-      <b>Int</b> <i>enum</i>
-      <br>
-          &nbsp;&nbsp;0 = &ldquo;linear&rdquo; (default)<br>
-          &nbsp;&nbsp;1 = &ldquo;exponential_up&rdquo;<br>
-          &nbsp;&nbsp;2 = &ldquo;exponential_down&rdquo;<br>
-          &nbsp;&nbsp;3 = &ldquo;smoothstep&rdquo;<br>
-      <p class="scene-class-comments">Interpolation type to use for the clear radius shadow falloff.</p>
-      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_interpolation_type.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
-      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_interpolation_type.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
-      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_interpolation_type.links heading=4-%}
+      <p class="scene-class-comments">Value [0, 1] that controls the softness of the clear_radius terminator, where 0 means no falloff and 1 means full linear falloff from clear_radius to 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_falloff.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_falloff.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.clear_radius_falloff.links heading=4-%}
     </p>
     <h3>color</h3>
     <p class="scene-class-type">
@@ -350,6 +337,16 @@ title: SpotLight
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.max_shadow_distance.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.max_shadow_distance.links heading=4-%}
     </p>
+    <h3>max_shadow_distance_falloff</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Value [0, 1] that controls the softness of the max_shadow_distance terminator, where 0 means no falloff and 1 means full linear falloff from max_shadow_distance to 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.max_shadow_distance_falloff.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.max_shadow_distance_falloff.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.max_shadow_distance_falloff.links heading=4-%}
+    </p>
     <h3>mb</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -369,6 +366,16 @@ title: SpotLight
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.min_shadow_distance.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.min_shadow_distance.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.min_shadow_distance.links heading=4-%}
+    </p>
+    <h3>min_shadow_distance_falloff</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Value [0, 1] that controls the softness of the min_shadow_distance terminator, where 0 means no falloff and 1 means full linear falloff from min_shadow_distance to 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.SpotLight.attributes.min_shadow_distance_falloff.images data=site.data.user-reference.scene-objects.lights.SpotLight-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.SpotLight.attributes.min_shadow_distance_falloff.videos data=site.data.user-reference.scene-objects.lights.SpotLight-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.SpotLight.attributes.min_shadow_distance_falloff.links heading=4-%}
     </p>
     <h3>normalized</h3>
     <p class="scene-class-type">
