@@ -12,6 +12,18 @@ MoonRay provides a number of different controls that allow us to ignore occludin
 - [max_shadow_distance](#max-shadow-distance)
 - [clear_radius](#clear-radius)
 
+There are also accompanying falloff controls to help soften the terminator:
+
+- `shadow_ray_epsilon_falloff`
+- `min_shadow_distance_falloff`
+- `max_shadow_distance_falloff`
+- `clear_radius`
+
+Each is a value [0, 1] that determines the shadow falloff, with 0 being no shadow falloff, and 1 being full falloff. 
+
+< [!WARNING]
+< Enabling any of these attributes will result in a performance hit, and the impact will depend on how large the shadow gradients are in your scene. 
+
 ## What are shadow rays?
 
 At each shading point in the scene, we must determine whether (and how much) the point is in shadow. The way we measure 
