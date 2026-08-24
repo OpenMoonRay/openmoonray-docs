@@ -3,22 +3,22 @@ title: MoonRay GUI Viewer V2
 ---
 # MoonRay GUI Viewer V2
 
-The **moonray_gui_v2** executable is the successor to [moonray_gui](../moonray_gui), which is the interactive 
+The **moonray_gui_v2** executable is the successor to [moonray_gui](../moonray-gui), which is the interactive 
 counterpart to [**moonray**](../moonray). It leverages [imgui](https://github.com/ocornut/imgui) as the graphical 
 interface library in order to remove the more bloated QT dependency. It also includes a number of new features to 
 make the tool easier to use.
 
 The same core concepts are true for **moonray_gui_v2** as they are for **moonray_gui**, so you can refer to the 
-[moonray_gui](../moonray_gui) page for general information for now. This page will be dedicated to the differences 
+[moonray_gui](../moonray-gui) page for general information for now. This page will be dedicated to the differences 
 coming with moonray_gui_v2, including 1) how to invoke it, 2) additions, and 3) hotkeys.
 
 ## Usage
 Here are some instructions on how to invoke moonray_gui_v2:
 
-### Prior to refplat-vfx2025
+**Prior to refplat-vfx2025**<br>
 You can use the `moonray_gui` executable for v1, and the `moonray_gui_v2` executable for v2.
 
-### refplat-vfx2025+
+**refplat-vfx2025+**<br>
 **moonray_gui_v2** is the default from this point onward, because we do not support QT6. Using the `moonray_gui`
 executable will cause moonray_gui_v2 to run. The goal is to deprecate moonray_gui v1. 
 
@@ -57,10 +57,13 @@ for easy image comparison.
 ## Hotkeys
 Any keys that have changed between moonray_gui and moonray_gui_v2 have been marked with a star.
 
-> [!NOTE]
-> You can use the `?` button in the bottom right to see all of these hotkeys in the application itself.
+<aside> <!-- Also: <aside class="info-aside"> -->
+<p>You can use the "?" button in the bottom right to see all of these hotkeys in the application itself. </p>
+</aside>
+{: .info-aside}
 
 **Camera Hotkeys**
+
 | **Action**         | **Hotkey**   | **Notes**                         |
 | ------------------ | ------------ | --------------------------------- |
 | Toggle Camera Type | `O`          |                                   |
@@ -83,6 +86,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Roll*              | `CTRL`+`LMB` | Previously `ALT`+`LMB`+`RMB`      |
 
 **Denoising Hotkeys**
+
 | **Action**         | **Hotkey**   | **Notes**                         |
 | ------------------ | ------------ | --------------------------------- |
 | Toggle On/Off      | `N`          |                                   |
@@ -90,6 +94,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Select Buffers     | `B`          |                                   |
 
 **Channel Hotkeys**
+
 | **Action**         | **Hotkey**   | **Notes**                         |
 | ------------------ | ------------ | --------------------------------- |
 | RGB                | ``` ` ```    |                                   |
@@ -102,6 +107,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Num Samples*       | `7`          | Previously `8`                    |
 
 **Color Management Hotkeys**
+
 | **Action**         | **Hotkey**   | **Notes**                         |
 | ------------------ | ------------ | --------------------------------- |
 | Exposure Increase  | `UP`         |                                   |
@@ -112,6 +118,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Gamma Reset        | `SHIFT`+`Y`  |                                   |
 
 **Fast Progressive Mode Hotkeys**
+
 | **Action**         | **Hotkey**   | **Notes**                         |
 | ------------------ | ------------ | --------------------------------- |
 | Toggle On/Off      | `L`          |                                   |
@@ -119,6 +126,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Previous Mode      | `ALT`+`DOWN` |                                   |
 
 **Window Hotkeys**
+
 | **Action**                     | **Hotkey**   | **Notes**                         |
 | ------------------------------ | ------------ | --------------------------------- |
 | Open/Close Key Bindings Editor | `G`          | new in v2                         |
@@ -132,6 +140,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Open/Close Axis Display        | `SHIFT`+`A`  | new in v2                         |
 
 **Path Visualizer**
+
 | **Action**                     | **Hotkey**     | **Notes**                         |
 | ------------------------------ | -------------- | --------------------------------- |
 | Toggle On/Off                  | `SHIFT`+`V`    |                                   |
@@ -140,6 +149,7 @@ Any keys that have changed between moonray_gui and moonray_gui_v2 have been mark
 | Next Node                      | `SHIFT`+`RIGHT`| selects the next node (displays path vertex information in the path visualizer menu) |
 
 **Miscellaneous Hotkeys**
+
 | **Action**                     | **Hotkey**     | **Notes**                         |
 | ------------------------------ | -------------- | --------------------------------- |
 | Render Output Previous         | `,`            |                                   |
