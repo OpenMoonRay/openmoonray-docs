@@ -538,6 +538,8 @@
             path: user-reference/tools/moonray.md
           - text: moonray_gui
             path: user-reference/tools/moonray-gui.md
+          - text: moonray_gui_v2
+            path: user-reference/tools/moonray-gui_v2.md
           - text: rdla_filter
             path: user-reference/tools/rdla_filter.md
           - text: rdla_gui
