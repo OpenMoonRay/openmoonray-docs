@@ -14,7 +14,7 @@ When the render is complete the resulting beauty render is written to disk, as w
 [RenderOutputs](../../scene-objects/render-output/RenderOutput/)
 
 <aside> <!-- Also: <aside class="info-aside"> -->
-<p>Starting with refplatvfx-2025, the `moonray_gui` executable will instead invoke the imgui-based <b>moonray_gui_v2</b>, documented <a href=../moonray_gui_v2">here</a>. </p>
+<p>Starting with refplatvfx-2025, the `moonray_gui` executable will instead invoke the imgui-based <b>moonray_gui_v2</b>, documented <a href="../moonray_gui_v2">here</a>. </p>
 </aside>
 {: .warn-aside}
 
