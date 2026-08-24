@@ -13,9 +13,10 @@ directly with [RDLA](../../../getting-started/about/rdl-scene-format/) files via
 When the render is complete the resulting beauty render is written to disk, as well as any additional images that are specified via
 [RenderOutputs](../../scene-objects/render-output/RenderOutput/)
 
-> [!WARNING]
-> Starting with refplatvfx-2025, the `moonray_gui` executable will instead invoke the imgui-based **moonray_gui_v2**, 
-> documented [here](../moonray_gui_v2)
+<aside> <!-- Also: <aside class="info-aside"> -->
+<p>Starting with refplatvfx-2025, the `moonray_gui` executable will instead invoke the imgui-based **moonray_gui_v2**, documented <a href=../moonray_gui_v2">here</a>. </p>
+</aside>
+{: .warn-aside}
 
 ## Command-line options
 Most of the [command-line options](../moonray/#command-line-options) are the same as the
