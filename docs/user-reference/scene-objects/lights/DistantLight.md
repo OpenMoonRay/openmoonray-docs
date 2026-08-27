@@ -233,6 +233,16 @@ title: DistantLight
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.DistantLight.attributes.max_shadow_distance.videos data=site.data.user-reference.scene-objects.lights.DistantLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.DistantLight.attributes.max_shadow_distance.links heading=4-%}
     </p>
+    <h3>max_shadow_distance_falloff</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Value [0, 1] that controls the softness of the max_shadow_distance terminator, where 0 means no falloff and 1 means full linear falloff from max_shadow_distance to 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.DistantLight.attributes.max_shadow_distance_falloff.images data=site.data.user-reference.scene-objects.lights.DistantLight-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.DistantLight.attributes.max_shadow_distance_falloff.videos data=site.data.user-reference.scene-objects.lights.DistantLight-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.DistantLight.attributes.max_shadow_distance_falloff.links heading=4-%}
+    </p>
     <h3>mb</h3>
     <p class="scene-class-type">
       <b>Bool</b>
@@ -252,6 +262,16 @@ title: DistantLight
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.DistantLight.attributes.min_shadow_distance.images data=site.data.user-reference.scene-objects.lights.DistantLight-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.DistantLight.attributes.min_shadow_distance.videos data=site.data.user-reference.scene-objects.lights.DistantLight-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.lights.DistantLight.attributes.min_shadow_distance.links heading=4-%}
+    </p>
+    <h3>min_shadow_distance_falloff</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Value [0, 1] that controls the softness of the min_shadow_distance terminator, where 0 means no falloff and 1 means full linear falloff from min_shadow_distance to 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.lights.DistantLight.attributes.min_shadow_distance_falloff.images data=site.data.user-reference.scene-objects.lights.DistantLight-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.lights.DistantLight.attributes.min_shadow_distance_falloff.videos data=site.data.user-reference.scene-objects.lights.DistantLight-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.lights.DistantLight.attributes.min_shadow_distance_falloff.links heading=4-%}
     </p>
     <h3>normalized</h3>
     <p class="scene-class-type">

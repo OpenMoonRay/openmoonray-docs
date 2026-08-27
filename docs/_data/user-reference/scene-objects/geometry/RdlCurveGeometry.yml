@@ -1,2 +1,9 @@
 ---
 overview: overviews/RdlCurveGeometryOverview.md
+image_path: /assets/images/user-reference/scene-objects/geometry
+
+attributes:
+  shadow_ray_epsilon_falloff:
+    videos:
+      - video: sreFalloffWedge.mp4
+        text: "shadow_ray_epsilon_falloff [0, 1]"

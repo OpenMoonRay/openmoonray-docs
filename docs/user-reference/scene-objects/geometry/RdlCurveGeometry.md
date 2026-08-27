@@ -379,6 +379,16 @@ title: RdlCurveGeometry
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon.links heading=4-%}
     </p>
+    <h3>shadow_ray_epsilon_falloff</h3>
+    <p class="scene-class-type">
+      <b>Float</b>
+      <br>
+      default: 0.0
+      <p class="scene-class-comments">Value [0, 1] that controls the softness of the shadow_ray_epsilon terminator, where 0 means no falloff and 1 means full linear falloff from shadow_ray_epsilon to 0.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon_falloff.images data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon_falloff.videos data=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.geometry.RdlCurveGeometry.attributes.shadow_ray_epsilon_falloff.links heading=4-%}
+    </p>
   </p>
 </details>
 <details open>
