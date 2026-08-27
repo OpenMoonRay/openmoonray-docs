@@ -282,6 +282,7 @@ title: DwaToonMaterial
       <br>
           &nbsp;&nbsp;0 = &ldquo;oren-nayar&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;ramp&rdquo;<br>
+          &nbsp;&nbsp;2 = &ldquo;ramp_v2&rdquo;<br>
       <p class="scene-class-comments">The method used to render the diffuse response.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_model.images data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.materials.DwaToonMaterial.attributes.diffuse_model.videos data=site.data.user-reference.scene-objects.materials.DwaToonMaterial-%}
