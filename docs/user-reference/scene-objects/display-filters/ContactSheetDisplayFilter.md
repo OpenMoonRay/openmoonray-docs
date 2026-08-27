@@ -43,12 +43,22 @@ title: ContactSheetDisplayFilter
 <details open>
   <summary>General attributes</summary>
   <p>
+    <h3>columns</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      <br>
+      default: 1
+      <p class="scene-class-comments">Number of columns in the contact sheet.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.columns.images data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.columns.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.columns.links heading=4-%}
+    </p>
     <h3>font_path</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       <br>
       default: 
-      <p class="scene-class-comments">Specify a typeface file or a full pathname. Will search common locations.</p>
+      <p class="scene-class-comments">If not a full pathname to a font file, will search for fonts in common system locations.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.font_path.images data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.font_path.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.font_path.links heading=4-%}
@@ -68,7 +78,7 @@ title: ContactSheetDisplayFilter
       <b>RenderOutput Vector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">List of RenderOutputs to display.</p>
+      <p class="scene-class-comments">Inputs to contact sheet.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.inputs.images data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.inputs.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.inputs.links heading=4-%}
@@ -88,7 +98,7 @@ title: ContactSheetDisplayFilter
       <b>StringVector</b>
       <br>
       default: {}
-      <p class="scene-class-comments">List of labels for each RenderOutput.</p>
+      <p class="scene-class-comments">Custom labels for each image in the contact sheet</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.labels.images data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.labels.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.labels.links heading=4-%}
@@ -103,12 +113,22 @@ title: ContactSheetDisplayFilter
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.mask.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.mask.links heading=4-%}
     </p>
+    <h3>rows</h3>
+    <p class="scene-class-type">
+      <b>Int</b>
+      <br>
+      default: 2
+      <p class="scene-class-comments">Number of rows in the contact sheet.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.rows.images data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.rows.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.rows.links heading=4-%}
+    </p>
     <h3>show_labels</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       <br>
       default: True
-      <p class="scene-class-comments">Toggles label visibility.</p>
+      <p class="scene-class-comments">Show render output name as label.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.show_labels.images data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.show_labels.videos data=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.display-filters.ContactSheetDisplayFilter.attributes.show_labels.links heading=4-%}

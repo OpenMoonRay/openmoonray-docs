@@ -33,7 +33,7 @@ title: CookieLightFilter_v2
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the far distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space for planar, or radians for spherical) at the far distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_far_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_far_value.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_far_value.links heading=4-%}
@@ -43,7 +43,7 @@ title: CookieLightFilter_v2
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the mid distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space for planar, or radians for spherical) at the mid distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_mid_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_mid_value.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_mid_value.links heading=4-%}
@@ -73,7 +73,7 @@ title: CookieLightFilter_v2
       <b>Float</b>
       <br>
       default: 0.0
-      <p class="scene-class-comments">Blur filter radius (in texture UV space) at the near distance</p>
+      <p class="scene-class-comments">Blur filter radius (in texture UV space for planar, or radians for spherical) at the near distance</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_near_value.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_near_value.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.blur_near_value.links heading=4-%}
@@ -212,7 +212,8 @@ title: CookieLightFilter_v2
       <br>
           &nbsp;&nbsp;0 = &ldquo;perspective&rdquo; (default)<br>
           &nbsp;&nbsp;1 = &ldquo;orthographic&rdquo;<br>
-      <p class="scene-class-comments">Perspective or orthographic projection</p>
+          &nbsp;&nbsp;2 = &ldquo;spherical_latlong&rdquo;<br>
+      <p class="scene-class-comments">Perspective or orthographic planar projection, or a spherical latlong (equirectangular) projection that wraps the texture around the projector in all directions.  Spherical mode ignores the projector focal length, film width and pixel aspect ratio, and applies even when a projector camera is attached (only the projector's transform is used).</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.projector_type.images data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.projector_type.videos data=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.light-filters.CookieLightFilter_v2.attributes.projector_type.links heading=4-%}

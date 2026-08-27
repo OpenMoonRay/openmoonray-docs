@@ -48,6 +48,18 @@ title: SceneVariables
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
       {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_file_handles.links heading=4-%}
     </p>
+    <h3>texture_update_mode</h3>
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
+      <br>
+          &nbsp;&nbsp;0 = &ldquo;off&rdquo;<br>
+          &nbsp;&nbsp;1 = &ldquo;lights and light filters only&rdquo; (default)<br>
+          &nbsp;&nbsp;2 = &ldquo;full&rdquo;<br>
+      <p class="scene-class-comments">Controls which texture files (.exr and .tx) moonray_gui monitors for on-disk changes and automatically updates the render when they change.<br>&emsp;&emsp;off: no texture watching.<br>&emsp;&emsp;lights and light filters only: monitors textures referenced by lights and light filters.<br>&emsp;&emsp;full: monitors all textures in the scene.</p>
+      {%-include image-gallery.html images=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_update_mode.images data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include video-gallery.html videos=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_update_mode.videos data=site.data.user-reference.scene-objects.scene-variables.SceneVariables-%}
+      {%-include see-also.html links=site.data.user-reference.scene-objects.scene-variables.SceneVariables.attributes.texture_update_mode.links heading=4-%}
+    </p>
   </p>
 </details>
 <details open>
