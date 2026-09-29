@@ -11,13 +11,11 @@ To keep it concrete, I've chosen specific directory locations inside the contain
 
 - */source* location of the openmoonray repository clone
 - */build* CMake build directory
-- */installs/moonray* location to install MoonRay
+- */installs/openmoonray* location to install MoonRay
 
 You will need Docker and a copy of the MoonRay source. To clone the source from the github repo (on the host), use this git command:
 
-The *openmoonray* repo references 19 other repositories via *Git* submodules.
-Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
-You can install Git LFS using the following command:
+The *openmoonray* repo currently references 20 other repositories via *Git* submodules. Some use [Git LFS](https://git-lfs.com/) to track files. Install Git LFS before cloning:
 
 ```bash
 git lfs install
@@ -46,7 +44,12 @@ Once inside the container, the first step is to install some additional RPM pack
 
 ```bash
 source /source/building/Rocky9/install_packages.sh --nocuda
+export PATH=/installs/cmake-3.23.1-linux-x86_64/bin:${PATH}
 ```
+
+Because this package setup omits CUDA, the main MoonRay configure command in
+step 3 disables OptiX with `-DMOONRAY_USE_OPTIX=NO`. If you also pass `--noqt`
+here, add `-DBUILD_QT_APPS=NO` to that configure command.
 
 ---
 ## Step 2. Build the remaining dependencies
@@ -70,13 +73,10 @@ The option "-j $(nproc)" tells CMake to use all available cores on your machine 
 The main CMake project in *openmoonray* builds MoonRay itself, and installs it to a specified location.
 
 ```bash
-> cd /build
-> rm -rf *
-> cmake /source -DPYTHON_EXECUTABLE=python3 -DBOOST_PYTHON_COMPONENT_NAME=python39 -DABI_VERSION=0 -DMOONRAY_USE_OPTIX=NO
-> cmake --build . -j $(nproc)
-
-> mkdir /installs/openmoonray
-> cmake --install /build --prefix /installs/openmoonray
+> rm -rf /build/*
+> cd /source
+> cmake --preset rocky9-release -DMOONRAY_USE_OPTIX=NO
+> cmake --build --preset rocky9-release -- -j $(nproc)
 ```
 
 Set up the install and test moonray:
@@ -84,7 +84,7 @@ Set up the install and test moonray:
 ```bash
 > source /installs/openmoonray/scripts/setup.sh
 > moonray -in /source/testdata/rectangle.rdla -out /tmp/rectangle.exr
-> hd_render -in /source/testdata/sphere.usd -out /tmp/sphere.exr
+> usdrecord -r Moonray /source/testdata/sphere.usd /tmp/sphere.exr
 ```
 
 If everything is working, the moonray command should produce output like this:
@@ -144,4 +144,3 @@ To run **moonray_gui**, you need to set up X in the container. The steps require
 > source /installs/openmoonray/scripts/setup.sh
 > moonray_gui -in /source/testdata/rectangle.rdla -out /tmp/rectangle.exr
 ```
-

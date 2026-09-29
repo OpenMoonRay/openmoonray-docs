@@ -9,11 +9,6 @@ Start with reading the [general build instructions](../general_build).
 ## Base Requirements
 * CMake 3.23.1 (or greater)
 
-* If you want to include MoonRay GPU support (XPU mode), you will also need to download the NVIDIA Optix headers
-    (from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy)), which require an EULA.
-    Be sure to download version 7.6, as MoonRay is not yet compatible with their more recent releases.
-    Once you have extracted the downloaded contents, note the location of the header files (under *include*): these will be copied to */usr/local/include* in step 3 below.
-
 ---
 ### Step 1. Create the folders
 Create a clean root folder for moonray.  Attempting to build atop a previous installation may cause issues.
@@ -26,11 +21,10 @@ mkdir -p /opt/MoonRay/installs/{bin,lib,include}
 
 ---
 ### Step 2. Clone the OpenMoonRay source
-The *openmoonray* repo references 19 other repositories via *Git* submodules.
-Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
-You can install Git LFS using the following command:
+The *openmoonray* repo currently references 20 other repositories via *Git* submodules. Some use [Git LFS](https://git-lfs.com/) to track files. Install Git and Git LFS before cloning:
 
 ```bash
+sudo dnf install -y git git-lfs
 git lfs install
 ```
 
@@ -49,24 +43,30 @@ Note: If building for Houdini, you'll potentially need to make the following cha
 ---
 ### Step 3. Install some of the dependencies via script/package manager
 ```bash
-sudo source/openmoonray/building/Rocky9/install_packages.sh
-sudo dnf install -y cuda-toolkit
+sudo -i
+source /opt/MoonRay/source/openmoonray/building/Rocky9/install_packages.sh
+export PATH=/installs/cmake-3.23.1-linux-x86_64/bin:${PATH}
 ```
-You can add arguments `--nocuda` and `--noqt` to skip GPU and GUI support respectively.
-If you are building with GPU support, copy the Optix headers that you downloaded and extracted into */usr/local*
+The package script installs CUDA and Qt by default. The dependency build in
+step 4 automatically fetches the NVIDIA `optix-dev` headers at tag `v7.6.0`;
+no manual OptiX header download or copy is needed.
+
+To omit CUDA, pass `--nocuda` here and add `-DMOONRAY_USE_OPTIX=NO` to the
+step 5 configure command. To omit Qt, pass `--noqt` here and add
+`-DBUILD_QT_APPS=NO` in step 5. For example, for a CPU-only build without GUI
+applications, use these commands instead of the package commands above:
 
 ```bash
-cp -r /tmp/optix/include/* /usr/local/include
+source /opt/MoonRay/source/openmoonray/building/Rocky9/install_packages.sh --nocuda --noqt
+export PATH=/installs/cmake-3.23.1-linux-x86_64/bin:${PATH}
 ```
 
 ---
 ### Step 4. Build the remaining dependencies from source
 Note: If building for Houdini you'll need to build moonray against Houdini's USD libraries.
-You'll want to skip building USD during this step by adding `-DNOUSD=1` to the first cmake
-command below: `cmake -DNO_USD=1 ../source/openmoonray/building/Rocky9`.  You should clean
-the build-deps/ and installs/ directory if you have previously installed the dependencies
-without passing -DNOUSD=1, to remove any USD related files or step 5 may fail to link to
-Houdini's USD libs.
+Skip building USD during this step by passing `-DNO_USD=1` to CMake. If you previously installed
+dependencies with USD enabled, clean the build-deps/ and installs/ directories before rebuilding,
+or step 5 may fail to link against Houdini's USD libraries.
 ```
 cd /opt/MoonRay/build-deps
 cmake ../source/openmoonray/building/Rocky9
@@ -82,11 +82,23 @@ cmake --preset rocky9-release
 cmake --build --preset rocky9-release -- -j $(nproc)
 ```
 
+For the CPU-only, non-Qt package setup shown in step 3, use the matching
+configure command:
+
+```
+cmake --preset rocky9-release -DMOONRAY_USE_OPTIX=NO -DBUILD_QT_APPS=NO
+cmake --build --preset rocky9-release -- -j $(nproc)
+```
+
 ---
 ### Step 6. Run/Test
 ```
 source /opt/MoonRay/installs/openmoonray/scripts/setup.sh
 cd /opt/MoonRay/source/openmoonray/testdata
+moonray -info -in curves.rdla
+# If you built the GUI app:
+moonray_gui -info -in curves.rdla
+# If you built XPU support and have a supported GPU:
 moonray_gui -exec_mode xpu -info -in curves.rdla
 ```
 
@@ -109,4 +121,3 @@ In the viewport menu, click on "Persp" and select "Moonray", this should trigger
 ```
 rm -rf /opt/MoonRay/{build,build-deps}
 ```
-

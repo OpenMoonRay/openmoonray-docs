@@ -3,7 +3,7 @@ title: Building Open MoonRay
 ---
 
 # Building Open MoonRay
-MoonRay currently builds on Linux and macOS systems.
+MoonRay currently builds on Linux and Apple silicon macOS systems.
 
 Support for GPU/XPU and building of the GUI tools are both options that can be turned off if you don't need them.
 
@@ -12,10 +12,10 @@ The details depend somewhat on the Linux distribution being used, whether you ne
 This document discusses the various alternatives. For more concrete instructions, look at the documents that discuss building on specific platforms.
 
 ## Linux
-We currently test the build on Rocky Linux 9 (with GCC 9 and 11, as well as Clang 17). It should be possible to build on other distributions, but often some adjustments are needed, especially regarding obtaining the necessary third-party dependencies. MoonRay can be built directly on a Linux system or inside a suitable Docker container.
+The current build configuration targets Rocky Linux 9 and installs GCC 11. It should be possible to build on other distributions, but often some adjustments are needed, especially regarding obtaining the necessary third-party dependencies. MoonRay can be built directly on a Linux system or inside a suitable Docker container.
 
 ## macOS
-We currently test the build on macOS 14.3 (Sonoma). Some of the instructions in this document pertain specifically to building on Linux systems.
+The current macOS build instructions cover Apple silicon; see the platform-specific instructions for tested macOS and Xcode versions. Some of the instructions in this document pertain specifically to Linux systems.
 
 ---
 ## MoonRay Source Repositories
@@ -31,7 +31,7 @@ If you do want to build the repositories separately, the process may be made eas
 ## Getting the source via the ***openmoonray*** repository
 ---
 
-The *openmoonray* repo references 19 other repositories via *Git* submodules.
+The *openmoonray* repo currently references 20 other repositories via *Git* submodules.
 Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
 You can install Git LFS using the following command:
 
@@ -55,7 +55,7 @@ MoonRay is dependent on a number of third-party libraries and tools. You can obt
 
 Rather than providing a list of dependencies and versions, we provide sets of scripts and CMake projects in the */building* directory of *openmoonray*. Running these scripts will install the dependencies onto the system. This has several advantages. Firstly, the scripts will always match the current source, and can be directly tested for accuracy by running them. Secondly, they contain build options and other settings, as well as specifying a particular version for each dependency. If your requirements fit what they do, you can simply run them directly to install the dependencies. If not, you can either modify them as appropriate, or use them as a reference.
 
-There are separate directories under */building* for obtaining dependencies under different platforms (currently and Rocky Linux 9 and macOS). The rest of this section describes how to use the scripts. They are designed to run in the *bash* shell.
+There are separate directories under */building* for obtaining dependencies on different platforms (currently Rocky Linux 9 and macOS). The rest of this section describes how to use the scripts. They are designed to run in the *bash* shell.
 
 ### 1. Packages
 
@@ -65,14 +65,33 @@ If there is no suitable binary package for a dependency, you can download it as 
 
 ```bash
 source building/Rocky9/install_packages.sh
+export PATH=/installs/cmake-3.23.1-linux-x86_64/bin:${PATH}
 ```
 Generally root permissions are necessary to install packages onto a system. It might be possible to install to an alternate location that doesn't require root permissions, but we have not tested this.
 
-*install_packages.sh* has two options. ***`--nocuda`*** skips installation of the CUDA libraries, and can be used if you are not building with GPU support. ***`--noqt`*** skips installation of the Qt libraries, and can be used if you are not building the GUI apps.
+*install_packages.sh* has three options. ***`--nocuda`*** skips installation of CUDA, ***`--noqt`*** skips Qt, and ***`--nocgroup`*** skips the optional cgroup packages.
+If you pass `--nocuda`, configure the main MoonRay build with
+`-DMOONRAY_USE_OPTIX=NO`. If you pass `--noqt`, configure it with
+`-DBUILD_QT_APPS=NO`. For example, a CPU-only, non-Qt package setup and its
+matching main-build options are:
+
+```bash
+source building/Rocky9/install_packages.sh --nocuda --noqt
+export PATH=/installs/cmake-3.23.1-linux-x86_64/bin:${PATH}
+
+mkdir -p /build
+cd /build
+cmake /source/building/Rocky9
+cmake --build . -- -j $(nproc)
+
+cd /source
+cmake --preset rocky9-release -DMOONRAY_USE_OPTIX=NO -DBUILD_QT_APPS=NO
+cmake --build --preset rocky9-release -- -j $(nproc)
+```
 
 **Compiler**
 
-The Rocky 9 script installs GCC 11. Clang 13/15/17 should also work for MoonRay, but we have seen a few issues building the dependencies with Clang.
+The Rocky 9 package script installs GCC 11. Other compilers may work, but this build configuration does not establish that.
 
 **CMake**
 
@@ -80,11 +99,12 @@ The MoonRay build system requires CMake version at least 3.23.1 (mainly for ISPC
 
 **CUDA**
 
-MoonRay's GPU support requires the NVidia CUDA libraries. It you are not planning to build with GPU support, then CUDA is not needed and you can run *install_packages.sh* with the --nocuda option
+MoonRay's GPU support requires the NVIDIA CUDA libraries. If you are not planning to build with GPU support, then CUDA is not needed and you can run *install_packages.sh* with the `--nocuda` option and configure MoonRay with `-DMOONRAY_USE_OPTIX=NO`.
 
 **Qt 5**
 
 The GUI tools ***moonray_gui*** and ***arras_render*** are written using Qt 5. If you do not plan to build these GUI tools, you can run *install_packages.sh* with the --noqt option.
+Configure the main build with `-DBUILD_QT_APPS=NO` as well.
 
 ### 2. Dependencies built from source
 
@@ -114,15 +134,15 @@ cmake /source/building/Rocky9 -DInstallRoot=~/moonray/dependencies
 cmake --build . -- -j $(nproc)
 ```
 
-If you do this, you will also have to configure the main CMake build of MoonRay to find the dependencies in their alternate location. The default value of *InstallRoot* is */usr/local* : this corresponds to the default location that CMake looks at to find dependencies, and so with the default setting, the main MoonRay CMake will find the dependencies without further hints. The is discussed further below. 
+If you do this, you will also have to configure the main CMake build of MoonRay to find the dependencies in their alternate location. The default *InstallRoot* is `/opt/MoonRay/installs` for Rocky Linux 9 and a sibling `installs` directory for macOS; the supplied CMake presets configure the corresponding search paths.
 
-### 3. Optix
+### 3. OptiX headers
 
-MoonRay GPU support requires the NVIDIA Optix headers to build. These require an EULA, and can be downloaded from [here](https://developer.nvidia.com/designworks/optix/downloads/legacy). Be sure to download version 7.6, as MoonRay is not yet compatible with their more recent releases.
-
-Only the header files are needed, and the MoonRay build expects to find them in */usr/local/include* by default. You can change this by setting *OPTIX_ROOT*. You may need to unpack the Optix SDK to a temporary location and copy the headers across.
-
-Optix is not needed if you are building MoonRay without GPU support.
+The Rocky Linux 9 dependency project automatically fetches the NVIDIA
+`optix-dev` headers at tag `v7.6.0` and installs them under *InstallRoot*. No
+manual SDK download or header copy is needed. OptiX is not needed when the
+package setup uses `--nocuda` and the main build is configured with
+`-DMOONRAY_USE_OPTIX=NO`.
 
 ---
 ## Building MoonRay
@@ -153,7 +173,7 @@ cmake --build . -- -j $(nproc)
 
 Setting ***-DBUILD_QT_APPS=NO*** will suppress building of the Qt applications *moonray_gui* and *arras_render*, which removes the dependency on Qt5 libraries.
 
-Setting ***-DMOONRAY_USE_OPTIX=NO*** builds MoonRay without GPU support : CUDA and Optix are no longer required dependencies, but MoonRay will not use XPU mode or GPU denoising even if a GPU is present at run time.
+On Linux, setting ***-DMOONRAY_USE_OPTIX=NO*** disables XPU and OptiX denoising, so CUDA and OptiX are not required. On macOS, ***-DMOONRAY_USE_METAL=NO*** disables the Metal XPU path. In either case, the disabled mode cannot be enabled at runtime.
 
 ---
 ## Installation Setup
@@ -182,9 +202,10 @@ The other environment variables set up by *setup.sh* are:
 | **REZ_MOONRAY_ROOT  = *release*** | *tells MoonRay where to find shaders file for XPU mode (it will look for ${REZ_MOONRAY_ROOT}/shaders/GPUShaders.ptx* |
 | **ARRAS_SESSION_PATH = *release*/sessions** | *tells Arras where to find session files* |
 | **MOONRAY_CLASS_PATH = *release*/shader_json** | *tells Hydra Ndr plugins where to find shader descriptions (see above)* |
-| **PXR_PLUGINPATH_NAME += *release*/plugin/usd** | *adds MoonRay Hydra plugins to Hydra plugin path* |
+| **PXR_PLUGINPATH_NAME += *release*/plugin/pxr** | *adds MoonRay Hydra plugins to Hydra plugin path* |
+| **PYTHONPATH += install-root Python 3.9 paths** | *makes the installed Python modules available when present* |
 
-*setup.py* doesn't set up PYTHONPATH to include the Python modules that come with USD. It doesn't need to be set for MoonRay's purposes, but the *hd_render* command will log a series of warnings that they are not found. This isn't harmful, because *hd_render* doesn't invoke Python code.
+*setup.sh* adds the Python 3.9 site-packages directories found under the install root to `PYTHONPATH`. If neither expected site-packages directory exists, the script prints an error.
 
 ---
 ## Testing the install
@@ -204,7 +225,7 @@ Test the moonray_gui Qt app (if built)
 
 Test the Hydra plugin:
 ```bash
-> hd_render -in /source/testdata/sphere.usd -out /tmp/sphere.exr
+> usdrecord -r Moonray /source/testdata/sphere.usd /tmp/sphere.exr
 ```
 
 ---
@@ -285,7 +306,9 @@ You can clone the Open MoonRay source on the host machine and mount it into the 
 docker run --security-opt seccomp=unconfined -v <openmoonray source>:/source -v /tmp:/tmp --network=host --rm -it rockylinux:9
 ```
 
-You can also transfer Optix headers from the host through a mount. However you may find that you cannot access GPU devices on the host from inside the container, and that it makes more sense to do a build with GPU support disabled.
+GPU devices may not be available inside the container. In that case, run the
+package setup with `--nocuda` and configure the main build with
+`-DMOONRAY_USE_OPTIX=NO`.
 
 You can save the current state of the container at any time using the docker commit command. However, note that this will not save the current shell environment : when you run the saved container it will start a new *bash* shell.
 

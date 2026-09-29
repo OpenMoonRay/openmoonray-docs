@@ -74,7 +74,7 @@ this would lead to an implicit cast.
     case 'z':
         break;
     default:
-        ASSERT(false, "Illegal value");
+        MNRY_ASSERT(false, "Illegal value");
         break;
     }
 ```

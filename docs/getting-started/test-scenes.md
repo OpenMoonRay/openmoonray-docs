@@ -5,15 +5,19 @@ title: MoonRay Test Scenes
 
 A selection of scenes converted to MoonRay's native RDL2 format are available for testing here: [example_scenes.zip]({{ "/assets/test-scenes/example_scenes.zip" | absolute_url }}).
 
-The latest 2.2.0 version of the Netflix Animation Studios ALab scene, converted to MoonRay-native RDL scene format using `hd_usd2rdl`, including 4k mip-mapped .tx format textures with baked procedurals is available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.2.0.zip">ALab_2.2.0.zip</a>.
+The latest 2.2.0 version of the Netflix Animation Studios ALab scene, converted to MoonRay-native RDL scene format using `hd_usd2rdl`, including 4K mipmapped OpenEXR textures and baked procedurals, is available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.2.0.zip">ALab_2.2.0.zip</a>.
 
-This is the basis of the [texture cache profiling page]({{ "/user-reference/performance/alab/#texture-cache-size-considerations" | absolute_url }}).  Useful information for rendering is in the moonray.memo inside an unzipped directory (alab220/moonray.memo), along with a file alab220/middleQualityUniformHD.rdla for a middle-quality rendering setup.
-
-An earlier version of the ALab scene is also available for testing here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab.zip">ALab.zip</a> (version 2.0) and here: <a href="https://d2k39ng9pbbkxu.cloudfront.net/ALab_2.0.1.zip">ALab_2.0.1.zip</a> (version 2.0.1, with 4k mip-mapped .tx and baked procedurals).
+This is the basis of the [texture cache profiling page]({{ "/user-reference/performance/alab/#texture-cache-size-considerations" | absolute_url }}).  Useful information for rendering is in the `moonray.memo` file inside the unzipped directory (`alab220/moonray.memo`), along with `alab220/middleQualityUniformHD.rdla` for a middle-quality rendering setup. That scene file requests a 98,304 MiB (96 GiB) texture cache; adjust it when the render machine does not have enough available memory.
 
 A simple USD scene can be used for testing using MoonRay's Hydra plugin: [moonray_sphere.usd]({{ "/assets/test-scenes/moonray_sphere.usd" | absolute_url }}).
 
 The "MoonRay Widget" shader ball model used in this documentation is released in USD ascii and binary formats: [MoonRayWidget.zip]({{ "/assets/test-scenes/MoonRayWidget.zip" | absolute_url }}).
+
+To interactively render an RDL scene with the GUI, pass its input files with `-in`. For example, if the scene is split between paired ASCII and binary files:
+
+```bash
+moonray_gui -in scene.rdla -in scene.rdlb
+```
 
 ## Credits
 
@@ -24,8 +28,6 @@ The ALab scene was created by Netflix Animation Studios and is hosted by ASWF's 
 The moonray_sphere.usd file was developed by DreamWorks as a simple test of hdMoonray rendering USD format data.  It is distributed under the [ASWF Digital Assets License v1.1]({{ "/getting-started/moonray-sphere-usd-license" | absolute_url }}).
 
 The MoonRayWidget.zip file was developed by DreamWorks as a model to demonstrate various shader and material properties.  It is distributed under the [ASWF Digital Assets License v1.1]({{ "/getting-started/moonray-widget-license" | absolute_url }}).
-
-
 
 
 

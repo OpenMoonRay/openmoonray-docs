@@ -8,8 +8,13 @@ Start with reading the [general build instructions](../general_build).
 ---
 ## Base Requirements
 - Apple M-series hardware
-- macOS Sonoma (macOS 14, but also tested with macOS 15.1 Sequoia)
-- Install Xcode (tested with 15.2 and 16.1)
+- Apple silicon running a macOS version listed as tested in the source build instructions:
+  macOS 14.6 Sonoma, macOS 15.6 Sequoia, or macOS 26.0/26.5 Tahoe
+- At least 17 GB of available disk space
+- Install Xcode (tested with 15.4, 16.4, 26.0, and 26.6)
+- Git and Git LFS
+- `/usr/bin/python3` must be the macOS Python 3.9 shim supplied with Xcode
+- Tahoe requires the Metal toolchain: `xcodebuild -downloadComponent MetalToolchain`
 - Download and install CMake 3.26.5 (or greater):
     https://github.com/Kitware/CMake/releases/download/v3.26.5/cmake-3.26.5-macos-universal.dmg
     ```bash
@@ -26,9 +31,7 @@ mkdir -p /Applications/MoonRay/installs/{bin,lib,include}
 
 ---
 ### Step 2. Clone the OpenMoonRay source
-The *openmoonray* repo references 19 other repositories via *Git* submodules.
-Some of the repositories use [Git LFS](https://git-lfs.com/) to track some of the files.  You'll want to ensure that you have Git LFS installed before cloning openmoonray.
-You can install Git LFS using the following command:
+The *openmoonray* repo references 20 other repositories via *Git* submodules. Some use [Git LFS](https://git-lfs.com/) to track files. Ensure Git LFS is installed before cloning:
 
 ```bash
 git lfs install
@@ -57,10 +60,9 @@ Note: If building for Houdini, you'll potentially need to make the following cha
 ---
 ### Step 4. Build the dependencies
 Note: If building for Houdini you'll need to build moonray against Houdini's USD libraries.
-You'll want to skip building USD during this step by adding `-DNOUSD=1` to the first cmake
-command below: `cmake -DNO_USD=1 ../building/macOS`.  You should clean
+Skip building USD during this step by using `cmake -DNO_USD=1 ../building/macOS` instead of the normal CMake command below. You should clean
 the build-deps/ and installs/ directory if you have previously installed the dependencies
-without passing -DNOUSD=1, to remove any USD related files or step 5 may fail to link to
+without passing `-DNO_USD=1`, to remove any USD-related files or step 5 may fail to link to
 Houdini's USD libs.
 ```bash
 cd /Applications/MoonRay/build-deps
@@ -82,6 +84,10 @@ cmake --build --preset macos-release
 ```bash
 source /Applications/MoonRay/installs/openmoonray/scripts/setup.sh
 cd /Applications/MoonRay/openmoonray/testdata
+moonray -info -in curves.rdla
+# If you built the GUI app:
+moonray_gui -info -in curves.rdla
+# If you built the Metal XPU path:
 moonray_gui -exec_mode xpu -info -in curves.rdla
 ```
 

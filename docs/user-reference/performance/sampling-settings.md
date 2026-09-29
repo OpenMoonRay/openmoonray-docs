@@ -16,7 +16,7 @@ Symptoms:
 
 Solution:
 - increase pixel samples
-- higher adaptive sampling min_samples
+- increase `min_adaptive_samples` when using adaptive sampling
 
 If you find yourself using a lot of pixel samples, consider changing light and BSDF samples to 1.
 
@@ -24,7 +24,7 @@ If you find yourself using a lot of pixel samples, consider changing light and B
 
 Solution:
 - increase pixel samples
-- lower adaptive sampling error_threshold
+- lower `target_adaptive_error` when using adaptive sampling
 - consider lowering BSDF and light samples
 
 The goal is to have MoonRay focus on primary rays to resolve the noise.
@@ -34,24 +34,24 @@ Secondary rays have little effect on motion blur or depth of field.
 
 Solution:
 - more light samples
-- lower adaptive sampling error_threshold
+- lower `target_adaptive_error` when using adaptive sampling
 
 ## Issue: Noisy Materials
 
 Solution:
 - more BSDF samples
-- lower adaptive sampling error_threshold
+- lower `target_adaptive_error` when using adaptive sampling
 
 ## Issue: Noisy Indirect Light or Caustics
 
 Solution:
 - more BSDF samples
-- lower adaptive sampling error_threshold
+- lower `target_adaptive_error` when using adaptive sampling
 
 ## Issue: Render has Fireflies
 
 Solution:
 - turn off caustics
-- lower adaptive sampling error_threshold
+- lower `target_adaptive_error` when using adaptive sampling
 - use sample clamping
 

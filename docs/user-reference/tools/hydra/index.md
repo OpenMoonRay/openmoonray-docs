@@ -15,7 +15,7 @@ The general setup steps needed to use HdMoonRay are described here:
 
 [HdMoonRay Setup](hdmoonray-setup). 
 
-There many be additional steps described in a particular application's documentation.
+There may be additional steps described in a particular application's documentation.
 
 Hydra render plugins provide a list of *render settings*, which you should be able to access through the user interface of the particular application you are using. The settings applicable to HdMoonRay are described here:
 
@@ -25,6 +25,8 @@ HdMoonRay supports almost all of the Hydra features that are applicable to MoonR
 
 [HdMoonRay Features](hdmoonray-features)
 
-Included with HdMoonRay are two command-line applications that apply HdMoonRay to USD data : **hd_render** renders an image from a USD scene, and **hd_usd2rdl** translates a USD scene into MoonRay's native RDL2 format.
+Use OpenUSD's **usdrecord** to render a USD scene through HdMoonRay. The older
+**hd_render** utility is retired and is not built or shipped by the current
+HdMoonRay source.
 
-[hd_render and hd_usd2rdl](hd_render)
+[Command-line workflows](commands)
