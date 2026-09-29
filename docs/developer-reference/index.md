@@ -36,6 +36,4 @@ You can extend MoonRay itself by authoring new **shader** plugins. Instructions 
 
 [Running distributed Arras](arras/distributed-arras)
 
-[Contributing to MoonRay](contributions)
-
 [Coding Standards](coding-standards/index)

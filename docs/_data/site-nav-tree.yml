@@ -610,8 +610,8 @@
             path: developer-reference/arras/arras-client-api.md
           - text: Arras Doxygen Pages
             path: developer-reference/arras/doxygen-pages.md
-      - text: Contributions
-        path: developer-reference/contributions.md
+      # - text: Contributions
+      #  path: developer-reference/contributions.md
       - text: Coding Standards
         path: developer-reference/coding-standards/index.md
         subitems:
