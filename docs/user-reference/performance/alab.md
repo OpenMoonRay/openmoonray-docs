@@ -17,10 +17,13 @@ The page notes ways to optimize rendering for the [ALab Scene]({{ "/getting-star
 
 Netflix Animation Studios ALab Copyright 2025 Netflix, Inc. All rights reserved.
 
+
+<aside class="info-aside">Note: these statistics are based on an older version of MoonRay that did not use mipmaps from USD textures and an older ALab scene that did not ship with mipmapped textures. A 96 GiB texture cache was optimal for the tested scene, settings, and hardware. The newer ALab 2.2.0 scene ships with mipmapped textures, and current MoonRay versions read tiles from suitable mip levels. In one tested configuration, approximately 11 GB of texture cache was sufficient, but the requirement varies with render settings, texture access, OpenImageIO version, and hardware. The bundled <code>alab220/middleQualityUniformHD.rdla</code> scene requests 98,304 MiB (96 GiB), so review that setting for the available memory. The older measurements below remain useful as an illustration; always check the texture statistics in MoonRay's detailed logs.</aside>
+
 ## Texture Cache Size Considerations
 ---
 
-Selecting the proper texture cache size is crucial for efficient rendering of especially texture-heavy scenes like the [ALab Scene]({{ "/getting-started/test-scenes/" | absolute_url }}).  The best configuration will be dependant on the scene itself as well as the machine environment.  A quick general solution to find a good texture cache size for a general `moonray` run is documented [here]({{ "/user-reference/performance/texture-cache-size/#quick-texture-cache-size-setup" | absolute_url }}).
+Selecting the proper texture cache size is crucial for efficient rendering of especially texture-heavy scenes like the [ALab Scene]({{ "/getting-started/test-scenes/" | absolute_url }}).  The best configuration will be dependent on the scene itself as well as the machine environment.  A quick general solution to find a good texture cache size for a general `moonray` run is documented [here]({{ "/user-reference/performance/texture-cache-size/#quick-texture-cache-size-setup" | absolute_url }}).
 
 This is a rendered result image of ALab, v2.0.1 without denoising
 [![alab201]({{ "/assets/images/user-reference/alab/out_txCache096Xpu0.png" | absolute_url }})]({{ "/assets/images/user-reference/alab/out_txCache096Xpu0.png" | absolute_url }})
@@ -28,9 +31,9 @@ This is a rendered result image of ALab, v2.0.1 without denoising
 The texture cache size setting has a large impact on the efficiency of rendering especially texture-heavy scenes like ALab.  What follows are the results of tests profiling the results of MCRT time (not including the RenderPrep time) for various different texture cache sizes on the ALab scene.
 [![Texture Cache Size Performance Difference]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})]({{ "/assets/images/user-reference/alab/texCacheSize.png" | absolute_url }})
 
-All tests are using the vanilla ALab v2.0.1 scene with no optimization of the scene itself) and with 4K high resolution textures and baked geometry. The Linux kernel cache was warmed by a preliminary test render. All tests were rendered 3 times and the results were averaged.
+All tests used the vanilla ALab v2.0.1 scene with no optimization of the scene itself and with 4K high-resolution textures and baked geometry. The Linux kernel cache was warmed by a preliminary test render. All tests were rendered three times and the results were averaged.
 
-All sceneVariable settings are the default, except for image size and uniform sampling related parameters.
+All SceneVariables settings are the default, except for image size and uniform sampling related parameters.
 ```lua
 SceneVariables {
     ["image_width"] = 1920,
@@ -56,8 +59,8 @@ CPU : Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
 Physical CPU : 2
 CPU cores : 24
 Total cores : 48 (HyperThread OFF)
-Memory : 187 GByte (However, test redner was done around 124GByte of free memory)
-GPU : Nvidia Quadro RTX 6000
+Memory : 187 GByte (However, the test render was done with around 124 GByte of free memory)
+GPU : NVIDIA Quadro RTX 6000
 ```
 <aside class="info-aside">The texture main-cache-hit-miss statistic is dependent and varies based on the OpenImageIO version</aside> 
 
@@ -79,7 +82,7 @@ As can be seen, the texturing time is dominant when the texture cache size is sm
 ## Quality Control
 ---
 
-The following sceneVariable settings are a good starting point for low, medium, and high-quality renders for uniform / adaptive sampling based on several recent DreamWorks Animation productions.
+The following SceneVariables settings are a good starting point for low, medium, and high-quality renders for uniform / adaptive sampling based on several recent DreamWorks Animation productions.
 Technically, the ideal parameter combination will likely be different from scene to scene, but these settings should represent reasonable defaults.
 
 ```lua
@@ -295,14 +298,14 @@ High quality adaptive sampling
 ### Render Time Comparison
 The following tests show what is the difference in terms of quality and render time for each quality setting.
 
-The test were run on the following machine specs:
+The tests were run on the following machine specs:
 ```
 CPU : Intel(R) Xeon(R) Gold 6240R CPU @ 2.40GHz
 Physical CPU : 2
 CPU cores : 24
 Total cores : 48 (HyperThread OFF)
-Memory : 187 GByte (However, test render was done with around 124GByte of free memory)
-GPU : Nvidia Quadro RTX 6000
+Memory : 187 GByte (However, the test render was done with around 124 GByte of free memory)
+GPU : NVIDIA Quadro RTX 6000
 ```
 
 Texture cache size is 96GByte.
@@ -323,4 +326,3 @@ Adaptive sampling : MCRT phase (sec)
 |low      | 1021.93|  845.62| 760.17|
 |medium   | 3438.34| 2867.37|2442.24|
 |high     |13132.25|10912.51|9286.71|
-

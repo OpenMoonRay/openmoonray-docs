@@ -1,2 +1,3 @@
-**UsdInstance** instances geometry from it's *references* attribute onto the specified USD
-[PointInstancer](https://github.com/PixarAnimationStudios/USD/wiki/PointInstancer-Object-Model) object.
+**UsdInstanceGeometry** uses the selected USD
+[PointInstancer](https://github.com/PixarAnimationStudios/USD/wiki/PointInstancer-Object-Model) to
+drive instances of the MoonRay geometries in its *references* attribute.

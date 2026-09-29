@@ -63,10 +63,11 @@ Options:
 
     -exec_mode mode
         Choose a specific mode of execution. Valid options are:
-        scalar - run in scalar mode (default).
-        vector - always run vectorized regardless if volumes are found.
+        scalar - run in scalar mode.
+        vector - run in vectorized mode (also accepted as "vectorized").
         xpu    - run in xpu mode.
-        auto   - attempt to run vectorized but fall back to scalar if volumes are found.
+        auto   - attempt XPU, then vectorized, then scalar if features are unsupported
+                 (default).
 
     -sub_viewport l b r t
     -sub_vp       l b r t
@@ -87,17 +88,6 @@ Options:
     -fast_geometry_update
         Turn on supporting fast geometry update for animation.
 
-    -record_rays .raydb/.mm
-        Save ray database or mm for later debugging.
-
-    -primary_range 0 [0]
-        Start and end range of primary ray(s) to debug. Only active with
-        -record_rays.
-
-    -depth_range 0 [0]
-        Start and end range of ray depths to debug. Only active with
-        -record_rays.
-
     -rdla_set "var name" "expression"
         Sets a global variable in the Lua interpreter before any RDLA is
         executed.
@@ -116,6 +106,10 @@ Options:
 
     -debug
         Enable debug level logging on stdout.
+
+    -print_bsdf x y
+        Print the BSDF configuration for materials shaded while rendering one
+        pixel for debugging.
 
     -stats filename.csv
         Enable logging of statistics to a formatted file.
@@ -136,6 +130,11 @@ Options:
 ```
 
 Below is more information on the some of the most commonly used options and workflows.
+
+`-print_bsdf x y` also overrides the debug pixel, sets `max_depth` to 0,
+`pixel_samples` and `bsdf_samples` to 1, selects sampling mode 0, and runs with
+one render thread. BSDF details are printed to standard output when a material
+is shaded at that pixel.
 
 ### Affinity control (CPU and Memory)
 See the [Affinity control](../../how-to-guides/affinity-control/) page for more info.
@@ -230,4 +229,3 @@ SphereGeometry("sphere") {
 ```bash
 $ moonray -in sphere.rdla -rdla_set "my_radius" "42"
 ```
-

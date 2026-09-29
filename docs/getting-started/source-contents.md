@@ -6,11 +6,11 @@ title: What's Included?
 The open source release contains the following pieces of technology:
 
 - [MoonRay]({{ "/getting-started/about/moonray" | absolute_url }}): path-tracing renderer
-- [Scene Object Classes]({{ "/user-reference/scene-objects" | absolute_url }}): (materials, geometry, lights, cameras, etc) used at Dreamworks Animation (about 150 in total)
+- [Scene Object Classes]({{ "/user-reference/scene-objects" | absolute_url }}): materials, geometry, lights, cameras, and other renderer plug-ins
 - [HdMoonRay]({{ "/user-reference/tools/hydra" | absolute_url }}): the hydra plugin for MoonRay
 - [Arras]({{ "/getting-started/about/arras/" | absolute_url }}): execution and distribution framework, used to integrate MoonRay into applications as well as provide multi-machine rendering
 
-The source is contained in multiple Git repositories. The **openmoonray** repository contains the top-level CMake build files, and uses submodules to link in all the others. The zipped source release is the **openmoonray** repository with the submodules filled in.
+The source is contained in multiple Git repositories. The **openmoonray** repository contains the top-level CMake build files and uses submodules to link in the other repositories. The zipped source release is the **openmoonray** repository with the submodules filled in.
 
 ## MoonRay
 
@@ -18,48 +18,47 @@ Three Git repositories make up the main source of MoonRay, providing the command
 
 - **scene_rdl2** provides the [RDL2 scene description format]({{ "/getting-started/about/rdl-scene-format" | absolute_url }}) used by MoonRay. The in-memory format is called `SceneContext`. **scene_rdl2** can read and write SceneContexts in two file formats: RDLA and RDLB.
 - **mcrt_denoise** contains the implementation of the MoonRay denoiser.
-- **moonray** is the main implemention of the renderer, and depends on the previous two repositories.
+- **moonray** is the main implementation of the renderer, and depends on the previous two repositories.
 
 **moonray_gui** contains an interactive Qt application that performs a render and displays the frame buffer as the render progresses.
 
+The **materialx_shaders** repository provides optional MaterialX shader plug-ins.
+
+The **moonray_dcc_plugins** repository contains integration files for digital
+content creation applications. Its current `houdini` tree provides Houdini
+digital assets, Python packages, and SOHO integration scripts.
+
+The **render_profile_viewer** repository contains the Python application used to
+inspect MoonRay render profile data, plus its launcher, documentation, and
+tests.
+
 ## Scene classes
 
-The **moonray** repository contains a basic set of of scene class plugins for use with MoonRay. The **moonshine** repository contains an additional set of scene classes. 
+The **moonray** repository contains core scene-object plug-ins, **moonshine** provides additional scene-object plug-ins, and **moonshine_usd** provides USD geometry plug-ins. The source also includes optional MaterialX map shaders. For the current class inventory, see the [Scene Object Classes reference]({{ "/user-reference/scene-objects" | absolute_url }}), which is generated from the plug-in definitions.
 
+The default build contains the following 166 non-test DSO scene classes. These
+are the exact class names declared by the current `moonray`, `moonshine`, and
+`moonshine_usd` CMake projects. Test-only classes and the optional
+MaterialX-generated `ND_*` map classes are not included.
 
-
-| |
-|------|
-|**Camera** | 
-| Bake, DomeMaster3D, Orthographic, Perspective, Spherical |
-|**Displacement**| 
-| Combine, Normal, Vector, Switch |
-|**Display filter**|
-| Blend, Constant, Halftone, Ramp, Shadow, Clamp, Convolution, Image, Remap, TangentSpace, Discretize, Op, RgbToFloat, Toon, ColorCorrect, Dof, Over, RgbToHsv |
-|**Geometry**| 
-| OpenVdb, RdlCurve, RdlInstancer, RdlMesh, RdlPoint, Box, Sphere, Template |
-|**Light**| 
-|Cylinder, Disk, Distant, Env, Mesh, Rect, Sphere, Spot |
-|**Light Filter**| 
-|BarnDoor, ColorRamp, Cookie, Intensity, Vdb, Combine, Decay, Rod |
-|**Map**| 
-| Attribute, Debug, List, UsdPrimvarReader_float2, UsdPrimvarReader_point, UsdUVTexture, Checkerboard, ExtraAov, OpenVdb, UsdPrimvarReader_float3, UsdPrimvarReader_vector, Image, UsdPrimvarReader_float, UsdPrimvarReader_int, UsdTransform2d, AxisAngle, ColorCorrectLegacy, Directional, LOD, ProjectSpherical, SwitchColor, Blend, ColorCorrect, FloatToRgb, Noise, ProjectTriplanar, SwitchFloat, Clamp, ColorCorrectNuke, Gradient, NoiseWorley, ProjectTriplanarUdim, Template, ColorCorrectSaturation, HairColorPresets, NormalToRgb, Ramp, Toon, ColorCorrectContrast, ColorCorrectTMI, HairColumn, Op, Random, TransformNormal, ColorCorrectGainOffset, ConstantColor, Hair, OpSqrt, Remap, TransformSpace, ColorCorrectGamma, ConstantScalar, HsvToRgb, ProjectCamera, RgbToFloat, UVTransform, ColorCorrectHsv, Curvature, Layer, ProjectCylindrical, RgbToHsv, Wireframe, ColorCorrectHueShift, Deformation, LcToRgb, ProjectPlanar, RgbToLab |
-|**Normal Map**| 
-| Distort,  ProjectCamera,  ProjectTriplanar, RgbToNormal, UsdPrimvarReader_normal, Combine, Image, ProjectPlanar,  Random, Switch |
-|**Material**| 
-| Axf, Base, Measured, RaySwitch, Switch, UsdPreviewSurface, *DwaColorCorrect,  DwaLayer,  DwaRefractive, DwaSwitch, GlitterFlake, HairDiffuse, Toon, HairToon, DwaAdjust, DwaEmissive, DwaMetal, DwaSkin, DwaTwoSided, Hair, HairLayer, DwaBase, DwaFabric, DwaMix, DwaSolidDielectric, DwaVelvet, HairColorCorrect, MacroFlake |
-|**Volume**| 
-| Base, Cutout |
-
-
-The **moonshine_usd** repository contains two geometry classes : Usd and UsdInstance. 
+| Scene-object type | Classes |
+|-------------------|---------|
+| [Camera]({{ "/user-reference/scene-objects/cameras" | absolute_url }}) | `BakeCamera`, `DomeMaster3DCamera`, `FisheyeCamera`, `OrthographicCamera`, `PerspectiveCamera`, `SphericalCamera` |
+| Displacement | `CombineDisplacement`, `NormalDisplacement`, `SwitchDisplacement`, `VectorDisplacement` |
+| [Display filter]({{ "/user-reference/scene-objects/display-filters" | absolute_url }}) | `BlendDisplayFilter`, `ClampDisplayFilter`, `ColorCorrectDisplayFilter`, `ConstantDisplayFilter`, `ContactSheetDisplayFilter`, `ConvolutionDisplayFilter`, `DiscretizeDisplayFilter`, `DofDisplayFilter`, `HalftoneDisplayFilter`, `ImageDisplayFilter`, `OpDisplayFilter`, `OverDisplayFilter`, `RampDisplayFilter`, `RemapDisplayFilter`, `RgbToFloatDisplayFilter`, `RgbToHsvDisplayFilter`, `ShadowDisplayFilter`, `TangentSpaceDisplayFilter`, `ToonDisplayFilter` |
+| [Geometry]({{ "/user-reference/scene-objects/geometry" | absolute_url }}) | `BoxGeometry`, `RdlCurveGeometry`, `RdlInstancerGeometry`, `RdlMeshGeometry`, `RdlPointGeometry`, `SphereGeometry`, `TemplateGeometry`, `UsdGeometry`, `UsdInstanceGeometry`, `VdbGeometry` |
+| [Light]({{ "/user-reference/scene-objects/lights" | absolute_url }}) | `CylinderLight`, `DiskLight`, `DistantLight`, `EnvLight`, `MeshLight`, `PortalLight`, `RectLight`, `SphereLight`, `SpotLight` |
+| [Light filter]({{ "/user-reference/scene-objects/light-filters" | absolute_url }}) | `BarnDoorLightFilter`, `ColorRampLightFilter`, `CombineLightFilter`, `CookieLightFilter`, `CookieLightFilter_v2`, `DecayLightFilter`, `IntensityLightFilter`, `RodLightFilter`, `VdbLightFilter` |
+| [Map]({{ "/user-reference/scene-objects/maps" | absolute_url }}) | `AttributeMap`, `AxisAngleMap`, `BlendMap`, `CheckerboardMap`, `ClampMap`, `ColorCorrectContrastMap`, `ColorCorrectGainOffsetMap`, `ColorCorrectGammaMap`, `ColorCorrectHsvMap`, `ColorCorrectHueShiftMap`, `ColorCorrectLegacyMap`, `ColorCorrectMap`, `ColorCorrectSaturationMap`, `ColorCorrectTMIMap`, `ConstantColorMap`, `ConstantScalarMap`, `CurvatureMap`, `DebugMap`, `DeformationMap`, `DirectionalMap`, `ExtraAovMap`, `FloatToRgbMap`, `GradientMap`, `HairColorPresetsMap`, `HairColumnMap`, `HairMap`, `HsvToRgbMap`, `ImageMap`, `LayerMap`, `LayerMap_v2`, `ListMap`, `LODMap`, `MultiChannelToFloatMap`, `NoiseMap_v2`, `NoiseWorleyMap_v2`, `NoiseWorleyMap_v3`, `NormalToRgbMap`, `OpMap`, `OpSqrtMap`, `OpenVdbMap`, `OpenVdbMap_v2`, `ProjectCameraMap`, `ProjectCameraMap_v2`, `ProjectCylindricalMap`, `ProjectPlanarMap`, `ProjectSphericalMap`, `ProjectTriplanarMap`, `ProjectTriplanarMap_v2`, `ProjectTriplanarUdimMap`, `RampMap`, `RandomMap`, `RemapMap`, `RgbToFloatMap`, `RgbToHsvMap`, `RgbToLabMap`, `SwitchColorMap`, `SwitchFloatMap`, `TemplateMap`, `ToonMap`, `TransformNormalMap`, `TransformSpaceMap`, `TwoSidedMap`, `UsdPrimvarReader_float`, `UsdPrimvarReader_float2`, `UsdPrimvarReader_float3`, `UsdPrimvarReader_int`, `UsdPrimvarReader_point`, `UsdPrimvarReader_vector`, `UsdTransform2d`, `UsdUVTexture`, `UVTransformMap`, `WireframeMap` |
+| [Normal map]({{ "/user-reference/scene-objects/normal-maps" | absolute_url }}) | `CombineNormalMap`, `DistortNormalMap`, `ImageNormalMap`, `ProjectCameraNormalMap`, `ProjectPlanarNormalMap`, `ProjectTriplanarNormalMap`, `ProjectTriplanarNormalMap_v2`, `RandomNormalMap`, `RgbToNormalMap`, `SwitchNormalMap`, `UsdPrimvarReader_normal` |
+| [Material]({{ "/user-reference/scene-objects/materials" | absolute_url }}) | `DwaAdjustMaterial`, `DwaBaseMaterial`, `DwaColorCorrectMaterial`, `DwaEmissiveMaterial`, `DwaFabricMaterial`, `DwaLayerMaterial`, `DwaMetalMaterial`, `DwaMixMaterial`, `DwaRefractiveMaterial`, `DwaSkinMaterial`, `DwaSolidDielectricMaterial`, `DwaSwitchMaterial`, `DwaToonMaterial`, `DwaTwoSidedMaterial`, `DwaVelvetMaterial_v2`, `HairColorCorrectMaterial`, `HairDiffuseMaterial`, `HairLayerMaterial`, `HairMaterial_v3`, `HairToonMaterial`, `RaySwitchMaterial`, `SwitchMaterial`, `UsdPreviewSurface` |
+| [Volume]({{ "/user-reference/scene-objects/volumes" | absolute_url }}) | `BaseVolume`, `CutoutVolume`, `VdbVolume` |
 
 ## HdMoonRay Hydra Plugin
 
-The **hdMoonRay** repository contains the MoonRay Hydra render delegate plugin and several *adapter* plugins for the USD scene delegate. The adapter plugins are needed to work around missing support in earlier versions of the USD scene delegate, and should no longer be necessary as Hydra evolves.
+The **hdMoonRay** repository contains the MoonRay Hydra render delegate plugin and *adapter* plugins for the USD scene delegate, including adapters for geometry lights and light filters.
 
-The MoonRay material and map shader classes need to be registered with the USD SDR library to use MoonRay material networks. This is done with two plugins in **moonray_sdr_plugins**. These plugins read JSON descriptions of the shaders from `MOONRAY_CLASS_PATH`. 
-The JSON files are not built by the MoonRay *cmake* system : you will need to generate them using the `rdl2_json_exporter` program before using HdMoonRay for the first time.
+The MoonRay material and map shader classes need to be registered with the USD SDR library to use MoonRay material networks. This is done with two plugins in **moonray_sdr_plugins**. These plugins read JSON descriptions of the shaders from `MOONRAY_CLASS_PATH`. The install's `scripts/setup.sh` creates these JSON descriptions with `rdl2_json_exporter` if they are missing.
 
 HdMoonRay requires Arras to build and run.
 
@@ -84,5 +83,10 @@ The **arras/distributed** directory holds the components needed to run distribut
 [**arras_render**](../../user-reference/tools/arras_render) is a GUI tool to execute Arras renders,
 and provides an example of Arras integration.
 
+## Render acceptance tests
 
-
+The **rats** repository contains the Render Acceptance Test Suite used to detect
+visual regressions by rendering small scenes and comparing the results with
+canonical images. Its `tests` tree contains MoonRay and `hd_render` test scenes,
+`assets` contains Git LFS-managed test data, and `cmake` contains the CTest
+support used to generate render, comparison, and canonical-update tests.

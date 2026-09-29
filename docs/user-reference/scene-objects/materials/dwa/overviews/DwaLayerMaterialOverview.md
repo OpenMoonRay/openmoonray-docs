@@ -8,4 +8,4 @@ As an example, if inputs material_A and material_B each have a specular lobe wit
 
 There are a handful of attributes that cannot be blended, and for those the DwaLayerMaterial provides _fallback_ attributes which really act as overrides for setting the attribute for the resulting layered material. 
 
-Lobe order or layering is not changed by the input order, as all lobes respect the ordering described in [Dwa Materials.]({{ "/user-reference/scene-objects/materials/dwa" | absolute_url }}) For example, you cannot use LayerMaterial to render a specular lobe atop a fuzz lobe.
+Lobe order or layering is not changed by the input order, as all lobes respect the ordering described in [Dwa Materials.]({{ "/user-reference/scene-objects/materials/dwa" | absolute_url }}) For example, you cannot use DwaLayerMaterial to render a specular lobe atop a fuzz lobe.

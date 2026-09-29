@@ -42,7 +42,7 @@ Using the DwaAdjustMaterial, we can adjust the presence on each sphere in the sc
  ```lua
 sphere = SphereGeometry("/scene/geometry/sphere") {}
 
-example_attr = UserData("example_attr) {
+example_attr = UserData("example_attr") {
     ["float_key"] = "presence_set",
     ["float_values_0"] = {1.000, 0.875, 0.750,
                           0.625, 0.500, 0.375,

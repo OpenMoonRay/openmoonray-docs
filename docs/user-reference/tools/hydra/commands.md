@@ -3,135 +3,63 @@ title: Commands
 ---
 # Commands
 
-## hd_render
+## usdrecord
 
-The HdMoonRay project includes a command-line program, **hd_render** that performs Hydra renders from a USD scene file.
-**hd_render** can use any Hydra render delegate except for Storm (the Pixar openGl renderer).  This limitation is because
-Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for **hd_render**.
+[`usdrecord`](https://openusd.org/release/toolset.html#usdrecord) is the supported
+command-line application for rendering a USD stage through HdMoonRay. It is
+installed with OpenUSD, not MoonRay. After setting up the MoonRay Hydra plugin,
+select the delegate by its displayed name:
 
-```
-hd_render [Flags]
-
--h|-help
-    Print this message.
-
-Required:
--in scene.usd{a}
-    Input USD scene data.
-
--out scene.exr
-    Output image name and type.
-
-Optional:
--aov color
-    Name or aov (color, depth, normal, etc...)
-
--camera <CAMERA_NAME>
-    Name of the rendering camera.  If not specified, a default
-    camera is created that frames the scene geometry.
-
--sampling_camera <CAMERA_NAME>
-     Use this cameras shutter:open and shutter:close to
-     define the motion blur sample steps
-
--renderer MoonRay
-    Which hydra render delegate plugin to use.
-    Use '-renderer' to see a list of available renderers.
-
--delta_in <DELTA>.usd
-    After finishing the main render, apply the contents of
-    <DELTA>.usd to the scene and re-render the result into
-    the file specified with the -delta_out option.
-
--delta_out <DELTA>.exr
-    Specifies the output delta file.
-
--delta_set <SETTING> <VALUE>
-    After finishing the main render, apply this render setting
-    and re-render the result into the file specified with the -delta_out option.  This option can appear multiple times.
-
--purpose <PURPOSE>
-    Specifies a UsdGeomImageable purpose to include in the   render. <PURPOSE> can be one of 'render', 'proxy', or 'guide'.  This option can appear multiple times in order to select multiple purposes. The 'default' purpose is implicity set.
-
--refine-level <N>
-    Set geometry refine level fallback to N. Tessellation rate is 2^N. 0 disables subdivision, 1 is the default.
-
--res 1.0
-    Resolution divisor for frame dimensions.
-
--set <SETTING> <VALUE>.
-    Sets the render setting <SETTING> to <VALUE>.  This
-    option can appear multiple times. Use '-set' to see a list of available settings.
-
--size 1920 1080
-    Canonical frame width and height (in pixels).
-
--time <FRAME>
-    Set timecode (i.e. frame) to render at. If not set, uses the special value 'Earliest' (see pxr::UsdTimeCode)
-
--timing [<file>]
-    Write elapsed time in seconds for each step to the given file in simple text format. If no file is specified, write timing to stdout
-
--trace <STEPNAME> [<FILE>]
-    Use the Pixar trace library to trace function calls for the given step. Supported step names are: load_plugin, open_stage, populate, render, open_delta_stage and delta_render. Writes log to the specified file, or to /tmp/trace_<STEPNAME> if no file is specified. Can appear multiple times
+```bash
+usdrecord --renderer Moonray scene.usda image.exr
 ```
 
-To see a list of all [settings]({{ "/user-reference/tools/hydra/render-settings" | absolute_url }}):
+The renderer choices are discovered from the Hydra plugins available in the
+current environment. Run `usdrecord --help` to see the choices and options
+provided by the installed OpenUSD version.
+
+Useful OpenUSD options include:
+
+- `--camera CAMERA` (or `-cam`) selects a camera by prim name or full prim path.
+- `--imageWidth WIDTH` (or `-w`) sets the output width; the camera aspect ratio
+  determines the height.
+- `--complexity {low,medium,high,veryhigh}` (or `-c`) sets Hydra refinement
+  complexity.
+- `--purposes PURPOSE[,PURPOSE...]` includes additional imageable purposes;
+  `default` is always included and the default additional purpose is `proxy`.
+- `--disableCameraLight` disables the default camera light.
+- `--frames FRAMESPEC` (or `-f`) renders a frame or range. For a range, the
+  output filename must contain one frame placeholder such as `####`.
+- `--renderSettingsPrimPath PATH` (or `-rs`) selects a `RenderSettings` prim.
+
+For example:
+
+```bash
+usdrecord -r Moonray -cam /World/camera -w 1920 \
+    --disableCameraLight scene.usda image.exr
+
+usdrecord -r Moonray -f 1001:1010 scene.usda 'image.####.exr'
 ```
-hd_render -set
+
+The current MoonRay source also uses `usdrecord` to capture the RDL2 scene
+assembled by HdMoonRay. Set `HDMOONRAY_RDLA_OUTPUT` to the desired RDL output
+and disable rendering:
+
+```bash
+HDMOONRAY_DISABLE_RENDER=1 \
+HDMOONRAY_RDLA_OUTPUT=scene.rdla \
+HDMOONRAY_SIMPLIFY_PATHS=1 \
+USDIMAGINGGL_ENGINE_ENABLE_SCENE_INDEX=1 \
+usdrecord -r Moonray -c medium --disableCameraLight scene.usda unused.exr
 ```
 
-For example, to enable verbose output, enable the *info* setting:
-```
-hd_render -set info 1
-```
+`usdrecord` still opens and processes the stage through MoonRay, but HdMoonRay
+writes the RDL2 snapshot instead of rendering the requested image. See
+[HdMoonRay setup](hdmoonray-setup) and [render settings](render-settings).
 
-Note that [scene variables]({{"/user-reference/scene-objects/scene-variables/SceneVariables" | absolute_url}})
-can also be customized using the -set flag.  For example, to set a custom *pixel_samples* value:
-```
--set sceneVariable:pixel_samples 10
-```
+## hd_render (retired)
 
-## hd_usd2rdl
-
-**hd_usd2rdl** uses HdMoonRay to translate a USD scene to RDL2, but then outputs the RDL2 data to a file rather than rendering it.
-
-```
-hd_usd2rdl [Flags]
-
--h|-help
-    Print this message.
-
-Required:
--in scene.usd{a}
-    Input USD scene data.
-
--out scene.rdl[a|b]
-    Output RDL file. Extension (.rdla or .rdlb) determines type. If you specify a filename with no extension, both .rdla and .rdlb will be output, with large array attributes placed in the .rdlb and everything else in the .rdla
-
-Optional:
-
--camera <CAMERA_NAME>
-    Name of the rendering camera.  If not specified, a default
-    camera is created that frames the scene geometry.
-
--purpose <PURPOSE>
-    Specifies a UsdGeomImageable purpose to include in the render. <PURPOSE> can be one of 'render', 'proxy', or 'guide'.  This option can appear multiple times in order to select multiple purposes. The 'default' purpose is implicity set.
-
--refine-level <N>
-    Set geometry refine level fallback to N. Tessellation rate is 2^N. 0 disables subdivision, 1 is the default.
-
--res 1.0
-    Resolution divisor for frame dimensions.
-
--set <SETTING> <VALUE>.
-    Sets the render setting <SETTING> to <VALUE>.  This
-    option can appear multiple times. Use '-set' to see a list of available settings.
-
--size 1920 1080
-    Canonical frame width and height (in pixels).
-
--time <FRAME>
-    Set timecode (i.e. frame) to render at. If not set, uses the special value 'Earliest' (see pxr::UsdTimeCode)
-
-```
+`hd_render` is retired and is not built or shipped by the current HdMoonRay
+source. Older releases and tests may still refer to it; use `usdrecord` for
+current command-line Hydra rendering. Options formerly accepted by
+`hd_render`, such as `-in`, `-out`, and `-set`, are not `usdrecord` options.

@@ -34,10 +34,10 @@ These functions automatically determine the file type (RDLA or RDLB) from the ex
 Each `SceneObject` has a unique name, which you can use to access it:
 
 ```cpp
-SceneObject* shot_camera = context.getObject("shot_camera");
+SceneObject* shot_camera = context.getSceneObject("shot_camera");
 ```
 
-If the requested object doesn't exist, `getObject` will throw `except::KeyError`. You can check for existence with `bool sceneObjectExists(const std::string& name)`. Iterate through all `SceneObject`s like this:
+If the requested object doesn't exist, `getSceneObject` will throw `except::KeyError`. You can check for existence with `context.sceneObjectExists(name)`. Iterate through all `SceneObject`s like this:
 
 ```cpp
 for (auto iter = context.beginSceneObject(); 
@@ -385,4 +385,3 @@ You can also define attribute groups : these are used by applications to organis
 sceneClass.setGroup("Frustum", attrFocalKey);
 sceneClass.setGroup("Stereo", attrStereoView);
 ```
-
