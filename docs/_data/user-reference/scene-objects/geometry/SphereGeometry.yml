@@ -11,3 +11,7 @@ attributes:
   phi_max:
     videos:
       - video: phi_max.mp4
+  shadow_ray_epsilon_falloff:
+    videos:
+      - video: ../sreFalloffWedge.mp4
+        text: "shadow_ray_epsilon_falloff [0, 1]"

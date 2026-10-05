@@ -5,3 +5,17 @@ image_path: /assets/images/user-reference/scene-objects/lights/DiskLight
 gallery:
   - image: DiskLight.png
     text: DiskLight example
+
+attributes:
+  min_shadow_distance_falloff:
+    videos:
+      - video: ../minSDFalloffWedge.mp4
+        text: "min_shadow_distance_falloff [0, 1]"
+  max_shadow_distance_falloff:
+    videos:
+      - video: ../maxSDFalloffWedge.mp4
+        text: "max_shadow_distance_falloff [0, 1]"
+  clear_radius_falloff:
+    videos:
+      - video: ../clearRadFalloffWedge.mp4
+        text: "clear_radius_falloff [0, 1]"
