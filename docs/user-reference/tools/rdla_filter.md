@@ -3,7 +3,7 @@ title: rdla_filter
 ---
 # rdla_filter
 
-rdla_filter is a command line tool that parses an rdla file using various options and writes out a new one.   Its main use is in debugging complex scenes where it can be used to reduce the scene to a minimal reproducable case of a bug.
+rdla_filter is a command line tool that parses an rdla file using various options and writes out a new one. Its main use is in debugging complex scenes where it can be used to reduce the scene to a minimal reproducible case of a bug.
 
 ## Command-line options
 Use the _-h_ flag to display the full list of command-line options.
@@ -31,7 +31,24 @@ Options:
                         the names of the geometry objects assigned in the
                         Layer of the input rdla file.  The full path can be
                         used, just a portion of it, or a regular expression
-                        which could match multiple objects.
+                        which could match multiple objects. Mutually exclusive
+                        with --assets-to-delete and --binary-split.
+  --assets-to-delete=ASSETSTODELETE
+                        Space separated list of asset names to remove. Use
+                        quotes for multiple assets. Names may be full paths,
+                        partial paths, or regular expressions and may match
+                        multiple objects. All other assets are kept.
+                        Mutually exclusive with --assets-to-keep and
+                        --binary-split.
+  --exclude-geometry-classes=EXCLUDEGEOMETRYCLASSES
+                        Space separated list of exact geometry class names to
+                        exclude, along with geometry nodes and materials/maps
+                        used only by those assignments. Mutually exclusive
+                        with --include-geometry-classes.
+  --include-geometry-classes=INCLUDEGEOMETRYCLASSES
+                        Keep only assignments whose geometry class exactly
+                        matches one of the listed names. Mutually exclusive
+                        with --exclude-geometry-classes.
   --binary-split=BINARYSPLIT
                         Keep only half of the layer assignments.  A value of 0
                         keeps the first half and a value of 1 keeps the second

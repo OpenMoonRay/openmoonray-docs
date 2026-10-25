@@ -57,7 +57,7 @@ title: RampDisplayFilter
     <p class="scene-class-type">
       <b>IntVector</b>
       <br>
-      default: {}
+      default: [ 0, 0, 0, 0 ]
       <p class="scene-class-comments">List of ramp interpolations.</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.interpolations.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.interpolations.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
@@ -67,7 +67,7 @@ title: RampDisplayFilter
     <p class="scene-class-type">
       <b>FloatVector</b>
       <br>
-      default: {}
+      default: [ 0, 0.25, 0.75, 1 ]
       <p class="scene-class-comments">List of ramp positions</p>
       {%-include image-gallery.html images=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.positions.images data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}
       {%-include video-gallery.html videos=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter.attributes.positions.videos data=site.data.user-reference.scene-objects.display-filters.RampDisplayFilter-%}

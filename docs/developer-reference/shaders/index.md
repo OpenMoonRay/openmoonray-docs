@@ -2,9 +2,9 @@
 title: Writing Shaders
 ---
 # Writing Shaders
-This page covers some general information about writing plug-ins (aka. _shaders_, _DSO's_, _procedurals_)
-for MoonRay. At the time of this writing, MoonRay includes about 163 plug-ins, (see [scene-objects]({{ "/user-reference/scene-objects" | absolute_url }}))
-but additional plug-ins can be authored to extend MoonRay's functionality.
+This page covers general information about writing plug-ins (also called _shaders_, _DSOs_, or _procedurals_)
+for MoonRay. The current built-in plug-in catalog is listed in the [scene-object reference]({{ "/user-reference/scene-objects" | absolute_url }}),
+and additional plug-ins can be authored to extend MoonRay's functionality.
 
 Probably the best way to quickly understand what is required to write a new plug-in of a given
 type is to have a look at the source code for existing plug-ins of that type. This page covers some
@@ -13,9 +13,10 @@ for type-specific information.
 
 The [_moonray_](https://github.com/OpenMoonRay/moonray/tree/main/dso),
 [_moonshine_](https://github.com/OpenMoonRay/moonshine/tree/main/dso) and
-[_moonshine_usd_](https://github.com/OpenMoonRay/moonshine_usd/tree/main/dso) repositories all
-contain various plug-ins which can be referenced as examples and provide more information than can be
-conveyed in this document.
+[_moonshine_usd_](https://github.com/OpenMoonRay/moonshine_usd/tree/main/dso) repositories contain
+plug-ins that can be referenced as examples. The optional `materialx_shaders` repository also provides
+MaterialX map plug-ins. Paths in this guide are relative to the corresponding source repository (for
+example, the MoonRay DSOs are in `moonray/moonray/dso` relative to an `openmoonray` checkout).
 
 ----
 ## Plug-in Types

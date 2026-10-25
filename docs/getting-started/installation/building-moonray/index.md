@@ -3,16 +3,10 @@ title: Building MoonRay
 ---
 # Building MoonRay
 
-Start with reading the [general build instructions](general_build)
+MoonRay builds on Rocky Linux 9 and Apple silicon macOS. The build documentation is maintained with the source code so that instructions and supported configurations stay synchronized with each release:
 
-We also provide more concrete examples of the building process:
-
-[Building on Rocky Linux 9](rocky9_build)
-
-[Building in a Rocky Linux 9 Container](rocky9_container_build)
-
-[Building on macOS](macOS_build)
-
-These examples make some arbitrary choices, for example the location of the cloned source, which you can change if you need to. Refer to the general instructions for more information on the possible variations.
-
-
+- [General build instructions](https://github.com/OpenMoonRay/openmoonray/blob/main/building/general_build.md)
+- [Building on Rocky Linux 9](https://github.com/OpenMoonRay/openmoonray/blob/main/building/Rocky9/rocky9_build.md)
+- [Building in a Rocky Linux 9 container](https://github.com/OpenMoonRay/openmoonray/blob/main/building/Rocky9/rocky9_container_build.md)
+- [Building on macOS](https://github.com/OpenMoonRay/openmoonray/blob/main/building/macOS/macOS_build.md)
+- [Source repository dependencies](https://github.com/OpenMoonRay/openmoonray/blob/main/building/repo_deps.md)

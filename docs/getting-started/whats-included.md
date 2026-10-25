@@ -42,7 +42,8 @@ Apart from a few built-in classes, MoonRay scene objects are implemented as shar
 
  The **houdini** directory contains some configuration files for running HdMoonRay inside Houdini.
 
-`hd_render` is a simple command that renders USD scenes using Hydra.
+OpenUSD's `usdrecord` command can render USD scenes through HdMoonRay. The
+former `hd_render` utility is retired and is not built by the current source.
 
 ## RDL2 Utilities
 
@@ -58,9 +59,9 @@ rdl2_convert <inputfile> <outputfile>
 
 `rdl2_print` has two functions :
 
-- `rdl2_print <classname>` lists the attribute of the given scene object class, together with type and defaults. For example, `rdl2_print PerspectiveCamera`.
+- `rdl2_print -c <classname>` lists the attributes of the given scene object class, together with their types and defaults. For example, `rdl2_print -c PerspectiveCamera`.
 
-- `rdl2_print <rdl_file>` prints out the objects in the given file.
+- `rdl2_print -f <rdl_file>` prints out the objects in the given file.
 
 - `rdl2_print --help` lists some additional options.
 

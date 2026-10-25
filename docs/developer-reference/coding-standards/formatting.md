@@ -21,7 +21,7 @@ to group those parameters on the same line.
 * If a conditional expression must be split across multiple lines, indent new lines to line up with the first character
 following the opening parenthesis.
 
-* Include the standard copyright notice at the top of all files:
+* Follow the target repository's copyright and license-header requirements at the top of new files. For example:
 ```c++
 // Copyright 2023-2025 DreamWorks Animation LLC
 // SPDX-License-Identifier: Apache-2.0
@@ -185,4 +185,3 @@ if a programmer tries to place additional statements in the body. e.g.
 if (a <= maxPermittedValue)
     processSomeThing(a);  // WRONG!
 ```
-

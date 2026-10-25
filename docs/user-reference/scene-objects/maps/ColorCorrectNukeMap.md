@@ -8,6 +8,13 @@ title: ColorCorrectNukeMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectNukeMap
+> **Historical reference only.** The current MoonRay source no longer defines a `ColorCorrectNukeMap`
+> scene class. Its attribute table below documents the retired interface. Use
+> [ColorCorrectMap]({{ "/user-reference/scene-objects/maps/ColorCorrectMap" | absolute_url }}) as the
+> replacement for current color-correction workflows, but note that it is not attribute-compatible
+> with `ColorCorrectNukeMap`. Existing configurations must be migrated rather than simply changing
+> the scene class name.
+
 {%-include overview.html data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
 {%-include image-gallery.html images=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.gallery data=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap-%}
 {%-include see-also.html links=site.data.user-reference.scene-objects.maps.ColorCorrectNukeMap.links-%}

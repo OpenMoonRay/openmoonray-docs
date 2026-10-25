@@ -9,7 +9,7 @@ HdMoonRay needs a number of environment variables set to function. It also needs
 
 ```bash
 # tells MoonRay where to find shader dsos
-export RDL2_DSO_PATH=$REL/rdl2dso.proxy:${rel_rool}/rdl2dso
+export RDL2_DSO_PATH=$REL/rdl2dso.proxy:$REL/rdl2dso
 # only need to run this once for a MoonRay build
 $REL/bin/rdl2_json_exporter --out $REL/shader_json/ --sparse
 # tells the Sdr plugins where to find the shader descriptions
@@ -33,11 +33,12 @@ export MOONRAY_CLASS_PATH=/tmp/shader_json
 export PXR_PLUGIN_PATH=/baked_packages/packages/remaining/openmoonray/1.0.0.9999/ext/plugin/pxr/usd:${PXR_PLUGIN_PATH}
 ```
 
-You should then be able to render USD scenes with hd_render:
+You should then be able to render USD scenes with OpenUSD's `usdrecord`:
 
 ```bash
-hd_render -in scene.usd -out image.exr
+usdrecord -r Moonray scene.usd image.exr
 ```
 
-You may see warnings that Python modules corresponding to the hdMoonRay plugins cannot be found. This should not cause any problem in the render.
-
+Run `usdrecord --help` to confirm that `Moonray` appears in the available
+renderer list. If it does not, check `PXR_PLUGINPATH_NAME` and verify that
+`usdrecord` uses an OpenUSD build that is binary-compatible with HdMoonRay.

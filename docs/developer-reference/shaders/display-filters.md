@@ -2,7 +2,7 @@
 title: Writing Display Filters
 ---
 # Writing Display Filters
-This page covers how to author a new Display Filter using our plugin API. MoonRay currently contains 18 [display filters]({{ "/user-reference/scene-objects/display-filters/" | absolute_url }}), which themselves can be chained together to achieve new effects. You can find the code for our existing display filter plugins in the [moonshine](https://github.com/OpenMoonRay/moonshine/tree/main/dso) repository. For the DisplayFilter base class, look [here](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/DisplayFilter.cc).
+This page covers how to author a new Display Filter using our plug-in API. MoonRay provides [display filters]({{ "/user-reference/scene-objects/display-filters/" | absolute_url }}), which can be chained together to achieve new effects. You can find the code for existing display-filter plug-ins in the [moonshine](https://github.com/OpenMoonRay/moonshine/tree/main/dso) repository. For the DisplayFilter base class, look [here](https://github.com/OpenMoonRay/scene_rdl2/blob/main/lib/scene/rdl2/DisplayFilter.cc).
 
 ## Overview
 Each Display Filter plugin requires you to author three files:

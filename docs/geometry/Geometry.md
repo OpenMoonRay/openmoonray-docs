@@ -8,11 +8,11 @@
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Type:**    | *Float*                                                                                                                                                                                                                                    |
 | **Default:** | 0.0                                                                                                                                                                                                                                        |
-| **Comment:** | When a secondary ray is fired, anything within this distance of the intersection point will be ignored. Instead, it is considered part of the current intersection's geometry. If zero, an automatically calculated  epsilon will be used. |
+| **Comment:** | When a secondary ray is fired, anything within this distance of the intersection point will be ignored. Instead, it is considered part of the current intersection's geometry. If zero, an automatically calculated epsilon will be used. |
 
-Example: A box hovering over a reflective plane. The shadow and the
-reflection of the box is visible on the plane. The ray_espilon of the
-plane is changing.
+For example, increasing `ray_epsilon` on a reflective plane causes nearby
+secondary-ray intersections, such as the reflection of a hovering box, to be
+ignored over a larger distance.
 
 <img src="media/image1.tmp" style="width:4.16667in;height:4.16667in" />
 
@@ -24,8 +24,8 @@ plane is changing.
 | **Default:** | 0.0                                                                                                                                                                              |
 | **Comment:** | When a shadow ray is fired, anything within this distance of the intersection point will be ignored. If this value is less than "ray_epsilon", then it has no additional effect. |
 
-Example: A box hovering over a reflective plane. The shadow and the
-reflection of the box is visible on the plane. The shadow_ray_espilon of
-the plane is changing.
+For example, increasing `shadow_ray_epsilon` on the plane causes nearby
+shadow-ray intersections to be ignored over a larger distance. It does not
+change the reflection; that is controlled by `ray_epsilon`.
 
 <img src="media/image2.tmp" style="width:4.16667in;height:4.16667in" />

@@ -30,17 +30,21 @@ export PXR_PLUGINPATH_NAME=$REL/plugin/usd:${PXR_PLUGINPATH_NAME}
 
 ## Python and Hydra setup
 
-HdMoonray needs to be built with versions of Python and Hydra that are binary-compatible with the versions used by the host application. Generally the application itself will set these up for use.
+HdMoonRay must be built with versions of Python and OpenUSD/Hydra that are
+binary-compatible with those used by the host application. Generally, the
+application configures these dependencies itself.
 
-If you are using the `hd_render` command-line tool, then Python and USD/Hydra need to be set up before running it. The Python runtime linked into the tool will try to configure itself at runtime : if it fails to find the Python libraries you will see an error at startup and may need to set the PYTHONHOME environment variable.
+For command-line rendering, use OpenUSD's `usdrecord` and select the `Moonray`
+renderer:
 
-If hd_render produces a series of errors saying that it is unable to load pxr/USD python modules, you may need to set PYTHONPATH to contain the USD python installation. In the container build of MoonRay, this is in /usr/local/lib/python, so you would do this:
-
+```bash
+usdrecord -r Moonray scene.usd image.exr
 ```
-export PYTHONPATH=/usr/local/lib/python:${PYTHONPATH}
-```
 
-hd_render may also report missing Python modules for HdMoonray plugins like MoonrayShaderDiscovery. This is harmless, since these modules do not have Python bindings.
+`usdrecord` is installed with OpenUSD rather than MoonRay. Run
+`usdrecord --help` to confirm that `Moonray` appears in its renderer list. If
+it does not, verify `PXR_PLUGINPATH_NAME`, `MOONRAY_CLASS_PATH`, and binary
+compatibility between HdMoonRay and the OpenUSD installation.
 
 ## Modes
 

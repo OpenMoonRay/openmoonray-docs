@@ -33,12 +33,13 @@ The top-level ***moonray*** directory contains the repositories that implement M
 
 - ***moonray/moonshine_usd*** has the Usd and UsdInstance scene objects.
 
+- ***moonray/materialx_shaders*** contains optional MaterialX shader plugins.
+
 - ***moonray/moonray_arras*** contains the client and server components needed to use MoonRay with Arras.
 
 - ***moonray/hydra*** has the Hydra plugin for MoonRay, HdMoonRay.
 
 - ***moonray/mcrt_denoise*** has the denoiser code.
-
 
 
 
